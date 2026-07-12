@@ -68,7 +68,79 @@ Classes:
 - **DELIBERATE-OLD-TEXT** — runner references old wording by design (flip
   demonstrations, absence guards).
 
-<!-- CLASSIFICATION-TABLE -->
+Counts over the 141 hard files:
+
+- **CONTENT-FLIP**: 25
+- **REOPENED-WALL**: 15
+- **REKEY**: 85
+- **DELIBERATE-OLD-TEXT**: 3
+- **HISTORICAL-OK**: 13
+
+### CONTENT-FLIP (25)
+
+- `docs/ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md` — Recast the result as a conditional downstream readout-context bridge and replace the old Record dependency with retained authorities for central sectors and K/CPT orbit structure.
+- `docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md` — Split off F1 or add a retained readout-context bridge proving that local U(3) leaves record content and readout fixed; otherwise narrow the theorem to F2-F4 and refresh the axiom citation and names.
+- `docs/GENERATION_DIAL_DYNAMICS_STABILITY_CLASSIFIER_2026-06-05.md` — Rebuild the record-sector premise from landed Record additivity plus separate retained sector/K-CPT authorities; rename Quantum to Qubit and include Admissibility.
+- `docs/GENERATION_WEIGHT_DIAL_STRUCTURE_2026-06-05.md` — Recast the result as conditional on separately supplied K/CPT-real two-sector readout authority, then update the four axiom names.
+- `docs/KCPT_ORBIT_CLAUSE_KINVARIANT_SURFACE_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-06-10.md` — Rescope this as a conditional downstream K/CPT-context equivalence and remove all claims that it locates or rewrites landed Record content.
+- `docs/KOIDE_KODIM_REAL_STRUCTURE_ROUTE_EMPTY_R_UNDETERMINED_BOUNDED_NO_GO_NOTE_2026-06-08.md` — Re-prove both candidate readouts satisfy Qubit, Admissibility, record-content determination, and finite disjoint-record additivity, or narrow the conclusion to J-silence.
+- `docs/OBSERVABLE_PRINCIPLE_P1_REGISTRATION_REALIZATION_PIN_CONSOLIDATION_NARROW_THEOREM_NOTE_2026-06-11.md` — Rebuild the record model and REG-site witnesses under landed site-local admissible Record semantics, then restate the consolidation and formation boundary from the resulting verdict.
+- `docs/OCCUPANCY_ATOM_IS_THE_OUTCOME_DICTIONARY_FLOW_SELECTS_EQUIPARTITION_BOUNDED_NOTE_2026-06-12.md` — Recast K/CPT orbit and central-sector structure as a separately supplied bridge, then re-prove the dictionary claims for admissible record content.
+- `docs/PMNS_TM2_TRIMAXIMAL_COLUMN_FROM_RECORD_CENTRAL_SECTOR_NARROW_THEOREM_NOTE_2026-06-05.md` — Move central-sector selection/dephasing to an explicit downstream bridge and make the theorem conditional, or re-prove the map from landed Admissibility and Record content.
+- `docs/RECORD_CLASSICALIZATION_DYNAMICS_FIREWALL_2026-06-05.md` — Rewrite the theorem around admissible-possibility locking and make K/CPT orbit typing a separately supplied condition.
+- `docs/RECORD_GENERATION_READOUT_TWO_SECTORS_2026-06-05.md` — Reframe as a conditional K/CPT-orbit theorem and supply a separate retained bridge from record content to orbit-valued readout.
+- `docs/RECORD_OUTCOME_OBSERVABLE_PRINCIPLE_CANONICAL_PROPOSAL_NOTE_2026-06-05.md` — Recast the principle as a separate conditional readout bridge requiring independent authority; do not attribute it to Record.
+- `docs/RECORD_PRODUCTION_INTERFACE_PRINCIPLE_2026-06-06.md` *(covered by open PR)* — Rebuild the interface as Qubit to Admissibility to formation to permanent record, and require separate support for any finite orbit alphabet.
+- `docs/RECORD_UNBOUNDED_FINITE_ADDITIVITY_SCHEMA_2026-06-06.md` — Reprove arbitrary finite nonzero atom availability under simultaneous nearest-neighbor Admissibility, or narrow the schema to explicitly supplied admissible records; rekey the memo and Qubit name.
+- `docs/SPIN_STATISTICS_FS_ADMISSION_LOCATED_EXERCISE_NOTE_2026-06-06.md` — Rebuild the boundary from the landed Qubit/Admissibility/Record text and recheck whether local admissibility or record content bears on exchange sign.
+- `docs/THETA_P2_DETERMINANT_READOUT_EXHAUSTION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-11.md` — Rework the theorem to make K/CPT-orbit constancy a separately supplied downstream premise, refresh the axiom citation, and reassess the verdict.
+- `docs/UNORDERED_MASS_MULTISET_REGISTRABILITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-11.md` — Redefine P-dep from current record content, keep K/CPT and sector data explicitly supplied, and reprove and rerun B1-B3.
+- `scripts/frontier_dynamics_sort_records_accumulate_2026_07_03.py` — Rebuild the locking predicate from the landed admissible-local-possibility semantics and reassess every dependent witness and conclusion.
+- `scripts/frontier_edge_two_site_framing_no_native_color_route_record_text_2026_06_08.py` — Retarget Part 3 to the 2026-06-29 memo, rewrite its Record checks and verdict, and reassess the paired note.
+- `scripts/frontier_eident_decomposition_ctx_match_2026_07_02.py` — Replace the old axiom-derived outcome anchor with separately supported context content and re-evaluate the CTX match.
+- `scripts/frontier_occupancy_atom_outcome_dictionary_2026_06_12.py` — Rebuild the outcome dictionary from record content or a separately retained readout-context bridge, then update the memo link inventory.
+- `scripts/frontier_record_prerecord_instrument_kernel_gate_2026_06_06.py` — Point to the 2026-06-29 memo and add a supplied/verified admissibility premise before identifying instrument outcomes with record atoms.
+- `scripts/frontier_record_production_interface_principle_2026_06_06.py` *(covered by open PR)* — Repoint the memo/citation and make admissibility filtering an explicit formation-stage premise before one-hot outputs are typed as records.
+- `scripts/generation_weight_dial_structure_2026_06_05.py` — Recast the result as conditional on a separately retained central-sector/K/CPT bridge, rekey the four axioms, and recheck the open-position claim.
+- `scripts/record_outcome_observable_principle_runner.py` — Make the result conditional on separate retained central-sector, K/CPT, and record-map/readout authorities; remove the axiom-direct claim.
+
+### REOPENED-WALL (15)
+
+- `docs/EDGE_TWO_SITE_FRAMING_SUPPLIES_NO_NATIVE_COLOR_ROUTE_RECORD_TEXT_NARROW_NO_GO_NOTE_2026-06-08.md` — Reopen the no-go under the four axioms; rebuild G-B/G-C around admissible local record content and update the runner's authority needles.
+- `docs/EP_RECORD_STIFFNESS_CONTEXT_INDEPENDENCE_NO_GO_NOTE_2026-06-17.md` — Rebuild both completions with identical landed Qubit, Admissibility, admissible-locking, uniqueness, permanence, and readout data; remove central-sector/K-CPT premises and rerun the no-go.
+- `docs/KOIDE_R_POLARIZATION_ORBIT_QUOTIENT_GATE_SHARPENING_NOTE_2026-06-09.md` — Recast the orbit quotient and phase-resolution exclusion as conditional on a separate retained K/CPT readout-context bridge, or remove the claimed Record entailment.
+- `docs/P2_KCPT_ORBIT_TEMPORAL_FACTOR_NO_GO_2026-06-06.md` — Reopen Conclusion C and the aggregate no-go; either mark it historical to the old Record text or supply a new K/CPT-to-record bridge and re-prove it.
+- `docs/P_FLUX_POINT_ZERO_SET_FROM_RETAINED_ROWS_NARROW_NO_GO_NOTE_2026-06-10.md` — Reopen and rerun the Record/Admissibility supplier leg under the landed locking and content-only-readout clauses, then restate the no-go only if branch non-selection is freshly shown.
+- `docs/QUARK_ROUTE2_RECORD_RAW_Q_SELECTOR_GATE_NOTE_2026-06-21.md` — Reopen the raw-q selector proof under content-only readout and distinguish failure of q to equal additive I from failure of Record to permit or select a derived quotient.
+- `docs/SINGLE_CLOCK_INDEPENDENT_COMMUTING_TRANSFER_FACTOR_N5_NO_GO_NOTE_2026-06-17.md` — Rebuild the countermodel with an explicit covariant nearest-neighbor admissibility rule and prove the factor flows and records preserve it, or withdraw/rescope the no-go.
+- `docs/STAGGERED_CHIRALITY_SELECTOR_ENUMERATOR_NARROW_THEOREM_NOTE_2026-06-06.md` — Reopen the wall and enumerate or prove survivor multiplicity under the landed Admissibility rule; otherwise narrow the claim conditionally.
+- `docs/STAGGERED_DIRAC_EXERCISE_HONEST_REASSESSMENT_NOTE_2026-06-06.md` — Rerun or narrow the chirality-survivor protocol under landed Admissibility, retain the unaffected limbs, and refresh the memo/name.
+- `docs/STRONG_CP_GAUGE_THETA_NOT_FORCED_BY_REALITY_POSITIVITY_OR_CPT_BOUNDED_NOTE_2026-06-07.md` — Reopen the CPT branch, require a separate retained K/CPT/readout-context authority, and refresh the axiom-set name and memo citation.
+- `scripts/audit_companion_strong_cp_gauge_theta_not_forced_by_reality_positivity_cpt_exact.py` — Reframe the wall against the landed axioms: remove the Record/CPT identification, address the new admissibility-and-record constraints or bound the claim to a standard-CPT toy model, and update the axiom names.
+- `scripts/frontier_exercise_spin_statistics_fs_admission_located_2026_06_06.py` — Reopen the wall under all four axioms and replace the central-sector-silence checks with a new admissibility-aware argument.
+- `scripts/frontier_koide_r_polarization_orbit_quotient_2026_06_09.py` — Reopen K3: remove the Record-derived exclusion, or restate it conditionally on a separate retained K/CPT-orbit readout context.
+- `scripts/generation_dial_occupancy_free_input_2026_06_05.py` — Rebuild the independence proof against Lattice/Qubit/Admissibility/Record and retain the free-r conclusion only if admissibility cannot constrain it.
+- `scripts/one_time_dimension_dt1_reduction_check_2026_06_17.py` — Rebuild the countermodel under all four current axioms, including nearest-neighbor admissibility and record locking, before retaining the d_t=1 open-gate conclusion.
+
+### REKEY (85) — full list in the triage TSVs
+
+### No-fix classes
+
+- DELIBERATE-OLD-TEXT: 3 files (listed in the triage TSVs)
+- HISTORICAL-OK: 13 files (listed in the triage TSVs)
+
+A reopened wall is not a reversed verdict. For each wall, the walls block
+must determine the direction of consequence before any edit. Some walls
+closed derivation routes — the record-stiffness context-independence no-go
+and the staggered-chirality free-selector wall are the clearest cases —
+and for those, reopening under the landed Admissibility rule is a potential
+opportunity, not damage. Others lose only a branch premise while the
+conclusion survives or strengthens: the strong-CP note's CPT branch used
+the deleted Record `K`/CPT-orbit reading as its blocking premise, and with
+no axiom-supplied `K`/CPT structure at all, the branch restates to an even
+weaker forcing route (verified by direct read during this triage). Each
+wall file gets an explicit direction line in its repair block.
+
 
 ## Files already owned by open PRs (skipped by the waves)
 
@@ -126,8 +198,11 @@ rows are audited or their content is next touched.
 ## Wave plan (Blocks 4+)
 
 1. **Wave 1 — live-guard and retained-status re-keys**: the drifted
-   heat-trace runner re-pin plus the REKEY-classed members of the
-   retained-status eight (highest-leverage: these carry live audit status).
+   heat-trace runner re-pin plus the four REKEY-classed, non-covered
+   members of the retained-status eight (they carry live audit status):
+   the RP two-step transfer-positivity note, the blocked time-normalization
+   bridge note, the RP/P2 gauge-extension residual note, and the Wilson
+   small-`a` matching note.
 2. **Waves 2+ — mechanical re-keys per lane** (REKEY class), one PR per
    lane wave, stacked on this branch, every wave re-running the affected
    runners plus `vocab_lint` before commit.

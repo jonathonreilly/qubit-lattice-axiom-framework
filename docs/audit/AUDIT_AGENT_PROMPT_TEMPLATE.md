@@ -243,9 +243,9 @@ constructed from source-cycle historical dispositions, open derivation
 obligations, similar `no_go` rows in the audit ledger, and every tracked
 `.claude/science/physics-loops/**/NO_GO_LEDGER.md` file. The index metadata
 states the exact glob, scanned file count and paths, similarity threshold, and
-per-kind candidate limits. High-signal kinds (prior audit cycles, open gates,
-loop ledgers) are listed in full; the bulk similarity/scan kinds are capped by
-the declared relevance order with an authenticated omitted-tail summary
+per-kind candidate limits. Prior audit cycles and open gates are listed in
+full; repository similarity, negative-note, and loop-ledger scans are capped
+by the declared relevance order with an authenticated omitted-tail summary
 (`candidate_truncation`: total hits, omitted count, omitted-id hash), so the
 corpus cannot be hidden while the disposition set stays reviewable. Index
 universes that grow after your packet is authenticated are recorded as a
@@ -582,6 +582,13 @@ occurrences of `absent`, `cannot`, `does not`, `fails`, `impossible`,
 `rules out`, `structurally undecidable`, `unavailable`, `is not`, and `are not`,
 and must test all five resolution classes substantively against cited live
 current-cycle runner stdout evidence.
+
+For N3, `scanned_evidence_paths` covers the source and ordinary one-hop
+authorities. Omit authority paths marked `accepted_premise_type` because their
+axiom/approved-primitive vocabulary is explicit accepted premise content and
+is separately guarded by premise-purity checks; it is not a hidden admission
+inside the audited claim. The authenticated manifest remains available for N1,
+N2, N4, N6, and N7 authority checks.
 
 For every N3 hit and N5 statement, copy `phrase` byte-for-byte from the
 corresponding `full_phrase_groups[].phrase` value in the evidence manifest.

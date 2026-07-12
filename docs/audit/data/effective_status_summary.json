@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2055,
-    "decoration": 25,
+    "bounded_theorem": 2054,
+    "decoration": 26,
     "meta": 357,
     "no_go": 472,
     "open_gate": 196,
@@ -55,11 +55,12 @@
     "retained": 101,
     "retained_bounded": 417,
     "retained_no_go": 45,
-    "retained_pending_chain": 1,
-    "unaudited": 2642
+    "retained_pending_chain": 2,
+    "unaudited": 2641
   },
-  "retained_pending_chain_count": 1,
+  "retained_pending_chain_count": 2,
   "retained_pending_chain_examples": [
-    "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10"
+    "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
+    "pre_record_reference_state_tracial_derivation_note_2026-05-20"
   ]
 }

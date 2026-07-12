@@ -1,6 +1,7 @@
 # Atomic Hydrogen and Helium Probe --- Standard-QM Scaffold Lane
 
 **Date:** 2026-04-19
+**Claim type:** bounded_theorem
 **Status:** **bounded exploratory scaffold lane.** This is **not** a proposed_retained
 framework derivation. The script uses standard non-relativistic quantum
 mechanics with textbook inputs (`m_e`, `e`, `hbar`, `4 pi epsilon_0`, `Z = 1`
@@ -118,10 +119,20 @@ The script demonstrates that:
 
 1. on this codebase, with `numpy + scipy` already in `requirements.txt`,
    standard QM with textbook inputs reproduces the hydrogen spectrum to
-   `~10^-4` relative error and the helium ground state to `~2%` (variational)
-   /  exact (within available basis), in physical eV units;
+   `~10^-4` relative error and evaluates the stated independent-electron and
+   one-parameter variational helium benchmarks, with the variational value
+   lying `~2%` from experiment, in physical eV units;
 2. the harness is structurally ready to accept framework-derived inputs in
    place of textbook constants, if and when those become available.
+
+**2026-07-11 downstream hygiene.** This note's citable bounded surface is only
+the listed finite-grid hydrogen comparison and the helium independent-electron
+and one-parameter variational benchmarks evaluated by the script. The helium
+calculation does not compute or establish an exact result in any basis and
+includes no Hartree-Fock or correlated-basis calculation. Downstream work must
+not cite this scaffold as an exact helium result or as a framework derivation.
+This source-boundary narrowing is recorded here so the note's hash drift
+re-enters the independent audit queue.
 
 The script does **not** claim that the framework derives any of:
 

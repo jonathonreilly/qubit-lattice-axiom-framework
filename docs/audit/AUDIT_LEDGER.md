@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 363 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2783 |
+| unaudited | 2782 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -32,7 +32,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
-| `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
+| `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 8 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
@@ -46,20 +46,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 23 |
 | `audited_clean` | 475 |
 | `audited_conditional` | 51 |
-| `audited_decoration` | 18 |
+| `audited_decoration` | 19 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3133 |
+| `unaudited` | 3132 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2050 |
-| `decoration` | 21 |
+| `decoration` | 22 |
 | `meta` | 357 |
 | `no_go` | 467 |
 | `open_gate` | 198 |
-| `positive_theorem` | 660 |
+| `positive_theorem` | 659 |
 
 | criticality | count |
 |---|---:|
@@ -668,6 +668,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
 | `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
 | `ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.5 | A | `ckm_atlas_axiom_closure_note` |
+| `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.6 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02` | decoration | ~~audited_decoration~~ | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | cross_family | codex-gpt-5.5 | A | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` |
 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
@@ -2046,6 +2047,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Substituting the four stated parametric identities into the five Wolfenstein-leading expressions and then applying n_quark = n_pair * n_color gives (M1)-(M5).  _(class `A`)_
 - **chain closes:** True — The claimed formulas follow by exact symbolic substitution and simplification. The conclusion is bounded to the explicitly supplied identities and does not derive or physically identify those inputs.
 - **rationale:** The load-bearing work is genuine class-A algebra: all five formulas and both ratios follow exactly from the stated symbolic inputs and count constraint. The runner computes these reductions rather than merely printing outcomes; its final parent-ledger metadata check is class B but is not load-bearing. No numerical alpha_s value, comparator, fitted selector, or physical CKM bridge enters the audited scope.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `cl3_central_pseudoscalar_schur_separator_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`CL3_CENTRAL_PSEUDOSCALAR_SCHUR_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/CL3_CENTRAL_PSEUDOSCALAR_SCHUR_SEPARATOR_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Abstract finite-dimensional complex representation-theory separator for faithful irreducible Cl(3,0)-modules, conditional on the retained complexification split, central pseudoscalar identity, and standard representation theory; no physical chirality assignment was audited.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00385-cl3_central_pseudoscalar_sch`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because the central pseudoscalar acts by a Schur scalar c and omega squared is -1, c squared is -1 and therefore c is either +i or -i; this central character is invariant under module intertwiners and determines the nonzero central idempotent summand.  _(class `A`)_
+- **chain closes:** False — The stated algebraic implication is correct and fully supported by the retained one-hop authority. Under the required serialization for the non-clean decoration verdict, chain_closes is false because the row adds only algebraic consequences of that single parent rather than an independent derivation surface.
+- **rationale:** Every load-bearing step is exact class-A algebra over the single retained Cl(3,0) complexification-split parent, with no independent comparator or framework computation. The Schur dichotomy, separator, and idempotent images are direct standard corollaries of the parent's centrality, omega-squared identity, and two-summand decomposition. The note is therefore a correct algebraic decoration and makes no physical chirality or lattice-Hilbert-space claim.
+- **decoration parent:** `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

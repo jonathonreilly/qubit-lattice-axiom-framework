@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 377 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2749 |
+| unaudited | 2748 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 63 |
+| ~~audited_conditional~~ | 64 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 492 |
-| `audited_conditional` | 63 |
+| `audited_conditional` | 64 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3099 |
+| `unaudited` | 3098 |
 
 | claim_type | count |
 |---|---:|
@@ -660,6 +660,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `flavor_interacting_matter_build_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3965,6 +3966,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner performs substantive matrix calculations: it constructs C, e0, e1, the state densities, both averaging maps, and a counterexample to the former block-compression claim. The one-parameter family gives explicit admissible states with different block weights, which is sufficient to disprove selection by the stated C3 central-state conditions. The verdict is confined to this finite algebra and does not promote the displayed Q(r) convention, a trace default, or p=1/2 selection to physical theorems.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `flavor_interacting_matter_build_note_2026-05-30`
+
+- **Note:** [`FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md`](../../docs/FLAVOR_INTERACTING_MATTER_BUILD_NOTE_2026-05-30.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Audited the executable epsilon/Q finite-algebra core and the narrowly scoped native epsilon/diagonal-C3 diagnostics; no global interacting-matter no-go or matter-action closure was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00423-flavor_interacting_matter_bu`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On the hw=1 triplet epsilon is constant and maps the triplet to hw=2, while for F=aI+b(J-I) the exact trace identity is Q(F)=1/3+(2/3)r.  _(class `A`)_
+- **chain closes:** False — The six load-bearing epsilon/Q checks are genuine exact algebra, but the mandatory no-go gate does not close because non-diagonal interaction channels and the first-principles matter action remain untested. The C3 result establishes only a diagonal-channel obstruction.
+- **rationale:** Issue: the runner correctly computes the finite epsilon/Q core and the diagonal C3 diagnostic, but it does not test the non-diagonal interaction or dynamical routes needed for a no-go-grade wall. Why this blocks: the required N1-N8 gate cannot pass while those distinct routes remain open, even though the source honestly labels them conditional. Repair target: split the C3-wall diagnostic into its own claim with a complete narrow N1-N8 packet, or test the named non-diagonal interaction classes. Claim boundary until fixed: the epsilon orbit facts and Q(r) identity are exact algebra; interacting branch selection and any broader C3 obstruction remain open.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 contains OPEN and UNTESTED non-diagonal, dynamical, normalization-selector, and alternate-carrier routes.
+    - N5 confirms that only the diagonal/epsilon resolution was tested; non-diagonal interactions and alternate carriers remain untested.
 
 ### `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02`
 

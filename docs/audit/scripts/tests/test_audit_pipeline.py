@@ -3994,6 +3994,13 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "No other computational method whatsoever for deriving the clock exists.",
             "No other analytic channel exists for reaching the selector.",
             "No alternative propagation channel exists for supplying the clock.",
+            "No other route-finding program exists for producing a physical carrier.",
+            "No alternative algorithm for deriving the temporal selector exists.",
+            "The selector wall no longer blocks the transfer route, but blocks the observable channel.",
+            "The selector wall no longer blocks transfer but still blocks readout.",
+            "The paper denies that the first route is impossible although no admissible route exists for the selector.",
+            "## Scope\u2014The finite identity cannot determine the continuum kernel\nDetail.\n",
+            "## Scope-The finite identity cannot determine the continuum kernel\nDetail.\n",
         ):
             with self.subTest(body=body):
                 self.assertTrue(
@@ -4191,6 +4198,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "The conclusion that no route exists was overturned by the construction.",
             "No additional communication channel exists between the two boundary tori.",
             "## Scope\nDoes not derive external alpha\n### Parent attribution\nThe retained axioms derive alpha.\n",
+            "## Out-of-scope\nDoes not derive the parent coefficient.\n",
         ):
             with self.subTest(body=body):
                 self.assertFalse(

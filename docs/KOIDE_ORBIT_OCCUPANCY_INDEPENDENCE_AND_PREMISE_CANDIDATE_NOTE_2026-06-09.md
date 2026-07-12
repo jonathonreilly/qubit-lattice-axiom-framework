@@ -1,227 +1,352 @@
-# The Koide Occupancy Atom Is Independent of the Current Checked Premise Surface; the Orbit-Occupancy Premise Candidate
+# Koide Orbit-Occupancy Gaussian Moments and the Aggregate Equipartition-Granularity Fork
 
 **Date:** 2026-06-09
-**Review-loop update:** 2026-06-12 — the four fork cells and the `rho`-map
-orientation are now derived in this note's runner from explicit per-cell
-integrals. The landed table remains a consistency cross-check; the fork and
-sharpening citations are context accordingly.
-**Axiom-surface update:** 2026-07-05 — premises re-based from the superseded
-`MINIMAL_AXIOMS_2026-06-05.md` (three-axiom memo) onto the current four-axiom
-memo `MINIMAL_AXIOMS_2026-06-29.md`: the enumerated Record non-supply clause
-is superseded by the Qualification's general non-supply clauses (checked live
-by the runner; the 06-05 clause is kept as historical corroboration), and
-outcomes-as-K/CPT-orbits is no longer axiom text — it is supplied-context
-carried by the bridge [T1, KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md).
-No claim is strengthened; the independence result and the premise candidate
-are unchanged.
-**Claim type:** bounded_theorem
-**Type:** bounded_theorem + premise-candidate proposal (proposal NOT adopted)
-**Status authority:** independent audit lane only. This source note does not set
-or predict an audit outcome.
+**Repair update:** 2026-07-12
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only. This note does not set or
+predict an audit outcome.
 **Primary runner:**
 [`scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py`](../scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py)
 **Cached runner output:**
 [`logs/runner-cache/frontier_koide_orbit_occupancy_independence_2026_06_09.txt`](../logs/runner-cache/frontier_koide_orbit_occupancy_independence_2026_06_09.txt)
-(SCORECARD: PASS=34, FAIL=0)
+(`SUMMARY: PASS=27 FAIL=0`)
 
-> **Not claimed:** a derivation of `r = 1/2`, adoption of any premise, or a mass
-> prediction. **Claimed:** the one residual atom behind the Koide `r`-gate — the
-> occupancy/weight class of the generation doublet — is **independent of the
-> current checked premise surface** (shown by the current axiom-surface
-> non-supply boundary plus two exhibited consistent models), so the present derivation loop is
-> closed at this atom without adding or deriving an occupancy rule; and the
-> principled premise candidate (**orbit-occupancy**) is stated with computed
-> support, for owner decision — the `ξ=1` playbook.
+The filename is retained for citation stability. The repaired claim is narrower
+than the historical title encoded in that filename.
 
----
+> **Bounded claim.** For the explicitly enumerated local channel-bookkeeping
+> surface below, the honest Gaussian moment gives `r = 1`. The alternative
+> endpoint `r = 1/2` follows only after imposing the aggregate
+> per-outcome-cell condition `E_s = E_d`. Two constructed aggregate conditions
+> share the checked carrier, channel energy, symmetry, outcome indexing, and
+> `Q` dictionary and differ by one supplied integer, the doublet counting unit.
+> This is a conditional algebraic fork and a source-text nonselection boundary,
+> not a formal model-theoretic independence theorem for the full lattice axioms
+> and not a derivation or adoption of the per-outcome-cell condition.
 
-## Role
+## Repair finding and disposition
 
-The orbit-quotient sharpening
-`KOIDE_R_POLARIZATION_ORBIT_QUOTIENT_GATE_SHARPENING_NOTE_2026-06-09.md`
-reduced the Koide `r`-gate
-to one residual atom: the slot **degree** — equivalently, at the landed fork's
-bookkeeping level, the per-doublet measure-weight class
-`Z_d ∈ {2π/g, π/g} ⟺ r ∈ {1, 1/2} ⟺ Q ∈ {1, 2/3}`. This note settles the
-**status** of that atom.
+The 2026-07-10 independent review identified the decisive arithmetic error:
 
-## Result 1: the atom is not supplied by the current axiom surface
+> “The holomorphic Gaussian integral does not yield the claimed one-slot
+> equipartition moment: with `Z=pi/g` and `g=6 beta`, it gives
+> `<|b|^2>=1/(6 beta)`, hence `r=1`, not `1/2`. The runner obtains `r=1/2` by
+> hard-coding a per-slot quantum rather than deriving it from that integral.”
 
-The current four-axiom memo
-([`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)) states:
-*"These axioms state only their named primitive content. Further physical
-structure requires derivation, bridge, explicit admission, or approved
-primitive registration before use as a premise."* It also states: *"In
-particular, a law may not depend on a choice not fixed by the supplied
-structure, unless that choice is admitted."* and *"A law privileges no states.
-Its domain is a supplied condition, and at every state where the condition holds
-it gives exactly one answer."* The realized-state primitive adds: *"The laws do
-not pick the state; the world does, among the states the laws permit."* and
-*"Nothing more is supplied: no averaging over alternatives, no typical or
-generic claim, and no quoting a number that would differ had another
-law-admissible state been realized."* Historically, the superseded 2026-06-05
-Record wording corroborated the same boundary by saying that a record
-*"supplies no readout context, decomposition, K/CPT structure, sector-generation
-rule, **weighting, normalization, probability**, measurement/decoherence
-dynamics, time metric, within-sector data, **or occupancy rule**."* The doublet
-measure-weight class is precisely a weighting/occupancy rule. The runner checks
-the 06-29 Qualification clauses and primitive mechanically, with the 06-05
-clause kept as historical corroboration. So the current axiom surface
-**declines to supply this atom**.
+The finding is correct. The repair makes four changes.
 
-## Result 2: independence by exhibition
+1. It derives every Gaussian moment directly and removes the hard-coded
+   `per_slot_quantum`.
+2. It withdraws the former map `r = 1/(2 rho)` and every inference from a
+   partition-function ratio to an `r` ratio.
+3. It states `r = 1/2` only as the consequence of an explicit aggregate
+   per-outcome-cell equal-energy condition.
+4. It removes the componentwise fixed-basis equation
+   `3a^2 = 6x^2 = 6y^2` from the witness claim. That equation is not invariant
+   under the checked `Z_3` rotation. The surviving real-dimension horn is only
+   the invariant aggregate relation `E_d = 2E_s`.
 
-Two explicit models on the generation configuration `(a, b) ∈ R × C`, both
-satisfying the checked constraints supplied by the current Record/Koide
-bookkeeping surface — `Z₃`-equivariance, K-invariance/orbit-definedness of the
-weight, with outcomes-as-K/CPT-orbits supplied by [T1, KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md),
-positivity, normalizability, and finite additivity of the induced readout on
-the two-orbit outcome algebra:
+## Explicitly checked surface
 
-```text
-M_sector : one statistical slot per REAL component (a; x; y)
-           doublet weight Z_d = 2π/g     (exact integral)
-M_orbit  : one statistical slot per record-OUTCOME (a; b as one complex slot)
-           doublet weight Z_d = π/g      (exact integral)
-```
+The bounded result uses only the following named content.
 
-They differ **exactly** by the occupancy factor `2` — which is the fiber count
-of the 2:1 sector→orbit covering (each outcome counted twice versus once).
-Both consistent + the live axiom-surface non-supply boundary ⟹ **the occupancy
-rule is not supplied by the current checked premise surface.** This also mechanizes the
-refuted-attempt history: every prior derivation route in this loop smuggled an
-occupancy rule (the CW/fluctuation-modulus route is a sector-side occupancy
-choice — supplied, never retained; refs #2624/#2688). Derivation attempts from
-this surface cannot settle `r` without adding or deriving an occupancy rule; an
-explicit owner-approved premise is one possible resolution.
+| element | role |
+|---|---|
+| carrier `(a,b) in R_{>0} x C` | local generation-channel parametrization; `a>0` makes `r` well-defined |
+| `E_s = 3a^2`, `E_d = 6|b|^2` | channel-energy bookkeeping |
+| `Q = (1+2r)/3`, `r=|b|^2/a^2` | exact circulant trace dictionary, rederived in the runner and algebraically adjacent to [`KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md) |
+| Lattice, Qubit, Admissibility, Record | approved foundation in [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) |
+| pointwise realized-state interface | approved [`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md); it supplies no state-contingent `r` value |
+| outcome cells `{e_0}` and `{e_1,e_2}` | supplied K/CPT orbit indexing, conditional on the [`K/CPT orbit-constancy supplied-context bridge`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md) |
 
-## Consequence map — at the landed bookkeeping level only
+The supplied K/CPT context is a bounded condition. It is not generic Record
+axiom content. The Gaussian density used below is a diagnostic assumption, not
+a premise that selects the per-outcome-cell condition.
 
-No new microscopic bridge is invented (the #3138 lesson). The runner includes an
-explicit **orientation guard**: of the two a-priori normalizations of the
-`ρ`-map, the inverted one is computed and **rejected against the derived
-per-model `r` values**, and the orientation (`ρ = (π/g)/Z_d`,
-`r = 1/(2ρ)`) is verified from the explicit per-cell integrals. The landed
-table remains only a consistency cross-check:
+## Honest Gaussian moment
+
+Take the stated diagnostic density
 
 ```text
-M_sector  →  ρ = 1/2  →  r = 1    →  Q = 1      (the real/2-slot cell)
-M_orbit   →  ρ = 1    →  r = 1/2  →  Q = 2/3    (the holomorphic/1-slot cell)
+exp[-beta (3a^2 + 6|b|^2)],   beta > 0.
 ```
 
-Convention-free core fact: `r_sector / r_orbit = Z_sector / Z_orbit = 2`
-exactly — the cell ratio *is* the occupancy factor, independent of any
-normalization choice.
+For the singlet coordinate,
 
-## The premise candidate: orbit-occupancy (proposal; NOT adopted)
+```text
+<a^2> = 1/(6 beta).
+```
 
-> **Orbit-occupancy:** record statistics assigns one statistical slot per
-> record-**outcome** (K/CPT orbit), not per central sector.
+For `b = x+iy`, either Cartesian integration or the polar measure
+`d^2b = rho d rho d theta` gives
 
-Computed support:
+```text
+Z_b = pi/(6 beta),
+<|b|^2> = 1/(6 beta),
+r_moment = <|b|^2>/<a^2> = 1.
+```
 
-- **Granularity matching (unique among the two exhibited slot choices):** the
-  orbit model is the only exhibited choice whose statistical slot-groups biject
-  with the record-outcomes (2 = 2); the sector model carries 3 slots against 2
-  outcomes. "Statistics grained at the granularity of outcomes" is the
-  readout-side analogue of the approved `kinetic_isotropy_primitive`'s "tick
-  grained like edge" — dimensionless, structural, binary, no fitted number.
-- **Comparator (labeled, never an input):** the empirical charged-lepton Koide
-  ratio `Q_PDG = 0.666661` sits on the orbit-occupancy cell (`2/3`) to
-  `6×10⁻⁶`; the sector-occupancy cell (`Q = 1`) is excluded empirically by
-  ~50%.
-- **Payoff if approved (stated as the proposal's consequence, not a result):**
-  with orbit-occupancy, `r = 1/2` and `Q = 2/3` follow from the landed
-  `Q = (1+2r)/3` lever — the Koide relation becomes the statement that nature's
-  record statistics counts outcomes, not sectors. The phase `δ` remains a
-  separate admission (the radian-period note).
+Equivalently, with `g = 6 beta`, `Z_b = pi/g` and `<|b|^2> = 1/g`.
+A multiplicative normalization of the same measure cancels between numerator
+and denominator. The Cartesian and polar calculations are coordinate forms of
+the same density and give the same partition integral and moment.
 
-Per the independence result, this is **owner-decision territory** — exactly the
-`ξ=1` situation: the premise is not supplied by the current checked premise
-surface, both horns are consistent, and one honest resolution is an explicit
-structural choice rather than an eighth derivation attempt.
+The expectation values obey
 
-## No-go discipline gate
+```text
+<3a^2> = <6x^2> = <6y^2> = 1/(2 beta),
+<E_d> = 2 <E_s>.
+```
 
-- **N1 Route enumeration:** Record non-supply is ATTEMPTED and stops at the
-  current Qualification/realized-state non-supply boundary, with the
-  superseded 06-05 "no occupancy rule" clause only historical corroboration;
-  sector occupancy is ATTEMPTED
-  and gives a consistent `r = 1` horn; orbit occupancy is ATTEMPTED and gives a
-  consistent `r = 1/2` horn but remains proposed, not adopted; the prior
-  CW/fluctuation-modulus route is RULED OUT BY PRIOR as supplied sector-side
-  occupancy context; the derived `rho`-orientation check is ATTEMPTED and
-  orients the map but selects no horn; the PDG comparator is ATTEMPTED only as
-  labeled non-input support; the future-larger-premise route is left OPEN.
-- **N2 Wall independence:** the common wall is the missing occupancy/weighting
-  rule; the two exhibited models agree on the checked constraints and differ
-  only at that wall.
-- **N3 Hidden-wall scan:** no readout context, weighting, probability,
-  normalization, dynamics, phase, mass input, or empirical value is introduced as
-  a premise.
-- **N4 Residual matching:** the residual atom is exactly the sector-versus-orbit
-  slot count, with ratio `2`.
-- **N5 Rhetoric audit:** the claim is current-surface independence, not a
-  universal future no-go and not a derivation of `r = 1/2`.
-- **N6 Partial closure:** the live continuation is either an owner-approved
-  orbit-occupancy premise or a later derivation from additional theory.
-- **N7 Steelman:** a larger retained premise surface could still derive the
-  orbit-occupancy rule; this note does not block that route.
-- **N8 Cross-cycle echo:** prior failed Koide `r` routes are treated only as
-  refuted-route context, not as evidence that the proposed premise is adopted.
+Thus this Gaussian realizes the real-coordinate count in expectation and does
+not yield `<E_d> = <E_s>`. No Gaussian result in this note derives `r = 1/2`.
 
-## What this note does NOT claim
+## Decoupled partition-cell arithmetic
 
-- **Not** a derivation of `r = 1/2`; **not** adoption of orbit-occupancy; **not**
-  a charged-lepton mass prediction.
-- **Not** a universal route-closure claim: no claim is made that a future
-  larger premise surface cannot derive the occupancy rule. The independence is
-  relative to the **current checked** Record/Koide bookkeeping surface,
-  witnessed by the exhibited models, the live Qualification/primitive
-  non-supply boundary, and the historical 06-05 corroboration.
-- **Not** a new microscopic moment-bridge: all cell assignments pass through the
-  explicit per-cell integrals and derived `ρ`-map identity; the landed table is
-  kept only as a consistency cross-check.
-- **No** PDG/fitted input in any derivation step (PDG `Q` is a labeled
-  comparator); **no** new axiom, primitive, vocabulary, or class tag is added by
-  this note (the candidate is *proposed*, with approval routed through
-  `AXIOM_MINIMALITY_POLICY.md` §6 exactly as for the kinetic-isotropy primitive).
-- It does **not** set or change any audit status.
+The runner also reproduces four older integral/kernel facts:
 
-## Reprove-and-cite ledger
+```text
+real two-coordinate Gaussian kernel:  Z = 2 pi/g
+Majorana two-by-two Pfaffian kernel:    Z = 2 pi/g
+polar complex Gaussian kernel:         Z = pi/g
+one-by-one complex Berezin kernel:      Z = pi/g
+```
 
-- **Reproven here** (runner): the orbit partition (`K(e₁)=e₂`); the four fork
-  cells (partition weights AND equipartition `r` per model) derived from
-  explicit integrals; the `ρ`-map `r = 1/(2ρ)` verified as a derived identity;
-  the landed table kept as a consistency cross-check; the `Q`-lever (100 draws);
-  the exact weights `2π/g` and `π/g` and their factor-2 fiber interpretation;
-  the two models' checked constraint-consistency; the mechanical live
-  axiom-surface and primitive text checks; the convention-free cell ratio; the
-  slot/outcome counting; the PDG comparator arithmetic.
-- **Cited:** [`KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`](KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md)
-  (the `E_s = 3a^2`, `E_d = 6|b|^2` lever used by the equipartition
-  derivation); [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
-  (current Qualification non-supply clauses);
-  [`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md)
-  (state-side non-supply);
-  [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
-  (historical corroboration only for the superseded non-supply clause);
-  [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)
-  (T1 supplied ORBIT-INDEXING for outcomes-as-K/CPT-orbits);
-  [`AXIOM_MINIMALITY_POLICY.md`](audit/AXIOM_MINIMALITY_POLICY.md) §6 (the
-  approval mechanism the proposal would route through); the refuted-route corpus
-  (#2624, #2688, #3138) as non-re-walk boundaries.
+These cells use different quadratic kernels or determinant powers. They are
+not two coordinate presentations of the identical diagnostic density above.
+Their factor-two ratio is therefore kept only as decoupled
+quadratic-kernel/determinant-power arithmetic. The values alone contain no
+equation for `r`. The former definitions
 
-**Context (not load-bearing: backticked names are context, not dependency
-edges):**
+```text
+rho = (pi/g)/Z_d,
+r = 1/(2 rho)
+```
 
-- `KOIDE_BEREZIN_DETC_VS_DETR_FORK_MECHANISM_NOTE_2026-06-04.md` — where the
-  four-cell mechanism landed (open-gate row); the cells are recomputed from
-  explicit per-cell actions in this note's runner, and the landed table is
-  consumed only as a consistency cross-check.
-- `KOIDE_R_POLARIZATION_ORBIT_QUOTIENT_GATE_SHARPENING_NOTE_2026-06-09.md` —
-  the reduction history (how the r-gate narrowed to this atom); framing only, no
-  content consumed.
+are withdrawn as an unsupported attribution of `r` to `Z_d`.
 
-**No-promotion statement:** this note does not promote, demote, or set the audit
-status of any dependency. The independent audit lane is the only status authority.
+## Aggregate equipartition-granularity fork
+
+Define one aggregate condition with a supplied doublet counting unit `n_d`:
+
+```text
+E_s = epsilon,
+E_d = n_d epsilon.
+```
+
+Using `E_s = 3a^2` and `E_d = 6|b|^2` gives
+
+```text
+r = |b|^2/a^2 = n_d/2,
+Q = (1+2r)/3 = (1+n_d)/3.
+```
+
+The two constructed extensions are:
+
+```text
+aggregate real-dimension count:  n_d = 2  ->  r = 1    ->  Q = 1
+aggregate outcome-cell count:    n_d = 1  ->  r = 1/2  ->  Q = 2/3
+```
+
+“Real-dimension count” here is an aggregate channel-energy statement. It does
+not assert equal realized energies in fixed Cartesian components `x` and `y`.
+“Outcome-cell count” is conditional on the supplied orbit indexing. Neither
+count is selected by the approved foundation or by the realized-state
+primitive.
+
+### Premise-surface parity
+
+The comparison is deliberately small.
+
+| element | real-dimension extension | outcome-cell extension |
+|---|---|---|
+| carrier | `(a,b) in R_{>0} x C` | same |
+| channel energy | `E_s=3a^2`, `E_d=6|b|^2` | same |
+| `Q` dictionary | `Q=(1+2r)/3` | same |
+| checked symmetry | functions of `(a,|b|)`; invariant under `b -> omega b` and `b -> conjugate(b)` | same |
+| supplied orbit indexing | `{e_0}`, `{e_1,e_2}` | same |
+| aggregate condition form | `E_s=epsilon`, `E_d=n_d epsilon` | same |
+| **doublet counting unit** | **`n_d=2`** | **`n_d=1`** |
+
+The “one difference” statement is about these two explicitly constructed
+extensions, not an exhaustion theorem over all possible dynamics or
+readout laws. The runner includes a negative control that changes the channel
+energy as well; the parity gate then detects two differences rather than one.
+
+### Compatibility checks
+
+For each `n_d in {1,2}`, the solution set
+
+```text
+|b|^2 = (n_d/2) a^2
+```
+
+is nonempty. Because it depends only on `|b|`, it is invariant under the
+checked `Z_3` rotation and complex conjugation. On the two-cell outcome
+algebra, assigning `I({s})=E_s` and `I({d})=E_d` gives a finite additive
+readout; the runner checks every disjoint subset pair.
+
+These checks establish compatibility with the enumerated local constraints.
+They do not construct a full `Z^3` lattice model, a concrete Admissibility
+rule, record-production dynamics, or a physical charged-lepton readout bridge.
+
+## Proposed per-outcome-cell condition
+
+The proposal is simply:
+
+> On the supplied two-orbit outcome context, use one aggregate channel-energy
+> unit per outcome cell, `E_s = E_d`.
+
+This condition is not in
+[`axiom_premise_nodes.json`](audit/data/axiom_premise_nodes.json). It has zero
+premise weight unless it is derived and independently audited, or explicitly
+approved through a reviewed premise-registry update. This note does not make
+that approval and does not treat the condition as an existing primitive.
+
+## Import and support inventory
+
+- **Approved foundation:** `minimal_axioms` and `realized_state_primitive`.
+  These are registered premise nodes, not imports and not sources of bounded
+  status.
+- **Bounded supplied context:** K/CPT orbit indexing from the linked
+  supplied-context bridge. It labels the two outcome cells but supplies no
+  energy equality or `r` value.
+- **Exact conditional algebra:** the channel-energy equations, Gaussian
+  integrals, `r=n_d/2`, and `Q=(1+n_d)/3`.
+- **Support-only arithmetic:** the four decoupled partition/kernel cells.
+- **Observational comparator:** the 2026 Particle Data Group central masses
+  `m_e=0.51099895069 MeV`, `m_mu=105.6583755 MeV`, and
+  `m_tau=1776.93 MeV` give `Q_PDG=0.666664463403`, differing from `2/3` by
+  `-2.2033e-6`. The values come from the
+  [PDG 2026 lepton summary table](https://pdg.lbl.gov/2026/tables/rpp2026-sum-leptons.pdf).
+  They are printed only, never thresholded, and never used on a derivation or
+  PASS/FAIL path.
+
+## No-Go Discipline Gate
+
+The negative content is only the scoped statement that the enumerated checked
+surface does not itself select `n_d`. It is not a universal derivation no-go.
+
+### N1 — Alternative-route enumeration
+
+1. **Minimal-axiom text — ATTEMPTED.** A direct check of the
+   [`Qualification`](MINIMAL_AXIOMS_2026-06-29.md#qualification) asks whether
+   Lattice, Qubit, Admissibility, or Record states an occupancy/equipartition
+   count. The current Qualification instead leaves non-fixed structure
+   conditional or open; it does not name `n_d`.
+2. **Realized-state primitive — ATTEMPTED.** The
+   [`realized-state interface`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md#the-primitive)
+   might have been mistaken for a supplied realized `r`. Pointwise evaluation
+   is allowed, but the primitive explicitly supplies no state-contingent value,
+   so it does not choose either horn.
+3. **`Z_3` and conjugation symmetry — ATTEMPTED.** The
+   [paired runner](../scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py)
+   verifies that both aggregate relations are invariant under the checked
+   actions, so these symmetries do not distinguish
+   `n_d=1` from `n_d=2` on this surface.
+4. **Record finite additivity — ATTEMPTED.** The paired runner's exhaustive
+   two-cell subset checks show additive readouts for both horns. Additivity
+   alone does not fix their
+   relative channel energies.
+5. **Gaussian moment / measure normalization — ATTEMPTED.** The paired runner's
+   honest integration gives `r=1` in both coordinate systems, and a
+   multiplicative measure factor
+   cancels. It supplies no `r=1/2` route.
+6. **K/CPT orbit indexing — ATTEMPTED.** The
+   [supplied-context bridge](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md#the-supplied-context)
+   identifies two orbit cells and transfers record-content equality to
+   orbit-constant
+   readout. It explicitly does not supply weighting, probability, or an energy
+   equality, so the cell labels alone do not choose `n_d=1`.
+
+### N2 — Wall-independence audit
+
+There is one selection residual after conditioning on the supplied orbit
+context: the aggregate doublet counting unit `n_d`. Orbit indexing is an
+explicit upstream condition, not a second independent wall. Supplying orbit
+labels does not supply equal channel energy; imposing `n_d=1` presumes those
+labels. The note therefore presents one residual rather than inflating the
+count to two independent walls.
+
+### N3 — Hidden-wall scan
+
+- “supplied orbit indexing” is the explicit bounded condition linked above;
+- the Gaussian density is diagnostic only;
+- the `Q` dictionary is rederived in the runner;
+- finite additivity is checked on constructed witness readouts only;
+- PDG values are report-only observational comparators;
+- no standard-QFT, probability, dynamics, normalization, or physical-species
+  bridge is hidden in the conclusion.
+
+### N4 — Residual matching
+
+| cited source | source role | residual used here | match |
+|---|---|---|---|
+| [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md), lines 74–84 | names the supplied foundation and its non-supply boundary | whether the foundation states `n_d` | yes |
+| [`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md), lines 19–45 | pointwise evaluation without state-contingent content | whether the primitive supplies `r` | yes |
+| [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md), lines 53–87 | orbit indexing and orbit-constant readout only | whether orbit labels also fix relative energy | yes |
+| [`scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py`](../scripts/frontier_koide_orbit_occupancy_independence_2026_06_09.py), lines 84–109 | exact trace derivation plus independent numerical diagonalization | conversion from conditional `r` to `Q` | yes |
+
+Historical PR numbers and failed campaign summaries are not used as
+load-bearing witnesses.
+
+### N5 — Rhetoric audit
+
+The repair tests aggregate channel-energy relations only. It does not claim a
+per-component, per-site, full-lattice, or dynamics-level no-go. The statement
+that the former `rho` map does not derive `r` is restricted to the displayed
+partition/kernel values alone; it does not rule out a future microscopic
+measure or action theorem.
+
+### N6 — Partial-closure path scan
+
+The residual changes the conditional value of `Q`, so it is not a naming
+convention. A future retained derivation from a concrete Admissibility rule or
+dynamics could close it. Explicit owner approval plus a reviewed registry
+update is another governance path for a proposed primitive, but no such
+approval is inferred here. Existing registered primitives are not counted as
+walls and do not supply the missing condition.
+
+### N7 — Steelman
+
+A concrete realization of the Admissibility rule, record-production dynamics,
+or a physical readout/action bridge could distinguish the two aggregate horns.
+The current runner does not test those routes and does not construct full
+lattice models. That is a strong objection to any universal independence or
+no-go wording, which is why the claim is limited to source-text nonselection
+and compatibility on the explicitly enumerated local surface.
+
+### N8 — Cross-cycle echo
+
+Similar structural gaps have sometimes been resolved by explicit primitive
+approval, as with kinetic isotropy, or clarified by a primitive that narrows
+what may be evaluated, as with the realized-state interface. Those mechanisms
+are considered here: the proposed condition is absent from the registry and
+the realized-state primitive does not supply it. Historical admission language
+is not reused because no admission premise class exists.
+
+**No-Go Discipline result:** `PASS` for the narrow current-surface
+nonselection boundary. The result would be `FAIL` for a universal claim that
+`r=1/2` cannot be derived by future dynamics, Admissibility, or readout work;
+this note makes no such claim.
+
+## What this note does not claim
+
+- no derivation or adoption of `r=1/2`;
+- no componentwise fixed-basis equipartition law;
+- no formal independence theorem for the full minimal-axiom model class;
+- no physical charged-lepton mass prediction or spectrum-to-mass bridge;
+- no inference from the partition-cell ratio to an `r` ratio;
+- no new axiom, approved primitive, probability rule, or audit verdict.
+
+## Reproduction ledger
+
+The runner independently checks the circulant trace dictionary, the orbit
+partition, both aggregate solution sets and symmetries, exhaustive finite
+additivity, the Gaussian moments in Cartesian and polar coordinates,
+multiplicative normalization cancellation, the two conditional endpoints, a
+wrong-count discriminator, a parity-table mutant, the four decoupled
+integral/kernel cells, and the report-only PDG arithmetic.
+
+**No-promotion statement:** effective status remains pipeline-derived after
+independent audit and dependency closure.

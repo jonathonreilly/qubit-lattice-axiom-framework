@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 417 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2644 |
+| unaudited | 2643 |
 | audit_in_progress | 25 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 96 |
+| ~~audited_conditional~~ | 97 |
 | ~~audited_failed~~ | 22 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 25 |
 | `audited_clean` | 550 |
-| `audited_conditional` | 96 |
+| `audited_conditional` | 97 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2994 |
+| `unaudited` | 2993 |
 
 | claim_type | count |
 |---|---:|
@@ -749,6 +749,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | decoration | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -6522,6 +6523,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The conclusions follow directly from projection orthogonality, completeness, and the stated apparatus contraction. The accepted finite-carrier premise supplies the setting, while no measurement-probability rule, fitted value, or open physical-selection bridge is used.
 - **rationale:** The load-bearing identities are genuine finite-dimensional algebraic consequences of the stated hypotheses. The runner constructs the projectors, isometry, Kraus contractions, phase/permutation twists, mixing examples, and zero-projector cases rather than printing or importing the conclusions; all 53 checks pass. The necessity statement is correctly limited to nonzero displayed sectors, and the note does not claim instrument uniqueness or derive physical measurement semantics.
 - **auditor confidence:** high
+
+### `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`
+
+- **Note:** [`LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md`](../../docs/LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The canonical finite-dimensional construction yields K_r=P_r and P_r E P_r; an arbitrary apparatus-unitary twist preserves the labeled POVM only if the apparatus readout basis is correspondingly rotated.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00090-lsp_projective_derivation_fr`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting the explicitly constructed canonical dilation into the Kraus extraction formula gives K_r = P_r.  _(class `A`)_
+- **chain closes:** False — The canonical K_r=P_r contraction closes algebraically. The source's broader assertion that (U_sys⊗V_A)U_int preserves the same labeled first-outcome POVM for arbitrary V_A does not close with a fixed readout basis.
+- **rationale:** The explicit isometry and Kraus contraction correctly establish the narrow canonical Lüders result without requiring a runner. Step 3 is overbroad: with fixed apparatus readout, arbitrary V_A mixes outcome labels and generally gives K_r=U_sys Σ_s⟨r|V_A|s⟩P_s, whose effect need not equal P_r. The clean core survives after restricting to V_A=𝟙_A or explicitly rotating the apparatus readout basis.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the rotated-apparatus-readout repair route remains open in the source.
+    - N5: the arbitrary-V_A rhetoric leaves the compensating apparatus-readout resolution untested.
 
 ### `luders_sequential_effect_composition_pep_bridge_narrow_theorem_note_2026-06-05`
 

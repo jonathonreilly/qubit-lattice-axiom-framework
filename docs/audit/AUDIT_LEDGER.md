@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 384 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2737 |
+| unaudited | 2736 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 67 |
+| ~~audited_conditional~~ | 68 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 500 |
-| `audited_conditional` | 67 |
+| `audited_conditional` | 68 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3087 |
+| `unaudited` | 3086 |
 
 | claim_type | count |
 |---|---:|
@@ -697,6 +697,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_generated_wavefield_transfer_v2_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `source_resolved_radical_geometry_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `structured_chokepoint_bridge_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `teleportation_3d_initial_ramp_probe_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `universal_gr_block_normalization_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -8151,6 +8152,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner genuinely constructs staggered operators and sampled SU(3) configurations, checks anti-Hermiticity, spectral pairing, determinant and effective-action reality, axial deformation, and the positive-weight θ-sum inequality. The decisive θ_eff calculation is nevertheless an algebraic consequence of the explicitly scoped θ-free and positive-real-mass hypotheses, which the note consistently labels as selected-surface premises rather than derived physics. Clean status therefore applies only to the bounded selected-surface theorem and does not ratify an unrestricted or dynamically selected solution of strong CP.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `structured_chokepoint_bridge_note`
+
+- **Note:** [`STRUCTURED_CHOKEPOINT_BRIDGE_NOTE.md`](../../docs/STRUCTURED_CHOKEPOINT_BRIDGE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact finite N=25,40,60 parameter card and its qualitative Born, k=0, gravity, and decoherence conclusions under the named canonical readout; no architecture-level, asymptotic, or readout-independent claim was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00219-structured_chokepoint_bridge`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the specified structured placement and canonical readout at N=25,40,60, the retained rows are Born-clean, have k=0 gravity pinned to zero, retain positive gravity, and remain below the stated decoherence ceiling.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the finite card, but its current Born outputs (9.24e-16, 7.34e-16, 6.64e-16) do not match the source table (6.77e-16, 8.14e-16, 6.56e-16). The qualitative machine-precision conclusion survives, but the exact retained table is not synchronized with the supplied evidence.
+- **rationale:** Issue: three exact Born entries in the retained table are stale relative to the SHA-pinned current runner output. Why this blocks: the bounded qualitative inequalities are supported, but the note presents an exact numerical card that the supplied runner does not reproduce. Repair target: regenerate the table from the pinned runner/cache and add runner-side assertions if the card is intended to be mechanically ratifiable. Claim boundary until fixed: the specified finite slice supports Born below 1e-10, zero k=0, positive mean gravity, and pur_cl below 0.95, without broader bridge closure.
+- **auditor confidence:** high
 
 ### `structured_mirror_bornsafe_scan_note`
 

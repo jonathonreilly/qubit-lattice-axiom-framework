@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 100 |
 | **retained_no_go** | 42 |
-| **retained_bounded** | 413 |
+| **retained_bounded** | 414 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
 | unaudited | 2651 |
-| audit_in_progress | 29 |
+| audit_in_progress | 28 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 29 |
-| `audited_clean` | 542 |
+| `audit_in_progress` | 28 |
+| `audited_clean` | 543 |
 | `audited_conditional` | 94 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 43 |
@@ -139,7 +139,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_clock_rate_interface_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -497,6 +496,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
+| `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_admitted_sample_target_vector_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
@@ -7294,6 +7294,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Direct multiplication gives C A_fwd(c) C^dagger = A_fwd(c_2,c_3,c_1) and S(A_fwd(c)) = A_fwd(conjugate(c_3),conjugate(c_2),conjugate(c_1)), from which the stated fixed loci follow.  _(class `A`)_
 - **chain closes:** True — The identities follow directly from the displayed matrix definitions: cyclic conjugation fixes exactly equal coefficient triples, I_3 has zero entries in the three forward-cycle slots, and the swap-conjugation fixed equation is equivalent to c_1=conjugate(c_3) with c_2 real.
 - **rationale:** The source has narrowed the claim to dependency-free finite matrix algebra and explicitly excludes every physical or graph-derived bridge previously responsible for conditional verdicts. The runner constructs the displayed matrices and performs genuine matrix operations rather than importing or printing contested values; its eleven firewall checks and eight algebraic checks all pass. Although the runner demonstrates the fixed families through representative checks rather than symbolically proving exhaustiveness, the componentwise map displayed by its definitions makes the exact fixed-locus conclusions immediate.
+- **auditor confidence:** high
+
+### `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26`
+
+- **Note:** [`PMNS_TM2_MAGNITUDES_CONDITIONAL_BOUNDED_NOTE_2026-05-26.md`](../../docs/PMNS_TM2_MAGNITUDES_CONDITIONAL_BOUNDED_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic determination of the PMNS magnitudes-squared matrix from a trimaximal second column, mu-tau equal moduli, doubly stochastic sums, and the supplied parameter s^2 = |U_e3|^2.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00072-pmns_tm2_magnitudes_conditio`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The electron-row sum fixes |U_e1|^2 = 2/3 - s^2, while the first- and third-column sums together with mu-tau equality fix the remaining paired entries as 1/6 + s^2/2 and (1 - s^2)/2.  _(class `A`)_
+- **chain closes:** True — The displayed entries follow uniquely from the stated row and column sums and mu-tau equality. Nonnegativity on 0 <= s^2 <= 2/3 follows directly from the resulting affine entries.
+- **rationale:** The claim is a correct finite-dimensional algebraic theorem within its explicitly conditional scope and does not purport to derive the PMNS residual assumptions or a value of s^2. The runner exactly verifies 41 algebraic instances and structural checks, although it encodes the displayed matrix and samples finitely many parameter values; the general closure therefore rests on the note's direct symbolic proof. No empirical comparator, tuned input, renaming, or unclosed cited authority enters the audited conclusion.
 - **auditor confidence:** high
 
 ### `pmns_tm2_residual_consequence_bounded_note_2026-05-26`

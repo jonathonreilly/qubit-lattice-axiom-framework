@@ -52,10 +52,11 @@ M = M_S I + M_epsilon epsilon
 the premise fixes `M_epsilon = 0` and `M_S` real-positive.
 
 This is a row-local bounded premise for this bridge. It is not derived here
-from the Lattice / Quantum / Record baseline alone, and it is not a global
-axiom, framework primitive, or Tier-A admission. The purpose of the bridge is
-to make the scalar-mass-only action-class boundary review-visible, because the
-determinant phase checks alone do not exclude every mixed/pseudoscalar route.
+from the Lattice / Qubit / Admissibility / Record baseline alone, and it is not
+a global axiom, framework primitive, or Tier-A admission. The purpose of the
+bridge is to make the scalar-mass-only action-class boundary review-visible,
+because the determinant phase checks alone do not exclude every
+mixed/pseudoscalar route.
 
 ## Consequences Verified
 

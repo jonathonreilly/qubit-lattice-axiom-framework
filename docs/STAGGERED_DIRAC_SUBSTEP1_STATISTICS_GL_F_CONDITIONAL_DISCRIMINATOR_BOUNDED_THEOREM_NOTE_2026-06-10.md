@@ -52,7 +52,7 @@ removed.
 ## 1. Setting and the one open predicate
 
 Let `Λ` be a finite block of `Z^3` with `N = |Λ|` sites, `H_Λ = (C²)^{⊗N}`
-the qubit tensor product of the Quantum axiom, and let
+the qubit tensor product of the Qubit axiom, and let
 
 ```text
     F  =  ⊗_{x ∈ Λ} σ₃^(x)  =  (-1)^{Q̂_total}
@@ -153,9 +153,9 @@ admit it, and does not ask the audit to adjudicate a global supplier survey.
   anticipates. Its disclaimer ("does not by itself prove a physical
   fermion-statistics selector or superselection rule") is preserved: (T1)
   computes that the grading is frame-blind.
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — baseline
-  (Lattice, Quantum, Record). **License used here:** the one-qubit-per-site
-  tensor-product carrier only.
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — baseline
+  (Lattice, Qubit, Admissibility, Record). **License used here:** the
+  one-qubit-per-site tensor-product carrier only.
 
 **Admitted-context inputs:** standard finite-dimensional linear algebra and
 tensor products; the Jordan-Wigner construction (Jordan-Wigner 1928) as

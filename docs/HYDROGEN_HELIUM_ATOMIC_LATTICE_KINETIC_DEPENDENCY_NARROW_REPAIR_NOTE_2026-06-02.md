@@ -28,17 +28,17 @@ on finite `Z^3` boxes. The repair has three parts:
 
 This is a companion repair only. It does not edit the parent note, does not add
 an axiom or primitive, does not add a Tier-A input, and does not change any
-consumer row's generated status. The Lattice/Quantum/Record baseline is kept
-separate from the atomic dependency: Lattice supplies the `Z^3` graph, Quantum
-supplies the one-qubit operator algebra, and Record is not used to derive the
-scalar atomic Hamiltonian.
+consumer row's generated status. The Lattice/Qubit/Admissibility/Record
+baseline is kept separate from the atomic dependency: Lattice supplies the
+`Z^3` graph, Qubit supplies the one-qubit operator algebra, and Record is not
+used to derive the scalar atomic Hamiltonian.
 
 ## Source Dependencies
 
 Load-bearing links:
 
-- [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md) fixes the
-  current named baseline: Lattice, Quantum, and Record.
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) fixes the
+  current named baseline: Lattice, Qubit, Admissibility, and Record.
 - [`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
   supplies the nearest-neighbor `Z^3` graph-Laplacian stencil and the
   `G(r) -> 1/(4 pi |r|)` asymptote used below.

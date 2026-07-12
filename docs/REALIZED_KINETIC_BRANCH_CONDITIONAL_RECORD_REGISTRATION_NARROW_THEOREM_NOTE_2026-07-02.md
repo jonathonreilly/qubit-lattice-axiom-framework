@@ -34,12 +34,12 @@ from kinetic branch selection and says that a realized branch statement should
 name the needed structure:
 "nonzero first-order Dirac-square kinetic carrier, translation covariance/locality as required by the target theorem, and the mutually anticommuting self-adjoint-unitary coefficient family if the d<=3 Clifford-capacity theorem is being invoked".
 
-The record no-go `RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`
-has the title claim "Record Formation Is Not Unconditionally Forced by
-Lattice, Quantum, and Record". This theorem is compatible with that boundary:
-it "does not unconditionally force record formation". It conditions on a
-supplied realized state and on a record stack already containing the specified
-kind of record.
+The current Record axiom says "Records form." Occurrence is axiom content,
+while every formation rule (which admissible possibility a new record locks,
+at which site, with what weight, or at what rate) remains downstream supplier
+content. This theorem is compatible with that boundary: it does not supply a
+formation rule. It conditions on a supplied realized state and on a record
+stack already containing the specified kind of record.
 
 The current Record axiom says a record "locks exactly one admissible local
 possibility". The realized-state

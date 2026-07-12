@@ -61,23 +61,24 @@ This is a review-only N1-N8 record for the consequence on line 32. It does not
 pre-assign an audit verdict; the independent audit lane must rebuild the packet
 against authenticated evidence.
 
-- **N1 — six distinct attacks.** (1) An exact simultaneous-commutator solve for
-  the two generating transpositions leaves dimension two (`ATTEMPTED` in the
-  runner). (2) The independent character calculation gives multiplicities
-  `m_(A_1)=1`, `m_(A_2)=0`, `m_E=1` (`ATTEMPTED`). (3) A combinatorial orbit
-  count on ordered matrix-entry labels gives only the diagonal and off-diagonal
-  entry classes (`ATTEMPTED`). These three routes close the stated commutant by
-  linear-algebra, character, and orbit methods rather than by repeating one
-  calculation. (4) Weakening exact `S_3` to the axis-fixing `Z_2` raises the
-  commutant dimension to five (`ATTEMPTED`) and is an explicit escape outside
-  the symmetry hypothesis. (5) Replacing `A_1 direct-sum E` by three repeated
-  trivial irreps gives commutant dimension nine and permits a generic three-way
-  spectrum (`ATTEMPTED`), an escape outside the representation hypothesis.
-  (6) On the stated representation, `diag(1,2,3)` has three eigenvalues but a
-  nonzero commutator with a generating transposition (`ATTEMPTED`), so the
-  direct counterexample route leaves exact invariance rather than defeating the
-  lemma. Schur decomposition and exact diagonalization then cross-check the
-  positive characterization; they are not counted as additional N1 attacks.
+- **N1 — six distinct attack classes.** (1) **Symmetry/representation:** solve
+  the simultaneous generator commutators; the commutant is two-dimensional.
+  Character and ordered-pair-orbit calculations are cross-checks of this one
+  route, not additional attacks. (2) **Alternate carrier:** replace
+  `A_1 direct-sum E` by three repeated trivial irreps; the commutant becomes
+  nine-dimensional and a three-way spectrum is possible outside the carrier
+  hypothesis. (3) **Boundary/background:** weaken pointwise `S_3` to the
+  axis-fixing `Z_2`; the invariant Hermitian space has dimension five outside
+  the exact-symmetry hypothesis. (4) **Alternate observable/readout:** apply a
+  polynomial spectral readout to `alpha I + beta P_(A_1)`; functional calculus
+  still cannot create a third spectral value. (5) **Approximate-symmetry
+  limit:** add an arbitrarily small generic diagonal perturbation; it splits
+  three ways only with a nonzero generator commutator. (6)
+  **Dynamical/equivariant family:** `M(phi)=diag(phi)` is covariant as a family,
+  and a generic realized background has three values, but it is not a
+  pointwise invariant operator. The runner executes all six attack classes;
+  normalization/unitary-basis changes provide an additional cardinality
+  cross-check.
 - **N2 — condition independence.** The supplied unitary representation
   `V ~= A_1 direct-sum E` does not imply that a chosen operator is exactly
   `S_3` invariant, and exact invariance does not select that representation.
@@ -88,9 +89,12 @@ against authenticated evidence.
   or four-axiom bridge is imported.
 - **N4 — residual matching.** No prior negative claim is used as a witness.
   In particular, the older physical-carrier note is excluded from the proof.
-- **N5 — rhetoric resolution.** The tested statement is finite-dimensional and
-  operator-level on the supplied `V`. No per-site, lattice-wide, physical-mass,
-  or alternate-representation exclusion is stated.
+- **N5 — rhetoric resolution.** The runner emits all five required resolution
+  checks: `per_element` distinguishes the two matrix-entry orbits; `per_site`
+  denies a site/physical-site identification; `per_mode` counts only the
+  `A_1` singlet and `E` doublet modes; `per_block` limits the result to one
+  supplied three-dimensional operator block; and `lattice_wide` denies any
+  lattice-wide or physical-generation exclusion.
 - **N6 — partial-closure paths.** Breaking `S_3`, changing the representation,
   or introducing multiplicities can permit a three-value spectrum. Those are
   honest escape routes outside the two explicit hypotheses, not new axioms and
@@ -100,7 +104,8 @@ against authenticated evidence.
   whose background transforms with `phi`, not a pointwise invariant operator.
   A realized symmetry-breaking `phi_0` can then give `M(phi_0)` three distinct
   eigenvalues while the full family remains covariant. That would refute a
-  family-level reading. The lemma survives only because its hypothesis is the
+  family-level reading. The runner now tests this equivariant family and its
+  generic realized background directly. The lemma survives only because its hypothesis is the
   narrower pointwise equation `U_g M U_g^* = M` for every `g` on the supplied
   ordinary representation; the note makes no claim about equivariant families
   or realized symmetry-breaking backgrounds.

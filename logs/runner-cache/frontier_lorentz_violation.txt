@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_violation.py
-runner_sha256: cc9ecf5156400a6f8c945ed6655549011b1c3bac4a7ea2673422d4d069d6a6a4
+runner_sha256: 78929f59f68877d7cc06f96d3056f95156bc9069261d81c2b01d8aed4b475464
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.88
+elapsed_sec: 2.05
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -211,22 +211,12 @@ Conditional SME-style scale parameterization
      comparison; the runner has not established the sector mapping needed for
      an experimental exclusion.
 
-  3. SCALING WITH ENERGY
+  3. INTERPRETATION LIMIT
 
-     The suppression factor is (E/E_Planck)^2. To reach experimental
-     sensitivity, we would need:
-
-     (E/E_Planck)^2 > 10^-32  (photon birefringence bound)
-     E > E_Planck * 10^-16 ~ 10^3 GeV ~ 1 TeV
-
-     But at 1 TeV, the lattice correction for a Planck-scale lattice is:
-     (1000 / 1.22e19)^2 / 12 = 5.5906e-34
-
-     This is ~10^-32, which JUST touches the photon birefringence bound.
-     At the LHC energy scale (14 TeV):
-     (14000 / 1.22e19)^2 / 12 = 1.0958e-31
-
-     Still below the birefringence bound by a factor of ~100.
+     The dimensionless factor (E/E_Planck)^2 cannot be compared directly with
+     a dimensionful SME coefficient bound. This runner therefore makes no
+     energy-reach estimate. A valid comparison requires a specified carrier,
+     observable, sector convention, and dimensionally matched response map.
 
 
 ==============================================================================
@@ -306,7 +296,7 @@ SCOPE VERDICT
     harmonic identity. It does not promote the calculation to a four-axiom,
     CPT, SME-matching, or experimental-consistency result.
 
-  Elapsed: 1.7 s
+  Elapsed: 1.9 s
 
 ==============================================================================
 EXPERIMENT COMPLETE

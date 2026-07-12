@@ -71,9 +71,11 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import no_go_discipline_gate
@@ -467,16 +469,30 @@ def restore_audit_from_previous(
     row: dict,
     rows: dict[str, dict] | None = None,
 ) -> dict | None:
-    """Pop the most recent previous_audits entry and copy its archived
-    fields back to the live row. Returns the new row, or None if there's
-    nothing to restore.
+    """Copy the most recent previous_audits entry back to the live row.
+
+    The invalidation archive remains append-only. A separate restoration
+    record identifies the exact archived payload and policy that authorized
+    reversal, so restoration never erases the reason the audit was archived.
     """
     history = list(row.get("previous_audits") or [])
     if not history:
         return None
-    archived = history.pop()
+    archived = history[-1]
     new_row = dict(row)
     new_row["previous_audits"] = history
+    archived_reference = hashlib.sha256(
+        json.dumps(archived, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
+    restoration_history = list(row.get("restoration_history") or [])
+    restoration_history.append({
+        "restored_at": datetime.now(timezone.utc).isoformat(),
+        "restoration_policy": "restore_overaggressive_invalidation.v2",
+        "archived_audit_sha256": archived_reference,
+        "archived_at": archived.get("archived_at"),
+        "invalidation_reason": archived.get("invalidation_reason"),
+    })
+    new_row["restoration_history"] = restoration_history
     for field in ARCHIVED_FIELDS:
         if field in archived:
             new_row[field] = archived[field]
@@ -518,8 +534,12 @@ def restore_audit_from_previous(
     current_manifest = None
     if new_row.get("no_go_discipline") is not None or cross_has_packet:
         ledger_rows = rows or {str(new_row.get("claim_id") or ""): new_row}
+        validation_row = dict(new_row)
+        validation_row["previous_audits"] = history[:-1]
+        validation_rows = dict(ledger_rows)
+        validation_rows[str(new_row.get("claim_id") or "")] = validation_row
         current_manifest = no_go_discipline_gate.build_evidence_manifest(
-            new_row, ledger_rows, REPO_ROOT
+            validation_row, validation_rows, REPO_ROOT
         )
     if isinstance(cross, dict):
         for audit_key in ("first_audit", "second_audit", "third_audit"):

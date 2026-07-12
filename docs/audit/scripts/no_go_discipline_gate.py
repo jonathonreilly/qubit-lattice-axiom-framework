@@ -35,6 +35,20 @@ ROUTE_CLASSES = {
     "topology_or_global_structure",
     "dependency_or_registry_reclassification",
 }
+ROUTE_CLASS_MARKERS = {
+    "algebraic_rearrangement": re.compile(r"\b(?:algebra|identity|rearrang|factor|cancel|solve)\w*\b", re.I),
+    "symmetry_or_representation": re.compile(r"\b(?:symmetr|represent|commut|character|irrep|group)\w*\b", re.I),
+    "alternate_carrier_or_sector": re.compile(r"\b(?:alternate\s+)?(?:carrier|sector|module|space|irrep)\b", re.I),
+    "boundary_or_initial_condition": re.compile(r"\b(?:boundary|initial|background|state|pointwise)\w*\b", re.I),
+    "normalization_or_units": re.compile(r"\b(?:normaliz|units?|scale|dimensionful)\w*\b", re.I),
+    "dynamical_or_effective_action": re.compile(r"\b(?:dynamic|effective|action|evolution|equivariant\s+family)\w*\b", re.I),
+    "lattice_scale_or_limit": re.compile(r"\b(?:lattice|continuum|limit|finite[- ]size|asymptotic|approximate)\w*\b", re.I),
+    "numerical_or_finite_case": re.compile(r"\b(?:numeric|finite|sample|scan|compute)\w*\b", re.I),
+    "convention_or_relabeling": re.compile(r"\b(?:convention|relabel|rename|basis\s+label)\w*\b", re.I),
+    "alternate_observable_or_readout": re.compile(r"\b(?:observable|readout|nonlinear|spectrum|eigenvalue)\w*\b", re.I),
+    "topology_or_global_structure": re.compile(r"\b(?:topolog|global|bundle|homotop|cohomolog)\w*\b", re.I),
+    "dependency_or_registry_reclassification": re.compile(r"\b(?:dependency|registry|reclassif|premise|authority)\w*\b", re.I),
+}
 DEMOTIONS = {
     "partial-attempt-with-named-untested-routes",
     "partial-narrowing",
@@ -72,6 +86,9 @@ NEGATIVE_ASSERTION_RE = re.compile(
     r"(?:candidate\s+)?(?:routes?|attempts?|constructions?|carriers?|selectors?)\b|"
     r"\b(?:the\s+)?(?:selector|source|carrier|route|construction)\s+"
     r"remain(?:s)?\s+underdetermined\b|"
+    r"\bno\s+(?:admissible\s+|candidate\s+)?(?:selector|source|carrier|route|construction)\s+"
+    r"can\s+(?:produce|derive|supply|select|recover|close)\b|"
+    r"\ball\s+(?:candidate\s+)?(?:routes?|attempts?|constructions?)\s+fail\b|"
     r"(?:cannot|can not|is not|are not) (?:be )?deriv(?:ed|able)(?: from)?|"
     r"(?:does not|cannot|fails? to|failed to) lift|"
     r"\b(?:cannot|does not|do not)\s+(?:select|orient|factor|factorize|derive|supply|"
@@ -240,6 +257,13 @@ FORCED_SPECTRAL_BOUNDARY_RES = (
         r"(?:eigenvalues?|spectral\s+values?)\b",
         re.IGNORECASE,
     ),
+)
+SPECTRAL_EXCLUSION_RE = re.compile(
+    r"\b(?:cannot|can\s+not)\s+have\s+(?:\d+|one|two|three|four|five)\s+"
+    r"distinct\s+(?:eigenvalues?|spectral\s+values?)\b|"
+    r"\bforces?\s+(?:an?\s+)?(?:doubly|two[- ]?fold|triply|three[- ]?fold)"
+    r"[- ]degenerate\s+(?:eigenspace|eigenvalue|spectrum)\b",
+    re.IGNORECASE,
 )
 SPECTRAL_NEGATION_PREFIX_RE = re.compile(
     r"\b(?:not|never|cannot|can't|does\s+not|doesn't|do\s+not|don't|"
@@ -502,10 +526,15 @@ def _search_terms(text: str) -> set[str]:
     }
 
 
-def _row_search_terms(row: dict[str, Any]) -> set[str]:
+def _row_search_terms(
+    row: dict[str, Any], repo_root: str | Path | None = None
+) -> set[str]:
     stable_basis = " ".join(
-        str(row.get(field) or "") for field in ("claim_id", "note_path")
+        str(row.get(field) or "")
+        for field in ("claim_id", "note_path", "title", "claim_scope")
     )
+    if repo_root is not None and row.get("note_path"):
+        stable_basis += " " + _read_text(Path(repo_root), str(row["note_path"]))
     return _search_terms(re.sub(r"[_/.-]+", " ", stable_basis))
 
 
@@ -517,7 +546,8 @@ def build_cross_cycle_index(
     """Render the orchestrator-owned N8 search surface supplied to the auditor."""
     candidates: list[dict[str, Any]] = []
     cid = str(row.get("claim_id") or "")
-    current_terms = _row_search_terms(row)
+    root = Path(repo_root)
+    current_terms = _row_search_terms(row, root)
 
     def add_history(
         source_id: str, history: list[Any], *, require_overlap: bool = False
@@ -566,7 +596,6 @@ def build_cross_cycle_index(
             require_overlap=True,
         )
 
-    root = Path(repo_root)
     obligations = _load_json(root, OBLIGATION_REGISTRY)
     for obligation_id, record in sorted((obligations.get("nodes") or {}).items()):
         candidates.append(
@@ -769,7 +798,7 @@ def build_partial_closure_index(
     """Render the orchestrator-owned N6 convention/reframe search surface."""
     root = Path(repo_root)
     cid = str(row.get("claim_id") or "")
-    current_terms = _row_search_terms(row)
+    current_terms = _row_search_terms(row, root)
     candidates: list[dict[str, Any]] = []
 
     def add_candidate(
@@ -883,6 +912,38 @@ def build_partial_closure_index(
             content_sha256=hashlib.sha256(content.encode("utf-8")).hexdigest(),
         )
 
+    claim_rows = [
+        other
+        for other in ledger_rows.values()
+        if other.get("claim_type") in {
+            "positive_theorem", "bounded_theorem", "open_gate", "no_go"
+        }
+        and other.get("note_path")
+        and other.get("note_path") != row.get("note_path")
+    ]
+    claim_paths = sorted({str(other["note_path"]) for other in claim_rows})
+    claim_hits: list[tuple[int, str, str, list[str]]] = []
+    for other in claim_rows:
+        identity_overlap = current_terms.intersection(_row_search_terms(other))
+        if len(identity_overlap) < 2:
+            continue
+        path = str(other["note_path"])
+        content = _read_text(root, path)
+        overlap = sorted(current_terms.intersection(_search_terms(content)))
+        if len(overlap) >= 2 and keyword_re.search(content):
+            claim_hits.append((len(overlap), path, content, overlap))
+    for _score, path, content, overlap in sorted(
+        claim_hits, key=lambda item: (-item[0], item[1])
+    )[:20]:
+        add_candidate(
+            candidate_id=f"claim_reframe:{path}",
+            kind="claim_scope_reframe",
+            source_path=path,
+            content=evidence_lines(content),
+            matching_terms=overlap,
+            content_sha256=hashlib.sha256(content.encode("utf-8")).hexdigest(),
+        )
+
     reframe_globs = (
         ".claude/science/physics-loops/**/HANDOFF.md",
         ".claude/science/physics-loops/**/BRANCH_HANDOFF.md",
@@ -929,6 +990,15 @@ def build_partial_closure_index(
                     ).hexdigest(),
                     "minimum_shared_terms": 2,
                     "candidate_limit": 10,
+                    "evidence_line_limit_per_candidate": 5,
+                },
+                "claim_notes": {
+                    "scanned_count": len(claim_paths),
+                    "scanned_paths_sha256": hashlib.sha256(
+                        json.dumps(claim_paths, separators=(",", ":")).encode("utf-8")
+                    ).hexdigest(),
+                    "minimum_shared_terms": 2,
+                    "candidate_limit": 20,
                     "evidence_line_limit_per_candidate": 5,
                 },
                 "repository_visible_in_flight_reframes": {
@@ -1471,6 +1541,20 @@ def _has_negative_boundary_assertion(text: str) -> bool:
         prose,
         flags=re.IGNORECASE,
     )
+    prose = re.sub(r"(?m)^\s*[^\n.!?]*\?\s*$", "", prose)
+    prose = re.sub(
+        r"(?im)^\s*(?:see|refer\s+to|compare|cf\.)\b[^\n.!?]*"
+        r"\b(?:no[- ]?go|obstruction|firewall)\b[^\n.!?]*[.!]?\s*$",
+        "",
+        prose,
+    )
+    prose = re.sub(
+        r"(?im)^\s*(?:the\s+)?(?:runner|script|implementation|renderer|tool)\s+"
+        r"(?:does\s+not|cannot|fails?\s+to)\s+"
+        r"(?:produce|render|write|emit|plot|display)\b[^\n.!?]*[.!]?\s*$",
+        "",
+        prose,
+    )
     normalized = re.sub(r"[`*_~$(){}\[\]]", "", prose)
     cleaned = NEGATED_NEGATIVE_ASSURANCE_RE.sub("", normalized)
     cleaned = NEGATED_LABEL_ASSURANCE_RE.sub("", cleaned)
@@ -1479,6 +1563,7 @@ def _has_negative_boundary_assertion(text: str) -> bool:
         EXPLICIT_NEGATIVE_CLOSURE_RE.search(cleaned)
         or NEGATIVE_SUBJECT_CLOSURE_RE.search(cleaned)
         or _has_forced_spectral_boundary(cleaned)
+        or SPECTRAL_EXCLUSION_RE.search(cleaned)
         or _has_governed_no_existence(cleaned)
         or INABILITY_CLOSURE_RE.search(cleaned)
         or BOUNDARY_SUBJECT_NEGATIVE_RE.search(cleaned)
@@ -1807,6 +1892,14 @@ def _validate_n1(packet: dict, status: str, manifest: dict[str, dict] | None) ->
             return f"N1 route_id {route['route_id']!r} is duplicated"
         if route_class not in ROUTE_CLASSES:
             return f"N1 route {index}.route_class must be one of {sorted(ROUTE_CLASSES)}"
+        route_semantics = " ".join(
+            str(route.get(field) or "") for field in ("mechanism", "attempt", "outcome")
+        )
+        if not ROUTE_CLASS_MARKERS[route_class].search(route_semantics):
+            return (
+                f"N1 route {index}.route_class={route_class!r} is not supported "
+                "by its evidenced mechanism/attempt/outcome vocabulary"
+            )
         marker = route["honesty_marker"].strip().upper()
         disposition = route["disposition"].strip().upper()
         if marker not in HONESTY_MARKERS:
@@ -1904,6 +1997,7 @@ def _validate_n2(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     seen_pairs = set()
     dependent_walls: set[str] = set()
     directional_edges: list[tuple[str, str]] = []
+    equivalent_pairs: list[tuple[str, str]] = []
     for index, check in enumerate(checks, 1):
         if not isinstance(check, dict) or not _text(check.get("left")) or not _text(check.get("right")):
             return f"N2 pairwise check {index} must name left and right walls"
@@ -1926,8 +2020,6 @@ def _validate_n2(packet: dict, status: str, manifest: dict[str, dict] | None) ->
         expected_independent = not check["left_closes_right"] and not check["right_closes_left"]
         if check["independent"] != expected_independent:
             return f"N2 pairwise check {index}.independent is inconsistent"
-        if check["left_closes_right"] and check["right_closes_left"]:
-            return f"N2 pairwise check {index} cannot claim both directional closures"
         if not _text(check.get("rationale")) or len(_norm(check["rationale"])) < 40:
             return f"N2 pairwise check {index}.rationale must explain the directional test"
         if _norm(check["left"]) not in _norm(check["rationale"]) or _norm(check["right"]) not in _norm(check["rationale"]):
@@ -1942,18 +2034,40 @@ def _validate_n2(packet: dict, status: str, manifest: dict[str, dict] | None) ->
             manifest[check["evidence_path"]], check["rationale"]
         ):
             return f"N2 pairwise check {index}.rationale is not evidenced at evidence_path"
-        if check["left_closes_right"]:
+        if check["left_closes_right"] and check["right_closes_left"]:
+            equivalent_pairs.append((_norm(check["left"]), _norm(check["right"])))
+        elif check["left_closes_right"]:
             dependent_walls.add(_norm(check["right"]))
             directional_edges.append((_norm(check["left"]), _norm(check["right"])))
-        if check["right_closes_left"]:
+        elif check["right_closes_left"]:
             dependent_walls.add(_norm(check["left"]))
             directional_edges.append((_norm(check["right"]), _norm(check["left"])))
         seen_pairs.add(pair)
     if seen_pairs != expected_pairs:
         return "N2.pairwise_checks must cover every unordered wall pair"
-    graph: dict[str, set[str]] = {wall: set() for wall in wall_map}
+    parent = {wall: wall for wall in wall_map}
+
+    def find(wall: str) -> str:
+        while parent[wall] != wall:
+            parent[wall] = parent[parent[wall]]
+            wall = parent[wall]
+        return wall
+
+    def union(left: str, right: str) -> None:
+        left_root, right_root = find(left), find(right)
+        if left_root != right_root:
+            parent[max(left_root, right_root)] = min(left_root, right_root)
+
+    for left, right in equivalent_pairs:
+        union(left, right)
+    graph: dict[str, set[str]] = {find(wall): set() for wall in wall_map}
+    dependent_components: set[str] = set()
     for source, target in directional_edges:
-        graph[source].add(target)
+        source_root, target_root = find(source), find(target)
+        if source_root == target_root:
+            continue
+        graph[source_root].add(target_root)
+        dependent_components.add(target_root)
     visiting: set[str] = set()
     visited: set[str] = set()
 
@@ -1971,7 +2085,14 @@ def _validate_n2(packet: dict, status: str, manifest: dict[str, dict] | None) ->
 
     if any(has_cycle(wall) for wall in graph):
         return "N2 directional closure relation must be acyclic"
-    expected_collapsed = set(wall_map) - dependent_walls
+    components: dict[str, list[str]] = {}
+    for wall in wall_map:
+        components.setdefault(find(wall), []).append(wall)
+    expected_collapsed = {
+        sorted(members)[0]
+        for root, members in components.items()
+        if root not in dependent_components
+    }
     if status == "PASS" and not expected_collapsed:
         return "No-Go Discipline PASS must retain at least one evidenced N2 wall"
     if {_norm(wall) for wall in collapsed} != expected_collapsed:
@@ -2120,14 +2241,25 @@ def _validate_n4(packet: dict, status: str, manifest: dict[str, dict] | None) ->
             return f"N4 witness {index} must be an object"
         error = _unknown_fields(
             witness,
-            {"witness_id", "route_id", "witness_residual", "claim_residual", "match", "evidence_path", "evidence_locator"},
+            {
+                "witness_id", "route_id", "witness_residual", "claim_residual",
+                "witness_residual_id", "claim_residual_id", "match",
+                "evidence_path", "evidence_locator", "claim_evidence_path",
+                "claim_evidence_locator",
+            },
             f"N4 witness {index}",
         )
         if error:
             return error
-        for field in ("witness_id", "route_id", "witness_residual", "claim_residual"):
+        for field in (
+            "witness_id", "route_id", "witness_residual", "claim_residual",
+            "witness_residual_id", "claim_residual_id",
+        ):
             if not _text(witness.get(field)):
                 return f"N4 witness {index}.{field} must be non-empty"
+        for field in ("witness_residual_id", "claim_residual_id"):
+            if not re.fullmatch(r"residual:[a-z0-9_.:-]{6,128}", witness[field], re.I):
+                return f"N4 witness {index}.{field} must be a stable residual:<id>"
         witness_id = _norm(witness["witness_id"])
         route_id = _norm(witness["route_id"])
         if witness_id in witness_ids:
@@ -2140,16 +2272,33 @@ def _validate_n4(packet: dict, status: str, manifest: dict[str, dict] | None) ->
         error = _locator_error(witness.get("evidence_path"), witness.get("evidence_locator"), manifest, f"N4 witness {index}")
         if error:
             return error
+        error = _locator_error(
+            witness.get("claim_evidence_path"),
+            witness.get("claim_evidence_locator"),
+            manifest,
+            f"N4 witness {index} claim residual",
+        )
+        if error:
+            return error
         if manifest is not None:
-            if not _entry_contains(manifest[witness["evidence_path"]], witness["witness_residual"]):
+            witness_entry = manifest[witness["evidence_path"]]
+            claim_entry = manifest[witness["claim_evidence_path"]]
+            if "authority" not in set(witness_entry.get("roles") or []):
+                return f"N4 witness {index} witness residual must cite an authority"
+            if "source" not in set(claim_entry.get("roles") or []):
+                return f"N4 witness {index} claim residual must cite the source"
+            if not _entry_contains(witness_entry, witness["witness_residual"]):
                 return f"N4 witness {index}.witness_residual is not evidenced at its path"
-            source_entries = [
-                entry for entry in manifest.values()
-                if "source" in set(entry.get("roles") or [])
-            ]
-            if not any(_entry_contains(entry, witness["claim_residual"]) for entry in source_entries):
+            if not _entry_contains(witness_entry, witness["witness_residual_id"]):
+                return f"N4 witness {index}.witness_residual_id is not evidenced at its path"
+            if not _entry_contains(claim_entry, witness["claim_residual"]):
                 return f"N4 witness {index}.claim_residual is not evidenced in the source"
-        expected_match = _norm(witness["witness_residual"]) == _norm(witness["claim_residual"])
+            if not _entry_contains(claim_entry, witness["claim_residual_id"]):
+                return f"N4 witness {index}.claim_residual_id is not evidenced in the source"
+        expected_match = (
+            _norm(witness["witness_residual_id"]) == _norm(witness["claim_residual_id"])
+            and _norm(witness["witness_residual"]) == _norm(witness["claim_residual"])
+        )
         if witness["match"] != expected_match:
             return f"N4 witness {index}.match is inconsistent with the residual comparison"
         if status == "PASS" and not witness["match"]:

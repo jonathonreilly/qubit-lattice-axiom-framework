@@ -1,11 +1,15 @@
 # S_3 Mass-Matrix No-Go Note
 
 **Date:** 2026-04-17
-**Claim type:** no_go
-**Status:** unaudited legacy no-go audit target; not publication-usable
+**Claim type:** open_gate
+**Status:** unaudited historical carrier-scope audit target; not publication-usable
 **Script:** `scripts/frontier_s3_mass_matrix_no_go.py`
 **Authority role:** historical proposed symmetry constraint; no current
 retained authority for a physical `hw=1` generation carrier
+
+This historical filename does not turn the row into a current no-go. The
+physical carrier question remains open; the separate conditional lemma holds
+only on a supplied abstract representation.
 
 ## Safe statement
 
@@ -36,19 +40,19 @@ space expands to real dimension `5`.
 - the Hermitian spectral theorem
 - the fixed-space dimension formula `dim End(V)^G = sum_i m_i^2`
 
-## Framework-specific step
+## Historical physical-carrier proposal (not authority)
 
-- identification of the retained `hw=1` triplet as the relevant generation
-  carrier for this support theorem
-- reuse of the exact taste-cube `S_3` decomposition on the current package
-  surface
+- The old physical identification of `hw=1` as a generation carrier and reuse
+  of the taste-cube decomposition are not established by this note or runner.
+- They remain excluded external bridge questions; this source supplies no
+  retained physical-carrier dependency.
 
 ## Why it matters on `main`
 
-This note is not a retained flavor-numerics claim. Its safe job is narrower:
-it gives the exact symmetry-theoretic boundary for any future flavor lane that
-tries to keep the `hw=1` carrier inside an unbroken `S_3` mass class. On that
-carrier, a three-way split requires leaving the exact `S_3`-invariant class.
+This legacy note is not current theorem authority. Its algebraic core has been
+rescoped to the separate conditional `A_1 direct-sum E` lemma. Any future
+physical flavor statement must independently identify its carrier and group
+action before consuming that abstract result.
 
 ## Verification
 

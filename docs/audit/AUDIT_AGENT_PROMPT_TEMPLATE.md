@@ -314,6 +314,7 @@ Return a single JSON object with exactly these fields. No other prose.
 ```json
 {
   "claim_id": "{{CLAIM_ID}}",
+  "audit_invocation_id": "{{AUDIT_INVOCATION_ID}}",
   "load_bearing_step": "<one-sentence quote or paraphrase from the note>",
   "load_bearing_step_class": "<one of A, B, C, D, E, F, G>",
   "claim_type": "<one of positive_theorem, bounded_theorem, no_go, open_gate, decoration, meta>",

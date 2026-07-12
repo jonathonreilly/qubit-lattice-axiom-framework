@@ -32,6 +32,7 @@ fresh-look requirement.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -600,12 +601,12 @@ def find_cached_runner_output(runner_path: str) -> str | None:
 
 
 def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
-                      use_cache: bool = True) -> str:
-    """Get runner output. Tries the SHA-pinned cache first if
-    use_cache=True; falls back to running the runner live (slow but
-    correct) with a per-runner timeout. The audit lane's pre-commit and
-    CI gates ensure caches stay fresh in normal operation; live fallback
-    only runs when the cache is missing for some reason.
+                      use_cache: bool = False) -> str:
+    """Get runner output, live by default.
+
+    Source-SHA caches do not authenticate mutable note/data/registry inputs,
+    so authority-bearing audit callers must keep ``use_cache=False``. The
+    opt-in cache path remains for non-authoritative diagnostics.
     """
     if not runner_path:
         return ""
@@ -643,9 +644,10 @@ def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
 
 def render_prompt(row: dict, ledger_rows: dict[str, dict],
                   template: str, runner_timeout_sec: int,
-                  use_cache: bool = True,
+                  use_cache: bool = False,
                   skip_runner_stdout: bool = False,
-                  evidence_manifest_out: dict[str, dict] | None = None) -> str:
+                  evidence_manifest_out: dict[str, dict] | None = None,
+                  audit_invocation_id: str | None = None) -> str:
     """Substitute the prompt template's variables for one queue row.
 
     If ``skip_runner_stdout`` is True, do NOT invoke the runner subprocess
@@ -833,13 +835,10 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
                     f"... [truncated; helper is {len(hsrc)} chars total] ...\n\n"
                     f"{tail}"
                 )
-            if skip_runner_stdout:
-                hcache = "(helper cache suppressed by --no-runner)"
-            else:
-                hcache = find_cached_runner_output(hp)
-                if hcache is None:
-                    cache_name = rc.cache_path_for(hp).relative_to(REPO_ROOT)
-                    hcache = f"[helper runner cache missing or stale: {cache_name}]"
+            hcache = (
+                "(helper cache is not audit authority; current helper source "
+                "is inspected and the primary runner is executed live)"
+            )
             helper_block = (
                 f"=== BEGIN HELPER RUNNER: {hp} ===\n"
                 f"{hsrc}\n"
@@ -887,6 +886,7 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     # context remain raw evidence instead of being expanded as another field.
     replacements = {
         "{{CLAIM_ID}}": cid,
+        "{{AUDIT_INVOCATION_ID}}": audit_invocation_id or "",
         "{{NOTE_PATH}}": note_path,
         "{{CLAIM_TYPE_HINT}}": claim_type_hint or "(none)",
         "{{RUNNER_PATH}}": runner_path or "(none)",
@@ -1137,6 +1137,7 @@ def validate_verdict(
     source_requires_no_go: bool = False,
     evidence_manifest: dict[str, dict] | None = None,
     prior_claim_scope: str | None = None,
+    expected_invocation_id: str | None = None,
 ) -> str | None:
     """Return an error string if the verdict is unusable, else None."""
     if not isinstance(blob, dict):
@@ -1146,6 +1147,8 @@ def validate_verdict(
         return f"missing fields: {sorted(missing)}"
     if blob.get("claim_id") != expected_cid:
         return f"claim_id mismatch: expected {expected_cid!r}, got {blob.get('claim_id')!r}"
+    if expected_invocation_id is not None and blob.get("audit_invocation_id") != expected_invocation_id:
+        return "audit_invocation_id is absent or does not match the prompt-bound invocation"
     if blob.get("verdict") == "audited_clean" and evidence_manifest is not None:
         clipped_paths = sorted(
             path
@@ -1282,7 +1285,10 @@ def apply_one(
 ) -> tuple[bool, str]:
     """Pipe a verdict blob through apply_audit.py via stdin."""
     verdict_blob = dict(verdict_blob)
-    invocation_id = uuid.uuid4().hex
+    invocation_id = verdict_blob.get("audit_invocation_id")
+    if not isinstance(invocation_id, str) or not re.fullmatch(r"[A-Za-z0-9._:-]{16,128}", invocation_id):
+        canonical = json.dumps(verdict_blob, sort_keys=True, separators=(",", ":"))
+        invocation_id = hashlib.sha256(canonical.encode("utf-8")).hexdigest()[:32]
     verdict_blob["audit_invocation_id"] = invocation_id
     cmd = [sys.executable, str(APPLY_AUDIT_SCRIPT)]
     if not propagate:
@@ -1612,19 +1618,26 @@ def main() -> int:
                         }) + "\n")
                     continue
 
-            use_cache = not args.no_cache_runner
+            # Cache files remain readiness/performance artifacts, but their
+            # identity is source-SHA-only and cannot authenticate mutable data
+            # inputs. Authority-bearing audit prompts therefore execute the
+            # current primary runner rather than consuming cached stdout.
+            use_cache = False
             exact_evidence_manifest: dict[str, dict] = {}
+            audit_invocation_id = uuid.uuid4().hex
             if args.no_runner:
                 # Skip the runner subprocess + cache, but keep Section 3a
                 # (runner source code) so the auditor can still inspect what
                 # the runner does. Pass timeout=0 since it is unused.
                 prompt = render_prompt(row, ledger_rows, template, 0,
                                        use_cache=False, skip_runner_stdout=True,
-                                       evidence_manifest_out=exact_evidence_manifest)
+                                       evidence_manifest_out=exact_evidence_manifest,
+                                       audit_invocation_id=audit_invocation_id)
             else:
                 prompt = render_prompt(row, ledger_rows, template, args.runner_timeout_sec,
                                        use_cache=use_cache,
-                                       evidence_manifest_out=exact_evidence_manifest)
+                                       evidence_manifest_out=exact_evidence_manifest,
+                                       audit_invocation_id=audit_invocation_id)
 
             if args.dry_run:
                 print(f"  [dry-run] prompt size: {len(prompt)} chars")
@@ -1705,6 +1718,7 @@ def main() -> int:
                 source_requires_no_go=source_requires_no_go,
                 evidence_manifest=exact_evidence_manifest,
                 prior_claim_scope=prior_claim_scope_for_row(full_led_row),
+                expected_invocation_id=audit_invocation_id,
             )
             initial_validation_error = err
             initial_rejected_blob = blob
@@ -1762,6 +1776,7 @@ def main() -> int:
                             source_requires_no_go=source_requires_no_go,
                             evidence_manifest=exact_evidence_manifest,
                             prior_claim_scope=prior_claim_scope_for_row(full_led_row),
+                            expected_invocation_id=audit_invocation_id,
                         )
                     with run_log.open("a", encoding="utf-8") as f:
                         f.write(json.dumps({

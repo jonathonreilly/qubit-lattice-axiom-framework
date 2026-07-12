@@ -98,8 +98,12 @@ FOUNDATIONAL_ROW_ALLOWLIST = {
     ): {"minimal_axioms"},
     ("RESULTS_INDEX.md", "Framework / claim surface"): {"minimal_axioms"},
 }
-PROTECTED_INLINE_RE = re.compile(
-    r"(\[[^\]]+\]\([^)]+\)|\[audit:[^\]]+\]|`[^`]*`)"
+PROTECTED_INLINE_RE = re.compile(r"(\[[^\]]+\]\([^)]+\)|\[audit:[^\]]+\])")
+SOURCE_STATUS_WORD_RE = re.compile(
+    r"\b(?:retained(?:_bounded|_no_go|_pending_chain)?|promoted|"
+    r"audited_(?:clean|conditional|renaming|decoration|failed|numerical_match)|"
+    r"audit_in_progress|unaudited|open_gate)\b",
+    re.IGNORECASE,
 )
 
 
@@ -111,15 +115,18 @@ def strip_source_audit_annotations(body: str) -> str:
 
 def _neutralize_source_status_words(line: str) -> str:
     parts = PROTECTED_INLINE_RE.split(line)
-    for index in range(0, len(parts), 2):
-        parts[index] = re.sub(
-            r"\b(?:retained(?:_bounded|_no_go|_pending_chain)?|promoted|"
-            r"audited_(?:clean|conditional|renaming|decoration|failed|numerical_match)|"
-            r"audit_in_progress|unaudited|open_gate)\b",
-            "unratified-source-label",
-            parts[index],
-            flags=re.IGNORECASE,
-        )
+    for index, part in enumerate(parts):
+        if index % 2 == 0:
+            parts[index] = SOURCE_STATUS_WORD_RE.sub("unratified-source-label", part)
+            continue
+        if part.startswith("[audit:"):
+            continue
+        link = re.fullmatch(r"\[([^\]]+)\]\(([^)]+)\)", part)
+        if link:
+            label = SOURCE_STATUS_WORD_RE.sub(
+                "unratified-source-label", link.group(1)
+            )
+            parts[index] = f"[{label}]({link.group(2)})"
     return "".join(parts)
 
 

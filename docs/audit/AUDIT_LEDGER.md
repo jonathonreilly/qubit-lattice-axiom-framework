@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 101 |
 | **retained_no_go** | 45 |
-| **retained_bounded** | 416 |
+| **retained_bounded** | 417 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
 | unaudited | 2644 |
-| audit_in_progress | 26 |
+| audit_in_progress | 25 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 26 |
-| `audited_clean` | 549 |
+| `audit_in_progress` | 25 |
+| `audited_clean` | 550 |
 | `audited_conditional` | 96 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 44 |
@@ -122,7 +122,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `arrow_from_record_formation_past_hypothesis_residual_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | C | - |
-| `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27` | positive_theorem | audit_in_progress | audit_in_progress | fresh_context | codex-gpt-5.5 | A | - |
 | `clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -194,6 +193,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `boundary_law_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `branch_entanglement_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `branching_slack_rate_projective_limit_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | C | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_propagating_field_live_packet_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1842,6 +1842,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner constructs the branch state vectors from CNOT broadcasts and weak Kraus factors, then computes weights, connected-correlator records, blanks, entropy, and slack without opaque helpers or hard-coded contested outputs. Independently, each branch reduces to two amplitudes A^k B^(N-k) and B^k A^(N-k), giving C=4p(1-p) and reproducing the displayed slack/rate and threshold tables.
 - **rationale:** The claim is bounded to a finite sampled model and does not rely on external comparator data or cross-note numerical imports. The runner source genuinely computes the finite model rather than merely printing expected values, and the independent combinatorial check confirms the load-bearing table entries, inequalities, controls, and trend values. The eps=1 statement is clean only in the scoped sense stated in the note: pointer-eigenstate/zero-record control, not an unscoped asymptotic or generic-state theorem.
 - **auditor confidence:** high
+
+### `busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the accepted one-qubit carrier M_2(C), every m:E(M_2)→[0,1] satisfying the stated M1–M3 POVM-additivity hypotheses has a unique density-matrix representation m(E)=Tr(σE); derivation of M1–M3, higher-dimensional closure, and parent-row promotion were not audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00088-busch_povm_effect_gleason_qu`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** POVM additivity gives partial additivity on effects; boundedness then gives real homogeneity and a real-linear extension to Herm(M_2), whose Riesz representative is a unique positive trace-one matrix σ satisfying m(E)=Tr(σE).  _(class `A`)_
+- **chain closes:** True — The universal result follows analytically from partial additivity, bounded Cauchy homogeneity, linear extension, finite-dimensional Riesz representation, and positivity on rank-one projectors. The runner supports the signs and normalizations but is not the universality proof because its sampled functionals are trace-form by construction.
+- **rationale:** The proof closes as finite-dimensional algebra over the explicitly stated M1–M3 hypotheses and the accepted M_2(C) carrier. The displayed Pauli normalization and Bloch reconstruction are correct, and positivity on all rank-one projectors makes the unique Riesz representative a density matrix. Busch, CFMR, and Gleason are comparators rather than imported proof premises; the randomized runner is corroborative rather than a substitute for the analytic universal argument.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`
 

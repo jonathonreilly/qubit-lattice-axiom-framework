@@ -58,7 +58,7 @@ Use alongside:
 | Three-generation / flavor representation-theory support packet | [SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md](../../SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md), [S3_TASTE_CUBE_DECOMPOSITION_NOTE.md](../../S3_TASTE_CUBE_DECOMPOSITION_NOTE.md), [S3_MASS_MATRIX_CONDITIONAL_DEGENERACY_NOTE_2026-07-11.md](../../S3_MASS_MATRIX_CONDITIONAL_DEGENERACY_NOTE_2026-07-11.md), [Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md](../../Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md) | [frontier_site_phase_cube_shift_intertwiner.py](../../../scripts/frontier_site_phase_cube_shift_intertwiner.py), [frontier_s3_action_taste_cube_decomposition.py](../../../scripts/frontier_s3_action_taste_cube_decomposition.py), [frontier_s3_mass_matrix_no_go.py](../../../scripts/frontier_s3_mass_matrix_no_go.py), [frontier_z2_hw1_mass_matrix_parametrization.py](../../../scripts/frontier_z2_hw1_mass_matrix_parametrization.py) |
 | Reviewed `Cl(3) -> SM` algebraic support packet | [CL3_SM_EMBEDDING_MASTER_NOTE.md](../../CL3_SM_EMBEDDING_MASTER_NOTE.md), [CL3_SM_EMBEDDING_THEOREM.md](../../CL3_SM_EMBEDDING_THEOREM.md), [CL3_COLOR_AUTOMORPHISM_THEOREM.md](../../CL3_COLOR_AUTOMORPHISM_THEOREM.md), [CL3_TASTE_GENERATION_THEOREM.md](../../CL3_TASTE_GENERATION_THEOREM.md) | [verify_cl3_sm_embedding.py](../../../scripts/verify_cl3_sm_embedding.py) |
 | Exact `I_3 = 0` | [I3_ZERO_EXACT_THEOREM_NOTE.md](../../I3_ZERO_EXACT_THEOREM_NOTE.md) | [frontier_born_rule_derived.py](../../../scripts/frontier_born_rule_derived.py) |
-| Exact CPT | [CPT_EXACT_NOTE.md](../../CPT_EXACT_NOTE.md) | [frontier_cpt_exact.py](../../../scripts/frontier_cpt_exact.py) |
+| Failed exact-CPT audit target (not publication-usable) | [CPT_EXACT_NOTE.md](../../CPT_EXACT_NOTE.md) | [frontier_cpt_exact.py](../../../scripts/frontier_cpt_exact.py) |
 | Operational no-past signaling support theorem | [CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md](../../CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md) | [frontier_chronology_operational_no_past_signaling.py](../../../scripts/frontier_chronology_operational_no_past_signaling.py) |
 | CHSH Bell support theorem | [BELL_INEQUALITY_DERIVED_NOTE.md](../../BELL_INEQUALITY_DERIVED_NOTE.md) | [frontier_bell_inequality.py](../../../scripts/frontier_bell_inequality.py) |
 | Emergent Lorentz invariance | [EMERGENT_LORENTZ_INVARIANCE_NOTE.md](../../EMERGENT_LORENTZ_INVARIANCE_NOTE.md) | [frontier_emergent_lorentz_invariance.py](../../../scripts/frontier_emergent_lorentz_invariance.py) |
@@ -128,7 +128,8 @@ Use alongside:
     cancellation, `SU(3)^3` cubic anomaly cancellation, and B-L anomaly
     freedom as a gaugeable option
   - three-generation matter structure
-  - exact `I_3 = 0` and CPT as compact supporting theorems
+  - exact `I_3 = 0` as a compact supporting theorem; the former exact-CPT
+    claim is `audited_failed` and excluded
   - Lorentz-anisotropy and fixed-action continuum diagnostics remain audit
     targets; the selected action/kinetic, Planck-spacing, CPT/parity, and
     carrier conditions are not current four-axiom consequences

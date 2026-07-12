@@ -1307,7 +1307,14 @@ def apply_one(
             cwd=REPO_ROOT,
             env=env,
         )
-    return proc.returncode == 0, (proc.stdout + proc.stderr).strip()
+    output = (proc.stdout + proc.stderr).strip()
+    if proc.returncode == 4:
+        return False, (
+            "AUDIT_APPLIED_PROPAGATION_FAILED: the ledger transition is "
+            "already committed; do not reapply this verdict. Repair/rerun "
+            f"propagation only.\n{output}"
+        )
+    return proc.returncode == 0, output
 
 
 def main() -> int:
@@ -1548,6 +1555,7 @@ def main() -> int:
     failed = 0
     skipped = 0
     push_failed = False
+    propagation_failed = False
     for i, row in enumerate(targets, 1):
         cid = row["claim_id"]
         print(f"\n[{i}/{len(targets)}] {cid}")
@@ -1795,11 +1803,7 @@ def main() -> int:
             ok, msg = apply_one(
                 full_blob,
                 propagate=not args.no_propagate,
-                evidence_manifest=(
-                    exact_evidence_manifest
-                    if blob.get("no_go_discipline") is not None
-                    else None
-                ),
+                evidence_manifest=exact_evidence_manifest,
             )
             if ok:
                 print(f"  OK ({elapsed:.1f}s)  verdict={blob.get('verdict')}  "
@@ -1835,6 +1839,18 @@ def main() -> int:
                                 "claim_id": cid, "phase": "push_failed",
                                 "msg": push_msg
                             }) + "\n")
+            elif msg.startswith("AUDIT_APPLIED_PROPAGATION_FAILED:"):
+                print(f"  FAIL propagation after applied verdict: {msg[:500]}")
+                applied += 1
+                failed += 1
+                propagation_failed = True
+                with run_log.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps({
+                        "claim_id": cid,
+                        "phase": "applied_propagation_failed",
+                        "verdict": blob.get("verdict"),
+                        "message": msg,
+                    }) + "\n")
             else:
                 print(f"  FAIL apply_audit: {msg[:300]}")
                 failed += 1
@@ -1850,7 +1866,12 @@ def main() -> int:
                 shutil.rmtree(iso, ignore_errors=True)
 
     # Batch push mode: one commit covering the whole run
-    if args.push_mode == "batch" and applied > 0 and not args.dry_run:
+    if (
+        args.push_mode == "batch"
+        and applied > 0
+        and not args.dry_run
+        and not propagation_failed
+    ):
         crit = f" {args.criticality}" if args.criticality else ""
         msg = (
             f"audit: codex-cli batch {applied} verdict(s){crit} "
@@ -1863,6 +1884,11 @@ def main() -> int:
             print(f"\nBatch push FAILED: {push_msg}")
             print("Local state has the verdicts; run `git push origin main` manually after resolving.")
             push_failed = True
+    elif propagation_failed:
+        print(
+            "\nBatch push suppressed: at least one verdict was applied before "
+            "propagation failed. Rerun the pipeline; do not reapply the verdict."
+        )
 
     print(f"\nDone. applied={applied} failed={failed} skipped={skipped}  "
           f"(of {len(targets)} attempted)")

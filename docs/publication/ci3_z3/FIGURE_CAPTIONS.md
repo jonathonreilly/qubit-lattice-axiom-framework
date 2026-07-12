@@ -46,15 +46,15 @@ dismissed as disposable taste artifacts, and the retained `hw=1` observable
 algebra admits no proper exact quotient. Detailed hierarchy and quantitative
 flavor remain bounded and are not part of the figure claim.
 
-### Extended Data Figure 1. Weak-field gravity corollaries, exact `I_3 = 0`, and exact CPT
+### Extended Data Figure 1. Weak-field gravity corollaries and exact `I_3 = 0`
 
 Compact supporting results on the same discrete framework surface. The derived
 weak-field action yields universal k-independent deflection (weak equivalence
 principle) and weak-field gravitational time dilation on the retained
 Poisson/Newton background. Third-order interference also vanishes identically
-on the Hilbert surface (`I_3=0`), and the free staggered `Cl(3)` lattice is
-exactly CPT invariant. These results strengthen the retained backbone without
-widening the main paper claim.
+on the Hilbert surface (`I_3=0`). The former exact-CPT note has an
+`audited_failed` verdict and is excluded from this figure and from the retained
+backbone.
 
 ## arXiv secondary figures
 

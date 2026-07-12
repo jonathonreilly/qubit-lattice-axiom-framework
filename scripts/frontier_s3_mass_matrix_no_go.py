@@ -36,7 +36,7 @@ def check(name: str, condition: bool, detail: str = "") -> None:
     print(line)
 
 
-def hw1_s3_representation() -> dict[str, np.ndarray]:
+def supplied_s3_permutation_representation() -> dict[str, np.ndarray]:
     return {
         "e": np.eye(3, dtype=complex),
         "(12)": np.array([[0, 1, 0], [1, 0, 0], [0, 0, 1]], dtype=complex),
@@ -58,15 +58,70 @@ def invariant_projector(operators: dict[str, np.ndarray]) -> np.ndarray:
     return projector
 
 
+def simultaneous_commutant_dimension(generators: list[np.ndarray]) -> int:
+    """Dimension of the exact simultaneous commutant by a direct linear solve."""
+    constraints = []
+    for operator in generators:
+        columns = []
+        for i, j in itertools.product(range(3), repeat=2):
+            basis = np.zeros((3, 3), dtype=complex)
+            basis[i, j] = 1.0
+            columns.append((operator @ basis - basis @ operator).reshape(9))
+        constraints.append(np.column_stack(columns))
+    rank = np.linalg.matrix_rank(np.vstack(constraints), tol=1e-10)
+    return 9 - rank
+
+
+def ordered_pair_orbit_count(operators: dict[str, np.ndarray]) -> int:
+    """Count S_3 orbits on matrix-entry labels (i,j)."""
+    orbits = set()
+    for i, j in itertools.product(range(3), repeat=2):
+        orbit = frozenset(
+            (
+                int(np.argmax(np.abs(operator[:, i]))),
+                int(np.argmax(np.abs(operator[:, j]))),
+            )
+            for operator in operators.values()
+        )
+        orbits.add(orbit)
+    return len(orbits)
+
+
 def part1_invariant_algebra() -> None:
     print("\n" + "=" * 72)
     print("PART 1: S_3-invariant Hermitian algebra on A_1 direct-sum E")
     print("=" * 72)
 
-    operators = hw1_s3_representation()
+    operators = supplied_s3_permutation_representation()
     projector = invariant_projector(operators)
     rank = np.linalg.matrix_rank(projector, tol=1e-10)
     check("dim End(C^3)^(S_3) = 2", rank == 2, f"rank = {rank}")
+
+    generator_dim = simultaneous_commutant_dimension(
+        [operators["(12)"], operators["(23)"]]
+    )
+    check(
+        "generator-commutator solve gives dimension 2",
+        generator_dim == 2,
+        f"dimension = {generator_dim}",
+    )
+
+    # Character route for the natural permutation representation:
+    # chi_V(e, transposition, 3-cycle) = (3, 1, 0).
+    multiplicity_a1 = (3 * 1 + 3 * 1 * 1 + 2 * 0 * 1) / 6
+    multiplicity_a2 = (3 * 1 + 3 * 1 * -1 + 2 * 0 * 1) / 6
+    multiplicity_e = (3 * 2 + 3 * 1 * 0 + 2 * 0 * -1) / 6
+    check(
+        "character multiplicities are A_1 + E",
+        (multiplicity_a1, multiplicity_a2, multiplicity_e) == (1, 0, 1),
+        f"multiplicities = {(multiplicity_a1, multiplicity_a2, multiplicity_e)}",
+    )
+    orbit_count = ordered_pair_orbit_count(operators)
+    check(
+        "ordered-pair orbit classification has two entry classes",
+        orbit_count == 2,
+        f"orbits = {orbit_count}",
+    )
 
     identity = np.eye(3, dtype=complex)
     all_ones = np.ones((3, 3), dtype=complex)
@@ -136,6 +191,37 @@ def part4_residual_z2_dimension() -> None:
     check("dim End(C^3)^(Z_2) = 5", rank == 5, f"rank = {rank}")
 
 
+def part5_scoped_escape_routes() -> None:
+    print("\n" + "=" * 72)
+    print("PART 5: Explicit escape routes outside the two hypotheses")
+    print("=" * 72)
+
+    # Changing the representation to three repeated trivial irreps makes the
+    # full 3x3 algebra invariant and permits a generic three-value spectrum.
+    repeated_trivial = {str(i): np.eye(3, dtype=complex) for i in range(6)}
+    repeated_rank = np.linalg.matrix_rank(
+        invariant_projector(repeated_trivial), tol=1e-10
+    )
+    repeated_spectrum = np.linalg.eigvalsh(np.diag([1.0, 2.0, 3.0]))
+    check(
+        "repeated-irrep carrier escape permits three spectral values",
+        repeated_rank == 9 and len(set(repeated_spectrum)) == 3,
+        f"commutant dimension = {repeated_rank}",
+    )
+
+    # Keeping the natural carrier but dropping exact pointwise invariance also
+    # permits a three-way split; the commutator makes the departed hypothesis
+    # explicit rather than treating this as a counterexample to the lemma.
+    generic_split = np.diag([1.0, 2.0, 3.0]).astype(complex)
+    p12 = supplied_s3_permutation_representation()["(12)"]
+    commutator_norm = np.linalg.norm(p12 @ generic_split - generic_split @ p12)
+    check(
+        "generic three-way split leaves exact S_3 invariance",
+        commutator_norm > 1e-10,
+        f"commutator norm = {commutator_norm:.6f}",
+    )
+
+
 def main() -> int:
     print("=" * 72)
     print("S_3 CONDITIONAL MASS-MATRIX DEGENERACY LEMMA")
@@ -144,6 +230,7 @@ def main() -> int:
     part2_spectrum()
     part3_random_check()
     part4_residual_z2_dimension()
+    part5_scoped_escape_routes()
     print("\n" + "=" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     print("=" * 72)

@@ -162,13 +162,13 @@ def positive_onsite_potential_3d(L: int, source: tuple[int, int, int],
 
 
 # ============================================================================
-# CHECK 1: Area law with R^2 > 0.999
+# CHECK 1: finite boundary-linear fit
 # ============================================================================
 
-def check_1_area_law() -> dict:
+def check_1_finite_boundary_fit() -> dict:
     """Test a finite linear boundary fit for Gaussian correlation entropy."""
     print("=" * 72)
-    print("CHECK 1: AREA LAW VERIFICATION (S ~ A)")
+    print("CHECK 1: FINITE BOUNDARY-LINEAR FIT (S ~ |dA|)")
     print("=" * 72)
 
     results = {"2d": {}, "3d": {}}
@@ -855,7 +855,7 @@ def main() -> int:
 
     t_start = time.time()
 
-    c1 = check_1_area_law()
+    c1 = check_1_finite_boundary_fit()
     c2 = check_2_rt_ratio()
     c3 = check_3_positive_onsite_potential()
     c4 = check_4_frozen_star()

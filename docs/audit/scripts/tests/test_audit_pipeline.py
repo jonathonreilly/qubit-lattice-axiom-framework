@@ -625,13 +625,25 @@ class PublicationEffectiveStatusRenderTest(unittest.TestCase):
                 m, "DOCS", docs.resolve()
             ), mock.patch.object(m.premise_nodes, "is_axiom_premise", return_value=True):
                 annotated, _ = m.annotate_links(
-                    "| Claim | Authority |\n|---|---|\n| Framework | [A](../MINIMAL.md) |\n",
+                    "| Claim | Authority |\n|---|---|\n"
+                    "| The named Lattice, Qubit, Admissibility, and Record axioms are the current minimal framework surface | [A](../MINIMAL.md) |\n",
                     source,
                     by_path,
                 )
-            rendered = m.demote_nonretained_table_rows(annotated)
+            rendered = m.demote_nonretained_table_rows(
+                annotated, source_name="CLAIMS_TABLE.md"
+            )
             self.assertNotIn("AUDIT-NONRETAINED ROW", rendered.splitlines()[2])
             self.assertIn("[audit:meta]", rendered.splitlines()[2])
+
+            spoofed = m.demote_nonretained_table_rows(
+                annotated.replace(
+                    "The named Lattice, Qubit, Admissibility, and Record axioms are the current minimal framework surface",
+                    "Arbitrary retained theorem citing the axioms",
+                ),
+                source_name="CLAIMS_TABLE.md",
+            )
+            self.assertIn("AUDIT-NONRETAINED ROW", spoofed.splitlines()[2])
 
 
 def _patch_repo_root(module, tmp_root: Path) -> None:
@@ -771,7 +783,7 @@ class BhRunnerAccountingTest(unittest.TestCase):
     def test_derived_runner_returns_nonzero_when_synthesis_has_failures(self):
         m = _import_repo_script("frontier_bh_entropy_derived.py")
         empty = {}
-        with mock.patch.object(m, "check_1_area_law", return_value=empty), \
+        with mock.patch.object(m, "check_1_finite_boundary_fit", return_value=empty), \
              mock.patch.object(m, "check_2_rt_ratio", return_value=empty), \
              mock.patch.object(m, "check_3_positive_onsite_potential", return_value=empty), \
              mock.patch.object(m, "check_4_frozen_star", return_value=empty), \
@@ -976,6 +988,29 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertFalse(ok)
         self.assertIn("already been consumed", msg)
 
+    def test_manual_audit_without_explicit_id_gets_stable_replay_fingerprint(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_manual_replay")
+        led = self.fx.read_ledger()
+        audit = {
+            "claim_id": "test_manual_replay",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "test scope",
+            "auditor": "manual-auditor",
+            "auditor_family": "human",
+            "auditor_model": "human-review",
+            "auditor_reasoning_effort": "strong",
+            "independence": "strong",
+            "load_bearing_step_class": "C",
+        }
+        ok, msg = m.apply_one(led, audit)
+        self.assertTrue(ok, msg)
+        ok, msg = m.apply_one(led, audit)
+        self.assertFalse(ok)
+        self.assertIn("already been consumed", msg)
+
     def test_audit_invocation_history_rejects_replay_after_newer_audit(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
@@ -1031,6 +1066,37 @@ class ApplyAuditTest(unittest.TestCase):
             ok, msg = m.apply_one(led, audit)
             self.assertFalse(ok)
             self.assertIn("32 lowercase hexadecimal", msg)
+
+    def test_apply_sink_rejects_clean_verdict_with_clipped_evidence(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_clipped_apply")
+        led = self.fx.read_ledger()
+        audit = {
+            "claim_id": "test_clipped_apply",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "test scope",
+            "auditor": "clipped-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "cross_family",
+            "load_bearing_step_class": "C",
+            "audit_invocation_id": "c" * 32,
+        }
+        manifest = {
+            "docs/TEST_CLIPPED_APPLY.md": {
+                "roles": ["source"],
+                "text": "... [packet-clipped docs/TEST_CLIPPED_APPLY.md; 50000 chars total] ...",
+            }
+        }
+        with mock.patch.object(
+            m, "trusted_evidence_manifest", return_value=manifest
+        ):
+            ok, msg = m.apply_one(led, audit)
+        self.assertFalse(ok)
+        self.assertIn("clipped evidence", msg)
 
     def test_terminal_disagreement_preserves_live_authority(self):
         m = _import("apply_audit")
@@ -1323,12 +1389,12 @@ class ApplyAuditTest(unittest.TestCase):
             "no_go_discipline_cross_confirmation_packet_invalid",
         )
 
-        # Replaying the pre-archive packet/manifest must fail because N8 now
-        # includes the archived first seat.
+        # Replaying the accepted archive transition must fail at the one-use
+        # invocation guard before stale N8 evidence is reconsidered.
         with mock.patch.object(m, "trusted_evidence_manifest", return_value=manifest):
             ok, msg = m.apply_one(led, audit)
         self.assertFalse(ok)
-        self.assertIn("trusted evidence manifest is stale", msg)
+        self.assertIn("already been consumed", msg)
 
         fresh_row = led["rows"]["legacy_pending_no_go"]
         fresh_manifest = m.no_go_discipline_gate.build_evidence_manifest(
@@ -1885,6 +1951,20 @@ class SeedLedgerTest(unittest.TestCase):
         self.assertEqual(archived["auditor_reasoning_effort"], "xhigh")
         self.assertIsNone(row["auditor_model"])
         self.assertIsNone(row["auditor_reasoning_effort"])
+
+    def test_unaudited_reseed_preserves_consumed_invocation_history(self):
+        m = _import("seed_audit_ledger")
+        row = {
+            "audit_status": "unaudited",
+            "audit_invocation_id": "b" * 32,
+            "audit_invocation_history": ["a" * 32],
+            "previous_audits": [],
+        }
+
+        m.reset_unaudited_audit_fields(row)
+
+        self.assertIsNone(row["audit_invocation_id"])
+        self.assertEqual(row["audit_invocation_history"], ["a" * 32, "b" * 32])
 
     def test_unaudited_ambiguous_history_retains_unattributed_exact_provenance(self):
         m = _import("seed_audit_ledger")
@@ -3844,6 +3924,28 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "open_gate",
             )
         )
+        self.assertTrue(
+            m.source_requires_no_go_discipline(
+                "docs/HISTORICAL_NO_GO_NOTE.md",
+                "**Claim type:** positive_theorem\nA local algebraic statement.\n",
+                "positive_theorem",
+            )
+        )
+
+    def test_ordinary_negative_boundary_phrasings_trigger_gate(self):
+        m = _import("no_go_discipline_gate")
+        for body in (
+            "Every attempted route remains open.",
+            "We rule out every candidate carrier.",
+            "The selector remains underdetermined.",
+            "`No-go` under the supplied structure.",
+        ):
+            with self.subTest(body=body):
+                self.assertTrue(
+                    m.source_requires_no_go_discipline(
+                        "docs/POSITIVE_NOTE.md", body, "positive_theorem"
+                    )
+                )
 
     def test_artifact_scope_disclaimer_is_not_a_negative_claim(self):
         m = _import("no_go_discipline_gate")
@@ -3865,6 +3967,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         for body in (
             "This note does not derive the selector and no admissible route exists.",
             "This theorem does not prove the bridge and requires a new axiom.",
+            "This note does not derive the carrier because no admissible route exists.",
+            "This theorem does not derive the carrier although no admissible route exists.",
         ):
             with self.subTest(body=body):
                 self.assertTrue(
@@ -3875,13 +3979,28 @@ class NoGoDisciplineGateTest(unittest.TestCase):
 
     def test_forced_spectral_cardinality_boundary_triggers_gate(self):
         m = _import("no_go_discipline_gate")
-        self.assertTrue(
-            m.source_requires_no_go_discipline(
-                "docs/S3_CONDITIONAL_LEMMA.md",
-                "Every invariant Hermitian operator has at most two distinct eigenvalues.",
-                "positive_theorem",
-            )
-        )
+        for body in (
+            "Every invariant Hermitian operator has at most two distinct eigenvalues.",
+            "The spectrum has cardinality at most two.",
+            "At most two distinct eigenvalues occur.",
+            "There are no more than two spectral values.",
+        ):
+            with self.subTest(body=body):
+                self.assertTrue(
+                    m.source_requires_no_go_discipline(
+                        "docs/S3_CONDITIONAL_LEMMA.md", body, "positive_theorem"
+                    )
+                )
+        for body in (
+            "This representation does not permit at most two distinct eigenvalues; it permits three.",
+            "Can this representation have at most two distinct eigenvalues?",
+        ):
+            with self.subTest(body=body):
+                self.assertFalse(
+                    m.source_requires_no_go_discipline(
+                        "docs/S3_CONDITIONAL_LEMMA.md", body, "positive_theorem"
+                    )
+                )
 
     def test_malformed_top_level_index_and_snapshot_fail_closed(self):
         m = _import("no_go_discipline_gate")
@@ -5575,6 +5694,23 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
             m.main()
         self.assertEqual(caught.exception.code, 2)
 
+    def test_apply_reports_committed_verdict_when_propagation_fails(self):
+        m = _import_codex_audit_runner()
+        proc = mock.Mock(
+            returncode=4,
+            stdout="Applied 1/1 audit(s)\n",
+            stderr="Propagation failed\n",
+        )
+        with mock.patch.object(m.subprocess, "run", return_value=proc):
+            ok, message = m.apply_one(
+                {"claim_id": "x", "verdict": "audited_clean"},
+                propagate=True,
+                evidence_manifest={},
+            )
+        self.assertFalse(ok)
+        self.assertTrue(message.startswith("AUDIT_APPLIED_PROPAGATION_FAILED:"))
+        self.assertIn("do not reapply", message)
+
 
 class CodexAuditRunnerReauditCandidatesTest(unittest.TestCase):
     def setUp(self):
@@ -5873,6 +6009,9 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         mismatch = dict(newer)
         mismatch["auditor_model"] = "gpt-5.6-sol"
         self.assertFalse(m.archived_audit_is_lint_compatible(mismatch))
+        missing_sol = dict(archived)
+        missing_sol["auditor_model"] = "gpt-5.6"
+        self.assertFalse(m.archived_audit_is_lint_compatible(missing_sol))
         human = dict(archived)
         human.update({
             "auditor_family": "human",
@@ -5881,6 +6020,12 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             "independence": "strong",
         })
         self.assertTrue(m.archived_audit_is_lint_compatible(human))
+        human_gpt_mismatch = dict(human)
+        human_gpt_mismatch["auditor_model"] = "gpt-5.6-sol"
+        self.assertFalse(m.archived_audit_is_lint_compatible(human_gpt_mismatch))
+        missing_human_family = dict(human)
+        missing_human_family["auditor_family"] = None
+        self.assertFalse(m.archived_audit_is_lint_compatible(missing_human_family))
 
     def test_restore_round_trips_and_validates_no_go_packet(self):
         m = self._import_and_patch()
@@ -6002,6 +6147,34 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         manifest = m.no_go_discipline_gate.build_evidence_manifest(row, {cid: row}, self.tmp_root)
         _set_no_go_scan_coverage(packet, manifest)
         self.assertIsNone(m.restore_audit_from_previous(row, {cid: row}))
+
+    def test_restore_allows_packetless_positive_cross_confirmation_seats(self):
+        m = self._import_and_patch()
+        cid = "packetless_positive_cross"
+        note_path = "docs/PACKETLESS_POSITIVE.md"
+        self.fx.write_note(note_path, "# Exact positive identity\n")
+        archived = self._archived_audit(
+            claim_type="positive_theorem",
+            invalidation_reason="criticality_increased:leaf->medium",
+        )
+        seat = {
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "exact positive identity",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+        }
+        archived["cross_confirmation"] = {
+            "status": "confirmed",
+            "first_audit": dict(seat),
+            "second_audit": {**seat, "auditor": "second"},
+        }
+        row = self._seed_with_archived(cid, archived)
+        row["note_path"] = note_path
+
+        self.assertIsNotNone(m.restore_audit_from_previous(row, {cid: row}))
 
     def test_restore_refuses_packetless_clean_output_negative_authority(self):
         m = self._import_and_patch()

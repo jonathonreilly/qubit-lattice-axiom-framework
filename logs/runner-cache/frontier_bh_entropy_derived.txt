@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bh_entropy_derived.py
-runner_sha256: c19551686e9a891e728c0671be82c2f3809774c72833ee0e8357d91ceaed9839
+runner_sha256: 9fe449b1e20ff2b6455cd1a592773fe80b58c813cb35724f0ce4e09e4ed679c4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.32
+elapsed_sec: 2.69
 status: ok
 ----- stdout -----
 ========================================================================
@@ -16,7 +16,7 @@ to the Ryu-Takayanagi / Bekenstein-Hawking target, but current main
 does not treat this runner as a retained derivation.
 
 ========================================================================
-CHECK 1: AREA LAW VERIFICATION (S ~ A)
+CHECK 1: FINITE BOUNDARY-LINEAR FIT (S ~ |dA|)
 ========================================================================
 
   2D lattice: half-space bipartition, S vs boundary length
@@ -212,7 +212,7 @@ SYNTHESIS: BOUNDED BH ENTROPY COMPANION FROM GAUSSIAN CORRELATIONS
     (v)   Therefore the script does not derive the Bekenstein-Hawking
           coefficient as a retained framework theorem.
 
-Total runtime: 2.2s
+Total runtime: 2.5s
 
 ----- stderr -----
 

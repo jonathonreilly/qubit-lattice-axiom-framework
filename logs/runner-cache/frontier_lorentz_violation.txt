@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_violation.py
-runner_sha256: 2d8d27338b8c0f50d2de42b35e9ce7cc0a56f48b0997a102158de5547073eba8
+runner_sha256: cc9ecf5156400a6f8c945ed6655549011b1c3bac4a7ea2673422d4d069d6a6a4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.87
+elapsed_sec: 1.88
 status: ok
 ----- stdout -----
 ==============================================================================
-LORENTZ AND CPT VIOLATION FROM LATTICE STRUCTURE
-Standard Model Extension (SME) Coefficient Analysis
+FIXED-ACTION CUBIC-ANISOTROPY DIAGNOSTIC
+Conditional SME-style scale parameterization
 ==============================================================================
 
 ==============================================================================
@@ -33,8 +33,9 @@ Standard Model Extension (SME) Coefficient Analysis
                        ^^^^^^^^^^^^^^^^^^^^^^^^
                        LORENTZ-VIOLATING TERM
 
-  The p_i^4 term breaks SO(3,1) down to the cubic group O_h.
-  Its coefficient is a^2/12.
+  The p_i^4 term is spatially anisotropic with cubic symmetry O_h.
+  Its coefficient is a^2/12 for this supplied kinetic symbol. This runner
+  does not derive the symbol, spacing, or a full spacetime representation.
 
   Numerical verification (1D, a=0.1, m=0.1):
     At p*a = 0.1256:
@@ -46,7 +47,7 @@ Standard Model Extension (SME) Coefficient Analysis
       Residual (lattice - p^6): 3.0770e-10
 
 ==============================================================================
-2. STANDARD MODEL EXTENSION (SME) COEFFICIENT MAPPING
+2. CONDITIONAL SME-STYLE COEFFICIENT PARAMETERIZATION
 ==============================================================================
 
   The Lorentz-violating correction decomposes in NORMALIZED real spherical
@@ -60,7 +61,8 @@ Standard Model Extension (SME) Coefficient Analysis
   The coefficient on K_4 is 4*sqrt(pi)/15 ~= 0.4727 with normalized Y_lm,
   NOT 4/5 (corrected 2026-05-29; verify_cubic_harmonic_identity() pins it).
 
-  In the SME framework (Kostelecky & Mewes):
+  If a compatible carrier and sector matching are supplied, an SME-style
+  parameterization would assign:
   - The correction is a dimension-6 operator (d=6, n=4 in p)
   - CPT-even (see Section 5 below)
   - The nonminimal SME coefficients are:
@@ -70,7 +72,8 @@ Standard Model Extension (SME) Coefficient Analysis
     c^(6)_{(I)44}   = -(a^2/12)(4*sqrt(pi)/15) * (...)    [anisotropic, j=4, m=4]
     c^(6)_{(I)4,-4} = -(a^2/12)(4*sqrt(pi)/15) * (...)    [anisotropic, j=4, m=-4]
 
-  All other SME coefficients are zero (no j=1,2,3 from cubic symmetry).
+  The selected scalar symbol has no j=1,2,3 component. This does not set
+  independent coefficients of a complete action to zero.
 
   For a = l_Planck = 1.6163e-35 m:
     a in natural units:    8.2041e-20 GeV^-1
@@ -101,27 +104,27 @@ Standard Model Extension (SME) Coefficient Analysis
   CUBIC-HARMONIC IDENTITY VERIFICATION: PASS (5/5 checks)
 
 ==============================================================================
-3. COMPARISON WITH EXPERIMENTAL BOUNDS
+3. HISTORICAL SCALE COMPARISON (NOT A VALIDATED EXCLUSION)
 ==============================================================================
 
   Natural suppression at E = 1 GeV:
     (E/E_Planck)^2 = (1.0 / 1.2209e+19)^2 = 6.7087e-39
 
-  The lattice prediction for the p^4 coefficient:
+  Conditional p^4 coefficient when a = l_Planck is supplied:
     a^2/12 = (1.6163e-35 m)^2 / 12
            = 5.6090e-40 GeV^-2
            = 8.3607e-02 (in E_Planck^-2 units)
 
-  Experiment                          Sector     Bound              Prediction         Ratio        Status
+  Experiment                          Sector     Bound              Conditional        Ratio        Role
   ─────────────────────────────────── ────────── ────────────────── ────────────────── ──────────── ────────────────────
-  GRB polarization (vacuum birefring  photon     1.00e-32 GeV^-2    5.61e-40 GeV^-2    5.61e-08     SAFE (by >> 6 orders)
-  Fermi LAT time-of-flight            photon     2.52e-22 GeV^-2    5.61e-40 GeV^-2    2.23e-18     SAFE (by >> 6 orders)
-  Hughes-Drever (electron sector)     electron   1.00e-27 GeV       5.61e-40 GeV       5.61e-13     SAFE (by >> 6 orders)
-  Atomic clock comparisons (proton s  proton     1.00e-27 GeV       5.61e-40 GeV       5.61e-13     SAFE (by >> 6 orders)
-  Neutron spin precession             neutron    1.00e-31 GeV       5.61e-40 GeV       5.61e-09     SAFE (by >> 6 orders)
-  Neutrino oscillation (MINOS/IceCub  neutrino   1.00e-23 GeV       5.61e-40 GeV       5.61e-17     SAFE (by >> 6 orders)
-  Muon anomalous magnetic moment      muon       1.00e-24 GeV       5.61e-40 GeV       5.61e-16     SAFE (by >> 6 orders)
-  Gravity sector (lunar laser rangin  gravity    1.00e-09           5.61e-58           5.61e-49     SAFE (by >> 6 orders)
+  GRB polarization (vacuum birefring  photon     1.00e-32 GeV^-2    5.61e-40 GeV^-2    5.61e-08     illustrative only
+  Fermi LAT time-of-flight            photon     2.52e-22 GeV^-2    5.61e-40 GeV^-2    2.23e-18     illustrative only
+  Hughes-Drever (electron sector)     electron   1.00e-27 GeV       5.61e-40 GeV       5.61e-13     illustrative only
+  Atomic clock comparisons (proton s  proton     1.00e-27 GeV       5.61e-40 GeV       5.61e-13     illustrative only
+  Neutron spin precession             neutron    1.00e-31 GeV       5.61e-40 GeV       5.61e-09     illustrative only
+  Neutrino oscillation (MINOS/IceCub  neutrino   1.00e-23 GeV       5.61e-40 GeV       5.61e-17     illustrative only
+  Muon anomalous magnetic moment      muon       1.00e-24 GeV       5.61e-40 GeV       5.61e-16     illustrative only
+  Gravity sector (lunar laser rangin  gravity    1.00e-09           5.61e-58           5.61e-49     illustrative only
 
 ==============================================================================
 4. STAGGERED FERMION TASTE-BREAKING CONTRIBUTIONS
@@ -149,60 +152,32 @@ Standard Model Extension (SME) Coefficient Analysis
   scalar             2.5        3.5            1.9631e-39            
   identity           3.0        4.0            2.2436e-39            
 
-  Key finding: taste-breaking at most TRIPLES the naive LV coefficient.
-  Since the naive coefficient is already ~10^-38 below experimental
-  bounds, the taste-breaking enhancement is irrelevant for detectability.
-
-  However, the taste structure provides a QUALITATIVE prediction:
-  different fermion species (if they correspond to different tastes)
-  would have slightly different LV coefficients. This is a form of
-  flavor-dependent Lorentz violation testable in principle by comparing
-  electron vs muon vs tau sector SME coefficients.
+  These imported taste factors illustrate sensitivity of the selected model
+  calculation only. The runner does not derive them for this framework or
+  identify tastes with physical fermion species, so it makes no
+  flavor-dependent Lorentz-violation prediction.
 
 
 ==============================================================================
-5. CPT SYMMETRY ANALYSIS
+5. DISCRETE-SYMMETRY SCOPE
 ==============================================================================
 
-  Discrete symmetries on the cubic lattice Z^3:
+  Verified here: the selected scalar kinetic symbol is even in momentum.
 
-    Parity P:           EXACT  (Z^3 has x_i -> -x_i symmetry)
-    Time reversal T:    EXACT  (real lattice action, S(-t) = S(t))
-    Charge conjugation: EXACT  (complex conjugation of fields)
+  Not supplied or verified here: a complete matter action and explicit C, T,
+  or CPT operators. Therefore no exact-CPT theorem follows and no CPT-odd SME
+  coefficient is fixed to zero by this calculation.
 
-    Combined CPT:       EXACT
-
-  Consequence for SME coefficients:
-    All CPT-ODD coefficients are IDENTICALLY ZERO:
-      a_mu = 0          (dimension 3, CPT-odd vector)
-      b_mu = 0          (dimension 3, CPT-odd pseudo-vector)
-      e_mu = 0          (dimension 3)
-      f_mu = 0          (dimension 3)
-      g_{lambda mu nu} = 0  (dimension 5, CPT-odd)
-
-    Only CPT-EVEN coefficients are nonzero:
-      c_{mu nu} != 0     (dimension 4, suppressed by a^2)
-      d_{mu nu} != 0     (dimension 4, spin-dependent, suppressed by a^2)
-      Higher-dimension CPT-even operators at O(a^4), O(a^6), ...
-
-  Relation to Greenberg's theorem:
-    The Greenberg theorem states that CPT violation implies Lorentz violation in local QFT. The converse is not proven. The lattice framework demonstrates Lorentz violation with exact CPT, consistent with the theorem but showing the converse fails.
-
-  This is a STRONG prediction: any experimental detection of CPT-odd
-  LV coefficients would FALSIFY the cubic lattice framework.
-  Current bounds on CPT-odd coefficients (b_mu for neutrons ~ 10^-31 GeV)
-  are consistent with the prediction b_mu = 0.
+  No Greenberg-theorem or CPT conclusion is drawn: the runner does not specify or test the complete QFT assumptions, matter action, or C/P/T operators required for that inference.
 
 
 ==============================================================================
-6. LEADING OBSERVABLE PREDICTION
+6. CONDITIONAL PROPAGATION DIAGNOSTIC
 ==============================================================================
 
-  QUESTION: What is the leading Lorentz-violating observable from
-  the lattice framework, and at what level?
-
-  ANSWER: The leading effect is anisotropic propagation governed by
-  the cubic harmonic K_4(theta, phi). The observable signature is:
+  For a massless relativistic carrier governed by the supplied kinetic symbol,
+  the leading finite-a anisotropy is governed by K_4(theta, phi). Neither that
+  carrier identification nor a = l_Planck is derived here.
 
   1. DIRECTION-DEPENDENT PROPAGATION SPEED
 
@@ -232,8 +207,9 @@ Standard Model Extension (SME) Coefficient Analysis
      Best electron anisotropy bound:      ~10^-27    [Hughes-Drever]
      Best gravity sector bound:           ~10^-9     [lunar laser ranging]
 
-     Our prediction (1.9e-38) is BELOW ALL bounds by
-     at least 6 orders of magnitude (and typically 20+).
+     The conditional value (1.9e-38) is shown only as a scale
+     comparison; the runner has not established the sector mapping needed for
+     an experimental exclusion.
 
   3. SCALING WITH ENERGY
 
@@ -254,7 +230,7 @@ Standard Model Extension (SME) Coefficient Analysis
 
 
 ==============================================================================
-7. COMPREHENSIVE PREDICTION TABLE
+7. CONDITIONAL SCALE TABLE
 ==============================================================================
 
   Lattice: a = l_Planck = 1.6163e-35 m
@@ -287,60 +263,48 @@ Standard Model Extension (SME) Coefficient Analysis
 
   The ratio f_4(axis) / f_4(diagonal) = 3.0
 
-  This factor-of-3 anisotropy is the FINGERPRINT of cubic lattice
-  Lorentz violation. Any detection of anisotropic LV with this specific
-  angular pattern (Y_40 + sqrt(5/14)(Y_44 + Y_(4, -4))) would be
-  evidence for a cubic underlying structure.
-
-  At the Planck-scale suppression level (~10^-38 at 1 GeV), this
-  anisotropy is undetectable. But the PATTERN is a prediction:
-  if Lorentz violation is ever detected, check for cubic harmonics.
+  The factor-of-3 anisotropy is an exact property of this selected cubic
+  momentum symbol. It is not a unique microscopic fingerprint: other models
+  with the same cubic symmetry can share the angular pattern.
 
 
 ==============================================================================
-HYPOTHESIS VERDICT
+SCOPE VERDICT
 ==============================================================================
 
-  PREDICTIONS OF THE CUBIC LATTICE FRAMEWORK:
+  VERIFIED FOR THE SUPPLIED FIXED-ACTION MODEL:
 
-  1. Lorentz symmetry breaking: YES
-     - Cubic group O_h replaces SO(3,1)
+  1. Spatial finite-a anisotropy
+     - The selected momentum symbol has cubic group O_h
      - Leading correction: -(a^2/12) sum_i p_i^4
-     - Dimension-6 operator in SME framework
+     - Dimension-6 p^4 term in the conditional parameterization
 
-  2. CPT violation: NO
-     - C, P, T each individually exact on cubic lattice
-     - All CPT-odd SME coefficients are identically zero
-     - This is FALSIFIABLE: detection of CPT-odd LV would exclude the model
+  2. CPT
+     - Not established: the complete action and C/P/T operators are absent
+     - No CPT-odd coefficient is fixed by this runner
 
-  3. SME coefficient values (a = l_Planck):
+  3. Conditional coefficient values if a = l_Planck and matching is supplied:
      - c^(6)_{(I)00} ~ -3.37e-40 GeV^-2 (isotropic)
      - c^(6)_{(I)40} ~ -2.65e-40 GeV^-2 (anisotropic)
-     - All CPT-odd coefficients = 0 exactly
 
   4. Natural suppression:
      - (E/E_Planck)^2 ~ 10^-38 at E = 1 GeV
-     - Below ALL current experimental bounds by >= 6 orders of magnitude
-     - Consistent with null results in all LV searches
+     - Historical scale comparison only; no experimental verdict
 
   5. Staggered fermion taste-breaking:
      - Enhances LV by factor 2-4 depending on taste channel
      - Still far below experimental bounds
-     - Predicts flavor-dependent LV (testable in principle)
+     - Imported illustration; no physical flavor identification established
 
   6. Characteristic angular signature:
      - Cubic harmonics (j=4 with m=0, +4, -4)
      - Factor of 3 anisotropy between lattice axis and body diagonal
-     - Unique fingerprint distinguishing cubic from other Planck-scale models
+     - Shared by models with the same cubic symmetry; not unique
 
   BOTTOM LINE:
-    The lattice framework is CONSISTENT with all current data.
-    The predicted Lorentz violation is undetectably small at accessible
-    energies, exactly as expected for a Planck-scale structure.
-    The model makes strong structural predictions (CPT exact, cubic
-    angular pattern, specific SME coefficient ratios) that could be
-    tested if sensitivity improves by ~6 orders of magnitude in the
-    photon birefringence sector.
+    This runner validates the selected symbol's Taylor expansion and cubic
+    harmonic identity. It does not promote the calculation to a four-axiom,
+    CPT, SME-matching, or experimental-consistency result.
 
   Elapsed: 1.7 s
 

@@ -75,9 +75,29 @@ RETAINED_GRADE = {
     "retained_no_go",
 }
 AUDIT_BADGE_RE = re.compile(r"\[audit:([^\]]+)\]")
-DERIVED_SAFETY_RE = re.compile(r"<!--AUDIT_DERIVED_(SAFE|UNSAFE)-->")
+DERIVED_SAFETY_RE = re.compile(
+    r"<!--AUDIT_DERIVED_(SAFE|UNSAFE|NEUTRAL|PREMISE)(?::([a-z0-9_.-]+))?-->"
+)
 DERIVED_SAFE = "<!--AUDIT_DERIVED_SAFE-->"
 DERIVED_UNSAFE = "<!--AUDIT_DERIVED_UNSAFE-->"
+DERIVED_NEUTRAL = "<!--AUDIT_DERIVED_NEUTRAL-->"
+FOUNDATIONAL_ROW_ALLOWLIST = {
+    (
+        "CLAIMS_TABLE.md",
+        "The named Lattice, Qubit, Admissibility, and Record axioms are the current minimal framework surface",
+    ): {"minimal_axioms"},
+    (
+        "FULL_CLAIM_LEDGER.md",
+        "The named Lattice, Qubit, Admissibility, and Record axioms are the current minimal framework surface",
+    ): {"minimal_axioms"},
+    ("PUBLICATION_MATRIX.md", "Framework"): {"minimal_axioms"},
+    ("DERIVATION_ATLAS.md", "Framework axioms"): {"minimal_axioms"},
+    (
+        "DERIVATION_VALIDATION_MAP.md",
+        "Lattice, Qubit, Admissibility, and Record form the current minimal axiom surface",
+    ): {"minimal_axioms"},
+    ("RESULTS_INDEX.md", "Framework / claim surface"): {"minimal_axioms"},
+}
 PROTECTED_INLINE_RE = re.compile(
     r"(\[[^\]]+\]\([^)]+\)|\[audit:[^\]]+\]|`[^`]*`)"
 )
@@ -103,7 +123,7 @@ def _neutralize_source_status_words(line: str) -> str:
     return "".join(parts)
 
 
-def demote_nonretained_table_rows(body: str) -> str:
+def demote_nonretained_table_rows(body: str, source_name: str | None = None) -> str:
     """Make audit-effective views impossible to read as retained prose.
 
     Source tables preserve author history. In the generated effective view,
@@ -132,10 +152,23 @@ def demote_nonretained_table_rows(body: str) -> str:
             continue
         safety = DERIVED_SAFETY_RE.findall(line)
         # Source-authored badge-shaped strings are stripped before annotation.
-        # Only structured markers emitted from ledger lookups can make a row
-        # publication-safe; registered axioms/primitives receive SAFE markers
-        # even though their pipeline effective_status is meta.
-        nonretained = not safety or any(value == "UNSAFE" for value in safety)
+        # Retained-grade claim links make a row safe. Foundational premises are
+        # dependency-satisfying, not downstream ratifications, so a premise-only
+        # row is safe only on the exact controlled framework-row allowlist.
+        kinds = [kind for kind, _ in safety]
+        premise_ids = {claim_id for kind, claim_id in safety if kind == "PREMISE"}
+        cells = line.split("|")
+        first_cell = cells[1].strip() if len(cells) > 2 else ""
+        allowed_premises = FOUNDATIONAL_ROW_ALLOWLIST.get(
+            (source_name or "", first_cell)
+        )
+        premise_declaration = bool(
+            premise_ids and allowed_premises == premise_ids
+        )
+        nonretained = (
+            "UNSAFE" in kinds
+            or not ("SAFE" in kinds or premise_declaration)
+        )
         line = DERIVED_SAFETY_RE.sub("", line)
         if not nonretained:
             rendered.append(line)
@@ -255,9 +288,12 @@ def annotate_links(body: str, source: Path,
             return whole
         match = by_path.get(resolved)
         if not match:
+            relative = str(resolved.relative_to(REPO_ROOT))
+            if relative == "docs/repo/FRONT_DOOR_STATUS.md":
+                return f"{whole}&nbsp;{DERIVED_NEUTRAL}[audit:control-plane]"
             lookups.append({
                 "claim_id": None,
-                "note_path": str(resolved.relative_to(REPO_ROOT)),
+                "note_path": relative,
                 "audit_status": None,
                 "effective_status": "unresolved",
                 "criticality": None,
@@ -276,13 +312,15 @@ def annotate_links(body: str, source: Path,
             "accepted_premise": premise_nodes.is_axiom_premise(cid),
         })
         badge = status_badge(eff, ast)
-        safe = (
-            eff in RETAINED_GRADE
-            or (isinstance(eff, str) and eff.startswith("decoration_under_"))
-            or premise_nodes.is_axiom_premise(cid)
+        is_premise = premise_nodes.is_axiom_premise(cid)
+        safe = eff in RETAINED_GRADE or (
+            isinstance(eff, str) and eff.startswith("decoration_under_")
         )
         # Append the badge AFTER the link, with a thin space
-        marker = DERIVED_SAFE if safe else DERIVED_UNSAFE
+        if is_premise:
+            marker = f"<!--AUDIT_DERIVED_PREMISE:{cid}-->"
+        else:
+            marker = DERIVED_SAFE if safe else DERIVED_UNSAFE
         return f"{whole}&nbsp;{marker}{badge}"
 
     new_body = LINK_RE.sub(repl, body)
@@ -327,7 +365,7 @@ def render_table(source_name: str, output_name: str, scope_label: str,
         lookups = []
     else:
         annotated = strip_non_table_narrative(
-            demote_nonretained_table_rows(annotated)
+            demote_nonretained_table_rows(annotated, source_name=source_name)
         )
 
     if source_name == "ARXIV_DRAFT.md":

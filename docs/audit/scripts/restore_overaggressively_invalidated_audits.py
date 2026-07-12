@@ -220,7 +220,7 @@ def clean_audit_provenance_is_compatible(
     if isinstance(family, str) and family.startswith("codex-gpt-"):
         model = audit.get("auditor_model")
         match = (
-            re.fullmatch(r"gpt-(\d+(?:\.\d+)*)(?:-sol)?", model)
+            re.fullmatch(r"gpt-(\d+(?:\.\d+)*)-sol", model)
             if isinstance(model, str)
             else None
         )
@@ -231,6 +231,20 @@ def clean_audit_provenance_is_compatible(
             and audit.get("auditor_reasoning_effort") == "xhigh"
             and independence != "weak"
         )
+    model = audit.get("auditor_model")
+    reasoning = audit.get("auditor_reasoning_effort")
+    non_codex_provenance = bool(
+        isinstance(family, str)
+        and family
+        and not family.startswith("codex-gpt-")
+        and isinstance(model, str)
+        and model
+        and not model.startswith("gpt-")
+        and isinstance(reasoning, str)
+        and reasoning
+    )
+    if not non_codex_provenance:
+        return False
     if top_level:
         return independence in {"strong", "external", "judicial_review"}
     return independence not in {None, "weak"}
@@ -511,6 +525,12 @@ def restore_audit_from_previous(
         for audit_key in ("first_audit", "second_audit", "third_audit"):
             summary = cross.get(audit_key)
             if not isinstance(summary, dict) or summary.get("verdict") != "audited_clean":
+                continue
+            summary_requires_packet = (
+                source_required
+                or no_go_discipline_gate.output_requires_no_go_discipline(summary)
+            )
+            if not summary_requires_packet:
                 continue
             packet = summary.get("no_go_discipline")
             manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(

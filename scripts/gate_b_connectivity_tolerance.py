@@ -3,9 +3,9 @@
 
 This freezes a bounded question:
 
-  If we keep the valley-linear 3D propagation law fixed, how much position
-  noise can we tolerate before the gravity signal degrades, and how much does
-  the connectivity rule matter compared with the node positions?
+  Under the declared finite propagation algorithm, what changes under
+  fixed-adjacency coordinate jitter and under a same-coordinate adjacency
+  replacement?
 
 The harness compares a small fixed set of architectures:
   - ordered lattice baseline
@@ -14,7 +14,7 @@ The harness compares a small fixed set of architectures:
   - grown geometry with K-NN connectivity
   - snapped/grid-like connectivity
 
-The goal is review-safe comparison, not a Gate B theorem.
+The goal is a bounded finite-algorithm theorem, not Gate B dynamics closure.
 """
 
 from __future__ import annotations
@@ -37,7 +37,7 @@ SEEDS = (5, 18, 31, 44, 57, 70)
 JITTER_SWEEP = (0.0, 0.1, 0.2, 0.3, 0.4, 0.5)
 MASS_STRENGTHS = (0.75, 1.0, 1.25)
 ROOT = Path(__file__).resolve().parents[1]
-NOTE = ROOT / "docs" / "GATE_B_DYNAMICS_NOTE.md"
+NOTE = ROOT / "docs" / "GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md"
 
 
 CHECK_PASS = 0
@@ -64,24 +64,24 @@ def _source_boundary_checks() -> None:
     print("Source-boundary checks")
     print("-" * 40)
     _check(
-        "note claim type is open_gate and has 2026-06-12 source-index firewall",
-        "**Claim type:** open_gate" in text
-        and "2026-06-12 audit firewall: source index, not dynamics closure" in text,
+        "registered runner validates the audited connectivity-tolerance note",
+        NOTE.name == "GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md"
+        and "**Claim type:** bounded_theorem" in text
+        and "finite-harness claim awaiting independent audit" in flat,
     )
     _check(
-        "GB-S1b-b/GB-S2b/GB-S3b residues remain supplied row-local data",
-        "`GB-S1b-b`" in flat
-        and "`GB-S2b`" in flat
-        and "`GB-S3b`" in flat
-        and "physical scalar source/boundary/regulator/normalization remains supplied" in flat
-        and "physical detector-window/TOWARD/`F~M` semantics remain supplied" in flat
-        and "physical selection/dynamical generation of that stencil remains supplied" in flat,
+        "note defines detector window, TOWARD, F~M, and the 54-trial denominator",
+        "W(y_m)={d: |y_d-y_m|<=1.5}" in flat
+        and "`3 x 3 x 6 = 54`" in flat
+        and "`delta(y_m,q)>0`" in flat
+        and "`max(delta,1e-30)`" in flat,
     )
     _check(
-        "note forbids Gate B dynamics closure and axiom/admission/status changes",
-        "does not derive a Gate B dynamics theorem" in flat
-        and "physical gravity/readout bridge" in flat
-        and "introduces no new axiom, Tier-A admission, or audit-status change" in flat,
+        "note cites the finite-stencil authority and excludes physical overclaims",
+        "GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md" in text
+        and "No physical Poisson/source law" in flat
+        and "physical detector-window, `TOWARD`, or `F~M` semantics" in flat
+        and "architecture-independent theorem that connectivity is the bottleneck" in flat,
     )
 
 
@@ -286,6 +286,14 @@ def _detector_probs(amps: Sequence[complex], det: Sequence[int]) -> Dict[int, fl
     return {d: p / total for d, p in raw.items()}
 
 
+def _normalized_distribution(probs: Dict[int, float]) -> bool:
+    return (
+        bool(probs)
+        and all(math.isfinite(p) and p >= 0.0 for p in probs.values())
+        and math.isclose(sum(probs.values()), 1.0, rel_tol=0.0, abs_tol=1e-12)
+    )
+
+
 def _mass_window_gain(
     probs_mass: Dict[int, float],
     probs_free: Dict[int, float],
@@ -317,6 +325,23 @@ def _fit_power(xs: Sequence[float], ys: Sequence[float]) -> float:
     return sxy / sxx
 
 
+def _mass_index_for_label(layer_nodes: Sequence[int], y_mass: int) -> int | None:
+    """Return the stable `(y_label, z_label) = (y_mass, 0)` site.
+
+    Every graph family preserves the square grid-label ordering within a
+    layer even when its embedded coordinates drift.  Selecting by that stable
+    ordering keeps the source identity and trial panel fixed across jitter and
+    across the same-coordinate templated/K-NN comparison.
+    """
+    span = math.isqrt(len(layer_nodes))
+    if span * span != len(layer_nodes) or span % 2 != 1:
+        return None
+    half = (span - 1) // 2
+    if not -half <= y_mass <= half:
+        return None
+    return layer_nodes[(y_mass + half) * span + half]
+
+
 def _measure_family(graph: GraphFamily, mass_strengths: Sequence[float], y_masses: Sequence[int]) -> dict:
     positions = graph.positions
     layers = graph.layers
@@ -330,6 +355,7 @@ def _measure_family(graph: GraphFamily, mass_strengths: Sequence[float], y_masse
 
     free = _propagate(positions, layers, adj, field0, blocked)
     free_probs = _detector_probs(free, det)
+    normalization_ok = _normalized_distribution(free_probs)
 
     toward = 0
     total = 0
@@ -337,11 +363,7 @@ def _measure_family(graph: GraphFamily, mass_strengths: Sequence[float], y_masse
     scale_deltas: List[float] = []
 
     for y_mass in y_masses:
-        mass_idx = None
-        for node in layers[gl]:
-            if round(positions[node][1]) == y_mass and round(positions[node][2]) == 0:
-                mass_idx = node
-                break
+        mass_idx = _mass_index_for_label(layers[gl], y_mass)
         if mass_idx is None:
             continue
 
@@ -349,6 +371,7 @@ def _measure_family(graph: GraphFamily, mass_strengths: Sequence[float], y_masse
             field = _field_for_mass(positions, mass_idx, strength * FIELD_STRENGTH)
             mass = _propagate(positions, layers, adj, field, blocked)
             mass_probs = _detector_probs(mass, det)
+            normalization_ok &= _normalized_distribution(mass_probs)
             delta = _mass_window_gain(mass_probs, free_probs, positions, det, float(y_mass))
             if strength == mass_strengths[len(mass_strengths) // 2]:
                 mass_deltas.append(delta)
@@ -362,7 +385,9 @@ def _measure_family(graph: GraphFamily, mass_strengths: Sequence[float], y_masse
         for strength in mass_strengths:
             field = _field_for_mass(positions, mass_idx, strength * FIELD_STRENGTH)
             mass = _propagate(positions, layers, adj, field, blocked)
-            delta = _mass_window_gain(_detector_probs(mass, det), free_probs, positions, det, float(y_mass))
+            mass_probs = _detector_probs(mass, det)
+            normalization_ok &= _normalized_distribution(mass_probs)
+            delta = _mass_window_gain(mass_probs, free_probs, positions, det, float(y_mass))
             scale_series.append(max(delta, 1e-30))
         scale_deltas.append(_fit_power(mass_strengths, scale_series))
 
@@ -376,6 +401,8 @@ def _measure_family(graph: GraphFamily, mass_strengths: Sequence[float], y_masse
         "mean_delta": mean_delta,
         "fpm": fpm,
         "free_centroid": _centroid_y(free, positions, det),
+        "trial_count": total,
+        "normalization_ok": normalization_ok,
     }
 
 
@@ -393,13 +420,15 @@ def _jitter_sweep(base: GraphFamily) -> List[Tuple[float, dict]]:
                     "toward_frac": sum(r["toward_frac"] for r in acc) / len(acc),
                     "mean_delta": sum(r["mean_delta"] for r in acc) / len(acc),
                     "fpm": sum(r["fpm"] for r in acc) / len(acc),
+                    "trial_count": sum(r["trial_count"] for r in acc),
+                    "normalization_ok": all(r["normalization_ok"] for r in acc),
                 },
             )
         )
     return rows
 
 
-def _architecture_suite() -> List[Tuple[str, GraphFamily, dict]]:
+def _architecture_suite() -> List[Tuple[str, dict]]:
     base = _build_fixed_connectivity(N_LAYERS, HALF)
     ordered = base
     jittered = _jitter_positions(base, jitter=0.5, seed=5)
@@ -436,31 +465,149 @@ def _architecture_suite() -> List[Tuple[str, GraphFamily, dict]]:
                     "toward_frac": sum(r["toward_frac"] for r in acc) / len(acc),
                     "mean_delta": sum(r["mean_delta"] for r in acc) / len(acc),
                     "fpm": sum(r["fpm"] for r in acc) / len(acc),
+                    "trial_count": sum(r["trial_count"] for r in acc),
+                    "normalization_ok": all(r["normalization_ok"] for r in acc),
                 },
             )
         )
     return rows
 
 
+def _finite_harness_checks(
+    base: GraphFamily,
+    jitter_rows: Sequence[Tuple[float, dict]],
+    architecture_rows: Sequence[Tuple[str, dict]],
+) -> None:
+    """Check the exact finite statements promoted by the source note."""
+    print()
+    print("Finite-harness theorem checks")
+    print("-" * 40)
+
+    jitter_keeps_adjacency = all(
+        _jitter_positions(base, jitter=jitter, seed=seed).adj == base.adj
+        for jitter in JITTER_SWEEP
+        for seed in SEEDS
+    )
+    _check(
+        "fixed-connectivity jitter changes coordinates but never adjacency",
+        jitter_keeps_adjacency,
+    )
+
+    stable_mass_panel = all(
+        _mass_index_for_label(graph.layers[2 * len(graph.layers) // 3], y_mass) is not None
+        for graph in (
+            *(_jitter_positions(base, jitter=jitter, seed=seed) for jitter in JITTER_SWEEP for seed in SEEDS),
+            *(_templated_growth(N_LAYERS, HALF, drift=0.22, seed=seed, snap=False) for seed in SEEDS),
+            *(_knn_growth(N_LAYERS, HALF, drift=0.22, k=9, seed=seed) for seed in SEEDS),
+            *(_templated_growth(N_LAYERS, HALF, drift=0.22, seed=seed, snap=True) for seed in SEEDS),
+        )
+        for y_mass in Y_MASSES
+    )
+    _check("all graph rows keep the same three stable mass-label sites", stable_mass_panel)
+
+    paired_positions_match = True
+    paired_adjacencies_differ = True
+    for seed in SEEDS:
+        templated = _templated_growth(N_LAYERS, HALF, drift=0.22, seed=seed, snap=False)
+        knn = _knn_growth(N_LAYERS, HALF, drift=0.22, k=9, seed=seed)
+        paired_positions_match &= templated.positions == knn.positions and templated.layers == knn.layers
+        paired_adjacencies_differ &= templated.adj != knn.adj
+    _check(
+        "templated and K-NN rows use identical unsnapped coordinates seed by seed",
+        paired_positions_match,
+    )
+    _check(
+        "templated fixed-offset and K-NN distance-recomputed adjacencies differ",
+        paired_adjacencies_differ,
+    )
+
+    _check(
+        "every displayed row contains 54 trials with normalized terminal weights",
+        all(row["trial_count"] == 54 and row["normalization_ok"] for _, row in jitter_rows)
+        and all(row["trial_count"] == 54 and row["normalization_ok"] for _, row in architecture_rows),
+    )
+
+    jitter_display = [
+        (f"{jitter:.2f}", f"{row['toward_frac']*100:.1f}%", f"{row['mean_delta']:+.6f}", f"{row['fpm']:.2f}")
+        for jitter, row in jitter_rows
+    ]
+    expected_jitter_display = [
+        ("0.00", "66.7%", "+0.000012", "0.66"),
+        ("0.10", "55.6%", "+0.000003", "0.55"),
+        ("0.20", "61.1%", "+0.000010", "0.61"),
+        ("0.30", "55.6%", "+0.000014", "0.56"),
+        ("0.40", "55.6%", "+0.000008", "0.55"),
+        ("0.50", "72.2%", "+0.000007", "0.72"),
+    ]
+    _check("computed jitter rows match the frozen displayed table", jitter_display == expected_jitter_display)
+
+    architecture_display = [
+        (name, f"{row['toward_frac']*100:.1f}%", f"{row['mean_delta']:+.6f}", f"{row['fpm']:.2f}")
+        for name, row in architecture_rows
+    ]
+    expected_architecture_display = [
+        ("ordered lattice", "66.7%", "+0.000012", "0.66"),
+        ("jittered lattice", "72.2%", "+0.000007", "0.72"),
+        ("templated growth", "50.0%", "+0.000013", "0.50"),
+        ("K-NN grown", "61.1%", "+0.000013", "0.61"),
+        ("snapped/grid-like", "50.0%", "+0.000003", "0.50"),
+    ]
+    _check(
+        "computed architecture rows match the frozen displayed table",
+        architecture_display == expected_architecture_display,
+    )
+
+    architecture_map = {name: row for name, row in architecture_rows}
+    templated_summary = architecture_map["templated growth"]
+    knn_summary = architecture_map["K-NN grown"]
+    _check(
+        "same-coordinate adjacency replacement changes a reported finite functional",
+        not math.isclose(
+            templated_summary["toward_frac"],
+            knn_summary["toward_frac"],
+            rel_tol=0.0,
+            abs_tol=1e-15,
+        )
+        or not math.isclose(
+            templated_summary["mean_delta"],
+            knn_summary["mean_delta"],
+            rel_tol=0.0,
+            abs_tol=1e-15,
+        )
+        or not math.isclose(
+            templated_summary["fpm"],
+            knn_summary["fpm"],
+            rel_tol=0.0,
+            abs_tol=1e-15,
+        ),
+    )
+
+    toward_series = [row[1]["toward_frac"] for row in jitter_rows]
+    monotone_nonincreasing = all(a >= b for a, b in zip(toward_series, toward_series[1:]))
+    _check("fixed-stencil TOWARD series is not monotonically decreasing", not monotone_nonincreasing)
+
+
 def main() -> None:
     base = _build_fixed_connectivity(N_LAYERS, HALF)
+    jitter_rows = _jitter_sweep(base)
+    architecture_rows = _architecture_suite()
     print("=" * 88)
-    print("GATE B CONNECTIVITY TOLERANCE REPLAY")
-    print("  Valley-linear gravity on layered 3D graphs")
-    print("  Question: is position noise tolerated while connectivity structure matters?")
+    print("GATE B FINITE CONNECTIVITY COMPARISON")
+    print("  Declared valley-linear algorithm on layered 3D graphs")
+    print("  Question: what changes under coordinate jitter and same-coordinate adjacency replacement?")
     print("=" * 88)
     print()
     print(
         f"Setup: layers={N_LAYERS}, half-width={HALF}, mass strengths={MASS_STRENGTHS}, "
         f"mass y targets={Y_MASSES}"
     )
-    print("Action: S = L(1-f), 3D forward propagation, fixed valley-linear phase valley")
+    print("Action definition: S = L(1-f), finite 3D forward propagation")
     print()
 
     print("Jitter sweep on fixed connectivity")
     print(f"  {'jitter':>6s}  {'toward':>8s}  {'mean_delta':>11s}  {'F~M':>6s}")
     print(f"  {'-' * 40}")
-    for jitter, row in _jitter_sweep(base):
+    for jitter, row in jitter_rows:
         print(
             f"  {jitter:6.2f}  {row['toward_frac']*100:7.1f}%  "
             f"{row['mean_delta']:+11.6f}  {row['fpm']:6.2f}"
@@ -470,7 +617,7 @@ def main() -> None:
     print("Architecture comparison")
     print(f"  {'architecture':>18s}  {'toward':>8s}  {'mean_delta':>11s}  {'F~M':>6s}")
     print(f"  {'-' * 52}")
-    for name, row in _architecture_suite():
+    for name, row in architecture_rows:
         print(
             f"  {name:18s}  {row['toward_frac']*100:7.1f}%  "
             f"{row['mean_delta']:+11.6f}  {row['fpm']:6.2f}"
@@ -478,10 +625,11 @@ def main() -> None:
 
     print()
     print("Interpretation:")
-    print("  - Fixed connectivity tolerates substantial position noise.")
-    print("  - Once connectivity is recomputed from geometry, the gain becomes mixed.")
-    print("  - The local F~M fit stays in a non-catastrophic linear-response band.")
-    print("  - This is a connectivity-vs-noise audit, not a Gate B theorem.")
+    print("  - The fixed-stencil jitter rows show no monotone TOWARD collapse on the tested sweep.")
+    print("  - Same-coordinate templated and K-NN rows isolate finite adjacency dependence.")
+    print("  - TOWARD and F~M are declared finite functionals, not physical observables.")
+    print("  - This is a bounded finite-harness theorem, not Gate B dynamics closure.")
+    _finite_harness_checks(base, jitter_rows, architecture_rows)
     _source_boundary_checks()
     print(f"BOUNDARY_CHECKS: PASS={CHECK_PASS} FAIL={CHECK_FAIL}")
     if CHECK_FAIL:

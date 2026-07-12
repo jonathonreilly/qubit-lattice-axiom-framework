@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 364 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2780 |
+| unaudited | 2779 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 51 |
+| ~~audited_conditional~~ | 52 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 476 |
-| `audited_conditional` | 51 |
+| `audited_conditional` | 52 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3130 |
+| `unaudited` | 3129 |
 
 | claim_type | count |
 |---|---:|
@@ -631,6 +631,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -2225,6 +2226,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The congruence delta_i-a_i=-q_i k_i makes every even-q_i axis parity-preserving, while every odd q_i >= 3 has the stated residue with k_i=1 and hence a parity flip. Summing axes is valid because n^2 is congruent to n modulo 2.
 - **rationale:** The load-bearing step is exact modular arithmetic under the stated centered representative convention. The runner source performs actual residue, symbolic, numeric sweep, and selected full-coset checks rather than merely printing pass counts, although several regression targets are frozen as expected values. No cited dependency, physical bridge, comparator value, or tuned numerical input is needed for this narrow theorem.
 - **auditor confidence:** high
+
+### `conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`CONDITIONAL_LAW_PREFIX_LADDER_NO_FINITE_K_EXHAUSTION_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/CONDITIONAL_LAW_PREFIX_LADDER_NO_FINITE_K_EXHAUSTION_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Fixed L=3 runner object; cap-11/12-stable selected rows at cap 12; seeds 4242, 99, and 7; prefix k=2..8; the literal adequacy gate min_active_family>=8 and active_families>=2^(k-1); and the fixed 300-draw seeded permutation null. Only the observed adequate rows under this gate are audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00389-conditional_law_prefix_ladde`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Under the stated family-adequacy gate, every tested seed clears the permutation-null threshold at every adequate k, with all higher-k entries classified as family-inadequate.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the finite ladders and supports the stated result for its fixed machinery and adequacy rule. The restricted packet does not derive that Hamiltonian, Kraus pair, Born weighting, selector, numerical parameters, or adequacy threshold from the supplied axioms, and the note expressly leaves alternative adequate-family rules untested.
+- **rationale:** The runner is substantive rather than a print-only harness: it constructs the finite Fock-space dynamics, evolves branch trees, computes determinant phases and permutation-null quantiles, and obtains the displayed adequate clear sets. Its result is nevertheless conditional on substantial fixed model machinery and numerical choices that are not derived from the supplied axiom registry or supported by cited one-hop authorities. The no-go discipline gate also fails because a different adequate-family rule is explicitly left open, so the rhetoric cannot be certified as exhaustion-independent even within the broader accessible ladder.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1: alternate_adequacy_rule remains OPEN.
+    - N5: the broad no-exhaustion rhetoric has untested resolutions outside the fixed gate and finite runner packet.
+    - N7: the strongest alternative-adequacy steelman is unresolved.
 
 ### `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10`
 

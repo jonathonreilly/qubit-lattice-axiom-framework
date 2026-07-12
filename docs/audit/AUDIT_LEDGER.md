@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 420 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2619 |
+| unaudited | 2618 |
 | audit_in_progress | 29 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 103 |
+| ~~audited_conditional~~ | 104 |
 | ~~audited_failed~~ | 26 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -48,12 +48,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 29 |
 | `audited_clean` | 558 |
-| `audited_conditional` | 103 |
+| `audited_conditional` | 104 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2969 |
+| `unaudited` | 2968 |
 
 | claim_type | count |
 |---|---:|
@@ -755,6 +755,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hierarchy_matsubara_decomposition_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `koide_a1_loop_final_status_2026-04-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -5754,6 +5755,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The live runner supports the gravity-specific crossover and gamma=0.5 escape suppression, but it contradicts the source's stronger detector-escape claim for any gamma > 0: several nonzero-field rows at gamma=0.1 or 0.2 still have escape ratios above 1.
 - **rationale:** Issue: the source conflates link-level imaginary-action damping with the detector escape observable. The factor exp(-k gamma L f) is below 1 for f > 0 and gamma > 0, but the runner's detector escape ratios are still above 1 for UNIFORM f=0.005 at gamma=0.1 and 0.2, UNIFORM f=0.01 at gamma=0.1 and 0.2, and GRAVITY at gamma=0.1 and 0.2. Why this blocks: the retained separation claim says kernel-generic absorption occurs under any nonzero field at gamma > 0, but the measured observable used by the note only shows suppression at sufficiently large gamma in this setup. Repair target: distinguish local per-link attenuation from total detector escape, or add a theorem/runner proving a thresholded escape-suppression criterion across gamma and field families. Claim boundary until fixed: safely claim only that gamma=0.5 suppresses detector escape for the tested nonzero fields, and that the 1/r gravity field uniquely shows the tested TOWARD -> AWAY centroid crossover by gamma=0.2.
 - **auditor confidence:** high
+
+### `koide_a1_loop_final_status_2026-04-22`
+
+- **Note:** [`KOIDE_A1_LOOP_FINAL_STATUS_2026-04-22.md`](../../docs/KOIDE_A1_LOOP_FINAL_STATUS_2026-04-22.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic consequences of the declared quartic ansatz and formal trace data, including the zero locus and the formal values c^2 = 2 and Q = 2/3.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00130-koide_a1_loop_final_status_2`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting the declared trace data into the admitted ansatz V(Phi) := [2 tr(Phi)^2 - 3 tr(Phi^2)]^2 gives V(Phi) = 81(a^2 - 2r^2)^2.  _(class `A`)_
+- **chain closes:** False — The symbolic algebra closes after the quartic ansatz and trace data are supplied. The restricted packet does not derive or otherwise close that ansatz, so the result remains conditional on it.
+- **rationale:** The runner genuinely performs the stated symbolic substitutions, factorization, zero-locus checks, and formal c and Q evaluations rather than merely printing expected values. Those computations correctly establish every scoped conclusion from the declared inputs. However, the quartic potential is an explicit admitted premise rather than an independently retained-grade input, and the note expressly excludes its derivation from the framework.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1 contains OPEN and UNTESTED routes for deriving or independently supplying the quartic ansatz.
+    - N5 identifies the minimal-axiom derivation resolution as untested.
 
 ### `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24`
 

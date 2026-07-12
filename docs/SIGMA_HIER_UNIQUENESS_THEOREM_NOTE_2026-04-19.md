@@ -5,7 +5,7 @@
 external inputs (the pinned chamber point, the NuFit 5.3 NO 3σ magnitude windows, and
 the T2K/NOvA `sin(δ_CP) < 0` sign preference), `σ_hier = (2, 1, 0)` is the unique
 hierarchy-pairing permutation passing the joint 4-observable PMNS filter at the pinned
-chamber point  
+chamber point
 **Runner:** `scripts/frontier_sigma_hier_uniqueness_theorem.py` ([scripts/frontier_sigma_hier_uniqueness_theorem.py](../scripts/frontier_sigma_hier_uniqueness_theorem.py))
 **Runner result:** `PASS = 33, FAIL = 0`
 

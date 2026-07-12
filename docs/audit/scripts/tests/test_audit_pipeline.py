@@ -4217,7 +4217,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertEqual([path.name for path in paths], ["SOURCE_NO_GO.md"])
         self.assertEqual([record["path"].name for record in records], ["SOURCE_NO_GO.md"])
 
-    def test_cross_cycle_index_is_complete_and_ignores_mutable_peer_audit_state(self):
+    def test_cross_cycle_index_caps_bulk_kinds_with_authenticated_tail_and_ignores_mutable_peer_audit_state(self):
         m = _import("no_go_discipline_gate")
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -4253,7 +4253,15 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 candidate for candidate in parsed["candidates"]
                 if candidate["kind"] == "similar_negative_boundary"
             ]
-            self.assertEqual(len(similar), 100)
+            cap = m.N8_KIND_CANDIDATE_LIMITS["similar_negative_boundary"]
+            self.assertEqual(len(similar), cap)
+            truncation = parsed["candidate_truncation"]["similar_negative_boundary"]
+            self.assertEqual(truncation["total_hits"], 100)
+            self.assertEqual(truncation["listed"], cap)
+            self.assertEqual(truncation["omitted_count"], 100 - cap)
+            self.assertEqual(len(truncation["omitted_candidate_ids_sha256"]), 64)
+            # the universe itself stays complete: capping the disposition
+            # list never hides the corpus
             self.assertEqual(parsed["no_go_row_universe_count"], 100)
             self.assertEqual(
                 {item["claim_id"] for item in parsed["no_go_row_universe"]},
@@ -4274,6 +4282,110 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             target_row["claim_scope"] = "different mutable target scope"
             target_row["verdict_rationale"] = "different mutable target verdict"
             self.assertNotEqual(first, m.build_cross_cycle_index(target_row, rows, root))
+
+    def test_dynamic_index_growth_never_invalidates_but_is_reported(self):
+        m = _import("no_go_discipline_gate")
+        index_uri = m.cross_cycle_index_path("target_claim")
+        universe_sha = "0" * 64
+        stored_index_text = json.dumps(
+            {
+                "schema": "no_go_cross_cycle_index_v1",
+                "claim_id": "target_claim",
+                "no_go_row_universe_count": 1,
+                "no_go_row_universe_sha256": universe_sha,
+                "candidates": [
+                    {"candidate_id": "open_gate:alpha", "kind": "open_gate"}
+                ],
+            }
+        )
+        manifest = {
+            index_uri: {
+                "path": index_uri,
+                "roles": ["cross_cycle_index"],
+                "text": stored_index_text,
+                "effective_status": None,
+                "accepted_premise_type": None,
+            }
+        }
+        packet = {
+            "required": True,
+            "status": "PASS",
+            "N8_cross_cycle_echo": {
+                "packet_complete": True,
+                "echoes": [
+                    {
+                        "candidate_id": "open_gate:alpha",
+                        "mechanism": "synthetic",
+                        "retired": False,
+                        "applicable": False,
+                        "addressed": True,
+                        "evidence_path": index_uri,
+                        "evidence_locator": "open_gate:alpha",
+                    }
+                ],
+                "unresolved": [],
+                "evidence_path": index_uri,
+                "evidence_locator": "open_gate:alpha",
+            },
+        }
+        packet["evidence_snapshot"] = m.build_evidence_snapshot(packet, manifest)
+        grown_index_text = json.dumps(
+            {
+                "schema": "no_go_cross_cycle_index_v1",
+                "claim_id": "target_claim",
+                "no_go_row_universe_count": 2,
+                "no_go_row_universe_sha256": universe_sha,
+                "candidates": [
+                    {"candidate_id": "open_gate:alpha", "kind": "open_gate"},
+                    {"candidate_id": "open_gate:beta", "kind": "open_gate"},
+                ],
+            }
+        )
+        current_manifest = {
+            index_uri: dict(manifest[index_uri], text=grown_index_text)
+        }
+        self.assertIsNone(
+            m.evidence_snapshot_current_error(packet, current_manifest)
+        )
+        growth = m.evidence_snapshot_index_growth(packet, current_manifest)
+        self.assertEqual(growth, {index_uri: ["open_gate:beta"]})
+
+    def test_stable_role_content_drift_still_invalidates(self):
+        m = _import("no_go_discipline_gate")
+        manifest = {
+            "docs/SOURCE.md": {
+                "path": "docs/SOURCE.md",
+                "roles": ["source"],
+                "text": "original source text with a stable locator sentence.",
+                "effective_status": None,
+                "accepted_premise_type": None,
+            }
+        }
+        packet = {
+            "required": True,
+            "status": "PASS",
+            "N3_hidden_wall_scan": {
+                "hits": [
+                    {
+                        "phrase": "stable locator sentence",
+                        "resolution": "synthetic",
+                        "evidence_path": "docs/SOURCE.md",
+                        "evidence_locator": "stable locator sentence",
+                    }
+                ],
+                "unresolved": [],
+            },
+        }
+        packet["evidence_snapshot"] = m.build_evidence_snapshot(packet, manifest)
+        drifted = {
+            "docs/SOURCE.md": dict(
+                manifest["docs/SOURCE.md"],
+                text="rewritten source text, locator gone.",
+            )
+        }
+        self.assertIsNotNone(
+            m.evidence_snapshot_current_error(packet, drifted)
+        )
 
     def test_previous_audit_candidates_are_live_unless_explicitly_retired(self):
         m = _import("no_go_discipline_gate")
@@ -4694,17 +4806,26 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "schema": "no_go_cross_cycle_index_v1", "claim_id": "test_no_go",
             "candidates": [{"candidate_id": "new:cycle", "kind": "prior_audit_cycle"}],
         })
+        # Verdict durability (default): dynamic-index drift never
+        # retroactively invalidates an authenticated packet.
+        self.assertIsNone(m.evidence_snapshot_current_error(packet, changed))
+        # Apply-time replay rejection opts back in and still catches it.
         self.assertIn(
             "rendered content drifted",
-            m.evidence_snapshot_current_error(packet, changed) or "",
+            m.evidence_snapshot_current_error(
+                packet, changed, dynamic_index_drift_invalidates=True
+            ) or "",
         )
         changed = json.loads(json.dumps(manifest))
         cross_payload = json.loads(changed[cross_path]["text"])
         cross_payload["search_scope"] = {"scanned_count": 9999}
         changed[cross_path]["text"] = json.dumps(cross_payload)
+        self.assertIsNone(m.evidence_snapshot_current_error(packet, changed))
         self.assertIn(
             "rendered content drifted",
-            m.evidence_snapshot_current_error(packet, changed) or "",
+            m.evidence_snapshot_current_error(
+                packet, changed, dynamic_index_drift_invalidates=True
+            ) or "",
         )
 
     def test_snapshot_reauthenticates_authority_metadata_and_path_universe(self):

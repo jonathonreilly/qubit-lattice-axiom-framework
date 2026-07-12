@@ -223,7 +223,14 @@ historical dispositions, open derivation obligations, similar `no_go` rows in th
 audit ledger, and every tracked
 `.claude/science/physics-loops/**/NO_GO_LEDGER.md` file. The index metadata
 states the exact glob, scanned file count and paths, similarity threshold, and
-candidate limit. You must disposition every listed `candidate_id`;
+per-kind candidate limits. High-signal kinds (prior audit cycles, open gates,
+loop ledgers) are listed in full; the bulk similarity/scan kinds are capped by
+the declared relevance order with an authenticated omitted-tail summary
+(`candidate_truncation`: total hits, omitted count, omitted-id hash), so the
+corpus cannot be hidden while the disposition set stays reviewable. Index
+universes that grow after your packet is authenticated are re-audit signal
+for the dispatch stream, never retroactive invalidation of your verdict. You
+must disposition every listed `candidate_id`;
 `packet_complete` is valid only when the N8 evidence path names this index.
 
 ```json

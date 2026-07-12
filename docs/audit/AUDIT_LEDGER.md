@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 93 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 369 |
+| **retained_bounded** | 370 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2769 |
+| unaudited | 2768 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,22 +45,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 482 |
+| `audited_clean` | 483 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 31 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3119 |
+| `unaudited` | 3118 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2050 |
+| `bounded_theorem` | 2051 |
 | `decoration` | 23 |
 | `meta` | 357 |
 | `no_go` | 467 |
 | `open_gate` | 198 |
-| `positive_theorem` | 659 |
+| `positive_theorem` | 658 |
 
 | criticality | count |
 |---|---:|
@@ -255,6 +255,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_field_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `dirac_observable_panel_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dirac_source_smoothing_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `dirac_weak_coupling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `directional_b_density_stencil_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dispersion_high_p_tiebreaker_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `dm_abcc_basin_finite_search_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2849,6 +2850,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N3: structurality imports exclusion of mechanisms not tested by the packet.
     - N5: the negative rhetoric exceeds the finite resolutions actually tested.
     - N7: the strongest larger-n and asymptotic steelman is unresolved.
+
+### `dirac_weak_coupling_note`
+
+- **Note:** [`DIRAC_WEAK_COUPLING_NOTE.md`](../../docs/DIRAC_WEAK_COUPLING_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the supplied periodic 3+1D Dirac v4 scan grid, weakening strength from 5.0e-04 to 5.0e-05 leaves sign-stability totals unchanged, while larger lambda improves only the reported |bias| fit.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00401-dirac_weak_coupling_note`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Across all four strengths the sign-stability totals remain unchanged, while increasing lambda improves the fitted |bias| magnitude law without restoring a signed delta-law fit.  _(class `C`)_
+- **chain closes:** True — The primary runner calls a supplied helper that explicitly constructs the Dirac walk, evolves field and free cases, computes their bias difference, classifies signs, and fits the reported laws. Its completed output supports the scoped totals and lambda-dependent magnitude-fit behavior.
+- **rationale:** The runner does not hard-code the contested totals or fitted exponents; it computes them from explicit lattice evolution and then performs transparent aggregation and regression. The completed summary matches the source note’s cross-strength invariance, absence of signed fits, and larger-lambda |bias| improvement. Clean status is limited to this configured finite scan and does not establish a continuum, universal gravity, or general coupling theorem.
+- **auditor confidence:** high
 
 ### `directional_b_density_stencil_note`
 

@@ -28728,6 +28728,18 @@
       "dominant_class": "B",
       "runner": "scripts/propagator_family_scaffold_bridge.py"
     },
+    "protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_narrow_theorem_note_2026-07-10": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py"
+    },
     "proton_lifetime_derived_note": {
       "assert_count": 1,
       "counts": {
@@ -89272,6 +89284,21 @@
       "dominant_class": "B",
       "exists": true
     },
+    "scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py": {
+      "assert_count": 2,
+      "claims": [
+        "protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_narrow_theorem_note_2026-07-10"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true
+    },
     "scripts/pwc_commuting_cgf_framework_native_2026_06_17.py": {
       "assert_count": 1,
       "claims": [
@@ -93506,12 +93533,12 @@
     "dominant_class_distribution": {
       "A": 515,
       "B": 663,
-      "C": 1317,
+      "C": 1318,
       "D": 454,
       "none": 458
     },
-    "runners_classified": 3407,
-    "runners_with_C": 1795,
-    "runners_with_D": 1096
+    "runners_classified": 3408,
+    "runners_with_C": 1796,
+    "runners_with_D": 1097
   }
 }

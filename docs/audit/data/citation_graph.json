@@ -33073,6 +33073,14 @@
       "to": "electrostatics_superposition_proxy_note"
     },
     {
+      "from": "protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_narrow_theorem_note_2026-07-10",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_narrow_theorem_note_2026-07-10",
+      "to": "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10"
+    },
+    {
       "from": "proton_lifetime_derived_note",
       "to": "bminusl_anomaly_freedom_theorem_note_2026-04-24"
     },
@@ -103830,6 +103838,21 @@
       "runner_path": "scripts/propagator_family_scaffold_bridge.py",
       "title": "Propagator Family Unification Note"
     },
+    "protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_narrow_theorem_note_2026-07-10": {
+      "claim_id": "protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_narrow_theorem_note_2026-07-10",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "minimal_axioms",
+        "kinetic_isotropy_3d_simultaneous_tick_bounded_theorem_note_2026-06-10"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "56c6fa6a2b2703733b5d2ef325bb9cea973b20e8978eea697e76edaefb88fb34",
+      "path": "docs/PROTOCOL_ADMISSIBILITY_3D_REALIZATION_BRIDGE_AND_WORD_DISPERSIVENESS_NARROW_THEOREM_NOTE_2026-07-10.md",
+      "runner_path": "scripts/protocol_admissibility_3d_realization_bridge_and_word_dispersiveness_2026_07_10.py",
+      "title": "Protocol--Admissibility 3D Realization Bridge And Word Dispersiveness"
+    },
     "proton_lifetime_derived_note": {
       "claim_id": "proton_lifetime_derived_note",
       "claim_type_author_hint": "bounded_theorem",
@@ -129136,7 +129159,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1631,
+      "bounded_theorem": 1632,
       "decoration": 3,
       "meta": 333,
       "no_go": 336,
@@ -129145,7 +129168,7 @@
       "positive_theorem": 281
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2031,
+      "bounded_theorem": 2032,
       "decoration": 3,
       "meta": 333,
       "no_go": 439,
@@ -129153,10 +129176,10 @@
       "open_gate": 209,
       "positive_theorem": 661
     },
-    "edge_count": 14547,
-    "leaf_count": 1334,
-    "node_count": 3924,
+    "edge_count": 14549,
+    "leaf_count": 1335,
+    "node_count": 3925,
     "root_count": 1116,
-    "runners_with_path": 3541
+    "runners_with_path": 3542
   }
 }

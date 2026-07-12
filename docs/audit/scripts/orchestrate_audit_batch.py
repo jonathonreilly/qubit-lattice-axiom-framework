@@ -45,13 +45,18 @@ MIN_DELIVERY_BYTES = 200
 
 
 def sh(cmd: list[str], timeout: int | None = None) -> subprocess.CompletedProcess:
-    return subprocess.run(
-        cmd,
-        cwd=REPO_ROOT,
-        capture_output=True,
-        text=True,
-        timeout=timeout,
-    )
+    try:
+        return subprocess.run(
+            cmd,
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=timeout,
+        )
+    except subprocess.TimeoutExpired as exc:
+        stdout = exc.stdout.decode() if isinstance(exc.stdout, bytes) else (exc.stdout or "")
+        stderr = exc.stderr.decode() if isinstance(exc.stderr, bytes) else (exc.stderr or "")
+        return subprocess.CompletedProcess(cmd, 124, stdout, stderr or f"timed out after {timeout}s")
 
 
 def load_rows() -> dict[str, dict]:
@@ -65,6 +70,8 @@ def accepted(cid: str) -> bool:
 
 def dep_ready(row: dict, effective: dict[str, str]) -> bool:
     for dep in row.get("deps") or []:
+        if audit_runner.premise_nodes.is_non_evidence_context_dep(dep):
+            return False
         if accepted(dep):
             continue
         status = effective.get(dep, "MISSING")
@@ -72,6 +79,19 @@ def dep_ready(row: dict, effective: dict[str, str]) -> bool:
             continue
         return False
     return True
+
+
+def source_requires_forensic(row: dict) -> bool:
+    note_path = row.get("note_path") or ""
+    try:
+        note_body = (REPO_ROOT / note_path).read_text(encoding="utf-8") if note_path else ""
+    except OSError:
+        note_body = ""
+    return audit_runner.no_go_discipline_gate.source_requires_no_go_discipline(
+        note_path,
+        note_body,
+        row.get("claim_type") or row.get("claim_type_author_hint"),
+    )
 
 
 def lane_closure(root: str, rows: dict[str, dict]) -> set[str]:
@@ -102,7 +122,14 @@ def compute_targets(
         status = row.get("effective_status")
         if status in RETAINED or str(status or "").startswith("decoration_under_"):
             continue
-        if row.get("audit_status") not in {None, "unaudited"}:
+        audit_status = row.get("audit_status") or "unaudited"
+        cross_status = (row.get("cross_confirmation") or {}).get("status")
+        awaiting_second = (
+            audit_status == "audit_in_progress"
+            and cross_status == "awaiting_second"
+            and row.get("criticality") == "critical"
+        )
+        if audit_status != "unaudited" and not awaiting_second:
             skipped.append(f"{cid}: audit_status={row.get('audit_status')}")
             continue
         claim_type = row.get("claim_type") or row.get("claim_type_author_hint")
@@ -112,7 +139,11 @@ def compute_targets(
         if claim_type not in AUDITABLE_TYPES:
             skipped.append(f"{cid}: claim_type={claim_type} - not batch-auditable")
             continue
+        if source_requires_forensic(row):
+            skipped.append(f"{cid}: source shape requires forensic tier")
+            continue
         if not dep_ready(row, effective):
+            skipped.append(f"{cid}: dependencies are not retained-grade")
             continue
         targets.append(row)
     return targets, skipped
@@ -135,6 +166,13 @@ def seat_independence(row: dict, pass_no: int) -> str:
     ):
         return "fresh_context"
     return "cross_family"
+
+
+def passes_for_row(row: dict) -> list[int]:
+    cross_status = (row.get("cross_confirmation") or {}).get("status")
+    if row.get("audit_status") == "audit_in_progress" and cross_status == "awaiting_second":
+        return [2]
+    return [1, 2] if row.get("criticality") == "critical" else [1]
 
 
 def prompt_has_clipped_evidence(manifest: dict[str, dict]) -> list[str]:
@@ -176,9 +214,11 @@ def launch_worker(
         evidence_manifest_out=evidence_manifest,
         audit_invocation_id=invocation_id,
     )
-    prompt, transport_bound = audit_runner.fit_prompt_to_transport_limit(
-        prompt, evidence_manifest, cid
-    )
+    if len(prompt) > audit_runner.CODEX_INPUT_CHAR_LIMIT:
+        raise ValueError(
+            f"{cid}: development packet is {len(prompt)} characters; "
+            "packet must be narrowed without converting transport size into a verdict"
+        )
 
     isolated = workdir / f"isolated-{key}-p{pass_no}"
     isolated.mkdir(parents=True, exist_ok=False)
@@ -193,19 +233,23 @@ def launch_worker(
         "It is the complete restricted packet. Do not inspect any other file. "
         "Return only the response required by that packet."
     )
-    proc = subprocess.Popen(
-        [
-            "codex", "exec", "--skip-git-repo-check", "--ignore-rules",
-            "--sandbox", "read-only", "--model", MODEL,
-            "-c", f"model_reasoning_effort='{REASONING}'",
-            "--output-last-message", str(raw_output), instruction,
-        ],
-        stdin=subprocess.DEVNULL,
-        stdout=log_handle,
-        stderr=log_handle,
-        cwd=isolated,
-        start_new_session=True,
-    )
+    try:
+        proc = subprocess.Popen(
+            [
+                "codex", "exec", "--skip-git-repo-check", "--ignore-rules",
+                "--sandbox", "read-only", "--model", MODEL,
+                "-c", f"model_reasoning_effort='{REASONING}'",
+                "--output-last-message", str(raw_output), instruction,
+            ],
+            stdin=subprocess.DEVNULL,
+            stdout=log_handle,
+            stderr=log_handle,
+            cwd=isolated,
+            start_new_session=True,
+        )
+    except Exception:
+        log_handle.close()
+        raise
     now = time.monotonic()
     return {
         "cid": cid,
@@ -214,10 +258,11 @@ def launch_worker(
         "proc": proc,
         "raw_output": raw_output,
         "delivery": delivery,
+        "log_path": log_path,
         "log_handle": log_handle,
         "evidence_manifest": evidence_manifest,
         "invocation_id": invocation_id,
-        "transport_bound": transport_bound,
+        "transport_bound": None,
         "auditor": f"codex-audit-batch-{ident}",
         "independence": seat_independence(row, pass_no),
         "last_size": 0,
@@ -229,33 +274,47 @@ def launch_worker(
 def wait_workers(jobs: list[dict], stall_minutes: int = 45) -> None:
     pending = set(range(len(jobs)))
     stall_seconds = stall_minutes * 60
-    while pending:
-        now = time.monotonic()
-        for index in list(pending):
+    try:
+        while pending:
+            now = time.monotonic()
+            for index in list(pending):
+                job = jobs[index]
+                output = job["raw_output"]
+                output_size = output.stat().st_size if output.exists() else 0
+                log_size = job["log_path"].stat().st_size if job["log_path"].exists() else 0
+                size = output_size + log_size
+                if size != job["last_size"]:
+                    job["last_size"] = size
+                    job["last_progress"] = now
+                returncode = job["proc"].poll()
+                if returncode is not None:
+                    job["returncode"] = returncode
+                    job["proc"].wait()
+                    pending.remove(index)
+                    continue
+                if now - job["last_progress"] >= stall_seconds:
+                    job["stalled"] = True
+                    try:
+                        os.killpg(job["proc"].pid, signal.SIGKILL)
+                    except ProcessLookupError:
+                        pass
+                    job["returncode"] = job["proc"].wait()
+                    pending.remove(index)
+            if pending:
+                time.sleep(2)
+    except BaseException:
+        for index in pending:
             job = jobs[index]
-            output = job["raw_output"]
-            size = output.stat().st_size if output.exists() else 0
-            if size != job["last_size"]:
-                job["last_size"] = size
-                job["last_progress"] = now
-            returncode = job["proc"].poll()
-            if returncode is not None:
-                job["returncode"] = returncode
-                job["proc"].wait()
-                pending.remove(index)
-                continue
-            if now - job["last_progress"] >= stall_seconds:
-                job["stalled"] = True
-                try:
-                    os.killpg(job["proc"].pid, signal.SIGKILL)
-                except ProcessLookupError:
-                    pass
-                job["returncode"] = job["proc"].wait()
-                pending.remove(index)
-        if pending:
-            time.sleep(2)
-    for job in jobs:
-        job["log_handle"].close()
+            try:
+                os.killpg(job["proc"].pid, signal.SIGKILL)
+            except ProcessLookupError:
+                pass
+            job["returncode"] = job["proc"].wait()
+        raise
+    finally:
+        for job in jobs:
+            if not job["log_handle"].closed:
+                job["log_handle"].close()
 
 
 def finalize_worker(job: dict) -> tuple[dict | None, dict]:
@@ -462,27 +521,54 @@ def apply_serialized(
     report: list[dict],
     retries: int = 3,
 ) -> bool:
+    deliveries: dict[tuple[str, int], tuple[dict, dict]] = {}
+    invalid_claims: set[str] = set()
     for job in sorted(jobs, key=lambda item: (item["cid"], item["pass"])):
         envelope, result = finalize_worker(job)
         if envelope is None:
             report.append(result)
+            invalid_claims.add(job["cid"])
+            continue
+        deliveries[(job["cid"], job["pass"])] = (job, envelope)
+
+    fresh_critical = {
+        job["cid"]
+        for job in jobs
+        if job["row"].get("criticality") == "critical"
+        and passes_for_row(job["row"]) == [1, 2]
+    }
+    for cid in fresh_critical:
+        available = {seat for delivery_cid, seat in deliveries if delivery_cid == cid}
+        if available != {1, 2}:
+            invalid_claims.add(cid)
+            for seat in sorted(available):
+                deliveries.pop((cid, seat), None)
+            report.append({
+                "cid": cid,
+                "result": "critical_peer_delivery_missing",
+                "detail": f"validated seats={sorted(available)}; required=[1, 2]",
+            })
+
+    for key in sorted(deliveries):
+        job, envelope = deliveries[key]
+        if job["cid"] in invalid_claims:
             continue
         ok, result = apply_one_serialized(job, envelope, retries)
         report.append(result)
         if not ok:
             return False
-    return True
+    return not invalid_claims
 
 
 def selected_batch(targets: list[dict], max_workers: int) -> list[dict]:
     selected: list[dict] = []
     used = 0
     for row in targets:
-        seats = 2 if row.get("criticality") == "critical" else 1
+        seats = len(passes_for_row(row))
         if seats > max_workers:
             continue
         if used + seats > max_workers:
-            break
+            continue
         selected.append(row)
         used += seats
     return selected
@@ -510,8 +596,14 @@ def main() -> int:
     parser.add_argument("--push-retries", type=int, default=3)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
-    if args.max_workers < 1 or args.rounds < 1 or args.stall_minutes < 1:
-        parser.error("worker, round, and stall limits must be positive")
+    if (
+        args.max_workers < 1
+        or args.rounds < 1
+        or args.stall_minutes < 1
+        or args.runner_timeout_sec < 1
+        or args.push_retries < 1
+    ):
+        parser.error("worker, round, stall, runner-timeout, and retry limits must be positive")
 
     if not args.dry_run:
         error = clean_main_error()
@@ -538,28 +630,51 @@ def main() -> int:
         print(f"== round {round_no}: {len(targets)} dep-ready targets, {len(skipped)} skipped")
         for line in skipped:
             print(f"   skip: {line}")
+        missing = [line for line in skipped if line.endswith("missing ledger row")]
+        if args.claims and missing:
+            return 2
         if not targets:
             break
-        if args.dry_run:
-            for row in targets:
-                passes = 2 if row.get("criticality") == "critical" else 1
-                print(f"   would audit: {row['claim_id']} (passes={passes})")
-            break
-
         batch = selected_batch(targets, args.max_workers)
         if not batch:
             print("no target fits the configured worker limit (critical rows require two seats)")
             return 2
+        if args.dry_run:
+            for row in batch:
+                print(f"   would audit: {row['claim_id']} (passes={len(passes_for_row(row))})")
+            deferred = len(targets) - len(batch)
+            if deferred:
+                print(f"   deferred by worker limit: {deferred}")
+            break
         jobs: list[dict] = []
+        launch_blocked = False
         for row in batch:
-            passes = 2 if row.get("criticality") == "critical" else 1
-            for pass_no in range(1, passes + 1):
-                jobs.append(
-                    launch_worker(row, rows, pass_no, workdir, args.runner_timeout_sec)
-                )
+            for pass_no in passes_for_row(row):
+                try:
+                    jobs.append(
+                        launch_worker(row, rows, pass_no, workdir, args.runner_timeout_sec)
+                    )
+                except ValueError as exc:
+                    launch_blocked = True
+                    report.append({
+                        "cid": row["claim_id"],
+                        "pass": pass_no,
+                        "result": "prompt_transport_blocked",
+                        "detail": str(exc),
+                    })
+                except Exception as exc:
+                    launch_blocked = True
+                    report.append({
+                        "cid": row["claim_id"],
+                        "pass": pass_no,
+                        "result": "worker_launch_failed",
+                        "detail": f"{type(exc).__name__}: {exc}",
+                    })
+        if not jobs:
+            break
         print(f"   launched {len(jobs)} detached workers; waiting (stall {args.stall_minutes}m)")
         wait_workers(jobs, args.stall_minutes)
-        if not apply_serialized(jobs, report, args.push_retries):
+        if not apply_serialized(jobs, report, args.push_retries) or launch_blocked:
             break
         (workdir / "report.jsonl").write_text(
             "".join(json.dumps(item, sort_keys=True) + "\n" for item in report),
@@ -588,13 +703,13 @@ def main() -> int:
             encoding="utf-8",
         )
         print(f"report: {workdir / 'report.jsonl'}")
-    blockers = {
-        "stall_killed", "no_size_qualified_delivery", "malformed_json",
-        "forensic_required_final_no_go", "validation_failed", "sync_blocked",
-        "apply_or_gate_failed", "commit_failed", "push_race_exhausted",
-        "race_retry_dirty", "race_reset_failed", "judicial_panel_required",
+    success_results = {
+        "audited_clean", "audited_renaming", "audited_conditional",
+        "audited_decoration", "audited_numerical_match", "audited_failed",
+        "compute_required",
     }
-    return 1 if any(item.get("result") in blockers for item in report) else 0
+    blocked = any(item.get("result") not in success_results for item in report)
+    return 1 if blocked else 0
 
 
 if __name__ == "__main__":

@@ -1,0 +1,41 @@
+PASS A01: the four normal-form operators are linearly independent
+PASS A02: all four operators are exactly endpoint-SWAP symmetric
+PASS A03: all four operators exactly conserve the supplied onsite charge
+PASS A04: the charge-zero block is exactly (c-g)I+2J X
+PASS A05: the one-dimensional charge sectors have the stated endpoint energies
+PASS A06: every Hermitian charge-block and SWAP-symmetric matrix reconstructs uniquely
+PASS M01: an endpoint-symmetric charge-breaking mutation is rejected by the theorem class
+PASS K01: the cubic torus has 3|V| undirected edges and degree six
+PASS K02: the one-particle restriction is E1 I+2J A with E1=-12(r+g)
+PASS K03: finite-torus diagonalization matches 2 sum_mu cos(k_mu)
+PASS K04: the three-site outer-hop overlap commutator has exact entries +/-4J^2
+PASS C01: I-SWAP has exact coefficients (c,r,g,J)=(1/2,0,-1/2,-1/2)
+PASS C02: the I-SWAP edge restricts to the two-site graph Laplacian
+PASS C03: the cubic I-SWAP one-particle generator is exactly 6I-A
+PASS L01: the exponent has a nonzero z^-1 principal coefficient when Jt is nonzero
+PASS L02: after z=1/w the exponent has a nonzero w^-1 coefficient at infinity
+PASS L03: exp(-2iJt/z) has certified nonzero z^-n coefficients through every symbolic test order
+PASS M02: the essential-singularity obstruction disappears exactly on the J=0 mutation
+PASS B0.7: Bessel coefficients at argument 0.7 survive beyond every tested cutoff
+PASS B1.9: Bessel coefficients at argument 1.9 survive beyond every tested cutoff
+PASS B4.2: Bessel coefficients at argument 4.2 survive beyond every tested cutoff
+PASS B04: the two-sided Bessel generating series reconstructs the Laurent exponential
+PASS B05: the leading Bessel term dominates the full tail above n+1>x^2/(4 log 2), certifying eventual nonzero support
+PASS Q01: a large-torus sample has exact-flow leakage beyond every tested local radius
+PASS Q02: the leaking one-particle evolution remains unitary
+PASS R01: the J=0 interaction sends a ladder operator to one neighbor factor
+PASS R02: gt in (pi/2)Z gives radius zero in the commuting branch
+PASS R03: otherwise the commuting branch has exact radius one
+PASS E01: seven explicit Hermitian 8x8 gammas satisfy the exact Cl(7) relations
+PASS E02: the flat symbol q has exact Laurent identity q^2=(a^2+b^2)I
+PASS E03: for ab nonzero the onsite and nearest-neighbor pieces do not commute
+PASS E04: exp(-itq)=cos(t)I-i sin(t)q, giving radius at most one for all t and exact one at this sample
+PASS E05: the irreducible 8-mode Cl(7) volume element is a nonzero central scalar
+PASS E06: all 24 proper cubic rotations induce twelve even and twelve odd signed-pair maps
+PASS E07: the odd signed-pair maps cannot fix Gamma0 in one irreducible 8-mode Cl(7) carrier
+PASS E08: the doubled-carrier Pin intertwiners are unitary for all 24 rotations
+PASS E09: the 16-mode doubled-chirality repair is covariant for all 24 proper cubic rotations
+PASS E10: the doubled 16-mode Laurent coefficients define a Hermitian finite-range quadratic CAR Hamiltonian
+PASS E11: the radius-one coefficient convolution preserves CAR with inverse at the same radius; local Fock dimension is 2^16
+PASS E12: the exact CAR bilinear commutator fixes the transposed coefficient in H_flat and generates the displayed U_t derivative
+SUMMARY PASS=40 FAIL=0

@@ -8,30 +8,28 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block10-common-hamiltonian-20260711
+branch: physics-loop/record-faithful-dynamics-block11-noncommuting-common-h-20260712
 base_commit_at_start: 9d1636f05f
-cycle_count: 10
-block_count: 10
-active_route: noncommuting_common_hamiltonian_and_strict_finite_time_boundary
+cycle_count: 11
+block_count: 11
+active_route: charge_nonconserving_bdg_or_continuum_gateway_decision
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: pairwise_commuting_endpoint_symmetric_edge_hamiltonian_classification_and_strict_qca_boundary_bounded_theorem_note_2026-07-12
+produced_claim_id: onsite_charge_conserving_endpoint_symmetric_common_hamiltonian_strict_qca_dichotomy_bounded_theorem_note_2026-07-12
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  Every endpoint-SWAP-symmetric two-qubit Hermitian edge density with pairwise
-  overlap commutation is, up to one uniform onsite frame, c II+r(ZI+IZ)+g ZZ.
-  The common flow is order-free and strict radius at most one, but conserves
-  every local Z-axis occupation. Generic noncommuting common Hamiltonians,
-  special-time cancellations, and physical tick selection remain open.
+  The complete endpoint-SWAP-symmetric onsite-charge-conserving edge class is
+  c II+r(ZI+IZ)+g ZZ+J(XX+YY). J=0 is strict and commuting; J nonzero has
+  infinite support at every nonzero time. A fully cubic noncommuting 16-mode
+  flat involution is a strict larger-carrier escape.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source exactly solves the ten-real-parameter endpoint-symmetric local
-  Hamiltonian problem under the explicit pairwise-overlap-commutation
-  hypothesis, including all degeneracies, finite factorization, infinite local
-  automorphism, exact radius, and conserved-axis transport boundary.
+  The source classifies the full four-parameter charge-conserving density,
+  proves the every-time Laurent/Bessel tail obstruction, matches I-SWAP to
+  6I-A, and supplies a doubled-carrier escape to any broader no-go.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -71,6 +69,9 @@ files_touched:
   - docs/PAIRWISE_COMMUTING_ENDPOINT_SYMMETRIC_EDGE_HAMILTONIAN_CLASSIFICATION_AND_STRICT_QCA_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md
   - scripts/common_edge_hamiltonian_overlap_commutation_classification_2026_07_12.py
   - logs/runner-cache/common_edge_hamiltonian_overlap_commutation_classification_2026_07_12.txt
+  - docs/ONSITE_CHARGE_CONSERVING_ENDPOINT_SYMMETRIC_COMMON_HAMILTONIAN_STRICT_QCA_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/onsite_charge_conserving_common_hamiltonian_strict_qca_dichotomy_2026_07_12.py
+  - logs/runner-cache/onsite_charge_conserving_common_hamiltonian_strict_qca_dichotomy_2026_07_12.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -94,10 +95,12 @@ no_go_routes:
   - endpoint-symmetric Clifford gates do not select a unique schedule class: 48 give one product, 48 give eight, and 96 give 720
   - local overlap commutation is not necessary for global matching-layer schedule independence because 12 gates close only after full layer assembly
   - pairwise-overlap-commuting endpoint-symmetric common edge Hamiltonians are single-axis Ising families and cannot transport their conserved common-axis configuration
+  - nonzero exchange in the onsite-charge-conserving one-qubit class has infinite support at every nonzero time and no isolated strict-QCA point
+  - all noncommuting common Hamiltonians have tails is falsified by the fully cubic 16-mode flat-involution escape
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
-review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_mergeable_checks_running
+review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bounded
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_pending
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
@@ -109,8 +112,9 @@ block08_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block09_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5215
 block10_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5237
 next_exact_action: >-
-  Attack the noncommuting common-Hamiltonian finite-time strictness boundary
-  before deciding whether Campaign 5 is exhausted.
+  Review and deliver the onsite-charge common-Hamiltonian dichotomy, then
+  decide whether one charge-nonconserving/BdG subblock is required before the
+  controlled continuum gateway.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

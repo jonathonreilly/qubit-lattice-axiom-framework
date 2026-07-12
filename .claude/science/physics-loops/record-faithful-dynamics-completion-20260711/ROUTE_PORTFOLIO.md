@@ -12,7 +12,7 @@ Scores are provisional `0..3`; risk is negative.
 | strengthened exchange countermodel | 3 | 3 | 3 | 3 | -1 | completed on a supplied one-excitation sector: rank-three minimal outcome-forgotten `I-SWAP` channels change absorbing outcome-label weights |
 | intermittent finite-carrier instrument normal form | 3 | 3 | 3 | 3 | -1 | complete abstract parameterization; auxiliary absorption/reuse does not imply blank-sector calibration |
 | overlapping-instrument order | 3 | 3 | 3 | 3 | -1 | completed bounded fork: raw and stopping composition differ; commutation is the exact raw schedule-independence condition |
-| simultaneous cubic QCA/tick | 3 | 3 | 3 | 3 | -1 | full symmetric-Clifford census plus the single-axis classification of pairwise-commuting common edge Hamiltonians; noncommuting common-H and non-Clifford routes remain |
+| simultaneous cubic QCA/tick | 3 | 3 | 3 | 3 | -1 | onsite-charge common-H now has an exact strict/tail dichotomy; a fully cubic 16-mode flat involution proves larger-carrier noncommuting strict flow remains possible |
 | scalar Gaussian/CAR-QCA normal form | 3 | 3 | 3 | 3 | -1 | exact one-mode classification plus six-mode escape closes the Bloch-walk/QCA category gap without selecting the physical carrier |
 | unified continuum limit | 3 | 3 | 3 | 1 | -3 | deferred until the microscopic process object and carrier class are fixed |
 
@@ -30,6 +30,6 @@ the auxiliary-register countermodel leaves physical calibration open. The next
 route was overlapping-edge order/scheduling: it exposed independent
 composition-semantics and priority coordinates and left metric rate free. The
 matching-product subblock now gives a genuine qubit-QCA counterclassification;
-the pairwise-commuting common-Hamiltonian class is now exactly single-axis and
-nontransporting. The next route is the noncommuting common-Hamiltonian
-finite-time strictness boundary before continuum extrapolation.
+the onsite-charge common-Hamiltonian class now closes the noncommuting
+finite-time boundary while a larger-carrier flat escape remains. The next
+decision is one charge-breaking/BdG discriminator versus the continuum gate.

@@ -1,11 +1,11 @@
 ---
 trace_class: direct_blocker_closure
-target_claim_id: pairwise_commuting_endpoint_symmetric_edge_hamiltonian_classification_and_strict_qca_boundary_bounded_theorem_note_2026-07-12
+target_claim_id: onsite_charge_conserving_endpoint_symmetric_common_hamiltonian_strict_qca_dichotomy_bounded_theorem_note_2026-07-12
 target_blocker_text: "A unique or severely constrained dynamics/admissibility law, including time and the probability rule."
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Test the noncommuting common-Hamiltonian finite-time strictness boundary, then decide whether the microscopic QCA class is controlled enough to begin the unified continuum campaign."
+next_trace_action: "Decide whether one charge-nonconserving/BdG discriminator is required, then open the controlled continuum campaign on an explicit microscopic class."
 ---
 
 # Trace Gate
@@ -80,3 +80,9 @@ order-free strict radius-at-most-one flow, and conserves every common-axis
 onsite observable. This is a positive simultaneous dynamics but not a
 transporting carrier or a selector. The next trace action is the noncommuting
 common-Hamiltonian finite-time strictness boundary, not an axiom proposal.
+
+The onsite-charge subblock closes that boundary completely: nonzero exchange
+has infinite support at every nonzero time, while zero exchange is the strict
+commuting family. The 16-mode flat involution is a fully cubic noncommuting
+strict escape, so the result constrains carrier architecture without selecting
+one. The next action is the BdG-versus-continuum decision.

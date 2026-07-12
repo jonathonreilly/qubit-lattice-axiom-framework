@@ -161,3 +161,17 @@ factorization, strict radius bound, and conserved common-axis configuration.
 It imports no physical Hamiltonian selector, tick duration, Record coupling,
 probability, continuum map, SM sector, or GR sector. Generic noncommuting
 common Hamiltonians and special-time/global cancellations remain open.
+
+## Onsite-charge common-Hamiltonian dichotomy conditional inputs
+
+- A supplied infinite quasi-local tensor-product qubit carrier on `Z^3`.
+- One supplied onsite Pauli charge and one identical endpoint-symmetric
+  Hermitian nearest-neighbor density conserving total edge charge.
+- Exact infinite-lattice support as the strict-QCA criterion.
+- For the scope-guard escape, a supplied 16-mode Gaussian/CAR carrier with
+  doubled Clifford chirality.
+
+The normal form, one-particle restriction, all-nonzero-time tail obstruction,
+I-SWAP graph-Laplacian match, and flat-involution escape are derived. The
+carrier, charge, coefficients, time, selector, Record coupling, probability,
+and continuum map remain supplied or open.

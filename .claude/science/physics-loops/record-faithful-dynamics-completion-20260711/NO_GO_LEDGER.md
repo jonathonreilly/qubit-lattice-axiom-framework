@@ -21,6 +21,8 @@
 | endpoint-symmetric Clifford gates select one matching-product tick | falsified exhaustively in the supplied finite gate/grammar class | 48 gates give one product, 48 give eight, and 96 give all 720 distinct products |
 | local three-site overlap commutation is necessary for complete-layer schedule independence | falsified | 36 unique-product gates commute locally, while 12 more close only after full perfect-matching assembly |
 | pairwise-overlap-commuting endpoint-symmetric common edge Hamiltonians can transport their common-axis configuration | closed negatively in the supplied two-qubit edge class | exact overlap equations force one single-axis Ising family; every local axis observable is conserved and the one-defect sector is flat |
+| nonzero exchange in an endpoint-symmetric onsite-charge-conserving one-qubit common Hamiltonian can hit an isolated strict-QCA time | closed negatively on infinite `Z^3` | its scalar Laurent exponential has essential singularities and unbounded Bessel support for every nonzero time |
+| all noncommuting finite-range common Hamiltonians have tails | falsified | a fully cubic 16-mode flat involution has noncommuting onsite/bond pieces and a strict radius-at-most-one exponential |
 
 These negatives prune routes, not the full record-instrument program. The live
 escape is a separate classical record register coupled through a local
@@ -54,3 +56,7 @@ The common-Hamiltonian row is restricted to pairwise-overlap-commuting edge
 densities. Generic noncommuting sums, special finite times, complete-layer
 cancellations, larger cells, and quasilocal/Lieb--Robinson continuum routes
 remain live. It does not trigger an axiom-update discussion.
+
+The exchange-tail row is restricted to the one-qubit onsite-charge class.
+The explicit 16-mode escape, charge-breaking/BdG densities, multibody terms,
+and partitioned clocks prevent any framework-wide no-go or axiom request.

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 89 |
 | **retained_no_go** | 28 |
-| **retained_bounded** | 361 |
+| **retained_bounded** | 362 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 7 |
-| unaudited | 2800 |
+| unaudited | 2799 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,22 +44,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 465 |
+| `audited_clean` | 466 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3150 |
+| `unaudited` | 3149 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2048 |
+| `bounded_theorem` | 2049 |
 | `decoration` | 21 |
 | `meta` | 357 |
 | `no_go` | 466 |
 | `open_gate` | 198 |
-| `positive_theorem` | 663 |
+| `positive_theorem` | 662 |
 
 | criticality | count |
 |---|---:|
@@ -146,6 +146,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `action_power_scaling_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
+| `action_uniqueness_audit_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -873,6 +874,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Five-judge panel majority ratified the first audit tuple (audited_clean, bounded_theorem, class C). Vote breakdown: J1: first / audited_clean / bounded_theorem / class C; J2: first / audited_clean / bounded_theorem / class C; J3: first / audited_clean / bounded_theorem / class C; J4: first / audited_clean / bounded_theorem / class C; J5: first / audited_clean / bounded_theorem / class C. Majority rationale: J1: The source note makes only a bounded fixed-family finite replay claim, and the cached runner output exactly reproduces the frozen table: Born is machine-clean, all rows are 7/7 TOWARD, F~M equals each tested p, and the note explicitly withholds universal tail-law and p=1 derivation claims. Within that scoped claim there is no unresolved external dependency or promoted physical bridge requiring a conditional verdict. | J2: The restricted note claims only a fixed-family finite replay: for the specified lattice, powers, kernel, field, and action family, the cached runner exactly reproduces the frozen table with F~M equal to each tested p, Born machine-clean, and no promoted universal tail law. That closes as a bounded computational theorem/class-C replay, not a conditional claim. | J3: The source note makes only a fixed-family finite replay claim: for the stated lattice/action family and tested p values, the cached runner output reproduces Born, 7/7 TOWARD, F~M=p, and monotonic tail steepening while explicitly withholding any universal tail theorem. No unaudited dependency, open gate, or unratified bridge is needed for that bounded computational claim. | J4: The source note makes only a bounded fixed-family replay claim, and the cached runner output exactly reproduces the frozen table: Born values, 7/7 TOWARD rows, F~M=p for all five tested powers, and tail steepening while explicitly declining any universal tail law. No unclosed external comparator or promoted exact tail theorem is load-bearing. | J5: The restricted claim is a finite fixed-family replay, and the cached runner exits cleanly while reproducing the note's load-bearing table: Born stays machine-clean, all rows are 7/7 TOWARD, and F~M equals each tested p. The note explicitly limits the result to this fixed family and does not promote a universal tail law or derivation of p=1, so the chain closes for the bounded claim.
 - **rationale:** Five-judge panel majority ratified the first audit tuple (audited_clean, bounded_theorem, class C). Vote breakdown: J1: first / audited_clean / bounded_theorem / class C; J2: first / audited_clean / bounded_theorem / class C; J3: first / audited_clean / bounded_theorem / class C; J4: first / audited_clean / bounded_theorem / class C; J5: first / audited_clean / bounded_theorem / class C. Majority rationale: J1: The source note makes only a bounded fixed-family finite replay claim, and the cached runner output exactly reproduces the frozen table: Born is machine-clean, all rows are 7/7 TOWARD, F~M equals each tested p, and the note explicitly withholds universal tail-law and p=1 derivation claims. Within that scoped claim there is no unresolved external dependency or promoted physical bridge requiring a conditional verdict. | J2: The restricted note claims only a fixed-family finite replay: for the specified lattice, powers, kernel, field, and action family, the cached runner exactly reproduces the frozen table with F~M equal to each tested p, Born machine-clean, and no promoted universal tail law. That closes as a bounded computational theorem/class-C replay, not a conditional claim. | J3: The source note makes only a fixed-family finite replay claim: for the stated lattice/action family and tested p values, the cached runner output reproduces Born, 7/7 TOWARD, F~M=p, and monotonic tail steepening while explicitly withholding any universal tail theorem. No unaudited dependency, open gate, or unratified bridge is needed for that bounded computational claim. | J4: The source note makes only a bounded fixed-family replay claim, and the cached runner output exactly reproduces the frozen table: Born values, 7/7 TOWARD rows, F~M=p for all five tested powers, and tail steepening while explicitly declining any universal tail law. No unclosed external comparator or promoted exact tail theorem is load-bearing. | J5: The restricted claim is a finite fixed-family replay, and the cached runner exits cleanly while reproducing the note's load-bearing table: Born stays machine-clean, all rows are 7/7 TOWARD, and F~M equals each tested p. The note explicitly limits the result to this fixed family and does not promote a universal tail law or derivation of p=1, so the chain closes for the bounded claim.
 - **auditor confidence:** judicial_panel_majority
+
+### `action_uniqueness_audit_2026-04-11`
+
+- **Note:** [`ACTION_UNIQUENESS_AUDIT_2026-04-11.md`](../../docs/ACTION_UNIQUENESS_AUDIT_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the specified 3D ordered nearest-neighbor lattice setup (h=0.5, W=8, L=12, f=s/r) and its weak-field continuum power-family model, weak-field-linear valley actions share Newtonian-regime F proportional to M behavior; no architecture-independent uniqueness is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00366-action_uniqueness_audit_2026`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On the tested 3D ordered nearest-neighbor lattice family, weak-field-linear phase-valley actions produce the same leading Newtonian-regime response, including deflection proportional to source mass.  _(class `C`)_
+- **chain closes:** True — The runner genuinely propagates amplitudes for several independently implemented weak-field-linear actions and computes their mass-response exponents, then independently evaluates the continuum power-family integrals. These calculations close the stated bounded family law but not the runner's broader uniqueness rhetoric.
+- **rationale:** The source note confines its operative conclusion to the tested ordered-lattice family and expressly rejects universal action uniqueness. The runner computes, rather than hard-codes, the lattice centroid responses and continuum scaling, and the alternative weak-field-linear actions agree at leading order as claimed. The evidence establishes first-order equivalence within the stated model family while leaving higher-order action freedom and architecture dependence outside scope.
+- **auditor confidence:** high
 
 ### `activity_energy_bound_witnesses_bounded_note_2026-07-08`
 

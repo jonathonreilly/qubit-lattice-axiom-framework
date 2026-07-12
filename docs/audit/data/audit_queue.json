@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 650,
     "high": 335,
-    "leaf": 1135,
+    "leaf": 1134,
     "medium": 755
   },
   "cycle_break_target_count": 49,
@@ -52289,28 +52289,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "action_uniqueness_audit_2026-04-11",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACTION_UNIQUENESS_AUDIT_2026-04-11.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/action_uniqueness_investigation.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "adaptive_coevolving_geometry_no_go",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -81953,6 +81931,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 589,
-  "total_pending": 2875
+  "ready_count": 588,
+  "total_pending": 2874
 }

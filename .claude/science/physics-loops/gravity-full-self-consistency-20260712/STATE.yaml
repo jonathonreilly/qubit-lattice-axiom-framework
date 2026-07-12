@@ -51,11 +51,11 @@ review_findings:
   - removed a tautological runner check and corrected no-go citation locators
   - audit validation seeded no_go with minimal_axioms and no strict-lint errors; generated surfaces stripped
 review_disposition: pass
-pr_status: pending
-pr_url: null
+pr_status: opened
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5256
 next_exact_action: >-
-  Open and verify one review PR, then send the exact fixed-H no-go row to an
-  independent audit; do not assign effective retained status on this branch.
+  Send PR 5256's exact fixed-H no-go row to an independent audit; do not
+  assign effective retained status on this branch.
 stop_condition: >-
   One reviewed science block with an exact obstruction or a genuinely passing
   proposed-retained positive certificate.

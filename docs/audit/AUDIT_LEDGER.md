@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 419 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2628 |
+| unaudited | 2627 |
 | audit_in_progress | 27 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 100 |
+| ~~audited_conditional~~ | 101 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 27 |
 | `audited_clean` | 557 |
-| `audited_conditional` | 100 |
+| `audited_conditional` | 101 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2978 |
+| `unaudited` | 2977 |
 
 | claim_type | count |
 |---|---:|
@@ -775,6 +775,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `reading_note_final_derivations_motion_closure_bounded_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
@@ -8123,6 +8124,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For any finite union of supplied disjoint sectors A, finite additivity gives I(A) = chi_A . v.  _(class `A`)_
 - **chain closes:** True — Finite additivity directly gives the sector-vector representation, and the remaining coarse-graining, scaling, C3 character-sum, and endpoint statements are exact algebra on explicitly supplied definitions. The note does not claim that Record selects a probability, dynamics, ratio, or endpoint.
 - **rationale:** The runner performs symbolic algebra and finite enumeration rather than importing fitted values or merely printing expected conclusions. The core representation follows analytically from the accepted Record additivity premise, while the C3 power sums genuinely derive Q = 1/3 + (2/3)r from the displayed supplied character family. The generation endpoints are substitutions into that structural coordinate, not asserted physical selectors.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `record_local_finite_atom_availability_narrow_theorem_note_2026-06-17`
+
+- **Note:** [`RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md`](../../docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For every finite n, the displayed Z^3/M_2(C) construction yields n pairwise support-disjoint nonzero P_1 tags and unit-count value n, conditional on the declared admissibility instance, diagonal readout context, conjugation context, and unit-count normalization.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00116-record_local_finite_atom_ava`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Under the declared P-REC-a through P-REC-d premises, the support-disjoint P_1 tags are record-eligible and the declared additive unit-count readout gives I=n.  _(class `A`)_
+- **chain closes:** False — The finite algebra and support construction close exactly after P-REC-a through P-REC-d are supplied. The cited accepted and retained authorities do not select those four premises, so the framework-level chain remains conditional.
+- **rationale:** The runner constructs the atoms, rule, context, and weights from P-REC, but P-REC itself declares rather than derives the four load-bearing selections. Parsing a live premise packet verifies an exact conditional theorem without making the packet framework-native. The arbitrary finite disjoint projector tags with value n are therefore established only on the declared P-REC surface.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

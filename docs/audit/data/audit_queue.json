@@ -3,7 +3,7 @@
     "critical": 650,
     "high": 335,
     "leaf": 1098,
-    "medium": 729
+    "medium": 728
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -31407,30 +31407,6 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_harmonic_depth_hankel_rank_2026_06_12.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.0,
-      "note_path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_taste_scalar_fermion_cw_isotropy_narrow.py",
       "transitive_descendants": 3
     },
     {
@@ -80509,6 +80485,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 532,
-  "total_pending": 2812
+  "ready_count": 531,
+  "total_pending": 2811
 }

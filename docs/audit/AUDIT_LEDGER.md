@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 99 |
 | **retained_no_go** | 41 |
-| **retained_bounded** | 400 |
+| **retained_bounded** | 401 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2687 |
+| unaudited | 2686 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 526 |
+| `audited_clean` | 527 |
 | `audited_conditional` | 82 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3037 |
+| `unaudited` | 3036 |
 
 | claim_type | count |
 |---|---:|
@@ -582,6 +582,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `symmetry_generated_paired_chokepoint_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `symmetry_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `symmetry_spectrum_mirror_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `taste_scalar_isotropy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `teleportation_3d1_causal_record_channel_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | C | - |
 | `teleportation_3d_operator_consistent_end_to_end_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -8959,6 +8960,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Running the registered script with the note's stated N=15,25 and 16-seed setup reproduces the table: original mirror has lower s2/s1 than random-2layer at both sizes, while mirror-chokepoint has high s2/s1, effective rank near 2, and Born zero at machine precision in the small-N pocket.
 - **rationale:** The current runner reproduces the note's diagnostic table under the stated setup, and the note's conclusion stays bounded: support exists for a strict small-N mirror-chokepoint rank signature, not for a scalable large-N rank-protected architecture. The default runner window tests larger N and is not the note's quoted table, but it reinforces the same non-scalability boundary rather than contradicting the bounded claim.
 - **auditor confidence:** high
+
+### `taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02`
+
+- **Note:** [`TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Pure algebraic isotropy of the Hessian of V_f(φ)=Σ_s f(λ_s(φ)^2) for the specified commuting three-shift binary block at φ=(v,0,0); physical carrier identification and non-fermion consequences are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00278-taste_scalar_fermion_cw_isot`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** At φ=(v,0,0), the common chain-rule coefficient multiplies Σ_s(-1)^{s_i}(-1)^{s_j}=8δ_{ij}, so the Hessian is δ_{ij}·C(v).  _(class `A`)_
+- **chain closes:** True — Direct differentiation gives the common factor 2f'(v²)+4v²f''(v²), while binary-character orthogonality gives 8δ_{ij}. Both steps close within the stated finite-dimensional setup without using the physical staggered-Dirac context pointer.
+- **rationale:** The load-bearing result is a genuine class-A algebraic identity, not a definition, tuned match, or external comparison. The runner enumerates the binary states and computes exact orthogonality and representative Hessians rather than merely printing expected results. The general smooth-f conclusion follows analytically from the displayed chain-rule factorization; the explicitly non-load-bearing physical pointer creates no dependency downgrade.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `taste_scalar_isotropy_theorem_note`
 

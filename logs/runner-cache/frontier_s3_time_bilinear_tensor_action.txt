@@ -1,44 +1,36 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_s3_time_bilinear_tensor_action.py
-runner_sha256: 539882d385a49c2bf47785dea8f84ab7e6cb9aff315d2de6f9840cdb4ef7589a
+runner_sha256: 69c7a70c1054a1ec04294acb9bc5432ed8cb289cef774edbbfe7f42ee260ffde
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.76
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
-Route 2 tensorized action definition from bilinear carrier
-==============================================================================
-Bilinear support carrier endpoints:
-  vec K_R(e0 + E_x)        = [1.000000000000 0.000000000000 0.166666666667 0.000000000000]
-  vec K_R(s/sqrt(6) + T1x) = [5.551115123126e-17 1.000000000000e+00 0.000000000000e+00
- 0.000000000000e+00]
+CURRENT-FORM TENSORIZED ACTION / CARRIER VARIATIONAL-DISCONNECTION NO-GO
+======================================================================================
+[EXACT] PASS: the witness Lambda is symmetric positive definite
+    eigenvalues=[1.198062264195 2.554958132087 4.246979603717]
+[EXACT] PASS: the displayed action has Hessian diag(Lambda, I_4) and no f-a coupling
+    mixed Frobenius norm=0.000e+00, tensor-Hessian error=0.000e+00
+[EXACT] PASS: the current stationary equations are Lambda f=j and a=k
+    max stationary-gradient residual=0.000e+00
+[EXACT] PASS: the declared carrier has a nonzero I_4 tensor Lambda time derivative
+    ||dXi/dt at t=0||=7.750269e+00, finite-difference ODE error=7.967e-11
+[EXACT] PASS: the displayed tensor penalty is static at a=k and does not contain the carrier generator
+    ||da/dt||=0.000e+00, penalty Hessian shape=(4, 4), carrier generator shape=(12, 12)
+[CONTROL] PASS: the generator-bearing completion control reproduces Xi exactly
+    exp(-tG) factorization error=7.216e-16, gradient-flow error=0.000e+00
+[EXACT] PASS: the named bilinear K_R and reshaped Xi_TB are rank at most one
+    det(K_R)=0.000e+00, rank(K_R)=1, rank(Xi_TB)=1
+[EXACT] PASS: for n>=2 the current action domain and carrier field have different dimensions
+    verified n=2..32; witness action-domain dimension=7, carrier dimension=12
 
-Lambda_R symmetry error = 3.331e-16
-Lambda_R minimum eigenvalue = 1.148586793472e+00
-  ||Xi_TB(0.0; e0+E_x)|| = 1.013793755050e+00
-  ||Xi_TB(0.5; e0+E_x)|| = 5.599665372444e-01
-  ||Xi_TB(1.0; e0+E_x)|| = 3.139549600110e-01
-  ||Xi_TB(2.0; e0+E_x)|| = 9.928212565275e-02
-  ||Xi_TB(0.0; s/sqrt(6)+T1x)|| = 1.000000000000e+00
-  ||Xi_TB(0.5; s/sqrt(6)+T1x)|| = 5.523475898872e-01
-  ||Xi_TB(1.0; s/sqrt(6)+T1x)|| = 3.096832649118e-01
-  ||Xi_TB(2.0; s/sqrt(6)+T1x)|| = 9.793128548901e-02
-[EXACT] PASS: the Route-2 tensor extension has a finite bilinear carrier definition
-    endpoint carrier norms=1.014e+00, 1.000e+00
-[EXACT] PASS: the named scalar Schur input supplies a symmetric positive slice generator
-    symmetry error=3.331e-16, min eigenvalue=1.148587e+00
-[EXACT] PASS: the spacetime carrier Xi_TB contracts under the named Route-2 semigroup
-    semigroup composition error=1.041e-17
-[BLOCKED] PASS: the remaining Route-2 GR blocker is the upstream-input and Einstein-dynamics bridge
-    K_R, I_TB, and Xi_TB are definitions under named inputs; matching them to the Einstein/Regge tensor law is still open
+Exact boundary:
+The displayed I_TB supplies only the algebraic equation a=k.  The displayed Xi_TB evolves in a larger field space under I_4 tensor Lambda.  A generator-bearing tensor-field action reproduces Xi_TB, but that action and field are additional structure, not a consequence of the current I_TB definition.
+This is a current-form no-go, not a no-go against enlarged tensor actions or GR in general.
 
-Verdict:
-Route 2 has a definition-only bilinear carrier K_R, tensorized Schur construction, and spacetime carrier Xi_TB on PL S^3 x R. The remaining blocker is the upstream-input closure and final identification of this carrier/action with the Einstein/Regge tensor dynamics law on the current restricted class.
-
-==============================================================================
-SUMMARY
-==============================================================================
-PASS=4 FAIL=0 TOTAL=4
+======================================================================================
+SUMMARY PASS=8 FAIL=0 TOTAL=8
 
 ----- stderr -----
 

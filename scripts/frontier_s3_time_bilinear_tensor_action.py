@@ -1,23 +1,17 @@
 #!/usr/bin/env python3
-r"""Route-2 tensorized action/coupling definition from a bilinear carrier.
+"""Exact current-form action/carrier variational-disconnection no-go.
 
-With the bilinear carrier definition
+The source note proves that
 
-    K_R(q) = [[u_E(q),           u_T(q)],
-              [delta_A1(q)u_E(q), delta_A1(q)u_T(q)]],
+    I_TB(f,a) = I_R(f) + 1/2 ||a-k||^2
 
-the minimal Route-2 tensor extension of the scalar Schur backbone is the
-definition
+has tensor equation ``a=k`` and tensor Hessian ``I_4``, whereas
 
-    I_TB(f, a ; j) = I_R(f ; j) + 1/2 ||a - K_R(q)||^2
+    Xi(t) = k tensor exp(-t Lambda)u
 
-and the corresponding spacetime carrier on PL S^3 x R is
-
-    Xi_TB(t ; q) = vec(K_R(q)) \otimes exp(-t Lambda_R) u_*.
-
-This still does not identify the carrier with full Einstein dynamics. It does
-not derive the upstream inputs; it only verifies that the definition is
-algebraically coherent under those named inputs.
+lives in ``R^4 tensor R^n`` and has generator ``I_4 tensor Lambda``.
+This runner checks the structural identities on an exact rational witness and
+includes the generator-bearing completion action as a falsifier/control.
 """
 
 from __future__ import annotations
@@ -27,17 +21,8 @@ from dataclasses import dataclass
 import numpy as np
 from scipy.linalg import expm
 
-from _frontier_loader import load_frontier
 
-TIMES = [0.0, 0.5, 1.0, 2.0]
-
-
-same = load_frontier("same_source_metric", "frontier_same_source_metric_ansatz_scan.py")
-schur = load_frontier("oh_schur_boundary_action", "frontier_oh_schur_boundary_action.py")
-bilinear = load_frontier(
-    "s3_time_bilinear_tensor_primitive",
-    "frontier_s3_time_bilinear_tensor_primitive.py",
-)
+TOL = 2.0e-12
 
 
 @dataclass
@@ -45,120 +30,167 @@ class Check:
     name: str
     ok: bool
     detail: str
-    status: str
+    status: str = "EXACT"
 
 
 CHECKS: list[Check] = []
 
 
 def record(name: str, ok: bool, detail: str, status: str = "EXACT") -> None:
-    CHECKS.append(Check(name=name, ok=ok, detail=detail, status=status))
-    tag = "PASS" if ok else "FAIL"
-    print(f"[{status}] {tag}: {name}")
+    CHECKS.append(Check(name=name, ok=bool(ok), detail=detail, status=status))
+    print(f"[{status}] {'PASS' if ok else 'FAIL'}: {name}")
     if detail:
         print(f"    {detail}")
 
 
-def vec_k(q: np.ndarray) -> np.ndarray:
-    return bilinear.vec_k(q)
+def action_gradient(
+    Lambda: np.ndarray,
+    f: np.ndarray,
+    j: np.ndarray,
+    a: np.ndarray,
+    k: np.ndarray,
+) -> np.ndarray:
+    """Gradient of 1/2 f^T Lambda f-j^T f + 1/2 ||a-k||^2."""
+
+    return np.concatenate((Lambda @ f - j, a - k))
 
 
-def xi_tb(theta: np.ndarray, seed_t: np.ndarray) -> np.ndarray:
-    return np.outer(theta, seed_t)
+def action_hessian(Lambda: np.ndarray) -> np.ndarray:
+    n = Lambda.shape[0]
+    return np.block(
+        [
+            [Lambda, np.zeros((n, 4), dtype=float)],
+            [np.zeros((4, n), dtype=float), np.eye(4, dtype=float)],
+        ]
+    )
+
+
+def carrier(k: np.ndarray, Lambda: np.ndarray, u: np.ndarray, t: float) -> np.ndarray:
+    """Row-major vectorization of outer(k, exp(-t Lambda)u)."""
+
+    return np.kron(k, expm(-t * Lambda) @ u)
 
 
 def main() -> int:
-    print("Route 2 tensorized action definition from bilinear carrier")
-    print("=" * 78)
+    print("CURRENT-FORM TENSORIZED ACTION / CARRIER VARIATIONAL-DISCONNECTION NO-GO")
+    print("=" * 86)
 
-    basis = same.build_adapted_basis()
-    e0 = basis[:, 0]
-    s = basis[:, 1]
-    e1 = basis[:, 2]
-    e2 = basis[:, 3]
-    t1x = basis[:, 4]
-    e_x = (np.sqrt(3.0) * e1 + e2) / 2.0
-
-    q_center = e0 + e_x
-    q_shell = (s / np.sqrt(6.0)) + t1x
-    theta_center = vec_k(q_center)
-    theta_shell = vec_k(q_shell)
-
-    Lambda, _, _, _ = schur.schur_dtn_matrix(15, 4.0)
-    Lambda_sym = 0.5 * (Lambda + Lambda.T)
-    sym_err = float(np.max(np.abs(Lambda - Lambda.T)))
-    eigvals = np.linalg.eigvalsh(Lambda_sym)
-    min_eig = float(np.min(eigvals))
-
-    u_star = np.ones(Lambda_sym.shape[0], dtype=float)
-    u_star /= np.linalg.norm(u_star)
-
-    def seed_t(t: float) -> np.ndarray:
-        return expm(-t * Lambda_sym) @ u_star
-
-    xi_center = [xi_tb(theta_center, seed_t(t)) for t in TIMES]
-    xi_shell = [xi_tb(theta_shell, seed_t(t)) for t in TIMES]
-    semigroup_err = float(
-        np.max(
-            np.abs(
-                seed_t(1.0)
-                - expm(-0.5 * Lambda_sym) @ (expm(-0.5 * Lambda_sym) @ u_star)
-            )
-        )
+    # Exact integer SPD witness.  Its eigenvalues are positive and no fitted or
+    # observed value enters the calculation.
+    Lambda = np.array(
+        [
+            [3.0, -1.0, 0.0],
+            [-1.0, 3.0, -1.0],
+            [0.0, -1.0, 2.0],
+        ]
     )
+    n = Lambda.shape[0]
+    eigvals = np.linalg.eigvalsh(Lambda)
 
-    print("Bilinear support carrier endpoints:")
-    print(f"  vec K_R(e0 + E_x)        = {np.array2string(theta_center, precision=12, floatmode='fixed')}")
-    print(f"  vec K_R(s/sqrt(6) + T1x) = {np.array2string(theta_shell, precision=12, floatmode='fixed')}")
-    print()
-    print(f"Lambda_R symmetry error = {sym_err:.3e}")
-    print(f"Lambda_R minimum eigenvalue = {min_eig:.12e}")
-    for t, xi in zip(TIMES, xi_center):
-        print(f"  ||Xi_TB({t:.1f}; e0+E_x)|| = {float(np.linalg.norm(xi)):.12e}")
-    for t, xi in zip(TIMES, xi_shell):
-        print(f"  ||Xi_TB({t:.1f}; s/sqrt(6)+T1x)|| = {float(np.linalg.norm(xi)):.12e}")
+    u_e, u_t, delta = 2.0, -1.0, 3.0 / 5.0
+    K = np.array([[u_e, u_t], [delta * u_e, delta * u_t]], dtype=float)
+    k = K.reshape(-1)
+    u = np.array([1.0, 2.0, -1.0], dtype=float)
+    u /= np.linalg.norm(u)
+
+    f_star = np.array([1.0, -2.0, 3.0], dtype=float) / 7.0
+    j = Lambda @ f_star
+    a_star = k.copy()
+
+    H = action_hessian(Lambda)
+    mixed_norm = float(np.linalg.norm(H[:n, n:], ord="fro"))
+    tensor_hessian_error = float(np.linalg.norm(H[n:, n:] - np.eye(4), ord="fro"))
+    grad_at_star = action_gradient(Lambda, f_star, j, a_star, k)
+
+    G = np.kron(np.eye(4), Lambda)
+    A0 = np.kron(k, u)
+    xi0 = carrier(k, Lambda, u, 0.0)
+    dxi0 = -G @ xi0
+    t = 0.7
+    xi_t = carrier(k, Lambda, u, t)
+    xi_from_generator = expm(-t * G) @ A0
+    semigroup_error = float(np.max(np.abs(xi_t - xi_from_generator)))
+
+    # Independent centered finite difference inside the t>=0 semigroup domain.
+    h = 1.0e-6
+    t_fd = 0.4
+    xi_fd_center = carrier(k, Lambda, u, t_fd)
+    dxi_fd = (
+        carrier(k, Lambda, u, t_fd + h)
+        - carrier(k, Lambda, u, t_fd - h)
+    ) / (2.0 * h)
+    ode_error = float(np.max(np.abs(dxi_fd + G @ xi_fd_center)))
+
+    # The original a-sector gradient flow da/dt=-(a-k) is static at its
+    # stationary value.  It cannot equal the nonzero carrier derivative.
+    da_current = -(a_star - k)
+
+    # The control action S_gen(A)=1/2 A^T G A does carry the missing generator.
+    control_gradient_error = float(np.max(np.abs((G @ A0) + dxi0)))
+
+    K_det = float(np.linalg.det(K))
+    K_rank = int(np.linalg.matrix_rank(K, tol=1e-13))
+    Xi_matrix = xi_t.reshape(4, n)
+    Xi_rank = int(np.linalg.matrix_rank(Xi_matrix, tol=1e-13))
 
     record(
-        "the Route-2 tensor extension has a finite bilinear carrier definition",
-        np.all(np.isfinite(theta_center)) and np.all(np.isfinite(theta_shell)),
-        f"endpoint carrier norms={np.linalg.norm(theta_center):.3e}, {np.linalg.norm(theta_shell):.3e}",
+        "the witness Lambda is symmetric positive definite",
+        np.array_equal(Lambda, Lambda.T) and float(np.min(eigvals)) > 0.0,
+        f"eigenvalues={np.array2string(eigvals, precision=12)}",
     )
     record(
-        "the named scalar Schur input supplies a symmetric positive slice generator",
-        sym_err < 1e-12 and min_eig > 0.0,
-        f"symmetry error={sym_err:.3e}, min eigenvalue={min_eig:.6e}",
+        "the displayed action has Hessian diag(Lambda, I_4) and no f-a coupling",
+        mixed_norm == 0.0 and tensor_hessian_error == 0.0,
+        f"mixed Frobenius norm={mixed_norm:.3e}, tensor-Hessian error={tensor_hessian_error:.3e}",
     )
     record(
-        "the spacetime carrier Xi_TB contracts under the named Route-2 semigroup",
-        np.linalg.norm(xi_center[1]) < np.linalg.norm(xi_center[0])
-        and np.linalg.norm(xi_center[2]) < np.linalg.norm(xi_center[1])
-        and np.linalg.norm(xi_shell[1]) < np.linalg.norm(xi_shell[0])
-        and np.linalg.norm(xi_shell[2]) < np.linalg.norm(xi_shell[1])
-        and semigroup_err < 1e-12,
-        f"semigroup composition error={semigroup_err:.3e}",
+        "the current stationary equations are Lambda f=j and a=k",
+        float(np.max(np.abs(grad_at_star))) < TOL,
+        f"max stationary-gradient residual={np.max(np.abs(grad_at_star)):.3e}",
     )
     record(
-        "the remaining Route-2 GR blocker is the upstream-input and Einstein-dynamics bridge",
-        True,
-        "K_R, I_TB, and Xi_TB are definitions under named inputs; matching them to the Einstein/Regge tensor law is still open",
-        status="BLOCKED",
+        "the declared carrier has a nonzero I_4 tensor Lambda time derivative",
+        float(np.linalg.norm(dxi0)) > 1.0e-6 and ode_error < 2.0e-9,
+        f"||dXi/dt at t=0||={np.linalg.norm(dxi0):.6e}, finite-difference ODE error={ode_error:.3e}",
+    )
+    record(
+        "the displayed tensor penalty is static at a=k and does not contain the carrier generator",
+        float(np.linalg.norm(da_current)) == 0.0
+        and H[n:, n:].shape == (4, 4)
+        and G.shape == (4 * n, 4 * n),
+        f"||da/dt||={np.linalg.norm(da_current):.3e}, penalty Hessian shape={H[n:, n:].shape}, carrier generator shape={G.shape}",
+    )
+    record(
+        "the generator-bearing completion control reproduces Xi exactly",
+        semigroup_error < TOL and control_gradient_error < TOL,
+        f"exp(-tG) factorization error={semigroup_error:.3e}, gradient-flow error={control_gradient_error:.3e}",
+        status="CONTROL",
+    )
+    record(
+        "the named bilinear K_R and reshaped Xi_TB are rank at most one",
+        abs(K_det) < TOL and K_rank <= 1 and Xi_rank <= 1,
+        f"det(K_R)={K_det:.3e}, rank(K_R)={K_rank}, rank(Xi_TB)={Xi_rank}",
+    )
+    record(
+        "for n>=2 the current action domain and carrier field have different dimensions",
+        all((m + 4) != 4 * m for m in range(2, 33)),
+        f"verified n=2..32; witness action-domain dimension={n + 4}, carrier dimension={4 * n}",
     )
 
-    print("\nVerdict:")
+    print("\nExact boundary:")
     print(
-        "Route 2 has a definition-only bilinear carrier K_R, tensorized Schur "
-        "construction, and spacetime carrier Xi_TB on PL S^3 x R. The remaining "
-        "blocker is the upstream-input closure and final identification of this "
-        "carrier/action with the Einstein/Regge tensor dynamics law on the "
-        "current restricted class."
+        "The displayed I_TB supplies only the algebraic equation a=k.  The "
+        "displayed Xi_TB evolves in a larger field space under I_4 tensor "
+        "Lambda.  A generator-bearing tensor-field action reproduces Xi_TB, "
+        "but that action and field are additional structure, not a consequence "
+        "of the current I_TB definition."
     )
+    print("This is a current-form no-go, not a no-go against enlarged tensor actions or GR in general.")
 
-    print("\n" + "=" * 78)
-    print("SUMMARY")
-    print("=" * 78)
+    print("\n" + "=" * 86)
     n_pass = sum(c.ok for c in CHECKS)
     n_fail = sum(not c.ok for c in CHECKS)
-    print(f"PASS={n_pass} FAIL={n_fail} TOTAL={len(CHECKS)}")
+    print(f"SUMMARY PASS={n_pass} FAIL={n_fail} TOTAL={len(CHECKS)}")
     return 0 if n_fail == 0 else 1
 
 

@@ -1,53 +1,37 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dm_neutrino_k00_bosonic_normalization_record_invariance_2026_06_04.py
-runner_sha256: bdd85ec1200d81b3548d07255a5c848c2b42b7d562529af78f915b5f641f3eff
+runner_sha256: e850e527999456455e0917330024d1c1bb4e944b4f04dbd87e905c749b0fca17
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 ========================================================================
-DM neutrino K00 bosonic-normalization record-invariance hygiene
+DM neutrino K00 historical Record-invariance companion retirement hygiene
 ========================================================================
-Repo root: <repo>
-Parent note: docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md
-Parent runner: scripts/frontier_dm_neutrino_k00_bosonic_normalization_theorem.py
-Scope: meta evidence only; no theorem claim and no verdict change.
+Scope: meta sibling synchronization; no theorem and no verdict change.
 PASS parent_note_exists
 PASS parent_runner_exists
-PASS parent_claim_type_expected
-PASS parent_runner_path_expected
-PASS parent_current_criticality_expected
-PASS parent_current_load_expected :: load=11.165
-PASS parent_note_hash_expected
-PASS parent_note_hash_matches_ledger
-PASS parent_deps_exact :: count=4
-PASS parent_current_row_unresolved
-PASS parent_load_bearing_block_present
-PASS parent_load_bearing_contains_k00_phrase_0
-PASS parent_load_bearing_contains_k00_phrase_1
-PASS parent_load_bearing_contains_k00_phrase_2
-PASS parent_load_bearing_contains_k00_phrase_3
-PASS parent_load_bearing_contains_k00_phrase_4
-PASS parent_load_bearing_contains_k00_phrase_5
-PASS parent_load_bearing_contains_k00_phrase_6
-PASS parent_load_bearing_contains_k00_phrase_7
-PASS parent_load_bearing_contains_k00_phrase_8
-PASS parent_load_bearing_contains_k00_phrase_9
-PASS parent_load_bearing_omits_record_axiom_terms
+PASS companion_note_exists
+PASS parent_claim_type_is_no_go
+PASS parent_keeps_audit_authority_external
+PASS parent_preserves_kmass_projection_identity
+PASS parent_derives_general_response_law
+PASS parent_contains_embedding_countermodel
+PASS parent_contains_source_magnitude_countermodel
+PASS parent_contains_positive_falsifier
+PASS parent_links_all_approved_premise_sources
 PASS parent_runner_exit_zero :: returncode=0
 PASS parent_runner_summary_present
-PASS parent_runner_pass_count_eleven :: pass_count=11
-PASS parent_runner_fail_count_zero :: fail_count=0
-PASS record_marker_true_exit_zero :: returncode=0
-PASS record_marker_does_not_change_parent_output
+PASS parent_runner_summary_current :: SUMMARY: PASS=16 FAIL=0
+PASS parent_runner_reports_scoped_negative_boundary
 PASS companion_declares_meta_type
+PASS companion_retires_old_evidence
+PASS companion_disclaims_current_record_invariance
 PASS companion_disclaims_new_theorem
-PASS companion_disclaims_verdict_change
-PASS companion_keeps_dependency_boundary
-PASS companion_marks_axioms_not_support
+PASS companion_disclaims_verdict
 ========================================================================
-SUMMARY: PASS=33 FAIL=0
+SUMMARY: PASS=20 FAIL=0
 ========================================================================
 
 ----- stderr -----

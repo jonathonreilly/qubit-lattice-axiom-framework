@@ -1,0 +1,48 @@
+loop_slug: dm-neutrino-k00-normalization-identifiability-20260712
+mode: run
+target: best-honest-status
+runtime: single-target sustained block; no unattended runtime requested
+cycle_count: 1
+block_count: 1
+active_route: restricted-packet two-parameter identifiability obstruction
+hard_residual: >-
+  Construct the typed source-action and source-to-heavy observable map that
+  would fix both the source embedding scale c and the source magnitude tau_plus.
+actual_current_surface_status: no-go
+target_claim_type: no_go
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+conditional_surface_status: K00 = c tau_plus; K00 = 2 only at c = 2 and tau_plus = 1
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: >-
+  Exact countermodel pairs prove that the supplied finite packet cannot
+  identify K00 = 2; the result is not a global no-go against future maps.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+review_disposition: pass
+files_touched:
+  - docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md
+  - scripts/frontier_dm_neutrino_k00_bosonic_normalization_theorem.py
+  - logs/runner-cache/frontier_dm_neutrino_k00_bosonic_normalization_theorem.txt
+  - docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_RECORD_INVARIANCE_COMPANION_NOTE_2026-06-04.md
+  - scripts/audit_companion_dm_neutrino_k00_bosonic_normalization_record_invariance_2026_06_04.py
+  - logs/runner-cache/audit_companion_dm_neutrino_k00_bosonic_normalization_record_invariance_2026_06_04.txt
+  - .claude/science/physics-loops/dm-neutrino-k00-normalization-identifiability-20260712/
+open_imports:
+  - typed physical source deformation fixing c = 2
+  - source-selection theorem fixing tau_plus = 1
+  - source-to-heavy physical response map
+no_go_routes:
+  - isospectrality alone
+  - swap symmetry alone
+  - sharp-projector coordinates alone
+  - scalar log-determinant equality alone
+  - direct H_core algebra alone
+pr_status: pending
+next_exact_action: >-
+  Commit the review-clean block, push the dedicated science branch, and open
+  one review PR; after landing, send the target claim to independent audit.
+stop_condition: >-
+  Stop after the coherent block has a passing review disposition and one
+  verified review PR, or record a concrete delivery failure in PR_BACKLOG.md.

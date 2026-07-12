@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 393 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2715 |
+| unaudited | 2714 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 75 |
+| ~~audited_conditional~~ | 76 |
 | ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 511 |
-| `audited_conditional` | 75 |
+| `audited_conditional` | 76 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3065 |
+| `unaudited` | 3064 |
 
 | claim_type | count |
 |---|---:|
@@ -704,6 +704,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `reading_note_final_derivations_motion_closure_bounded_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
@@ -7019,6 +7020,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner constructs normalized SU(N) generators and numerically verifies completeness, while exact rational arithmetic establishes F_adj, the two K_EW specializations, and their non-uniqueness. Its common-scaling and OZI checks do not derive a physical selector, but the source does not claim that they do: the decisive result is the algebraic countermodel pair showing that the stated packet cannot entail kappa_EW = 0. The clean verdict applies only to this restricted-packet no-go, not to a global impossibility theorem or an unconditional physical coefficient.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `reading_note_final_derivations_motion_closure_bounded_note_2026-07-02`
+
+- **Note:** [`READING_NOTE_FINAL_DERIVATIONS_MOTION_CLOSURE_BOUNDED_NOTE_2026-07-02.md`](../../docs/READING_NOTE_FINAL_DERIVATIONS_MOTION_CLOSURE_BOUNDED_NOTE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** T1 answer-object cardinality, T2 condition-as-state-predicate including record absence, and T4 fixed-interface extensionality were audited as bounded semantic consequences; T3 motion closure was audited only conditionally on a specified possibility transport and an equivariance restriction on supplied conditions.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00246-reading_note_final_derivatio`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For every named motion, a state and its transported state have the same record-content-relative-to-supplied-structure description, so every lawful condition must hold at one if and only if it holds at the other.  _(class `A`)_
+- **chain closes:** False — The axioms name lattice motions and admissibility covariance but do not derive the note's canonical identity transport on possibility elements or establish that every supplied condition is structure-definable and equivariant. The completed runner checks selected toy predicates, not that universal bridge.
+- **rationale:** T1 and T2 follow at the stated semantic ceiling, and the finite runner genuinely checks its toy constructions rather than merely printing success. The general T3 implication assumes that the singular one-site domain canonically supplies identity transport and that a supplied lawful condition has no non-equivariant supplied data; neither implication is derived by the cited authority or exhaustive runner. The runner also exits nonzero because its Qualification needle uses the stale phrase “explicit admission,” whereas the supplied current authority requires a retained derivation or bridge or approved-primitive registration.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: identity transport, global automorphism, and intensional-condition routes are not all closed.
+    - N3: canonical elementwise transport and universal condition equivariance remain hidden assumptions.
+    - N5: universal motion-closure and extensional-only rhetoric exceeds the tested resolutions.
 
 ### `record_axiom_audit_application_map_2026-06-06`
 

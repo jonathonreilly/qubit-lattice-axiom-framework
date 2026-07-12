@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 41 |
 | **retained_bounded** | 409 |
 | _retained_pending_chain_ | 1 |
-| open_gate | 8 |
-| unaudited | 2672 |
+| open_gate | 9 |
+| unaudited | 2671 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 536 |
+| `audited_clean` | 537 |
 | `audited_conditional` | 87 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3022 |
+| `unaudited` | 3021 |
 
 | claim_type | count |
 |---|---:|
@@ -607,6 +607,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_poisson_resource_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_resource_fidelity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `teleportation_retained_axis_operator_algebra_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `teleportation_taste_readout_operator_model_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
 | `third_grown_family_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `third_grown_family_complex_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `third_grown_family_sign_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -9449,6 +9450,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The stated KS block decomposition directly gives O_logical x I_env for retained-axis operators, spectator-sign cancellation for native-Z when d>1, and environment flipping for fixed-X when a != d-1. The Bell projector and teleportation claims then reduce to standard two-qubit Pauli/Bell algebra on the logical factor.
 - **rationale:** The theorem is self-contained in the restricted packet and closes by finite block-matrix algebra. Independent formula checks confirm the Bell-projector signs, the 1/4 normalization, the native-Z spectator average to zero for d>1, the fixed-X iff a=d-1 condition, and the correction/fidelity identity up to irrelevant branch phase. The runner genuinely constructs the relevant operators and verifies 96 algebraic cases without hidden helper imports or external comparators, while explicitly leaving physical apparatus, noise, preparation, and durable record gates outside scope.
 - **auditor confidence:** high
+
+### `teleportation_taste_readout_operator_model_note`
+
+- **Note:** [`TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md`](../../docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Finite KS site/taste operator-factorization audit for the retained last taste bit over dimensions 1-3 and sides 2 and 4: retained-axis operators factor as O_logical tensor I_env, while native sublattice parity Z and native-Z Bell constructions do not in dimensions greater than one; physical apparatus, noise, preparation, heralding, and transport remain outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00294-teleportation_taste_readout_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For dim > 1, flipping a spectator taste bit changes the sign of the environment block from +Z_logical to -Z_logical, so native sublattice parity cannot equal a single O_logical tensor I_env.  _(class `A`)_
+- **chain closes:** True — The block decomposition proves the native-parity obstruction directly, and the runner independently constructs the finite operators and computes their projections and residuals. The retained-bounded RALA authority supplies consistent algebraic closure without importing a physical apparatus claim.
+- **rationale:** The load-bearing result is a genuine finite algebraic factorization check, not a definition, tuned numerical match, or external comparison. Hard-coded expected classifications are applied only after the runner computes the operators and residuals; the downstream helper contributes status guards rather than the scientific result. The source correctly limits its positive and negative conclusions to the operator surface and leaves physical implementation open.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `tensor_support_center_excess_law_note`
 

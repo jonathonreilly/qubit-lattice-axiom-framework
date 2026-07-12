@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_occupancy_grain_rule_class_universality_2026_07_11.py
-runner_sha256: 7ad29d553b5a1d564259bf0543f6c8d460edefb375d46e06107a9374272e2f9c
+runner_sha256: 5c7ae25c3f00e4e4acd95ad50b481ba617209bcc3c9dcaaaeac20272bfa14bac
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 [U1] Verbatim Record-clause memo checks
@@ -42,7 +42,7 @@ U5.7 PASS: N3 per-sector uniform occupancy reads r=1
 [U6] Consumed-scope text checks
 U6.1 PASS: sibling controlled-copy class statement is consumed verbatim
 U6.2 PASS: sibling R5 single-register-orbit statement is consumed verbatim
-U6.3 PASS: adoption Candidate 1 is consumed verbatim
+U6.3 PASS: adoption Candidate 1 is quoted verbatim in the theorem note
 U6.4 PASS: adoption value and sector-weight boundary is consumed verbatim
 U6.5 PASS: narrowed formation no-go boundary is consumed verbatim
 TOTAL: PASS=33 FAIL=0

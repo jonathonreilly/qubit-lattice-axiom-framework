@@ -8,6 +8,10 @@ import sympy as sp
 
 
 ROOT = Path(__file__).resolve().parents[1]
+NOTE = (
+    ROOT
+    / "docs/ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md"
+)
 MINIMAL = ROOT / "docs/MINIMAL_AXIOMS_2026-06-29.md"
 CLASS_NOTE = (
     ROOT
@@ -44,6 +48,7 @@ def check(block, label, condition):
     print(f"{block}.{number} {result}: {label}")
 
 
+note_text = NOTE.read_text(encoding="utf-8")
 minimal_text = MINIMAL.read_text(encoding="utf-8")
 class_text = CLASS_NOTE.read_text(encoding="utf-8")
 adoption_text = ADOPTION.read_text(encoding="utf-8")
@@ -283,9 +288,9 @@ the doublet contributes once per K/CPT orbit rather than once per sector or
 channel. This premise supplies only the matter-action occupancy grain needed
 to discharge the surviving AC(i) measure-side realization binary."""
 adoption_boundary = (
-    "It supplies no value of `r`, `delta`, charged-lepton mass, mixing angle, "
-    "probability rule, above-C3 taste/Dirac/chirality content, CKM/PMNS alignment, "
-    "or sector-weight law."
+    "The old boundary said these statements supplied no value of `r`, `delta`, "
+    "charged-lepton mass, mixing angle, probability rule, above-`C3` "
+    "taste/Dirac/chirality content, CKM/PMNS alignment, or sector-weight law."
 )
 no_go_boundary = (
     "The surviving no-go is only: the current minimal axioms do **not** force the "
@@ -303,8 +308,8 @@ check(
 )
 check(
     "U6",
-    "adoption Candidate 1 is consumed verbatim",
-    flat(candidate_one) in flat(adoption_text),
+    "adoption Candidate 1 is quoted verbatim in the theorem note",
+    flat(candidate_one) in flat(adoption_text) and flat(candidate_one) in flat(note_text),
 )
 check(
     "U6",

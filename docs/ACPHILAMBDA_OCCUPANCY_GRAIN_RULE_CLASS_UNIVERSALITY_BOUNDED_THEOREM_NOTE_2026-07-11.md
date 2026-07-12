@@ -23,10 +23,11 @@ asserts which occupancy a realized state registers.
 > The charged-lepton 2-sector occupancy surface is the K/CPT-orbit partition
 > `{singlet sector, doublet orbit}` with occupancy distribution `(p_s,p_d)`,
 > `p_s+p_d=1`, where the equal-power-per-block grain reads `r=1/2` at
-> `p_s=p_d`. This is the landed adoption's Candidate 1 occupancy wording
-> together with the custody L9 equipartition cell. The identification is
-> supplied per the K/CPT supplied-context bridge pattern; it is not derived
-> here, and every claim below is conditional on it.
+> `p_s=p_d`. This uses the historical adoption record's Candidate 1 wording
+> together with the custody L9 equipartition cell. Those sources supply
+> wording and orientation only, not premise authority. The identification is
+> supplied here per the K/CPT supplied-context bridge pattern; it is not
+> derived here, and every claim below is conditional on it.
 
 This is the note's one named supplied context. The declared Record-clause
 reading in L1 and the operative meaning of strict sharpening in L3 are stated
@@ -79,7 +80,7 @@ mechanically, including an exact moved-weight witness. The nondegenerate
 two-content reading is load-bearing: a scalar readout with `I_s=I_d` would not
 detect movement of `q`.
 
-### L2. The class gives sector-exchange-symmetric strict sharpening
+### L2. Declared symmetric record-influence reading
 
 The sibling class theorem
 [`RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md`](RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md)
@@ -106,10 +107,9 @@ off-center action strictly amplifies the majority sector in the sense stated
 in L3. The identity family in N2 is non-recording dynamics and is therefore a
 negative control outside that recording-update hypothesis.
 
-The same `f` acts on both sectors. Indeed, a pair `f_s != f_d` would carry a
-sector-distinguishing parameter. Such a parameter would be a `C_3/K`-breaking
-selector, while the class has only its register-basis orbit and the supplied
-partition is K/CPT-orbit-constant. Consequently
+Under this declared reading, the same `f` acts on both sectors. An asymmetric
+pair `f_s != f_d` lies outside the declared symmetric family and is tested in
+N1 as a load-bearing negative control. For the declared common-`f` family,
 
 ```text
 T_f(1-q)=1-T_f(q).
@@ -227,22 +227,24 @@ The reverse substitutions are exact, so `p_d=1/2 <=> r=1/2`.
 ### Bounded conclusion
 
 Conditional on `charged_lepton_k_cpt_2_sector_occupancy_context`, L1 requires
-a durable interior registration to be stationary, L2 makes every admissible
-continued-registration rule sector-exchange-symmetric with no
-sector-distinguishing selector, and L3 gives the same unique interior fixed
-point for every strict-sharpening member. Hence the unique interior
-durably-registrable occupancy is
+a durable interior registration to be stationary; under L2's declared
+record-influence reading, every rule in the quantified family is
+sector-exchange-symmetric; and L3 gives the same unique interior fixed point
+for every strict-sharpening member. Hence the unique interior durably-
+registrable occupancy is
 
 ```text
 p_s=p_d=1/2,
 ```
 
 which is exactly the equal-power-per-block grain `r=1/2`. This is universal
-over the admissible record-write class at this supplied surface: no rule choice
+over the admissible record-write class under the declared L2/L3 continued-
+registration readings at this supplied surface: no particular rule choice
 enters.
 
-The adopted premise `ac_orbit_occupancy_statistical_grain_premise` has the
-following Candidate 1 text, quoted verbatim:
+The historically adopted premise candidate now preserved in
+[`TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`](TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md)
+has the following Candidate 1 text, quoted verbatim:
 
 ```text
 For the AC_phi_lambda charged-lepton matter-action surface, the physical
@@ -252,13 +254,16 @@ channel. This premise supplies only the matter-action occupancy grain needed
 to discharge the surviving AC(i) measure-side realization binary.
 ```
 
-At this surface, that adopted premise is therefore a rule-class-universal
-theorem conditional on the named supplied context, rather than a
-rule-dependent selection.
+At this surface, the quoted Candidate 1 statement is a rule-class-universal
+theorem conditional on the named supplied context and the declared readings,
+rather than a rule-dependent selection. The historical adoption itself has
+zero premise weight and supplies no part of this conditional theorem.
 
-**Consequence (named, not executed):** a registry action retiring that adopted
-atom by retained derivation is available to a future gated, owner-approved
-registry lane; this note does not execute or request it.
+**Consequence (named, not executed):** only after a future independently
+audited retained theorem derives the supplied context and meets the current
+open obligation's physical-action/measure closure criterion could an owner-
+gated registry lane record closure of that obligation. This note does not
+satisfy, execute, or request that registry action.
 
 ## Negative controls
 
@@ -279,8 +284,8 @@ q=(sqrt(5)-1)/2,
 ```
 
 not `1/2`; indeed `T_asym(1/2)=1/3`. Sector-exchange symmetry is therefore
-load-bearing. This is exactly where the supplied K/CPT partition's
-orbit-constancy enters. Without it, the grain is not forced.
+load-bearing. This is where the common-`f` sector-exchange condition declared
+in L2 enters. Without that declared condition, the grain is not forced.
 
 ### N2. Non-sharpening influence
 
@@ -335,8 +340,8 @@ collapse or derive it.
 ## Scope boundary
 
 - The mathematical surface is only the supplied closed two-sector simplex and
-  the common-`f` record-influence family induced there by the controlled-copy
-  class.
+  the common-`f` record-influence family declared there alongside the
+  controlled-copy class.
 - L1 is explicitly a declared reading of permanence, record-only readability,
   and additive scalar readout at this surface. Its nondegenerate content labels
   are load-bearing.
@@ -358,8 +363,8 @@ collapse or derive it.
 |---|---|
 | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | Supplies the three verbatim Record-clause passages used in L1. The permanence-to-stationarity reading remains declared here rather than imported as a memo theorem. |
 | [`RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md`](RECORD_WRITE_ADMISSIBLE_ONE_STEP_CLASS_CONTROLLED_COPY_NARROW_THEOREM_NOTE_2026-07-11.md) | Supplies the controlled-copy isometry classification and R5's single register-unitary-orbit statement. This note consumes that class statement as a markdown-link dependency. |
-| [`TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`](TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md) | Supplies Candidate 1, quoted verbatim above, and its boundary: it supplies the matter-action occupancy grain but no value of `r`, probability rule, or sector-weight law. |
-| `charged_lepton_k_cpt_2_sector_occupancy_context` | The one declared supplied context: the charged-lepton occupancy surface is the K/CPT-orbit partition `{singlet sector, doublet orbit}`. This identification is consumed, not derived. |
+| [`TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md`](TIER_A_RESIDUAL_OWNER_ADOPTION_RETIREMENT_2026-07-04.md) | Preserves Candidate 1's historical wording and old boundary for quotation only. It has zero premise weight and supplies no physics content. |
+| [`AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`](AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md) / `charged_lepton_k_cpt_2_sector_occupancy_context` | The open obligation is the current registry home for the one declared supplied context: the charged-lepton occupancy surface is supplied here as the K/CPT-orbit partition `{singlet sector, doublet orbit}`. This note does not derive the physical matter action or measure required to close that obligation, so this physical condition remains unresolved here. |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go` | Boundary context only: occurrence is supplied, while formation rule/process/state/site/weight/rate is not forced. The exact narrowed sentence is quoted in Scope boundary. |
 | `charged_lepton_koide_value_full_chain_of_custody:L9` | Orientation-only supplied-context wording: “`r=1/2` characterizes HS **2-sector equipartition** (`‖aI‖²=‖bC+b̄C²‖²`)”; that cell explicitly does not select the coarse-graining physically. |
 

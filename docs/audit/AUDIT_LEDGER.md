@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 400 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2690 |
+| unaudited | 2689 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 80 |
+| ~~audited_conditional~~ | 81 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 526 |
-| `audited_conditional` | 80 |
+| `audited_conditional` | 81 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 41 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3040 |
+| `unaudited` | 3039 |
 
 | claim_type | count |
 |---|---:|
@@ -683,6 +683,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `coupled_field_generated_family_probe_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -2425,6 +2426,26 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N1: eight distinct positive closure routes remain OPEN.
     - N3: the canonical transfer reconstruction, physical correlator bridge, and positive gap remain unsupported inputs.
     - N5: spatial, thermodynamic-limit, continuum, and gap-producing resolutions were not tested.
+
+### `color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06`
+
+- **Note:** [`COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md`](../../docs/COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite-dimensional polar algebra for supplied endpoint C^3 carriers and a supplied full-rank cross-site bilinear: endpoint-frame covariance, determinant/Z3 bookkeeping, polar-link Wilson-trace invariance, and the stated rank-boundary witnesses; no carrier, bilinear, rank-sector, R5, gauge-dynamics, or physical-color bridge is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00275-color_composition_rule_matte`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For a supplied full-rank map M between supplied endpoint C^3 carriers, uniqueness of the polar decomposition implies U' = g_y U g_x^dagger and P' = g_x P g_x^dagger.  _(class `A`)_
+- **chain closes:** False — The finite-dimensional polar-decomposition implication closes algebraically once SUPPLIED-C3, SUPPLIED-BILINEAR, and full rank are assumed. The framework-to-hypothesis chain does not close because the restricted packet derives neither supplied carrier nor supplied bilinear, and the determinant-reduced Wilson-invariance sentence additionally requires coherent Z3 branch covariance not verified by the runner.
+- **rationale:** The runner performs genuine exact and numerical algebra checks rather than merely printing expected constants, and its polar covariance, polar-link Wilson trace, determinant, rank, and discontinuity witnesses support the conditional mathematics. However, the load-bearing C^3 carrier and cross-site bilinear are explicit unregistered supplied premises rather than consequences of the accepted framework premises. Moreover, exact Wilson-trace invariance after determinant reduction is not established for arbitrary independent cube-root choices; at most it follows after additional coherent Z3 branch bookkeeping.
+- **open / conditional deps cited:**
+  - `COLOR_COMPOSITION_RULE_MATTER_BILINEAR_POLAR_TRANSPORT_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md`
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1 contains six open routes and therefore does not establish an exhaustive negative result.
+    - The source intentionally presents residual walls as scope metadata rather than closed no-go mechanisms.
+    - The determinant-reduced Wilson-trace statement lacks a verified coherent Z3 branch transformation rule.
 
 ### `commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12`
 

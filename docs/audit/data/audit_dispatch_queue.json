@@ -187,7 +187,7 @@
       "note_path": "docs/S3_MASS_MATRIX_NO_GO_NOTE.md",
       "queue_order": 4,
       "ready": false,
-      "ready_blocker": "blocked_by_dependency:s3_mass_matrix_conditional_degeneracy_note_2026-07-11:unaudited",
+      "ready_blocker": "blocked_by_dependency:s3_mass_matrix_conditional_degeneracy_note_2026-07-11:audit_in_progress",
       "runner_path": "scripts/frontier_s3_mass_matrix_no_go.py",
       "source_json_path": "docs/audit/data/s3_mass_matrix_scope_reaudit_queue_2026-07-11.json",
       "source_schema": "promotion_reaudit_queue.v1",

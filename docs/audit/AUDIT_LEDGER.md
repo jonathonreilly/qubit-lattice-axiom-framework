@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 91 |
-| **retained_no_go** | 33 |
+| **retained_no_go** | 34 |
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2787 |
+| unaudited | 2786 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 471 |
+| `audited_clean` | 472 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3137 |
+| `unaudited` | 3136 |
 
 | claim_type | count |
 |---|---:|
@@ -201,6 +201,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `central_band_mass_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `charged_lepton_radiative_tau_selector_firewall_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
+| `charged_lepton_selected_line_generation_selector_no_go_note_2026-04-27` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `chiral_3plus1d_boundary_phase_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_coupled_coin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1865,6 +1866,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The stated normalized inverse DFT and Parseval identities are z_j = a + c omega^j + conjugate(c) omega^(-j) and sum_j z_j^2 = 3(a^2 + 2|c|^2).  _(class `A`)_
 - **chain closes:** True — Root-of-unity orthogonality, direct variance expansion, and Parseval close every displayed identity from the definitions alone. The S3 generators act by c -> omega c and c -> conjugate(c), while c=0 makes all three square roots equal and removes the phase coordinate.
 - **rationale:** Independent root-of-unity expansion reproduces the inverse DFT coefficients, the exact variance factor 6, and the Parseval factor 3, yielding Q=1/3+2r/3 and the two-way r=1/2 equivalence. The S3 generators send the phase to plus or minus phi modulo 2pi/3, so the folded distance is the complete unordered phase coordinate, including the pi/3 boundary; at c=0 the inverse forces the equal-root triple and is phase-independent. The runner consistently checks these identities and the note's scope guards without importing a comparator or a physical mass functional. Residual risk is confined to the explicitly excluded physical registered-mass interface, which is not part of this algebraic theorem.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `charged_lepton_selected_line_generation_selector_no_go_note_2026-04-27`
+
+- **Note:** [`CHARGED_LEPTON_SELECTED_LINE_GENERATION_SELECTOR_NO_GO_NOTE_2026-04-27.md`](../../docs/CHARGED_LEPTON_SELECTED_LINE_GENERATION_SELECTOR_NO_GO_NOTE_2026-04-27.md)
+- **claim_type:** `no_go`
+- **claim_scope:** For an unbased free C3 selected-line orbit, no C3-natural map selects one physical generation label; choosing a basepoint instead permits exactly three equivariant selectors.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00381-charged_lepton_selected_line`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** A natural single-label selector from the unbased orbit quotient would have to return a label fixed by every C3 relabeling, but the free C3 action has no fixed label.  _(class `A`)_
+- **chain closes:** True — The runner explicitly enumerates fixed labels, invariant subsets, and based equivariant maps. The result is an exact finite group-action obstruction within the stated unbased-orbit scope, independent of the granted Koide values and PDG comparator.
+- **rationale:** The load-bearing step is a genuine algebraic closure: a map from the invariant quotient point to the free C3 label torsor would require a C3-fixed label, and none exists. The runner computes this obstruction rather than printing an assumed verdict, while its cross-note checks and PDG comparisons are ancillary. The clean verdict is limited to the explicitly unbased, C3-natural single-label problem and leaves based source, endpoint, and generation laws open.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

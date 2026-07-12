@@ -5623,6 +5623,36 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertIn("prior=archived unrestricted scope", prompt)
         self.assertNotIn("{{PRIOR_CLAIM_SCOPE}}", prompt)
 
+    def test_prompt_includes_dispatch_question_as_scope_not_evidence(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            m.REPO_ROOT = root
+            note = root / "docs" / "TARGET.md"
+            note.parent.mkdir(parents=True, exist_ok=True)
+            note.write_text("Exact source.\n", encoding="utf-8")
+            row = {
+                "claim_id": "target",
+                "note_path": "docs/TARGET.md",
+                "deps": [],
+                "audit_question": "Does the legacy scope survive the current axioms?",
+            }
+            manifest: dict[str, dict] = {}
+            prompt = m.render_prompt(
+                row,
+                {"target": row},
+                "source={{NOTE_BODY}}",
+                1,
+                skip_runner_stdout=True,
+                evidence_manifest_out=manifest,
+            )
+        self.assertIn("TARGETED DISPATCH QUESTION", prompt)
+        self.assertIn("Does the legacy scope survive the current axioms?", prompt)
+        self.assertNotIn(
+            "Does the legacy scope survive the current axioms?",
+            "\n".join(str(entry.get("text") or "") for entry in manifest.values()),
+        )
+
     def test_prompt_preserves_raw_placeholders_and_types_every_premise(self):
         m = _import_codex_audit_runner()
         with tempfile.TemporaryDirectory() as tmp:
@@ -6321,6 +6351,110 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             m.select_named_targets(queue, ["missing"])
         with self.assertRaisesRegex(ValueError, "duplicate --claim-id"):
             m.select_named_targets(queue, ["first", "first"])
+
+    def test_load_dispatch_targets_merges_ledger_and_filters_readiness(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "dispatch.json"
+            path.write_text(json.dumps({
+                "live": [
+                    {
+                        "claim_id": "ready",
+                        "ready": True,
+                        "audit_question": "Does the scoped result survive?",
+                    },
+                    {"claim_id": "blocked", "ready": False},
+                    {"claim_id": "missing", "ready": True},
+                ]
+            }), encoding="utf-8")
+            m.DISPATCH_QUEUE_PATH = path
+            rows = m.load_dispatch_targets({
+                "ready": {
+                    "claim_id": "ready", "note_path": "docs/READY.md",
+                    "criticality": "critical", "audit_status": "audited_clean",
+                },
+                "blocked": {
+                    "claim_id": "blocked", "note_path": "docs/BLOCKED.md",
+                    "criticality": "leaf",
+                },
+            })
+            self.assertEqual([row["claim_id"] for row in rows], ["ready"])
+            self.assertEqual(rows[0]["note_path"], "docs/READY.md")
+            self.assertEqual(rows[0]["audit_question"], "Does the scoped result survive?")
+            self.assertEqual(rows[0]["queue_reason"], "targeted_dispatch")
+            all_rows = m.load_dispatch_targets(
+                {
+                    "ready": {"claim_id": "ready", "criticality": "critical"},
+                    "blocked": {"claim_id": "blocked", "criticality": "leaf"},
+                },
+                ready_only=False,
+            )
+            self.assertEqual([row["claim_id"] for row in all_rows], ["ready", "blocked"])
+
+    def test_transport_bounds_rendered_n8_but_preserves_trusted_manifest(self):
+        m = _import_codex_audit_runner()
+        cid = "target"
+        path = m.no_go_discipline_gate.cross_cycle_index_path(cid)
+        payload = {
+            "schema": "no_go_cross_cycle_index_v1",
+            "claim_id": cid,
+            "candidates": [
+                {"candidate_id": f"candidate-{i}", "text": "x" * 200}
+                for i in range(30)
+            ],
+            "no_go_row_universe": [],
+            "no_go_row_universe_count": 0,
+            "no_go_row_universe_sha256": "0" * 64,
+            "search_scope": {},
+        }
+        full = json.dumps(payload, indent=2, sort_keys=True)
+        manifest = {path: {"text": full, "roles": ["cross_cycle_index"]}}
+        prompt = "prefix\n" + full + m.OUTPUT_INSTRUCTIONS_MARKER + "\nsuffix"
+        fitted, metadata = m.fit_prompt_to_transport_limit(
+            prompt, manifest, cid, max_chars=2500
+        )
+        self.assertLessEqual(len(fitted), 2500)
+        self.assertIsNotNone(metadata)
+        self.assertLess(metadata["rendered_candidates"], 30)
+        self.assertEqual(metadata["authenticated_candidates"], 30)
+        self.assertEqual(manifest[path]["text"], full)
+        self.assertIn("N8 TRANSPORT BOUND", fitted)
+        self.assertIn("do not return audited_clean", fitted)
+
+    def test_transport_bound_verdict_fails_closed(self):
+        m = _import_codex_audit_runner()
+        blob = {field: "x" for field in m.REQUIRED_VERDICT_FIELDS}
+        blob.update({
+            "claim_id": "target",
+            "verdict": "audited_clean",
+            "audit_invocation_id": "a" * 32,
+            "no_go_discipline": {
+                "status": "PASS",
+                "N8_cross_cycle_echo": {"packet_complete": True, "unresolved": []},
+            },
+        })
+        error = m.validate_verdict(
+            blob,
+            "target",
+            expected_invocation_id="a" * 32,
+            transport_bounded_n8=True,
+        )
+        self.assertEqual(error, "transport-bounded N8 evidence forbids audited_clean")
+
+    def test_fresh_schema_retry_exposes_error_not_rejected_conclusion(self):
+        m = _import_codex_audit_runner()
+        self.assertTrue(m.fresh_schema_retry_eligible(
+            "N5 statement 1 must record one tested resolution per required class"
+        ))
+        self.assertFalse(m.fresh_schema_retry_eligible("claim_id mismatch"))
+        prompt = m.render_fresh_schema_retry_prompt(
+            "ORIGINAL RESTRICTED PACKET",
+            "N1 route class mismatch",
+            1,
+        )
+        self.assertIn("ORIGINAL RESTRICTED PACKET", prompt)
+        self.assertIn("N1 route class mismatch", prompt)
+        self.assertIn("not given its JSON or conclusion", prompt)
 
 
 class RelabelUnverifiedCodexAuditsTest(unittest.TestCase):

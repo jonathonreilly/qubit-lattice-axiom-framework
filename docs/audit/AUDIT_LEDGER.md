@@ -19,10 +19,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 78 |
-| **retained_bounded** | 301 |
+| **retained_bounded** | 302 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2947 |
+| unaudited | 2946 |
 | audit_in_progress | 1 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
@@ -41,13 +41,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 1 |
-| `audited_clean` | 381 |
+| `audited_clean` | 382 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3297 |
+| `unaudited` | 3296 |
 
 | claim_type | count |
 |---|---:|
@@ -323,6 +323,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lattice_nn_light_cone_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `lattice_nn_rg_alpha_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lensing_adjoint_kernel_reduced_model_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `lensing_deflection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
@@ -3649,6 +3650,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The one-term-per-layer reduction fails badly while the exact edge replay matches the first-order observable at the stated H=0.35 setup.  _(class `C`)_
 - **chain closes:** True — The source makes only a bounded negative claim about the first reduced surrogate. The live H=0.35 runner reproduces the archived exact-edge/full-harness spot-check and the layer_signed/layer_abs failures against the exact edge series, with no cited dependencies needed.
 - **rationale:** The retained content is a bounded negative inside the stated harness, not a derivation of the reference lensing slope or a continuum physics claim. The live runner with --h 0.35 reproduces true_kubo=+5.972756 and exact_edge=+5.972756 at b=3 with |Delta|=4.228e-13, then shows the signed and absolute one-term-per-layer reductions miss the b=3..6 exact-edge series by about 98-100%. Because the note explicitly keeps the exact edge factorization as the reference object and rejects only the first reduced surrogate, the claim closes on its own terms.
+- **auditor confidence:** high
+
+### `lensing_deflection_note`
+
+- **Note:** [`LENSING_DEFLECTION_NOTE.md`](../../docs/LENSING_DEFLECTION_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded arithmetic verification that the supplied H=0.25 Fam1 kubo_true values at b ∈ {3,4,5,6} have log-log slope −1.433549, R² 0.998404, and are not consistent with an exponent of −1 under the stated 0.1 margin.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00241-lensing_deflection_note`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the H=0.25 values at b ∈ {3,4,5,6}, the log-log fit gives kubo_true slope −1.433549 and R² 0.998404, with |slope−(−1)| > 0.1.  _(class `A`)_
+- **chain closes:** True — The certificate verifies the four cached inputs against the parsed artifact and combined-runner table, then independently evaluates the stated regression and non-1/b inequality. This closes only the fixed four-point numerical claim, not a first-principles recomputation, continuum exponent, or physical lensing theorem.
+- **rationale:** The load-bearing result is a genuine arithmetic closure over four explicitly bounded numerical inputs: the displayed regression values follow from the supplied b and kubo_true arrays. Although the runner uses hard-coded expected arrays for the fit, it first checks those arrays against the parsed fine-H artifact, so that implementation choice does not break the narrow implication. The evidence does not support broader claims of first-principles generation, continuum stability, family portability, large-b asymptotics, or Newton/Einstein lensing, all of which the note expressly excludes.
 - **auditor confidence:** high
 
 ### `lensing_k_sweep_note`

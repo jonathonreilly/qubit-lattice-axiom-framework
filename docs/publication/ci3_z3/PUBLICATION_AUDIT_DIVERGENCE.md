@@ -18,7 +18,7 @@ publication tables phrase it.
 | criticality | effective_status | count |
 |---|---|---:|
 | critical | `unaudited` | 252 |
-| high | `unaudited` | 184 |
+| high | `unaudited` | 183 |
 | medium | `unaudited` | 127 |
 | ? | `unresolved` | 5 |
 | high | `audited_conditional` | 2 |
@@ -27,7 +27,7 @@ publication tables phrase it.
 | high | `audited_numerical_match` | 1 |
 | medium | `audited_conditional` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 574
+**Total non-retained-grade rows in publication tables:** 573
 
 ## Per-row breakdown
 
@@ -411,7 +411,6 @@ publication tables phrase it.
 | high | `koide_selected_line_cyclic_response_bridge_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | high | `koide_selected_slice_frozen_bank_decomposition_note_2026-04-18` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `koide_z3_scalar_potential_support_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
-| high | `lensing_deflection_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `matter_inertial_closure_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | high | `monopole_derived_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, FULL_CLAIM_LEDGER.md, PUBLICATION_MATRIX.md, RESULTS_INDEX.md |
 | high | `neutrino_mass_derived_note` | `unaudited` | `unaudited` | DERIVATION_VALIDATION_MAP.md |

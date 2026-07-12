@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 417 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2633 |
+| unaudited | 2632 |
 | audit_in_progress | 28 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 99 |
-| ~~audited_failed~~ | 23 |
+| ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -49,10 +49,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 553 |
 | `audited_conditional` | 99 |
 | `audited_decoration` | 22 |
-| `audited_failed` | 45 |
+| `audited_failed` | 46 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2983 |
+| `unaudited` | 2982 |
 
 | claim_type | count |
 |---|---:|
@@ -842,6 +842,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
+| `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -7074,6 +7075,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N5: the broad noncanonicity rhetoric exceeds the tested mechanisms.
     - N7: the strongest spectral-net steelman is unresolved.
     - Runner consistency: the claimed m-qubit register index 2^m contradicts the runner's own k^2 type-I formula.
+
+### `observable_principle_p1_exponent_fixing_irreducibility_narrow_note_2026-05-31`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_NARROW_NOTE_2026-05-31.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_NARROW_NOTE_2026-05-31.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite determinant-block algebra establishes generic mixed-derivative failure for nonzero Z^p and p-independence of the normalized logarithmic derivative; it does not establish the advertised general smooth-domain irreducibility or a literal p-to-zero exponent selection of log.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00105-observable_principle_p1_expo`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The claimed irreducibility rests on the lemma that (Add), (Loc), and (Pot) are logically equivalent for every twice-smooth W on an arbitrary convex open neighbourhood of the origin.  _(class `A`)_
+- **chain closes:** False — The lemma is not well-posed on an arbitrary convex open U because (J_A,0) and (0,J_B) need not belong to U; block-projection closure or a product domain is missing. Moreover Z^p tends to 1, not log Z, as p tends to zero, so the runner's bare-gradient calculation does not justify its stated p-to-zero conclusion without replacing Z^p by a normalized family such as (Z^p-1)/p.
+- **rationale:** The runner performs genuine symbolic algebra, but its polynomial T5 check occurs on a globally defined ansatz and therefore does not verify the lemma on the stated arbitrary convex domain. T6 correctly proves normalized-gradient p-independence and that no fixed nonzero p makes the bare gradient equal to the log gradient for all nonconstant Z, but the printed claim that this equality is recovered in the p-to-zero limit is false for W=Z^p itself. The cumulant-identification route is also declared subsumed using unavailable prior context rather than established within the restricted packet.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 contains an untested cumulant-identification route and an open regularity-selector route.
+    - N2 identifies a missing block-projection-stability condition in the load-bearing lemma.
+    - N5 finds unsupported p-to-zero and exhaustiveness rhetoric.
+    - N7's strongest outside-selector steelman remains unresolved.
 
 ### `ollivier_einstein_proxy_note_2026-04-11`
 

@@ -1,0 +1,26 @@
+loop: epsstar-full-kernel-finite-grid-closure-20260712
+date: 2026-07-12
+branch: claude/science-fix/epsstar_full_kernel_coefficient_derivation_bounded_theorem_n-2cbfadf8
+target: epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12
+target_status: best-honest-status
+mode: run
+cycle_count: 1
+active_route: direct retained-bounded finite-model bridge plus finite-scale claim boundary
+hard_residual: controlled T-to-zero coefficient is not supplied by the fixed sequence and is excluded from this claim
+actual_current_surface_status: conditional-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+open_imports: []
+no_go_routes: []
+open_routes_outside_block:
+  - alternative controlled T-to-zero construction
+  - framework derivation selecting the Harper/PT model
+files_touched:
+  - docs/EPSSTAR_FULL_KERNEL_COEFFICIENT_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-12.md
+  - scripts/frontier_epsstar_full_kernel_coefficient_2026_06_12.py
+  - logs/runner-cache/frontier_epsstar_full_kernel_coefficient_2026_06_12.txt
+  - .claude/science/physics-loops/epsstar-full-kernel-finite-grid-closure-20260712/
+review_disposition: pass_with_bounded_claims
+audit_required_before_effective_retained: true
+next_exact_action: submit repaired source note and paired runner to independent re-audit
+stop_condition: achieved; review-clean bounded source repair is ready for independent re-audit

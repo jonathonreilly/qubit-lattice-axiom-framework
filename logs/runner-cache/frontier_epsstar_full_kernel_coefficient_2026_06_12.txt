@@ -1,20 +1,20 @@
-===== runner cache v2 =====
+===== runner cache v3 =====
 runner: scripts/frontier_epsstar_full_kernel_coefficient_2026_06_12.py
-runner_sha256: d7214d70862401c6002b6e645c78e379a4de53c4af3d6a3956a0f8988d83f632
+runner_sha256: 89d5c097d2694b218a1887144d66d2092aa9cc78bdd60bddb8c68ccf9b0273e7
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 2.89
+elapsed_sec: 2.90
 status: ok
 ----- stdout -----
-eps* full-kernel Sommerfeld coefficient verifier
+eps* full-kernel finite-scale quotient verifier
 PT cell: Q=24, Ly=2, N=48, GL=20; bracket=[1.2,2.4], surface_eta=0.050, deg_tol=1.0e-10
 
 S0 ANCHORS
 T0_BRANCH mu0=1.515550712171 branch_final=(-7.105427357601e-15,+4.973799150321e-14) R0_prime_naive=+2.557860549618e+02 C_T2_naive=+7.819617146794e+02
-NAIVE_ALPHA alpha_seagull=-9.266358431851 frozen=-9.270000000000
+NAIVE_PROXY alpha_proxy=-9.266358431851 frozen=-9.270000000000
 ANTI_FAB T=0.20 root=1.631150561591 interband_chi=-8.887936149151e-01 interband_H1_weight=+1.080520517733e-01
 PASS: S0 T=0 branch root is in the internally recomputed mu*_0=1.5216 region :: mu0=1.515550712171, frozen=1.5216, tol=2.00e-02
-PASS: S0 precursor naive seagull alpha is reproduced :: alpha_seagull=-9.266358431851, frozen=-9.27, tol=7.50e-01
+PASS: S0 precursor naive Sommerfeld proxy is reproduced :: alpha_seagull=-9.266358431851, frozen=-9.27, tol=7.50e-01
 PASS: S0 anti-fabrication: interband |H1| weight is nontrivial at the PT root :: interband_H1_weight=1.080521e-01, min=1.0e-02
 
 S1 TRUTH: finite-T boundary roots
@@ -24,25 +24,28 @@ ROOT T=0.120 mu=1.600973650053 mu2=2.563116628165 chi=+0.000e+00 interband=-8.34
 ROOT T=0.150 mu=1.618806032391 mu2=2.620532970506 chi=-1.421e-14 interband=-8.386961351718e-01
 ROOT T=0.200 mu=1.631150561591 mu2=2.660652154577 chi=+0.000e+00 interband=-8.887936149151e-01
 PRECURSOR_SLOPE_GRID T=0.100:mu=1.576146132255:mu2=2.484236630223 T=0.150:mu=1.618806032391:mu2=2.620532970506 T=0.200:mu=1.631150561591:mu2=2.660652154577 T=0.250:mu=1.645930351011:mu2=2.709086720380
-TRUTH_FIT mu*(T)^2 = c + d*T^2: c=2.487775722248 d_measured=+3.877078419951 max_abs_residual=4.552298380931e-02
-PASS: S1 measured finite-T slope reproduces internally recomputed +3.88 :: d_measured=+3.877078419951, frozen=+3.88, tol=7.50e-01
+TRUTH_FIT mu*(T)^2 = c + d*T^2: c=2.487775722248 d_grid=+3.877078419951 max_abs_residual=4.552298380931e-02
+PASS: S1 finite-grid regression slope reproduces internally recomputed +3.88 :: d_grid=+3.877078419951, frozen=+3.88, tol=7.50e-01
 
-S2 FULL COEFFICIENT: complete finite-T divided-difference kernel
-COEFFICIENTS alpha_seagull=-9.266358431851 alpha_kernel=+13.408176855555 alpha_full=+4.141818423703
-FULL_INTERNAL coeff_T=0.050 chi_full(T)=-8.737907831617e-01 seagull(T)=+5.786462059832e+01 kernel(T)=-5.873841138148e+01 C_T2_full=-3.495163132647e+02; R0_prime=+2.557860549618e+02 C_T2_naive=+7.819617146794e+02
-COMPARISON d_measured=+3.877078419951 alpha_full=+4.141818423703 relative_mismatch=6.828337605706e-02
+S2 FINITE-SCALE READOUT: complete finite-T divided-difference kernel
+READOUTS alpha_proxy=-9.266358431851 q_seagull=-274.281620146559 q_kernel=+278.423438570262 q_full=+4.141818423703
+FULL_INTERNAL readout_T=0.050 chi_full(T)=-8.737907831617e-01 seagull(T)=+5.786462059832e+01 kernel(T)=-5.873841138148e+01 C_T2_full=-3.495163132647e+02; R0_prime=+2.557860549618e+02 C_T2_naive=+7.819617146794e+02
+COMPARISON d_grid=+3.877078419951 q_full=+4.141818423703 relative_difference=6.828337605706e-02 printed_rounding_upper=6.828337605733e-02
+SIGN_ROBUSTNESS componentwise_open_radius=1.938539209976 for q_seagull<0, q_kernel>0, q_kernel>|q_seagull|, q_full>0, d_grid>0
 
 S3 GATES
-PASS: S3 alpha_full has the same positive sign as the measured boundary slope :: alpha_full=+4.141818423703, d_measured=+3.877078419951, gate both > 0
-PASS: S3 alpha_full matches d_measured within the frozen relative tolerance :: relative_mismatch=6.828338e-02, tol=1.50e-01
-PASS: S3 kernel term flips the naive sign :: alpha_seagull=-9.266358431851, alpha_kernel=+13.408176855555, gate seagull<0, kernel>0, |kernel|>|seagull|
+PASS: S3 q_full has the same positive sign as the finite-grid boundary slope :: q_full=+4.141818423703, d_grid=+3.877078419951, gate both > 0
+PASS: S3 printed finite-grid comparison lies inside the declared band :: printed_rounding_upper=6.828338e-02, declared_band=1.50e-01; band is not an error estimate
+PASS: S3 same-response finite-scale divided-difference term flips the seagull sign :: q_seagull=-274.281620146559, q_kernel=+278.423438570262, q_full-(q_seagull+q_kernel)=+0.000e+00; gate q_seagull<0, q_kernel>0, |q_kernel|>|q_seagull|, exact split
+PASS: S3 sign conclusions have a nontrivial componentwise robustness radius :: componentwise_open_radius=1.938539209976, gate > 1.9
 
 S4 SOURCE HYGIENE
 PASS: S4 canonical source metadata is present :: claim_type bounded_theorem; independent audit authority; no-promotion statement
 PASS: S4 runner and cache markdown links are present :: primary runner/cache links seed review discoverability
 PASS: S4 closed-PR authority rhetoric is absent :: no closed PR is cited as load-bearing authority
-PASS: S4 minimal-axiom dependency link is present :: one scope-reference dependency link
+PASS: S4 direct finite-model bridge and coefficient-limit boundary links are present :: load-bearing links seed the retained-bounded dependency chain
+PASS: S4 finite-scale boundary replaces the unsupported asymptotic claim :: one-point quotient is finite-grid only; no minimal-axiom model-selection claim
 
-TOTAL: PASS=11 FAIL=0
+TOTAL: PASS=13 FAIL=0
 
 ----- stderr -----

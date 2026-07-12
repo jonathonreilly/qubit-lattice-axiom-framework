@@ -450,3 +450,158 @@ same-carrier probability/readout semantics, readout-to-formation calibration,
 event law, and continuum limit remain named. The result therefore advances the
 campaign without triggering its axiom-update stop condition. Independent
 review and audit remain required.
+
+---
+
+# No-Go Discipline: Autonomous Intermittent Instrument Calibration Nonselection
+
+**Status:** PASS for the narrow finite-dimensional statement that, for a
+supplied system/register decomposition and supplied rank-one menu, a normalized
+CPTP channel can have absorbing auxiliary locked-register sectors while its
+blank-sector formation effects violate cross-label exclusion.
+The exact positive classification under conditional repeat/exclusivity is
+proved alongside the countermodel. No lattice-wide process impossibility or
+axiom-update claim is made.
+
+## N1 — Alternative-route enumeration
+
+| Attack route | Marker | Attack and result |
+|---|---|---|
+| full normalization plus locked-output branches | `ATTEMPTED` | normalization fixes only `F+sum_iE_i=I`; without cross-label exclusion the depolarized blank-sector family survives |
+| conditional repeat/exclusivity on a nonempty event | `ATTEMPTED` | succeeds algebraically: positivity forces `E_i=e_iP_i`, while normalization fixes `F=sum_i(1-e_i)P_i` |
+| same autonomous map reused after formation | `ATTEMPTED` | the same channel is idempotent on every auxiliary locked-register sector while its blank effects remain depolarized |
+| supplied-menu family equivariance and label permutations | `ATTEMPTED` | the family survives simultaneous menu/system rotation for every `a`; this is not invariance of one menu-independent law |
+| permutation-neutral event efficiency | `ATTEMPTED` | equal `e_i=1-q` removes detection bias and gives `F=qI`, but does not select `q` or the no-record CPTP channel |
+| single-Kraus/minimal no-record branch | `ATTEMPTED` | reduces the no-record operation to `sqrt(q)U` but leaves arbitrary unitary freedom |
+| QND/controlled-copy/fresh-fragment formation | `ATTEMPTED` | remains a positive escape that calibrates projective formation under stronger named model conditions |
+
+No row is marked `RULED OUT BY PRIOR`: the prior sources are conditional or
+unaudited at the relevant physical scope, and the new finite algebra is proved
+self-containedly.
+
+## N2 — Wall-independence audit
+
+| Pair | First closes second? | Reverse? | Independent? |
+|---|---:|---:|---:|
+| blank-sector cross-label exclusion / menu-neutral no-record effect `F=qI` | no: unequal `e_iP_i` obey exclusion | no: the hostile `a<1` family has `F=qI` | yes |
+
+The exact negative residual is only blank/locked-sector calibration. Menu
+selection, event-efficiency choice, no-record channel selection, physical
+readout, framework-Record realization, overlapping composition, and time/rate
+are an out-of-scope interface inventory, not a claimed independent wall count;
+a stronger theorem may close several jointly.
+
+## N3 — Hidden-wall scan
+
+The new note, runner, cache, and campaign packet were scanned for `we assume`,
+`assum*`, `by construction`, `as is standard`, `framework provides`, `bridge
+context`, `background`, `naturally`, `obviously`, `standard QFT`, `registered`,
+`canonical`, `supplied`, and `adopted`.
+
+| Phrase hit | Classification |
+|---|---|
+| supplied `H_S tensor R` factorization | explicit mathematical carrier input |
+| blank/locked direct-sum register | explicit auxiliary decomposition, not a framework Record |
+| supplied complete rank-one menu | explicit input; not selected by the foundation |
+| association of register label `i` with `P_i` | explicit labeling map, not a physical readout theorem |
+| sector-conditioned Kraus blocks | explicit countermodel definition |
+| finite CP/Kraus/trace interpretation | named mathematical authority; physical probability semantics remain open |
+| supplied-menu group action | defines family equivariance, not one menu-independent framework law |
+| physical probability interpretation | absent from the auxiliary construction |
+| physical readout map | absent; register stability is not called readability |
+| `Z^3` locality and framework-Record realization | absent and explicitly out of scope |
+
+The earlier phrases `repeat-readable`, `wrong/contradictory label`, `local`,
+and `uses no preferred frame` were narrowed on the live source and runner.
+
+## N4 — Residual matching
+
+| Witness | Witness residual | Use here | Match? |
+|---|---|---|---:|
+| [rank-one locked-output source](../../../../docs/RECORD_OBSERVABLE_QUOTIENT_AND_RANK_ONE_FORMATION_OUTCOME_OPERATION_NORMAL_FORM_BOUNDED_THEOREM_NOTE_2026-07-11.md) | `J_i(rho)=Tr(E_i rho)P_i` with arbitrary `E_i` | exact starting residual | yes |
+| [minimal axioms](../../../../docs/MINIMAL_AXIOMS_2026-06-29.md) | approved foundation grants occurrence/permanence but no instrument or calibration | governance boundary only; not proof of the countermodel | authority context |
+| [minimal intermittent completion](../../../../docs/MINIMAL_RECORD_INSTRUMENT_DILATION_SCALAR_EXCHANGE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md) | `E_empty=qI`, `E_i=(1-q)P_i`, single-Kraus `sqrt(q)U` freedom on one edge sector | recovered as the neutral/single-Kraus special case | exact adjacent case |
+| [raw exhaustive-menu collapse](../../../../docs/COVARIANT_EFFECT_MAP_NONSELECTION_AND_REPEAT_CERTAINTY_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-11.md) | normalization plus raw `Tr(P_iE_i)=1` forces `E_i=P_i` | recovered as the `q=0` limit; not imported as the intermittent proof | exact adjacent limit |
+| [persistent-instrument construction](../../../../docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md) | any named complete Kraus family yields a block isometry, but the family is unselected | use the same finite algebra while classifying the family's effects | adjacent only |
+| [controlled-copy formation bridge](../../../../docs/RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md) | projective, repeat-stable instrument inside one named finite pointer model | positive `a=1` route, not framework-wide authority | adjacent only |
+| [formation-rule narrow no-go](../../../../docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) | occurrence is granted but process/site/state/weight/rate are not forced | preserves rather than broadens that boundary | context only |
+| [classical composition semigroup](../../../../docs/RECORD_COMPOSITION_BRIDGE_SEMIGROUP_POSITIVITY_SELECTION_BOUNDED_NOTE_2026-07-02.md) | named classical weight-convolution premises and finite candidates | different residual; not evidence about overlapping CP instruments | no |
+
+The new nonimplication is proved by its own CPTP countermodel and inherits no
+broader prior no-go.
+
+## N5 — Rhetoric and resolution matrix
+
+| Resolution | Proved/tested? | Honest scoped statement |
+|---|---:|---|
+| arbitrary fixed finite `d` rank-one menu | analytical | conditional repeat/exclusivity classifies every formation effect and complementary no-record effect; an arbitrary CP map with that effect parameterizes the remaining no-record operation |
+| arbitrary finite `d` autonomous hostile family | analytical | equations (14)--(17) give a CPTP blank-plus-locked channel for every `a,q` |
+| exact fixtures | runner `d=2,3`; hostile `d=2` | fixtures certify examples and mutations; universal scope comes from the source proof |
+| full `U(d)` supplied-menu family equivariance | analytical Kraus conjugation identity | corroborated by real/complex unitaries on blank and locked fixtures |
+| fixed-menu single-law invariance | no | explicitly not claimed |
+| framework qubit site or finite `Z^3` region | no | auxiliary register has no framework realization |
+| overlapping local instruments | no | explicitly deferred to the composition campaign |
+| lattice-wide QCA, continuum, probability, or physical time/rate | no | no extrapolation or physical interpretation is claimed |
+
+`Full CP-instrument normal form` means the complete parameterization on one
+abstract finite cell, including an explicitly arbitrary no-record CP map. It
+does not mean that a unique channel was selected or that `Z^3` overlapping-cell
+locality was proved.
+
+## N6 — Partial-closure and governance paths
+
+| Candidate path | Current status | What it could close |
+|---|---|---|
+| canonical `K=P` theorem | `retained_bounded` under named canonical apparatus preparation/readout and projector family | closes projective write only inside that calibrated apparatus surface |
+| controlled-copy/fresh-fragment write isometry | unaudited on current-main validation surface | positive finite-model calibration under pointer/fresh-fragment conditions |
+| formation-to-Kraus bridge and persistent-instrument construction | unaudited on current-main validation surface | build instruments from named isometry/Kraus data; do not select the physical data |
+| persistent Record as Kraus operator | audit in progress | exact isometry-to-instrument algebra while the isometry remains an input |
+| classical composition semigroup | unaudited and cache-hash stale | does not close overlapping CP-instrument composition |
+| one microscopic blank/locked coupling theorem | open | could tie formation blocks to deterministic completed-sector readout and derive conditional repeat/exclusivity |
+| overlapping-cell consistency or controlled coarse-graining | next live route | could reject autonomous block choices that cannot compose on `Z^3` |
+| explicit approved process primitive | governance-only route | presently neither proposed nor approved; carries zero weight without approval and registry update |
+| approved primitive registry | checked | `scale_reference`, `kinetic_isotropy`, and `realized_state` supply none of formation fidelity, event neutrality, instrument composition, or probability |
+
+Historical decisions are provenance only and cannot chain-satisfy. A labeling
+or register-basis convention cannot identify the blank-sector effect with a
+completed-sector readout effect.
+
+## N7 — Steelman
+
+The countermodel is not yet a framework countermodel. Its label register is
+not realized as Records on the qubit lattice; its family equivariance
+co-rotates a supplied menu rather than defining one choice-free law; and no
+overlapping-cell, Admissibility, QND, or common-dilation constraint is imposed.
+A physical Record-formation theorem could couple blank-sector formation to
+locked-sector stabilization and thereby force cross-label exclusion. The
+retained-bounded canonical `K=P` theorem and the controlled-copy model show
+that this route is substantive. Therefore the construction proves only the
+stated auxiliary-register nonimplication, not that framework Record permanence
+plus lawful local composition can never derive calibration.
+
+## N8 — Cross-cycle echo
+
+| Prior surface | Current status | Retirement/change mechanism and applicability |
+|---|---|---|
+| [minimal axioms](../../../../docs/MINIMAL_AXIOMS_2026-06-29.md) | approved axiom-premise node | grants occurrence and permanence, not a process or cross-sector calibration |
+| [finite isometry-to-Kraus algebra](../../../../docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md) | audit in progress | exact algebra after a normalized isometry is named; does not derive the physical isometry |
+| [controlled-copy write isometry](../../../../docs/RECORD_FORMATION_CONTROLLED_COPY_WRITE_ISOMETRY_THEOREM_NOTE_2026-06-18.md) | unaudited on current-main validation surface | closes calibration only inside a named finite model; no framework-wide retirement mechanism yet |
+| [effect-selection block](../../../../docs/COVARIANT_EFFECT_MAP_NONSELECTION_AND_REPEAT_CERTAINTY_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-11.md) | bounded theorem, unaudited | raw repeat certainty is now identified as the `q=0` special case rather than silently applied to intermittent formation |
+| canonical `K=P` result | `retained_bounded` | demonstrates retirement through named apparatus calibration rather than auxiliary register stability |
+| [formation-rule narrow no-go](../../../../docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md) and context/generator no-go | unaudited and broader/different | neither proves the present auxiliary countermodel or closes overlap composition |
+| persistent-instrument/Stinespring lanes | conditional/under audit | named isometry or Kraus data remain the positive construction route |
+| overlapping CP-instrument composition | open | next route; no current retirement mechanism |
+| current-main premise-decision history | provenance only | cannot supply or retire a physics premise; closure requires retained derivation or explicit approved primitive registration |
+
+## Autonomous-instrument gate conclusion
+
+All N1--N8 checks pass for the narrow classification and countermodel. The
+positive theorem identifies conditional repeat/exclusivity, event neutrality,
+and no-record channel selection as distinct coordinates. The hostile channel
+proves only that auxiliary locked-register absorption, same-map reuse, finite
+CPTP normalization, and supplied-menu family equivariance do not imply
+blank-sector cross-label exclusion. Physical Record realization, one
+choice-free law, and overlapping-lattice composition remain live
+stronger routes. The result therefore advances the campaign without
+triggering the axiom-update stop condition. Independent review and audit remain
+required.

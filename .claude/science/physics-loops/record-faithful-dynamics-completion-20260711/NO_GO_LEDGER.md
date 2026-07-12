@@ -11,6 +11,7 @@
 | minimal outcome-forgotten-channel rank plus normalized rank-one outcome branches excludes `I-SWAP` coherence | falsified on one supplied one-excitation edge sector | `K_empty=sqrt(q)U` leaves a projective-unitary freedom; exchange choices have rank-three minimal channels and change eventual absorbing label weights |
 | positivity, full effect/POVM additivity and normalization, noncontextuality, and unitary covariance select `E_P=P` | falsified in every finite `d>1` | the continuous depolarizing family `T_a` survives and changes the representing density operator |
 | repeat certainty alone selects a normalized exhaustive effect menu | falsified | `E_i=I` has repeat certainty but violates joint normalization for `d>1` |
+| auxiliary locked-register absorption plus same-map reuse calibrates blank-sector formation | falsified on one supplied finite system/register class | an exact CPTP family has absorbing consistent locked states and cross-label blank formation for `a<1` |
 
 These negatives prune routes, not the full record-instrument program. The live
 escape is a separate classical record register coupled through a local
@@ -25,3 +26,7 @@ The effect-selection block supplies a positive conditional escape: on one
 fixed exhaustive finite rank-one menu, joint normalization plus `RC_i` forces
 `E_i=P_i`. Because a local process theorem may still derive both conditions,
 the negative rows do not prove that the axioms require amendment.
+
+The auxiliary-register result is not a framework-Record countermodel: it has no
+physical readout map, `Z^3` realization, one menu-independent law, or
+overlapping-cell composition. Those stronger routes remain live.

@@ -1,11 +1,11 @@
 ---
-target_claim_id: covariant_effect_map_nonselection_and_repeat_certainty_collapse_bounded_theorem_note_2026-07-11
+target_claim_id: autonomous_intermittent_record_instrument_calibration_nonselection_bounded_theorem_note_2026-07-11
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact finite-dimensional depolarizing counterfamily for static effect selectors and an exact exhaustive-rank-one-menu collapse theorem under named zero-premise-weight hypotheses."
+claim_type_reason: "Exact finite-dimensional intermittent effect-surface and CP-instrument normal form, plus a narrow auxiliary-register CPTP countermodel to blank/locked calibration forcing."
 actual_current_surface_status: bounded-support
 trace_class: direct_blocker_closure
 reachability_to_target: partially_closes
-conditional_surface_status: "Static effect/POVM additivity, normalization, noncontextuality, and covariance leave a continuous depolarizing family. On a fixed exhaustive finite rank-one menu, joint normalization plus RC_i force E_i=P_i. Physical menu realization, probability semantics, framework Records, and derivation of RC_i remain open."
+conditional_surface_status: "On one abstract finite system/register carrier, cross-label exclusion gives E_i=e_iP_i and F=sum_i(1-e_i)P_i; neutral efficiencies give F=qI and conditional Born-form weights. Auxiliary absorption/reuse does not imply exclusion. Physical readout, framework Records, and overlapping Z3 composition remain open."
 hypothetical_axiom_status: null
 admitted_observation_status: none
 proposal_allowed: false
@@ -16,9 +16,9 @@ review_loop_disposition: iteration_3_pass_bounded
 
 # Claim Status Certificate
 
-The current source classifies an exact finite-dimensional effect-assignment
-counterfamily and the exact conditions that collapse a fixed exhaustive
-rank-one menu to projectors.
+The current source classifies the intermittent CP-instrument normal form on one
+abstract finite carrier and constructs an auxiliary-register calibration
+countermodel.
 The exact current status is:
 
 - the four axioms do not supply the required process law;
@@ -28,25 +28,26 @@ The exact current status is:
   by itself select a unique visible law;
 - the Clifford-vector conclusion remains conditional on a faithful spectral
   availability/formation-to-carrier bridge;
-- `T_a(A)=aA+(1-a)Tr(A)I/d` preserves effects, every normalized POVM,
-  noncontextuality, and unitary covariance while leaving `a` free;
-- trace representation can identify the depolarized density operator rather
-  than the input density operator;
-- for a fixed exhaustive rank-one menu, joint normalization plus
-  `RC_i: Tr(P_iE_i)=1` force `E_i=P_i`;
-- both conditions are named conditional hypotheses carrying zero
-  framework-premise weight;
-- the current runner reports `PASS=51 FAIL=0`; independent audit remains
+- cross-label exclusion and positivity force `E_i=e_iP_i`;
+- normalization fixes `F=sum_i(1-e_i)P_i`, while neutral efficiency gives
+  `F=qI` and conditional Born-form weights;
+- any CP no-record map with effect `F` completes the normal form, so channel
+  selection remains open;
+- one auxiliary-register CPTP family has absorbing consistent locked states
+  and uncalibrated blank-sector effects;
+- the construction has supplied-menu family equivariance, not one
+  menu-independent framework law;
+- the current runner reports `PASS=36 FAIL=0`; independent audit remains
   required.
 
 No axiom, primitive, or audit status is proposed or changed. The new claim
-depends on `minimal_axioms` and the record-outcome normal form; the new finite
-algebra is self-contained. Those edges remain subject to independent audit and
-dependency closure.
+depends on `minimal_axioms`, the record-outcome normal form, and the reconciled
+finite Kraus--Choi authority. Those edges remain subject to independent audit
+and dependency closure.
 
-The bounded nonselection/collapse result passed independent claim and code/math
-review after full-effect, claim-scope, and runner repairs. Its full N1--N8
-packet preserves physical menu realization, probability semantics,
-framework-Record realization, `RC_i`, event rate, and continuum control as
-separate walls. Because a local process/repeatability derivation remains live,
-this result does not trigger the campaign's axiom-update stop condition.
+The bounded normal form and auxiliary nonimplication passed independent claim,
+code/math, governance, and N1--N8 review after the arbitrary no-record CP
+parameter and finite-carrier scope were made explicit. One choice-free law,
+physical readout, framework-Record realization, overlap composition, event
+order/rate, and continuum control remain live. The result does not trigger the
+campaign's axiom-update stop condition.

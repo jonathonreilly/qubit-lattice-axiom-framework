@@ -1,11 +1,11 @@
 ---
 trace_class: direct_blocker_closure
-target_claim_id: covariant_effect_map_nonselection_and_repeat_certainty_collapse_bounded_theorem_note_2026-07-11
+target_claim_id: autonomous_intermittent_record_instrument_calibration_nonselection_bounded_theorem_note_2026-07-11
 target_blocker_text: "A unique or severely constrained dynamics/admissibility law, including time and the probability rule."
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Read the full-instrument/composition/repeatability lane and test whether one normalized local process derives the effect menu and RC_i without importing probability semantics."
+next_trace_action: "Read the event-order/time-rate and overlapping-instrument lanes, then classify two exact schedules on overlapping supports before importing a clock or QCA rule."
 ---
 
 # Trace Gate
@@ -32,3 +32,9 @@ It also proves that a fixed exhaustive rank-one menu, joint normalization, and
 the Born/effect blocker but does not derive probability semantics or `RC_i`.
 The next trace action is therefore the full local instrument rather than a
 second representation theorem.
+
+The finite-carrier instrument block now classifies the intermittent effect
+surface and remaining CP-instrument freedom on one abstract carrier. It also
+proves that auxiliary locked-register absorption and same-map reuse do not
+imply blank-sector calibration. The next trace action is the overlap-order seam,
+not a second single-cell instrument construction.

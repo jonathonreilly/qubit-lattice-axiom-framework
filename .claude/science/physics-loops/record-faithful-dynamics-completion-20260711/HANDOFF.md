@@ -112,3 +112,26 @@ axioms. Runner/cache: `PASS=51 FAIL=0`; independent claim and code/math reviews
 passed after repairs. No axiom-update stop condition is triggered. The next
 campaign is the full normalized local record-forming instrument, beginning
 with the actual composition/repeatability/readout-to-formation science.
+
+## Full finite-carrier instrument result
+
+The persistent-instrument, Kraus--Choi, controlled-copy, kernel, selective-atom,
+composition, and formation-rule lanes were read and their relevant runners
+replayed before this attack. No current row classifies a
+translation-covariant overlapping `Z^3` instrument.
+
+On one abstract finite system/register carrier, full normalization and
+conditional cross-label exclusion give `E_i=e_iP_i` and
+`F=sum_i(1-e_i)P_i`. Equal efficiencies give `F=qI` and Born-form conditional
+weights under named probability semantics. The remaining no-record operation
+is an arbitrary CP map with effect `F`; for scalar `q`, it is `q` times an
+arbitrary CPTP channel, with `sqrt(q)U` as the single-Kraus special case.
+
+An auxiliary blank-plus-locked-register CPTP family is absorbing on every
+consistent locked-register state and stable under same-map reuse, yet has
+cross-label blank formation for `a<1`. Its covariance is only supplied-menu
+family equivariance, not one menu-independent framework law. It proves a
+narrow auxiliary-register nonimplication, not a statement about framework
+Record permanence. Runner/cache: `PASS=36 FAIL=0`; claim and math reviews
+passed. No axiom-update stop condition is triggered. The next seam is
+overlapping local-instrument order, followed by physical time/rate.

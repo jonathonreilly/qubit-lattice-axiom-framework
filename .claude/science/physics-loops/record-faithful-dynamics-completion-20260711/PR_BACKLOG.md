@@ -23,6 +23,18 @@ prepared for the next stacked review PR:
 
 No merge is authorized. Independent audit remains authoritative.
 
+The intermittent finite-carrier normal-form and auxiliary calibration
+nonselection result is prepared for the next stacked review PR:
+
+- base: `physics-loop/record-faithful-dynamics-block04-effect-selection-20260711`
+- head: `physics-loop/record-faithful-dynamics-block05-full-instrument-20260711`
+- source runner: `PASS=36 FAIL=0`
+- disposition: review-loop bounded PASS after independent claim, code/math,
+  governance, labeling/import, Nature-scope, and N1--N8 review; graph seeding
+  and strict lint validated, with generated status surfaces stripped
+
+No merge is authorized. Independent audit remains authoritative.
+
 The minimal-dilation exchange result was pushed and opened as the next stacked
 review PR:
 

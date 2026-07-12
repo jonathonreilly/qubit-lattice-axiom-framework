@@ -1,0 +1,39 @@
+PASS C01: PSD plus a zero cross-label diagonal kills the complex off-diagonal
+PASS C02: the first repeat-exclusive effect is e_0 P_0
+PASS C03: normalization fixes the diagonal no-record effect
+PASS C04: the classified effects form a normalized intermittent menu
+PASS C05: dimension-three efficiencies leave the complementary no-record effect
+PASS C06: classified formation effects obey cross-label exclusion
+PASS C07: unequal formation efficiencies bias the conditional nonempty distribution
+PASS C08: normalization and repeat exclusivity alone do not recover Born-form conditional weights
+PASS C09: permutation-neutral event efficiency restores Born-form conditional weights
+PASS C10: permutation neutrality makes the no-record effect scalar
+PASS A01: the autonomous blank-plus-locked Kraus family is exactly CPTP
+PASS A02: the blank-sector no-record effect is q I
+PASS A03i0: blank formation effect is the scaled depolarized hostile effect
+PASS A03i1: blank formation effect is the scaled depolarized hostile effect
+PASS A04: the hostile blank sector has nonzero cross-label formation weight
+PASS A05i0: the consistent locked-register state is fixed by one channel use
+PASS A06i0: same-map reuse preserves locked-register-sector absorption
+PASS A05i1: the consistent locked-register state is fixed by one channel use
+PASS A06i1: same-map reuse preserves locked-register-sector absorption
+PASS A07: the calibrated a=1 positive control is also CPTP
+PASS A08: a=1 removes cross-label formation
+PASS A09: auxiliary register absorption and same-map reuse do not imply blank-sector cross-label exclusion
+PASS V01: hadamard_blank corroborates supplied-menu family equivariance
+PASS V02: hadamard_locked corroborates supplied-menu family equivariance
+PASS V03: complex_blank corroborates supplied-menu family equivariance
+PASS V04: complex_locked corroborates supplied-menu family equivariance
+PASS V05: a one-Kraus no-record map has scalar effect q I
+PASS V06: a multi-Kraus no-record map can have the same scalar effect
+PASS V07: the scalar no-record effect does not select the conditional no-record channel
+PASS V08: the one-Kraus special case is sqrt(q) times a unitary
+PASS S01: source note exists
+PASS S02: source contains boundary marker: conditional repeat/exclusivity
+PASS S03: source contains boundary marker: does not identify the external labels as framework Records
+PASS S04: source contains boundary marker: does not derive probability semantics
+PASS S05: source contains boundary marker: does not select event order, rate, or the no-record channel
+PASS S06: source contains boundary marker: does not establish that the axioms require amendment
+BOUNDARY: finite Kraus representation is named mathematical authority; physical CP-instrument applicability, the supplied menu, probability semantics, cross-label exclusion, and event neutrality remain conditional/open and gain no chain-satisfying premise authority.
+BOUNDARY: auxiliary locked-register absorption and same-map reuse do not imply blank-sector cross-label exclusion.
+TOTAL: PASS=36 FAIL=0

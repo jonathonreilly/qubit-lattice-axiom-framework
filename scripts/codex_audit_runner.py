@@ -1571,6 +1571,26 @@ def fresh_schema_retry_code(validation_error: str) -> str:
     return "AUDIT_SCHEMA_REJECT"
 
 
+def fresh_schema_retry_error(
+    current_error: str | None,
+    initial_validation_error: str | None,
+) -> str | None:
+    """Keep a structured reject eligible after a failed locator repair.
+
+    Locator repair cannot change N1-N8 judgment content. A repair that
+    violates that rule, fails parsing, or fails operationally must not erase
+    the original structured validator reject and suppress the independent
+    fresh-schema retry.
+    """
+    if current_error is None:
+        return None
+    if fresh_schema_retry_eligible(current_error):
+        return current_error
+    if fresh_schema_retry_eligible(initial_validation_error):
+        return initial_validation_error
+    return current_error
+
+
 def render_fresh_schema_retry_prompt(
     original_prompt: str,
     validation_code: str,
@@ -2316,6 +2336,7 @@ def main() -> int:
                         )
                         break
                 elapsed += repair_elapsed
+            err = fresh_schema_retry_error(err, initial_validation_error)
             schema_retry_compute_required: str | None = None
             if (
                 err

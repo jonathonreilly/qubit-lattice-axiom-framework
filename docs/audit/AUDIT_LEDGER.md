@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 88 |
+| **retained** | 89 |
 | **retained_no_go** | 27 |
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 6 |
-| unaudited | 2804 |
+| unaudited | 2803 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 461 |
+| `audited_clean` | 462 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3154 |
+| `unaudited` | 3153 |
 
 | claim_type | count |
 |---|---:|
@@ -596,6 +596,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_two_body_open_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wilson_two_body_open_refined_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `yt_ew_color_projection_theorem` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
@@ -8378,6 +8379,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source constructs the finite operator system, branch weights, sector moments, ESS values, and permutation-null diagnostics directly rather than reading the contested numbers from another note. Independent arithmetic checks on the displayed table support the 16/24 adequacy count and the two record-versus-null inequalities within the stated finite diagnostic scope.
 - **rationale:** The load-bearing result is a bounded first-principles finite computation, not a renaming or external comparator match. The hard-coded constants fix the experiment, seeds, depths, ESS threshold, and null draw count; the adequacy pattern, weighted records, and p95 diagnostics are computed from the finite branch data. The conclusion is clean only in the stated bounded sense: it does not prove an all-permutations null theorem or a broader unseeded within-sector claim.
 - **auditor confidence:** high
+
+### `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/WOLFENSTEIN_LAMBDA_A_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The conditional algebraic consequences of I1 and I2, including W3, CV1, CV2, the optional count/CP-radius reductions, and the three stated ratios; no derivation of the hypotheses or physical CKM identification was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00362-wolfenstein_lambda_a_structu`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting lambda^2 = alpha_s/n_pair and A^2 = n_pair/n_color into A^2 lambda^2, A^2 lambda^4, and A^2 lambda^6(rho^2+eta^2) yields the stated closed forms by exact cancellation and collection of powers.  _(class `A`)_
+- **chain closes:** True — Every scoped conclusion follows by elementary substitution from explicitly stated hypotheses. The exact-symbolic runner independently performs the substitutions and reports 22 class-A checks with no failures.
+- **rationale:** The note is a narrowly scoped conditional theorem, not a claim that I1, I2, the CP-radius hypothesis, or the physical CKM bridge have been derived. Its algebra is correct: W3 cancels n_pair, CV1 and CV2 collect the stated powers, and the optional q-specializations follow under their explicit extra hypotheses. The runner source computes these identities symbolically rather than merely printing expected outcomes; the permissive fallback in its CV1-q check is locally weak, but that identity is independently immediate from q = p c and does not affect closure.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11`
 

@@ -165,7 +165,11 @@ The orchestrator's source-shape check says this row requires the gate:
 Run the N1-N8 gate whenever that value is `true`, whenever you classify the
 row as `no_go`, or whenever your rationale would name walls, admissions,
 obstructions, "does not lift," "no route exists," "no retained primitive
-supplies this," or "requires a new axiom." The restricted-input rule still
+supplies this," or "requires a new axiom." A `false` value scopes only the
+orchestrated forensic evidence plumbing — it NEVER waives the gate when your
+own output names walls: in that case you MUST still include the structured
+`no_go_discipline` object (development tier: N1-N8 as structured judgments
+with quoted evidence), or the apply gate will reject your verdict outright. The restricted-input rule still
 applies: do not search the wider repository. For N8, judge only the source note,
 runner/helper sources, one-hop authorities, and premise registries supplied
 here. Missing cross-cycle evidence is a checklist failure, not permission to

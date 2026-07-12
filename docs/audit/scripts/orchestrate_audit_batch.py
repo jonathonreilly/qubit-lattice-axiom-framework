@@ -273,6 +273,7 @@ def launch_worker(
         "transport_bound": None,
         "auditor": f"codex-audit-batch-{ident}",
         "independence": seat_independence(row, pass_no),
+        "workdir": workdir,
         "last_size": 0,
         "last_progress": now,
         "stalled": False,
@@ -352,6 +353,63 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     if compute_reason:
         return None, {**base, "result": "compute_required", "detail": compute_reason}
     blob = audit_runner.parse_verdict_json(reply or "")
+PACKET_REQUIRED_MARKER = "N1-N8 packet is required"
+
+
+def packet_completion_pass(job: dict, blob: dict, workdir: Path) -> dict | None:
+    """One mechanical follow-up when an auditor's wall-naming output omitted
+    the structural no_go_discipline object (canary finding, theta lane
+    2026-07-12: two independent seats skipped it despite the template
+    instruction — prompt strength alone is insufficient). Same auditor
+    lineage; judgments must not change; one attempt."""
+    cid = job["row"]["claim_id"]
+    key = artifact_key(cid)
+    blob_path = workdir / f"completion-{key}-p{job['pass']}.json"
+    blob_path.write_text(json.dumps(blob, indent=1), encoding="utf-8")
+    out_path = workdir / f"completion-{key}-p{job['pass']}-out.json"
+    spec = (
+        f"# FOCUSED COMPLETION (same audit, auditor lineage {job['auditor']})\n\n"
+        f"Your audit JSON for claim {cid} is at: {blob_path}\n\n"
+        "Your verdict output names walls/negative boundaries, so the apply "
+        "gate requires a structural `no_go_discipline` object (development "
+        "tier). Read docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md for the N1-N8 "
+        "packet schema. Add the object to your JSON: N1-N8 answered as "
+        "structured judgments with quoted evidence from the note/runner you "
+        "already audited (structural validation; no manifest-containment, "
+        "live-stdout, transport, or full-universe disposition plumbing). "
+        "Change NOTHING else — same verdict, same rationale, same fields. "
+        f"Write the complete JSON to: {out_path}\n"
+        "Single JSON object, written once at the end."
+    )
+    log = open(workdir / f"completion-{key}-p{job['pass']}.log", "w")
+    proc = subprocess.Popen(
+        ["codex", "exec", "-m", MODEL, "-c", f"model_reasoning_effort={REASONING}",
+         "-s", "read-only", "-C", str(REPO_ROOT), spec],
+        stdin=subprocess.DEVNULL, stdout=log, stderr=log, cwd=str(REPO_ROOT),
+    )
+    deadline = time.time() + 20 * 60
+    while time.time() < deadline and proc.poll() is None:
+        if out_path.exists() and out_path.stat().st_size > MIN_DELIVERY_BYTES:
+            break
+        time.sleep(15)
+    if proc.poll() is None:
+        proc.kill()
+    log.close()
+    if not (out_path.exists() and out_path.stat().st_size > MIN_DELIVERY_BYTES):
+        return None
+    try:
+        completed = json.loads(out_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+    if not isinstance(completed.get("no_go_discipline"), dict):
+        return None
+    # Judgments must be unchanged: verdict and rationale are immutable.
+    for field in ("verdict", "verdict_rationale", "claim_type", "claim_scope"):
+        if completed.get(field) != blob.get(field):
+            return None
+    return completed
+
+
     if blob is None:
         return None, {**base, "result": "malformed_json"}
     if blob.get("claim_type") == "no_go":
@@ -382,6 +440,21 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     clipped = prompt_has_clipped_evidence(job["evidence_manifest"])
     if not error and blob.get("verdict") == "audited_clean" and clipped:
         error = f"audited_clean packet has clipped evidence: {clipped}"
+    if error and PACKET_REQUIRED_MARKER in str(error) and not isinstance(
+        blob.get("no_go_discipline"), dict
+    ):
+        completed = packet_completion_pass(job, blob, job["workdir"])
+        if completed is not None:
+            blob = completed
+            error = audit_runner.validate_verdict(
+                blob,
+                cid,
+                source_requires_no_go=source_requires_no_go,
+                evidence_manifest=None,
+                prior_claim_scope=audit_runner.prior_claim_scope_for_row(row),
+                expected_invocation_id=job["invocation_id"],
+                transport_bounded_n8=job["transport_bound"] is not None,
+            )
     if error:
         return None, {**base, "result": "validation_failed", "detail": error}
 

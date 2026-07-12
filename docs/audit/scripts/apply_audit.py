@@ -231,7 +231,7 @@ def cross_summary_no_go_error(
         packet if isinstance(packet, dict) else {}
     )
     _forensic = forensic_tier_for(summary.get("claim_type"), source_required)
-    if current_evidence_manifest is None and not _forensic:
+    if not _forensic:
         # Development tier: structural validation of the prior seat's packet.
         return no_go_discipline_gate.validate_no_go_discipline(
             {
@@ -963,7 +963,18 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     except ValueError as exc:
         return False, str(exc)
     trusted_transport = evidence_manifest is not None
-    if evidence_manifest is None and judgment.get("no_go_discipline") is not None:
+    source_required_probe = no_go_discipline_gate.source_requires_no_go_discipline(
+        note_path, note_body, final_claim_type
+    )
+    forensic_probe = bool(
+        forensic_tier_for(final_claim_type, source_required_probe)
+        or (row.get("claim_type") or "") == "no_go"
+    )
+    if (
+        evidence_manifest is None
+        and judgment.get("no_go_discipline") is not None
+        and forensic_probe
+    ):
         return False, "No-Go Discipline apply requires trusted orchestrator evidence transport"
     if evidence_manifest is None:
         evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
@@ -987,11 +998,12 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
             if no_go_discipline_gate.manifest_has_blind_reaudit_control(
                 evidence_manifest
             )
-            else row.get("claim_type") or final_claim_type
+            else final_claim_type
         ),
     )
-    _forensic = forensic_tier_for(
-        row.get("claim_type") or final_claim_type, source_requires_no_go
+    _forensic = bool(
+        forensic_tier_for(final_claim_type, source_requires_no_go)
+        or (row.get("claim_type") or "") == "no_go"
     )
     if side in {"first", "second"}:
         chosen_gate_error = cross_summary_no_go_error(
@@ -1138,9 +1150,12 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         return False, str(exc)
     trusted_transport = evidence_manifest is not None
     _source_req_probe = no_go_discipline_gate.source_requires_no_go_discipline(
-        note_path, note_body, row.get("claim_type") or claim_type
+        note_path, note_body, claim_type
     )
-    _forensic = forensic_tier_for(row.get("claim_type") or claim_type, _source_req_probe)
+    _forensic = bool(
+        forensic_tier_for(claim_type, _source_req_probe)
+        or (row.get("claim_type") or "") == "no_go"
+    )
     if (
         evidence_manifest is None
         and audit.get("no_go_discipline") is not None
@@ -1170,12 +1185,13 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
                 if no_go_discipline_gate.manifest_has_blind_reaudit_control(
                     evidence_manifest
                 )
-                else row.get("claim_type") or claim_type
+                else claim_type
             ),
         )
     )
-    _forensic = forensic_tier_for(
-        row.get("claim_type") or claim_type, source_requires_no_go
+    _forensic = bool(
+        forensic_tier_for(claim_type, source_requires_no_go)
+        or (row.get("claim_type") or "") == "no_go"
     )
     no_go_error = no_go_discipline_gate.validate_no_go_discipline(
         audit,

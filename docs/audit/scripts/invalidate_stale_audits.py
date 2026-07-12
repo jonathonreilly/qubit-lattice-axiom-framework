@@ -371,7 +371,12 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
             current_manifest = no_go_discipline_gate.build_evidence_manifest(
                 row, rows, REPO_ROOT
             )
-            if verdict == "audited_clean":
+            nested_forensic = bool(
+                source_required
+                or (summary.get("claim_type") or "") == "no_go"
+                or no_go_discipline_gate.forensic_mode()
+            )
+            if verdict == "audited_clean" and nested_forensic:
                 if evidence_manifest is None:
                     packet_error = "authenticated evidence snapshot is required"
                 else:
@@ -382,7 +387,7 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
                     )
             else:
                 packet_error = None
-                if evidence_manifest is None:
+                if nested_forensic and evidence_manifest is None:
                     evidence_manifest = current_manifest
             if packet_error is None:
                 packet_error = no_go_discipline_gate.validate_no_go_discipline(
@@ -392,10 +397,12 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
                     "chain_closes": summary.get(
                         "chain_closes", verdict == "audited_clean"
                     ),
-                },
-                source_required=source_required,
-                evidence_manifest=evidence_manifest,
-            )
+                    },
+                    source_required=source_required,
+                    evidence_manifest=(
+                        evidence_manifest if nested_forensic else None
+                    ),
+                )
             if packet_error:
                 digest = hashlib.sha256(packet_error.encode("utf-8")).hexdigest()[:12]
                 return f"cross_confirmation_{audit_key}_no_go_packet_invalid:{digest}"

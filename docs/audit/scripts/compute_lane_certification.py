@@ -3,7 +3,8 @@
 
 For each flagship lane in lane_certification_config.json, walk the root
 claim's transitive dependency closure in the citation graph and report
-whether every row is currently retained-grade (or an accepted premise).
+whether every row is currently chain-satisfying: retained-grade, a decoration
+of a retained parent, permitted metadata context, or an accepted premise.
 Certification is a state the repository re-enters continuously as audit
 throughput catches up with landings — never a scheduled event. A lane's
 marker rolling back (after an axiom edit or source change) is the honest
@@ -13,8 +14,9 @@ from __future__ import annotations
 
 import json
 import subprocess
-from datetime import datetime, timezone
 from pathlib import Path
+
+import premise_nodes
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA = REPO_ROOT / "docs" / "audit" / "data"
@@ -22,13 +24,21 @@ CONFIG = DATA / "lane_certification_config.json"
 LEDGER = DATA / "audit_ledger.json"
 OUT = DATA / "lane_certification.json"
 
-RETAINED_GRADE = {"retained", "retained_bounded", "retained_no_go", "meta"}
-ACCEPTED_PREFIXES = ("minimal_axioms",)
+RETAINED_GRADE = {"retained", "retained_bounded", "retained_no_go"}
 
 
 def is_accepted_premise(claim_id: str) -> bool:
-    if claim_id.startswith(ACCEPTED_PREFIXES) or claim_id.endswith("_primitive"):
+    return premise_nodes.is_accepted_premise_dep(claim_id)
+
+
+def status_satisfies_certification(claim_id: str, status: object) -> bool:
+    """Match the pipeline's chain boundary without inventing premise policy."""
+    if status in RETAINED_GRADE:
         return True
+    if isinstance(status, str) and status.startswith("decoration_under_"):
+        return True
+    if status == "meta":
+        return not premise_nodes.is_non_evidence_context_dep(claim_id)
     return False
 
 
@@ -49,9 +59,11 @@ def main() -> int:
         root = lane.get("root")
         name = lane.get("lane")
         if root not in rows:
+            missing = {"claim_id": root, "effective_status": "not_in_ledger"}
             lanes_out.append({
                 "lane": name, "root": root, "certified": False,
-                "closure_size": 0, "blocking": [],
+                "closure_size": 1, "uncertified_count": 1,
+                "blocking": [missing],
                 "note": "root claim not in ledger",
             })
             continue
@@ -70,9 +82,7 @@ def main() -> int:
                 blocking.append({"claim_id": cid, "effective_status": "not_in_ledger"})
                 continue
             status = row.get("effective_status")
-            if status not in RETAINED_GRADE and not str(status or "").startswith(
-                "decoration_under_"
-            ):
+            if not status_satisfies_certification(cid, status):
                 blocking.append({"claim_id": cid, "effective_status": status})
             for dep in row.get("deps") or []:
                 if dep not in seen:
@@ -85,12 +95,11 @@ def main() -> int:
             "certified": not blocking,
             "blocking": sorted(
                 blocking, key=lambda b: str(b.get("claim_id"))
-            )[:15],
+            ),
         })
 
     OUT.write_text(json.dumps({
         "schema": "lane_certification_v1",
-        "generated_at": datetime.now(timezone.utc).isoformat(),
         "repo_head": head,
         "lanes": lanes_out,
     }, indent=2, sort_keys=True) + "\n", encoding="utf-8")

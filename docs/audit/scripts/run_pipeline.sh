@@ -84,6 +84,9 @@ if [[ "${invalidated}" != "0" ]]; then
   exit 1
 fi
 
+echo "==> 7b/16 compute_lane_certification.py post-invalidation fixed point"
+python3 docs/audit/scripts/compute_lane_certification.py
+
 echo "==> 8/16 build_cycle_inventory.py"
 python3 docs/audit/scripts/build_cycle_inventory.py
 

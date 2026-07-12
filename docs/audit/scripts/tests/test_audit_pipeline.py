@@ -1179,6 +1179,153 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertIn("source drifted", msg)
         reauth.assert_called_once()
 
+    def test_incoming_no_go_cannot_be_masked_by_stored_positive_type(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_positive_to_no_go",
+            claim_type="positive_theorem",
+            note_body="An exact positive source identity.\n",
+        )
+        audit = {
+            "claim_id": "test_positive_to_no_go",
+            "verdict": "audited_clean",
+            "claim_type": "no_go",
+            "claim_scope": "the newly scoped obstruction",
+            "auditor": "fresh-no-go-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "cross_family",
+            "load_bearing_step_class": "A",
+            "chain_closes": True,
+            "no_go_discipline": {"status": "PASS"},
+        }
+        led = self.fx.read_ledger()
+        ok, msg = m.apply_one(led, dict(audit))
+        self.assertFalse(ok)
+        self.assertIn("trusted orchestrator evidence transport", msg)
+
+        manifest = {
+            "docs/TEST_POSITIVE_TO_NO_GO.md": {
+                "path": "docs/TEST_POSITIVE_TO_NO_GO.md",
+                "roles": ["source"],
+                "text": "An exact positive source identity.",
+            }
+        }
+        led = self.fx.read_ledger()
+        with mock.patch.object(
+            m, "trusted_evidence_manifest", return_value=manifest
+        ), mock.patch.object(
+            m, "trusted_manifest_current_error", return_value=None
+        ), mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value=None,
+        ):
+            ok, msg = m.apply_one(led, dict(audit))
+        self.assertTrue(ok, msg)
+        packet = led["rows"]["test_positive_to_no_go"]["no_go_discipline"]
+        self.assertIn("evidence_snapshot", packet)
+
+    def test_development_cross_summary_ignores_manifest_plumbing(self):
+        m = _import("apply_audit")
+        summary = {
+            "verdict": "audited_clean",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "an output-scoped wall",
+            "no_go_discipline": {"status": "PASS"},
+        }
+        with mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value=None,
+        ) as validate:
+            self.assertIsNone(
+                m.cross_summary_no_go_error(
+                    summary,
+                    source_required=False,
+                    current_evidence_manifest={"stale": {}},
+                )
+            )
+        self.assertIsNone(validate.call_args.kwargs["evidence_manifest"])
+
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
+            self.assertIn(
+                "authenticated evidence_snapshot",
+                m.cross_summary_no_go_error(
+                    summary,
+                    source_required=False,
+                    current_evidence_manifest={},
+                ) or "",
+            )
+
+    def test_judicial_packet_transport_is_tier_gated(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_judicial_tier",
+            audit_status="audit_in_progress",
+            claim_type="positive_theorem",
+            criticality="critical",
+        )
+        led = self.fx.read_ledger()
+        led["rows"]["test_judicial_tier"]["cross_confirmation"] = {
+            "status": "disagreement",
+            "first_audit": {
+                "auditor": "first-auditor",
+                "auditor_family": "codex-gpt-5.6",
+                "verdict": "audited_clean",
+                "claim_type": "positive_theorem",
+                "claim_scope": "positive scope",
+                "load_bearing_step_class": "C",
+            },
+            "second_audit": {
+                "auditor": "second-auditor",
+                "auditor_family": "codex-gpt-5.6",
+                "verdict": "audited_clean",
+                "claim_type": "bounded_theorem",
+                "claim_scope": "bounded scope",
+                "load_bearing_step_class": "A",
+            },
+        }
+        judgment = {
+            "claim_id": "test_judicial_tier",
+            "third_auditor": "judicial-panel",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "judicial_review",
+            "sided_with": "hybrid",
+            "ratified_verdict": "audited_clean",
+            "ratified_claim_type": "bounded_theorem",
+            "ratified_load_bearing_step_class": "A",
+            "ratified_claim_scope": "bounded structural scope",
+            "ratified_load_bearing_step": "structural step",
+            "judgment_rationale": "the wall remains named in the output",
+            "first_auditor_error": "scope too broad",
+            "second_auditor_error": "none on the bounded scope",
+            "hybrid_resolution_note": "ratify the bounded tuple",
+            "no_go_discipline": {"status": "PASS"},
+        }
+        forensic_led = json.loads(json.dumps(led))
+        with mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value=None,
+        ):
+            ok, msg = m.apply_one(led, dict(judgment))
+        self.assertTrue(ok, msg)
+        self.assertNotIn(
+            "evidence_snapshot",
+            led["rows"]["test_judicial_tier"]["no_go_discipline"],
+        )
+
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
+            ok, msg = m.apply_one(forensic_led, dict(judgment))
+        self.assertFalse(ok)
+        self.assertIn("trusted orchestrator evidence transport", msg)
+
     def test_blind_apply_does_not_reuse_stored_negative_claim_type(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
@@ -4542,7 +4689,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             )
         )
 
-    def test_explicit_non_no_go_type_overrides_historical_filename_hint(self):
+    def test_no_go_filename_stays_forensic_even_with_non_no_go_type(self):
         m = _import("no_go_discipline_gate")
         for path, body, claim_type in (
             (
@@ -4560,7 +4707,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             ),
         ):
             with self.subTest(path=path):
-                self.assertFalse(
+                self.assertTrue(
                     m.source_requires_no_go_discipline(path, body, claim_type)
                 )
         self.assertTrue(
@@ -7033,6 +7180,64 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             )
         )
 
+    def test_cross_confirmation_packet_currency_is_tier_gated(self):
+        m = _import("invalidate_stale_audits")
+        summary = {
+            "verdict": "audited_clean",
+            "claim_type": "bounded_theorem",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "no_go_discipline": {"status": "PASS"},
+        }
+        row = {
+            "claim_id": "development_cross_packet",
+            "note_path": "docs/POSITIVE.md",
+            "audit_status": "audit_in_progress",
+            "claim_type": "bounded_theorem",
+            "cross_confirmation": {
+                "status": "awaiting_second",
+                "first_audit": summary,
+            },
+        }
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}), \
+             mock.patch.object(
+                 m.no_go_discipline_gate,
+                 "evidence_manifest_from_snapshot",
+                 return_value=None,
+             ), mock.patch.object(
+                 m.no_go_discipline_gate,
+                 "build_evidence_manifest",
+                 return_value={"current": {}},
+             ), mock.patch.object(
+                 m.no_go_discipline_gate,
+                 "validate_no_go_discipline",
+                 return_value=None,
+             ) as validate:
+            self.assertIsNone(
+                m.detect_invalidation(row, {"development_cross_packet": row})
+            )
+        self.assertIsNone(validate.call_args.kwargs["evidence_manifest"])
+
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}), \
+             mock.patch.object(
+                 m.no_go_discipline_gate,
+                 "evidence_manifest_from_snapshot",
+                 return_value=None,
+             ), mock.patch.object(
+                 m.no_go_discipline_gate,
+                 "build_evidence_manifest",
+                 return_value={"current": {}},
+             ):
+            reason = m.detect_invalidation(
+                row, {"development_cross_packet": row}
+            )
+        self.assertTrue(
+            (reason or "").startswith(
+                "cross_confirmation_first_audit_no_go_packet_invalid:"
+            )
+        )
+
     def test_clean_no_go_packet_without_authenticated_snapshot_is_invalidated(self):
         m = _import("invalidate_stale_audits")
         with tempfile.TemporaryDirectory() as tmp:
@@ -7078,6 +7283,113 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "negative_assertion_classes": [],
             }
             self.assertIsNone(m.detect_invalidation(row, {"positive": row}))
+
+
+class ComputeLaneCertificationTest(unittest.TestCase):
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.root = Path(self._tmp.name)
+        self.data = self.root / "docs" / "audit" / "data"
+        self.data.mkdir(parents=True)
+
+    def _run(self, lanes: list[dict], rows: dict, *, head="a" * 40):
+        m = _import("compute_lane_certification")
+        config = self.data / "lane_certification_config.json"
+        ledger = self.data / "audit_ledger.json"
+        out = self.data / "lane_certification.json"
+        config.write_text(json.dumps({"lanes": lanes}), encoding="utf-8")
+        ledger.write_text(json.dumps({"rows": rows}), encoding="utf-8")
+        completed = mock.Mock(stdout=head + "\n")
+        with mock.patch.object(m, "CONFIG", config), \
+             mock.patch.object(m, "LEDGER", ledger), \
+             mock.patch.object(m, "OUT", out), \
+             mock.patch.object(m, "REPO_ROOT", self.root), \
+             mock.patch.object(m.subprocess, "run", return_value=completed):
+            self.assertEqual(m.main(), 0)
+        return json.loads(out.read_text(encoding="utf-8")), out.read_bytes()
+
+    def test_bfs_uses_registry_and_reports_every_missing_row(self):
+        missing = [f"missing_{index:02d}" for index in range(16)]
+        rows = {
+            "root": {
+                "effective_status": "retained",
+                "deps": [
+                    "minimal_axioms",
+                    "retained_decoration",
+                    "unapproved_magic_primitive",
+                    *missing,
+                ],
+            },
+            "retained_decoration": {
+                "effective_status": "decoration_under_parent",
+                "deps": ["parent"],
+            },
+            # The back-edge proves the traversal is cycle-safe.
+            "parent": {"effective_status": "retained_bounded", "deps": ["root"]},
+        }
+        with mock.patch(
+            "premise_nodes.is_accepted_premise_dep",
+            side_effect=lambda cid: cid == "minimal_axioms",
+        ), mock.patch(
+            "premise_nodes.is_non_evidence_context_dep", return_value=False
+        ):
+            payload, _ = self._run([{"lane": "test", "root": "root"}], rows)
+        lane = payload["lanes"][0]
+        expected = sorted(["unapproved_magic_primitive", *missing])
+        self.assertFalse(lane["certified"])
+        self.assertEqual(lane["uncertified_count"], len(expected))
+        self.assertEqual(
+            [item["claim_id"] for item in lane["blocking"]], expected
+        )
+        self.assertNotIn("minimal_axioms", expected)
+
+    def test_missing_root_has_complete_blocker_shape(self):
+        payload, _ = self._run(
+            [{"lane": "missing", "root": "absent_root"}], {}
+        )
+        lane = payload["lanes"][0]
+        self.assertEqual(lane["closure_size"], 1)
+        self.assertEqual(lane["uncertified_count"], 1)
+        self.assertEqual(
+            lane["blocking"],
+            [{"claim_id": "absent_root", "effective_status": "not_in_ledger"}],
+        )
+
+    def test_meta_context_respects_non_evidence_registry(self):
+        rows = {
+            "root": {
+                "effective_status": "retained",
+                "deps": ["permitted_meta", "non_evidence_meta"],
+            },
+            "permitted_meta": {"effective_status": "meta", "deps": []},
+            "non_evidence_meta": {"effective_status": "meta", "deps": []},
+        }
+        with mock.patch(
+            "premise_nodes.is_non_evidence_context_dep",
+            side_effect=lambda cid: cid == "non_evidence_meta",
+        ):
+            payload, _ = self._run([{"lane": "meta", "root": "root"}], rows)
+        lane = payload["lanes"][0]
+        self.assertEqual(
+            lane["blocking"],
+            [{"claim_id": "non_evidence_meta", "effective_status": "meta"}],
+        )
+
+    def test_output_is_deterministic_and_pipeline_recomputes_after_invalidation(self):
+        rows = {"root": {"effective_status": "retained", "deps": []}}
+        lanes = [{"lane": "stable", "root": "root"}]
+        _, first = self._run(lanes, rows)
+        _, second = self._run(lanes, rows)
+        self.assertEqual(first, second)
+
+        script = (
+            PROJECT_ROOT / "docs" / "audit" / "scripts" / "run_pipeline.sh"
+        ).read_text(encoding="utf-8")
+        self.assertGreater(
+            script.rfind("compute_lane_certification.py"),
+            script.index("did not reach a fixed point after 10 passes"),
+        )
 
 
 class CodexAuditRunnerModelPolicyTest(unittest.TestCase):

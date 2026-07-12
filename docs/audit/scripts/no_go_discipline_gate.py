@@ -2678,9 +2678,10 @@ def source_requires_no_go_discipline(
         return True
     path_text = re.sub(r"[_-]+", " ", note_path or "")
     if PATH_TRIGGER_RE.search(path_text):
-        normalized_body = re.sub(r"[`*_~$(){}\[\]]", "", body)
-        if not NEGATED_LABEL_ASSURANCE_RE.search(normalized_body):
-            return True
+        # Filename-level no-go authority is always forensic.  A source may
+        # explain that an older reading was withdrawn, but that prose cannot
+        # silently downgrade the assurance tier of the no-go-named artifact.
+        return True
     # Wall-naming positive/bounded rows carry the mandatory heavy packet only
     # in the forensic tier; in the development tier the auditor still applies
     # the no-go discipline as judgment (skill rule) and any supplied packet is

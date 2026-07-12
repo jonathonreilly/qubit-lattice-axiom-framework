@@ -1,0 +1,49 @@
+Self-contained finite-lattice center/shell support-response evaluation
+==============================================================================
+Frozen domain: size=15, shell_radius=4.0, source_step=0.005, spacetime_step=0.04, probe_radius=4.25
+[FINITE-OPERATOR] PASS: the support basis is orthonormal and the Dirichlet Green columns solve their declared sources
+    basis_error=2.220e-16, Green_residual=4.510e-16
+[EXACT] PASS: the endpoint support gap is exactly 1/6 by the local lattice Laplacian identity
+    H[(1/6)delta_center] residual=0.000e+00, computed delta_gap=1.666666666666666e-01
+[FINITE-OPERATOR] PASS: the reduced-shell normalization is independently computed, nonzero, and endpoint-independent
+    center=8.143540299590116e-02, shell=8.143540299590118e-02, gap=2.776e-17
+
+Direct endpoint evaluation (no imported endpoint table):
+  Theta(center) = (-3.772329167975e-04, +3.359952396063e-04)
+  Theta(shell)  = (-2.010572657265e-04, +4.031967723697e-04)
+  Xi quotient   = (-1.057053906426e-03, -4.032091965809e-04)
+  Xi four-eval  = (-1.057053906426e-03, -4.032091965809e-04)
+  ||Xi||_2      = 1.131344605899e-03
+[BOUNDED] PASS: Xi is an explicit four-evaluation mixed response, not a renamed derivative symbol
+    max quotient-vs-four-evaluation difference=3.795e-19
+[BOUNDED] PASS: both displayed response components are nonzero with the declared implementation margins
+    Xi=(-1.057053906426e-03, -4.032091965809e-04), norm=1.131344605899e-03
+[ALGEBRAIC] PASS: the unique affine law through the two endpoint readouts is exactly endpoint-compatible
+    max endpoint reconstruction residual=0.000e+00
+
+Step-control grid:
+  h=0.030, eps=0.0025: Xi=(-1.020038641650e-03, -3.627695802105e-04)
+  h=0.030, eps=0.0050: Xi=(-1.020039911857e-03, -3.627699107297e-04)
+  h=0.030, eps=0.0100: Xi=(-1.020039406582e-03, -3.627703748349e-04)
+  h=0.040, eps=0.0025: Xi=(-1.057054728361e-03, -4.032093193349e-04)
+  h=0.040, eps=0.0050: Xi=(-1.057053906426e-03, -4.032091965809e-04)
+  h=0.040, eps=0.0100: Xi=(-1.057054666680e-03, -4.032094865063e-04)
+  h=0.050, eps=0.0025: Xi=(-1.105477983713e-03, -4.580911739047e-04)
+  h=0.050, eps=0.0050: Xi=(-1.105478699989e-03, -4.580904857234e-04)
+  h=0.050, eps=0.0100: Xi=(-1.105478862627e-03, -4.580907878750e-04)
+[BOUNDED-CONTROL] PASS: the displayed nonzero direction survives the declared source-step and spacetime-stencil controls
+    min |components|=(+1.020038641650e-03, +3.627695802105e-04), min norm=1.082626712577e-03, same_sign=True
+[BOUNDED] PASS: the endpoint-fixed affine law tracks the declared canonical support family at bounded tolerance
+    max errors=(+4.837842748477e-09, +1.067273124565e-08)
+[DEPENDENCY] PASS: source firewall excludes frontier helper imports and known legacy fitted/endpoint literals
+    imports are standard-library, NumPy, and SciPy; the enumerated legacy family/endpoint values do not occur as numeric literals
+[DEPENDENCY] PASS: claim firewall preserves the note's declared bounded/non-exact exclusions
+    the note explicitly excludes exact tensor, continuum, physical-selection, and full-GR claims
+
+Verdict:
+On the declared finite-protocol surface, Xi_R^(0) is the computed four-evaluation center/shell response coefficient. Its displayed components are nonzero with the tested margins, and it is the unique coefficient of the affine endpoint interpolant. Only that constructed interpolant has derivative Xi_R^(0). The result remains bounded: no exact tensor observable, continuum limit, or physical GR bridge is claimed.
+
+==============================================================================
+SUMMARY
+==============================================================================
+PASS=10 FAIL=0 TOTAL=10

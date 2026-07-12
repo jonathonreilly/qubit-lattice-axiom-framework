@@ -1,0 +1,38 @@
+loop: s3-support-response-jacobian-20260712
+mode: run
+date_started: 2026-07-12
+branch: physics-loop/s3-support-response-jacobian-block01-20260712
+base_branch: origin/main
+target: "close the bounded Xi_R^(0) support-response derivation"
+target_claim_id: s3_time_constructed_support_tensor_primitive_note
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+claim_type_reason: "exact support-gap lemma plus bounded finite-protocol endpoint coefficient and exact affine-interpolation lemma"
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+cycle_count: 1
+block_count: 1
+status: implementation_complete_review_pending
+active_route: "self-contained finite-protocol endpoint-response evaluation"
+hard_residual: "replace derivative renaming and imported endpoint context with an explicit four-evaluation response computation"
+files_touched:
+  - docs/S3_TIME_CONSTRUCTED_SUPPORT_TENSOR_PRIMITIVE_NOTE.md
+  - scripts/frontier_s3_time_constructed_support_tensor_primitive.py
+  - .claude/science/physics-loops/s3-support-response-jacobian-20260712/
+open_imports: []
+prior_route_cautions:
+  - "the earlier named-derivative presentation did not independently compute the coefficient"
+  - "fitted local-O_h and finite-rank comparator families are excluded from the load-bearing evaluation"
+review_findings: pending
+verification:
+  primary_runner: "PASS=10 FAIL=0 TOTAL=10"
+  further_checks: pending
+review_loop_disposition: pending
+pr_status: pending
+next_exact_action: "run review-loop on the scoped diff, fix or demote every finding, then certify and open one review PR"
+stop_condition: "target receives a passing proposal certificate and verified review PR, or review isolates a remaining blocker"

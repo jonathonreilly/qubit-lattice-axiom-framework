@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py
-runner_sha256: 5ada062d8f544dd383898634744f70669d1f14f78a9d02ffb745c9e8cc0bccb8
+runner_sha256: 5bc092ae14b8576b5f9232c84efa7d7cb82e7b89a43cba465cb38214ad543975
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.52
@@ -69,11 +69,29 @@ Part F: rhetoric-resolution lifts
   [PASS] lattice_wide: finite lattice record union preserves both laws and their factor-two split
   [PASS] N2 wall W_power: one complex carrier supports two distinct additive determinant powers
 
-Part G: source and axiom guards
+Part G: executable N7 steelman
+------------------------------
+  [PASS] N7 single complex Grassmann sector has determinant power one
+  [PASS] N7 adjoining the conjugate sector reproduces the realified power
+  [PASS] N7 finite witness 1 satisfies F_R/2=F_C
+  [PASS] N7 finite witness 1 retains a nontrivial raw split
+  [PASS] N7 finite witness 2 satisfies F_R/2=F_C
+  [PASS] N7 finite witness 2 retains a nontrivial raw split
+  [PASS] N7 finite witness 3 satisfies F_R/2=F_C
+  [PASS] N7 finite witness 3 retains a nontrivial raw split
+  [PASS] N7 record count 0 normalizes F_R/2 to F_C while preserving the raw law
+  [PASS] N7 record count 1 normalizes F_R/2 to F_C while preserving the raw law
+  [PASS] N7 record count 2 normalizes F_R/2 to F_C while preserving the raw law
+  [PASS] N7 record count 3 normalizes F_R/2 to F_C while preserving the raw law
+  [PASS] N7 record count 4 normalizes F_R/2 to F_C while preserving the raw law
+  [PASS] N7 normalized readout remains disjoint-union additive
+
+Part H: source and axiom guards
 -------------------------------
   [PASS] axioms withhold K/CPT structure
   [PASS] axioms withhold source/action identification
   [PASS] axioms withhold physical observable bridge
+  [PASS] N7 accepted axiom surface withholds log-det and action/readout selection
   [PASS] note grants the auxiliary complex carrier
   [PASS] note contains both countermodel functionals
   [PASS] note constructs two readouts on one record model
@@ -89,9 +107,9 @@ Part G: source and axiom guards
   [PASS] N7 contains normalization and complex-field steelmen
   [PASS] N8 distinguishes phase from determinant power
   [PASS] discipline gate records PASS
+N7_STEELMAN_ARGUMENT route=normalization_or_units; mechanism=the exact normalization F_R/2=F_C and the supplied single-complex-sector Pfaffian determinant power are executed above; attempt=normalize every finite witness and compare a single Grassmann sector with an independently adjoined conjugate sector; outcome=normalization removes the coordinate factor two, while the four axioms still withhold the physical CAR/action and readout selector, so future action derivations remain open.
 
 ====================================================================
-TOTAL: PASS=60, FAIL=0
+TOTAL: PASS=75, FAIL=0
 
 ----- stderr -----
-

@@ -218,8 +218,11 @@ def cross_summary_no_go_error(
 ) -> str | None:
     """Validate a prior cross-confirmation seat before it can be ratified."""
     packet = summary.get("no_go_discipline")
-    required = source_required or no_go_discipline_gate.output_requires_no_go_discipline(
-        summary
+    required = (
+        source_required
+        or no_go_discipline_gate.output_requires_no_go_discipline(summary)
+    ) and no_go_discipline_gate.packet_requirement_binds(
+        summary, source_required=source_required
     )
     if packet is None:
         return (

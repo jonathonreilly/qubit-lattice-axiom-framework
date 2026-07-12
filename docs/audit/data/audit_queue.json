@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 640,
+    "critical": 639,
     "high": 335,
     "leaf": 1096,
     "medium": 718
@@ -3001,32 +3001,6 @@
       "ready": true,
       "runner_path": "scripts/persistent_record_kraus_instrument_certificate.py",
       "transitive_descendants": 447
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16",
-      "claim_scope": "For the specified P_23 and forward-cycle channel, R[A] = P_23 A^dagger P_23 preserves the channel, is conjugate-linear and involutive, and has the three-real-dimensional fixed locus c_1 = conj(c_3), c_2 real.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "pmns_graph_axis_to_active_lane_bridge_note",
-        "z2_hw1_mass_matrix_parametrization_note",
-        "graph_first_selector_derivation_note"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.291,
-      "note_path": "docs/PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_pmns_graph_first_residual_antiunitary_2026-05-16.py",
-      "transitive_descendants": 442
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -79979,6 +79953,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 516,
-  "total_pending": 2789
+  "ready_count": 515,
+  "total_pending": 2788
 }

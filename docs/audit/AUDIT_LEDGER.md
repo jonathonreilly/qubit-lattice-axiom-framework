@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 100 |
+| **retained** | 101 |
 | **retained_no_go** | 45 |
 | **retained_bounded** | 416 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
 | unaudited | 2644 |
-| audit_in_progress | 27 |
+| audit_in_progress | 26 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 27 |
-| `audited_clean` | 548 |
+| `audit_in_progress` | 26 |
+| `audited_clean` | 549 |
 | `audited_conditional` | 96 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 44 |
@@ -139,7 +139,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -497,6 +496,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `plaquette_self_consistency_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `pmns_graph_axis_to_active_lane_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
+| `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
@@ -7334,6 +7334,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner correctly verifies the finite-dimensional permutation and matrix-unit identities, although one non-load-bearing negative-control check is vacuous. Its antiunitary path begins by hard-coding `R_anti(A) = P_23 A^dagger P_23`; subsequent checks establish consequences of that definition, not that the retained residual Z_2 action selects this lift. The safe result is an exact conditional theorem about the defined conjugate-linear involution, while identifying it as a derived presentation of the graph-side residual swap requires an additional bridge.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/PMNS_GRAPH_FIRST_RESIDUAL_ANTIUNITARY_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For the explicitly specified P_23 and oriented forward-cycle channel, R[A] = P_23 A^dagger P_23 preserves the channel, is conjugate-linear and involutive, and has fixed locus c_1 = conj(c_3), c_2 real.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00087-pmns_graph_first_residual_an`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Direct matrix-unit conjugation gives R[A_fwd(c_1,c_2,c_3)] = A_fwd(conj(c_3),conj(c_2),conj(c_1)).  _(class `A`)_
+- **chain closes:** True — The displayed matrix-unit identities establish the coordinate action directly, and conjugate-linearity, involution, the three-real-dimensional fixed locus, and generic non-fixity follow algebraically. The audited scope does not assert that residual invariance of an arbitrary Hermitian core independently mandates imposing this fixed-point condition.
+- **rationale:** The proof is a genuine finite-dimensional algebraic closure over the explicitly given permutation matrix and cycle-channel basis, with no fitted values, external comparators, or symbol renaming. The runner constructs the matrices and computes all 35 checks rather than merely printing expected results. The clean verdict is restricted to the defined map and its fixed locus; it does not independently derive a physical requirement that every residual-invariant Hermitian core supply an R-fixed cycle component.
+- **auditor confidence:** high
 
 ### `pmns_oriented_cycle_channel_value_law_note`
 

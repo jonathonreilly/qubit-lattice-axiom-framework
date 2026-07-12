@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 101 |
 | **retained_no_go** | 45 |
 | **retained_bounded** | 417 |
-| _retained_pending_chain_ | 1 |
+| _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2642 |
+| unaudited | 2641 |
 | audit_in_progress | 25 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -48,16 +48,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 25 |
 | `audited_clean` | 550 |
 | `audited_conditional` | 98 |
-| `audited_decoration` | 21 |
+| `audited_decoration` | 22 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2992 |
+| `unaudited` | 2991 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2055 |
-| `decoration` | 25 |
+| `bounded_theorem` | 2054 |
+| `decoration` | 26 |
 | `meta` | 357 |
 | `no_go` | 472 |
 | `open_gate` | 196 |
@@ -70,7 +70,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 940 |
 | `leaf` | 1663 |
 
-- **Retained pending chain closure:** 1
+- **Retained pending chain closure:** 2
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
@@ -808,6 +808,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.6 | A | `graph_first_su3_integration_note` |
 | `mirror_mutual_information_note` | decoration | ~~audited_decoration~~ | `decoration_under_mirror_mutual_information_chokepoint_note` | cross_family | codex-gpt-5.5 | A | `mirror_mutual_information_chokepoint_note` |
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `pre_record_reference_state_tracial_derivation_note_2026-05-20` | decoration | ~~audited_decoration~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | `minimal_axioms` |
 | `rp_two_step_transfer_matrix_singular_mode_c2_tightening_note_2026-06-02` | decoration | ~~audited_decoration~~ | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | cross_family | codex-gpt-5.6 | A | `axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` |
 | `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.6 | A | `cl3_complexification_split_narrow_theorem_note_2026-05-10` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
@@ -7707,6 +7708,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For the supplied finite candidate family, source, orientation/clock bridge, and exact rational scoring rule, candidate k4 is the unique minimum, while the endpoint-only rule leaves a tie.  _(class `A`)_
 - **chain closes:** True — The runner constructs both length-two Markov laws and computes their quadratic scores using exact Fraction arithmetic, obtaining k3=1/2 and k4=0 under the informative rule and a tie under the weak rule. Selection of a physical rule, candidate family, or production kernel remains explicitly outside this bounded claim.
 - **rationale:** The load-bearing step is a genuine finite algebraic minimization over inputs explicitly identified as supplied hypotheses, and the runner computes the relevant laws and scores rather than merely printing the claimed result. Independent arithmetic from the displayed kernels reproduces k4=0, k3=1/2, and the endpoint-only tie. The clean verdict is confined to this supplied-rule interface and grants no derivation of physical dynamics from Record.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `pre_record_reference_state_tracial_derivation_note_2026-05-20`
+
+- **Note:** [`PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md`](../../docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Unique tracial state on the stipulated one-qubit-per-site Z^3 quasi-local tensor-product algebra, with finite-region density matrices I/2^|Λ|; the pre-record identification and downstream physical consequences are excluded.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** _retained_pending_chain_  (reason: `decoration_waiting_on:minimal_axioms`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00092-pre_record_reference_state_t`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Any tracial state restricts to the unique normalized trace on every finite full-matrix local algebra, and these compatible restrictions determine a unique state on the norm-dense quasi-local union.  _(class `A`)_
+- **chain closes:** False — The operator-algebra argument is mathematically sound, but it is an algebraic elaboration of the single minimal-axioms parent plus standard mathematics. Independent retained physical content beyond that parent is absent, so the campaign's decoration policy does not treat it as an independently closing retained theorem.
+- **rationale:** The runner genuinely evaluates twelve finite-dimensional trace, tensor, entropy, unitary-invariance, and Pauli checks, but all are class-A algebraic checks rather than a first-principles numerical computation. Infinite-volume uniqueness also follows directly from unique traces on the finite local full-matrix algebras and norm density; invoking Powers is stronger than necessary. Because the chain has one accepted framework parent, standard mathematics, and no external-comparator check, it meets the stated decoration rule; Step 5 remains explicitly outside scope.
+- **decoration parent:** `minimal_axioms`
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

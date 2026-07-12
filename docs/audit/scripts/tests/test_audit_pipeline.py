@@ -8292,6 +8292,63 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         m.LEDGER_PATH = m.DATA_DIR / "audit_ledger.json"
         return m
 
+    def test_restore_refuses_stale_axiom_premise_hash(self):
+        m = self._import_and_patch()
+        archived = self._archived_audit()
+        archived["audit_state_snapshot"] = {
+            "criticality": "leaf",
+            "deps": ["minimal_axioms"],
+            "dep_axiom_premise_note_hash": {"minimal_axioms": "c8201cb1" + "0" * 56},
+        }
+        row = self._seed_with_archived("stale_premise_row", archived)
+        row["deps"] = ["minimal_axioms"]
+        rows = {
+            "stale_premise_row": row,
+            "minimal_axioms": {
+                "claim_id": "minimal_axioms",
+                "note_hash": "fc4d60cc" + "0" * 56,
+            },
+        }
+        # Mismatching recorded vs current premise hash: re-audit material,
+        # never restore material (mirrors invalidate's axiom_premise_changed).
+        self.assertIsNone(m.restore_audit_from_previous(row, rows))
+
+    def test_restore_proceeds_on_matching_or_absent_axiom_premise_hash(self):
+        m = self._import_and_patch()
+        matching_hash = "c8201cb1" + "0" * 56
+        archived = self._archived_audit()
+        archived["audit_state_snapshot"] = {
+            "criticality": "leaf",
+            "deps": ["minimal_axioms"],
+            "dep_axiom_premise_note_hash": {"minimal_axioms": matching_hash},
+        }
+        row = self._seed_with_archived("matching_premise_row", archived)
+        rows = {
+            "matching_premise_row": row,
+            "minimal_axioms": {
+                "claim_id": "minimal_axioms",
+                "note_hash": matching_hash,
+            },
+        }
+        self.assertIsNotNone(m.restore_audit_from_previous(row, rows))
+        # Snapshots that predate the hash map restore exactly as the
+        # invalidation sweep tolerates them (mirror semantics, both ways).
+        archived_legacy = self._archived_audit()
+        archived_legacy["audit_state_snapshot"] = {
+            "criticality": "leaf", "deps": ["minimal_axioms"],
+        }
+        row_legacy = self._seed_with_archived("legacy_snapshot_row", archived_legacy)
+        rows_legacy = {
+            "legacy_snapshot_row": row_legacy,
+            "minimal_axioms": {
+                "claim_id": "minimal_axioms",
+                "note_hash": "fc4d60cc" + "0" * 56,
+            },
+        }
+        self.assertIsNotNone(
+            m.restore_audit_from_previous(row_legacy, rows_legacy)
+        )
+
     def test_categorize_archived_mirrors_invalidate_policy(self):
         m = self._import_and_patch()
         # leaf/medium: any audit qualifies

@@ -498,7 +498,7 @@ def main() -> int:
         )
         required = source_required or no_go_discipline_gate.output_requires_no_go_discipline(
             audit_like
-        )
+        ) or bool(audit_like.get("negative_assertion_classes"))
         if required and packet is None:
             message = (
                 f"{cid}: {label} lacks structured No-Go Discipline and "
@@ -547,6 +547,7 @@ def main() -> int:
             normalized,
             source_required=source_required,
             evidence_manifest=evidence_manifest,
+            structural_only=not forensic_tier,
         )
         if error:
             report_invalid(error)
@@ -726,6 +727,7 @@ def main() -> int:
             archived_error = no_go_discipline_gate.validate_no_go_discipline(
                 archived_blob,
                 evidence_manifest=None,
+                structural_only=True,
             )
             if archived_error:
                 message = (

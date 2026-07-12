@@ -1155,14 +1155,16 @@ def fit_prompt_to_transport_limit(
     claim_id: str,
     *,
     max_chars: int = CODEX_INPUT_CHAR_LIMIT,
+    forensic_bound: bool = True,
 ) -> tuple[str, dict[str, int] | None]:
     """Fit an oversized no-go prompt by bounding only rendered N8 records.
 
     Validation and apply receive the exact rendered subset plus a digest/count
-    commitment to the complete orchestrator index. Because the auditor cannot
-    inspect every N8 candidate, the inserted binding notice requires an
-    incomplete N8 FAIL packet and forbids ``audited_clean``. If even an empty
-    rendered candidate list cannot fit, fail closed instead of clipping
+    commitment to the complete orchestrator index. In the forensic tier, the
+    inserted binding notice requires an incomplete N8 FAIL packet and forbids
+    ``audited_clean``. In the development tier it only forbids exhaustive N8
+    claims from the omitted records and does not force a verdict. If even an
+    empty rendered candidate list cannot fit, fail closed instead of clipping
     source/runner evidence.
     """
     if len(prompt) <= max_chars:
@@ -1187,6 +1189,15 @@ def fit_prompt_to_transport_limit(
         bounded = dict(payload)
         bounded["candidates"] = candidates[:candidate_count]
         bounded_text = json.dumps(bounded, indent=2, sort_keys=True)
+        forensic_notice = (
+            "Therefore set N8_cross_cycle_echo.packet_complete=false, keep "
+            "N8_cross_cycle_echo.unresolved nonempty, set the overall "
+            "no_go_discipline.status=FAIL, and do not return audited_clean. "
+            if forensic_bound
+            else
+            "This development-tier transport bound does not force a verdict "
+            "or No-Go status; scope any N8 judgment to the rendered records. "
+        )
         notice = (
             "\n\n---\n"
             "N8 TRANSPORT BOUND (binding; transport metadata, not evidence):\n"
@@ -1194,9 +1205,7 @@ def fit_prompt_to_transport_limit(
             f"cross-cycle candidates; this transport renders the first "
             f"{candidate_count} in the orchestrator's relevance order while "
             "retaining the complete no-go-row universe count and digest. "
-            "Therefore set N8_cross_cycle_echo.packet_complete=false, keep "
-            "N8_cross_cycle_echo.unresolved nonempty, set the overall "
-            "no_go_discipline.status=FAIL, and do not return audited_clean. "
+            f"{forensic_notice}"
             "Use only verbatim locators from rendered authenticated records.\n"
         )
         fitted = prompt.replace(full_text, bounded_text, 1)
@@ -1508,6 +1517,8 @@ def validate_verdict(
         source_required=source_requires_no_go,
         evidence_manifest=evidence_manifest if forensic_tier else None,
         prior_claim_scope=prior_claim_scope,
+        structural_only=not forensic_tier,
+        require_declaration=True,
     )
     if no_go_error:
         return no_go_error
@@ -2164,9 +2175,36 @@ def main() -> int:
                                        evidence_manifest_out=exact_evidence_manifest,
                                        audit_invocation_id=audit_invocation_id)
 
+            transport_note_path = (
+                row.get("note_path") or full_led_row.get("note_path") or ""
+            )
+            transport_note_body = read_note_body(transport_note_path) or ""
+            transport_source_required = (
+                no_go_discipline_gate.source_requires_no_go_discipline(
+                    transport_note_path,
+                    transport_note_body,
+                    (
+                        ""
+                        if args.from_dispatch
+                        else row.get("claim_type") or full_led_row.get("claim_type")
+                    ),
+                )
+            )
+            transport_forensic = bool(
+                transport_source_required
+                or (
+                    not args.from_dispatch
+                    and (row.get("claim_type") or full_led_row.get("claim_type"))
+                    == "no_go"
+                )
+                or no_go_discipline_gate.forensic_mode()
+            )
             try:
                 prompt, transport_bound = fit_prompt_to_transport_limit(
-                    prompt, exact_evidence_manifest, cid
+                    prompt,
+                    exact_evidence_manifest,
+                    cid,
+                    forensic_bound=transport_forensic,
                 )
             except ValueError as exc:
                 print(f"  SKIP prompt transport: {exc}")

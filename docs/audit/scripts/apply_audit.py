@@ -218,8 +218,10 @@ def cross_summary_no_go_error(
 ) -> str | None:
     """Validate a prior cross-confirmation seat before it can be ratified."""
     packet = summary.get("no_go_discipline")
-    required = source_required or no_go_discipline_gate.output_requires_no_go_discipline(
-        summary
+    required = (
+        source_required
+        or no_go_discipline_gate.output_requires_no_go_discipline(summary)
+        or bool(summary.get("negative_assertion_classes"))
     )
     if packet is None:
         return (
@@ -241,6 +243,7 @@ def cross_summary_no_go_error(
             },
             source_required=source_required,
             evidence_manifest=None,
+            structural_only=True,
         )
     if snapshot_manifest is None:
         return "authenticated evidence_snapshot is required"
@@ -972,9 +975,17 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     )
     if (
         evidence_manifest is None
-        and judgment.get("no_go_discipline") is not None
         and forensic_probe
     ):
+        if judgment.get("no_go_discipline") is None:
+            preliminary_error = no_go_discipline_gate.validate_no_go_discipline(
+                gate_blob,
+                source_required=source_required_probe,
+                structural_only=True,
+                require_declaration=True,
+            )
+            if preliminary_error:
+                return False, preliminary_error
         return False, "No-Go Discipline apply requires trusted orchestrator evidence transport"
     if evidence_manifest is None:
         evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
@@ -1021,6 +1032,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         source_required=source_requires_no_go,
         evidence_manifest=evidence_manifest if _forensic else None,
         prior_claim_scope=prior_claim_scope_for_row(row),
+        structural_only=not _forensic,
         require_declaration=True,
     )
     if no_go_error:
@@ -1158,9 +1170,17 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     )
     if (
         evidence_manifest is None
-        and audit.get("no_go_discipline") is not None
         and _forensic
     ):
+        if audit.get("no_go_discipline") is None:
+            preliminary_error = no_go_discipline_gate.validate_no_go_discipline(
+                audit,
+                source_required=_source_req_probe,
+                structural_only=True,
+                require_declaration=True,
+            )
+            if preliminary_error:
+                return False, preliminary_error
         return False, "No-Go Discipline apply requires trusted orchestrator evidence transport"
     if evidence_manifest is None:
         evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
@@ -1198,6 +1218,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         source_required=source_requires_no_go,
         evidence_manifest=evidence_manifest if _forensic else None,
         prior_claim_scope=prior_claim_scope_for_row(row),
+        structural_only=not _forensic,
         require_declaration=True,
     )
     if no_go_error:

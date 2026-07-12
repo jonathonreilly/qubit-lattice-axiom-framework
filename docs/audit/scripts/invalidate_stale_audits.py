@@ -339,6 +339,7 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
             },
             source_required=source_required,
             evidence_manifest=evidence_manifest if _forensic else None,
+            structural_only=not _forensic,
         )
         if packet_error:
             if audit_status == "audited_clean":
@@ -361,6 +362,7 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
             required = (
                 source_required
                 or no_go_discipline_gate.output_requires_no_go_discipline(summary)
+                or bool(summary.get("negative_assertion_classes"))
             )
             if nested_packet is None:
                 if required and verdict == "audited_clean":
@@ -403,6 +405,7 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
                     evidence_manifest=(
                         evidence_manifest if nested_forensic else None
                     ),
+                    structural_only=not nested_forensic,
                 )
             if packet_error:
                 digest = hashlib.sha256(packet_error.encode("utf-8")).hexdigest()[:12]

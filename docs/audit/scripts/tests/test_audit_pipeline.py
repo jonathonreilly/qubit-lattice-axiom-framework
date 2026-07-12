@@ -1250,6 +1250,20 @@ class ApplyAuditTest(unittest.TestCase):
             )
         self.assertIsNone(validate.call_args.kwargs["evidence_manifest"])
 
+        declared_without_packet = {
+            **summary,
+            "no_go_discipline": None,
+            "negative_assertion_classes": ["bounded_with_named_walls"],
+        }
+        self.assertIn(
+            "N1-N8 packet is required",
+            m.cross_summary_no_go_error(
+                declared_without_packet,
+                source_required=False,
+                current_evidence_manifest=None,
+            ) or "",
+        )
+
         with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
             self.assertIn(
                 "authenticated evidence_snapshot",
@@ -1309,6 +1323,7 @@ class ApplyAuditTest(unittest.TestCase):
             "no_go_discipline": {"status": "PASS"},
         }
         forensic_led = json.loads(json.dumps(led))
+        packetless_led = json.loads(json.dumps(led))
         with mock.patch.object(
             m.no_go_discipline_gate,
             "validate_no_go_discipline",
@@ -1323,6 +1338,18 @@ class ApplyAuditTest(unittest.TestCase):
 
         with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
             ok, msg = m.apply_one(forensic_led, dict(judgment))
+        self.assertFalse(ok)
+        self.assertIn("trusted orchestrator evidence transport", msg)
+
+        packetless_judgment = {
+            **judgment,
+            "no_go_discipline": None,
+            "negative_assertion_classes": [],
+            "judgment_rationale": "the exact structural result closes",
+            "notes_for_re_audit_if_any": None,
+        }
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
+            ok, msg = m.apply_one(packetless_led, packetless_judgment)
         self.assertFalse(ok)
         self.assertIn("trusted orchestrator evidence transport", msg)
 
@@ -1363,6 +1390,33 @@ class ApplyAuditTest(unittest.TestCase):
         ):
             ok, msg = m.apply_one(led, audit)
         self.assertTrue(ok, msg)
+
+    def test_packetless_reclassification_of_stored_no_go_requires_transport(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_stored_foreclosure",
+            claim_type="no_go",
+            note_body="Exact positive source identity.\n",
+        )
+        led = self.fx.read_ledger()
+        audit = {
+            "claim_id": "test_stored_foreclosure",
+            "verdict": "audited_conditional",
+            "claim_type": "positive_theorem",
+            "claim_scope": "exact positive source identity",
+            "auditor": "fresh-auditor",
+            "negative_assertion_classes": [],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "C",
+            "no_go_discipline": None,
+        }
+        ok, msg = m.apply_one(led, audit)
+        self.assertFalse(ok)
+        self.assertIn("trusted orchestrator evidence transport", msg)
 
     def test_terminal_disagreement_preserves_live_authority(self):
         m = _import("apply_audit")
@@ -3152,6 +3206,22 @@ class AuditLintTest(unittest.TestCase):
             rc = m.main()
         self.assertEqual(rc, 0, buf.getvalue())
 
+        original_ledger = self.fx.read_ledger()
+        packetless_ledger = json.loads(json.dumps(original_ledger))
+        packetless_row = packetless_ledger["rows"]["bounded"]
+        packetless_row.pop("no_go_discipline", None)
+        packetless_row["negative_assertion_classes"] = [
+            "bounded_with_named_walls"
+        ]
+        self.fx.write_ledger(packetless_ledger)
+        buf = io.StringIO()
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}), \
+             contextlib.redirect_stdout(buf):
+            rc = m.main()
+        self.assertEqual(rc, 1)
+        self.assertIn("lacks structured No-Go Discipline", buf.getvalue())
+
+        self.fx.write_ledger(original_ledger)
         buf = io.StringIO()
         with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}), \
              contextlib.redirect_stdout(buf):
@@ -4018,6 +4088,31 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertIsNone(
             m.validate_no_go_discipline(audit, evidence_manifest=manifest)
         )
+
+    def test_structural_only_ignores_embedded_snapshot_locators(self):
+        m = _import("no_go_discipline_gate")
+        packet = _no_go_packet()
+        unrelated_manifest = {
+            "docs/UNRELATED.md": {
+                "path": "docs/UNRELATED.md",
+                "roles": ["source"],
+                "text": "unrelated source text",
+            }
+        }
+        packet["evidence_snapshot"] = m.build_evidence_snapshot(
+            packet, unrelated_manifest
+        )
+        audit = {
+            "claim_type": "bounded_theorem",
+            "verdict": "audited_clean",
+            "claim_scope": "the scoped obstruction",
+            "chain_closes": True,
+            "no_go_discipline": packet,
+        }
+        self.assertIsNone(
+            m.validate_no_go_discipline(audit, structural_only=True)
+        )
+        self.assertIsNotNone(m.validate_no_go_discipline(audit))
 
     def test_no_go_output_candidate_caps_are_declared(self):
         m = _import("no_go_discipline_gate")
@@ -8169,6 +8264,21 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         self.assertIn("N8 TRANSPORT BOUND", fitted)
         self.assertIn("do not return audited_clean", fitted)
 
+        development_manifest = {
+            path: {"text": full, "roles": ["cross_cycle_index"]}
+        }
+        development_fitted, _ = m.fit_prompt_to_transport_limit(
+            prompt,
+            development_manifest,
+            cid,
+            max_chars=2500,
+            forensic_bound=False,
+        )
+        self.assertNotIn("do not return audited_clean", development_fitted)
+        self.assertIn(
+            "does not force a verdict or No-Go status", development_fitted
+        )
+
         snapshot = m.no_go_discipline_gate.build_evidence_snapshot({}, manifest)
         packet = {"evidence_snapshot": snapshot}
         current = {path: {"text": full, "roles": ["cross_cycle_index"]}}
@@ -8220,6 +8330,7 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             "claim_type": "bounded_theorem",
             "claim_scope": "the scoped obstruction",
             "chain_closes": True,
+            "negative_assertion_classes": [],
             "no_go_discipline": _no_go_packet(),
         })
         unrelated_manifest = {
@@ -8805,6 +8916,34 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
                     {**archived, "verdict": archived["audit_status"]}
                 )
             )
+            self.assertIsNone(
+                m.restore_audit_from_previous(row, {cid: row})
+            )
+
+    def test_restore_tier_gates_packet_snapshot_currency(self):
+        m = self._import_and_patch()
+        cid = "bounded_packet_restore"
+        note_path = "docs/POSITIVE_PACKET_SOURCE.md"
+        self.fx.write_note(note_path, "# Positive source theorem\n")
+        archived = self._archived_audit(
+            claim_type="bounded_theorem",
+            invalidation_reason="criticality_increased:leaf->medium",
+        )
+        archived.update({
+            "claim_scope": "the scoped obstruction",
+            "chain_closes": True,
+            "no_go_discipline": _no_go_packet(),
+        })
+        row = self._seed_with_archived(cid, archived)
+        row["note_path"] = note_path
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}):
+            self.assertIsNotNone(
+                m.restore_audit_from_previous(row, {cid: row})
+            )
+
+        row = self._seed_with_archived(cid, archived)
+        row["note_path"] = note_path
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
             self.assertIsNone(
                 m.restore_audit_from_previous(row, {cid: row})
             )

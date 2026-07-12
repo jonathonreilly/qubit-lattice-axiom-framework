@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 5 |
-| unaudited | 2813 |
+| unaudited | 2812 |
 | audit_in_progress | 24 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
 | ~~audited_conditional~~ | 37 |
-| ~~audited_failed~~ | 7 |
+| ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -47,10 +47,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 459 |
 | `audited_conditional` | 37 |
 | `audited_decoration` | 18 |
-| `audited_failed` | 29 |
+| `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3163 |
+| `unaudited` | 3162 |
 
 | claim_type | count |
 |---|---:|
@@ -675,6 +675,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `shapiro_diamond_frequency_bridge_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | F | - |
 | `shapiro_five_family_portability_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `shapiro_scaling_direct_replay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `source_resolved_generated_support_mass_scaling_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `source_resolved_geometry_rule_repair_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `structured_mirror_bornsafe_scan_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `testable_predictions_map_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -6482,6 +6483,26 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner reproduces the note's aggregate table and geometry deltas for the bridge and split-shell families over seeds 0..3. The note explicitly keeps the result as a bounded bridge reopening rather than a generated-family closure theorem.
 - **rationale:** The current runner output matches the frozen result: zero-source shifts are 0, bridge/static is 9/16 with F~M=-0.316 and N_eff=5.31, bridge/wavefield is 6/16 with F~M=0.098 and N_eff=5.14, split/static is 9/16 with F~M=0.304 and N_eff=8.38, and split/wavefield is 8/16 with F~M=0.381 and N_eff=8.30. The derived geometry deltas also match. The claim boundary is correctly bounded: the new geometry is a real support-widening bridge, not weak-field closure.
 - **auditor confidence:** high
+
+### `source_resolved_generated_support_mass_scaling_note`
+
+- **Note:** [`SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md`](../../docs/SOURCE_RESOLVED_GENERATED_SUPPORT_MASS_SCALING_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Frozen seeds 0..3 per-strength rows, zero-source checks, sign counts, mean N_eff, and fitted exponents; the aggregate centroid-mean column and classifier-level mass-law conclusion are not certified.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00352-source_resolved_generated_su`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The fitted centroid-shift exponent remains far from the retained linear class, so the weak-field mass-scaling class does not recover.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the finite rows and exponents, but the stated tweak aggregate mean is not the arithmetic mean of the displayed per-s values: those values give -4.66279425e-02, which rounds to -4.663e-02 rather than -4.658e-02. The class-level conclusion also lacks a defined linear-recovery threshold and uses an absolute-value fit across a sign-changing response.
+- **rationale:** Issue: the note claims that its two-row aggregate table is reproduced by the runner and defines the centroid column as the arithmetic mean, but the tweak value -4.658e-02 disagrees with the displayed per-strength rows, and the runner does not print that aggregate. Why this blocks: the claimed supported perimeter expressly includes that numerical table, while the stronger mass-class rejection additionally relies on an unspecified comparator threshold and a sign-changing absolute-value fit. Repair target: print and assert the aggregate means in the runner, refresh the stale value, and register an executable linear-class criterion using an appropriate signed or piecewise response analysis. Claim boundary until fixed: the zero-source checks, per-strength rows, sign counts, mean N_eff values, and fitted absolute-magnitude exponents remain reproducible finite diagnostics.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 contains open and untested alternative routes.
+    - N2 retains three independent unresolved walls.
+    - N3 finds an undefined comparator threshold.
+    - N5 finds untested resolutions beneath categorical negative rhetoric.
+    - The source aggregate centroid value fails arithmetic consistency with the displayed runner rows.
 
 ### `source_resolved_generated_support_recovery_note`
 

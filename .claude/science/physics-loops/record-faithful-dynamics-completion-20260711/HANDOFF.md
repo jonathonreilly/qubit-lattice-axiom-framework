@@ -140,3 +140,20 @@ narrow auxiliary-register nonimplication, not a statement about framework
 Record permanence. Runner/cache: `PASS=36 FAIL=0`; claim and math reviews
 passed. No axiom-update stop condition is triggered. The next seam is
 overlapping local-instrument order, followed by physical time/rate.
+
+## Overlap order and time/rate result
+
+On supplied finite tensor carriers, the same complete five-outcome edge
+instrument gives distinct raw layered channels and distinct first-nonempty
+stopping channels when two supports overlap. Disjoint supports commute;
+identity no-record and `q=0` controls commute as full channels; a symmetrized
+raw order is a third CPTP rule. For a finite dependency DAG, commuting
+incomparable channels make every linear extension equivalent.
+
+On even cubic finite tori of side `L>=4`, six conflict-free nearest-neighbor
+matchings form one translation/proper-cubic symmetry orbit but select no layer
+schedule. A supplied event order still admits clock rescaling, and a Poisson
+interpretation fixes only `lambda Delta t`. Runner/cache: `PASS=47 FAIL=0`;
+the N1--N8 gate passes after explicitly separating composition semantics,
+priority, and clock. No axiom update is triggered. The next campaign is the
+actual simultaneous 3D coherent QCA/tick class.

@@ -453,6 +453,163 @@ review and audit remain required.
 
 ---
 
+# No-Go Discipline: Overlap Order, Stopping Priority, And Time/Rate Nonselection
+
+**Status:** PASS for the narrow finite schedule statement that two identical,
+separately normalized edge instruments on overlapping supports need not select
+a unique layered channel or first-nonempty priority, and that a supplied
+discrete order does not select metric time or rate. No global-QCA, physical
+arrow, framework-Record, or axiom-update impossibility is claimed.
+
+## N1 — Alternative-route enumeration
+
+Evidence is the [bounded source note](../../../../docs/OVERLAPPING_EDGE_INSTRUMENT_ORDER_AND_TIME_RATE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md),
+its [exact runner](../../../../scripts/overlapping_edge_instrument_order_time_rate_nonselection_2026_07_11.py),
+and the [reproduced cache](../../../../logs/runner-cache/overlapping_edge_instrument_order_time_rate_nonselection_2026_07_11.txt).
+
+| Attack route | Marker | Attack and result |
+|---|---|---|
+| local CPTP normalization alone | `ATTEMPTED` | source Eqs. (1)--(5), runner `L01`--`O05`: both overlapping orders are exactly CPTP while defining different channels |
+| first-nonempty stopping priority | `ATTEMPTED` | source Eqs. (8)--(12), runner `O06`--`O15`: both nine-Kraus terminal instruments normalize; reversing priority changes terminal system output and label history |
+| disjoint-support commutation | `ATTEMPTED` | source section 4, runner `K01/K01U`: succeeds on a fixture and the complete matrix-unit basis |
+| overlapping pairwise interchange | `ATTEMPTED` | source Eqs. (6)--(7), runner `L03`: schedule independence for two maps is exactly superoperator commutation; the SWAP-edge rule violates it |
+| finite dependency DAG | `ATTEMPTED` | source section 2: the adjacent-swap proof shows commuting incomparable channels make every linear extension equivalent |
+| explicit priority/dependency rule | `ATTEMPTED` | source sections 3--4: selecting `A before B` or `B before A` resolves the output but is additional process content |
+| symmetrized/randomized order | `ATTEMPTED` | source Eq. (13), runner `K06`--`K08`: the equal channel average is CPTP and differs from both priority channels |
+| clock rescaling after order | `ATTEMPTED` | source Eqs. (16)--(17), runner `T01`--`T04`: two increasing clocks preserve order while changing rate; `q` fixes only `lambda Delta t` |
+
+Common dilation, strict QCA, infinite-lattice coloring, and a derived physical
+dependency relation remain live untested escapes and are not marked attempted.
+
+## N2 — Wall-independence audit
+
+The finite process has two upstream schedule coordinates before any clock is
+attached: (i) composition semantics (run every layer, stop at first nonempty,
+randomize/symmetrize, or use one simultaneous channel), and (ii) the
+order/priority used when the chosen semantics is sequential.
+
+| Pair | First closes second? | Reverse? | Independent? |
+|---|---:|---:|---:|
+| all-layer versus first-nonempty composition semantics / edge order-priority | no: naming stopping semantics leaves which edge is offered first open | no: naming `A before B` leaves whether later layers execute after a nonempty result open | yes |
+| raw-layer interchange/commutation / first-nonempty priority dependence | no: identity no-record makes raw channels commute while the stopping channels still differ | no: supplied priority resolves stopping while raw maps can remain noncommuting | yes |
+
+Clock/rate is downstream of a supplied event process rather than another
+upstream schedule wall. Arrow, Markov embedding, reset, IID, probability, and
+framework-Record realization are out-of-scope interfaces, not inflated wall
+counts.
+
+## N3 — Hidden-wall scan
+
+The note, runner, cache, and campaign packet were scanned for `we assume`,
+`assum*`, `by construction`, `as is standard`, `framework provides`, `bridge
+context`, `background`, `naturally`, `obviously`, `standard QFT`, `registered`,
+`canonical`, `supplied`, `adopted`, `local`, `simultaneous`, and `rate`.
+
+| Hidden coordinate | Classification |
+|---|---|
+| finite three-site/four-site support graph | explicit bounded carrier |
+| `H=(C^2)^(tensor n)` for `n=3,4` | supplied multisite tensor carrier; not inferred from the one-site axiom |
+| spectator-identity edge embedding and ordinary tensor composition | explicit finite-matrix convention; no local-tomography theorem is claimed |
+| supplied computational rank-one edge menu | explicit mathematical input, not selected by the foundation |
+| supplied SWAP no-record branch | explicit counterexample choice, not a derived admissibility law |
+| `0<q<1` and `q=1/3` fixture | open interval defines the family; the exact fork witness uses the named rational value |
+| co-applicable edge maps | explicit overlap definition |
+| apply-once layered convention | explicit raw schedule semantics |
+| first-nonempty stopping | separate explicit priority semantics |
+| persistent terminal register or repeated-cycle absorption | absent; neither is constructed or claimed |
+| supplied dependency/priority relation | absent from the foundation; presented only as a closure route |
+| checkerboard/color or randomization choice | explicit candidate process content |
+| even cubic torus side `L>=4` | explicit finite combinatorial restriction; `L=2` is excluded |
+| finite-carrier versus framework locality | separated; no infinite `Z^3` law claimed |
+| CP/trace mathematics versus probability/outcome semantics | separated; probability meaning remains open |
+| framework-Record realization | absent; terminal labels remain mathematical |
+| discarded environments/reset resources | not used or derived |
+| time-homogeneity, Markov, IID, clock, or rate | absent except for explicit clock-rescaling controls |
+
+No hidden input collapses the composition-semantics/order pair.
+
+## N4 — Residual matching
+
+| Prior surface and exact authority | Prior residual | Use here | Match? |
+|---|---|---|---:|
+| [finite-carrier instrument normal form, source lines 1--13](../../../../docs/AUTONOMOUS_INTERMITTENT_RECORD_INSTRUMENT_CALIBRATION_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md#L1), branch-local/audit-pending | one-cell event/no-record freedom; no overlap composition | supplies the exact edge-family shape only | exact upstream seam |
+| [history-order/time-rate firewall, lines 1--16](../../../../docs/RECORD_HISTORY_ORDER_TIME_RATE_FIREWALL_2026-06-05.md#L1), unaudited | word/order does not fix metric time/rate | same rescaling residual, but no overlap schedule theorem | adjacent only |
+| [record-comparability/dependency note, lines 1--13](../../../../docs/RECORD_COMPARABILITY_IMPORT_DISCIPLINE_SUPPORT_FORK_EXHIBIT_AND_CONDITIONAL_ARROW_BOUNDED_NOTE_2026-07-07.md#L1), unaudited | ordering follows only after a dependency relation is named | positive conditional order route | adjacent only |
+| [classical composition semigroup, lines 1--12](../../../../docs/RECORD_COMPOSITION_BRIDGE_SEMIGROUP_POSITIVITY_SELECTION_BOUNDED_NOTE_2026-07-02.md#L1), unaudited | named weight-kernel convolution | different from overlapping CP-map composition | no |
+| [Lueders `PEP` bridge, lines 1--16](../../../../docs/LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md#L1), fresh-main `audited_clean` / `retained_bounded` | sequential compression identity | no physical update schedule or overlap order | no |
+| [blank-boundary reset](../../../../docs/RECORD_BLANK_BOUNDARY_RESET_NO_GO_2026-06-05.md#L1) and [finite-time reset](../../../../docs/RECORD_FINITE_TIME_RESET_SEMIGROUP_NO_GO_2026-06-05.md#L1), unaudited | finite erasure endpoints and environment cost | different residual from map ordering | no |
+
+The new overlap nonimplication is proved by its own exact channel witness and
+does not inherit a broader prior no-go.
+
+## N5 — Rhetoric and resolution matrix
+
+| Resolution | Proved/tested? | Honest scoped statement |
+|---|---:|---|
+| exact two-map overlapping counterexample | analytical and exact runner on three qubits | identical normalized edge rules can give distinct two-order channels |
+| finite-family/DAG theorem | analytical adjacent-swap proof | commuting incomparable channels make linear extensions equivalent |
+| disjoint tensor supports | analytical tensor-factor commutation plus exact full matrix-unit check on four qubits | raw layered channels commute |
+| overlapping finite qubit region | exact three-qubit raw and first-nonempty stopping schedules | order and priority can affect output |
+| finite proper-cubic torus | analytical even-side-`L>=4` partition proof; exact `L=4` fixture and 24-rotation/translation action | six conflict-free layers form one symmetry orbit; no ordering selected |
+| infinite translation/proper-cubic-covariant `Z^3` process | no | not claimed |
+| strict QCA, continuum, arrow, physical time/rate | no | deferred or explicitly unselected |
+
+The shipping statement is only the finite schedule fork plus the exact clock
+rescaling boundary.
+
+## N6 — Partial-closure and governance paths
+
+| Closure path | Current status | What it could close |
+|---|---|---|
+| commuting-overlap/interchange theorem | exact positive condition in this source | makes raw linear extensions output-independent |
+| supplied dependency DAG or priority | conditional process input | selects an order even for noncommuting maps |
+| six-layer checkerboard/color family | exact finite family, no schedule supplied | supplies conflict-free layers, not their physical order or schedule |
+| one simultaneous global CPTP/QCA update | open | could replace sequential composition entirely |
+| common Stinespring dilation | open | could correlate overlapping cells and enforce one composition |
+| symmetrized/randomized rule | exact finite candidate | resolves order by adding a mixing rule |
+| retained derivation of a formation dependency relation | open | could make priority physical rather than conventional |
+| approved primitive registry | checked | no approved primitive supplies schedule, overlap interchange, clock, rate, arrow, or Markov law |
+
+A coloring is a computational convention when relevant maps commute. When
+noncommuting maps give different outputs, its ordering becomes physical process
+content. Historical premise decisions are provenance only.
+
+## N7 — Steelman
+
+The finite edge schedules are not yet one lawful framework process. A future
+Admissibility-compatible simultaneous QCA, common dilation, or derived
+formation-dependency relation may compose all overlaps uniquely and render the
+sequential fork inapplicable. The six matching layers prove that conflict-free
+updates can be organized, not that the framework must execute them in any
+particular order. Therefore the counterexample proves only that separately
+valid normalized local instruments do not themselves select overlap
+composition or stopping priority—not that framework-local composition is
+impossible.
+
+## N8 — Cross-cycle echo
+
+| Prior surface | Current authority | Change/retirement mechanism | Applicability here |
+|---|---|---|---|
+| `Records form` foundation clarification | approved `minimal_axioms` premise | retired generic non-occurrence, left process/schedule/rate open | occurrence does not select overlap order |
+| sink/open-system reset constructions | unaudited conditional constructions | can evade closed finite-reset obstructions by exporting information | only a live stronger-carrier route, not retained authority |
+| supplied dependency relations | unaudited conditional route | conditionally provide chain order | live positive schedule route |
+| kinetic-isotropy primitive | approved premise | retired only structural `c_t=c_s` | supplies no clock, rate, scheduler, or QCA layer order |
+| classical `C-add` program | unaudited | derivation/explicit-approval/conditional homes remain open | does not supply CP overlap composition |
+| Campaign 3 finite-carrier normal form | branch-local/audit-pending | exposed stronger overlap/coarse-graining routes | directly motivates the current fork |
+
+## Overlap-order gate conclusion
+
+All N1--N8 checks pass at the bounded finite schedule scope. Separate edge
+normalization, identical edge rules, and proper-cubic matching-family symmetry
+do not select composition semantics or an order/first-event priority.
+Commutation, a stopping rule plus priority, symmetrization, common dilation,
+and simultaneous QCA remain live distinct closure mechanisms. A supplied
+event process still leaves clock/rate rescaling free. No result here triggers
+the campaign's axiom-update stop condition; independent review and audit
+remain required.
+
+---
+
 # No-Go Discipline: Autonomous Intermittent Instrument Calibration Nonselection
 
 **Status:** PASS for the narrow finite-dimensional statement that, for a

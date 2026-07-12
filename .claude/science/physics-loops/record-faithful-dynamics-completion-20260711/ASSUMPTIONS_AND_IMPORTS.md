@@ -83,3 +83,20 @@ continuum law. No axiom or primitive change is implied.
 The approved minimal axioms chain-satisfy as foundation. These additional
 physical interfaces gain no premise authority here. The result is one abstract
 finite carrier, not a `Z^3` locality or overlapping-cell theorem.
+
+## Overlap-order and time/rate conditional inputs
+
+- Supplied carriers `H=(C^2)^(tensor n)` for `n=3,4`, with ordinary tensor
+  composition and identity action on spectator factors.
+- A supplied computational rank-one edge menu, SWAP no-record branch,
+  `0<q<1`, and the exact `q=1/3` fork fixture.
+- Apply-once raw layering and, separately, a first-nonempty stopping semantics;
+  neither is identified as the framework process law.
+- A finite proper-cubic torus of even side `L>=4` for the six-matching family;
+  the exact symmetry fixture uses `L=4`.
+- Supplied increasing clock maps and a separately named Poisson interpretation
+  for the rate-rescaling check.
+
+There is no persistent terminal register, repeated-cycle absorption theorem,
+framework-Record realization, infinite-lattice channel, simultaneous QCA, or
+physical probability/time interpretation in this block.

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 93 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 365 |
+| **retained_bounded** | 366 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2775 |
+| unaudited | 2774 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 478 |
+| `audited_clean` | 479 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3125 |
+| `unaudited` | 3124 |
 
 | claim_type | count |
 |---|---:|
@@ -244,6 +244,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d3_truncated_closure_recurs_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `dimensional_gravity_table` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
@@ -2640,6 +2641,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The Schur-complement algebra gives the stated closure and map with the displayed signs and factors. The fixed points, band-edge threshold, derivative 4, and ξ(g)=1/arccosh(1/2g) scaling then follow from standard uniform-chain dispersion and hyperbolic identities within the declared scope.
 - **rationale:** The runner source performs actual dense Schur-complement, spectrum, unitary-equivalence, and Green-function checks rather than merely printing constants, and the no-helper packet is complete. An independent algebra check confirms the load-bearing map, fixed-point set, pole location, threshold condition |g|=1/2, and ξ composition law ξ(g′)=ξ(g)/2 below threshold. The only cited authority is retained_bounded and is used for the staggered-to-uniform composition, while the theorem itself is explicitly bounded to the free 1D E=0 convention and labels outside-chart probes as non-theorem scope.
 - **auditor confidence:** high
+
+### `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`DECOHERENCE_ACTION_ZERO_FIELD_PER_LINK_PHASE_EQUALITY_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/DECOHERENCE_ACTION_ZERO_FIELD_PER_LINK_PHASE_EQUALITY_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional exact equality of the two stated per-link action values and their complex phase factors at zero field for real k and L > 0.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00394-decoherence_action_zero_fiel`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting f_bar = 0 gives spent_delay(L,0) = L - sqrt(max(L^2-L^2,0)) = L and valley_linear(L,0) = L, so their phase factors are identical.  _(class `A`)_
+- **chain closes:** True — The conclusion follows by direct substitution into the two explicit hypotheses. The Max guard evaluates exactly at zero argument, and equality of the real action values immediately gives equality of the exponential phase factors.
+- **rationale:** The load-bearing result is a genuine class-A algebraic implication within the note's explicitly conditional scope, not a definition of the claimed equality. The runner performs symbolic substitution and simplification, finite-precision sanity checks, off-locus counterfactuals, and source-branch fidelity checks rather than merely printing expected constants. Its omission of the Max wrapper from the general symbolic expression does not affect the audited zero-field identity because the guarded radicand is exactly zero there. The note excludes accumulated propagation and downstream observable equality, so those broader physical bridges are not required.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `dense_prune_guard_seed_note`
 

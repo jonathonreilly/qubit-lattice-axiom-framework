@@ -3,7 +3,7 @@
     "critical": 650,
     "high": 335,
     "leaf": 1098,
-    "medium": 749
+    "medium": 748
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -30882,31 +30882,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "scale_reference_primitive",
-        "kinetic_isotropy_primitive"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.67,
-      "note_path": "docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_fixed_lattice_gauge_gap_scope_2026_06_09.py",
-      "transitive_descendants": 8
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "nn_lattice_rescaled_kernel_identification_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -55072,6 +55047,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/SU3_BULK_CRITICALITY_PREMISE_RIGOROUS_FLOOR_NOTE_2026-06-09.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "teleportation_3d_readout_convention_note",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -78672,30 +78671,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "su3_bulk_criticality_premise_rigorous_floor_note_2026-06-09",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/SU3_BULK_CRITICALITY_PREMISE_RIGOROUS_FLOOR_NOTE_2026-06-09.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_su3_bulk_criticality_rigorous_floor_2026_06_09.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "su3_cube_perron_solve_combined_theorem_note_2026-05-03",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -80976,5 +80951,5 @@
     }
   ],
   "ready_count": 547,
-  "total_pending": 2832
+  "total_pending": 2831
 }

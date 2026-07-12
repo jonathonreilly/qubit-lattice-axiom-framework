@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 36 |
-| **retained_bounded** | 390 |
+| **retained_bounded** | 391 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2723 |
+| unaudited | 2722 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 506 |
+| `audited_clean` | 507 |
 | `audited_conditional` | 73 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 35 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3073 |
+| `unaudited` | 3072 |
 
 | claim_type | count |
 |---|---:|
@@ -312,6 +312,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fixed_field_complex_grown_basin_v2_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_family_unification_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `fixed_field_grown_transfer_scout_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
+| `fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -3907,6 +3908,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The retained grown row preserves a bounded signed-source response in the fixed-field scout while zero-source and neutral same-point controls reduce to printed zero and the +2 source is approximately linear in the +1 source.  _(class `C`)_
 - **chain closes:** True — The supplied runner actually constructs fields from sources, propagates amplitudes on the grown graph, computes detector centroids, and reproduces the frozen sign, zero-control, and linearity outputs. The cited grown-geometry companion is retained_bounded and is used only to support the narrow retained-row context, not to broaden the result.
 - **rationale:** The load-bearing result is a live numerical computation over the runner-defined grown row, not a printed constant, renaming, or imported external comparator. The zero-source and neutral same-point cancellations are algebraic/numerical controls, while the signed single-source, pair, dipole, and double-source cases are computed by the propagation code. The claim is narrow enough to match the evidence: it does not assert geometry-generic electromagnetism or continuum closure.
+- **auditor confidence:** high
+
+### `fixed_lattice_gauge_existence_strong_coupling_scope_note_2026-06-09`
+
+- **Note:** [`FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md`](../../docs/FIXED_LATTICE_GAUGE_EXISTENCE_STRONG_COUPLING_SCOPE_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite positivity of the explicitly defined SU(2) and compact U(1) one-plaquette integrals at beta=6, sampled factor inequalities, and the resulting toy loop identity; no framework-native area-law, mass-gap, SU(3), or continuum theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00235-fixed_lattice_gauge_existenc`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the explicitly tested one-plaquette factors, 0 < factor < 1, hence sigma = -log(factor) > 0 and log W(R,T) = -sigma R T.  _(class `A`)_
+- **chain closes:** True — The runner directly evaluates the stated quadratures and Bessel ratios, then checks the bounded inequalities and algebraic consequences. Those computations close the narrowly scoped diagnostic claim without using the hard-coded guardrails as positive evidence.
+- **rationale:** The runner performs actual numerical quadrature and Bessel-function evaluation rather than printing the contested numerical results as constants. The selected beta values are diagnostic inputs, not calibrated observational matches, and the positivity of sigma and the loop formula follow algebraically from the computed factors. The cited scale-reference and kinetic-isotropy notes are registered approved primitives used only to delimit scope, not to supply gauge dynamics. The verdict does not extend to a physical SU(3) gap, confinement theorem, or continuum Yang-Mills construction.
 - **auditor confidence:** high
 
 ### `flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30`

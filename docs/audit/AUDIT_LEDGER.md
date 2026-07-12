@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 100 |
 | **retained_no_go** | 41 |
-| **retained_bounded** | 411 |
+| **retained_bounded** | 412 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
 | unaudited | 2655 |
-| audit_in_progress | 29 |
+| audit_in_progress | 28 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 29 |
-| `audited_clean` | 539 |
+| `audit_in_progress` | 28 |
+| `audited_clean` | 540 |
 | `audited_conditional` | 93 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 43 |
@@ -141,7 +141,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
-| `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -571,6 +570,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_backreaction_results_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_backreaction_shell_spectral_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `staggered_dag_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `staggered_fermion_card_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `staggered_geometry_superposition_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `staggered_graph_failure_map_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
@@ -8837,6 +8837,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner directly evaluates the three layered DAG-derived configurations and reproduces the load-bearing 6/6 score surface, TOWARD forces, N-stability, Born linearity, forward-depth fraction, and state-family robustness. The small norm-row roundoff difference remains at machine precision and does not affect the bounded compatibility claim.
 - **rationale:** The source note is narrowly framed as a compatibility control, not a proof of truly directed DAG Hamiltonian transport. The current runner gives 6/6 on all three configurations, with TOWARD force, 14/14 N-stability, machine-clean norm/Born behavior, forward-depth fraction 0.1266, and 3/3 state families. Residual risk is limited to the symmetrized-adjacency scope boundary, which the note states explicitly.
 - **auditor confidence:** high
+
+### `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06`
+
+- **Note:** [`STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md`](../../docs/STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Uniqueness up to global sign of the scalar Z_2 edge-flip grading on nearest-neighbor Z^3, its multiplication by the central Pauli Cl(3) pseudoscalar, and edgewise anticommutation with arbitrary nearest-neighbor odd stencils.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00061-staggered_dirac_chirality_pa`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The edge-flip rule on the connected nearest-neighbor Z^3 graph forces s(x)=s(0)(-1)^(x_1+x_2+x_3), after which opposite site parity gives Gamma_epsilon D+D Gamma_epsilon=0 for every nearest-neighbor odd stencil.  _(class `A`)_
+- **chain closes:** True — The infinite-lattice result follows analytically from bipartite path parity, while the Pauli product and anticommutator are direct matrix identities. The finite runner genuinely checks representative rank, pseudoscalar, and arbitrary-weight edge calculations without importing a target value.
+- **rationale:** The controlling step is an elementary graph-parity identity on the supplied nearest-neighbor Z^3 substrate, followed by exact Pauli and diagonal-grading algebra. The explicit edge-flip condition is the bounded theorem's stated domain, not a hidden numerical or physical selector, and the analytic proof—not the finite-box samples—establishes the unbounded graph statement. The conclusion remains confined to the sign-field bridge and does not establish statistics, select a kinetic law, or identify physical species.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `staggered_dirac_substep1_jw_bridge_narrow_theorem_note_2026-05-17`
 

@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 649,
+    "critical": 648,
     "high": 335,
     "leaf": 1096,
     "medium": 718
@@ -2796,28 +2796,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_su3_cube_index_graph_shortcut_open_gate.py",
       "transitive_descendants": 473
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06",
-      "claim_scope": "Uniqueness up to global sign of the scalar Z_2 edge-flip grading on the nearest-neighbor Z^3 graph, its multiplication with the central Pauli Cl(3) pseudoscalar, and anticommutation with arbitrary coordinate-edge nearest-neighbor kinetic matrices.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.88,
-      "note_path": "docs/STAGGERED_DIRAC_CHIRALITY_PARITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py",
-      "transitive_descendants": 470
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -54271,6 +54249,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_verifier.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -77636,30 +77638,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_note_2026-06-03",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/STAGGERED_DIRAC_KAWAMOTO_SMIT_CONDITIONAL_REALIZATION_RESCOPING_COMPANION_NOTE_2026-06-03.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_staggered_dirac_kawamoto_smit_conditional_realization_rescoping_companion_verifier.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "staggered_dirac_kinetic_class_two_component_exclusion_narrow_theorem_note_2026-06-11",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -80185,5 +80163,5 @@
     }
   ],
   "ready_count": 520,
-  "total_pending": 2798
+  "total_pending": 2797
 }

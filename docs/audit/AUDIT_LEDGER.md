@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 411 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2658 |
+| unaudited | 2657 |
 | audit_in_progress | 27 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 92 |
+| ~~audited_conditional~~ | 93 |
 | ~~audited_failed~~ | 21 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 27 |
 | `audited_clean` | 539 |
-| `audited_conditional` | 92 |
+| `audited_conditional` | 93 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 43 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3008 |
+| `unaudited` | 3007 |
 
 | claim_type | count |
 |---|---:|
@@ -736,6 +736,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -5846,6 +5847,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - **gate failures:**
     - N1: the CP-odd η/θ route is OPEN, the geometric phase routes are UNTESTED, and fewer than five genuinely distinct mechanism classes are closed.
     - N5: the phrase "only candidate" has untested resolutions and is broader than the restricted evidence.
+
+### `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25`
+
+- **Note:** [`KOIDE_Q_ONSITE_SOURCE_DOMAIN_NO_GO_SYNTHESIS_NOTE_2026-04-25.md`](../../docs/KOIDE_Q_ONSITE_SOURCE_DOMAIN_NO_GO_SYNTHESIS_NOTE_2026-04-25.md)
+- **claim_type:** `no_go`
+- **claim_scope:** For the explicit 3x3 cyclic representation, onsite invariant diagonals are scalar and the abstract circulant commutant contains a non-onsite involution Z; physical retained source-domain membership and the Koide readout bridge were not audited as closed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00058-koide_q_onsite_source_domain`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The projected C3-commutant contains the non-onsite invariant involution Z, so a nonzero zZ direction survives and, under the stated Q(z) readout, supplies a non-Koide counterdomain.  _(class `A`)_
+- **chain closes:** False — The finite matrix-algebra separation closes, but the packet does not derive that the physical retained source grammar contains the abstract commutant direction, and it imports Q(z) and K_TL(z) without a cited authority. Those missing bridges prevent the physical no-go chain from closing.
+- **rationale:** The runner genuinely verifies the elementary C3 matrix algebra: invariant onsite diagonals are scalar, Z is a non-onsite commutant involution, and the stated formulas yield the displayed counterexample. However, q_from_z and ktl_from_z are definitions inside the runner, while the physical assertion that the current retained charged-lepton source domain admits zZ is not derived from any supplied authority. The note is therefore sound as an abstract conditional source-domain separation, but not as a closed statement about the retained physical source grammar.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the physical onsite-domain, probe-only Z, parity/mixer, and source-free-carrier routes are open or untested.
+    - N3: retained source-domain membership and the Q(z)/K_TL readout are hidden imports.
+    - N5: current-retained-domain rhetoric exceeds the finite abstract algebra tested by the runner.
 
 ### `koide_tracial_standard_form_carrier_narrow_note_2026-06-02`
 

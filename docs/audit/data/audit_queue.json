@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 643,
+    "critical": 642,
     "high": 335,
     "leaf": 1096,
     "medium": 718
@@ -3047,30 +3047,6 @@
       "ready": true,
       "runner_path": "scripts/frontier_post_record_clock_rate_interface_2026_06_06.py",
       "transitive_descendants": 445
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10",
-      "claim_scope": "Abstract finite-algebra no-go for a bridge F(R)=C alpha^N_species(R): unequal integer species-count readouts give unequal outputs when C is fixed and nonzero and alpha is fixed, positive, and not 1; regulator independence therefore requires an O1/O2/O3 escape from those assumptions.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.798,
-      "note_path": "docs/HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go.py",
-      "transitive_descendants": 444
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -80049,6 +80025,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 519,
-  "total_pending": 2792
+  "ready_count": 518,
+  "total_pending": 2791
 }

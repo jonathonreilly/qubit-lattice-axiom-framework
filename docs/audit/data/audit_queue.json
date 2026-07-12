@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 651,
     "high": 334,
-    "leaf": 1144,
+    "leaf": 1143,
     "medium": 756
   },
   "cycle_break_target_count": 49,
@@ -51748,35 +51748,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "linear_response_derivation_note",
-      "claim_scope": null,
-      "claim_type": "open_gate",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "linear_response_true_kubo_note",
-        "minimal_axioms_2026-05-03"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/global_coherence_off_scaffold.py",
-        "scripts/independent_generators_heldout.py",
-        "scripts/universality_classifier.py"
-      ],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/LINEAR_RESPONSE_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/linear_response_derivation.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "linear_response_second_order_kubo_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -82195,6 +82166,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 596,
-  "total_pending": 2885
+  "ready_count": 595,
+  "total_pending": 2884
 }

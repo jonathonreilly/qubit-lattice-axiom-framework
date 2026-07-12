@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 27 |
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 1 |
-| open_gate | 4 |
-| unaudited | 2821 |
+| open_gate | 5 |
+| unaudited | 2820 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 454 |
+| `audited_clean` | 455 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 28 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3171 |
+| `unaudited` | 3170 |
 
 | claim_type | count |
 |---|---:|
@@ -370,6 +370,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_deflection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
 | `linear_response_true_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `literature_backmatch_live_scan_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `local_zsym_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4543,6 +4544,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Embedded operators supported on distinct tensor factors commute because each acts as the identity on the other's factor, so O_x O_y = O_y O_x.  _(class `A`)_
 - **chain closes:** True — The conclusions follow directly from the stipulated tensor-product Hilbert space and disjoint-factor embeddings. No upstream physical bridge, numerical comparator, or dynamical authority is needed for L1-L3.
 - **rationale:** The load-bearing step is a standard algebraic identity over tensor-product operators with disjoint support. The source note explicitly rescopes away the prior physical per-site realization clause, Lieb-Robinson time evolution, continuum microcausality, and fermionic graded tensor-product claims. The provided runner genuinely constructs symbolic and Pauli tensor-product operators and checks the claimed commutators and factorization, with no hard-coded numerical target or external comparator. The ledger visibility check is non-load-bearing and does not affect closure.
+- **auditor confidence:** high
+
+### `linear_response_derivation_note`
+
+- **Note:** [`LINEAR_RESPONSE_DERIVATION_NOTE.md`](../../docs/LINEAR_RESPONSE_DERIVATION_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Frozen 44-family detector-only linear-response heuristic record: r=0.5605 overall, r=0.7248 off-scaffold, 36/44 no-fit sign agreement, the explicitly fitted 35/44 threshold result, and the firewall excluding literal first-order Kubo or closed-derivation reuse.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00425-linear_response_derivation_n`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The frozen-log verifier parses the 44 family rows and recomputes the overall and groupwise Pearson correlations, 36/44 sign agreement, fitted threshold result, and measured-response ceiling.  _(class `A`)_
+- **chain closes:** True — For this archival open-gate scope, the SHA-pinned runner genuinely parses the frozen rows and independently recomputes the reported statistics. It does not establish a literal Kubo derivation, which the audited scope expressly excludes.
+- **rationale:** The runner performs statistical and consistency checks over the frozen dataset rather than merely printing expected constants, and all 15 checks pass. The source preserves the essential no-fit versus in-sample-tuned distinction and explicitly forbids treating the detector reweighting as the literal first-order Kubo expression. The clean verdict therefore applies only to the narrowed open-gate heuristic record, not to broader first-principles or compact-principle language elsewhere in the note.
 - **auditor confidence:** high
 
 ### `linear_response_true_kubo_note`

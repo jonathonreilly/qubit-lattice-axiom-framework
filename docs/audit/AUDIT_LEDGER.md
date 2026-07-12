@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 36 |
-| **retained_bounded** | 388 |
+| **retained_bounded** | 389 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2725 |
+| unaudited | 2724 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 504 |
+| `audited_clean` | 505 |
 | `audited_conditional` | 73 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 35 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3075 |
+| `unaudited` | 3074 |
 
 | claim_type | count |
 |---|---:|
@@ -513,6 +513,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_driven_field_recovery_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `source_field_static_law_classification_bounded_note_2026-07-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `source_resolved_exact_green_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `source_resolved_generated_architecture_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `source_resolved_generated_discriminator_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -7569,6 +7570,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The Mobius cumulant formula, the log moment-generating function identity, the n=3 cumulant formula, independence cancellation, and the p-scale two-point normalization all close algebraically. The downstream physical identification of the scalar P-cal response with connected source response is explicitly outside this scoped theorem.
 - **rationale:** The load-bearing step is a standard algebraic Mobius/exponential-formula identity, not a numerical fit, external comparator, or symbol renaming. The runner source materially computes the partition-lattice n=3 Mobius formula, verifies independence cancellation, differentiates log moment generators, and checks the p-scale normalization; it does not import a contested constant or hidden comparator. The displayed closed-form formulas in the packet are consistent under the note's finite-record cumulant conventions. The clean verdict applies only to the bounded exact-support theorem, not to unbounded retained Y_T closure or the physical connected-response identification.
 - **auditor confidence:** high
+
+### `source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05`
+
+- **Note:** [`SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md`](../../docs/SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The six diagonal matrix units E_ii on C^6 form an orthonormal Hilbert-Schmidt basis of D_6, resolve I_6, reconstruct every diagonal operator, and have the normalized one-dimensional permutation-fixed democratic line.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00233-source_measure_sharp_record_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the diagonal matrix units, O_i^dagger O_j = delta_ij E_ii and therefore Tr(O_i^dagger O_j) = delta_ij, from which the stated basis, reconstruction, and democratic-unit results follow.  _(class `A`)_
+- **chain closes:** True — The claim follows directly from exact matrix-unit multiplication, the trace pairing, and the coordinate action of permutations. No physical source, coupling, readout, or Standard-Model identification is used.
+- **rationale:** The runner constructs the six matrices and verifies the Gram matrix, rank, identity resolution, symbolic reconstruction, and permutation-fixed unit both exactly and by an independent numerical implementation; it does not hard-code a contested physical value or import another note. The source has been narrowed so that none of the former Y_T/top/W or coupling interpretations is part of the theorem. The runner's phrase “HS norm lambda^2” denotes the squared norm rather than the norm, but this ancillary terminology does not affect D4 or the load-bearing identities.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `source_resolved_exact_green_scaling_note`
 

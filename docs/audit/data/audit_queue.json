@@ -3,7 +3,7 @@
     "critical": 650,
     "high": 335,
     "leaf": 1098,
-    "medium": 751
+    "medium": 750
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -30829,28 +30829,6 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.822,
-      "note_path": "docs/SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_source_measure_sharp_record_onb_2026_06_05.py",
-      "transitive_descendants": 9
-    },
-    {
-      "audit_independence_required": "any_non_self",
       "audit_status": "audited_failed",
       "blocker": null,
       "claim_id": "structured_mirror_bornsafe_scan_note",
@@ -30895,6 +30873,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/cl3_primitive_p_bae_duality_2026_05_10_pPbae_duality.py",
+      "transitive_descendants": 8
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06",
+        "source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 5.17,
+      "note_path": "docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_source_measure_sharp_record_tangent_space.py",
       "transitive_descendants": 8
     },
     {
@@ -43862,31 +43865,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_charged_lepton_y_tau_ward_combined_no_go.py",
-      "transitive_descendants": 8
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06",
-        "source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_source_measure_sharp_record_tangent_space.py",
       "transitive_descendants": 8
     },
     {
@@ -81020,5 +80998,5 @@
     }
   ],
   "ready_count": 548,
-  "total_pending": 2834
+  "total_pending": 2833
 }

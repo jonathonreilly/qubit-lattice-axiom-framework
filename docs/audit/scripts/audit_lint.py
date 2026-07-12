@@ -965,7 +965,8 @@ def main() -> int:
                 other_side_non_claude = False
                 if xc_status in {"confirmed", "third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
                     for key in ("first_audit", "second_audit", "third_audit"):
-                        side = (xc.get(key) or {}) if isinstance(xc, dict) else {}
+                        side_value = xc.get(key) if isinstance(xc, dict) else None
+                        side = side_value if isinstance(side_value, dict) else {}
                         side_fam = side.get("auditor_family") or ""
                         if side_fam and not side_fam.startswith("claude-"):
                             other_side_non_claude = True
@@ -1057,11 +1058,17 @@ def main() -> int:
                                 f"{schema_error}"
                             )
                 third_dict = third if isinstance(third, dict) else {}
-                side = third_dict.get("sided_with")
-                if side is not None and side != expected_side:
-                    errors.append(
-                        f"{cid}: {xc_status} conflicts with third_audit.sided_with={side!r}"
-                    )
+                summary_access_allowed = (
+                    agreement_schema is None
+                    or (exact_tuple_schema and tuple_schema_valid)
+                )
+                if summary_access_allowed:
+                    side = third_dict.get("sided_with")
+                    if side is not None and side != expected_side:
+                        errors.append(
+                            f"{cid}: {xc_status} conflicts with "
+                            f"third_audit.sided_with={side!r}"
+                        )
                 tuples_match = (
                     audit_summary_tuples_match(third, winning)
                     if agreement_schema is None
@@ -1091,7 +1098,10 @@ def main() -> int:
                         "legacy_cross_confirmation_tuple_mismatch",
                         message + "; legacy confirmation requires fresh re-audit",
                     )
-                if row.get("claim_type_provenance") == "judicial_review":
+                if (
+                    summary_access_allowed
+                    and row.get("claim_type_provenance") == "judicial_review"
+                ):
                     for key in ("verdict", "claim_type", "load_bearing_step_class"):
                         row_key = "audit_status" if key == "verdict" else key
                         if third_dict.get(key) is not None and row.get(row_key) != third_dict.get(key):

@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_leptogenesis_pmns_minimum_information_baseline_no_go.py
+runner_sha256: 56cf1f7e4f9b4d865707ac267f951936195adb200809bd57e97ef39761820af8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.04
+status: ok
+----- stdout -----
+DM LEPTOGENESIS PMNS MINIMUM-INFORMATION BASELINE NON-DERIVABILITY
+Exact two-completion certificate; no observational value is a proof input
+
+PART 1: CURRENT BASELINE LANGUAGE AND SOURCE SCOPE
+  [PASS] The source row declares the narrow no-go claim type
+  [PASS] The source row names the four-axiom memo as its load-bearing authority
+  [PASS] The selector-specific symbols are absent from the four-axiom statement  (I_seed, eta_obs, favored column, PMNS, Kullback)
+  [PASS] The axiom memo explicitly leaves every relevant bridge outside the axioms  (Born weights, context selection, source/action, physical-observable identification, measurement basis selection)
+  [PASS] The source firewall preserves future downstream bridge routes
+  [PASS] Approved primitives are included but supply no selector or state-contingent value
+  [PASS] The local lattice checks match Z^3 and its 24 proper cubic rotations
+  [PASS] Actual matrix units realize the full complex M_2 multiplication and span
+  [PASS] Non-diagonal spectral admissibility is unitary-covariant and detects degeneracy
+  [PASS] The local record/readout probes match the explicit infinite model  (I(R)=number of records, I(empty)=0)
+
+PART 2: MINIMIZATION PRINCIPLE IS NOT ENTAILED
+  [PASS] Both selector laws extend the identical base-model witness
+  [PASS] The minimizing completion is total, single-valued, and state-neutral
+  [PASS] The alternative completion is total, single-valued, and state-neutral
+  [PASS] The two allowed downstream laws select different sources  (q_x vs q_y)
+
+PART 3: EQUAL MODALITY WEIGHTS ARE NOT ENTAILED
+  [PASS] Constructed deformations lie on the native fixed-total seed surface
+  [PASS] Independent KL evaluation reproduces the prescribed block costs  (normalization removes the native fixed totals)
+  [PASS] Equal and positive-reweighted information laws choose different sources  (equal={'q_x': 0.10000000000000005, 'q_y': 0.14999999999999997}, weighted={'q_x': 0.2000000000000001, 'q_y': 0.07499999999999998})
+  [PASS] Both weighted selectors satisfy the same state-neutral law qualification
+
+PART 4: OBSERVATIONAL ANCHOR AND FAVORED COLUMN ARE NOT ENTAILED
+  [PASS] Changing only the external comparator changes the exact-closure locus  (eta_obs=1 -> ('q_x',); eta_obs=2 -> ('q_y',))
+  [PASS] Two transport completions over the same base favor different columns  (i_*=0 vs 1)
+  [PASS] Both closure-anchor completions remain total and state-neutral
+  [PASS] The closure-anchor completions share the identical base-model witness
+
+PART 5: NARROW LOGICAL CONCLUSION
+  [PASS] The no-go is fenced against broader impossibility rhetoric  (not a no-go against downstream selector physics, does not invalidate the conditional optimizer output, supplies no positive selector authority, independent audit lane)
+  [PASS] The theorem conclusion is stated as non-entailment from the current baseline alone
+
+TOTAL: PASS=24 FAIL=0
+FINAL_TAG: PMNS_MININFO_CURRENT_BASELINE_NON_ENTAILMENT_NO_GO
+
+----- stderr -----
+

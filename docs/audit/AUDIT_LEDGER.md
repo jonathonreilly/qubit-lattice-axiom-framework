@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 7 |
-| unaudited | 2794 |
+| unaudited | 2793 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 46 |
+| ~~audited_conditional~~ | 47 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 469 |
-| `audited_conditional` | 46 |
+| `audited_conditional` | 47 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3144 |
+| `unaudited` | 3143 |
 
 | claim_type | count |
 |---|---:|
@@ -616,6 +616,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1447,6 +1448,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The cited upstream authority is retained and already proves the abstract beta(g/c,N)=c^2 beta(g,N) identity and product invariance. The present note repeats that exact algebra with the variable names (g_bare,N_c) and expressly keeps any physical Wilson action-surface interpretation outside the audited scope. With zero comparator checks and no independent physical computation, the row is an algebraic decoration of the retained parent rather than an independent clean theorem.
 - **decoration parent:** `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`
 - **auditor confidence:** high
+
+### `beyond_lattice_qcd_note`
+
+- **Note:** [`BEYOND_LATTICE_QCD_NOTE.md`](../../docs/BEYOND_LATTICE_QCD_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite conditional diagnostic on the specified graph models: the imposed Poisson coupling changes detector statistics, and the linear slit path-sum with quadratic readout yields vanishing Sorkin I_3 across the tested sweeps; no lattice-QCD impossibility or Born-rule derivation is established.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00372-beyond_lattice_qcd_note`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The runner-computed finite numerical results are exactly produced: the imposed Poisson coupling changes the detector diagnostics, and the linear slit path-sum with quadratic readout yields negligible Sorkin I_3.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the finite outputs, but the framework chain does not derive the action S=L(1-f), its physical graph-gravity interpretation, or the quadratic probability/readout map. No supplied authority establishes the comparative claim that lattice QCD cannot reproduce an analogous coupled diagnostic.
+- **rationale:** The source is not a print-only artifact: it solves a finite Poisson system, propagates amplitudes, and computes both detector statistics and the Sorkin inclusion-exclusion quantity without hard-coded expected outputs. Those numerical statements are valid conditional results for the coded model. The physical graph-gravity, probability/readout, and lattice-QCD comparison bridges are not derived, and the mandatory no-go discipline gate fails because several alternative reproduction routes remain untested.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1 contains open and untested alternative reproduction routes.
+    - N5 finds untested resolutions behind the lattice-QCD impossibility language.
+    - The finite runner does not close the physical graph-gravity, probability/readout, or comparative walls.
 
 ### `block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02`
 

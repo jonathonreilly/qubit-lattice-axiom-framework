@@ -7386,8 +7386,10 @@ class ComputeLaneCertificationTest(unittest.TestCase):
         script = (
             PROJECT_ROOT / "docs" / "audit" / "scripts" / "run_pipeline.sh"
         ).read_text(encoding="utf-8")
+        invocation = "python3 docs/audit/scripts/compute_lane_certification.py"
+        self.assertEqual(script.count(invocation), 1)
         self.assertGreater(
-            script.rfind("compute_lane_certification.py"),
+            script.index(invocation),
             script.index("did not reach a fixed point after 10 passes"),
         )
 

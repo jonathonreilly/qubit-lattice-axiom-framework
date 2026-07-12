@@ -15,7 +15,7 @@
     "publication status prose as evidence",
     "generated audit queue output as evidence"
   ],
-  "generated_date": "2026-07-11",
+  "generated_date": "2026-07-12",
   "groups": [
     {
       "blocked_by_group_ids": [],
@@ -25,9 +25,9 @@
         {
           "audit_question": "Fresh-context re-audit: does the 2026-04-16 negative boundary proved only for the historical Cl(3)-on-Z3 subset remain a current positive_theorem under the four named axioms Lattice, Qubit, Admissibility, and Record, or must it be reclassified as historical/meta or conditional because the added axiom content was never tested?",
           "claim_id": "dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16",
-          "current_audit_status": "unaudited",
+          "current_audit_status": "audited_clean",
           "current_claim_type": "positive_theorem",
-          "current_effective_status": "unaudited",
+          "current_effective_status": "retained",
           "note_path": "docs/DM_LEPTOGENESIS_PMNS_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md"
         }
       ]

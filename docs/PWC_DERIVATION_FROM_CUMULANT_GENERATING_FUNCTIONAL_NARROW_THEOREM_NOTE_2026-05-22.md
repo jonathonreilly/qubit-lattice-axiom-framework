@@ -247,10 +247,10 @@ Plain-text contextual pointer (not load-bearing dep):
 The same `W[J] = log Tr(ρ_ref · e^{-J}) - log Tr(ρ_ref)` form, now
 proved as the finite joint-spectral connected-cumulant generator
 applied to `ρ_ref` on commuting source families, not a load-bearing
-framework rule. The "selection from a family" structure that would have
-made it a framework rule does not exist on that narrow scope.
+framework rule. No family-selection premise is invoked on that narrow scope;
+the supplied `rho_ref` and commuting source family determine the form.
 
-## What this does NOT close
+## Out Of Scope
 
 - **Wick / Schwinger rotation between Euclidean and Lorentzian sources** — separate lane
 - **Time-ordering and operator-ordering conventions for non-commuting `J`** — standard but separate lane

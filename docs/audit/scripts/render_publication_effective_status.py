@@ -357,9 +357,10 @@ def render_divergence(all_lookups: dict[str, list[dict]],
             eff = L.get("effective_status") or ""
             if eff in RETAINED_GRADE or eff.startswith("decoration_under_") or eff == "meta":
                 continue
-            cid = L["claim_id"]
-            entry = distinct_non_retained.setdefault(cid, {
-                "claim_id": cid,
+            cid = L.get("claim_id")
+            row_key = cid or f"unresolved:{L['note_path']}"
+            entry = distinct_non_retained.setdefault(row_key, {
+                "claim_id": row_key,
                 "note_path": L["note_path"],
                 "effective_status": eff,
                 "audit_status": L.get("audit_status"),

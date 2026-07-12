@@ -59,11 +59,12 @@ threshold, or a deposition probability.
 
 - The exact inequality is finite-dimensional and uses the declared local-term
   decomposition.
-- The profile comparisons use absolute apportioned energy expectations,
-  thresholded supports, and finite time samples. They are diagnostics, not
-  identities.
+- The profile comparisons use normalized-profile overlap (a Bhattacharyya
+  coefficient over sum-normalized bond-activity and absolute bond-energy
+  profiles) and centroid separation, evaluated over their full support at
+  finite time samples. They are diagnostics, not identities.
 - The dense three-site model and one-particle chain, including their terms,
-  preparation choices, sizes, mass, thresholds, and finite times, are supplied.
+  preparation choices, sizes, mass, and finite times, are supplied.
 - No gravity conclusion or physical sourcing law is made.
 
 ## Dependencies
@@ -71,3 +72,19 @@ threshold, or a deposition probability.
 None. The operator inequality and toy comparators are self-contained; the
 optional record-opportunity reading uses the explicitly supplied `AO` premise
 rather than a derived dependency.
+
+## Repair Log
+
+- **2026-07-12** — Aligned the Boundaries prose to the runner's actual
+  profile-comparison diagnostics. The moving-packet comparison uses a
+  Bhattacharyya overlap over sum-normalized bond-activity and absolute
+  bond-energy profiles together with a centroid separation, evaluated over the
+  full support at the declared finite time samples. Removed the unsupported
+  thresholded-support characterization (the runner applies no support threshold)
+  and dropped `thresholds` from the supplied-parameter inventory of the dense
+  and one-particle models. Added a `METHODOLOGY-CONSISTENCY` runner check that
+  binds this prose to the `overlap` and `centroid` implementations, so the gate
+  fails if either the prose or those helpers drift. No numerical result changed:
+  the bound, stationary-witness, and finite-toy values are byte-identical.
+  Status authority: independent audit lane only. This repair sets no
+  `audit_status`, `effective_status`, ledger tag, or retained status.

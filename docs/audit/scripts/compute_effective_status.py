@@ -88,13 +88,6 @@ def is_chain_satisfying_status(status: str | None) -> bool:
     return status == "meta" or is_retained_grade(status)
 
 
-def archived_failed_is_retained_no_go(row: dict) -> bool:
-    if row.get("audit_status") != "audited_failed":
-        return False
-    note_path = row.get("note_path") or ""
-    return note_path.startswith("archive_unlanded/") and (REPO_ROOT / note_path).exists()
-
-
 def decoration_status(row: dict, dep_effective: dict[str, str]) -> tuple[str, str]:
     parent = row.get("decoration_parent_claim_id")
     if not parent:
@@ -168,9 +161,6 @@ def is_criticality_bump_soft_reset(row: dict) -> bool:
 
 
 def intrinsic_status(row: dict, dep_effective: dict[str, str]) -> tuple[str, str]:
-    if archived_failed_is_retained_no_go(row):
-        return "retained_no_go", "archived_failed_no_go"
-
     claim_type = row.get("claim_type")
     audit_status = row.get("audit_status") or "unaudited"
 

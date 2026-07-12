@@ -19,6 +19,9 @@ local-algebra language for the Qubit axiom, not a separate premise.
 
 The only registered non-axiom premises are the three approved primitive nodes.
 Together with the four axioms, they form the complete supplied foundation.
+The three approved primitives are scale reference, kinetic isotropy, and
+realized state; they are registered non-axiom premises rather than additions
+to the four-axiom set.
 The charged-lepton occupancy and R-eta roles are open gates with zero premise
 weight, not a third premise class. The sole machine premise authority is
 `docs/audit/data/axiom_premise_nodes.json`; open work is routed separately in
@@ -35,31 +38,34 @@ current paper surface.
 
 ## 2. Explicit external inputs on the current paper surface
 
-Current cosmology-facing rows are conditioned on:
+Current cosmology-facing rows use these observational comparators:
 
 - `T_CMB = 2.7255 K`
 - `H_0 = 67.4 km/s/Mpc`
 
-These are not inputs to the retained structural core. They are explicit
-boundary data for the bounded cosmology lane. The FRW kinematic reduction
+These are not framework inputs or derived constants. They are observational
+comparators for the bounded cosmology lane. The chosen flat-FRW geometry and
+equation-of-state surface are explicit normalization/boundary conditions. The
+FRW kinematic reduction
 adds no new point input; `q_0`, `z_*`, `z_{mLambda}`, and asymptotic `H_inf`
 remain functions of the same open `H_inf/H_0` ratio, with listed cosmology
 numbers used only as comparators.
 
 The Hubble structural-lock theorem adds a sharp late-time stance without
-adding a point input: on the retained `w_Lambda=-1` plus admitted flat-FRW
+adding a point input: on the specified `w_Lambda=-1` plus flat-FRW
 surface, every correctly reduced late-time `H(z)` probe implies the same
 scalar `H_0`. It does not derive that scalar. It rules out late-time-only
 Hubble-tension resolutions inside the current surface and leaves any genuine
 tension to pre-recombination physics or measurement/systematics.
 
 The open-number reduction theorem then packages the late-time bounded
-cosmology surface as two structural degrees of freedom at fixed admitted
+cosmology surface as two structural degrees of freedom at fixed specified
 `Omega_r,0`: `H_0` and `L=(H_inf/H_0)^2`. That is a closure map, not a
 numerical cosmology derivation.
 
 The matter-radiation equality identity adds no new native density derivation:
-`1 + z_mr = Omega_m,0/Omega_r,0` is exact on the admitted FRW/EOS surface, but
+`1 + z_mr = Omega_m,0/Omega_r,0` is an exact conditional identity on the
+specified FRW/EOS surface, but
 the readout `z_mr ~= 3423` uses supplied `Omega_m,0` and observational
 `Omega_r,0` from `T_CMB` plus relativistic-species bookkeeping.
 
@@ -70,8 +76,9 @@ correction and uses observational photon-temperature data when converted into
 `Omega_r,0`.
 
 The dark-matter/cosmology cascade also uses the exact support identity
-`R_base = 31/9`, which depends on the admitted Georgi-Glashow/GUT
-normalization factor `3/5`. That identity is now packaged separately, but it
+`R_base = 31/9`, which depends on the external Georgi-Glashow/GUT
+normalization convention `3/5`. That conditional identity is packaged
+separately, but it
 does not derive the Sommerfeld correction, the full `Omega_DM/Omega_b` value,
 or the downstream `Omega_Lambda` numerics.
 
@@ -80,18 +87,23 @@ an explicit three-real observational pin:
 
 - PDG charged-lepton masses `(m_e, m_μ, m_τ)`
 
-Those are not inputs to the retained structural core either. They are the
-explicit observational pin behind the charged-lepton bounded row.
+Those values are not part of the four-axiom/approved-primitive foundation.
+They are the explicit observational pin behind the charged-lepton bounded row.
 
-## 3. Same-surface derived constants used across the package
+## 3. Computed inputs, conditional identities, and unaudited derived claims
 
-These are not experimental fit parameters or hidden free knobs. They are the
-current canonical same-surface evaluated constants on `main`.
+The entries below have different authority classes. A computed lattice input,
+an exact identity conditional on that input, and an unaudited derived claim are
+not interchangeable. The generated effective-status views remain authoritative
+for audit grade.
 
 Current absolute-scale package rule:
 
-- on the accepted physical-lattice reading, the package currently carries
-  `a^(-1) = M_Pl` as an explicit Planck-scale fallback pin
+- the registered scale-reference primitive supplies the units conversion
+  `a^(-1) = M_Pl`; it is not a promoted numerical derivation or fallback pin.
+  The further statements `a/l_P = 1`, identification of the gravitational
+  carrier, and any dimensionless physical prediction remain conditional on
+  their separately named bridges
 - the attempted same-surface structural derivation from the 2026-04-30
   primitive Clifford-Majorana note was audited as `audited_renaming`: it
   verifies the candidate `Cl_4(C)` / `F(C^2)` carrier algebra, but does not
@@ -113,16 +125,19 @@ Current absolute-scale package rule:
   `G_Newton,lat = 1` on the primitive Clifford/CAR carrier surface;
   equivalently, the bare delta-source label is
   `q_bare = 4 pi M_phys` on the same carrier surface
-- the finite-automorphism-only response route is closed negatively; finite
+- the finite-automorphism-only response route has a scoped negative source
+  candidate awaiting fresh authenticated audit; finite
   primitive-cell automorphisms have no infinitesimal metric/coframe response
   tangent and cannot replace the realified response surface
-- the carrier-only parent-source scalar route is closed negatively; carrier
+- the carrier-only parent-source scalar route has a scoped negative source
+  candidate awaiting fresh authenticated audit; carrier
   data alone leave an affine hidden character `delta`, so scalar equality
   requires a separate no-hidden-character law
-- the simple-fiber Widom entropy-carrier route is closed negatively; straight
-  cuts with at most one occupied `k_x` interval per transverse momentum fiber,
-  plus consistently normalized Schur/direct-sum descendants, obey
-  `c_Widom <= 1/6`, not `1/4`
+- the simple-fiber Widom entropy-carrier route is a proposed scoped bound for
+  fresh authenticated N1–N8 audit: its source argues that straight cuts with at most one occupied
+  `k_x` interval per transverse-momentum fiber, plus consistently normalized
+  Schur/direct-sum descendants, obey `c_Widom <= 1/6`, not `1/4`; this is not
+  a retained closure until the audit lane confirms it
 - the 2026-04-25 area-law selector packet closes the multipocket-selector,
   primitive finite-edge entropy, and algebraic finite-Schmidt-spectrum shortcuts
   negatively; its positive primitive-CAR carrier route is now supplied by the
@@ -153,18 +168,25 @@ Current absolute-scale package rule:
   [PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md](../../PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md)
 
 - plaquette surface:
-  - `<P> = 0.5934`
+  - `<P> = 0.5934` is a computed lattice input on the selected finite
+    `SU(3)` Wilson-lattice/`beta` surface, not a value derived from the four
+    axioms and not an infinite-volume certificate
   - authority:
     [PLAQUETTE_SELF_CONSISTENCY_NOTE.md](../../PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
 - mean link:
-  - `u_0 = <P>^(1/4)`
+  - `u_0 = <P>^(1/4)` is an exact algebraic identity conditional on the
+    selected plaquette input
 - strong-coupling chain:
   - `alpha_LM`
   - `alpha_s(v)`
+  - these are unaudited derived claims on the current ledger and must not be
+    reused as retained constants until independent audit closes their chains
   - authority:
     [ALPHA_S_DERIVED_NOTE.md](../../ALPHA_S_DERIVED_NOTE.md)
 - electroweak hierarchy:
   - `v = 246.282818290129 GeV`
+  - this is an unaudited derived claim, not an axiom/primitive value or a
+    same-surface retained constant
   - authority:
     [OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md](../../OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
 - color normalization support:
@@ -209,7 +231,9 @@ same-surface derivation in
 was audited as `audited_renaming`, so it does not remove the carrier bridge.
 
 - `alpha_s(M_Z)` and the `M_Z` EW rows:
-  - same-surface derived framework values plus the retained running bridge
+  - derived-chain values plus a separately retained running bridge; reuse of
+    the derived values remains controlled by the generated effective-status
+    views
 - bounded string tension readout:
   - exact confinement theorem plus low-energy EFT bridge
   - current hadron-lane support isolates the remaining `sqrt(sigma)` budget:

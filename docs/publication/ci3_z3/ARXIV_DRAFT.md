@@ -1,3 +1,15 @@
+# Historical Author Manuscript Archive — Not Publication Authority
+
+This file preserves the superseded author narrative for revision provenance.
+It contains claims and status language that are ahead of the current audit
+ledger, including historical sole-/three-axiom framing. It must not be used as
+a scientific or publication authority. Use
+[generated front-door status](../../repo/FRONT_DOOR_STATUS.md) and the
+generated audit-badged surfaces instead.
+
+<details>
+<summary>Expand the quarantined historical manuscript</summary>
+
 # Qubit-Lattice Axiom Framework:
 # discrete $3+1$ gravity, gauge structure, matter closure, and quantitative tests
 
@@ -9,45 +21,32 @@ Public arXiv-first draft, April 15, 2026
 
 Keywords: discrete gravity, lattice gauge theory, Clifford algebra, CKM, strong CP, confinement
 
+> **CURRENT AUDIT STATUS GATE.** This author-side source is not itself a
+> retention verdict. The public entry point is
+> [generated front-door status](../../repo/FRONT_DOOR_STATUS.md), and the
+> generated effective-status tables and divergence report govern every linked
+> claim. Any `retained`, `exact`, `closed`, or `promoted` wording below is
+> automatically non-authoritative wherever the cited authority is not
+> retained-grade in those generated views.
+
 ## Abstract
 
-We ask how much physics follows from two primitive commitments: a qubit at
-every site and the cubic site set $Z^3$. The equivalent $Cl(3,0)$ local-algebra
-reading supplies the audit-stable algebraic language, but the public framework
-is the qubit-lattice axiom framework rather than a title-level assumption of
-$Cl(3)$. The retained core is already broad. On the gravity side, the framework
-yields Poisson/Newton weak-field gravity, a restricted strong-field closure on
-an exact finite-rank class, exact full discrete $3+1$ Einstein-Regge gravity
-on $PL\,S^3 \times \mathbb{R}$, and an exact quantum-gravity/continuum
-identification chain on one chosen canonical textbook target. On the gauge and
-matter side, the same framework carries exact native $SU(2)$, graph-first
-structural $SU(3)$, anomaly-forced $3+1$, retained three-generation matter
-structure, exact $I_3=0$, exact CPT, retained Bell/CHSH support on explicit
-two-species lattice systems with KS taste measurements, emergent Lorentz
-invariance, retained action-surface strong-CP closure in the form
-$\theta_{\mathrm{eff}}=0$ on the retained Wilson-plus-staggered action
-surface, and exact $T=0$ confinement with bounded
-$\sqrt{\sigma}\approx 465\,\mathrm{MeV}$.
-Quantitatively, the current package gives the canonical hierarchy evaluation
-$v=246.282818290129\,\mathrm{GeV}$, retains
-$\alpha_s(M_Z)=0.1181$ and electroweak normalization lanes, records a
-support-tier lattice-scale Ward identification
-$y_t(M_{\mathrm{Pl}})/g_s(M_{\mathrm{Pl}})=1/\sqrt{6}$ (audited_renaming),
-carries a YT/top transport lane conditioned on that identification with
-canonical full-staggered-PT $\Delta_R=-3.77\% \pm 0.45\%$ and canonical
-$m_t(\mathrm{pole})=172.57 \pm 6.50\,\mathrm{GeV}$, promotes an algebraic CKM
-atlas/axiom package on the canonical tensor/projector surface with no
-quark-mass or fitted-CKM inputs, and keeps the Higgs/vacuum row as an
-identification-conditioned follow-on with an explicit retention-decomposed
-band.
-The package is already predictive beyond retrospective comparison,
-including proton lifetime, the CKM-only neutron-EDM corollary with bounded
-continuation, vacuum criticality, and benchmark gravitational decoherence.
-The dark-matter exact-target package is now closed on the manuscript surface;
-broader target-free global uniqueness is not claimed here. The remaining open
-flagship problem is the charged-lepton Koide bridge package. The paper separates exact,
-promoted, bounded, and open rows and pairs them with a public reproducibility
-surface.
+We ask how much physics follows from four named axioms—Lattice, Qubit,
+Admissibility, and Record—together with three separately registered and tightly
+limited primitives for scale reference, kinetic-form isotropy, and the
+pointwise realized-state interface. The equivalent $Cl(3,0)$ local-algebra
+reading is a presentation of the Qubit axiom, not an additional primitive.
+
+The repository contains candidate, bounded, historical, and audited work
+across gravity, gauge structure, matter, and quantitative phenomenology. This
+manuscript is a map of that program, not a blanket retention declaration. At
+publication time, each statement must be read through the generated
+audit-derived view: only rows badged `retained`, `retained_bounded`, or
+`retained_no_go` are retained-grade; all other rows remain unaudited,
+conditional, failed, open, or in progress regardless of the author-side prose.
+The paper therefore reports a reproducible claim surface while keeping broad
+discrete-GR, strong-CP, confinement, coupling, flavor, and prediction targets
+demoted whenever their current audit badge is non-retained.
 
 ## 1. Introduction
 
@@ -55,11 +54,13 @@ The central question of this paper is not whether a discrete framework can
 imitate isolated pieces of known physics, but whether one exact discrete
 surface can carry a nontrivial fraction of gravity, gauge structure, matter,
 and quantitative phenomenology without being treated as disposable
-scaffolding. We take that question literally. The framework has two primitives:
-a qubit at every lattice site and the cubic site set $Z^3$. The equivalent
-$Cl(3,0)$ local algebra is the audit-stable mathematical reading of the
-per-site qubit, and we retain only those rows that survive direct audit on that
-exact axiom surface.
+scaffolding. We take that question literally. The current framework has four
+named axioms: Lattice, Qubit, Admissibility, and Record. The equivalent
+$Cl(3,0)$ local algebra is the audit-stable mathematical reading of the Qubit
+axiom. Three separately registered primitives supply only a scale reference,
+kinetic-form isotropy, and a pointwise realized-state interface; they do not
+enlarge the four-axiom surface. We retain only those rows that survive direct
+audit on that exact axiom-and-registered-primitive surface.
 
 Ambitious unification programs often fail less because a local mechanism is
 missing than because claim boundaries dissolve: structural theorems, numerical
@@ -67,11 +68,17 @@ lanes, and open bridges are mixed together until it is no longer clear what
 has actually been shown. This paper takes the opposite approach. Every row is
 explicitly retained, bounded, or open.
 
-The framework sentence is therefore simple:
+The framework sentence is therefore explicit:
 
-> We take a qubit at every site of $Z^3$ as the physical axiom surface.
+> We take Lattice, Qubit, Admissibility, and Record as the four named
+> framework axioms.
 > Everything else in this paper is either retained, bounded, or explicitly
 > open.
+
+The equivalent $Cl(3,0)$ presentation is local-algebra language. Scale
+reference, kinetic isotropy, and realized state are separately registered
+approved primitives, not additional axioms; they do not import downstream
+kinetic/CPT, selector, probability, log-determinant, or source/action content.
 
 That sentence is stronger than a regulator interpretation and narrower than a
 blanket statement that every phenomenological sector has closed. The lattice is
@@ -123,11 +130,10 @@ H_0 = 67.4\,\mathrm{km\,s^{-1}\,Mpc^{-1}}. \tag{1}
 $$
 
 These are not inputs to the retained structural core. They are epoch-selection
-data for the bounded cosmology portfolio. By contrast, the electroweak scale is
-not an external datum on the current paper surface. The exact hierarchy theorem
-fixes the source-response structure on the minimal block, and the quoted number
-is the canonical same-surface evaluation on the current plaquette-derived
-normalization chain.
+data for the bounded cosmology portfolio. The quoted electroweak-scale value is
+also not a four-axiom output. It is a conditional evaluation using the T1-d
+determinant-readout quotient, a source-block/record bridge, normalization, the
+current plaquette chain, the scale reference, and a supplied physical carrier.
 
 ### 2.2 What is and is not claimed
 
@@ -419,29 +425,26 @@ observable algebra admits no proper exact quotient, and the physical-lattice,
 no-rooting, and anomaly-forced-chirality boundary keeps the claim narrower than
 a conventional lattice-regulator loophole theorem.*
 
-### 4.4 Exact $I_3=0$, exact CPT, Bell/CHSH support, and emergent Lorentz invariance
+### 4.4 Exact $I_3=0$, Bell/CHSH support, and fixed-action Lorentz diagnostics
 
 Three support theorems remain important and compact:
 
 - exact $I_3=0$ and no third-order interference on the Hilbert surface;
-- exact CPT on the free staggered lattice.
+- the former exact-CPT claim is excluded because its source is
+  `audited_failed`;
 - retained Bell/CHSH support on explicit two-species tensor-product lattice
   systems, where the local measurement algebra is supplied by explicit
   Kogut-Susskind taste operators and periodic Poisson coupling yields
   finite-lattice violations while the $G=0$ null control stays exactly at the
   classical bound.
 
-These are not decorative extras. They certify that the same discrete framework
-supports both the gauge/matter backbone and nontrivial exact consistency
-theorems. On top of that surface, exact cubic symmetry, exact CPT, and exact
-parity force the first Lorentz-violating correction to appear only at
-dimension $6$, with a unique cubic-harmonic $\ell=4$ signature and
-$(E/M_{\mathrm{Pl}})^2$ suppression on the retained hierarchy surface.
-On the same fixed Hamiltonian-lattice surface, the continuum-limit
-1+1D and 3+1D free-scalar two-point functions close as Lorentz scalars, and
-Stone's theorem fixes the per-step unitary propagator
-$U(a)=\exp(-i a H_{\rm lat})$. The separate directional-measure gravity-card
-kernel remains outside that closure.
+The exact $I_3=0$ and Bell/CHSH rows remain support results at their governed
+statuses. The Lorentz calculations are instead unaudited diagnostics on a
+supplied finite-difference kinetic operator and fixed free-scalar
+Hamiltonian-lattice action. They do not derive the action, kinetic operator,
+Planck spacing, CPT/parity protection, or carrier from the four axioms and are
+not publication-usable pending fresh audit. Their checked content is limited
+to fixed-action Taylor, cubic-harmonic, continuum, and Stone identities.
 
 ### 4.5 Strong CP
 
@@ -511,21 +514,23 @@ that bridge.
 
 ### 5.1 Observable principle and the electroweak scale
 
-The electroweak hierarchy lane is retained on the exact minimal $3+1$ block.
-The finite Grassmann Gaussian makes $\log|Z|$ the unique additive CPT-even
-scalar generator on that surface, and the resulting source-response theorem
-fixes the hierarchy kernel.
+The electroweak hierarchy route is not a zero-input four-axiom result. On its
+finite positive/local source surface, the determinant generator is conditional
+on the declared T1-d determinant-only readout quotient, the identification of
+disjoint source blocks with disjoint records, the conventional $c=1$
+normalization, and the separate plaquette/scale/carrier chain.
 
-**Theorem 5 (Observable principle on the minimal block).**
-For a source-deformed lattice Dirac operator $D[J]=D+J$, exact Grassmann
-factorization and scalar additivity force
+**Conditional finite-block identity.**
+For a source-deformed lattice Dirac operator $D[J]=D+J$, Grassmann
+factorization and scalar additivity give, after supplying the T1-d readout
+quotient and normalization,
 
 $$
 W[J] = \log |\det(D+J)| - \log |\det D| \tag{10}
 $$
 
-as the unique additive CPT-even scalar generator, up to normalization and the
-zero-source subtraction.
+as the selected additive generator on that declared readout surface. Record
+alone does not force the determinant quotient or the source-to-record bridge.
 
 On the current plaquette-derived normalization chain, the canonical evaluation
 is
@@ -536,9 +541,10 @@ v = M_{\mathrm{Pl}}\left(\frac{7}{8}\right)^{1/4}\alpha_{LM}^{16}
 $$
 
 which is $+0.0255\%$ relative to the comparator $246.22\,\mathrm{GeV}$. The
-exact theorem is the source-response structure on the minimal block. The quoted
-number is the canonical same-surface evaluation on the live package surface,
-not a fitted datum.
+quoted number is a conditional same-surface evaluation using the T1-d
+determinant readout, source-block/record bridge, normalization, plaquette,
+scale, and carrier inputs; it is not an axiom-only prediction or a fitted
+datum.
 
 ### 5.2 Retained standalone quantitative lanes
 
@@ -763,13 +769,13 @@ than a full nonperturbative electroweak-transition closure.
 The framework is already predictive; the paper should not read as if prediction
 begins only after the remaining open bridge closes.
 
-### 6.1 Retained and promoted quantitative outputs
+### 6.1 Quantitative outputs by current status
 
 The fastest way to read the quantitative package is Table 1.
 
 | Row | Canonical output | Status on current paper surface |
 | --- | --- | --- |
-| Electroweak scale | $v = 246.282818290129\,\mathrm{GeV}$ | exact theorem + canonical same-surface evaluation |
+| Electroweak scale | $v = 246.282818290129\,\mathrm{GeV}$ | open audit target; conditional on the T1-d determinant readout, source/record bridge, normalization, plaquette, scale, and carrier inputs |
 | Strong coupling | $\alpha_s(M_Z)=0.1181$ | retained standalone quantitative lane |
 | Electroweak normalization | $g_1(v)=0.4644$, $g_2(v)=0.6480$ | retained standalone quantitative lane |
 | CKM | $\lambda^2=\alpha_s(v)/2$, $A^2=2/3$, atlas-leading $|V_{ud}|_0=0.973824$, $|V_{us}|_0=0.22727$, $|V_{cb}|=0.04217$, $|V_{ub}|_0=0.003913$, $\phi_s(B_s)=-0.03850\,\mathrm{rad}$, $\phi_s/\sin(2\beta_d)=-0.05165$, CP-product $\alpha_s$ estimator, kaon $\epsilon_K$ CKM factors $(2J_0,-J_0,-5\alpha_s(v)^2J_0/18)$, NLO protected $\bar\gamma=65.905^\circ$ | promoted algebraic package |
@@ -777,8 +783,7 @@ The fastest way to read the quantitative package is Table 1.
 | Higgs sector | $m_H=125.1\,\mathrm{GeV}$ with retention analysis $125.04 \pm 3.17\,\mathrm{GeV}$ | identification-conditioned follow-on lane |
 | Confinement readout | $\sqrt{\sigma}\approx 465\,\mathrm{MeV}$ | bounded quantitative readout on exact structural theorem |
 
-**Table 1.** Main retained and promoted quantitative outputs on the current
-paper surface.
+**Table 1.** Mixed-status quantitative outputs on the current paper surface.
 
 ### 6.2 Bounded secondary predictions and one dual-status corollary already carried by the package
 
@@ -864,8 +869,10 @@ carry the same bounded qualifier there.
 ## 8. Conclusion
 
 The central claim of this paper is no longer speculative. On the retained
-qubit-lattice axiom surface, with `Cl(3,0)` as the equivalent per-site
-local-algebra language, one exact discrete framework already carries a broad
+Lattice, Qubit, Admissibility, and Record axiom surface, with `Cl(3,0)` as the
+equivalent per-site local-algebra language and the separately registered scale
+reference, kinetic-form isotropy, and realized-state interface kept explicit,
+one exact discrete framework already carries a broad
 gravity backbone, gauge and matter structure, nontrivial exact support
 theorems, promoted quantitative outputs, and a bounded but genuine prediction
 surface.
@@ -876,11 +883,13 @@ identification on one chosen canonical textbook target. The gauge and matter
 side is no longer just structural algebra: it includes anomaly-forced $3+1$,
 retained three-generation structure, retained action-surface strong-CP
 closure on the retained Wilson-plus-staggered action surface, exact
-confinement, emergent Lorentz invariance, and a promoted
+confinement, a selected-action cubic-anisotropy diagnostic, and a promoted
 algebraic CKM atlas/axiom package. The quantitative side is no longer just a set of
-promising near-misses: it contains a canonical same-surface electroweak-scale
-evaluation, retained electroweak and strong-coupling lanes, and bounded
-Yukawa/Higgs authority surfaces with named downstream budgets. The package is already
+promising near-misses: it contains an open electroweak-scale evaluation
+conditional on the T1-d determinant readout, source-block/record bridge,
+normalization, plaquette, scale, and carrier inputs; retained electroweak and
+strong-coupling lanes; and bounded Yukawa/Higgs authority surfaces with named
+downstream budgets. The package is already
 predictive beyond retrospective comparison through the atlas-leading $B_s$
 mixing phase, kaon $\epsilon_K$ CKM-bracket factorization, proton lifetime,
 the CKM-only neutron-EDM corollary with bounded continuation, vacuum
@@ -950,14 +959,15 @@ surface while still avoiding any unrestricted all-formulations claim.
 
 ### A.5 Proof sketch for Theorem 5
 
-Exact Grassmann factorization makes partition functions multiplicative under
-independent direct sums. A scalar observable generator must therefore be
-additive, and CPT-even bosonic observables can depend only on the modulus of
-the partition amplitude. Continuity then forces $W[J]=\log|\det(D+J)|-\log|\det D|$.
-Expanding $W[J]$ on the exact minimal block yields the previously isolated
-hierarchy kernel, while the temporal APBC selector gives the $(7/8)^{1/4}$
-factor. The quoted value of $v$ is the canonical same-surface evaluation of
-that exact theorem on the live plaquette chain.
+Given the T1-d determinant-readout quotient, source-block/record bridge, and
+normalization, exact Grassmann factorization makes partition functions
+multiplicative under independent direct sums and the supplied generator is
+additive. On those conditions one obtains
+$W[J]=\log|\det(D+J)|-\log|\det D|$. Expanding this conditional generator on
+the minimal block yields the hierarchy kernel, while the temporal APBC
+selector supplies the $(7/8)^{1/4}$ factor. The quoted value of $v$ additionally
+uses the current plaquette chain, scale reference, and physical carrier; the
+four axioms alone do not force this readout or evaluation.
 
 ## Appendix B. Supplementary Figures
 
@@ -965,8 +975,9 @@ that exact theorem on the live plaquette chain.
 
 ![Extended Data Figure 1. Weak-field support theorems](./figures/extended_data_1_support_theorems.svg)
 
-*Extended Data Figure 1. Weak-field gravity corollaries, exact $I_3=0$, and
-exact CPT as compact support results on the same retained discrete surface.*
+*Extended Data Figure 1. Weak-field gravity corollaries and exact $I_3=0$ as
+compact support results. The former exact-CPT claim is excluded after its
+`audited_failed` verdict.*
 
 ### B.2 Extended Data Figure 2
 
@@ -1051,3 +1062,5 @@ boson,” *JHEP* **1312** (2013) 089.
 
 [15] R. H. Cameron and W. T. Martin, “Transformations of Wiener integrals under
 translations,” *Ann. of Math.* **45** (1944) 386-396.
+
+</details>

@@ -32,12 +32,14 @@ fresh-look requirement.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
 import uuid
 from datetime import datetime, timezone
@@ -59,6 +61,7 @@ AUDIT_DIR = REPO_ROOT / "docs" / "audit"
 sys.path.insert(0, str(AUDIT_DIR / "scripts"))
 import premise_nodes
 import no_go_discipline_gate
+import audit_invocation
 
 LEDGER_PATH = AUDIT_DIR / "data" / "audit_ledger.json"
 QUEUE_PATH = AUDIT_DIR / "data" / "audit_queue.json"
@@ -69,15 +72,14 @@ ISOLATED_BASE = Path("/tmp/codex-audit-isolated")
 LOG_DIR = REPO_ROOT / "logs" / "codex-audit-runs"
 
 # These fields are NOT controlled by the LLM; we set them on the runner side.
-# The model selector prefers the strongest full GPT model published in
-# Codex's local model cache and always pairs it with xhigh reasoning. When
-# Codex refreshes that cache with a newer frontier GPT, the runner adopts it
-# automatically and records the exact family in the ledger.
+# The runner selects the best available full Codex model at xhigh and records
+# the exact model/family. The numeric floor is stable while newer frontier
+# models are adopted automatically, as required by FRESH_LOOK_REQUIREMENTS.
 # Independence is determined PER ROW (see determine_audit_role) because it
 # depends on whether this is a first-pass (typically cross_family vs Claude
 # autopilot authors) or a same-family second-pass (must be fresh_context).
 AUDIT_REASONING_EFFORT = "xhigh"
-MODEL_FALLBACK = "gpt-5.5"
+MODEL_FALLBACK = "gpt-5.6-sol"
 SUPPORTED_AUDIT_MODEL_RE = re.compile(
     r"gpt-(?P<version>\d+(?:\.\d+)*)(?:-sol)?$"
 )
@@ -88,14 +90,37 @@ SUPPORTED_AUDIT_MODEL_RE = re.compile(
 # CODEX_AUDIT_MODEL env var, or a forced env override that points
 # below the floor will all be rejected. Setting this to (5, 5) means
 # only gpt-5.5 and newer are accepted.
-MIN_AUDIT_MODEL_RANK = (5, 5)
+MIN_AUDIT_MODEL_RANK = (5, 6)
 
 # The prompt template promises source visibility, and several current
 # runner-artifact blockers hinge on elided load-bearing functions. Keep the
 # packet bounded, but high enough to include the largest ordinary runners and
 # helpers now used by the audit queue.
-RUNNER_SOURCE_CHAR_LIMIT = 120_000
-HELPER_SOURCE_CHAR_LIMIT = 120_000
+RUNNER_SOURCE_CHAR_LIMIT = 40_000
+HELPER_SOURCE_CHAR_LIMIT = 40_000
+NOTE_BODY_CHAR_LIMIT = 30_000
+AUTHORITY_TOTAL_CHAR_LIMIT = 60_000
+AUTHORITY_PER_NOTE_MAX = 10_000
+AUTHORITY_PER_NOTE_MIN = 2_000
+CLIPPED_EVIDENCE_MARKERS = (
+    "... [packet-clipped ",
+    "... [truncated; runner is ",
+    "... [truncated; helper is ",
+    "[runner stdout clipped; ",
+    "[runner cache excerpt clipped; ",
+)
+
+
+def clip_packet_text(text: str, limit: int, label: str) -> str:
+    """Deterministically retain head/tail evidence within a packet budget."""
+    if len(text) <= limit:
+        return text
+    head = text[: limit // 2]
+    tail = text[-limit // 2 :]
+    return (
+        f"{head}\n\n... [packet-clipped {label}; {len(text)} chars total] ...\n\n"
+        f"{tail}"
+    )
 
 
 def _meets_floor(model: str | None) -> bool:
@@ -205,52 +230,32 @@ def best_cached_codex_model() -> tuple[str | None, str | None]:
 
 
 def resolve_audit_model() -> tuple[str, str, str, list[str]]:
-    """Choose the audit model and return model, family, source, warnings.
-
-    Default behavior is auto-update: follow Codex's local model cache ordering.
-    CODEX_AUDIT_MODEL is treated as a fallback/preference but not allowed to
-    pin the runner below a newer detected best model. CODEX_AUDIT_FORCE_MODEL
-    is the explicit break-glass override and is flagged in the run log.
-    """
+    """Return the best available full audit model and provenance contract."""
     warnings: list[str] = []
     detected, detected_note = best_cached_codex_model()
     configured = os.environ.get("CODEX_AUDIT_MODEL")
     forced = os.environ.get("CODEX_AUDIT_FORCE_MODEL")
 
+    selected = detected
+    source = detected_note or "local model cache"
     if forced:
-        warnings.append(
-            "CODEX_AUDIT_FORCE_MODEL is set; using forced model instead of "
-            "auto-updating from the Codex model cache."
-        )
-        return forced, codex_family_for_model(forced), "forced-env", warnings
-
-    if detected:
-        if configured and configured != detected:
-            if _model_newer_than(configured, detected):
-                warnings.append(
-                    f"CODEX_AUDIT_MODEL={configured!r} is newer than cached "
-                    f"best {detected!r}; using configured model and recording "
-                    "that model family."
-                )
-                return configured, codex_family_for_model(configured), "configured-env-newer", warnings
+        selected = forced
+        source = "CODEX_AUDIT_FORCE_MODEL break-glass override"
+        warnings.append(f"Using explicit break-glass model override {forced!r}.")
+    elif configured:
+        if selected is None or _model_newer_than(configured, selected):
+            selected = configured
+            source = "CODEX_AUDIT_MODEL newer than cached best"
+        elif configured != selected:
             warnings.append(
-                f"CODEX_AUDIT_MODEL={configured!r} is stale relative to "
-                f"detected best {detected!r}; using detected best."
+                f"Ignoring stale CODEX_AUDIT_MODEL={configured!r}; cached best is "
+                f"{selected!r}."
             )
-        return detected, codex_family_for_model(detected), detected_note or "models-cache", warnings
-
-    if configured:
-        warnings.append(
-            f"Using CODEX_AUDIT_MODEL={configured!r} because model cache "
-            f"selection failed: {detected_note}"
-        )
-        return configured, codex_family_for_model(configured), "configured-env", warnings
-
-    warnings.append(
-        f"Using fallback audit model {MODEL_FALLBACK!r}; model cache selection "
-        f"failed: {detected_note}"
-    )
-    return MODEL_FALLBACK, codex_family_for_model(MODEL_FALLBACK), "fallback", warnings
+    if selected is None:
+        selected = MODEL_FALLBACK
+        source = f"fallback after cache discovery failure: {detected_note}"
+        warnings.append(f"Falling back to {MODEL_FALLBACK!r}; cache discovery failed.")
+    return selected, codex_family_for_model(selected), source, warnings
 
 
 # Statuses where this runner SHOULD NOT proceed automatically. Disagreements
@@ -526,6 +531,19 @@ def read_note_body(note_path: str) -> str | None:
     return p.read_text(encoding="utf-8", errors="replace")
 
 
+def prior_claim_scope_for_row(row: dict) -> str | None:
+    scope = row.get("claim_scope")
+    if isinstance(scope, str) and scope.strip():
+        return scope
+    for archived in reversed(row.get("previous_audits") or []):
+        if not isinstance(archived, dict):
+            continue
+        scope = archived.get("claim_scope")
+        if isinstance(scope, str) and scope.strip():
+            return scope
+    return None
+
+
 # Timeout resolution is shared with the precompute helper. It honors
 # `AUDIT_TIMEOUT_SEC = N` declared at the top of the runner, falling
 # back to a small legacy substring map and finally to default_sec.
@@ -584,12 +602,12 @@ def find_cached_runner_output(runner_path: str) -> str | None:
 
 
 def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
-                      use_cache: bool = True) -> str:
-    """Get runner output. Tries the SHA-pinned cache first if
-    use_cache=True; falls back to running the runner live (slow but
-    correct) with a per-runner timeout. The audit lane's pre-commit and
-    CI gates ensure caches stay fresh in normal operation; live fallback
-    only runs when the cache is missing for some reason.
+                      use_cache: bool = False) -> str:
+    """Get runner output, live by default.
+
+    Source-SHA caches do not authenticate mutable note/data/registry inputs,
+    so authority-bearing audit callers must keep ``use_cache=False``. The
+    opt-in cache path remains for non-authoritative diagnostics.
     """
     if not runner_path:
         return ""
@@ -613,7 +631,12 @@ def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
         )
         if res.returncode != 0:
             return f"[runner exit={res.returncode}]\n{res.stdout[-3000:]}\n--- stderr ---\n{res.stderr[-1500:]}"
-        return res.stdout[-6000:]   # cap to keep prompt size sane
+        if len(res.stdout) > 6000:
+            return (
+                f"[runner stdout clipped; {len(res.stdout)} chars total]\n"
+                f"{res.stdout[-6000:]}"
+            )
+        return res.stdout
     except subprocess.TimeoutExpired:
         return f"[runner timed out at {timeout_sec}s — likely needs compute-rerun]"
     except Exception as e:
@@ -622,9 +645,10 @@ def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
 
 def render_prompt(row: dict, ledger_rows: dict[str, dict],
                   template: str, runner_timeout_sec: int,
-                  use_cache: bool = True,
+                  use_cache: bool = False,
                   skip_runner_stdout: bool = False,
-                  evidence_manifest_out: dict[str, dict] | None = None) -> str:
+                  evidence_manifest_out: dict[str, dict] | None = None,
+                  audit_invocation_id: str | None = None) -> str:
     """Substitute the prompt template's variables for one queue row.
 
     If ``skip_runner_stdout`` is True, do NOT invoke the runner subprocess
@@ -642,26 +666,49 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         or ""
     )
 
-    note_body = read_note_body(note_path) or f"[note missing on disk: {note_path}]"
+    full_note_body = read_note_body(note_path) or f"[note missing on disk: {note_path}]"
     no_go_required = no_go_discipline_gate.source_requires_no_go_discipline(
-        note_path, note_body, claim_type_hint
+        note_path, full_note_body, claim_type_hint
     )
+    note_body = clip_packet_text(full_note_body, NOTE_BODY_CHAR_LIMIT, note_path)
 
     # Cited authorities: one-hop deps from the ledger row
     led_row = ledger_rows.get(cid, {})
+    prior_claim_scope = prior_claim_scope_for_row(led_row) or "(none recorded)"
     packet_row = {**led_row, **row, "claim_id": cid}
     evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
         packet_row, ledger_rows, REPO_ROOT
+    )
+    no_go_discipline_gate.set_packet_evidence(
+        evidence_manifest, path=note_path, role="source", text=note_body,
+        invocation_bound_rendered_text=True,
     )
     premise_context = no_go_discipline_gate.render_framework_premise_context(
         evidence_manifest
     )
     deps = led_row.get("deps", [])
+    authority_limit = min(
+        AUTHORITY_PER_NOTE_MAX,
+        max(AUTHORITY_PER_NOTE_MIN, AUTHORITY_TOTAL_CHAR_LIMIT // max(1, len(deps))),
+    )
     cited_blocks = []
     for dep_cid in deps:
         dep_row = ledger_rows.get(dep_cid, {})
         dep_path = dep_row.get("note_path") or ""
-        dep_body = read_note_body(dep_path) or f"[dep note missing: {dep_path}]"
+        dep_body = clip_packet_text(
+            read_note_body(dep_path) or f"[dep note missing: {dep_path}]",
+            authority_limit,
+            dep_path,
+        )
+        no_go_discipline_gate.set_packet_evidence(
+            evidence_manifest,
+            path=dep_path,
+            role="authority",
+            text=dep_body,
+            effective_status=dep_row.get("effective_status"),
+            premise_type=no_go_discipline_gate.premise_type_for_id(REPO_ROOT, dep_cid),
+            invocation_bound_rendered_text=True,
+        )
         eff = dep_row.get("effective_status") or "unaudited"
         ct = dep_row.get("claim_type") or "?"
         accepted = False
@@ -693,12 +740,28 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         # may return COMPUTE_REQUIRED if the missing stdout is load-bearing.
         runner_stdout = "(stdout suppressed by --no-runner)"
     else:
-        runner_stdout = get_runner_stdout(runner_path, runner_timeout_sec, use_cache=use_cache)
+        # Negative authority requires evidence from this audit cycle. A
+        # runner-SHA cache is useful for ordinary review, but it does not bind
+        # transitive inputs and therefore cannot certify N1/N5 execution.
+        runner_stdout = get_runner_stdout(
+            runner_path,
+            runner_timeout_sec,
+            use_cache=(use_cache and not no_go_required),
+        )
     runner_stdout_path = no_go_discipline_gate.runner_stdout_evidence_path(cid)
+    if skip_runner_stdout:
+        runner_stdout_role = "runner_stdout_suppressed"
+    elif no_go_required or not use_cache:
+        runner_stdout_role = "runner_stdout"
+    else:
+        # Conservative provenance: this call may have used the SHA-only cache.
+        # If the model later emits an output-side negative claim, N1/N5 must
+        # reject this surface and the row must be rerun with --no-cache.
+        runner_stdout_role = "runner_stdout_cache_eligible"
     no_go_discipline_gate.set_packet_evidence(
         evidence_manifest,
         path=runner_stdout_path,
-        role="runner_stdout",
+        role=runner_stdout_role,
         text=runner_stdout or "(no stdout captured)",
     )
 
@@ -733,6 +796,7 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
             path=runner_path,
             role="runner",
             text=runner_source or "(no source available)",
+            invocation_bound_rendered_text=True,
         )
 
     # Read each transitive helper script the primary runner imports (via
@@ -758,7 +822,8 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
             )
             helper_sources_blocks.append(helper_block)
             no_go_discipline_gate.set_packet_evidence(
-                evidence_manifest, path=hp, role="helper", text=helper_block
+                evidence_manifest, path=hp, role="helper", text=helper_block,
+                invocation_bound_rendered_text=True,
             )
             continue
         try:
@@ -771,13 +836,10 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
                     f"... [truncated; helper is {len(hsrc)} chars total] ...\n\n"
                     f"{tail}"
                 )
-            if skip_runner_stdout:
-                hcache = "(helper cache suppressed by --no-runner)"
-            else:
-                hcache = find_cached_runner_output(hp)
-                if hcache is None:
-                    cache_name = rc.cache_path_for(hp).relative_to(REPO_ROOT)
-                    hcache = f"[helper runner cache missing or stale: {cache_name}]"
+            hcache = (
+                "(helper cache is not audit authority; current helper source "
+                "is inspected and the primary runner is executed live)"
+            )
             helper_block = (
                 f"=== BEGIN HELPER RUNNER: {hp} ===\n"
                 f"{hsrc}\n"
@@ -788,7 +850,8 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
             )
             helper_sources_blocks.append(helper_block)
             no_go_discipline_gate.set_packet_evidence(
-                evidence_manifest, path=hp, role="helper", text=helper_block
+                evidence_manifest, path=hp, role="helper", text=helper_block,
+                invocation_bound_rendered_text=True,
             )
         except OSError as e:
             helper_block = (
@@ -798,7 +861,8 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
             )
             helper_sources_blocks.append(helper_block)
             no_go_discipline_gate.set_packet_evidence(
-                evidence_manifest, path=hp, role="helper", text=helper_block
+                evidence_manifest, path=hp, role="helper", text=helper_block,
+                invocation_bound_rendered_text=True,
             )
     helper_runner_sources = (
         "\n\n".join(helper_sources_blocks)
@@ -823,10 +887,12 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     # context remain raw evidence instead of being expanded as another field.
     replacements = {
         "{{CLAIM_ID}}": cid,
+        "{{AUDIT_INVOCATION_ID}}": audit_invocation_id or "",
         "{{NOTE_PATH}}": note_path,
         "{{CLAIM_TYPE_HINT}}": claim_type_hint or "(none)",
         "{{RUNNER_PATH}}": runner_path or "(none)",
         "{{NO_GO_DISCIPLINE_REQUIRED}}": "true" if no_go_required else "false",
+        "{{PRIOR_CLAIM_SCOPE}}": prior_claim_scope,
         "{{NO_GO_EVIDENCE_MANIFEST}}": evidence_manifest_text,
         "{{NOTE_BODY}}": note_body,
         "{{RUNNER_STDOUT}}": runner_stdout or "(no stdout captured)",
@@ -934,6 +1000,8 @@ AUDIT_DATA_FILES = [
     "docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md",
     "docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md",
     "docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md",
+    "docs/publication/ci3_z3/ARXIV_DRAFT_EFFECTIVE_STATUS.md",
+    "docs/repo/FRONT_DOOR_STATUS.md",
 ]
 
 
@@ -1031,14 +1099,16 @@ def parse_verdict_json(reply: str) -> dict | None:
         reply = reply.split("\ntokens used", 1)[0].rstrip()
     # Try direct parse first
     try:
-        return json.loads(reply)
+        parsed = json.loads(reply)
+        return parsed if isinstance(parsed, dict) else None
     except json.JSONDecodeError:
         pass
     # Strip markdown fences if present
     if reply.startswith("```"):
         stripped = reply.strip("`").lstrip("json").strip()
         try:
-            return json.loads(stripped)
+            parsed = json.loads(stripped)
+            return parsed if isinstance(parsed, dict) else None
         except json.JSONDecodeError:
             pass
 
@@ -1053,7 +1123,10 @@ def parse_verdict_json(reply: str) -> dict | None:
             return None
         candidate = reply[first_open : last_close + 1]
         try:
-            return json.loads(candidate)
+            parsed = json.loads(candidate)
+            if isinstance(parsed, dict):
+                return parsed
+            cursor = first_open + 1
         except json.JSONDecodeError:
             cursor = first_open + 1
 
@@ -1065,13 +1138,39 @@ def validate_verdict(
     source_requires_no_go: bool = False,
     evidence_manifest: dict[str, dict] | None = None,
     prior_claim_scope: str | None = None,
+    expected_invocation_id: str | None = None,
 ) -> str | None:
     """Return an error string if the verdict is unusable, else None."""
+    if not isinstance(blob, dict):
+        return "verdict must be a JSON object"
     missing = REQUIRED_VERDICT_FIELDS - set(blob)
     if missing:
         return f"missing fields: {sorted(missing)}"
     if blob.get("claim_id") != expected_cid:
         return f"claim_id mismatch: expected {expected_cid!r}, got {blob.get('claim_id')!r}"
+    invocation_error = audit_invocation.validation_error(
+        blob.get("audit_invocation_id"), required=expected_invocation_id is not None
+    )
+    if invocation_error:
+        return invocation_error
+    if expected_invocation_id is not None and blob.get("audit_invocation_id") != expected_invocation_id:
+        return "audit_invocation_id is absent or does not match the prompt-bound invocation"
+    if blob.get("verdict") == "audited_clean" and evidence_manifest is not None:
+        clipped_paths = sorted(
+            path
+            for path, entry in evidence_manifest.items()
+            if any(
+                marker in str(entry.get("text") or "")
+                for marker in CLIPPED_EVIDENCE_MARKERS
+            )
+            and set(entry.get("roles") or [])
+            & {"source", "authority", "runner", "helper", "runner_stdout", "runner_stdout_cache_eligible"}
+        )
+        if clipped_paths:
+            return (
+                "audited_clean requires complete load-bearing packet surfaces; "
+                f"clipped evidence: {clipped_paths}"
+            )
     no_go_error = no_go_discipline_gate.validate_no_go_discipline(
         blob,
         source_required=source_requires_no_go,
@@ -1185,19 +1284,49 @@ def validation_repair_eligible(
     )
 
 
-def apply_one(verdict_blob: dict, propagate: bool) -> tuple[bool, str]:
+def apply_one(
+    verdict_blob: dict,
+    propagate: bool,
+    evidence_manifest: dict[str, dict] | None = None,
+) -> tuple[bool, str]:
     """Pipe a verdict blob through apply_audit.py via stdin."""
+    verdict_blob = dict(verdict_blob)
+    invocation_id = verdict_blob.get("audit_invocation_id")
+    invocation_error = audit_invocation.validation_error(invocation_id, required=True)
+    if invocation_error:
+        return False, invocation_error
+    verdict_blob["audit_invocation_id"] = invocation_id
     cmd = [sys.executable, str(APPLY_AUDIT_SCRIPT)]
     if not propagate:
         cmd.append("--no-propagate")
-    proc = subprocess.run(
-        cmd,
-        input=json.dumps(verdict_blob),
-        text=True,
-        capture_output=True,
-        cwd=REPO_ROOT,
-    )
-    return proc.returncode == 0, (proc.stdout + proc.stderr).strip()
+    with tempfile.TemporaryDirectory(prefix="codex-audit-evidence-") as tmp:
+        env = dict(os.environ)
+        if evidence_manifest is not None:
+            manifest_path = Path(tmp) / "manifest.json"
+            manifest_path.write_text(json.dumps({
+                "schema": "codex_audit_trusted_manifest_v1",
+                "claim_id": verdict_blob.get("claim_id"),
+                "audit_invocation_id": invocation_id,
+                "issued_at": datetime.now(timezone.utc).isoformat(),
+                "entries": evidence_manifest,
+            }, sort_keys=True), encoding="utf-8")
+            env["CODEX_AUDIT_TRUSTED_EVIDENCE_MANIFEST"] = str(manifest_path)
+        proc = subprocess.run(
+            cmd,
+            input=json.dumps(verdict_blob),
+            text=True,
+            capture_output=True,
+            cwd=REPO_ROOT,
+            env=env,
+        )
+    output = (proc.stdout + proc.stderr).strip()
+    if proc.returncode == 4:
+        return False, (
+            "AUDIT_APPLIED_PROPAGATION_FAILED: the ledger transition is "
+            "already committed; do not reapply this verdict. Repair/rerun "
+            f"propagation only.\n{output}"
+        )
+    return proc.returncode == 0, output
 
 
 def main() -> int:
@@ -1284,7 +1413,7 @@ def main() -> int:
                         "unaudited rows.")
     p.add_argument("--allow-low-model", action="store_true",
                    help="Permit running with an audit model below the "
-                        "MIN_AUDIT_MODEL_RANK floor (currently gpt-5.5). "
+                        "MIN_AUDIT_MODEL_RANK floor (currently gpt-5.6). "
                         "Break-glass for testing only — verdicts produced "
                         "this way will be tagged with the actual sub-floor "
                         "family and won't satisfy the standard "
@@ -1294,24 +1423,22 @@ def main() -> int:
     if not 0 <= args.validation_repair_attempts <= 3:
         print("REFUSING: --validation-repair-attempts must be between 0 and 3.")
         return 2
+    if args.no_propagate and args.push_mode != "none":
+        p.error("--no-propagate is allowed only with --push-mode none")
 
     # Reasoning-effort policy: per repo audit-lane decision (2026-05-04),
     # ALL audits run at xhigh. We do not expose a knob to lower it.
     reasoning_effort = AUDIT_REASONING_EFFORT
     audit_model, auditor_family, model_source, model_warnings = resolve_audit_model()
 
-    # Model-quality floor: the audit lane refuses to run on anything
-    # below MIN_AUDIT_MODEL_RANK (currently gpt-5.5). A stale model
-    # cache, a misconfigured CODEX_AUDIT_MODEL, or a forced env
-    # override that resolves to gpt-5 / gpt-4 / etc. is a quality
-    # regression that silently degrades verdicts. Refuse to start.
+    # Defense in depth beneath best-available model selection.
     if not _meets_floor(audit_model) and not args.allow_low_model:
         floor_str = ".".join(str(x) for x in MIN_AUDIT_MODEL_RANK)
         print(
             f"\nREFUSING to run: resolved audit model {audit_model!r} "
             f"is below the MIN_AUDIT_MODEL_RANK floor (gpt-{floor_str}+).\n"
             f"  Source: {model_source}\n"
-            f"  Set CODEX_AUDIT_MODEL to a 5.5+ slug, refresh the local\n"
+            f"  Refresh Codex access to a full gpt-{floor_str}+ model at xhigh.\n"
             f"  models_cache.json, or pass --allow-low-model for testing only.\n"
             f"  Existing audits at sub-floor model versions will be re-audited\n"
             f"  on the next batch once this is resolved."
@@ -1440,6 +1567,7 @@ def main() -> int:
     failed = 0
     skipped = 0
     push_failed = False
+    propagation_failed = False
     for i, row in enumerate(targets, 1):
         cid = row["claim_id"]
         print(f"\n[{i}/{len(targets)}] {cid}")
@@ -1496,19 +1624,26 @@ def main() -> int:
                         }) + "\n")
                     continue
 
-            use_cache = not args.no_cache_runner
+            # Cache files remain readiness/performance artifacts, but their
+            # identity is source-SHA-only and cannot authenticate mutable data
+            # inputs. Authority-bearing audit prompts therefore execute the
+            # current primary runner rather than consuming cached stdout.
+            use_cache = False
             exact_evidence_manifest: dict[str, dict] = {}
+            audit_invocation_id = uuid.uuid4().hex
             if args.no_runner:
                 # Skip the runner subprocess + cache, but keep Section 3a
                 # (runner source code) so the auditor can still inspect what
                 # the runner does. Pass timeout=0 since it is unused.
                 prompt = render_prompt(row, ledger_rows, template, 0,
                                        use_cache=False, skip_runner_stdout=True,
-                                       evidence_manifest_out=exact_evidence_manifest)
+                                       evidence_manifest_out=exact_evidence_manifest,
+                                       audit_invocation_id=audit_invocation_id)
             else:
                 prompt = render_prompt(row, ledger_rows, template, args.runner_timeout_sec,
                                        use_cache=use_cache,
-                                       evidence_manifest_out=exact_evidence_manifest)
+                                       evidence_manifest_out=exact_evidence_manifest,
+                                       audit_invocation_id=audit_invocation_id)
 
             if args.dry_run:
                 print(f"  [dry-run] prompt size: {len(prompt)} chars")
@@ -1588,7 +1723,8 @@ def main() -> int:
                 cid,
                 source_requires_no_go=source_requires_no_go,
                 evidence_manifest=exact_evidence_manifest,
-                prior_claim_scope=full_led_row.get("claim_scope"),
+                prior_claim_scope=prior_claim_scope_for_row(full_led_row),
+                expected_invocation_id=audit_invocation_id,
             )
             initial_validation_error = err
             initial_rejected_blob = blob
@@ -1645,7 +1781,8 @@ def main() -> int:
                             cid,
                             source_requires_no_go=source_requires_no_go,
                             evidence_manifest=exact_evidence_manifest,
-                            prior_claim_scope=full_led_row.get("claim_scope"),
+                            prior_claim_scope=prior_claim_scope_for_row(full_led_row),
+                            expected_invocation_id=audit_invocation_id,
                         )
                     with run_log.open("a", encoding="utf-8") as f:
                         f.write(json.dumps({
@@ -1684,9 +1821,11 @@ def main() -> int:
                 auditor_model=audit_model,
                 auditor_reasoning_effort=reasoning_effort,
             )
-            if blob.get("no_go_discipline") is not None:
-                full_blob["_no_go_evidence_manifest"] = exact_evidence_manifest
-            ok, msg = apply_one(full_blob, propagate=not args.no_propagate)
+            ok, msg = apply_one(
+                full_blob,
+                propagate=not args.no_propagate,
+                evidence_manifest=exact_evidence_manifest,
+            )
             if ok:
                 print(f"  OK ({elapsed:.1f}s)  verdict={blob.get('verdict')}  "
                       f"class={blob.get('load_bearing_step_class')}  "
@@ -1721,6 +1860,18 @@ def main() -> int:
                                 "claim_id": cid, "phase": "push_failed",
                                 "msg": push_msg
                             }) + "\n")
+            elif msg.startswith("AUDIT_APPLIED_PROPAGATION_FAILED:"):
+                print(f"  FAIL propagation after applied verdict: {msg[:500]}")
+                applied += 1
+                failed += 1
+                propagation_failed = True
+                with run_log.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps({
+                        "claim_id": cid,
+                        "phase": "applied_propagation_failed",
+                        "verdict": blob.get("verdict"),
+                        "message": msg,
+                    }) + "\n")
             else:
                 print(f"  FAIL apply_audit: {msg[:300]}")
                 failed += 1
@@ -1736,7 +1887,12 @@ def main() -> int:
                 shutil.rmtree(iso, ignore_errors=True)
 
     # Batch push mode: one commit covering the whole run
-    if args.push_mode == "batch" and applied > 0 and not args.dry_run:
+    if (
+        args.push_mode == "batch"
+        and applied > 0
+        and not args.dry_run
+        and not propagation_failed
+    ):
         crit = f" {args.criticality}" if args.criticality else ""
         msg = (
             f"audit: codex-cli batch {applied} verdict(s){crit} "
@@ -1749,6 +1905,11 @@ def main() -> int:
             print(f"\nBatch push FAILED: {push_msg}")
             print("Local state has the verdicts; run `git push origin main` manually after resolving.")
             push_failed = True
+    elif propagation_failed:
+        print(
+            "\nBatch push suppressed: at least one verdict was applied before "
+            "propagation failed. Rerun the pipeline; do not reapply the verdict."
+        )
 
     print(f"\nDone. applied={applied} failed={failed} skipped={skipped}  "
           f"(of {len(targets)} attempted)")

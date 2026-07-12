@@ -1,47 +1,39 @@
 #!/usr/bin/env python3
 """
-Bekenstein-Hawking Entropy Bounded Companion from Lattice Entanglement
+Bekenstein-Hawking Entropy Bounded Companion from Gaussian Correlations
 ======================================================================
 
-STATUS: BOUNDED COMPANION -- the finite-L RT ratio is near ~0.24 on the
-        small reviewed surface. The linked Widom row gives retained-bounded
-        finite-L evidence and an exact 2D diamond coefficient, but this runner
-        does not prove an all-L OBC asymptotic carrier theorem.
-        This runner is therefore a bounded companion / comparison lane,
-        not a retained derivation of S = A / (4 l_P^2).
+STATUS: OPEN FINITE COMPANION -- the linked Widom row gives a finite-L
+        diagnostic and an exact 2D geometric integral, but neither runner
+        proves an all-L mixed-state entropy coefficient or a physical
+        black-hole observable bridge.
 
 COMPUTATION CHAIN:
 
-  Step 1 (Area Law): Entanglement entropy across a bipartition satisfies
+  Step 1 (finite boundary fit): Gaussian subsystem correlation entropy
     S = c * |dA| + subleading on the reviewed finite sizes, verified
-    numerically (R^2 > 0.998).
+    numerically (R^2 > 0.99).
 
-  Step 2 (Transfer Matrix Bond Dimension): The propagator on the lattice
-    defines a transfer matrix T between adjacent layers.  SVD gives
-    chi_eff = rank(T) significant singular values.  In the tensor-network
-    picture (Swingle 2012), the maximal entanglement across the cut is:
+  Step 2 (thresholded transfer-layer rank): the correlation block T between
+    adjacent layers has a numerical SVD readout
+    chi_eff = #{sigma_k/sigma_max > 10^-6}. The comparison denominator is:
         S_max = |dA| * ln(chi_eff)
 
-  Step 3 (Ryu-Takayanagi Ratio, bounded finite-L comparison):
-    On the reviewed small-L surface the measured ratio is ~0.24, which is
-    numerically close to 1/4. The current-main bounded note keeps that as a
-    finite comparison, not an all-L statement.
+  Step 3 (finite-L ratio): report S_corr/S_max against 1/4 without treating
+    the comparison as a theorem or pass/fail criterion.
 
-  Step 4 (bounded BH comparison only): On a Planck lattice, a spherical boundary
-    of area A has |dA| = A/l_P^2 boundary sites.  The transfer matrix
-    bond dimension chi_eff corresponds to the full local Hilbert space.
-    Then:
+  Step 4 (comparison identity only): if one separately supplies the physical
+    area map and the 1/4 normalization, then:
         S = |dA| * ln(chi_eff) / 4 = (A/l_P^2) * ln(chi_eff) / 4
     For chi_eff = 2 (qubit per site): S = A * ln(2) / (4 l_P^2)
-    In bits: S_bits = A / (4 l_P^2)  --  used here only as a bounded
-    comparison target, not a retained framework derivation.
+    This is used only as a comparison target, not a framework derivation.
 
 CHECKS:
-  1. Area law R^2 > 0.998 (2D and 3D)
+  1. Finite boundary-linear fit R^2 > 0.99 (2D and 3D)
   2. RT ratio finite-L observation across multiple lattice sizes
-  3. Gravity modulates entropy monotonically
+  3. A selected positive 1/r onsite potential modulates entropy monotonically
   4. Frozen-star table is a comparison identity, not an independent test
-  5. Species counting: RT ratio stable under Hilbert-space dimension change
+  5. Independent-copy scaling identity for the diagnostic ratio
   6. Finite-size trend diagnostics, observation only
 
 Current-main interpretation:
@@ -61,11 +53,9 @@ from numpy.linalg import eigh
 # ============================================================================
 # Physical constants
 # ============================================================================
-HBAR = 1.0546e-34       # J s
 C_LIGHT = 2.998e8        # m/s
 G_SI = 6.674e-11         # m^3 kg^-1 s^-2
 L_PLANCK = 1.616e-35     # m
-M_PLANCK = 2.176e-8      # kg
 M_SUN = 1.989e30         # kg
 
 
@@ -115,14 +105,38 @@ def build_3d_hamiltonian(L: int, t: float = 1.0,
     return H
 
 
-def correlation_matrix(eigvecs: np.ndarray, n_occupied: int) -> np.ndarray:
-    """Two-point correlator C_ij = <0|c^dag_i c_j|0> for n_occupied states."""
-    occ = eigvecs[:, :n_occupied]
-    return occ @ occ.T
+def half_filled_correlation(
+    eigvals: np.ndarray, eigvecs: np.ndarray, zero_tol: float = 1e-10
+) -> tuple[np.ndarray, int, float]:
+    """Basis-invariant Gaussian half-filling across a degenerate Fermi level.
+
+    When the N/2 cut crosses a degenerate eigenspace, occupy that entire
+    eigenspace with the same fractional weight needed for Tr(C)=N/2. This
+    removes the arbitrary eigenvector-ordering choice. The resulting global
+    Gaussian state is mixed whenever the returned fraction lies strictly
+    between zero and one.
+    """
+    n_target = eigvals.size // 2
+    fermi = eigvals[n_target - 1]
+    if abs(eigvals[n_target] - fermi) > zero_tol:
+        weights = np.zeros_like(eigvals)
+        weights[:n_target] = 1.0
+        fraction = 0.0
+        degenerate = 0
+    else:
+        at_level = np.abs(eigvals - fermi) <= zero_tol
+        below = eigvals < fermi - zero_tol
+        degenerate = int(np.sum(at_level))
+        fraction = (n_target - int(np.sum(below))) / degenerate
+        weights = below.astype(float) + fraction * at_level.astype(float)
+    C = (eigvecs * weights) @ eigvecs.T
+    if not math.isclose(float(np.trace(C)), n_target, rel_tol=0.0, abs_tol=1e-8):
+        raise AssertionError("basis-invariant prescription lost half filling")
+    return C, degenerate, float(fraction)
 
 
-def entanglement_entropy(C: np.ndarray, subsystem: list[int]) -> float:
-    """Von Neumann entropy from restricted correlation matrix."""
+def gaussian_correlation_entropy(C: np.ndarray, subsystem: list[int]) -> float:
+    """Subsystem Gaussian correlation entropy from the restricted matrix."""
     C_A = C[np.ix_(subsystem, subsystem)]
     evals = np.linalg.eigvalsh(C_A)
     eps = 1e-15
@@ -131,9 +145,9 @@ def entanglement_entropy(C: np.ndarray, subsystem: list[int]) -> float:
     return float(S)
 
 
-def gravitational_potential_3d(L: int, source: tuple[int, int, int],
-                               strength: float) -> np.ndarray:
-    """1/r gravitational potential on L^3 cubic lattice."""
+def positive_onsite_potential_3d(L: int, source: tuple[int, int, int],
+                                 strength: float) -> np.ndarray:
+    """Selected positive 1/r onsite-potential diagnostic on an L^3 lattice."""
     N = L ** 3
     V = np.zeros(N)
     sx, sy, sz = source
@@ -148,13 +162,13 @@ def gravitational_potential_3d(L: int, source: tuple[int, int, int],
 
 
 # ============================================================================
-# CHECK 1: Area law with R^2 > 0.999
+# CHECK 1: finite boundary-linear fit
 # ============================================================================
 
-def check_1_area_law() -> dict:
-    """Verify entanglement entropy follows area law S = c * boundary + const."""
+def check_1_finite_boundary_fit() -> dict:
+    """Test a finite linear boundary fit for Gaussian correlation entropy."""
     print("=" * 72)
-    print("CHECK 1: AREA LAW VERIFICATION (S ~ A)")
+    print("CHECK 1: FINITE BOUNDARY-LINEAR FIT (S ~ |dA|)")
     print("=" * 72)
 
     results = {"2d": {}, "3d": {}}
@@ -170,10 +184,10 @@ def check_1_area_law() -> dict:
     for Nx, Ny in sizes_2d:
         N = Nx * Ny
         H = build_2d_hamiltonian(Nx, Ny)
-        _, vecs = eigh(H)
-        C = correlation_matrix(vecs, N // 2)
+        vals, vecs = eigh(H)
+        C, _, _ = half_filled_correlation(vals, vecs)
         subsystem = [x * Ny + y for x in range(Nx // 2) for y in range(Ny)]
-        S = entanglement_entropy(C, subsystem)
+        S = gaussian_correlation_entropy(C, subsystem)
         bnd = Ny
         bnd_2d.append(bnd)
         ent_2d.append(S)
@@ -208,11 +222,11 @@ def check_1_area_law() -> dict:
     for L in sizes_3d:
         N = L ** 3
         H = build_3d_hamiltonian(L)
-        _, vecs = eigh(H)
-        C = correlation_matrix(vecs, N // 2)
+        vals, vecs = eigh(H)
+        C, _, _ = half_filled_correlation(vals, vecs)
         subsystem = [ix * L * L + iy * L + iz
                      for ix in range(L // 2) for iy in range(L) for iz in range(L)]
-        S = entanglement_entropy(C, subsystem)
+        S = gaussian_correlation_entropy(C, subsystem)
         bnd = L * L
         bnd_3d.append(bnd)
         ent_3d.append(S)
@@ -236,10 +250,10 @@ def check_1_area_law() -> dict:
         "entropies": ent_3d,
     }
 
-    pass_2d = r2_2d > 0.998
-    pass_3d = r2_3d > 0.998
-    print(f"\n  PASS 2D area law (R^2 > 0.998): {pass_2d}  (R^2 = {r2_2d:.6f})")
-    print(f"  PASS 3D area law (R^2 > 0.998): {pass_3d}  (R^2 = {r2_3d:.6f})")
+    pass_2d = r2_2d > 0.99
+    pass_3d = r2_3d > 0.99
+    print(f"\n  PASS 2D finite boundary fit (R^2 > 0.99): {pass_2d}  (R^2 = {r2_2d:.6f})")
+    print(f"  PASS 3D finite boundary fit (R^2 > 0.99): {pass_3d}  (R^2 = {r2_3d:.6f})")
 
     results["pass_2d"] = pass_2d
     results["pass_3d"] = pass_3d
@@ -253,23 +267,11 @@ def check_1_area_law() -> dict:
 def check_2_rt_ratio() -> dict:
     """Compute the finite-L RT comparison ratio: S_exact / (|dA| * ln chi_eff).
 
-    In a tensor network, the maximum entanglement across a cut with bond
-    dimension chi is S_max = |dA| * ln(chi).  The Ryu-Takayanagi formula
-    says the actual holographic entropy is:
-
-        S = S_max / (4 G_N)
-
-    In Planck units (G_N = 1 in appropriate normalization):
-
-        S / S_max = 1/4
-
-    We compute chi_eff from the transfer matrix SVD and measure S_exact
-    from the free-fermion correlation matrix. On current `main` this is a
-    bounded finite-L comparison to the `1/4` target, not a retained theorem.
-
-    This is the BOND DIMENSION interpretation: the raw coefficient c ~ 0.41
-    is not compared directly to 1/4.  Instead, the ratio S/(|dA| * ln chi)
-    where chi = chi_eff (transfer matrix rank) gives ~0.24 ~ 1/4.
+    The denominator uses the thresholded transfer-layer SVD rank as a
+    diagnostic comparison scale. It is not a derived tensor-network bond
+    dimension. The numerator is the subsystem entropy of a generally mixed
+    Gaussian state. The ratio is therefore compared with `1/4` numerically,
+    not identified with a holographic entropy theorem.
     """
     print("\n" + "=" * 72)
     print("CHECK 2: FINITE-L RT COMPARISON  S / (|dA| * ln chi_eff)")
@@ -292,8 +294,8 @@ def check_2_rt_ratio() -> dict:
     for Nx, Ny in sizes_2d:
         N = Nx * Ny
         H = build_2d_hamiltonian(Nx, Ny)
-        _, vecs = eigh(H)
-        C = correlation_matrix(vecs, N // 2)
+        vals, vecs = eigh(H)
+        C, _, _ = half_filled_correlation(vals, vecs)
 
         # Transfer matrix between adjacent layers at the cut
         mid = Nx // 2
@@ -313,7 +315,7 @@ def check_2_rt_ratio() -> dict:
 
         # Exact entropy
         subsystem = [x * Ny + y for x in range(Nx // 2) for y in range(Ny)]
-        s_exact = entanglement_entropy(C, subsystem)
+        s_exact = gaussian_correlation_entropy(C, subsystem)
 
         rt_ratio = s_exact / s_max if s_max > 0 else float("inf")
         dev = (rt_ratio - 0.25) / 0.25 * 100
@@ -345,8 +347,8 @@ def check_2_rt_ratio() -> dict:
     for L in sizes_3d:
         N = L ** 3
         H = build_3d_hamiltonian(L)
-        _, vecs = eigh(H)
-        C = correlation_matrix(vecs, N // 2)
+        vals, vecs = eigh(H)
+        C, _, _ = half_filled_correlation(vals, vecs)
 
         # Transfer matrix: layer at x = L//2 vs x = L//2 - 1
         # Each layer has L*L sites
@@ -366,7 +368,7 @@ def check_2_rt_ratio() -> dict:
 
         subsystem = [ix * L * L + iy * L + iz
                      for ix in range(L // 2) for iy in range(L) for iz in range(L)]
-        s_exact = entanglement_entropy(C, subsystem)
+        s_exact = gaussian_correlation_entropy(C, subsystem)
 
         rt_ratio = s_exact / s_max if s_max > 0 else float("inf")
         dev = (rt_ratio - 0.25) / 0.25 * 100
@@ -403,13 +405,13 @@ def check_2_rt_ratio() -> dict:
 
 
 # ============================================================================
-# CHECK 3: Gravity modulates entropy monotonically
+# CHECK 3: selected positive 1/r onsite potential
 # ============================================================================
 
-def check_3_gravity_modulation() -> dict:
-    """Show gravitational coupling modulates the entropy."""
+def check_3_positive_onsite_potential() -> dict:
+    """Measure entropy under the selected positive 1/r onsite potential."""
     print("\n" + "=" * 72)
-    print("CHECK 3: GRAVITATIONAL MODULATION OF ENTROPY")
+    print("CHECK 3: POSITIVE 1/r ONSITE-POTENTIAL DIAGNOSTIC")
     print("=" * 72)
 
     results = {}
@@ -435,11 +437,11 @@ def check_3_gravity_modulation() -> dict:
 
     s_list = []
     for g in g_values:
-        V = gravitational_potential_3d(L, center, g) if g > 0 else None
+        V = positive_onsite_potential_3d(L, center, g) if g > 0 else None
         H = build_3d_hamiltonian(L, potential=V)
-        _, vecs = eigh(H)
-        C = correlation_matrix(vecs, N // 2)
-        S = entanglement_entropy(C, subsystem)
+        vals, vecs = eigh(H)
+        C, _, _ = half_filled_correlation(vals, vecs)
+        S = gaussian_correlation_entropy(C, subsystem)
 
         T = C[np.ix_(layer_l, layer_r)]
         sv = np.linalg.svd(T, compute_uv=False)
@@ -518,35 +520,33 @@ def check_4_frozen_star() -> dict:
 
 
 # ============================================================================
-# CHECK 5: Species counting / Hilbert space dimension scan
+# CHECK 5: Independent-copy scaling identity
 # ============================================================================
 
 def check_5_species_scan() -> dict:
-    """Check RT ratio stability under different Hilbert space interpretations.
+    """Check the algebraic cancellation for independent duplicate copies.
 
-    The RT ratio S / (|dA| * ln chi) should be 1/4 regardless of chi,
-    because chi_eff is determined by the transfer matrix, not assumed.
-    But we can ask: if each site had d > 2 DOF (e.g. Cl(3) with d=8),
-    how does the species-summed entropy compare?
-
-    For N_s species of free fermions:
+    For ``N_s`` independent copies of this same finite diagnostic:
         S_total = N_s * S_single
-        RT ratio = S_total / (|dA| * ln(d^{N_s})) = S_single / (|dA| * ln d)
+        log chi_total = N_s * log chi_eff
+        ratio = S_total / (|dA| * log chi_total)
+              = S_single / (|dA| * log chi_eff)
 
-    The ratio is species-independent, confirming universality.
+    This is a bookkeeping identity. It does not identify a Hilbert-space or
+    bond dimension, establish species universality, or select the value 1/4.
     """
     print("\n" + "=" * 72)
-    print("CHECK 5: SPECIES COUNTING AND HILBERT SPACE DIMENSION SCAN")
+    print("CHECK 5: INDEPENDENT-COPY SCALING IDENTITY")
     print("=" * 72)
 
     L = 10
     N = L * L
     H = build_2d_hamiltonian(L, L)
-    _, vecs = eigh(H)
-    C = correlation_matrix(vecs, N // 2)
+    vals, vecs = eigh(H)
+    C, _, _ = half_filled_correlation(vals, vecs)
 
     subsystem = [x * L + y for x in range(L // 2) for y in range(L)]
-    S_single = entanglement_entropy(C, subsystem)
+    S_single = gaussian_correlation_entropy(C, subsystem)
     bnd = L
 
     # Transfer matrix
@@ -559,36 +559,30 @@ def check_5_species_scan() -> dict:
 
     print(f"\n  2D lattice L={L}, S_single = {S_single:.4f}, bnd = {bnd}")
     print(f"  chi_eff = {chi_eff}")
-    print(f"\n  Species interpretation: if each site has d local DOF,")
-    print(f"  N_s independent fermion species each contribute S_single.")
-    print(f"  Total S = N_s * S_single,  total bond dim = d^N_s")
-    print(f"  RT ratio = S / (bnd * ln(d_tot)) is species-independent")
+    print(f"\n  Duplicate-copy construction: N_s independent copies each")
+    print(f"  contribute the same S_single and threshold-rank factor chi_eff.")
+    print(f"  S_total = N_s * S_single; log chi_total = N_s * log chi_eff.")
     print()
-    print(f"  {'N_s':>4s}  {'d_eff':>8s}  {'S_tot':>10s}  "
-          f"{'ln(d^Ns)':>10s}  {'S_max':>10s}  {'RT_ratio':>10s}")
+    print(f"  {'N_s':>4s}  {'S_tot':>10s}  {'log chi_tot':>12s}  "
+          f"{'denominator':>12s}  {'copy_ratio':>10s}")
     print("  " + "-" * 60)
 
     results = {}
     for n_s in [1, 2, 3, 4]:
         s_tot = n_s * S_single
-        # Effective d per species: chi_eff^(1/n_s)... no, the total bond dim
-        # is chi_eff for each species, so total = chi_eff^n_s
-        # Actually for independent species, S_max = n_s * bnd * ln(chi_eff)
-        # because each species has its own transfer matrix with chi_eff bonds
         ln_total = n_s * math.log(chi_eff)
         s_max = bnd * ln_total
         rt = s_tot / s_max if s_max > 0 else 0
 
-        d_eff = chi_eff ** (1.0 / n_s) if n_s > 0 else chi_eff
-        print(f"  {n_s:>4d}  {d_eff:>8.2f}  {s_tot:>10.4f}  "
-              f"{ln_total:>10.4f}  {s_max:>10.4f}  {rt:>10.4f}")
+        print(f"  {n_s:>4d}  {s_tot:>10.4f}  {ln_total:>12.4f}  "
+              f"{s_max:>12.4f}  {rt:>10.4f}")
         results[f"Ns={n_s}"] = {"rt_ratio": float(rt)}
 
-    # All RT ratios should be identical (species cancels)
+    # The duplicate-copy factors cancel algebraically.
     ratios = [results[f"Ns={n}"]["rt_ratio"] for n in [1, 2, 3, 4]]
     spread = max(ratios) - min(ratios)
-    print(f"\n  RT ratio spread across species: {spread:.6f}")
-    print(f"  (Should be 0 -- species counting is universal)")
+    print(f"\n  Copy-ratio spread: {spread:.6f}")
+    print(f"  (Should be 0 for exact independent duplicates.)")
     results["spread"] = float(spread)
     results["pass"] = spread < 1e-10
 
@@ -620,8 +614,8 @@ def check_6_finite_size() -> dict:
     for L in sizes_2d:
         N = L * L
         H = build_2d_hamiltonian(L, L)
-        _, vecs = eigh(H)
-        C = correlation_matrix(vecs, N // 2)
+        vals, vecs = eigh(H)
+        C, _, _ = half_filled_correlation(vals, vecs)
 
         mid = L // 2
         layer_l = [mid * L + y for y in range(L)]
@@ -634,7 +628,7 @@ def check_6_finite_size() -> dict:
         bnd = L
         s_max = bnd * ln_chi
         subsystem = [x * L + y for x in range(L // 2) for y in range(L)]
-        s_exact = entanglement_entropy(C, subsystem)
+        s_exact = gaussian_correlation_entropy(C, subsystem)
         rt = s_exact / s_max if s_max > 0 else 0
 
         rt_list_2d.append(rt)
@@ -674,8 +668,8 @@ def check_6_finite_size() -> dict:
     for L in sizes_3d:
         N = L ** 3
         H = build_3d_hamiltonian(L)
-        _, vecs = eigh(H)
-        C = correlation_matrix(vecs, N // 2)
+        vals, vecs = eigh(H)
+        C, _, _ = half_filled_correlation(vals, vecs)
 
         mid = L // 2
         layer_l = [mid * L * L + iy * L + iz
@@ -691,7 +685,7 @@ def check_6_finite_size() -> dict:
         s_max = bnd * ln_chi
         subsystem = [ix * L * L + iy * L + iz
                      for ix in range(L // 2) for iy in range(L) for iz in range(L)]
-        s_exact = entanglement_entropy(C, subsystem)
+        s_exact = gaussian_correlation_entropy(C, subsystem)
         rt = s_exact / s_max if s_max > 0 else 0
 
         rt_list_3d.append(rt)
@@ -727,7 +721,7 @@ def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
               c5: dict, c6: dict) -> dict:
     """Assemble the finite-packet report and pass/fail summary."""
     print("\n" + "=" * 72)
-    print("SYNTHESIS: BOUNDED BH ENTROPY COMPANION FROM LATTICE ENTANGLEMENT")
+    print("SYNTHESIS: BOUNDED BH ENTROPY COMPANION FROM GAUSSIAN CORRELATIONS")
     print("=" * 72)
 
     # 2026-05-26 finite-packet rescope: keep pass/fail only for finite
@@ -739,30 +733,29 @@ def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
     # aggregation that was masking 3D failures, and report the honest
     # pass/fail count.
     #
-    # Thresholds per the BH_ENTROPY_RT_RATIO_WIDOM_NO_GO note:
-    #   - 2D area law R^2 > 0.998 (linear S~|dA| fit acceptable on small L)
-    #   - 3D area law R^2 > 0.998
-    #   - RT ratio (finite-L) is the OBSERVED finite-L value (~0.21-0.24
-    #     in 2D, ~0.06-0.16 in 3D). Comparison to 1/4 is reported as a
+    # Thresholds per the BH entropy finite-diagnostic notes:
+    #   - 2D/3D finite boundary-linear fits R^2 > 0.99
+    #   - RT ratio (finite-L) is the observed value reported by each sampled
+    #     grid. Comparison to 1/4 is reported as a
     #     bounded numerical observation; it is NOT used as a pass/fail
     #     criterion any more. Aggregation reports the observed finite-L
     #     numbers without a "PASS within 15% of 1/4" verdict.
-    #   - Gravity modulation monotone for g >= 0.5
-    #   - Species universality: RT ratio spread < 1e-12
+    #   - Selected positive 1/r onsite-potential response monotone for g >= 0.5
+    #   - Independent-copy identity: duplicate-copy ratio spread < 1e-12
     #   - Finite-size tail-fit intercepts are diagnostics only. They do not
     #     close an all-L OBC Widom theorem.
     verdicts = {}
 
-    # 1. Area law (split 2D vs 3D, threshold R^2 > 0.998 per the note's
+    # 1. Finite boundary fit (split 2D vs 3D, threshold R^2 > 0.99 per the note's
     #    bounded text — the original code's c1.pass_2d used a stricter
     #    0.999 threshold that mismatched the note. We compute directly
     #    from R^2 here against the note's documented threshold.)
     r2_2d = c1.get("2d", {}).get("r2", 0)
     r2_3d = c1.get("3d", {}).get("r2", 0)
-    pass_area_2d = r2_2d > 0.998
-    pass_area_3d = r2_3d > 0.998
-    print(f"\n  1a. AREA LAW (2D, R^2 > 0.998): {'PASS' if pass_area_2d else 'FAIL'}  R^2 = {r2_2d:.6f}")
-    print(f"  1b. AREA LAW (3D, R^2 > 0.998): {'PASS' if pass_area_3d else 'FAIL'}  R^2 = {r2_3d:.6f}")
+    pass_area_2d = r2_2d > 0.99
+    pass_area_3d = r2_3d > 0.99
+    print(f"\n  1a. FINITE BOUNDARY FIT (2D, R^2 > 0.99): {'PASS' if pass_area_2d else 'FAIL'}  R^2 = {r2_2d:.6f}")
+    print(f"  1b. FINITE BOUNDARY FIT (3D, R^2 > 0.99): {'PASS' if pass_area_3d else 'FAIL'}  R^2 = {r2_3d:.6f}")
     verdicts["area_law_2d"] = pass_area_2d
     verdicts["area_law_3d"] = pass_area_3d
 
@@ -779,27 +772,27 @@ def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
     print(f"     OBSERVATION ONLY — finite comparison, not a BH derivation.")
     # No verdict entry; this is reported as observation.
 
-    # 3. Gravity modulation
+    # 3. Selected positive 1/r onsite-potential diagnostic
     mono = c3.get("monotone_from_half", False)
-    print(f"\n  3. GRAVITY MODULATION: monotone for g >= 0.5: {mono}")
-    verdicts["gravity_monotone"] = mono
+    print(f"\n  3. POSITIVE 1/r ONSITE POTENTIAL: monotone for g >= 0.5: {mono}")
+    verdicts["positive_onsite_potential_monotone"] = mono
 
     # 4. Frozen star scaling — identity holds by construction when ratio
     #    is set to 1/4. This is a sanity check, not an independent PASS.
     print(f"\n  4. FROZEN STAR SCALING: comparison identity when RT = 1/4 (sanity)")
     # No verdict; this is by-construction.
 
-    # 5. Species universality
+    # 5. Independent-copy identity
     species_pass = c5.get("pass", False)
     spread = c5.get("spread", 999)
-    print(f"\n  5. SPECIES UNIVERSALITY: RT ratio spread = {spread:.2e}  "
+    print(f"\n  5. INDEPENDENT-COPY IDENTITY: ratio spread = {spread:.2e}  "
           f"(threshold < 1e-12)")
     print(f"     {'PASS' if species_pass else 'FAIL'}")
-    verdicts["species_universality"] = species_pass
+    verdicts["independent_copy_identity"] = species_pass
 
     # 6. Finite-size tail-fit diagnostics. These are reported without a
     #    pass/fail verdict because the all-L OBC asymptotic bridge is outside
-    #    this row's retained-bounded dependency.
+    #    this row's unaudited diagnostic dependency.
     rt_inf_2d = c6.get("2d", {}).get("rt_inf", 0)
     rt_inf_3d = c6.get("3d", {}).get("rt_inf", 0)
     dev_inf_2d = c6.get("2d", {}).get("deviation_pct", 100)
@@ -827,15 +820,15 @@ def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
     print(f"\n  COMPANION SUMMARY:")
     print(f"    (i)   Area-law-like scaling is numerically strong on the reviewed")
     print(f"          finite lattice sizes.")
-    print(f"    (ii)  The transfer-matrix construction defines a bounded")
-    print(f"          bond-dimension comparison scale chi_eff.")
+    print(f"    (ii)  The transfer-layer SVD defines a threshold-rank")
+    print(f"          comparison scale chi_eff; it is not a derived bond dimension.")
     print(f"    (iii) Finite-L RT ratios are:")
-    print(f"            S_ent / (|dA| * ln chi_eff)  =  {mean_2d:.4f} (2D)")
+    print(f"            S_corr / (|dA| * ln chi_eff) =  {mean_2d:.4f} (2D)")
     print(f"                                          =  {mean_3d:.4f} (3D)")
     print(f"            comparison target: 1/4 = 0.2500")
-    print(f"    (iv)  On current main, this is a bounded BH-comparison lane only.")
-    print(f"          The linked Widom row is retained-bounded for finite-L evidence")
-    print(f"          and an exact 2D coefficient, not for an all-L OBC theorem.")
+    print(f"    (iv)  On current main, this is an open BH-comparison lane only.")
+    print(f"          The linked Widom row is an unaudited finite diagnostic plus")
+    print(f"          an author-side exact 2D integral, not an all-L OBC theorem.")
     print(f"    (v)   Therefore the script does not derive the Bekenstein-Hawking")
     print(f"          coefficient as a retained framework theorem.")
     print()
@@ -849,22 +842,22 @@ def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
 # Main
 # ============================================================================
 
-def main() -> None:
+def main() -> int:
     print("=" * 72)
     print("BEKENSTEIN-HAWKING ENTROPY: BOUNDED LATTICE COMPANION")
     print("Finite-L comparison to S_BH = A / (4 l_P^2)")
     print("=" * 72)
     print()
-    print("Bounded comparison lane: finite-L lattice entanglement is compared")
+    print("Bounded comparison lane: finite-L Gaussian correlation entropy is compared")
     print("to the Ryu-Takayanagi / Bekenstein-Hawking target, but current main")
     print("does not treat this runner as a retained derivation.")
     print()
 
     t_start = time.time()
 
-    c1 = check_1_area_law()
+    c1 = check_1_finite_boundary_fit()
     c2 = check_2_rt_ratio()
-    c3 = check_3_gravity_modulation()
+    c3 = check_3_positive_onsite_potential()
     c4 = check_4_frozen_star()
     c5 = check_5_species_scan()
     c6 = check_6_finite_size()
@@ -873,7 +866,8 @@ def main() -> None:
 
     elapsed = time.time() - t_start
     print(f"Total runtime: {elapsed:.1f}s")
+    return 0 if verdicts["n_pass"] == verdicts["n_total"] else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

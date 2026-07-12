@@ -27,7 +27,6 @@ def load_apply_audit_module():
 def main() -> int:
     apply_audit = load_apply_audit_module()
     cases = {
-        "gpt-5.5": "codex-gpt-5.5",
         "gpt-5.6": "codex-gpt-5.6",
         "gpt-5.6-sol": "codex-gpt-5.6",
         "gpt-6": "codex-gpt-6",
@@ -56,7 +55,18 @@ def main() -> int:
             }
         )
         if provenance_error:
-            raise RuntimeError(f"{model}: provenance rejected: {provenance_error}")
+            raise RuntimeError(f"{model}: full-model provenance rejected: {provenance_error}")
+
+    old_family = runner.codex_family_for_model("gpt-5.5")
+    if apply_audit._family_meets_floor(old_family):
+        raise RuntimeError("gpt-5.5 family passed the current apply-audit floor")
+    old_error = apply_audit.validate_auditor_provenance({
+        "auditor_model": "gpt-5.5",
+        "auditor_family": old_family,
+        "auditor_reasoning_effort": runner.AUDIT_REASONING_EFFORT,
+    })
+    if old_error:
+        raise RuntimeError(f"gpt-5.5 shape validation failed before floor gate: {old_error}")
 
     rejected_models = (
         "gpt-5.6-mini",

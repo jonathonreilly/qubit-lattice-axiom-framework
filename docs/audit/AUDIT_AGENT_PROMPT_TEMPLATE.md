@@ -197,6 +197,14 @@ characters. The manifest is an allow-list, not evidence by itself:
 {{NO_GO_EVIDENCE_MANIFEST}}
 ```
 
+The exact pre-audit claim scope is supplied by the orchestrator below. A FAIL
+packet must copy this value verbatim into `prior_claim_scope`; do not guess it
+from the current note or invent a replacement scope.
+
+```text
+{{PRIOR_CLAIM_SCOPE}}
+```
+
 For N6, the orchestrator has supplied a partial-closure index built from all
 the foundation and open-obligation registries, the controlled vocabulary, every ledger-indexed
 meta note, the active review queue, and repository-visible physics-loop
@@ -306,6 +314,7 @@ Return a single JSON object with exactly these fields. No other prose.
 ```json
 {
   "claim_id": "{{CLAIM_ID}}",
+  "audit_invocation_id": "{{AUDIT_INVOCATION_ID}}",
   "load_bearing_step": "<one-sentence quote or paraphrase from the note>",
   "load_bearing_step_class": "<one of A, B, C, D, E, F, G>",
   "claim_type": "<one of positive_theorem, bounded_theorem, no_go, open_gate, decoration, meta>",
@@ -353,7 +362,10 @@ Use `null` only when the gate is not required. Otherwise replace it with:
         "right": "<different wall from walls>",
         "left_closes_right": false,
         "right_closes_left": false,
-        "independent": true
+        "independent": true,
+        "rationale": "<40+ normalized characters naming both walls and explaining the directional test>",
+        "evidence_path": "<manifest path containing the comparison evidence>",
+        "evidence_locator": "<actual locator>"
       }
     ],
     "collapsed_wall_set": ["<minimal wall set after pairwise collapse>"],
@@ -362,12 +374,17 @@ Use `null` only when the gate is not required. Otherwise replace it with:
     "evidence_locator": "<actual locator>"
   },
   "N3_hidden_wall_scan": {
-    "scan_scope": "<phrases and restricted packet surfaces checked>",
+    "scan_scope": "<phrases and restricted packet surfaces checked; emit one hit per path/phrase occurrence group>",
+    "scanned_evidence_paths": ["<every source and one-hop authority path from the manifest>"],
     "hits": [
       {
         "phrase": "<scanned phrase>",
+        "occurrence_group_id": "<16-hex authenticated normalized-context digest>",
+        "occurrence_count": 1,
+        "occurrence_locator_sha256": "<orchestrator-authenticated grouped locator digest>",
         "classification": "<retained_authority | hidden_admission | non_load_bearing>",
         "promoted_wall": "<matching N2 wall when hidden_admission, otherwise omit>",
+        "rationale": "<required for non_load_bearing: 40+ characters explaining why this exact occurrence carries no premise load>",
         "evidence_path": "<manifest path>",
         "evidence_locator": "<actual locator>"
       }
@@ -379,6 +396,7 @@ Use `null` only when the gate is not required. Otherwise replace it with:
   },
   "N4_residual_matching": {
     "scan_scope": "<witness and residual surfaces checked>",
+    "scanned_evidence_paths": ["<every one-hop authority path from the manifest>"],
     "witnesses": [
       {
         "witness_id": "<unique id referenced by a prior-ruled N1 route>",
@@ -396,14 +414,21 @@ Use `null` only when the gate is not required. Otherwise replace it with:
     "evidence_locator": "<actual locator>"
   },
   "N5_rhetoric_audit": {
-    "scan_scope": "<negative-resolution language checked>",
+    "scan_scope": "<negative-resolution language checked; emit one statement per path/phrase occurrence group>",
+    "scanned_evidence_paths": ["<every source path from the manifest>"],
     "statements": [
       {
         "phrase": "<negative or resolution phrase>",
-        "tested_resolutions": ["<resolution actually tested>"],
+        "occurrence_group_id": "<16-hex authenticated normalized-context digest>",
+        "occurrence_count": 1,
+        "occurrence_locator_sha256": "<orchestrator-authenticated grouped locator digest>",
+        "resolution_classes_checked": ["per_element", "per_site", "per_mode", "per_block", "lattice_wide"],
+        "tested_resolutions": ["<exactly one substantive entry prefixed by each required resolution class>"],
         "untested_resolutions": [],
         "evidence_path": "<manifest path>",
-        "evidence_locator": "<actual locator>"
+        "evidence_locator": "<actual locator>",
+        "resolution_evidence_path": "<live runner_stdout path containing every tested resolution>",
+        "resolution_evidence_locator": "<actual execution-evidence locator>"
       }
     ],
     "none_found_reason": "<required when statements is empty>",
@@ -423,6 +448,9 @@ Use `null` only when the gate is not required. Otherwise replace it with:
       {
         "candidate_id": "<candidate_id from the orchestrator partial-closure index>",
         "kind": "<approved_primitive | open_gate | convention_reframe | definition_refactor>",
+        "indexed_basis": "<20+ character exact quote from this candidate record>",
+        "affected_wall": "<exact N2 wall tested by this candidate>",
+        "closure_mechanism": "<40+ normalized characters explaining how the candidate could close that wall>",
         "could_close_wall": false,
         "addressed": true,
         "disposition": "<why the candidate does or does not close the scoped wall>",
@@ -440,18 +468,23 @@ Use `null` only when the gate is not required. Otherwise replace it with:
     "argument": "<strongest argument against the no-go>",
     "resolution": "<why it succeeds or fails in the scoped packet>",
     "resolved": true,
-    "evidence_path": "<manifest path>",
-    "evidence_locator": "<actual locator>"
+    "evidence_path": "<live runner_stdout path containing the complete argument and matching N1 evidence>",
+    "evidence_locator": "<actual locator>",
+    "resolution_evidence_path": "<different live runner_stdout/authority/premise path containing the complete resolution>",
+    "resolution_evidence_locator": "<actual locator on the independent surface>"
   },
   "N8_cross_cycle_echo": {
     "packet_complete": true,
+    "no_go_row_universe_count": "<copy authenticated count from the index>",
+    "no_go_row_universe_sha256": "<copy authenticated digest from the index>",
     "echoes": [
       {
         "candidate_id": "<candidate_id from the orchestrator cross-cycle index>",
         "mechanism": "<earlier wall/admission mechanism>",
-        "retired": false,
-        "applicable": true,
+        "retired": null,
+        "applicable": "<true or false; decide for the current scope independently of retirement>",
         "addressed": true,
+        "disposition": "<40+ normalized characters explaining retirement/applicability and treatment>",
         "evidence_path": "<manifest path>",
         "evidence_locator": "<actual locator>"
       }
@@ -477,6 +510,40 @@ For `PASS`, omit the five FAIL-only fields. For `FAIL`, all five are required.
 The orchestrator adds `evidence_snapshot` after validating the exact rendered
 packet; do not emit or fabricate that field. An `audited_clean` PASS must carry
 `chain_closes=true`.
+Every N1 mechanism, attempt, and outcome and every N2 wall must occur in the
+cited evidence. `ATTEMPTED` N1 routes must cite live current-cycle
+`runner_stdout` evidence, not source code, a cache, the author source, or a prior authority. N2 directional
+closure removes the wall closed by the other wall.
+
+N3 must disposition every authenticated path/phrase occurrence group, including
+the exact occurrence count and orchestrator locator digest,
+of `admission`, `ansatz`, `axiom`, `boundary`, `bridge context`,
+`by construction`, `convention`, `initial condition`, `normalization`,
+`obstruction`, `primitive`, `as is standard`, `naturally`, `sector`,
+`standard QFT`, `wall`, `we assume`, `the framework provides`, `background`,
+`obviously`, `registered`, and `canonical`. Repeated occurrences may share one
+object only when the orchestrator supplies the same `occurrence_group_id`, which
+means their normalized local contexts are identical. N5 must do the same for
+occurrences of `absent`, `cannot`, `does not`, `fails`, `impossible`,
+`no nonzero`, `no-go`, `obstruction`, `requires a new axiom`, `rule out`,
+`rules out`, `structurally undecidable`, `unavailable`, `is not`, and `are not`,
+and must test all five resolution classes substantively against cited live
+current-cycle runner stdout evidence.
+
+N6 must bind every indexed candidate to an exact quoted indexed basis, an N2
+wall, and a substantive closure mechanism. N7 must cite the N1 route surface
+for the steelman and either orchestrator-marked independent execution or a
+retained/accepted, byte-authenticated authority for the resolution; a merely
+different path is not independence. The resolution text must occur there. N8 must bind
+each mechanism to its exact indexed candidate record. Copy known retirement
+state exactly; when the indexed `lifecycle_state` is `unknown`, preserve
+`retired` as JSON `null`. Applicability is a separate current-scope decision
+and must be boolean for PASS. Copy the complete authenticated no-go-row
+universe count and digest even though only relevance-selected candidates
+receive full echoes.
+FAIL narrowing must be
+a strict lexical subset that preserves logical polarity, and every failure
+string must begin with its failing `N1:` through `N8:` item.
 Any `OPEN`/`UNTESTED` route, unresolved N2-N6/N8 item, mismatched witness,
 untested rhetoric resolution, unaddressed partial-closure candidate, unresolved
 steelman, incomplete N8 packet, or applicable unaddressed echo forces `FAIL`.

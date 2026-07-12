@@ -43,16 +43,17 @@ def main() -> int:
     check(
         "live Lorentz note names the current replacement runner",
         "**Script:** `scripts/frontier_lorentz_violation.py`" in note
-        and "registered runner" in note,
+        and "registered diagnostic runner" in note,
     )
     check(
-        "live Lorentz note is a bounded companion, not retained flagship",
-        "bounded companion only" in note
-        and "Not on the\nretained flagship claim surface" in note,
+        "live Lorentz note is an unaudited fixed-action target",
+        "not publication-usable" in note
+        and "not consequences of the four axioms" in note,
     )
     check(
-        "live Lorentz note keeps the cubic-lattice symmetry statement",
-        "SO(3,1) broken to O_h" in note and "all 48 O_h elements" in note,
+        "live Lorentz note keeps the scoped cubic-symbol symmetry statement",
+        "spatial symmetry of the supplied cubic symbol" in note
+        and "all 48 O_h elements" in note,
     )
 
     runner = ROOT / "scripts/frontier_lorentz_violation.py"

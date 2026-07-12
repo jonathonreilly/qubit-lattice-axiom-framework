@@ -230,7 +230,7 @@ selection is required on that scope. ∎
 
 Load-bearing markdown-link upstream:
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — supplies the current Lattice/Quantum/Record axiom memo; this row uses only the Lattice and Quantum finite-region algebra surface on which `ρ_ref` lives
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — supplies the current Lattice/Qubit/Admissibility/Record axiom memo; this row uses only the Lattice and Qubit finite-region algebra surface on which the separately supplied `ρ_ref` lives. Admissibility and Record are not used here to derive or select `ρ_ref`
 
 Parallel provenance (not load-bearing premises):
 
@@ -247,10 +247,10 @@ Plain-text contextual pointer (not load-bearing dep):
 The same `W[J] = log Tr(ρ_ref · e^{-J}) - log Tr(ρ_ref)` form, now
 proved as the finite joint-spectral connected-cumulant generator
 applied to `ρ_ref` on commuting source families, not a load-bearing
-framework rule. The "selection from a family" structure that would have
-made it a framework rule does not exist on that narrow scope.
+framework rule. No family-selection premise is invoked on that narrow scope;
+the supplied `rho_ref` and commuting source family determine the form.
 
-## What this does NOT close
+## Out Of Scope
 
 - **Wick / Schwinger rotation between Euclidean and Lorentzian sources** — separate lane
 - **Time-ordering and operator-ordering conventions for non-commuting `J`** — standard but separate lane

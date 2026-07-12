@@ -71,9 +71,11 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import no_go_discipline_gate
@@ -93,6 +95,8 @@ ARCHIVED_FIELDS = (
     "audit_date",
     "auditor",
     "auditor_family",
+    "auditor_model",
+    "auditor_reasoning_effort",
     "independence",
     "load_bearing_step",
     "load_bearing_step_class",
@@ -112,6 +116,8 @@ ARCHIVED_FIELDS = (
     "claim_type_last_reviewed",
     "notes_for_re_audit_if_any",
     "no_go_discipline",
+    "audit_invocation_id",
+    "audit_invocation_history",
 )
 
 RANK = {
@@ -207,6 +213,45 @@ def repair_class_is_valid(notes: str | None) -> bool:
     return first_token in ALLOWED_REPAIR_CLASSES
 
 
+def clean_audit_provenance_is_compatible(
+    audit: dict, *, top_level: bool
+) -> bool:
+    """Apply the current capability policy without pinning one Codex release."""
+    family = audit.get("auditor_family")
+    independence = audit.get("independence")
+    if isinstance(family, str) and family.startswith("codex-gpt-"):
+        model = audit.get("auditor_model")
+        match = (
+            re.fullmatch(r"gpt-(\d+(?:\.\d+)*)-sol", model)
+            if isinstance(model, str)
+            else None
+        )
+        return bool(
+            match
+            and family == f"codex-gpt-{match.group(1)}"
+            and codex_family_meets_minimum(family, minimum="gpt-5.6")
+            and audit.get("auditor_reasoning_effort") == "xhigh"
+            and independence != "weak"
+        )
+    model = audit.get("auditor_model")
+    reasoning = audit.get("auditor_reasoning_effort")
+    non_codex_provenance = bool(
+        isinstance(family, str)
+        and family
+        and not family.startswith("codex-gpt-")
+        and isinstance(model, str)
+        and model
+        and not model.startswith("gpt-")
+        and isinstance(reasoning, str)
+        and reasoning
+    )
+    if not non_codex_provenance:
+        return False
+    if top_level:
+        return independence in {"strong", "external", "judicial_review"}
+    return independence not in {None, "weak"}
+
+
 def archived_audit_is_lint_compatible(archived: dict) -> bool:
     """True if restoring this archived audit will satisfy current audit lint.
 
@@ -228,6 +273,11 @@ def archived_audit_is_lint_compatible(archived: dict) -> bool:
             return False
 
     fam = archived.get("auditor_family")
+    if (
+        archived.get("audit_status") == "audited_clean"
+        and not clean_audit_provenance_is_compatible(archived, top_level=True)
+    ):
+        return False
     if fam is not None:
         if fam not in CANONICAL_AUDITOR_FAMILIES and fam not in LEGACY_AUDITOR_FAMILIES:
             if not (isinstance(fam, str) and fam.startswith("codex-gpt-")):
@@ -236,6 +286,15 @@ def archived_audit_is_lint_compatible(archived: dict) -> bool:
             return False
         if isinstance(fam, str) and fam.startswith("codex-gpt-"):
             if not codex_family_meets_minimum(fam):
+                return False
+
+    cross = archived.get("cross_confirmation") or {}
+    if isinstance(cross, dict):
+        for seat_name in ("first_audit", "second_audit", "third_audit"):
+            seat = cross.get(seat_name)
+            if not isinstance(seat, dict) or seat.get("verdict") != "audited_clean":
+                continue
+            if not clean_audit_provenance_is_compatible(seat, top_level=False):
                 return False
 
     return True
@@ -410,19 +469,44 @@ def restore_audit_from_previous(
     row: dict,
     rows: dict[str, dict] | None = None,
 ) -> dict | None:
-    """Pop the most recent previous_audits entry and copy its archived
-    fields back to the live row. Returns the new row, or None if there's
-    nothing to restore.
+    """Copy the most recent previous_audits entry back to the live row.
+
+    The invalidation archive remains append-only. A separate restoration
+    record identifies the exact archived payload and policy that authorized
+    reversal, so restoration never erases the reason the audit was archived.
     """
     history = list(row.get("previous_audits") or [])
     if not history:
         return None
-    archived = history.pop()
+    archived = history[-1]
     new_row = dict(row)
     new_row["previous_audits"] = history
+    archived_reference = hashlib.sha256(
+        json.dumps(archived, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
+    restoration_history = list(row.get("restoration_history") or [])
+    restoration_history.append({
+        "restored_at": datetime.now(timezone.utc).isoformat(),
+        "restoration_policy": "restore_overaggressive_invalidation.v2",
+        "archived_audit_sha256": archived_reference,
+        "archived_at": archived.get("archived_at"),
+        "invalidation_reason": archived.get("invalidation_reason"),
+    })
+    new_row["restoration_history"] = restoration_history
     for field in ARCHIVED_FIELDS:
         if field in archived:
             new_row[field] = archived[field]
+    invocation_history: list[str] = []
+    for value in (
+        *(archived.get("audit_invocation_history") or []),
+        archived.get("audit_invocation_id"),
+        *(row.get("audit_invocation_history") or []),
+        row.get("audit_invocation_id"),
+    ):
+        if isinstance(value, str) and value and value not in invocation_history:
+            invocation_history.append(value)
+    if invocation_history:
+        new_row["audit_invocation_history"] = invocation_history
     note_body = ""
     note_path = str(new_row.get("note_path") or "")
     try:
@@ -452,17 +536,61 @@ def restore_audit_from_previous(
         and new_row.get("no_go_discipline") is None
     ):
         return None
+    cross = new_row.get("cross_confirmation") or {}
+    cross_has_packet = isinstance(cross, dict) and any(
+        isinstance(cross.get(audit_key), dict)
+        and isinstance(cross[audit_key].get("no_go_discipline"), dict)
+        for audit_key in ("first_audit", "second_audit", "third_audit")
+    )
+    current_manifest = None
+    if new_row.get("no_go_discipline") is not None or cross_has_packet:
+        ledger_rows = rows or {str(new_row.get("claim_id") or ""): new_row}
+        validation_row = dict(new_row)
+        validation_row["previous_audits"] = history[:-1]
+        validation_rows = dict(ledger_rows)
+        validation_rows[str(new_row.get("claim_id") or "")] = validation_row
+        current_manifest = no_go_discipline_gate.build_evidence_manifest(
+            validation_row, validation_rows, REPO_ROOT
+        )
+    if isinstance(cross, dict):
+        for audit_key in ("first_audit", "second_audit", "third_audit"):
+            summary = cross.get(audit_key)
+            if not isinstance(summary, dict) or summary.get("verdict") != "audited_clean":
+                continue
+            summary_requires_packet = (
+                source_required
+                or no_go_discipline_gate.output_requires_no_go_discipline(summary)
+            )
+            if not summary_requires_packet:
+                continue
+            packet = summary.get("no_go_discipline")
+            manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
+                packet if isinstance(packet, dict) else {}
+            )
+            if manifest is None:
+                return None
+            if no_go_discipline_gate.evidence_snapshot_current_error(
+                packet, current_manifest or {}
+            ):
+                return None
+            if no_go_discipline_gate.validate_no_go_discipline(
+                {**summary, "chain_closes": True},
+                source_required=source_required,
+                evidence_manifest=manifest,
+            ):
+                return None
     # A present packet must round-trip and validate. Packetless negative clean
     # authority is deliberately not restorable under the current gate.
     if new_row.get("no_go_discipline") is not None:
-        ledger_rows = rows or {str(new_row.get("claim_id") or ""): new_row}
         evidence_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
             new_row["no_go_discipline"]
         )
         if evidence_manifest is None:
-            evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
-                new_row, ledger_rows, REPO_ROOT
-            )
+            return None
+        if no_go_discipline_gate.evidence_snapshot_current_error(
+            new_row["no_go_discipline"], current_manifest or {}
+        ):
+            return None
         if no_go_discipline_gate.validate_no_go_discipline(
             gate_blob,
             source_required=source_required,
@@ -533,6 +661,33 @@ def select_restore_candidates(rows: dict[str, dict]) -> tuple[dict[str, str], li
     return crit_set, dep_weakened_set
 
 
+def select_false_positive_no_go_candidates(rows: dict[str, dict]) -> dict[str, str]:
+    """Find clean audits invalidated only by a trigger that no longer fires.
+
+    This is deliberately restricted to the packet-missing reason. Invalid
+    packets and cross-confirmation failures still require fresh audit rather
+    than schema-era restoration.
+    """
+    selected: dict[str, str] = {}
+    for cid, row in rows.items():
+        if row.get("audit_status") != "unaudited":
+            continue
+        history = row.get("previous_audits") or []
+        if not history:
+            continue
+        archived = history[-1]
+        if archived.get("invalidation_reason") != "no_go_discipline_packet_missing":
+            continue
+        if not archived_audit_is_lint_compatible(archived):
+            continue
+        if restore_audit_from_previous(row, rows) is None:
+            continue
+        if noncritical_invalidation_after_restore(row, rows) is not None:
+            continue
+        selected[cid] = archived.get("audit_status") or "?"
+    return selected
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
@@ -551,6 +706,14 @@ def main() -> int:
         default=None,
         help="Cap the number of rows restored (per category). For testing.",
     )
+    parser.add_argument(
+        "--false-positive-no-go-only",
+        action="store_true",
+        help=(
+            "Skip the older criticality restoration scan and process only "
+            "packet-missing rows whose current no-go trigger no longer fires."
+        ),
+    )
     args = parser.parse_args()
 
     if not LEDGER_PATH.exists():
@@ -560,12 +723,17 @@ def main() -> int:
     ledger = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
     rows: dict[str, dict] = ledger.get("rows", {})
 
-    crit_set, dep_weakened_set = select_restore_candidates(rows)
+    if args.false_positive_no_go_only:
+        crit_set, dep_weakened_set = {}, []
+    else:
+        crit_set, dep_weakened_set = select_restore_candidates(rows)
+    false_positive_set = select_false_positive_no_go_candidates(rows)
 
     if args.limit is not None:
         crit_items = sorted(crit_set.items())[: args.limit]
         crit_set = dict(crit_items)
         dep_weakened_set = dep_weakened_set[: args.limit]
+        false_positive_set = dict(sorted(false_positive_set.items())[: args.limit])
 
     print(f"Identified {len(crit_set)} criticality_increased restore candidates:")
     crit_status_counts: dict[str, int] = {}
@@ -582,6 +750,16 @@ def main() -> int:
     for status, n in sorted(dep_status_counts.items(), key=lambda x: -x[1]):
         print(f"    {n:5d}  was {status}")
 
+    print(
+        f"Identified {len(false_positive_set)} false-positive no-go trigger "
+        "restore candidates:"
+    )
+    false_positive_counts: dict[str, int] = {}
+    for prev_status in false_positive_set.values():
+        false_positive_counts[prev_status] = false_positive_counts.get(prev_status, 0) + 1
+    for status, n in sorted(false_positive_counts.items(), key=lambda x: -x[1]):
+        print(f"    {n:5d}  was {status}")
+
     if args.dry_run:
         print("\nDry run: no changes written.")
         return 0
@@ -594,6 +772,12 @@ def main() -> int:
         rows[cid] = new_row
         restored_count += 1
     for cid, _dep, _prev in dep_weakened_set:
+        new_row = restore_audit_from_previous(rows[cid], rows)
+        if new_row is None:
+            continue
+        rows[cid] = new_row
+        restored_count += 1
+    for cid in false_positive_set:
         new_row = restore_audit_from_previous(rows[cid], rows)
         if new_row is None:
             continue

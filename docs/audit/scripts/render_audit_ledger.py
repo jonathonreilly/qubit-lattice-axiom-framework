@@ -235,12 +235,10 @@ def main() -> int:
                "(`retained`, `retained_no_go`, `retained_bounded`).")
     out.append("- _Italic_ = clean but waiting on retained-grade chain closure "
                "(`retained_pending_chain`).")
-    out.append("- ~~Strikethrough~~ = audit returned a failure verdict on an "
-               "active claim (`audited_failed`, `audited_conditional`, etc.). "
-               "Note: an `audited_failed` row whose note has been moved to "
-               "`archive_unlanded/` is lifted to `retained_no_go` in "
-               "`effective_status` — that is a ratified negative result, not "
-               "an active failure.")
+    out.append("- ~~Strikethrough~~ = audit returned a non-retained verdict "
+               "(`audited_failed`, `audited_conditional`, etc.). Archived "
+               "failures remain non-authoritative history and cannot satisfy "
+               "a live dependency chain.")
     out.append("- Plain = `open_gate`, `unaudited`, `audit_in_progress`, or `meta`.")
     out.append("")
     out.append("Publication-facing tables MUST read `effective_status`; "

@@ -1,120 +1,105 @@
-# Bekenstein-Hawking Entropy Bounded Lattice Companion
+# Bekenstein-Hawking Entropy Finite-Lattice Companion
 
-**Status**: bounded companion / finite-packet evidence only. The note records
-finite-lattice free-fermion entanglement computations and their numerical
-comparison to the `S_BH = A / (4 l_P^2)` coefficient. It does **not** derive
-the Bekenstein-Hawking coefficient and does **not** retain an all-`L` or
-OBC-lattice Widom asymptotic theorem.
-**Claim type:** bounded_theorem
-**Dependency:** [`BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md`](BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md),
-which currently supplies retained-bounded finite-`L <= 64` evidence and the
-exact 2D diamond Widom coefficient evaluation, while explicitly deferring the
-all-`L` carrier-Widom bridge.
+**Date:** 2026-07-11
+**Claim type:** open_gate
+**Status:** open finite numerical companion; no retained black-hole entropy
+derivation or all-`L` coefficient theorem is claimed
+**Audit-status authority:** independent audit lane only
+**Primary runner:**
+[`scripts/frontier_bh_entropy_derived.py`](../scripts/frontier_bh_entropy_derived.py)
 
-## 2026-05-26 finite-packet rescope
+## Scope
 
-The previous version of this note overstated the boundary by saying that the
-free-fermion carrier's asymptotic RT ratio is retained as `c_Widom = 1/6` and
-by importing the extended `L <= 96` probe into the binding story. The current
-audit ledger correctly blocks that stronger reading: the dependency retained
-only a finite-`L <= 64` numerical-fit packet plus the exact 2D Widom integral,
-not a full OBC-lattice all-`L` asymptotic theorem.
-
-This rescope keeps only the source-side bounded packet:
-
-- finite 2D/3D OBC tight-binding Hamiltonians built by
-  `scripts/frontier_bh_entropy_derived.py`;
-- finite half-space correlation-matrix entropies on the reviewed sizes;
-- transfer-layer SVD rank readouts `chi_eff`;
-- the finite-L RT comparison values reported by the runner;
-- gravity-modulation and species-cancellation checks on the finite runner
-  surface;
-- the upstream finite-`L <= 64` Widom no-go packet as retained-bounded context,
-  not as an all-`L` asymptotic theorem.
-
-Excluded from this row's binding scope:
-
-- a derivation of `S_BH = A / (4 l_P^2)`;
-- a retained statement that `lim_L r(L) = 1/6` on the OBC carrier;
-- any `L <= 96` cache/probe value;
-- any claim that the finite-L values near `1/4` select the physical black-hole
-  entropy coefficient.
-
-## Result (bounded)
-
-On the finite free-fermion half-filled nearest-neighbor tight-binding carrier,
-the runner computes:
-
-1. **Area-law-like finite fits.** Half-space entanglement entropy on the
-   reviewed finite 2D and 3D lattices fits a boundary-size linear model with
-   `R^2 > 0.998`. This is finite numerical behavior, not a continuum theorem.
-
-2. **Transfer-layer rank scale.** The adjacent-layer correlator SVD gives a
-   finite `chi_eff` readout used in the comparison denominator
-   `S_max = |dA| * log(chi_eff)`.
-
-3. **Finite-L RT ratios.** On the reviewed small 2D surface the mean ratio
-   `S_ent / (|dA| * log(chi_eff))` is about `0.2353`; individual values for
-   `L = 8, 10, 12, 16, 20, 24, 32` are approximately
-   `0.2436, 0.2336, 0.2528, 0.2436, 0.2246, 0.2285, 0.2205`. On the reviewed
-   3D sizes `L = 4, 6, 8, 10`, the mean is about `0.1224`.
-
-4. **BH comparison boundary.** The finite 2D mean is numerically close to
-   `1/4`, but that is only a bounded comparison number. It is not a retained
-   derivation of the physical entropy coefficient.
-
-5. **Species cancellation.** For independent species, both entropy and the
-   log-bond denominator scale linearly in the species count, so the ratio is
-   species-independent. The runner verifies spread below `1e-12`.
-
-6. **Finite-size trend diagnostics.** The runner reports finite tail-fit
-   diagnostics for the reviewed sizes. Those diagnostics are observations only;
-   they do not prove an asymptote.
-
-## What The Widom Dependency Supplies
-
-The linked Widom note is retained-bounded for:
-
-- direct evaluation of the 2D diamond Widom coefficient `c_Widom = 1/6`;
-- finite-`L <= 64` numerical-fit evidence on the stated OBC free-fermion
-  packet;
-- the explicit statement that the all-`L` OBC carrier-Widom bridge and
-  threshold-rank proof remain open.
-
-Therefore this note may use the Widom row only as bounded context explaining
-why the finite-L comparison is not a closed BH derivation. It may not import a
-retained all-`L` no-go theorem.
-
-## Checks
-
-The repaired runner reports pass/fail only for finite claims it recomputes
-directly:
-
-| Check | Threshold | Status |
-|-------|-----------|--------|
-| Area law 2D | `R^2 > 0.998` | PASS |
-| Area law 3D | `R^2 > 0.998` | PASS |
-| Gravity modulation | monotone for `g >= 0.5` | PASS |
-| Species universality | ratio spread `< 1e-12` | PASS |
-
-Observations reported outside pass/fail:
-
-| Observation | Scope |
-|---|---|
-| 2D finite-L RT ratio near `1/4` | finite comparison only |
-| 3D finite-L RT ratio far from `1/4` | finite comparison only |
-| Frozen-star scaling table | identity after manually setting RT ratio to `1/4` |
-| Tail-fit intercepts | diagnostic only, no asymptotic theorem |
-
-## Chain Summary
+This note records reproducible finite-lattice calculations for a half-filled
+nearest-neighbor free-fermion carrier. It compares a Gaussian subsystem
+correlation entropy with
 
 ```text
-finite OBC free-fermion Hamiltonian
-  -> finite half-space correlation-matrix entropy
-  -> finite transfer-layer SVD rank chi_eff
-  -> finite-L comparison S_ent / (|dA| log chi_eff)
-  -> bounded companion values, not S_BH derivation
+S_max = |dA| log chi_eff
 ```
 
-The strongest honest status is finite-packet bounded support pending
-independent audit.
+and with the Bekenstein-Hawking comparison coefficient `1/4`. It does not
+derive that normalization from the four axioms—Lattice, Qubit, Admissibility,
+and Record—and it does not identify the carrier observable with physical
+black-hole entropy.
+
+The paired
+[`BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md`](BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md)
+now classifies the asymptotic issue as an open gate. In particular, the exact
+two-dimensional geometric Widom integral `1/6` is not silently promoted to the
+coefficient of the mixed zero-mode prescription used by these finite runs.
+
+## State Prescription
+
+At half filling the `N/2` spectral cut can cross a degenerate eigenspace.
+Selecting an arbitrary subset of eigenvectors would make the result depend on
+the diagonalizer's basis. The runner instead occupies the whole Fermi-level
+eigenspace with the common fractional weight needed for `Tr(C)=N/2`.
+
+For the particle-hole-symmetric cases in the current grids this reduces to
+
+```text
+C = 1(H<0) + (1/2)1(H=0).
+```
+
+The resulting global state is generally mixed. The reported `S_corr` is the
+Gaussian entropy of the restricted correlation matrix, not a claimed
+pure-state entanglement entropy.
+
+## Reproduced Finite Results
+
+The current runner reports:
+
+- two-dimensional finite boundary fit: `R^2 = 0.999010`;
+- three-dimensional finite boundary fit: `R^2 = 0.996339`;
+- mean finite comparison ratio `S_corr/(|dA| log chi_eff)`:
+  `0.3143` in 2D and `0.1249` in 3D;
+- two-dimensional `1/L` diagnostic intercept: `0.2492`;
+- three-dimensional `1/L` diagnostic intercept: `0.0644`;
+- monotone entropy decrease for the sampled positive `g/r` onsite potential at
+  `g >= 0.5`;
+- exact cancellation of duplicate-copy factors under the runner's explicitly
+  independent-copy construction. This is a bookkeeping identity, not a
+  species-universality, Hilbert-dimension, or bond-dimension result.
+
+The fit intercepts are model-dependent finite-size summaries. The 2D
+`1/L` intercept being close to `1/4` is evidence against declaring the finite
+data inconsistent with `1/4`; the separate `c+a/log L` fit in the Widom runner
+favors a value near `1/6`. Neither fit is an all-`L` theorem.
+
+## Imported And Conventional Inputs
+
+- nearest-neighbor free-fermion Hamiltonian and open boundary conditions;
+- the basis-invariant mixed half-filling prescription;
+- the Bekenstein-Hawking `1/4` value as an external comparison target;
+- the positive `g/r` onsite-potential profile used by the diagnostic; its sign,
+  normalization, and coupling to this fermion carrier are selected diagnostic
+  inputs, not a derived gravitational bridge;
+- `t=1` in the nearest-neighbor Hamiltonians, the `10^-6` SVD tolerance, the
+  finite size grids, and the selected fit windows/forms;
+- the SI constants (`G`, `c`, `l_P`, and `M_sun`) and benchmark masses used
+  only in the frozen-star comparison table;
+- the convention identifying the counted lattice boundary with the area
+  comparator and the separately supplied `1/4` normalization in that table.
+
+These are explicit external or conventional inputs to this diagnostic. The
+four-axiom baseline is used only as the framework boundary against which those
+inputs are disclosed.
+
+## Open Gates
+
+1. Derive or explicitly supply as a conditional a physical state selection and entropy
+   observable for the intended black-hole carrier.
+2. Prove the mixed-state and threshold-rank asymptotics, rather than selecting
+   a finite fit family.
+3. Derive the physical bridge from the lattice comparison to area in Planck
+   units and to the Bekenstein-Hawking observable.
+
+## Reproduction
+
+```bash
+python3 scripts/frontier_bh_entropy_derived.py
+```
+
+Expected current summary: `CHECKS PASSED: 4/4`. This is runner accounting for
+the declared finite checks, not an independent audit verdict.

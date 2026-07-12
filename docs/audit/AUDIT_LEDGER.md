@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 103 |
+| **retained** | 104 |
 | **retained_no_go** | 45 |
 | **retained_bounded** | 417 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
 | unaudited | 2637 |
-| audit_in_progress | 26 |
+| audit_in_progress | 25 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 26 |
-| `audited_clean` | 552 |
+| `audit_in_progress` | 25 |
+| `audited_clean` | 553 |
 | `audited_conditional` | 98 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 45 |
@@ -137,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -519,6 +518,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
+| `record_function_finite_sector_algebra_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
@@ -7991,6 +7991,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The current Record axiom supplies occurrence through "Records form.", while the accepted premise surface explicitly leaves the formation rule, production process, state trigger, site, weight, and rate outside axiom content.  _(class `A`)_
 - **chain closes:** True — The accepted minimal-axiom authority explicitly supplies occurrence and excludes the claimed residual formation details. The runner independently computes the stated finite-dimensional coherence and stationarity controls and treats coupled decoherence only as contrast.
 - **rationale:** The load-bearing result is an exact logical boundary check over the accepted minimal-axiom premise, not a definition, tuned match, or imported physical bridge. The runner genuinely computes the H=0, decoupled-H, eigenstate, and coupled-H coherence checks; its string checks accurately verify the cited premise boundary. These finite controls are supporting witnesses rather than a universal decoherence theorem, and the scoped no-go leaves conditional record-production models open.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `record_function_finite_sector_algebra_2026-06-05`
+
+- **Note:** [`RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md`](../../docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Finite additive record-sector vectors, incidence-matrix coarse-graining, scale-invariant coordinates, and the stated generation identities conditional on the supplied two-block and C3 definitions.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00100-record_function_finite_secto`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** For any finite union of supplied disjoint sectors A, finite additivity gives I(A) = chi_A . v.  _(class `A`)_
+- **chain closes:** True — Finite additivity directly gives the sector-vector representation, and the remaining coarse-graining, scaling, C3 character-sum, and endpoint statements are exact algebra on explicitly supplied definitions. The note does not claim that Record selects a probability, dynamics, ratio, or endpoint.
+- **rationale:** The runner performs symbolic algebra and finite enumeration rather than importing fitted values or merely printing expected conclusions. The core representation follows analytically from the accepted Record additivity premise, while the C3 power sums genuinely derive Q = 1/3 + (2/3)r from the displayed supplied character family. The generation endpoints are substitutions into that structural coordinate, not asserted physical selectors.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

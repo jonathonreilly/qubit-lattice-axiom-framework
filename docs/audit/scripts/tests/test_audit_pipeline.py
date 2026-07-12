@@ -3974,6 +3974,14 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "This appendix does not determine the clock, given only the accepted premises.",
             "This companion cannot recover the selector, when restricted to the four axioms.",
             "This document cannot supply a scale \u2014 while operating within the baseline postulates.",
+            "## Scope\n### The finite-transfer identity cannot determine the continuum normalization\nSupporting detail.\n",
+            "## Scope \u2014 The finite-transfer identity cannot determine the continuum normalization\nSupporting detail.\n",
+            "Not claimed: does not derive external x; the retained axioms cannot determine x.",
+            "## Scope\nDoes not derive external x; the retained axioms cannot determine x.\n",
+            "The manuscript no longer claims that route A is impossible but proves that no admissible route exists.",
+            "The retained inputs do not lack a local map but no admissible route exists globally.",
+            "The selector wall no longer blocks transfer but blocks the readout channel.",
+            "Not claimed: does not determine the 3.5PN coefficient from retained axioms.",
         ):
             with self.subTest(body=body):
                 self.assertTrue(
@@ -4158,6 +4166,12 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "This audit appendix does not derive the external calibration; the parent row supplies it.",
             "This appendix does not determine the clock, because the parent row carries it.",
             "This document cannot supply the scale, while the source theorem supplies it.",
+            "Zero eigenmodes determine the dimension of the null space.",
+            "No further fixed fiber enters the decomposition.",
+            "No additional closed polytope appears in the exact cellulation.",
+            "The residual wall no longer persists and the exact map closes the boundary.",
+            "This short self-contained technical audit note does not derive the external coefficient; the parent row supplies it.",
+            "No mathematically distinct globally admissible alternative representation exists.",
         ):
             with self.subTest(body=body):
                 self.assertFalse(

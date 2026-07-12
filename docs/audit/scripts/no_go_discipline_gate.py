@@ -161,7 +161,7 @@ NEGATIVE_SUBJECT_CLOSURE_RE = re.compile(
     r"\b(?:(?:no(?!\s+longer\s+(?:\w+ly\s+)?(?:claims?|asserts?|states?|"
     r"reports?|presents?|carries|includes?))|neither|"
     r"(?<!the )(?<!The )zero"
-    r"(?!\s+(?:modes?|eigenvalues?|eigenvectors?|crossings?|energy)\b)"
+    r"(?!\s+(?:modes?|eigenmodes?|eigenstates?|eigenfunctions?|eigenvalues?|eigenvectors?|crossings?|energy)\b)"
     r"(?=\s+(?:[\w-]+\s+){0,3}"
     r"(?:(?!(?:fixes|closes|determines|derives|selects|supplies|removes|"
     r"resolves|yields|chooses|decides|gives|produces|maps|sets|takes|"
@@ -185,14 +185,15 @@ NEGATIVE_SUBJECT_CLOSURE_RE = re.compile(
     r"(?:(?:can\s+|is\s+able\s+to\s+|are\s+able\s+to\s+)?"
     # "closed <shape>" noun-phrase readings and "fixed point/locus"
     # compounds are excluded; verb readings still gate.
-    r"(?:close(?:s|d(?!(?:[\s-]+forms?\b)|(?:[\s-]+(?:surface|loop|curve|"
-    r"path|orbit|set|shell|string|contour|subspace|manifold)s?\b"
-    r"(?=[^\n.;:]{0,60}\b(?:is|are|was|were|appears?|emerges?|arises?|"
-    r"exists?|remains?|follows?|closes?)\b))))?|"
+    r"(?:close(?:s|d(?!(?:[\s-]+forms?\b)|(?:(?:[\s-]+[a-z-]+){1,2}s?\b"
+    r"(?=\s+(?:is|are|was|were|appears?|emerges?|arises?|enters?|"
+    r"exists?|remains?|follows?|closes?|contributes?|forms?|lies?|sits?)\b))))?|"
     r"remove[sd]?|resolve[sd]?|discharge[sd]?|suppl(?:y|ies|ied)|"
     r"derive[sd]?|select[sd]?|determine[sd]?|"
     r"fix(?:es)?(?!-)|fixed(?!-)(?![\s]+(?:points?|locus|loci|backgrounds?|"
-    r"surfaces?|charts?)\b)|retire[sd]?|"
+    r"surfaces?|charts?)\b)(?!(?:[\s-]+[a-z-]+){1,2}s?\b(?=\s+(?:is|are|"
+    r"was|were|appears?|emerges?|arises?|enters?|exists?|remains?|"
+    r"follows?|contributes?|forms?|lies?|sits?)\b))|retire[sd]?|"
     r"eliminate[sd]?)|succeeds?\s+in\s+"
     r"(?:closing|removing|resolving|discharging|supplying|deriving|selecting|"
     r"determining|fixing|retiring|eliminating))\b",
@@ -286,7 +287,7 @@ AUTHORITY_PAYLOAD_RE = re.compile(
 )
 NOTE_SUBJECT_DISCLAIMER_RE = re.compile(
     r"\b(?:this|that|the(?:\s+(?:present|current))?)\s+"
-    r"(?:[\w-]+\s+){0,3}"
+    r"(?:[\w-]+\s+){0,5}"
     r"(?:note|companion|appendix|document|section|table|readme|write-?up)\s+"
     r"(?:alone\s+|by\s+itself\s+|also\s+|deliberately\s+|explicitly\s+|"
     r"intentionally\s+|therefore\s+|thus\s+|still\s+|currently\s+)*"
@@ -316,7 +317,7 @@ DISCLAIMER_FRAGMENT_LINE_RE = re.compile(
     re.IGNORECASE,
 )
 UNIQUENESS_SUBJECT_RE = re.compile(
-    r"\s*(?:[\w-]+\s+){0,3}(?:other|second|additional|alternative|further)\b",
+    r"\s*(?:[\w-]+\s+){0,5}(?:other|second|additional|alternative|further)\b",
     re.IGNORECASE,
 )
 AUTHORITY_UNIQUENESS_SUBJECT_RE = re.compile(
@@ -350,7 +351,10 @@ NEGATED_PREDICATE_PRESCRUBS = (
         r"insufficient|unliftable|unavailable|unobtainable|unclosed)\b",
         re.IGNORECASE,
     ),
-    re.compile(r"\b(?:does|do|did)\s+not\s+lack\b[^\n.;:]{0,60}", re.IGNORECASE),
+    re.compile(r"\b(?:does|do|did)\s+not\s+lack\b"
+        r"(?:(?!\s+(?:but|and|nor|yet|while|whereas)\s)[^\n.;:]){0,60}",
+        re.IGNORECASE,
+    ),
     re.compile(
         r"\bclaim\s+that\b[^\n.;:]{0,140}\b(?:is|was|has\s+been)\s+refuted\b",
         re.IGNORECASE,
@@ -361,7 +365,7 @@ NEGATED_PREDICATE_PRESCRUBS = (
         r"(?:explicitly\s+)?den(?:ies|ied)\s+that\b|"
         r"is\s+false\s+that\b|refutes?\s+that\b|"
         r"retract(?:s|ed)?\s+that\b|withdraw(?:s|ed)?\s+that\b)"
-        r"[^\n.;:,\u2014]*",
+        r"(?:(?!\s+(?:but|and|nor|yet|while|whereas)\s)[^\n.;:,\u2014])*",
         re.IGNORECASE,
     ),
     # Rejection frames scoped to their claim noun or that-complement, in
@@ -369,7 +373,7 @@ NEGATED_PREDICATE_PRESCRUBS = (
     re.compile(
         r"\b(?:rejects?|disproves?|falsif(?:y|ies)|repudiates?|overturns?)\s+"
         r"(?:the\s+)?(?:claim|assertion|reading|conclusion)\s+"
-        r"(?:of\s+[\w-]+|that\b[^\n.;:,\u2014]*)",
+        r"(?:of\s+[\w-]+|that\b(?:(?!\s+(?:but|and|nor|yet|while|whereas)\s)[^\n.;:,\u2014])*)",
         re.IGNORECASE,
     ),
     re.compile(
@@ -451,9 +455,16 @@ def _strip_disclaimer_sections(text: str) -> str:
             if is_heading:
                 # A heading is presentation; any full-sentence remainder
                 # after a "## Scope: <assertion>" colon is judged normally.
-                remainder = re.sub(
-                    r"^[ \t]{0,3}#{1,6}\s+[^:\n]*:?", "", line
-                ).strip()
+                stripped = re.sub(r"^[ \t]{0,3}#{1,6}\s+", "", line)
+                title_only = re.sub(r"^\s*\d+(?:\.\d+)*(?:[.):]|\s*[-\u2013\u2014])?\s*", "", stripped).strip()
+                parts = re.split(r":|\s+[\u2014\u2013-]\s+", stripped, maxsplit=1)
+                remainder = parts[1].strip() if len(parts) == 2 else ""
+                if not remainder and not DISCLAIMER_HEADING_RE.match(title_only):
+                    # A full-subject assertion used as a heading is prose,
+                    # not a disclaimer title.
+                    if not DISCLAIMER_FRAGMENT_LINE_RE.match(title_only):
+                        kept_lines.append(title_only if _exemptable(line) else line)
+                        continue
                 if not remainder:
                     kept_lines.append("" if _exemptable(line) else line)
                     continue
@@ -468,7 +479,7 @@ def _strip_disclaimer_sections(text: str) -> str:
                 _fragment_veto_span(line)
                 + (" " + continuation if line and line[-1:] not in ".;:!?" else "")
             ):
-                kept_lines.append("")
+                kept_lines.append(_fragment_split(line)[1])
                 continue
             kept_lines.append(line)
         pieces.append("\n".join(kept_lines))
@@ -477,21 +488,27 @@ def _strip_disclaimer_sections(text: str) -> str:
     return "".join(pieces)
 
 
-def _fragment_veto_span(payload: str) -> str:
-    parts = re.split(r"([;.])", payload, maxsplit=1)
+def _fragment_split(payload: str) -> tuple[str, str]:
+    parts = re.split(r"(;|\.(?=\s|$))", payload, maxsplit=1)
     if len(parts) == 3:
-        head, sep, tail = parts
-        if NEGATIVE_CONTINUATION_RE.match(tail) or re.match(
-            r"\s*(?:nor|and\s+no|even)\b", tail, re.IGNORECASE
-        ):
-            return payload
-        return head
-    return payload
+        return parts[0], parts[2]
+    return payload, ""
+
+
+def _fragment_veto_span(payload: str) -> str:
+    head, tail = _fragment_split(payload)
+    if tail and (
+        NEGATIVE_CONTINUATION_RE.match(tail)
+        or re.match(r"\s*(?:nor|and\s+no|even)\b", tail, re.IGNORECASE)
+    ):
+        return payload
+    return head
 
 
 def _scrub_labeled_disclaimer_lines(text: str) -> str:
     def replace(match: re.Match[str]) -> str:
         payload = match.group("payload").strip()
+        head, rest = _fragment_split(payload)
         tail = match.string[match.end(): match.end() + 400]
         stop = len(tail)
         for ch in ".;:!?":
@@ -515,7 +532,9 @@ def _scrub_labeled_disclaimer_lines(text: str) -> str:
             (not payload or DISCLAIMER_FRAGMENT_LINE_RE.match(payload))
             and _exemptable(wrapped)
         ):
-            return ""
+            # Keep any independent continuation after the fragment's own
+            # sentence for ordinary matching.
+            return rest
         return payload
 
     return LABELED_DISCLAIMER_LINE_RE.sub(replace, text)
@@ -567,10 +586,27 @@ def _scrub_note_subject_clauses(text: str) -> str:
 def _scrub_removed_boundaries(text: str) -> str:
     def replace(match: re.Match[str]) -> str:
         span = match.group(0)
-        # Coordination keeps a live predicate sharing the subject; leave
-        # the whole clause for the ordinary matchers.
-        if re.search(r"\s(?:but|and|yet)\s", span, re.IGNORECASE):
-            return span
+        # A coordinated predicate may still be live; drop only the
+        # removal statement and keep the coordinated remainder for the
+        # ordinary matchers ("no longer persists and the exact map
+        # closes ..." keeps the affirmative tail; "... but blocks the
+        # readout channel" keeps the live negative).
+        parts = re.split(r"(\s(?:but|and|yet)\s)", span, maxsplit=1, flags=re.IGNORECASE)
+        if len(parts) == 3:
+            tail = parts[2]
+            if re.match(
+                r"\s*(?:no\b|not\b|cannot|never|blocks?|prevents?|"
+                r"precludes?|fails?)",
+                tail,
+                re.IGNORECASE,
+            ):
+                # The coordinated predicate is live and negative; keep the
+                # boundary subject with it.
+                noun = re.match(r"\w+", span)
+                subject = noun.group(0) + " " if noun else ""
+                return subject + parts[1].strip() + " " + tail
+            # Affirmative continuation: drop the removal statement only.
+            return tail
         return ""
 
     return BOUNDARY_REMOVED_TEMPORAL_RE.sub(replace, text)

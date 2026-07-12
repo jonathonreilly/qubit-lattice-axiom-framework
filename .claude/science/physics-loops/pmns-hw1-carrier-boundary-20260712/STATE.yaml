@@ -39,15 +39,17 @@ no_go_routes:
   - projector-resolution of an inserted I_3 does not derive its normalization
 review_findings: all iteration-1 findings fixed; two narrow iteration-2 prose/checklist remnants fixed; iteration-3 targeted re-review clean
 review_disposition: pass
-pr_status: pending
+pr_status: opened
+pr_number: 5300
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5300
+remote_branch: physics-loop/pmns-hw1-source-transfer-block01-20260712
 lock:
   shared_lock_status: unavailable_hardcoded_other_user_home
   fallback_lock_path: /private/tmp/pmns_hw1_source_transfer_boundary.physics-lock.json
   fallback_lock_holder: pmns-hw1-872bcebf
 next_exact_action: >-
-  Commit the final review/pipeline certificate, push the dedicated science
-  branch, open and verify one review PR, then leave independent audit as the
-  next post-landing action.
+  Leave PR #5300 unmerged for normal review. After it lands through the normal
+  integration path, run a fresh independent audit of the repaired claim row.
 stop_condition: >-
   Stop only after a review-clean theorem/obstruction packet is committed,
   pushed, and represented by one verified review PR, or after a precise

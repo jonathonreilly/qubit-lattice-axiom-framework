@@ -1,4 +1,5 @@
 # PR Backlog
 
-No backlog item. One review PR is required for this coherent science block and
-will be recorded here only if authenticated PR creation or verification fails.
+No backlog item. The one required review PR is open and verified as
+[PR #5300](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5300).
+It is mergeable at handoff and remains unmerged for normal review.

@@ -13,6 +13,10 @@ three iterations. The validation pipeline parsed the row as a
 `bounded_theorem` depending only on `minimal_axioms`, with no helper runners,
 and placed it ready in the critical queue. All regenerated audit, publication-
 status, and front-door outputs were restored from `origin/main` before commit.
+The coherent block is published for review as
+[PR #5300](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5300)
+from `physics-loop/pmns-hw1-source-transfer-block01-20260712`; it is deliberately
+left unmerged.
 
 ## Exact next action
 

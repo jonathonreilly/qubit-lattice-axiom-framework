@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 376 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2751 |
+| unaudited | 2750 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 62 |
+| ~~audited_conditional~~ | 63 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 491 |
-| `audited_conditional` | 62 |
+| `audited_conditional` | 63 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3101 |
+| `unaudited` | 3100 |
 
 | claim_type | count |
 |---|---:|
@@ -658,6 +658,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3932,6 +3933,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
   - **gate failures:**
     - N1: only three genuinely distinct mechanism classes are closed; separate reality-structure and physical-readout routes remain OPEN or UNTESTED.
+
+### `flavor_find_j_round3_dirac_generation_blind_2026-06-02`
+
+- **Note:** [`FLAVOR_FIND_J_ROUND3_DIRAC_GENERATION_BLIND_2026-06-02.md`](../../docs/FLAVOR_FIND_J_ROUND3_DIRAC_GENERATION_BLIND_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Four finite 3x3 C3-circulant algebra checks conditional on U_gen=iI3; no exhaustive doublet-J or physical charge-conjugation claim is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00421-flavor_find_j_round3_dirac_g`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Conditional on U_gen=iI3, a central generation-space Dirac block does not supply the doublet complex structure, does not rotate b, and does not force det_C/r=1/2.  _(class `A`)_
+- **chain closes:** False — The four restricted finite-matrix checks close algebraically under the supplied U_gen=iI3 input. The overall row is not clean because that input is not derived from physical charge conjugation and the required no-go stress test leaves noncirculant J routes and the physical generation-action bridge untested.
+- **rationale:** The runner performs genuine numerical matrix checks and exact symbolic algebra rather than printing expected constants. It supports the stated central-scalar invariance, phase-centralizer invariance, generic scalar-rephasing obstruction, and exact zero solution in the Hermitian C3-circulant anticommutant family. The result remains conditional on U_gen=iI3, and neither the physical spinor-to-generation bridge nor exhaustion of all possible doublet-J mechanisms is established.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the physical generation-action bridge, noncirculant J carriers, and independent block-count/readout route remain open or untested.
+    - N5: doublet-J absence language is not tested across noncirculant, enlarged-carrier, physical-bridge, and alternate-readout resolutions.
 
 ### `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02`
 

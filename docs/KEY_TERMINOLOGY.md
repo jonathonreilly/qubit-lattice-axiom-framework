@@ -1,4 +1,4 @@
-<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=de0c15a28d0872427a798a7d0f9eb99389c46cac72ab4ed43d93ef2f8e48e700 -->
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=c03e7bd6a1e5cd35db4beaf6570ea5bd4989a38ca7001e2d877f82da3fa6e3bc -->
 # Key Terminology
 
 **Claim type:** meta

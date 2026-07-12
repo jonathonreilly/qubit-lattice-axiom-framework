@@ -3,7 +3,7 @@
     "critical": 650,
     "high": 335,
     "leaf": 1098,
-    "medium": 737
+    "medium": 736
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -31214,30 +31214,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_koide_lightcone_primitive.py",
-      "transitive_descendants": 4
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "car_from_positivity_neutrality_note_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.322,
-      "note_path": "docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/car_from_positivity.py",
       "transitive_descendants": 4
     },
     {
@@ -80690,6 +80666,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 539,
-  "total_pending": 2820
+  "ready_count": 538,
+  "total_pending": 2819
 }

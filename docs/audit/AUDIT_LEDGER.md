@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 96 |
-| **retained_no_go** | 39 |
+| **retained_no_go** | 40 |
 | **retained_bounded** | 397 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2703 |
+| unaudited | 2702 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 518 |
+| `audited_clean` | 519 |
 | `audited_conditional` | 79 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3053 |
+| `unaudited` | 3052 |
 
 | claim_type | count |
 |---|---:|
@@ -189,6 +189,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `boundary_law_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `branch_entanglement_robustness_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `branching_slack_rate_projective_limit_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `car_from_positivity_neutrality_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | C | - |
 | `causal_escape_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `causal_propagating_field_live_packet_note_2026-06-05` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `central_band_born_dense_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1782,6 +1783,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner and helper import or hard-code the parent input P = 0.5934, then compute the displayed quantities by elementary arithmetic. The independent check confirms the formulas and printed values within the stated tolerances. There are no external comparator checks and no first-principles beta=6 plaquette derivation here, so the result is an algebraic decoration of a single retained-bounded parent rather than an independent physical closure.
 - **decoration parent:** `plaquette_self_consistency_note`
 - **auditor confidence:** high
+
+### `car_from_positivity_neutrality_note_2026-06-02`
+
+- **Note:** [`CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md`](../../docs/CAR_FROM_POSITIVITY_NEUTRALITY_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Route-local no-go: the finite transfer-operator positivity, Stone-spectrum, and explicitly constructed two-slice Gram tests do not select cross-site CAR over the hard-core-boson frame in the tested finite qubit hopping models.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00262-car_from_positivity_neutrali`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** In the tested finite models, the open-chain transfer objects and Stone spectra are identical in the two frames, while both distinct closed-ring Hamiltonians still yield positive transfer operators.  _(class `C`)_
+- **chain closes:** True — The runner directly constructs both operator frames and computes their algebraic relations, transfer spectra, Gram spectra, correlators, and ring spectra. Those computations establish neutrality for the explicitly tested finite positivity objects without claiming a global spin-statistics theorem.
+- **rationale:** The source code genuinely constructs finite qubit operators and performs matrix, rank, PSD, intertwiner, and spectral computations instead of printing hard-coded expected conclusions. The accepted minimal-axiom authority supplies the lattice and one-site algebra baseline without creating a dependency downgrade. The result is clean only for the stated finite transfer/Stone/Gram route; graded locality, parity superselection, fuller reflection-positive measures, and continuum spin-statistics remain outside its scope.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `causal_escape_window_note`
 

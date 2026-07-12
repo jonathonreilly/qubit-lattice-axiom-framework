@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.py
-runner_sha256: 7d0418b77f521e7f19798306f641c3957228f1d2017c9c36860e7cf41e6f0fc9
+runner_sha256: 204d061f4e9b23e55d770b411af3e4a85363192ec04baa868cdb2948eaa7f0b1
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.24
 status: ok
 ----- stdout -----
 d=3 single-band Landau-Peierls normalization source-boundary runner
@@ -14,13 +14,13 @@ PASS: midpoint Euler-Maclaurin has no linear endpoint term: B1(1/2)=0
 PASS: midpoint h^2 coefficient is exactly 1/24: -B2(1/2)/2=1/24
 PASS: grand-potential second-difference coefficient is exactly -1/12 after integration by parts: -2*(1/24)=-1/12
 PASS: local magnetic oscillator invariant is det(Hxy): (a,b,c)=(3/2,5/3,1/7) trace=0 det=243/98; (a,b,c)=(7/5,11/6,-2/9) trace=0 det=2039/810; (a,b,c)=(5/4,9/8,1/3) trace=0 det=373/288
-PASS: elliptic patches have a real magnetic frequency and saddle patches do not, so the midpoint ladder derivation is elliptic-only: elliptic det=243/98 lambda^2=-243/98<0; elliptic det=373/288 lambda^2=-373/288<0; saddle det=-247/98 lambda^2=247/98>0; saddle det=-398/405 lambda^2=398/405>0
+PASS: canonical spectrum and definiteness restrict the written midpoint derivation to positive-definite elliptic patches: positive-elliptic trace=0 det=243/98 lambda^2=-243/98<0; positive-elliptic trace=0 det=373/288 lambda^2=-373/288<0; negative-elliptic trace=0 det=243/98 lambda^2=-243/98<0; negative-elliptic trace=0 det=373/288 lambda^2=-373/288<0; saddle trace=0 det=-247/98 lambda^2=247/98>0; saddle trace=0 det=-398/405 lambda^2=398/405>0
 PASS: cubic band transverse Hessian determinant is 4 cos(kx) cos(ky): max finite-difference determinant error=7.513e-08
-PASS: cubic Brillouin zone contains saddle (negative-determinant) patches held out of the derived elliptic scope: det_min=-3.990369, det_max=+3.990369
-PASS: full-zone integral under the conjectured saddle continuation reproduces the parent d=3 LP reference (diagnostic; saddle scope is an open conjecture): lp_ref=-3.949577202602e-03, expected=-3.949577202602e-03
+PASS: cubic Brillouin zone contains positive-definite elliptic, negative-definite elliptic, and saddle patches: positive=1024 negative=1024 saddle=2048 det_min=-3.990369 det_max=+3.990369
+PASS: full-zone integral under the conjectured full-patch continuation reproduces the parent d=3 LP reference (diagnostic; remaining-patch scope is open): lp_ref=-3.949577202602e-03, expected=-3.949577202602e-03
 PASS: cubic particle-hole symmetry is preserved by the normalized LP integral: max |chi(mu)-chi(-mu)|=3.469e-18
 PASS: source note records bounded status and no-axiom boundary: all required source-boundary phrases present
-PASS: note restricts the derived claim to elliptic patches and marks the saddle continuation as an open conjecture: forbidden_present=[] required_absent=[]
+PASS: note restricts the derived claim to positive-definite elliptic patches and keeps the full-patch continuation open: forbidden_present=[] required_absent=[]
 PASS: runner uses exact rational normalization, not a fitted float: CELL_NORMALIZATION_EXACT=-1/12
 TOTAL: PASS=14 FAIL=0
 

@@ -1,6 +1,27 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block22-controlled-ultralocal-continuum-20260712`.
+The compact-interior continuum runner reports `PASS=8 FAIL=0`. On every
+compact subset of the strict Dobrushin wedge, uniform weighted mixing forces
+covered subexponential local observable families to factorize at fixed
+positive physical separation as `a->0`. Contact/non-Gaussian white-noise
+limits, exponential normalizations, macroscopic observables, critical tuning,
+and outside-wedge routes remain open. Under isotropic scaling the
+gauge-invariant OS gap lower bound diverges as `c/a`, while direct fermion
+propagation decouples without erasing local determinant-loop effects.
+
+Independent code/math, physics/import/Nature, governance, and full N1--N8
+reviews pass after aggregate-normalization, contact-limit, mass-language,
+weighted-runner, and five-condition wall-audit repairs. Audit validation seeds
+one `no_go` / `unaudited` row with exactly the Dobrushin uniqueness dependency;
+strict lint has zero errors and generated audit outputs are stripped.
+
+Compact-interior continuum no-go PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5303
+is open and mergeable against the Dobrushin uniqueness head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block21-dobrushin-spatial-uniqueness-20260712`.
 The Dobrushin spatial-uniqueness runner reports `PASS=7 FAIL=0`. With
 `kappa=14/(m^2+2)`, `m>sqrt(12)`, and

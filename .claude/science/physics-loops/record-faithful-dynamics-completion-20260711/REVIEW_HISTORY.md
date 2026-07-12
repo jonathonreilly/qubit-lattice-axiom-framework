@@ -712,3 +712,17 @@ claim. No axiom-update stop is triggered.
 
 Delivery: stacked PR #5301 is open on the spatial DLR accumulation head.
 Independent audit remains authoritative.
+
+## Compact-interior continuum boundary review
+
+PASS WITH NARROW NO-GO BOUNDARY. Uniform weighted Dobrushin comparison on a
+compact strict subwedge gives `exp(-lambda_K R/a)` separated correlation
+decay. The final source restricts this to observable families with aggregate
+support/coefficient/normalization log-growth `o(1/a)`, keeps contact and
+white-noise limits open, distinguishes the dimensionful bare mass parameter
+from a pole mass, retains determinant-loop local effects, and limits the
+`c/a` OS-gap statement to isotropic gauge-invariant reconstructions. N1--N8
+contains all five conditions and ten wall pairs. Runner/cache: `PASS=8 FAIL=0`.
+Audit validation seeds one `no_go` / `unaudited` row with source hash
+`b9a08d8ef90d8600...` and the sole Dobrushin uniqueness dependency. PR #5303
+is open; no axiom-update stop is triggered.

@@ -38,3 +38,17 @@
 | time | distinguish event order, tick count, and dimensionful rate |
 | carrier selection | exhaust scalar and vector cubic intertwiners |
 | continuum generator | control the logarithm/coarse-graining branch and locality |
+
+## Minimal-dilation supplied hypotheses
+
+- A finite one-excitation sector on one unoriented nearest-neighbor edge.
+- A supplied complete rank-one `L/R` pointer menu and `0<q<1`.
+- Finite CP-instrument/Kraus mathematics, trace weights, sequential
+  composition while unrecorded, and an absorbing append-only outcome register.
+- The witness initial state `rho=|L><L|` and the supplied stopping rule that
+  repeats only on the empty outcome and terminates at the first `L/R` outcome.
+
+These inputs make the exchange counterexample exact but bounded. The external
+outcome label is not derived as a framework Record. The block does not derive
+a physical lattice instrument, Born weights, event rate, simultaneous cubic
+composition, or continuum scaling from the four axioms.

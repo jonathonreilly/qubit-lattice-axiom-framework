@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_fermionic_realification_pfaffian_power_identity_2026_07_12.py
+runner_sha256: f43fd5d123ba7d3a19c366db69f9bb3d551c82586da2e82c2e2d07e9785b6ca5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.76
+status: ok
+----- stdout -----
 Fermionic realification and Pfaffian determinant power
 ================================================================
 
@@ -47,3 +55,6 @@ Scope guards
 
 ================================================================
 TOTAL: PASS=32, FAIL=0
+
+----- stderr -----
+

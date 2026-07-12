@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 387 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2730 |
+| unaudited | 2729 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 71 |
+| ~~audited_conditional~~ | 72 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,21 +46,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 503 |
-| `audited_conditional` | 71 |
+| `audited_conditional` | 72 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3080 |
+| `unaudited` | 3079 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2052 |
 | `decoration` | 23 |
 | `meta` | 357 |
-| `no_go` | 469 |
+| `no_go` | 470 |
 | `open_gate` | 198 |
-| `positive_theorem` | 655 |
+| `positive_theorem` | 654 |
 
 | criticality | count |
 |---|---:|
@@ -705,6 +705,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `structured_chokepoint_bridge_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `teleportation_3d_initial_ramp_probe_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `third_grown_family_complex_boundary_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `universal_gr_block_normalization_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -8674,6 +8675,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The cached runner completes and directly computes the finite sweep claimed by the note: 5 of 15 rows satisfy the signed-source package, all zero-source and neutral controls remain zero, and edge drift rows are sign-reversed. This closes only the finite tested-window boundary claim, not a continuous-drift theorem.
 - **rationale:** The runner does not print constants or compare to an external target; it constructs the third connectivity family, propagates source fields, and computes the row outcomes used in the note. The note's stated boundary matches the cached output: edge drifts 0.0 and 0.5 are sign-reversed, while accepted rows occur only in the interior tested window. Residual risk is scope-limited: the result is a finite bounded compute over the listed drifts and seeds, not a proof for all drifts or seeds.
 - **auditor confidence:** high
+
+### `third_grown_family_complex_boundary_note`
+
+- **Note:** [`THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md`](../../docs/THIRD_GROWN_FAMILY_COMPLEX_BOUNDARY_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite runner-backed observation that, for drifts [0.0, 0.1, 0.2, 0.3, 0.5] and seeds [0, 1, 2], the drift-0.20 aggregate anchor fails the runner's TOWARD@gamma=0.1 -> AWAY@gamma=0.5 criterion; no family-wide or basin-wide nonexistence claim was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00228-third_grown_family_complex_b`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Across the retained interior drift window, no seed-consistent TOWARD -> AWAY crossover survives, so no basin-wide complex-action companion is retained.  _(class `C`)_
+- **chain closes:** False — The runner computes a genuine finite complex-propagation probe and establishes the aggregate anchor failure, but it does not join the sign-passing seed rows to seed-resolved complex outcomes or close extrapolation beyond the sampled grid.
+- **rationale:** Issue: the computed aggregate anchor failure is extended to a seed-consistent retained-basin and family-wide boundary without a seed-level join to the sign-gate passes, while the representative table is partly stale relative to current stdout. Why this blocks: the finite class-C computation supports a narrow sampled failure but does not establish the stated basin-wide no-go or dispose of untested gamma choices, lattice scales, carriers, and readouts. Repair target: emit joined per-seed sign-pass and complex-crossover rows, synchronize the table, and either test the remaining mechanism classes or explicitly restrict the conclusion to the finite aggregate anchor. Claim boundary until fixed: the drift-0.20 aggregate row has clean Born and weak-field diagnostics but fails the runner-defined crossover.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 contains OPEN and UNTESTED seed-join, gamma, connectivity, lattice-scale, readout, and expanded-window routes.
+    - N5 identifies untested resolutions behind the basin-wide and family-wide rhetoric.
+    - The current runner output is aggregate and does not join complex outcomes to the sign-retained seeds.
 
 ### `third_grown_family_complex_note`
 

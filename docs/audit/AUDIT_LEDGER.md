@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2792 |
+| unaudited | 2791 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 48 |
+| ~~audited_conditional~~ | 49 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 469 |
-| `audited_conditional` | 48 |
+| `audited_conditional` | 49 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3142 |
+| `unaudited` | 3141 |
 
 | claim_type | count |
 |---|---:|
@@ -608,6 +608,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `ac_reta_hclass_hunit_readout_derivation_obligation` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | F | - |
+| `acphilambda_ambient_equivariant_heat_trace_face_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `activity_energy_bound_witnesses_bounded_note_2026-07-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `adaptive_coevolving_geometry_no_go` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -769,6 +770,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The note correctly presents the identity as an open obligation, but supplies no carrier/source-action bridge or normalization theorem deriving it. The physical density-to-angle identification therefore remains unclosed.
 - **rationale:** Issue: the target equates an h-density class with the physical eta-angle readout, but the restricted packet contains no derivation of that map. Why this blocks: Record additivity and the approved primitives do not themselves determine the carrier, source action, or dimensionless readout normalization. Repair target: supply an independently audited carrier/source-action theorem together with either a native eta/holonomy identity or an inhomogeneous Record-facing normalization theorem. Claim boundary until fixed: the identification and all results using it remain conditional or pending-chain.
 - **auditor confidence:** high
+
+### `acphilambda_ambient_equivariant_heat_trace_face_2026-07-02`
+
+- **Note:** [`ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02.md`](../../docs/ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-lattice equivariant heat-trace reduction and the sqrt(3) site-to-[111]-length coefficient, with only finite sampled evidence for the stated continuum limit and no physical normalization, dynamics, value, or readout.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00375-acphilambda_ambient_equivari`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For both nontrivial powers, the fixed momenta are exactly the diagonal set, so the equivariant heat trace reduces to the one-dimensional sum with dispersion 6-6 cos(kappa), whose per-unit-[111]-length continuum coefficient is one third of the standard one-dimensional heat-kernel coefficient.  _(class `C`)_
+- **chain closes:** False — The finite-lattice localization and normalization arithmetic close, but the recorded runner result is stale: the note reports PASS=81 FAIL=0 while the supplied completed run reports PASS=79 FAIL=2. The packet also does not specify and prove a uniform limiting regime reconciling the continuum assertion with the runner choice N=ceil(12 sqrt(t)).
+- **rationale:** Issue: the completed runner contradicts the note's recorded 81/0 close, with two stale exact-string dependency-pin checks after the cited authority's repair. Why this blocks: the supplied verification artifact therefore does not certify the note on its own terms, and the finite N proportional to sqrt(t) checks do not by themselves prove the stated continuum limit. Repair target: update the authority locators and verification count, then add either an explicit order-of-limits proof or a runner with N/sqrt(t) tending to infinity. Claim boundary until fixed: the exact finite trace reduction, unit fixed-momentum weights, and algebraic sqrt(3) site-to-length conversion remain supported.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1 contains OPEN and UNTESTED continuum, dynamics-selection, and physical-readout routes.
+    - N5 finds an untested uniform-limit resolution behind the continuum rhetoric.
+    - The completed runner reports PASS=79 FAIL=2, contradicting the note's recorded PASS=81 FAIL=0.
 
 ### `acphilambda_hw_complementation_equivariance_support_note_2026-06-09`
 

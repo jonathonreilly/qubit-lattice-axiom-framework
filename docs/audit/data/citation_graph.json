@@ -58823,7 +58823,7 @@
         "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
       ],
       "helper_runner_paths": [],
-      "note_hash": "0f2a257b6acc10d5f7288b1cac09a77c6ab80bffd7a8ff85d59c1e2142b79506",
+      "note_hash": "7610a933c31f3c4f6d6a8b7903e6fa464030f96e9e4acfe7d0db3e73056839ca",
       "path": "docs/ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md",
       "runner_path": "scripts/acphilambda_fermionic_realification_pfaffian_power_identity_2026_07_12.py",
       "title": "Fermionic Realification and Pfaffian Determinant Power"
@@ -112147,7 +112147,7 @@
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "80a54ec0b855fbebdeead4c745c1d9d164996412eea7e36dccab2783721529cd",
+      "note_hash": "bc3b3006d940620080b8b8e8a4e8c7689ecec7784c7a18120f6ffb9d841ed7bb",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

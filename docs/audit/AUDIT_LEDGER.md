@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 93 |
+| **retained** | 94 |
 | **retained_no_go** | 35 |
 | **retained_bounded** | 372 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2762 |
+| unaudited | 2761 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 485 |
+| `audited_clean` | 486 |
 | `audited_conditional` | 57 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3112 |
+| `unaudited` | 3111 |
 
 | claim_type | count |
 |---|---:|
@@ -139,6 +139,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
@@ -819,6 +820,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N1 contains OPEN and UNTESTED continuum, dynamics-selection, and physical-readout routes.
     - N5 finds an untested uniform-limit resolution behind the continuum rhetoric.
     - The completed runner reports PASS=79 FAIL=2, contradicting the note's recorded PASS=81 FAIL=0.
+
+### `acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12`
+
+- **Note:** [`ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md`](../../docs/ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For every finite complex matrix K, the explicitly ordered single-sector Grassmann Gaussian has determinant power one under invertible coordinate changes, while the concatenated independent conjugate-sector Pfaffian product equals the ordinary realification determinant |det_C(K)|^2, including singular K; no physical carrier, Majorana reality condition, occupancy rule, or charged-lepton readout is derived.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-audit-pfaffian-power-retry-20260712`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Pf(A_K)=(-1)^(n(n-1)/2) det_C(K), and under Psi=M Xi the congruence factor det(M) is cancelled by the inverse Berezin Jacobian, so a coordinate change preserves determinant power one whereas an independently adjoined conjugate block gives |det_C(K)|^2.  _(class `A`)_
+- **chain closes:** True — Independent wedge/permutation derivation fixes the block-Pfaffian and negative-exponent Berezin signs, and the retained one-hop dependency supplies the realification determinant identity. Congruence covariance, the inverse Berezin Jacobian, even block degree, and polynomial continuation cover coordinate changes, direct sums, and singular matrices without an extra premise.
+- **rationale:** A direct perfect-matching/wedge calculation gives Pf(A_K)=(-1)^(n(n-1)/2)det(K), while the negative exponential contributes (-1)^n and the stated measure contributes (-1)^(n(n+1)/2), leaving det(K). For the concatenated 2n-variable sectors, the even block degree creates no grouped-orientation exchange sign and the two block-Pfaffian signs square to +1; S R(K) S^(-1)=diag(K,conjugate(K)) then gives the identical realification scalar. These are polynomial identities, so singular K is included; the residual risk is confined to physical carrier/readout choices that the theorem expressly excludes.
+- **auditor confidence:** high
 
 ### `acphilambda_hw_complementation_equivariance_support_note_2026-06-09`
 

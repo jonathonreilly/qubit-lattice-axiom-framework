@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_first_order_section_question_2026_07_11.py
+runner_sha256: ab3397c6e309fb9b863501b692b985017e1b8373cb59990ceb7bc754d2bac7ba
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.39
+status: ok
+----- stdout -----
+========================================================================
+Koide first-order section fork -- weight-stage vs outcome-stage K-reality
+box: Z^3 torus, L = 4 (periodic sector; corner momenta exact)
+========================================================================
+
+--- A. first-order generation determinant on the hw=1 corner triplet
+[PASS] (01) Grassmann/Berezin engine: Z = int dchibar dchi exp(chibar K chi) = det K to the FIRST power (generic 3x3, explicit exterior-algebra expansion; NO determinant identity assumed)
+[PASS] (02) the hw=1 corner triplet carries the generation C_3 cycle C (C^3 = I, C not symmetric): the one-component measure's coupling there is the circulant W = a*I + b*C + c*C^2
+[PASS] (03) explicit Berezin partition of W on the hw=1 triplet = det(W) to the FIRST power = det3(a,b,c) = a^3+b^3+c^3-3abc (single power; the measure does NOT produce |det|^2)
+[PASS] (04) exact isotype factorization: Z = lam0 * (lam_omega * lam_omegabar), singlet lam0 = a+b+c and the DOUBLET factor lam_omega * lam_omegabar (the omega/omega-bar pair) -- one Berezin power each, first-order
+
+--- B. untied holomorphic section vs K-real tied section
+[PASS] (05) UNTIED section (b, c independent): the doublet weight lam_omega*lam_omegabar is a HOLOMORPHIC polynomial in (a,b,c) -- no conjugate appears and d/dbbar = 0 identically. This is the candidate outcome-stage analytic prescription; no weighting law is inferred
+[PASS] (06) K-REAL TIED section c = conj(b): the first-power weight becomes NON-holomorphic -- Wirtinger d^2 det3/db dbbar = -3a (Laplacian -12a), and the doublet weight contains b*bbar. This is the candidate weight-stage analytic prescription
+[PASS] (07) conditional endpoint arithmetic (withdrawn rho-map not used): the supplied per-outcome-cell law gives r=1/2, Q=2/3, while the supplied per-real-mode law gives r=1, Q=1. The equations do not derive either law or pair it physically with a K-reality stage
+RESIDUAL (declared-open): the coupling on the hw=1 triplet is the C_3[111] rotation-channel circulant W = a*I + b*C + c*C^2, a DECLARED probe coupling, not a derived Yukawa. The source-side channel-space companion is currently unaudited; its broader classification is not reproven by this runner.
+RESIDUAL (declared-open): the per-outcome-cell and per-real-mode equipartition laws are alternative conditional inputs. Their association with outcome-stage and weight-stage K-reality is not derived by check 7.
+
+--- C. reflection positivity: does it touch the first-order measure?
+[PASS] (08) algebraic input used by the source-side RP wall: the bare first-order W_h = a*I + b*C is non-self-adjoint for generic b (C^T = C^2 != C). This check alone is not a full reflection-positivity test
+[PASS] (09) second-order Hermitian block object D=[[0,M],[Mdag,0]] reads det D = -|det M|^2 (the modulus; count-twice by construction) -- exact at a complex parameter point; this is a different object from the first-order measure Z = det(D_stag + A)
+[PASS] (10) the toy first-order measure Z = det(D_stag + A) is a different object: D_stag is real antisymmetric, and the one-component measure gives det to the FIRST power (not |det|^2). This algebra does not establish OS positivity of the physical first-order action
+[PASS] (11) corner reflection action depends on the reflection center: x_mu->-x_mu is identity, while x_mu->1-x_mu acts by (-1)^n_mu. Therefore this spatial corner calculation does not reduce a full OS reflection to coupling conjugation or decide the K-reality stage
+RESIDUAL (declared-open): a full Osterwalder--Schrader analysis requires the chosen reflection center, field transformation, time direction, measure, and positivity form. The finite spatial corner calculation supplies none of those missing links.
+
+--- D. the finite discriminator and the adjudication
+[PASS] (12) stage classifier I (conjugate degree): untied doublet weight has bbar-degree 0 (holomorphic, d/dbbar = 0), while imposing c=conj(b) first gives bbar-degree > 0. This separates the candidate outcome-stage and weight-stage analytic prescriptions but does not choose one  [conj-degree label = 0, tie = 3]
+[PASS] (13) stage classifier II (reality locus of Z): the untied first-power partition function is generically COMPLEX (nonzero phase); on the restriction c=conj(b) it is REAL. This locates the stage question but does not establish when the physical action imposes the restriction
+[PASS] (14) pointwise K-real data are stage-blind: restricting the holomorphic determinant after integration equals imposing c=conj(b) before evaluation, and the common Hermitian restriction has the real spectrum a+2|b|cos(delta+2pi k/3). This does not prove that an untied physical action is lawful
+[PASS] (15) a real determinant on the K-real locus is not a stage selector: the determinant equals the product of the common real spectrum, whereas a generic untied point is complex. No theta-sector or physical-mass identification is inferred from this algebra
+[PASS] (16) UNDECIDED WITH EXACT RESIDUAL: within the source-defined two-cell fork, K-reality is placed at the weight (restrict before analytic classification) or at the outcome (restrict after the holomorphic calculation). The checked algebra localizes that stage difference but does not select a stage, derive either equipartition law, or upgrade the conditional r=1 versus r=1/2 endpoints
+RESIDUAL (declared-open): the physical selection of the reading stage (weight tie vs outcome label) is an open K-reality / orbit-occupancy question (CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02; KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09). No admission premise class exists, and nothing here adopts a premise.
+RESIDUAL (declared-open): inherited gate-note residuals remain at their declared grades: kinetic-class premise, spin-statistics support tier (one Grassmann pair per site), boundary-holonomy convention, AC_phi_lambda labeling convention (STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03 section 5).
+RESIDUAL (declared-open): all cited source-note rows used for the fork, transfer walls, and occupancy alternatives are currently unaudited; this runner imports no audit grade from them.
+
+TOTAL: PASS=16 FAIL=0
+VERDICT: UNDECIDED WITH EXACT RESIDUAL. The determinant algebra distinguishes imposing K-reality before analytic classification (weight stage) from imposing the same restriction after the holomorphic calculation (outcome stage), while the two prescriptions agree pointwise on the K-real locus. The supplied per-real-mode and per-outcome-cell laws conditionally give r=1 and r=1/2, respectively, but neither law nor its pairing with a physical stage is derived. Spatial corner reflections are center-dependent and do not replace a full OS test. No premise adopted; no audit status.
+
+----- stderr -----
+

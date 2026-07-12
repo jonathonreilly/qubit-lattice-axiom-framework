@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_violation.py
-runner_sha256: 78929f59f68877d7cc06f96d3056f95156bc9069261d81c2b01d8aed4b475464
+runner_sha256: 03acab820c1b8e28ad99c6ab80bd93e8f9fac41fa553f3b88397242732f2fbe0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.05
+elapsed_sec: 3.19
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -64,7 +64,8 @@ Conditional SME-style scale parameterization
   If a compatible carrier and sector matching are supplied, an SME-style
   parameterization would assign:
   - The correction is a dimension-6 operator (d=6, n=4 in p)
-  - CPT-even (see Section 5 below)
+  - An even-in-momentum contribution in the c-type coefficient basis
+  - No full-action CPT classification (see Section 5 below)
   - The nonminimal SME coefficients are:
 
     c^(6)_{(I)00}   = -(a^2/12)(3/5) / sqrt(4 pi)        [isotropic, j=0]
@@ -81,10 +82,10 @@ Conditional SME-style scale parameterization
     c^(6) isotropic (j=0): -3.3654e-40 GeV^-2
     c^(6) aniso (j=4,m=0): -2.6511e-40 GeV^-2
 
-  Dimensionless SME coefficients (c^(6) * m^2):
+  Dimensionless mass-normalized coefficients (c^(6) * m^2):
     Electron: c^(6) * m_e^2 = 1.4646e-46
     Proton:   c^(6) * m_p^2 = 4.9350e-40
-    Photon:   c^(6) (dim-less) = 5.6090e-40 GeV^-2
+    Photon:   c^(6) coefficient = 5.6090e-40 GeV^-2
 
 ==============================================================================
 2b. CUBIC-HARMONIC IDENTITY VERIFICATION (normalized Y_lm)
@@ -104,7 +105,7 @@ Conditional SME-style scale parameterization
   CUBIC-HARMONIC IDENTITY VERIFICATION: PASS (5/5 checks)
 
 ==============================================================================
-3. HISTORICAL SCALE COMPARISON (NOT A VALIDATED EXCLUSION)
+3. CONDITIONAL COEFFICIENT SCALE (NO EXPERIMENTAL MATCH)
 ==============================================================================
 
   Natural suppression at E = 1 GeV:
@@ -115,16 +116,12 @@ Conditional SME-style scale parameterization
            = 5.6090e-40 GeV^-2
            = 8.3607e-02 (in E_Planck^-2 units)
 
-  Experiment                          Sector     Bound              Conditional        Ratio        Role
-  ─────────────────────────────────── ────────── ────────────────── ────────────────── ──────────── ────────────────────
-  GRB polarization (vacuum birefring  photon     1.00e-32 GeV^-2    5.61e-40 GeV^-2    5.61e-08     illustrative only
-  Fermi LAT time-of-flight            photon     2.52e-22 GeV^-2    5.61e-40 GeV^-2    2.23e-18     illustrative only
-  Hughes-Drever (electron sector)     electron   1.00e-27 GeV       5.61e-40 GeV       5.61e-13     illustrative only
-  Atomic clock comparisons (proton s  proton     1.00e-27 GeV       5.61e-40 GeV       5.61e-13     illustrative only
-  Neutron spin precession             neutron    1.00e-31 GeV       5.61e-40 GeV       5.61e-09     illustrative only
-  Neutrino oscillation (MINOS/IceCub  neutrino   1.00e-23 GeV       5.61e-40 GeV       5.61e-17     illustrative only
-  Muon anomalous magnetic moment      muon       1.00e-24 GeV       5.61e-40 GeV       5.61e-16     illustrative only
-  Gravity sector (lunar laser rangin  gravity    1.00e-09           5.61e-58           5.61e-49     illustrative only
+  No experimental bound is divided into this coefficient. Published constraint
+  catalogs mix sectors, operator dimensions, and observable responses;
+  none supplies the sector-specific response map needed for a valid match.
+  The numbers in this section are therefore internal scales of the selected
+  symbol only.
+
 
 ==============================================================================
 4. STAGGERED FERMION TASTE-BREAKING CONTRIBUTIONS
@@ -179,44 +176,36 @@ Conditional SME-style scale parameterization
   the leading finite-a anisotropy is governed by K_4(theta, phi). Neither that
   carrier identification nor a = l_Planck is derived here.
 
-  1. DIRECTION-DEPENDENT PROPAGATION SPEED
+  1. DIRECTION-DEPENDENT GROUP VELOCITY
 
-     For a massless particle (photon, graviton):
-       v(theta, phi) = c * [1 - (a^2/24) p^2 * f_4(theta, phi)]
+     For a massless mode governed by the supplied scalar symbol:
+       E/p = 1 - (a^2/24) p^2 * f_4(theta, phi) + O(a^4 p^4)
+       v_g   = 1 - (a^2/8) p^2 * f_4(theta, phi) + O(a^4 p^4)
 
      where f_4 = sin^4(theta)cos^4(phi) + sin^4(theta)sin^4(phi)
                  + cos^4(theta)
 
      The speed varies with direction by:
-       delta_v / v ~ (a^2/24) * p^2 * (f_4_max - f_4_min)
-                   = (a^2/24) * p^2 * (1 - 1/3)
-                   = (a^2/36) * p^2
+       delta_v_g ~ (a^2/8) * p^2 * (f_4_max - f_4_min)
+                 = (a^2/8) * p^2 * (1 - 1/3)
+                 = (a^2/12) * p^2
 
-     For a = l_Planck, p = 10 GeV (Fermi LAT photon):
+     For the supplied comparison values a = l_Planck and p = 10 GeV:
 
-       delta_v / v = (a^2/36) * p^2
-                   = (8.2041e-20)^2 / 36 * (10.0)^2
-                   = 1.8697e-38
+       delta_v_g = (a^2/12) * p^2
+                 = (8.2041e-20)^2 / 12 * (10.0)^2
+                 = 5.6090e-38
 
-     This is 1.9e-38, approximately 10^-38.
+     This is 5.6e-38, approximately 10^-38.
 
-  2. COMPARISON WITH EXPERIMENT
-
-     Best photon birefringence bound:     ~10^-32    [GRB polarimetry]
-     Best photon dispersion bound:        ~10^-21    [Fermi LAT at 10 GeV]
-     Best electron anisotropy bound:      ~10^-27    [Hughes-Drever]
-     Best gravity sector bound:           ~10^-9     [lunar laser ranging]
-
-     The conditional value (1.9e-38) is shown only as a scale
-     comparison; the runner has not established the sector mapping needed for
-     an experimental exclusion.
-
-  3. INTERPRETATION LIMIT
+  2. INTERPRETATION LIMIT
 
      The dimensionless factor (E/E_Planck)^2 cannot be compared directly with
-     a dimensionful SME coefficient bound. This runner therefore makes no
-     energy-reach estimate. A valid comparison requires a specified carrier,
-     observable, sector convention, and dimensionally matched response map.
+     a dimensionful SME coefficient bound, and unrelated SME sectors cannot be
+     compared by relabeling units. This runner therefore makes no exclusion,
+     margin, or energy-reach estimate. A valid comparison requires a specified
+     carrier, observable, sector convention, and dimensionally matched response
+     map.
 
 
 ==============================================================================
@@ -226,17 +215,17 @@ Conditional SME-style scale parameterization
   Lattice: a = l_Planck = 1.6163e-35 m
   Leading LV coefficient: a^2/12 = 5.6090e-40 GeV^-2
 
-  E (GeV)      (E/E_Pl)^2     |delta E^2/E^2|    |delta v/v|    Best bound     Margin        
-  ──────────── ────────────── ────────────────── ────────────── ────────────── ──────────────
-  1.0e-03      6.71e-45       5.61e-46           2.80e-46       1.00e-27       2.80e-19      
-  1.0e-01      6.71e-41       5.61e-42           2.80e-42       1.00e-27       2.80e-15      
-  1.0e+00      6.71e-39       5.61e-40           2.80e-40       1.00e-23       2.80e-17      
-  1.0e+01      6.71e-37       5.61e-38           2.80e-38       1.00e-23       2.80e-15      
-  1.0e+02      6.71e-35       5.61e-36           2.80e-36       2.50e-22       1.12e-14      
-  1.0e+03      6.71e-33       5.61e-34           2.80e-34       2.50e-22       1.12e-12      
-  1.0e+04      6.71e-31       5.61e-32           2.80e-32       2.50e-22       1.12e-10      
-  1.0e+07      6.71e-25       5.61e-26           2.80e-26       1.00e-20       2.80e-06      
-  1.0e+10      6.71e-19       5.61e-20           2.80e-20       1.00e-20       2.80e+00      
+  E (GeV)      (E/E_Pl)^2     axis |delta E^2/E^2|     axis |delta v_g|  
+  ──────────── ────────────── ──────────────────────── ──────────────────
+  1.0e-03      6.71e-45       5.61e-46                 8.41e-46          
+  1.0e-01      6.71e-41       5.61e-42                 8.41e-42          
+  1.0e+00      6.71e-39       5.61e-40                 8.41e-40          
+  1.0e+01      6.71e-37       5.61e-38                 8.41e-38          
+  1.0e+02      6.71e-35       5.61e-36                 8.41e-36          
+  1.0e+03      6.71e-33       5.61e-34                 8.41e-34          
+  1.0e+04      6.71e-31       5.61e-32                 8.41e-32          
+  1.0e+07      6.71e-25       5.61e-26                 8.41e-26          
+  1.0e+10      6.71e-19       5.61e-20                 8.41e-20          
 
 ==============================================================================
 8. DIRECTIONAL ANISOTROPY (CUBIC LATTICE FINGERPRINT)
@@ -283,8 +272,8 @@ SCOPE VERDICT
 
   5. Staggered fermion taste-breaking:
      - Enhances LV by factor 2-4 depending on taste channel
-     - Still far below experimental bounds
      - Imported illustration; no physical flavor identification established
+     - No experimental comparison is made without a sector response map
 
   6. Characteristic angular signature:
      - Cubic harmonics (j=4 with m=0, +4, -4)
@@ -296,7 +285,7 @@ SCOPE VERDICT
     harmonic identity. It does not promote the calculation to a four-axiom,
     CPT, SME-matching, or experimental-consistency result.
 
-  Elapsed: 1.9 s
+  Elapsed: 2.8 s
 
 ==============================================================================
 EXPERIMENT COMPLETE

@@ -246,7 +246,7 @@ def compute_sme_coefficients(a_meters: float) -> dict:
 
 
 # ============================================================
-# Section 3: Experimental bounds (Kostelecky data tables)
+# Section 3: Historical experimental bounds
 # ============================================================
 
 EXPERIMENTAL_BOUNDS = {
@@ -735,7 +735,8 @@ def run_experiment():
   If a compatible carrier and sector matching are supplied, an SME-style
   parameterization would assign:
   - The correction is a dimension-6 operator (d=6, n=4 in p)
-  - CPT-even (see Section 5 below)
+  - An even-in-momentum contribution in the c-type coefficient basis
+  - No full-action CPT classification (see Section 5 below)
   - The nonminimal SME coefficients are:
 
     c^(6)_{(I)00}   = -(a^2/12)(3/5) / sqrt(4 pi)        [isotropic, j=0]
@@ -756,19 +757,19 @@ def run_experiment():
     print(f"    c^(6) isotropic (j=0): {sme['c6_iso_j0']:.4e} GeV^-2")
     print(f"    c^(6) aniso (j=4,m=0): {sme['c6_aniso_j4_m0']:.4e} GeV^-2")
 
-    print(f"\n  Dimensionless SME coefficients (c^(6) * m^2):")
+    print(f"\n  Dimensionless mass-normalized coefficients (c^(6) * m^2):")
     print(f"    Electron: c^(6) * m_e^2 = {sme['electron_c6']:.4e}")
     print(f"    Proton:   c^(6) * m_p^2 = {sme['proton_c6']:.4e}")
-    print(f"    Photon:   c^(6) (dim-less) = {sme['photon_c6']:.4e} GeV^-2")
+    print(f"    Photon:   c^(6) coefficient = {sme['photon_c6']:.4e} GeV^-2")
 
     # ── Section 2b: Cubic-harmonic identity verification ──────────
     # Pin the angular decomposition coefficient (normalized Y_lm): the
     # l=4 cubic-harmonic coefficient is 4*sqrt(pi)/15, not 4/5.
     identity_ok = verify_cubic_harmonic_identity()
 
-    # ── Section 3: Experimental bounds comparison ─────────────────
+    # ── Section 3: coefficient scale only ─────────────────────────
     print(f"\n{'=' * 78}")
-    print("3. HISTORICAL SCALE COMPARISON (NOT A VALIDATED EXCLUSION)")
+    print("3. CONDITIONAL COEFFICIENT SCALE (NO EXPERIMENTAL MATCH)")
     print(f"{'=' * 78}")
 
     print(f"\n  Natural suppression at E = 1 GeV:")
@@ -784,54 +785,13 @@ def run_experiment():
     print(f"           = {c4_pred:.4e} GeV^-2")
     print(f"           = {c4_pred * E_PLANCK_GEV**2:.4e} (in E_Planck^-2 units)")
 
-    print(f"\n  {'Experiment':<35} {'Sector':<10} {'Bound':<18} "
-          f"{'Conditional':<18} {'Ratio':<12} {'Role'}")
-    print(f"  {'─'*35} {'─'*10} {'─'*18} {'─'*18} {'─'*12} {'─'*20}")
-
-    for name, info in EXPERIMENTAL_BOUNDS.items():
-        sector = info["sector"]
-
-        if "bound_gev_minus2" in info:
-            bound = info["bound_gev_minus2"]
-            prediction = c4_pred
-            ratio = prediction / bound if bound > 0 else float('inf')
-            bound_str = f"{bound:.2e} GeV^-2"
-            pred_str = f"{prediction:.2e} GeV^-2"
-        elif "bound_gev" in info:
-            bound = info["bound_gev"]
-            # For dimension-4 bounds, compare a^2/12 * E_typical^2
-            E_typical = 1.0  # GeV for most experiments
-            prediction = c4_pred * E_typical**2
-            ratio = prediction / bound if bound > 0 else float('inf')
-            bound_str = f"{bound:.2e} GeV"
-            pred_str = f"{prediction * 1:.2e} GeV"
-        elif "bound_dimensionless" in info:
-            bound = info["bound_dimensionless"]
-            # For gravity sector: s_bar is a dimension-4 (minimal SME) coeff.
-            # Our dimension-6 coefficient contributes as c^(6) * E_char^2
-            # where E_char ~ m_earth * v_orbit^2 ~ 10^-10 GeV for LLR.
-            # More precisely: effective s_bar ~ c^(6) * p_char^2
-            # For lunar laser ranging, p_char ~ m_photon_eff ~ 1 eV ~ 10^-9 GeV
-            E_char_gravity = 1e-9  # GeV, characteristic energy for LLR
-            prediction = c4_pred * E_char_gravity**2
-            ratio = prediction / bound if bound > 0 else float('inf')
-            bound_str = f"{bound:.2e}"
-            pred_str = f"{prediction:.2e}"
-        else:
-            continue
-
-        if ratio < 1e-6:
-            status = "illustrative only"
-        elif ratio < 1e-3:
-            status = "illustrative only"
-        elif ratio < 1:
-            status = "illustrative only"
-        else:
-            status = "mapping unresolved"
-
-        desc = info["description"][:34]
-        print(f"  {desc:<35} {sector:<10} {bound_str:<18} "
-              f"{pred_str:<18} {ratio:<12.2e} {status}")
+    print("""
+  No experimental bound is divided into this coefficient. Published constraint
+  catalogs mix sectors, operator dimensions, and observable responses;
+  none supplies the sector-specific response map needed for a valid match.
+  The numbers in this section are therefore internal scales of the selected
+  symbol only.
+""")
 
     # ── Section 4: Staggered fermion taste-breaking ───────────────
     print(f"\n{'=' * 78}")
@@ -898,49 +858,41 @@ def run_experiment():
   the leading finite-a anisotropy is governed by K_4(theta, phi). Neither that
   carrier identification nor a = l_Planck is derived here.
 
-  1. DIRECTION-DEPENDENT PROPAGATION SPEED
+  1. DIRECTION-DEPENDENT GROUP VELOCITY
 
-     For a massless particle (photon, graviton):
-       v(theta, phi) = c * [1 - (a^2/24) p^2 * f_4(theta, phi)]
+     For a massless mode governed by the supplied scalar symbol:
+       E/p = 1 - (a^2/24) p^2 * f_4(theta, phi) + O(a^4 p^4)
+       v_g   = 1 - (a^2/8) p^2 * f_4(theta, phi) + O(a^4 p^4)
 
      where f_4 = sin^4(theta)cos^4(phi) + sin^4(theta)sin^4(phi)
                  + cos^4(theta)
 
      The speed varies with direction by:
-       delta_v / v ~ (a^2/24) * p^2 * (f_4_max - f_4_min)
-                   = (a^2/24) * p^2 * (1 - 1/3)
-                   = (a^2/36) * p^2
+       delta_v_g ~ (a^2/8) * p^2 * (f_4_max - f_4_min)
+                 = (a^2/8) * p^2 * (1 - 1/3)
+                 = (a^2/12) * p^2
 
-     For a = l_Planck, p = 10 GeV (Fermi LAT photon):
+     For the supplied comparison values a = l_Planck and p = 10 GeV:
 """)
 
     p_fermi = 10.0  # GeV
     a_nat_planck = L_PLANCK * GEV_TO_INVMETER
-    aniso_correction = (a_nat_planck**2 / 36.0) * p_fermi**2
-    print(f"       delta_v / v = (a^2/36) * p^2")
-    print(f"                   = ({a_nat_planck:.4e})^2 / 36 * ({p_fermi})^2")
-    print(f"                   = {aniso_correction:.4e}")
+    aniso_correction = (a_nat_planck**2 / 12.0) * p_fermi**2
+    print(f"       delta_v_g = (a^2/12) * p^2")
+    print(f"                 = ({a_nat_planck:.4e})^2 / 12 * ({p_fermi})^2")
+    print(f"                 = {aniso_correction:.4e}")
 
     print(f"""
      This is {aniso_correction:.1e}, approximately 10^-38.
 
-  2. COMPARISON WITH EXPERIMENT
-
-     Best photon birefringence bound:     ~10^-32    [GRB polarimetry]
-     Best photon dispersion bound:        ~10^-21    [Fermi LAT at 10 GeV]
-     Best electron anisotropy bound:      ~10^-27    [Hughes-Drever]
-     Best gravity sector bound:           ~10^-9     [lunar laser ranging]
-
-     The conditional value ({aniso_correction:.1e}) is shown only as a scale
-     comparison; the runner has not established the sector mapping needed for
-     an experimental exclusion.
-
-  3. INTERPRETATION LIMIT
+  2. INTERPRETATION LIMIT
 
      The dimensionless factor (E/E_Planck)^2 cannot be compared directly with
-     a dimensionful SME coefficient bound. This runner therefore makes no
-     energy-reach estimate. A valid comparison requires a specified carrier,
-     observable, sector convention, and dimensionally matched response map.
+     a dimensionful SME coefficient bound, and unrelated SME sectors cannot be
+     compared by relabeling units. This runner therefore makes no exclusion,
+     margin, or energy-reach estimate. A valid comparison requires a specified
+     carrier, observable, sector convention, and dimensionally matched response
+     map.
 """)
 
     # ── Section 7: Summary table ──────────────────────────────────
@@ -953,33 +905,17 @@ def run_experiment():
     print(f"\n  Lattice: a = l_Planck = {L_PLANCK:.4e} m")
     print(f"  Leading LV coefficient: a^2/12 = {c4_pred:.4e} GeV^-2\n")
 
-    print(f"  {'E (GeV)':<12} {'(E/E_Pl)^2':<14} {'|delta E^2/E^2|':<18} "
-          f"{'|delta v/v|':<14} {'Best bound':<14} {'Margin':<14}")
-    print(f"  {'─'*12} {'─'*14} {'─'*18} {'─'*14} {'─'*14} {'─'*14}")
+    print(f"  {'E (GeV)':<12} {'(E/E_Pl)^2':<14} {'axis |delta E^2/E^2|':<24} "
+          f"{'axis |delta v_g|':<18}")
+    print(f"  {'─'*12} {'─'*14} {'─'*24} {'─'*18}")
 
     for E in energies:
         supp = compute_suppression_factor(E, E_PLANCK_GEV)
         delta_E2 = c4_pred * E**2  # fractional correction to E^2
-        delta_v = delta_E2 / 2.0   # fractional velocity correction
+        delta_v = 1.5 * delta_E2  # axis group-velocity correction magnitude
 
-        # Best applicable bound
-        if E < 1:
-            best_bound = 1e-27  # low-energy atomic physics
-            bound_name = "atomic"
-        elif E < 100:
-            best_bound = 1e-23  # neutrino oscillations
-            bound_name = "neutrino"
-        elif E < 1e5:
-            best_bound = 2.5e-22  # Fermi LAT (dim-6)
-            bound_name = "Fermi LAT"
-        else:
-            best_bound = 1e-20  # generic astrophysical
-            bound_name = "astro"
-
-        margin = delta_v / best_bound if best_bound > 0 else float('inf')
-
-        print(f"  {E:<12.1e} {supp:<14.2e} {delta_E2:<18.2e} "
-              f"{delta_v:<14.2e} {best_bound:<14.2e} {margin:<14.2e}")
+        print(f"  {E:<12.1e} {supp:<14.2e} {delta_E2:<24.2e} "
+              f"{delta_v:<18.2e}")
 
     # ── Section 8: Direction dependence (anisotropy) ──────────────
     print(f"\n{'=' * 78}")
@@ -1043,8 +979,8 @@ def run_experiment():
 
   5. Staggered fermion taste-breaking:
      - Enhances LV by factor 2-4 depending on taste channel
-     - Still far below experimental bounds
      - Imported illustration; no physical flavor identification established
+     - No experimental comparison is made without a sector response map
 
   6. Characteristic angular signature:
      - Cubic harmonics (j=4 with m=0, +4, -4)

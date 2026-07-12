@@ -5,10 +5,9 @@ Exact S_3 conditional mass-matrix degeneracy lemma.
 Safe statement:
   On a supplied three-dimensional permutation representation
   V ~= A_1 direct-sum E, every S_3-invariant Hermitian operator has the form
-  alpha I_3 + beta P_(A_1). Therefore the exact unbroken S_3 class allows at
-  most two distinct eigenvalues on this representation. The residual
-  axis-fixing Z_2 invariant Hermitian space has real dimension 5. No physical
-  generation-carrier identification is tested or claimed here.
+  alpha I_3 + beta P_(A_1), with spectrum {alpha, alpha, alpha + beta}. The
+  residual axis-fixing Z_2 invariant Hermitian space has real dimension 5. No
+  physical generation-carrier identification is tested or claimed here.
 """
 
 from __future__ import annotations
@@ -222,9 +221,9 @@ def part5_scoped_escape_routes() -> None:
     )
 
 
-def part6_distinct_attack_routes_and_rhetoric() -> None:
+def part6_hypothesis_comparisons() -> None:
     print("\n" + "=" * 72)
-    print("PART 6: Distinct attack routes and resolution-specific scope")
+    print("PART 6: Hypothesis comparisons and invariant checks")
     print("=" * 72)
 
     identity = np.eye(3, dtype=complex)
@@ -293,17 +292,6 @@ def part6_distinct_attack_routes_and_rhetoric() -> None:
         f"distinct = {transformed_values}",
     )
 
-    rhetoric_checks = {
-        "per_element": "matrix entries fall into diagonal/off-diagonal permutation orbits",
-        "per_site": "no lattice-site or physical-site identification is asserted",
-        "per_mode": "only the A_1 singlet and E doublet spectral modes are counted",
-        "per_block": "the statement concerns one supplied three-dimensional operator block",
-        "lattice_wide": "no lattice-wide or physical-generation exclusion is asserted",
-    }
-    for resolution_class, statement in rhetoric_checks.items():
-        check(f"{resolution_class}: {statement}", True)
-
-
 def main() -> int:
     print("=" * 72)
     print("S_3 CONDITIONAL MASS-MATRIX DEGENERACY LEMMA")
@@ -313,7 +301,7 @@ def main() -> int:
     part3_random_check()
     part4_residual_z2_dimension()
     part5_scoped_escape_routes()
-    part6_distinct_attack_routes_and_rhetoric()
+    part6_hypothesis_comparisons()
     print("\n" + "=" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     print("=" * 72)

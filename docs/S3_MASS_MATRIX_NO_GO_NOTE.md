@@ -1,4 +1,4 @@
-# S_3 Mass-Matrix No-Go Note
+# S_3 Mass-Matrix Physical-Carrier Open Gate
 
 **Date:** 2026-04-17
 **Claim type:** open_gate
@@ -7,52 +7,37 @@
 **Authority role:** historical proposed symmetry constraint; no current
 retained authority for a physical `hw=1` generation carrier
 
-This historical filename does not turn the row into a current no-go. The
-physical carrier question remains open; the separate conditional lemma holds
-only on a supplied abstract representation.
+No current no-go is claimed; the earlier broad no-go reading is withdrawn.
+The physical carrier question remains open, while the separate conditional
+lemma holds only on a supplied abstract representation.
 
-## Safe statement
+## Open physical bridge
 
-Let `V = span(X_1, X_2, X_3)` be the `hw=1` triplet with the natural
-axis-permutation action of `S_3`. Then `V ~= A_1 + E`, and every
-`S_3`-invariant Hermitian operator on `V` has the form
+This row asks whether the repo's physical generation carrier, its physical
+`S_3` action, and pointwise exact `S_3` invariance of the physical mass
+operator can all be established from current authority. This note and its
+runner do not establish any of those three physical conditions.
 
-```text
-M = alpha I_3 + beta P_(A_1),
-```
-
-where `P_(A_1) = J_3 / 3` is the orthogonal projector onto the symmetric line.
-Hence every such operator has spectrum
-
-```text
-{alpha, alpha, alpha + beta},
-```
-
-so the exact unbroken `S_3` class allows at most two distinct eigenvalues on
-the `hw=1` carrier.
-
-Under the residual axis-fixing subgroup `Z_2 < S_3`, the invariant Hermitian
-space expands to real dimension `5`.
-
-## Classical results applied
-
-- Schur's lemma on `V ~= A_1 + E`
-- the Hermitian spectral theorem
-- the fixed-space dimension formula `dim End(V)^G = sum_i m_i^2`
+The reusable abstract representation-theory calculation is stated only in
+[`S3_MASS_MATRIX_CONDITIONAL_DEGENERACY_NOTE_2026-07-11.md`](S3_MASS_MATRIX_CONDITIONAL_DEGENERACY_NOTE_2026-07-11.md).
+That positive classification is not evidence that its supplied representation
+or operator hypotheses hold for physical generations.
 
 ## Historical physical-carrier proposal (not authority)
 
 - The old physical identification of `hw=1` as a generation carrier and reuse
-  of the taste-cube decomposition are not established by this note or runner.
-- They remain excluded external bridge questions; this source supplies no
-  retained physical-carrier dependency.
+  of the taste-cube decomposition are historical proposals only.
+- The physical group action and pointwise mass-operator invariance are separate
+  supplied-condition questions, not consequences of that identification.
+- This source supplies no retained physical-carrier dependency.
 
 ## Why it matters on `main`
 
 This legacy note is not current theorem authority. Its algebraic core has been
 rescoped to the separate conditional `A_1 direct-sum E` lemma. Any future
-physical flavor statement must independently identify its carrier and group
-action before consuming that abstract result.
+physical flavor statement must independently identify its carrier, establish
+the physical group action, and establish pointwise invariance of the physical
+mass operator before consuming that abstract result.
 
 ## Verification
 
@@ -62,6 +47,6 @@ Run:
 python3 scripts/frontier_s3_mass_matrix_no_go.py
 ```
 
-The runner checks the invariant-algebra dimension, the form
-`alpha I_3 + beta P_(A_1)`, the forced two-value spectrum, and the residual
-`Z_2` dimension jump from `2` to `5`.
+The runner verifies the separate abstract classification and comparison cases.
+It does not test or close this row's physical-carrier, group-action, or
+mass-operator-invariance questions.

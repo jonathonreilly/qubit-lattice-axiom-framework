@@ -3,7 +3,7 @@ runner: scripts/frontier_lorentz_derived.py
 runner_sha256: fb93b0add915fba524110cadeef059e85d8ff5a794684d1299ce700baabcc3fd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.10
+elapsed_sec: 2.92
 status: ok
 ----- stdout -----
 Lorentz derived legacy-runner compatibility

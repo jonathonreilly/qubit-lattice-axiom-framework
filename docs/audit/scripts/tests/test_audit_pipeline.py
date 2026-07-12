@@ -4059,6 +4059,19 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                     )
                 )
 
+    def test_assertive_reference_and_runner_lines_still_trigger(self):
+        m = _import("no_go_discipline_gate")
+        for body in (
+            "See the prior no-go theorem: no selector can produce the required carrier.",
+            "The runner does not produce three distinct eigenvalues.",
+        ):
+            with self.subTest(body=body):
+                self.assertTrue(
+                    m.source_requires_no_go_discipline(
+                        "docs/POSITIVE_NOTE.md", body, "positive_theorem"
+                    )
+                )
+
     def test_malformed_top_level_index_and_snapshot_fail_closed(self):
         m = _import("no_go_discipline_gate")
         entry = {"text": "[]", "roles": ["cross_cycle_index"]}
@@ -4752,6 +4765,56 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         }
         self.assertIsNone(
             m.validate_no_go_discipline(audit, evidence_manifest=manifest)
+        )
+
+    def test_equivalent_walls_require_congruent_third_wall_relations(self):
+        m = _import("no_go_discipline_gate")
+        packet = _no_go_packet()
+        section = packet["N2_wall_independence"]
+        section["walls"].append("carrier wall")
+        section["pairwise_checks"] = [
+            {
+                "left": "dynamics wall", "right": "selector wall",
+                "left_closes_right": True, "right_closes_left": True,
+                "independent": False,
+                "rationale": (
+                    "dynamics wall and selector wall are two names for the "
+                    "same mutually closing condition in this test packet"
+                ),
+                "evidence_path": "docs/TEST_NO_GO.md",
+                "evidence_locator": "N2 pair dynamics-selector",
+            },
+            {
+                "left": "dynamics wall", "right": "carrier wall",
+                "left_closes_right": True, "right_closes_left": False,
+                "independent": False,
+                "rationale": (
+                    "dynamics wall closes carrier wall while carrier wall "
+                    "does not close dynamics wall in this test packet"
+                ),
+                "evidence_path": "docs/TEST_NO_GO.md",
+                "evidence_locator": "N2 pair dynamics-carrier",
+            },
+            {
+                "left": "selector wall", "right": "carrier wall",
+                "left_closes_right": False, "right_closes_left": False,
+                "independent": True,
+                "rationale": (
+                    "selector wall and carrier wall are declared independent "
+                    "in this deliberately inconsistent test packet"
+                ),
+                "evidence_path": "docs/TEST_NO_GO.md",
+                "evidence_locator": "N2 pair selector-carrier",
+            },
+        ]
+        section["collapsed_wall_set"] = ["dynamics wall"]
+        audit = {
+            "claim_type": "no_go", "verdict": "audited_clean",
+            "chain_closes": True, "no_go_discipline": packet,
+        }
+        self.assertIn(
+            "congruent closure relations",
+            m.validate_no_go_discipline(audit, evidence_manifest=None) or "",
         )
 
     def test_n1_route_class_requires_evidenced_semantic_marker(self):
@@ -5801,7 +5864,11 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
         )
         with mock.patch.object(m.subprocess, "run", return_value=proc):
             ok, message = m.apply_one(
-                {"claim_id": "x", "verdict": "audited_clean"},
+                {
+                    "claim_id": "x",
+                    "verdict": "audited_clean",
+                    "audit_invocation_id": "a" * 32,
+                },
                 propagate=True,
                 evidence_manifest={},
             )
@@ -5815,7 +5882,7 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
         blob = {
             "claim_id": "x",
             "verdict": "audited_clean",
-            "audit_invocation_id": "prompt-bound-invocation-0001",
+            "audit_invocation_id": "a" * 32,
         }
         with mock.patch.object(m.subprocess, "run", return_value=proc) as run:
             self.assertTrue(m.apply_one(blob, True, {})[0])
@@ -5823,19 +5890,32 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
         first = json.loads(run.call_args_list[0].kwargs["input"])
         second = json.loads(run.call_args_list[1].kwargs["input"])
         self.assertEqual(
-            first["audit_invocation_id"], "prompt-bound-invocation-0001"
+            first["audit_invocation_id"], "a" * 32
         )
         self.assertEqual(first["audit_invocation_id"], second["audit_invocation_id"])
+
+    def test_apply_rejects_malformed_prompt_bound_invocation_before_subprocess(self):
+        m = _import_codex_audit_runner()
+        blob = {
+            "claim_id": "x",
+            "verdict": "audited_clean",
+            "audit_invocation_id": "prompt-bound-invocation-0001",
+        }
+        with mock.patch.object(m.subprocess, "run") as run:
+            ok, message = m.apply_one(blob, True, {})
+        self.assertFalse(ok)
+        self.assertIn("32 lowercase hexadecimal characters", message)
+        run.assert_not_called()
 
     def test_validate_rejects_unbound_invocation_id(self):
         m = _import_codex_audit_runner()
         blob = {field: "x" for field in m.REQUIRED_VERDICT_FIELDS}
         blob["claim_id"] = "x"
-        blob["audit_invocation_id"] = "different-invocation-0001"
+        blob["audit_invocation_id"] = "b" * 32
         self.assertIn(
             "prompt-bound invocation",
             m.validate_verdict(
-                blob, "x", expected_invocation_id="expected-invocation-0001"
+                blob, "x", expected_invocation_id="a" * 32
             ) or "",
         )
 
@@ -6535,6 +6615,34 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         self.assertRegex(
             new_row["restoration_history"][-1]["archived_audit_sha256"],
             r"^[0-9a-f]{64}$",
+        )
+
+    def test_restore_preserves_live_invocation_history_append_only(self):
+        m = self._import_and_patch()
+        archived = self._archived_audit(
+            audit_status="audited_clean",
+            independence="fresh_context",
+            invalidation_reason="criticality_increased:leaf->critical",
+            cc_status=None,
+        )
+        archived["audit_invocation_id"] = "a" * 32
+        archived["audit_invocation_history"] = ["a" * 32]
+        row = {
+            "claim_id": "test_row",
+            "note_path": "docs/TEST.md",
+            "note_hash": "abc",
+            "deps": [],
+            "audit_status": "unaudited",
+            "claim_type": None,
+            "claim_type_provenance": "needs_reaudit_after_invalidation",
+            "auditor": None,
+            "audit_invocation_id": "b" * 32,
+            "audit_invocation_history": ["a" * 32, "b" * 32],
+            "previous_audits": [archived],
+        }
+        new_row = m.restore_audit_from_previous(row)
+        self.assertEqual(
+            new_row["audit_invocation_history"], ["a" * 32, "b" * 32]
         )
 
     def test_idempotent_on_already_audited_rows(self):

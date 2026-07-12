@@ -1,0 +1,31 @@
+loop: per-plaquette-license-20260712
+goal: >
+  Derive the unit-neighborhood link-support license of
+  per_plaquette_from_adjacency_license_bounded_theorem_note_2026-06-09 from
+  the accepted lattice and dependency premises (Lattice axiom Z^3;
+  Admissibility axiom one-tick NN rule; lattice_nn_light_cone_note
+  R-locality), retiring the bare geometric stipulation.
+mode: campaign
+runtime: 6h
+started: 2026-07-12T16:06-04:00
+deadline: 2026-07-12T22:06-04:00
+target_status: best-honest-status
+cycle: 1
+block: 01
+active_route: R2-one-tick-reachability-bound
+hard_residual: >
+  Lemma B fundamentality reading: a fundamental one-tick multi-link term's
+  availability is evaluable at each constituent link within that link's
+  one-tick dependency domain C_1. Close from Record/Admissibility +
+  joint-presentation surface, or name as the explicit thin premise
+  (P-FUND-1TICK).
+open_imports:
+  - none identified yet beyond the named-premise candidate (P-FUND-1TICK)
+no_go_routes:
+  - R1-minimal-nonempty-covariant-lift (pruned pre-execution; see NO_GO_LEDGER)
+trace_class: direct_blocker_closure
+pr_status: none yet
+next_action: write block-01 workhorse spec; launch worker; review; PR
+stop_condition: runtime 6h OR queue exhaustion per skill
+lock_note: repo automation_lock.py errors on stale /Users/jonreilly path on
+  this machine (infra N/A); branch-local supervisor discipline in force.

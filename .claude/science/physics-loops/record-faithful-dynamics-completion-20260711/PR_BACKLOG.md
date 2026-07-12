@@ -14,8 +14,8 @@ is prepared as the next stacked review block:
   massive infinite-time uniqueness dependency, matching note hash, strict lint
   zero errors, vocabulary lint zero violations, generated audit/status outputs
   stripped
-- PR: pending
-- delivery: prepared on the massive infinite-time uniqueness head
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5297
+- delivery: open on the massive infinite-time uniqueness head
 
 No merge is authorized. Independent audit remains authoritative.
 

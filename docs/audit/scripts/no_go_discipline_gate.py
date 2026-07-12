@@ -402,6 +402,32 @@ CONTRACTION_RE = re.compile(
     re.IGNORECASE,
 )
 CANT_RE = re.compile(r"\bcan[\u2019']t\b", re.IGNORECASE)
+# Explicit negation, withdrawal, denial, and refutation of a negative
+# predicate is not a negative assertion. These scrub before the hard-set
+# search; affirmative forms ("the phase is underdetermined", "asserts
+# that the phase is underdetermined") are untouched.
+NEGATED_PREDICATE_PRESCRUBS = (
+    re.compile(
+        r"\b(?:is|are|was|were)\s+not\s+(?:\w+ly\s+)?"
+        r"(?:underdetermined|undetermined|unspecified|impossible|incapable|"
+        r"insufficient|unliftable|unavailable|unobtainable|unclosed)\b",
+        re.IGNORECASE,
+    ),
+    re.compile(r"\b(?:does|do|did)\s+not\s+lack\b[^\n.;:]{0,60}", re.IGNORECASE),
+    re.compile(
+        r"\bclaim\s+that\b[^\n.;:]{0,140}\b(?:is|was|has\s+been)\s+refuted\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:no\s+longer\s+(?:asserts?|claims?|states?|reports?|maintains?)"
+        r"(?:\s+that\b)?|"
+        r"(?:explicitly\s+)?den(?:ies|ied)\s+that\b|"
+        r"is\s+false\s+that\b|refutes?\s+that\b|"
+        r"retract(?:s|ed)?\s+that\b|withdraw(?:s|ed)?\s+that\b)"
+        r"[^\n.;:]*",
+        re.IGNORECASE,
+    ),
+)
 POLARITY_IDIOM_PRESCRUBS = (
     re.compile(
         r"\bby\s+no\s+means\s+(?:\w+ly\s+)?impossible\b", re.IGNORECASE
@@ -2316,6 +2342,8 @@ def _has_negative_boundary_assertion(text: str) -> bool:
     normalized = re.sub(r"\bwon[\u2019']t\b", "will not", normalized, flags=re.IGNORECASE)
     for idiom in POLARITY_IDIOM_PRESCRUBS:
         normalized = idiom.sub("certainly", normalized)
+    for negated in NEGATED_PREDICATE_PRESCRUBS:
+        normalized = negated.sub("", normalized)
     cleaned = NEGATED_NEGATIVE_ASSURANCE_RE.sub("", normalized)
     cleaned = NEGATED_LABEL_ASSURANCE_RE.sub("", cleaned)
     cleaned = _scrub_local_scope_exclusions(cleaned)

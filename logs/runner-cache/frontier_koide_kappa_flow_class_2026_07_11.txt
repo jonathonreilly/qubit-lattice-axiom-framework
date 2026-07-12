@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/frontier_koide_kappa_flow_class_2026_07_11.py
+runner_sha256: 7cb575145d57dfa318be0a9e07974aef3b77d44d587fd41e147878d9719df70d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+CHECK 01: PASS -- T1 odds coordinate is x=kappa r; x=b2*kappa/a2
+CHECK 02: PASS -- T1 supplied independent agreement filter sends x to x^2; x_next=b2**2*kappa**2/a2**2
+CHECK 03: PASS -- T1 induced coordinate flow is f_kappa(r)=kappa r^2; f=kappa*r_positive**2
+CHECK 04: PASS -- T1 complete finite real fixed set is {0,1/kappa}; fixed=[0, 1/kappa]
+CHECK 05: PASS -- T1 reciprocal chart fixes the projective r=infinity endpoint; s_next=reciprocal**2/kappa
+CHECK 06: PASS -- T1 unique positive finite fixed point is 1/kappa; positive_fixed={1/kappa}
+CHECK 07: PASS -- T1 positive-fixed-point multiplier is two for every positive kappa; multiplier=2
+CHECK 08: PASS -- T1 h(r)=kappa r conjugates every member to the square map; h.f.h^-1=odds_symbol**2
+CHECK 09: PASS -- T2 coefficient evaluation kappa=2 gives f(r)=2r^2 and r*=1/2
+CHECK 10: PASS -- T2 coefficient evaluation kappa=1 gives f(r)=r^2 and r*=1
+CHECK 11: PASS -- T2 the two coefficient examples have different fixed points but the same local multiplier
+CHECK 12: PASS -- T3 conditional fixed-point inversion gives kappa=1/r; solutions=[1/r_positive]
+CHECK 13: PASS -- fixed-point discriminator: r=2/kappa is not fixed; residual=2/kappa
+CHECK 14: PASS -- independence negative control: perfectly correlated registration gives r_next=r; r_next=b2/a2
+CHECK 15: PASS -- parameter distinction: kappa and the equipartition count enter different equations; numerical equality only if n_d=2/kappa
+SUMMARY theorem: supplied independent agreement filtering gives f_kappa(r)=kappa r^2, fixed set {0,1/kappa,infinity}, and multiplier two.
+SUMMARY boundary: kappa=1 and kappa=2 are coefficient evaluations only; kappa is not identified with the aggregate equipartition count.
+TOTAL: PASS=15 FAIL=0
+
+REPORT ONLY -- comparator arithmetic; no threshold or scientific verdict
+[REPORT] charged-lepton: r=1/2; conditional inverted comparator kappa=2.000000000
+[REPORT] down-quark: r=597/1000; conditional inverted comparator kappa=1.675041876
+[REPORT] Delta_r=0.001 is a decimal display unit, not sigma; linearized Delta_kappa=0.002806
+[REPORT] grid     1/t      |kappa-t|  kappa-display-units  r-display-units
+[REPORT]     1    1.0000     0.675042              240.591          403.000
+[REPORT]   5/4    0.8000     0.425042              151.489          203.000
+[REPORT]   4/3    0.7500     0.341709              121.788          153.000
+[REPORT]   3/2    0.6667     0.175042               62.386           69.667
+[REPORT]   5/3    0.6000     0.008375                2.985            3.000
+[REPORT]     2    0.5000     0.324958              115.818           97.000
+[REPORT] up-quark: r=773/1000; conditional inverted comparator kappa=1.293661061
+[REPORT] Delta_r=0.001 is a decimal display unit, not sigma; linearized Delta_kappa=0.001674
+[REPORT] grid     1/t      |kappa-t|  kappa-display-units  r-display-units
+[REPORT]     1    1.0000     0.293661              175.471          227.000
+[REPORT]   5/4    0.8000     0.043661               26.089           27.000
+[REPORT]   4/3    0.7500     0.039672               23.705           23.000
+[REPORT]   3/2    0.6667     0.206339              123.293          106.333
+[REPORT]   5/3    0.6000     0.373006              222.882          173.000
+[REPORT]     2    0.5000     0.706339              422.058          273.000
+[REPORT] The grid is illustrative and non-exhaustive. No argmin, acceptance band, uncertainty, exclusion, or lane-scoping inference is applied.
+
+----- stderr -----
+

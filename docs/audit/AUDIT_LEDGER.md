@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 104 |
+| **retained** | 105 |
 | **retained_no_go** | 46 |
 | **retained_bounded** | 419 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
 | unaudited | 2628 |
-| audit_in_progress | 28 |
+| audit_in_progress | 27 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 28 |
-| `audited_clean` | 556 |
+| `audit_in_progress` | 27 |
+| `audited_clean` | 557 |
 | `audited_conditional` | 100 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 46 |
@@ -139,7 +139,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
-| `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -521,6 +520,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
+| `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
@@ -8057,6 +8057,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The runner computes set differences only after hard-coding both the Record-supported gate set and every lane's required gates. Neither the Record axiom content nor a derivation of those gate assignments is included, so the substantive classification is assumed rather than established.
 - **rationale:** The runner genuinely checks file existence, anchor phrases, and internal set consistency, but its load-bearing support map is introduced as a constant. Its 39 passing checks therefore validate a stipulated classifier rather than derive the classifier from the Record axiom. The result is useful as bounded audit metadata, but it is definition-grade rather than theorem-grade.
 - **auditor confidence:** high
+
+### `record_clock_rate_normalization_gate_2026-06-06`
+
+- **Note:** [`RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md`](../../docs/RECORD_CLOCK_RATE_NORMALIZATION_GATE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For s=1,2,3 on the stated three-atom dial, explicit reversible Markov generators stabilize the sampled distributions; generator rescaling preserves each stationary distribution, and the displayed two-state example shows that a transition kernel fixes only the rate-clock product.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00114-record_clock_rate_normalizat`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** For each sampled positive dial distribution pi(s), the explicitly constructed reversible generator Q(s) satisfies Q(s)pi(s)=0 with one zero eigenmode and two negative transverse eigenmodes, while positive rescaling changes rates without changing pi(s).  _(class `A`)_
+- **chain closes:** True — The generator, stationarity, spectrum, rescaling, and semigroup identities are computed directly with exact symbolic algebra. The physical generator, dial selection, probability-origin bridge, and absolute rate remain expressly outside the claim.
+- **rationale:** The load-bearing construction is genuine class-A algebra: Q is built from each stated pi(s), and its generator, stationarity, and spectral properties are computed rather than assumed. The scaling and two-state semigroup checks likewise establish the stated rate-clock degeneracy exactly. The five final check(True) firewalls are not computational evidence, but the same boundaries follow from the supplied premise text and are non-load-bearing because the claim explicitly excludes physical generator, probability, dial-selection, and clock derivations.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11`
 

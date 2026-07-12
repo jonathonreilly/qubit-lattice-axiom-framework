@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 650,
     "high": 335,
-    "leaf": 1099,
+    "leaf": 1098,
     "medium": 755
   },
   "cycle_break_target_count": 49,
@@ -53570,30 +53570,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/KS_ETA_VS_JW_STRING_CAR_LOCALITY_NO_GO_NOTE_2026-06-02.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/ks_eta_vs_jw_string_car_locality.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "lattice_3d_tapered_refinement_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -81147,6 +81123,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 553,
-  "total_pending": 2839
+  "ready_count": 552,
+  "total_pending": 2838
 }

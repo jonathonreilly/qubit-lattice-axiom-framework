@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 95 |
-| **retained_no_go** | 35 |
+| **retained_no_go** | 36 |
 | **retained_bounded** | 384 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2740 |
+| unaudited | 2739 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 499 |
+| `audited_clean` | 500 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3090 |
+| `unaudited` | 3089 |
 
 | claim_type | count |
 |---|---:|
@@ -391,6 +391,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
+| `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | C | - |
 | `landau_peierls_prefactor_native_derivation_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_spent_delay_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `lattice_3d_dense_spent_delay_z2_z6_endpoint_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5287,6 +5288,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Direct matrix-unit expansion proves the reconstruction and partial-trace identities for arbitrary finite d, while spectral decomposition of a positive Choi matrix gives the stated Kraus operators and operator-sum map. The accepted Qubit premise supplies the finite-region matrix-algebra substrate without adding an open physical bridge.
 - **rationale:** The formulas are a genuine algebraic normalization closure, not a definition, tuned numerical match, or external-comparator inference. The runner source performs substantive symbolic and numerical calculations, including exact M₂ reconstruction, d=2 and d=4 round trips, named channels, a non-CP boundary example, and both mixed-convention scaling defects; it does not hard-code the conclusions. Although the finite tests alone would not establish the universal theorem, the all-d result follows directly from the displayed matrix-unit and spectral-decomposition algebra.
 - **auditor confidence:** high
+
+### `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02`
+
+- **Note:** [`KS_ETA_VS_JW_STRING_CAR_LOCALITY_NO_GO_NOTE_2026-06-02.md`](../../docs/KS_ETA_VS_JW_STRING_CAR_LOCALITY_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On the displayed 2 x 2 x 2 open Z^3 qubit patch with ungraded Pauli-tensor locality and the stated Kogut-Susskind eta coefficients, eta plus endpoint locality does not force cross-site CAR or select the Jordan-Wigner string over bare hard-core ladders.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-fresh-ks-jw-20260712`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Keeping eta while removing the Jordan-Wigner string leaves a local hard-core ladder countermodel with nonzero cross-site anticommutators, whereas keeping the string without eta preserves CAR.  _(class `C`)_
+- **chain closes:** True — The registered minimal-axiom dependency is an accepted premise, and one explicit hard-core-ladder countermodel suffices to refute forcing on the scoped finite construction. Independent Pauli-word, bit-action, cube-bandwidth, and GF(2) rank checks reproduce every load-bearing sign, support count, CAR distinction, bandwidth, and algebra dimension outside the runner implementation path.
+- **rationale:** The load-bearing finite countermodel is exact: the same eta table coexists with endpoint-local commuting hard-core ladders, while cross-site CAR appears only after operator-valued Jordan-Wigner dressing. The repaired SHA-pinned runner completes with PASS=35 and FAIL=0, and independent combinatorial checks reproduce eta signs, CAR/commutation, the 8/12 tail count, cube bandwidth 4, and both three-site algebra dimensions 64. No physical conclusion beyond the explicitly finite, ungraded-locality route is ratified; graded locality or a lattice-wide statistics theorem remains outside scope.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `kubo_range_of_validity_note`
 

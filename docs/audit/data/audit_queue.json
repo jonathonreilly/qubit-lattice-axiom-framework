@@ -3,7 +3,7 @@
     "critical": 650,
     "high": 335,
     "leaf": 1098,
-    "medium": 741
+    "medium": 740
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -31149,35 +31149,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "wave_direct_dm_h025_family_pair_synthesis_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wave_direct_dm_seed_band_diagnosis_note",
-        "wave_direct_dm_h025_two_point_synthesis_note",
-        "wave_direct_dm_h025_fam2_seed0_control_note",
-        "wave_direct_dm_h025_fam2_seed1_control_note",
-        "wave_direct_dm_h025_seed0_crossfamily_note",
-        "wave_direct_dm_h025_seed1_crossfamily_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.085,
-      "note_path": "docs/WAVE_DIRECT_DM_H025_FAMILY_PAIR_SYNTHESIS_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": null,
-      "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "quark_c3_circulant_source_law_boundary_note_2026-04-28",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -31216,6 +31187,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/audit_companion_sm_hypercharge_uniqueness_algebraic_solution_enumeration_exact.py",
+      "transitive_descendants": 4
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "wave_direct_dm_transfer_diagnostic_note",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "migration_hint",
+      "criticality": "medium",
+      "criticality_rank": 1,
+      "cross_confirmation_status": null,
+      "deps": [
+        "wave_direct_dm_seed_band_diagnosis_note",
+        "wave_direct_dm_h025_family_pair_synthesis_note"
+      ],
+      "direct_in_degree": 4,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 4.322,
+      "note_path": "docs/WAVE_DIRECT_DM_TRANSFER_DIAGNOSTIC_NOTE.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/wave_direct_dm_transfer_diagnostic.py",
       "transitive_descendants": 4
     },
     {
@@ -46440,31 +46436,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/native_gauge_transfer_weyl_determinant_tail_domination_rung_eleven_bounded_2026_06_12.py",
-      "transitive_descendants": 4
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "wave_direct_dm_transfer_diagnostic_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "wave_direct_dm_seed_band_diagnosis_note",
-        "wave_direct_dm_h025_family_pair_synthesis_note"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.322,
-      "note_path": "docs/WAVE_DIRECT_DM_TRANSFER_DIAGNOSTIC_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/wave_direct_dm_transfer_diagnostic.py",
       "transitive_descendants": 4
     },
     {
@@ -80786,5 +80757,5 @@
     }
   ],
   "ready_count": 542,
-  "total_pending": 2824
+  "total_pending": 2823
 }

@@ -43,3 +43,10 @@
   Governance PASS after delivery-state cleanup; Audit Compatibility PASS
   pending final post-update validation; Methodology Skill skipped because no
   methodology files changed.
+- Reviewed science commit rebased without conflict onto
+  `origin/main@def6c1127`; no upstream Shapiro overlap was introduced.
+- Final post-rebase validation: all three caches fresh; both consumers pass
+  live; vocabulary lint clean; audit pipeline pass; strict audit lint zero
+  errors (36 existing warnings / 240 notices); target row
+  `no_go/unaudited/ready` with `deps=[]`; both companion rows unaudited behind
+  the target; generated authority surfaces stripped; diff check pass.

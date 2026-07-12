@@ -29,6 +29,13 @@ repo-wide surfaces.
 Review-loop disposition is `pass` for the narrow current-form no-go.  The
 review does not grant an audit verdict; independent audit is still required.
 
+## Delivery
+
+- branch: `physics-loop/s3-time-bilinear-action-block01-20260711`
+- science commit: `14927db1d051030bc75cfb50204212bdfdc21632`
+- review PR: [#5198](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5198)
+- verified state: open, non-draft, mergeable against `main`
+
 ## Exact next action
 
 Have the independent audit lane re-audit

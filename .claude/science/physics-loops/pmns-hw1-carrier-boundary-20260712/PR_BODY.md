@@ -3,7 +3,7 @@
 ## Summary
 
 This science block repairs the missing derivation in
-[`PMNS_SOLE_AXIOM_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md`](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/docs/PMNS_SOLE_AXIOM_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md)
+[`PMNS_SOLE_AXIOM_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md`](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/docs/PMNS_SOLE_AXIOM_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md)
 without presenting a definition as an axiom consequence.
 
 The revised theorem proves:
@@ -31,14 +31,14 @@ removed from the load-bearing rejection boundary.
 
 ## Artifacts
 
-- [Source theorem](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/docs/PMNS_SOLE_AXIOM_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md)
-- [Paired runner](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/scripts/frontier_pmns_sole_axiom_hw1_source_transfer_boundary.py)
-- [Handoff](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/.claude/science/physics-loops/pmns-hw1-carrier-boundary-20260712/HANDOFF.md)
-- [Trace gate](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/.claude/science/physics-loops/pmns-hw1-carrier-boundary-20260712/TRACE_GATE.md)
-- [Claim-status certificate](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/.claude/science/physics-loops/pmns-hw1-carrier-boundary-20260712/CLAIM_STATUS_CERTIFICATE.md)
-- [No-Go Discipline N1--N8](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/.claude/science/physics-loops/pmns-hw1-carrier-boundary-20260712/NO_GO_DISCIPLINE_CHECKLIST.md)
-- [Review history](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/.claude/science/physics-loops/pmns-hw1-carrier-boundary-20260712/REVIEW_HISTORY.md)
-- [Assumption/import audit](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/.claude/science/physics-loops/pmns-hw1-carrier-boundary-20260712/ASSUMPTIONS_AND_IMPORTS.md)
+- [Source theorem](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/docs/PMNS_SOLE_AXIOM_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md)
+- [Paired runner](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/scripts/frontier_pmns_sole_axiom_hw1_source_transfer_boundary.py)
+- [Handoff](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/.claude/science/physics-loops/pmns-hw1-carrier-boundary-20260712/HANDOFF.md)
+- [Trace gate](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/.claude/science/physics-loops/pmns-hw1-carrier-boundary-20260712/TRACE_GATE.md)
+- [Claim-status certificate](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/.claude/science/physics-loops/pmns-hw1-carrier-boundary-20260712/CLAIM_STATUS_CERTIFICATE.md)
+- [No-Go Discipline N1--N8](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/.claude/science/physics-loops/pmns-hw1-carrier-boundary-20260712/NO_GO_DISCIPLINE_CHECKLIST.md)
+- [Review history](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/.claude/science/physics-loops/pmns-hw1-carrier-boundary-20260712/REVIEW_HISTORY.md)
+- [Assumption/import audit](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/pmns-hw1-source-transfer-block01-20260712/.claude/science/physics-loops/pmns-hw1-carrier-boundary-20260712/ASSUMPTIONS_AND_IMPORTS.md)
 
 ## Verification
 

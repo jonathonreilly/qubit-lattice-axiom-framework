@@ -71,8 +71,6 @@ favors a value near `1/6`. Neither fit is an all-`L` theorem.
 
 - nearest-neighbor free-fermion Hamiltonian and open boundary conditions;
 - the basis-invariant mixed half-filling prescription;
-- the threshold `10^-6` defining `chi_eff` from transfer-layer singular values;
-- the chosen finite fit families and size windows;
 - the Bekenstein-Hawking `1/4` value as an external comparison target;
 - the gravitational-potential modulation used by the diagnostic.
 - `t=1` in the nearest-neighbor Hamiltonians, the `10^-6` SVD tolerance, the

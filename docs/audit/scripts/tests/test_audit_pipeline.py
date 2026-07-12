@@ -561,6 +561,43 @@ class PublicationEffectiveStatusRenderTest(unittest.TestCase):
                 self.assertEqual(m.main(), 2)
             self.assertFalse((pub / "OUT.md").exists())
 
+    def test_divergence_keeps_distinct_unresolved_links(self):
+        m = _import("render_publication_effective_status")
+        with tempfile.TemporaryDirectory() as tmp:
+            pub = Path(tmp)
+            lookups = {
+                "TABLE.md": [
+                    {
+                        "claim_id": None,
+                        "note_path": "docs/MISSING_A.md",
+                        "audit_status": None,
+                        "effective_status": "unresolved",
+                        "criticality": None,
+                    },
+                    {
+                        "claim_id": None,
+                        "note_path": "docs/MISSING_B.md",
+                        "audit_status": None,
+                        "effective_status": "unresolved",
+                        "criticality": None,
+                    },
+                    {
+                        "claim_id": "known-row",
+                        "note_path": "docs/KNOWN.md",
+                        "audit_status": "unaudited",
+                        "effective_status": "unaudited",
+                        "criticality": None,
+                    },
+                ]
+            }
+            with mock.patch.object(m, "PUB_DIR", pub):
+                out = m.render_divergence(lookups, "test")
+            rendered = out.read_text(encoding="utf-8")
+            self.assertIn("`unresolved:docs/MISSING_A.md`", rendered)
+            self.assertIn("`unresolved:docs/MISSING_B.md`", rendered)
+            self.assertIn("`known-row`", rendered)
+            self.assertIn("**Total non-retained-grade rows in publication tables:** 3", rendered)
+
 
 def _patch_repo_root(module, tmp_root: Path) -> None:
     """Override the module-level REPO_ROOT-derived paths."""
@@ -3713,7 +3750,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             (
                 "docs/S3_MASS_MATRIX_NO_GO_NOTE.md",
                 "**Claim type:** positive_theorem\n"
-                "Its historical filename does not turn this lemma into a no-go claim.\n",
+                "Its historical filename does not turn this\n"
+                "lemma into a no-go claim.\n",
                 "positive_theorem",
             ),
             (
@@ -3730,6 +3768,24 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertTrue(
             m.source_requires_no_go_discipline(
                 "docs/HISTORICAL_NO_GO_NOTE.md",
+                "**Claim type:** open_gate\nNo admissible route exists on this carrier.\n",
+                "open_gate",
+            )
+        )
+
+    def test_artifact_scope_disclaimer_is_not_a_negative_claim(self):
+        m = _import("no_go_discipline_gate")
+        self.assertFalse(
+            m.source_requires_no_go_discipline(
+                "docs/BH_DIAGNOSTIC.md",
+                "**Claim type:** open_gate\n"
+                "This runner does not derive the Bekenstein-Hawking coefficient.\n",
+                "open_gate",
+            )
+        )
+        self.assertTrue(
+            m.source_requires_no_go_discipline(
+                "docs/BH_DIAGNOSTIC.md",
                 "**Claim type:** open_gate\nNo admissible route exists on this carrier.\n",
                 "open_gate",
             )

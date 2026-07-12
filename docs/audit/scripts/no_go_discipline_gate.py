@@ -193,16 +193,19 @@ NEGATED_LABEL_ASSURANCE_RE = re.compile(
     r"\b(?:does|do|did)\s+not\s+(?:establish|prove|imply|claim|constitute)\s+"
     r"(?:an?\s+|the\s+)?(?:no[- ]go|negative boundary|firewall)\b|"
     r"\bno\s+(?:current\s+)?no[- ]go\b|"
-    r"\b(?:earlier|older|prior|broad)\b[^\n.;:]{0,80}\bno[- ]go\b"
-    r"[^\n.;:]{0,50}\b(?:is|was|has been)\s+withdrawn\b|"
-    r"\bhistorical filename\b[^\n.;:]{0,80}\bdoes not turn\b"
-    r"[^\n.;:]{0,80}\binto\s+(?:an?\s+)?no[- ]go\b",
+    r"\b(?:earlier|older|prior|broad)\b[^.;:]{0,80}\bno[- ]go\b"
+    r"[^.;:]{0,50}\b(?:is|was|has been)\s+withdrawn\b|"
+    r"\bhistorical filename\b[^.;:]{0,80}\bdoes not turn\b"
+    r"[^.;:]{0,80}\binto\s+(?:an?\s+)?no[- ]go\b",
     re.IGNORECASE,
 )
 LOCAL_SCOPE_EXCLUSION_RE = re.compile(
     r"\b(?:is|are|was|were|has|have)\s+not\s+(?:been\s+)?"
     r"(?:derived|established|proved|shown)\s+"
-    r"(?:here|in this (?:note|theorem|section|work)|within this (?:note|scope|theorem))\b",
+    r"(?:here|in this (?:note|theorem|section|work)|within this (?:note|scope|theorem))\b|"
+    r"\b(?:it|this\s+(?:note|runner|script|calculation|result|theorem|lemma))\s+"
+    r"(?:still\s+)?does\s+not\s+(?:derive|establish|prove|claim|identify)\b"
+    r"[^\n.;:]*",
     re.IGNORECASE,
 )
 OUTPUT_BOUNDARY_FIELDS = (

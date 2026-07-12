@@ -3899,7 +3899,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "There is no route to recover the selector from the retained primitives.",
             "After the finite-case check, the attempted route did not close.",
             "Under the retained assumptions, the route will not close.",
-            "Route C does not yet close under the allowed convention reframe.",
+            "The alternate spectral route does not yet close under the allowed convention reframe.",
             "#### Stretch outcome\n- The attempted construction has not closed.",
             "The conclusion was conditional upon three admissions: scale, sector choice, and normalization.",
             "- The theorem holds subject to two walls: the selector and the source bridge.",
@@ -4015,7 +4015,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "- Not claimed: The finite-size identity does not determine the continuum kernel.",
             "## Scope: The finite-size identity does not fix the continuum kernel\nSupporting detail.\n",
             "The baseline algebra did not supply a unique normalization.",
-            "The selector wall no longer blocks route A but blocks route B.",
+            "The selector wall no longer blocks the transfer route but blocks the readout route.",
             "The finite-size transfer did not fix the infinite-volume kernel.",
             # Passive negative closure with quantified boundary subjects.
             "Neither residual wall is closed by the identity.",

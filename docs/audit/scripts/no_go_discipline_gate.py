@@ -63,7 +63,9 @@ NON_CLEAN_VERDICTS = {
 }
 HONESTY_MARKERS = {"ATTEMPTED", "RULED OUT BY PRIOR"}
 # The five assertion classes of the no-go-discipline policy's
-# "When to invoke" list. Every incoming audit must declare which classes
+# "When to invoke" list (docs/ai_methodology/skills/no-go-discipline/
+# SKILL.md; registered in docs/repo/controlled_vocabulary.yaml under
+# negative_assertion_classes). Every incoming audit must declare which classes
 # the artifact ASSERTS (empty list when none). The declaration is the
 # auditor's semantic judgment after reading the full note; the regex
 # trigger below is only a mechanical floor. Either surface requires the

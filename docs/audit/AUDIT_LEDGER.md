@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 37 |
-| **retained_bounded** | 394 |
+| **retained_bounded** | 395 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2711 |
+| unaudited | 2710 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 512 |
+| `audited_clean` | 513 |
 | `audited_conditional` | 77 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3061 |
+| `unaudited` | 3060 |
 
 | claim_type | count |
 |---|---:|
@@ -285,6 +285,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `electrostatics_superposition_proxy_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `em_gravity_coexistence_2x2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `emergent_geometry_growth_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `emergent_product_law_audit_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `emergent_product_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `energy_channel_induced_kernel_route_a_note_2026-07-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
@@ -3507,6 +3508,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The included runner source actually constructs both graphs, evolves the matter field for the coupled case, applies the |psi|^2-biased parent selection, and computes the reported shell-volume and density metrics. The cached output supports the narrowed qualitative claim on this seed.
 - **rationale:** The narrowed load-bearing claim is not the broader multi-seed or gravitational-closure story; it is the single-seed primary-runner comparison. The runner does not merely print constants or import the contested conclusion: it computes the grown graph and control from fixed rules and reports d_eff = 1.64 versus 1.55 and peak shell-bin density about 72 versus 11. The broader companion-runner claims are explicitly scoped as support diagnostics and are not needed for this audited claim.
 - **auditor confidence:** high
+
+### `emergent_lorentz_spatial_bz_power_mixing_boundary_theorem_note_2026-06-18`
+
+- **Note:** [`EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md`](../../docs/EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the stipulated continuous-time, spatial-Z^3 central-difference surface, the leading quartic spatial artifact has zero time Hessian components and a signed-permutation orbit average equal to one spatial scalar channel; no physical mixing coefficient or Lorentz-restoration result is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00251-emergent_lorentz_spatial_bz_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Averaging the spatial Hessian of A4 over all signed permutations gives exactly 4(kx^2+ky^2+kz^2)I_3, while its four-variable Hessian has a zero time row and column.  _(class `A`)_
+- **chain closes:** True — The symbolic runner directly expands the central difference, differentiates the quartic artifact, and averages its spatial Hessian over all 48 signed permutations. These calculations establish the narrowly stated structural channel without requiring the deliberately excluded loop coefficient, anomalous dimension, or experimental comparison.
+- **rationale:** The load-bearing result is a genuine exact algebraic closure on the explicitly stipulated kinetic surface, not a definition, numerical fit, or external-comparator match. The runner computes the Taylor series, four-variable Hessian, and complete signed-permutation average rather than printing the desired result. Its parent-note text check is bookkeeping and is not load-bearing for the theorem. The source consistently leaves the physical mixing coefficient and downstream Lorentz-restoration gates open.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `emergent_product_law_audit_2026-04-11`
 

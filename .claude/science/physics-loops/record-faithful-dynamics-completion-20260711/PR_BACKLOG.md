@@ -24,6 +24,19 @@ for the next stacked review PR:
 
 No merge is authorized. Independent audit remains authoritative.
 
+The symmetric two-qubit Clifford matching-QCA classification is prepared for
+the next stacked review PR:
+
+- base: `physics-loop/record-faithful-dynamics-block08-matching-qca-20260711`
+- head: `physics-loop/record-faithful-dynamics-block09-clifford-qca-20260711`
+- source runner: `PASS=23 FAIL=0`
+- disposition: exhaustive bounded theorem; independent claim, math/code,
+  governance, N1--N8, and audit-system validation passed; only
+  `minimal_axioms` seeded, strict lint has no errors, generated status stripped
+- delivery check: prepared; PR URL pending
+
+No merge is authorized. Independent audit remains authoritative.
+
 The cubic matching-product qubit-QCA schedule-orbit classification is prepared
 for the next stacked review PR:
 

@@ -132,3 +132,15 @@ Record coupling, clock/rate, or continuum generator is imported.
 The theorem imports no Record coupling, physical probability, gate selector,
 clock duration, Hamiltonian, QCA phase/index claim, continuum map, SM sector,
 or GR sector. All such interfaces remain open.
+
+## Symmetric Clifford-QCA conditional inputs
+
+- The supplied quasi-local qubit tensor algebra and a parity origin.
+- The full projective two-qubit Clifford-group automorphism class, filtered by
+  endpoint SWAP symmetry, with complete Pauli signs retained.
+- One identical gate on every edge, each of the six matchings used exactly
+  once, and the whole word called one macro-tick.
+- Uniform onsite Clifford conjugacy as a basis quotient only.
+
+No non-Clifford gate, common Hamiltonian, physical selector, Record coupling,
+probability/time/rate, QCA phase/index, or continuum structure is imported.

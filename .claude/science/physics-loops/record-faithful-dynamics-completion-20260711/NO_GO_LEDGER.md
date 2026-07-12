@@ -18,6 +18,8 @@
 | zero determinant winding implies no multicomponent transport | falsified | opposite-moving bands and the six-direction cubic CAR QCA transport with zero total winding |
 | one fixed six-layer iSWAP matching product is invariant under all unit translations | closed negatively inside the supplied matching grammar for even `L>=6` and `Z^3` | the 720 words give eight exact products in one proper-cubic/cyclic orbit; every unit translation flips one scheduling sign, while even translations remain symmetries |
 | matching-product order dependence forbids an invariant coherent qubit automorphism | falsified | CZ makes all six layers commute and gives one exact translation/proper-cubic-invariant graph-radius-one automorphism |
+| endpoint-symmetric Clifford gates select one matching-product tick | falsified exhaustively in the supplied finite gate/grammar class | 48 gates give one product, 48 give eight, and 96 give all 720 distinct products |
+| local three-site overlap commutation is necessary for complete-layer schedule independence | falsified | 36 unique-product gates commute locally, while 12 more close only after full perfect-matching assembly |
 
 These negatives prune routes, not the full record-instrument program. The live
 escape is a separate classical record register coupled through a local

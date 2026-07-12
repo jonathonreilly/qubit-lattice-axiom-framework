@@ -204,3 +204,15 @@ Delivery: stacked PR
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5212 is
 open and mergeable on the Block07 head; the independent audit workflow is
 queued.
+
+## Symmetric Clifford matching-QCA census
+
+The full 11,520-element projective two-qubit Clifford group was generated and
+filtered to 192 endpoint-SWAP-symmetric gates. Uniform onsite Clifford
+conjugacy gives 26 classes. Infinite signed-Pauli propagation exhausts every
+schedule and yields an exact 48/48/96 gate split into 1/8/720 products. The
+unique level contains 24 onsite and 24 entangling invariant automorphisms; the
+eight-product level is one spatial/cyclic orbit; the fully order-faithful level
+has 15 spatial and 120 cyclic orbits. Forward/inverse graph radii are exact.
+Runner/cache: `PASS=23 FAIL=0`. The next route is common-Hamiltonian
+simultaneous evolution, not an axiom update.

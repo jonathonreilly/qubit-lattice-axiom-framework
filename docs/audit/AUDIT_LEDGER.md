@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 96 |
+| **retained** | 97 |
 | **retained_no_go** | 40 |
 | **retained_bounded** | 397 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2702 |
+| unaudited | 2701 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 519 |
+| `audited_clean` | 520 |
 | `audited_conditional` | 79 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3052 |
+| `unaudited` | 3051 |
 
 | claim_type | count |
 |---|---:|
@@ -214,6 +214,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chiral_split_mass_gravity_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2181,6 +2182,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** Issue: the packet proves real algebraic consequences of already-stated CKM atlas input identities, but it adds no independent observable, comparator, first-principles computation, or compression beyond the parent closure package. Why this blocks: under the Algebraic Decoration Policy, exact algebraic restatements with zero D-class checks should not stand as separate retained theorem rows even when the algebra is correct. Repair target: either box this under the CKM atlas closure/input-identity corollary inventory, or attach a new retained comparator/structural compression that is load-bearing outside the parent algebra. Claim boundary until fixed: valid as a scoped algebraic corollary, not as an independent retained theorem surface.
 - **decoration parent:** `ckm_atlas_axiom_closure_note`
 - **auditor confidence:** high
+
+### `ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`CKM_CP_PHASE_RHO_ETA_TO_DELTA_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CKM_CP_PHASE_RHO_ETA_TO_DELTA_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The abstract coordinate, principal-branch trigonometric, integer-k, and J_0 substitution identities T1-T9, plus the explicitly diagnostic finite Wolfenstein-truncated witness T10; no physical derivation selecting k=6, r^2=1/6, the partition weights, coupling values, or CKM readout is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00263-ckm_cp_phase_rho_eta_to_delt`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting rho^2 = r^2 w_axis and eta^2 = r^2 w_perp into the angle definitions, then using w_axis + w_perp = 1 and positivity of r^2 and w_axis, yields the radius, cosine, sine, and tangent identities; the J_0 result follows by direct substitution.  _(class `A`)_
+- **chain closes:** True — All load-bearing conclusions follow directly from the stated positive-symbol hypotheses and definitions. The runner independently performs the symbolic substitutions and finite diagnostic checks and reports 30 passing checks with no failure.
+- **rationale:** The theorem is deliberately scoped to abstract algebraic hypotheses rather than a physical CKM prediction. T1-T9 are genuine algebraic or principal-branch trigonometric closures over those hypotheses, and the supplied runner computes the expressions rather than merely printing expected results. T10 is correctly segregated as a non-load-bearing finite diagnostic, while every physical selector or coupling interpretation is explicitly excluded.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `ckm_five_sixths_bridge_support_note`
 

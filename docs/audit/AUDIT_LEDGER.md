@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 5 |
-| unaudited | 2810 |
+| unaudited | 2809 |
 | audit_in_progress | 24 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 39 |
+| ~~audited_conditional~~ | 40 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 24 |
 | `audited_clean` | 459 |
-| `audited_conditional` | 39 |
+| `audited_conditional` | 40 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3160 |
+| `unaudited` | 3159 |
 
 | claim_type | count |
 |---|---:|
@@ -634,6 +634,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_generated_wavefield_transfer_v2_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `source_resolved_radical_geometry_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `teleportation_3d_initial_ramp_probe_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
@@ -7257,6 +7258,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The simultaneous eigenvalue formula lambda_s(phi)=sum_i phi_i (-1)^{s_i} gives, by the chain rule, a common coefficient 2 f'(v^2)+4 v^2 f''(v^2) multiplying (-1)^{s_i}(-1)^{s_j} at phi=(v,0,0). Summing over the eight binary signs gives a Hessian proportional to delta_ij with no dependency or bounded companion estimate needed.
 - **rationale:** The proposed positive_theorem type is correct for the scoped exact Hessian-isotropy statement. The source note's proof sketch compresses the derivative step, but the displayed eigenvalue formula plus standard chain rule make the Hessian coefficient common across all sign sectors at the axis, leaving exactly the binary orthogonality identity. The cached runner output for SHA 519c1d8d830ea43f8cdcd866565184a4d2d1c8d4c9b0318557fe22df5f35c59b reports THEOREM PASS=30 and FAIL=0, checking the shift algebra, eigenvalue sign sum, binary orthogonality, and finite-difference Hessian isotropy for representative smooth functions. The six bounded gauge/thermal passes are outside this audited scope and are not used for closure.
 - **auditor confidence:** high
+
+### `teleportation_3d_initial_ramp_probe_note`
+
+- **Note:** [`TELEPORTATION_3D_INITIAL_RAMP_PROBE_NOTE.md`](../../docs/TELEPORTATION_3D_INITIAL_RAMP_PROBE_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Exact side=2/N=8 numerical diagnostic under the runner-defined staggered/Poisson Hamiltonian, G_target=1000, and smoothstep T=40: clean null control, high Psi+ Bell-frame resource candidate, and delocalized G=0 state; no scalable preparation, robustness, or readout theorem.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00355-teleportation_3d_initial_ram`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The sampled side-2 Poisson endpoint and finite-time T=40 ramp yield a high best-Bell-overlap logical resource in the Psi+ frame, while the G=0 initial state remains maximally delocalized in the native basis.  _(class `C`)_
+- **chain closes:** False — The finite numerical conclusions follow from the implemented matrices, but the restricted packet does not derive the staggered/Poisson Hamiltonian, G_target=1000, or its physical preparation dynamics from the accepted framework premises. It also leaves scalable localized preparation, larger-lattice behavior, robustness, and apparatus/readout open.
+- **rationale:** Issue: the runner genuinely computes the stated side-2 spectra, reduced resource metrics, and finite-time evolution, but its Hamiltonian and coupling are supplied model choices rather than derived from the accepted axioms. Why this blocks: the finite candidate cannot be promoted to a framework-native preparation result, and the note's broader negative boundary has not exhausted alternative preparation, scaling, robustness, or apparatus routes. Repair target: derive and cite the physical Hamiltonian/coupling bridge, then test localized preparation and scaling independently. Claim boundary until fixed: the stated side-2 computation is a conditional finite diagnostic with an honest unresolved preparation gate.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1 contains OPEN and UNTESTED routes for the physical Hamiltonian bridge, localized preparation, runtime family, scaling, and apparatus/readout.
+    - N5 identifies untested resolutions behind the broad preparation-boundary language.
 
 ### `teleportation_3d_operator_consistent_end_to_end_note`
 

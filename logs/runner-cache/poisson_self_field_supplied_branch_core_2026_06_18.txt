@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/poisson_self_field_supplied_branch_core_2026_06_18.py
-runner_sha256: abe66b167f86d4468ee576f3123e39a1bab3e0fee10c960410f6683482ca21f9
+runner_sha256: c7ec1ee4c50326cd3d66fb750fabde937e5fc34d776bbb07e65303f1f84cdca8
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 70.22
+elapsed_sec: 67.64
 status: ok
 ----- stdout -----
 ========================================================================

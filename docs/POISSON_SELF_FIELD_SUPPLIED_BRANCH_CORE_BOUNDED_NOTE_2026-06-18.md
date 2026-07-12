@@ -10,7 +10,7 @@ new axiom.
 load-bearing authority for this bounded core.
 **Primary runner:** [`scripts/poisson_self_field_supplied_branch_core_2026_06_18.py`](../scripts/poisson_self_field_supplied_branch_core_2026_06_18.py)
 **Runner cache:** [`logs/runner-cache/poisson_self_field_supplied_branch_core_2026_06_18.txt`](../logs/runner-cache/poisson_self_field_supplied_branch_core_2026_06_18.txt)
-**Helper runners (audit packet must include):** [`scripts/poisson_self_field.py`](../scripts/poisson_self_field.py) — SHA-pinned cache [`logs/runner-cache/poisson_self_field.txt`](../logs/runner-cache/poisson_self_field.txt). The primary runner dynamically loads this helper via `importlib.util.spec_from_file_location("poisson_self_field", scripts/poisson_self_field.py)` (see `load_parent()`), so the load-bearing computation lives here. The primary runner calls the helper's `grow`, `_make_poisson_field` (which internally calls `_solve_poisson_2d`), `_prop_beam`, `_cz`, and `_dp`, plus the constants `H, K, NL, PW, MASS_Z, S, FAMILIES`. This helper source plus its cache must be in the restricted audit packet for the load-bearing calls to be verifiable.
+**Helper runners (audit packet must include):** [`scripts/poisson_self_field.py`](../scripts/poisson_self_field.py) — SHA-pinned cache [`logs/runner-cache/poisson_self_field.txt`](../logs/runner-cache/poisson_self_field.txt). The primary runner imports this helper statically via `from scripts import poisson_self_field` (see `load_parent()`, which returns the imported module), so the load-bearing computation lives here and the audit packet builder resolves the helper from that static import. The primary runner calls the helper's `grow`, `_make_poisson_field` (which internally calls `_solve_poisson_2d`), `_prop_beam`, `_cz`, and `_dp`, plus the constants `H, K, NL, PW, MASS_Z, S, FAMILIES`. This helper source plus its cache must be in the restricted audit packet for the load-bearing calls to be verifiable.
 
 ## Authority disclaimer
 
@@ -120,15 +120,39 @@ No derived value changed — the primary runner cache still reports
 `SUMMARY: PASS=18 FAIL=0`, and the helper cache still reports the same residual
 budget, TOWARD shifts, `F~M` slopes, Born ratio, and `s=0` null.
 
-The primary runner loads the helper via
+As of that repair the primary runner still loaded the helper via
 `importlib.util.spec_from_file_location` (a dynamic load inside
 `load_parent()`), not via `from scripts import poisson_self_field`. The
 import-form parser fix landed in PR #4424 targets the `from scripts import X`
-static form, so it does **not** auto-populate `helper_runner_paths` for this
-dynamic load. The audit packet must therefore include this helper via the
-note-side reference above (the same packaging convention used by other notes
-whose helpers are loaded dynamically).
+static form, so it did **not** auto-populate `helper_runner_paths` for that
+dynamic load; the 2026-06-20 repair therefore relied on the note-side reference
+above alone. See the 2026-07-12 entry below — that note-side reference did not
+populate the packet on its own, so the runner was subsequently converted to the
+static import form.
 
 Status authority: independent audit lane only. This repair sets no
 `audit_status`, `effective_status`, ledger tag, or retained status; it is the
 exact audit-named packaging repair and nothing more.
+
+### 2026-07-12 — static-import conversion
+
+The 2026-06-20 note-side reference alone did not place the helper in the
+restricted audit packet: the re-audit still returned `runner_artifact_issue`
+because the packet builder resolves helper sources from a runner's **static**
+`from scripts import X` imports (the PR #4424 parser), and the primary runner
+was still loading the helper through the dynamic
+`importlib.util.spec_from_file_location` form, which that parser does not follow.
+
+This repair converts the primary runner to the static form: it inserts the repo
+root on `sys.path` and imports the helper as `from scripts import
+poisson_self_field`, with `load_parent()` returning that imported module. The
+static import is exactly the form the packet builder resolves, so
+`scripts/poisson_self_field.py` is now shipped into the restricted packet and
+the load-bearing calls become verifiable in-packet.
+
+No derived value changed. The primary runner still reports
+`SUMMARY: PASS=18 FAIL=0`, with the same residual budget, TOWARD shifts, `F~M`
+slopes, Born ratio, and `s=0` null; only the helper import mechanism changed.
+
+Status authority: independent audit lane only. This repair sets no
+`audit_status`, `effective_status`, ledger tag, or retained status.

@@ -1,0 +1,32 @@
+DM LEPTOGENESIS SOURCE-PACKAGE IDENTIFIABILITY BOUNDARY
+PART 1: ONE EXACT DOWNSTREAM COMPLETION REPRODUCES THE REFERENCE PACKAGE
+  [A] PASS: The constructed carrier is exactly Hermitian
+  [A] PASS: Sylvester's criterion places H_ref in the positive-polar carrier domain
+  [A] PASS: The carrier extraction gives gamma = 1/2
+  [A] PASS: The carrier extraction gives E1 = sqrt(8/3) and E2 = sqrt(8)/3
+  [A] PASS: The uniform heavy-basis projection gives K00 = 2
+  [A] PASS: The CP channels are extracted rather than independently assigned
+PART 2: A SOURCE-CARRIER RESCALING PRESERVES THE AXIOM REDUCT
+  [B] PASS: The current axiom memo explicitly leaves source/action and observable identification outside A_min
+  [B] PASS: The current axiom memo leaves readout-context and log-determinant selection outside A_min
+  [A] PASS: For every positive lambda, H_lambda stays Hermitian and positive definite
+  [A] PASS: All four extracted source-package coordinates scale by lambda
+  [A] PASS: The CP channels scale quadratically while the diagonal scales linearly
+  [A] PASS: The two completions disagree on every claimed absolute package value
+PART 3: THE COHERENT KERNEL DOES NOT REMOVE THE COMPLETION FREEDOM
+  [A] PASS: At fixed benchmark loop functions, epsilon_1 scales by lambda
+  [A] PASS: At fixed Davidson-Ibarra comparator, epsilon_1/epsilon_DI also scales by lambda
+PART 4: RECORD ADDITIVITY DOES NOT FIX AN ABSOLUTE READOUT SCALE
+  [A] PASS: The reference readout is finitely additive on disjoint record collections
+  [A] PASS: A nontrivially rescaled readout is also finitely additive
+  [A] PASS: Both readouts obey I(empty)=0 but disagree on nonempty record content
+PART 5: CONDITIONAL BENCHMARK REPLAY (NOT AN AXIOM DERIVATION)
+  [B] PASS: The imported conditional package matches the independently extracted reference tuple
+  [D] PASS: The conditional coherent kernel gives epsilon_1/epsilon_DI = 0.9276209209
+  [D] PASS: The consistent conditional benchmark still gives eta/eta_obs = 0.5578749661
+SUMMARY: PASS=20 FAIL=0
+CLASS BREAKDOWN: class A: 15, class B: 3, class D: 2
+BOUNDARY: the current A_min surface does not identify a unique nonzero
+(gamma,E1,E2,K00) package or epsilon_1/epsilon_DI value. The reference
+numbers remain a conditional completion. A normalized carrier theorem or a
+scale-invariant kernel bypass remains open.

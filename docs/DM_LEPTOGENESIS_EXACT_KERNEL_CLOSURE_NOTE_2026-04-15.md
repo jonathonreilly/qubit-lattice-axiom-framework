@@ -1,208 +1,232 @@
-# DM Leptogenesis Exact-Kernel Closure (claim narrowed 2026-05-01)
+# DM Leptogenesis Exact-Kernel Source-Package Identifiability Boundary
 
-**Date:** 2026-04-15 (eta benchmark corrected 2026-05-01)
-**Status:** bounded - exact source-and-CP-channel package closed; exact-kernel eta closure does NOT land at percent-level on the consistent benchmark
-**Script:** `scripts/frontier_dm_leptogenesis_exact_kernel_closure.py`
+**Date:** 2026-04-15 (source-package boundary sharpened 2026-07-12)
+**Claim type:** no_go
+**Actual current-surface status:** no-go source proposal; independent audit
+lane owns any effective status.
+**Script:**
+[`scripts/frontier_dm_leptogenesis_exact_kernel_closure.py`](../scripts/frontier_dm_leptogenesis_exact_kernel_closure.py)
 
-## Framework sentence
+## Claim
 
-In this note, "axiom" means only the single framework axiom `Cl(3)` on `Z^3`.
-Everything else is a derived atlas row.
+The current minimal framework axiom surface does **not** determine a unique
+nonzero tuple
 
-## Question
+```text
+(gamma, E1, E2, K00)
+  = (1/2, sqrt(8/3), sqrt(8)/3, 2),
+```
 
-After the refreshed branch closes
+and, when the note's downstream benchmark data are independently held fixed,
+does not determine the formal value
+`epsilon_1 / epsilon_DI = 0.9276209209...`.
 
-- `c_odd = +1`
-- `v_even = (sqrt(8/3), sqrt(8)/3)`
-- `a_sel = 1/2`
-- `tau_E = tau_T = 1/2`
-- `K00 = 2`
+This is a narrow identifiability result about derivation from the current
+axiom surface alone.  It is not a no-go against the exact finite-dimensional
+matrix identities, the coherent leptogenesis kernel, or a future theorem that
+supplies a normalized source/action and physical-observable bridge.
 
-what does the standard coherent leptogenesis kernel predict on the
-retained benchmark?
+The formerly quoted numbers remain a consistent **conditional completion**.
+On that completion, the corrected benchmark arithmetic remains
 
-## Bottom line (corrected)
+```text
+epsilon_1 / epsilon_DI = 0.9276209209...,
+eta / eta_obs          = 0.5578749661...,
+```
 
-The exact source-and-CP-channel package is closed. The exact coherent
-heavy-basis kernel sits just below the Davidson-Ibarra ceiling. **But the
-predicted baryon asymmetry on the consistent retained benchmark is
-`eta/eta_obs ≈ 0.558`, not `0.99` as an earlier draft of this note claimed.**
+and the earlier percent-level eta closure remains withdrawn.
 
-The earlier `0.9907` figure was obtained with `K00 = 2` used in the
-epsilon_1 numerator but **not** propagated into the washout coefficient
-`K`. Once `K00 = 2` is used consistently — i.e. K is doubled when the
-source includes the `K00 = 2` normalization — the washout efficiency
-`kappa` halves and `eta/eta_obs` drops to `0.5579`. The runner's `[D]`
-classified-pass line states this explicitly:
+## Minimal premise set
 
-> The retained-fit benchmark no longer lands near observation once K00 is
-> used consistently in the washout path.
+The only load-bearing authority is the current
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) surface:
 
-So the percent-level eta closure earlier claimed in this note **does not
-hold**. What does survive is everything upstream of the eta calculation:
-the source package, the epsilon_1 / DI ratio, and the strong-washout
-regime classification.
+1. Lattice;
+2. Qubit;
+3. Admissibility; and
+4. Record, including content-determined finite scalar readout additivity.
 
-## Exact source-side kernel package (UNCHANGED)
+The same authority explicitly leaves readout-context selection,
+log-determinant readout, source/action, and physical-observable identification
+outside the axiom content.  No observed target, fitted selector, literature value,
+benchmark constant, or unregistered primitive is used in the no-go proof.
 
-The refreshed branch fixes
+## Exact restricted-packet algebra
 
-- odd source: `gamma = 1/2`
-- even responses: `E1 = sqrt(8/3)`, `E2 = sqrt(8)/3`
-- heavy-basis diagonal: `K00 = 2`
+Write the Hermitian source carrier as
 
-so the exact heavy-basis CP tensor channels are
+```text
+H = [[A,       b+rho,        b-rho-i gamma],
+     [b+rho,   c+delta,      d            ],
+     [b-rho+i gamma, d,      c-delta      ]].
+```
 
-- `cp1 = -2 gamma E1 / 3 = -0.544331...`
-- `cp2 =  2 gamma E2 / 3 =  0.314270...`
+The packet extracts
 
-These are exact numbers from the source package. They are not in dispute.
+```text
+E1  = delta + rho,
+E2  = A + b - c - d,
+K00 = <u,H u>,                 u=(1,1,1)/sqrt(3),
+cp1 = -2 gamma E1 / 3,
+cp2 =  2 gamma E2 / 3.
+```
 
-## Exact epsilon law (UNCHANGED)
+These are exact algebraic definitions once `H` is supplied.  They do not
+select `H` from the four axioms.
 
-The coherent heavy-basis kernel is
+## Two-completion theorem
 
-`epsilon_1 = |(1/8pi) y0^2 (cp1 f23 + cp2 f3) / K00|`.
+Let
 
-With the exact source package and the staircase benchmark
-(`k_A = 7`, `k_B = 8`, `eps/B = alpha_LM/2`),
+```text
+e1 = sqrt(8/3),              e2 = sqrt(8)/3,
+A  = 2 + 4 sqrt(2)/9,        b = 0,
+c  = 2 - sqrt(2)/9,          d = -sqrt(2)/9,
+delta = 1/2,                 rho = e1 - 1/2,
+gamma = 1/2.
+```
 
-- `epsilon_1 = 2.4576198796e-6`
-- `epsilon_DI = 2.6493795301e-6`
-- `epsilon_1 / epsilon_DI = 0.9276209209`.
+The resulting exact Hermitian matrix `H_ref` satisfies
 
-So the exact kernel sits just below the DI ceiling, not far below it.
-This part is correct.
+```text
+(gamma,E1,E2,K00) = (1/2,e1,e2,2).
+```
 
-## Exact eta on the retained benchmark (CORRECTED)
+It also lies in the positive-polar carrier domain `H=Y Y^dag`.  Its exact
+leading principal minors are
 
-Using the same retained washout law but propagating `K00 = 2` consistently
-into the washout path:
+```text
+D1 = 2 + 4 sqrt(2)/9,
+D2 = 643/324 + 2 sqrt(6)/3 + 8 sqrt(2)/9,
+D3 = -3361/648 - 16 sqrt(3)/27 + 227 sqrt(2)/108 + 8 sqrt(6)/3.
+```
 
-- `K = 47.236...`     (was `23.618...` in the earlier inconsistent draft)
-- `kappa = 1.427e-2`  (was `2.534e-2`)
-- `eta = 3.414e-10`   (was `6.063e-10`)
-- `eta_obs = 6.12e-10`
-- `eta / eta_obs = 0.5579` (was `0.9907`)
+The first two are manifestly positive.  The elementary rational bounds
+`sqrt(2)>7/5`, `sqrt(6)>12/5`, and `sqrt(3)<7/4` give
+`D3 > 2021/648 > 0`.  Sylvester's criterion therefore proves `H_ref>0`,
+so a full-rank `Y` with `H_ref=Y Y^dag` exists.
 
-So the exact kernel under-shoots observation by ~44% on this benchmark.
-The previously claimed percent-level closure was an artifact of a
-bookkeeping inconsistency that gave `K00 = 2` to the source while
-keeping `K00 = 1` in the washout. The runner now uses `K00 = 2` in
-both places.
+Now take any positive `lambda != 1` and define
 
-## Consequence
+```text
+H_lambda = lambda H_ref.
+```
 
-This **does not** resolve the old DM denominator suppression at percent
-level on the refreshed branch. What is now established:
+For every existing model of the current minimal axioms, because `H`, a
+source/action map, and a physical-observable bridge do not occur in the axiom
+language, that model has downstream expansions by either `H_ref` or `H_lambda` without
+changing the common minimal-axiom reduct.  Both added carriers lie in the
+positive-polar domain, both obey every extraction formula above, and positive
+scaling preserves the source-oriented sign.  But linearity gives
 
-- The exact source package is closed (axiomatic, sharp numbers).
-- The exact coherent kernel does not have an obvious order-of-magnitude
-  problem: it is within a factor of two of observation on the retained
-  benchmark, and within ~7% of the Davidson-Ibarra ceiling at the
-  epsilon_1 level.
-- Closing the remaining ~44% gap to observation requires either a
-  refinement of the washout benchmark beyond the current retained
-  staircase, or an additional source contribution not in the current
-  exact heavy-basis package, or both.
+```text
+(gamma,E1,E2,K00)_lambda
+  = lambda (gamma,E1,E2,K00)_ref,
 
-## Scope
+(cp1,cp2)_lambda
+  = lambda^2 (cp1,cp2)_ref.
+```
 
-This note's substantive content is:
+At a fixed downstream benchmark, the coherent source term is
 
-(i)   the exact source-and-CP-channel package (imported from upstream
-      support theorems, not re-derived in this packet), and
-(ii)  the exact `epsilon_1 / epsilon_DI = 0.928` ratio that follows from
-      (i) plus the retained benchmark constants.
+```text
+epsilon_1
+  = |C (cp1 f23 + cp2 f3) / K00|,
+```
 
-Both (i) and (ii) are PASS in the runner. As of the 2026-05-16 audit
-class-E repair (science-fix-loop iter18), all nine runner checks are
-self-classified as **class D conditional-on-imported-upstream**, not
-class C standalone-derivation. There are zero class-C standalone
-checks in this runner. This matches the audit verdict that the
-load-bearing source-package values (`gamma = 1/2`, `E1 = sqrt(8/3)`,
-`E2 = sqrt(8)/3`, `K00 = 2`) are imported from upstream conditional
-authorities rather than derived from `Cl(3)` on `Z^3` inside the
-restricted packet.
+so
 
-The headline `eta/eta_obs ≈ 1` percent-level closure is **not**
-retained; the runner's classified-pass output confirms
-`eta/eta_obs ≈ 0.558`. The note no longer claims percent-level eta
-closure on this benchmark.
+```text
+epsilon_1(H_lambda) = lambda epsilon_1(H_ref),
+```
 
-## Audit dependency repair links
+for positive `lambda`.  Holding the Davidson--Ibarra comparator fixed gives
+the same scaling for `epsilon_1 / epsilon_DI`.  For example, `lambda=2`
+doubles the conditional ratio at the same independently held benchmark while
+leaving the minimal-axiom reduct unchanged.  This is a fixed-benchmark formal
+non-invariance result; it is not a claim that all other quantities in a fully
+coupled phenomenological completion remain fixed.
 
-This graph-bookkeeping section records the explicit upstream authorities
-that the load-bearing step relies on, in response to the 2026-05-05
-audit's `audited_renaming` verdict (the runner imports the exact source
-package values `gamma = 1/2, E1 = sqrt(8/3), E2 = sqrt(8)/3, K00 = 2`
-from [`scripts/dm_leptogenesis_exact_common.py`](../scripts/dm_leptogenesis_exact_common.py)
-rather than deriving them inside the restricted packet). This addendum
-does not promote the note or change the conditional scope.
+Therefore neither the four absolute package values nor the quoted kernel
+ratio is a semantic consequence of the current minimal axioms.
 
-Candidate one-hop authorities for the imported source package
-(currently registered with mixed audit status; this section makes the
-dependency edges explicit so the citation graph can track them):
+## Why Record additivity does not select the reference completion
 
-- [`DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md)
-  — upstream candidate for the odd-source coefficient `c_odd = +1` and
-  by extension `gamma = 1/2`. Currently `unaudited`.
-- [`DM_NEUTRINO_VEVEN_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_VEVEN_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md)
-  — upstream candidate for the even-response pair
-  `(E1, E2) = (sqrt(8/3), sqrt(8)/3)`. Currently `audited_conditional`.
-- [`DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md)
-  — upstream candidate for the heavy-basis diagonal `K00 = 2`.
-  Currently `audited_renaming`.
-- The retained washout / staircase benchmark (`k_A = 7`, `k_B = 8`,
-  `eps/B = alpha_LM / 2`) used in Part 3 of the runner currently has no
-  separate retained-grade authority registered as a one-hop dependency.
-  It is included here as an open registration target.
+For any content-determined finitely additive scalar record readout `I`, the
+map
 
-None of these upstream candidates carries `audited_clean` retained
-status, so effective-status propagation correctly caps this note at
-`audited_renaming`. The path to lifting the verdict is upstream closure
-of the source-package candidates above, not local edits to this note.
+```text
+I_lambda(R) = lambda I(R)
+```
 
-## Honest auditor read
+is also content-determined, obeys `I_lambda(empty)=0`, and is finitely
+additive on pairwise-disjoint record collections.  Thus Record additivity
+does not fix an absolute readout normalization.  More importantly, the
+minimal axiom memo supplies no map at all from the downstream carrier `H` to
+record content.  A log-determinant or isospectral-response construction can
+be used only after that source/readout context and its normalization have
+been supplied or derived.
 
-The 2026-05-05 audit recorded this row as `audited_renaming` with the
-substantive observation that the runner hard-codes the exact-package
-values rather than deriving them from `Cl(3)` on `Z^3`, so the bounded
-scope is conditional arithmetic on the imported source package and
-benchmark. This addendum makes the dependency edges explicit but does
-not change the verdict. The honest classification of this note remains:
+## What survives exactly
 
-- The arithmetic identities (`epsilon_1 / epsilon_DI = 0.928`,
-  `eta / eta_obs = 0.558`) are runner-confirmed conditional outputs
-  given the imported source package. The runner's `[D]` classified-pass
-  output records this honestly.
-- The exact source-and-CP-channel package and its derivation from the
-  framework axiom are not closed by this note's restricted packet. The
-  upstream `_codd_bosonic`, `_veven_bosonic`, and `_k00_bosonic` rows
-  are the candidate authorities; this note inherits their conditional
-  effective status until those rows reach `audited_clean`.
+The decisive Parts 1--4 of the runner verify symbolically, without importing
+`dm_leptogenesis_exact_common.exact_package()`, that:
 
-The 2026-05-16 follow-up edit (science-fix-loop iter18, this revision)
-extends the honest classification into the runner itself. Previously,
-Parts 1 and 2 of the runner classified their six checks as class C
-(standalone derivation), even though their load-bearing values were
-imported rather than derived. The 2026-05-05 audit specifically
-recorded this mismatch as the load-bearing reason the row could not
-lift to `audited_clean`. The iter18 edit reclassifies all nine runner
-checks as class D conditional-on-imported-upstream and adds the
-explicit upstream authority citations in both the module docstring and
-the per-check detail strings, so that future audit passes see exactly
-which upstream rows the conditional bounded claim depends on. The
-runner now has zero class-C standalone checks, matching the honest
-read above. The numeric outputs are unchanged.
+1. `H_ref` reproduces the conditional reference tuple;
+2. `H_lambda` remains positive definite for every positive `lambda` and obeys
+   the same extraction identities;
+3. all four package coordinates vary linearly with `lambda`;
+4. the CP channels vary quadratically and the coherent kernel varies
+   linearly; and
+5. finite Record additivity is invariant under readout rescaling.
 
-This addendum is graph-bookkeeping only. It does not promote the note,
-does not modify the runner numerics, and does not introduce any new
-vocabulary. The audit lane still owns the verdict.
+Part 5 imports the existing conditional package solely to check its tuple
+against the independently extracted witness (class B) and replay the old
+`epsilon_1/epsilon_DI` and `eta/eta_obs` arithmetic (class D).  No Part-5
+value is used in the no-go proof.
 
-## Command
+Consequently the durable exact content is the family of extraction and
+kernel identities **given a supplied normalized carrier**, not the selection
+of one numerical member from the current axioms.
+
+## Claim boundary and import-retirement path
+
+This theorem rules out only the following route:
+
+> derive the nonzero numerical package and kernel ratio from the current
+> minimal axioms plus the restricted packet's carrier identities, without a
+> normalized carrier/tuple-selection theorem or a scale-invariant kernel
+> bypass.
+
+It leaves several distinct retirement routes open:
+
+1. **Tuple selection:** a normalized source/carrier construction can select
+   `H_ref` (or the same extracted tuple) directly, without first deriving a
+   record-readout map.
+2. **Physical kernel interpretation:** a source/action plus physical-observable
+   bridge can attach the selected carrier to the coherent kernel.
+3. **Bypass:** a scale-invariant kernel theorem could remove the carrier
+   normalization from the physical ratio without selecting every absolute
+   package coordinate separately.
+
+The no-go does not assert that all three routes must be completed together.
+Only tuple selection, with a scale-invariant theorem as a bypass, belongs to
+the narrow wall.  Physical-observable interpretation belongs solely to a later
+physical-kernel claim.
+
+The conditional benchmark arithmetic is not promoted by this note.  The
+independent audit lane must decide the claim type and effective status after
+landing.
+
+## Verification
 
 ```bash
 python3 scripts/frontier_dm_leptogenesis_exact_kernel_closure.py
+```
+
+Expected result:
+
+```text
+SUMMARY: PASS=20 FAIL=0
+CLASS BREAKDOWN: class A: 15, class B: 3, class D: 2
 ```

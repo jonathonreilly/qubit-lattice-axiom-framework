@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 411 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2662 |
+| unaudited | 2661 |
 | audit_in_progress | 25 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 91 |
+| ~~audited_conditional~~ | 92 |
 | ~~audited_failed~~ | 21 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 25 |
 | `audited_clean` | 539 |
-| `audited_conditional` | 91 |
+| `audited_conditional` | 92 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 43 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3012 |
+| `unaudited` | 3011 |
 
 | claim_type | count |
 |---|---:|
@@ -754,6 +754,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_generated_family_probe_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `source_resolved_generated_wavefield_transfer_v2_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `source_resolved_radical_geometry_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `structured_chokepoint_bridge_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -8824,6 +8825,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The source note scopes the result to the force-based card and states the weaker row semantics and family-coverage caveats. The repo-local runner completed and reproduced the stated 17/17 outputs without external imports or stale numerical mismatch.
 - **rationale:** The load-bearing claim is bounded to a fixed finite runner and operating point, not a repo-wide centroid-gravity claim or a universal physical theorem. The runner computes the card rows and reproduces the note's listed values for 1D n=61 and 3D n=9/11/13, including the documented C17 limitation at n=11 and n=13. Residual risk is scope leakage: this clean verdict should not be read as validating centroid-based card semantics, dynamic/cosmological extensions, or full six-family 3D coverage above n=9.
 - **auditor confidence:** high
+
+### `staggered_fermion_card_2026-04-11`
+
+- **Note:** [`STAGGERED_FERMION_CARD_2026-04-11.md`](../../docs/STAGGERED_FERMION_CARD_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Wrapper-level verification of the cached fixed finite score surface for 1D n=61 and 3D n=9,11,13; the canonical runner's underlying computation was not audited because its source is absent from the packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00054-staggered_fermion_card_2026-`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The canonical repository runner reports 17/17 for the fixed 1D n=61 and 3D n=9,11,13 cards, with the stated family-coverage gates.  _(class `B`)_
+- **chain closes:** False — The wrapper executes and parses the canonical runner successfully, but the packet omits scripts/frontier_staggered_17card.py. Consequently the restricted evidence cannot establish that the canonical runner computes the scores rather than emitting them from hard-coded or imported inputs.
+- **rationale:** The cached wrapper run cleanly verifies all 20 boundary, execution, score, gate, and scope checks. However, the supplied source is only a subprocess wrapper; the load-bearing canonical runner source is missing, while the rubric explicitly makes stdout alone non-authoritative. The repaired physical scope is appropriately narrow, but the finite computation certificate remains conditional on inspection of the omitted canonical implementation.
+- **open / conditional deps cited:**
+  - `scripts/frontier_staggered_17card.py`
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-attempt-with-named-untested-routes`)
+  - **gate failures:**
+    - N1: canonical_source_audit remains UNTESTED because the canonical runner source is absent from the restricted packet.
 
 ### `staggered_geometry_superposition_note_2026-04-11`
 

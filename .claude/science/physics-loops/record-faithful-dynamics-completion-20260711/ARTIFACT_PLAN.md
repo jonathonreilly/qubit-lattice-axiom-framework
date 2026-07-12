@@ -7,7 +7,7 @@
 - oriented-link response-to-symbol bridge kept explicit;
 - deterministic exact runner and review PR.
 
-## Record-observable quotient and formation outcome — current
+## Record-observable quotient and formation outcome — delivered
 
 - record-history/readout operational quotient;
 - insertion-only versus continual-admissibility semantic comparison;
@@ -15,19 +15,28 @@
 - rank-one locked-output CP outcome-operation normal form;
 - mutation-sensitive runner, cache, N1--N8 packet, and stacked review PR.
 
-## Minimal dilation and faithful scalar escape — next
+## Minimal dilation and exchange escape — current result
 
-- absorbing classical record register plus coherent dilation decomposition;
-- inventory of independent Kraus/unitary freedoms;
-- controlled-copy, measure-and-prepare, scalar/SWAP, and vector controls;
-- decisive scalar-branch countermodel search.
+- exact one-Kraus no-record completion classification `K_empty=sqrt(q)U`;
+- full normalization on a supplied one-excitation edge sector;
+- outcome-forgotten channels of minimal Kraus/Choi rank three at
+  `theta=pi/4,pi/2`;
+- append-only absorbing outcome labels and exact eventual-label weights;
+- decisive same-carrier `I-SWAP` counterexample, with the label-to-Record
+  realization kept open.
 
-## Time and probability
+## Effect selection and Born — next
 
-- distinguish partial event order, integer tick count, and physical rate;
 - test whether instrument composition plus exclusive-menu additivity yields a
   frame function on neighbor composites;
-- state the exact remaining premise behind Born weights.
+- derive or isolate effect selection, noncontextuality, and the exact remaining
+  premise behind the quadratic trace rule.
+
+## Full instrument, time, and probability
+
+- extend beyond the classified finite-edge completion to a local normalized
+  record-forming instrument family;
+- distinguish partial event order, integer tick count, and physical rate.
 
 ## Continuum gateway
 

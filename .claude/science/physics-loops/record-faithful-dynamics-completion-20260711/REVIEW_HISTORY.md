@@ -75,3 +75,26 @@ check confirmed the load-bearing formulas. The audit pipeline seeded the
 renamed claim as `bounded_theorem`, `unaudited`, with the intended three
 dependencies; strict lint passed with no errors, and generated audit outputs
 were stripped before delivery.
+
+## Minimal-dilation exchange internal result
+
+- Full normalization with fixed record Kraus operators classifies the
+  one-Kraus no-record branch as `sqrt(q)U`.
+- At `theta=pi/4,pi/2`, the outcome-forgotten `I-SWAP` channels have exact
+  Kraus/Choi rank three and minimal Stinespring environment dimension three.
+- One-step effects and nonempty outcome branches agree, but two-step and
+  eventual absorbing outcome-label distributions differ.
+- Append-only external labels are explicit, but their realization as
+  framework Records and same-carrier absorption are not claimed.
+- Independent math review confirmed the exact weights and caught the required
+  permanence/coarse-graining boundaries before source finalization.
+- No-Go Discipline initially required demotion until a full normalized,
+  minimal, label-sensitive, append-only construction was supplied; the
+  finalized absorbing first-outcome witness supplies those one-excitation
+  sector conditions while retaining label-to-Record and lattice-wide routes as
+  open.
+- Runner/cache: `PASS=44 FAIL=0`; three review iterations ended in a bounded
+  PASS after separating raw versus absorbing composition, narrowing external
+  labels from framework Records, scoping minimality to the outcome-forgotten
+  channel, defining common-frame exchange, and disclosing every supplied
+  process input. Independent audit remains required.

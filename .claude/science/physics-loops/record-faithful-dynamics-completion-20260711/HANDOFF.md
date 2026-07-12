@@ -62,3 +62,23 @@ cannot form records from its blank complement. A rank-one locked-output CP
 operation has the exact form `J_P(rho)=Tr(E_P rho)P`. The effect `E_P`, firing
 site/rate, and coherent no-record dilation remain unselected. Runner:
 `PASS=25 FAIL=0`.
+
+## Minimal-dilation and exchange result
+
+For fixed rank-one record branches
+`K_r=sqrt(1-q)P_r`, full normalization classifies every one-Kraus no-record
+completion as `K_empty=sqrt(q)U`. On the supplied one-excitation sector of one
+edge, `U_theta=exp[-i theta(I-SWAP)]` gives outcome-forgotten channels of
+minimal Kraus/Choi rank three at `theta=pi/4` and `pi/2`. Their one-step
+effects and nonempty outcome branches agree, but their two-step and eventual
+absorbing `L/R` label weights differ; the eventual right-label probabilities
+are exactly `1/5` and `1/4`. The exchange branch is therefore neither
+label-readout-null nor dilation gauge. Runner:
+`PASS=44 FAIL=0`.
+
+This rejects minimal outcome-forgotten-channel rank as an exchange-exclusion
+selector on the supplied sector. It does not realize the external labels as
+framework Records and does not establish an axiom-update requirement: effect
+selection, full lattice instrument composition, strict-QCA classification,
+and continuum consistency remain live stronger routes. The next campaign is
+effect selection/Born, after reading the actual composite-menu and Born lanes.

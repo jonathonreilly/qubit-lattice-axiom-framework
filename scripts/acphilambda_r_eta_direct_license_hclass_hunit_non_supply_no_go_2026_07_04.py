@@ -154,6 +154,13 @@ def main() -> int:
         and readout(beta_target, h, lattice_records)
         != readout(beta_counter, h, lattice_records),
     )
+    check(
+        "N2 wall W_unit: beta-one and beta-two singleton laws share h but remain distinct",
+        readout(beta_target, h, singleton) == h
+        and readout(beta_counter, h, singleton) == 2 * h
+        and readout(beta_target, h, singleton)
+        != readout(beta_counter, h, singleton),
+    )
 
     section("Part E: source and axiom guards")
     note = NOTE.read_text(encoding="utf-8")

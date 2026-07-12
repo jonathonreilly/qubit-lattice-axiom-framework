@@ -557,8 +557,17 @@ occurrences of `absent`, `cannot`, `does not`, `fails`, `impossible`,
 `no nonzero`, `no-go`, `obstruction`, `requires a new axiom`, `rule out`,
 `rules out`, `structurally undecidable`, `unavailable`, `is not`, and `are not`,
 and must test all five resolution classes substantively against cited live
-current-cycle runner stdout evidence. For each N5 statement,
-`resolution_classes_checked` must equal the five canonical classes exactly,
+current-cycle runner stdout evidence.
+
+For every N3 hit and N5 statement, copy `phrase` byte-for-byte from the
+corresponding `full_phrase_groups[].phrase` value in the evidence manifest.
+Never paraphrase a phrase, join two phrases with punctuation or a slash, or
+collapse distinct phrases into one object. For example, `boundary` and
+`primitive` require separate objects even when one source sentence contains
+both. The path, phrase, and occurrence-group id must identify the same single
+authenticated group.
+
+For each N5 statement, `resolution_classes_checked` must equal the five canonical classes exactly,
 and `tested_resolutions` must contain exactly five entries: one and only one
 entry prefixed `per_element:`, `per_site:`, `per_mode:`, `per_block:`, and
 `lattice_wide:`. Put unexecuted classes in `untested_resolutions` as well; do

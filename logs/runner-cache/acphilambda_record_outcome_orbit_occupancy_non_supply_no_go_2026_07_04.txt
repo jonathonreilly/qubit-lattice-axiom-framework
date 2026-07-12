@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py
-runner_sha256: 0be6b226896e56c7248d78d019bd76b8385da1a01090634372821374d70106f6
+runner_sha256: 5ada062d8f544dd383898634744f70669d1f14f78a9d02ffb745c9e8cc0bccb8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 Complex-vs-realified determinant-power countermodels
@@ -67,6 +67,7 @@ Part F: rhetoric-resolution lifts
   [PASS] per_mode: diagonal finite-mode products retain the complex-versus-realified factor two
   [PASS] per_block: direct-sum finite blocks preserve additivity for both determinant powers
   [PASS] lattice_wide: finite lattice record union preserves both laws and their factor-two split
+  [PASS] N2 wall W_power: one complex carrier supports two distinct additive determinant powers
 
 Part G: source and axiom guards
 -------------------------------
@@ -90,7 +91,7 @@ Part G: source and axiom guards
   [PASS] discipline gate records PASS
 
 ====================================================================
-TOTAL: PASS=59, FAIL=0
+TOTAL: PASS=60, FAIL=0
 
 ----- stderr -----
 

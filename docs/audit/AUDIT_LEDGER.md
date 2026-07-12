@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 7 |
-| unaudited | 2796 |
+| unaudited | 2795 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 45 |
+| ~~audited_conditional~~ | 46 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 468 |
-| `audited_conditional` | 45 |
+| `audited_conditional` | 46 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3146 |
+| `unaudited` | 3145 |
 
 | claim_type | count |
 |---|---:|
@@ -612,6 +612,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
+| `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1240,6 +1241,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The runner genuinely performs the hydrogen diagonalization and helium variational calculation, but the chain imports the textbook Hamiltonian, physical conversion constant, analytic Bohr spectrum, and experimental helium value without deriving or independently closing them. It also does not compute an exact helium result within any basis.
 - **rationale:** The source code constructs and diagonalizes the finite-difference hydrogen Hamiltonian rather than merely printing the cached values, and its output supports the tabulated finite-grid comparison. The helium runner evaluates only the stated textbook independent-electron and one-parameter variational formulas, with the experimental value embedded as an external comparator. Consequently this is a valid bounded standard-QM scaffold, not a class-(C) framework derivation, and the phrase claiming helium is exact within an available basis is unsupported.
 - **auditor confidence:** high
+
+### `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29`
+
+- **Note:** [`ATOMIC_LANE2_ALPHA0_RUNNING_BRIDGE_BOUNDARY_NOTE_2026-04-29.md`](../../docs/ATOMIC_LANE2_ALPHA0_RUNNING_BRIDGE_BOUNDARY_NOTE_2026-04-29.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The restricted packet supports only the narrow boundary that direct alpha_EM(M_Z) substitution and the displayed lepton-only approximation do not close alpha(0); it does not establish an exhaustive, scheme-independent no-go or a hydrogen prediction.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00370-atomic_lane2_alpha0_running_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The one-loop transport depends on charged thresholds, and the lepton-only estimate leaves a gap requiring hadronic or equivalent low-energy vacuum-polarization input.  _(class `D`)_
+- **chain closes:** False — The numerical boundary works conditionally on hard-coded external comparators, threshold masses, and an uncited one-loop QED-running formula. The runner does not test alternate renormalization schemes or an all-sector hadronic transport calculation.
+- **rationale:** The runner genuinely calculates the direct-substitution energy shift and lepton-threshold sensitivity, but its decisive inputs are embedded external constants and standard-QED formulas rather than framework-derived or retained-grade authorities. Its status checks are self-declared strings, and the assertions about scheme matching and hadronic completion are not independently exercised. The packet therefore supports a useful conditional dependency boundary, not an audited-clean exhaustive no-go.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-attempt-with-named-untested-routes`)
+  - **gate failures:**
+    - N1: alternate-scheme and hadronic/all-sector transport routes were not actually tested.
+    - N5: the broad implication-failure rhetoric exceeds the finite resolutions exercised by the runner.
 
 ### `atomic_lane2_physical_unit_limit_boundary_note_2026-04-29`
 

@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_mass_basis_nni.py
-runner_sha256: 545453b4272f2665125efb9b5dd41036759d638f9d8d1c9ebcf8e602443fa7bd
+runner_sha256: fea375ad562e4bb0f9eac12a5c99957d6837ff26a27374b56586431de6b13457
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.64
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ========================================================================
-CKM Mass-Basis NNI: structural identities + calibrated illustration
+Historical CKM NNI: structural identities + texture-deformation illustration
 ========================================================================
   Source theorems (T1-T4) are pure algebra and use no imports.
-  Parts 1-7 are an imports-dependent illustration (PDG masses,
+  Parts 1-7 are an imports-dependent historical illustration (PDG masses,
   PDG CKM, fitted O(1) coefficients from the Schur runner).
 
 
@@ -23,13 +23,13 @@ PART 0: SOURCE THEOREMS T1-T4  (structural, axiom-free)
 
   Worst relative deviation across 200 random triples:
     T1 (chain rule):              3.375e-16
-    T2 (geom Schur normalization): 5.407e-16
-    T3 (geom -> phys closure):     3.875e-16
-    T4 (gap = sqrt(m_1/m_3)):      1.741e-16
+    T2 (conditional product normalization): 5.407e-16
+    T3 (geom -> mapped closure):            3.875e-16
+    T4 (mapped/geometric ratio):             1.741e-16
   [PASS] T1: chain rule sqrt(m1/m3) = sqrt(m1/m2)*sqrt(m2/m3) holds identically  (worst relative deviation = 3.375e-16)
-  [PASS] T2: geom Schur identity M_13^geom * m_2 = M_12^geom * M_23^geom  (worst relative deviation = 5.407e-16)
+  [PASS] T2: conditional product identity M_13^geom*m_2 = M_12^geom*M_23^geom  (worst relative deviation = 5.407e-16)
   [PASS] T3: c_13^phys = c_12^phys * c_23^phys for arbitrary masses/coefficients  (worst relative deviation = 3.875e-16)
-  [PASS] T4: gap-closure ratio c_13^phys/c_13^geom = sqrt(m_1/m_3) identically  (worst relative deviation = 1.741e-16)
+  [PASS] T4: mapped/geometric coefficient ratio equals sqrt(m_1/m_3)  (worst relative deviation = 1.741e-16)
 
 ========================================================================
 PART 1: Mass-Ratio Suppression Factors (PDG-imported illustration)
@@ -60,25 +60,25 @@ PART 1: Mass-Ratio Suppression Factors (PDG-imported illustration)
   illustration of the structural identities certified in Part 0.
 
 ========================================================================
-PART 2: Mass-Eigenvalue NNI Coefficients (calibrated illustration)
+PART 2: Historically Mapped Coefficients (calibrated illustration)
 ========================================================================
   Inputs: imported C12_*_FIT, C23_*_FIT (fitted O(1) values from
     scripts/frontier_ckm_schur_complement.py) and imported PDG masses.
 
-  Up sector (geometric-mean -> mass-eigenvalue):
+  Up sector (geometric -> historical mapped coefficients):
     c_12^geom = 1.480
     c_12^phys = 1.480 * sqrt(m_u/m_c) = 1.480 * 0.04124 = 0.06104
     c_23^geom = 0.650
     c_23^phys = 0.650 * sqrt(m_c/m_t) = 0.650 * 0.08574 = 0.05573
-    c_13^geom = c_12 * c_23 = 0.9620  [Schur complement]
+    c_13^geom := c_12 * c_23 = 0.9620  [imposed product]
     c_13^phys = 0.9620 * sqrt(m_u/m_t) = 0.9620 * 0.003536 = 0.003402
 
-  Down sector (geometric-mean -> mass-eigenvalue):
+  Down sector (geometric -> historical mapped coefficients):
     c_12^geom = 0.910
     c_12^phys = 0.910 * sqrt(m_d/m_s) = 0.910 * 0.22361 = 0.20348
     c_23^geom = 0.650
     c_23^phys = 0.650 * sqrt(m_s/m_b) = 0.650 * 0.14948 = 0.09716
-    c_13^geom = c_12 * c_23 = 0.5915  [Schur complement]
+    c_13^geom := c_12 * c_23 = 0.5915  [imposed product]
     c_13^phys = 0.5915 * sqrt(m_d/m_b) = 0.5915 * 0.033425 = 0.019771
 
   Factorization check (c_13^phys = c_12^phys * c_23^phys):
@@ -90,10 +90,10 @@ PART 2: Mass-Eigenvalue NNI Coefficients (calibrated illustration)
   [PASS] (T3) holds at imported down-sector inputs: c_13^phys = c_12^phys * c_23^phys  (ratio = 1.0000000000)
 
 ========================================================================
-PART 3: Full CKM from Mass-Basis NNI Coefficients
+PART 3: Coefficient-Level CKM-Like Diagnostic (imports-dependent)
 ========================================================================
 
-  Analytic estimates (mass-basis NNI):
+  Analytic estimates (historically mapped coefficients):
 
   |V_us|:
     Down sector: c_12^phys = 0.20348
@@ -113,20 +113,20 @@ PART 3: Full CKM from Mass-Basis NNI Coefficients
     |V_ub| ~ |c_13^d - c_13^u| = 0.016369
     PDG:  0.00382
 
-  Gap closure:
+  Historical mapped-coefficient comparison:
     |V_ub| (geometric-mean NNI, naive) ~ c_13^geom ~ 0.9620
-    |V_ub| (mass-basis NNI)            ~ 0.016369
+    |V_ub| (mapped-coefficient diagnostic) ~ 0.016369
     PDG                                 = 0.00382
-    Suppression factor: 58.8x
+    Coefficient-ratio movement: 58.8x
 
 ========================================================================
-PART 4: Numerical CKM with Mass-Basis c_13
+PART 4: Numerical CKM with Legacy c_13 Texture Deformation
 ========================================================================
 
   Building NNI matrices:
     Up sector:   c_12=1.480, c_23=0.650, c_13=0.003402
     Down sector: c_12=0.910, c_23=0.650, c_13=0.019771
-    CP phase (Berry): delta = 120.0 deg
+    Historical imposed phase: delta = 120.0 deg
 
   CKM matrix (magnitudes):
     | 0.974322  0.225117  0.004348 |
@@ -146,11 +146,11 @@ PART 4: Numerical CKM with Mass-Basis c_13
     eta_bar = 0.0359  (PDG: 0.357)
   [PASS] [BOUNDED] |V_us| within 50% of PDG  (|V_us| = 0.22512, ratio = 1.004)
   [PASS] [BOUNDED] |V_cb| within 50% of PDG  (|V_cb| = 0.04196, ratio = 0.994)
-  [PASS] [BOUNDED] |V_ub| within factor 3 of PDG (mass-basis corrected)  (|V_ub| = 0.004348, ratio = 1.138)
+  [PASS] [BOUNDED] |V_ub| within factor 3 of PDG (legacy deformed texture)  (|V_ub| = 0.004348, ratio = 1.138)
   [PASS] [BOUNDED] J within order of magnitude of PDG  (J = 4.513e-06, ratio = 0.147)
 
 ========================================================================
-PART 5: Gap Closure -- Geometric-Mean to Mass-Basis
+PART 5: Historical Texture-Deformation Scan
 ========================================================================
 
   Suppression factors:
@@ -167,15 +167,15 @@ PART 5: Gap Closure -- Geometric-Mean to Mass-Basis
       0.100000    0.096200    0.059150    0.005122     1.341
       0.050000    0.048100    0.029575    0.004504     1.179
       0.010000    0.009620    0.005915    0.004083     1.069
-      0.003536    0.003402    0.002092    0.004023     1.053 <-- mass basis
+      0.003536    0.003402    0.002092    0.004023     1.053 <-- legacy mapped coefficient
       0.001000    0.000962    0.000592    0.004000     1.047
 
   Summary:
     |V_ub| (geometric-mean NNI):  0.02007  (ratio to PDG: 5.25)
-    |V_ub| (mass-basis NNI):      0.004348  (ratio to PDG: 1.14)
+    |V_ub| (legacy deformation):  0.004348  (ratio to PDG: 1.14)
     |V_ub| (PDG):                 0.00382
-    Gap closure: 5.3x -> 1.14x
-  [PASS] Mass-basis NNI closes the geometric-mean gap in V_ub  (geometric: 5.3x, mass-basis: 1.14x)
+    Comparator movement: 5.3x -> 1.14x
+  [PASS] [BOUNDED] Legacy deformation moves imported V_ub toward the imported comparator  (geometric: 5.3x, legacy mapped: 1.14x)
 
   Finding optimal suppression to match PDG |V_ub|...
     Brentq failed -- V_ub does not cross PDG in range
@@ -184,12 +184,12 @@ PART 5: Gap Closure -- Geometric-Mean to Mass-Basis
 PART 6: Wolfenstein Correspondence (imports-dependent)
 ========================================================================
 
-  Wolfenstein from mass-basis NNI:
+  Wolfenstein-like mapped-coefficient diagnostic:
     lambda  ~ c_12^phys (down) = 0.20348  (PDG: 0.2243)
     A       ~ c_23^phys / lambda^2 = 2.3466  (PDG: 0.79)
     A*lambda^3 = 0.019771  (PDG V_ub: 0.00382)
 
-  Schur chain in mass basis (identity T3 at down-sector imports):
+  Product-coefficient chain (identity T3 at down-sector imports):
     c_13^phys = c_12^phys * c_23^phys  [chain rule for sqrt(m_i/m_j)]
     = 0.20348 * 0.09716 = 0.019771
     = lambda_est * (A_est * lambda_est^2) = A_est * lambda_est^3
@@ -205,10 +205,10 @@ PART 6: Wolfenstein Correspondence (imports-dependent)
   [PASS] lambda_est = sqrt(m_d/m_s) * C12_D_FIT (algebraic check at imports)  (lambda/(r_ds*c12) = 1.0000)
 
 ========================================================================
-SCORECARD: Mass-Basis NNI vs PDG
+SCORECARD: Historical Deformed Texture vs PDG
 ========================================================================
 
-   Element      Mass-NNI           PDG     Ratio   sigma    Status
+   Element      Deformed           PDG     Ratio   sigma    Status
   --------  ------------  ------------  --------  ------  --------
     |V_us|   2.25117e-01   2.24300e-01     1.004     1.0      GOOD
     |V_cb|   4.19625e-02   4.22000e-02     0.994     0.2      GOOD
@@ -221,17 +221,17 @@ SCORECARD: Mass-Basis NNI vs PDG
      rho_bar  =   0.4589  (PDG: 0.141)  ratio: 3.254
      eta_bar  =   0.0359  (PDG: 0.357)  ratio: 0.101
 
-  V_ub Gap Closure Summary:
+  V_ub Texture-Deformation Summary:
     Geometric-mean NNI |V_ub|: 0.02007 (5.3x PDG)
-    Mass-basis NNI |V_ub|:     0.004348 (1.14x PDG)
+    Legacy-deformed |V_ub|:    0.004348 (1.14x PDG)
     PDG |V_ub|:                0.00382
-  [PASS] Mass-basis NNI reduces V_ub overshoot by > 2x  (geometric: 5.3x, mass-basis: 1.14x, improvement: 4.6x)
+  [PASS] [BOUNDED] Legacy deformation reduces imported V_ub comparator ratio by > 2x  (geometric: 5.3x, legacy mapped: 1.14x, movement: 4.6x)
 
 ========================================================================
 FINAL SUMMARY
 ========================================================================
   Total checks: 16
-  Passed: 16 (11 exact, 5 bounded)
+  Passed: 16 (9 exact, 7 bounded)
   Failed: 0 (0 exact, 0 bounded)
 
   Source theorems T1-T4 worst relative deviations:
@@ -241,9 +241,9 @@ FINAL SUMMARY
     T4 = 1.741e-16
 
   Scope reminder: T1-T4 are axiom-free algebraic identities.
-  Parts 1-7 numerical agreement with PDG is an imports-conditional
-  illustration (audited 2026-05-05 as audited_numerical_match,
-  class G; see docs/work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md).
+  Parts 1-7 use a legacy mixed-reconstruction texture deformation.
+  They do not show CKM suppression by a normalization of one matrix;
+  see docs/work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md.
 
   All checks passed.
 

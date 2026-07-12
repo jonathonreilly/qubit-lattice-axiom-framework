@@ -507,3 +507,6 @@ Independent math/physics review passes with bounded claims after the exact
 repairs. Governance/Nature and full N1--N8 re-review also pass. Final audit
 validation seeded one `bounded_theorem` / `unaudited` row with exactly three
 declared dependencies and source hash `0ff1f739...`; strict lint has no errors.
+
+Delivery: stacked PR #5270 is open and mergeable on Block14; the independent
+audit workflow was running at the checkpoint.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py
-runner_sha256: e1cd0337737d1d88e481420ae5d5fdb0acff05423d7f971e95679c61ca237410
+runner_sha256: ee6497e987b1a31d3619025d699d453371a12d1269f0079bfc665b81aa20c1bd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.46
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -36,7 +36,7 @@ Part C: finite C3 inverse-determinant density
 Scope guard
 -----------
   [PASS (B)] source note has no load-bearing links to the former seven-row supplier stack
-  [PASS (B)] source note excludes physical R-eta and charged-lepton angle identification
+  [PASS (B)] source note separates physical R-eta and charged-lepton angle identification
 
 ========================================================================================
 TOTAL: PASS=16, FAIL=0

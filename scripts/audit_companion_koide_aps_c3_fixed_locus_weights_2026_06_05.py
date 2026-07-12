@@ -182,9 +182,10 @@ def main() -> int:
         kind="B",
     )
     check(
-        "source note excludes physical R-eta and charged-lepton angle identification",
-        "does not identify this number with a physical charged-lepton angle"
-        in normalized_note,
+        "source note separates physical R-eta and charged-lepton angle identification",
+        "physical single-summand readout" in normalized_note
+        and "charged-lepton angle" in normalized_note
+        and "Separate theorem targets govern" in normalized_note,
         kind="B",
     )
 

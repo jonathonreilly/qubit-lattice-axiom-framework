@@ -169,11 +169,11 @@ supplies this," or "requires a new axiom." A `false` value scopes only the
 orchestrated forensic evidence plumbing — it NEVER waives the gate when your
 own output names walls: in that case you MUST still include the structured
 `no_go_discipline` object (development tier: N1-N8 as structured judgments
-with quoted evidence), or the apply gate will reject your verdict outright. The restricted-input rule still
-applies: do not search the wider repository. For N8, judge only the source note,
-runner/helper sources, one-hop authorities, and premise registries supplied
-here. Missing cross-cycle evidence is a checklist failure, not permission to
-browse.
+with quoted evidence), or the apply gate will reject your verdict outright.
+The restricted-input rule still applies: do not search the wider repository.
+For N8, judge only the source note, runner/helper sources, one-hop authorities,
+and premise registries supplied here. Missing cross-cycle evidence is a
+checklist failure, not permission to browse.
 
 Packet evidence requirements are tier-scoped (owner-approved 2026-07-12),
 but auditor judgment is not. Every triggered row must answer N1-N8, and every

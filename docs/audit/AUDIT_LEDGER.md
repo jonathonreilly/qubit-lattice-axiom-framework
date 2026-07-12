@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 98 |
+| **retained** | 99 |
 | **retained_no_go** | 41 |
 | **retained_bounded** | 400 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2692 |
+| unaudited | 2691 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 525 |
+| `audited_clean` | 526 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 40 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3042 |
+| `unaudited` | 3041 |
 
 | claim_type | count |
 |---|---:|
@@ -217,6 +217,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `ckm_cp_phase_rho_eta_to_delta_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
+| `cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2244,6 +2245,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Substituting the four stated parametric identities into the five Wolfenstein-leading expressions and then applying n_quark = n_pair * n_color gives (M1)-(M5).  _(class `A`)_
 - **chain closes:** True — The claimed formulas follow by exact symbolic substitution and simplification. The conclusion is bounded to the explicitly supplied identities and does not derive or physically identify those inputs.
 - **rationale:** The load-bearing work is genuine class-A algebra: all five formulas and both ratios follow exactly from the stated symbolic inputs and count constraint. The runner computes these reductions rather than merely printing outcomes; its final parent-ledger metadata check is class B but is not load-bearing. No numerical alpha_s value, comparator, fitted selector, or physical CKM bridge enters the audited scope.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact claims (C1)-(C4): dim_R Cl(p,q)=2^(p+q), Cl(3,1)≅M_4(R), the dimension readout 16=2^4, and n=4 as the smallest total dimension admitting an M_4(R) cell; downstream physical identifications, sample table entries above n=4, and section 6 corollaries are excluded.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00273-cl31_m4r_dimension_sixteen_n`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The explicit real 4 × 4 generators satisfy the Cl(3,1) relations, and their 16 standard monomials have rank 16 in M_4(R), so the universal-property homomorphism Cl(3,1) → M_4(R) is an isomorphism.  _(class `A`)_
+- **chain closes:** True — The ordered-monomial basis gives the universal dimension formula, while the computed Clifford relations and rank-16 span establish Cl(3,1)≅M_4(R) directly. Dimension comparison then proves the stated readout and smallest-n result without a physical bridge or external numerical input.
+- **rationale:** The load-bearing result is an exact finite-dimensional algebra computation, not a classification label merely asserted by the runner: the matrices satisfy the required signature, and their Clifford monomials form a basis of M_4(R). The universal dimension formula also makes n=4 necessary for any isomorphism with the 16-dimensional algebra M_4(R), while the explicit construction proves existence. The clean verdict is confined to (C1)-(C4) and does not ratify any framework-native time, Wick-rotation, hierarchy-exponent, or lattice-species bridge.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

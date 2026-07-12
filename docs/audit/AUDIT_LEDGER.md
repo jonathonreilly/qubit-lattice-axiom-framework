@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 374 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2758 |
+| unaudited | 2757 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 58 |
+| ~~audited_conditional~~ | 59 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 488 |
-| `audited_conditional` | 58 |
+| `audited_conditional` | 59 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3108 |
+| `unaudited` | 3107 |
 
 | claim_type | count |
 |---|---:|
@@ -652,6 +652,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3488,6 +3489,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
   - **gate failures:**
     - N1 contains open framework-model-bridge, common-T-to-zero-limit, and tolerance-robustness routes, so the discipline gate cannot pass.
+
+### `epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12`
+
+- **Note:** [`EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md`](../../docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the fixed Q=24, Ly=2, GL=20, eta=0.05 finite one-particle grid, the implemented regularized fixed-kernel coefficient has the opposite sign from the sampled m=0 and wave-10 T^2-fit slopes; the stronger inference that every correct derivation must retain explicit kernel T-dependence is not closed.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00413-epsstar_sommerfeld_t0_bounda`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The implemented fixed-kernel Sommerfeld coefficient alpha_analytic = -9.266358431847 has the opposite sign from the computed positive finite-T m=0 and wave-10 T^2 slopes.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the finite-grid coefficient and sampled slope mismatches. The chain does not establish that explicit kernel T-dependence is the uniquely necessary repair, because full T-differentiation and stability under alternative fixed-kernel regularizations or limiting procedures remain untested.
+- **rationale:** The finite-grid sign mismatch is computed, but the note promotes it into the stronger causal statement that a correct derivation must retain the kernel's explicit T-dependence. The no-go packet leaves full T-differentiation open and provides no eta, derivative-step, quadrature, or limiting-procedure stability test excluding other fixed-kernel repairs. The claim is therefore supported only for the specific eta=0.05, GL=20 implementation.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 leaves full finite-T differentiation OPEN and fixed-kernel regularization/limit stability UNTESTED.
+    - N2-N5 do not establish the causal-exclusion wall behind the statement that every correct derivation must retain explicit kernel T-dependence.
 
 ### `evolving_network_prototype_note`
 

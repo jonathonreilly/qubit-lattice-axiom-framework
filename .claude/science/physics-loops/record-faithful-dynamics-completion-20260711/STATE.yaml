@@ -8,31 +8,30 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block08-matching-qca-20260711
+branch: physics-loop/record-faithful-dynamics-block09-clifford-qca-20260711
 base_commit_at_start: 9d1636f05f
-cycle_count: 8
-block_count: 8
-active_route: broader_interacting_qca_or_common_hamiltonian_classification
+cycle_count: 9
+block_count: 9
+active_route: common_hamiltonian_simultaneous_update_classification
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: cubic_matching_product_qubit_qca_schedule_orbit_bounded_theorem_note_2026-07-11
+produced_claim_id: symmetric_two_qubit_clifford_cubic_matching_qca_classification_bounded_theorem_note_2026-07-11
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  In the supplied six-matching qubit-circuit grammar, CZ gives one exact
-  translation/proper-cubic-invariant graph-radius-one automorphism. iSWAP gives
-  exactly eight graph-radius-six products, 90 schedules each, in one
-  proper-cubic and cyclic-conjugacy orbit; no member is invariant under every
-  unit translation. Other gates, common-Hamiltonian updates, and physical tick
-  selection remain open.
+  All 192 endpoint-symmetric projective two-qubit Clifford automorphisms are
+  exhausted in the supplied six-matching grammar. They split 48/48/96 into
+  1/8/720 exact schedule products; only the unique-product level is individually
+  translation/proper-cubic invariant. Common-Hamiltonian, non-Clifford, and
+  physical tick selection remain open.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source exhaustively classifies all 720 CZ/iSWAP matching products as full
-  qubit automorphisms, including spatial/cyclic/inverse quotients, sharp graph
-  radii, finite-size control, and the supplied quasi-local extension, while
-  leaving the gate and physical process grammar unselected.
+  The source exhausts the entire finite endpoint-symmetric two-qubit Clifford
+  gate class as signed-Pauli automorphisms, including onsite-frame quotient,
+  all schedule products, spatial/cyclic/inverse structure, and exact infinite
+  range, while leaving non-Clifford and common-Hamiltonian routes open.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -66,6 +65,9 @@ files_touched:
   - docs/CUBIC_MATCHING_PRODUCT_QUBIT_QCA_SCHEDULE_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-11.md
   - scripts/cubic_matching_product_qubit_qca_schedule_orbit_2026_07_11.py
   - logs/runner-cache/cubic_matching_product_qubit_qca_schedule_orbit_2026_07_11.txt
+  - docs/SYMMETRIC_TWO_QUBIT_CLIFFORD_CUBIC_MATCHING_QCA_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md
+  - scripts/symmetric_two_qubit_clifford_cubic_matching_qca_classification_2026_07_11.py
+  - logs/runner-cache/symmetric_two_qubit_clifford_cubic_matching_qca_classification_2026_07_11.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -86,10 +88,12 @@ no_go_routes:
   - zero total determinant winding does not imply no transport for multicomponent ticks
   - no fixed six-layer iSWAP matching product is invariant under every unit translation at even side at least six or on the supplied quasi-local lattice
   - matching-product order dependence does not forbid an invariant coherent automorphism because CZ closes the same grammar
+  - endpoint-symmetric Clifford gates do not select a unique schedule class: 48 give one product, 48 give eight, and 96 give 720
+  - local overlap commutation is not necessary for global matching-layer schedule independence because 12 gates close only after full layer assembly
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
-review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_mergeable_checks_queued
+review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_bounded
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_prepared
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
@@ -99,9 +103,9 @@ block06_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block07_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5210
 block08_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5212
 next_exact_action: >-
-  Deliver the reviewed 720-schedule matching-product theorem, then classify a
-  broader interacting/Clifford gate family or a common-Hamiltonian simultaneous
-  update class before deciding whether Campaign 5 is exhausted.
+  Review and deliver the exhaustive 192-gate symmetric-Clifford theorem, then
+  attack the common-Hamiltonian simultaneous-update class before deciding
+  whether Campaign 5 is exhausted.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

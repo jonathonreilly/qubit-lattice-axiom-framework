@@ -67,8 +67,11 @@
 - completed second exact subblock: all `6!` matching-product qubit-circuit
   schedules for CZ/iSWAP, with exact proper-cubic, cyclic-time-origin,
   reversal/inverse, graph-radius, and finite/infinite controls;
-- next subblock: classify a broader interacting/Clifford gate family or a
-  common-Hamiltonian simultaneous update before selecting a continuum branch.
+- completed third exact subblock: all 192 endpoint-symmetric two-qubit
+  Clifford automorphisms, giving the exact 48/48/96 split into 1/8/720
+  schedule products;
+- next subblock: classify a common-Hamiltonian simultaneous update before
+  selecting a continuum branch.
 
 ## Continuum gateway
 

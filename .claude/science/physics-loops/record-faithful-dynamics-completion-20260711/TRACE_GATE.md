@@ -1,11 +1,11 @@
 ---
 trace_class: direct_blocker_closure
-target_claim_id: cubic_matching_product_qubit_qca_schedule_orbit_bounded_theorem_note_2026-07-11
+target_claim_id: symmetric_two_qubit_clifford_cubic_matching_qca_classification_bounded_theorem_note_2026-07-11
 target_blocker_text: "A unique or severely constrained dynamics/admissibility law, including time and the probability rule."
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Classify a broader interacting/Clifford gate family or a common-Hamiltonian simultaneous update beyond the exact CZ/iSWAP matching-product fork, then decide whether the microscopic QCA class is controlled enough to begin the unified continuum campaign."
+next_trace_action: "Classify a common-Hamiltonian simultaneous update beyond the exhaustive symmetric-Clifford matching grammar, then decide whether the microscopic QCA class is controlled enough to begin the unified continuum campaign."
 ---
 
 # Trace Gate
@@ -65,3 +65,11 @@ and `L=4` is the sharp finite-size alias. This is a gate-dependent
 counterclassification rather than a physical selector. The next trace action
 is therefore a broader gate-family or common-Hamiltonian simultaneous-update
 classification, not an axiom proposal or continuum extrapolation.
+
+The symmetric-Clifford subblock now exhausts all 192 endpoint-symmetric
+two-qubit projective Clifford automorphisms. The exact 48/48/96 split into
+1/8/720 schedule products proves that CZ/iSWAP are two levels of a rigid
+trichotomy while half the gate class retains every ordering distinction. This
+closes the finite Clifford matching grammar but not a common Hamiltonian,
+non-Clifford gate family, physical selector, or continuum law. The next trace
+action is the common-Hamiltonian route.

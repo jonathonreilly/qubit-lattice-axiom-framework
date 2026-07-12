@@ -1045,3 +1045,161 @@ therefore be premature.
 All N1--N8 checks pass. The exact CZ counterroute, quotient relations, other
 gates, common Hamiltonians, and clocked/larger-cell constructions block any
 broader negative. No axiom or primitive update is required by this result.
+
+---
+
+# No-Go Discipline: Symmetric Clifford Matching-QCA Classification
+
+**Status:** PASS for the class-scoped statements that the 48 eight-product and
+96 fully order-faithful endpoint-symmetric Clifford gates have no individually
+translation/proper-cubic-invariant schedule product in the supplied six-layer
+grammar. No arbitrary-QCA or common-Hamiltonian no-go is claimed.
+
+## N1 — Alternative routes
+
+| Route | Marker | Result |
+|---|---|---|
+| exhaustive 192-gate search | `ATTEMPTED` | complete 11,520 generation and SWAP filter leave no omitted symmetric Clifford gate that could supply a fixed point in a nonunique level |
+| all-720 schedule search | `ATTEMPTED` | every schedule is evaluated as a full signed automorphism; no hidden word in either nonunique level is invariant |
+| direct unit-translation fixed point | `ATTEMPTED` | every product in both nonunique levels changes under at least one unit translation; none breaks the narrow negative |
+| direct proper-rotation fixed point | `ATTEMPTED` | every product in both nonunique levels changes under at least one proper rotation |
+| full spatial quotient | `ATTEMPTED` | eight-product gates form one orbit and faithful gates form 15, but quotienting a family does not create an invariant member |
+| cyclic time-origin quotient | `ATTEMPTED` | eight-product gates form one cyclic orbit and faithful gates form 120; cyclic equivalence does not create a spatial fixed point |
+| uniform onsite-frame conjugacy | `ATTEMPTED` | all 26 frame classes preserve the 1/8/720 level, so no nonunique class is conjugate to a unique-product gate |
+| inverse/adjoint pairing | `ATTEMPTED` | reversed inverse-gate schedules pair automorphisms but do not select or spatially stabilize a forward member |
+| complete-layer cancellation | `ATTEMPTED` | succeeds for 12 locally noncommuting gates, but those gates lie in the positive unique-product level rather than evading the scoped nonunique-level result |
+| exact signed-tableau loophole | `ATTEMPTED` | Pauli signs are retained, so symplectically equal but sign-distinct products cannot hide a counterexample |
+| infinite-lattice/no-torus route | `ATTEMPTED` | direct period-two sparse propagation removes finite-wrap aliases and still gives no nonunique-level fixed point |
+
+No route is `RULED OUT BY PRIOR`; prior QCA sources are audit-pending or in a
+different category.
+
+## N2 — Wall independence
+
+The explicit theorem coordinates are `W_T` tensor/quasi-local carrier, `W_F`
+symmetric Clifford gate class, `W_M` parity matching grammar, `W_C`
+exactly-once macro-tick composition, and `W_E` equality/conjugacy semantics.
+The infinite sparse tableau is the proof that discharges finite-to-infinite
+control, not a sixth independent premise wall.
+
+| Pair | First closes second? | Reverse? | Independent? |
+|---|---:|---:|---:|
+| `T/F` | no | no | yes |
+| `T/M` | no | no | yes |
+| `T/C` | no | no | yes |
+| `T/E` | no | no | yes |
+| `F/M` | no | no | yes |
+| `F/C` | no | no | yes |
+| `F/E` | no | no | yes |
+| `M/C` | no | no | yes |
+| `M/E` | no | no | yes |
+| `C/E` | no | no | yes |
+
+Physical selection is outside the finite theorem, not an inflated additional
+algebraic wall.
+
+## N3 — Hidden-wall scan
+
+The source/runner were scanned for assumptions, `Clifford`, `projective`,
+`global phase`, `symplectic`, `supplied`, `QCA`, `infinite`, `Hamiltonian`,
+`time reversal`, `transport`, `radius`, `index`, and `phase`.
+
+| Scan hit | Classification |
+|---|---|
+| projective/global phase versus Pauli signs | explicit equality coordinate: scalar phase quotiented, all Pauli signs retained |
+| Clifford | explicit finite gate class; distinguished from static `Cl(3)` algebra |
+| tensor carrier/parity origin/eight origins | explicit carrier/matching coordinate; eight parity origins are the derived period-two determining set |
+| identical orientation-independent edge gate | explicit grammar; endpoint SWAP filter supplies orientation independence |
+| uniform versus independent onsite frames | uniform frame is explicit basis quotient; independent frames are untested and excluded |
+| translation-group / proper-cubic-group fixed points | two separate group-wide derived certificates; individual subgroup stabilizers are not classified |
+| spatial versus cyclic orbit | distinct derived equivalences; cyclic conjugacy is not spatial invariance |
+| reversal with `G^{-1}` | exact derived inverse certificate; fixed-gate reversal is not generalized |
+| graph/`l1` and `l_infinity` radius | explicit range convention, checked for forward and inverse |
+| infinite | derived sparse-tableau certificate; no finite-torus stabilization assumption |
+| entangling/Pauli spreading/occupation transport | non-load-bearing distinction; occupation transport is not classified |
+| Hamiltonian/Record/probability/rate/continuum | explicitly absent, non-load-bearing open context |
+
+## N4 — Residual matching
+
+| Source/status | Residual | Use | Match? |
+|---|---|---|---:|
+| [minimal axioms, lines 106--117](../../../../docs/MINIMAL_AXIOMS_2026-06-29.md#L106), approved premise | no tensor dynamics/gate/tick | sole framework dependency | authority context |
+| [Block08 source, lines 299--317](../../../../docs/CUBIC_MATCHING_PRODUCT_QUBIT_QCA_SCHEDULE_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-11.md#L299), branch-local/audit-pending | two symmetric gates only | CZ/iSWAP regressions; proof recomputed | adjacent |
+| [Block07 source, lines 245--261](../../../../docs/SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11.md#L245), branch-local/audit-pending | Gaussian CAR, general Clifford open | category contrast | no |
+| [tensor carrier, lines 123--144](../../../../docs/TWO_SITE_QUBIT_TENSOR_CARRIER_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md#L123), `unaudited` | conditional ordinary two-site tensor product | not promoted; carrier supplied here | adjacent |
+| [3D Bloch tick, lines 64--83](../../../../docs/KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BOUNDED_THEOREM_NOTE_2026-06-10.md#L64), `unaudited` | one-particle analyzed classes | no Clifford-QCA authority | no |
+| [eta family, lines 60--80](../../../../docs/ETA_TWISTED_WALK_FAMILY_RIGID_DRIFT_DISCOVERY_BOUNDED_THEOREM_NOTE_2026-06-10.md#L60), `unaudited` | curved one-particle escape | scope warning only | adjacent |
+| [tick bridge, lines 244--256](../../../../docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md#L244), `audited_conditional`, `chain_closes=false` | physical realization supplied | selects no gate/grammar | no |
+| [light cone](../../../../docs/LATTICE_NN_LIGHT_CONE_NOTE.md), `retained` | generic declared-local graph reachability | range context only; no gate selection | adjacent |
+| [transfer log, lines 328--361](../../../../docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md#L328), `unaudited` | free bilinear exact log is quasilocal, interacting case open | common-H warning only | no |
+| [exact-H expansion obstruction, lines 140--145](../../../../docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md#L140), `unaudited` | one canonical expansion route fails, alternatives open | not a no-Hamiltonian witness | no |
+| [finite-range H/VLR bridge](../../../../docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md), `unaudited` | conditional microcausality once finite-range H is supplied | does not derive a common H here | no |
+| [single-clock commuting factors](../../../../docs/SINGLE_CLOCK_INDEPENDENT_COMMUTING_TRANSFER_FACTOR_N5_NO_GO_NOTE_2026-06-17.md), `unaudited` | independent factor flows survive a product/sum generator | common-clock warning only | no |
+| [Clifford chirality](../../../../docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) and [native gauge closure](../../../../docs/NATIVE_GAUGE_CLOSURE_NOTE.md), both `retained` | static Clifford-algebra/gauge facts | categorically not Clifford-group dynamics | no |
+
+## N5 — Resolution audit
+
+| Resolution | Tested? | Honest result |
+|---|---:|---|
+| local two-qubit projective Clifford group | all 11,520 | 192 commute with endpoint SWAP |
+| uniform onsite-frame gate quotient | all 24 frames | 26 gate classes |
+| unit-translation group | 3 generators jointly | no nonunique member is fixed by all three; individual stabilizers not classified |
+| proper-cubic group | all 24 elements jointly | no nonunique member is fixed by all 24; subgroup stabilizers not classified |
+| combined spatial orbit | yes | 1 or 15 components in nonunique levels |
+| cyclic orbit | yes | 1 or 120 components in nonunique levels |
+| one edge / three-site overlap | all 192 | 36 locally commuting; local commutation is not necessary |
+| complete six matching layers | all 720 schedules per class | exact 48/48/96 gate trichotomy |
+| full signed-Pauli automorphism | yes | global scalar unitary phase remains quotiented |
+| infinite period-two `Z^3` rule | direct sparse `X/Z` images at eight parity origins | no finite-torus inference or wrap alias |
+| spatial/cyclic/inverse/range | yes | exact class-scoped results |
+| non-Clifford/continuous gates | no | open |
+| alternate covers/Margolus/clocked grammar | no | open |
+| QCA phase/index/common Hamiltonian | no | open |
+| physical tick/Record/continuum | no | open |
+
+Every negative is restricted to the 192-gate matching grammar.
+
+## N6 — Positive closure paths
+
+| Route | Path/status | Possible closure |
+|---|---|---|
+| schedule-independent Clifford gates | [current source](../../../../docs/SYMMETRIC_TWO_QUBIT_CLIFFORD_CUBIC_MATCHING_QCA_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md), bounded/audit-pending | already supplies 48 invariant candidates |
+| non-Clifford continuous gates | no current exhaustive repo source; open | can interpolate beyond the finite stabilizer subgroup |
+| common edge Hamiltonian | no current exhaustive common-edge source; open | supplies a genuinely simultaneous update rather than an ordered word |
+| narrow Hamiltonian/log routes | [transfer-log source, lines 328--361](../../../../docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md#L328) and [exact-H obstruction, lines 140--145](../../../../docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md#L140), both `unaudited` | free quasilocal positive route and one failed canonical expansion route; neither classifies common-edge Hamiltonians |
+| clocked/Margolus/larger-cell circuits | no current classification; open | changes composition grammar or absorbs parity phase |
+| schedule-averaged CP channel | [overlap-order analogue, lines 193--202](../../../../docs/OVERLAPPING_EDGE_INSTRUMENT_ORDER_AND_TIME_RATE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md#L193), branch-local/audit-pending | can restore channel covariance but is not generally a QCA automorphism |
+| Admissibility-to-update | [tick bridge](../../../../docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md), `audited_conditional`, chain open | could select physical process content |
+| `minimal_axioms` | [registry](../../../../docs/audit/data/axiom_premise_nodes.json), approved; only load-bearing dependency | cubic geometry/one-site algebra, no tensor gate or tick |
+| `scale_reference_primitive` | registry checked, approved | units conversion only; irrelevant to gate selection |
+| `kinetic_isotropy_primitive` | registry checked, approved | structural `c_t=c_s` graining only; no dynamics |
+| `realized_state_primitive` | registry checked, approved | pointwise evaluation only; no selector |
+| Tier-A admissions | [Tier-A registry](../../../../docs/audit/data/tier_a_admissions.json), zero live admissions | supplies nothing here |
+
+## N7 — Steelman
+
+The Clifford group is a finite stabilizer subgroup, and the theorem already
+contains 48 positive invariant candidates. Generic symmetric gates, common
+Hamiltonians, oriented/layer-dependent assignments, clock registers, Margolus
+grammars, and larger cells lie outside it. Even the exact trichotomy appears
+only after supplying a tensor carrier, gate class, parity origin, exactly-once
+grammar, and quotient. It cannot support a framework-wide QCA no-go or axiom
+request.
+
+## N8 — Cross-cycle echo
+
+| Prior surface/status | Retired? | Change mechanism | Application here |
+|---|---:|---|---|
+| [Block08](../../../../docs/CUBIC_MATCHING_PRODUCT_QUBIT_QCA_SCHEDULE_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-11.md), branch-local/audit-pending | no | CZ closes while iSWAP branches | gate dependence explicit |
+| [Block07, lines 245--261](../../../../docs/SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11.md#L245), branch-local/audit-pending | scalar scope only | six-mode enlargement escapes scalar obstruction | carrier enlargement live |
+| [factorized/eta pair](../../../../docs/KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BOUNDED_THEOREM_NOTE_2026-06-10.md#L64), both `unaudited` | bounded factorized result not retired | broader rhetoric narrowed after eta curvature | avoid universal negative |
+| [same-carrier/auxiliary pair](../../../../docs/RECORD_OBSERVABLE_QUOTIENT_AND_RANK_ONE_FORMATION_OUTCOME_OPERATION_NORMAL_FORM_BOUNDED_THEOREM_NOTE_2026-07-11.md#L235), branch-local/audit-pending | not framework-wide | register enlargement evades finite same-carrier route | clock/cell enlargement live |
+| [exact-H obstruction, lines 140--145](../../../../docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md#L140), `unaudited` | no | one canonical expansion route fails while spectral/other routes remain | common-H route remains live |
+| [minimal axioms, lines 178--187](../../../../docs/MINIMAL_AXIOMS_2026-06-29.md#L178), approved | occurrence retired only | owner wording “Records form” | no schedule supplied |
+| [kinetic-isotropy primitive, lines 64--75](../../../../docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md#L64), approved | graining registered | primitive registration, not axiom update | no dynamics supplied |
+
+## Symmetric-Clifford conclusion
+
+All N1--N8 checks pass. The 48 invariant Clifford candidates and the open
+non-Clifford/common-Hamiltonian/clocked routes block any broader negative. No
+axiom or primitive update is required.

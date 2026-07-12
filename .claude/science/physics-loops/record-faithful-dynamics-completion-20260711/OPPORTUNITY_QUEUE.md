@@ -9,7 +9,7 @@
 | 5 | select formation effects from static covariance/additivity conditions | falsified; conditional selector isolated | physical menu plus `RC_i` derivation | high | high | depolarizing family survives; normalization plus `RC_i` forces projectors |
 | 6 | full finite-carrier record-instrument normal form | completed bounded candidate | physical menu/readout/Record realization and overlap composition | high | high | auxiliary absorption does not derive blank-sector calibration; normal form exposes `e_i` and no-record CP freedom |
 | 7 | overlapping local-instrument schedule and event order | completed bounded candidate | composition semantics, priority, simultaneous global law, and clock/rate | high | high | exact forks survive; commuting incomparable channels give the positive conditional closure |
-| 8 | exhaustive simultaneous 3D coherent QCA/tick | in progress: scalar CAR and CZ/iSWAP matching-product classes closed | broader gate/common-Hamiltonian classification, carrier selection, and record-instrument coupling | high | medium | locate the general interacting/Clifford covariance locus or classify one genuinely simultaneous Hamiltonian family next |
+| 8 | exhaustive simultaneous 3D coherent QCA/tick | in progress: scalar CAR and full symmetric-Clifford matching classes closed | common-Hamiltonian/non-Clifford classification, carrier selection, and record-instrument coupling | high | medium | classify one genuinely simultaneous common-edge Hamiltonian family next |
 | 9 | controlled QCA-to-Hamiltonian continuum limit | 0.20 exact | scale/rate, RG control, universality | low | low | establish one microscopic carrier before testing Lorentz/QFT limits |
 
 The queue prioritizes the law/probability/time seam because every SM/GR

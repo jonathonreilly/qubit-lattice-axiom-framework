@@ -268,3 +268,25 @@ mutation. Claim, code/math, governance, and N1--N8 reviews pass. Audit-system
 validation seeds only `minimal_axioms`; strict lint passes with no errors, and
 the row remains `bounded_theorem` / `unaudited` with no helper runners.
 Generated audit/effective-status surfaces are stripped before delivery.
+
+## Symmetric Clifford matching-QCA internal result
+
+- 11,520 projective two-qubit Cliffords; 192 endpoint-symmetric gates; 26
+  uniform-onsite-frame classes.
+- Exact schedule census: 48 gates give one product, 48 give eight, and 96 give
+  all 720 products.
+- Exact spatial/cyclic quotients, forward/inverse radii, and local-overlap
+  versus complete-layer cancellation are runner-backed.
+- Runner/cache: `PASS=23 FAIL=0`.
+
+### Symmetric-Clifford review iteration 1
+
+Read-first review found no existing repo Clifford-QCA, Margolus, index, or
+common-Hamiltonian classification. The new source is bounded to projective
+Clifford automorphisms in the supplied matching grammar. After direct global
+inverse, separate translation/rotation, class-split, and N1--N8 repairs,
+independent claim and math/code review pass. Audit validation seeds only
+`minimal_axioms`, keeps the row bounded/unaudited with no helper runners, and
+strict lint has no errors. Final governance/N1--N8 re-review passes after
+group-wide fixed-point wording and residual/primitive tables were repaired.
+Generated status surfaces are stripped.

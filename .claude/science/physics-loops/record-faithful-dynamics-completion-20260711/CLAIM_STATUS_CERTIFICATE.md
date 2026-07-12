@@ -1,11 +1,11 @@
 ---
-target_claim_id: cubic_matching_product_qubit_qca_schedule_orbit_bounded_theorem_note_2026-07-11
+target_claim_id: symmetric_two_qubit_clifford_cubic_matching_qca_classification_bounded_theorem_note_2026-07-11
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact all-720-word CZ/iSWAP matching-product classification, spatial/cyclic/inverse quotient, graph-radius theorem, and supplied quasi-local extension under named gate, carrier, parity, and macro-tick inputs."
+claim_type_reason: "Exhaustive 11,520/192/26 signed-Pauli Clifford gate classification and exact 48/48/96 schedule-product trichotomy under supplied carrier, gate-class, parity, and macro-tick inputs."
 actual_current_surface_status: bounded-support
 trace_class: direct_blocker_closure
 reachability_to_target: partially_closes
-conditional_surface_status: "In the supplied six-matching qubit-circuit grammar, CZ gives one invariant graph-radius-one automorphism, while iSWAP gives exactly eight graph-radius-six products, 90 words each, in one proper-cubic and cyclic-conjugacy orbit; no iSWAP member is invariant under every unit translation. General gates, physical tick selection, Record coupling, and continuum control remain open."
+conditional_surface_status: "In the supplied endpoint-symmetric Clifford six-matching grammar, 48 gates give one invariant product, 48 give eight products, and 96 give 720; common-Hamiltonian, non-Clifford, physical tick, Record, and continuum selection remain open."
 hypothetical_axiom_status: null
 admitted_observation_status: none
 proposal_allowed: false
@@ -75,4 +75,12 @@ and N1--N8 review after the finite/infinite category, all-even-size proof,
 graph-radius convention, spatial versus cyclic quotient, and reversal/inverse
 claims were repaired. CZ, other gates, common Hamiltonians, clock/control
 registers, larger cells, and general interacting QCAs remain live. It therefore
+does not trigger the axiom-update stop condition.
+
+The symmetric-Clifford extension exhausts all 192 endpoint-SWAP-symmetric
+projective two-qubit Clifford gates in 26 uniform-onsite-frame classes. Exact
+infinite signed-Pauli propagation gives the 48/48/96 split into 1/8/720
+products, including separate spatial/cyclic/inverse/range controls and the
+36-local-commuting plus 12-complete-layer-cancellation refinement. Runner/cache:
+`PASS=23 FAIL=0`. The result is bounded to this finite gate/grammar class and
 does not trigger the axiom-update stop condition.

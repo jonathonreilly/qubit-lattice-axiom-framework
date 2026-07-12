@@ -8548,7 +8548,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
                 ),
             ),
         }
-        crit, dep_weak = m.select_restore_candidates(rows)
+        crit, dep_weak, _packet, _recovered = m.select_restore_candidates(rows)
         self.assertIn("ok_to_restore", crit)
         self.assertIn("soft_reset_target", crit)
         self.assertNotIn("weak_at_critical_skip", crit)
@@ -8579,7 +8579,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
                 ),
             ),
         }
-        crit, dep_weak = m.select_restore_candidates(rows)
+        crit, dep_weak, _packet, _recovered = m.select_restore_candidates(rows)
         self.assertIn("soft_reset_dep", crit)
         dep_weak_cids = {cid for cid, _, _ in dep_weak}
         self.assertEqual(dep_weak_cids, {"downstream_in_set"})
@@ -8606,7 +8606,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
                 ),
             ),
         }
-        crit, dep_weak = m.select_restore_candidates(rows)
+        crit, dep_weak, _packet, _recovered = m.select_restore_candidates(rows)
         self.assertIn("conditional_dep", crit)
         self.assertEqual(dep_weak, [])
 
@@ -8633,7 +8633,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
                 ),
             ),
         }
-        crit, dep_weak = m.select_restore_candidates(rows)
+        crit, dep_weak, _packet, _recovered = m.select_restore_candidates(rows)
         self.assertEqual(crit, {})
         self.assertEqual(dep_weak, [])
 
@@ -8659,7 +8659,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         }
         rows["candidate"]["deps"] = ["weak_dep"]
 
-        crit, dep_weak = m.select_restore_candidates(rows)
+        crit, dep_weak, _packet, _recovered = m.select_restore_candidates(rows)
         self.assertEqual(crit, {})
         self.assertEqual(dep_weak, [])
 
@@ -8683,7 +8683,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
                 ),
             ),
         }
-        crit, dep_weak = m.select_restore_candidates(rows)
+        crit, dep_weak, _packet, _recovered = m.select_restore_candidates(rows)
         self.assertEqual(crit, {})
         self.assertEqual(dep_weak, [])
 
@@ -8768,9 +8768,374 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
                 )
             ),
         }
-        crit, dep_weak = m.select_restore_candidates(rows)
+        crit, dep_weak, _packet, _recovered = m.select_restore_candidates(rows)
         self.assertEqual(crit, {})
         self.assertEqual(dep_weak, [])
+
+    def test_packet_missing_restored_only_when_trigger_no_longer_gates(self):
+        m = self._import_and_patch()
+        ok_path = "docs/PACKET_OK.md"
+        self.fx.write_note(
+            ok_path,
+            "# Identity\n\nExact identity proof.\n\n"
+            "## What this does NOT claim\n"
+            "- Does not derive the parent coefficient; carried by separate rows.\n",
+        )
+        ok_row = self._seed_with_archived(
+            "packet_ok",
+            self._archived_audit(
+                invalidation_reason="no_go_discipline_packet_missing"
+            ),
+        )
+        ok_row["note_path"] = ok_path
+
+        neg_path = "docs/PACKET_NEG.md"
+        self.fx.write_note(
+            neg_path,
+            "# Boundary\n\n"
+            "No route exists to derive the selector from the four axioms.\n",
+        )
+        neg_row = self._seed_with_archived(
+            "packet_neg",
+            self._archived_audit(
+                invalidation_reason="no_go_discipline_packet_missing"
+            ),
+        )
+        neg_row["note_path"] = neg_path
+
+        nogo_row = self._seed_with_archived(
+            "packet_nogo",
+            self._archived_audit(
+                invalidation_reason="no_go_discipline_packet_missing",
+                claim_type="no_go",
+            ),
+        )
+        nogo_row["note_path"] = ok_path
+
+        low_floor_row = self._seed_with_archived(
+            "packet_low_floor",
+            self._archived_audit(
+                invalidation_reason="no_go_discipline_packet_missing",
+                auditor_family="codex-gpt-5",
+            ),
+        )
+        low_floor_row["note_path"] = ok_path
+
+        rows = {
+            "packet_ok": ok_row,
+            "packet_neg": neg_row,
+            "packet_nogo": nogo_row,
+            "packet_low_floor": low_floor_row,
+        }
+        crit, dep_weak, packet, recovered = m.select_restore_candidates(rows)
+        self.assertEqual(set(packet), {"packet_ok"})
+        self.assertEqual(crit, {})
+        self.assertEqual(dep_weak, [])
+        self.assertEqual(recovered, [])
+
+    def test_dep_weakened_restored_when_dep_already_recovered(self):
+        m = self._import_and_patch()
+        rows = {
+            "recovered_dep": {
+                "claim_id": "recovered_dep",
+                "note_path": "docs/RECOVERED_DEP.md",
+                "deps": [],
+                "audit_status": "audited_clean",
+                "effective_status": "retained_bounded",
+                "previous_audits": [],
+            },
+            "downstream_recovered": self._seed_with_archived(
+                "downstream_recovered",
+                self._archived_audit(
+                    invalidation_reason=(
+                        "dep_weakened:recovered_dep:retained_bounded->unaudited"
+                    ),
+                ),
+            ),
+            "weak_dep": {
+                "claim_id": "weak_dep",
+                "note_path": "docs/WEAK_DEP.md",
+                "deps": [],
+                "audit_status": "unaudited",
+                "effective_status": "unaudited",
+                "previous_audits": [],
+            },
+            "downstream_still_weak": self._seed_with_archived(
+                "downstream_still_weak",
+                self._archived_audit(
+                    invalidation_reason=(
+                        "dep_weakened:weak_dep:retained_bounded->unaudited"
+                    ),
+                ),
+            ),
+        }
+        crit, dep_weak, packet, recovered = m.select_restore_candidates(rows)
+        self.assertEqual({cid for cid, _, _ in recovered}, {"downstream_recovered"})
+        self.assertEqual(dep_weak, [])
+        self.assertEqual(packet, {})
+
+    def test_present_nested_seat_packet_always_round_trips(self):
+        """A malformed or stale optional packet on a positive-looking
+        cross-confirmation seat refuses restoration; symmetry with the
+        live invalidator's present-packet validation."""
+        m = self._import_and_patch()
+        archived = self._archived_audit(
+            invalidation_reason="no_go_discipline_packet_missing"
+        )
+        archived["cross_confirmation"] = {
+            "status": "confirmed",
+            "first_audit": {
+                "verdict": "audited_clean",
+                "claim_type": "positive_theorem",
+                "claim_scope": "an affirmative identity",
+                "verdict_rationale": "the identity closes",
+                "no_go_discipline": {"required": True, "status": "BROKEN"},
+            },
+            "second_audit": None,
+        }
+        row = self._seed_with_archived("nested_broken_packet", archived)
+        self.assertIsNone(
+            m.restore_audit_from_previous(
+                dict(row), {"nested_broken_packet": row}
+            )
+        )
+
+    def _positive_seat_with_packet(self, cid, runner_path,
+                                    resolution_path):
+        """Archived row whose positive-looking clean cross-confirmation seat
+        carries an optional (not independently required) N1-N8 packet.
+        The seat wording is affirmative so neither the source nor the
+        output trigger fires; the packet anchors to the runner only."""
+        m = self._import_and_patch()
+        archived = self._archived_audit(
+            invalidation_reason="no_go_discipline_packet_missing"
+        )
+        seat = {
+            "verdict": "audited_clean",
+            "auditor": "first-auditor",
+            "negative_assertion_classes": [],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "claim_type": "positive_theorem",
+            "claim_scope": "an affirmative spectral identity",
+            "verdict_rationale": "the affirmative identity closes",
+            "load_bearing_step_class": "A",
+            "no_go_discipline": _no_go_packet(
+                evidence_path=runner_path,
+                source_path=runner_path,
+                claim_id=cid,
+            ),
+        }
+        archived["cross_confirmation"] = {
+            "status": "confirmed",
+            "first_audit": seat,
+            "second_audit": None,
+        }
+        row = self._seed_with_archived(cid, archived)
+        row["runner_path"] = runner_path
+        row["helper_runner_paths"] = [resolution_path]
+        manifest_row = dict(row)
+        manifest_row["previous_audits"] = []
+        manifest_row["claim_type"] = archived["claim_type"]
+        manifest_row["claim_scope"] = archived["claim_scope"]
+        manifest_row["audit_status"] = archived["audit_status"]
+        manifest = m.no_go_discipline_gate.build_evidence_manifest(
+            manifest_row, {cid: manifest_row}, self.tmp_root
+        )
+        _set_no_go_scan_coverage(seat["no_go_discipline"], manifest)
+        seat["no_go_discipline"]["evidence_snapshot"] = (
+            m.no_go_discipline_gate.build_evidence_snapshot(
+                seat["no_go_discipline"], manifest
+            )
+        )
+        return m, row
+
+    def test_stale_optional_nested_seat_packet_refuses_restoration(self):
+        """An optional nested packet whose authenticated evidence snapshot
+        no longer matches the current manifest refuses restoration even
+        though the positive-looking seat would not itself require one."""
+        cid = "stale_optional_seat"
+        runner_path = "scripts/STALE_OPTIONAL_SEAT.py"
+        resolution_path = "scripts/TEST_NO_GO_RESOLUTION.py"
+        self.fx.write_runner(runner_path, _no_go_evidence_text())
+        self.fx.write_runner(resolution_path, _no_go_resolution_text())
+        m, row = self._positive_seat_with_packet(
+            cid, runner_path, resolution_path
+        )
+        seat = row["previous_audits"][-1]["cross_confirmation"]["first_audit"]
+        # The seat itself must not gate: this exercises the optional-packet
+        # path, not the packet-required path.
+        self.assertFalse(
+            m.no_go_discipline_gate.output_requires_no_go_discipline(seat)
+        )
+        # Control: the intact snapshot round-trips and restores.
+        self.assertIsNotNone(
+            m.restore_audit_from_previous(dict(row), {cid: row})
+        )
+        # Rewrite the runner on disk after the snapshot was authenticated:
+        # the current manifest drifts and restoration must refuse.
+        self.fx.write_runner(
+            runner_path,
+            _no_go_evidence_text() + "\n# post-snapshot drift\n",
+        )
+        self.assertIsNone(
+            m.restore_audit_from_previous(dict(row), {cid: row})
+        )
+
+    def test_archived_declaration_binds_restoration(self):
+        """An archived clean audit that declared negative assertion
+        classes without a packet is never restorable, in any tier."""
+        m = self._import_and_patch()
+        archived = self._archived_audit(
+            invalidation_reason="no_go_discipline_packet_missing"
+        )
+        archived["negative_assertion_classes"] = ["no_go_result"]
+        row = self._seed_with_archived("declared_no_packet", archived)
+        self.assertIsNone(
+            m.restore_audit_from_previous(dict(row), {"declared_no_packet": row})
+        )
+        # A declaration surviving only on the reset live row binds too.
+        legacy = self._archived_audit(
+            invalidation_reason="no_go_discipline_packet_missing"
+        )
+        live_row = self._seed_with_archived("live_declared", legacy)
+        live_row["negative_assertion_classes"] = ["no_go_result"]
+        self.assertIsNone(
+            m.restore_audit_from_previous(dict(live_row), {"live_declared": live_row})
+        )
+        # And a genuinely old archive with no declaration anywhere restores.
+        old_row = self._seed_with_archived(
+            "legacy_plain",
+            self._archived_audit(
+                invalidation_reason="no_go_discipline_packet_missing"
+            ),
+        )
+        self.assertIsNotNone(
+            m.restore_audit_from_previous(dict(old_row), {"legacy_plain": old_row})
+        )
+        # And a declared-with-valid-packet archive round-trips the field.
+        ok = self._archived_audit(
+            invalidation_reason="no_go_discipline_packet_missing",
+            audit_status="audited_conditional",
+            notes_for_re_audit_if_any="other: conditional row round-trip",
+        )
+        ok["negative_assertion_classes"] = ["bounded_with_named_walls"]
+        row2 = self._seed_with_archived("declared_conditional", ok)
+        restored = m.restore_audit_from_previous(
+            dict(row2), {"declared_conditional": row2}
+        )
+        self.assertIsNotNone(restored)
+        self.assertEqual(
+            restored["negative_assertion_classes"], ["bounded_with_named_walls"]
+        )
+
+    def test_vanished_dependency_is_not_recovered(self):
+        m = self._import_and_patch()
+        row = self._seed_with_archived(
+            "ghost_downstream",
+            self._archived_audit(
+                invalidation_reason=(
+                    "dep_weakened:ghost_dep:audited_conditional->unaudited"
+                ),
+            ),
+        )
+        crit, dep_weak, packet, recovered = m.select_restore_candidates(
+            {"ghost_downstream": row}
+        )
+        self.assertEqual(recovered, [])
+        self.assertEqual(dep_weak, [])
+
+    def test_same_pass_pairing_refused_when_other_dep_still_weak(self):
+        m = self._import_and_patch()
+        ok_path = "docs/PACKET_DEP2.md"
+        self.fx.write_note(ok_path, "# Identity\n\nExact identity proof.\n")
+        dep_row = self._seed_with_archived(
+            "packet_dep2",
+            self._archived_audit(
+                invalidation_reason="no_go_discipline_packet_missing"
+            ),
+        )
+        dep_row["note_path"] = ok_path
+        dep_row["effective_status"] = "unaudited"
+        downstream = self._seed_with_archived(
+            "downstream_two_deps",
+            self._archived_audit(
+                invalidation_reason="dep_weakened:packet_dep2:retained->unaudited",
+            ),
+        )
+        downstream["deps"] = ["packet_dep2", "still_weak_dep"]
+        downstream["previous_audits"][-1]["audit_state_snapshot"] = {
+            "criticality": "leaf",
+            "deps": ["packet_dep2", "still_weak_dep"],
+            "dep_effective_status": {
+                "packet_dep2": "retained",
+                "still_weak_dep": "retained_bounded",
+            },
+        }
+        rows = {
+            "packet_dep2": dep_row,
+            "downstream_two_deps": downstream,
+            "still_weak_dep": {
+                "claim_id": "still_weak_dep",
+                "note_path": "docs/STILL_WEAK.md",
+                "deps": [],
+                "audit_status": "unaudited",
+                "effective_status": "unaudited",
+                "previous_audits": [],
+            },
+        }
+        crit, dep_weak, packet, recovered = m.select_restore_candidates(rows)
+        self.assertIn("packet_dep2", packet)
+        self.assertEqual(dep_weak, [])
+        self.assertEqual(recovered, [])
+
+    def test_false_positive_and_packet_lanes_restore_once(self):
+        m = self._import_and_patch()
+        m.DATA_DIR.mkdir(parents=True, exist_ok=True)
+        ok_path = "docs/PACKET_BOTH.md"
+        self.fx.write_note(ok_path, "# Identity\n\nExact identity proof.\n")
+        row = self._seed_with_archived(
+            "packet_both",
+            self._archived_audit(
+                invalidation_reason="no_go_discipline_packet_missing"
+            ),
+        )
+        row["note_path"] = ok_path
+        ledger = {"schema_version": 1, "rows": {"packet_both": row}}
+        m.LEDGER_PATH.write_text(json.dumps(ledger, indent=2, sort_keys=True))
+        with mock.patch.object(sys, "argv", ["restore"]):
+            rc = m.main()
+        self.assertEqual(rc, 0)
+        out = json.loads(m.LEDGER_PATH.read_text(encoding="utf-8"))
+        restored = out["rows"]["packet_both"]
+        self.assertEqual(restored["audit_status"], "audited_clean")
+        history = restored.get("restoration_history") or []
+        self.assertEqual(len(history), 1)
+
+    def test_dep_weakened_pairs_with_packet_restores_in_same_pass(self):
+        m = self._import_and_patch()
+        ok_path = "docs/PACKET_DEP.md"
+        self.fx.write_note(ok_path, "# Identity\n\nExact identity proof.\n")
+        dep_row = self._seed_with_archived(
+            "packet_dep",
+            self._archived_audit(
+                invalidation_reason="no_go_discipline_packet_missing"
+            ),
+        )
+        dep_row["note_path"] = ok_path
+        dep_row["effective_status"] = "unaudited"
+        downstream = self._seed_with_archived(
+            "downstream_of_packet",
+            self._archived_audit(
+                invalidation_reason="dep_weakened:packet_dep:retained->unaudited",
+            ),
+        )
+        rows = {"packet_dep": dep_row, "downstream_of_packet": downstream}
+        crit, dep_weak, packet, recovered = m.select_restore_candidates(rows)
+        self.assertEqual(set(packet), {"packet_dep"})
+        self.assertEqual({cid for cid, _, _ in dep_weak}, {"downstream_of_packet"})
+        self.assertEqual(recovered, [])
 
     def test_main_writes_restored_ledger(self):
         m = self._import_and_patch()

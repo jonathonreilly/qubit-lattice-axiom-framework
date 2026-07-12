@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 397 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2705 |
+| unaudited | 2704 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 78 |
+| ~~audited_conditional~~ | 79 |
 | ~~audited_failed~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 517 |
-| `audited_conditional` | 78 |
+| `audited_conditional` | 79 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3055 |
+| `unaudited` | 3054 |
 
 | claim_type | count |
 |---|---:|
@@ -685,6 +685,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `eta_188_structural_origin_partial_note_2026-05-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_find_j_round1_jcs_measure_neutral_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -3638,6 +3639,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - **gate failures:**
     - N1 leaves full finite-T differentiation OPEN and fixed-kernel regularization/limit stability UNTESTED.
     - N2-N5 do not establish the causal-exclusion wall behind the statement that every correct derivation must retain explicit kernel T-dependence.
+
+### `eta_188_structural_origin_partial_note_2026-05-03`
+
+- **Note:** [`ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md`](../../docs/ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The runner algebraically decomposes its hard-coded current transport implementation into ABC=516/53009 and Y0^2 F_CP kappa_axiom/eta_obs, and numerically excludes the four named formulas as exact equalities; it does not establish that all non-Y0 factors are retained-derived or that Y0 is the unique nonstructural input.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00259-eta_188_structural_origin_pa`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The current transport implementation factorizes as eta/eta_obs = (516/53009) * Y0^2 * F_CP * kappa_axiom / eta_obs, with ABC reducing exactly to 516/53009.  _(class `A`)_
+- **chain closes:** False — The algebraic decomposition closes for the constants and transport law encoded in the helper, but the restricted packet supplies no retained authorities deriving several hard-coded thermodynamic, plaquette, PMNS, and transport inputs. Consequently the stronger structural-provenance and unique-admission claims remain unclosed.
+- **rationale:** Issue: the runner verifies an algebraic factorization after the helper hard-codes G_STAR, G_S, C_SPH, PLAQ_MC, PMNS constants, the transport profiles, and g_weak, while no cited authorities establish their retained provenance. Why this blocks: the packet supports a current-code identity but not the claim that Y0^2 is the unique nonstructural factor and every other factor is structural. Repair target: add direct retained-grade dependency edges for each load-bearing primitive and a retained physical transport-law authority, while preserving g_weak running as an explicit conditional input. Claim boundary until fixed: ABC=516/53009 and the non-equality of the four candidate scalars are valid within the fixed implementation.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1: the alternative-g_* boundary, retained-provenance route, and weak-running route remain OPEN or UNTESTED.
+    - N3: multiple constants and the physical transport law are inserted in the helper without retained one-hop authorities.
+    - N5: unique and falsified rhetoric exceeds the resolutions tested unless narrowed to the fixed implementation and exact equality.
 
 ### `eta_ud2_fixed_token_square_homology_certificate_2026-06-06`
 

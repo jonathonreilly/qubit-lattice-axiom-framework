@@ -1,11 +1,11 @@
 ---
-target_claim_id: pairwise_commuting_endpoint_symmetric_edge_hamiltonian_classification_and_strict_qca_boundary_bounded_theorem_note_2026-07-12
+target_claim_id: onsite_charge_conserving_endpoint_symmetric_common_hamiltonian_strict_qca_dichotomy_bounded_theorem_note_2026-07-12
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact ten-real-parameter classification under supplied endpoint symmetry and pairwise overlap commutation, including degeneracies, factorization, infinite local automorphism, exact radius, and conserved-axis boundary."
+claim_type_reason: "Exact four-parameter onsite-charge density classification, all-nonzero-time exchange-tail theorem, I-SWAP graph-Laplacian corollary, and explicit 16-mode flat-involution escape."
 actual_current_surface_status: bounded-support
 trace_class: direct_blocker_closure
 reachability_to_target: partially_closes
-conditional_surface_status: "In the supplied pairwise-overlap-commuting endpoint-symmetric common-edge class, every density is one rotated Ising family with order-free strict radius at most one and no common-axis transport; noncommuting common Hamiltonians, physical tick, Record, and continuum selection remain open."
+conditional_surface_status: "The one-qubit onsite-charge class has a complete strict/tail dichotomy; a supplied fully cubic 16-mode flat involution is a noncommuting strict escape. Charge-breaking, physical tick, Record, and continuum selection remain open."
 hypothetical_axiom_status: null
 admitted_observation_status: none
 proposal_allowed: false
@@ -69,6 +69,17 @@ Intermediate Gaussian carriers, Bogoliubov mixing, partitioned/Clifford and
 interacting qubit QCAs, staggered cells, and Admissibility-to-update
 realization remain live. The result does not trigger the campaign's
 axiom-update stop condition.
+
+The onsite-charge extension classifies every endpoint-SWAP-symmetric density
+commuting with one supplied total edge charge. Its nonzero-exchange branch has
+infinite support at every nonzero time; its zero-exchange branch is the prior
+strict family. The `I-SWAP` competitor is exactly `6I-A`. A 16-mode doubled-
+chirality flat involution supplies a fully cubic noncommuting strict-flow
+escape and blocks any broader no-go. Runner/cache: `PASS=40 FAIL=0`.
+
+The result remains bounded and audit-pending. Charge-breaking/BdG, multibody,
+physical selection, and continuum routes remain open, so the axiom-update stop
+condition is not triggered.
 
 The matching-product theorem passed independent claim, code/math, governance,
 and N1--N8 review after the finite/infinite category, all-even-size proof,

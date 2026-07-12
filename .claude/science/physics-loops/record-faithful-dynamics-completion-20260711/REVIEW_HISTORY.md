@@ -325,3 +325,35 @@ delivery; independent audit remains required.
 Delivery: stacked PR
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5237 is
 open and mergeable on the symmetric-Clifford head; audit workflow running.
+
+## Onsite-charge common-Hamiltonian dichotomy internal result
+
+- Exact four-parameter local normal form and `J=0`/`J!=0` split.
+- Essential-Laurent and eventual-Bessel proofs exclude every nonzero-time
+  finite-radius point in the exchange branch; `I-SWAP` gives `6I-A`.
+- A fully cubic 16-mode doubled-chirality flat involution is the exact
+  noncommuting strict-flow escape; the irreducible 8-mode attempt fails the
+  orientation test for half the proper-cubic group.
+- Runner/cache: `PASS=40 FAIL=0`.
+
+Independent claim, code/math, governance, and N1--N8 review are requested.
+
+### Onsite-charge dichotomy review iteration 1
+
+Review found three material packaging issues: context links seeded unintended
+dependencies; the first flat-involution draft stopped at one-particle level;
+and N1/N4/N8 lacked audit-safe status and residual mechanics. It also caught
+the irreducible 8-mode cubic-orientation obstruction and a transposed-index
+error in the quadratic CAR generator. All were repaired narrowly.
+
+### Onsite-charge dichotomy review iteration 2
+
+PASS WITH BOUNDED CLAIMS. The 16-mode doubled-chirality construction now has a
+self-contained quadratic CAR lift, exact coefficient Hermiticity,
+radius-one convolution/inverse, local Fock dimension `2^16`, and an exact
+infinitesimal generator check. N1--N8, claim, math/code, and governance
+re-reviews pass. Runner/cache: `PASS=40 FAIL=0`; vocabulary lint has zero
+violations. Audit validation seeds only `minimal_axioms`, leaves the row
+`bounded_theorem` / `unaudited`, attaches no helper runner, and strict lint
+has no errors. Generated audit/effective-status surfaces are stripped before
+delivery; independent audit remains required.

@@ -244,3 +244,14 @@ Delivery: stacked PR
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5237 is
 open and mergeable on the symmetric-Clifford head; the independent audit
 workflow is running.
+
+## Onsite-charge common-Hamiltonian strict-QCA dichotomy
+
+Every endpoint-symmetric density conserving one supplied onsite Pauli charge
+is `c II+r(ZI+IZ)+g ZZ+J(XX+YY)`. The `J=0` branch is the commuting strict
+family. For every `J!=0` and `t!=0`, the one-excitation Laurent multiplier has
+essential singularities and its Bessel kernel has unbounded support, so the
+full automorphism is not finite radius. The repo's `I-SWAP` competitor is the
+`6I-A` member. A fully cubic 16-mode flat involution has noncommuting
+onsite/bond pieces yet remains strict radius at most one, preventing any broad
+common-H no-go. Runner/cache: `PASS=40 FAIL=0`. No axiom update is triggered.

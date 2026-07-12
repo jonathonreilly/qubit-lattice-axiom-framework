@@ -1329,3 +1329,59 @@ excluding isolated exact times. The claim stays inside the commuting class.
 nontransport corollary. Any broader common-Hamiltonian/QCA no-go fails N1 and
 N7. The exact positive family and live escape routes mean the campaign's
 axiom-update stop condition is not triggered.
+
+# Onsite-Charge Common-Hamiltonian Strict-QCA Dichotomy
+
+## N1--N3 — routes, independence, hidden walls
+
+| Route | Status | Exact outcome |
+|---|---|---|
+| isolated exchange-time/Bessel zeros | ATTEMPTED | essential Laurent singularities and eventual Bessel nonvanishing exclude every `Jt!=0` cutoff |
+| tune diagonal `r,g` terms | ATTEMPTED | they change only the one-particle scalar phase |
+| higher-sector cancellation | ATTEMPTED | the invariant one-excitation sector already falsifies local support |
+| finite-torus revival | ATTEMPTED / OUTSIDE | gives no volume-uniform or infinite-lattice radius |
+| `J=0` | POSITIVE BRANCH | exact strict commuting branch |
+| charge-breaking/BdG | ATTEMPTED / OUTSIDE CLASS | removes the scalar-band witness; no conclusion imported |
+| larger internal carrier | ATTEMPTED / POSITIVE ESCAPE | 16-mode flat involution is a fully cubic noncommuting strict escape |
+| multibody/partitioned clock | ATTEMPTED / OUTSIDE CLASS | changes the theorem class |
+
+There is one negative residual: nonzero exchange in the explicitly supplied
+one-qubit onsite-charge class has no nonzero strict-QCA time. Tensor carrier,
+charge axis, identical density, infinite lattice, and time-independent common
+Hamiltonian are scope coordinates, not framework deductions. “Strict” means
+exact support, not an LR tail; the vacuum is not identified with Record.
+
+## N4 — residual matching
+
+The source note carries file-and-line witnesses for `minimal_axioms`, the
+commuting complement, `I-SWAP`, finite-range LR, transfer-log quasilocality,
+B--W leakage, scalar CAR-QCA, and symmetric-Clifford layer cancellation. All
+load-bearing algebra is recomputed; only `minimal_axioms` is a declared graph
+dependency.
+
+## N5--N6 — resolution and positive closure
+
+The local four-parameter class, three-site noncommutator, infinite
+one-particle kernel, every nonzero time, full-automorphism implication,
+commuting complement, and 16-mode escape are tested. Finite tori, BdG,
+multibody, physical selection, and continuum are not claimed. The positive
+routes are the strict `J=0` family, quasilocal/LR `J!=0` flow, and fully cubic
+flat-involution larger-carrier flow.
+
+## N7 — steelman
+
+The explicit 16-mode construction has noncommuting onsite and bond terms but
+`q^2=I`, so its exponential is strict radius at most one for all times. The
+irreducible 8-mode version fails full cubic covariance, and doubled chirality
+repairs all 24 rotations. Therefore any all-noncommuting-Hamiltonian no-go is
+false; only the one-qubit onsite-charge dichotomy survives.
+
+## N8 — cross-cycle echo
+
+The result preserves the transfer-log strict-to-quasilocal repair, the
+scalar-to-multimode QCA escape, and the local-versus-complete-layer cancellation
+lesson. It narrows one class and constructs its escape instead of converting
+underdetermination into an axiom request.
+
+**No-Go Discipline verdict:** PASS at bounded strength. Axiom-stop is not
+triggered.

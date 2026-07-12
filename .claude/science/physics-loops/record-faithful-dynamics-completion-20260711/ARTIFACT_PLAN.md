@@ -74,8 +74,12 @@
   density with pairwise overlap commutation is one single-axis Ising family,
   giving an order-free strict radius-at-most-one common flow with no
   common-axis transport;
-- next subblock: test the noncommuting common-Hamiltonian finite-time strictness
-  boundary before selecting a continuum branch.
+- completed fifth exact subblock: the onsite-charge-conserving class splits
+  into the strict commuting branch and a nonzero-exchange branch with infinite
+  support at every nonzero time; a fully cubic 16-mode flat involution is the
+  explicit larger-carrier strict escape;
+- next decision: one charge-nonconserving/BdG discriminator or the controlled
+  continuum gateway.
 
 ## Continuum gateway
 

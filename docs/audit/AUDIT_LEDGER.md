@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 37 |
 | **retained_bounded** | 392 |
 | _retained_pending_chain_ | 1 |
-| open_gate | 7 |
-| unaudited | 2718 |
+| open_gate | 8 |
+| unaudited | 2717 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 509 |
+| `audited_clean` | 510 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3068 |
+| `unaudited` | 3067 |
 
 | claim_type | count |
 |---|---:|
@@ -573,6 +573,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `symmetry_head_to_head_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `symmetry_spectrum_mirror_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `taste_scalar_isotropy_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
+| `teleportation_3d1_causal_record_channel_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | C | - |
 | `teleportation_3d_operator_consistent_end_to_end_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `teleportation_3d_resource_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `teleportation_adiabatic_time_evolution_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -8569,6 +8570,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The simultaneous eigenvalue formula lambda_s(phi)=sum_i phi_i (-1)^{s_i} gives, by the chain rule, a common coefficient 2 f'(v^2)+4 v^2 f''(v^2) multiplying (-1)^{s_i}(-1)^{s_j} at phi=(v,0,0). Summing over the eight binary signs gives a Hessian proportional to delta_ij with no dependency or bounded companion estimate needed.
 - **rationale:** The proposed positive_theorem type is correct for the scoped exact Hessian-isotropy statement. The source note's proof sketch compresses the derivative step, but the displayed eigenvalue formula plus standard chain rule make the Hessian coefficient common across all sign sectors at the axis, leaving exactly the binary orthogonality identity. The cached runner output for SHA 519c1d8d830ea43f8cdcd866565184a4d2d1c8d4c9b0318557fe22df5f35c59b reports THEOREM PASS=30 and FAIL=0, checking the shift algebra, eigenvalue sign sum, binary orthogonality, and finite-difference Hessian isotropy for representative smooth functions. The six bounded gauge/thermal passes are outside this audited scope and are not used for closure.
 - **auditor confidence:** high
+
+### `teleportation_3d1_causal_record_channel_note`
+
+- **Note:** [`TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md`](../../docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Finite planning-scope computation for an explicit classical Bell-record channel on the specified discrete 3D+1 lattice, conditional on supplied Bell bits and an assumed ordinary teleportation resource.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00243-teleportation_3d1_causal_rec`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Given a supplied Bell record and assumed Bell resource, the runner constructs a metric-local 3D+1 worldline, blocks pre-cone delivery, applies the record-selected Pauli correction, and computes Bob's pre-delivery state as input-independent I/2.  _(class `C`)_
+- **chain closes:** True — The source computes the advertised finite channel properties rather than merely printing expected constants: it constructs the worldline, enforces delivery constraints, projects Bell branches, applies Pauli corrections, and evaluates reduced density matrices. The chain closes only for the explicitly bounded planning artifact, not for physical record generation, apparatus dynamics, matter transfer, or relativistic-field-theory closure.
+- **rationale:** The eight primary acceptance gates are genuine finite computations over the implemented lattice channel and qubit operators. The thirteen helper results are cross-note status and boundary checks, but they do not supply the primary channel computation. The note consistently limits its conclusion to a planning model with supplied Bell bits and resource, so its explicit omissions are boundaries rather than unacknowledged derivation claims.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `teleportation_3d_initial_ramp_probe_note`
 

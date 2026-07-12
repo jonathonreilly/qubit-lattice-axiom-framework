@@ -197,9 +197,10 @@ characters. The manifest is an allow-list, not evidence by itself:
 {{NO_GO_EVIDENCE_MANIFEST}}
 ```
 
-The exact pre-audit claim scope is supplied by the orchestrator below. A FAIL
-packet must copy this value verbatim into `prior_claim_scope`; do not guess it
-from the current note or invent a replacement scope.
+The orchestrator supplies either the exact pre-audit claim scope or the
+authenticated blind-review marker `WITHHELD_FOR_FRESH_CONTEXT` below. A FAIL
+packet must copy this value verbatim into `prior_claim_scope`; do not guess a
+withheld scope from the current note or invent a replacement scope.
 
 ```text
 {{PRIOR_CLAIM_SCOPE}}
@@ -218,9 +219,8 @@ index.
 ```
 
 For N8, the orchestrator has also supplied a cross-cycle search index. It is
-constructed from this row's audit history, one-hop authority audit history,
-historical dispositions, open derivation obligations, similar `no_go` rows in the
-audit ledger, and every tracked
+constructed from source-cycle historical dispositions, open derivation
+obligations, similar `no_go` rows in the audit ledger, and every tracked
 `.claude/science/physics-loops/**/NO_GO_LEDGER.md` file. The index metadata
 states the exact glob, scanned file count and paths, similarity threshold, and
 per-kind candidate limits. High-signal kinds (prior audit cycles, open gates,
@@ -503,7 +503,7 @@ Use `null` only when the gate is not required. Otherwise replace it with:
   },
   "failures": ["<failing N-item; empty only for PASS>"],
   "demotion": "<for FAIL only: partial-attempt-with-named-untested-routes | partial-narrowing | bounded-with-corrected-wall-count | stretch-attempt-with-honest-residual>",
-  "prior_claim_scope": "<for FAIL only: exact pre-audit ledger scope supplied by the orchestrator>",
+  "prior_claim_scope": "<for FAIL only: exact supplied scope or WITHHELD_FOR_FRESH_CONTEXT marker>",
   "narrowed_claim_scope": "<for FAIL only: exact same text as top-level claim_scope>",
   "corrected_wall_set": ["<for FAIL only: honest walls still supported>"],
   "next_route": {
@@ -575,9 +575,11 @@ state exactly; when the indexed `lifecycle_state` is `unknown`, preserve
 and must be boolean for PASS. Copy the complete authenticated no-go-row
 universe count and digest even though only relevance-selected candidates
 receive full echoes.
-FAIL narrowing must be
-a strict lexical subset that preserves logical polarity, and every failure
-string must begin with its failing `N1:` through `N8:` item.
+FAIL narrowing must be a strict lexical subset that preserves logical polarity
+when the prior scope is supplied. For a blind re-audit carrying
+`WITHHELD_FOR_FRESH_CONTEXT`, derive the top-level scope only from the current
+packet; the hidden prior scope cannot be used for lexical comparison. Every
+failure string must begin with its failing `N1:` through `N8:` item.
 Any `OPEN`/`UNTESTED` route, unresolved N2-N6/N8 item, mismatched witness,
 untested rhetoric resolution, unaddressed partial-closure candidate, unresolved
 steelman, incomplete N8 packet, or applicable unaddressed echo forces `FAIL`.

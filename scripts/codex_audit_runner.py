@@ -342,7 +342,8 @@ def row_auditor_identity(
 
 
 def determine_audit_role(led_row: dict, auditor_family: str,
-                         is_reaudit_candidate: bool = False) -> tuple[str, str | None]:
+                         is_reaudit_candidate: bool = False,
+                         is_dispatch_target: bool = False) -> tuple[str, str | None]:
     """Decide what role this audit attempt plays for the given row.
 
     The runner only audits rows that genuinely need an audit. Re-auditing
@@ -355,7 +356,9 @@ def determine_audit_role(led_row: dict, auditor_family: str,
     pulled this row from ``reaudit_candidates.json`` because either its
     deps have strengthened or its runner SHA has drifted. The new audit
     supersedes the prior verdict; we record independence relative to the
-    PRIOR auditor's family.
+    recorded author family when known, and otherwise against the prior
+    auditor for ordinary queue re-audits. Blind dispatches with unknown
+    authorship are conservatively marked weak.
 
     Returns (role, reason_or_independence):
       - ("skip", "<reason>")              row should be skipped
@@ -368,7 +371,7 @@ def determine_audit_role(led_row: dict, auditor_family: str,
       - ("second", "cross_family")        row is awaiting cross-confirmation
                                           and the first auditor was a
                                           different family (Claude / human)
-      - ("reaudit", "fresh_context"|"cross_family")
+      - ("reaudit", "fresh_context"|"cross_family"|"weak")
                                           re-audit candidate; supersedes
                                           prior verdict. Independence is
                                           fresh_context vs same-family
@@ -412,8 +415,16 @@ def determine_audit_role(led_row: dict, auditor_family: str,
             if isinstance(prior, dict) and prior.get("auditor_family"):
                 prior_family = prior["auditor_family"]
                 break
-    if is_reaudit_candidate and prior_family:
-        comparison_family = led_row.get("author_family") or prior_family
+    author_family = led_row.get("author_family")
+    if is_reaudit_candidate and (prior_family or is_dispatch_target):
+        if is_dispatch_target and not author_family:
+            has_prior_audit = bool(
+                prior_family
+                or led_row.get("previous_audits")
+                or audit_status != "unaudited"
+            )
+            return ("reaudit" if has_prior_audit else "first"), "weak"
+        comparison_family = author_family or prior_family
         if (
             canonicalize_existing_auditor_family(comparison_family)
             == canonicalize_existing_auditor_family(auditor_family)
@@ -539,14 +550,17 @@ def load_dispatch_targets(
 ) -> list[dict]:
     """Load live targeted re-audits without exposing the dispatch manifest.
 
-    Dispatch metadata selects the claim and supplies the audit question. The
-    restricted evidence packet is still built exclusively from the ledger
-    row, source/dependencies, runner surfaces, and standard audit context.
+    Dispatch metadata selects the claim. Its operator question remains log
+    metadata and is never rendered into the auditor packet. The restricted
+    evidence packet is built exclusively from the ledger row,
+    source/dependencies, runner surfaces, and standard audit context.
     """
     payload = json.loads(DISPATCH_QUEUE_PATH.read_text(encoding="utf-8"))
     normalized: list[dict] = []
     seen_ids: set[str] = set()
     for entry in payload.get("live", []):
+        if not isinstance(entry, dict):
+            continue
         cid = entry.get("claim_id")
         if not cid or cid in seen_ids:
             continue
@@ -768,25 +782,52 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     note_path = row.get("note_path") or ledger_rows.get(cid, {}).get("note_path") or ""
     raw_runner_path = row.get("runner_path") or ledger_rows.get(cid, {}).get("runner_path") or ""
     runner_path = canonical_runner_path(raw_runner_path) if raw_runner_path else ""
-    claim_type_hint = (
+    ledger_claim_type = (
         row.get("claim_type")
         or ledger_rows.get(cid, {}).get("claim_type")
         or ""
     )
+    claim_type_hint = (
+        "(withheld for fresh context)"
+        if row.get("dispatch_target")
+        else ledger_claim_type
+    )
 
     full_note_body = read_note_body(note_path) or f"[note missing on disk: {note_path}]"
     no_go_required = no_go_discipline_gate.source_requires_no_go_discipline(
-        note_path, full_note_body, claim_type_hint
+        note_path, full_note_body, ledger_claim_type
     )
     note_body = clip_packet_text(full_note_body, NOTE_BODY_CHAR_LIMIT, note_path)
 
     # Cited authorities: one-hop deps from the ledger row
     led_row = ledger_rows.get(cid, {})
-    prior_claim_scope = prior_claim_scope_for_row(led_row) or "(none recorded)"
+    if row.get("dispatch_target"):
+        prior_claim_scope = no_go_discipline_gate.BLIND_REAUDIT_PRIOR_SCOPE
+    else:
+        prior_claim_scope = prior_claim_scope_for_row(led_row) or "(none recorded)"
     packet_row = {**led_row, **row, "claim_id": cid}
+    if row.get("dispatch_target"):
+        # Fresh dispatch packets may use operational ledger state for target
+        # selection, but not as auditor evidence or search seeding.
+        for field in (
+            "audit_status", "auditor", "auditor_family", "auditor_model",
+            "audit_date", "claim_scope", "claim_type", "effective_status",
+            "independence", "previous_audits", "verdict_rationale",
+        ):
+            packet_row.pop(field, None)
     evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
         packet_row, ledger_rows, REPO_ROOT
     )
+    if row.get("dispatch_target"):
+        no_go_discipline_gate.set_packet_evidence(
+            evidence_manifest,
+            path=no_go_discipline_gate.blind_reaudit_control_path(cid),
+            role="blind_reaudit_control",
+            text=(
+                "Fresh-context dispatch: prior claim scope and audit judgments "
+                "are withheld from the auditor."
+            ),
+        )
     no_go_discipline_gate.set_packet_evidence(
         evidence_manifest, path=note_path, role="source", text=note_body,
         invocation_bound_rendered_text=True,
@@ -1034,8 +1075,8 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         prompt += (
             "\n\n---\n"
             "TARGETED DISPATCH TASK (neutral selection metadata; not evidence):\n"
-            "Independently reassess whether the current claim type and scope "
-            "remain valid under the authenticated current framework packet. "
+            "Independently determine the claim type, exact scope, chain "
+            "closure, and verdict from the authenticated framework packet. "
             "No dispatcher-authored question, suggested classification, prior "
             "rationale, status, or outcome is present in this auditor context. "
             "Decide the claim type, scope, and verdict only from the packet.\n"
@@ -1701,8 +1742,9 @@ def main() -> int:
     p.add_argument("--from-dispatch", action="store_true",
                    help="Pull live targeted re-audits from "
                         "docs/audit/data/audit_dispatch_queue.json. Only the "
-                        "claim id and audit question select/scope the audit; "
-                        "the dispatch manifest is not evidence.")
+                        "claim id selects the audit. The operator question is "
+                        "retained only as log metadata and is never auditor "
+                        "context or evidence.")
     p.add_argument("--no-runner-drift-candidates", action="store_true",
                    help="With --from-reaudit-candidates, skip the "
                         "runner_drift_candidates stream (only re-audit on "
@@ -1762,7 +1804,8 @@ def main() -> int:
         )
 
     LOG_DIR.mkdir(parents=True, exist_ok=True)
-    run_id = uuid.uuid4().hex[:8]
+    run_uuid = uuid.uuid4().hex
+    run_id = run_uuid[:8]
     auditor_name_base = args.auditor_name or (
         f"codex-cli-{audit_model}-"
         f"{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S')}-{run_id}"
@@ -1908,6 +1951,7 @@ def main() -> int:
                 is_reaudit_candidate=(
                     args.from_reaudit_candidates or args.from_dispatch
                 ),
+                is_dispatch_target=args.from_dispatch,
             )
             if role == "skip":
                 print(f"  SKIP: {role_info}")
@@ -1924,7 +1968,7 @@ def main() -> int:
             # reused, so fresh-context provenance cannot collide with a live
             # or archived auditor identity.
             row_auditor = row_auditor_identity(
-                auditor_name_base, run_id, cid, i
+                auditor_name_base, run_uuid, cid, i
             )
             prior_auditor_ids = {
                 str(full_led_row.get("author") or ""),

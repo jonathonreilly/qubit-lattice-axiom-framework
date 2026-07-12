@@ -3,8 +3,8 @@ KS staggered eta-factor vs Jordan-Wigner string: does matter-attachment LOCALITY
 + the Kogut-Susskind staggered structure ALGEBRAICALLY FORCE cross-site CAR?
 
 Angle: NON-geometric / algebraic forcing of the cross-site CAR sign from the
-matter-attachment construction on Z^3 (Quantum = one qubit/Cl(3,0) spinor per
-site, Lattice = Z^3).
+matter-attachment construction on Z^3. Qubit supplies the one-site M_2(C)
+possibility algebra; the finite tensor realization below is the tested model.
 
 Central distinction under test (the two objects must NOT be conflated):
   * STAGGERED eta_mu(x) = (-1)^{x_1 + ... + x_{mu-1}}  -- a per-LINK c-number sign.
@@ -27,12 +27,13 @@ both carrying the IDENTICAL eta_mu(x) link signs, and check, exactly:
 
   C1  eta_mu(x) are the Kawamoto-Smit phases (c-number signs), eta independent of
       statistics realization.
-  C2  Both the HCB and JW staggered hopping operators are nearest-neighbour LOCAL
-      and both carry the SAME eta signs (eta does NOT discriminate statistics).
+  C2  Both staggered hopping constructions carry the SAME eta signs. HCB link
+      terms are endpoint-local, while JW link terms can carry the ordering string
+      outside their geometric endpoints (eta does NOT discriminate statistics).
   C3  The bare ladders are hard-core-bosonic: [b_x, b_y] = 0 for x != y, b_x^2 = 0.
       => a LOCAL, nilpotent, single-occupancy matter operator EXISTS that is NOT CAR.
       Hence locality + nilpotency + eta do NOT force CAR.
-  C4  CAR appears ONLY after the JW string dressing; {c_x, c_y}=0 needs the string,
+  C4  CAR appears after the JW string dressing; {c_x, c_y}=0 needs the string,
       which (a) is a DIFFERENT object from eta and (b) requires an ORDER choice.
   C5  Counterfactual: dropping the string but KEEPING eta leaves cross-site
       ANTIcommutators NON-zero (bosonic). Dropping eta but keeping the string still
@@ -40,12 +41,12 @@ both carrying the IDENTICAL eta_mu(x) link signs, and check, exactly:
   C6  On a three-site subpatch, the two algebras (HCB generators vs JW
       generators) generate the SAME full matrix algebra M_{2^N}(C). Statistics
       is a frame choice on one ungraded algebra.
-  C7  Locality horn: the JW string is genuinely NON-local on Z^3. No total order
-      makes every nearest-neighbour link string-free; the 2x2x2 grid graph has
-      bandwidth > 1, so the string is unavoidable for some local links. Locality
-      of the matter operator therefore does NOT canonically supply the string.
+  C7  Ungraded tensor-locality horn: no total order makes every nearest-neighbour
+      link string-free on the 2x2x2 patch. Its grid graph has bandwidth > 1, so
+      some geometric links carry non-endpoint tensor support. This representation
+      does not canonically supply the string from endpoint locality.
 
-VERDICT printed at the end. Uses the Lattice/Quantum baseline plus standard
+VERDICT printed at the end. Uses the Lattice/Qubit baseline plus standard
 finite linear algebra. No imports.
 """
 
@@ -162,7 +163,7 @@ def staggered_hopping(order, index, links, N, ladder, use_eta=True):
     return H
 
 # ----------------------------------------------------------------------------
-# Locality test: is an operator supported only on a nearest-neighbour link?
+# Locality test: is an operator supported on a nearest-neighbour link?
 # An operator O is "local on link (x,y)" if it commutes with sigma_z parity on
 # every site NOT in {x,y} ... but more robustly: O = (something on x) tensor
 # (something on y) tensor identity elsewhere. We test: does O act as identity on
@@ -306,12 +307,9 @@ def check():
         for mu in (1, 2, 3):
             e_def = eta(mu, x)
             e_spin = eta_from_spin_diag(mu, x)
-            # spin-diag returns +-1 (possibly times a global gamma convention sign).
-            # Kawamoto-Smit: eta from spin-diag equals the closed-form up to the
-            # global eta_1==1 gauge; compare magnitude-1 and that it is a pure sign.
-            if not (abs(abs(e_spin) - 1) < 1e-9):
+            if not np.allclose(e_spin, e_def, atol=1e-12):
                 c1 = False
-    ok("eta_from_spin_diag yields pure +-1 signs for every (mu,x)", c1)
+    ok("eta_from_spin_diag equals the closed-form eta for every (mu,x)", c1)
     # closed form sign table matches the canonical KS pattern
     ks_ref = {(1,(0,0,0)):1,(2,(1,0,0)):-1,(2,(0,0,0)):1,(3,(1,1,0)):1,(3,(0,1,0)):-1}
     ok("eta closed form matches canonical KS sign table (sample)",
@@ -348,28 +346,71 @@ def check():
        all(np.allclose(anticomm(cx[x], cx[x].conj().T), np.eye(D)) for x in order))
     ok("{c_x, c_y^dag} = 0 for x != y",
        all(np.allclose(anticomm(cx[x], cx[y].conj().T), 0) for (x, y) in pairs))
+    parity = kron_all([SZ] * N)
+    ok("the same global parity anticommutes with both HCB and JW ladders",
+       all(np.allclose(anticomm(parity, bx[x]), 0) for x in order)
+       and all(np.allclose(anticomm(parity, cx[x]), 0) for x in order))
     print()
 
-    # ---- C2: both staggered hopping operators carry the SAME eta and are LOCAL
-    print("C2  staggered KS hopping carries eta in BOTH realizations; both nearest-neighbour LOCAL")
+    # ---- C2: both constructions carry the SAME eta; locality differs by string
+    print("C2  same staggered eta in both realizations; endpoint locality differs by JW string")
     H_hcb = staggered_hopping(order, index, links, N, ladder_HCB, use_eta=True)
     H_jw  = staggered_hopping(order, index, links, N, ladder_JW,  use_eta=True)
     # Both are built from the SAME eta link signs. Confirm each link term in the HCB
     # operator is supported on exactly the 2 endpoint sites (nearest-neighbour local).
     hcb_local = True
-    for (mu, x, y) in links:
-        e = eta(mu, x)
-        ax, ay = bx[x], bx[y]
-        term = 0.5 * e * (ay.conj().T @ ax - ax.conj().T @ ay)
-        supp = set(support_sites(term, order, N))
+    eta_coeff_hcb = []
+    eta_coeff_jw = []
+    for link in links:
+        mu, x, y = link
+        signed_term = staggered_hopping(
+            order, index, [link], N, ladder_HCB, use_eta=True
+        )
+        unsigned_term = staggered_hopping(
+            order, index, [link], N, ladder_HCB, use_eta=False
+        )
+        supp = set(support_sites(signed_term, order, N))
         if not supp.issubset({x, y}):
             hcb_local = False
+        eta_coeff_hcb.append(
+            np.vdot(unsigned_term, signed_term)
+            / np.vdot(unsigned_term, unsigned_term)
+        )
     ok("HCB staggered hopping: every link term supported on its 2 endpoints (local)", hcb_local)
-    ok("HCB and JW staggered operators use the IDENTICAL eta sign on every link",
-       True)  # by construction both call eta(mu,x); shown explicitly here
-    # The eta enters identically; the ONLY difference between H_hcb and H_jw is the
+    jw_endpoint_local = []
+    jw_non_endpoint_local = []
+    for link in links:
+        mu, x, y = link
+        signed_term = staggered_hopping(
+            order, index, [link], N, ladder_JW, use_eta=True
+        )
+        unsigned_term = staggered_hopping(
+            order, index, [link], N, ladder_JW, use_eta=False
+        )
+        eta_coeff_jw.append(
+            np.vdot(unsigned_term, signed_term)
+            / np.vdot(unsigned_term, unsigned_term)
+        )
+        supp = set(support_sites(signed_term, order, N))
+        lo, hi = sorted((index[x], index[y]))
+        expected_support = {order[position] for position in range(lo, hi + 1)}
+        ok(f"JW link {x}-{y}: tensor support equals its ordered endpoint interval",
+           supp == expected_support)
+        if supp.issubset({x, y}):
+            jw_endpoint_local.append((mu, x, y))
+        else:
+            jw_non_endpoint_local.append((mu, x, y, tuple(sorted(supp))))
+    eta_reference = np.array(
+        [eta_from_spin_diag(mu, x) for (mu, x, _) in links], dtype=complex
+    )
+    ok("isolated hopping-builder projections match the spin-diagonal eta table",
+       np.allclose(eta_coeff_hcb, eta_reference)
+       and np.allclose(eta_coeff_jw, eta_reference))
+    ok("JW hopping: exactly 8/12 geometric NN link terms carry non-endpoint string support",
+       len(jw_non_endpoint_local) == 8 and len(jw_endpoint_local) == 4)
+    # The eta enters identically; the difference between H_hcb and H_jw is the
     # ladder dressing (the string), not eta.
-    ok("H_hcb != H_jw (they differ ONLY by the JW string, not by eta)",
+    ok("H_hcb != H_jw (they differ by the JW string, not by eta)",
        not np.allclose(H_hcb, H_jw))
     print()
 
@@ -381,18 +422,16 @@ def check():
         np.allclose(anticomm(cx_no_string[x], cx_no_string[y]), 0) for (x, y) in pairs)
     ok("drop string, KEEP eta  ->  cross-site CAR FAILS (eta cannot supply CAR)",
        not car_holds_without_string)
-    # (b) DROP eta (use_eta=False everywhere), KEEP the string -> CAR still holds
-    cx_no_eta = {x: ladder_JW(x, order, index, N) for x in order}  # string present, eta irrelevant to ladder
-    # the ladder operators themselves do not contain eta at all; eta is only in H.
+    # (b) DROP eta in the kinetic operator, KEEP the string -> H changes while
+    # the already constructed JW ladders continue to satisfy CAR.
+    H_jw_no_eta = staggered_hopping(
+        order, index, links, N, ladder_JW, use_eta=False
+    )
     car_holds_without_eta = all(
-        np.allclose(anticomm(cx_no_eta[x], cx_no_eta[y]), 0) for (x, y) in pairs)
-    ok("drop eta, KEEP string   ->  cross-site CAR STILL HOLDS (eta is not the CAR source)",
-       car_holds_without_eta)
-    # (c) eta sign and JW string-sign are different objects: eta is a c-number per link;
-    #     the string sign is an operator sigma_3^(y) on INTERMEDIATE sites.
-    #     Show eta(mu,x) does not appear in c_x at all (c_x is eta-independent):
-    ok("the matter operator c_x is independent of eta (eta lives in the kinetic coefficient, "
-       "the string lives in the operator)", True)
+        np.allclose(anticomm(cx[x], cx[y]), 0) for (x, y) in pairs
+    )
+    ok("drop eta, KEEP string   ->  kinetic operator changes and cross-site CAR holds",
+       not np.allclose(H_jw_no_eta, H_jw) and car_holds_without_eta)
     print()
 
     # ---- C6: same ungraded algebra on a subpatch (statistics is a frame choice)
@@ -424,7 +463,7 @@ def check():
     print()
 
     # ---- C7: locality horn -- the JW string is non-local; no order kills it
-    print("C7  locality horn: JW string is genuinely NON-local on Z^3 (2x2x2 bandwidth > 1)")
+    print("C7  ungraded tensor locality horn: JW tails are non-endpoint-local on the 2x2x2 patch")
     bw = grid_bandwidth_min(order, links)
     ok(f"min grid-graph bandwidth over ALL orderings = {bw} > 1 "
        "(no total order makes every NN link string-free)", bw > 1)
@@ -439,10 +478,6 @@ def check():
     ok(f"lexicographic slow-axis NN link {s_lo}-{s_hi} spans {span} positions "
        f"=> string non-trivial over intermediate sites {string_support}",
        span > 1 and len(string_support) > 0)
-    # the matter operator being LOCAL (single-site b_x) is consistent with NO string
-    # => locality does not force the string => does not force CAR.
-    ok("a maximally-local matter operator (single-site b_x) carries NO string => "
-       "locality does NOT force the JW string / CAR", True)
     print()
 
     print("="*72)

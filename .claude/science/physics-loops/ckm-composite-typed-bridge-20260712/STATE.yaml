@@ -1,0 +1,33 @@
+loop_slug: ckm-composite-typed-bridge-20260712
+date: 2026-07-12
+mode: run
+target: best-honest-status
+science_block: 02
+cycle_count: 1
+branch: physics-loop/ckm-composite-typed-bridge-block02-20260712
+base_branch: physics-loop/ckm-down-scale-closure-block01-20260712
+base_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5235
+status: ready_to_publish
+claim_type: bounded_theorem
+actual_current_surface_status: exact support/boundary theorem
+trace_class: upstream_support
+reachability_to_target: supports
+active_route: pair_spectral_projector_overlap
+hard_residual: derive_the_invariant_alignment_law_Tr_Pc_Pb_equals_ms_over_mb_to_the_five_thirds
+registry_edits: false
+retirement_claimed: false
+proposal_allowed: false
+proposal_allowed_reason: the physical mass-operator origin and invariant alignment law remain open
+open_imports:
+  - framework derivation and physical typing of the quark mass-operator pair
+  - source/action theorem fixing the relative up/down spectral-projector alignment
+  - generation-flavor to six-state carrier lift if the atlas determinant route is retained
+verification:
+  runner: "EXACT_PASS=18 BOUNDARY_PASS=14 FAIL=0"
+  py_compile: pass
+  independent_review: "PASS WITH BOUNDED CLAIMS; 3 iterations"
+  audit_pipeline: "pass; newly seeded rows=1"
+  audit_lint_strict: "pass with 31 existing warnings and 248 notices; no errors"
+  pipeline_outputs_stripped: pass
+next_exact_action: independently review the pair-projector theorem and then seek a source/action alignment law
+main_refresh_policy: do not refresh this stacked block or its parent merely because fast-moving main is ahead

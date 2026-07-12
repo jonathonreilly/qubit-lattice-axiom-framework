@@ -1,306 +1,251 @@
-# DM Neutrino `K00` Bosonic Normalization Theorem (Conditional)
+---
+claim_id: dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15
+claim_type_author_hint: no_go
+status_authority: independent_audit_lane_only
+---
 
-**Date:** 2026-04-15  
-  - status line narrowed 2026-05-16 per 2026-05-05 audit-lane verdict
-    (`audited_renaming`, class F, leaf criticality, audit row:
-    `dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15`)
-**Claim type:** bounded_theorem
-**Status:** bounded conditional diagonal-normalization selector on the
-upstream DM-neutrino source packet — IF the unique additive CPT-even
-bosonic-observable principle is taken as the physical local scalar
-observable selector (observable-principle premise), AND IF the source
-amplitudes `tau_E = tau_T = 1/2` are taken from the upstream
-source-oriented branch (source-amplitude premise), THEN the algebraic
-checks close and the heavy-basis diagonal normalization is `K00 = 2`.
-The observable-principle premise is currently registered as
-`audited_conditional` on the audit lane (upstream:
-[`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md));
-the source-amplitude premise enters via two `unaudited` upstream
-authorities (see the audit dependency repair links section below). Not
-yet a retained-grade baseline-framework diagonal-normalization theorem; the
-runner verifies the algebraic identifications, not the load-bearing
-coefficient law or the source-amplitude branch values.
-**Script:** `scripts/frontier_dm_neutrino_k00_bosonic_normalization_theorem.py`
+# DM Neutrino `K00` Restricted-Packet Normalization Identifiability No-Go
 
-## Framework sentence
+**Date:** 2026-04-15; first-principles obstruction repair 2026-07-12
+**Claim type:** no_go
+**Role:** exact negative boundary for the supplied `2 x 2` / `3 x 3` packet
+**Status:** candidate exact negative boundary for independent audit; the prior
+positive endpoint `K00 = 2` is withdrawn on the actual current surface
+**Primary runner:**
+[`scripts/frontier_dm_neutrino_k00_bosonic_normalization_theorem.py`](../scripts/frontier_dm_neutrino_k00_bosonic_normalization_theorem.py)
+**Cached output:**
+[`logs/runner-cache/frontier_dm_neutrino_k00_bosonic_normalization_theorem.txt`](../logs/runner-cache/frontier_dm_neutrino_k00_bosonic_normalization_theorem.txt)
 
-In this note, the baseline physical framework is `Cl(3)` local algebra on the
-`Z^3` spatial substrate. Everything else is a derived atlas row or an
-explicitly declared conditional input that does not chain-satisfy.
+## Claim boundary
 
-## Question
+On the restricted packet containing
 
-Once the exact source package is closed, can the remaining heavy-neutrino-basis
-diagonal normalization
+- the target coefficient `K00 = (K_mass)00` and its rank-one projector
+  `F00 = J3/3`;
+- the source swap-even projector `P+ = J2/2`;
+- swap symmetry on the two source coordinates;
+- scalar-baseline log-determinant response;
+- no independently constructed source-action map from the source coordinates
+  to a physical `2 x 2` deformation; and
+- no independently constructed typed map from that source deformation to the
+  heavy-basis `F00` channel,
 
-`K00 = (K_mass)00`
+the value `K00 = 2` is not identifiable. The exact response equation is only
 
-be fixed canonically from the same single-axiom source-response machinery?
+`K00 = c tau_+`,
 
-## Bottom line
+where `c` is the source-operator embedding scale. Swap symmetry independently
+fixes only `tau_E = tau_T`; it does not fix their common magnitude and hence
+does not fix `tau_+`.
 
-Conditionally yes — `K00 = 2` follows from the algebra below once the
-upstream observable-principle premise and the upstream source-amplitude
-premise are accepted as inputs. The runner-checked content (Parts 1-4
-below) is exact finite-dimensional matrix algebra. The two physical
-inputs that promote the algebra to the numerical value `K00 = 2` are
-imported from upstream authorities, not derived inside the restricted
-runner packet of this note. The audit lane records this as
-`audited_renaming` rather than `audited_clean` for that reason.
+The previously advertised law `K00 = 2 tau_+` is the special choice `c = 2`,
+equivalently the declaration that the physical source deformation is
+`tau_+ J2 = 2 tau_+ P+`. The endpoint `K00 = 2` additionally chooses
+`tau_+ = 1`. Neither choice follows from the restricted packet.
 
-The target functional `K00` has exact Frobenius-dual generator
+This is a no-go for that packet, not a no-go against a future framework
+derivation of `K00`. A future source-action and cross-sector response theorem
+can defeat it by constructing both `c = 2` and `tau_+ = 1` without using the
+target value as input.
 
-`F00 = J3/3`
+## Minimal premise set and forbidden imports
 
-with `J3` the `3 x 3` all-ones matrix. On the source side, the exact swap-even
-weak mode `tau_+ = tau_E + tau_T` lives on the row-sum generator
+The foundation surface is the approved
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) node: Lattice,
+Qubit, Admissibility, and Record. Its qualification explicitly leaves
+normalization, source/action, log-determinant readout, and arbitrary physical
+observable identification outside axiom content. The approved
+[`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md),
+[`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md),
+and
+[`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md)
+nodes do not supply any of those missing maps.
 
-`J2 = [[1,1],[1,1]]`.
+The proof below uses no observed neutrino value, fitted selector, literature
+number, unit convention, target `K00` value, or hard-coded source amplitude.
+The old assignments `tau_E = tau_T = 1/2` and `K00 = 2` are test cases only;
+they are not proof inputs.
 
-Since `F00` is isospectral to `(1/2) J2`, **and assuming the unique
-additive CPT-even bosonic-observable principle as the local scalar
-observable selector**, the coefficient law is
+## Exact proof
 
-`K00 = 2 tau_+`.
+### 1. The target algebra leaves `K00` free
 
-**Assuming the upstream source-oriented branch** then sets
+Let
 
-- `tau_E = 1/2`
-- `tau_T = 1/2`
-- `tau_+ = 1`
+`F00 = J3/3`.
 
-so the heavy-basis diagonal normalization is
+Then `F00^2 = F00`, `rank(F00) = 1`, and `Tr(F00) = 1`. For every real
+`kappa`, the aligned target matrix
 
-`K00 = 2`.
+`H_kappa = kappa F00`
 
-Both italicised premises are explicitly declared conditions of this
-conditional packet; neither is derived inside this note or its runner.
+obeys
 
-## Honest conditional scope
+`Tr(H_kappa F00) = kappa Tr(F00^2) = kappa`.
 
-The two load-bearing imports of this conditional packet, each named by
-the 2026-05-05 audit verdict, are:
+Thus the exact target identities admit every real value `K00 = kappa`. The
+breaking-triplet independence proved by the earlier algebra does not remove
+this aligned-core degree of freedom.
 
-1. **Observable-principle premise** (audit class F load-bearing): the
-   identification of physical local scalar observables with exact
-   source-response coefficients of the unique additive CPT-even scalar
-   generator `W[J] = log|det(D+J)| - log|det D|`. This is the premise
-   that turns isospectrality of `F00` with `(1/2) J2` into the
-   coefficient identity `K00 = 2 tau_+`. Upstream authority:
-   [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
-   (currently `audited_conditional`).
+### 2. Swap symmetry fixes a ray, not the source magnitude
 
-2. **Source-amplitude premise** (audit class F load-bearing): the
-   values `tau_E = tau_T = 1/2` of the source amplitudes. The runner
-   hard-codes these and does not derive them from `Cl(3)` on `Z^3`.
-   Upstream authority candidates are
-   [`DM_NEUTRINO_WEAK_EVEN_SWAP_REDUCTION_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_WEAK_EVEN_SWAP_REDUCTION_THEOREM_NOTE_2026-04-15.md)
-   (currently `unaudited`; supplies `tau_+ = tau_E + tau_T` on the
-   row-sum generator `J2` but not the individual magnitudes) and
-   [`DM_NEUTRINO_TRIPLET_CHARACTER_SOURCE_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_TRIPLET_CHARACTER_SOURCE_THEOREM_NOTE_2026-04-15.md)
-   (currently `unaudited`; that note itself explicitly disclaims
-   deriving the magnitude of `gamma`, `delta`, `rho`, and by extension
-   `tau_E`, `tau_T`).
+Let
 
-Because neither of the two premises is currently retained, the
-endpoint `K00 = 2` is not a retained number. It is a conditional value
-that the algebra below carries forward exactly once those two
-upstream gaps close. The conditional structure here matches the live
-pattern of the sister theorem
-[`DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md)
-(headline "Bosonic Normalization Theorem (Conditional)"), which makes
-the same observable-principle premise explicit. The path from
-`audited_renaming` to `audited_conditional` for this row is upstream
-closure of the source-amplitude premise; the path from
-`audited_conditional` to `audited_clean`/retained additionally requires
-the observable-principle premise to lift past its own conditional
-verdict.
+`P_swap = [[0,1],[1,0]]`.
 
-## Exact target formula
+Solving `P_swap tau = tau` gives the full fixed space
 
-On the exact breaking-triplet decomposition
+`tau = a (1,1)`, with `a` real.
 
-`H = H_core + B(delta,rho,gamma)`
+Therefore `tau_E = tau_T = a` and `tau_+ = 2a`, but swap symmetry supplies no
+equation for `a`.
 
-with
+The sharp swap-even projector
 
-`H_core = [[A,b,b],[b,c,d],[b,d,c]]`
+`P+ = (I + P_swap)/2 = J2/2`
+
+does not repair that coordinate ambiguity. A column of `P+` is
+`(1/2,1/2)`, whereas the unit bright vector is
+`(1/sqrt(2),1/sqrt(2))`. They are different normalizations of the same
+swap-even ray. Selecting the projector column as the physical source
+coordinate is an extra coordinate-extraction rule, not a consequence of swap
+invariance.
+
+### 3. The most general bright-ray response contains a free embedding scale
+
+Any real source operator supported only on the swap-even bright ray is a
+scalar multiple of `P+`. Parameterize the source deformation by
+
+`S(c,tau_+) = c tau_+ P+`.
+
+The target deformation is
+
+`T(K00) = K00 F00`.
+
+For a nonzero scalar baseline `m`, exact determinant algebra gives
+
+`det(m I3 + K00 F00) / m^3 = 1 + K00/m`,
 
 and
 
-`B = [[0,rho,-rho-i gamma],[rho,delta,0],[-rho+i gamma,0,-delta]]`,
+`det(m I2 + c tau_+ P+) / m^2 = 1 + c tau_+/m`.
 
-the transformed heavy-basis diagonal is
+Consequently equality of the baseline-subtracted log-absolute-determinant
+responses for all nonsingular `m` is equivalent to
 
-`K00 = (K_mass)00 = (A + 4b + 2c + 2d)/3`.
+`K00 = c tau_+`.
 
-Equivalently,
+This equation derives the coefficient relation once `c` is supplied; it does
+not derive `c`.
 
-`K00 = Tr(H F00),  F00 = J3/3`.
+### 4. Two exact countermodel pairs isolate two independent walls
 
-So `K00` is independent of the odd/even breaking triplet
-`(delta,rho,gamma)` and depends only on the aligned core.
+Fix `tau_+ = 1`.
 
-## Bosonic normalization argument
+- With the sharp-projector embedding `S = P+`, one has `c = 1`, and exact
+  response matching gives `K00 = 1`.
+- With the row-sum embedding `S = J2 = 2P+`, one has `c = 2`, and exact
+  response matching gives `K00 = 2`.
 
-The exact source-side even mode is not the projector `(1/2) J2`; it is the
-full row-sum generator `J2` with amplitude `tau_+`.
+Both source operators are swap-even, rank one, and supported on the same
+bright ray. Both admit an exactly response-matched target deformation. The
+restricted packet contains no source-action construction that selects the
+second embedding over the first.
 
-The bosonic observable principle compares exact source-deformed responses
+Now fix `c = 2`.
 
-`W[J] = log|det(D+J)| - log|det D|`.
+- `tau_+ = 1/2` gives `K00 = 1`.
+- `tau_+ = 1` gives `K00 = 2`.
 
-Since `F00` and `(1/2) J2` have the same nonzero spectrum `{+1}`, they have
-identical exact bosonic response on scalar baselines. Therefore the target
-coefficient must compensate the factor of `2` between `J2` and `(1/2) J2`,
-forcing
+Both source coordinate vectors are swap-even. Thus fixing the typed embedding
+does not fix the source magnitude, and fixing the source magnitude does not
+fix the typed embedding. These are two independent missing constructions.
 
-`K00 = 2 tau_+`.
+### 5. The factor-of-two trap
 
-## Consequence (conditional on the two upstream premises)
+The old packet used `tau_+` in two inequivalent roles:
 
-Conditional on the observable-principle premise and the
-source-amplitude premise (see "Honest conditional scope" above), the
-diagonal-normalization slot the exact-source diagnostic left open is
-filled by `K00 = 2`. Within this conditional packet the source-side
-package is
+1. as the sum of the coordinates of a column of `P+`, which gives
+   `(tau_E,tau_T) = (1/2,1/2)` and `tau_+ = 1`; and
+2. as the coefficient multiplying the full generator `J2` in the physical
+   source deformation.
 
-- `gamma = 1/2`
-- `E1 = sqrt(8/3)`
-- `E2 = sqrt(8)/3`
-- `K00 = 2`
+The first role concerns coordinates on the bright ray. The second is a typed
+operator embedding and introduces the factor `J2 = 2P+`. Equating the two
+roles is exactly the missing normalization map. Isospectrality of `F00` and
+`P+` cannot supply it because isospectrality acts on the normalized projectors,
+not on an independently scaled source coordinate.
 
-which is the conditional kernel input that the downstream coherent
-leptogenesis sum currently consumes. The downstream sum inherits the
-conditional status of both upstream premises through the cite-chain
-rule and is not itself retained at the value `K00 = 2` until the two
-upstream gaps named above close.
+This proves the scoped no-go. ∎
+
+## What the runner independently checks
+
+The exact SymPy runner constructs rather than assigns the load-bearing
+objects. It checks:
+
+1. projector, rank, trace, and swap identities for `F00` and `P+`;
+2. the free target family `H_kappa` and `K00 = kappa`;
+3. the complete swap-fixed source space `a(1,1)`;
+4. the distinct projector-column and unit-vector coordinate normalizations;
+5. both symbolic determinant polynomials;
+6. symbolic solution of determinant and log-absolute response equality as
+   `K00 = c tau_+`, including exclusion of an absolute-value sign branch;
+7. the `c = 1` versus `c = 2` countermodel pair at fixed `tau_+`;
+8. the `tau_+ = 1/2` versus `tau_+ = 1` countermodel pair at fixed `c`;
+9. the approved-premise registry, every approved primitive source scope, and
+   the minimal-axiom nonsupply boundary.
+
+No PASS line assigns the disputed endpoint before testing it.
+
+## Falsifier and exact repair target
+
+This no-go is defeated by a self-contained theorem/runner pair that constructs
+all three of the following from the approved premise surface or retained
+dependencies:
+
+1. a typed physical source deformation `S(tau)` and proves its bright-ray
+   coefficient is `c = 2` rather than choosing `J2` by notation;
+2. a sharp source-selection law that fixes `tau_E = tau_T = 1/2` as physical
+   source coordinates rather than as a selected column convention; and
+3. a source-to-heavy observable theorem that maps `S(tau)` to
+   `K00 F00` and proves equality of the physical response, rather than merely
+   comparing two already selected projectors.
+
+If those constructions land with retained-grade dependencies, the runner's
+general identity immediately specializes to `K00 = 2`.
+
+## What this claims
+
+- An exact two-parameter identifiability obstruction on the explicit
+  restricted packet.
+- The strongest response statement available without hidden normalization is
+  `K00 = c tau_+`.
+- The two missing constructions are independently testable.
+- `K00 = 2 tau_+` and `K00 = 2` remain valid conditional specializations at
+  `c = 2` and `(c,tau_+) = (2,1)`, respectively.
+
+## What this does not claim
+
+- It does not claim that no extension of the framework can derive `K00 = 2`.
+- It does not exclude a future lattice source-action, Ward, variational,
+  representation-theoretic, or Record-facing typed map.
+- It does not change any downstream benchmark or publication surface.
+- It does not set an audit verdict or effective status.
+- It does not treat the broader observable-principle or source-amplitude notes
+  as retained dependencies.
+
+## No-Go Discipline summary
+
+The full N1-N8 checklist is recorded in the branch-local physics-loop claim
+certificate. Its scope is this explicit finite restricted packet only. Five
+routes were attempted: determinant-response matching, equivariant bright-ray
+transport, sharp-projector normalization, direct heavy-kernel reconstruction,
+and Record/log-determinant closure. Each terminates at one of the two explicit
+free parameters above. Conventionally declaring `c = 2` remains a valid
+bounded route, so the result is not phrased as requiring a new axiom.
 
 ## Command
 
 ```bash
 python3 scripts/frontier_dm_neutrino_k00_bosonic_normalization_theorem.py
 ```
-
-## Audit dependency repair links
-
-This graph-bookkeeping section records explicit upstream authority
-citations named by the 2026-05-05 audit verdict. The verdict
-(`audited_renaming`, leaf criticality, audit row:
-`dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15`) records
-that the algebraic isospectrality check closes (A=7), but the bridge
-from isospectral bosonic response to the physical coefficient identity
-`K00 = 2 tau_+` is asserted rather than derived from the single axiom
-in the runner packet, and `tau_E = tau_T = 1/2` is hard-coded rather
-than computed from `Cl(3)` on `Z^3`. This addendum does not promote
-this note or change the audited claim scope, which remains the
-conditional isospectrality identification of the target diagonal
-generator `F00 = J3/3` with the scaled source row-sum mode `(1/2) J2`
-plus the imported bosonic source-response premise.
-
-One-hop authorities cited:
-
-- [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
-  — currently `audited_conditional` (audit row:
-  `observable_principle_from_axiom_note`). Upstream conditional
-  authority for the load-bearing premise that physical local scalar
-  observables are exact source derivatives of the unique additive
-  CPT-even scalar generator `W[J] = log|det(D+J)| - log|det D|`, given
-  premises P1 (scalar additivity), P2 (CPT-even phase blindness),
-  P3 (continuity / minimal regularity), and P4 (normalization choice).
-  This is the upstream authority the audit verdict identifies as
-  required for the bosonic coefficient law `K00 = 2 tau_+` to follow
-  from isospectrality rather than be asserted.
-- [`DM_NEUTRINO_WEAK_EVEN_SWAP_REDUCTION_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_WEAK_EVEN_SWAP_REDUCTION_THEOREM_NOTE_2026-04-15.md)
-  — currently `unaudited` (audit row:
-  `dm_neutrino_weak_even_swap_reduction_theorem_note_2026-04-15`).
-  Upstream authority candidate for the exact swap-even weak mode
-  `tau_+ = tau_E + tau_T` on the row-sum generator `J2`. This is the
-  upstream that would supply the source-side `tau_+` carrier without
-  hard-coding.
-- [`DM_NEUTRINO_TRIPLET_CHARACTER_SOURCE_THEOREM_NOTE_2026-04-15.md`](DM_NEUTRINO_TRIPLET_CHARACTER_SOURCE_THEOREM_NOTE_2026-04-15.md)
-  — currently `unaudited` (audit row:
-  `dm_neutrino_triplet_character_source_theorem_note_2026-04-15`).
-  Upstream authority candidate for the source-oriented branch values
-  `tau_E = tau_T = 1/2` flowing into `tau_+ = 1` and therefore
-  `K00 = 2`. The audit verdict records these source amplitudes as
-  hard-coded in the current runner; the path to deriving them is
-  upstream closure of this triplet-character source authority, not
-  local rewriting of this note.
-
-Because all three cited upstream authorities are either `unaudited` or
-`audited_conditional`, the heavy-basis diagonal normalization
-identification `K00 = 2` cannot lift past `audited_conditional` under
-the standard cite-chain rule. The current `audited_renaming` status
-records that the source-amplitude branch is hard-coded; the path to
-moving from `audited_renaming` to `audited_conditional` is the
-weak-even-swap and triplet-character source upstream closures cited
-above. The path to moving from `audited_conditional` to
-`audited_clean`/retained additionally requires
-`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE` to lift past its own
-conditional verdict (i.e., P1-P4 to be ratified). No audit JSON edit
-is required by this addendum.
-
-The runner-checked content of this note (Part 1: target formula
-`K00 = (A + 4b + 2c + 2d)/3 = Tr(H F00)` with `F00 = J3/3` independent
-of `(delta, rho, gamma)`; Part 2: isospectrality of `F00` with
-`(1/2) J2` (both rank-one projectors, spectrum `{+1}` plus zeros);
-Part 3: identical exact bosonic response forcing
-`K00 = 2 tau_+`; Part 4: source package `tau_E = tau_T = 1/2` giving
-`tau_+ = 1` and `K00 = 2`) is exact finite-dimensional matrix algebra
-on the 3 x 3 heavy basis and the 2 x 2 source row-sum block and is
-independent of the cited upstream authorities. The cite chain is what
-supplies the physical selection rule that turns isospectrality into a
-coefficient identity, and the source-side authority that would supply
-`tau_E = tau_T = 1/2` from `Cl(3)` on `Z^3` rather than as an imported
-branch convention.
-
-## Honest auditor read
-
-The 2026-05-05 audit recorded this row as `audited_renaming` (a
-narrowing verdict, not a failure) with the observation that A=7
-algebraic checks close, but the load-bearing identification of the
-target `K00` normalization with twice the source amplitude is imposed
-as a coefficient law rather than independently computed, and the final
-value `K00 = 2` depends on hard-coded `tau_E = tau_T = 1/2` with no
-retained upstream authority cited in the restricted packet. The
-cite-chain repair above wires `OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE`
-(`audited_conditional`) as the bosonic-coefficient-law authority and
-the weak-even-swap and triplet-character source theorems (both
-`unaudited`) as the source-amplitude upstream authorities. The fact
-that two of the three upstream authorities are still `unaudited` is
-registered explicitly here as an open class D upstream gap; closing
-those two upstream rows is the path to lifting the current
-`audited_renaming` verdict toward `audited_conditional`, not local
-rewriting of this note. Effective status remains `audited_renaming`
-under the cite-chain rule because the strongest upstream is still
-itself only `audited_conditional`. The note's `audit_status` is
-unchanged by this addendum.
-
-## Scope of this rigorization
-
-This rigorization uses graph-bookkeeping citation with an
-explicit upstream-gap registration. It does not change any
-algebraic content, runner output, or load-bearing step classification.
-It records the upstream authorities the audit verdict expected and
-matches the live cite-chain pattern used by the
-`DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md` rigorize
-(commit `8e84f0c23`) and the `DM_NEUTRINO_SCHUR_SUPPRESSION_THEOREM_NOTE_2026-04-15.md`
-cluster rigorize (commit `02ad4fadd`).
-
-## Scope of this 2026-05-16 honest demotion
-
-The 2026-05-16 follow-up edit (this revision) does not add or change
-any algebraic content, runner code, or load-bearing step classification
-either. It narrows the headline status line, the Question/Bottom-line
-framing, and the Consequence section to make the two load-bearing
-upstream premises (observable-principle premise; source-amplitude
-premise) explicit at the top of the note rather than only at the
-graph-bookkeeping addendum, and to make the conditional nature of the
-endpoint `K00 = 2` explicit in the headline. It matches the conditional
-headline pattern of the sister theorem
-`DM_NEUTRINO_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15.md`
-(headline "(Conditional)"). It does not edit the runner, the runner
-cache, the audit ledger JSONs, the publication matrix, or any
-verdict-bearing audit artefact. The note's `audit_status` is unchanged
-and must be re-set by the audit lane, not by this edit.

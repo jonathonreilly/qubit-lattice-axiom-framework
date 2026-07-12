@@ -1,243 +1,273 @@
 #!/usr/bin/env python3
-"""
-DM neutrino K00 bosonic normalization theorem.
+"""Exact restricted-packet identifiability test for DM-neutrino K00.
 
-Framework convention:
-  "axiom" means only the single framework axiom Cl(3) on Z^3.
+The runner does not assign ``K00 = 2`` or ``tau_E = tau_T = 1/2``.  It
+constructs the most general swap-even bright-ray source deformation and solves
+the scalar-baseline response-matching equation symbolically.  The result is
 
-Question:
-  Can the exact heavy-neutrino-basis diagonal normalization
+    K00 = c * tau_plus,
 
-      K00 = (K_mass)00
+where ``c`` is the unprovided source-operator embedding scale.  It also shows
+that swap symmetry fixes only ``tau_E = tau_T``, not their common magnitude.
 
-  be fixed canonically from the current exact source package and the unique
-  additive CPT-even bosonic observable?
-
-Answer:
-  Yes.
-
-  The target functional K00 has the exact Frobenius-dual generator
-
-      F00 = J3 / 3
-
-  with J3 the 3x3 all-ones matrix, while the exact swap-even weak source mode
-  tau_+ lives on the 2x2 row-sum generator
-
-      J2 = [[1,1],[1,1]].
-
-  Since F00 is isospectral to (1/2) J2, the bosonic observable principle fixes
-
-      K00 = 2 tau_+.
-
-  On the sharp source-oriented branch tau_+ = 1, so
-
-      K00 = 2.
+The negative conclusion is deliberately restricted to the supplied 2x2/3x3
+packet.  A future source-action theorem that constructs both ``c = 2`` and
+``tau_plus = 1`` would falsify the obstruction and recover ``K00 = 2``.
 """
 
 from __future__ import annotations
 
-import math
+import json
 import sys
+from pathlib import Path
 
-import numpy as np
+import sympy as sp
 
+
+ROOT = Path(__file__).resolve().parents[1]
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
-PI = np.pi
-OMEGA = np.exp(2j * PI / 3.0)
-UZ3 = (1.0 / np.sqrt(3.0)) * np.array(
-    [
-        [1.0, 1.0, 1.0],
-        [1.0, OMEGA, OMEGA * OMEGA],
-        [1.0, OMEGA * OMEGA, OMEGA],
-    ],
-    dtype=complex,
-)
-R = np.array(
-    [
-        [1.0, 0.0, 0.0],
-        [0.0, 1.0 / np.sqrt(2.0), 1.0 / np.sqrt(2.0)],
-        [0.0, -1.0 / np.sqrt(2.0), 1.0 / np.sqrt(2.0)],
-    ],
-    dtype=complex,
-)
 
-J3 = np.ones((3, 3), dtype=float)
-F00 = J3 / 3.0
-J2 = np.ones((2, 2), dtype=float)
-FROW = 0.5 * J2
-
-
-def check(name: str, condition: bool, detail: str = "") -> bool:
+def check(name: str, condition: bool, detail: str = "") -> None:
     global PASS_COUNT, FAIL_COUNT
-    status = "PASS" if condition else "FAIL"
     if condition:
         PASS_COUNT += 1
+        tag = "PASS"
     else:
         FAIL_COUNT += 1
-    msg = f"  [{status}] {name}"
-    if detail:
-        msg += f"  ({detail})"
-    print(msg)
-    return condition
+        tag = "FAIL"
+    suffix = f"  ({detail})" if detail else ""
+    print(f"  [{tag}] [A] {name}{suffix}")
 
 
-def h_from_breaking_triplet(
-    A: float,
-    b: float,
-    c: float,
-    d: float,
-    delta: float,
-    rho: float,
-    gamma: float,
-) -> np.ndarray:
-    return np.array(
-        [
-            [A, b + rho, b - rho - 1j * gamma],
-            [b + rho, c + delta, d],
-            [b - rho + 1j * gamma, d, c - delta],
+def matrix_zero(matrix: sp.Matrix) -> bool:
+    return all(sp.simplify(entry) == 0 for entry in matrix)
+
+
+def normalized_determinant_ratio(matrix: sp.Matrix, mass: sp.Symbol) -> sp.Expr:
+    dimension = matrix.rows
+    return sp.factor(matrix.det() / mass**dimension)
+
+
+def part1_exact_target_and_source_rays() -> tuple[sp.Matrix, sp.Matrix, sp.Symbol]:
+    print("\n" + "=" * 88)
+    print("PART 1: THE EXPLICIT TARGET AND SOURCE OBJECTS FIX RAYS, NOT COEFFICIENTS")
+    print("=" * 88)
+
+    kappa, a = sp.symbols("kappa a", real=True)
+    f00 = sp.ones(3) / 3
+    p_plus = sp.ones(2) / 2
+    swap = sp.Matrix([[0, 1], [1, 0]])
+
+    check(
+        "F00 = J3/3 is an exact rank-one projector",
+        matrix_zero(f00 * f00 - f00) and f00.rank() == 1 and sp.trace(f00) == 1,
+    )
+    check(
+        "P_plus = J2/2 is an exact swap-even rank-one projector",
+        matrix_zero(p_plus * p_plus - p_plus)
+        and p_plus.rank() == 1
+        and matrix_zero(swap * p_plus - p_plus),
+    )
+
+    h_kappa = kappa * f00
+    uniform_target = sp.ones(3, 1) / sp.sqrt(3)
+    check(
+        "The aligned family H_kappa = kappa F00 has both the heavy bright entry and trace-dual K00 equal to kappa",
+        sp.simplify((uniform_target.T * h_kappa * uniform_target)[0] - kappa) == 0
+        and sp.simplify(sp.trace(h_kappa * f00) - kappa) == 0,
+        "kappa remains a free real symbol",
+    )
+
+    tau = sp.Matrix([a, a])
+    check(
+        "The complete swap-fixed source-vector family is tau = a(1,1)",
+        matrix_zero(swap * tau - tau)
+        and (swap - sp.eye(2)).nullspace() == [sp.Matrix([1, 1])],
+        "swap symmetry fixes direction but not a",
+    )
+
+    projector_column = p_plus[:, 0]
+    unit_bright_vector = sp.Matrix([1 / sp.sqrt(2), 1 / sp.sqrt(2)])
+    check(
+        "Projector-column and unit-vector normalizations select different coordinates on the same ray",
+        projector_column == sp.Matrix([sp.Rational(1, 2), sp.Rational(1, 2)])
+        and sp.simplify(projector_column[0] / unit_bright_vector[0] - 1 / sp.sqrt(2)) == 0
+        and projector_column != unit_bright_vector,
+        "(1/2,1/2) versus (1/sqrt(2),1/sqrt(2))",
+    )
+
+    return f00, p_plus, kappa
+
+
+def part2_solve_the_response_matching_equation(
+    f00: sp.Matrix, p_plus: sp.Matrix, kappa: sp.Symbol
+) -> tuple[sp.Symbol, sp.Symbol]:
+    print("\n" + "=" * 88)
+    print("PART 2: EXACT RESPONSE MATCHING LEAVES THE SOURCE-EMBEDDING SCALE FREE")
+    print("=" * 88)
+
+    mass = sp.Symbol("m", nonzero=True, real=True)
+    tau_plus, c = sp.symbols("tau_plus c", real=True)
+    target_block = mass * sp.eye(3) + kappa * f00
+    source_block = mass * sp.eye(2) + c * tau_plus * p_plus
+
+    target_ratio = normalized_determinant_ratio(target_block, mass)
+    source_ratio = normalized_determinant_ratio(source_block, mass)
+    response_residual = sp.factor(target_ratio - source_ratio)
+
+    check(
+        "The target normalized determinant is 1 + K00/m",
+        sp.simplify(target_ratio - (1 + kappa / mass)) == 0,
+        str(target_ratio),
+    )
+    check(
+        "The general bright-ray source normalized determinant is 1 + c tau_plus/m",
+        sp.simplify(source_ratio - (1 + c * tau_plus / mass)) == 0,
+        str(source_ratio),
+    )
+    check(
+        "Equal scalar-baseline response is equivalent to K00 = c tau_plus",
+        sp.factor(mass * response_residual) == kappa - c * tau_plus
+        and sp.solve(sp.Eq(response_residual, 0), kappa) == [c * tau_plus],
+        f"residual={response_residual}",
+    )
+    logabs_polynomial_coefficients = sp.Poly(
+        sp.expand((mass + kappa) ** 2 - (mass + c * tau_plus) ** 2),
+        mass,
+    ).all_coeffs()
+    check(
+        "Equality of log-absolute responses on every common nonsingular interval has no extra sign branch",
+        sp.solve(logabs_polynomial_coefficients, [kappa], dict=True)
+        == [{kappa: c * tau_plus}],
+        "squared determinant polynomials force the same coefficient law",
+    )
+    check(
+        "The advertised coefficient law is recovered only at the extra choice c = 2",
+        sp.simplify((c * tau_plus).subs(c, 2) - 2 * tau_plus) == 0,
+        "c=2 is the embedding tau_plus J2 = 2 tau_plus P_plus",
+    )
+
+    return tau_plus, c
+
+
+def part3_countermodels_show_both_walls_are_independent(
+    f00: sp.Matrix,
+    p_plus: sp.Matrix,
+    kappa: sp.Symbol,
+    tau_plus: sp.Symbol,
+    c: sp.Symbol,
+) -> None:
+    print("\n" + "=" * 88)
+    print("PART 3: COUNTERMODELS ISOLATE TWO INDEPENDENT NORMALIZATION WALLS")
+    print("=" * 88)
+
+    mass = sp.Symbol("m", positive=True)
+
+    def matched_ratios(t_value: sp.Expr, c_value: sp.Expr) -> tuple[sp.Expr, sp.Expr, sp.Expr]:
+        k_value = sp.simplify(t_value * c_value)
+        target = normalized_determinant_ratio(
+            mass * sp.eye(3) + k_value * f00, mass
+        )
+        source = normalized_determinant_ratio(
+            mass * sp.eye(2) + c_value * t_value * p_plus, mass
+        )
+        return k_value, target, source
+
+    k_projector, target_projector, source_projector = matched_ratios(1, 1)
+    k_rowsum, target_rowsum, source_rowsum = matched_ratios(1, 2)
+
+    check(
+        "At fixed tau_plus = 1, projector and row-sum embeddings both match response but give different K00",
+        sp.simplify(target_projector - source_projector) == 0
+        and sp.simplify(target_rowsum - source_rowsum) == 0
+        and k_projector == 1
+        and k_rowsum == 2,
+        "c=1 gives K00=1; c=2 gives K00=2",
+    )
+
+    k_half, target_half, source_half = matched_ratios(sp.Rational(1, 2), 2)
+    k_one, target_one, source_one = matched_ratios(1, 2)
+    check(
+        "At fixed row-sum embedding c = 2, two swap-even source magnitudes give different K00",
+        sp.simplify(target_half - source_half) == 0
+        and sp.simplify(target_one - source_one) == 0
+        and k_half == 1
+        and k_one == 2,
+        "tau_plus=1/2 gives K00=1; tau_plus=1 gives K00=2",
+    )
+
+    check(
+        "The response equation contains no condition that sets tau_plus = 1",
+        tau_plus in (c * tau_plus).free_symbols
+        and sp.solve(sp.Eq(kappa, c * tau_plus), tau_plus) == [kappa / c],
+        "tau_plus remains an independent symbol",
+    )
+
+
+def part4_framework_dependency_guard() -> None:
+    print("\n" + "=" * 88)
+    print("PART 4: THE APPROVED PREMISE SURFACE DOES NOT SUPPLY THE MISSING MAP")
+    print("=" * 88)
+
+    registry_path = ROOT / "docs/audit/data/axiom_premise_nodes.json"
+    registry = json.loads(registry_path.read_text(encoding="utf-8"))
+    minimal_node = registry["nodes"]["minimal_axioms"]
+    minimal_path = ROOT / minimal_node["current_path"]
+    minimal_text = minimal_path.read_text(encoding="utf-8")
+
+    check(
+        "The approved premise registry contains only the four named foundation/primitive nodes",
+        registry["canonical_ids"]
+        == [
+            "minimal_axioms",
+            "scale_reference_primitive",
+            "kinetic_isotropy_primitive",
+            "realized_state_primitive",
         ],
-        dtype=complex,
-    )
-
-
-def mass_basis_kernel_from_h(h: np.ndarray) -> np.ndarray:
-    return R.T @ (UZ3.conj().T @ h @ UZ3) @ R
-
-
-def relative_generator(mass: float, source_coeff: float, operator: np.ndarray) -> float:
-    base = mass * np.eye(operator.shape[0], dtype=complex)
-    sign, logabs = np.linalg.slogdet(base + source_coeff * operator)
-    if abs(sign) == 0:
-        raise ValueError("singular source-deformed block encountered")
-    return float(logabs - operator.shape[0] * math.log(abs(mass)))
-
-
-def part1_k00_has_an_exact_uniform_projector_generator() -> None:
-    print("\n" + "=" * 88)
-    print("PART 1: K00 HAS AN EXACT UNIFORM PROJECTOR GENERATOR")
-    print("=" * 88)
-
-    pars = dict(A=1.8, b=0.35, c=1.1, d=0.25, delta=0.16, rho=-0.09, gamma=0.28)
-    h = h_from_breaking_triplet(**pars)
-    km = mass_basis_kernel_from_h(h)
-    k00_direct = float(np.real(km[0, 0]))
-    k00_trace = float(np.real(np.trace(h @ F00)))
-    k00_formula = (pars["A"] + 4.0 * pars["b"] + 2.0 * pars["c"] + 2.0 * pars["d"]) / 3.0
-
-    varied = h_from_breaking_triplet(pars["A"], pars["b"], pars["c"], pars["d"], -0.37, 0.22, -0.41)
-    k00_varied = float(np.real(mass_basis_kernel_from_h(varied)[0, 0]))
-
-    check(
-        "The exact heavy-basis diagonal K00 agrees with the transformed kernel entry",
-        abs(k00_direct - k00_formula) < 1e-12,
-        f"K00={k00_direct:.12f}",
     )
     check(
-        "The same K00 is the Frobenius pairing against F00 = J3/3",
-        abs(k00_direct - k00_trace) < 1e-12,
-        f"trace(F00 H)={k00_trace:.12f}",
-    )
-    check(
-        "K00 is independent of the odd/even breaking triplet (delta,rho,gamma)",
-        abs(k00_direct - k00_varied) < 1e-12,
-        f"varied K00={k00_varied:.12f}",
+        "The minimal-axiom memo explicitly leaves source/action and observable identification outside its content",
+        "source/action and physical-observable identification" in minimal_text
+        and "log-det" in minimal_text
+        and "Further physical" in minimal_text
+        and "structure requires" in minimal_text,
+        minimal_node["current_path"],
     )
 
-
-def part2_f00_is_isospectral_to_the_scaled_source_row_sum_generator() -> None:
-    print("\n" + "=" * 88)
-    print("PART 2: F00 IS ISOSPECTRAL TO THE SCALED SOURCE ROW-SUM GENERATOR")
-    print("=" * 88)
-
-    eig_f00 = np.linalg.eigvalsh(F00)
-    eig_frow = np.linalg.eigvalsh(FROW)
-
+    primitive_needles = {
+        "scale_reference_primitive": ("units conversion", "selector"),
+        "kinetic_isotropy_primitive": ("c_t = c_s", "readout bridge"),
+        "realized_state_primitive": ("pointwise", "normalization rule"),
+    }
+    primitive_scopes_ok = True
+    for node_id, needles in primitive_needles.items():
+        node = registry["nodes"][node_id]
+        source = (ROOT / node["current_path"]).read_text(encoding="utf-8")
+        primitive_scopes_ok &= all(needle in source for needle in needles)
+        primitive_scopes_ok &= "K00" not in source and "tau_plus" not in source
     check(
-        "The target K00 generator is a rank-one projector with spectrum {1,0,0}",
-        np.max(np.abs(eig_f00 - np.array([0.0, 0.0, 1.0]))) < 1e-12,
-        f"eig(F00)={np.round(eig_f00, 12)}",
-    )
-    check(
-        "The scaled source row-sum generator (1/2)J2 is a rank-one projector with spectrum {1,0}",
-        np.max(np.abs(eig_frow - np.array([0.0, 1.0]))) < 1e-12,
-        f"eig(FROW)={np.round(eig_frow, 12)}",
-    )
-    check(
-        "So the target diagonal channel and the scaled source row-sum mode are exactly isospectral",
-        True,
-        "both have one nonzero eigenvalue +1 and otherwise zero spectrum",
-    )
-
-
-def part3_the_bosonic_observable_principle_fixes_k00_to_2_tau_plus() -> None:
-    print("\n" + "=" * 88)
-    print("PART 3: THE BOSONIC OBSERVABLE PRINCIPLE FIXES K00 = 2 TAU_PLUS")
-    print("=" * 88)
-
-    mass = 1.73
-    jvals = np.linspace(-0.35, 0.35, 8)
-    max_diff = 0.0
-    for j in jvals:
-        r_target = relative_generator(mass, j, F00)
-        r_source = relative_generator(mass, j, FROW)
-        max_diff = max(max_diff, abs(r_target - r_source))
-
-    check(
-        "The target K00 generator and the scaled source row-sum mode have identical exact bosonic response",
-        max_diff < 1e-12,
-        f"max response diff={max_diff:.2e}",
-    )
-
-    tau_plus = 1.0
-    k00 = 2.0 * tau_plus
-    check(
-        "Because the physical source amplitude multiplies J2 rather than (1/2)J2, the exact coefficient law is K00 = 2 tau_+",
-        abs(k00 - 2.0) < 1e-12,
-        f"K00/tau_+ = {k00 / tau_plus:.12f}",
-    )
-
-
-def part4_the_sharp_source_oriented_branch_gives_k00_equal_2() -> None:
-    print("\n" + "=" * 88)
-    print("PART 4: THE SHARP SOURCE-ORIENTED BRANCH GIVES K00 = 2")
-    print("=" * 88)
-
-    tau_E = 0.5
-    tau_T = 0.5
-    tau_plus = tau_E + tau_T
-    k00 = 2.0 * tau_plus
-
-    check(
-        "The exact source package already fixes tau_E = tau_T = 1/2",
-        abs(tau_E - 0.5) < 1e-12 and abs(tau_T - 0.5) < 1e-12,
-        f"(tau_E,tau_T)=({tau_E:.6f},{tau_T:.6f})",
-    )
-    check(
-        "Therefore tau_+ = 1 on the sharp source-oriented branch",
-        abs(tau_plus - 1.0) < 1e-12,
-        f"tau_+={tau_plus:.12f}",
-    )
-    check(
-        "So the exact diagonal normalization is K00 = 2",
-        abs(k00 - 2.0) < 1e-12,
-        f"K00={k00:.12f}",
+        "Each approved primitive source keeps normalization/readout physics outside its granted scope",
+        primitive_scopes_ok,
     )
 
 
 def main() -> int:
     print("=" * 88)
-    print("DM NEUTRINO K00 BOSONIC NORMALIZATION THEOREM")
+    print("DM NEUTRINO K00 RESTRICTED-PACKET NORMALIZATION IDENTIFIABILITY NO-GO")
     print("=" * 88)
 
-    part1_k00_has_an_exact_uniform_projector_generator()
-    part2_f00_is_isospectral_to_the_scaled_source_row_sum_generator()
-    part3_the_bosonic_observable_principle_fixes_k00_to_2_tau_plus()
-    part4_the_sharp_source_oriented_branch_gives_k00_equal_2()
+    f00, p_plus, kappa = part1_exact_target_and_source_rays()
+    tau_plus, c = part2_solve_the_response_matching_equation(f00, p_plus, kappa)
+    part3_countermodels_show_both_walls_are_independent(
+        f00, p_plus, kappa, tau_plus, c
+    )
+    part4_framework_dependency_guard()
 
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    print("RESULT: exact negative boundary on the restricted packet; positive K00=2 remains open")
     print("=" * 88)
     return 0 if FAIL_COUNT == 0 else 1
 

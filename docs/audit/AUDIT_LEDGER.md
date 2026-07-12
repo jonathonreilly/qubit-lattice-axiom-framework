@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 411 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2661 |
+| unaudited | 2660 |
 | audit_in_progress | 25 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -37,6 +37,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 8 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
+| `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
 | `decoration_under_mirror_mutual_information_chokepoint_note` | 1 |
 | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | 1 |
@@ -47,16 +48,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 25 |
 | `audited_clean` | 539 |
 | `audited_conditional` | 92 |
-| `audited_decoration` | 20 |
+| `audited_decoration` | 21 |
 | `audited_failed` | 43 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3011 |
+| `unaudited` | 3010 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2056 |
-| `decoration` | 23 |
+| `bounded_theorem` | 2055 |
+| `decoration` | 24 |
 | `meta` | 357 |
 | `no_go` | 471 |
 | `open_gate` | 196 |
@@ -782,6 +783,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
+| `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | cross_family | codex-gpt-5.6 | A | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` |
 | `left_handed_charge_matching_note` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
@@ -6061,6 +6063,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The stated stencil gives lambda(k)=sum_i k_i^2-(1/12)sum_i k_i^4+O(|k|^6), so the singular Fourier coefficient is exactly the continuum |k|^-2 one under the packet's transform convention. Independently, the axis residual of 1/(4 pi r) scales as 7/(8 pi) r^-5, matching the runner's coefficient and confirming the stated lower-order lattice-harmonic behavior away from the source.
 - **rationale:** The load-bearing coefficient is not imported from the listed textbook authorities; it follows from the exact framework stencil's small-k symbol and the standard continuum Fourier normalization. The runner source genuinely evaluates the stencil symbol, continuum flux convention, and discrete residual, with no helper imports or external comparator data. The runner does hard-code the candidate continuum kernel for the flux/residual checks, but the independent Taylor/Fourier check closes the normalization from the stated operator rather than relying on that printout alone.
 - **auditor confidence:** high
+
+### `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27`
+
+- **Note:** [`LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md`](../../docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Single-parent dependency reroute for the retained-bounded nearest-neighbor Z3 Green-kernel asymptotic, with standard checks of symbol normalization, continuum flux, and axis residual decay.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00055-lattice_greens_maradudin_asy`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Given the parent framework-local Green-kernel theorem, the symbol, unit-flux, and lattice-residual checks fix the same leading coefficient c = 1/(4 pi) for the stated stencil.  _(class `A`)_
+- **chain closes:** False — The local arithmetic checks close, but the bridge does not independently prove the lattice Green-kernel asymptotic; B4 consumes the retained-bounded parent theorem. The row is therefore decoration under that parent rather than a separate theorem.
+- **rationale:** The runner genuinely evaluates the small-k symbol, unit flux, and finite-axis lattice residual, and those checks support B1-B3. Its B4 section does not independently derive the asymptotic: it inserts 1/(4 pi), checks hard-coded decimal representations, and explicitly relies on the retained-bounded parent theorem. With zero external-comparator checks and only one substantive parent, the row is a dependency wrapper with algebraic decoration.
+- **decoration parent:** `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `lattice_kernel_transfer_norm_note`
 

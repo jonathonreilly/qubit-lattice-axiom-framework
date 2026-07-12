@@ -32,16 +32,16 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3754 |
-| Applied audit verdicts | 629 |
+| Applied audit verdicts | 630 |
 | Retained-grade rows, including boxed decorations | 525 |
 | Retained positive theorems | 95 |
 | Retained no-go rows | 35 |
 | Retained bounded rows | 376 |
 | Boxed decorations under retained parents | 19 |
 | Open gates | 7 |
-| Unaudited rows | 2752 |
+| Unaudited rows | 2751 |
 | Retained-pending-chain rows | 1 |
-| Audited conditional rows | 61 |
+| Audited conditional rows | 62 |
 | Audited renaming rows | 18 |
 | Audited numerical-match rows | 6 |
 | Citation cycles detected | 10 |

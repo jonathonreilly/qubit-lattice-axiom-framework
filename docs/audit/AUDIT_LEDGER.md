@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 376 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2752 |
+| unaudited | 2751 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 61 |
+| ~~audited_conditional~~ | 62 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 491 |
-| `audited_conditional` | 61 |
+| `audited_conditional` | 62 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3102 |
+| `unaudited` | 3101 |
 
 | claim_type | count |
 |---|---:|
@@ -666,6 +666,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-current | C | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -5098,6 +5099,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Direct matrix-unit expansion proves the reconstruction and partial-trace identities for arbitrary finite d, while spectral decomposition of a positive Choi matrix gives the stated Kraus operators and operator-sum map. The accepted Qubit premise supplies the finite-region matrix-algebra substrate without adding an open physical bridge.
 - **rationale:** The formulas are a genuine algebraic normalization closure, not a definition, tuned numerical match, or external-comparator inference. The runner source performs substantive symbolic and numerical calculations, including exact M₂ reconstruction, d=2 and d=4 round trips, named channels, a non-CP boundary example, and both mixed-convention scaling defects; it does not hard-code the conclusions. Although the finite tests alone would not establish the universal theorem, the all-d result follows directly from the displayed matrix-unit and spectral-decomposition algebra.
 - **auditor confidence:** high
+
+### `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02`
+
+- **Note:** [`KS_ETA_VS_JW_STRING_CAR_LOCALITY_NO_GO_NOTE_2026-06-02.md`](../../docs/KS_ETA_VS_JW_STRING_CAR_LOCALITY_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On the supplied finite tensor-qubit patch, Kogut-Susskind eta link signs plus ungraded tensor locality do not force cross-site CAR over the hard-core-boson frame.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop-ks-jw-locality-20260712`  (codex-current; independence=cross_family)
+- **load-bearing step:** With the same c-number eta coefficients, single-site nilpotent tensor ladders commute across sites while Jordan-Wigner-dressed ladders anticommute only because of their operator-valued strings.  _(class `C`)_
+- **chain closes:** False — The finite HCB counterexample and eta/string CAR counterfactuals close the narrow non-forcing argument, but the runner artifact does not close as written: its C2 headline says both hopping realizations are nearest-neighbor local while it asserts only HCB locality.
+- **rationale:** Issue: the runner labels both HCB and Jordan-Wigner staggered hopping as nearest-neighbor local, but asserts locality only for HCB; an independent tensor-support calculation finds 8 of 12 JW link bilinears act on intermediate sites. Why this blocks: the 23-PASS artifact overstates an exact locality fact, so the source/runner packet is not clean as written even though the HCB counterexample and eta/string CAR counterfactuals support the narrower no-forcing result. Repair target: distinguish ungraded tensor locality from graded fermion locality, assert the actual JW link supports, and refresh the cache. Claim boundary until fixed: cite only the finite HCB counterexample and eta/string separation, not the runner as proof that JW hopping is tensor-local.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `kubo_range_of_validity_note`
 

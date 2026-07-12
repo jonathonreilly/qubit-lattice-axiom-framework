@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 674,
     "high": 353,
-    "leaf": 1173,
+    "leaf": 1172,
     "medium": 775
   },
   "cycle_break_target_count": 49,
@@ -52432,28 +52432,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.085,
-      "note_path": "docs/ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "alpha_s_derived_narrow_theorem_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -52632,6 +52610,30 @@
       "ready": true,
       "runner_path": "scripts/frontier_kms_fermionic_brydges_majorant_external_narrow.py",
       "transitive_descendants": 2
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/acphilambda_fermionic_realification_pfaffian_power_identity_2026_07_12.py",
+      "transitive_descendants": 1
     },
     {
       "audit_independence_required": "any_non_self",
@@ -60081,30 +60083,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/acphilambda_fermionic_realification_pfaffian_power_identity_2026_07_12.py",
       "transitive_descendants": 1
     },
     {
@@ -84428,5 +84406,5 @@
     }
   ],
   "ready_count": 619,
-  "total_pending": 2975
+  "total_pending": 2974
 }

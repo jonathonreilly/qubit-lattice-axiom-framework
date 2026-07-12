@@ -18,11 +18,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 72 |
+| **retained** | 73 |
 | **retained_bounded** | 301 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2950 |
+| unaudited | 2949 |
 | audit_in_progress | 1 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
@@ -40,13 +40,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 1 |
-| `audited_clean` | 375 |
+| `audited_clean` | 376 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 15 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3300 |
+| `unaudited` | 3299 |
 
 | claim_type | count |
 |---|---:|
@@ -112,6 +112,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `s3_mass_matrix_conditional_degeneracy_note_2026-07-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -609,6 +610,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The physical charged-lepton readout is the fixed-locus density class h, identity-read in h-units as the eta angle, with no extra clock-rate, transport, or normalization factor.  _(class `F`)_
 - **chain closes:** False — The note correctly presents the identity as an open obligation, but supplies no carrier/source-action bridge or normalization theorem deriving it. The physical density-to-angle identification therefore remains unclosed.
 - **rationale:** Issue: the target equates an h-density class with the physical eta-angle readout, but the restricted packet contains no derivation of that map. Why this blocks: Record additivity and the approved primitives do not themselves determine the carrier, source action, or dimensionless readout normalization. Repair target: supply an independently audited carrier/source-action theorem together with either a native eta/holonomy identity or an inhomogeneous Record-facing normalization theorem. Claim boundary until fixed: the identification and all results using it remain conditional or pending-chain.
+- **auditor confidence:** high
+
+### `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04`
+
+- **Note:** [`ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For every finite complex matrix K, the displayed realification has determinant |det_C(K)|^2 and the displayed ordered holomorphic Berezin Gaussian equals det_C(K); no physical carrier or occupancy-rule identification is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-ac-det-fresh`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** With the displayed Berezin ordering, the holomorphic Gaussian equals det_C(K), while det_R R(K) equals det_C(K) det_C(conjugate(K)) = |det_C(K)|^2.  _(class `A`)_
+- **chain closes:** True — Direct block similarity proves the realification identity, and an independent permutation-sign expansion proves the Berezin identity under the stated left-derivative ordering. The note has no dependency imports and explicitly excludes the physical charged-lepton selector bridge.
+- **rationale:** The theorem is exact and self-contained. Direct multiplication gives S R(K) = diag(K, conjugate(K)) S with det(S) = (-2i)^n nonzero, so the determinant identity holds for singular as well as nonsingular K without imported physics. Independently, only permutation monomials survive in the top degree of exp(sum_ij K_ij chi_j chibar_i); the n! multiplicity cancels the factorial and reordering has sign sgn(permutation), yielding det_C(K), with an exhaustive independent sign check through n=8. Residual risk is limited to changing the explicitly stated Berezin convention; all physical charged-lepton carrier and occupancy identifications lie outside the audited scope.
 - **auditor confidence:** high
 
 ### `action_crossover_note`

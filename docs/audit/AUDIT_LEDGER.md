@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 414 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2651 |
-| audit_in_progress | 27 |
+| unaudited | 2650 |
+| audit_in_progress | 28 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,14 +45,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 27 |
+| `audit_in_progress` | 28 |
 | `audited_clean` | 544 |
 | `audited_conditional` | 94 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 43 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3001 |
+| `unaudited` | 3000 |
 
 | claim_type | count |
 |---|---:|
@@ -138,6 +138,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_clock_rate_interface_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |

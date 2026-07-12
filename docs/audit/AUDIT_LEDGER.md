@@ -22,8 +22,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_no_go** | 28 |
 | **retained_bounded** | 361 |
 | _retained_pending_chain_ | 3 |
-| open_gate | 6 |
-| unaudited | 2801 |
+| open_gate | 7 |
+| unaudited | 2800 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 464 |
+| `audited_clean` | 465 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3151 |
+| `unaudited` | 3150 |
 
 | claim_type | count |
 |---|---:|
@@ -138,6 +138,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.6 | C | - |
 | `acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
@@ -760,6 +761,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The note correctly presents the identity as an open obligation, but supplies no carrier/source-action bridge or normalization theorem deriving it. The physical density-to-angle identification therefore remains unclosed.
 - **rationale:** Issue: the target equates an h-density class with the physical eta-angle readout, but the restricted packet contains no derivation of that map. Why this blocks: Record additivity and the approved primitives do not themselves determine the carrier, source action, or dimensionless readout normalization. Repair target: supply an independently audited carrier/source-action theorem together with either a native eta/holonomy identity or an inhomogeneous Record-facing normalization theorem. Claim boundary until fixed: the identification and all results using it remain conditional or pending-chain.
 - **auditor confidence:** high
+
+### `acphilambda_hw_complementation_equivariance_support_note_2026-06-09`
+
+- **Note:** [`ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md`](../../docs/ACPHILAMBDA_HW_COMPLEMENTATION_EQUIVARIANCE_SUPPORT_NOTE_2026-06-09.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** Exact finite Boolean-cube support: hw=1/hw=2 complementation equivariance, equal C3 orbit data, and exhaustion of the stated order-48 relabelings, polynomial C3 readouts, and listed finite-profile weightings.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** open_gate  (reason: `audited_open_gate`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00365-acphilambda_hw_complementati`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On the finite surface itself, every available rescue move is compensated or nonexistent.  _(class `A`)_
+- **chain closes:** True — The runner performs exhaustive finite enumeration and symbolic algebra for the scoped surface. The conclusion does not require the expressly excluded physical-species, dynamics, registry, or charged-lepton readout bridges.
+- **rationale:** The runner computes the Boolean-cube orbits, all 48 stated cube relabelings, invariant dimensions, and circulant identities rather than hard-coding a contested physical premise. The Noether-bound argument and degree-1-to-3 decomposition close the polynomial C3-invariant readout surface, while the orientation-odd and frame-dependent components are explicitly separated. The note consistently limits the result to finite-surface support and does not promote it into a physical species, dynamics, or registry theorem.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04`
 

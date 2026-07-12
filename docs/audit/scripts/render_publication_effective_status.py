@@ -32,6 +32,7 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 import urllib.parse
 from pathlib import Path
 
@@ -81,7 +82,9 @@ def _neutralize_source_status_words(line: str) -> str:
     parts = PROTECTED_INLINE_RE.split(line)
     for index in range(0, len(parts), 2):
         parts[index] = re.sub(
-            r"\b(?:retained|promoted)\b",
+            r"\b(?:retained(?:_bounded|_no_go|_pending_chain)?|promoted|"
+            r"audited_(?:clean|conditional|renaming|decoration|failed|numerical_match)|"
+            r"audit_in_progress|unaudited|open_gate)\b",
             "unratified-source-label",
             parts[index],
             flags=re.IGNORECASE,
@@ -205,7 +208,7 @@ def resolve_link(target: str, source: Path) -> Path | None:
         candidate = (DOCS / decoded[idx + len(marker):]).resolve()
     else:
         candidate = (source.parent / decoded).resolve()
-    return candidate if candidate.exists() else None
+    return candidate
 
 
 def status_badge(eff: str | None, ast: str | None) -> str:
@@ -243,7 +246,14 @@ def annotate_links(body: str, source: Path,
             return whole
         match = by_path.get(resolved)
         if not match:
-            return whole
+            lookups.append({
+                "claim_id": None,
+                "note_path": str(resolved.relative_to(REPO_ROOT)),
+                "audit_status": None,
+                "effective_status": "unresolved",
+                "criticality": None,
+            })
+            return f"{whole}&nbsp;[audit:unresolved]"
         cid, row = match
         eff = row.get("effective_status")
         ast = row.get("audit_status")
@@ -411,6 +421,14 @@ def render_divergence(all_lookups: dict[str, list[dict]],
 
 
 def main() -> int:
+    missing_sources = [src for src, _, _ in TABLES if not (PUB_DIR / src).exists()]
+    if missing_sources:
+        print(
+            "FATAL: publication effective-status sources missing: "
+            + ", ".join(missing_sources),
+            file=sys.stderr,
+        )
+        return 2
     ledger = load_ledger()
     rows = ledger.get("rows", {})
     by_path = index_by_path(rows)
@@ -420,9 +438,8 @@ def main() -> int:
     rendered: list[Path] = []
     for src, out, scope in TABLES:
         result, lookups = render_table(src, out, scope, by_path, generated_label)
-        if result is None:
-            print(f"  [skip] {src} not found")
-            continue
+        if result is None:  # guarded by the all-source preflight above
+            raise RuntimeError(f"publication source disappeared during render: {src}")
         all_lookups[src] = lookups
         rendered.append(result)
         print(f"  rendered {result.relative_to(REPO_ROOT)}  ({len(lookups)} link annotations)")

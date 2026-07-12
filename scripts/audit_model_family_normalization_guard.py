@@ -27,11 +27,11 @@ def load_apply_audit_module():
 def main() -> int:
     apply_audit = load_apply_audit_module()
     cases = {
-        "gpt-5.6": ("codex-gpt-5.6", False),
-        "gpt-5.6-sol": ("codex-gpt-5.6", True),
-        "gpt-6": ("codex-gpt-6", False),
+        "gpt-5.6": "codex-gpt-5.6",
+        "gpt-5.6-sol": "codex-gpt-5.6",
+        "gpt-6": "codex-gpt-6",
     }
-    for model, (expected_family, exact_authority) in cases.items():
+    for model, expected_family in cases.items():
         model_info = {
             "slug": model,
             "reasoning_levels": [{"effort": runner.AUDIT_REASONING_EFFORT}],
@@ -54,10 +54,8 @@ def main() -> int:
                 "auditor_reasoning_effort": runner.AUDIT_REASONING_EFFORT,
             }
         )
-        if exact_authority and provenance_error:
-            raise RuntimeError(f"{model}: exact provenance rejected: {provenance_error}")
-        if not exact_authority and not provenance_error:
-            raise RuntimeError(f"{model}: non-exact Codex provenance was accepted")
+        if provenance_error:
+            raise RuntimeError(f"{model}: full-model provenance rejected: {provenance_error}")
 
     old_family = runner.codex_family_for_model("gpt-5.5")
     if apply_audit._family_meets_floor(old_family):
@@ -67,8 +65,8 @@ def main() -> int:
         "auditor_family": old_family,
         "auditor_reasoning_effort": runner.AUDIT_REASONING_EFFORT,
     })
-    if not old_error:
-        raise RuntimeError("gpt-5.5 provenance was accepted")
+    if old_error:
+        raise RuntimeError(f"gpt-5.5 shape validation failed before floor gate: {old_error}")
 
     rejected_models = (
         "gpt-5.6-mini",

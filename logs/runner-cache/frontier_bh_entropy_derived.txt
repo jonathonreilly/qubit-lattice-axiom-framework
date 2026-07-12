@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bh_entropy_derived.py
-runner_sha256: decd901f75507b597e29e5bf47f253613802eaae703f1ab293542538b60b308f
+runner_sha256: 53e41c147fd4d8a5ff5eef93045b96971852618ad266da46bc50e5034b41ea98
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.30
+elapsed_sec: 2.36
 status: ok
 ----- stdout -----
 ========================================================================
@@ -111,26 +111,25 @@ CHECK 4: FROZEN STAR ENTROPY SCALING
   finite-L lattice RT ratios as observations.
 
 ========================================================================
-CHECK 5: SPECIES COUNTING AND HILBERT SPACE DIMENSION SCAN
+CHECK 5: INDEPENDENT-COPY SCALING IDENTITY
 ========================================================================
 
   2D lattice L=10, S_single = 7.8553, bnd = 10
   chi_eff = 10
 
-  Species interpretation: if each site has d local DOF,
-  N_s independent fermion species each contribute S_single.
-  Total S = N_s * S_single,  total bond dim = d^N_s
-  RT ratio = S / (bnd * ln(d_tot)) is species-independent
+  Duplicate-copy construction: N_s independent copies each
+  contribute the same S_single and threshold-rank factor chi_eff.
+  S_total = N_s * S_single; log chi_total = N_s * log chi_eff.
 
-   N_s     d_eff       S_tot    ln(d^Ns)       S_max    RT_ratio
+   N_s       S_tot   log chi_tot   denominator  copy_ratio
   ------------------------------------------------------------
-     1     10.00      7.8553      2.3026     23.0259      0.3412
-     2      3.16     15.7106      4.6052     46.0517      0.3412
-     3      2.15     23.5659      6.9078     69.0776      0.3412
-     4      1.78     31.4212      9.2103     92.1034      0.3412
+     1      7.8553        2.3026       23.0259      0.3412
+     2     15.7106        4.6052       46.0517      0.3412
+     3     23.5659        6.9078       69.0776      0.3412
+     4     31.4212        9.2103       92.1034      0.3412
 
-  RT ratio spread across species: 0.000000
-  (Should be 0 -- species counting is universal)
+  Copy-ratio spread: 0.000000
+  (Should be 0 for exact independent duplicates.)
 
 ========================================================================
 CHECK 6: FINITE-SIZE TREND OF RT RATIO
@@ -180,7 +179,7 @@ SYNTHESIS: BOUNDED BH ENTROPY COMPANION FROM GAUSSIAN CORRELATIONS
 
   4. FROZEN STAR SCALING: comparison identity when RT = 1/4 (sanity)
 
-  5. SPECIES UNIVERSALITY: RT ratio spread = 0.00e+00  (threshold < 1e-12)
+  5. INDEPENDENT-COPY IDENTITY: ratio spread = 0.00e+00  (threshold < 1e-12)
      PASS
 
   6a. FINITE-SIZE TAIL-FIT 2D (observation):

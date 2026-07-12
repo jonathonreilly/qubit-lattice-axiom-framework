@@ -8,7 +8,7 @@ front door and row-badged effective-status views are public claim authority.
 
 1. [Generated front-door status](../../repo/FRONT_DOOR_STATUS.md)
 2. [Current four-axiom memo](../../MINIMAL_AXIOMS_2026-06-29.md)
-3. [Audit-derived manuscript gateway](./ARXIV_DRAFT_EFFECTIVE_STATUS.md)
+3. [Author manuscript archive](./ARXIV_DRAFT.md)
 4. [Claims table with audit badges](./CLAIMS_TABLE_EFFECTIVE_STATUS.md)
 5. [Publication matrix with audit badges](./PUBLICATION_MATRIX_EFFECTIVE_STATUS.md)
 6. [Quantitative summary with audit badges](./QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md)
@@ -45,7 +45,8 @@ verdict.
 ## Current Boundary
 
 The current four named axioms are Lattice, Qubit, Admissibility, and Record.
-Registered framework primitives and any remaining supplied inputs are separate
-premise classes. They do not silently add selectors, probability or occurrence
+The three registered framework primitives are the only supplied non-axiom
+premise type. Every other named conditional or open obligation has zero premise
+weight. None of these surfaces silently adds selectors, probability or occurrence
 rules, state selection, dynamics, readout bridges, source/action maps,
 normalizations, scales, or empirical matches beyond their declared scope.

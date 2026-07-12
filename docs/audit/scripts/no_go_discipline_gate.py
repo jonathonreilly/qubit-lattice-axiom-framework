@@ -49,7 +49,6 @@ NON_CLEAN_VERDICTS = {
 }
 HONESTY_MARKERS = {"ATTEMPTED", "RULED OUT BY PRIOR"}
 ROUTE_DISPOSITIONS = {"CLOSED", "OPEN", "UNTESTED"}
-CROSS_CYCLE_CANDIDATE_LIMIT = 64
 
 PATH_TRIGGER_RE = re.compile(
     r"(?:^|[\s/._-])(?:no[\s_-]?go|obstruction|firewall|negative[\s_-]?boundary|"
@@ -192,7 +191,12 @@ NEGATED_LABEL_ASSURANCE_RE = re.compile(
     r"\b(?:not|never|without)\s+(?:an?\s+|the\s+)?"
     r"(?:no[- ]go|negative boundary|firewall)\b|"
     r"\b(?:does|do|did)\s+not\s+(?:establish|prove|imply|claim|constitute)\s+"
-    r"(?:an?\s+|the\s+)?(?:no[- ]go|negative boundary|firewall)\b",
+    r"(?:an?\s+|the\s+)?(?:no[- ]go|negative boundary|firewall)\b|"
+    r"\bno\s+(?:current\s+)?no[- ]go\b|"
+    r"\b(?:earlier|older|prior|broad)\b[^\n.;:]{0,80}\bno[- ]go\b"
+    r"[^\n.;:]{0,50}\b(?:is|was|has been)\s+withdrawn\b|"
+    r"\bhistorical filename\b[^\n.;:]{0,80}\bdoes not turn\b"
+    r"[^\n.;:]{0,80}\binto\s+(?:an?\s+)?no[- ]go\b",
     re.IGNORECASE,
 )
 LOCAL_SCOPE_EXCLUSION_RE = re.compile(
@@ -661,24 +665,10 @@ def build_cross_cycle_index(
             str(candidate.get("candidate_id") or ""),
         ),
     )
-    # Reserve one identity from every nonempty candidate class before filling
-    # the bounded relevance window. A global cap must never erase an entire
-    # evidence class merely because an earlier class is large.
-    reserved: list[dict[str, Any]] = []
-    reserved_ids: set[str] = set()
-    for candidate in ordered_candidates:
-        kind = str(candidate.get("kind") or "")
-        if kind in {str(item.get("kind") or "") for item in reserved}:
-            continue
-        reserved.append(candidate)
-        reserved_ids.add(str(candidate.get("candidate_id") or ""))
-    candidates = (
-        reserved
-        + [
-            candidate for candidate in ordered_candidates
-            if str(candidate.get("candidate_id") or "") not in reserved_ids
-        ]
-    )[:CROSS_CYCLE_CANDIDATE_LIMIT]
+    # Every relevant candidate must be dispositioned. The authenticated
+    # no-go universe prevents corpus hiding, and leaving the relevance set
+    # uncapped prevents a large same-kind family from escaping N8 review.
+    candidates = ordered_candidates
     return json.dumps(
         {
             "schema": "no_go_cross_cycle_index_v1",
@@ -688,10 +678,9 @@ def build_cross_cycle_index(
                 "one_hop_authority_audit_history": True,
                 "historical_dispositions": True,
                 "open_gates": True,
-                "candidate_limit": CROSS_CYCLE_CANDIDATE_LIMIT,
+                "candidate_limit": None,
                 "candidate_order": (
-                    "one reserved identity per nonempty kind, then kind priority, "
-                    "shared-term count descending, candidate_id"
+                    "kind priority, shared-term count descending, candidate_id"
                 ),
                 "source_corpus_version": N8_SOURCE_CORPUS_VERSION,
                 "docs_markdown_files_scanned": len(docs_markdown_paths),
@@ -1430,15 +1419,21 @@ def source_requires_no_go_discipline(
     note_body: str | None,
     claim_type_hint: str | None,
 ) -> bool:
-    if claim_type_hint == "no_go":
-        return True
-    path_text = re.sub(r"[_-]+", " ", note_path or "")
-    if PATH_TRIGGER_RE.search(path_text):
-        return True
     body = note_body or ""
     metadata = "\n".join(body.splitlines()[:80])
-    if re.search(r"(?:Type|Claim type)\s*:\s*`?no_go`?", metadata, re.IGNORECASE):
+    metadata = re.sub(r"[`*~]", "", metadata)
+    explicit_type = re.search(
+        r"(?:Type|Claim type)\s*:\s*`?([a-z_]+)`?", metadata, re.IGNORECASE
+    )
+    explicit_claim_type = explicit_type.group(1).casefold() if explicit_type else None
+    if claim_type_hint == "no_go" or explicit_claim_type == "no_go":
         return True
+    path_text = re.sub(r"[_-]+", " ", note_path or "")
+    if explicit_claim_type not in {
+        "positive_theorem", "bounded_theorem", "open_gate", "decoration", "meta"
+    }:
+        if PATH_TRIGGER_RE.search(path_text):
+            return True
     return _has_negative_boundary_assertion(body)
 
 

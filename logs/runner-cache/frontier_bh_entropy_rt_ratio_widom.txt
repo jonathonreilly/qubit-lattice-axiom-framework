@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bh_entropy_rt_ratio_widom.py
-runner_sha256: bd705abd550d10c5bc838adf80b82555e6ff446ac8e768b509b3a3ce64a7d046
+runner_sha256: e37af76d4152b0f4c9edbb207febb83c02326d3c3981634372434e913ddfbab6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 12.80
+elapsed_sec: 13.08
 status: ok
 ----- stdout -----
 ========================================================================
@@ -65,17 +65,17 @@ Part 4.  Finite-size evidence checks
   [PASS] finite L>=32 fit intercept is NOT within 20% of 1/4  (|dev from 1/4| = 37.27%)
   [PASS] r(L=64) remains within 5% of 1/4  (r(64) = 0.2570, relative deviation = 2.8%)
   [PASS] FINITE-SIZE EVIDENCE: tail fit favors 1/6 over 1/4  (L<=64 tail-fit intercept is near 1/6 and >20% from 1/4; no all-L limit is claimed)
-  [PASS] SCOPE: finite samples do not establish an exact 1/4 coefficient  (L<=64 evidence favors a different tail intercept; the all-L identification remains open admission OA-1)
+  [INFO] Scope: finite samples do not establish an exact 1/4 coefficient; the all-L mixed-state asymptotic bridge remains open.
 
 ========================================================================
-SUMMARY: PASS=11  FAIL=0
+SUMMARY: PASS=10  FAIL=0
 ========================================================================
 
-Runtime: 12.7 s
+Runtime: 12.9 s
 
 All finite-L<=64 checks passed; the tail-fit intercept favors 1/6
 over 1/4 on this sampled carrier. The all-L ratio limit remains
-open admission OA-1; this output is not an asymptotic theorem.
+an open mixed-state asymptotic bridge; this output is not an asymptotic theorem.
 
 ----- stderr -----
 

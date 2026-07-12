@@ -33,7 +33,7 @@ CHECKS:
   2. RT ratio finite-L observation across multiple lattice sizes
   3. Gravity modulates entropy monotonically
   4. Frozen-star table is a comparison identity, not an independent test
-  5. Species counting: RT ratio stable under Hilbert-space dimension change
+  5. Independent-copy scaling identity for the diagnostic ratio
   6. Finite-size trend diagnostics, observation only
 
 Current-main interpretation:
@@ -522,25 +522,23 @@ def check_4_frozen_star() -> dict:
 
 
 # ============================================================================
-# CHECK 5: Species counting / Hilbert space dimension scan
+# CHECK 5: Independent-copy scaling identity
 # ============================================================================
 
 def check_5_species_scan() -> dict:
-    """Check RT ratio stability under different Hilbert space interpretations.
+    """Check the algebraic cancellation for independent duplicate copies.
 
-    The RT ratio S / (|dA| * ln chi) should be 1/4 regardless of chi,
-    because chi_eff is determined by the transfer matrix, not assumed.
-    But we can ask: if each site had d > 2 DOF (e.g. Cl(3) with d=8),
-    how does the species-summed entropy compare?
-
-    For N_s species of free fermions:
+    For ``N_s`` independent copies of this same finite diagnostic:
         S_total = N_s * S_single
-        RT ratio = S_total / (|dA| * ln(d^{N_s})) = S_single / (|dA| * ln d)
+        log chi_total = N_s * log chi_eff
+        ratio = S_total / (|dA| * log chi_total)
+              = S_single / (|dA| * log chi_eff)
 
-    The ratio is species-independent, confirming universality.
+    This is a bookkeeping identity. It does not identify a Hilbert-space or
+    bond dimension, establish species universality, or select the value 1/4.
     """
     print("\n" + "=" * 72)
-    print("CHECK 5: SPECIES COUNTING AND HILBERT SPACE DIMENSION SCAN")
+    print("CHECK 5: INDEPENDENT-COPY SCALING IDENTITY")
     print("=" * 72)
 
     L = 10
@@ -563,36 +561,30 @@ def check_5_species_scan() -> dict:
 
     print(f"\n  2D lattice L={L}, S_single = {S_single:.4f}, bnd = {bnd}")
     print(f"  chi_eff = {chi_eff}")
-    print(f"\n  Species interpretation: if each site has d local DOF,")
-    print(f"  N_s independent fermion species each contribute S_single.")
-    print(f"  Total S = N_s * S_single,  total bond dim = d^N_s")
-    print(f"  RT ratio = S / (bnd * ln(d_tot)) is species-independent")
+    print(f"\n  Duplicate-copy construction: N_s independent copies each")
+    print(f"  contribute the same S_single and threshold-rank factor chi_eff.")
+    print(f"  S_total = N_s * S_single; log chi_total = N_s * log chi_eff.")
     print()
-    print(f"  {'N_s':>4s}  {'d_eff':>8s}  {'S_tot':>10s}  "
-          f"{'ln(d^Ns)':>10s}  {'S_max':>10s}  {'RT_ratio':>10s}")
+    print(f"  {'N_s':>4s}  {'S_tot':>10s}  {'log chi_tot':>12s}  "
+          f"{'denominator':>12s}  {'copy_ratio':>10s}")
     print("  " + "-" * 60)
 
     results = {}
     for n_s in [1, 2, 3, 4]:
         s_tot = n_s * S_single
-        # Effective d per species: chi_eff^(1/n_s)... no, the total bond dim
-        # is chi_eff for each species, so total = chi_eff^n_s
-        # Actually for independent species, S_max = n_s * bnd * ln(chi_eff)
-        # because each species has its own transfer matrix with chi_eff bonds
         ln_total = n_s * math.log(chi_eff)
         s_max = bnd * ln_total
         rt = s_tot / s_max if s_max > 0 else 0
 
-        d_eff = chi_eff ** (1.0 / n_s) if n_s > 0 else chi_eff
-        print(f"  {n_s:>4d}  {d_eff:>8.2f}  {s_tot:>10.4f}  "
-              f"{ln_total:>10.4f}  {s_max:>10.4f}  {rt:>10.4f}")
+        print(f"  {n_s:>4d}  {s_tot:>10.4f}  {ln_total:>12.4f}  "
+              f"{s_max:>12.4f}  {rt:>10.4f}")
         results[f"Ns={n_s}"] = {"rt_ratio": float(rt)}
 
-    # All RT ratios should be identical (species cancels)
+    # The duplicate-copy factors cancel algebraically.
     ratios = [results[f"Ns={n}"]["rt_ratio"] for n in [1, 2, 3, 4]]
     spread = max(ratios) - min(ratios)
-    print(f"\n  RT ratio spread across species: {spread:.6f}")
-    print(f"  (Should be 0 -- species counting is universal)")
+    print(f"\n  Copy-ratio spread: {spread:.6f}")
+    print(f"  (Should be 0 for exact independent duplicates.)")
     results["spread"] = float(spread)
     results["pass"] = spread < 1e-10
 
@@ -751,7 +743,7 @@ def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
     #     criterion any more. Aggregation reports the observed finite-L
     #     numbers without a "PASS within 15% of 1/4" verdict.
     #   - Gravity modulation monotone for g >= 0.5
-    #   - Species universality: RT ratio spread < 1e-12
+    #   - Independent-copy identity: duplicate-copy ratio spread < 1e-12
     #   - Finite-size tail-fit intercepts are diagnostics only. They do not
     #     close an all-L OBC Widom theorem.
     verdicts = {}
@@ -792,13 +784,13 @@ def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
     print(f"\n  4. FROZEN STAR SCALING: comparison identity when RT = 1/4 (sanity)")
     # No verdict; this is by-construction.
 
-    # 5. Species universality
+    # 5. Independent-copy identity
     species_pass = c5.get("pass", False)
     spread = c5.get("spread", 999)
-    print(f"\n  5. SPECIES UNIVERSALITY: RT ratio spread = {spread:.2e}  "
+    print(f"\n  5. INDEPENDENT-COPY IDENTITY: ratio spread = {spread:.2e}  "
           f"(threshold < 1e-12)")
     print(f"     {'PASS' if species_pass else 'FAIL'}")
-    verdicts["species_universality"] = species_pass
+    verdicts["independent_copy_identity"] = species_pass
 
     # 6. Finite-size tail-fit diagnostics. These are reported without a
     #    pass/fail verdict because the all-L OBC asymptotic bridge is outside
@@ -852,7 +844,7 @@ def synthesis(c1: dict, c2: dict, c3: dict, c4: dict,
 # Main
 # ============================================================================
 
-def main() -> None:
+def main() -> int:
     print("=" * 72)
     print("BEKENSTEIN-HAWKING ENTROPY: BOUNDED LATTICE COMPANION")
     print("Finite-L comparison to S_BH = A / (4 l_P^2)")
@@ -876,7 +868,8 @@ def main() -> None:
 
     elapsed = time.time() - t_start
     print(f"Total runtime: {elapsed:.1f}s")
+    return 0 if verdicts["n_pass"] == verdicts["n_total"] else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

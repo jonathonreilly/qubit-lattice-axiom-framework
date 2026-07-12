@@ -521,6 +521,46 @@ class PublicationEffectiveStatusRenderTest(unittest.TestCase):
         self.assertNotIn("Promoted retained publication core", rendered)
         self.assertIn("## Audit-badged section 1", rendered)
 
+    def test_mixed_retained_and_unledgered_links_fail_closed(self):
+        m = _import("render_publication_effective_status")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            docs = root / "docs"
+            source = docs / "publication" / "TABLE.md"
+            retained = docs / "RETAINED.md"
+            missing = docs / "UNLEDGERED.md"
+            source.parent.mkdir(parents=True)
+            retained.write_text("# retained\n", encoding="utf-8")
+            missing.write_text("# unledgered\n", encoding="utf-8")
+            source.write_text("", encoding="utf-8")
+            with mock.patch.object(m, "REPO_ROOT", root.resolve()), mock.patch.object(
+                m, "DOCS", docs.resolve()
+            ):
+                annotated, _ = m.annotate_links(
+                    "| Claim | Authority |\n|---|---|\n"
+                    "| promoted result | [R](../RETAINED.md) and [U](../UNLEDGERED.md) |\n",
+                    source,
+                    {retained.resolve(): ("retained", {
+                        "effective_status": "retained", "audit_status": "audited_clean"
+                    })},
+                )
+            rendered = m.demote_nonretained_table_rows(annotated)
+            row = rendered.splitlines()[2]
+            self.assertIn("[audit:retained]", row)
+            self.assertIn("[audit:unresolved]", row)
+            self.assertIn("AUDIT-NONRETAINED ROW", row)
+            self.assertNotRegex(row.lower(), r"\bpromoted\b")
+
+    def test_missing_source_preflight_writes_nothing(self):
+        m = _import("render_publication_effective_status")
+        with tempfile.TemporaryDirectory() as tmp:
+            pub = Path(tmp)
+            with mock.patch.object(m, "PUB_DIR", pub), mock.patch.object(
+                m, "TABLES", [("MISSING.md", "OUT.md", "scope")]
+            ):
+                self.assertEqual(m.main(), 2)
+            self.assertFalse((pub / "OUT.md").exists())
+
 
 def _patch_repo_root(module, tmp_root: Path) -> None:
     """Override the module-level REPO_ROOT-derived paths."""
@@ -655,6 +695,21 @@ class ChangedRunnerFailureGateTest(unittest.TestCase):
         self.assertIn("max_fit_residual=inf", output.getvalue())
 
 
+class BhRunnerAccountingTest(unittest.TestCase):
+    def test_derived_runner_returns_nonzero_when_synthesis_has_failures(self):
+        m = _import_repo_script("frontier_bh_entropy_derived.py")
+        empty = {}
+        with mock.patch.object(m, "check_1_area_law", return_value=empty), \
+             mock.patch.object(m, "check_2_rt_ratio", return_value=empty), \
+             mock.patch.object(m, "check_3_gravity_modulation", return_value=empty), \
+             mock.patch.object(m, "check_4_frozen_star", return_value=empty), \
+             mock.patch.object(m, "check_5_species_scan", return_value=empty), \
+             mock.patch.object(m, "check_6_finite_size", return_value=empty), \
+             mock.patch.object(m, "synthesis", return_value={"n_pass": 3, "n_total": 4}), \
+             mock.patch("builtins.print"):
+            self.assertEqual(m.main(), 1)
+
+
 class ApplyAuditTest(unittest.TestCase):
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()
@@ -767,7 +822,7 @@ class ApplyAuditTest(unittest.TestCase):
         }
         ok, msg = m.apply_one(led, audit)
         self.assertFalse(ok)
-        self.assertIn("require exact provenance", msg)
+        self.assertIn("below the incoming-audit", msg)
 
     def test_rejected_cross_confirmation_does_not_commit_prose_fix(self):
         m = _import("apply_audit")
@@ -848,6 +903,123 @@ class ApplyAuditTest(unittest.TestCase):
         ok, msg = m.apply_one(led, audit)
         self.assertFalse(ok)
         self.assertIn("already been consumed", msg)
+
+    def test_trusted_manifest_requires_well_formed_invocation_id(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_manifest_invocation")
+        led = self.fx.read_ledger()
+        audit = {
+            "claim_id": "test_manifest_invocation",
+            "verdict": "audited_conditional",
+            "claim_type": "positive_theorem",
+            "claim_scope": "test scope",
+            "auditor": "manifest-auditor",
+            "auditor_family": "human-review",
+            "auditor_model": "human",
+            "auditor_reasoning_effort": "strong",
+            "independence": "strong",
+            "load_bearing_step_class": "C",
+        }
+        with mock.patch.dict(
+            os.environ,
+            {"CODEX_AUDIT_TRUSTED_EVIDENCE_MANIFEST": "/unused/manifest.json"},
+        ):
+            ok, msg = m.apply_one(led, audit)
+            self.assertFalse(ok)
+            self.assertIn("requires audit_invocation_id", msg)
+            audit["audit_invocation_id"] = "NOT-HEX"
+            ok, msg = m.apply_one(led, audit)
+            self.assertFalse(ok)
+            self.assertIn("32 lowercase hexadecimal", msg)
+
+    def test_terminal_disagreement_preserves_live_authority(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_terminal_disagreement",
+            audit_status="audited_failed",
+            claim_type="positive_theorem",
+            criticality="high",
+        )
+        led = self.fx.read_ledger()
+        row = led["rows"]["test_terminal_disagreement"]
+        row.update({
+            "auditor": "first-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "claim_scope": "first scope",
+            "load_bearing_step_class": "A",
+            "verdict_rationale": "first rationale",
+        })
+        incoming = {
+            "claim_id": "test_terminal_disagreement",
+            "verdict": "audited_conditional",
+            "claim_type": "positive_theorem",
+            "claim_scope": "second scope",
+            "auditor": "second-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "B",
+            "verdict_rationale": "second rationale",
+        }
+        ok, msg = m.apply_one(led, incoming)
+        self.assertTrue(ok, msg)
+        updated = led["rows"]["test_terminal_disagreement"]
+        self.assertEqual(updated["audit_status"], "audit_in_progress")
+        self.assertEqual(updated["blocker"], "cross_confirmation_disagreement")
+        self.assertEqual(updated["verdict_rationale"], "first rationale")
+        self.assertEqual(updated["auditor"], "first-auditor")
+
+    def test_main_persists_disagreement_as_applied_and_runs_propagation(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_main_disagreement",
+            audit_status="audited_failed",
+            claim_type="positive_theorem",
+            criticality="high",
+        )
+        led = self.fx.read_ledger()
+        led["rows"]["test_main_disagreement"].update({
+            "auditor": "first-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "claim_scope": "first scope",
+            "load_bearing_step_class": "A",
+            "verdict_rationale": "first rationale",
+        })
+        self.fx.write_ledger(led)
+        audit_path = self.tmp_root / "incoming.json"
+        audit_path.write_text(json.dumps({
+            "claim_id": "test_main_disagreement",
+            "verdict": "audited_conditional",
+            "claim_type": "positive_theorem",
+            "claim_scope": "second scope",
+            "auditor": "second-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "B",
+            "verdict_rationale": "second rationale",
+            "audit_invocation_id": "d" * 32,
+        }), encoding="utf-8")
+        with mock.patch.object(
+            sys, "argv", ["apply_audit.py", "--file", str(audit_path)]
+        ), mock.patch.object(m, "run_propagation", return_value=0) as propagation:
+            self.assertEqual(m.main(), 0)
+        propagation.assert_called_once_with()
+        updated = self.fx.read_ledger()["rows"]["test_main_disagreement"]
+        self.assertEqual(updated["audit_status"], "audit_in_progress")
+        self.assertEqual(updated["verdict_rationale"], "first rationale")
+        self.assertEqual(updated["audit_invocation_id"], "d" * 32)
 
     def test_no_go_requires_and_preserves_discipline_packet(self):
         m = _import("apply_audit")
@@ -3535,6 +3707,34 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             )
         )
 
+    def test_explicit_non_no_go_type_overrides_historical_filename_hint(self):
+        m = _import("no_go_discipline_gate")
+        for path, body, claim_type in (
+            (
+                "docs/S3_MASS_MATRIX_NO_GO_NOTE.md",
+                "**Claim type:** positive_theorem\n"
+                "Its historical filename does not turn this lemma into a no-go claim.\n",
+                "positive_theorem",
+            ),
+            (
+                "docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md",
+                "**Claim type:** open_gate\nNo current no-go is claimed. "
+                "The earlier broad no-go reading is withdrawn.\n",
+                "open_gate",
+            ),
+        ):
+            with self.subTest(path=path):
+                self.assertFalse(
+                    m.source_requires_no_go_discipline(path, body, claim_type)
+                )
+        self.assertTrue(
+            m.source_requires_no_go_discipline(
+                "docs/HISTORICAL_NO_GO_NOTE.md",
+                "**Claim type:** open_gate\nNo admissible route exists on this carrier.\n",
+                "open_gate",
+            )
+        )
+
     def test_malformed_top_level_index_and_snapshot_fail_closed(self):
         m = _import("no_go_discipline_gate")
         entry = {"text": "[]", "roles": ["cross_cycle_index"]}
@@ -3678,7 +3878,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertEqual([path.name for path in paths], ["SOURCE_NO_GO.md"])
         self.assertEqual([record["path"].name for record in records], ["SOURCE_NO_GO.md"])
 
-    def test_cross_cycle_index_is_bounded_and_ignores_mutable_peer_audit_state(self):
+    def test_cross_cycle_index_is_complete_and_ignores_mutable_peer_audit_state(self):
         m = _import("no_go_discipline_gate")
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -3710,7 +3910,11 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 }
             first = m.build_cross_cycle_index(target_row, rows, root)
             parsed = json.loads(first)
-            self.assertLessEqual(len(parsed["candidates"]), m.CROSS_CYCLE_CANDIDATE_LIMIT)
+            similar = [
+                candidate for candidate in parsed["candidates"]
+                if candidate["kind"] == "similar_negative_boundary"
+            ]
+            self.assertEqual(len(similar), 100)
             self.assertEqual(parsed["no_go_row_universe_count"], 100)
             self.assertEqual(
                 {item["claim_id"] for item in parsed["no_go_row_universe"]},
@@ -5108,7 +5312,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "no_go_discipline_packet_invalid",
             )
 
-    def test_clean_authority_without_exact_model_provenance_is_invalidated(self):
+    def test_legacy_clean_authority_without_exact_model_detail_is_preserved(self):
         m = _import("invalidate_stale_audits")
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -5121,10 +5325,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "audit_status": "audited_clean", "claim_type": "positive_theorem",
                 "auditor": "legacy", "auditor_family": "codex-gpt-5.6",
             }
-            self.assertEqual(
-                m.detect_invalidation(row, {"positive": row}),
-                "auditor_provenance_incomplete",
-            )
+            self.assertIsNone(m.detect_invalidation(row, {"positive": row}))
 
 
 class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
@@ -5166,7 +5367,7 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
         self.assertEqual(model, "gpt-5.5")
         self.assertIn("models_cache.json", source)
 
-    def test_resolve_model_is_pinned_to_gpt_5_6_sol(self):
+    def test_resolve_model_honors_explicit_break_glass_override(self):
         m = _import_codex_audit_runner()
         with mock.patch.object(
             m, "best_cached_codex_model", return_value=("gpt-5.5", "test cache")
@@ -5176,9 +5377,35 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
         ):
             model, family, source, warnings = m.resolve_audit_model()
         self.assertEqual((model, family, source), (
-            "gpt-5.6-sol", "codex-gpt-5.6", "pinned-exact-policy"
+            "gpt-6", "codex-gpt-6", "CODEX_AUDIT_FORCE_MODEL break-glass override"
         ))
-        self.assertEqual(len(warnings), 3)
+        self.assertEqual(len(warnings), 1)
+
+    def test_resolve_model_ignores_stale_configured_model(self):
+        m = _import_codex_audit_runner()
+        with mock.patch.object(
+            m, "best_cached_codex_model", return_value=("gpt-6", "test cache")
+        ), mock.patch.dict(
+            os.environ, {"CODEX_AUDIT_MODEL": "gpt-5.6-sol"}, clear=True
+        ):
+            model, family, source, warnings = m.resolve_audit_model()
+        self.assertEqual((model, family, source), ("gpt-6", "codex-gpt-6", "test cache"))
+        self.assertEqual(len(warnings), 1)
+        self.assertIn("Ignoring stale", warnings[0])
+
+    def test_resolve_model_adopts_newer_configured_model(self):
+        m = _import_codex_audit_runner()
+        with mock.patch.object(
+            m, "best_cached_codex_model", return_value=("gpt-5.6-sol", "test cache")
+        ), mock.patch.dict(
+            os.environ, {"CODEX_AUDIT_MODEL": "gpt-6"}, clear=True
+        ):
+            model, family, source, warnings = m.resolve_audit_model()
+        self.assertEqual(
+            (model, family, source),
+            ("gpt-6", "codex-gpt-6", "CODEX_AUDIT_MODEL newer than cached best"),
+        )
+        self.assertEqual(warnings, [])
 
     def test_no_propagate_is_rejected_for_push_capable_mode(self):
         m = _import_codex_audit_runner()

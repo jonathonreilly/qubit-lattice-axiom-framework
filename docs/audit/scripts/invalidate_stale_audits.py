@@ -54,6 +54,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -238,17 +239,35 @@ def status_rank(status: str | None) -> int:
     return RANK.get(status or "unaudited", -1)
 
 
-def exact_clean_auditor_provenance(value: dict) -> bool:
-    return (
-        value.get("auditor_family") == "codex-gpt-5.6"
-        and value.get("auditor_model") == "gpt-5.6-sol"
-        and value.get("auditor_reasoning_effort") == "xhigh"
-    )
+def clean_auditor_provenance_is_valid(value: dict) -> bool:
+    """Validate existing evidence without retroactively applying a new floor.
+
+    New Codex inputs are gated at 5.6+ by ``apply_audit.py``. Historical rows
+    that were valid under the earlier best-available policy keep their premise
+    weight; missing legacy model-detail fields are a lint/dispatch notice, not
+    a bulk scientific invalidation.
+    """
+    family = str(value.get("auditor_family") or "")
+    model = str(value.get("auditor_model") or "")
+    independence = value.get("independence")
+    if family.startswith("codex-gpt-"):
+        family_match = re.fullmatch(r"codex-gpt-(\d+(?:\.\d+)*)", family)
+        if not family_match:
+            return False
+        if model:
+            model_match = re.fullmatch(r"gpt-(\d+(?:\.\d+)*)(?:-sol)?", model)
+            if not model_match or family_match.group(1) != model_match.group(1):
+                return False
+        effort = value.get("auditor_reasoning_effort")
+        return effort in {None, "xhigh"}
+    if family in {"codex-current", "codex-fresh", "codex-fresh-agent", "codex-fresh-context"}:
+        return value.get("auditor_reasoning_effort") in {None, "xhigh"}
+    return independence in {"strong", "external", "judicial_review"}
 
 
 def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
     audit_status = row.get("audit_status")
-    if audit_status == "audited_clean" and not exact_clean_auditor_provenance(row):
+    if audit_status == "audited_clean" and not clean_auditor_provenance_is_valid(row):
         return "auditor_provenance_incomplete"
     note_path = str(row.get("note_path") or "")
     note_body = ""
@@ -307,7 +326,7 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
             if not isinstance(summary, dict) or not summary:
                 continue
             verdict = summary.get("verdict") or summary.get("audit_status")
-            if verdict == "audited_clean" and not exact_clean_auditor_provenance(
+            if verdict == "audited_clean" and not clean_auditor_provenance_is_valid(
                 summary
             ):
                 return "cross_confirmation_auditor_provenance_incomplete"

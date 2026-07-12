@@ -40,6 +40,8 @@ verification:
   diff_check: pass
   pipeline_outputs_stripped: pass
 review_findings: "Three focused iterations fixed the open-obligation graph edge, self-confirming checks, opaque/false-green policy routing, authored target-verdict language, and support-status drift. No material findings remain."
-pr_status: pending
-next_exact_action: commit and push the reviewed block, open its review PR, then submit the source note to independent re-audit
+source_commit: 9234ef0d9
+pr_status: open_mergeable
+pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5219
+next_exact_action: submit the source note and refreshed runner cache to independent re-audit through PR 5219
 stop_condition: target repair is verified, reviewed, and delivered for independent re-audit

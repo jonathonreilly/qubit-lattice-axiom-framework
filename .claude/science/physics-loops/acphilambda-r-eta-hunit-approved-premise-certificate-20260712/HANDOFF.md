@@ -8,6 +8,13 @@ foundation allowlist against the audit pipeline implementation and separately
 checks the retired owner-governance schema, absent former registry, historical
 Tier-A authority class, and current zero-weight R-eta obligation.
 
+Branch:
+`claude/science-fix/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_-77912f4b`
+
+Source commit: `9234ef0d9`
+
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5219
+
 ## Claim Movement
 
 The prior conditional audit lacked an independently visible exhaustiveness and

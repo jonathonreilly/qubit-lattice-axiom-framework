@@ -7,12 +7,12 @@ open-bilocal trace statistic to have ideal equilibrium expectation
 adjoint weights. It does not identify that gauge-frame statistic with a
 physical connected-current ratio or derive `kappa_EW = 0`.
 
-- [Bounded theorem note](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/rconn-equivariant-kernel-obstruction-block01-20260712/docs/RCONN_ENDPOINT_GAUGE_FRAME_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-12.md)
-- [Deterministic certificate runner](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/rconn-equivariant-kernel-obstruction-block01-20260712/scripts/frontier_rconn_endpoint_gauge_frame_dichotomy.py)
-- [Trace gate](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/rconn-equivariant-kernel-obstruction-block01-20260712/.claude/science/physics-loops/rconn-endpoint-gauge-frame-dichotomy-20260712/TRACE_GATE.md)
-- [Claim-status certificate](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/rconn-equivariant-kernel-obstruction-block01-20260712/.claude/science/physics-loops/rconn-endpoint-gauge-frame-dichotomy-20260712/CLAIM_STATUS_CERTIFICATE.md)
-- [Review history](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/rconn-equivariant-kernel-obstruction-block01-20260712/.claude/science/physics-loops/rconn-endpoint-gauge-frame-dichotomy-20260712/REVIEW_HISTORY.md)
-- [Handoff](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/rconn-equivariant-kernel-obstruction-block01-20260712/.claude/science/physics-loops/rconn-endpoint-gauge-frame-dichotomy-20260712/HANDOFF.md)
+- [Bounded theorem note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/rconn-equivariant-kernel-obstruction-block01-20260712/docs/RCONN_ENDPOINT_GAUGE_FRAME_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-12.md)
+- [Deterministic certificate runner](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/rconn-equivariant-kernel-obstruction-block01-20260712/scripts/frontier_rconn_endpoint_gauge_frame_dichotomy.py)
+- [Trace gate](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/rconn-equivariant-kernel-obstruction-block01-20260712/.claude/science/physics-loops/rconn-endpoint-gauge-frame-dichotomy-20260712/TRACE_GATE.md)
+- [Claim-status certificate](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/rconn-equivariant-kernel-obstruction-block01-20260712/.claude/science/physics-loops/rconn-endpoint-gauge-frame-dichotomy-20260712/CLAIM_STATUS_CERTIFICATE.md)
+- [Review history](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/rconn-equivariant-kernel-obstruction-block01-20260712/.claude/science/physics-loops/rconn-endpoint-gauge-frame-dichotomy-20260712/REVIEW_HISTORY.md)
+- [Handoff](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/rconn-equivariant-kernel-obstruction-block01-20260712/.claude/science/physics-loops/rconn-endpoint-gauge-frame-dichotomy-20260712/HANDOFF.md)
 
 The current canonical `RCONN_DERIVED_NOTE.md` row remains untouched at its
 already-audited no-go state. No audit verdict, publication surface, primitive

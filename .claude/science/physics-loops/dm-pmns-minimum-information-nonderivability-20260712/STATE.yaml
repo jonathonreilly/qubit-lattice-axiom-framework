@@ -46,9 +46,10 @@ review_findings:
   - The executable spectral gate required direct top-eigenspace maximality
     checks in addition to covariance and degeneracy.
 review_disposition: pass
-pr_status: pending
+science_commit: a54f031ca
+pr_status: open_draft
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5307
 next_exact_action: >-
-  Commit and open one draft review PR for the separate no-go source and the
-  honestly open conditional target, then submit the new row to independent
-  audit without changing repo-wide audit authority surfaces.
+  Submit the new no-go row in PR 5307 to independent audit without changing
+  repo-wide audit authority surfaces or retyping the original open target.
 stop_condition: one reviewed coherent science block and one open review PR

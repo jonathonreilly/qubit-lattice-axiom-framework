@@ -101,7 +101,8 @@ stacked review block:
 - audit compatibility: one `bounded_theorem` / `unaudited` row, exactly three
   dependencies, strict lint with no errors, vocabulary lint with zero
   violations, and generated audit/effective-status surfaces stripped
-- delivery: PR pending
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5278
+- delivery: open on the Block15 head
 
 No merge is authorized. Independent audit remains authoritative.
 

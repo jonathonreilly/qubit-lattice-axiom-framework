@@ -14,6 +14,10 @@ temporal cycle, so it is not a forest and forces trivial holonomy. The theorem
 does not yet claim the complete coupled circle Gram or transfer. Block15 PR
 #5270 is the stacked base and independent audit remains authoritative.
 
+Two-seam forest/holonomy stacked review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5278
+is open against the Block15 head.
+
 The campaign is initialized on
 `physics-loop/admissibility-dynamics-realization-bridge-20260711` from current
 `origin/main`.

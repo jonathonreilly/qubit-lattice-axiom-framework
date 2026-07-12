@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 383 |
+| **retained_bounded** | 384 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2741 |
+| unaudited | 2740 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 498 |
+| `audited_clean` | 499 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3091 |
+| `unaudited` | 3090 |
 
 | claim_type | count |
 |---|---:|
@@ -328,6 +328,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `formation_rate_law_class_reduction_bounded_note_2026-07-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_grown_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -4192,6 +4193,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `retained_EW_bare_coupling_bookkeeping_not_registered_one_hop_dependency`
   - `Cl3_to_SM_dimension_count_d_plus_1_d_plus_2_support_packet_not_registered_one_hop_dependency`
 - **auditor confidence:** high
+
+### `frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03`
+
+- **Note:** [`FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03.md`](../../docs/FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** T1–T3 are audited only for the site-functional binary-tag record model and exhibited covariant availability rule; T4 is audited only for finite-initial-support, finite-registration-per-stage histories, with no dynamics, rate, clock, GR, or universal non-cavity singleton-pinning interpretation.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00435-frozen_region_record_saturat`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Permanence makes the recorded-site domain monotone, so once a region is saturated it remains inside every later domain and admits no further first-registration events.  _(class `A`)_
+- **chain closes:** True — The accepted Record axiom supplies permanence and one-record-per-site uniqueness; elementary set inclusion then proves local finality and finite-stage non-saturation, while the explicitly scoped availability rule supports the T3 containment and cavity claims. The note does not require the exhibited rule to follow uniquely from the axioms.
+- **rationale:** The runner performs substantive exact set, enumeration, covariance, and finite-lattice checks rather than printing imported verdicts or matching external numbers. Its five cross-file quote guards succeed, and the remaining 28 checks directly instantiate the scoped combinatorial claims. The model-dependent and finitary qualifications are stated as claim boundaries, so they do not masquerade as universal consequences of the minimal axioms.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10`
 

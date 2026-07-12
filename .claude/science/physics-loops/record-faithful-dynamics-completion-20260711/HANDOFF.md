@@ -1,6 +1,28 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block23-critical-scaling-necessary-conditions-20260712`.
+The certificate-boundary runner reports `PASS=9 FAIL=0`. The exact `SU(3)`
+trace range sharpens the Wilson one-link Dobrushin row from `18 beta` to
+`(27/2) beta`. Every positive-`beta` point on the old equality curve remains
+strictly inside the sharper uniqueness/mixing wedge. With
+`delta=1-alpha_sharp`, the universal choice `lambda=delta/100` gives explicit
+connected-correlation decay and
+`Delta_OS>=delta/(100 a_tau)`. A bounded-energy isotropic propagating family
+inside the sharper wedge must have `delta=O(a)` or leave it. Equality in either
+certificate remains only a proof boundary, not a physical criticality theorem.
+
+Independent code/math, physics/import, governance, and full N1--N8 reviews
+pass after removing one context-only markdown link that would have seeded an
+unintended dependency. Audit validation seeds one `no_go` / `unaudited` row
+with exactly the Dobrushin uniqueness dependency; strict lint and vocabulary
+lint have zero errors/violations, and generated audit outputs are stripped.
+
+Certificate-boundary critical-scaling PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5305
+is open against the compact-interior continuum head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block22-controlled-ultralocal-continuum-20260712`.
 The compact-interior continuum runner reports `PASS=8 FAIL=0`. On every
 compact subset of the strict Dobrushin wedge, uniform weighted mixing forces
@@ -21,7 +43,7 @@ Compact-interior continuum no-go PR:
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5303
 is open and mergeable against the Dobrushin uniqueness head.
 
-Previous branch:
+Earlier branch:
 `physics-loop/record-faithful-dynamics-block21-dobrushin-spatial-uniqueness-20260712`.
 The Dobrushin spatial-uniqueness runner reports `PASS=7 FAIL=0`. With
 `kappa=14/(m^2+2)`, `m>sqrt(12)`, and

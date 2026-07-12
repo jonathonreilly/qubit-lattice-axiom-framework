@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 636,
+    "critical": 635,
     "high": 335,
     "leaf": 1096,
     "medium": 718
@@ -3122,28 +3122,6 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audit_in_progress",
       "blocker": "awaiting_cross_confirmation",
-      "claim_id": "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Dimensional-algebra theorem that a positive quantity of mass dimension d, raised to a real simple-power exponent with a dimensionless prefactor, has mass dimension one exactly when alpha = 1/d; alpha = 1/4 is unique at d = 4 among positive integers.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 4,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.771,
-      "note_path": "docs/HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_hierarchy_dimensional_fourth_root_compression_narrow.py",
-      "transitive_descendants": 436
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
       "claim_id": "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03",
       "claim_scope": "Finite-dimensional no-go showing that faithful commuting complex-qubit subalgebras alone do not force the generated ordinary two-qubit tensor product or local tomography.",
       "claim_type": "no_go",
@@ -3206,6 +3184,30 @@
       "queue_reason": "audit_in_progress",
       "ready": true,
       "runner_path": "scripts/audit_companion_cl3_to_cl31_spinor_extension_exact_2026_05_27.py",
+      "transitive_descendants": 434
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10"
+      ],
+      "direct_in_degree": 3,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 10.265,
+      "note_path": "docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py",
       "transitive_descendants": 434
     },
     {
@@ -14945,30 +14947,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_hierarchy_effective_potential_endpoint.py",
-      "transitive_descendants": 434
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.265,
-      "note_path": "docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_hierarchy_d4_density_scale_readout_bridge_2026_06_16.py",
       "transitive_descendants": 434
     },
     {
@@ -79884,5 +79862,5 @@
     }
   ],
   "ready_count": 512,
-  "total_pending": 2785
+  "total_pending": 2784
 }

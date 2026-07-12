@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/newton_law_potential_kernel_scope_check.py
-runner_sha256: 7ee59c9cc2a282fd4523243e6203d03bb90a78af4307b30ec3fbca0c85989638
+runner_sha256: c2c0e91c92af5e7ddea9b09cbe665524786b359b88d4c7a87fe8fb13b4698e8a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.62
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -21,11 +21,17 @@ Newton potential-kernel algebra scope check
 [PASS] source-linearity gives phi=M/(4*pi*r)
 [PASS] radial derivative is -M/(4*pi*r^2)
 [PASS] gradient magnitude is M/(4*pi*r^2)
+[PASS] kernel/source-linearity supplier lattice_greens_function_maradudin_textbook_import_note_2026-05-18 is retained-grade
+       effective_status='retained_bounded'
+[PASS] note carries the Maradudin Green-kernel dependency edge (markdown link)
+[PASS] cited kernel normalization 1/(4 pi r) is present in the note
+[PASS] dependency-edge gate discriminates (non-retained grades rejected, supplier accepted)
+       VALID_RETAINED excludes every non-retained grade; supplier is accepted only on a live retained grade
 
 ==============================================================================
 SUMMARY
 ==============================================================================
-PASSED: 12/12
+PASSED: 16/16
 NEWTON_POTENTIAL_KERNEL_ALGEBRA=TRUE
 POTENTIAL_GRADIENT_INVERSE_SQUARE=TRUE
 PHYSICAL_FORCE_LAW_CLAIMED=FALSE

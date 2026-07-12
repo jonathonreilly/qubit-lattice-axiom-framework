@@ -33,6 +33,21 @@ not yet a physical Newton force law.
 No new axiom is introduced. No observed gravitational value, fitted coupling,
 or test-mass response rule is load-bearing.
 
+## 2026-07-12 Dependency-Edge Repair
+
+The In-Scope Theorem previously took the radial kernel `G(r) = 1/(4 pi r)` and
+its source-linearity `phi = M G` as bare "supplied" premises with no cited
+provenance, so the packet carried both without attribution. This repair
+attributes them to the framework's own nearest-neighbor `Z^3` graph-Laplacian
+Green-kernel normalization row,
+[`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md),
+which establishes `G` as the Green kernel `(-Delta_lat)^{-1}` of the linear
+lattice Laplacian — the lattice potential of a unit point source. Because the
+kernel is the resolvent of a linear operator, the source-linearity `phi = M G`
+is that kernel's response to a source of strength `M`, not an independent
+assumption. No new axiom, literature import, or physical force-law claim is
+added; the class-A algebra below is unchanged.
+
 ## In-Scope Theorem
 
 Let `r > 0`, `M` be a formal source coefficient, and define the supplied
@@ -41,6 +56,14 @@ radial scalar kernel
 ```text
 G(r) = 1/(4 pi r).
 ```
+
+This kernel is not free-standing: it is the large-separation normalization of
+the framework's own nearest-neighbor `Z^3` graph-Laplacian Green kernel,
+supplied by
+[`LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md).
+That row identifies `G` as the Green kernel `(-Delta_lat)^{-1}` of the linear
+lattice Laplacian, so the linear response below is a property of the supplied
+kernel rather than a separate premise.
 
 By source-linearity, the formal scalar potential is
 

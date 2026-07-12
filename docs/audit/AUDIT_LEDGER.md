@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 381 |
+| **retained_bounded** | 382 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2743 |
+| unaudited | 2742 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 496 |
+| `audited_clean` | 497 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3093 |
+| `unaudited` | 3092 |
 
 | claim_type | count |
 |---|---:|
@@ -323,6 +323,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_q1_default_rests_on_prr_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `flavor_so2_readout_false_binary_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
+| `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -4088,6 +4089,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner instantiates the supplied matrices and computes substantive algebra rather than merely printing expected constants. From its definitions, (exp(i alpha)C)^3=exp(3i alpha)I, the trace sums make Q delta-independent, alpha Ps+beta Pd has eigenvalues alpha,beta,beta, and pairwise equality of the cosine eigenvalues occurs exactly at delta=m*pi/3 for the fixed nonzero b. The note explicitly excludes the broader physical selector and exhaustiveness conclusions that these identities cannot support.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31`
+
+- **Note:** [`FLAVOR_SPIN_STATISTICS_FORCES_MODULO_RECONSTRUCTION_2026-05-31.md`](../../docs/FLAVOR_SPIN_STATISTICS_FORCES_MODULO_RECONSTRUCTION_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The supplied finite spinor construction has bounded CAR occupation and an indefinitely descending wrong-Bose energy direction, while the tested kernel and two-site qubit carrier do not themselves select cross-site CAR.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00429-flavor_spin_statistics_force`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Ordinary two-site qubit ladders commute, Jordan-Wigner-dressed generators anticommute only after a generator/string choice, and the checked free kernel does not encode that statistics choice.  _(class `A`)_
+- **chain closes:** True — The runner directly computes the stated finite spectra and matrix relations, and its explicit occupation formula establishes the descending Bose direction for arbitrary truncation. These results close the deliberately bounded construction and statistics-selection statement, without asserting a reconstruction of P1 from the full framework.
+- **rationale:** The runner performs genuine finite algebra rather than printing expected constants: it constructs the occupation spectra, taste tensor product, kernel identity, two-site ladder relations, and Pauli Casimir. The source accurately limits the conclusion to those constructions and to route pruning; it expressly withholds a reconstruction theorem and any promotion of P1/CAR. Within that bounded scope, the conclusions follow from the displayed algebra.
+- **auditor confidence:** high
 
 ### `flavor_substrate_parent_separate_note_2026-05-30`
 

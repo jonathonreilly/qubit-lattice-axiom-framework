@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 92 |
+| **retained** | 93 |
 | **retained_no_go** | 35 |
 | **retained_bounded** | 365 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2776 |
+| unaudited | 2775 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 477 |
+| `audited_clean` | 478 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3126 |
+| `unaudited` | 3125 |
 
 | claim_type | count |
 |---|---:|
@@ -226,6 +226,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `critical_exponents_topology_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cross_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cubic_coxeter_regge_deficit_vanishing_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `cycle_battery_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `cycle_battery_scaled_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `cycle_break_frontier_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -2391,6 +2392,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The source note derives the canonical tetrahedron dihedral table and then checks the finite edge-star sums for the three edge classes. The corrected axis-edge enumeration is explicit enough, and the runner source performs genuine symbolic/numerical Euclidean geometry rather than importing a contested premise.
 - **rationale:** This is a standalone Euclidean algebra claim over the stipulated flat Coxeter triangulation, with no cited upstream authorities or physical bridge imports. The runner computes volumes, dihedral angles, and representative edge-star sums directly from vertex coordinates using sympy/numpy; it is not merely printing constants or reading another note. The repaired axis-edge proof replaces the earlier uniform-incidence shortcut with the correct finite-star accounting, preserving the zero-deficit conclusion.
 - **auditor confidence:** high
+
+### `cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`CUBIC_ORBIT_REYNOLDS_PROJECTOR_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CUBIC_ORBIT_REYNOLDS_PROJECTOR_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone finite-dimensional theorem for the D_4 action on real functions on R(d_max): the orbit average is the unique D_4-equivariant projection onto V_sym and has the stated algebraic, order, mass, basis, and dimension properties.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00393-cubic_orbit_reynolds_project`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because the group permutes each orbit, averaging over an orbit makes the function constant there, so a second averaging leaves it unchanged and the group average equals the same orbit average.  _(class `A`)_
+- **chain closes:** True — The orbit partition and finite-group action directly prove T1–T6, including uniqueness; no physical selector, external comparator, or upstream scientific premise is required. The runner independently exercises the same finite-set identities and reports 143 passing checks.
+- **rationale:** The note is a self-contained application of finite-group averaging and orbit counting. Its uniqueness proof is valid: equivariance makes any projection onto the invariant subspace absorb the group average, while every projection is the identity on its image. The runner performs actual numerical, matrix, and symbolic calculations rather than printing or importing the contested conclusions; residual risk is limited to interpretation creep beyond the explicitly excluded physical-kernel scope.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `cycle_battery_note_2026-04-10`
 

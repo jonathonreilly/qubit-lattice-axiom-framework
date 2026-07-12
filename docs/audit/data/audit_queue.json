@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 650,
     "high": 335,
-    "leaf": 1121,
+    "leaf": 1120,
     "medium": 755
   },
   "cycle_break_target_count": 49,
@@ -52543,28 +52543,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CUBIC_ORBIT_REYNOLDS_PROJECTOR_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_cubic_orbit_reynolds_projector_narrow.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -81639,6 +81617,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 575,
-  "total_pending": 2861
+  "ready_count": 574,
+  "total_pending": 2860
 }

@@ -239,3 +239,8 @@ sums, special-time or complete-layer cancellations, larger cells, and
 partitioned/clocked routes remain live. No axiom-update stop condition is
 triggered. The next exact discriminator is the noncommuting finite-time
 strictness boundary.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5237 is
+open and mergeable on the symmetric-Clifford head; the independent audit
+workflow is running.

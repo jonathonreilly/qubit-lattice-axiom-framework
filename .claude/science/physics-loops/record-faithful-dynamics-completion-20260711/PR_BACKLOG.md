@@ -24,6 +24,21 @@ for the next stacked review PR:
 
 No merge is authorized. Independent audit remains authoritative.
 
+The pairwise-commuting common-edge Hamiltonian classification is delivered as
+the next stacked review PR:
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5237
+- base: `physics-loop/record-faithful-dynamics-block09-clifford-qca-20260711`
+- head: `physics-loop/record-faithful-dynamics-block10-common-hamiltonian-20260711`
+- source runner: `PASS=25 FAIL=0`
+- disposition: exact bounded theorem; independent claim, math/code,
+  governance, N1--N8, and audit-system validation passed; only
+  `minimal_axioms` seeded, strict lint has no errors, and generated status
+  surfaces were stripped
+- delivery check: open, mergeable, audit workflow running
+
+No merge is authorized. Independent audit remains authoritative.
+
 The symmetric two-qubit Clifford matching-QCA classification is prepared for
 the next stacked review PR:
 

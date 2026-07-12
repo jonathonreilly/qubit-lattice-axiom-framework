@@ -321,3 +321,7 @@ violations. Audit validation seeds only `minimal_axioms`, leaves the claim
 `bounded_theorem` / `unaudited`, attaches no helper runners, and strict lint
 has no errors. Generated audit/effective-status surfaces are stripped before
 delivery; independent audit remains required.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5237 is
+open and mergeable on the symmetric-Clifford head; audit workflow running.

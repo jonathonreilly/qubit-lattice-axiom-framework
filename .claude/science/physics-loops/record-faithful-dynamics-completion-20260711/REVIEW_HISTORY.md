@@ -605,3 +605,6 @@ coupled periodic two-seam reflected-Gram dependency and source hash
 `b1e6ef5367ac9cbb...`; strict lint has no errors, vocabulary lint has zero
 violations, and generated audit/status surfaces are stripped. No axiom-update
 stop is triggered.
+
+Delivery: stacked PR #5290 is open on the coupled periodic two-seam
+reflected-Gram head. Independent audit remains authoritative.

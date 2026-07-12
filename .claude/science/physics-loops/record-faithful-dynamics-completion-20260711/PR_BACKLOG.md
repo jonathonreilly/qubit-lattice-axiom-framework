@@ -15,7 +15,8 @@ prepared as the next stacked review block:
   coupled periodic two-seam reflected-Gram dependency, matching note hash,
   strict lint zero errors, vocabulary lint zero violations, generated
   audit/status outputs stripped
-- delivery: PR pending
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5290
+- delivery: open on the coupled periodic two-seam reflected-Gram head
 
 No merge is authorized. Independent audit remains authoritative.
 

@@ -540,3 +540,35 @@ surfaces are stripped before delivery. No axiom-update stop is triggered.
 
 Delivery: stacked PR #5278 is open on Block15. Independent audit remains
 authoritative.
+
+## Full coupled periodic two-seam reflected-Gram review iteration 1
+
+Review found two material packaging/math issues. The `SU(3)` representation-
+ring runner initially advanced with `beta/2` rather than the
+`exp[(beta/3)ReTr]` coefficient `beta/6`. The No-Go Discipline packet also
+mixed gauge-chart routes with the actual operator non-implication and bundled
+domination, null descent, contraction, and the infinite-time limit as one
+independent condition. Both were repaired.
+
+## Full coupled periodic two-seam reflected-Gram review iteration 2
+
+PASS WITH BOUNDED CLAIMS. The source proves the arbitrary-observable
+two-seam moment-vector Gram for both adjacent planes and keeps residual
+Polyakov holonomy integrated. The deterministic `L_t=6` exact `Z_3`
+three-color analogue contains densities, temporal-link mesons,
+Wilson-times-meson products, and neutral baryons; both direct plane Grams and
+the adjacent identity are positive, while a uniform reflection is decisively
+non-Hermitian/negative. Runner/cache: `PASS=16 FAIL=0`.
+
+Independent code/math re-review confirms the corrected `beta/6` series,
+gauge-invariant probe charges, full action covariance, direct rather than
+operator-constructed shifted Gram, and exact null-descent/contraction
+countermodels. Claim/import/Nature review passes at bounded strength with all
+model/spin/geometry/algebra inputs explicit. Governance/N1--N8 re-review
+passes after eight genuine operator-rescue routes and the collapsed hierarchy
+`domination -> descent/contraction -> infinite-time semigroup`.
+
+Audit validation seeds one `bounded_theorem` / `unaudited` row with exactly
+three dependencies and matching source hash `c5c187bf...`; strict lint has no
+errors, vocabulary lint has zero violations, and generated audit/status
+surfaces are stripped. No axiom-update stop is triggered.

@@ -8,32 +8,32 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block16-two-seam-holonomy-20260712
+branch: physics-loop/record-faithful-dynamics-block17-coupled-circle-os-20260712
 base_commit_at_start: 9d1636f05f
-cycle_count: 16
-block_count: 16
-active_route: plane_adapted_two_seam_forest_gauge_and_polyakov_holonomy
+cycle_count: 17
+block_count: 17
+active_route: full_coupled_periodic_two_seam_reflected_gram
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: two_seam_forest_gauge_polyakov_holonomy_preservation_bounded_theorem_note_2026-07-12
+produced_claim_id: coupled_periodic_two_seam_su3_wilson_staggered_reflected_gram_bounded_theorem_note_2026-07-12
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  For each adjacent reflection plane, an exact two-seam matching forest can be
-  fixed with normalized-Haar and Berezin factor one while preserving arbitrary
-  Polyakov conjugacy class. The Wilson and twisted-antiperiodic staggered seam
-  kernels then reduce to positive local factors. The two planes require
-  separate charts; a single invariant identity-link forest containing all four
-  seams closes to the full temporal cycle and kills holonomy. The complete
-  coupled circle Gram and compressed-correlation identity remain open.
+  The full finite-circle SU(3) Wilson-staggered reflected Gram is positive for
+  both adjacent planes on the individually gauge-invariant positive-half
+  cylinder algebra. The proof uses separate forest charts, a full side-action
+  split, and one combined two-seam moment kernel while integrating arbitrary
+  Polyakov holonomy. The adjacent two-step correlation form is positive, but
+  exact countermodels show that null descent and contraction do not follow
+  from the two positive forms alone.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source proves the exact forest/Haar/Polyakov bridge and seam-local
-  Wilson-times-fermion positivity under supplied Wilson-staggered, spin, and
-  observable-domain conditions, while explicitly leaving the full coupled
-  circle Gram, transfer, and continuum open.
+  The source proves the full coupled finite-circle reflected Gram and positive
+  adjacent correlation form under supplied Wilson-staggered, spin, geometry,
+  and observable-domain conditions, while explicitly leaving quotient descent,
+  contraction, transfer, infinite-time, and continuum closure open.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -91,6 +91,9 @@ files_touched:
   - docs/TWO_SEAM_FOREST_GAUGE_POLYAKOV_HOLONOMY_PRESERVATION_BOUNDED_THEOREM_NOTE_2026-07-12.md
   - scripts/two_seam_forest_gauge_polyakov_holonomy_2026_07_12.py
   - logs/runner-cache/two_seam_forest_gauge_polyakov_holonomy_2026_07_12.txt
+  - docs/COUPLED_PERIODIC_TWO_SEAM_SU3_WILSON_STAGGERED_REFLECTED_GRAM_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/coupled_periodic_two_seam_su3_wilson_staggered_reflected_gram_2026_07_12.py
+  - logs/runner-cache/coupled_periodic_two_seam_su3_wilson_staggered_reflected_gram_2026_07_12.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -125,10 +128,11 @@ no_go_routes:
   - periodic fermion wrap plus one uniform reflection phase is non-PSD at the second circle seam even in the free temporal reduction
   - global temporal gauge on a periodic gauge circle silently restricts to trivial Polyakov holonomy
   - one literal identity-link forest invariant under both adjacent reflections and containing all four crossing layers closes to the entire temporal cycle, is not a forest, and forces trivial Polyakov holonomy
+  - positivity of the original and adjacent correlation forms alone does not imply OS-null descent or contraction; exact 2x2 countermodels require a coupled domination or generalized-spectrum theorem
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
-review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open
+review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_bounded
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_preparing
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
@@ -146,11 +150,10 @@ block14_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block15_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5270
 block16_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5278
 next_exact_action: >-
-  Compose the two positive seam kernels with the full side-local
-  Wilson-staggered action in separate plane-adapted charts, prove the complete
-  coupled finite-circle reflected Gram for both adjacent planes, and construct
-  only the resulting compressed correlation operator before taking the
-  infinite-time transfer-semigroup limit.
+  Prove a finite-volume coupled domination or generalized-spectrum theorem
+  that supplies OS-null descent and a positive contraction on a controlled
+  core, then establish uniform bounds and take the L_t-to-infinity limit before
+  naming a transfer semigroup or Hamiltonian.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

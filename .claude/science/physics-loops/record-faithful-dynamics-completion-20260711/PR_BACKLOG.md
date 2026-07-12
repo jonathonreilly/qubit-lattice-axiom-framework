@@ -17,6 +17,23 @@ next stacked review PR:
 
 No merge is authorized. Independent audit remains authoritative.
 
+The full coupled periodic two-seam reflected Gram is prepared as the next
+stacked review block:
+
+- base: `physics-loop/record-faithful-dynamics-block16-two-seam-holonomy-20260712`
+- head: `physics-loop/record-faithful-dynamics-block17-coupled-circle-os-20260712`
+- source runner: `PASS=16 FAIL=0`
+- disposition: PASS WITH BOUNDED CLAIMS after code/math,
+  claim/import/Nature, governance, labeling, and repaired N1--N8 review; full
+  coupled finite-circle RP and the positive adjacent correlation form close,
+  while quotient descent, contraction, transfer, and continuum remain open
+- audit compatibility: one `bounded_theorem` / `unaudited` row, exactly three
+  dependencies, matching note hash, strict lint zero errors, vocabulary lint
+  zero violations, generated audit/status outputs stripped
+- delivery: PR pending
+
+No merge is authorized. Independent audit remains authoritative.
+
 The periodic-circle boundary and twisted-antiperiodic free repair is prepared
 as the next stacked review block:
 

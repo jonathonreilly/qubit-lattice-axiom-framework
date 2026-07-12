@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2793 |
+| unaudited | 2792 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 47 |
+| ~~audited_conditional~~ | 48 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 469 |
-| `audited_conditional` | 47 |
+| `audited_conditional` | 48 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3143 |
+| `unaudited` | 3142 |
 
 | claim_type | count |
 |---|---:|
@@ -628,6 +628,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hierarchy_matsubara_decomposition_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -4224,6 +4225,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The implication follows directly from Hermiticity, anti-commutation, and the nonzero eigenvalue hypothesis. Expanding Γ_χ = (2/3)J − I then gives the Koide relation, while orthogonal Fourier decomposition gives the norm split.
 - **rationale:** The load-bearing argument is a valid standalone algebraic closure and imports no empirical value, open authority, or framework realization. The supplied runner performs genuine symbolic matrix checks and explicit eigenvector tests rather than merely printing expected constants. The note correctly confines its conclusion to the conditional theorem and does not claim that the required H exists in the framework.
 - **auditor confidence:** high
+
+### `koide_aps_block_by_block_forcing_note_2026-04-21`
+
+- **Note:** [`KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md`](../../docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic restatement of the retained C3 inverse-normal-determinant theorem: for the body-diagonal C3 normal representation and the defined finite average, the value is 2/9; no global APS or physical-readout claim is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00373-koide_aps_block_by_block_for`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** With p=3 and transverse weights (1,2), the two inverse-normal-determinant terms are each 1/3, so their C3 average is (1/3)(1/3+1/3)=2/9.  _(class `A`)_
+- **chain closes:** False — The displayed arithmetic closes exactly, but the broader no-hidden-choice language is not established because the packet defines rather than derives selection of the inverse-normal-determinant functional. Global APS and physical-readout bridges also remain expressly outside the closed chain.
+- **rationale:** The runner substantively checks the C3 matrix, spectrum, normal weights, inverse determinants, and exact 2/9 arithmetic; it is not a trivial printout or tuned numerical comparison. However, the retained fixed-locus parent already proves the same local calculation, while explicitly stating that the finite functional is defined rather than physically selected. Because the No-Go Discipline stress test leaves the alternate-functional route open, the source's broader no-alternative language is retained only conditionally at the narrowed algebraic scope.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: alternate-functional and global-APS attack classes remain open, so five distinct routes are not all closed.
+    - N5: the source's construction-level no-alternative wording includes untested functional and physical-readout resolutions.
 
 ### `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py
-runner_sha256: ff4cd8e5d02e559634f900fa7b17658a0b97330795d203d2e6521dbd4e7ade8c
+runner_sha256: 0be6b226896e56c7248d78d019bd76b8385da1a01090634372821374d70106f6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.73
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
 Complex-vs-realified determinant-power countermodels
@@ -60,7 +60,15 @@ Part E: exact finite witnesses
   [PASS] finite witness 2 has determinant-power split
   [PASS] finite witness 3 has determinant-power split
 
-Part F: source and axiom guards
+Part F: rhetoric-resolution lifts
+---------------------------------
+  [PASS] per_element: scalar complex carrier retains the factor-two determinant-power split
+  [PASS] per_site: translated singleton carriers retain both additive determinant readouts
+  [PASS] per_mode: diagonal finite-mode products retain the complex-versus-realified factor two
+  [PASS] per_block: direct-sum finite blocks preserve additivity for both determinant powers
+  [PASS] lattice_wide: finite lattice record union preserves both laws and their factor-two split
+
+Part G: source and axiom guards
 -------------------------------
   [PASS] axioms withhold K/CPT structure
   [PASS] axioms withhold source/action identification
@@ -82,7 +90,7 @@ Part F: source and axiom guards
   [PASS] discipline gate records PASS
 
 ====================================================================
-TOTAL: PASS=54, FAIL=0
+TOTAL: PASS=59, FAIL=0
 
 ----- stderr -----
 

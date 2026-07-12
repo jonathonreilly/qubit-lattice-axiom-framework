@@ -208,4 +208,4 @@ Run:
 python3 scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py
 ```
 
-Expected result: `PASS=40`, `FAIL=0`.
+Expected result: `PASS=45`, `FAIL=0`.

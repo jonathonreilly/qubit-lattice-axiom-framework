@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py
-runner_sha256: c0e6708a715a8539dadaf7c16a2831a9a37a06d6a5a892b845f43fded53ad2ab
+runner_sha256: 32f18b31492f765ff7b5ec35d3ccf138f5820a3cb9f2b439cd7a157cc9929fae
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.08
@@ -38,7 +38,15 @@ Part C: arbitrary finite additivity
   [PASS] cardinality formula holds at n=5
   [PASS] three-way disjoint additivity
 
-Part D: source and axiom guards
+Part D: rhetoric-resolution lifts
+---------------------------------
+  [PASS] per_element: singleton record indicator preserves distinct beta-one and beta-two readouts
+  [PASS] per_site: translated finite-site records preserve symmetry while leaving beta free
+  [PASS] per_mode: disjoint finite-mode decomposition preserves additivity while leaving beta free
+  [PASS] per_block: disjoint record blocks preserve additivity for both beta normalizations
+  [PASS] lattice_wide: finite lattice partition preserves both laws while beta remains unselected
+
+Part E: source and axiom guards
 -------------------------------
   [PASS] current Record axiom contains empty-zero
   [PASS] current Record axiom contains finite additivity
@@ -62,7 +70,7 @@ Part D: source and axiom guards
   [PASS] discipline gate records PASS
 
 ========================================================================
-TOTAL: PASS=40, FAIL=0
+TOTAL: PASS=45, FAIL=0
 
 ----- stderr -----
 

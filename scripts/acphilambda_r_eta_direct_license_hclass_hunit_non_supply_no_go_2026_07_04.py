@@ -94,7 +94,68 @@ def main() -> int:
         == readout(beta_counter, h, a) + readout(beta_counter, h, b) + readout(beta_counter, h, c),
     )
 
-    section("Part D: source and axiom guards")
+    section("Part D: rhetoric-resolution lifts")
+    check(
+        "per_element: singleton record indicator preserves distinct beta-one and beta-two readouts",
+        readout(beta_target, h, singleton) == h
+        and readout(beta_counter, h, singleton) == 2 * h,
+    )
+
+    site_family = frozenset({(-2, 1, 0), (0, 0, 0), (3, -1, 2), (4, 4, -3)})
+    translated_family = frozenset((x + 9, y - 6, z + 5) for x, y, z in site_family)
+    check(
+        "per_site: translated finite-site records preserve symmetry while leaving beta free",
+        all(
+            readout(beta, h, translated_family) == readout(beta, h, site_family)
+            for beta in (beta_target, beta_counter)
+        )
+        and readout(beta_target, h, site_family) != readout(beta_counter, h, site_family),
+    )
+
+    mode_records = frozenset((0, 0, mode) for mode in range(5))
+    low_modes = frozenset((0, 0, mode) for mode in range(2))
+    high_modes = mode_records - low_modes
+    check(
+        "per_mode: disjoint finite-mode decomposition preserves additivity while leaving beta free",
+        low_modes.isdisjoint(high_modes)
+        and all(
+            readout(beta, h, mode_records)
+            == readout(beta, h, low_modes) + readout(beta, h, high_modes)
+            for beta in (beta_target, beta_counter)
+        )
+        and readout(beta_target, h, mode_records) != readout(beta_counter, h, mode_records),
+    )
+
+    check(
+        "per_block: disjoint record blocks preserve additivity for both beta normalizations",
+        all(
+            readout(beta, h, r | s) == readout(beta, h, r) + readout(beta, h, s)
+            for beta in (beta_target, beta_counter)
+        )
+        and readout(beta_target, h, r | s) != readout(beta_counter, h, r | s),
+    )
+
+    lattice_records = frozenset(
+        (x, y, z)
+        for x in range(2)
+        for y in range(2)
+        for z in range(2)
+    )
+    even_sites = frozenset(site for site in lattice_records if sum(site) % 2 == 0)
+    odd_sites = lattice_records - even_sites
+    check(
+        "lattice_wide: finite lattice partition preserves both laws while beta remains unselected",
+        even_sites.isdisjoint(odd_sites)
+        and all(
+            readout(beta, h, lattice_records)
+            == readout(beta, h, even_sites) + readout(beta, h, odd_sites)
+            for beta in (beta_target, beta_counter)
+        )
+        and readout(beta_target, h, lattice_records)
+        != readout(beta_counter, h, lattice_records),
+    )
+
+    section("Part E: source and axiom guards")
     note = NOTE.read_text(encoding="utf-8")
     axioms = AXIOMS.read_text(encoding="utf-8")
     scale_reference = SCALE_REFERENCE.read_text(encoding="utf-8")

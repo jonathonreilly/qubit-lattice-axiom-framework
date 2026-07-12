@@ -225,4 +225,4 @@ Run:
 python3 scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py
 ```
 
-Expected result: `PASS=54`, `FAIL=0`.
+Expected result: `PASS=59`, `FAIL=0`.

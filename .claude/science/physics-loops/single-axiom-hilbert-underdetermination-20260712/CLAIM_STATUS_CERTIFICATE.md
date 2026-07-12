@@ -32,3 +32,8 @@ The complete N1-N8 record is in the new leaf source note and
 `NO_GO_DISCIPLINE_CHECKLIST.md`. Independent audit remains required before the
 pipeline may assign an effective status. This certificate does not recommend
 or prefill an audit verdict.
+
+Disposable-worktree validation ran the full audit pipeline and strict lint
+with no errors. It seeded the same-path row as ready `bounded_theorem` and the
+new zero-inbound leaf as ready `no_go`, each depending only on the approved
+`minimal_axioms` node. Generated audit outputs were not copied to this branch.

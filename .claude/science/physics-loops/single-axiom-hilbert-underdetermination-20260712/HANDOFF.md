@@ -21,14 +21,15 @@ unitary/dephasing CPTP, and `p=2`/`p=4` witnesses.
 - Same-path runner: 10/10 PASS; leaf no-go runner: 21/21 PASS.
 - Review-loop: iteration 3 PASS across code/math, physics/import/Nature,
   N1-N8, and governance reviewers.
-- Audit-pipeline validation: pending.
+- Audit-pipeline validation: PASS in a disposable worktree; strict lint has no
+  errors and both rows are ready with only `minimal_axioms` as dependency.
 - Commit/push/PR: pending.
 
 ## Exact next action
 
-Run audit compatibility validation in a disposable worktree, confirm the two
-claim rows depend only on `minimal_axioms`, then push and open one unmerged
-review PR.
+Push and open one unmerged review PR. After delivery, the exact next science
+action is independent audit of the same-path bounded theorem and the separate
+zero-inbound no-go leaf.
 
 ## Proposed later weaving
 

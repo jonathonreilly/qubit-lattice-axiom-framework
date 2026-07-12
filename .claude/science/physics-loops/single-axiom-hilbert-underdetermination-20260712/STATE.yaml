@@ -49,12 +49,17 @@ no_go_routes:
   - current framework supplies graph separately and withholds dynamics/Born weights
 trace_gate_classification: direct_blocker_closure
 review_disposition: iteration_3_pass
-audit_compatibility_validation: pending
+audit_compatibility_validation: >-
+  PASS in disposable worktree at fe1483f43: full 16-stage pipeline and
+  audit_lint --strict completed with no errors. single_axiom_hilbert_note
+  seeded bounded_theorem, high criticality, ready=true, deps=[minimal_axioms];
+  the new no_go seeded leaf, ready=true, direct_in_degree=0,
+  deps=[minimal_axioms]. No generated audit authority was copied back.
 pr_status: pending
 pr_url: null
 next_exact_action: >-
-  Validate the audit pipeline in a disposable worktree without retaining
-  generated authority files, then push and open one unmerged review PR.
+  Push the dedicated science branch and open one unmerged review PR; then
+  record the verified PR URL and leave independent audit as the next action.
 stop_condition: >-
   Stop after one coherent no-go science block passes review, is pushed, and has
   one unmerged review PR.

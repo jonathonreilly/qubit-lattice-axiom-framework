@@ -34,3 +34,15 @@
 - Imports: CLEAN.
 - Nature retention review: meets the repo bar for independent audit.
 - Final local review-loop disposition: PASS.
+
+## Audit compatibility validation
+
+- Disposable worktree commit: `fe1483f43`.
+- Full 16-stage audit pipeline: PASS.
+- `audit_lint.py --strict`: PASS with no errors; repo-wide legacy warnings and
+  notices only.
+- `single_axiom_hilbert_note`: `bounded_theorem`, `unaudited`, ready, high
+  criticality, nine inbound edges, dependency `minimal_axioms` only.
+- New selector no-go: `no_go`, `unaudited`, ready, leaf, zero inbound edges,
+  dependency `minimal_axioms` only.
+- No generated audit/effective-status output was copied to the science branch.

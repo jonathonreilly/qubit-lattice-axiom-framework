@@ -1,0 +1,60 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_c3_resolvent_determinant_holonomy_coupling_2026_07_12.py
+runner_sha256: d7b36ff5ab7848f490ccf51ed2333892d2169f3e1337eb15d4955250af72908f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.63
+status: ok
+----- stdout -----
+AC_phi_lambda C3 resolvent determinant-holonomy coupling
+
+Part A: normal representation and resolvents
+PASS  normal basis is P3-invariant with the displayed action
+PASS  normal action has order three
+PASS  normal action has determinant one
+PASS  first resolvent is exact
+PASS  second resolvent is exact
+PASS  the two resolvents sum to identity
+PASS  group-order-normalized nonidentity resolvent sum B equals I/3
+
+Part B: fixed-locus density and trace coupling
+PASS  both inverse-normal determinants have denominator three
+PASS  fixed-locus density h equals 2/9
+PASS  trace(B) equals 2/3
+PASS  trace(B) equals three times h
+PASS  B is unchanged under generator reversal
+
+Part C: determinant holonomy and symmetric three-step root
+PASS  exp(i beta B) reduces to a scalar unitary
+PASS  det U_beta is exp(2 i beta/3)
+PASS  symmetric edge root cubes to U1
+PASS  cycle determinant phase is 2/3
+PASS  edge determinant phase is h
+PASS  three edge phases add to the cycle phase
+PASS  U1 is unitary
+
+Part D: single sector, conjugate pair, and realification
+PASS  rank-two Pfaffian has the retained raw sign
+PASS  single-sector determinant carries the cycle phase
+PASS  independent conjugate-paired determinant equals one
+PASS  ordinary realification determinant equals one
+PASS  conjugate pairing cancels the determinant phase
+PASS  complex conjugation reverses the single-sector phase
+
+Part E: determinant-character weights and remaining normalization
+PASS  character formula at k=1,beta=1 gives cycle phase 2/3
+PASS  conjugate character k=-1 reverses orientation
+PASS  paired net weight k+(-k) is phase-trivial
+PASS  k=2 character has a nontrivial kernel witness z=-1
+PASS  k=1 is the identity and k=-1 inversion is bijective
+PASS  sample nonfundamental characters have nontrivial root kernels
+PASS  edge determinant character is derived from exp(i k beta B/3)
+PASS  edge lift at k=1,beta=1 equals h
+PASS  beta=2 remains a distinct exact normalization
+
+========================================================================
+SCORECARD: PASS=34 FAIL=0
+========================================================================
+
+----- stderr -----
+

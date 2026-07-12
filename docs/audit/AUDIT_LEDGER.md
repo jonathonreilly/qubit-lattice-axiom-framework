@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 100 |
 | **retained_no_go** | 42 |
-| **retained_bounded** | 412 |
+| **retained_bounded** | 413 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
 | unaudited | 2655 |
-| audit_in_progress | 27 |
+| audit_in_progress | 26 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 27 |
-| `audited_clean` | 541 |
+| `audit_in_progress` | 26 |
+| `audited_clean` | 542 |
 | `audited_conditional` | 93 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 43 |
@@ -136,7 +136,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_tm2_magnitudes_conditional_bounded_note_2026-05-26` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -433,6 +432,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lensing_adjoint_kernel_reduced_model_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `lensing_deflection_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `lensing_k_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `lieb_robinson_equal_time_tensor_locality_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `linear_response_derivation_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
 | `linear_response_true_kubo_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -6260,6 +6260,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing work is a class A algebraic identity over retained-grade inputs. The primary runner source confirms it checks note scope, hard-coded retained multiplicities, exact Fraction algebra, and retained-grade ledger status, with no external comparator or first-principles operator computation. Because the theorem reduces to a narrow algebraic corollary of the graph-first SU3 integration parent plus standard tracelessness arithmetic, it fits the decoration policy rather than a new independent theorem.
 - **decoration parent:** `graph_first_su3_integration_note`
 - **auditor confidence:** high
+
+### `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic audit of the nonzero projective eigenvalue ratio, the convention-fixed charge formulas under b = -1 and Q = T_3 + Y/2, and the odd/even reduced-denominator rule for positive integer n_color.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00065-lh_traceless_eigenvalue_rati`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** From 2 n_color a + 2 b = 0 and (a,b) != (0,0), one obtains b = -n_color a and hence a:b = 1:(-n_color).  _(class `A`)_
+- **chain closes:** True — L1 and L2 give the projective ratio directly; fixing b = -1 then gives a = 1/n_color and the stated charge formulas. The general gcd identities prove the denominator rule for both parity classes without importing n_color = 3 or a physical hypercharge-identification theorem.
+- **rationale:** The proof is a genuine class-A algebraic closure over explicitly stated hypotheses, and the repaired L2 premise removes the zero-pair defect identified in the earlier audit. The runner performs symbolic solving, exact rational arithmetic, parity counterfactuals, and gcd checks rather than merely printing expected values; its finite sweep is supplemented by the note's general gcd proof. The result remains formal and convention-scoped: it does not derive the state count, n_color = 3, the scale choice b = -1, or the physical SM identification.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10`
 

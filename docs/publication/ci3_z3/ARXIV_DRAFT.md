@@ -515,21 +515,23 @@ that bridge.
 
 ### 5.1 Observable principle and the electroweak scale
 
-The electroweak hierarchy lane is retained on the exact minimal $3+1$ block.
-The finite Grassmann Gaussian makes $\log|Z|$ the unique additive CPT-even
-scalar generator on that surface, and the resulting source-response theorem
-fixes the hierarchy kernel.
+The electroweak hierarchy route is not a zero-input four-axiom result. On its
+finite positive/local source surface, the determinant generator is conditional
+on the declared T1-d determinant-only readout quotient, the identification of
+disjoint source blocks with disjoint records, the conventional $c=1$
+normalization, and the separate plaquette/scale/carrier chain.
 
-**Theorem 5 (Observable principle on the minimal block).**
-For a source-deformed lattice Dirac operator $D[J]=D+J$, exact Grassmann
-factorization and scalar additivity force
+**Conditional finite-block identity.**
+For a source-deformed lattice Dirac operator $D[J]=D+J$, Grassmann
+factorization and scalar additivity give, after supplying the T1-d readout
+quotient and normalization,
 
 $$
 W[J] = \log |\det(D+J)| - \log |\det D| \tag{10}
 $$
 
-as the unique additive CPT-even scalar generator, up to normalization and the
-zero-source subtraction.
+as the selected additive generator on that declared readout surface. Record
+alone does not force the determinant quotient or the source-to-record bridge.
 
 On the current plaquette-derived normalization chain, the canonical evaluation
 is
@@ -540,9 +542,9 @@ v = M_{\mathrm{Pl}}\left(\frac{7}{8}\right)^{1/4}\alpha_{LM}^{16}
 $$
 
 which is $+0.0255\%$ relative to the comparator $246.22\,\mathrm{GeV}$. The
-exact theorem is the source-response structure on the minimal block. The quoted
-number is the canonical same-surface evaluation on the live package surface,
-not a fitted datum.
+quoted number is a conditional same-surface evaluation using the named
+readout, normalization, plaquette, scale, and carrier inputs; it is not an
+axiom-only prediction or a fitted datum.
 
 ### 5.2 Retained standalone quantitative lanes
 

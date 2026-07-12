@@ -1609,7 +1609,6 @@ def run_propagation() -> int:
     scripts_dir = Path(__file__).resolve().parent
     print()
     print("Propagating audit verdicts through downstream pipeline steps...")
-    failed = 0
     for script, desc in PROPAGATION_STEPS:
         script_path = scripts_dir / script
         if not script_path.exists():
@@ -1621,13 +1620,47 @@ def run_propagation() -> int:
             cwd=REPO_ROOT, capture_output=True, text=True,
         )
         if result.returncode != 0:
-            failed += 1
             print(f"     FAIL exit={result.returncode}", file=sys.stderr)
             if result.stderr:
                 print(f"     stderr: {result.stderr.strip()[:400]}", file=sys.stderr)
-    if failed:
-        print(f"Propagation: {len(PROPAGATION_STEPS) - failed}/{len(PROPAGATION_STEPS)} steps OK ({failed} failed)")
-        return 1
+            return 1
+        if script == "invalidate_stale_audits.py":
+            for attempt in range(1, 11):
+                invalidated = len(
+                    json.loads(LEDGER_PATH.read_text(encoding="utf-8")).get(
+                        "last_invalidations", []
+                    )
+                )
+                if invalidated == 0:
+                    break
+                print(
+                    f"     fixed-point pass {attempt}: {invalidated} invalidation(s); "
+                    "recomputing effective status"
+                )
+                compute = subprocess.run(
+                    [sys.executable, str(scripts_dir / "compute_effective_status.py")],
+                    cwd=REPO_ROOT, capture_output=True, text=True,
+                )
+                if compute.returncode != 0:
+                    print("     FAIL compute_effective_status.py", file=sys.stderr)
+                    return 1
+                repeat = subprocess.run(
+                    [sys.executable, str(script_path)],
+                    cwd=REPO_ROOT, capture_output=True, text=True,
+                )
+                if repeat.returncode != 0:
+                    print("     FAIL invalidate_stale_audits.py", file=sys.stderr)
+                    return 1
+            if len(
+                json.loads(LEDGER_PATH.read_text(encoding="utf-8")).get(
+                    "last_invalidations", []
+                )
+            ) != 0:
+                print(
+                    "     FAIL invalidation did not reach a fixed point after 10 passes",
+                    file=sys.stderr,
+                )
+                return 1
     print(f"Propagation: {len(PROPAGATION_STEPS)} steps OK")
     return 0
 

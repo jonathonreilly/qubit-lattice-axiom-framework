@@ -78,11 +78,13 @@ forward falsifier identified" status is **unchanged**.
   re-calibrates the comparator rather than excluding the framework. `sin²θ_W`'s
   "−0.26%" hides a ~10σ nominal pull once the tiny experimental error is restored.
   **Do not quote these as predictions.**
-- **Clean but untestable-in-practice** (bucket C): the Lorentz-violation `Y₄₀`
-  cubic-harmonic fingerprint (distinctive, `retained_bounded`, but 7–18 orders below
-  every current/foreseeable bound); proton decay (`τ_p ~ 4×10⁴⁷` yr, ~13 orders
-  beyond Hyper-K); the 3-generation / 3-color counts (retrodictions). Distinctive,
-  not near-term falsifiers.
+- **Not currently a forward falsifier:** the Lorentz cubic-harmonic calculation
+  is an unaudited fixed-action diagnostic. The selected finite-difference
+  symbol has a checked `l=4` cubic pattern, but the action, carrier, spacing,
+  and SME/observable matching are not supplied by the four axioms. No
+  experimental-reach or framework-distinctiveness claim is publication-usable
+  pending those bridges. Proton decay and the generation/color counts remain
+  separately governed by their own cited authority surfaces.
 
 ## Honest conditionality (read before quoting any number)
 

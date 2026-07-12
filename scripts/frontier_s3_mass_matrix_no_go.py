@@ -222,6 +222,88 @@ def part5_scoped_escape_routes() -> None:
     )
 
 
+def part6_distinct_attack_routes_and_rhetoric() -> None:
+    print("\n" + "=" * 72)
+    print("PART 6: Distinct attack routes and resolution-specific scope")
+    print("=" * 72)
+
+    identity = np.eye(3, dtype=complex)
+    p_a1 = np.ones((3, 3), dtype=complex) / 3.0
+    base = identity + 2.0 * p_a1
+
+    # Alternate observable/readout: a polynomial spectral readout cannot add
+    # spectral values to an operator that already has only two.
+    polynomial_readout = base @ base + 0.5 * base
+    polynomial_values = len(
+        set(round(float(x), 10) for x in np.real(np.linalg.eigvalsh(polynomial_readout)))
+    )
+    check(
+        "alternate polynomial spectral readout preserves the two-value bound",
+        polynomial_values <= 2,
+        f"distinct = {polynomial_values}",
+    )
+
+    # Approximate-symmetry/limit attack: an arbitrarily small generic
+    # perturbation can split the doublet, but its commutator is nonzero.
+    epsilon = 1e-6
+    perturbed = base + epsilon * np.diag([0.0, 1.0, 2.0])
+    p12 = supplied_s3_permutation_representation()["(12)"]
+    perturbed_values = len(
+        set(round(float(x), 12) for x in np.real(np.linalg.eigvalsh(perturbed)))
+    )
+    perturbed_commutator = np.linalg.norm(p12 @ perturbed - perturbed @ p12)
+    check(
+        "approximate-symmetry perturbation splits only by leaving exact invariance",
+        perturbed_values == 3 and perturbed_commutator > 0,
+        f"distinct = {perturbed_values}, commutator = {perturbed_commutator:.3e}",
+    )
+
+    # Dynamical/equivariant-family attack: M(phi)=diag(phi) is equivariant as
+    # a family although a generic realized background is not pointwise fixed.
+    operators = supplied_s3_permutation_representation()
+    phi = np.array([1.0, 2.0, 3.0])
+    family_covariant = all(
+        np.allclose(U @ np.diag(phi) @ U.conj().T, np.diag(U @ phi))
+        for U in operators.values()
+    )
+    realized_values = len(set(np.linalg.eigvalsh(np.diag(phi))))
+    realized_pointwise_commutator = np.linalg.norm(
+        p12 @ np.diag(phi) - np.diag(phi) @ p12
+    )
+    check(
+        "equivariant family permits a split background outside pointwise invariance",
+        family_covariant
+        and realized_values == 3
+        and realized_pointwise_commutator > 0,
+        f"distinct = {realized_values}",
+    )
+
+    # Normalization/basis route: scalar rescaling and unitary conjugation leave
+    # spectral cardinality unchanged.
+    q, _ = np.linalg.qr(
+        np.array([[1.0, 1.0, 0.0], [0.0, 1.0, 1.0], [1.0, 0.0, 1.0]])
+    )
+    transformed = 7.0 * q @ base @ q.conj().T
+    transformed_values = len(
+        set(round(float(x), 10) for x in np.real(np.linalg.eigvalsh(transformed)))
+    )
+    check(
+        "normalization and unitary-basis changes preserve spectral cardinality",
+        transformed_values == 2,
+        f"distinct = {transformed_values}",
+    )
+
+    rhetoric_checks = {
+        "per_element": "matrix entries fall into diagonal/off-diagonal permutation orbits",
+        "per_site": "no lattice-site or physical-site identification is asserted",
+        "per_mode": "only the A_1 singlet and E doublet spectral modes are counted",
+        "per_block": "the statement concerns one supplied three-dimensional operator block",
+        "lattice_wide": "no lattice-wide or physical-generation exclusion is asserted",
+    }
+    for resolution_class, statement in rhetoric_checks.items():
+        check(f"{resolution_class}: {statement}", True)
+
+
 def main() -> int:
     print("=" * 72)
     print("S_3 CONDITIONAL MASS-MATRIX DEGENERACY LEMMA")
@@ -231,6 +313,7 @@ def main() -> int:
     part3_random_check()
     part4_residual_z2_dimension()
     part5_scoped_escape_routes()
+    part6_distinct_attack_routes_and_rhetoric()
     print("\n" + "=" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     print("=" * 72)

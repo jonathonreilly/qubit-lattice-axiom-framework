@@ -935,22 +935,12 @@ def run_experiment():
      comparison; the runner has not established the sector mapping needed for
      an experimental exclusion.
 
-  3. SCALING WITH ENERGY
+  3. INTERPRETATION LIMIT
 
-     The suppression factor is (E/E_Planck)^2. To reach experimental
-     sensitivity, we would need:
-
-     (E/E_Planck)^2 > 10^-32  (photon birefringence bound)
-     E > E_Planck * 10^-16 ~ 10^3 GeV ~ 1 TeV
-
-     But at 1 TeV, the lattice correction for a Planck-scale lattice is:
-     (1000 / 1.22e19)^2 / 12 = {(1000/E_PLANCK_GEV)**2 / 12:.4e}
-
-     This is ~10^-32, which JUST touches the photon birefringence bound.
-     At the LHC energy scale (14 TeV):
-     (14000 / 1.22e19)^2 / 12 = {(14000/E_PLANCK_GEV)**2 / 12:.4e}
-
-     Still below the birefringence bound by a factor of ~100.
+     The dimensionless factor (E/E_Planck)^2 cannot be compared directly with
+     a dimensionful SME coefficient bound. This runner therefore makes no
+     energy-reach estimate. A valid comparison requires a specified carrier,
+     observable, sector convention, and dimensionally matched response map.
 """)
 
     # ── Section 7: Summary table ──────────────────────────────────

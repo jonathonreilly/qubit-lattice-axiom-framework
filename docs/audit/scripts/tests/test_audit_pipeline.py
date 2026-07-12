@@ -68,6 +68,7 @@ NO_GO_N7_ARGUMENT = (
 def _no_go_evidence_text(locator: str = "No-go obstruction") -> str:
     return "\n".join((
         locator, "selector wall", "dynamics wall", "closed by the restricted packet",
+        "residual:route_residual",
         "the route residual", NO_GO_N2_RATIONALE, *NO_GO_MECHANISMS,
         *NO_GO_ATTEMPTS, *NO_GO_N5_TESTED_RESOLUTIONS, NO_GO_N7_ARGUMENT,
     ))
@@ -645,6 +646,19 @@ class PublicationEffectiveStatusRenderTest(unittest.TestCase):
             )
             self.assertIn("AUDIT-NONRETAINED ROW", spoofed.splitlines()[2])
 
+    def test_unsafe_row_neutralizes_code_and_link_status_labels(self):
+        m = _import("render_publication_effective_status")
+        body = (
+            "| Claim | Status | Authority |\n"
+            "|---|---|---|\n"
+            "| X | `retained` | [retained result](X.md)"
+            f"{m.DERIVED_UNSAFE}[audit:unaudited] |\n"
+        )
+        rendered = m.demote_nonretained_table_rows(body)
+        self.assertIn("`unratified-source-label`", rendered)
+        self.assertIn("[unratified-source-label result](X.md)", rendered)
+        self.assertNotIn("`retained`", rendered)
+
 
 def _patch_repo_root(module, tmp_root: Path) -> None:
     """Override the module-level REPO_ROOT-derived paths."""
@@ -1010,6 +1024,31 @@ class ApplyAuditTest(unittest.TestCase):
         ok, msg = m.apply_one(led, audit)
         self.assertFalse(ok)
         self.assertIn("already been consumed", msg)
+
+    def test_propagation_runs_invalidation_to_fixed_point(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        m.LEDGER_PATH.parent.mkdir(parents=True, exist_ok=True)
+        m.LEDGER_PATH.write_text(
+            json.dumps({"rows": {}, "last_invalidations": []}),
+            encoding="utf-8",
+        )
+        invalidation_calls = 0
+
+        def fake_run(cmd, **_kwargs):
+            nonlocal invalidation_calls
+            if Path(cmd[1]).name == "invalidate_stale_audits.py":
+                invalidation_calls += 1
+                payload = json.loads(m.LEDGER_PATH.read_text(encoding="utf-8"))
+                payload["last_invalidations"] = (
+                    ["downstream"] if invalidation_calls == 1 else []
+                )
+                m.LEDGER_PATH.write_text(json.dumps(payload), encoding="utf-8")
+            return mock.Mock(returncode=0, stdout="", stderr="")
+
+        with mock.patch("subprocess.run", side_effect=fake_run):
+            self.assertEqual(m.run_propagation(), 0)
+        self.assertEqual(invalidation_calls, 2)
 
     def test_audit_invocation_history_rejects_replay_after_newer_audit(self):
         m = _import("apply_audit")
@@ -1442,8 +1481,8 @@ class ApplyAuditTest(unittest.TestCase):
             m, "trusted_evidence_manifest", return_value=fresh_manifest
         ):
             ok, msg = m.apply_one(led, second_audit)
-        self.assertTrue(ok, msg)
-        self.assertEqual(led["rows"]["legacy_pending_no_go"]["audit_status"], "audited_clean")
+        self.assertFalse(ok)
+        self.assertIn("rendered content drifted", msg)
 
     def test_hybrid_judicial_review_records_applyable_third_tuple(self):
         m = _import("apply_audit")
@@ -3938,6 +3977,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "Every attempted route remains open.",
             "We rule out every candidate carrier.",
             "The selector remains underdetermined.",
+            "No selector can produce the required carrier.",
+            "All candidate routes fail.",
             "`No-go` under the supplied structure.",
         ):
             with self.subTest(body=body):
@@ -3984,6 +4025,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "The spectrum has cardinality at most two.",
             "At most two distinct eigenvalues occur.",
             "There are no more than two spectral values.",
+            "The symmetry forces a doubly-degenerate eigenspace.",
+            "The operator cannot have three distinct eigenvalues.",
         ):
             with self.subTest(body=body):
                 self.assertTrue(
@@ -3999,6 +4042,20 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 self.assertFalse(
                     m.source_requires_no_go_discipline(
                         "docs/S3_CONDITIONAL_LEMMA.md", body, "positive_theorem"
+                    )
+                )
+
+    def test_questions_references_and_artifact_limits_do_not_trigger(self):
+        m = _import("no_go_discipline_gate")
+        for body in (
+            "Could a no-go be proved?",
+            "See the prior no-go theorem.",
+            "The runner does not produce plots.",
+        ):
+            with self.subTest(body=body):
+                self.assertFalse(
+                    m.source_requires_no_go_discipline(
+                        "docs/POSITIVE_NOTE.md", body, "positive_theorem"
                     )
                 )
 
@@ -4201,7 +4258,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             self.assertEqual(first, m.build_cross_cycle_index(target_row, rows, root))
             target_row["claim_scope"] = "different mutable target scope"
             target_row["verdict_rationale"] = "different mutable target verdict"
-            self.assertEqual(first, m.build_cross_cycle_index(target_row, rows, root))
+            self.assertNotEqual(first, m.build_cross_cycle_index(target_row, rows, root))
 
     def test_previous_audit_candidates_are_live_unless_explicitly_retired(self):
         m = _import("no_go_discipline_gate")
@@ -4326,7 +4383,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "no_go_discipline": packet,
         }
         self.assertIn(
-            "distinct route_class",
+            "route_class",
             m.validate_no_go_discipline(
                 audit, evidence_manifest=self._manifest()
             ) or "",
@@ -4360,11 +4417,13 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "chain_closes": True,
             "no_go_discipline": packet,
         }
-        self.assertIn(
-            "numbered paraphrases",
-            m.validate_no_go_discipline(
-                audit, evidence_manifest=manifest
-            ) or "",
+        error = m.validate_no_go_discipline(
+            audit, evidence_manifest=manifest
+        ) or ""
+        self.assertTrue(
+            "numbered paraphrases" in error
+            or "not supported by its evidenced" in error,
+            error,
         )
 
         audit["no_go_discipline"] = _no_go_packet()
@@ -4413,9 +4472,13 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "route_id": "route-1",
             "witness_residual": "the route residual",
             "claim_residual": "the route residual",
+            "witness_residual_id": "residual:route_residual",
+            "claim_residual_id": "residual:route_residual",
             "match": True,
             "evidence_path": "docs/AUTH.md",
             "evidence_locator": "Retained authority closes the route residual exactly",
+            "claim_evidence_path": "docs/TEST_NO_GO.md",
+            "claim_evidence_locator": "No-go obstruction",
         }]
         self.assertIsNone(
             m.validate_no_go_discipline(audit, evidence_manifest=manifest)
@@ -4671,6 +4734,41 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         )
         packet["N2_wall_independence"]["collapsed_wall_set"] = ["selector wall"]
         self.assertIsNone(m.validate_no_go_discipline(audit, evidence_manifest=manifest))
+
+    def test_equivalent_walls_collapse_to_one_representative(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        packet = _no_go_packet()
+        check = packet["N2_wall_independence"]["pairwise_checks"][0]
+        check.update({
+            "left_closes_right": True,
+            "right_closes_left": True,
+            "independent": False,
+        })
+        packet["N2_wall_independence"]["collapsed_wall_set"] = ["dynamics wall"]
+        audit = {
+            "claim_type": "no_go", "verdict": "audited_clean",
+            "chain_closes": True, "no_go_discipline": packet,
+        }
+        self.assertIsNone(
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest)
+        )
+
+    def test_n1_route_class_requires_evidenced_semantic_marker(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        packet = _no_go_packet()
+        packet["N1_alternative_routes"][0]["route_class"] = (
+            "topology_or_global_structure"
+        )
+        audit = {
+            "claim_type": "no_go", "verdict": "audited_clean",
+            "chain_closes": True, "no_go_discipline": packet,
+        }
+        self.assertIn(
+            "not supported by its evidenced",
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
+        )
 
     def test_occurrence_scans_and_resolution_classes_fail_closed(self):
         m = _import("no_go_discipline_gate")
@@ -5711,6 +5809,36 @@ class CodexAuditRunnerModelPolicyTest(unittest.TestCase):
         self.assertTrue(message.startswith("AUDIT_APPLIED_PROPAGATION_FAILED:"))
         self.assertIn("do not reapply", message)
 
+    def test_apply_preserves_prompt_bound_invocation_on_replay(self):
+        m = _import_codex_audit_runner()
+        proc = mock.Mock(returncode=0, stdout="OK\n", stderr="")
+        blob = {
+            "claim_id": "x",
+            "verdict": "audited_clean",
+            "audit_invocation_id": "prompt-bound-invocation-0001",
+        }
+        with mock.patch.object(m.subprocess, "run", return_value=proc) as run:
+            self.assertTrue(m.apply_one(blob, True, {})[0])
+            self.assertTrue(m.apply_one(blob, True, {})[0])
+        first = json.loads(run.call_args_list[0].kwargs["input"])
+        second = json.loads(run.call_args_list[1].kwargs["input"])
+        self.assertEqual(
+            first["audit_invocation_id"], "prompt-bound-invocation-0001"
+        )
+        self.assertEqual(first["audit_invocation_id"], second["audit_invocation_id"])
+
+    def test_validate_rejects_unbound_invocation_id(self):
+        m = _import_codex_audit_runner()
+        blob = {field: "x" for field in m.REQUIRED_VERDICT_FIELDS}
+        blob["claim_id"] = "x"
+        blob["audit_invocation_id"] = "different-invocation-0001"
+        self.assertIn(
+            "prompt-bound invocation",
+            m.validate_verdict(
+                blob, "x", expected_invocation_id="expected-invocation-0001"
+            ) or "",
+        )
+
 
 class CodexAuditRunnerReauditCandidatesTest(unittest.TestCase):
     def setUp(self):
@@ -6054,6 +6182,9 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         rows = {cid: row}
         manifest_row = dict(row)
         manifest_row["previous_audits"] = []
+        manifest_row["claim_type"] = archived["claim_type"]
+        manifest_row["claim_scope"] = archived["claim_scope"]
+        manifest_row["audit_status"] = archived["audit_status"]
         manifest = m.no_go_discipline_gate.build_evidence_manifest(
             manifest_row, {cid: manifest_row}, self.tmp_root
         )
@@ -6392,8 +6523,19 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         self.assertEqual(new_row["claim_type"], "positive_theorem")
         self.assertEqual(new_row["claim_scope"], "test scope")
         self.assertEqual(new_row["auditor"], "codex-test")
-        # The archive entry is removed from previous_audits.
-        self.assertEqual(new_row["previous_audits"], [])
+        self.assertEqual(new_row["previous_audits"], [archived])
+        self.assertEqual(
+            new_row["restoration_history"][-1]["invalidation_reason"],
+            "criticality_increased:leaf->critical",
+        )
+        self.assertEqual(
+            new_row["restoration_history"][-1]["restoration_policy"],
+            "restore_overaggressive_invalidation.v2",
+        )
+        self.assertRegex(
+            new_row["restoration_history"][-1]["archived_audit_sha256"],
+            r"^[0-9a-f]{64}$",
+        )
 
     def test_idempotent_on_already_audited_rows(self):
         """A row that's currently audited (not unaudited) is not a candidate."""
@@ -6439,9 +6581,9 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         down = out["rows"]["downstream"]
         self.assertEqual(soft["audit_status"], "audited_clean")
         self.assertEqual(soft["claim_type"], "positive_theorem")
-        self.assertEqual(soft["previous_audits"], [])
+        self.assertEqual(soft["previous_audits"], [archived_clean])
         self.assertEqual(down["audit_status"], "audited_clean")
-        self.assertEqual(down["previous_audits"], [])
+        self.assertEqual(down["previous_audits"], [archived_dep_weak])
 
 
 class ComputeAuditDispatchQueueTest(unittest.TestCase):

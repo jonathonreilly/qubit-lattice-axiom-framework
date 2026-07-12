@@ -1,0 +1,27 @@
+schema_version: 1
+loop_slug: universal-gr-tensor-action-blocker-20260712
+mode: run
+goal: "Replace the inventory-only tensor-action blocker with a first-principles derivation or the sharpest exact obstruction."
+target_status: best-honest-status
+actual_current_surface_status: no-go
+started_at: "2026-07-12T09:55:05-04:00"
+checkpoint_at: "2026-07-12T10:30:41-04:00"
+cycle_count: 1
+block_count: 1
+active_route: "source-map underdetermination plus real-pullback inertia obstruction"
+hard_residual: "derive a metric-source and curvature operator from the scalar generator without inserting Einstein dynamics"
+files_touched:
+  - docs/UNIVERSAL_GR_TENSOR_ACTION_BLOCKER_NOTE.md
+  - scripts/frontier_universal_gr_tensor_action_blocker.py
+  - outputs/frontier_universal_gr_tensor_action_blocker_2026-07-12.txt
+  - .claude/science/physics-loops/universal-gr-tensor-action-blocker-20260712/
+open_imports: []
+no_go_routes:
+  - "scalar W without a metric-to-source map"
+  - "direct J=h log-det Hessian under real linear pullback"
+trace_gate_classification: negative_route_pruning
+reachability_to_target: prunes
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Commit and push the reviewed science block, open one review PR, verify it, and record the PR URL."
+stop_condition: "review PASS and one verified review PR, or a review finding that forces honest demotion"

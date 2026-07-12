@@ -1,4 +1,5 @@
 # PR Backlog
 
-No delivery failure is recorded. PR creation is pending review-loop pass,
-commit, and push.
+No delivery failure or backlog remains. Review PR
+[#5228](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5228)
+is open and intentionally unmerged.

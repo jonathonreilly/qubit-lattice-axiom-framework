@@ -40,5 +40,12 @@ the bounded block to independent audit, not an audit verdict.
 
 ## Exact next action
 
-Validate against current `origin/main`, strip generated audit outputs, rebase,
-push, and open one review PR. Record the final commit and PR here.
+The independent audit lane should review the new bounded-theorem row. This
+branch must not apply or predict that verdict.
+
+## Delivery
+
+- Science commit after current-main rebase: `c5e8caf0b`.
+- Branch: `physics-loop/rconn-equivariant-kernel-obstruction-block01-20260712`.
+- Review PR: [#5228](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5228).
+- Merge status: intentionally unmerged.

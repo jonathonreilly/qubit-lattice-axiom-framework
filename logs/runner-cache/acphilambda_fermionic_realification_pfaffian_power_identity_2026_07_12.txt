@@ -42,8 +42,8 @@ Part C: conjugate sector and ordinary realification
 Scope guards
 ------------
   [PASS] source states determinant-power preservation under coordinate change
-  [PASS] source excludes a derived charged-lepton action
-  [PASS] source does not force r=1/2
+  [PASS] source limits the theorem to a supplied algebraic domain
+  [PASS] source leaves registered r outside the theorem domain
 
 ================================================================
 TOTAL: PASS=32, FAIL=0

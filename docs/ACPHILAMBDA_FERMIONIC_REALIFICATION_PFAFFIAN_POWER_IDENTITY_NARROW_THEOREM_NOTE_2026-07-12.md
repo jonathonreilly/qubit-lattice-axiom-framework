@@ -144,12 +144,13 @@ coordinate statement does not impose a physical reality condition. Within the
 displayed Grassmann-Gaussian construction, obtaining the modulus square instead
 uses a supplied conjugate sector or conjugate-paired readout.
 
-It does not derive from the four axioms that the charged-lepton carrier has
-the displayed Grassmann action, Berezin measure, global CAR structure, or a
-single-sector physical readout. It does not select a K/CPT-orbit occupancy
-grain, register or predict `r`, force `r=1/2`, derive `delta`, or supply the
-R-eta readout license. Those physical identifications require separately
-audited retained support.
+The theorem domain is a supplied Grassmann action, Berezin measure, and
+determinant carrier. Framework derivation of the charged-lepton carrier,
+global CAR structure, physical single-sector readout, K/CPT-orbit occupancy
+grain, registered `r`, `delta`, and R-eta readout lies outside this theorem.
+Its outputs are limited to determinant-power identities and coordinate
+covariance. Physical charged-lepton identification requires separately audited
+retained support.
 
 ## Verification
 

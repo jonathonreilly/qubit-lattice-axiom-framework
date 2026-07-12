@@ -789,6 +789,10 @@ def build_cross_cycle_index(
         }
         for kind, total in sorted(kind_totals.items())
     }
+    candidate_id_universe = sorted(
+        str(candidate.get("candidate_id") or "")
+        for candidate in ordered_candidates
+    )
     candidates = listed_candidates
     return json.dumps(
         {
@@ -839,6 +843,10 @@ def build_cross_cycle_index(
             "no_go_row_universe": no_go_universe,
             "no_go_row_universe_count": len(no_go_universe),
             "no_go_row_universe_sha256": no_go_universe_sha256,
+            # Full IDs are lightweight authenticated metadata, not disposition
+            # records. They let the durability sweep report capped-tail growth
+            # exactly without restoring the infeasible uncapped packet.
+            "candidate_id_universe": candidate_id_universe,
             "candidate_truncation": candidate_truncation,
             "candidates": candidates,
         },
@@ -857,6 +865,7 @@ def build_partial_closure_index(
     cid = str(row.get("claim_id") or "")
     current_terms = _row_search_terms(row, root)
     candidates: list[dict[str, Any]] = []
+    candidate_id_universe: set[str] = set()
 
     def add_candidate(
         *,
@@ -868,6 +877,7 @@ def build_partial_closure_index(
         accepted_premise_type: str | None = None,
         content_sha256: str | None = None,
     ) -> None:
+        candidate_id_universe.add(candidate_id)
         candidates.append(
             {
                 "candidate_id": candidate_id,
@@ -933,9 +943,14 @@ def build_partial_closure_index(
         overlap = sorted(current_terms.intersection(_search_terms(line)))
         if overlap and keyword_re.search(line):
             vocabulary_hits.append((len(overlap), line_number, line, overlap))
-    for _score, line_number, line, overlap in sorted(
+    ordered_vocabulary_hits = sorted(
         vocabulary_hits, key=lambda item: (-item[0], item[1])
-    )[:10]:
+    )
+    candidate_id_universe.update(
+        f"controlled_vocabulary:{line_number}"
+        for _score, line_number, _line, _overlap in ordered_vocabulary_hits
+    )
+    for _score, line_number, line, overlap in ordered_vocabulary_hits[:10]:
         add_candidate(
             candidate_id=f"controlled_vocabulary:{line_number}",
             kind="definition_refactor",
@@ -957,9 +972,12 @@ def build_partial_closure_index(
         overlap = sorted(current_terms.intersection(_search_terms(content)))
         if len(overlap) >= 2 and keyword_re.search(content):
             meta_hits.append((len(overlap), path, content, overlap))
-    for _score, path, content, overlap in sorted(
-        meta_hits, key=lambda item: (-item[0], item[1])
-    )[:10]:
+    ordered_meta_hits = sorted(meta_hits, key=lambda item: (-item[0], item[1]))
+    candidate_id_universe.update(
+        f"meta_reframe:{path}"
+        for _score, path, _content, _overlap in ordered_meta_hits
+    )
+    for _score, path, content, overlap in ordered_meta_hits[:10]:
         add_candidate(
             candidate_id=f"meta_reframe:{path}",
             kind="definition_refactor",
@@ -989,9 +1007,12 @@ def build_partial_closure_index(
         overlap = sorted(current_terms.intersection(_search_terms(content)))
         if len(overlap) >= 2 and keyword_re.search(content):
             claim_hits.append((len(overlap), path, content, overlap))
-    for _score, path, content, overlap in sorted(
-        claim_hits, key=lambda item: (-item[0], item[1])
-    )[:20]:
+    ordered_claim_hits = sorted(claim_hits, key=lambda item: (-item[0], item[1]))
+    candidate_id_universe.update(
+        f"claim_reframe:{path}"
+        for _score, path, _content, _overlap in ordered_claim_hits
+    )
+    for _score, path, content, overlap in ordered_claim_hits[:20]:
         add_candidate(
             candidate_id=f"claim_reframe:{path}",
             kind="claim_scope_reframe",
@@ -1015,9 +1036,14 @@ def build_partial_closure_index(
         overlap = sorted(current_terms.intersection(_search_terms(content)))
         if len(overlap) >= 2 and keyword_re.search(content):
             reframe_hits.append((len(overlap), path, content, overlap))
-    for _score, path, content, overlap in sorted(
+    ordered_reframe_hits = sorted(
         reframe_hits, key=lambda item: (-item[0], item[1])
-    )[:10]:
+    )
+    candidate_id_universe.update(
+        f"in_flight_reframe:{path}"
+        for _score, path, _content, _overlap in ordered_reframe_hits
+    )
+    for _score, path, content, overlap in ordered_reframe_hits[:10]:
         add_candidate(
             candidate_id=f"in_flight_reframe:{path}",
             kind="definition_refactor",
@@ -1070,6 +1096,9 @@ def build_partial_closure_index(
                     "evidence_line_limit_per_candidate": 5,
                 },
             },
+            # Candidate records remain capped above; full IDs are authenticated
+            # solely so post-authentication growth is observable exactly.
+            "candidate_id_universe": sorted(candidate_id_universe),
             "candidates": candidates,
         },
         indent=2,
@@ -1260,6 +1289,59 @@ def _index_candidates(
     return mapped
 
 
+def _index_candidate_id_universe(
+    entry: dict[str, Any], *, schema: str, universe_field: str,
+    stored_field: str, stored_records_field: str,
+) -> set[str] | None:
+    """Return every candidate ID, including IDs omitted from capped records.
+
+    Legacy snapshots predate ``candidate_id_universe``. Their listed IDs are
+    the best available fallback (and legacy N8 snapshots were uncapped).
+    """
+    stored_universe = entry.get(universe_field)
+    stored_set: set[str] | None = None
+    if stored_universe is not None:
+        if (
+            not isinstance(stored_universe, list)
+            or not all(_text(item) for item in stored_universe)
+        ):
+            return None
+        stored_set = {str(item) for item in stored_universe}
+        if len(stored_set) != len(stored_universe):
+            return None
+    rendered_text = str(entry.get("text") or "")
+    parsed = None
+    if rendered_text:
+        try:
+            parsed = json.loads(rendered_text)
+        except json.JSONDecodeError:
+            return None
+        if not isinstance(parsed, dict) or parsed.get("schema") != schema:
+            return None
+    if isinstance(parsed, dict):
+        rendered_universe = parsed.get("candidate_id_universe")
+        if "candidate_id_universe" in parsed:
+            if not isinstance(rendered_universe, list):
+                return None
+            if not all(_text(item) for item in rendered_universe):
+                return None
+            universe = {str(item) for item in rendered_universe}
+            if len(universe) != len(rendered_universe):
+                return None
+            if stored_set is not None and stored_set != universe:
+                return None
+            return universe
+    if not rendered_text and stored_set is not None:
+        return stored_set
+    candidates = _index_candidates(
+        entry,
+        schema=schema,
+        stored_field=stored_field,
+        stored_records_field=stored_records_field,
+    )
+    return set(candidates) if candidates is not None else None
+
+
 def _cross_cycle_candidate_ids(entry: dict[str, Any]) -> set[str] | None:
     candidates = _index_candidates(
         entry,
@@ -1355,6 +1437,23 @@ def build_evidence_snapshot(
             snapshot_entry["cross_cycle_candidates"] = [
                 candidates[candidate_id] for candidate_id in sorted(candidates)
             ]
+            candidate_id_universe = _index_candidate_id_universe(
+                entry,
+                schema="no_go_cross_cycle_index_v1",
+                universe_field="cross_cycle_candidate_id_universe",
+                stored_field="cross_cycle_candidate_ids",
+                stored_records_field="cross_cycle_candidates",
+            )
+            if (
+                candidate_id_universe is None
+                or not set(candidates).issubset(candidate_id_universe)
+            ):
+                raise ValueError(
+                    "cross-cycle candidate-ID universe is not orchestrator-authenticated"
+                )
+            snapshot_entry["cross_cycle_candidate_id_universe"] = sorted(
+                candidate_id_universe
+            )
             try:
                 cross_payload = json.loads(text)
             except json.JSONDecodeError as exc:
@@ -1373,6 +1472,23 @@ def build_evidence_snapshot(
             snapshot_entry["partial_closure_candidates"] = [
                 candidates[candidate_id] for candidate_id in sorted(candidates)
             ]
+            candidate_id_universe = _index_candidate_id_universe(
+                entry,
+                schema="no_go_partial_closure_index_v1",
+                universe_field="partial_closure_candidate_id_universe",
+                stored_field="partial_closure_candidate_ids",
+                stored_records_field="partial_closure_candidates",
+            )
+            if (
+                candidate_id_universe is None
+                or not set(candidates).issubset(candidate_id_universe)
+            ):
+                raise ValueError(
+                    "partial-closure candidate-ID universe is not orchestrator-authenticated"
+                )
+            snapshot_entry["partial_closure_candidate_id_universe"] = sorted(
+                candidate_id_universe
+            )
         entries[path] = snapshot_entry
     return {"schema": "no_go_evidence_snapshot_v1", "entries": entries}
 
@@ -1446,6 +1562,48 @@ def evidence_manifest_from_snapshot(packet: dict[str, Any]) -> dict[str, dict] |
         for field in ("cross_cycle_candidates", "partial_closure_candidates"):
             if stored.get(field) is not None and not isinstance(stored[field], list):
                 return None
+        for field in (
+            "cross_cycle_candidate_id_universe",
+            "partial_closure_candidate_id_universe",
+        ):
+            universe_values = stored.get(field)
+            if universe_values is not None and (
+                not isinstance(universe_values, list)
+                or not all(_text(item) for item in universe_values)
+                or len(set(universe_values)) != len(universe_values)
+            ):
+                return None
+        role_set = set(roles)
+        for role, universe_field, schema, listed_field, records_field in (
+            (
+                "cross_cycle_index",
+                "cross_cycle_candidate_id_universe",
+                "no_go_cross_cycle_index_v1",
+                "cross_cycle_candidate_ids",
+                "cross_cycle_candidates",
+            ),
+            (
+                "partial_closure_index",
+                "partial_closure_candidate_id_universe",
+                "no_go_partial_closure_index_v1",
+                "partial_closure_candidate_ids",
+                "partial_closure_candidates",
+            ),
+        ):
+            stored_universe = stored.get(universe_field)
+            if role not in role_set or stored_universe is None:
+                continue
+            listed_candidates = _index_candidates(
+                stored,
+                schema=schema,
+                stored_field=listed_field,
+                stored_records_field=records_field,
+            )
+            if (
+                listed_candidates is None
+                or not set(listed_candidates).issubset(set(stored_universe))
+            ):
+                return None
         universe_count = stored.get("no_go_row_universe_count")
         universe_sha256 = stored.get("no_go_row_universe_sha256")
         if "cross_cycle_index" in set(roles):
@@ -1469,10 +1627,16 @@ def evidence_manifest_from_snapshot(packet: dict[str, Any]) -> dict[str, dict] |
             "invocation_bound_rendered_text": invocation_bound_rendered_text,
             "cross_cycle_candidate_ids": stored.get("cross_cycle_candidate_ids"),
             "cross_cycle_candidates": stored.get("cross_cycle_candidates"),
+            "cross_cycle_candidate_id_universe": stored.get(
+                "cross_cycle_candidate_id_universe"
+            ),
             "no_go_row_universe_count": universe_count,
             "no_go_row_universe_sha256": universe_sha256,
             "partial_closure_candidate_ids": stored.get("partial_closure_candidate_ids"),
             "partial_closure_candidates": stored.get("partial_closure_candidates"),
+            "partial_closure_candidate_id_universe": stored.get(
+                "partial_closure_candidate_id_universe"
+            ),
             "phrase_occurrences": phrase_occurrences,
         }
     return manifest
@@ -1582,23 +1746,35 @@ def evidence_snapshot_index_growth(
     for path, stored in stored_manifest.items():
         roles = set(stored.get("roles") or [])
         if "cross_cycle_index" in roles:
-            current_candidates = _index_candidates(
+            current_candidates = _index_candidate_id_universe(
                 current_manifest.get(path) or {},
                 schema="no_go_cross_cycle_index_v1",
+                universe_field="cross_cycle_candidate_id_universe",
                 stored_field="cross_cycle_candidate_ids",
                 stored_records_field="cross_cycle_candidates",
             )
-            stored_candidates = _index_candidates(
+            stored_candidates = _index_candidate_id_universe(
                 stored,
                 schema="no_go_cross_cycle_index_v1",
+                universe_field="cross_cycle_candidate_id_universe",
                 stored_field="cross_cycle_candidate_ids",
                 stored_records_field="cross_cycle_candidates",
             )
         elif "partial_closure_index" in roles:
-            current_candidates = _partial_closure_candidates(
-                current_manifest.get(path) or {}
+            current_candidates = _index_candidate_id_universe(
+                current_manifest.get(path) or {},
+                schema="no_go_partial_closure_index_v1",
+                universe_field="partial_closure_candidate_id_universe",
+                stored_field="partial_closure_candidate_ids",
+                stored_records_field="partial_closure_candidates",
             )
-            stored_candidates = _partial_closure_candidates(stored)
+            stored_candidates = _index_candidate_id_universe(
+                stored,
+                schema="no_go_partial_closure_index_v1",
+                universe_field="partial_closure_candidate_id_universe",
+                stored_field="partial_closure_candidate_ids",
+                stored_records_field="partial_closure_candidates",
+            )
         else:
             continue
         new_ids = sorted(

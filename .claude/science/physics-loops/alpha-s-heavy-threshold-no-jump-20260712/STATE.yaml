@@ -24,7 +24,7 @@ no_go_routes: []
 trace_gate: direct_blocker_closure
 review_disposition: pass
 remote_branch: claude/science-fix/alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-aff491ac
-pr_status: pending
-pr_url: null
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5224
 next_exact_action: submit_source_note_runner_and_cache_for_independent_reaudit
 stop_condition: review_clean_source_packet_ready_for_independent_reaudit

@@ -69,6 +69,12 @@ check("V1.1 Qubit real-presentation clause verbatim", real_presentation in memo_
 check("V1.2 no-possibility-privileged clause verbatim", no_privilege in memo_text)
 check("V1.3 Qualification choice clause verbatim", qualification in memo_text)
 check("V1.4 Record additivity clause verbatim", record_additivity in memo_text)
+named_content = (
+    "These axioms state only their named primitive content. Further physical "
+    "structure requires derivation, bridge, explicit admission, or approved "
+    "primitive registration before use as a premise."
+)
+check("V1.5 named-primitive-content burden clause verbatim", named_content in memo_text)
 
 # V2: Pauli realization of Cl(3,0), its pseudoscalar, and conjugation.
 I = sp.I
@@ -121,6 +127,24 @@ for a_value, b_value in sorted(real_roots, key=str):
     root_checks.append(matrix_equal(candidate**2, -eye2))
 check("V2.7 both roots are central and square to -I", all(central_checks + root_checks))
 check("V2.8 entrywise conjugation exchanges the two roots", matrix_equal(ps.conjugate(), -ps))
+
+# Two-model witness: entrywise conjugation is a real-algebra automorphism —
+# multiplicative over the full 8-monomial spanning basis — so the standard
+# and conjugated presentations are two models of the named Qubit content
+# agreeing on every named clause and differing only in orientation.
+monomials = [eye2, s1, s2, s3, s1 * s2, s1 * s3, s2 * s3, s1 * s2 * s3]
+conj_mult = all(
+    matrix_equal((m1 * m2).conjugate(), m1.conjugate() * m2.conjugate())
+    for m1 in monomials
+    for m2 in monomials
+)
+check("V2.9 two-model witness: conjugation is multiplicative over all 64 monomial products", conj_mult)
+conj_rlinear = all(
+    matrix_equal((m1 + m2).conjugate(), m1.conjugate() + m2.conjugate())
+    for m1 in monomials
+    for m2 in monomials
+)
+check("V2.10 two-model witness: conjugation is additive (R-linear) over the spanning basis", conj_rlinear)
 
 # V3: grade involution on all 8x8 basis-monomial products.
 words = ((), (0,), (1,), (2,), (0, 1), (0, 2), (1, 2), (0, 1, 2))

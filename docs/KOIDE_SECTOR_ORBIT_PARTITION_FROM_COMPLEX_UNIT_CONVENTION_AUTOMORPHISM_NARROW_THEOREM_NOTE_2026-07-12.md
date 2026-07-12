@@ -18,46 +18,64 @@ K-reality as a posited physical predicate: a K-real monitored Hermitian
 observable preserves the singlet-versus-doublet partition, while a K-odd
 observable can resolve the doublet.
 
-This note derives the **partition** natively from the complex-unit convention
-freeness of the Qubit real presentation. The value face of K-reality stays
-open: no phase value or occupancy grain is selected here.
+This note derives the **partition** natively: the axioms' named content
+nowhere fixes an orientation of the complex unit (a two-model witness makes
+this mechanical), so by the memo's Qualification clause no derivable selector
+may depend on it. The value face of K-reality stays open: no phase value or
+occupancy grain is selected here.
 
 ## Theorem (narrow)
 
-### T1 — The complex unit is a convention, by the Qubit axiom's own clause
+### T1 — The complex-unit orientation is not named content (two-model witness)
 
-The live axiom memo
+The argument is a positive-list one, not an exclusion one. "Adds no further
+primitive structure" constrains what the real presentation contributes; by
+itself it does not demote the complex structure of the `M_2(C)` presentation.
+What decides the question is the memo's own burden rule. The live axiom memo
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) states,
 verbatim:
+
+> These axioms state only their named primitive content. Further physical
+> structure requires derivation, bridge, explicit admission, or approved
+> primitive registration before use as a premise.
+
+So supplied content is exactly the **named** content, and anything further
+needs a certificate before a law may consume it. The question is therefore:
+do the axioms **name** an orientation of the complex unit? They do not, and
+the runner makes this mechanical as a **two-model witness**: the standard
+presentation and its entrywise-conjugate satisfy every named clause
+identically — the conjugated Pauli generators satisfy the same Clifford
+relations, the same `M_2(C)` algebra relations, and the same possibility
+domain, while their central pseudoscalar is `-iI` rather than `+iI`. Two
+models of the named Qubit content, related by conjugation, agreeing on every
+named clause and differing only in orientation: no named clause fixes the
+choice. The label `M_2(C)` itself cannot, because complex conjugation is a
+field automorphism of `C` — the isomorphism class the name picks out is
+conjugation-symmetric.
+
+The real presentation reinforces this without being needed for it. The memo
+states, verbatim:
 
 > A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently and
 > adds no further primitive structure.
 
-and:
+In that presentation the complex unit corresponds to the central pseudoscalar
+`omega_ps = e_1 e_2 e_3` (`omega_ps^2 = -1`), whose sign depends on the
+generator ordering — also unnamed — and the Clifford grade involution
+`alpha : e_i -> -e_i` is a canonical automorphism sending
+`omega_ps -> -omega_ps`. Both presentations carry the same unfixed binary
+choice; the equivalence clause shows the axioms are indifferent to it.
 
-> No possibility is privileged. Possibilities are distinguished by the supplied
-> algebraic structure alone.
-
-In the real presentation, the complex unit corresponds to the central
-pseudoscalar `omega_ps = e_1 e_2 e_3`, with `omega_ps^2 = -1`. The Clifford
-grade involution `alpha`, defined by `e_i -> -e_i` and extended
-multiplicatively, is a canonical automorphism of the supplied real algebra.
-It sends `omega_ps -> -omega_ps`. Thus the two central square roots of `-1`
-are exchanged by an automorphism of the supplied structure, and the choice
-between them (`i` versus `-i`) is not fixed by that structure.
-
-In the `M_2(C)` presentation, entrywise complex conjugation is a real-algebra
-automorphism realizing the same swap. The conjugated Pauli generators still
-satisfy the Clifford relations, while their pseudoscalar is `-iI` rather than
-`+iI`.
-
-The memo's Qualification clause states, verbatim:
+The memo's Qualification clause then applies directly, verbatim:
 
 > a law may not depend on a choice not fixed by the supplied structure, unless
 > that choice is admitted.
 
-Therefore no A_min-derivable law or selector may depend on the complex-unit
-orientation.
+The orientation is a choice not fixed by the named supplied structure (the
+two-model witness); therefore no A_min-derivable law or selector may depend
+on the complex-unit orientation. An admitted orientation premise remains
+available by the clause's own final words — that route is recorded under
+"What is not derived".
 
 ### T2 — Conjugation fixes the derivable carrier surface and swaps the doublet sectors
 
@@ -166,8 +184,8 @@ not execute or request it.
 
 | check block | exact verification | result |
 |---|---|---:|
-| V1 | four whitespace-flattened verbatim memo clauses: Qubit real presentation, no privilege, Qualification choice, and Record additivity | PASS (4) |
-| V2 | Pauli `Cl(3,0)` relations; `ps=+iI`, `ps^2=-I`; conjugated relations and `ps=-iI`; exact two-root center check and exchange | PASS (8) |
+| V1 | five whitespace-flattened verbatim memo clauses: Qubit real presentation, no privilege, Qualification choice, Record additivity, and the named-primitive-content burden clause | PASS (5) |
+| V2 | Pauli `Cl(3,0)` relations; `ps=+iI`, `ps^2=-I`; conjugated relations and `ps=-iI`; exact two-root center check and exchange; two-model witness (conjugation multiplicative + R-linear over all monomial products) | PASS (10) |
 | V3 | grade involution multiplicativity on all `8 x 8` basis-monomial products and `alpha(ps)=-ps` | PASS (2) |
 | V4 | projector resolution, idempotence, orthogonality, character equation, conjugation action, and fixed rank-2 doublet block | PASS (8) |
 | V5 | exhaustive 27-selector sweep, exactly 9 invariant selectors, doublet constancy, and mechanical finest-partition restriction | PASS (4) |
@@ -175,7 +193,7 @@ not execute or request it.
 | V7 | sibling declaration and KCPT bridge supplied ORBIT-INDEXING framing, quoted verbatim | PASS (3) |
 
 ```text
-TOTAL: PASS=36 FAIL=0
+TOTAL: PASS=39 FAIL=0
 ```
 
 **No check passes by literal stipulation.**

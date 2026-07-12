@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 89 |
 | **retained_no_go** | 27 |
-| **retained_bounded** | 360 |
+| **retained_bounded** | 361 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 6 |
-| unaudited | 2803 |
+| unaudited | 2802 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 462 |
+| `audited_clean` | 463 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3153 |
+| `unaudited` | 3152 |
 
 | claim_type | count |
 |---|---:|
@@ -598,6 +598,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `within_sector_ess_adequacy_conclusion_survives_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
+| `yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `yt_ew_color_projection_theorem` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `ac_reta_hclass_hunit_readout_derivation_obligation` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | F | - |
@@ -8436,6 +8437,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Models A and B share the retained Fierz fractions and color-blind scaling law but set kappa_Y to 0 and 1 respectively, producing different K_Y values, so the selector is not derivable from those premises.  _(class `A`)_
 - **chain closes:** True — The two-completion independence witness is a genuine algebraic closure over the retained-grade Fierz authority: identical stated premises admit distinct selector values and physical correction factors. The conclusion is restricted to non-derivability from this packet and does not exclude a future operator-level matching theorem.
 - **rationale:** The load-bearing step is the algebraic independence witness, not the runner's source-text guards or a numerical comparator. The cited Fierz authority has retained-grade decoration status and supplies only the exact channel fractions; its admitted EW matching rule is not imported into this Yukawa no-go. The runner independently checks the rational family, common-scaling invariance, and disagreement of the two completions, while the source consistently limits the conclusion to the restricted packet.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`YT_CONNECTED_SOURCE_AUGMENTATION_IDEAL_SELECTOR_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/YT_CONNECTED_SOURCE_AUGMENTATION_IDEAL_SELECTOR_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the normalized connected source family over the full trace-one color-record surface and the stated K_Y(kappa_Y) family, the identity source is normalization-only, the tangent quotient is the traceless matrix space, and kappa_Y=0 gives K_Y=(N^2-1)/N^2=8/9 at N=3; no physical Yukawa/Higgs source-action identification or Y_T value closure is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00363-yt_connected_source_augmenta`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On the stipulated normalized connected source surface, centering kills the identity source, so the source tangent factors through End(C^N)/CI and has dimension N^2-1.  _(class `A`)_
+- **chain closes:** True — The bounded conclusion follows algebraically from trace normalization, centering, and the scalar-plus-traceless decomposition. The physical identification of this tangent with the neutral EW/Higgs source-action surface is explicitly outside the audited scope.
+- **rationale:** The source note proves the conditional finite-dimensional statement directly: an identity insertion is constant on the trace-one surface, connected centering removes it, and the remaining Hermitian source directions have real dimension N^2-1. The runner independently performs exact rational projection and score calculations and separates its 64 algebra checks from 26 source/dependency-boundary checks; it does not import a comparator or tuned value. The note consistently firewalls the unproved physical source-action, O_H, LSZ, pole-response, and physical-y_t bridges.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

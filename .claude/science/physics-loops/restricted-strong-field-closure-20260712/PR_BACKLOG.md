@@ -1,3 +1,4 @@
 # PR Backlog
 
-No delivery backlog. PR preparation is pending final validation.
+No delivery backlog. Validation passed; branch push and PR creation are the
+next actions.

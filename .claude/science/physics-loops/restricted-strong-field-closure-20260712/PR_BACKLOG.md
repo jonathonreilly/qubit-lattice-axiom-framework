@@ -1,4 +1,4 @@
 # PR Backlog
 
-No delivery backlog. Validation passed; branch push and PR creation are the
-next actions.
+No delivery backlog. Review PR opened and verified:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5231

@@ -31,7 +31,7 @@ no_go_routes:
   - full physical GR derivation from the four minimal axioms alone
 trace_gate: direct_blocker_closure
 review_disposition: pass
-pr_status: pending
+pr_status: open_verified_pr_5231_mergeable
 lock_status: automation lock unavailable because the script hard-codes an inaccessible canonical path; dedicated worktree used
 validation:
   primary_runner: PASS=13 FAIL=0 TOTAL=13
@@ -41,5 +41,5 @@ validation:
   audit_pipeline_disposable_worktree: PASS
   audit_strict_lint: PASS_with_preexisting_warnings_only
   audit_queue: restricted_strong_field_closure_note ready=true deps=[]
-next_exact_action: push the science branch and open one bounded-support review PR
+next_exact_action: independent review/integration of PR 5231, then fresh audit of the bounded theorem row
 stop_condition: one coherent reviewed science block with one verified review PR

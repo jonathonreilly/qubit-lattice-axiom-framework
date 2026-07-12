@@ -120,7 +120,91 @@ def main() -> int:
             sp.simplify(realification(example).det() - example.det() * sp.conjugate(example.det())) == 0,
         )
 
-    section("Part F: source and axiom guards")
+    section("Part F: rhetoric-resolution lifts")
+    scalar = sp.Matrix([[2 + sp.I]])
+    scalar_det_c = scalar.det()
+    scalar_det_r = realification(scalar).det()
+    check(
+        "per_element: scalar complex carrier retains the factor-two determinant-power split",
+        sp.simplify(scalar_det_r - scalar_det_c * sp.conjugate(scalar_det_c)) == 0
+        and scalar_det_r != abs(scalar_det_c),
+    )
+
+    site_records = frozenset({(0, 0, 0), (2, -1, 3), (4, 2, -2)})
+    translated_sites = frozenset((x + 5, y - 7, z + 11) for x, y, z in site_records)
+    site_count = len(site_records)
+    site_carrier = sp.eye(site_count) * lam
+    translated_carrier = sp.eye(len(translated_sites)) * lam
+    site_fc = sp.log(abs(site_carrier.det()))
+    site_fr = sp.log(realification(site_carrier).det())
+    check(
+        "per_site: translated singleton carriers retain both additive determinant readouts",
+        len(translated_sites) == site_count
+        and translated_carrier == site_carrier
+        and sp.simplify(
+            realification(translated_carrier).det()
+            - translated_carrier.det() * sp.conjugate(translated_carrier.det())
+        ) == 0
+        and sp.simplify(
+            sp.expand_log(site_fr, force=True)
+            - 2 * sp.expand_log(site_fc, force=True)
+        ) == 0,
+    )
+
+    mode_carrier = sp.diag(2, 3, 5, 7)
+    mode_fc = sp.log(abs(mode_carrier.det()))
+    mode_fr = sp.log(realification(mode_carrier).det())
+    check(
+        "per_mode: diagonal finite-mode products retain the complex-versus-realified factor two",
+        sp.simplify(sp.expand_log(mode_fr, force=True) - 2 * sp.expand_log(mode_fc, force=True)) == 0,
+    )
+
+    combined_blocks = sp.diag(2, 3, 5)
+    combined_fc = sp.log(abs(combined_blocks.det()))
+    combined_fr = sp.log(realification(combined_blocks).det())
+    check(
+        "per_block: direct-sum finite blocks preserve additivity for both determinant powers",
+        sp.simplify(sp.expand_log(combined_fc, force=True) - sp.expand_log(fc_a, force=True) - sp.expand_log(fc_b, force=True)) == 0
+        and sp.simplify(sp.expand_log(combined_fr, force=True) - sp.expand_log(fr_a, force=True) - sp.expand_log(fr_b, force=True)) == 0,
+    )
+
+    lattice_sites = frozenset(
+        (x, y, z)
+        for x in range(2)
+        for y in range(2)
+        for z in range(2)
+    )
+    left_half = frozenset(site for site in lattice_sites if site[0] == 0)
+    right_half = lattice_sites - left_half
+    lattice_carrier = sp.eye(len(lattice_sites)) * lam
+    left_carrier = sp.eye(len(left_half)) * lam
+    right_carrier = sp.eye(len(right_half)) * lam
+    lattice_fc = sp.log(abs(lattice_carrier.det()))
+    lattice_fr = sp.log(realification(lattice_carrier).det())
+    halves_fc = sp.log(abs(left_carrier.det())) + sp.log(abs(right_carrier.det()))
+    halves_fr = (
+        sp.log(realification(left_carrier).det())
+        + sp.log(realification(right_carrier).det())
+    )
+    check(
+        "lattice_wide: finite lattice record union preserves both laws and their factor-two split",
+        left_half.isdisjoint(right_half)
+        and len(left_half) + len(right_half) == len(lattice_sites)
+        and sp.simplify(
+            sp.expand_log(lattice_fc, force=True)
+            - sp.expand_log(halves_fc, force=True)
+        ) == 0
+        and sp.simplify(
+            sp.expand_log(lattice_fr, force=True)
+            - sp.expand_log(halves_fr, force=True)
+        ) == 0
+        and sp.simplify(
+            sp.expand_log(lattice_fr, force=True)
+            - 2 * sp.expand_log(lattice_fc, force=True)
+        ) == 0,
+    )
+
+    section("Part G: source and axiom guards")
     note = NOTE.read_text(encoding="utf-8")
     note_flat = " ".join(note.split())
     axioms = AXIOMS.read_text(encoding="utf-8")

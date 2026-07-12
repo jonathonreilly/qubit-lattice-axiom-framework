@@ -23,13 +23,13 @@ unitary/dephasing CPTP, and `p=2`/`p=4` witnesses.
   N1-N8, and governance reviewers.
 - Audit-pipeline validation: PASS in a disposable worktree; strict lint has no
   errors and both rows are ready with only `minimal_axioms` as dependency.
-- Commit/push/PR: pending.
+- Branch pushed; PR #5214 open, non-draft, mergeable, unmerged. GitHub
+  audit-lane check was running at the delivery checkpoint.
 
 ## Exact next action
 
-Push and open one unmerged review PR. After delivery, the exact next science
-action is independent audit of the same-path bounded theorem and the separate
-zero-inbound no-go leaf.
+Independent audit the same-path bounded theorem and the separate zero-inbound
+no-go leaf. Do not merge PR #5214 or treat author-side status as ratification.
 
 ## Proposed later weaving
 

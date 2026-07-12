@@ -537,3 +537,6 @@ the three declared dependencies: the Block15 circle repair, the retained May
 mixed-kernel factorization, and the July coupled two-slice Gram. Strict lint
 has no errors, vocabulary lint has zero violations, and generated audit/status
 surfaces are stripped before delivery. No axiom-update stop is triggered.
+
+Delivery: stacked PR #5278 is open on Block15. Independent audit remains
+authoritative.

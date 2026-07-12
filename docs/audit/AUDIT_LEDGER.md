@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 100 |
 | **retained_no_go** | 41 |
-| **retained_bounded** | 407 |
+| **retained_bounded** | 408 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2676 |
+| unaudited | 2675 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 534 |
+| `audited_clean` | 535 |
 | `audited_conditional` | 85 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3026 |
+| `unaudited` | 3025 |
 
 | claim_type | count |
 |---|---:|
@@ -488,6 +488,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `post_record_admitted_sample_target_vector_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_directed_certificate_kernel_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7201,6 +7202,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `DISTANCE_LAW_PORTABILITY_NOTE.md`
   - `COMPLEX_SELECTIVITY_COMPARE_NOTE.md`
 - **auditor confidence:** high
+
+### `post_record_admitted_sample_target_vector_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_ADMITTED_SAMPLE_TARGET_VECTOR_INTERFACE_2026-06-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For the supplied four-word sample AA, AB, BA, BA and supplied predicates, exact counting yields (1/4, 1/2, 1/4); this empirical vector does not itself supply a probability law, weights, a selection rule, or a production-kernel choice.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00289-post_record_admitted_sample_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the admitted sample AA, AB, BA, BA, exact counting of the supplied predicates gives endpoint_ab = 1/4, endpoint_ba = 1/2, and second_is_b = 1/4.  _(class `A`)_
+- **chain closes:** True — Direct enumeration gives the three stated fractions, and the runner independently implements the predicates and normalization with exact Fraction arithmetic. The negative boundary is type-correct: only observations and predicates enter the computation, while probability, weighting, and kernel-selection data remain absent.
+- **rationale:** The load-bearing result is exact finite arithmetic over explicitly supplied observations and predicates, not a tuned numerical comparison or physical-law inference. Manual enumeration reproduces 1/4, 1/2, and 1/4, and the runner source genuinely computes those quantities with exact rational arithmetic rather than merely printing expected constants. The audited scope preserves the source firewall: the empirical frequencies do not constitute a probability law or select weights, rules, or a production kernel.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `post_record_character_path_channel_weight_prototype_2026-06-06`
 

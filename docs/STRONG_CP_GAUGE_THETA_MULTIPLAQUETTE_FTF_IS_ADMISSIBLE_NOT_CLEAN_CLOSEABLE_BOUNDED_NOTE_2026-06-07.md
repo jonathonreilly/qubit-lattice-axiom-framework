@@ -54,7 +54,7 @@ The action *can* carry `F̃F`, and the **listed measure-side principles (reality
 forbid it** — because the topological term is `Θ`-anti-invariant. So `θ_gauge` is a **minimality admission**,
 structurally parallel to the matter-side Koide
 `r = 1/2` (`BAE`) admission: both ride on un-derived **dynamics** (the gauge action here; the matter realization
-there) while the kinematic axioms `{Lattice, Quantum, Record}` fix only the structure.
+there) while the kinematic axioms `{Lattice, Qubit, Admissibility, Record}` fix only the structure.
 
 ## Scope — what this is and is not
 
@@ -110,7 +110,7 @@ there) while the kinematic axioms `{Lattice, Quantum, Record}` fix only the stru
 
 ## Dependencies (citation-graph visible)
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](./MINIMAL_AXIOMS_2026-06-05.md)
+- [`MINIMAL_AXIOMS_2026-06-29.md`](./MINIMAL_AXIOMS_2026-06-29.md)
 - [`STRONG_CP_GAUGE_THETA_NOT_FORCED_BY_REALITY_POSITIVITY_OR_CPT_BOUNDED_NOTE_2026-06-07.md`](./STRONG_CP_GAUGE_THETA_NOT_FORCED_BY_REALITY_POSITIVITY_OR_CPT_BOUNDED_NOTE_2026-06-07.md)
 - [`NEWPHYSICS_NP_STRONG_CP_THETA_NOTE_2026-05-10_npCP.md`](./NEWPHYSICS_NP_STRONG_CP_THETA_NOTE_2026-05-10_npCP.md)
 - [`STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md`](./STRONG_CP_RP_HALF_CANNOT_FORBID_CP_ODD_IMAGINARY_NO_GO_NOTE_2026-05-16.md)

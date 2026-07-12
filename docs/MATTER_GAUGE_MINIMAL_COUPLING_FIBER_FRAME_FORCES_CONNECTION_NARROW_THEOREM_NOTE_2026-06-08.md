@@ -50,7 +50,7 @@ reading remains bounded to kinematics and to the current registered surface.
    `hopping_bilinear_hermiticity_theorem_note_2026-05-02` gives the **Hermitian,
    number-conserving nearest-neighbour hopping bilinear** `a_x† a_y + a_y† a_x`.
 
-3. **Lattice and Quantum axioms.** `Z³` with nearest-neighbor adjacency and
+3. **Lattice and Qubit axioms.** `Z³` with nearest-neighbor adjacency and
    one-qubit operator algebra at each site. These axioms do not by themselves
    supply a gauge field, gauge action, dynamics, or physical `SU(3)_c`
    identification.
@@ -95,7 +95,7 @@ frame-redundancy premise needed by this note on the current registered surface.
 The retained hopping `Σ_x a_x† a_{x+μ} + h.c.` contracts the fibre index of `a_{x+μ}`
 (in *some* frame at `x+μ`) with that of `a_x†` (in *some* frame at `x`). Writing it as
 `Σ_{x,i} a_{x,i}† a_{x+μ,i}` presupposes that "frame label `i` at `x`" means the same as
-"frame label `i` at `x+μ`". The Lattice and Quantum axioms do not supply such a
+"frame label `i` at `x+μ`". The Lattice and Qubit axioms do not supply such a
 canonical identification.
 
 ### Step 2 — Local frame change breaks the naive hopping
@@ -199,7 +199,7 @@ The covariance theorem (Steps 3–4) is an exact finite-dimensional identity, ve
 `(L=2)³` with `C³` fibres; it is representation-independent (depends only on `g†g=I`).
 This note adds no new axiom, primitive, or Tier-A admission. It uses the two
 cited retained theorems, the current-surface local frame-redundancy bridge,
-and the Lattice, Quantum, and Record axioms. It cites the standard
+and the Lattice, Qubit, Admissibility, and Record axioms. It cites the standard
 fibre-bundle/connection correspondence only as mathematical method. The
 physical connection reading is kinematic/current-surface only; the algebraic
 covariance core is exact finite operator algebra.

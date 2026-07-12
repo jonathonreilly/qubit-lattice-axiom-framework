@@ -48,7 +48,8 @@ q_A^*   -> q_A^* g_A^{-1}
 ```
 
 This rule is a bounded input here. The note verifies what follows from it; it
-does not derive the rule from the three framework axioms.
+does not derive the rule from the four framework axioms (Lattice, Qubit,
+Admissibility, Record).
 
 ## Result
 

@@ -373,7 +373,7 @@ check("G6.1 Schur on C^3 (EXACT): commutant of the SU(3) generators is 1-dimensi
 # D1 no hat discharged: this consolidation delivers depolarization on NEITHER
 #    admission -- both lanes still require an undelivered object. Encode as: the
 #    free/scalar lane does NOT reach I3/3 AND the singlet lane needs a non-product
-#    (entangled, neutrality-constrained) state, i.e. neither Lattice/Quantum/Record default
+#    (entangled, neutrality-constrained) state, i.e. neither Lattice/Qubit/Admissibility/Record default
 #    (free hopping + arbitrary product matter state) depolarizes.
 rho = rho0.copy()
 for _ in range(400):

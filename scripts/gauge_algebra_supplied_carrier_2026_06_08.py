@@ -5,7 +5,7 @@ GAUGE_ALGEBRA_SUPPLIED_CARRIER_GAUGING_SELECTION_OPEN_GATE_NOTE_2026-06-08.
 It does not claim an axiom-level derivation of the carrier or a gauging
 selection.
 
-SETUP: per-site qubit M_2(C) (Quantum axiom) on Z^3 (Lattice axiom); the color carrier is the 3-dim
+SETUP: per-site qubit M_2(C) (Qubit axiom) on Z^3 (Lattice axiom); the color carrier is the 3-dim
 base C^3 = Sym^2(C^2) of the taste cube (N_c = 3 = dim Z^3); the weak carrier is the qubit fiber C^2.
 
 VERIFIES:
@@ -147,7 +147,7 @@ def main() -> int:
     check("carrier algebra 4: the unrestricted internal algebra on C^6 is u(6), dim 36; the "
           "factor-preserving dim-12 algebra plus the 24 cross-factor su(3)(x)su(2) tensors spans u(6). "
           "So selecting su(3)(+)su(2)(+)u(1) rather than full u(6) is exactly the supplied factor-locality "
-          "premise, not a consequence of Lattice/Quantum/Record.",
+          "premise, not a consequence of Lattice/Qubit/Admissibility/Record.",
           u6_dim == 36 and mixed_dim == 24 and local_plus_mixed_dim == 36,
           f"dim u(6)={u6_dim}; dim cross-factor complement={mixed_dim}; dim local+cross={local_plus_mixed_dim}")
 
@@ -196,7 +196,7 @@ def main() -> int:
         "the missing selection of the factor-preserving algebra rather than u(6) is exactly the supplied "
         "factor-locality/MR_color premise. The carrier factorization itself is a SUPPLIED realization (cited "
         "to GRAPH_FIRST_SU3_INTEGRATION / CL3_COLOR_AUTOMORPHISM / QUBIT_LINK_U2 [bounded/pending] + the "
-        "weak-axis selection, with retained-bounded local-frame link-connection kinematics), NOT derived from the Lattice, Quantum, and Record axioms. "
+        "weak-axis selection, with retained-bounded local-frame link-connection kinematics), NOT derived from the Lattice, Qubit, Admissibility, and Record axioms. "
         "The GAUGING selection -- which symmetry is dynamically gauged, MR_color, chiral su(2)_L -- is an "
         "OPEN GATE: both su(2) and su(3) act irreducibly and admit the same Gauss/dressing structure. So "
         "this is conditional algebra support, NOT a from-axioms derivation. Audit lane sets the verdict."

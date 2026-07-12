@@ -196,7 +196,7 @@ def main() -> int:
         "MORPHISM result on the live d=3 surface. This is SUPPORT (it shows N_c tracks dim along the\n"
         "assumed family, addressing a matched-pair-coincidence worry); it is NOT a from-axioms derivation\n"
         "(the Z^d family, the taste-cube, and the weak-axis selection are assumed, not supplied by\n"
-        "{Lattice, Quantum, Record}). Audit lane sets the status."
+        "{Lattice, Qubit, Admissibility, Record}). Audit lane sets the status."
     )
     return 0 if FAIL == 0 else 1
 

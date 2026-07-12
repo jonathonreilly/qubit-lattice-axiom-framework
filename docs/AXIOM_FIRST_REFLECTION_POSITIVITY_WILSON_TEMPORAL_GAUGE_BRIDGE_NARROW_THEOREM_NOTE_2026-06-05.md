@@ -526,8 +526,8 @@ row is `audited_conditional` and is deliberately NOT linked):**
 whose gauge-case reduction this note's bridge completes — backticked so this note
 does not depend on or cap against the conditional target),
 `OBSERVABLE_PRINCIPLE_P2_PHASE_BLINDNESS_SECTOR_RESOLVED_NARROW_THEOREM_NOTE_2026-06-04.md`
-(template note), `MINIMAL_AXIOMS_2026-06-05.md` (repo Lattice/Quantum/Record
-baseline, named as setup context only).
+(template note), `MINIMAL_AXIOMS_2026-06-29.md` (repo
+Lattice/Qubit/Admissibility/Record baseline, named as setup context only).
 
 ### Source-note boundary
 

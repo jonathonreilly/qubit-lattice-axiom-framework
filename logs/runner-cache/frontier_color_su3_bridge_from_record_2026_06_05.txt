@@ -1,11 +1,3 @@
-===== runner cache v1 =====
-runner: scripts/frontier_color_su3_bridge_from_record_2026_06_05.py
-runner_sha256: b2c77b89548f46c434fcac309a01cae4935482eaae4d7db5c6914b2757b70131
-timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.51
-status: ok
------ stdout -----
 ====================================================================================
 FRONTIER: SU(3)_c symmetric-base -> physical-color bridge from the
 record-gauge principle (#2667 +#2711). HONEST IS/IS-NOT probe.
@@ -79,7 +71,7 @@ link-end dof. We can write a Gauss law for EITHER symmetry.
   [PASS] CRUX: base-SU(3)-vs-fiber-SU(2) gauging is NOT forced by records/locality/links  (both symmetries admit the same Gauss-law profile on the same carrier)
 
   SHARPENING (the asymmetry makes the color residual MORE specific):
-  - a single qubit link-end (Quantum axiom, M_2(C)) carries SU(2)
+  - a single qubit link-end (Qubit axiom, M_2(C)) carries SU(2)
     intrinsically (Aut(M_2(C)) = SO(3)); fiber-SU(2) needs no extra dof.
   - the framework's color-3 is Sym^2(C^2) of the (b1,b2) base PAIR;
     gauging it on links requires the connection to carry the base-pair
@@ -89,7 +81,7 @@ link-end dof. We can write a Gauss law for EITHER symmetry.
      symmetry' coin flip; for COLOR it specifically requires assigning
      quarks to the base-pair symmetric block AND routing that color
      index onto the links -- a structured matter+connection choice the
-     {Lattice,Quantum,Record} axioms do not supply (cf. #2679: a bare
+     {Lattice,Qubit,Admissibility,Record} axioms do not supply (cf. #2679: a bare
      qubit link gives su(2), not su(3)).
 
   The remaining selector is the ASSIGNMENT 'quarks occupy the 3D
@@ -97,7 +89,7 @@ link-end dof. We can write a Gauss law for EITHER symmetry.
   connection carries that color index on the links'. That assignment
   is the matter realization (the AC_phi_lambda family: which subsystem
   the matter occupies). It is NOT delivered by Lattice+Quantum+Record.
-  [PASS] matter-realization residual is outside {Lattice,Quantum,Record} scope (per axiom memo)  (Quantum: 'no gauge group'; Record: 'no arbitrary observable identification')
+  [PASS] matter-realization residual is outside {Lattice,Qubit,Admissibility,Record} scope (per axiom memo)  (Quantum: 'no gauge group'; Record: 'no arbitrary observable identification')
 
 ------------------------------------------------------------------------------------
 PART 4: residual ledger -- the bridge = [#2667 half] + [named residual]
@@ -140,9 +132,5 @@ is the residual (b); #2667 reduces the bridge to it but does not close it.
 ------------------------------------------------------------------------------------
 SELF-CHECK SUMMARY
 ------------------------------------------------------------------------------------
-  peak RSS (best-effort): 71.5 MB  (cap 2048 MB)
+  peak RSS (best-effort): 69.0 MB  (cap 2048 MB)
   SUMMARY: PASS=23 FAIL=0
-[log] full report written to /private/tmp/cl3-audit-backlog-scan-20260610/logs/runner-cache/frontier_color_su3_bridge_from_record_2026_06_05.txt
-
------ stderr -----
-

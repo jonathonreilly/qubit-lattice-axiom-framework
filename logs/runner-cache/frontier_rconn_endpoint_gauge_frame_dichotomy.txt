@@ -1,0 +1,86 @@
+===== runner cache v1 =====
+runner: scripts/frontier_rconn_endpoint_gauge_frame_dichotomy.py
+runner_sha256: 086c300264615f833ff855370d6a465560e638146d54c2d4eb8e241ad669f7e4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+============================================================================================
+R_CONN ENDPOINT GAUGE-FRAME DICHOTOMY CERTIFICATE
+  exact open-bilocal orbit fraction; two-weight closed-object boundary
+============================================================================================
+ENDPOINT PRODUCT-GROUP ORBIT CHECKS
+
+DIAGONAL-CONJUGATION TWO-WEIGHT CHECKS
+
+LARGE-N COEFFICIENT CHECKS
+
+SOURCE-BOUNDARY CHECKS
+
+FINITE READ
+  The legacy separated open-bilocal diagnostic has exact orbit average 1-1/N^2.
+  The value is a gauge-frame identity, not a physical connected-current ratio.
+  Diagonal conjugation permits independent singlet/adjoint weights.
+
+CHECK SUMMARY
+  PASS SU(2) singlet/adjoint projectors: max projector error=0.000e+00
+  PASS SU(2) projector ranks: ranks=(1, 3)
+  PASS SU(2) Fierz/Parseval split: max split error=0.000e+00
+  PASS SU(2) Weyl unitary-basis orthogonality: max Gram error=1.225e-16
+  PASS SU(2) exact endpoint orbit singlet fraction: orbit <S>/T=0.250000000000, expected=1/4
+  PASS SU(2) exact endpoint orbit adjoint fraction: orbit <C>/T=0.750000000000
+  PASS SU(3) singlet/adjoint projectors: max projector error=1.110e-16
+  PASS SU(3) projector ranks: ranks=(1, 8)
+  PASS SU(3) Fierz/Parseval split: max split error=3.553e-15
+  PASS SU(3) Weyl unitary-basis orthogonality: max Gram error=8.882e-16
+  PASS SU(3) exact endpoint orbit singlet fraction: orbit <S>/T=0.111111111111, expected=1/9
+  PASS SU(3) exact endpoint orbit adjoint fraction: orbit <C>/T=0.888888888889
+  PASS SU(4) singlet/adjoint projectors: max projector error=0.000e+00
+  PASS SU(4) projector ranks: ranks=(1, 15)
+  PASS SU(4) Fierz/Parseval split: max split error=1.421e-14
+  PASS SU(4) Weyl unitary-basis orthogonality: max Gram error=8.882e-16
+  PASS SU(4) exact endpoint orbit singlet fraction: orbit <S>/T=0.062500000000, expected=1/16
+  PASS SU(4) exact endpoint orbit adjoint fraction: orbit <C>/T=0.937500000000
+  PASS SU(5) singlet/adjoint projectors: max projector error=2.220e-16
+  PASS SU(5) projector ranks: ranks=(1, 24)
+  PASS SU(5) Fierz/Parseval split: max split error=5.684e-14
+  PASS SU(5) Weyl unitary-basis orthogonality: max Gram error=1.776e-15
+  PASS SU(5) exact endpoint orbit singlet fraction: orbit <S>/T=0.040000000000, expected=1/25
+  PASS SU(5) exact endpoint orbit adjoint fraction: orbit <C>/T=0.960000000000
+  PASS SU(2) weights (1,1) positive and conjugation-equivariant: min eigenvalue=1.000e+00, equivariance error=0.000e+00
+  PASS SU(2) weights (2,1) positive and conjugation-equivariant: min eigenvalue=1.000e+00, equivariance error=4.441e-16
+  PASS SU(2) dimension fraction iff equal per-component weights (exhibits): equal=3/4, unequal=3/5, dimension=3/4
+  PASS SU(2) unequal weights fail independent endpoint equivariance: left-endpoint equivariance defect=2.767e-01
+  PASS SU(3) weights (1,1) positive and conjugation-equivariant: min eigenvalue=1.000e+00, equivariance error=0.000e+00
+  PASS SU(3) weights (2,1) positive and conjugation-equivariant: min eigenvalue=1.000e+00, equivariance error=1.986e-15
+  PASS SU(3) dimension fraction iff equal per-component weights (exhibits): equal=8/9, unequal=4/5, dimension=8/9
+  PASS SU(3) unequal weights fail independent endpoint equivariance: left-endpoint equivariance defect=5.217e-01
+  PASS SU(4) weights (1,1) positive and conjugation-equivariant: min eigenvalue=1.000e+00, equivariance error=0.000e+00
+  PASS SU(4) weights (2,1) positive and conjugation-equivariant: min eigenvalue=1.000e+00, equivariance error=2.809e-15
+  PASS SU(4) dimension fraction iff equal per-component weights (exhibits): equal=15/16, unequal=15/17, dimension=15/16
+  PASS SU(4) unequal weights fail independent endpoint equivariance: left-endpoint equivariance defect=8.700e-01
+  PASS SU(3) equal-weight and positive unequal-weight countermodels: q=1 gives 8/9; q=2 gives 4/5 under the same diagonal symmetry and positivity
+  PASS large-N correction identity c=0, N=3: R-F=0
+  PASS large-N correction identity c=0, N=5: R-F=0
+  PASS large-N correction identity c=0, N=11: R-F=0
+  PASS large-N correction identity c=1, N=3: R-F=-4/369
+  PASS large-N correction identity c=1, N=5: R-F=-12/7825
+  PASS large-N correction identity c=1, N=11: R-F=-60/885841
+  PASS large-N correction identity c=3, N=3: R-F=-2/63
+  PASS large-N correction identity c=3, N=5: R-F=-18/3925
+  PASS large-N correction identity c=3, N=11: R-F=-90/442981
+  PASS O(1/N^4) remainder does not specialize to exact SU(3) 8/9: c=1 family gives R(3)=36/41, while c=0 gives 8/9
+  PASS note contains boundary: **Claim type:** bounded_theorem: **Claim type:** bounded_theorem
+  PASS note contains boundary: independent endpoint gauge rotations: independent endpoint gauge rotations
+  PASS note contains boundary: ideal gauge-invariant equilibrium ensemble: ideal gauge-invariant equilibrium ensemble
+  PASS note contains boundary: finite cold-start markov chain: finite cold-start markov chain
+  PASS note contains boundary: three inequivalent uses of: three inequivalent uses of
+  PASS note contains boundary: not a physical connected-current ratio: not a physical connected-current ratio
+  PASS note contains boundary: does not derive `kappa_EW = 0`: does not derive `kappa_EW = 0`
+  PASS note contains boundary: independent audit lane: independent audit lane
+
+RUNNER STATUS: PASS (PASS=55 FAIL=0)
+
+----- stderr -----
+

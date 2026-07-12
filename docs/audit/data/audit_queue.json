@@ -3,7 +3,7 @@
     "critical": 650,
     "high": 335,
     "leaf": 1098,
-    "medium": 754
+    "medium": 753
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -30656,28 +30656,6 @@
       "ready": true,
       "runner_path": null,
       "transitive_descendants": 11
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.959,
-      "note_path": "docs/GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.py",
-      "transitive_descendants": 10
     },
     {
       "audit_independence_required": "any_non_self",
@@ -81101,6 +81079,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 551,
-  "total_pending": 2837
+  "ready_count": 550,
+  "total_pending": 2836
 }

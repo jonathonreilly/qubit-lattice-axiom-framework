@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 36 |
-| **retained_bounded** | 385 |
+| **retained_bounded** | 386 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2734 |
+| unaudited | 2733 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,22 +45,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 501 |
+| `audited_clean` | 502 |
 | `audited_conditional` | 69 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3084 |
+| `unaudited` | 3083 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2051 |
+| `bounded_theorem` | 2052 |
 | `decoration` | 23 |
 | `meta` | 357 |
 | `no_go` | 469 |
 | `open_gate` | 198 |
-| `positive_theorem` | 656 |
+| `positive_theorem` | 655 |
 
 | criticality | count |
 |---|---:|
@@ -352,6 +352,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `global_coherence_held_out2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `global_coherence_off_scaffold_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | D | - |
 | `global_coherence_predictor_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `graph_first_selector_derivation_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `graph_first_su3_integration_note` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `graph_laplacian_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -4659,6 +4660,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The primary runner completes and asserts the bounded archived scaffolded numbers, and the direct dependency is retained-bounded for the off-scaffold reversal. The clean scope excludes any generator-agnostic predictor or simple-classifier exhaustion theorem.
 - **rationale:** The source note has been narrowed to historical finite evidence, and the runner cache reproduces the archived 7/9 versus 6/9 scaffolded result. The retained off-scaffold dependency supplies the reversal that prevents this from being promoted as a generator-agnostic law or live classifier program. Residual risk is ordinary finite-sample/scaffold specificity; broader metric-search closure or analytic path-sum derivation is not audited here.
 - **auditor confidence:** high
+
+### `graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29`
+
+- **Note:** [`GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md`](../../docs/GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite witnesses only: exact UD_2 homology for C_3, C_4, C_5, K_4, K_5, and K_{3,3}; nonplanarity and vertex-connectivity checks for L=3,4 cubic boxes; and the sign-phase consequence for an already-established order-2 class.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00223-graph_braid_z3_anyon_exclusi`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The runner constructs the finite UD_2 boundary maps, verifies d1*d2=0, and computes the stated H_1 groups by exact Smith normal form, alongside finite cube graph checks and the order-2 phase identity.  _(class `A`)_
+- **chain closes:** True — The supplied source computes the finite chain complexes and Smith normal forms rather than printing the claimed groups, and the graph and phase checks are exact algebraic calculations. The all-L, infinite-lattice, exchange-generator, statistics-selector, and second-quantized bridges are explicitly outside the audited scope.
+- **rationale:** The runner genuinely constructs cells and integer boundary matrices and computes ranks and Smith normal forms for the six named finite graphs. Its L=3,4 cube checks directly count vertices and edges and exhaust one- and two-vertex removals, while the order-2 phase result follows algebraically from phi(t)^2=1. No finite witness is extrapolated into the expressly excluded all-L or infinite-Z^3 theorem.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `graph_first_selector_derivation_note`
 

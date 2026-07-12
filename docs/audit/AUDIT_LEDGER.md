@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 403 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2681 |
+| unaudited | 2680 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 84 |
+| ~~audited_conditional~~ | 85 |
 | ~~audited_failed~~ | 20 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 530 |
-| `audited_conditional` | 84 |
+| `audited_conditional` | 85 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3031 |
+| `unaudited` | 3030 |
 
 | claim_type | count |
 |---|---:|
@@ -709,6 +709,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_interacting_matter_build_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_retention_law_is_a2plus_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4569,6 +4570,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner performs substantive exact set, enumeration, covariance, and finite-lattice checks rather than printing imported verdicts or matching external numbers. Its five cross-file quote guards succeed, and the remaining 28 checks directly instantiate the scoped combinatorial claims. The model-dependent and finitary qualifications are stated as claim boundaries, so they do not masquerade as universal consequences of the minimal axioms.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18`
+
+- **Note:** [`FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md`](../../docs/FRW_C3_EOS_COMPONENT_LABELS_KINETIC_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic EOS identities for finite signed-permutation massless shells and a massive rest sector, assuming the relativistic kinetic-stress and dispersion formulas used in the note.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00284-frw_c3_eos_component_labels_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Using E=|p| and P_i proportional to sum_p p_i^2/E, equal axis-square sums give P_i/rho=1/3, while p=0 gives w=0.  _(class `A`)_
+- **chain closes:** False — The finite-orbit algebra is correct once E=sqrt(m^2+|p|^2) and P_i proportional to sum p_i^2/E are supplied. No cited authority or accepted premise in the restricted packet derives that relativistic kinetic-stress bridge from the framework baseline.
+- **rationale:** Issue: the runner and proof hard-code the relativistic dispersion and kinetic-stress formulas that connect momentum shells to rho and P_i. Why this blocks: the accepted premises explicitly do not supply a Hamiltonian or dynamical kinetic law, so the correct shell arithmetic is not a framework-derived EOS theorem. Repair target: cite or derive a retained relativistic kinetic-stress/dispersion bridge and make the runner instantiate that bridge rather than assume it. Claim boundary until fixed: the note establishes exact conditional algebra for the stated ideal finite ensembles.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1: derive_kinetic_stress_bridge remains OPEN.
+    - N3: the relativistic kinetic-stress and dispersion formulas are hidden admissions rather than derived inputs.
 
 ### `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10`
 

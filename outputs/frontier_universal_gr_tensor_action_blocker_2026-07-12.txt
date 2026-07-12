@@ -1,0 +1,32 @@
+SCALAR-GENERATOR TENSOR-ACTION LOCALIZATION NO-GO
+==============================================================================
+[PASS] [class A exact algebra] finite antisymmetric block gives W(j)=log(1+j^2/m^2) exactly
+    det(D_m+jI)=m^2+j^2, W'(0)=0, W''(0)=2/m^2
+[PASS] [class A exact algebra] one scalar W gives inequivalent trace and shear metric Hessians
+    both are exact rank-one forms with different image lines
+[PASS] [class A exact algebra] a nonlinear metric-to-source map can encode an arbitrary Hessian
+    exact chain-rule witness realizes symbolic K=[[k11,k12],[k12,k22]]
+[PASS] [class A exact algebra] direct-source log-det Hessian equals -Tr(D^-1 h D^-1 k)
+    all 100 canonical basis pairs agree by exact differentiation
+[PASS] [class A exact algebra] direct-source Hessian is rank ten and negative definite
+    symbolic rank=10, diagonal=[-1/a**2, -1/(a*b), -1/(a*b), -1/(a*b), -1/b**2, -1/b**2, -1/b**2, -1/b**2, -1/b**2, -1/b**2]
+[PASS] [class B route-binding check] retained route source carries the same direct-source Hessian
+    supermetric source formula and load-bearing markdown dependency are present
+[PASS] [class A exact algebra] linearized Einstein symbol has the exact mixed/gauge spectrum
+    rank=6, spectrum={0: 4, -1: 1, 1/2: 5}
+[PASS] [class A exact algebra] geometry-derived Einstein symbol equals the Fierz-Pauli action Hessian
+    all 100 symmetric-basis pairs agree exactly by an independent action path
+[PASS] [class A exact algebra] Einstein gauge kernel is four-dimensional and momentum-dependent
+    rank(G_p)=4 and dim(ker E_e0 intersection ker E_e1)=1
+[PASS] [class B sibling-pin check] legacy S3 primary-runner pins retain substantive open-gate checks
+    both pinned notes preserve scalar/kinematic-only scope and missing dynamics
+[PASS] [class A exact algebra] Einstein symbol is two-derivative while the direct Hessian is order zero
+    E_0=0 and E_(2p)=4 E_p exactly
+[PASS] [class A exact algebra] real pullbacks of the direct Hessian cannot equal Einstein
+    A^T B A is semidefinite for definite B; E_p has both +1/2 and -1
+[PASS] [class D source-boundary check] source note carries the N1-N8 and claim-state firewalls
+    no-go type, exact class, escapes, and independent-audit boundary are explicit
+
+==============================================================================
+SUMMARY: PASS=13 FAIL=0 TOTAL=13
+Exact boundary: W alone does not select a metric Hessian, and the direct-source definite Hessian cannot become the mixed-inertia, gauge-degenerate Einstein operator by a real linear pullback.

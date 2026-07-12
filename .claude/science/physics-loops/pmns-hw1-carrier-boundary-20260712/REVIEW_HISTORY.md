@@ -90,3 +90,75 @@ Findings and fixes:
 
 Iteration-1 fix checks: paired runner `PASS=31 FAIL=0`, Python compilation
 passes, compatibility alias/metadata smoke test passes.
+
+## Review Results (Iteration 2)
+
+### Code / Runner: RISK — one stale docstring
+### Physics Claim Boundary: BOUNDED / FIX — two stale evidence rows
+### Imports / Support: DISCLOSED / FIX
+### Nature Retention: BOUNDED
+### No-Go Discipline: FAIL — N2 wall-independence wording
+### Labeling Convention: PASS
+### Repo Governance: FIX
+### Audit Compatibility: FIX pending the mandatory N2 correction
+### Methodology Skill: SKIPPED
+
+Fixes applied:
+
+- replaced the stale explicit-reduct docstring with formal same-premise
+  expansion wording;
+- replaced stale Admissibility/Record executable-witness claims with the
+  conservative-signature argument;
+- corrected N2 to the independent set `{W_C,W_A,W_P}` and recorded
+  sector-exchange as an alternative retirement route;
+- added the exact N4 blocker locator;
+- refreshed import-ledger roles/dispositions and artifact-plan wording.
+
+## Review Results (Iteration 3)
+
+### Code / Runner: PASS
+### Physics Claim Boundary: BOUNDED — PASS
+### Imports / Support: DISCLOSED — PASS
+### Nature Retention: BOUNDED
+### No-Go Discipline: PASS
+### Labeling Convention: PASS
+### Repo Governance: PASS
+### Audit Compatibility: PASS at pre-pipeline gate
+### Methodology Skill: SKIPPED
+
+No findings remained in the iteration-3 targeted file set.
+
+## Audit-pipeline compatibility validation
+
+Commands:
+
+```bash
+bash docs/audit/scripts/run_pipeline.sh
+python3 docs/audit/scripts/audit_lint.py --strict
+git diff --check
+```
+
+Validation result:
+
+- target `claim_type`: `bounded_theorem`;
+- target dependency set: `[minimal_axioms]`;
+- helper runner set: empty;
+- target runner: revised paired runner;
+- target queue state: `ready: true`, `criticality: critical`;
+- strict lint: no errors (repository-wide legacy warnings/notices remain);
+- every regenerated audit/effective-status/front-door output was restored from
+  `origin/main`; the untracked pipeline certificate was removed.
+
+## Additional compatibility checks
+
+- paired runner: `PASS=31 FAIL=0`;
+- direct SymPy solve/reconstruction: exact scalar commutant and zero residuals;
+- support-interface cross-check against `pmns_lower_level_utils`: all six
+  active permutation conjugates and all six monomial permutations agree;
+- compatibility alias/metadata smoke check: pass;
+- five direct downstream consumers execute through the wrapper; four pass and
+  one reproduces an unrelated pre-existing source-manifold text-needle failure;
+- minimal-axiom companion: `68/68`;
+- generation carrier boundary: `4/4`;
+- independent Burnside companion: `50/50`;
+- vocabulary lint and portable-link gates: clean.

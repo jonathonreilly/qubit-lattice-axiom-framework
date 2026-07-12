@@ -8,14 +8,19 @@ that the explicit invariant carrier class is `alpha I_3`, proves that the
 premise signature does not select the unit pair, and proves analytically that
 the displayed response/support interfaces reject the entire nonsingular scalar
 family. The paired runner passes `31/31`; an independent SymPy derivation
-confirms the commutant and reconstruction identities. Review-loop iteration 1
-found eight fixable boundary/code/governance issues, all now addressed.
+confirms the commutant and reconstruction identities. Review-loop passed after
+three iterations. The validation pipeline parsed the row as a
+`bounded_theorem` depending only on `minimal_axioms`, with no helper runners,
+and placed it ready in the critical queue. All regenerated audit, publication-
+status, and front-door outputs were restored from `origin/main` before commit.
 
 ## Exact next action
 
-Run review-loop iteration 2 only on the files changed by the fix pass. If
-clean, run the audit pipeline for validation, restore generated audit authority
-outputs, finalize the certificate/handoff, commit/push, and open one review PR.
+After the review PR lands through the normal integration path, run the
+independent audit worker on
+`pmns_sole_axiom_hw1_source_transfer_boundary_note`. The audit lane alone may
+set the verdict/effective status. A later positive science campaign may target
+the separately exposed physical carrier/source-action map.
 
 ## Proposed later weaving
 

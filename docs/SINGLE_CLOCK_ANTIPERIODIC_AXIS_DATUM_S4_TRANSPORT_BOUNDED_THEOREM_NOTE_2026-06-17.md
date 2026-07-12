@@ -7,16 +7,18 @@
 set or predict an audit outcome; effective status is pipeline-derived after
 independent audit and dependency closure.
 
-**Claim scope:** On an even cubic-symmetric staggered four-axis block, the
-signed adjacent exchanges
+**Claim scope:** On the runner-tested `L = (4,4,4,4)`, time-first staggered
+four-axis block at `m = 0.3`, the signed adjacent exchanges
 `W_{a,a+1} = P_{a<->a+1} diag((-1)^{x_a x_{a+1}})` preserve the periodic
 staggered hop and transport the single-antiperiodic-axis boundary datum from
-axis `a` to axis `a+1`. Since adjacent transpositions generate `S4`, the
-single-antiperiodic-axis label is one `S4` orbit on this declared Euclidean
-block. The same runner verifies that the sublattice-parity grading is
-`W`-invariant. Therefore a per-axis antiperiodic boundary condition breaks a
-fixed chosen exchange, but its axis label is not an absolute axis supplier on
-this surface.
+axis `a` to axis `a+1`. Their underlying coordinate swaps are the three
+standard adjacent transpositions, which generate `S4`, so compositions of
+the tested transport maps put the four single-antiperiodic-axis matrices in
+one orbit on this finite surface. The same runner verifies that the
+sublattice-parity grading is `W`-invariant.
+Therefore a per-axis antiperiodic boundary condition breaks a fixed chosen
+exchange, but its axis label is not an absolute axis supplier on this tested
+block.
 
 This note does not derive a unique evolution axis, a time metric, a dynamics,
 a generator, record-production dynamics, Lorentz structure, orientation, or a
@@ -31,15 +33,16 @@ Euclidean transport calculation.
 
 ## Inputs and Boundary
 
-The runner uses a finite even block `L = (4,4,4,4)` with the standard
-time-first staggered phases and mass parameter `m = 0.3`. It also checks
-robustness at `m = 1.7`, at `L = (6,6,6,6)`, and under an equivalent
-staggered-phase convention.
+The positive theorem surface is exactly the finite block `L = (4,4,4,4)`
+with the standard time-first staggered phases and mass parameter `m = 0.3`.
+The runner does not test another mass, another even block, or another
+staggered-phase convention, and this note makes no robustness or all-even
+family claim.
 
-The even-extent condition is load-bearing. The runner includes an odd-block
-falsifier at `L = (3,3,3,3)`, where the signed exchange no longer preserves
-the periodic staggered hop. The theorem is therefore scoped to even
-cubic-symmetric staggered blocks, not all finite four-axis blocks.
+The runner also includes an odd-block falsifier at `L = (3,3,3,3)`, where the
+same signed-exchange formula no longer preserves the periodic staggered hop.
+That falsifier rules out an extension to all finite cubic blocks; it does not
+by itself prove that even extent is sufficient at untested sizes.
 
 Context and guardrails:
 
@@ -59,7 +62,8 @@ admissions, or audit verdicts are introduced here.
 
 ## Computed Theorem
 
-Let `M_per` be the periodic staggered hop on the even cubic-symmetric block.
+Let `M_per` be the periodic staggered hop on the tested `L = (4,4,4,4)`,
+time-first, `m = 0.3` block.
 Let `M_ap(a)` be the same operator with antiperiodic boundary condition in
 axis `a` and periodic boundary conditions in the other axes.
 
@@ -77,9 +81,10 @@ It also checks that the antiperiodic datum is genuinely moved, not fixed:
 || W_{a,a+1} M_ap(a) W_{a,a+1}^T - M_ap(a) || = 16 > 1.
 ```
 
-Since adjacent transpositions generate `S4`, the antiperiodic-axis label is
-transportable around all four axes. A single-axis antiperiodic datum therefore
-selects an axis only relative to an already chosen axis label.
+On this finite block, the underlying adjacent coordinate swaps generate `S4`,
+so compositions of the three checked transports move the antiperiodic-axis
+label among all four axes. A single-axis antiperiodic datum therefore selects
+an axis only relative to an already chosen axis label on this tested surface.
 
 The runner also verifies:
 
@@ -104,9 +109,11 @@ axioms.
 
 Thus the honest boundary is:
 
-- the antiperiodic-axis datum is transportable on the declared Euclidean
-  staggered surface;
-- the tested parity grading is axis-label-free;
+- the antiperiodic-axis datum is transportable on the declared
+  `L = (4,4,4,4)`, time-first, `m = 0.3` Euclidean staggered surface;
+- the parity grading is axis-label-free on that same surface;
+- transport at other masses, other even sizes, or under other phase
+  conventions is not claimed here;
 - a native one-parameter dynamics over `Z^3` remains a separate open gate.
 
 This is a bounded theorem plus an open-gate localization, not a no-go over all

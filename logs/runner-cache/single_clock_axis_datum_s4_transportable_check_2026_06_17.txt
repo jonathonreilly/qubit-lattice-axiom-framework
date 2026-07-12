@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/single_clock_axis_datum_s4_transportable_check_2026_06_17.py
-runner_sha256: d9787ecab5c4a8152be97ba08a14c57a045802068f15b3c9865d1c0ce8337d30
+runner_sha256: d5dd709300cacd417eba3a7b325ee2efdca355e2d5b60b2aedfa6bacfc87765e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 [S] PASS: W01 orthogonal (W W^T = I)  (||WW^T-I||=0.00e+00)
@@ -21,9 +21,9 @@ status: ok
 [T] PASS: W_23 preserves periodic staggered hop  (res=0.00e+00)
 [T] PASS: W_23 maps antiperiodic-axis-2 EXACTLY onto antiperiodic-axis-3  (||W M_ap2 W^T - M_ap3||=0.00e+00)
 [T] PASS: W_23 genuinely MOVES the antiperiodic axis (not a fixed point)  (||W M_ap2 W^T - M_ap2||=16.000 (>1 required))
-[T] NOTE: (0,1),(1,2),(2,3) generate S_4, which acts TRANSITIVELY on the 4 axes; the antiperiodic-axis label is therefore a single 4-element orbit.
-[SCOPE] PASS: EVEN extent is required: at ODD cubic L=(3,3,3,3) W01 does NOT preserve the periodic hop (falsifier; claim scope is EVEN cubic)  (||W M_per W^T - M_per||_odd=6.000 (>1: even-extent boundary))
-[SCOPE] PASS: ...while at EVEN L=(4,4,4,4) it is exact (recap of [S])
+[T] NOTE: the underlying swaps (0,1),(1,2),(2,3) generate S_4, which acts TRANSITIVELY on the 4 axis labels; compositions of the checked transports therefore give a single 4-element orbit on the tested surface.
+[SCOPE] PASS: at tested ODD cubic L=(3,3,3,3), W01 does NOT preserve the periodic hop (falsifier of an all-finite-cubic extension)  (||W M_per W^T - M_per||_odd=6.000 (>1 required))
+[SCOPE] PASS: at the claimed L=(4,4,4,4) surface it is exact (recap of [S])
 [REST] PASS: antiperiodic-axis-0 ALONE breaks the fixed W01 (the pin)  (||W M_ap0 W^T - M_ap0||=16.000 (>1 required))
 [REST] PASS: antiperiodic in BOTH 0,1 restores W01 exactly (symmetric -> symmetry returns)  (||W M_ap01 W^T - M_ap01||=0.00e+00)
 [R] PASS: W01 is a REAL operator (commutes with K = complex conjugation)

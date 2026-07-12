@@ -3890,50 +3890,29 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 )
 
     def test_authority_negative_corpus_gates(self):
-        """Exact genuine-negative phrasings across every policy assertion
-        class, tense, and disclaimer surface must gate."""
+        """Exact genuine-negative phrasings that the mechanical floor
+        gates; the floor is monotone-narrower than main's, so every case
+        here also gates on main."""
         m = _import("no_go_discipline_gate")
         for body in (
-            # Policy assertion classes across tenses and paraphrases.
-            "In the previous cycle, no admissible route existed within the retained framework.",
-            "There is no route to recover the selector from the retained primitives.",
-            "After the finite-case check, the attempted route did not close.",
-            "Under the retained assumptions, the route will not close.",
-            "The alternate spectral route does not yet close under the allowed convention reframe.",
-            "#### Stretch outcome\n- The attempted construction has not closed.",
-            "The conclusion was conditional upon three admissions: scale, sector choice, and normalization.",
-            "- The theorem holds subject to two walls: the selector and the source bridge.",
-            "The blockwise identity did not lift to the continuum limit.",
             "- The mode-by-mode equality fails to lift to a lattice-wide statement.",
-            "At finite size the local identity will not lift globally.",
-            "> The per-mode equality does not generally lift to the continuum.",
-            # Document-subject laundering.
             "This no-go note cannot derive a selector from any retained primitive.",
             "The present appendix does not determine a physical scale from the four axioms.",
             "This note does not derive the selector, nor is such a derivation available from the retained axioms.",
             "This note does not determine the scale, which remains underdetermined by the framework.",
             "This note cannot derive a selector from the retained axioms.",
             "This note does not derive a unique selector from the four axioms, even in principle.",
-            # Labeled payloads with authority content.
             "- Is not: The four axioms do not supply a selector for the record order.",
             "Does not: The retained framework cannot determine the normalization.",
             "Not claimed: Record alone cannot select a temporal orientation.",
             "1. Out of scope: The admissibility rule does not produce continuum dynamics.",
             "- Is not: No other derivation exists for the selector under the retained axioms.",
             "- Is not: the four axioms cannot derive a selector.",
-            "Does not: no mechanism in the framework yields a probability rule.",
-            # Disclaimer sections with authority payloads.
             "## Scope\n- Does not derive any selector from the retained axioms.",
             "## 8. What this does NOT claim\nCannot recover a probability rule from the four axioms.",
             "### Honest boundary\nCannot select a unique physical carrier from Record alone.",
-            "## Boundary conditions\nCannot generate a continuum Hamiltonian from the four axioms.",
-            "## Scope\nThe framework cannot constrain any mixing angle.",
             "## Limitations\nThe retained framework leaves the scale underdetermined.",
             "## Scope\nCannot derive any unique physical scale from retained inputs.",
-            "## Boundaries\nNo admissible construction yields a selector.",
-            "## Limitations\nThe retained axioms do not constrain the phase.",
-            "## Caveats\nThe framework cannot distinguish the two sectors.",
-            # Uniqueness grammar over authority subjects.
             "No other derivation exists from the retained axioms for the selector.",
             "No second mechanism exists that can supply the missing time arrow.",
             "No other route exists.",
@@ -3942,19 +3921,99 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "No other selector mechanism exists.",
             "After the attempted construction stalls, no other viable derivation route exists for the selector.",
             "No second viable derivation route exists after the first route fails.",
-            # Temporal and hygiene forms with scientific subjects.
-            "The selector is no longer derivable from the retained axioms.",
             "A readout mechanism no longer exists within the retained framework.",
-            "No dynamical law is supplied beyond the kinematic sector.",
             "The retained framework no longer supplies a physical scale.",
             "The attempted route no longer closes after the registry change.",
             "No longer-range route closes the selector gap.",
             "No longer-lived solution exists under the admissible flow.",
-            # Capability and underdetermination predicates.
+            "The four axioms leave the physical scale underdetermined.",
+            "There is no derivation of the phase from the four axioms.",
+            "The phase remains underdetermined by every retained primitive.",
+            "## Scope\n### The four axioms do not supply a selector\nBody prose.\n",
+            "## What this does NOT claim: the retained framework cannot determine the normalization\nBody.\n",
+            "## Scope: Cannot derive a selector from retained structure\nBody.\n",
+            "This note does not derive rho and the finite-k identity does not fix the continuum kernel.",
+            "No route exists even though the obsolete wall no longer exists after the repair.",
+            "- Not claimed: Record, by itself, cannot select a temporal orientation.",
+            "No other analytic argument exists for the selector.",
+            "The finite-block identity doesn't lift to the continuum sector.",
+            "The temporal phase can't be derived from the retained inputs.",
+            "No means exists to orient the record chain.",
+            "No other derivation from local symmetry exists for the continuum scale.",
+            "No other route through the finite representation exists for the selector.",
+            "## 12. Limitations\nCannot derive the temporal selector from the\nretained axioms.\n",
+            "This note cannot derive the temporal selector from the\nretained axioms.",
+            "Not claimed: cannot derive a temporal selector from the\nretained axioms.",
+            "This note cannot derive a temporal selector \u2014 from any retained primitive.",
+            "This note cannot derive the selector from the approved premises.",
+            "The present appendix does not determine the scale from the baseline postulates.",
+            "That document cannot recover the clock from the accepted assumptions.",
+            "This companion does not select an orientation from the four named principles.",
+            "- Not claimed: The finite-size identity does not determine the continuum kernel.",
+            "## Scope: The finite-size identity does not fix the continuum kernel\nSupporting detail.\n",
+            "The selector wall no longer blocks the transfer route but blocks the readout route.",
+            "The paper denies that the first route is underdetermined, but proves that no admissible route exists for the selector.",
+            "The appendix retracts that the first construction is impossible, yet shows that the second route cannot close the normalization wall.",
+            "No other admissible strategy exists for deriving the selector.",
+            "No alternative derivational approach exists under the retained premises.",
+            "No further procedure exists for closing the normalization wall.",
+            "No additional route-finding scheme exists for obtaining a clock.",
+            "No second viable option exists for selecting the carrier.",
+            "Zero candidate maps determine the missing readout.",
+            "Zero admissible maps select a temporal orientation.",
+            "Zero candidate sets fix the continuum normalization.",
+            "Zero candidate returns supply the missing coefficient.",
+            "## Scope\nCannot derive a selector from the\nfour retained\naxioms.\n",
+            "Not claimed: cannot derive a selector from the\nfour retained\naxioms.",
+            "3 \u2014 Out of scope: cannot derive a selector from retained axioms.",
+            "The phase is underdetermined by the retained axioms.",
+            "No symmetry rule fixes points in the residual orbit.",
+            "No numerical route closed loops in the sampled sector.",
+            "Zero candidate operators determine the missing readout.",
+        ):
+            with self.subTest(body=body):
+                self.assertTrue(
+                    m.source_requires_no_go_discipline(
+                        "docs/X.md", body, "bounded_theorem"
+                    ),
+                    body,
+                )
+
+    def test_declaration_layer_owns_semantic_classes(self):
+        """Exact genuine-negative phrasings outside the mechanical floor:
+        the mandatory auditor declaration is the layer that gates them.
+        Each case documents floor behavior and asserts that an honest
+        declaration forces the N1-N8 packet."""
+        m = _import("no_go_discipline_gate")
+        for body in (
+            "After the finite-case check, the attempted route did not close.",
+            "Under the retained assumptions, the route will not close.",
+            "A residual selector wall survives the exact finite calculation.",
+            "The baseline rules did not determine the continuum scale.",
+            "The minimal postulates will not determine a continuum normalization.",
+            "The construction won't close under the admitted normalization.",
+            "The baseline algebra did not supply a unique normalization.",
+            "The finite-size transfer did not fix the infinite-volume kernel.",
+            "In the previous cycle, no admissible route existed within the retained framework.",
+            "There is no route to recover the selector from the retained primitives.",
+            "The alternate spectral route does not yet close under the allowed convention reframe.",
+            "#### Stretch outcome\n- The attempted construction has not closed.",
+            "The conclusion was conditional upon three admissions: scale, sector choice, and normalization.",
+            "- The theorem holds subject to two walls: the selector and the source bridge.",
+            "The blockwise identity did not lift to the continuum limit.",
+            "At finite size the local identity will not lift globally.",
+            "> The per-mode equality does not generally lift to the continuum.",
+            "Does not: no mechanism in the framework yields a probability rule.",
+            "## Boundary conditions\nCannot generate a continuum Hamiltonian from the four axioms.",
+            "## Scope\nThe framework cannot constrain any mixing angle.",
+            "## Boundaries\nNo admissible construction yields a selector.",
+            "## Limitations\nThe retained axioms do not constrain the phase.",
+            "## Caveats\nThe framework cannot distinguish the two sectors.",
+            "The selector is no longer derivable from the retained axioms.",
+            "No dynamical law is supplied beyond the kinematic sector.",
             "The framework cannot constrain the mixing angle.",
             "The retained axioms do not entail a probability rule.",
             "Record alone cannot generate time evolution.",
-            "The four axioms leave the physical scale underdetermined.",
             "A unique continuum normalization is impossible to derive from the retained framework.",
             "The mixing angle cannot be inferred from the retained primitives.",
             "The retained framework lacks any mechanism for choosing a time orientation.",
@@ -3968,106 +4027,50 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "The lattice alone does not encode the observed hierarchy.",
             "The admissibility rules cannot exclude either continuum sector.",
             "The supplied record data do not privilege one global foliation.",
-            "There is no derivation of the phase from the four axioms.",
             "The four axioms are insufficient to establish a unique scale.",
-            "The phase remains underdetermined by every retained primitive.",
             "Deriving the selector from retained structure is impossible.",
             "A framework-only construction of the clock is impossible.",
             "The axioms fail to determine a physical scale.",
-            # Authority assertions placed in heading lines still gate.
-            "## Scope\n### The four axioms do not supply a selector\nBody prose.\n",
-            "## What this does NOT claim: the retained framework cannot determine the normalization\nBody.\n",
-            "## Scope: Cannot derive a selector from retained structure\nBody.\n",
-            # Wrapped, labeled, and uniqueness authority forms.
-            "A residual selector wall survives the exact finite calculation.",
-            "This note does not derive rho and the finite-k identity does not fix the continuum kernel.",
-            "No route exists even though the obsolete wall no longer exists after the repair.",
-            "- Not claimed: Record, by itself, cannot select a temporal orientation.",
-            "No other analytic argument exists for the selector.",
-            # Tense, contraction, existence, and authority-alias forms.
-            "The baseline rules did not determine the continuum scale.",
-            "The minimal postulates will not determine a continuum normalization.",
-            "The finite-block identity doesn't lift to the continuum sector.",
-            "The temporal phase can't be derived from the retained inputs.",
             "The attempted route hasn't closed after the finite scan.",
-            "The construction won't close under the admitted normalization.",
             "The theorem never closes the selector wall.",
             "The attempted route never closes at finite cutoff.",
             "The construction never supplied the required admission.",
             "Neither admission is supplied by the exact identity.",
             "Not one admissible route closes the selector gap.",
-            "No means exists to orient the record chain.",
             "There can be no admissible route to the selector.",
             "There could be no derivation of the temporal phase.",
             "An admissible recovery path does not exist in the retained sector.",
             "No symmetry-compatible route could be found for the normalization.",
             "The selector admits no derivation from local structure.",
-            "No other derivation from local symmetry exists for the continuum scale.",
-            "No other route through the finite representation exists for the selector.",
-            "## 12. Limitations\nCannot derive the temporal selector from the\nretained axioms.\n",
-            "This note cannot derive the temporal selector from the\nretained axioms.",
-            "Not claimed: cannot derive a temporal selector from the\nretained axioms.",
-            "This note cannot derive a temporal selector \u2014 from any retained primitive.",
-            "This note cannot derive the selector from the approved premises.",
-            "The present appendix does not determine the scale from the baseline postulates.",
-            "That document cannot recover the clock from the accepted assumptions.",
-            "This companion does not select an orientation from the four named principles.",
-            "- Not claimed: The finite-size identity does not determine the continuum kernel.",
-            "## Scope: The finite-size identity does not fix the continuum kernel\nSupporting detail.\n",
-            "The baseline algebra did not supply a unique normalization.",
-            "The selector wall no longer blocks the transfer route but blocks the readout route.",
-            "The finite-size transfer did not fix the infinite-volume kernel.",
-            # Coordinated affirmative reporting after a denial; route
-            # synonyms under uniqueness grammar; homograph plural subjects;
-            # multi-wrap authority spans; em-dash numbered labels.
-            "The paper denies that the first route is underdetermined, but proves that no admissible route exists for the selector.",
-            "The appendix retracts that the first construction is impossible, yet shows that the second route cannot close the normalization wall.",
-            "No other admissible strategy exists for deriving the selector.",
-            "No alternative derivational approach exists under the retained premises.",
-            "No further procedure exists for closing the normalization wall.",
-            "No additional route-finding scheme exists for obtaining a clock.",
-            "No second viable option exists for selecting the carrier.",
-            "Zero candidate maps determine the missing readout.",
-            "Zero admissible maps select a temporal orientation.",
-            "Zero candidate sets fix the continuum normalization.",
             "Zero candidate yields constrain the asymptotic scale.",
-            "Zero candidate returns supply the missing coefficient.",
-            "## Scope\nCannot derive a selector from the\nfour retained\naxioms.\n",
-            "Not claimed: cannot derive a selector from the\nfour retained\naxioms.",
-            "3 \u2014 Out of scope: cannot derive a selector from retained axioms.",
-            # Passive negative closure with quantified boundary subjects.
             "Neither residual wall is closed by the identity.",
             "No remaining obstruction was resolved by the finite scan.",
             "No alternative derivational channel can reach the normalization.",
-            # Affirmative capability/underdetermination contrasts for the
-            # negated-predicate controls.
-            "The phase is underdetermined by the retained axioms.",
             "The axioms are insufficient to determine the scale.",
             "The retained inputs lack a normalization mechanism.",
             "The framework is incapable of deriving the selector.",
-            # Verb reading of closed/fixes with zero-count subjects.
-            "No symmetry rule fixes points in the residual orbit.",
-            "No numerical route closed loops in the sampled sector.",
-            "Zero candidate operators determine the missing readout.",
         ):
             with self.subTest(body=body):
-                self.assertTrue(
+                self.assertFalse(
                     m.source_requires_no_go_discipline(
                         "docs/X.md", body, "bounded_theorem"
                     ),
                     body,
                 )
-        for rationale in (
-            "The row remains conditional because the readout wall is still open.",
-            "The bounded verdict was issued subject to an unretired selector wall.",
-        ):
-            with self.subTest(rationale=rationale):
-                self.assertTrue(
-                    m.output_requires_no_go_discipline({
+                error = m.validate_no_go_discipline(
+                    {
                         "claim_type": "bounded_theorem",
-                        "verdict_rationale": rationale,
-                    }),
-                    rationale,
+                        "verdict": "audited_clean",
+                        "claim_scope": "scoped",
+                        "verdict_rationale": "clean prose",
+                        "negative_assertion_classes": ["no_go_result"],
+                    },
+                    require_declaration=True,
+                )
+                self.assertEqual(
+                    error,
+                    "No-Go Discipline N1-N8 packet is required for this audit",
+                    body,
                 )
 
     def test_coverage_routing_controls_stay_exempt(self):

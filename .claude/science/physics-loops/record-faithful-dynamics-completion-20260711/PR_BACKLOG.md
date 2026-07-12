@@ -1,5 +1,22 @@
 # PR Delivery
 
+The two-band BdG strict-time and scalar-cubic boundary is delivered as the
+next stacked review PR:
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5258
+- base: `physics-loop/record-faithful-dynamics-block11-noncommuting-common-h-20260712`
+- head: `physics-loop/record-faithful-dynamics-block12-bdg-flat-band-20260712`
+- source runner: `PASS=33 FAIL=0`
+- disposition: PASS WITH BOUNDED CLAIMS after two review iterations; exact
+  two-band theorem, ordinary-scalar one-mode cubic corollary, spin/qubit-vs-CAR
+  category guard, full N1--N8 packet, and projective/even-algebra cocycle guard
+- audit compatibility: one `bounded_theorem` / `unaudited` row, only
+  `minimal_axioms` seeded, strict lint has no errors, vocabulary lint has zero
+  violations, and generated audit/effective-status surfaces were stripped
+- delivery check: open and mergeable; independent audit workflow running
+
+No merge is authorized. Independent audit remains authoritative.
+
 The onsite-charge common-Hamiltonian strict-QCA dichotomy is delivered as the
 next stacked review PR:
 

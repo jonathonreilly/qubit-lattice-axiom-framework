@@ -3466,14 +3466,22 @@ class AuditLintTest(unittest.TestCase):
 
         ledger = self.fx.read_ledger()
         cross = ledger["rows"]["critical_claim"]["cross_confirmation"]
-        cross["agreement_schema"] = "audit_tuple_v999"
-        self.fx.write_ledger(ledger)
-        output = io.StringIO()
-        with contextlib.redirect_stdout(output):
-            rc = m.main()
-        self.assertEqual(rc, 1, output.getvalue())
-        self.assertIn("unsupported cross_confirmation.agreement_schema", output.getvalue())
-        self.assertNotIn("legacy_cross_confirmation_tuple_mismatch", output.getvalue())
+        for unsupported_schema in ("audit_tuple_v999", [], {}):
+            with self.subTest(unsupported_schema=unsupported_schema):
+                cross["agreement_schema"] = unsupported_schema
+                self.fx.write_ledger(ledger)
+                output = io.StringIO()
+                with contextlib.redirect_stdout(output):
+                    rc = m.main()
+                self.assertEqual(rc, 1, output.getvalue())
+                self.assertIn(
+                    "unsupported cross_confirmation.agreement_schema",
+                    output.getvalue(),
+                )
+                self.assertNotIn(
+                    "legacy_cross_confirmation_tuple_mismatch",
+                    output.getvalue(),
+                )
 
         cross.pop("agreement_schema")
         self.fx.write_ledger(ledger)
@@ -3609,6 +3617,17 @@ class AuditLintTest(unittest.TestCase):
                     rc = m.main()
                 self.assertEqual(rc, 1, output.getvalue())
                 self.assertIn("full audit tuple", output.getvalue())
+                if winner:
+                    cross["third_audit"] = "malformed-third-summary"
+                    self._write_minimal_ledger(rows)
+                    output = io.StringIO()
+                    with contextlib.redirect_stdout(output):
+                        rc = m.main()
+                    self.assertEqual(rc, 1, output.getvalue())
+                    self.assertIn(
+                        "audit summary must be a non-empty object",
+                        output.getvalue(),
+                    )
 
     def test_front_door_current_markdown_link_passes(self):
         m = _import("audit_lint")

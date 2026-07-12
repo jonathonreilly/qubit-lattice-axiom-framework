@@ -982,7 +982,10 @@ def main() -> int:
         xc = row.get("cross_confirmation") or {}
         xc_status = xc.get("status") if isinstance(xc, dict) else None
         agreement_schema = xc.get("agreement_schema") if isinstance(xc, dict) else None
-        if agreement_schema not in {None, AUDIT_TUPLE_AGREEMENT_SCHEMA}:
+        if (
+            agreement_schema is not None
+            and agreement_schema != AUDIT_TUPLE_AGREEMENT_SCHEMA
+        ):
             errors.append(
                 f"{cid}: unsupported cross_confirmation.agreement_schema "
                 f"{agreement_schema!r}"
@@ -1003,14 +1006,19 @@ def main() -> int:
                         errors.append(
                             f"{cid}: versioned cross_confirmation.{label} {schema_error}"
                         )
-            tuples_match = audit_summary_tuples_match(first, second)
-            if exact_tuple_schema and tuple_schema_valid and not tuples_match:
+            tuples_match = (
+                audit_summary_tuples_match(first, second)
+                if agreement_schema is None
+                or (exact_tuple_schema and tuple_schema_valid)
+                else None
+            )
+            if exact_tuple_schema and tuple_schema_valid and tuples_match is False:
                 errors.append(
                     f"{cid}: confirmed cross-confirmation full audit tuple mismatch "
                     "(verdict, claim_type, normalized claim_scope, "
                     "load_bearing_step_class, negative_assertion_classes)"
                 )
-            elif agreement_schema is None and not tuples_match:
+            elif agreement_schema is None and tuples_match is False:
                 message = (
                     f"{cid}: confirmed cross-confirmation full audit tuple mismatch "
                     "(verdict, claim_type, normalized claim_scope, "
@@ -1029,7 +1037,8 @@ def main() -> int:
             first = xc.get("first_audit") or {}
             second = xc.get("second_audit") or {}
             winning = first if expected_side == "first" else second
-            third = xc.get("third_audit") or {}
+            third_value = xc.get("third_audit")
+            third = third_value if isinstance(third_value, dict) else third_value or {}
             if not third:
                 errors.append(f"{cid}: {xc_status} requires third_audit")
             else:
@@ -1047,17 +1056,23 @@ def main() -> int:
                                 f"{cid}: versioned cross_confirmation.{label} "
                                 f"{schema_error}"
                             )
-                side = third.get("sided_with")
+                third_dict = third if isinstance(third, dict) else {}
+                side = third_dict.get("sided_with")
                 if side is not None and side != expected_side:
                     errors.append(
                         f"{cid}: {xc_status} conflicts with third_audit.sided_with={side!r}"
                     )
-                tuples_match = audit_summary_tuples_match(third, winning)
+                tuples_match = (
+                    audit_summary_tuples_match(third, winning)
+                    if agreement_schema is None
+                    or (exact_tuple_schema and tuple_schema_valid)
+                    else None
+                )
                 if (
                     expected_side != "hybrid"
                     and exact_tuple_schema
                     and tuple_schema_valid
-                    and not tuples_match
+                    and tuples_match is False
                 ):
                     errors.append(
                         f"{cid}: {xc_status} third_audit full audit tuple does not "
@@ -1066,7 +1081,7 @@ def main() -> int:
                 elif (
                     expected_side != "hybrid"
                     and agreement_schema is None
-                    and not tuples_match
+                    and tuples_match is False
                 ):
                     message = (
                         f"{cid}: {xc_status} third_audit full audit tuple does not "
@@ -1079,10 +1094,10 @@ def main() -> int:
                 if row.get("claim_type_provenance") == "judicial_review":
                     for key in ("verdict", "claim_type", "load_bearing_step_class"):
                         row_key = "audit_status" if key == "verdict" else key
-                        if third.get(key) is not None and row.get(row_key) != third.get(key):
+                        if third_dict.get(key) is not None and row.get(row_key) != third_dict.get(key):
                             errors.append(
                                 f"{cid}: judicial_review row {row_key}={row.get(row_key)!r} "
-                                f"does not match third_audit {key}={third.get(key)!r}"
+                                f"does not match third_audit {key}={third_dict.get(key)!r}"
                             )
 
         if a == "audited_clean":

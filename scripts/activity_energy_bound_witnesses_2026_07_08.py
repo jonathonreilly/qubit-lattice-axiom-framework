@@ -16,10 +16,18 @@ from __future__ import annotations
 import math
 import sys
 from dataclasses import dataclass
+from pathlib import Path
 
 import numpy as np
 import scipy.linalg as sla
 
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+NOTE_PATH = (
+    REPO_ROOT
+    / "docs"
+    / "ACTIVITY_ENERGY_BOUND_WITNESSES_BOUNDED_NOTE_2026-07-08.md"
+)
 
 RNG_SEED = 20260708
 BOUND_TOL = 1.0e-12
@@ -220,11 +228,61 @@ def check_empty_and_packet() -> tuple[bool, float, list[float], list[float]]:
     return ok, far_initial, overlaps, centroid_deltas
 
 
+def check_note_methodology_consistency() -> tuple[bool, str]:
+    """Bind the paired note's profile-comparison prose to what the runner computes.
+
+    The note must name the runner's real diagnostics -- a Bhattacharyya overlap
+    over sum-normalized profiles and a centroid separation evaluated over the full
+    support -- and must not carry the withdrawn thresholded-support
+    characterization. The `overlap`/`centroid` helpers are probed to confirm they
+    genuinely have the normalized-profile behavior the note claims, so the gate
+    fails if either the prose or the implementation drifts.
+    """
+    if not NOTE_PATH.exists():
+        return False, "note-missing"
+    flat = " ".join(NOTE_PATH.read_text(encoding="utf-8").split())
+
+    required_present = (
+        "Bhattacharyya coefficient over sum-normalized",
+        "centroid separation",
+        "over their full support",
+    )
+    required_absent = (
+        "thresholded supports",
+        "mass, thresholds,",
+    )
+    names_diagnostics = all(phrase in flat for phrase in required_present)
+    lacks_withdrawn = all(phrase not in flat for phrase in required_absent)
+
+    probe_a = np.array([0.2, 0.5, 0.3, 0.1], dtype=np.float64)
+    probe_b = np.array([0.1, 0.4, 0.4, 0.6], dtype=np.float64)
+    self_overlap = overlap(probe_a, probe_a)
+    scale_gap_overlap = abs(overlap(3.0 * probe_a, probe_b) - overlap(probe_a, probe_b))
+    scale_gap_centroid = abs(centroid(5.0 * probe_a) - centroid(probe_a))
+    overlap_is_bhattacharyya = (
+        abs(self_overlap - 1.0) <= 1.0e-12 and scale_gap_overlap <= 1.0e-12
+    )
+    centroid_is_normalized_mean = scale_gap_centroid <= 1.0e-12
+
+    ok = (
+        names_diagnostics
+        and lacks_withdrawn
+        and overlap_is_bhattacharyya
+        and centroid_is_normalized_mean
+    )
+    detail = (
+        f"names_diagnostics={names_diagnostics} lacks_withdrawn={lacks_withdrawn} "
+        f"overlap_bc={overlap_is_bhattacharyya} centroid_mean={centroid_is_normalized_mean}"
+    )
+    return ok, detail
+
+
 def run() -> tuple[list[str], int]:
     bound_ok, max_ratio, bound = check_bound()
     stationary_ok, stationary_activity, local_energy = check_stationary_witness()
     toy_ok, far_initial, overlaps, centroid_deltas = check_empty_and_packet()
-    passed = bound_ok and stationary_ok and toy_ok
+    method_ok, method_detail = check_note_methodology_consistency()
+    passed = bound_ok and stationary_ok and toy_ok and method_ok
 
     lines = [
         (
@@ -240,6 +298,7 @@ def run() -> tuple[list[str], int]:
             f"overlaps={[round(value, 6) for value in overlaps]} "
             f"centroid_deltas={[round(value, 6) for value in centroid_deltas]}"
         ),
+        f"METHODOLOGY-CONSISTENCY: pass={method_ok} {method_detail}",
         (
             "TOTAL: BOUNDED-TOY-SUPPORT-VALIDATED "
             "AO-bridge=supplied-premise finite-window-only"

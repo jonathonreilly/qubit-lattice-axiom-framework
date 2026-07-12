@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 650,
     "high": 335,
-    "leaf": 1112,
+    "leaf": 1111,
     "medium": 755
   },
   "cycle_break_target_count": 49,
@@ -52699,28 +52699,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/DOPED_FLUX_RESPONSE_NO_UNIFORM_SIGN_REGION_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_doped_flux_response_alternation_fate_2026_06_12.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -81437,6 +81415,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 566,
-  "total_pending": 2852
+  "ready_count": 565,
+  "total_pending": 2851
 }

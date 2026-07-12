@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 94 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 372 |
+| **retained_bounded** | 373 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2761 |
+| unaudited | 2760 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 486 |
+| `audited_clean` | 487 |
 | `audited_conditional` | 57 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3111 |
+| `unaudited` | 3110 |
 
 | claim_type | count |
 |---|---:|
@@ -275,6 +275,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_wilson_direct_descendant_boundary_arrest_triplet_y_maximin_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `edge_deletion_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `edge_deletion_boundary_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `eigenvalue_anderson_phase_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -3272,6 +3273,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 6 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
 - **auditor confidence:** high
+
+### `doped_flux_response_no_uniform_sign_region_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`DOPED_FLUX_RESPONSE_NO_UNIFORM_SIGN_REGION_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/DOPED_FLUX_RESPONSE_NO_UNIFORM_SIGN_REGION_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite free U(1) rings on N={8,10,12,14,16}, m={0,0.4}, T={0.3,0.6}, and mu_ch={0.25,0.5,1.0,1.5}; only absence of a uniform nonzero sign over the tested N-sequence was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00410-doped_flux_response_no_unifo`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Direct evaluation of Omega''(0) for every N in {8,10,12,14,16} shows that no tested (m,T,mu_ch) point has a uniformly positive or uniformly negative N-sequence.  _(class `C`)_
+- **chain closes:** True — The runner constructs each finite-ring Hamiltonian, calculates the grand-potential curvature, and classifies every computed sequence before testing uniformity. All 16 tested parameter points contain both signs, so the bounded conclusion follows without relying on the hard-coded regression fingerprints.
+- **rationale:** The load-bearing finite-grid result is a genuine model computation rather than a printed constant, imported comparator, or tuned match. The expected-pattern dictionary is used only after the independently computed table and is unnecessary for the X2d uniformity test. Analytic-versus-finite-difference, particle-hole, gauge, and thermal checks provide distinct controls, while the note expressly excludes continuum, thermodynamic-limit, gauge-self-energy, non-abelian, and d=3 conclusions.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `edge_deletion_boundary_note`
 

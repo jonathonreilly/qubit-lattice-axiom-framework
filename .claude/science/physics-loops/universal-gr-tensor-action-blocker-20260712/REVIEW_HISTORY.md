@@ -78,4 +78,6 @@ Checks completed:
 inside its declared source-map and real-pullback classes; the full gravity
 localization target remains open.
 
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5230
+
 No audit verdict has been applied or predicted.

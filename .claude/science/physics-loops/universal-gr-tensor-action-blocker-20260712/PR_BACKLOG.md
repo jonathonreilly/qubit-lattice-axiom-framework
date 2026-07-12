@@ -1,4 +1,5 @@
 # PR Backlog
 
-No backlog condition is currently known. The science block is awaiting the
-required review-loop disposition before PR creation.
+No backlog condition remains. Review PR opened and verified at:
+
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5230

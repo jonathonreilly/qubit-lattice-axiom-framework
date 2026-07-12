@@ -20,14 +20,15 @@ maps.
 
 - Branch: `physics-loop/universal-gr-tensor-action-blocker-block01-20260712`
 - Review-loop: PASS after three iterations
-- Commit: pending
-- Review PR: pending
+- Science commit: `1b6550768`
+- Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5230
 - Audit authority surfaces: untouched
 
 ## Exact next action
 
-Commit and push the reviewed science block, open and verify one review PR,
-then record the PR URL. Independent re-audit is a post-landing action.
+After review and landing, run the independent audit lane on
+`universal_gr_tensor_action_blocker_note`. Keep non-pullback `Pi_curv`, York/TT,
+and supplied/derived Regge work open.
 
 ## Proposed later weaving
 

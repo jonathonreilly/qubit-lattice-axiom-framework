@@ -774,10 +774,24 @@ def selected_batch(targets: list[dict], max_workers: int) -> list[dict]:
 def scope_for_args(args: argparse.Namespace, rows: dict[str, dict]) -> set[str]:
     if args.lane:
         config = json.loads((DATA / "lane_certification_config.json").read_text(encoding="utf-8"))
-        roots = [lane["root"] for lane in config.get("lanes", []) if lane.get("lane") == args.lane]
+        roots: list[str] = []
+        for lane in config.get("lanes", []):
+            if lane.get("lane") != args.lane:
+                continue
+            configured_roots = lane.get("roots")
+            if isinstance(configured_roots, list):
+                roots.extend(
+                    root for root in configured_roots
+                    if isinstance(root, str) and root
+                )
+            elif isinstance(lane.get("root"), str) and lane["root"]:
+                roots.append(lane["root"])
         if not roots:
             raise ValueError(f"unknown lane {args.lane!r}")
-        return lane_closure(roots[0], rows)
+        scope: set[str] = set()
+        for root in roots:
+            scope.update(lane_closure(root, rows))
+        return scope
     return {claim.strip() for claim in args.claims.split(",") if claim.strip()}
 
 

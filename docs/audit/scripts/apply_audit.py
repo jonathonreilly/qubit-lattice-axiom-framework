@@ -958,6 +958,9 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
             return False, "hybrid judicial review requires hybrid_resolution_note"
         if ratified_claim_type is None:
             return False, "hybrid judicial review requires ratified_claim_type"
+        ratified_scope = judgment.get("ratified_claim_scope")
+        if not isinstance(ratified_scope, str) or not ratified_scope.strip():
+            return False, "hybrid judicial review requires ratified_claim_scope"
     if side in {"first", "second"}:
         chosen = first if side == "first" else second
         chosen_label = "first" if side == "first" else "second"

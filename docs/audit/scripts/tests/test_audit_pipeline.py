@@ -2095,6 +2095,55 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertEqual(row["load_bearing_step_class"], "C")
         self.assertIsNone(row["blocker"])
 
+    def test_hybrid_judicial_review_requires_explicit_scope(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_hybrid_scope",
+            audit_status="audit_in_progress",
+            claim_type="positive_theorem",
+            criticality="critical",
+        )
+        led = self.fx.read_ledger()
+        seat = {
+            "auditor": "first-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "first scope",
+            "load_bearing_step_class": "C",
+            "negative_assertion_classes": [],
+        }
+        led["rows"]["test_hybrid_scope"]["cross_confirmation"] = {
+            "status": "disagreement",
+            "first_audit": seat,
+            "second_audit": {
+                **seat,
+                "auditor": "second-auditor",
+                "claim_type": "bounded_theorem",
+            },
+        }
+        judgment = {
+            "claim_id": "test_hybrid_scope",
+            "third_auditor": "judicial-panel",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "judicial_review",
+            "sided_with": "hybrid",
+            "negative_assertion_classes": [],
+            "ratified_verdict": "audited_clean",
+            "ratified_claim_type": "bounded_theorem",
+            "ratified_load_bearing_step_class": "C",
+            "judgment_rationale": "ratify a third tuple",
+            "first_auditor_error": "scope too narrow",
+            "second_auditor_error": "class too narrow",
+            "hybrid_resolution_note": "panel selected a hybrid",
+        }
+        ok, msg = m.apply_one(led, judgment)
+        self.assertFalse(ok)
+        self.assertIn("ratified_claim_scope", msg)
+
     def test_judicial_no_go_requires_discipline_packet(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
@@ -7936,6 +7985,26 @@ class ComputeLaneCertificationTest(unittest.TestCase):
         self.assertTrue(lane["certified"])
         self.assertEqual(lane["roots"], ["first", "second"])
         self.assertEqual(lane["closure_size"], 3)
+
+    def test_batch_orchestrator_unions_multi_root_lane_scope(self):
+        m = _import("orchestrate_audit_batch")
+        config = self.data / "lane_certification_config.json"
+        config.write_text(json.dumps({
+            "lanes": [{"lane": "multi", "roots": ["first", "second"]}]
+        }), encoding="utf-8")
+        rows = {
+            "first": {"deps": ["shared"]},
+            "second": {"deps": ["other"]},
+            "shared": {"deps": []},
+            "other": {"deps": []},
+        }
+        with mock.patch.object(m, "DATA", self.data), mock.patch.object(
+            m, "accepted", return_value=False
+        ):
+            scope = m.scope_for_args(
+                mock.Mock(lane="multi", claims=""), rows
+            )
+        self.assertEqual(scope, {"first", "second", "shared", "other"})
 
     def test_metadata_never_satisfies_scientific_certification(self):
         rows = {

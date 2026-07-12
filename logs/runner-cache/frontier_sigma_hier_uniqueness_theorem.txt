@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sigma_hier_uniqueness_theorem.py
-runner_sha256: 64ea97e014840cdcd5307baf350561fda98fdf2498d81a115ad741c0bf23a8f2
+runner_sha256: fa68d56412f3e244bca4f2f49705a40bd4591285d9b4cd21da41197d0271f5e0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ================================================================================
-sigma_hier UNIQUENESS THEOREM (two-step)
+sigma_hier SUPPLIED-INPUT SELECTION REPLAY (two-step)
 
   Step 1 (9/9 magnitude filter): reduces S_3 from 6 to 2 permutations.
   Step 2 (CP-phase discriminator): selects sigma=(2,1,0) uniquely.
@@ -54,15 +54,14 @@ Part 3: STEP 2 — CP-phase discriminator between (2,0,1) and (2,1,0)
   [PASS] sigma=(2,0,1) gives sin(delta_CP) = +0.9874 (positive, delta_CP ~ +81 deg)  (sin(dCP) = +0.9874)
   [PASS] sigma=(2,1,0) gives sin(delta_CP) = -0.9874 (negative, delta_CP ~ -81 deg)  (sin(dCP) = -0.9874)
 
-  T2K (2021, NO) 1-sigma: delta_CP in [-200, -15] deg, central ~ -108 deg.
-  NOvA (2021, NO) similarly prefers sin(delta_CP) < 0.
-  Both experiments exclude sin(delta_CP) = +0.987 at better than 3-sigma.
+  The sin(delta_CP) < 0 comparator is a supplied input motivated by T2K 2021.
+  It is not a joint T2K/NOvA preference or confidence-level combination.
 
-  [PASS] sigma=(2,0,1): sin(delta_CP)=+0.987 is excluded by T2K/NOvA at >=2-sigma (T2K disfavors sin(dCP) > +0.5)  (sin(dCP) = +0.9874 > 0.5)
-  [PASS] sigma=(2,1,0): sin(delta_CP)=-0.987 is inside T2K/NOvA 2-sigma preferred region  (sin(dCP) = -0.9874 < 0)
+  [PASS] sigma=(2,0,1) fails the supplied sin(delta_CP)<0 comparator  (sin(dCP) = +0.9874 > 0)
+  [PASS] sigma=(2,1,0) passes the supplied sin(delta_CP)<0 comparator  (sin(dCP) = -0.9874 < 0)
 
 ================================================================================
-Part 4: Physical sigma = (2, 1, 0) — full 9/9 NuFit detail
+Part 4: Selected sigma = (2, 1, 0) — full 9/9 NuFit detail
 ================================================================================
 
   |U_PMNS| at pinned point, sigma=(2,1,0):
@@ -70,26 +69,26 @@ Part 4: Physical sigma = (2, 1, 0) — full 9/9 NuFit detail
     mu  : [0.3704, 0.5742, 0.7301]
     tau : [0.4300, 0.6083, 0.6671]
 
-  [PASS] |U_e1| in [0.801, 0.845]  (val = 0.8233)
-  [PASS] |U_e2| in [0.513, 0.579]  (val = 0.5480)
-  [PASS] |U_e3| in [0.143, 0.155]  (val = 0.1476)
-  [PASS] |U_mu1| in [0.234, 0.500]  (val = 0.3704)
-  [PASS] |U_mu2| in [0.471, 0.689]  (val = 0.5742)
-  [PASS] |U_mu3| in [0.637, 0.776]  (val = 0.7301)
-  [PASS] |U_tau1| in [0.271, 0.525]  (val = 0.4300)
-  [PASS] |U_tau2| in [0.477, 0.694]  (val = 0.6083)
-  [PASS] |U_tau3| in [0.613, 0.756]  (val = 0.6671)
+  [PASS] |U_e1| in [0.801, 0.842]  (val = 0.8233)
+  [PASS] |U_e2| in [0.518, 0.580]  (val = 0.5480)
+  [PASS] |U_e3| in [0.142, 0.155]  (val = 0.1476)
+  [PASS] |U_mu1| in [0.236, 0.507]  (val = 0.3704)
+  [PASS] |U_mu2| in [0.458, 0.691]  (val = 0.5742)
+  [PASS] |U_mu3| in [0.630, 0.779]  (val = 0.7301)
+  [PASS] |U_tau1| in [0.264, 0.527]  (val = 0.4300)
+  [PASS] |U_tau2| in [0.471, 0.700]  (val = 0.6083)
+  [PASS] |U_tau3| in [0.610, 0.762]  (val = 0.6671)
 
-  [PASS] sin(delta_CP) = -0.9874 ± 0.001 at the physical sigma  (sin(dCP) = -0.9874)
-  [PASS] delta_CP ~ -81 deg (consistent with T2K/NOvA preferred region)  (sin(dCP) = -0.9874)
+  [PASS] sin(delta_CP) = -0.9874 ± 0.001 at the selected sigma  (sin(dCP) = -0.9874)
+  [PASS] delta_CP ~ -81 deg (passes the supplied negative-sign comparator)  (sin(dCP) = -0.9874)
 
 ================================================================================
 Part 5: Non-magnitude-passing permutations — failure entries
 ================================================================================
-  sigma=(0, 1, 2): 5 NuFit failures — |U_e1|=0.430 not in [0.801,0.845]; |U_e2|=0.608 not in [0.513,0.579]... (5 total)
-  sigma=(0, 2, 1): 5 NuFit failures — |U_e1|=0.430 not in [0.801,0.845]; |U_e2|=0.608 not in [0.513,0.579]... (5 total)
-  sigma=(1, 0, 2): 4 NuFit failures — |U_e1|=0.370 not in [0.801,0.845]; |U_e3|=0.730 not in [0.143,0.155]... (4 total)
-  sigma=(1, 2, 0): 4 NuFit failures — |U_e1|=0.370 not in [0.801,0.845]; |U_e3|=0.730 not in [0.143,0.155]... (4 total)
+  sigma=(0, 1, 2): 5 NuFit failures — |U_e1|=0.430 not in [0.801,0.842]; |U_e2|=0.608 not in [0.518,0.580]... (5 total)
+  sigma=(0, 2, 1): 5 NuFit failures — |U_e1|=0.430 not in [0.801,0.842]; |U_e2|=0.608 not in [0.518,0.580]... (5 total)
+  sigma=(1, 0, 2): 4 NuFit failures — |U_e1|=0.370 not in [0.801,0.842]; |U_e3|=0.730 not in [0.142,0.155]... (4 total)
+  sigma=(1, 2, 0): 4 NuFit failures — |U_e1|=0.370 not in [0.801,0.842]; |U_e3|=0.730 not in [0.142,0.155]... (4 total)
   [PASS] All 4 magnitude-excluded permutations have >= 4 NuFit failures
   [PASS] gate 1: magnitude filter selects exactly {(2,0,1),(2,1,0)}  (mag_pass = [(2, 0, 1), (2, 1, 0)])
   [PASS] gate 2: 9/9 AND sin(dCP)<0 selects exactly {(2,1,0)}  (joint = [(2, 1, 0)])
@@ -108,17 +107,15 @@ Selection statement (supplied-input, conditional on PMNS observation):
   0.715042), the hierarchy pairing sigma_hier = (2, 1, 0) is the unique
   element of S_3 satisfying both:
     (1) all 9 |U_PMNS|_{ij} inside NuFit 5.3 NO 3-sigma ranges, AND
-    (2) sin(delta_CP) < 0, consistent with T2K/NOvA experimental preference.
+    (2) the supplied sin(delta_CP) < 0 comparator.
 
   Proof structure:
     - The 9/9 magnitude check reduces 6 S_3 elements to 2: (2,0,1) and
       (2,1,0), which differ only by a mu<->tau row swap.
     - The mu<->tau swap preserves all |U| magnitudes but reverses Jarlskog:
-        sigma=(2,0,1): sin(delta_CP) = +0.9874 (excluded by T2K/NOvA)
-        sigma=(2,1,0): sin(delta_CP) = -0.9874 (preferred by T2K/NOvA)
-    - T2K (2021, NO) and NOvA disfavor sin(delta_CP) > +0.5 at >=2-sigma.
-    - Therefore sigma=(2,0,1) is observationally disfavored and sigma=(2,1,0)
-      is the unique physically admissible pairing.
+        sigma=(2,0,1): sin(delta_CP) = +0.9874 (fails supplied sign cut)
+        sigma=(2,1,0): sin(delta_CP) = -0.9874 (passes supplied sign cut)
+    - Therefore sigma=(2,1,0) is the sole pairing passing the supplied filter.
 
   This is a supplied-input selection at the live pin: sigma_hier is
   not derived from Cl(3)/Z^3 alone, and it is not observationally
@@ -128,9 +125,11 @@ Selection statement (supplied-input, conditional on PMNS observation):
   This is a pinned-point selection only, not a chamber-wide or
   all-basin uniqueness claim; other admitted basins must be
   checked separately.
+  The supplied pin was itself obtained under sigma=(2,1,0), so this
+  replay is a consistency table, not independent selector evidence.
 
-  The CP-phase prediction sin(delta_CP) = -0.9874 is then a
-  falsifiable geometric consequence: a confirmed >3-sigma positive sin(delta_CP)
+  The CP-phase value sin(delta_CP) = -0.9874 is then a conditional
+  geometric consequence: a confirmed >3-sigma positive sin(delta_CP)
   measurement at DUNE/Hyper-K would rule out this pairing.
 ================================================================================
 

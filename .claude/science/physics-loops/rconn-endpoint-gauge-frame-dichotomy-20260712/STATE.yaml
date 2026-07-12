@@ -1,0 +1,33 @@
+slug: rconn-endpoint-gauge-frame-dichotomy-20260712
+mode: run
+branch: physics-loop/rconn-equivariant-kernel-obstruction-block01-20260712
+base_branch: origin/main
+goal: "Resolve the stale R_conn missing-derivation target with a first-principles account of the legacy Monte Carlo statistic's ideal equilibrium 8/9 expectation while preserving the physical matching-rule firewall."
+target_status: best-honest-status
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+cycle_count: 1
+block_count: 1
+active_route: endpoint-product-group-versus-diagonal-conjugation-dichotomy
+hard_residual: "Explain why the open-bilocal statistic has ideal equilibrium expectation 8/9 without renaming that gauge-frame statistic as a physical connected-current ratio."
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+files_touched:
+  - docs/RCONN_ENDPOINT_GAUGE_FRAME_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/frontier_rconn_endpoint_gauge_frame_dichotomy.py
+  - logs/runner-cache/frontier_rconn_endpoint_gauge_frame_dichotomy.txt
+  - .claude/science/physics-loops/rconn-endpoint-gauge-frame-dichotomy-20260712/
+open_imports: []
+open_physical_bridges:
+  - gauge-invariant physical current/readout definition
+  - singlet-to-adjoint reduced-weight equality for a closed object
+  - continuum readout coefficient kappa_EW
+no_go_routes:
+  - representation dimension alone selects dynamical channel weights
+  - legacy open-bilocal Monte Carlo ratio determines a physical matching rule
+  - an unspecified O(1/N_c^4) remainder specializes to exact 8/9 at N_c=3
+review_disposition: pass
+pr_status: pending
+next_exact_action: "Run final current-main audit validation, commit, rebase onto origin/main, push, and open one review PR."
+stop_condition: "One coherent review PR is opened after review-loop pass, or the block is demoted/backlogged if review finds it non-landable."
+lock_status: "Dedicated disposable worktree; cooperative shared-checkout lock skipped. automation_lock.py status is unavailable because its configured home path is not accessible from this account."

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 100 |
 | **retained_no_go** | 41 |
-| **retained_bounded** | 403 |
+| **retained_bounded** | 404 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2680 |
+| unaudited | 2679 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 530 |
+| `audited_clean` | 531 |
 | `audited_conditional` | 85 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3030 |
+| `unaudited` | 3029 |
 
 | claim_type | count |
 |---|---:|
@@ -340,6 +340,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
+| `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_grown_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_grown_trapping_frontier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_grown_trapping_frontier_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -4626,6 +4627,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The runner genuinely computes the tabulated finite replay rather than merely printing constants. The restricted packet does not derive the supplied valley-linear propagation law, source/boundary/readout choices, normalization, or connectivity-generation semantics from accepted premises.
 - **rationale:** Issue: The finite jitter and architecture tables are computed, but the physical law, scalar source, boundary/regulator/normalization, detector-window/TOWARD/F~M semantics, and connectivity-generation choices are supplied row-local premises. Why this blocks: with no cited authorities, the packet supports only a finite replay under those supplied choices, not a Gate B dynamics theorem or a general theorem that connectivity construction is intrinsically the bottleneck. Repair target: provide retained bridge theorems or explicit dependency edges deriving those supplied choices; the runner boundary checks also inspect docs/GATE_B_DYNAMICS_NOTE.md rather than the audited note, so source-scope validation should be corrected. Claim boundary until fixed: cite the frozen replay numbers only inside the stated finite harness.
 - **auditor confidence:** high
+
+### `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18`
+
+- **Note:** [`GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](../../docs/GATE_B_FINITE_PATH_SUM_PROPAGATION_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** GB-S2a only: exact finite path-sum algebra, linearity, blocked-node deletion, and terminal normalization for the supplied finite layered Gate B DAG, kernel, source, blocked set, and detector set; no physical kernel selection, readout, gravity, generated-connectivity, scalar-normalization, or full Gate B dynamics theorem.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00285-gate_b_finite_path_sum_propa`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The recursion a_j(new) += a_i(old) W_ij equals the finite sum over all directed source-to-detector paths avoiding blocked nodes, with each path weighted by the product of its edge weights.  _(class `A`)_
+- **chain closes:** True — For the bounded runner claim, finite-DAG induction gives the path expansion, and the independent enumerator agrees with the imported recursion to numerical precision. The helper source is present and confirms that the compared recursion, kernel, blocking, and normalization operations are the ones described.
+- **rationale:** The load-bearing result is a genuine algebraic identity for a supplied finite DAG and edge kernel, not a definition, tuned numerical match, or imported physical comparator. The primary runner independently enumerates paths and checks recursion equality, linearity, blocking, finiteness, and normalization, while the included helper source makes every imported load-bearing operation inspectable. The source consistently limits the result to GB-S2a and leaves all physical Gate B semantics open.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `gate_b_grown_distance_law_note`
 

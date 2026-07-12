@@ -279,12 +279,14 @@ def main() -> int:
     # scalar multiplication is commutative, so γ_i γ_j = γ_j γ_i, forcing
     # γ_i γ_j = 0 for i ≠ j (impossible) or γ_i = 0 (non-faithful).
     g1, g2 = sympy.symbols("g1 g2", complex=True)
-    # Faithful: g1 ≠ 0, g2 ≠ 0; faithful Clifford: g1² = 1, g2² = 1, g1 g2 = -g2 g1.
-    # In 1×1, g1 g2 = g1 * g2 = g2 g1, so g1 g2 = -g1 g2 ⇒ g1 g2 = 0.
-    # That forces g1 = 0 or g2 = 0, contradicting faithfulness.
-    counter_consistent = False  # By the above algebraic argument, no faithful 1×1 rep.
-    check("(K4d) No faithful 1×1 complex Cl(3) irrep exists (anticommutation forces 0)",
-          not counter_consistent)
+    # In a 1×1 (scalar) representation multiplication is commutative, so the
+    # Clifford system g1² = 1, g2² = 1, g1 g2 + g2 g1 = 0 reads
+    # g1² = 1, g2² = 1, 2 g1 g2 = 0 — computed here, not asserted.
+    one_dim_solutions = sympy.solve(
+        [g1**2 - 1, g2**2 - 1, g1 * g2 + g2 * g1], [g1, g2], dict=True
+    )
+    check("(K4d) No faithful 1×1 complex Cl(3) irrep exists (computed: the scalar Clifford system has no solution)",
+          one_dim_solutions == [])
 
     # ---------------------------------------------------------------------
     section("Summary")

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_cl3_complexification_split_exact_2026_05_10.py
-runner_sha256: 16a4ceedf0a3e4ececd2b6a27e57bd00a3cc27b5a9f69a49e38bed5770cfb3f5
+runner_sha256: 871f170705451d0143562017b73adba85d8532501df218afebd42f595f70ec1d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -84,7 +84,7 @@ Part 6 (K4): two-dim irrep dimensional readout
 ----------------------------------------------------------------------------------------
 Part 7: counter-example — no faithful 1×1 complex Cl(3)-irrep
 ----------------------------------------------------------------------------------------
-  [PASS (A)] (K4d) No faithful 1×1 complex Cl(3) irrep exists (anticommutation forces 0)
+  [PASS (A)] (K4d) No faithful 1×1 complex Cl(3) irrep exists (computed: the scalar Clifford system has no solution)
 
 ----------------------------------------------------------------------------------------
 Summary

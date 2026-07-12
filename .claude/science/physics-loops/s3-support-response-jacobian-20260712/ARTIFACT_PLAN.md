@@ -20,5 +20,4 @@
 - mismatch between quotient and direct four-evaluation formula;
 - nonzero endpoint reconstruction residual;
 - any fitted/frontier helper import in the primary runner;
-- review finding that the finite-operator domain is still incompletely declared.
-
+- review finding that the finite-protocol domain is still incompletely declared.

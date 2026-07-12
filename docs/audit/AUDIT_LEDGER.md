@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 417 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2630 |
-| audit_in_progress | 30 |
+| unaudited | 2629 |
+| audit_in_progress | 31 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,14 +45,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 30 |
+| `audit_in_progress` | 31 |
 | `audited_clean` | 553 |
 | `audited_conditional` | 99 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2980 |
+| `unaudited` | 2979 |
 
 | claim_type | count |
 |---|---:|
@@ -141,6 +141,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `observable_principle_record_scalar_map_no_go_note_2026-06-05` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
+| `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `record_clock_rate_normalization_gate_2026-06-06` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |

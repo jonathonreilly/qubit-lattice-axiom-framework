@@ -30,6 +30,19 @@ theorem.
 
 ## Exact next action
 
-Rebase onto current `origin/main`, run the validation-only audit pipeline,
-strip generated audit outputs, commit, push, open one review PR, and verify its
-base and body.  Independent audit remains required before effective retention.
+Push the reviewed branch, open one review PR, verify its base and body, and
+record the PR URL in this pack.  Independent audit remains required before
+effective retention.
+
+## Verification completed
+
+- primary Class-A runner: `PASS=12 FAIL=0`;
+- legacy source-pin helper: `2 PASS / 0 FAIL`;
+- Python compilation and `git diff --check`: pass;
+- vocabulary lint: zero violations;
+- independent SymPy reductions: FRW residual, de Sitter throat, source split,
+  and shell series all pass;
+- review-loop: pass after three iterations;
+- N1--N8 no-go discipline: pass;
+- validation-only audit pipeline and strict lint: pass with no errors;
+- generated audit/status outputs: stripped from the science branch.

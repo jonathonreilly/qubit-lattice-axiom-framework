@@ -918,8 +918,8 @@ def set_packet_evidence(
             manifest[path]["invocation_bound_rendered_text"] = True
 
 
-# Per-kind N8 candidate caps. High-signal kinds are uncapped (None) and must
-# be dispositioned in full. The two bulk similarity/scan kinds are capped by
+# Per-kind N8 candidate caps. Prior cycles and open gates remain uncapped.
+# Repository-wide similarity/scan kinds are capped by
 # the declared relevance order (kind priority, shared-term count descending)
 # with an authenticated omitted-tail summary in the index, so corpus hiding
 # remains impossible while the disposition set stays reviewable at audit
@@ -930,9 +930,16 @@ def set_packet_evidence(
 N8_KIND_CANDIDATE_LIMITS: dict[str, int | None] = {
     "prior_audit_cycle": None,
     "open_gate": None,
-    "similar_negative_boundary": 40,
-    "repo_negative_phrase_hit": 60,
-    "physics_loop_no_go_ledger": None,
+    "similar_negative_boundary": 20,
+    "repo_negative_phrase_hit": 20,
+    "physics_loop_no_go_ledger": 20,
+}
+
+N6_CANDIDATE_LIMITS = {
+    "controlled_vocabulary": 5,
+    "meta_reframe": 5,
+    "claim_reframe": 10,
+    "in_flight_reframe": 5,
 }
 
 
@@ -1392,9 +1399,9 @@ def build_cross_cycle_index(
                 "candidate_limit": {
                     "per_kind": N8_KIND_CANDIDATE_LIMITS,
                     "policy": (
-                        "high-signal kinds listed in full; bulk scan kinds "
-                        "capped by declared relevance order with an "
-                        "authenticated omitted-tail summary"
+                        "prior-cycle and open-gate kinds listed in full; "
+                        "repository scan kinds capped by declared relevance "
+                        "order with an authenticated omitted-tail summary"
                     ),
                 },
                 "candidate_order": (
@@ -1536,7 +1543,9 @@ def build_partial_closure_index(
         f"controlled_vocabulary:{line_number}"
         for _score, line_number, _line, _overlap in ordered_vocabulary_hits
     )
-    for _score, line_number, line, overlap in ordered_vocabulary_hits[:10]:
+    for _score, line_number, line, overlap in ordered_vocabulary_hits[
+        :N6_CANDIDATE_LIMITS["controlled_vocabulary"]
+    ]:
         add_candidate(
             candidate_id=f"controlled_vocabulary:{line_number}",
             kind="definition_refactor",
@@ -1563,7 +1572,9 @@ def build_partial_closure_index(
         f"meta_reframe:{path}"
         for _score, path, _content, _overlap in ordered_meta_hits
     )
-    for _score, path, content, overlap in ordered_meta_hits[:10]:
+    for _score, path, content, overlap in ordered_meta_hits[
+        :N6_CANDIDATE_LIMITS["meta_reframe"]
+    ]:
         add_candidate(
             candidate_id=f"meta_reframe:{path}",
             kind="definition_refactor",
@@ -1598,7 +1609,9 @@ def build_partial_closure_index(
         f"claim_reframe:{path}"
         for _score, path, _content, _overlap in ordered_claim_hits
     )
-    for _score, path, content, overlap in ordered_claim_hits[:20]:
+    for _score, path, content, overlap in ordered_claim_hits[
+        :N6_CANDIDATE_LIMITS["claim_reframe"]
+    ]:
         add_candidate(
             candidate_id=f"claim_reframe:{path}",
             kind="claim_scope_reframe",
@@ -1629,7 +1642,9 @@ def build_partial_closure_index(
         f"in_flight_reframe:{path}"
         for _score, path, _content, _overlap in ordered_reframe_hits
     )
-    for _score, path, content, overlap in ordered_reframe_hits[:10]:
+    for _score, path, content, overlap in ordered_reframe_hits[
+        :N6_CANDIDATE_LIMITS["in_flight_reframe"]
+    ]:
         add_candidate(
             candidate_id=f"in_flight_reframe:{path}",
             kind="definition_refactor",
@@ -1650,7 +1665,7 @@ def build_partial_closure_index(
                     "path": CONTROLLED_VOCABULARY,
                     "content_sha256": hashlib.sha256(vocabulary_text.encode("utf-8")).hexdigest(),
                     "minimum_shared_terms": 1,
-                    "candidate_limit": 10,
+                    "candidate_limit": N6_CANDIDATE_LIMITS["controlled_vocabulary"],
                 },
                 "meta_notes": {
                     "scanned_count": len(meta_paths),
@@ -1658,7 +1673,7 @@ def build_partial_closure_index(
                         json.dumps(meta_paths, separators=(",", ":")).encode("utf-8")
                     ).hexdigest(),
                     "minimum_shared_terms": 2,
-                    "candidate_limit": 10,
+                    "candidate_limit": N6_CANDIDATE_LIMITS["meta_reframe"],
                     "evidence_line_limit_per_candidate": 5,
                 },
                 "claim_notes": {
@@ -1667,7 +1682,7 @@ def build_partial_closure_index(
                         json.dumps(claim_paths, separators=(",", ":")).encode("utf-8")
                     ).hexdigest(),
                     "minimum_shared_terms": 2,
-                    "candidate_limit": 20,
+                    "candidate_limit": N6_CANDIDATE_LIMITS["claim_reframe"],
                     "evidence_line_limit_per_candidate": 5,
                 },
                 "repository_visible_in_flight_reframes": {
@@ -1678,7 +1693,7 @@ def build_partial_closure_index(
                         json.dumps(sorted(reframe_paths), separators=(",", ":")).encode("utf-8")
                     ).hexdigest(),
                     "minimum_shared_terms": 2,
-                    "candidate_limit": 10,
+                    "candidate_limit": N6_CANDIDATE_LIMITS["in_flight_reframe"],
                     "evidence_line_limit_per_candidate": 5,
                 },
             },
@@ -2741,11 +2756,46 @@ def _entry_contains(entry: dict[str, Any], value: str) -> bool:
     )
 
 
+def _accepted_premise_entry(entry: dict[str, Any]) -> bool:
+    return entry.get("accepted_premise_type") in PRIOR_AUTHORITY_PREMISE_TYPES
+
+
+def n3_scan_paths(manifest: dict[str, dict] | None) -> set[str]:
+    """Return source/ordinary-authority paths requiring hidden-wall review.
+
+    Axiom and approved-primitive texts are explicit accepted premises and are
+    separately guarded by premise purity. Their premise vocabulary is not a
+    hidden admission in the audited claim, so N3 does not enumerate it again.
+    """
+    if manifest is None:
+        return set()
+    return {
+        path
+        for path, entry in manifest.items()
+        if {"source", "authority"}.intersection(set(entry.get("roles") or []))
+        and not _accepted_premise_entry(entry)
+    }
+
+
+def required_n3_phrase_groups(
+    manifest: dict[str, dict] | None,
+) -> dict[tuple[str, str, str], dict[str, Any]]:
+    if manifest is None:
+        return {}
+    groups = required_phrase_groups(
+        manifest, {"source", "authority"}, N3_SCAN_PHRASES
+    )
+    paths = n3_scan_paths(manifest)
+    return {key: value for key, value in groups.items() if key[0] in paths}
+
+
 def _scan_coverage_error(
     section: dict[str, Any],
     manifest: dict[str, dict] | None,
     roles: set[str],
     label: str,
+    *,
+    exclude_accepted_premises: bool = False,
 ) -> str | None:
     scanned = section.get("scanned_evidence_paths")
     if not isinstance(scanned, list) or not all(_text(path) for path in scanned):
@@ -2758,6 +2808,9 @@ def _scan_coverage_error(
         path
         for path, entry in manifest.items()
         if roles.intersection(set(entry.get("roles") or []))
+        and not (
+            exclude_accepted_premises and _accepted_premise_entry(entry)
+        )
     }
     if set(scanned) != required:
         return f"{label}.scanned_evidence_paths must exactly cover {sorted(required)}"
@@ -3240,7 +3293,13 @@ def _validate_n3(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     )
     if error:
         return error
-    error = _scan_coverage_error(section, manifest, {"source", "authority"}, "N3")
+    error = _scan_coverage_error(
+        section,
+        manifest,
+        {"source", "authority"},
+        "N3",
+        exclude_accepted_premises=True,
+    )
     if error:
         return error
     if not _text(section.get("scan_scope")):
@@ -3323,9 +3382,7 @@ def _validate_n3(packet: dict, status: str, manifest: dict[str, dict] | None) ->
             if not _text(hit.get("promoted_wall")) or _norm(hit["promoted_wall"]) not in walls:
                 return f"N3 hidden admission {index} must be promoted into N2.walls"
     if manifest is not None:
-        required_hits = required_phrase_groups(
-            manifest, {"source", "authority"}, N3_SCAN_PHRASES
-        )
+        required_hits = required_n3_phrase_groups(manifest)
         if set(observed_hits) != set(required_hits):
             missing = sorted(set(required_hits) - set(observed_hits))
             extra = sorted(set(observed_hits) - set(required_hits))

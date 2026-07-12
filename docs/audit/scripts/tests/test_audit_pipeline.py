@@ -152,16 +152,14 @@ def _set_no_go_scan_coverage(packet: dict, manifest: dict[str, dict]) -> None:
             if role_set.intersection(set(entry.get("roles") or []))
         )
 
-    packet["N3_hidden_wall_scan"]["scanned_evidence_paths"] = paths_for(
-        "source", "authority"
+    packet["N3_hidden_wall_scan"]["scanned_evidence_paths"] = sorted(
+        gate.n3_scan_paths(manifest)
     )
     packet["N4_residual_matching"]["scanned_evidence_paths"] = paths_for(
         "authority"
     )
     packet["N5_rhetoric_audit"]["scanned_evidence_paths"] = paths_for("source")
-    n3_occurrences = gate.required_phrase_groups(
-        manifest, {"source", "authority"}, gate.N3_SCAN_PHRASES
-    )
+    n3_occurrences = gate.required_n3_phrase_groups(manifest)
     packet["N3_hidden_wall_scan"]["hits"] = [
         {
             "phrase": phrase,
@@ -3939,6 +3937,69 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                     "docs/BOUNDED_ROW.md", wall_body, "bounded_theorem"
                 )
             )
+
+    def test_n3_excludes_explicit_accepted_premise_vocabulary(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        manifest["docs/AXIOM.md"] = {
+            "path": "docs/AXIOM.md",
+            "roles": ["authority", "framework_premise"],
+            "text": "Axiom primitive boundary normalization.",
+            "effective_status": "meta",
+            "accepted_premise_type": "axiom_or_approved_primitive",
+        }
+        manifest["docs/ORDINARY.md"] = {
+            "path": "docs/ORDINARY.md",
+            "roles": ["authority"],
+            "text": "Ordinary boundary obstruction statement for review.",
+            "effective_status": "retained",
+            "accepted_premise_type": None,
+        }
+        packet = _no_go_packet()
+        _set_no_go_scan_coverage(packet, manifest)
+        self.assertEqual(
+            set(packet["N3_hidden_wall_scan"]["scanned_evidence_paths"]),
+            {"docs/TEST_NO_GO.md", "docs/ORDINARY.md"},
+        )
+        self.assertFalse(any(
+            hit["evidence_path"] == "docs/AXIOM.md"
+            for hit in packet["N3_hidden_wall_scan"]["hits"]
+        ))
+        self.assertTrue(any(
+            hit["evidence_path"] == "docs/ORDINARY.md"
+            for hit in packet["N3_hidden_wall_scan"]["hits"]
+        ))
+        audit = {
+            "claim_type": "no_go",
+            "verdict": "audited_clean",
+            "chain_closes": True,
+            "no_go_discipline": packet,
+        }
+        self.assertIsNone(
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest)
+        )
+
+    def test_no_go_output_candidate_caps_are_declared(self):
+        m = _import("no_go_discipline_gate")
+        self.assertEqual(
+            m.N8_KIND_CANDIDATE_LIMITS,
+            {
+                "prior_audit_cycle": None,
+                "open_gate": None,
+                "similar_negative_boundary": 20,
+                "repo_negative_phrase_hit": 20,
+                "physics_loop_no_go_ledger": 20,
+            },
+        )
+        self.assertEqual(
+            m.N6_CANDIDATE_LIMITS,
+            {
+                "controlled_vocabulary": 5,
+                "meta_reframe": 5,
+                "claim_reframe": 10,
+                "in_flight_reframe": 5,
+            },
+        )
 
     @staticmethod
     def _manifest() -> dict:

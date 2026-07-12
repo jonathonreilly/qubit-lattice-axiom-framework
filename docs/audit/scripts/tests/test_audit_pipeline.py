@@ -898,7 +898,7 @@ class ApplyAuditTest(unittest.TestCase):
             "load_bearing_step_class": "C",
         }
         ok, msg = m.apply_one(led, audit)
-        self.assertFalse(ok)
+        self.assertFalse(ok, msg)
         self.assertIn("weak", msg)
 
     def test_exact_clean_provenance_rejects_gpt_5_5(self):
@@ -1521,7 +1521,7 @@ class ApplyAuditTest(unittest.TestCase):
         records = {candidate["candidate_id"]: candidate for candidate in candidates}
         for echo in fresh_packet["N8_cross_cycle_echo"]["echoes"]:
             record = records[echo["candidate_id"]]
-            mechanism = record["claim_scope"]
+            mechanism = record["mechanism"]
             echo.update({
                 "mechanism": mechanism,
                 "retired": record["retired"],
@@ -4374,6 +4374,174 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             target_row["verdict_rationale"] = "different mutable target verdict"
             self.assertNotEqual(first, m.build_cross_cycle_index(target_row, rows, root))
 
+    def test_evidence_manifest_keeps_full_index_universes_trusted_and_compacts_model_surface(self):
+        m = _import("no_go_discipline_gate")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            target_path = "docs/TARGET.md"
+            peer_path = "docs/PEER.md"
+            runner_path = "scripts/test_target.py"
+            files = {
+                target_path: "No-go: selector obstruction remains under this carrier.\n",
+                peer_path: (
+                    "# No-Go Ledger\n"
+                    "# Selector obstruction peer heading\n"
+                    "**Date:** 2026-07-12 selector obstruction catalog entry\n"
+                    "**Status authority:** selector obstruction audit lane\n"
+                    "**Source-note proposal disclaimer:** selector obstruction proposal\n"
+                    "**Claim boundary:** selector obstruction no-go catalog\n"
+                    "audit verdict and downstream status for selector obstruction are external\n"
+                    "No-go: the quoted \"eta-selector\" — selector obstruction remains "
+                    "under this alternate carrier with a convention definition reframe.\n"
+                ),
+                runner_path: "print('PASS')\n",
+                m.AXIOM_REGISTRY: json.dumps(
+                    {
+                        "canonical_ids": ["axiom_one"],
+                        "nodes": {
+                            "axiom_one": {
+                                "current_path": "docs/AXIOM_ONE.md",
+                                "target": "selector obstruction axiom",
+                            }
+                        },
+                    }
+                ),
+                "docs/AXIOM_ONE.md": "Axiom one.\n",
+                m.OBLIGATION_REGISTRY: json.dumps(
+                    {
+                        "canonical_ids": ["gate_one"],
+                        "nodes": {
+                            "gate_one": {
+                                "target": "selector obstruction gate",
+                            }
+                        },
+                    }
+                ),
+                m.CONTROLLED_VOCABULARY: "selector convention definition\n",
+                m.ACTIVE_REVIEW_QUEUE: "selector convention reframe\n",
+                ".claude/science/physics-loops/test/NO_GO_LEDGER.md": (
+                    "# No-Go Ledger\n"
+                    "No-go: selector obstruction remains under the finite "
+                    "alternate-carrier mechanism.\n"
+                ),
+            }
+            for relative, content in files.items():
+                path = root / relative
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(content, encoding="utf-8")
+            row = {
+                "claim_id": "target",
+                "claim_type": "no_go",
+                "claim_scope": "selector obstruction",
+                "note_path": target_path,
+                "runner_path": runner_path,
+                "deps": [],
+            }
+            peer = {
+                "claim_id": "peer",
+                "claim_type": "no_go",
+                "claim_scope": "selector obstruction",
+                "note_path": peer_path,
+            }
+            rows = {"target": row, "peer": peer}
+            canonical_cross_text = m.build_cross_cycle_index(row, rows, root)
+            canonical_partial_text = m.build_partial_closure_index(row, rows, root)
+            canonical_cross = json.loads(canonical_cross_text)
+            canonical_partial = json.loads(canonical_partial_text)
+            canonical_cross_sha = hashlib.sha256(
+                canonical_cross_text.encode("utf-8")
+            ).hexdigest()
+            canonical_partial_sha = hashlib.sha256(
+                canonical_partial_text.encode("utf-8")
+            ).hexdigest()
+            manifest = m.build_evidence_manifest(row, rows, root)
+
+        cross_uri = m.cross_cycle_index_path("target")
+        partial_uri = m.partial_closure_index_path("target")
+        rendered_cross = json.loads(manifest[cross_uri]["text"])
+        rendered_partial = json.loads(manifest[partial_uri]["text"])
+        self.assertNotIn("candidate_id_universe", rendered_cross)
+        self.assertNotIn("no_go_row_universe", rendered_cross)
+        self.assertNotIn("candidate_id_universe", rendered_partial)
+        self.assertEqual(
+            rendered_cross["canonical_index_sha256"],
+            canonical_cross_sha,
+        )
+        self.assertEqual(
+            rendered_partial["canonical_index_sha256"],
+            canonical_partial_sha,
+        )
+        self.assertEqual(
+            manifest[cross_uri]["cross_cycle_candidate_id_universe"],
+            canonical_cross["candidate_id_universe"],
+        )
+        self.assertEqual(
+            manifest[cross_uri]["cross_cycle_no_go_row_universe"],
+            canonical_cross["no_go_row_universe"],
+        )
+        self.assertEqual(
+            manifest[partial_uri]["partial_closure_candidate_id_universe"],
+            canonical_partial["candidate_id_universe"],
+        )
+        self.assertTrue(rendered_cross["candidates"])
+        self.assertTrue(rendered_partial["candidates"])
+        self.assertTrue(
+            all("mechanism" in candidate for candidate in rendered_cross["candidates"])
+        )
+        self.assertTrue(
+            all("basis" in candidate for candidate in rendered_partial["candidates"])
+        )
+        peer_cross = next(
+            candidate
+            for candidate in rendered_cross["candidates"]
+            if candidate["candidate_id"] == "similar_negative_boundary:peer"
+        )
+        self.assertFalse(peer_cross["mechanism"].startswith("#"))
+        self.assertIn("alternate carrier", peer_cross["mechanism"])
+        loop_cross = next(
+            candidate
+            for candidate in rendered_cross["candidates"]
+            if candidate["kind"] == "physics_loop_no_go_ledger"
+        )
+        self.assertFalse(loop_cross["mechanism"].startswith("#"))
+        self.assertIn("alternate-carrier mechanism", loop_cross["mechanism"])
+        self.assertNotIn(
+            "claim_scope_reframe",
+            {candidate["kind"] for candidate in rendered_partial["candidates"]},
+        )
+        peer_partial = next(
+            candidate
+            for candidate in rendered_partial["candidates"]
+            if candidate["candidate_id"] == f"claim_reframe:{peer_path}"
+        )
+        self.assertEqual(peer_partial["kind"], "definition_refactor")
+        self.assertIn("alternate carrier", peer_partial["basis"])
+        primitive_partial = next(
+            candidate
+            for candidate in rendered_partial["candidates"]
+            if candidate["candidate_id"] == "approved_primitive:axiom_one"
+        )
+        self.assertEqual(
+            primitive_partial["basis"],
+            "selector obstruction axiom",
+        )
+        gate_partial = next(
+            candidate
+            for candidate in rendered_partial["candidates"]
+            if candidate["candidate_id"] == "open_gate:gate_one"
+        )
+        self.assertEqual(gate_partial["basis"], "selector obstruction gate")
+        snapshot = m.build_evidence_snapshot({}, manifest)
+        snapshot_entries = snapshot["entries"]
+        self.assertEqual(
+            snapshot_entries[cross_uri]["cross_cycle_candidate_id_universe"],
+            canonical_cross["candidate_id_universe"],
+        )
+        self.assertEqual(
+            snapshot_entries[partial_uri]["partial_closure_candidate_id_universe"],
+            canonical_partial["candidate_id_universe"],
+        )
+
     def test_dynamic_index_growth_never_invalidates_but_is_reported(self):
         m = _import("no_go_discipline_gate")
         index_uri = m.cross_cycle_index_path("target_claim")
@@ -4898,6 +5066,104 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "evidence_path": index_path,
             "evidence_locator": "selector_label convention reframe candidate",
         }]
+        self.assertIsNone(
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest)
+        )
+
+    def test_n6_n8_decoded_semantic_fields_accept_quotes_and_unicode(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        partial_path = "audit-packet://partial-closure-index/test_no_go"
+        cross_path = "audit-packet://cross-cycle-index/test_no_go"
+        reframe_path = "docs/REFRAME.md"
+        partial_id = "claim_reframe:quoted_eta"
+        cross_id = "similar_negative_boundary:quoted_eta"
+        basis = (
+            'definition: the quoted "eta-selector" — convention reframe '
+            "does not supply the selector wall theorem"
+        )
+        mechanism = (
+            'the quoted "eta-selector" — obstruction remains under the '
+            "alternate carrier without a selector theorem"
+        )
+        manifest[reframe_path] = {
+            "path": reframe_path,
+            "roles": ["authority"],
+            "text": basis,
+            "effective_status": "unaudited",
+            "accepted_premise_type": None,
+        }
+        manifest[partial_path]["text"] = json.dumps(
+            {
+                "schema": "no_go_partial_closure_index_v1",
+                "claim_id": "test_no_go",
+                "candidates": [
+                    {
+                        "candidate_id": partial_id,
+                        "kind": "definition_refactor",
+                        "basis": basis,
+                    }
+                ],
+            },
+            sort_keys=True,
+        )
+        manifest[cross_path]["text"] = json.dumps(
+            {
+                "schema": "no_go_cross_cycle_index_v1",
+                "claim_id": "test_no_go",
+                "no_go_row_universe_count": 0,
+                "no_go_row_universe_sha256": hashlib.sha256(b"[]").hexdigest(),
+                "candidates": [
+                    {
+                        "candidate_id": cross_id,
+                        "kind": "similar_negative_boundary",
+                        "mechanism": mechanism,
+                        "lifecycle_state": "unknown",
+                        "retired": None,
+                        "applicable": None,
+                    }
+                ],
+            },
+            sort_keys=True,
+        )
+        packet = _no_go_packet(cross_cycle_candidates=(cross_id,))
+        _set_no_go_scan_coverage(packet, manifest)
+        packet["N6_partial_closure_scan"]["candidates"] = [
+            {
+                "candidate_id": partial_id,
+                "kind": "definition_refactor",
+                "indexed_basis": basis,
+                "affected_wall": "selector wall",
+                "closure_mechanism": (
+                    f"The indexed basis {basis} names a reframe but does not "
+                    "supply the retained derivation for selector wall."
+                ),
+                "could_close_wall": False,
+                "addressed": True,
+                "disposition": "the quoted reframe does not close selector wall",
+                "evidence_path": reframe_path,
+                "evidence_locator": basis,
+            }
+        ]
+        echo = packet["N8_cross_cycle_echo"]["echoes"][0]
+        echo.update(
+            {
+                "mechanism": mechanism,
+                "retired": None,
+                "applicable": False,
+                "addressed": True,
+                "disposition": (
+                    f"The indexed mechanism {mechanism} is addressed and does "
+                    "not remove the current selector wall."
+                ),
+            }
+        )
+        audit = {
+            "claim_type": "no_go",
+            "verdict": "audited_clean",
+            "chain_closes": True,
+            "no_go_discipline": packet,
+        }
         self.assertIsNone(
             m.validate_no_go_discipline(audit, evidence_manifest=manifest)
         )
@@ -5803,7 +6069,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         blind_path = m.no_go_discipline_gate.blind_reaudit_control_path("target")
         self.assertIn("blind_reaudit_control", manifest[blind_path]["roles"])
         cross_path = m.no_go_discipline_gate.cross_cycle_index_path("target")
-        universe = json.loads(manifest[cross_path]["text"])["no_go_row_universe"]
+        universe = manifest[cross_path]["cross_cycle_no_go_row_universe"]
         self.assertFalse(any(item["claim_id"] == "target" for item in universe))
 
     def test_apply_reauthenticates_the_same_blind_row_projection(self):

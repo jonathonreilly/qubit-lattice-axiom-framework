@@ -474,3 +474,8 @@ seeds one `bounded_theorem` / `unaudited` row with only the Block13 dependency;
 the final hash matches, strict lint has no errors, vocabulary lint has zero
 violations, and generated audit/status surfaces are stripped. No axiom-update
 stop condition is triggered.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5264 is
+open and mergeable on the same-action scalar continuum head; the independent
+audit workflow was queued at the delivery checkpoint.

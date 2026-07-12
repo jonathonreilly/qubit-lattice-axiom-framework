@@ -40,3 +40,10 @@
   `{A: 7, B: 2, C: 0, D: 0}`; direct execution is `PASS=12 FAIL=0`.
 - All pipeline-generated audit/status outputs were stripped before delivery;
   the science branch contains no audit verdict or generated authority change.
+
+## PR verification
+
+- PR: [#5221](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5221).
+- State: open, non-draft.
+- Base/head: `main` <- `physics-loop/dark-energy-eos-bridge-block01-20260712`.
+- Mergeability at creation: mergeable; required `audit_pipeline` check pending.

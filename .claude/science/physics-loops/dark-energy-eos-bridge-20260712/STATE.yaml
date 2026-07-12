@@ -29,6 +29,7 @@ no_go_routes:
   - "common 3/R^2 dependence constitutes a sourcing theorem"
   - "universal -1/4 lattice correction follows from lambda_1=3/R^2"
 review_loop_disposition: pass
-pr_status: pending_creation
-next_exact_action: "Push the reviewed branch, open one review PR, verify its base/body, and record the PR URL."
+pr_status: open_verified
+review_pr: "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5221"
+next_exact_action: "Review PR #5221 without merging in this loop; after landing through normal review, run an independent audit of dark_energy_eos_note."
 stop_condition: "one reviewed, pushed science block and one verified review PR"

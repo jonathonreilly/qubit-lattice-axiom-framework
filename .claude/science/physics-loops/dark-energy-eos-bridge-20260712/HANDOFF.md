@@ -30,9 +30,10 @@ theorem.
 
 ## Exact next action
 
-Push the reviewed branch, open one review PR, verify its base and body, and
-record the PR URL in this pack.  Independent audit remains required before
-effective retention.
+Review [PR #5221](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5221)
+without merging it in this loop.  After it lands through the normal review
+path, run an independent audit of `dark_energy_eos_note`.  Independent audit
+remains required before effective retention.
 
 ## Verification completed
 
@@ -46,3 +47,11 @@ effective retention.
 - N1--N8 no-go discipline: pass;
 - validation-only audit pipeline and strict lint: pass with no errors;
 - generated audit/status outputs: stripped from the science branch.
+
+## Delivery
+
+- remote branch: `physics-loop/dark-energy-eos-bridge-block01-20260712`;
+- review PR: [#5221](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5221);
+- base/head: `main` <- `physics-loop/dark-energy-eos-bridge-block01-20260712`;
+- GitHub verification at creation: open, non-draft, mergeable; required
+  `audit_pipeline` check pending.

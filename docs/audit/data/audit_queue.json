@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 673,
     "high": 353,
-    "leaf": 1172,
+    "leaf": 1171,
     "medium": 775
   },
   "cycle_break_target_count": 49,
@@ -52593,30 +52593,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/acphilambda_fermionic_realification_pfaffian_power_identity_2026_07_12.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -53923,6 +53899,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/acphilambda_ambient_equivariant_heat_trace_face_2026_07_02.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
+        "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/ACPHILAMBDA_C3_RESOLVENT_DETERMINANT_HOLONOMY_COUPLING_NARROW_THEOREM_NOTE_2026-07-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/acphilambda_c3_resolvent_determinant_holonomy_coupling_2026_07_12.py",
       "transitive_descendants": 0
     },
     {
@@ -65291,31 +65292,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_accessible_prediction.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-        "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_C3_RESOLVENT_DETERMINANT_HOLONOMY_COUPLING_NARROW_THEOREM_NOTE_2026-07-12.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/acphilambda_c3_resolvent_determinant_holonomy_coupling_2026_07_12.py",
       "transitive_descendants": 0
     },
     {
@@ -84384,5 +84360,5 @@
     }
   ],
   "ready_count": 620,
-  "total_pending": 2973
+  "total_pending": 2972
 }

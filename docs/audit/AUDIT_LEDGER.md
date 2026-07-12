@@ -18,11 +18,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 74 |
+| **retained** | 75 |
 | **retained_bounded** | 301 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2949 |
+| unaudited | 2948 |
 | audit_in_progress | 1 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
@@ -40,13 +40,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 1 |
-| `audited_clean` | 377 |
+| `audited_clean` | 378 |
 | `audited_conditional` | 21 |
 | `audited_decoration` | 15 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3299 |
+| `unaudited` | 3298 |
 
 | claim_type | count |
 |---|---:|
@@ -112,6 +112,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
 | `s3_mass_matrix_conditional_degeneracy_note_2026-07-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -588,6 +589,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The physical charged-lepton readout is the fixed-locus density class h, identity-read in h-units as the eta angle, with no extra clock-rate, transport, or normalization factor.  _(class `F`)_
 - **chain closes:** False — The note correctly presents the identity as an open obligation, but supplies no carrier/source-action bridge or normalization theorem deriving it. The physical density-to-angle identification therefore remains unclosed.
 - **rationale:** Issue: the target equates an h-density class with the physical eta-angle readout, but the restricted packet contains no derivation of that map. Why this blocks: Record additivity and the approved primitives do not themselves determine the carrier, source action, or dimensionless readout normalization. Repair target: supply an independently audited carrier/source-action theorem together with either a native eta/holonomy identity or an inhomogeneous Record-facing normalization theorem. Claim boundary until fixed: the identification and all results using it remain conditional or pending-chain.
+- **auditor confidence:** high
+
+### `acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12`
+
+- **Note:** [`ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md`](../../docs/ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For a supplied finite complex matrix K, ordered independent Grassmann variables, and the stated Berezin orientation, the audited theorem covers the block-Pfaffian determinant identity, coordinate-congruence invariance of the single-sector Gaussian value, the conjugate-sector direct-sum modulus square, and equality with the ordinary realification determinant.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt56sol-fresh-pfaffian-20260712-rf1`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Pf(A_K)=(-1)^(n(n-1)/2) det_C(K), while congruence of A_K and the inverse Berezin Jacobian preserve the oriented Gaussian value under invertible coordinate changes.  _(class `A`)_
+- **chain closes:** True — The block-Pfaffian expansion, Berezin top-form sign, and congruence/Jacobian factors give determinant power one for the supplied single sector; direct-sum multiplicativity together with the retained realification identity gives the modulus square for the supplied conjugate pair.
+- **rationale:** All load-bearing formulas close as exact finite-dimensional algebra, including signs and measure orientation, for singular as well as invertible K where applicable. Manual permutation and top-form derivations independently reproduce the runner, whose SHA-pinned cache reports 32 algebraic checks. Physical carrier and charged-lepton applications remain separate from this finite theorem domain.
 - **auditor confidence:** high
 
 ### `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04`

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py
-runner_sha256: 9459b8f7f3c643cde45696675e4b0986c4d0ec334ba65cc859abcad04863667c
+runner_sha256: f65c77615a9e97327863d66e9a62f82ec00852fadbeb6bfa7e64ac96b67e469d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.68
+elapsed_sec: 1.29
 status: ok
 ----- stdout -----
 Complex determinant and realification determinant power
@@ -36,8 +36,8 @@ Part C: Berezin first power
 Scope guards
 ------------
   [PASS] source note has no load-bearing links to former context stack
-  [PASS] source excludes a physical occupancy selector
-  [PASS] source does not force r=1/2
+  [PASS] source separates the physical occupancy-selector domain
+  [PASS] source keeps r as a free dial
 
 ================================================================
 TOTAL: PASS=18, FAIL=0

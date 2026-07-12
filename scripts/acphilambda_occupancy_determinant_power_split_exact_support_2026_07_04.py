@@ -168,8 +168,15 @@ def main() -> int:
         "GENERATION_WEIGHT_DIAL_STRUCTURE_2026-06-05.md",
     )
     check("source note has no load-bearing links to former context stack", all(link not in note for link in former_links))
-    check("source excludes a physical occupancy selector", "does not select a\nK/CPT-orbit occupancy grain" in note)
-    check("source does not force r=1/2", "force `r=1/2`" in note)
+    check(
+        "source separates the physical occupancy-selector domain",
+        "K/CPT-orbit occupancy grain" in note
+        and "belong to separate source\nrows" in note,
+    )
+    check(
+        "source keeps r as a free dial",
+        "`r` remains a free dial" in note,
+    )
 
     print("\n" + "=" * 64)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")

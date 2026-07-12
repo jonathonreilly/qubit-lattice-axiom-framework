@@ -3,7 +3,7 @@
     "critical": 650,
     "high": 335,
     "leaf": 1098,
-    "medium": 732
+    "medium": 731
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -31263,28 +31263,6 @@
       "queue_reason": "non_terminal_failed",
       "ready": true,
       "runner_path": null,
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "post_record_directed_certificate_kernel_selection_firewall_2026-06-06",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.5,
-      "note_path": "docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_post_record_directed_certificate_kernel_selection_firewall_2026_06_06.py",
       "transitive_descendants": 3
     },
     {
@@ -80575,6 +80553,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 535,
-  "total_pending": 2815
+  "ready_count": 534,
+  "total_pending": 2814
 }

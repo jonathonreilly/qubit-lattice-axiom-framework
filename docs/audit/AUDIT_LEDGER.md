@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 98 |
-| **retained_no_go** | 40 |
+| **retained_no_go** | 41 |
 | **retained_bounded** | 399 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2695 |
+| unaudited | 2694 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 523 |
+| `audited_clean` | 524 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 39 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3045 |
+| `unaudited` | 3044 |
 
 | claim_type | count |
 |---|---:|
@@ -481,6 +481,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `post_record_directed_certificate_kernel_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
@@ -7032,6 +7033,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The finite enumerations close algebraically on their stipulated inputs, but the chain from the framework baseline does not derive the supplied law/orientation/clock/kernel bridges. The note also claims 34 arrow-or-dynamics rows, whereas the completed primary and helper runners report 63.
 - **rationale:** Issue: the directed-certificate arithmetic is exact, but its physical bridge inputs are stipulated, and the note's 34-row certificate contradicts the completed 63-row result. Why this blocks: the packet establishes conditional finite examples, not an axiom-derived orientation or dynamics bridge, and one stated runner certificate is stale. Repair target: derive the required bridge data in a retained theorem and correct the source-note count to 63 before rerunning. Claim boundary until fixed: the three supplied-input examples remain valid, while the eleven firewall PASS lines merely test locally initialized false flags and provide no derivation.
 - **auditor confidence:** high
+
+### `post_record_directed_certificate_kernel_selection_firewall_2026-06-06`
+
+- **Note:** [`POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md`](../../docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Audited the branch-local non-uniqueness claim that fixed directed-certificate data do not generally determine a unique production kernel without an additional kernel, estimator, or model-selection rule.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00270-post_record_directed_certifi`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Two distinct row-stochastic kernels can induce the same finite law and directed-certificate values while differing on an unvisited row.  _(class `A`)_
+- **chain closes:** True — The two explicit finite counterexamples are genuine algebraic witnesses: the first preserves the entire displayed length-2 law while changing an unvisited kernel row, and the second preserves a scalar directed certificate under full source support while changing both kernel and other statistics. These witnesses establish the scoped failure of general unique selection.
+- **rationale:** The load-bearing result is an exact finite algebraic counterexample rather than a definition, renaming, fitted numerical match, or external comparison. The runner constructs the stochastic kernels and laws with exact fractions and computes the equal and separating certificate values instead of merely printing expected conclusions. The clean verdict is limited to non-uniqueness from the fixed certificate data alone; it does not rule out identification from a sufficiently enriched observation family plus a supplied estimator or model class.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `post_record_flow_thermal_stable_setting_certificate_2026-06-06`
 

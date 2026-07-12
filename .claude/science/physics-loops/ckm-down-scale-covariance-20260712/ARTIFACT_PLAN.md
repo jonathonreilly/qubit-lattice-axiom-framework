@@ -10,4 +10,3 @@
    restore every generated audit/effective-status surface before commit.
 5. Run review-loop fanout, apply only narrow verified fixes, and re-review only
    changed files.
-

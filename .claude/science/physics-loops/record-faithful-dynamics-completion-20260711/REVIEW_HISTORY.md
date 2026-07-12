@@ -441,3 +441,36 @@ Delivery: stacked PR
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5262 is
 open and mergeable on the two-band BdG head; the independent audit workflow
 was running at the delivery checkpoint.
+
+## Free staggered reflected-Gram / CAR-Fock representation block
+
+The old mixed-OS note and runner were read fully. Their bulk numerical result
+is correct, but `c_block=2` was inserted and finite open-time boundary effects
+were only suppressed numerically. The new source derives the infinite-time
+residue analytically for arbitrary finite anti-Hermitian spatial hop, lifts it
+to the canonical finite even 3D torus, and proves arbitrary finite multitime
+positive-time unbarred Wick/Fock equality. Runner/cache: `PASS=22 FAIL=0`.
+
+### Residue block review iteration 1
+
+Review confirmed the residue, rank-one `2z` spectrum, operator functions,
+parity, polar map, and position-basis lift, but rejected an OS-normalization
+conflation. The canonical quotient is
+`A=sqrt(2) Z^(1/2)V^dag` with `K_n=A^dag Z^(n-1)A`; the distinct boundary
+frame `sqrt(2)V^dag` carries one extra `Z`. Review also required arbitrary
+multitime support, raw finite-chain Hermiticity, and removal of original-field
+equal-time CAR anticommutator language.
+
+### Residue block review iteration 2
+
+PASS WITH BOUNDED CLAIMS. The two normalizations and their transfer powers are
+explicit. The theorem now covers arbitrary positive block times through
+`K_ij=2VZ^(r_i+s_j+1)V^dag` and exterior inner products, while barred/contact
+and all-field reconstruction remain open. N1--N8 has seven attempted routes,
+all fifteen bidirectional condition pairs, actual phrase/residual scans,
+resolution and primitive/reframe tables, hostile steelman, and cross-cycle
+retirement. Code/math, Nature, and governance re-reviews pass. Audit validation
+seeds one `bounded_theorem` / `unaudited` row with only the Block13 dependency;
+the final hash matches, strict lint has no errors, vocabulary lint has zero
+violations, and generated audit/status surfaces are stripped. No axiom-update
+stop condition is triggered.

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 393 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2713 |
+| unaudited | 2712 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 76 |
+| ~~audited_conditional~~ | 77 |
 | ~~audited_failed~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 511 |
-| `audited_conditional` | 76 |
+| `audited_conditional` | 77 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3063 |
+| `unaudited` | 3062 |
 
 | claim_type | count |
 |---|---:|
@@ -696,6 +696,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
+| `p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -6391,6 +6392,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The primary runner constructs the fixed lattice, packet, field, propagation, detector profiles, top-k reidentification, and metrics directly from included code, then checks the displayed table against computed values. No cited authority or external comparator is needed for the narrowed replay claim.
 - **rationale:** The narrowed note does not claim persistent mass, family genericity, or an acceptance theorem; it claims only deterministic reproduction of a six-row numerical table on a fixed harness. The runner source performs the metric computation before comparing against pinned expected display values, and the helper source exposes the lattice generator and constants used in that path. Given the restricted scope, the chain closes as a bounded computational replay.
 - **auditor confidence:** high
+
+### `p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18`
+
+- **Note:** [`P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md`](../../docs/P_LH_NCG_PRIMITIVE_UNDERDETERMINATION_BOUNDARY_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the four-dimensional rho-plus direct-sum rho-minus Pauli block, the displayed alternatives witness non-uniqueness of the finite action, real-structure chirality sign, and order-one behavior; dynamics, readout selection, larger finite sectors, and other SM LH/RH routes were not audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00249-p_lh_ncg_primitive_underdete`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** On the displayed finite Pauli block, alternative finite-algebra actions, antiunitary real structures, and finite Dirac/opposite-action choices give different NCG data while preserving the same one-site Cl(3) baseline.  _(class `A`)_
+- **chain closes:** False — The three local algebraic witnesses are sound, but the required no-go discipline does not close: the source tests only three wall families and leaves dynamics/readout and larger-retained-sector selection routes untested.
+- **rationale:** The runner substantively constructs Pauli matrices, competing finite actions, two antiunitaries, and distinct finite-D choices; it is not a PASS printer. The current accepted axiom memo still supplies M_2(C)/Cl(3) without an NCG packet, so the displayed local underdetermination witnesses survive the axiom reset. However, the binding N1 gate requires five genuinely tested mechanism classes, while the note explicitly grants untested dynamics, readout-context, larger-sector, and alternate-route possibilities; audited_clean is therefore unavailable.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-attempt-with-named-untested-routes`)
+  - **gate failures:**
+    - N1: only the three displayed finite-block wall families are substantively computed; larger-sector and readout/dynamics selection routes remain untested.
+    - N3: the runner targets the superseded 2026-06-05 memo and does not directly exercise the current Admissibility surface.
+    - N5: the source explicitly leaves other SM LH/RH routes and future dynamics/readout/larger-sector resolutions untested.
 
 ### `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02`
 

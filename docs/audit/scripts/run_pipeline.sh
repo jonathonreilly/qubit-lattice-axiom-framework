@@ -59,6 +59,8 @@ python3 docs/audit/scripts/compute_load_bearing.py
 
 echo "==> 6/16 compute_effective_status.py"
 python3 docs/audit/scripts/compute_effective_status.py
+echo "==> 6b/16 compute_lane_certification.py"
+python3 docs/audit/scripts/compute_lane_certification.py
 
 echo "==> 7/16 invalidate_stale_audits.py"
 for attempt in 1 2 3 4 5 6 7 8 9 10; do

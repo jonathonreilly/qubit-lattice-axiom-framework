@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 from itertools import combinations
 from pathlib import Path
@@ -2646,6 +2647,21 @@ def _has_negative_boundary_assertion(text: str) -> bool:
     return bool(NEGATIVE_COVERAGE_VERB_RE.search(scrubbed))
 
 
+def forensic_mode() -> bool:
+    """Freeze/certification runs force the forensic tier lane-wide.
+
+    Two-tier assurance (2026-07-12, owner-approved): the development tier
+    binds verdicts to claim content (hashes, structural packet validation,
+    two independent passes) so working assurance survives repo growth; the
+    forensic tier (heavyweight N1-N8 with authenticated evidence surfaces)
+    is mandatory for no-go rows — where foreclosure is permanent — and for
+    freeze/certification runs over a whole lane at a pinned commit.
+    """
+    return str(os.environ.get("AUDIT_FORENSIC_MODE") or "").strip().lower() in {
+        "1", "true", "yes",
+    }
+
+
 def source_requires_no_go_discipline(
     note_path: str | None,
     note_body: str | None,
@@ -2665,7 +2681,13 @@ def source_requires_no_go_discipline(
         normalized_body = re.sub(r"[`*_~$(){}\[\]]", "", body)
         if not NEGATED_LABEL_ASSURANCE_RE.search(normalized_body):
             return True
-    return _has_negative_boundary_assertion(body)
+    # Wall-naming positive/bounded rows carry the mandatory heavy packet only
+    # in the forensic tier; in the development tier the auditor still applies
+    # the no-go discipline as judgment (skill rule) and any supplied packet is
+    # validated structurally.
+    if forensic_mode():
+        return _has_negative_boundary_assertion(body)
+    return False
 
 
 def output_requires_no_go_discipline(audit: dict[str, Any]) -> bool:

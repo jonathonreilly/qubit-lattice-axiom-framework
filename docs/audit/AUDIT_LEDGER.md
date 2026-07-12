@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 370 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2767 |
+| unaudited | 2766 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 56 |
-| ~~audited_failed~~ | 9 |
+| ~~audited_failed~~ | 10 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -48,10 +48,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 483 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 20 |
-| `audited_failed` | 31 |
+| `audited_failed` | 32 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3117 |
+| `unaudited` | 3116 |
 
 | claim_type | count |
 |---|---:|
@@ -704,6 +704,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `dm_dple_abcc_no_go_note_2026-04-19` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -2965,6 +2966,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - **gate failures:**
     - N1: physical-observable mapping, bank provenance, transport dynamics, normalization, and selector routes remain OPEN or UNTESTED.
     - N5: selector, branch-choice, and flagship resolutions named by the negative rhetoric were not tested by this packet.
+
+### `dm_dple_abcc_no_go_note_2026-04-19`
+
+- **Note:** [`DM_DPLE_ABCC_NO_GO_NOTE_2026-04-19.md`](../../docs/DM_DPLE_ABCC_NO_GO_NOTE_2026-04-19.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The d=3 algebraic sign-flip invariance of log|det| and whether the supplied runner substantiates the claimed C_neg/F_3^{neg} no-go witness.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00404-dm_dple_abcc_no_go_note_2026`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The floor(d/2) bound counts critical points of W = log|p|, which is invariant under p -> -p, so DPLE cannot distinguish C_base from C_neg.  _(class `A`)_
+- **chain closes:** False — The core sign-flip invariance is valid, but the proof misidentifies p''>0 as a Morse-index-0 condition for W on p<0, where W''=p''/p<0. The claimed T8 C_neg/F_3^{neg} witness is also absent from the supplied T1-T7 runner.
+- **rationale:** Issue: the negative-sector step counts minima of p rather than minima of W, because the runner tests p''>0 without dividing by p, and the source-cited T8 does not exist in the supplied runner. Why this blocks: the advertised C_neg/F_3^{neg} witness does not establish the same DPLE Morse-index-0 structure asserted in the proof. Repair target: add a correct sign-flipped d=3 countermodel using W''=p''/p and a real T8 that computes it, or narrow the note to the exact functional invariance W[p]=W[-p]. Claim boundary until fixed: log|det| alone carries no determinant-sign label, but the present runner-backed negative-basin proof is not valid.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the explicit C_neg/F_3^{neg} numerical route remains open because the supplied runner has no T8.
+    - N4: the source-claimed negative-sector witness is absent from the registered runner artifact.
+    - N5: the source equates p''>0 with W Morse-index-0 on p<0 even though W''=p''/p.
 
 ### `dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16`
 

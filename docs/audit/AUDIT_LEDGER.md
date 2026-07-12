@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 89 |
-| **retained_no_go** | 28 |
+| **retained_no_go** | 29 |
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 7 |
-| unaudited | 2798 |
+| unaudited | 2797 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 466 |
+| `audited_clean` | 467 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3148 |
+| `unaudited` | 3147 |
 
 | claim_type | count |
 |---|---:|
@@ -156,6 +156,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alt_connectivity_family_sign_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `alternative_coupled_field_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `anderson_phase_mu2_0001_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `angular_kernel_orbit_class_underdetermination_narrow_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `architecture_portability_live_reaudit_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `architecture_portability_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_born_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
@@ -1093,6 +1094,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Yes. The claim is a bounded companion replay on a fixed corrected harness, and the registered runner completed successfully for that finite phase-map check.
 - **rationale:** The note makes a bounded finite-harness claim, not a universal theorem. The current runner completed successfully and supports the replay surface classified as {'A': 0, 'B': 0, 'C': 6, 'D': 0, 'total_pass': 6}. Residual risk is generalization outside the stated mu2 and periodic-torus setup.
 - **auditor confidence:** high
+
+### `angular_kernel_orbit_class_underdetermination_narrow_no_go_note_2026-05-10`
+
+- **Note:** [`ANGULAR_KERNEL_ORBIT_CLASS_UNDERDETERMINATION_NARROW_NO_GO_NOTE_2026-05-10.md`](../../docs/ANGULAR_KERNEL_ORBIT_CLASS_UNDERDETERMINATION_NARROW_NO_GO_NOTE_2026-05-10.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite-set algebra showing that D4 orbit symmetry, forward-layer support, transverse quadratic isotropy, and unit mass do not uniquely determine a nonnegative weight on R(d_max), with explicit d_max=3 witnesses.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00368-angular_kernel_orbit_class_u`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** At d_max=3, cubic symmetry leaves one nonnegative parameter for each of 10 D4 orbits, while unit mass supplies only one independent linear equation, producing a 9-dimensional probability simplex.  _(class `A`)_
+- **chain closes:** True — The orbit classification and dimension count follow exactly from the defined D4 action, and transverse quadratic isotropy is automatic under its swaps and sign flips. Explicit orbit-invariant probability weights then establish nonuniqueness without external inputs.
+- **rationale:** The load-bearing result is a self-contained finite-set algebraic closure: ten D4 orbit variables at d_max=3 subject to one nonzero normalization functional form a nine-dimensional simplex, and P3 adds no constraint beyond D4 invariance. The runner constructs the set, orbit multiplicities, normalized witnesses, and moment invariants rather than importing a target value. Its interval PASS is asserted after computing the endpoints, but the note independently closes the interval claim because the positive-denominator ratio along their convex mixtures is continuous and has endpoint values 1/2 and 1. The prose description of axial support omits negative representatives, while the stated orbit meaning and runner use the correct D4-complete axial set; this is a local notation defect rather than a failure of the scoped theorem.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `architecture_portability_live_reaudit_bridge_note_2026-06-18`
 

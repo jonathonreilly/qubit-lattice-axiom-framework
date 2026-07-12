@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 99 |
 | **retained_no_go** | 41 |
-| **retained_bounded** | 401 |
+| **retained_bounded** | 402 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2685 |
+| unaudited | 2684 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 527 |
+| `audited_clean` | 528 |
 | `audited_conditional` | 83 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3035 |
+| `unaudited` | 3034 |
 
 | claim_type | count |
 |---|---:|
@@ -610,6 +610,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `unification_basin_failure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -9564,6 +9565,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source constructs the lattice operators and diffeomorphism variation and computes the residual/amplitude data without importing or hard-coding the contested coefficient. Independent arithmetic from the displayed data confirms the monotonic normalized ratios, shrinking increments, approximately constant amplitude*k^2 spread under 15%, and the stated Richardson/geometric extrapolants.
 - **rationale:** The source note is explicitly bounded to the finite runner-defined diagnostic and does not claim an analytic continuum theorem, physical normalization, irrelevant-operator identification, or all-order Ward closure. The included runner genuinely computes the finite lattice quantities from its defined operators, has no helper imports, and does not just print expected constants. The numerical claims in the table and extrapolants check out up to ordinary rounding, so the bounded finite diagnostic closes on the restricted packet.
 - **auditor confidence:** high
+
+### `universal_gr_graviton_isotropy_staggered_kahler_dirac_bounded_theorem_note_2026-06-08`
+
+- **Note:** [`UNIVERSAL_GR_GRAVITON_ISOTROPY_STAGGERED_KAHLER_DIRAC_BOUNDED_THEOREM_NOTE_2026-06-08.md`](../../docs/UNIVERSAL_GR_GRAVITON_ISOTROPY_STAGGERED_KAHLER_DIRAC_BOUNDED_THEOREM_NOTE_2026-06-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Bounded finite-BZ comparison showing that the implemented staggered Kähler-Dirac vertex scheme has a few-percent Zener residual and is substantially closer to A=1 than the implemented naive-Dirac control.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00280-universal_gr_graviton_isotro`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The explicitly constructed continuum, naive-Dirac, and 16x16 staggered operators yield finite-BZ Zener diagnostics near 0.99, 2.10, and 0.97 respectively, with the staggered result stable on the tested grids and masses.  _(class `C`)_
+- **chain closes:** True — The runner constructs the propagators, vertices, momentum sums, and Zener ratios directly rather than importing target anisotropy values. The source confines its conclusion to that runner-defined finite diagnostic and explicitly excludes the unproved W-native, conserved-vertex, continuum-limit, and physical-graviton extensions.
+- **rationale:** The numerical values arise from explicit finite sums over independently instantiated continuum, naive, and staggered operators; no expected anisotropy constants or external comparators are hard-coded. The staggered scalar-spectrum check is an algebraic consequence of the displayed eta-phase block, while the remaining checks compute the reported finite-grid ratios. The note's repaired scope does not identify this non-conserved vertex with the W-native metric Hessian or claim a continuum or physical spin-2 theorem.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09`
 

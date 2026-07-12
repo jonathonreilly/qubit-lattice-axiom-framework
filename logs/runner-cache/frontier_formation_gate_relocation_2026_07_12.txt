@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/frontier_formation_gate_relocation_2026_07_12.py
+runner_sha256: 174f324a9b36b2190ffd8f43e197f90455628f2d9b59f12ce86cee7965c760c0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.61
+status: ok
+----- stdout -----
+[PASS] (01) block 10's exact Gaussian-rational Berezin/OS engine is reused from the allowed runner prelude  [Fraction/CR path; no float scan invoked]
+[PASS] (02) the witness is exactly K-tied: a is real, c=conj(b), and W^dag=W  [a=4/5, b=3/10+i/5, c=3/10-i/5]
+[PASS] (03) the reused engine gives the exact two-slice identity Z=det(W^2+I/4), with Z real and positive  [Z=(146081/250000+0i)]
+[PASS] (04) the tied records-only Gram is exactly Hermitian positive definite (five positive rational Sylvester minors)  [registrable basis {1,N,TCsym,e2,e3}]
+[PASS] (05) P_s and P_d generate the registrable function algebra C+C, with every readout constant on the doublet  [minimal central cells have carrier ranks 1 and 2]
+[PASS] (06) a normalized positive state on the two-cell quotient is exactly the one-number family phi_w=(w,1-w)  [0<=w<=1; no second dial coordinate survives normalization]
+[PASS] (07) every tied-measure certificate factors through projection away from phi_w and is unchanged when w changes  [exact equality at w=1/2 and w=1/3, representative of all w]
+[PASS] (08) solving E_s=3a^2=w E_tot and E_d=6|b|^2=(1-w)E_tot derives r=(1-w)/(2w)  [derived r=-(w - 1)/(2*w)]
+[PASS] (09) uniformity over the two outcome cells solves w=1/2 and then r=1/2  [E_s=E_d]
+[PASS] (10) uniformity per real mode (one singlet mode, two doublet modes) solves w=1/3 and then r=1  [E_d=2E_s]
+[PASS] (11) the continuous fork has exactly one coordinate: w=1/(1+2r) is the inverse of r=(1-w)/(2w)  [derived inverse w=1/(2*r + 1)]
+[PASS] (12) normalized trace on the supplied three-dimensional carrier restricts to weights (1/3,2/3), hence r=1  [rho=I/3; dimension weighting]
+[PASS] (13) counting the two minimal central projections of C+C restricts to weights (1/2,1/2), hence r=1/2  [rho=diag(1/2,1/4,1/4) on the carrier representation]
+[PASS] (14) block 9's exact does-not-claim sentence leaves occupancy/weighting/reading-section choice open  [verbatim source guard]
+[PASS] (15) block 10's exact does-not-claim/residual sentence leaves the formation dial untouched after weight-stage K-reality  [verbatim source guard]
+[PASS] (16) the minimal axioms explicitly place formation rules, including with-what-weight, outside axiom content  [verbatim source guard]
+TOTAL: PASS=16 FAIL=0
+VERDICT: EXACT COMPATIBILITY AND FORMATION-GATE RELOCATION (BOUNDED_THEOREM); the tied measure coexists with phi_w, and w is not derived.
+T1: Block 10's tied Hermitian-PD two-slice measure extends to every state phi_w on C+C without changing any measure certificate.
+T2: Exact energy matching gives r=(1-w)/(2w), with cell counting w=1/2 -> r=1/2 and real-mode weighting w=1/3 -> r=1.
+T3: The named endpoints are restriction of normalized carrier trace and counting on the quotient's minimal central projections, respectively.
+T4: The sole relocated residue is the formation weight w; possible payers are formation dynamics, law-expressible-weight classification (in preparation), endpoint registration asymmetry (in preparation), or explicit owner admission.
+BINDING SURFACE: A landed theorem could have imposed phi_w=F(measure section) in block 9's does-not-claim surface, block 10's dial residual, or the axioms' open-gates list; none does so at the witnessed grade.
+CHECKS: 16/16 PASS; FAIL=0.
+PROPOSED CLAIM_SCOPE: exact two-level compatibility on the time-homogeneous two-slice C_3 tied corner measure, formation fork r=(1-w)/(2w), and canonical endpoint identifications on A_reg=C+C; no selection of w.
+UNCERTAINTIES A HOSTILE AUDITOR COULD CONTEST: the supplied P-even orbit-clause grade, the energy-to-formation-state bridge, or a formation/measure binding theorem outside the witnessed block 9/10 and axiom surfaces.
+
+----- stderr -----
+

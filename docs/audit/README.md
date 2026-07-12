@@ -378,3 +378,32 @@ canonical surface for claim strength.
   separate, missing ingredient for actual disciplinary impact).
 - Not a re-derivation of the physics — the audit checks whether the existing
   derivations close, not whether alternative derivations exist.
+
+## Two-Tier Assurance And Rolling Certification (2026-07-12, owner-approved)
+
+The lane runs two assurance tiers:
+
+- **Development tier (default).** Verdicts bind to claim content (note,
+  runner, and premise hashes) and survive unrelated repository growth. Every
+  audit still requires independent cross-family re-derivation at xhigh and
+  the two-pass cross-confirmation flow on critical rows. Wall-naming
+  positive/bounded rows apply the No-Go Discipline as auditor judgment, and
+  any supplied N1-N8 packet is validated structurally (no manifest-backed
+  containment, live-stdout, or full-universe disposition plumbing).
+- **Forensic tier.** Mandatory for `claim_type: no_go` rows (foreclosure is
+  permanent) and for freeze/certification runs (`AUDIT_FORENSIC_MODE=1`),
+  which force the full heavyweight regime lane-wide against a pinned commit:
+  authenticated evidence transport, verbatim-contained route evidence, live
+  runner-stdout citation, and complete index dispositions with authenticated
+  omitted-tail summaries.
+
+**Rolling certification** replaces scheduled freezes: the pipeline
+continuously reports, per flagship lane
+(`docs/audit/data/lane_certification_config.json` →
+`docs/audit/data/lane_certification.json`), whether the root claim's entire
+transitive dependency closure is retained-grade against the current state.
+Certification is a state the repository re-enters as audit throughput
+catches up; a marker rolling back after an axiom or source change is the
+honest coordination signal for collaborators, not an error. If a publication
+or replication request ever needs a citable artifact, snapshot the lane's
+currently-certified commit and run the forensic tier over its closure there.

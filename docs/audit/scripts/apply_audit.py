@@ -59,6 +59,18 @@ LOAD_BEARING_EVIDENCE_ROLES = {
 }
 
 
+def forensic_tier_for(claim_type: str | None, source_required: bool) -> bool:
+    """Two-tier assurance: forensic packet plumbing (manifest-backed
+    containment, live-stdout citation, snapshot authentication, transport)
+    binds no-go rows and freeze/certification runs; development-tier rows
+    validate packets structurally (evidence_manifest=None semantics)."""
+    return bool(
+        source_required
+        or (claim_type or "") == "no_go"
+        or no_go_discipline_gate.forensic_mode()
+    )
+
+
 def trusted_evidence_manifest(
     expected_claim_id: str | None = None,
     expected_invocation_id: str | None = None,
@@ -218,6 +230,18 @@ def cross_summary_no_go_error(
     snapshot_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
         packet if isinstance(packet, dict) else {}
     )
+    _forensic = forensic_tier_for(summary.get("claim_type"), source_required)
+    if current_evidence_manifest is None and not _forensic:
+        # Development tier: structural validation of the prior seat's packet.
+        return no_go_discipline_gate.validate_no_go_discipline(
+            {
+                **summary,
+                "verdict": summary.get("verdict"),
+                "chain_closes": summary.get("verdict") == "audited_clean",
+            },
+            source_required=source_required,
+            evidence_manifest=None,
+        )
     if snapshot_manifest is None:
         return "authenticated evidence_snapshot is required"
     snapshot_error = no_go_discipline_gate.evidence_snapshot_current_error(
@@ -966,11 +990,14 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
             else row.get("claim_type") or final_claim_type
         ),
     )
+    _forensic = forensic_tier_for(
+        row.get("claim_type") or final_claim_type, source_requires_no_go
+    )
     if side in {"first", "second"}:
         chosen_gate_error = cross_summary_no_go_error(
             chosen,
             source_required=source_requires_no_go,
-            current_evidence_manifest=evidence_manifest,
+            current_evidence_manifest=evidence_manifest if _forensic else None,
         )
         if chosen_gate_error:
             return False, (
@@ -980,13 +1007,13 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     no_go_error = no_go_discipline_gate.validate_no_go_discipline(
         gate_blob,
         source_required=source_requires_no_go,
-        evidence_manifest=evidence_manifest,
+        evidence_manifest=evidence_manifest if _forensic else None,
         prior_claim_scope=prior_claim_scope_for_row(row),
         require_declaration=True,
     )
     if no_go_error:
         return False, no_go_error
-    if isinstance(judgment.get("no_go_discipline"), dict):
+    if isinstance(judgment.get("no_go_discipline"), dict) and _forensic:
         packet = dict(judgment["no_go_discipline"])
         packet.pop("evidence_snapshot", None)
         packet["evidence_snapshot"] = no_go_discipline_gate.build_evidence_snapshot(
@@ -1110,7 +1137,15 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     except ValueError as exc:
         return False, str(exc)
     trusted_transport = evidence_manifest is not None
-    if evidence_manifest is None and audit.get("no_go_discipline") is not None:
+    _source_req_probe = no_go_discipline_gate.source_requires_no_go_discipline(
+        note_path, note_body, row.get("claim_type") or claim_type
+    )
+    _forensic = forensic_tier_for(row.get("claim_type") or claim_type, _source_req_probe)
+    if (
+        evidence_manifest is None
+        and audit.get("no_go_discipline") is not None
+        and _forensic
+    ):
         return False, "No-Go Discipline apply requires trusted orchestrator evidence transport"
     if evidence_manifest is None:
         evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
@@ -1139,16 +1174,19 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             ),
         )
     )
+    _forensic = forensic_tier_for(
+        row.get("claim_type") or claim_type, source_requires_no_go
+    )
     no_go_error = no_go_discipline_gate.validate_no_go_discipline(
         audit,
         source_required=source_requires_no_go,
-        evidence_manifest=evidence_manifest,
+        evidence_manifest=evidence_manifest if _forensic else None,
         prior_claim_scope=prior_claim_scope_for_row(row),
         require_declaration=True,
     )
     if no_go_error:
         return False, no_go_error
-    if isinstance(audit.get("no_go_discipline"), dict):
+    if isinstance(audit.get("no_go_discipline"), dict) and _forensic:
         packet = dict(audit["no_go_discipline"])
         packet.pop("evidence_snapshot", None)
         packet["evidence_snapshot"] = no_go_discipline_gate.build_evidence_snapshot(

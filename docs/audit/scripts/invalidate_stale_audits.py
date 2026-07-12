@@ -293,6 +293,11 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
     )
 
     packet = row.get("no_go_discipline")
+    _forensic = bool(
+        source_required
+        or (row.get("claim_type") or "") == "no_go"
+        or no_go_discipline_gate.forensic_mode()
+    )
     if isinstance(packet, dict) and audit_status not in {
         None,
         "unaudited",
@@ -304,7 +309,7 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
         current_manifest = no_go_discipline_gate.build_evidence_manifest(
             row, rows, REPO_ROOT
         )
-        if audit_status == "audited_clean":
+        if audit_status == "audited_clean" and _forensic:
             if evidence_manifest is None:
                 return "no_go_discipline_packet_invalid"
             if no_go_discipline_gate.evidence_snapshot_current_error(
@@ -332,7 +337,7 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
                 ),
             },
             source_required=source_required,
-            evidence_manifest=evidence_manifest,
+            evidence_manifest=evidence_manifest if _forensic else None,
         )
         if packet_error:
             if audit_status == "audited_clean":

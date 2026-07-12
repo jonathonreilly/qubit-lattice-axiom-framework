@@ -4017,6 +4017,10 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "The baseline algebra did not supply a unique normalization.",
             "The selector wall no longer blocks route A but blocks route B.",
             "The finite-size transfer did not fix the infinite-volume kernel.",
+            # Passive negative closure with quantified boundary subjects.
+            "Neither residual wall is closed by the identity.",
+            "No remaining obstruction was resolved by the finite scan.",
+            "No alternative derivational channel can reach the normalization.",
             # Affirmative capability/underdetermination contrasts for the
             # negated-predicate controls.
             "The phase is underdetermined by the retained axioms.",
@@ -4083,6 +4087,16 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "No other unitary representation of the path algebra exists.",
             "It is by no means impossible to derive the phase; the displayed map derives it.",
             "## 11: Scope\nDoes not derive the external benchmark.\n",
+            # Affirmative routing attribution after a coverage fragment.
+            "This note does not derive the coefficient; the retained axioms do derive it.",
+            "Not claimed: does not derive the coefficient; the retained framework theorem supplies it.",
+            "## Scope\nDoes not derive the coefficient; the retained primitives supply it.\n",
+            "> Not claimed: does not derive the external calibration constant.\n",
+            "1: Not claimed: does not recover the observed benchmark.",
+            "The revised note no longer claims that no admissible route exists.",
+            "No additional fixed point exists in the affine chart.",
+            "No alternative unitary dilation exists once the boundary data are fixed.",
+            "Zero modes determine the topological index.",
             # Negation, withdrawal, denial, and refutation of negative
             # predicates are not negative assertions.
             "The manuscript no longer asserts that the phase is underdetermined.",

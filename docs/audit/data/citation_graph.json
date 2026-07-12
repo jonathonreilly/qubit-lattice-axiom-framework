@@ -29353,6 +29353,10 @@
       "to": "matter_inertial_closure_note"
     },
     {
+      "from": "newton_law_derived_note",
+      "to": "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+    },
+    {
       "from": "newton_poisson_flat_friedmann_textbook_import_note_2026-05-17",
       "to": "gravity_clean_derivation_note"
     },
@@ -97953,9 +97957,11 @@
       "claim_type_author_hint": "bounded_theorem",
       "claim_type_author_hint_raw": "bounded_theorem.",
       "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "deps": [
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "2dd00603a4db9e54970f4df52be19923a35a959af47bd4fbc283846df69f11b1",
+      "note_hash": "0c6fe54a3dcbc18d3cc7b3cc001868257b744fd93554ecf356b12b1cd03bdada",
       "path": "docs/NEWTON_LAW_DERIVED_NOTE.md",
       "runner_path": "scripts/newton_law_potential_kernel_scope_check.py",
       "title": "Newton Potential-Kernel Algebra Packet on Z^3"
@@ -128248,7 +128254,6 @@
     "neutrino_majorana_retained_lane_packet_2026-04-16_note_2026-05-17",
     "neutrino_mass_reduction_to_dirac_note_2026-05-17",
     "newton_derivation_note_2026-05-17",
-    "newton_law_derived_note",
     "newton_persistent_pattern_control_note_2026-04-11",
     "next_chunk_recommendation",
     "nn_lattice_rescaled_c2_derivation_note_2026-05-10_note_2026-05-17",
@@ -128701,10 +128706,10 @@
       "open_gate": 212,
       "positive_theorem": 663
     },
-    "edge_count": 14446,
+    "edge_count": 14447,
     "leaf_count": 1334,
     "node_count": 3928,
-    "root_count": 1114,
+    "root_count": 1113,
     "runners_with_path": 3545
   }
 }

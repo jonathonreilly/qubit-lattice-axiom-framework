@@ -3,7 +3,7 @@
     "bounded_theorem": 2044,
     "decoration": 18,
     "meta": 357,
-    "no_go": 461,
+    "no_go": 439,
     "open_gate": 201,
     "positive_theorem": 675
   },
@@ -33,9 +33,9 @@
   ],
   "cycles_detected": 10,
   "effective_status_counts": {
-    "audit_in_progress": 2,
-    "audited_conditional": 22,
-    "audited_failed": 24,
+    "audit_in_progress": 1,
+    "audited_conditional": 21,
+    "audited_failed": 2,
     "audited_numerical_match": 5,
     "audited_renaming": 14,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
@@ -47,10 +47,10 @@
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
     "meta": 350,
     "open_gate": 2,
-    "retained": 73,
+    "retained": 74,
     "retained_bounded": 301,
     "retained_pending_chain": 1,
-    "unaudited": 2948
+    "unaudited": 2949
   },
   "retained_pending_chain_count": 1,
   "retained_pending_chain_examples": [

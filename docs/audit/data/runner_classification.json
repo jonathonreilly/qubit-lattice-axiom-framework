@@ -3360,18 +3360,6 @@
       "dominant_class": "B",
       "runner": "scripts/causal_propagating_field_live_reaudit_bridge_2026_06_18.py"
     },
-    "causal_propagating_field_note": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 4
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "runner": "scripts/causal_propagating_field.py"
-    },
     "causal_source_placement_robustness_note": {
       "assert_count": 0,
       "counts": {
@@ -7068,18 +7056,6 @@
       "dominant_class": "C",
       "runner": "scripts/frontier_distance_law_definitive.py"
     },
-    "distance_law_note": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "runner": "scripts/distance_law_wide_continuum.py"
-    },
     "distance_law_portability_note": {
       "assert_count": 6,
       "counts": {
@@ -7127,18 +7103,6 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/frontier_dm_abcc_assumptions_audit.py"
-    },
-    "dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 17,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "runner": "scripts/frontier_dm_abcc_basin_enumeration_completeness.py"
     },
     "dm_abcc_basin_finite_search_support_note_2026-04-30": {
       "assert_count": 1,
@@ -12455,18 +12419,6 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/frontier_fractional_instanton_dilute_gas_condensate_external_narrow.py"
-    },
-    "framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 2,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "runner": "scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py"
     },
     "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30": {
       "assert_count": 1,
@@ -18239,18 +18191,6 @@
       "decoration_candidate": false,
       "dominant_class": "C",
       "runner": "scripts/kcpt_orbit_count_is_partition_not_weight_runner.py"
-    },
-    "kernel_vs_gravity_note": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "runner": "scripts/complex_action_kernel_vs_gravity.py"
     },
     "key_terminology": {
       "assert_count": 0,
@@ -24856,7 +24796,7 @@
       "assert_count": 0,
       "counts": {
         "A": 4,
-        "B": 2,
+        "B": 3,
         "C": 0,
         "D": 0
       },
@@ -28043,30 +27983,6 @@
       "decoration_candidate": false,
       "dominant_class": "D",
       "runner": "scripts/audit_companion_poisson_self_gravity_zero_coupling_exact_reduction_narrow_2026_05_17.py"
-    },
-    "portable_card_extension_note": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "runner": "scripts/PORTABLE_CARD_EXTENSION_COMPARE.py"
-    },
-    "portable_package_extension_note": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "runner": "scripts/PORTABLE_PACKAGE_EXTENSION_COMPARE.py"
     },
     "portable_package_hierarchy_classifier_note": {
       "assert_count": 0,
@@ -33096,18 +33012,6 @@
       "dominant_class": "A",
       "runner": "scripts/frontier_semigroup_closure_quadratic_condition_2026_07_02.py"
     },
-    "session_summary_2026-04-01_topology": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "runner": "scripts/topology_families.py"
-    },
     "session_synthesis_2026-04-10_graph_axioms": {
       "assert_count": 0,
       "counts": {
@@ -33143,18 +33047,6 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/SEVENTH_FAMILY_DIAGONAL_SWEEP.py"
-    },
-    "shapiro_complex_interaction_note": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "runner": "scripts/shapiro_complex_interaction.py"
     },
     "shapiro_delay_note": {
       "assert_count": 0,
@@ -33192,18 +33084,6 @@
       "dominant_class": null,
       "runner": "scripts/shapiro_five_family_portability.py"
     },
-    "shapiro_five_family_portability_note": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "runner": "scripts/shapiro_five_family_portability.py"
-    },
     "shapiro_qa_retest_note": {
       "assert_count": 0,
       "counts": {
@@ -33215,18 +33095,6 @@
       "decoration_candidate": true,
       "dominant_class": "B",
       "runner": "scripts/shapiro_qa_retest_boundary.py"
-    },
-    "shapiro_scaling_direct_replay_note": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 8
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
-      "runner": "scripts/shapiro_scaling_direct_replay.py"
     },
     "shapiro_static_discriminator_note": {
       "assert_count": 0,
@@ -42777,36 +42645,6 @@
       "dominant_class": "B",
       "exists": true
     },
-    "scripts/PORTABLE_CARD_EXTENSION_COMPARE.py": {
-      "assert_count": 1,
-      "claims": [
-        "portable_card_extension_note"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true
-    },
-    "scripts/PORTABLE_PACKAGE_EXTENSION_COMPARE.py": {
-      "assert_count": 0,
-      "claims": [
-        "portable_package_extension_note"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true
-    },
     "scripts/SECOND_GROWN_FAMILY_COMPLEX.py": {
       "assert_count": 2,
       "claims": [
@@ -47559,8 +47397,7 @@
     "scripts/causal_propagating_field.py": {
       "assert_count": 0,
       "claims": [
-        "causal_propagating_field_live_packet_note_2026-06-05",
-        "causal_propagating_field_note"
+        "causal_propagating_field_live_packet_note_2026-06-05"
       ],
       "counts": {
         "A": 0,
@@ -50064,21 +49901,6 @@
       "dominant_class": null,
       "exists": true
     },
-    "scripts/complex_action_kernel_vs_gravity.py": {
-      "assert_count": 1,
-      "claims": [
-        "kernel_vs_gravity_note"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "exists": true
-    },
     "scripts/composite_mass_additivity_binding_defect_2026_07_08.py": {
       "assert_count": 1,
       "claims": [
@@ -50505,21 +50327,6 @@
       "assert_count": 0,
       "claims": [
         "distance_law_3d_64_closure_note_2026-04-11"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true
-    },
-    "scripts/distance_law_wide_continuum.py": {
-      "assert_count": 0,
-      "claims": [
-        "distance_law_note"
       ],
       "counts": {
         "A": 0,
@@ -56841,21 +56648,6 @@
       "dominant_class": "C",
       "exists": true
     },
-    "scripts/frontier_dm_abcc_basin_enumeration_completeness.py": {
-      "assert_count": 1,
-      "claims": [
-        "dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 17,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true
-    },
     "scripts/frontier_dm_abcc_basin_independent_finite_scan.py": {
       "assert_count": 1,
       "claims": [
@@ -61350,7 +61142,6 @@
     "scripts/frontier_framework_bare_alpha_3_alpha_em_dimension_fixed_ratio.py": {
       "assert_count": 1,
       "claims": [
-        "framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25",
         "framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30"
       ],
       "counts": {
@@ -88032,7 +87823,7 @@
       ],
       "counts": {
         "A": 4,
-        "B": 2,
+        "B": 3,
         "C": 0,
         "D": 0
       },
@@ -90252,21 +90043,6 @@
       "dominant_class": "B",
       "exists": true
     },
-    "scripts/shapiro_complex_interaction.py": {
-      "assert_count": 0,
-      "claims": [
-        "shapiro_complex_interaction_note"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true
-    },
     "scripts/shapiro_family_portability.py": {
       "assert_count": 0,
       "claims": [
@@ -90285,8 +90061,7 @@
     "scripts/shapiro_five_family_portability.py": {
       "assert_count": 0,
       "claims": [
-        "shapiro_five_family_portability_corrected_boundary_note_2026-06-06",
-        "shapiro_five_family_portability_note"
+        "shapiro_five_family_portability_corrected_boundary_note_2026-06-06"
       ],
       "counts": {
         "A": 0,
@@ -90326,21 +90101,6 @@
       },
       "decoration_candidate": true,
       "dominant_class": "B",
-      "exists": true
-    },
-    "scripts/shapiro_scaling_direct_replay.py": {
-      "assert_count": 0,
-      "claims": [
-        "shapiro_scaling_direct_replay_note"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 8
-      },
-      "decoration_candidate": false,
-      "dominant_class": "D",
       "exists": true
     },
     "scripts/shapiro_static_discriminator.py": {
@@ -92489,21 +92249,6 @@
       "dominant_class": "A",
       "exists": true
     },
-    "scripts/topology_families.py": {
-      "assert_count": 0,
-      "claims": [
-        "session_summary_2026-04-01_topology"
-      ],
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true
-    },
     "scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py": {
       "assert_count": 1,
       "claims": [
@@ -93596,16 +93341,16 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 721,
+    "decoration_candidates": 720,
     "dominant_class_distribution": {
       "A": 517,
-      "B": 663,
-      "C": 1318,
-      "D": 454,
-      "none": 458
+      "B": 662,
+      "C": 1317,
+      "D": 453,
+      "none": 453
     },
-    "runners_classified": 3410,
-    "runners_with_C": 1796,
-    "runners_with_D": 1097
+    "runners_classified": 3402,
+    "runners_with_C": 1795,
+    "runners_with_D": 1096
   }
 }

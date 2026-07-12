@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 674,
+    "critical": 673,
     "high": 353,
     "leaf": 1172,
     "medium": 775
@@ -2885,30 +2885,6 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05",
-      "claim_scope": "For the supplied 2*pi/3 proper cubic rotation about the (1,1,1) body diagonal, each nonidentity C3 element has real normal-plane determinant det(I-g)=3 and the defined inverse-normal-determinant group average is 2/9.",
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 22,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 19.96,
-      "note_path": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py",
-      "transitive_descendants": 497
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "koide_q_two_thirds_z3_character_norm_split_recasting_theorem_note_2026-05-10",
@@ -3353,6 +3329,32 @@
       "ready": true,
       "runner_path": "scripts/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.py",
       "transitive_descendants": 451
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "s3_cap_uniqueness_note",
+        "pl_topology_infrastructure_textbook_import_note_2026-05-17",
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+      ],
+      "direct_in_degree": 9,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 13.317,
+      "note_path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
+      "transitive_descendants": 450
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -4470,22 +4472,24 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audited_conditional",
+      "audit_status": "unaudited",
       "blocker": null,
       "claim_id": "newton_law_derived_note",
-      "claim_scope": "Algebraic differentiation of the supplied radial kernel G(r)=1/(4 pi r) and source-linear potential phi(r)=M G(r), without any physical force-law claim.",
+      "claim_scope": null,
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "judicial_review",
+      "claim_type_provenance": "author_hint",
       "criticality": "critical",
       "criticality_rank": 3,
-      "cross_confirmation_status": "third_confirmed_second",
-      "deps": [],
+      "cross_confirmation_status": null,
+      "deps": [
+        "lattice_greens_function_maradudin_textbook_import_note_2026-05-18"
+      ],
       "direct_in_degree": 15,
-      "effective_status": "audited_conditional",
+      "effective_status": "unaudited",
       "helper_runner_paths": [],
       "load_bearing_score": 13.609,
       "note_path": "docs/NEWTON_LAW_DERIVED_NOTE.md",
-      "queue_reason": "non_terminal_conditional",
+      "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/newton_law_potential_kernel_scope_check.py",
       "transitive_descendants": 68
@@ -14975,32 +14979,6 @@
       "ready": false,
       "runner_path": "scripts/frontier_koide_z3_qubit_radian_bridge_no_go.py",
       "transitive_descendants": 452
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "koide_aps_block_by_block_forcing_note_2026-04-21",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "s3_cap_uniqueness_note",
-        "pl_topology_infrastructure_textbook_import_note_2026-05-17",
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 9,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 13.317,
-      "note_path": "docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_koide_aps_block_by_block_forcing.py",
-      "transitive_descendants": 450
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -53927,6 +53905,30 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "acphilambda_ambient_equivariant_heat_trace_face_2026-07-02",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/acphilambda_ambient_equivariant_heat_trace_face_2026_07_02.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "acphilambda_hw_complementation_equivariance_support_note_2026-06-09",
       "claim_scope": null,
       "claim_type": "open_gate",
@@ -65289,30 +65291,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_accessible_prediction.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "acphilambda_ambient_equivariant_heat_trace_face_2026-07-02",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_AMBIENT_EQUIVARIANT_HEAT_TRACE_FACE_2026-07-02.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/acphilambda_ambient_equivariant_heat_trace_face_2026_07_02.py",
       "transitive_descendants": 0
     },
     {
@@ -84405,6 +84383,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 619,
-  "total_pending": 2974
+  "ready_count": 620,
+  "total_pending": 2973
 }

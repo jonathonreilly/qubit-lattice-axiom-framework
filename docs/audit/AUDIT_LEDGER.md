@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 387 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2731 |
+| unaudited | 2730 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 70 |
+| ~~audited_conditional~~ | 71 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 503 |
-| `audited_conditional` | 70 |
+| `audited_conditional` | 71 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3081 |
+| `unaudited` | 3080 |
 
 | claim_type | count |
 |---|---:|
@@ -666,6 +666,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dirac_v4_convergence_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `distance_law_3d_64_closure_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -2975,6 +2976,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The included runner source genuinely grows the stated DAGs, propagates the plane-wave amplitudes, measures phase slopes, filters clean modes, and fits the reported models rather than printing fixed constants. The note's narrowed conclusion tracks the runner output while explicitly withholding the stronger same-dependent-variable KG-elimination inference.
 - **rationale:** The load-bearing claim is a bounded computational result from the provided runner, and the code performs the numerical construction from its stated lattice/propagation rules without importing another note or hard-coding the contested fit outcomes. The note correctly repairs the runner's misleading stdout phrase “TIE BROKEN” by narrowing the scientific conclusion to an apples-to-apples Schrödinger/Linear ω-space tie and an incomparable linearized-KG ω²-space result. The lensing and eikonal implications are explicitly split out as open follow-ups and are outside the audited claim scope.
 - **auditor confidence:** high
+
+### `distance_law_3d_64_closure_note_2026-04-11`
+
+- **Note:** [`DISTANCE_LAW_3D_64_CLOSURE_NOTE_2026-04-11.md`](../../docs/DISTANCE_LAW_3D_64_CLOSURE_NOTE_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** A conditional finite-grid computation on the specified 31^3–64^3 Dirichlet Poisson, valley-linear path-sum setup, including its fitted exponent and source-mass linearity; not continuum, architecture-independent, observable-bridge, or two-body Newton closure.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00226-distance_law_3d_64_closure_n`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The computed finite-grid exponents and 1/N extrapolation support a near-Newton 1/r^2 trend on this configured path-sum surface.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the reported finite-grid values, but the restricted packet does not derive the Coulomb/Poisson field, valley-linear action, deflection-to-force observable bridge, Dirichlet boundary choice, or 1/N extrapolation law from accepted premises. Thus only the configured-model implication closes.
+- **rationale:** The source code solves the lattice Poisson problem, computes phase differences, fits the finite-grid exponents, and reproduces the reported largest-grid exponent, extrapolation, and approximately 0.1% mass-linearity spread without hard-coding those outputs. However, it supplies the Coulomb source field, valley-linear action, boundary condition, and extrapolation ansatz rather than deriving them from the framework premises. The result is therefore valid as a bounded configured-model numerical continuation, but not as an unconditional physical Newton-law derivation.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1 contains OPEN and UNTESTED routes: second_boundary, derive_action_source, static_control, two_body_wilson, and limit_law.
 
 ### `distance_law_definitive_note`
 

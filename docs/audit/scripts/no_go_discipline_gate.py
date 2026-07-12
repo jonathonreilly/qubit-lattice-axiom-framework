@@ -266,7 +266,8 @@ NEGATIVE_COVERAGE_VERB_RE = re.compile(
 )
 AUTHORITY_PAYLOAD_RE = re.compile(
     r"\b(?:axioms?|primitives?|postulates?|premises?|premise\s+set|"
-    r"framework|admissibility|baseline|foundations?|"
+    r"framework|admissibility|"
+    r"baseline\s+(?:structure|postulates?|premises?|axioms?|package|rules?)|"
     r"foundational\s+package|minimal\s+axioms|"
     r"retained\s+(?:axioms?|primitives?|framework|structure|inputs?|"
     r"premises?|postulates?|sector|authority|routes?|surface)|"
@@ -276,7 +277,7 @@ AUTHORITY_PAYLOAD_RE = re.compile(
     r"(?:qubit|lattice|admissibility|record)(?:\s*,\s*"
     r"(?:qubit|lattice|admissibility|record))*\s+and\s+"
     r"(?:qubit|lattice|admissibility|record)|"
-    r"qubit|in\s+principle)\b"
+    r"in\s+principle)\b"
     r"|\b(?:from|under|within|using|given)\s+(?:the\s+|any\s+|all\s+|"
     r"every\s+|its\s+|these\s+|those\s+)?(?:[\w-]+\s+){0,2}"
     r"(?:postulates?|premises?|axioms?|primitives?|structure|baseline|"

@@ -20,5 +20,7 @@ updated by the integration lane: its old exact-one-loop/sub-percent-support
 narrative is contradicted by the repaired covariance theorem. This branch does
 not edit that authority surface.
 
-Exact next action: restore the validated generated surfaces from `origin/main`,
-commit the coherent science block, push it, and open one review PR.
+Review PR
+[#5235](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5235)
+is open. Exact next action: independent audit of the bounded theorem and its
+claim-state firewall; do not promote the comparator-only numerical match.

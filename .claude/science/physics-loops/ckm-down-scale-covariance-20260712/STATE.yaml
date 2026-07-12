@@ -25,8 +25,7 @@ files_touched:
   - .claude/science/physics-loops/ckm-down-scale-covariance-20260712/
 open_imports: []
 open_parent_obligations:
-  - physical_down_mass_operator_map
-  - physical_ckm_normalized_determinant_readout
+  - physical_down_mass_to_ckm_composite_bridge
 no_go_routes:
   - casimir_identity_only
   - perturbative_qcd_exponent
@@ -36,11 +35,11 @@ trace_gate: direct_blocker_closure_partially_closes
 review_disposition: pass
 pipeline_status: pass_16_of_16
 strict_audit_lint_status: pass_zero_errors
-generated_audit_surfaces: restore_from_origin_main_before_commit
+generated_audit_surfaces: excluded_after_validation
 remote_branch: physics-loop/ckm-down-scale-closure-block01-20260712
-pr_status: pending
-pr_url: null
+pr_status: open_for_independent_review
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5235
 lock_path: /private/tmp/cl3-ckm-scale-physics-loop.lock
 lock_note: default path hardcodes unavailable user; authorized private-tmp fallback acquired
-next_exact_action: validate_pipeline_restore_authority_outputs_commit_push_open_pr
+next_exact_action: independent_audit_of_bounded_theorem_and_claim_firewall
 stop_condition: one_review_clean_pr_opened_or_review_blocks_with_honest_handoff

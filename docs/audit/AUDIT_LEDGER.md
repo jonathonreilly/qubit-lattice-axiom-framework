@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 421 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2614 |
-| audit_in_progress | 30 |
+| unaudited | 2613 |
+| audit_in_progress | 31 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -46,14 +46,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 30 |
+| `audit_in_progress` | 31 |
 | `audited_clean` | 562 |
 | `audited_conditional` | 104 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2964 |
+| `unaudited` | 2963 |
 
 | claim_type | count |
 |---|---:|
@@ -138,6 +138,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `planck_target3_clifford_phase_bridge_theorem_note_2026-04-25` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `poisson_self_gravity_mechanism_note` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |

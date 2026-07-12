@@ -3710,6 +3710,47 @@ class ComputeReauditCandidatesTest(unittest.TestCase):
 
 
 class NoGoDisciplineGateTest(unittest.TestCase):
+    def setUp(self):
+        # The trigger-semantics tests in this class were written for the
+        # always-forensic regime; under two-tier assurance those semantics
+        # hold verbatim in the forensic tier, so the class runs with
+        # AUDIT_FORENSIC_MODE=1. Development-tier scoping is asserted
+        # explicitly in test_two_tier_source_gate_scoping.
+        self._env = mock.patch.dict(
+            os.environ, {"AUDIT_FORENSIC_MODE": "1"}
+        )
+        self._env.start()
+        self.addCleanup(self._env.stop)
+
+    def test_two_tier_source_gate_scoping(self):
+        m = _import("no_go_discipline_gate")
+        wall_body = "No selector can produce the required carrier."
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}):
+            # Development tier: wall language on a bounded/positive row does
+            # not mandate the heavyweight packet ...
+            self.assertFalse(
+                m.source_requires_no_go_discipline(
+                    "docs/BOUNDED_ROW.md", wall_body, "bounded_theorem"
+                )
+            )
+            # ... while no_go rows and no-go-named files stay forensic.
+            self.assertTrue(
+                m.source_requires_no_go_discipline(
+                    "docs/BOUNDED_ROW.md", wall_body, "no_go"
+                )
+            )
+            self.assertTrue(
+                m.source_requires_no_go_discipline(
+                    "docs/SOME_NO_GO_NOTE.md", wall_body, "bounded_theorem"
+                )
+            )
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
+            self.assertTrue(
+                m.source_requires_no_go_discipline(
+                    "docs/BOUNDED_ROW.md", wall_body, "bounded_theorem"
+                )
+            )
+
     @staticmethod
     def _manifest() -> dict:
         return {

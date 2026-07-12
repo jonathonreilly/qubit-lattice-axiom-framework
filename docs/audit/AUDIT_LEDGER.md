@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 89 |
+| **retained** | 90 |
 | **retained_no_go** | 29 |
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 7 |
-| unaudited | 2797 |
+| unaudited | 2796 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 467 |
+| `audited_clean` | 468 |
 | `audited_conditional` | 45 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3147 |
+| `unaudited` | 3146 |
 
 | claim_type | count |
 |---|---:|
@@ -159,6 +159,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `angular_kernel_orbit_class_underdetermination_narrow_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `architecture_portability_live_reaudit_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `architecture_portability_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `area_law_majorana_car_fock_equivalence_narrow_theorem_note_2026-05-09` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `asymmetry_persistence_born_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | C | - |
 | `asymmetry_persistence_collapse_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | D | - |
 | `asymmetry_persistence_joint_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1134,6 +1135,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Within the stated finite protocol, the runner constructs the lattices, Poisson solves, Hamiltonians, evolutions, free controls, fits, and Sorkin I_3 checks rather than printing hard-coded target values. The conclusion closes only for the bounded sweep described in the note.
 - **rationale:** The runner source genuinely computes the load-bearing numerical checks from the specified finite lattice systems and its cached stdout matches the source note to rounding. The note's own boundary correctly excludes standalone Newton closure, Wilson Born-rule closure, random-geometric distance-law comparability, and large-volume/asymptotic claims. Residual risk is confined to the stated modeling choices and finite-size protocol, not to a missing computation inside the audited scope.
 - **auditor confidence:** medium
+
+### `area_law_majorana_car_fock_equivalence_narrow_theorem_note_2026-05-09`
+
+- **Note:** [`AREA_LAW_MAJORANA_CAR_FOCK_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-09.md`](../../docs/AREA_LAW_MAJORANA_CAR_FOCK_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-09.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Exact finite-dimensional theorem that four Hermitian Cl_4 generators produce two CAR annihilators, that the resulting irreducible four-dimensional representation is unitarily equivalent to two-mode Fock space up to phase, and that dimension four alone does not supply the Clifford/CAR operator structure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00369-area_law_majorana_car_fock_e`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The Clifford relations expand directly to the CAR identities, while Cl_4(C) is M_4(C) with a unique four-dimensional irreducible module, yielding the unitary Fock intertwiner up to phase.  _(class `A`)_
+- **chain closes:** True — T1 follows by direct anticommutator expansion, T2 follows from the standard central-simple-algebra classification Cl_4(C) isomorphic to M_4(C) and Schur normalization of the intertwiner, and T3 is established by an explicit commuting-Pauli counterexample. No physical carrier or framework identification is required.
+- **rationale:** The source proves the symbolic CAR identities exactly and invokes the correct representation-theoretic classification for the Fock equivalence; the full-algebra hypothesis supplies irreducibility rather than being inferred from Hilbert-space dimension. The runner genuinely performs symbolic reductions, matrix-algebra rank tests, intertwiner/nullity checks, inverse-map checks, and the rank-alone counterexample, with PASS=24 and FAIL=0. Its randomly conjugated representation is illustrative rather than a proof of the general classification, but the analytic Cl_4(C) isomorphic to M_4(C) argument closes that step. The verdict does not extend to identifying K with a horizon block or deriving any area-law or Bekenstein-Hawking coefficient.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `asymmetry_persistence_born_note`
 

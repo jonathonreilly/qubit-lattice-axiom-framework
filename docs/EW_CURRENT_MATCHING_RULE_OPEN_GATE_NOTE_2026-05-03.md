@@ -17,10 +17,11 @@ not selector derivations.
   supplies the exact `SU(N_c)` representation-dimension fraction
   `F_adj=(N_c^2-1)/N_c^2`. It does not turn that dimension fraction into a
   correlator contribution or physical readout weight.
-- [YT EW M-residual note](YT_EW_M_RESIDUAL_NOTE_2026-05-02.md) supplies the
-  narrow common-CMT-scaling statement used below: on its declared two-link
-  channel model, singlet and adjoint pieces acquire the same nonzero `u_0^2`
-  factor.
+- [YT EW M-residual note](YT_EW_M_RESIDUAL_NOTE_2026-05-02.md) proves the
+  narrow scalar-map identity used below: under the explicitly supplied
+  propagator premise `G_prime = a G`, singlet and adjoint pieces acquire the
+  same nonzero `|a|^2` factor. It does not derive this propagator map from
+  link-level CMT factorization.
 
 This note has two explicit supplied premises:
 
@@ -93,24 +94,26 @@ dimensions. At `N_c=3`, a color matrix proportional to the identity has zero
 adjoint contribution, while `diag(1,-1,0)` has zero singlet contribution.
 The channel-weight map is therefore kept as a separate supplied premise here.
 
-## Common CMT Scaling
+## Common Propagator Scaling
 
-On the cited declared two-link model, take a common nonzero factor
+On the cited scalar-propagator surface, take a common nonzero real factor
 
 ```text
-C(U)=u_0^2 C(V),
-S(U)=u_0^2 S(V),
-T(U)=u_0^2 T(V).
+C(G_prime)=u_0^2 C(G),
+S(G_prime)=u_0^2 S(G),
+T(G_prime)=u_0^2 T(G).
 ```
 
 The factor cancels from equation (1):
 
 ```text
-T(U)/(C(U)+kappa_EW S(U))
-  = T(V)/(C(V)+kappa_EW S(V)).
+T(G_prime)/(C(G_prime)+kappa_EW S(G_prime))
+  = T(G)/(C(G)+kappa_EW S(G)).
 ```
 
 No `kappa_EW` selection is claimed from this cancellation.
+The displayed map is a supplied propagator-level premise, not a consequence
+derived from `U -> u_0 V`.
 
 ## OZI-Scaling Boundary
 
@@ -179,3 +182,5 @@ counterexamples, exhibits, dependency links, and downstream wording guards.
 - **2026-07-09:** exposed `CHANNEL-WEIGHT` as a supplied premise, excluded the
   pole, restricted the asymptotic, and removed the untested no-go route
   inventory. Independent audit owns the verdict and effective status.
+- **2026-07-11:** narrowed the common-scaling dependency to the explicit
+  propagator-level scalar premise and removed any link-level CMT implication.

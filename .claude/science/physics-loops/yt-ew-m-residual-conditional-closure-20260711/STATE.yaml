@@ -1,0 +1,34 @@
+slug: yt-ew-m-residual-conditional-closure-20260711
+mode: run
+started_at: 2026-07-11
+target_status: best-honest-status
+current_cycle: 1
+current_block: scalar-propagator-scope-closure
+current_route: narrow-to-common-propagator-rescaling-no-go
+hard_residual: "derive the map on G induced by U -> u_0 V"
+A_min:
+  - SU(N_c) Fierz channel definitions
+  - explicit propagator-level map G_prime = a G
+forbidden_imports:
+  - "the unsupported implication U -> u_0 V implies G_full = u_0 G_V"
+  - fitted selectors
+  - observed target values
+actual_current_surface_status: no-go
+conditional_surface_status: null
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/YT_EW_M_RESIDUAL_NOTE_2026-05-02.md
+  - docs/EW_CURRENT_MATCHING_RULE_OPEN_GATE_NOTE_2026-05-03.md
+  - scripts/yt_ew_m_residual_channel_check.py
+  - scripts/frontier_ew_current_matching_rule_no_go.py
+  - outputs/yt_ew_m_residual_channel_check_2026-05-02.txt
+  - docs/audit/data/yt_ew_m_residual_reaudit_queue_2026-07-11.json
+open_imports: []
+open_physics_gates:
+  - "explicit lattice Dirac/EW-current derivation of the induced map on G"
+review_disposition: pass
+audit_required_before_effective_retained: true
+proposal_allowed: false
+next_exact_action: "Submit the narrowed same-note claim to the independent audit worker through the verified live dispatcher target."
+stop_condition: "achieved: narrowed claim and runner pass local review; independent audit remains external"

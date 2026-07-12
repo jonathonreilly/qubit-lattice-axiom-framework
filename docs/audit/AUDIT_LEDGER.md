@@ -22,7 +22,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 301 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2948 |
+| unaudited | 2947 |
 | audit_in_progress | 1 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
@@ -34,6 +34,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 8 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
+| `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
 | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | 1 |
 
@@ -42,16 +43,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 1 |
 | `audited_clean` | 379 |
 | `audited_conditional` | 21 |
-| `audited_decoration` | 15 |
+| `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3298 |
+| `unaudited` | 3297 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2045 |
-| `decoration` | 18 |
+| `bounded_theorem` | 2044 |
+| `decoration` | 19 |
 | `meta` | 357 |
 | `no_go` | 439 |
 | `open_gate` | 201 |
@@ -526,6 +527,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lhcm_matter_assignment_from_su3_representation_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.6 | A | `graph_first_su3_integration_note` |
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
+| `newton_law_derived_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | cross_family | codex-gpt-5.6 | A | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `source_resolved_geometry_rule_repair_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `structured_mirror_bornsafe_scan_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -3989,6 +3991,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The cited graph-first SU3 integration note already supplies the selected-axis residual swap, the 3 plus 1 base split, and the doubled 6 plus 2 abelian eigenvalue surface. The present note only isolates that finite-dimensional algebraic consequence with the stated phenomenological exclusions.
 - **rationale:** The runner genuinely constructs the residual swap on the eight cube vertices for all three selected axes, forms the projectors, and checks ranks, trace, Hermiticity, and eigenvalue multiplicities. The dependency checks are ledger/status checks rather than physics derivations, while the load-bearing eigenvalue calculation is algebraic over the retained graph-first SU3 integration parent. Because the same abelian eigenvalue surface is already explicitly contained in that parent and this note deliberately narrows scope rather than adding a new theorem, the appropriate conservative verdict is decoration, not a new bounded theorem.
 - **decoration parent:** `graph_first_su3_integration_note`
+- **auditor confidence:** high
+
+### `newton_law_derived_note`
+
+- **Note:** [`NEWTON_LAW_DERIVED_NOTE.md`](../../docs/NEWTON_LAW_DERIVED_NOTE.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Algebraic differentiation of the continuum-leading radial kernel supplied by the retained-bounded Z^3 lattice Green-kernel parent, with no physical force-law conclusion.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00221-newton_law_derived_note`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Differentiating phi(r) = M/(4 pi r) gives d phi/dr = -M/(4 pi r^2), hence |grad phi| = M/(4 pi r^2).  _(class `A`)_
+- **chain closes:** False — The calculus is correct over the retained-bounded parent input, but the row adds only standard differentiation and source scaling to that single upstream claim. Under the decoration policy it is not an independent theorem closure.
+- **rationale:** The runner genuinely verifies the symbolic derivative, scope restrictions, and live retained-grade dependency edge. The result contains no first-principles computation or external comparison and reduces to one retained-bounded Green-kernel parent plus elementary calculus. It therefore qualifies as an algebraic decoration rather than a separate bounded theorem or Newton force-law derivation.
+- **decoration parent:** `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`
 - **auditor confidence:** high
 
 ### `newtonian_distance_law_confirmed`

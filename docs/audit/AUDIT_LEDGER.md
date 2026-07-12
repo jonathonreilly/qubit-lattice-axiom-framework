@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 104 |
 | **retained_no_go** | 46 |
-| **retained_bounded** | 418 |
+| **retained_bounded** | 419 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
 | unaudited | 2628 |
-| audit_in_progress | 29 |
+| audit_in_progress | 28 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 29 |
-| `audited_clean` | 555 |
+| `audit_in_progress` | 28 |
+| `audited_clean` | 556 |
 | `audited_conditional` | 100 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 46 |
@@ -134,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gravity_full_self_consistency_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -419,6 +418,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `koide_moment_ratio_uniformity_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
+| `koide_mru_weight_class_obstruction_theorem_note_2026-04-19` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `koide_order_one_circulant_diagnostic_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | C | - |
@@ -5979,6 +5979,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The stationarity equations imply rho_plus^2 = rho_perp^2, so the constraint fixes both squares to E_tot/2 and the defined ratio kappa equals 2.  _(class `A`)_
 - **chain closes:** True — The Lagrange equations, positivity, constraint substitution, and boundary divergence establish the unique maximum directly. No physical charged-lepton, SO(2)-quotient, observable-readout, or operator-side identification is part of the audited claim.
 - **rationale:** The source has been narrowed to a self-contained formal constrained-extremum theorem, and its proof is correct. The runner performs symbolic differentiation, constraint arithmetic, finite numerical checks, and a weighted-functional negative control; it imports no external value or physical premise. Although some symbolic assertions instantiate the expected solution directly, the note's analytic Lagrange and boundary argument independently closes the result.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `koide_mru_weight_class_obstruction_theorem_note_2026-04-19`
+
+- **Note:** [`KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md`](../../docs/KOIDE_MRU_WEIGHT_CLASS_OBSTRUCTION_THEOREM_NOTE_2026-04-19.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the unreduced 3x3 C3 isotypic-scalar carrier, the determinant-induced block-log-volume weights are (1,2) and select kappa=1; no physical SO(2) quotient or positive MRU derivation was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00113-koide_mru_weight_class_obstr`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Because rank(P_+)=1 and rank(P_perp)=2, det(alpha P_+ + beta P_perp)=alpha beta^2, so the unreduced determinant weights (1,2) select kappa=1 rather than MRU.  _(class `A`)_
+- **chain closes:** True — The retained cyclic-compression authority supplies the three-channel carrier, and the load-bearing rank and determinant identities follow exactly. The conditional two-slot quotient is explicitly non-load-bearing.
+- **rationale:** The runner constructs the C3 projectors, verifies their ranks, and symbolically computes det(alpha P_+ + beta P_perp)=alpha beta^2 rather than hard-coding the determinant identity. Combined with the independently derived weighted stationary ratio, this proves the narrowly scoped unreduced determinant obstruction. The result does not establish a physical scalar-lane quotient or rule out alternate carriers and observables.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

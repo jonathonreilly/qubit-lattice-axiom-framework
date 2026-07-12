@@ -27,8 +27,19 @@ labels are not simultaneously eigenvalues when off-diagonals are nonzero.
 - audit pipeline and strict lint: pass with no errors; validation seeded the
   target as `no_go / unaudited`, chose the new primary runner, and queued it;
 - generated audit/effective-status outputs: removed from the branch;
-- PR: pending.
+- PR: [#5246](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5246),
+  open, non-draft, base `main`, mergeable; GitHub audit check pending at
+  initial verification.
 
-Exact next action: commit the review-clean block, rebase onto current
-`origin/main`, rerun focused checks, push, and open one review PR. Do not merge
-or author an audit verdict.
+## Delivery
+
+- Remote branch:
+  `physics-loop/ckm-mass-basis-nni-block01-20260712`
+- Science commit after rebase: `cc8d9e11b79c`
+- Review PR: [#5246](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5246)
+- Initial PR verification: open, non-draft, `MERGEABLE`, base `main`;
+  `audit_pipeline` pending.
+
+Exact next action: after landing, the independent audit should inspect the
+same-texture condition, complex-Hermitian invariants, degeneracy boundary, and
+N1-N8 packet. Do not merge this PR or author an audit verdict in this branch.

@@ -14,7 +14,9 @@ hypothetical_axiom_status: null
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
 review_disposition: pass
-pr_status: pending
+pr_status: opened
+remote_branch: physics-loop/ckm-mass-basis-nni-block01-20260712
+review_pr: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5246
 lock:
   default_path: unavailable_wrong_local_account
   fallback_path: /tmp/cl3-lattice-framework-physics_worker_lock.json
@@ -32,5 +34,5 @@ open_imports_for_positive_route:
   - texture_to_CKM_observable_bridge
 no_go_routes:
   - normalization_alone_changes_Vub
-next_exact_action: "Commit the review-clean block, rebase onto current origin/main, rerun focused checks, push, and open one review PR."
+next_exact_action: "Independent audit should inspect the same-texture condition, complex-Hermitian invariants, degeneracy boundary, and N1-N8 packet after the review PR lands."
 stop_condition: "One coherent exact no-go science block is review-clean and delivered as an open review PR."

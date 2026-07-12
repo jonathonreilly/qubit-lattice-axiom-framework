@@ -1203,3 +1203,129 @@ request.
 All N1--N8 checks pass. The 48 invariant Clifford candidates and the open
 non-Clifford/common-Hamiltonian/clocked routes block any broader negative. No
 axiom or primitive update is required.
+
+# Pairwise-Commuting Common-Edge Hamiltonian Boundary
+
+The negative corollary is only that the supplied pairwise-overlap-commuting
+two-qubit common-edge class cannot transport its conserved common-axis
+configuration. No all-common-Hamiltonian, all-QCA, or axiom-necessity claim is
+licensed.
+
+## N1 — Alternative-route enumeration
+
+| Route | Status | Exact outcome |
+|---|---|---|
+| generic rank-two or rank-three symmetric coupling matrix | ATTEMPTED | a nonzero `2 x 2` minor appears in the three-body overlap commutator |
+| rank-one coupling with misaligned onsite field | ATTEMPTED | a row-field cross product appears in the two-body commutator sector |
+| zero coupling with arbitrary onsite field | ATTEMPTED / RETAINED | onsite-only radius-zero dynamics |
+| rank-one coupling with aligned or zero field | ATTEMPTED / RETAINED | rotated Ising phase dynamics, strict radius at most one |
+| exceptional `gt in (pi/2)Z` | ATTEMPTED / RETAINED | neighbor factors become scalar and radius collapses to zero |
+| arbitrary continuous onsite axis | ATTEMPTED / INCLUDED | uniform onsite-frame normal form includes every axis |
+| full lattice and one-defect sector | ATTEMPTED | all local axis observables are fixed; one-defect energies are position independent |
+| generic noncommuting common sum | OPEN / OUTSIDE | every symmetric `h` defines a common sum, generally with quasilocal rather than strict support |
+| special-time noncommuting cancellation | OPEN / OUTSIDE | pairwise local commutation is not necessary for stroboscopic strictness |
+| complete-layer, Margolus, clocked, larger-cell, multibody routes | OPEN / OUTSIDE | change the theorem grammar or carrier |
+
+The XY witness `h=XX+YY` is the decisive steelman: it is endpoint symmetric,
+defines a common hopping Hamiltonian, and transports, but its overlapping edge
+terms do not commute. Any broad common-Hamiltonian no-go would therefore be
+false.
+
+## N2 — Wall-independence audit
+
+| Coordinate | Status |
+|---|---|
+| supplied tensor/quasi-local qubit carrier | explicit theorem input |
+| one identical endpoint-symmetric edge density | explicit theorem input |
+| pairwise overlap commutation | explicit strong theorem input |
+| full edge commutation | derived from disjoint support plus the overlap condition |
+| order-free factorization | derived |
+| strict radius at most one | derived |
+| spatial covariance | derived only for the supplied trivial internal spatial action |
+| physical tick duration/rate | separate downstream interface; absent |
+
+No derived consequence is counted as a second independent wall.
+
+## N3 — Hidden-wall scan
+
+| Scan hit | Treatment |
+|---|---|
+| “simultaneous” | means one common Hamiltonian flow, not one matching word |
+| finite versus infinite `H` | literal finite `H_L`; infinite result is a local interaction automorphism, not a bounded global operator |
+| internal cubic action | trivial action supplied; no spin representation derived |
+| exact radius | `<=1` always; exactly one only when `sin(2gt)!=0` |
+| tensor carrier and onsite frame | supplied; uniform frame is a basis quotient only |
+| axis occupation | conserved mathematical observable, not framework Record or matter |
+| time and coefficients | supplied continuous parameters; not selected |
+| probability/continuum | absent and unclaimed |
+
+## N4 — Residual matching
+
+| Source/status | Exact residual | Use here |
+|---|---|---|
+| [minimal axioms, lines 106--117](../../../../docs/MINIMAL_AXIOMS_2026-06-29.md#L106), approved premise | no Hamiltonian, tick, or rate supplied | sole declared dependency and authority boundary |
+| [symmetric-Clifford matching classification, lines 125--137](../../../../docs/SYMMETRIC_TWO_QUBIT_CLIFFORD_CUBIC_MATCHING_QCA_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md#L125), branch-local/audit-pending | common-H route open; 12 complete-layer cancellations evade local commutation | adjacent motivation and scope guard only |
+| [transfer-log quasilocality, lines 358--379](../../../../docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md#L358), `unaudited` | free exact logarithm quasilocal, generally not finite range | warns strict support is special; no proof import |
+| [exact-H expansion obstruction, lines 217--224](../../../../docs/MICROCAUSALITY_EXACT_H_EXPANSION_ROUTE_QUANTIFIED_OBSTRUCTION_NOTE_2026-06-09.md#L217), `unaudited` | one BCH/Magnus route fails; spectral route open | prohibits all-H overclaim |
+| [finite-range-H/LR bridge, lines 287--343](../../../../docs/MICROCAUSALITY_FINITE_RANGE_H_AND_VLR_BRIDGE_THEOREM_NOTE_2026-05-09.md#L287), `unaudited` | supplied finite-range H gives an LR/quasilocal cone | distinct from strict radius |
+| [single-clock commuting-factor note, lines 151--179](../../../../docs/SINGLE_CLOCK_INDEPENDENT_COMMUTING_TRANSFER_FACTOR_N5_NO_GO_NOTE_2026-06-17.md#L151), `unaudited` | raw tensor factorization does not select physical clock | time-selection warning only |
+| [equal-time tensor locality, lines 46--56](../../../../docs/LIEB_ROBINSON_EQUAL_TIME_TENSOR_LOCALITY_NARROW_THEOREM_NOTE_2026-05-10.md#L46), `retained_bounded` | disjoint-support identities only | does not supply the interaction |
+| [kinetic-isotropy primitive, lines 64--75](../../../../docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md#L64), approved | only `c_t=c_s` graining | no dynamics or Lorentz theorem |
+
+The current theorem recomputes all load-bearing algebra and does not promote
+any audit-pending context source.
+
+## N5 — Resolution audit
+
+| Resolution | Tested? | Honest result |
+|---|---:|---|
+| endpoint-symmetric Hermitian two-qubit space | all ten real coordinates | exact Pauli expansion |
+| three-site overlap commutator | all 36 nonzero Pauli coefficients | row-field and row-row cross products |
+| rank and degeneracy strata | yes | `rank(C)<=1`, aligned field; `C=0`, `b=0`, scalar cases included |
+| finite cubic factorization | yes | all edge orders agree |
+| infinite local automorphism | analytic support proof | radius never exceeds one |
+| forward/inverse and exceptional phases | exact | same radius; zero iff `sin(2gt)=0` |
+| conserved-axis transport | exact | every `N_x` fixed; one-defect sector flat |
+| arbitrary noncommuting `h` | no | open |
+| special-time/global cancellations | no | open |
+| larger carriers/cells and physical realization | no | open |
+
+## N6 — Positive and partial closure paths
+
+| Route | Status | Closure opportunity |
+|---|---|---|
+| present rotated-Ising family | positive exact family | common simultaneous strict automorphism, though nontransporting |
+| XY/noncommuting common Hamiltonian | live | transports and tests whether any nonzero time is exactly strict |
+| generic finite-range interaction | live | quasilocal/LR continuum route without strict-QCA premise |
+| free spectral-log route | live/audit-pending | exact quasilocal generator in a supplied microscopic class |
+| complete-layer or special-time cancellation | live | can evade pairwise overlap commutation |
+| partitioned/Margolus/larger carrier | live | changes local grammar and possible transport |
+| Admissibility-to-update realization | live | could physically select one process class |
+
+## N7 — Steelman
+
+Pairwise overlap commutation is a strong sufficient condition for exact
+factorization, not a necessary condition for a common Hamiltonian or a strict
+stroboscopic point. The XY edge density is a concrete transporting common-H
+escape, while the symmetric-Clifford matching classification already shows
+complete-layer schedule cancellation
+without local commutation. Generic noncommuting finite-range flows are normally
+quasilocal rather than strictly supported, but “normally” is not a theorem
+excluding isolated exact times. The claim stays inside the commuting class.
+
+## N8 — Cross-cycle echo
+
+| Prior surface | Echo and required guard |
+|---|---|
+| symmetric-Clifford local versus layer commutation | local commutation was not necessary for 12 gates; do not generalize it now |
+| transfer-log strict-range failure | a failed strict claim gained a quasilocal positive replacement |
+| exact-H expansion obstruction | one failed reconstruction route left spectral/resummed routes open |
+| scalar CAR classification | the one-mode obstruction had a six-mode transport escape |
+| iSWAP matching fork | CZ positively closed the same grammar |
+| minimal-rank/effect/instrument blocks | underdetermination pruned selectors without proving axiom necessity |
+| kinetic-isotropy primitive | supplies graining equality only, not a process law |
+
+**No-Go Discipline verdict:** PASS for the bounded theorem and narrow
+nontransport corollary. Any broader common-Hamiltonian/QCA no-go fails N1 and
+N7. The exact positive family and live escape routes mean the campaign's
+axiom-update stop condition is not triggered.

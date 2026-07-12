@@ -1,11 +1,11 @@
 ---
 trace_class: direct_blocker_closure
-target_claim_id: symmetric_two_qubit_clifford_cubic_matching_qca_classification_bounded_theorem_note_2026-07-11
+target_claim_id: pairwise_commuting_endpoint_symmetric_edge_hamiltonian_classification_and_strict_qca_boundary_bounded_theorem_note_2026-07-12
 target_blocker_text: "A unique or severely constrained dynamics/admissibility law, including time and the probability rule."
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Classify a common-Hamiltonian simultaneous update beyond the exhaustive symmetric-Clifford matching grammar, then decide whether the microscopic QCA class is controlled enough to begin the unified continuum campaign."
+next_trace_action: "Test the noncommuting common-Hamiltonian finite-time strictness boundary, then decide whether the microscopic QCA class is controlled enough to begin the unified continuum campaign."
 ---
 
 # Trace Gate
@@ -73,3 +73,10 @@ trichotomy while half the gate class retains every ordering distinction. This
 closes the finite Clifford matching grammar but not a common Hamiltonian,
 non-Clifford gate family, physical selector, or continuum law. The next trace
 action is the common-Hamiltonian route.
+
+The first common-Hamiltonian subblock now classifies exactly the strong
+pairwise-overlap-commuting edge class. It is one rotated Ising family, gives an
+order-free strict radius-at-most-one flow, and conserves every common-axis
+onsite observable. This is a positive simultaneous dynamics but not a
+transporting carrier or a selector. The next trace action is the noncommuting
+common-Hamiltonian finite-time strictness boundary, not an axiom proposal.

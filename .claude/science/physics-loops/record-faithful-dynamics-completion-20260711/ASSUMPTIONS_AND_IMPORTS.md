@@ -144,3 +144,20 @@ or GR sector. All such interfaces remain open.
 
 No non-Clifford gate, common Hamiltonian, physical selector, Record coupling,
 probability/time/rate, QCA phase/index, or continuum structure is imported.
+
+## Pairwise-commuting common-edge Hamiltonian conditional inputs
+
+- A supplied quasi-local tensor-product qubit algebra, and literal finite
+  tensor carriers for finite-volume checks.
+- One identical endpoint-SWAP-symmetric Hermitian two-site density on every
+  undirected nearest-neighbor edge.
+- The strong condition that translates commute on every three-site overlap.
+- One uniform onsite frame as a basis quotient, with trivial internal action
+  of spatial rotations.
+- Supplied real coefficients, continuous time parameter, and time unit.
+
+The classification derives the single-axis normal form, all-edge
+factorization, strict radius bound, and conserved common-axis configuration.
+It imports no physical Hamiltonian selector, tick duration, Record coupling,
+probability, continuum map, SM sector, or GR sector. Generic noncommuting
+common Hamiltonians and special-time/global cancellations remain open.

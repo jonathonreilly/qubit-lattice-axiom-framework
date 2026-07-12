@@ -70,8 +70,12 @@
 - completed third exact subblock: all 192 endpoint-symmetric two-qubit
   Clifford automorphisms, giving the exact 48/48/96 split into 1/8/720
   schedule products;
-- next subblock: classify a common-Hamiltonian simultaneous update before
-  selecting a continuum branch.
+- completed fourth exact subblock: every endpoint-symmetric two-qubit edge
+  density with pairwise overlap commutation is one single-axis Ising family,
+  giving an order-free strict radius-at-most-one common flow with no
+  common-axis transport;
+- next subblock: test the noncommuting common-Hamiltonian finite-time strictness
+  boundary before selecting a continuum branch.
 
 ## Continuum gateway
 

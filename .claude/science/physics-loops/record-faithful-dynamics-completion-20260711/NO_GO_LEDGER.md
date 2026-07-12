@@ -20,6 +20,7 @@
 | matching-product order dependence forbids an invariant coherent qubit automorphism | falsified | CZ makes all six layers commute and gives one exact translation/proper-cubic-invariant graph-radius-one automorphism |
 | endpoint-symmetric Clifford gates select one matching-product tick | falsified exhaustively in the supplied finite gate/grammar class | 48 gates give one product, 48 give eight, and 96 give all 720 distinct products |
 | local three-site overlap commutation is necessary for complete-layer schedule independence | falsified | 36 unique-product gates commute locally, while 12 more close only after full perfect-matching assembly |
+| pairwise-overlap-commuting endpoint-symmetric common edge Hamiltonians can transport their common-axis configuration | closed negatively in the supplied two-qubit edge class | exact overlap equations force one single-axis Ising family; every local axis observable is conserved and the one-defect sector is flat |
 
 These negatives prune routes, not the full record-instrument program. The live
 escape is a separate classical record register coupled through a local
@@ -48,3 +49,8 @@ The matching-product result is not a general qubit-QCA no-go. CZ closes the
 same grammar positively, while common-Hamiltonian, clocked/Margolus,
 partial-swap, other-gate, and larger-cell routes remain live. The eight iSWAP
 products are also one cyclic time-origin conjugacy orbit, not eight QCA phases.
+
+The common-Hamiltonian row is restricted to pairwise-overlap-commuting edge
+densities. Generic noncommuting sums, special finite times, complete-layer
+cancellations, larger cells, and quasilocal/Lieb--Robinson continuum routes
+remain live. It does not trigger an axiom-update discussion.

@@ -4,7 +4,16 @@
 **Claim type:** bounded_theorem
 **Status authority:** source-note proposal only; audit verdict and
 effective status are set by the independent audit lane.
-**Primary runner:** [`scripts/frontier_ckm_down_type_scale_convention_support.py`](../scripts/frontier_ckm_down_type_scale_convention_support.py)
+**Historical runner relationship:** the 2026-05-10 version shared its parent's
+then-current runner. The 2026-07-12 parent repair replaces that runner's claim
+and output surface; the current parent runner is not a reproduction surface for
+this historical narrowing note.
+
+**Downstream hygiene (2026-07-12):** the parent now proves a bounded
+shared-transport covariance theorem and no longer treats the sub-percent
+cross-surface match as derivation evidence. The sections below record the old
+audit scope in the past tense. They do not pin current runner output or current
+science status.
 
 ## Why this note exists
 
@@ -54,9 +63,9 @@ verdict accepts as a numerical match.
 
 ## Narrow within-scope content (what the audited row does close)
 
-Inside the audited support-level scope, the runner verifies the
-following identities, each of which is independent of the open
-bridge gaps and stands on imported authorities only:
+Inside the audited support-level scope, the historical runner verified the
+following identities. This table describes the source version reviewed in
+2026-05, not the current parent runner:
 
 | Identity | Class | Status |
 |---|---|---|
@@ -66,11 +75,10 @@ bridge gaps and stands on imported authorities only:
 | `R_thresh = R_common * transport_1loop` | exact QCD identity (1-loop transport) | audited PASS (10^-10) |
 | `(R_pred / R_common) / (R_pred / R_thresh) = transport_1loop` | algebraic consequence of the previous identity | audited PASS (10^-10) |
 
-These identities all close inside the audited scope. The numerical
-match `R_pred / R_thresh - 1 = +0.20%` is also reproduced by the
-runner; it is the **comparator-relative** numerical claim that the
-audit verdict accepts as a class-G numerical match (not a first-
-principles derivation).
+The historical audit treated these identities and the reproduced numerical
+match as comparator-relative support. The 2026-07-12 parent repair supersedes
+that interpretation: it transports both theory and observation and proves that
+the relative deviation stays on the common-scale value.
 
 ## What the narrow scope does **not** close
 
@@ -83,34 +91,30 @@ one place for re-audit traceability:
   as bounded support);
 - a retained theorem forcing the threshold-local comparator as the
   unique framework-natural mass-scale convention;
-- elimination of the runner's hard-coded full-loop PDG transport
-  factor `1.14747` in favour of a transport value computed from
-  independent retained inputs;
+- elimination of the historical runner's hard-coded full-loop PDG transport
+  factor `1.14747` in favour of a covariant theory/observation comparison;
 - the down-type mass-ratio lane's bounded -> retained promotion;
 - the canonical parent note
   [`QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md`](QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md)
   records the same scale-selection boundary as a separate bounded
   theorem.
 
-## What would close the open dependencies (Path A future work)
+## 2026-07-12 parent repair and remaining work
 
-Promoting the parent row from `audited_numerical_match` to a
-retained theorem-grade derivation would require, per the audit
-verdict's repair target:
+The parent repair now supplies an exact abstract rank-`1+5` determinant lemma
+and proves that shared multiplicative transport cannot rescue the crossed
+sub-percent comparison. It does not claim the full bridge. The remaining
+positive target is:
 
 1. a retained theorem deriving the `5/6` bridge `|V_cb| = (m_s/m_b)^{5/6}`
    from framework primitives at `g = 1` (non-perturbative
    exponentiation mechanism);
-2. a retained theorem deriving the framework-natural mass-scale
-   convention (threshold-local vs common-scale) from the framework
-   action surface, **or** an RG-covariant transport theorem showing
-   the bridge survives both conventions;
-3. an updated runner that computes the transport factor from
-   independent inputs (rather than hard-coding `1.14747`) and that
-   constructs `R_common` independently of `R_thresh`.
+2. a retained typed map from that mass operator to the CKM amplitude through
+   the normalized determinant;
+3. a common or explicitly RG-covariant mass surface. A directly mixed surface
+   must carry its scale prescription inside the mass/operator map.
 
-Until at least one of (1) or (2) is supplied, the row remains a
-bounded numerical-match support note at the audited scope.
+The independent audit lane owns the repaired parent's later classification.
 
 ## Dependencies
 
@@ -125,9 +129,9 @@ bounded numerical-match support note at the audited scope.
 - [`CKM_ATLAS_AXIOM_CLOSURE_NOTE.md`](CKM_ATLAS_AXIOM_CLOSURE_NOTE.md)
   for the retained `|V_cb|_atlas = alpha_s(v) / sqrt(6)` anchor.
 
-These are imported authorities for a bounded scope-narrowing companion
-note. The row remains unaudited until the independent audit lane
-reviews this companion, its dependencies, and the runner.
+These are imported authorities for a bounded scope-narrowing companion note.
+The row remains unaudited until the independent audit lane reviews this
+companion and its dependencies.
 
 ## Boundaries
 
@@ -136,34 +140,20 @@ This companion note does **not**:
 - modify the parent note's audit-ledger row;
 - promote the parent's `audit_status` from `audited_numerical_match`;
 - re-derive the `5/6` bridge or the scale-selection theorem;
-- eliminate the hard-coded transport factor in the parent runner;
+- reproduce or pin the current parent runner's output;
 - extend the audited scope beyond what the parent already declares.
 
-## Verification
+## Verification boundary
 
-Run:
-
-```bash
-PYTHONPATH=scripts python3 scripts/frontier_ckm_down_type_scale_convention_support.py
-```
-
-Expected (unchanged from parent):
-
-```text
-PASSED: 14/14
-```
-
-The runner is the same one cited by the parent note. This narrowing
-companion does not introduce a new runner because the audited
-within-scope algebraic content is already exercised. The new content
-is the explicit scope-narrowing recording of which identities the
-audit verdict accepts as a within-scope numerical match versus which
-remain open as bridge dependencies.
+This historical narrowing note has no current paired runner. The parent runner
+now verifies a different theorem surface and must not be used to reproduce the
+old `PASSED: 14/14` transcript. The archived audit ledger preserves the old
+runner classification and verdict provenance.
 
 ```yaml
 claim_id: ckm_down_type_scale_convention_audited_scope_narrow_bounded_note_2026-05-10
 note_path: docs/CKM_DOWN_TYPE_SCALE_CONVENTION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md
-runner_path: scripts/frontier_ckm_down_type_scale_convention_support.py
+runner_path: null
 proposed_claim_type: bounded_theorem
 deps:
   - ckm_down_type_scale_convention_support_note_2026-04-22

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 36 |
-| **retained_bounded** | 386 |
+| **retained_bounded** | 387 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2732 |
+| unaudited | 2731 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 502 |
+| `audited_clean` | 503 |
 | `audited_conditional` | 70 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3082 |
+| `unaudited` | 3081 |
 
 | claim_type | count |
 |---|---:|
@@ -591,6 +591,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `unification_basin_failure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_bd_congruence_invariance_bounded_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -8880,6 +8881,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source constructs the lattice operators and diffeomorphism variation and computes the residual/amplitude data without importing or hard-coding the contested coefficient. Independent arithmetic from the displayed data confirms the monotonic normalized ratios, shrinking increments, approximately constant amplitude*k^2 spread under 15%, and the stated Richardson/geometric extrapolants.
 - **rationale:** The source note is explicitly bounded to the finite runner-defined diagnostic and does not claim an analytic continuum theorem, physical normalization, irrelevant-operator identification, or all-order Ward closure. The included runner genuinely computes the finite lattice quantities from its defined operators, has no helper imports, and does not just print expected constants. The numerical claims in the table and extrapolants check out up to ordinary rounding, so the bounded finite diagnostic closes on the restricted packet.
 - **auditor confidence:** high
+
+### `universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09`
+
+- **Note:** [`UNIVERSAL_GR_QUADRATIC_MODE_GLUING_DERIVATION_NARROW_THEOREM_NOTE_2026-06-09.md`](../../docs/UNIVERSAL_GR_QUADRATIC_MODE_GLUING_DERIVATION_NARROW_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite diagonal quadratic-mode relation omega^2 = V/G was audited for the stated Lagrangian with nonzero G; comparator signs, framework-to-GR identification, the Einstein-Hilbert action, continuum coefficients, and G_Newton were not audited as derived results.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00225-universal_gr_quadratic_mode_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting q(t) = exp(i omega t) into G qddot + V q = 0 gives omega^2 = V/G for G != 0.  _(class `A`)_
+- **chain closes:** True — The Euler-Lagrange equation and normal-mode substitution directly yield V-G omega^2=0 and hence omega^2=V/G when G is nonzero. No external comparator or framework-to-GR identification is needed for this conditional finite-channel theorem.
+- **rationale:** The load-bearing step is a genuine algebraic derivation from the explicitly stated quadratic Lagrangian, not a definition, renaming, tuned match, or imported comparator. The runner symbolically evaluates the mode equation and checks exact rational consequences; its hard-coded GR control coefficients are ancillary and do not carry the scoped theorem. The note consistently excludes comparator signs and physical GR identifications from the conclusion.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08`
 

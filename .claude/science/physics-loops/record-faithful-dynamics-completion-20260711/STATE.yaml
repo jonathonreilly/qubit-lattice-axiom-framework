@@ -64,9 +64,10 @@ no_go_routes:
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
 review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_ready_to_push
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_mergeable_checks_queued
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
+block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
 next_exact_action: >-
   Read and reconcile the composite-menu, Gleason-Busch, grade-additivity,
   record-frequency, and Born/scattering lanes; then classify effect selection

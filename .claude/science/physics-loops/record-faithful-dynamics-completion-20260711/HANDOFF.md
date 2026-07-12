@@ -14,6 +14,11 @@ https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 is open and mergeable against the cubic neighbor-response branch; its
 audit-lane workflow was running at the delivery checkpoint.
 
+Outcome-forgotten minimal-dilation exchange review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
+is open and mergeable against the record-observable branch; its audit-lane
+workflow was queued at the delivery checkpoint.
+
 ## Central thesis
 
 The next move is not another sector Hamiltonian or continuum fit. It is to make

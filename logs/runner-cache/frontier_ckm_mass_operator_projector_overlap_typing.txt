@@ -1,0 +1,58 @@
+===== runner cache v1 =====
+runner: scripts/frontier_ckm_mass_operator_projector_overlap_typing.py
+runner_sha256: 6b013501e6518151faa09e7dde9028849c6473658da5ede3a5037063c5c64929
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.57
+status: ok
+----- stdout -----
+CKM MASS-OPERATOR PROJECTOR-OVERLAP TYPING THEOREM
+
+1. SPECTRAL-PROJECTOR OVERLAP
+[EXACT_PASS] P_c is an exact Lagrange spectral projector
+[EXACT_PASS] P_b is idempotent
+[EXACT_PASS] P_b has trace one
+[EXACT_PASS] projector overlap is sin(theta)^2
+[EXACT_PASS] compressed overlap is |V_cb|^2 P_c
+[EXACT_PASS] compressed one-line determinant equals overlap
+
+2. PHASE AND WEAK-BASIS CONTROLS
+[EXACT_PASS] complex 2-3 control is unitary
+[EXACT_PASS] complex-phase overlap is |V_cb|^2=9/25
+[EXACT_PASS] simultaneous weak-basis rotation preserves overlap
+[EXACT_PASS] simultaneous rephasing preserves overlap
+
+3. SIX-STATE DETERMINANT AND ALIGNMENT RESIDUAL
+[EXACT_PASS] rank-(1+5) determinant is R^5
+[EXACT_PASS] normalized determinant exponent is 5/6
+[EXACT_PASS] mass ratio is invariant under common down-sector scale
+[EXACT_PASS] squared five-sixths target is (h_s/h_b)^(5/6)
+[EXACT_PASS] exact selected-orientation witness has R^(5/6)=1/32
+[EXACT_PASS] exact alignment witness has overlap R^(5/3)
+[EXACT_PASS] bridge sixth-power form is |V_cb|^6=R^5
+
+4. TWO-FAMILY COMMUTATOR FALSIFIER
+[EXACT_PASS] commutator invariant is 4t(1-t)
+[BOUNDARY_PASS] commutator readout has t<->1-t ambiguity
+
+5. UNIVERSAL DOWN-ONLY COUNTERMODEL
+[BOUNDARY_PASS] fixed H_d has unchanged trace
+[BOUNDARY_PASS] fixed H_d has unchanged determinant
+[BOUNDARY_PASS] first up orientation gives zero overlap
+[BOUNDARY_PASS] second up orientation gives 9/25 overlap
+[BOUNDARY_PASS] same down input supports distinct |V_cb| readouts
+[BOUNDARY_PASS] down-only X_R is identical in both orientations
+[BOUNDARY_PASS] down-only determinant cannot distinguish orientations
+
+6. CLAIM-BOUNDARY FIREWALLS
+[BOUNDARY_PASS] source note declares bounded_theorem
+[BOUNDARY_PASS] source note declares exact support/boundary theorem status
+[BOUNDARY_PASS] source note keeps the invariant alignment law open
+[BOUNDARY_PASS] source note narrows the down-only theorem class
+[BOUNDARY_PASS] source note forbids retained-grade proposal language
+[BOUNDARY_PASS] runner-facing theorem note contains no observed target values
+
+SUMMARY: EXACT_PASS=18 BOUNDARY_PASS=14 FAIL=0
+
+----- stderr -----
+

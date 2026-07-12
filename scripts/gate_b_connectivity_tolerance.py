@@ -37,7 +37,7 @@ SEEDS = (5, 18, 31, 44, 57, 70)
 JITTER_SWEEP = (0.0, 0.1, 0.2, 0.3, 0.4, 0.5)
 MASS_STRENGTHS = (0.75, 1.0, 1.25)
 ROOT = Path(__file__).resolve().parents[1]
-NOTE = ROOT / "docs" / "GATE_B_DYNAMICS_NOTE.md"
+NOTE = ROOT / "docs" / "GATE_B_CONNECTIVITY_TOLERANCE_NOTE.md"
 
 
 CHECK_PASS = 0
@@ -64,18 +64,18 @@ def _source_boundary_checks() -> None:
     print("Source-boundary checks")
     print("-" * 40)
     _check(
-        "note claim type is open_gate and has 2026-06-12 source-index firewall",
-        "**Claim type:** open_gate" in text
-        and "2026-06-12 audit firewall: source index, not dynamics closure" in text,
+        "note declares bounded finite-replay status and 2026-07-12 audit-scope firewall",
+        "bounded Gate B replay frozen on disk, not a dynamics theorem" in text
+        and "2026-07-12 audit scope: finite connectivity replay, not dynamics closure" in text,
     )
     _check(
-        "GB-S1b-b/GB-S2b/GB-S3b residues remain supplied row-local data",
+        "GB-S1b-b/GB-S2b/GB-S3b physical inputs remain supplied row-local premises",
         "`GB-S1b-b`" in flat
         and "`GB-S2b`" in flat
         and "`GB-S3b`" in flat
         and "physical scalar source/boundary/regulator/normalization remains supplied" in flat
         and "physical detector-window/TOWARD/`F~M` semantics remain supplied" in flat
-        and "physical selection/dynamical generation of that stencil remains supplied" in flat,
+        and "physical selection/dynamical generation of the connectivity stencil remains supplied" in flat,
     )
     _check(
         "note forbids Gate B dynamics closure and axiom/admission/status changes",

@@ -5,13 +5,17 @@
 
 ## One-line read
 
-The replay supports a narrow but useful claim:
+Within this frozen finite replay, and under the supplied Gate B harness choices
+recorded below, the replay supports a narrow bounded reading:
 
-- position noise on a fixed connectivity backbone is tolerated
-- once connectivity is recomputed from geometry, the response becomes mixed
+- on this fixed connectivity backbone, the swept position noise is tolerated
+- once connectivity is recomputed from geometry, the sampled response becomes mixed
 
-That makes connectivity structure the real bottleneck in the current Gate B
-lane, but it does **not** close Gate B.
+Read strictly inside that finite harness, connectivity structure — not position
+noise — is where the sampled response first becomes mixed. That is a
+finite-replay observation under the supplied choices, not a derived theorem that
+connectivity is intrinsically the Gate B bottleneck, and it does **not** close
+Gate B.
 
 ## Primary artifact
 
@@ -54,14 +58,19 @@ The jitter sweep on fixed connectivity is the cleanest tolerance check:
 | `0.40` | `50.0%` | `-0.000003` | `0.50` |
 | `0.50` | `75.0%` | `+0.000005` | `0.75` |
 
-## Safe interpretation
+## Safe interpretation (finite replay only)
 
-- A fixed connectivity backbone survives substantial position noise.
-- Geometry-recomputed connectivity is the first place the response becomes
-  mixed.
-- The response does not show a cliff at jitter `0.5`; it degrades gradually.
-- The local response-slope probe stays in a bounded linear-response band rather
-  than collapsing.
+Read as frozen-replay observations under the supplied harness, not as general
+theorems:
+
+- On this fixed connectivity backbone, the sampled response survives the swept
+  position noise.
+- Geometry-recomputed connectivity is where the sampled response first becomes
+  mixed in this replay.
+- The response does not show a cliff at jitter `0.5`; it degrades gradually
+  across the swept points.
+- The local response-slope probe stays in a bounded linear-response band across
+  the swept points rather than collapsing.
 
 ## What this is not
 
@@ -72,11 +81,29 @@ The jitter sweep on fixed connectivity is the cleanest tolerance check:
 
 ## Why it matters
 
-This replay makes the remaining Gate B gap sharper:
+Within this finite replay the remaining Gate B gap looks sharper:
 
-- position noise is not the main failure mode
-- connectivity construction is
+- across the swept points, position noise is not what mixes the response first
+- recomputed connectivity is
 
-So the next useful growth rule is not “more jitter tolerance” but a rule that
-produces structured connectivity without turning the graph into a hand-imposed
-lattice.
+Read as a finite-replay signpost and not a general theorem, the next growth rule
+to try is not “more jitter tolerance” but a rule that produces structured
+connectivity without turning the graph into a hand-imposed lattice.
+
+## Audit scope firewall (2026-07-12)
+
+2026-07-12 audit scope: finite connectivity replay, not dynamics closure. This
+note cites the frozen replay numbers only inside the stated finite Gate B
+harness. The physical inputs behind those numbers remain supplied Gate-B data,
+tracked here with the shared supplied-residue vocabulary of
+`GATE_B_DYNAMICS_NOTE.md`:
+
+- `GB-S1b-b`: the physical scalar source/boundary/regulator/normalization remains supplied.
+- `GB-S2b`: the physical detector-window/TOWARD/`F~M` semantics remain supplied.
+- `GB-S3b`: the physical selection/dynamical generation of the connectivity stencil remains supplied.
+
+Because those inputs are supplied row-local premises rather than cited retained
+authorities, this note does not derive a Gate B dynamics theorem, supplies no
+physical gravity/readout bridge, and introduces no new axiom, Tier-A admission,
+or audit-status change. The "connectivity is the current bottleneck" reading is a
+finite-replay observation under those supplied choices, not a general theorem.

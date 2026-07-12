@@ -19,7 +19,16 @@ blocks_done:
   - block: 2
     what: three live-guard runner re-keys
     evidence: PR #4910 MERGED 2026-07-03.
-block_current:
+blocks_4_to_11: >
+  SHIPPED 2026-07-12 as stacked PRs #5241/#5242/#5245/#5249/#5251/#5253/
+  #5254/#5255 on top of the index PR #5239: live-guard re-pin,
+  retained-status re-keys, and six lane re-key waves (all 88 REKEY files
+  minus 2 wall-verdict runners deferred to the walls block, plus 8
+  synchronization pulls the runner suites forced). Rescan at block-11
+  head: 67 hard files remain, all in named buckets (27 flips, 15 walls,
+  13 historical, 3 deliberate, 2 deferred, 7 covered by open PRs).
+  Next: content-flips block series, then walls block (see HANDOFF.md).
+block_done_3:
   block: 3
   what: >
     Fresh index. The 2026-07-03 index (2,278-row scratchpad artifact) was

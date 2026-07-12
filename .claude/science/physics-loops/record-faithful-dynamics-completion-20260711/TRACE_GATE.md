@@ -83,16 +83,18 @@ common-Hamiltonian finite-time strictness boundary, not an axiom proposal.
 
 The onsite-charge subblock closes that boundary completely: nonzero exchange
 has infinite support at every nonzero time, while zero exchange is the strict
-commuting family. The 16-mode flat involution is a fully cubic noncommuting
-strict escape, so the result constrains carrier architecture without selecting
-one. The next action is the BdG-versus-continuum decision.
+commuting family. The 16-mode flat involution is a spinorial/projective cubic
+noncommuting strict escape with an honest symmetry action on the even/quadratic
+algebra, so the result constrains carrier architecture without selecting one.
+The next action is the BdG-versus-continuum decision.
 
 The two-band BdG subblock now closes that decision. A finite-Laurent Hermitian
 `2 x 2` generator is strict at one nonzero time exactly when its two eigenvalues
 are momentum-independent, in which case it is strict for every time. The
 smallest scalar one-mode proper-cubic nearest-neighbor pairing carrier reduces
 to onsite flow, while lower-symmetry and doubled `16`-mode flat involutions are
-positive escapes. The charge-breaking Gaussian special-time seam is therefore
-closed at bounded carrier resolution without selecting physical CAR/BdG
-content. The next trace action is the same-object massive staggered continuum
-gateway, with quasilocal tails and shrinking-step convergence allowed.
+positive escapes. The separately supplied two-band Gaussian special-time route
+is therefore closed without selecting physical CAR/BdG content; literal qubit,
+multiband, and interacting routes remain open. The next trace action is the
+same-object massive staggered continuum gateway, with quasilocal tails and
+shrinking-step convergence allowed.

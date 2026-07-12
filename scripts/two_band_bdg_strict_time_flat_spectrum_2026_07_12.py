@@ -158,8 +158,25 @@ def main():
         reversal_witnesses.append(any(np.array_equal(rotation @ unit, -unit) for rotation in rotations))
     check("C03", all(reversal_witnesses),
           "a proper rotation sends each nearest-neighbor direction to its reverse")
-    check("C04", all(character ** 2 == 1 for character in (-1, 1)),
-          "every one-dimensional proper-cubic onsite character squares trivially on a pair")
+    rotation_keys = {tuple(rotation.reshape(-1)): rotation for rotation in rotations}
+    commutator_generators = []
+    for left in rotations:
+        for right in rotations:
+            commutator = left @ right @ left.T @ right.T
+            commutator_generators.append(rotation_keys[tuple(commutator.reshape(-1))])
+    commutator_subgroup = {tuple(np.eye(3, dtype=int).reshape(-1))}
+    changed = True
+    while changed:
+        changed = False
+        for current_key in tuple(commutator_subgroup):
+            current = np.asarray(current_key, dtype=int).reshape(3, 3)
+            for generator in commutator_generators:
+                product_key = tuple((current @ generator).reshape(-1))
+                if product_key not in commutator_subgroup:
+                    commutator_subgroup.add(product_key)
+                    changed = True
+    check("C04", len(commutator_subgroup) == 12 and len(rotations) // len(commutator_subgroup) == 2,
+          "the proper-cubic commutator subgroup has order 12, so every ordinary one-dimensional character squares trivially")
 
     mu, hopping = sp.symbols("mu hopping", real=True)
     kx, ky, kz = sp.symbols("kx ky kz", real=True)
@@ -285,12 +302,14 @@ def main():
             + np.sin(sample_p[axis]) * doubled_bond[2 * axis + 1]
         )
     covariance_errors = []
+    lifted_by_spatial = {}
     for spatial, induced in induced_rotations:
         pin = pin_intertwiner(gamma_bond, induced)
         if round(np.linalg.det(induced)) == 1:
             lifted = np.block([[pin, np.zeros((8, 8))], [np.zeros((8, 8)), pin]])
         else:
             lifted = np.block([[np.zeros((8, 8)), pin], [pin, np.zeros((8, 8))]])
+        lifted_by_spatial[tuple(spatial.reshape(-1))] = lifted
         covariance_errors.append(np.linalg.norm(lifted.conj().T @ lifted - np.eye(16)))
         rotated_p = spatial @ sample_p
         rotated_q = float(aa) * doubled_zero
@@ -301,7 +320,30 @@ def main():
             )
         covariance_errors.append(np.linalg.norm(lifted @ q_sample @ lifted.conj().T - rotated_q))
     check("F04", max(covariance_errors) < 2e-11,
-          "doubling the Clifford chirality restores the flat escape under all 24 proper cubic rotations")
+          "doubling the Clifford chirality supplies a unitary intertwiner for each of all 24 proper cubic rotations")
+
+    projective_errors = []
+    cocycles = {}
+    for left, _ in induced_rotations:
+        for right, _ in induced_rotations:
+            left_lift = lifted_by_spatial[tuple(left.reshape(-1))]
+            right_lift = lifted_by_spatial[tuple(right.reshape(-1))]
+            target_lift = lifted_by_spatial[tuple((left @ right).reshape(-1))]
+            product = left_lift @ right_lift
+            phase = np.trace(target_lift.conj().T @ product) / 16
+            projective_errors.append(np.linalg.norm(product - phase * target_lift))
+            projective_errors.append(abs(abs(phase) - 1))
+            cocycles[(tuple(left.reshape(-1)), tuple(right.reshape(-1)))] = phase
+    check("F05", max(projective_errors) < 2e-11,
+          "the 24 intertwiners close projectively, so conjugation is an honest action on the even/quadratic algebra")
+
+    rotation_x = np.diag((1, -1, -1))
+    rotation_y = np.diag((-1, 1, -1))
+    lift_x = lifted_by_spatial[tuple(rotation_x.reshape(-1))]
+    lift_y = lifted_by_spatial[tuple(rotation_y.reshape(-1))]
+    check("F06", np.linalg.norm(lift_x @ lift_y + lift_y @ lift_x) < 2e-11
+          and np.linalg.norm(lift_x @ lift_y - lift_y @ lift_x) > 1,
+          "commuting pi rotations anticommute on odd CAR generators, exposing the nontrivial spinorial cocycle")
 
     print(f"SUMMARY PASS={PASS} FAIL={FAIL}")
     raise SystemExit(1 if FAIL else 0)

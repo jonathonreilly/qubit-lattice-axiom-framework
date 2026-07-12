@@ -15,7 +15,7 @@ PASS M01: the essential-singularity obstruction disappears when the band square 
 PASS C01: the signed-permutation enumeration is exactly the 24-element proper cubic group
 PASS C02: the proper-cubic vector fixed space is zero-dimensional
 PASS C03: a proper rotation sends each nearest-neighbor direction to its reverse
-PASS C04: every one-dimensional proper-cubic onsite character squares trivially on a pair
+PASS C04: the proper-cubic commutator subgroup has order 12, so every ordinary one-dimensional character squares trivially
 PASS C05: nonzero cubic hopping generically makes the two-band square momentum-dependent
 PASS C06: flat spectrum in the nearest-neighbor scalar cubic normal symbol forces zero hopping
 PASS D01: the lower-symmetry Kitaev symbol (cos k)Z+(sin k)Y is an exact flat involution
@@ -28,5 +28,7 @@ PASS E03: the tail obstruction is compatible with exact one-particle unitarity
 PASS F01: seven explicit Hermitian 8x8 gammas satisfy the exact Cl(7) relations
 PASS F02: the multicomponent cubic Laurent symbol is an exact radius-one flat involution
 PASS F03: the irreducible 8-mode orientation obstruction is present on half the cubic rotations
-PASS F04: doubling the Clifford chirality restores the flat escape under all 24 proper cubic rotations
-SUMMARY PASS=31 FAIL=0
+PASS F04: doubling the Clifford chirality supplies a unitary intertwiner for each of all 24 proper cubic rotations
+PASS F05: the 24 intertwiners close projectively, so conjugation is an honest action on the even/quadratic algebra
+PASS F06: commuting pi rotations anticommute on odd CAR generators, exposing the nontrivial spinorial cocycle
+SUMMARY PASS=33 FAIL=0

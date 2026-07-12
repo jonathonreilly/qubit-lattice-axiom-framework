@@ -8,11 +8,11 @@
 
 ## Scope
 
-This note repairs one structural gap in
-[`QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md`](QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md).
-The parent completion note uses one complex `1-3` carrier per quark sector,
-`xi_u` and `xi_d`, and correctly says that the carrier values are fitted to
-imported comparator targets rather than derived from framework primitives.
+This note was motivated by one structural gap in the historical revision of
+`QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md`. That file now carries an
+exact spectrum/basis obstruction rather than a positive completion claim, so
+the name is retained here as non-load-bearing history rather than as a
+markdown dependency. The slot theorem below is self-contained.
 
 The result here is narrower and exact:
 

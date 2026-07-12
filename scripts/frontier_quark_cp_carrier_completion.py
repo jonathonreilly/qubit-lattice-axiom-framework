@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
-"""
-Bounded one-primitive CP-carrier completion of the live quark mass-ratio lane.
+"""Historical diagonal-label CP-carrier optimizer with spectrum firewall.
 
 Status:
-  bounded full CKM+CP closure extension on top of the minimal Schur-NNI solve
+  bounded numerical CKM+CP match on a diagonal-parameter ansatz
 
 Safe claim:
   The minimal Schur-NNI surface still does not close the CKM CP area; that
   no-go remains in frontier_quark_mass_ratio_full_solve.py.
 
-  But if one adds one independent complex 1-3 carrier in each quark sector,
-  on top of the Schur-generated 1-3 term and without reopening a determinant
-  phase, then there is a bounded numerical completion that simultaneously:
+  If one adds one independent complex 1-3 coordinate in each quark sector,
+  the optimizer can match the CKM/J comparators while placing two diagonal
+  input labels near observed up-sector mass-ratio comparators.
 
-    - keeps m_u/m_c and m_c/m_t on their observation comparators,
-    - matches the atlas |V_us|, |V_cb|, |V_ub|,
-    - and reproduces the atlas Jarlskog invariant.
+  The diagonal labels are not the completed matrices' singular-value mass
+  ratios.  This runner now checks that mismatch explicitly.  The exact
+  spectrum and weak-basis obstruction is verified independently by
+  frontier_quark_cp_carrier_spectrum_basis_obstruction.py.
 
-  This is explicitly bounded, not retained. The carrier coefficients xi_u and
-  xi_d are solved numerically here; they are not derived from the retained core.
+  This is historical bounded fit context, not a physical full-quark closure or
+  a derivation of xi_u and xi_d.
 """
 
 from __future__ import annotations
@@ -299,7 +299,7 @@ def part1_anchor() -> tuple[float, float]:
 
 def part2_completion(result: CompletionSolve, anchor_j: float) -> None:
     print("\n" + "=" * 72)
-    print("PART 2: Determinant-Neutral Complex 1-3 Carrier Completion")
+    print("PART 2: Historical Complex 1-3 Coordinate Fit And Spectrum Firewall")
     print("=" * 72)
 
     dev_uc = (result.r_uc / R_UC_OBS - 1.0) * 100.0
@@ -309,9 +309,9 @@ def part2_completion(result: CompletionSolve, anchor_j: float) -> None:
     xi_u_phase = math.degrees(cmath.phase(result.xi_u))
     xi_d_phase = math.degrees(cmath.phase(result.xi_d))
 
-    print("\n  Solved mass ratios:")
-    print(f"    m_u/m_c = {result.r_uc:.6e}  (obs: {R_UC_OBS:.6e}, dev: {dev_uc:+.2f}%)")
-    print(f"    m_c/m_t = {result.r_ct:.6e}  (obs: {R_CT_OBS:.6e}, dev: {dev_ct:+.2f}%)")
+    print("\n  Solved diagonal input labels (not physical singular-value ratios):")
+    print(f"    r_uc(label) = {result.r_uc:.6e}  (comparator: {R_UC_OBS:.6e}, dev: {dev_uc:+.2f}%)")
+    print(f"    r_ct(label) = {result.r_ct:.6e}  (comparator: {R_CT_OBS:.6e}, dev: {dev_ct:+.2f}%)")
     print()
     print("  Added complex carriers:")
     print(f"    xi_u = {result.xi_u.real:+.6f} {result.xi_u.imag:+.6f} i")
@@ -334,48 +334,64 @@ def part2_completion(result: CompletionSolve, anchor_j: float) -> None:
     print(f"    objective score  = {result.objective:.6f}")
     print(f"    J improvement over anchor = {result.jarlskog / anchor_j:.3f}x")
 
+    up_matrix = build_nni_with_complex_13(
+        result.r_uc * result.r_ct,
+        result.r_ct,
+        1.0,
+        C12_U,
+        C23_U,
+        result.c13_u_total,
+    )
+    up_singular = np.sort(np.linalg.svd(up_matrix, compute_uv=False))
+    physical_r_uc = float(up_singular[0] / up_singular[1])
+    physical_r_ct = float(up_singular[1] / up_singular[2])
+    print()
+    print("  Physical singular-spectrum diagnostic:")
+    print(f"    sigma_u/sigma_c = {physical_r_uc:.9e}")
+    print(f"    sigma_c/sigma_t = {physical_r_ct:.9e}")
+
     check(
-        "Completion keeps m_u/m_c within 1% of the observation comparator",
-        abs(dev_uc) < 1.0,
-        f"dev = {dev_uc:+.3f}%",
+        "Physical sigma_u/sigma_c is not the fitted diagonal-label ratio",
+        abs(physical_r_uc / R_UC_OBS - 1.0) > 0.01,
+        f"ratio to comparator = {physical_r_uc / R_UC_OBS:.6f}",
     )
     check(
-        "Completion keeps m_c/m_t within 1% of the observation comparator",
-        abs(dev_ct) < 1.0,
-        f"dev = {dev_ct:+.3f}%",
+        "Physical sigma_c/sigma_t is not the fitted diagonal-label ratio",
+        abs(physical_r_ct / R_CT_OBS - 1.0) > 0.01,
+        f"ratio to comparator = {physical_r_ct / R_CT_OBS:.6f}",
     )
     check(
-        "Completion matches |V_us| within 0.01%",
+        "Coordinate fit matches |V_us| within 0.01%",
         abs(result.vus / V_US_ATLAS - 1.0) < 1.0e-4,
         f"ratio = {result.vus / V_US_ATLAS:.8f}",
     )
     check(
-        "Completion matches |V_cb| within 0.05%",
+        "Coordinate fit matches |V_cb| within 0.05%",
         abs(result.vcb / V_CB_ATLAS - 1.0) < 5.0e-4,
         f"ratio = {result.vcb / V_CB_ATLAS:.8f}",
     )
     check(
-        "Completion matches |V_ub| within 0.2%",
+        "Coordinate fit matches |V_ub| within 0.2%",
         abs(result.vub / V_UB_ATLAS - 1.0) < 2.0e-3,
         f"ratio = {result.vub / V_UB_ATLAS:.8f}",
     )
     check(
-        "Completion matches J within 1%",
+        "Coordinate fit matches J within 1%",
         abs(result.jarlskog / J_ATLAS - 1.0) < 0.01,
         f"ratio = {result.jarlskog / J_ATLAS:.8f}",
     )
     check(
-        "The determinant phase stays closed at zero mod 2pi",
+        "The Hermitian fit has positive determinant product and zero phase mod 2pi",
         result.det_phase < 1.0e-10,
         f"arg det(M_u M_d) = {result.det_phase:.3e}",
     )
     check(
-        "The added CP carriers are genuinely nonzero",
+        "The fitted complex coordinates are genuinely nonzero",
         abs(result.xi_u) > 1.0e-3 and abs(result.xi_d) > 1.0e-3,
         f"|xi_u| = {abs(result.xi_u):.3e}, |xi_d| = {abs(result.xi_d):.3e}",
     )
     check(
-        "The completed surface lifts J by more than a factor of 6 over the anchor",
+        "The fitted ansatz lifts J by more than a factor of 6 over the anchor",
         result.jarlskog / anchor_j > 6.0,
         f"lift = {result.jarlskog / anchor_j:.3f}x",
     )
@@ -392,18 +408,18 @@ def part3_summary(result: CompletionSolve) -> None:
     print("=" * 72)
 
     print("\n  Honest endpoint:")
-    print("    the minimal Schur-NNI surface still fails as a self-contained CKM CP closure")
-    print("    but one added determinant-neutral complex 1-3 carrier per sector")
-    print("    closes the full quark package numerically on a bounded extended surface")
+    print("    complex 1-3 coordinates can fit the CKM/J comparator surface together")
+    print("    with diagonal labels placed near mass-ratio comparators, but the completed")
+    print("    matrices do not reproduce those physical singular-value mass ratios")
     print()
     print("  Honest caveat:")
     print("    the added carrier dominates the bare Schur 1-3 term, especially in the up sector,")
-    print("    so this is not a small retained correction; it is a bounded completion ansatz")
+    print("    so this is neither a small retained correction nor a full-quark completion")
 
 
 def main() -> int:
     print("=" * 72)
-    print("  FRONTIER: Quark CP-Carrier Completion on the Live Mass-Ratio Lane")
+    print("  FRONTIER: Historical Quark CP-Carrier Diagonal-Label Fit")
     print("=" * 72)
 
     anchor_j, _anchor_ratio = part1_anchor()

@@ -37,12 +37,12 @@ So the honest current endpoint is:
 - no full CKM CP result on that same surface
 - one extra CP-area carrier/input still missing
 
-A separate bounded completion note now exists:
-[QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md](./QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md).
-That new note does **not** change the verdict here. It adds one explicit
-complex `1-3` carrier per sector and gives a full numerical match on a bounded
-extended surface. The present note remains the honest statement about the
-minimal Schur-NNI carrier by itself.
+A separate route analysis now exists in
+`QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md`. Its 2026-07-12 revision
+shows that the older free-carrier optimizer checked diagonal labels rather
+than physical singular-value mass ratios and that its fitted coordinates are
+not weak-basis invariants. It is non-load-bearing context here and does not
+change the present minimal-surface verdict.
 
 ## Inputs consumed
 

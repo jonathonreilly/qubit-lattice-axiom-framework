@@ -9,10 +9,12 @@ Review-hygiene check, not a physics proof. Verifies that the synthesis is:
   - cites the audit-lane policy authority (docs/audit/README.md);
   - records the do-NOT-spawn-campaign-cycles recommendation.
 
-Also verifies live audit-ledger state:
-  - quark_cp_carrier_completion_note_2026-04-18 is audited_numerical_match
-    (terminal). If this verdict changes, the synthesis becomes stale and the
-    runner FAILs.
+Also verifies the historical-supersession firewall:
+  - the carrier-completion source is now a no_go proposal pending independent
+    re-audit, while the checked-in ledger may still carry the historical
+    audited_numerical_match verdict until the audit pipeline runs on main;
+  - a later audited_clean / retained_no_go state is accepted only when the
+    carrier row is classified no_go and the obsolete positive edges are gone;
   - quark_projector_ray_phase_completion_note_2026-04-18 exists in the ledger.
   - quark_projector_parameter_audit_note_2026-04-19 exists in the ledger and
     lists both expected blocking deps.
@@ -60,6 +62,7 @@ def main() -> int:
             return 1
 
     note = NOTE.read_text()
+    carrier_note = CARRIER_DEP_NOTE.read_text()
     audit_readme = AUDIT_README.read_text()
     ledger = json.loads(AUDIT_LEDGER.read_text())
 
@@ -130,6 +133,15 @@ def main() -> int:
           "proposal_allowed: false" in note)
     check("proposal_allowed_reason justifies as backward-looking synthesis",
           "backward-looking" in note.lower() or "synthesis" in note.lower())
+    check(
+        "historical synthesis carries the 2026-07-12 supersession firewall",
+        "Historical-supersession notice (2026-07-12)" in note
+        and "exact spectrum/basis route obstruction" in note,
+    )
+    check(
+        "carrier-completion source proposes the new no_go classification",
+        "**Type:** no_go" in carrier_note,
+    )
 
     # ---- companion + cross-references ----
     check("cites sibling BAE terminal synthesis as template",
@@ -157,6 +169,7 @@ def main() -> int:
     leaf_row = rows.get(LEAF_ID)
     ray_row = rows.get(RAY_DEP_ID)
     carrier_row = rows.get(CARRIER_DEP_ID)
+    carrier_is_historical = False
 
     check(f"ledger has leaf row: {LEAF_ID}", leaf_row is not None)
     check(f"ledger has projector-ray dep row: {RAY_DEP_ID}", ray_row is not None)
@@ -164,20 +177,36 @@ def main() -> int:
 
     if carrier_row is not None:
         carrier_status = carrier_row.get("audit_status")
-        check(
-            "carrier-completion dep audit_status is audited_numerical_match (terminal)",
-            carrier_status == "audited_numerical_match",
-            detail=f"audit_status: {carrier_status!r}",
-        )
+        carrier_is_historical = carrier_status == "audited_numerical_match"
+        carrier_claim_type = carrier_row.get("claim_type")
         carrier_effective = carrier_row.get("effective_status")
+        carrier_is_pending = (
+            carrier_status == "unaudited"
+            and carrier_effective == "unaudited"
+            and carrier_claim_type == "no_go"
+        )
+        carrier_is_ratified_no_go = (
+            carrier_status == "audited_clean"
+            and carrier_effective in {"retained_no_go", "retained_pending_chain"}
+            and carrier_claim_type == "no_go"
+        )
         check(
-            "carrier-completion dep effective_status is audited_numerical_match",
-            carrier_effective == "audited_numerical_match",
+            "carrier row is historical, pending no-go re-audit, or ratified no-go",
+            carrier_is_historical or carrier_is_pending or carrier_is_ratified_no_go,
+            detail=(
+                f"claim_type: {carrier_claim_type!r}, "
+                f"audit_status: {carrier_status!r}, "
+                f"effective_status: {carrier_effective!r}"
+            ),
+        )
+        check(
+            "carrier effective status follows the historical/pending/ratified transition",
+            carrier_is_historical or carrier_is_pending or carrier_is_ratified_no_go,
             detail=f"effective_status: {carrier_effective!r}",
         )
     else:
-        check("carrier-completion dep audit_status is audited_numerical_match (terminal)", False, detail="row missing")
-        check("carrier-completion dep effective_status is audited_numerical_match", False, detail="row missing")
+        check("carrier row is historical, pending no-go re-audit, or ratified no-go", False, detail="row missing")
+        check("carrier effective status follows the historical/pending/ratified transition", False, detail="row missing")
 
     if leaf_row is not None:
         leaf_deps = set(leaf_row.get("deps", []) or [])
@@ -187,8 +216,8 @@ def main() -> int:
             detail=f"deps: {sorted(leaf_deps)}",
         )
         check(
-            "leaf row lists carrier-completion dep",
-            CARRIER_DEP_ID in leaf_deps,
+            "leaf carrier edge is either historical or removed by source repair",
+            (CARRIER_DEP_ID in leaf_deps) == carrier_is_historical,
             detail=f"deps: {sorted(leaf_deps)}",
         )
         leaf_criticality = leaf_row.get("criticality")
@@ -199,18 +228,18 @@ def main() -> int:
         )
     else:
         check("leaf row lists projector-ray dep", False, detail="row missing")
-        check("leaf row lists carrier-completion dep", False, detail="row missing")
+        check("leaf carrier edge is either historical or removed by source repair", False, detail="row missing")
         check("leaf row is critical", False, detail="row missing")
 
     if ray_row is not None:
         ray_deps = set(ray_row.get("deps", []) or [])
         check(
-            "projector-ray dep routes through carrier-completion dep",
-            CARRIER_DEP_ID in ray_deps,
+            "projector-ray carrier edge is historical or removed by source repair",
+            (CARRIER_DEP_ID in ray_deps) == carrier_is_historical,
             detail=f"deps: {sorted(ray_deps)}",
         )
     else:
-        check("projector-ray dep routes through carrier-completion dep", False, detail="row missing")
+        check("projector-ray carrier edge is historical or removed by source repair", False, detail="row missing")
 
     # ---- audit-lane README still has terminal-verdict rule we cite ----
     check(
@@ -231,7 +260,7 @@ def main() -> int:
         "leaf and both deps cited, terminal verdict + cross-confirmation + "
         "judicial-third-audit recorded, repair surface analysis present, "
         "audit-lane policy authority cited, do-NOT-spawn-campaign-cycles "
-        "recommendation present, live ledger state consistent with synthesis."
+        "recommendation present, historical/pending/ratified-no-go transition fenced."
     )
     return 0
 

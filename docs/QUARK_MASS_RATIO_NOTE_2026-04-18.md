@@ -127,7 +127,8 @@ The clean current endpoint is:
   negatively: retained Phase 1 exactness forces the CP-orthogonal interior
   partition back to the edge, and the sharper bounded replacement is a narrow
   phase-deformed edge rather than a live interior partition law
-- the freer complex-carrier completion remains as a broader existence proof
+- the freer complex-carrier route is now an exact spectrum/basis obstruction,
+  not a broader physical mass-ratio existence proof
 
 So the current quark-mass-ratio state is:
 
@@ -149,7 +150,8 @@ So the current quark-mass-ratio state is:
 - exact endpoint-denominator admissibility theorem / no-go on `sqrt(7)` uniqueness
 - bounded `sqrt(7)`-counterexample simplification to two minimal representatives
 - bounded up-sector partition obstruction / phase-deformed edge replacement
-- bounded broader complex-carrier existence proof
+- historical diagonal-label CKM/J carrier control, now superseded by the exact
+  spectrum/basis obstruction
 - no retained claim that the full quark CKM+CP package is closed
 
 ## Read In Order
@@ -177,7 +179,8 @@ So the current quark-mass-ratio state is:
 21. [QUARK_UP_AMPLITUDE_SQRT7_COUNTEREXAMPLE_SIMPLIFICATION_NOTE_2026-04-19.md](./QUARK_UP_AMPLITUDE_SQRT7_COUNTEREXAMPLE_SIMPLIFICATION_NOTE_2026-04-19.md)
 22. [QUARK_UP_AMPLITUDE_PROVENANCE_AUDIT_NOTE_2026-04-19.md](./QUARK_UP_AMPLITUDE_PROVENANCE_AUDIT_NOTE_2026-04-19.md)
 23. [QUARK_UP_AMPLITUDE_TWO_STEP_NATIVE_SCAN_NOTE_2026-04-19.md](./QUARK_UP_AMPLITUDE_TWO_STEP_NATIVE_SCAN_NOTE_2026-04-19.md)
-24. [QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md](./QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md)
+24. `QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md` (non-load-bearing route
+    obstruction; the historical optimizer remains a runner control)
 25. `MASS_SPECTRUM_DERIVED_NOTE.md` (downstream consumer; backticked to avoid length-2 cycle — citation graph direction is *downstream → upstream*)
 
 Bridge/support context when needed:
@@ -233,5 +236,5 @@ It is not a retained-spectrum promotion. The honest package status remains:
 - up-type lane is bounded on a partition and still open in the `2-3` sector
 - the minimal Schur-NNI full-solve support closes the quark magnitudes but not the full CKM CP area
 - the bounded projector-ray extension closes the full CKM+CP package numerically with one fixed projector ray, two real sector amplitudes, and one shared phase
-- the bounded parameter audit reduces the current missing primitive to one up-sector scalar amplitude law, the widened candidate scan compresses that to a short exact shortlist, the restricted native-expression scan shows that the current exact projector/support grammar still does not force one dominant law, the affine-support scan identifies the `6/7`-centered native family, the tensor-endpoint bridge shows that the strongest current affine refit and anchored branches are seeded by the support endpoint gap `1/6` and the bounded tensor slope ratio `|b_E / b_T|`, and the new tensor-endpoint resolution closes the next theorem attempt negatively: no exact identity `|b_E / b_T| = sqrt(7)` lands, the restricted exact endpoint grammar already contains many exact two-step denominators beating the direct `sqrt(7)` law on anchored aggregate, so the honest endpoint is the split between the exact `1/6` refit branch and the bounded slope-ratio anchored branch; the provenance audit still classifies `7/9` and `sqrt(3/5)` as external empirical baselines, the two-step native scan still preserves the split, and the broader complex-carrier extension remains fallback bounded existence proof; the new Route-2 readout block now sharpens that quark endpoint one more step by proving an exact reduction of the restricted carrier/readout class, identifying the endpoint-chain theorem target with the map triple `(-1, -2, 21/4)`, collapsing the irreducible missing map entry to the `E`-channel ratio `beta_E / alpha_E = 21/4` after the `T`-side candidates are granted, and then showing that the unresolved readout exactness induces the current exact `Theta_R -> Lambda_R` time-coupling obstruction
+- the bounded parameter audit reduces the current missing primitive to one up-sector scalar amplitude law, the widened candidate scan compresses that to a short exact shortlist, the restricted native-expression scan shows that the current exact projector/support grammar still does not force one dominant law, the affine-support scan identifies the `6/7`-centered native family, the tensor-endpoint bridge shows that the strongest current affine refit and anchored branches are seeded by the support endpoint gap `1/6` and the bounded tensor slope ratio `|b_E / b_T|`, and the new tensor-endpoint resolution closes the next theorem attempt negatively: no exact identity `|b_E / b_T| = sqrt(7)` lands, the restricted exact endpoint grammar already contains many exact two-step denominators beating the direct `sqrt(7)` law on anchored aggregate, so the honest endpoint is the split between the exact `1/6` refit branch and the bounded slope-ratio anchored branch; the provenance audit still classifies `7/9` and `sqrt(3/5)` as external empirical baselines, the two-step native scan still preserves the split, and the broader complex-carrier extension is only historical diagonal-label CKM/J control under the exact spectrum/basis obstruction; the new Route-2 readout block now sharpens that quark endpoint one more step by proving an exact reduction of the restricted carrier/readout class, identifying the endpoint-chain theorem target with the map triple `(-1, -2, 21/4)`, collapsing the irreducible missing map entry to the `E`-channel ratio `beta_E / alpha_E = 21/4` after the `T`-side candidates are granted, and then showing that the unresolved readout exactness induces the current exact `Theta_R -> Lambda_R` time-coupling obstruction
 - full quark-spectrum closure is not yet a retained framework claim

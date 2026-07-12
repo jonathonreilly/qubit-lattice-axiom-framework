@@ -107,8 +107,9 @@ That is the cleanest current no-go statement.
 
 - [QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md](./QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md)
   remains the strongest reduced bounded closure statement.
-- [QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md](./QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md)
-  remains the broader bounded existence proof with freer complex carriers.
+- `QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md` now records the exact
+  spectrum/basis obstruction for the freer complex-coordinate route; it is
+  non-load-bearing context rather than a broader physical existence proof.
 - This audit note is the sharper structural statement about what is already
   exact-support compatible and what remains non-derived.
 

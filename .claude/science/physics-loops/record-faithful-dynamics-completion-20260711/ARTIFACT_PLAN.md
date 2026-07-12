@@ -25,7 +25,7 @@
 - decisive same-carrier `I-SWAP` counterexample, with the label-to-Record
   realization kept open.
 
-## Effect selection and Born — current result
+## Effect selection and Born — delivered
 
 - exact depolarizing effect family surviving positivity, full POVM
   normalization/additivity, menu noncontextuality, and covariance;
@@ -35,11 +35,21 @@
   and derivation of `RC_i` retained as separate open bridges;
 - deterministic 51-check runner, full N1--N8 packet, and stacked review PR.
 
-## Full instrument, time, and probability — next
+## Full finite-carrier instrument normal form — current result
 
-- extend beyond the classified finite-edge completion to a local normalized
-  record-forming instrument family;
-- distinguish partial event order, integer tick count, and physical rate.
+- classify formation effects and the complementary no-record effect under
+  conditional cross-label exclusion;
+- expose event efficiencies and the arbitrary no-record CP operation as the
+  complete finite-cell normal-form coordinates;
+- construct one auxiliary-register CPTP countermodel with absorbing locked
+  sectors and uncalibrated blank-sector effects;
+- keep menu selection, physical readout, framework-Record realization, and
+  `Z^3` overlap composition open.
+
+## Event order, time, and rate — next
+
+- classify overlapping local-instrument schedules before adding a time metric;
+- distinguish event partial order, layer order, tick count, and rate.
 
 ## Continuum gateway
 

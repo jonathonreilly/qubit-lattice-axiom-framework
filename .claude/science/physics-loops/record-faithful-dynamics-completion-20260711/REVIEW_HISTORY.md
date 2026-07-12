@@ -135,3 +135,42 @@ duality, and provenance-only treatment of historical decisions. The citation
 graph seeded only `minimal_axioms` and the Block03 locked-output normal form;
 strict audit lint passed with no errors. Generated audit/effective-status
 surfaces are stripped before delivery. Independent audit remains required.
+
+## Full finite-carrier instrument internal result
+
+- Conditional cross-label exclusion gives `E_i=e_iP_i` and
+  `F=sum_i(1-e_i)P_i`.
+- Equal efficiencies remove detection bias; the no-record CP channel remains
+  an explicit free parameter.
+- An auxiliary blank-plus-locked-register CPTP family is absorbing on
+  consistent locked states but cross-label on blank input for `a<1`.
+- Menu-family equivariance is explicitly not one menu-independent law.
+- Runner/cache: `PASS=36 FAIL=0`.
+
+### Full-instrument review iteration 1
+
+Code/math review passed the effect classification, Kraus completeness,
+cross-label witness, locked-sector reuse, family equivariance, and no-record
+channel freedom. Claim review required narrowing from a unique/lattice
+classification to a complete abstract finite-carrier normal form parameterized
+by an arbitrary no-record CP map, plus a direct reconciled Kraus--Choi
+dependency. Those repairs passed re-review.
+
+### Full-instrument review iteration 2
+
+Governance/No-Go Discipline required the negative statement to remain an
+auxiliary-register result. The source and runner were narrowed, the exact
+menu-family equivariance identity was added, real and complex blank/locked
+fixtures were added, and the full N1--N8 packet was rewritten. Final
+governance re-review passed with no source blocker. Audit-compatibility
+validation remains required.
+
+### Full-instrument review iteration 3
+
+PASS WITH BOUNDED CLAIMS. Claim, code/math, labeling/import, Nature-scope,
+governance, and No-Go Discipline checks agree on the auxiliary finite-carrier
+boundary. The runner/cache agree at `PASS=36 FAIL=0`; vocabulary lint has zero
+violations. The audit pipeline seeded the bounded theorem as `unaudited` with
+exactly three dependencies: `minimal_axioms`, the locked-output normal form,
+and the reconciled Kraus--Choi theorem. Strict lint passed with no errors, and
+generated audit/effective-status surfaces were stripped before delivery.

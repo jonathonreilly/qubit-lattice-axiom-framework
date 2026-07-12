@@ -67,3 +67,19 @@ All listed effect-selection conditions carry zero framework-premise weight.
 The theorem does not derive a physical menu, probability semantics,
 framework-Record realization, repeat certainty, event order/rate, or a
 continuum law. No axiom or primitive change is implied.
+
+## Full finite-carrier instrument conditional/open interfaces
+
+- A finite system/register factorization with one blank label and a locked-label
+  direct sum.
+- A complete rank-one menu and the association of label `i` with `P_i`.
+- Finite CP/Kraus/trace semantics, with the reconciled Kraus--Choi theorem as
+  named retained mathematical authority.
+- Conditional cross-label exclusion and, separately, menu-neutral event
+  efficiency for the positive normal-form corollary.
+- Physical probability semantics, readout, and framework-Record realization
+  remain absent from the auxiliary-register countermodel.
+
+The approved minimal axioms chain-satisfy as foundation. These additional
+physical interfaces gain no premise authority here. The result is one abstract
+finite carrier, not a `Z^3` locality or overlapping-cell theorem.

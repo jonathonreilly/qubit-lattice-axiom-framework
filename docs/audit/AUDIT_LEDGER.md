@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 85 |
+| **retained** | 86 |
 | **retained_no_go** | 27 |
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 5 |
-| unaudited | 2820 |
+| unaudited | 2819 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 455 |
+| `audited_clean` | 456 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3170 |
+| `unaudited` | 3169 |
 
 | claim_type | count |
 |---|---:|
@@ -190,6 +190,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `central_band_dense_largen_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_layernorm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_mass_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `chiral_3plus1d_boundary_phase_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_coupled_coin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1576,6 +1577,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The provided runner and helper sources actually generate matched graphs, compute gravity deltas for the declared modes and mass counts, and fit the declared positive window without hard-coded target values. The cached stdout matches the note's numerical claims and supports the bounded, mixed conclusion.
 - **rationale:** The source note makes a narrow bounded claim about the runner's computed mass-window fits, not a full gravity-law rescue. The runner source and helper chain compute the graph, pruning, propagation, deltas, and log-log fits directly from the declared simulation setup, and the reported R^2 comparisons are reproduced in the provided stdout. No cited non-retained authority, external comparator, renaming, or tuned imported value is load-bearing in this packet.
 - **auditor confidence:** high
+
+### `charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11`
+
+- **Note:** [`CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md`](../../docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For every positive real triple m_j, the normalized C3 DFT of z_j=sqrt(m_j) has the stated inverse, symmetric scale- and permutation-invariant r coordinate, Koide identity Q=(1+2r)/3, S3-folded phase reconstruction, and phase-free c=0 boundary; no mass functional or physical mass values are derived.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-registered-dft-fresh-20260711`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The stated normalized inverse DFT and Parseval identities are z_j = a + c omega^j + conjugate(c) omega^(-j) and sum_j z_j^2 = 3(a^2 + 2|c|^2).  _(class `A`)_
+- **chain closes:** True — Root-of-unity orthogonality, direct variance expansion, and Parseval close every displayed identity from the definitions alone. The S3 generators act by c -> omega c and c -> conjugate(c), while c=0 makes all three square roots equal and removes the phase coordinate.
+- **rationale:** Independent root-of-unity expansion reproduces the inverse DFT coefficients, the exact variance factor 6, and the Parseval factor 3, yielding Q=1/3+2r/3 and the two-way r=1/2 equivalence. The S3 generators send the phase to plus or minus phi modulo 2pi/3, so the folded distance is the complete unordered phase coordinate, including the pi/3 boundary; at c=0 the inverse forces the equal-root triple and is phase-independent. The runner consistently checks these identities and the note's scope guards without importing a comparator or a physical mass functional. Residual risk is confined to the explicitly excluded physical registered-mass interface, which is not part of this algebraic theorem.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `charged_lepton_two_higgs_canonical_reduction_note`
 

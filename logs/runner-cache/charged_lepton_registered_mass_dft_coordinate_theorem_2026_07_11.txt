@@ -1,3 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11.py
+runner_sha256: c773305844b6932bf08fc0eb2bde47543bfd83bfbfecf2f70a17b1a483dbe5cc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.61
+status: ok
+----- stdout -----
 Registered positive-mass C3 Fourier coordinate theorem
 ====================================================================
 
@@ -51,3 +59,6 @@ Scope guards
 
 ====================================================================
 TOTAL: PASS=33, FAIL=0
+
+----- stderr -----
+

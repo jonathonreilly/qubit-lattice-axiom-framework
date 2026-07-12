@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 376 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2753 |
+| unaudited | 2752 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 60 |
+| ~~audited_conditional~~ | 61 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 491 |
-| `audited_conditional` | 60 |
+| `audited_conditional` | 61 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3103 |
+| `unaudited` | 3102 |
 
 | claim_type | count |
 |---|---:|
@@ -657,6 +657,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3914,6 +3915,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N5: the non-forcing rhetoric has untested operator-level and trace-readout resolutions.
     - N6: the directly relevant AC occupancy statistical-grain obligation remains open.
     - N7: the strongest operator-factorization steelman defeats an exhaustive no-forcing conclusion.
+
+### `flavor_find_j_round2_power_not_count_2026-06-02`
+
+- **Note:** [`FLAVOR_FIND_J_ROUND2_POWER_NOT_COUNT_2026-06-02.md`](../../docs/FLAVOR_FIND_J_ROUND2_POWER_NOT_COUNT_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The restricted finite C3/Berezin packet establishes that determinant power and C3 covariance alone do not select the antisymmetric J pairing.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00420-flavor_find_j_round2_power_n`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The symmetric identity I and the antisymmetric J=C-C^2 both satisfy C^T X C = X, so finite C3 covariance does not select J over I.  _(class `A`)_
+- **chain closes:** False — The three stated finite-algebra checks close individually, but the mandatory no-go-discipline gate does not: only three distinct mechanism classes are closed, while the separate reality-structure and physical-readout routes remain untested.
+- **rationale:** The runner substantively verifies determinant-versus-Frobenius scaling, the simultaneous C3 invariance of I and J, and the distinction between Gaussian determinant exponent and mode count. It imports no external number or contested upstream premise, and the note correctly excludes det_R/Q, r/Q, and Dirac-versus-Majorana conclusions. Nevertheless, the required no-go gate cannot pass because the packet closes only three distinct attack classes and explicitly leaves separate reality-structure and readout mechanisms open.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1: only three genuinely distinct mechanism classes are closed; separate reality-structure and physical-readout routes remain OPEN or UNTESTED.
 
 ### `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02`
 

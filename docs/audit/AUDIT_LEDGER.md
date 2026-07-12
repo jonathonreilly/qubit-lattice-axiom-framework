@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 105 |
-| **retained_no_go** | 46 |
+| **retained_no_go** | 47 |
 | **retained_bounded** | 421 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
 | unaudited | 2617 |
-| audit_in_progress | 30 |
+| audit_in_progress | 29 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -46,8 +46,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 30 |
-| `audited_clean` | 559 |
+| `audit_in_progress` | 29 |
+| `audited_clean` | 560 |
 | `audited_conditional` | 104 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 48 |
@@ -140,7 +140,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_mechanism_note` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
-| `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `single_clock_uniqueness_scope_boundary_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -521,6 +520,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `quark_c3_circulant_source_law_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `quark_route2_eta_floor_hf_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
@@ -8009,6 +8009,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The note's claim is a scope restriction and control checklist, not a positive spectral theorem. It explicitly denies a QNM/escape-spectrum result and therefore closes as a bounded control-program note without needing a numerical runner.
 - **rationale:** The source note is audit-clean only for its narrow boundary: QNM remains a hardening target and no quasi-normal-mode or escape-spectrum result is asserted. It does not attempt to derive or validate any spectral observable, and its listed five controls are stated as future prerequisites rather than achieved results. Residual risk is that this clean verdict must not be reused as evidence for a positive QNM lane; it ratifies only the bounded control-program framing.
 - **auditor confidence:** high
+
+### `quantum_local_algebra_does_not_force_boost_action_faith_no_go_note_2026-06-02`
+
+- **Note:** [`QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md`](../../docs/QUANTUM_LOCAL_ALGEBRA_DOES_NOT_FORCE_BOOST_ACTION_FAITH_NO_GO_NOTE_2026-06-02.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Scoped no-go: the one-site M_2(C)/Cl(3,0) algebra alone does not force attachment of the Pauli/Weyl operator-frame action to a physical matter-field boost action.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00133-quantum_local_algebra_does_n`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The Qubit local algebra supplies M_2(C), but it does not identify a physical matter-field boost with the operator-frame Pauli action, so a scalar action remains available until an attachment selector is supplied.  _(class `A`)_
+- **chain closes:** True — The accepted Qubit premise supplies only the local algebra and explicitly withholds downstream kinetic and physical-action structure. A scalar action on the same vector space supplies the required countermodel, while exclusion of scalar boosts follows only after the Pauli/Lorentz attachment is added.
+- **rationale:** The load-bearing result is an algebraic non-implication supported by the accepted axiom boundary and a scalar-action countermodel, not a definition or numerical match. The runner genuinely computes the Pauli/Clifford, commutant, bracket, scalar-action, and kernel examples, although C.2b and C.4 are hard-coded summaries and the runner verifies rather than proves exhaustiveness of the two Weyl completions. Those limitations are not load-bearing for the narrowly audited Quantum-alone non-attachment claim. In standard representation terminology exp(eta c)I with nonzero real c is faithful as a representation of the one-parameter subgroup, so the clean scope concerns non-forcing of the Pauli/Weyl attachment, not injectivity of that scalar subgroup representation.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `quark_c3_circulant_source_law_boundary_note_2026-04-28`
 

@@ -37,7 +37,8 @@
 
 ## Audit compatibility validation
 
-- Disposable worktree commit: `fe1483f43`.
+- Initial disposable validation commit: `fe1483f43`; repeated after rebase at
+  `856232b6f` on `origin/main` `61bbb5312` with the same PASS disposition.
 - Full 16-stage audit pipeline: PASS.
 - `audit_lint.py --strict`: PASS with no errors; repo-wide legacy warnings and
   notices only.

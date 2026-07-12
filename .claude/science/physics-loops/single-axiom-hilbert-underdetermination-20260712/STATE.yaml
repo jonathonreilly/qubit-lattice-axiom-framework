@@ -50,7 +50,7 @@ no_go_routes:
 trace_gate_classification: direct_blocker_closure
 review_disposition: iteration_3_pass
 audit_compatibility_validation: >-
-  PASS in disposable worktree at fe1483f43: full 16-stage pipeline and
+  PASS after rebase in disposable worktree at 856232b6f: full 16-stage pipeline and
   audit_lint --strict completed with no errors. single_axiom_hilbert_note
   seeded bounded_theorem, high criticality, ready=true, deps=[minimal_axioms];
   the new no_go seeded leaf, ready=true, direct_in_degree=0,

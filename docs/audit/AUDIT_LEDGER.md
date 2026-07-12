@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 382 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2742 |
+| unaudited | 2741 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 65 |
+| ~~audited_conditional~~ | 66 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 497 |
-| `audited_conditional` | 65 |
+| `audited_conditional` | 66 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3092 |
+| `unaudited` | 3091 |
 
 | claim_type | count |
 |---|---:|
@@ -667,6 +667,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_interacting_matter_build_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_retention_law_is_a2plus_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -4102,6 +4103,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner directly computes the stated finite spectra and matrix relations, and its explicit occupation formula establishes the descending Bose direction for arbitrary truncation. These results close the deliberately bounded construction and statistics-selection statement, without asserting a reconstruction of P1 from the full framework.
 - **rationale:** The runner performs genuine finite algebra rather than printing expected constants: it constructs the occupation spectra, taste tensor product, kernel identity, two-site ladder relations, and Pauli Casimir. The source accurately limits the conclusion to those constructions and to route pruning; it expressly withholds a reconstruction theorem and any promotion of P1/CAR. Within that bounded scope, the conclusions follow from the displayed algebra.
 - **auditor confidence:** high
+
+### `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31`
+
+- **Note:** [`FLAVOR_SUBSTRATE_BRIDGE_FAILS_SOURCE_OPERATOR_ASYMMETRY_NOTE_2026-05-31.md`](../../docs/FLAVOR_SUBSTRATE_BRIDGE_FAILS_SOURCE_OPERATOR_ASYMMETRY_NOTE_2026-05-31.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Only the explicit 3x3 identities and signed Q readouts for S=I, H, Diag(H), and E_loc(I+zZ) were audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00430-flavor_substrate_bridge_fail`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because C and C^T have zero diagonal, Diag(H)=I, so the projected spectrum is {1,1,1} and the signed readout is Q=1/3.  _(class `A`)_
+- **chain closes:** False — The displayed finite-matrix algebra closes, but the gate-required negative chain does not: the packet neither exhausts alternative carrier/readout mechanisms nor proves a source-domain or substrate-necessity obstruction.
+- **rationale:** The runner genuinely constructs the displayed matrices and verifies all five finite algebra checks; it does not merely print the expected scorecard. Those checks establish the onsite and trace-local scalar collapses on the stated 3x3 packet. The required no-go discipline nevertheless fails because only the two displayed projection mechanisms are closed, while source-carrier, physical-readout, dynamical, and alternative-selector routes remain explicitly open. The safe result is therefore bounded finite-algebra support, not a bridge-failure or substrate-necessity theorem.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: fewer than five distinct alternative mechanism classes are closed; source-carrier, selector-exhaustion, substrate-dynamics, and nontracial-readout routes remain open or untested.
 
 ### `flavor_substrate_parent_separate_note_2026-05-30`
 

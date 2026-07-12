@@ -28,9 +28,18 @@ After independent audit, later integration may update the relevant lane,
 publication, and audit authority surfaces.  This science branch does not edit
 them.
 
+## Review PR
+
+- PR: [#5289](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5289)
+- Branch: `physics-loop/dm-leptogenesis-exact-kernel-block01-20260712`
+- Base: `main`
+- Verification at opening: open, non-draft, mergeable; GitHub merge-state
+  `UNSTABLE` while checks/review are pending.
+- This physics loop did not merge the PR.
+
 ## Exact next action
 
-Commit and push the reviewed science block, open one unmerged review PR, and
-hand it to independent integration/audit.  After landing, the audit lane should
-re-audit `dm_leptogenesis_exact_kernel_closure_note_2026-04-15` as the narrow
-`A_min` identifiability no-go, not as positive numerical package closure.
+Independently review PR #5289, land it only without broadening the claim scope,
+then have the audit lane re-audit
+`dm_leptogenesis_exact_kernel_closure_note_2026-04-15` as the narrow `A_min`
+identifiability no-go, not as positive numerical package closure.

@@ -107,3 +107,11 @@ Final checks:
   notices only;
 - vocabulary, portable-link, compile, and diff checks: PASS;
 - all regenerated audit/publication/front-door authority outputs stripped.
+
+## Delivery
+
+- Commits: `cbe8b5b39`, `b9c8d6a6e` (before final PR-state checkpoint).
+- Review PR: [#5289](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5289).
+- Verified open, non-draft, base `main`, correct science head, and mergeable.
+- GitHub reported merge-state `UNSTABLE` while checks/review were pending.
+- No merge was performed.

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 5 |
-| unaudited | 2811 |
+| unaudited | 2810 |
 | audit_in_progress | 24 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 38 |
+| ~~audited_conditional~~ | 39 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 24 |
 | `audited_clean` | 459 |
-| `audited_conditional` | 38 |
+| `audited_conditional` | 39 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3161 |
+| `unaudited` | 3160 |
 
 | claim_type | count |
 |---|---:|
@@ -632,6 +632,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `source_resolved_generated_family_probe_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `source_resolved_generated_wavefield_transfer_v2_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `source_resolved_radical_geometry_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -6559,6 +6560,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The reported arithmetic is reproduced by genuine computation, but the runner tests a different geometry transformation from the one stated. `_augment_sector_repair` constructs a fresh sector/floor adjacency list and assigns `adj[src] = selected`, discarding baseline edges not reselected instead of adding the sector fan to the retained kNN-floor bridge.
 - **rationale:** The cached values agree with the runner's computation, including zero shifts, sign counts, exponents, and support metrics. However, the source note's candidate is the retained kNN-floor bridge plus an adaptive sector fan, while the implementation replaces each source's adjacency with a newly selected sector/floor list. Consequently, the numerical result cannot establish the bounded claim for the geometry repair actually described.
 - **auditor confidence:** high
+
+### `source_resolved_radical_geometry_probe_note`
+
+- **Note:** [`SOURCE_RESOLVED_RADICAL_GEOMETRY_PROBE_NOTE.md`](../../docs/SOURCE_RESOLVED_RADICAL_GEOMETRY_PROBE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The fixed four-seed, 16-by-24-node generated-DAG experiment comparing the kNN-floor bridge with one reach-fan rule at bins=5 and floor=10 using the specified static and one-pass wavefield observables.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00354-source_resolved_radical_geom`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the tested reach-fan geometry, the radical/wavefield case gives 0/16 TOWARD, N_eff = 5.05, and F~M = -0.113, so it does not produce the hoped-for transfer.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes and reproduces the fixed-fixture observables, but the evidence does not close the broader geometry-rule or family-wide negative language. Robustness across seeds, fan parameters, scale, families, observables, and a full propagating field remains untested.
+- **rationale:** Issue: the computation is genuine, but it covers one hard-parameterized four-seed fixture and a helper explicitly described as not a full propagating field theory. Why this blocks: the mandatory no-go gate fails because several distinct mechanisms and rhetoric resolutions remain open, so the result cannot certify the geometry rule or generated family beyond that fixture. Repair target: either narrow every negative sentence to the exact fixture or add prespecified robustness tests over seeds, fan parameters, scale, families, observables, and full field dynamics. Claim boundary until fixed: the displayed stdout metrics and their fixed-fixture comparison are reproducible.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: only the fixed reach-fan fixture is closed; six distinct robustness, dynamics, scale, observable, and family routes remain open or untested.
+    - N5: the geometry-rule and generated-family rhetoric exceeds the four-seed, one-parameter, one-surrogate resolution actually tested.
 
 ### `source_resolved_retarded_green_corrected_packet_note_2026-05-29`
 

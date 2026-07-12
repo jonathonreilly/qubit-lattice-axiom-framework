@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 364 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2778 |
+| unaudited | 2777 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 53 |
+| ~~audited_conditional~~ | 54 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 476 |
-| `audited_conditional` | 53 |
+| `audited_conditional` | 54 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3128 |
+| `unaudited` | 3127 |
 
 | claim_type | count |
 |---|---:|
@@ -633,6 +633,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `coupled_field_generated_family_probe_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -2287,6 +2288,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
   - **gate failures:**
     - N1: carrier_class_exhaustion and noncirculant_carrier remain UNTESTED, so the mandatory no-go gate cannot pass.
+
+### `coupled_field_generated_family_probe_note`
+
+- **Note:** [`COUPLED_FIELD_GENERATED_FAMILY_PROBE_NOTE.md`](../../docs/COUPLED_FIELD_GENERATED_FAMILY_PROBE_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite diagnostic for the exact runner fixture: four generated DAG seeds, four listed source strengths, FIELD_DECAY=0.7, fixed gain calibration, helper BETA=0.8, and centroid-shift readout; it audits source-strength response only, not physical mass scaling or other coupled-field architectures.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00391-coupled_field_generated_fami`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The computed coupled-field exponent is -0.23, so the sampled strength dependence is not a clean linear mass-scaling law on this retained generated family.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the reported finite table and exponent, but it does not derive the identification of source strength with physical mass or exhaust the parameter, architecture, carrier, and family alternatives required by the broader no-go language.
+- **rationale:** Issue: the fixed-fixture computation is reported accurately, but the note promotes it to a no-go for the minimal source-driven architecture and calls a source-strength sweep a mass-scaling test without a physical mass bridge. Why this blocks: untested gain, kernel, decay, carrier, weak-strength, and family variants can change the fitted centroid response, while the helper also imports BETA=0.8. Repair target: narrow the claim to the exact fixture or add a derived mass/source readout and a disciplined multi-route parameter and architecture exclusion. Claim boundary until fixed: the four-seed, four-strength fixture has zero-source reduction, sampled sign survival, and a fitted coupled response exponent of -0.23.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: only the frozen forward-diffusion fixture is closed; gain, weak-response, decay, angular-kernel, carrier, architecture, and family routes remain open or untested.
+    - N5: architecture-wide rescue rhetoric exceeds the resolutions actually tested.
 
 ### `cpt_exact_note`
 

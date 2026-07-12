@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 650,
     "high": 335,
-    "leaf": 1117,
+    "leaf": 1118,
     "medium": 755
   },
   "cycle_break_target_count": 49,
@@ -52287,6 +52287,30 @@
     },
     {
       "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/acphilambda_fermionic_realification_pfaffian_power_identity_2026_07_12.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "adaptive_coevolving_geometry_no_go",
@@ -81551,6 +81575,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 571,
-  "total_pending": 2857
+  "ready_count": 572,
+  "total_pending": 2858
 }

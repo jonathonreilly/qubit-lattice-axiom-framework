@@ -565,6 +565,10 @@
       "to": "planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25"
     },
     {
+      "from": "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12",
+      "to": "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
+    },
+    {
       "from": "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02",
       "to": "brannen_circulant_is_forced_c3_covariant_record_preserving_generation_form_bounded_theorem_note_2026-06-15"
     },
@@ -58810,6 +58814,20 @@
       "runner_path": "scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py",
       "title": "AC_phi_lambda Defect Identity-Unit Rescale Obstruction And Junction Localization"
     },
+    "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12": {
+      "claim_id": "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
+      "claim_type_seed_hint": "positive_theorem",
+      "deps": [
+        "acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "0f2a257b6acc10d5f7288b1cac09a77c6ab80bffd7a8ff85d59c1e2142b79506",
+      "path": "docs/ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md",
+      "runner_path": "scripts/acphilambda_fermionic_realification_pfaffian_power_identity_2026_07_12.py",
+      "title": "Fermionic Realification and Pfaffian Determinant Power"
+    },
     "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02": {
       "claim_id": "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02",
       "claim_type_author_hint": "no_go",
@@ -112129,7 +112147,7 @@
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "d6c65cba4e8a1288ae8a2cd60b0b4442ba2011bc0ea020cdda6b39df3634c9a9",
+      "note_hash": "0ceb521bab53fb4cdc96aa30ee271de0776dad09438833d49f41b934e5c9de2c",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -129155,7 +129173,7 @@
       "no_go": 336,
       "none": 1205,
       "open_gate": 135,
-      "positive_theorem": 281
+      "positive_theorem": 282
     },
     "claim_type_seed_hint_counts": {
       "bounded_theorem": 2032,
@@ -129164,12 +129182,12 @@
       "no_go": 439,
       "none": 248,
       "open_gate": 209,
-      "positive_theorem": 661
+      "positive_theorem": 662
     },
-    "edge_count": 14547,
+    "edge_count": 14548,
     "leaf_count": 1335,
-    "node_count": 3925,
+    "node_count": 3926,
     "root_count": 1116,
-    "runners_with_path": 3542
+    "runners_with_path": 3543
   }
 }

@@ -360,6 +360,18 @@
       "dominant_class": "A",
       "runner": "scripts/acphilambda_defect_identity_unit_rescale_obstruction_2026_07_01.py"
     },
+    "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12": {
+      "assert_count": 1,
+      "counts": {
+        "A": 23,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/acphilambda_fermionic_realification_pfaffian_power_identity_2026_07_12.py"
+    },
     "acphilambda_fluxed_ring_spectral_functional_route_no_go_2026-07-02": {
       "assert_count": 1,
       "counts": {
@@ -43012,6 +43024,21 @@
         "D": 2
       },
       "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true
+    },
+    "scripts/acphilambda_fermionic_realification_pfaffian_power_identity_2026_07_12.py": {
+      "assert_count": 1,
+      "claims": [
+        "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12"
+      ],
+      "counts": {
+        "A": 23,
+        "B": 1,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
       "dominant_class": "A",
       "exists": true
     },
@@ -93529,15 +93556,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 719,
+    "decoration_candidates": 720,
     "dominant_class_distribution": {
-      "A": 515,
+      "A": 516,
       "B": 663,
       "C": 1318,
       "D": 454,
       "none": 458
     },
-    "runners_classified": 3408,
+    "runners_classified": 3409,
     "runners_with_C": 1796,
     "runners_with_D": 1097
   }

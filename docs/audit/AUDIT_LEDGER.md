@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 36 |
-| **retained_bounded** | 387 |
+| **retained_bounded** | 388 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2726 |
+| unaudited | 2725 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 503 |
+| `audited_clean` | 504 |
 | `audited_conditional` | 73 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 35 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3076 |
+| `unaudited` | 3075 |
 
 | claim_type | count |
 |---|---:|
@@ -475,6 +475,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `quark_route2_eta_floor_hf_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
@@ -6858,6 +6859,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** If a future proof derives the double-local projector normalization, then lambda=(w_E/w_T1)^-2=9/4 and the endpoint chain closes.  _(class `A`)_
 - **chain closes:** None — The endpoint algebra closes only after supplying the double reciprocal local projector-normalization law q_X proportional to w_X^-2; that bridge is an explicit primitive/premise in the packet, not a derived result.
 - **rationale:** Issue: the double reciprocal local projector-normalization law q_X proportional to w_X^-2 is not derived from packet inputs; it is the named missing primitive. Why this blocks: the endpoint rho_E=21/4 follows only after that normalization bridge is admitted. Repair target: derive the double-local normalization from Route-2 source/tensor/readout structure, with a runner that computes the bridge rather than selecting p=-2 against lambda=9/4. Claim boundary until fixed: the note cleanly isolates the conditional algebra and falsifies nearby monomial laws, but it is not a current-surface derivation.
+
+### `quark_route2_eta_floor_hf_boundary_note`
+
+- **Note:** [`QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md`](../../docs/QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Audited only whether the live Route-2 eta-floor implementation path exposes the spectral operator, floor eigenvalue, and eigenvector required for a Hellmann-Feynman endpoint derivative.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00232-quark_route2_eta_floor_hf_bo`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The live eta-floor endpoint is the nonspectral max-entry envelope eta_floor[1] = max_probe,max_i,j |G_ij^TF(phi)|, not a lambda_min(A(phi)) object exposing a floor eigenpair.  _(class `A`)_
+- **chain closes:** True — The source-text, AST, runtime endpoint, active-max, and attribute checks consistently establish that the implemented eta-floor is e_spatial_tf, a max-entry envelope without an assembled spectral operator or eigenpair. This closes only the stated Hellmann-Feynman implementation boundary, not every possible exact derivative route.
+- **rationale:** The load-bearing step is a class-A implementation identity over the supplied code, not a first-principles physics calculation or tuned numerical match. The runner substantively traces the value through the live call chain, scans for spectral calls, evaluates both endpoints, and inspects the exposed object; its final tautological no-emission check is non-load-bearing. The conclusion is correctly narrowed to the absence of Hellmann-Feynman prerequisites in this implementation and explicitly leaves spectral-operator and direct-envelope derivative routes open.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08`
 

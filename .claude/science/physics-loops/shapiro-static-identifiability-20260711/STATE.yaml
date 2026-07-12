@@ -7,7 +7,7 @@ checkpoint_interval: 30m
 cycle: 1
 block: 1
 branch: physics-loop/shapiro-static-discriminator-block01-20260711
-base: origin/main@a38ff111de4740cd954345c0898355dbabdc26f4
+base: origin/main@def6c1127
 goal: close the missing derivation in docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md
 target_status: best-honest-status
 actual_current_surface_status: no-go
@@ -47,5 +47,8 @@ no_go_routes:
 trace_gate_classification: direct_blocker_closure
 review_disposition: pass_after_iteration_2
 pr_status: pending
-next_exact_action: update from current origin/main, rerun final validation gates, then commit, push, and open one review PR
+validation_status: pass
+audit_pipeline_result: "pass; target no_go/unaudited/ready with deps=[]; two direct companions unaudited behind target"
+strict_lint_result: "pass; zero errors, 36 pre-existing warnings and 240 notices"
+next_exact_action: commit the delivery checkpoint, push the science branch, and open exactly one unmerged review PR
 stop_condition: coherent block reviewed, pushed, and represented by exactly one verified review PR

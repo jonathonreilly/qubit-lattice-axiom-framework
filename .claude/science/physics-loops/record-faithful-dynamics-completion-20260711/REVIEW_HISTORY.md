@@ -436,3 +436,8 @@ one `bounded_theorem` / `unaudited` row with exactly five intended candidate
 dependencies; the final note hash matches, strict lint has no errors, vocab
 lint has zero violations, and generated audit/status surfaces are stripped.
 No axiom-update stop condition is triggered.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5262 is
+open and mergeable on the two-band BdG head; the independent audit workflow
+was running at the delivery checkpoint.

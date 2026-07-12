@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 90 |
+| **retained** | 91 |
 | **retained_no_go** | 32 |
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2791 |
+| unaudited | 2790 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 469 |
+| `audited_clean` | 470 |
 | `audited_conditional` | 49 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3141 |
+| `unaudited` | 3140 |
 
 | claim_type | count |
 |---|---:|
@@ -177,6 +177,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bmv_entanglement_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `bmv_threebody_note_2026-04-11` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -1482,6 +1483,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N1 contains open and untested alternative reproduction routes.
     - N5 finds untested resolutions behind the lattice-QCD impossibility language.
     - The finite runner does not close the physical graph-gravity, probability/readout, or comparative walls.
+
+### `binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26`
+
+- **Note:** [`BINOM_D_2_EQUALS_TWICE_DMINUS1_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md`](../../docs/BINOM_D_2_EQUALS_TWICE_DMINUS1_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone integer-arithmetic theorem: for integers d≥2, binom(d,2)=2(d-1) if and only if d=4; geometric and framework-forcing interpretations were not audited as load-bearing claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00377-binom_d_2_equals_twice_dminu`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Factoring d(d-1)=4(d-1) gives (d-1)(d-4)=0, whose only solution with integer d≥2 is d=4.  _(class `A`)_
+- **chain closes:** True — The stated factorization proves the complete integer solution set {1,4}, and the domain restriction removes d=1. No external authority, physical bridge, or numerical extrapolation is needed.
+- **rationale:** The load-bearing step is a genuine exact algebraic closure from the standard binomial formula. The runner computes the symbolic factorization and solution set with SymPy and corroborates the finite evaluations; its global conclusion does not depend on the finite scan or a tuned target. The result does not establish any downstream Hodge, Lie-algebra, Wick-rotation, or framework-native dimension-forcing claim.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02`
 

@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 650,
     "high": 335,
-    "leaf": 1106,
+    "leaf": 1105,
     "medium": 755
   },
   "cycle_break_target_count": 49,
@@ -52881,30 +52881,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "flavor_doublet_metric_default_is_detr_2026-06-02"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/FLAVOR_LATITUDE_QUANTIZER_AND_RP_SELFDUAL_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/flavor_latitude_quantizer_and_rp_selfdual_2026_05_30.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "flavor_native_beta_no_half_attractor_note_2026-05-30",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -81305,6 +81281,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 560,
-  "total_pending": 2846
+  "ready_count": 559,
+  "total_pending": 2845
 }

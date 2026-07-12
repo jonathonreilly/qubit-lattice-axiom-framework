@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 377 |
+| **retained_bounded** | 378 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2748 |
+| unaudited | 2747 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 492 |
+| `audited_clean` | 493 |
 | `audited_conditional` | 64 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3098 |
+| `unaudited` | 3097 |
 
 | claim_type | count |
 |---|---:|
@@ -318,6 +318,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_doublet_rotation_exhaustive_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
+| `flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -3983,6 +3984,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - **gate failures:**
     - N1 contains OPEN and UNTESTED non-diagonal, dynamical, normalization-selector, and alternate-carrier routes.
     - N5 confirms that only the diagonal/epsilon resolution was tested; non-diagonal interactions and alternate carriers remain untested.
+
+### `flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30`
+
+- **Note:** [`FLAVOR_LATITUDE_QUANTIZER_AND_RP_SELFDUAL_NOTE_2026-05-30.md`](../../docs/FLAVOR_LATITUDE_QUANTIZER_AND_RP_SELFDUAL_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Repaired bounded demotion: the two named finite quantizer routes do not supply a canonical r=1/2 selector, the RP |b| self-duality is coordinate-dependent, and trace/HS-metric data leave block weighting and readout unselected.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00424-flavor_latitude_quantizer_an`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The distinct geometric, arithmetic, and signed fixed points, together with distinct equal-center and regular tracial functionals, show that neither RP self-duality nor trace/metric structure uniquely selects r=1/2.  _(class `A`)_
+- **chain closes:** True — The scoped conclusion follows from explicit finite algebra: alternative RP midpoint conventions disagree, R+C admits distinct positive tracial functionals, and the HS metric supports two different counting readings. This establishes underdetermination for the named routes without claiming a global impossibility theorem.
+- **rationale:** The repaired note limits itself to a demotion and source-boundary result, withdrawing the former positive quantizer and trace-uniqueness claims. Its load-bearing counterexamples and finite identities are correct: the signed RP edges do not support the |b| involution as a signed duality, distinct midpoint conventions give distinct r values, and commutativity of R+C makes both displayed unequal weightings tracial. The retained-bounded companion independently agrees that the HS metric is readout-neutral, so no unsupported positive physical selector is imported.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02`
 

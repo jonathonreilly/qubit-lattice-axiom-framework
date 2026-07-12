@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 91 |
-| **retained_no_go** | 32 |
+| **retained_no_go** | 33 |
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2788 |
+| unaudited | 2787 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,22 +44,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 470 |
+| `audited_clean` | 471 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3138 |
+| `unaudited` | 3137 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2049 |
 | `decoration` | 21 |
 | `meta` | 357 |
-| `no_go` | 466 |
+| `no_go` | 467 |
 | `open_gate` | 198 |
-| `positive_theorem` | 662 |
+| `positive_theorem` | 661 |
 
 | criticality | count |
 |---|---:|
@@ -199,6 +199,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `central_band_dense_largen_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_layernorm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_mass_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `charged_lepton_radiative_tau_selector_firewall_note_2026-04-26` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `chiral_3plus1d_boundary_phase_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_coupled_coin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -1836,6 +1837,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `KOIDE_Q_OP_LOCALITY_C3_FIXED_SOURCE_SUPPORT_NOTE_2026-04-27.md`
   - `CHARGED_LEPTON_SELECTED_LINE_GENERATION_SELECTOR_NO_GO_NOTE_2026-04-27.md`
   - `KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `charged_lepton_radiative_tau_selector_firewall_note_2026-04-26`
+
+- **Note:** [`CHARGED_LEPTON_RADIATIVE_TAU_SELECTOR_FIREWALL_NOTE_2026-04-26.md`](../../docs/CHARGED_LEPTON_RADIATIVE_TAU_SELECTOR_FIREWALL_NOTE_2026-04-26.md)
+- **claim_type:** `no_go`
+- **claim_scope:** For the standalone rule y_i = alpha_LM C_i/(4pi) with C_e=C_mu=C_tau=1 and no generation-indexed input, the rule cannot select tau; its numerical tau agreement is comparator-only.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00380-charged_lepton_radiative_tau`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The radiative Casimir vector is (C_e, C_mu, C_tau) = (1, 1, 1), so generation relabeling leaves it invariant and it cannot by itself identify the third charged-lepton eigenvalue.  _(class `A`)_
+- **chain closes:** True — The exact equal-Casimir vector and common multiplicative scale are permutation invariant, so they provide no generation discriminator. Selecting tau requires an additional generation-indexed selector, ratio, source, or observational input, which lies outside the scoped standalone rule.
+- **rationale:** The scoped no-go is an exact algebraic symmetry result: multiplying the vector (1,1,1) by any common radiative normalization preserves generation degeneracy. The runner genuinely computes the Casimir equality and permutation invariance; its hard-coded coupling, electroweak scale, and PDG masses affect only the comparator checks, not the selector obstruction. This verdict does not retain alpha_LM/(4pi) as a tau-mass derivation or establish a charged-lepton hierarchy.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

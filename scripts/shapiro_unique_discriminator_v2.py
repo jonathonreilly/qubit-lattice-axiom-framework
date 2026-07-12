@@ -2,10 +2,10 @@
 """Bounded Shapiro unique-discriminator boundary verifier.
 
 This runner reads the SHA-pinned `shapiro_static_discriminator` cache instead
-of hand-entering the phase curves. It verifies the narrow boundary result: the
-detector-line proxy phase is reproduced by a static cone-shape lookalike, while
-static scheduling remains separated. This is not a retained physical Shapiro
-package and not a unique causal-propagation discriminator.
+of hand-entering phase curves. It verifies the narrow boundary result: the
+position-only cone snapshot has an exact equal-array witness, while the configured
+fixed-layer proxy remains separated. This is not a physical Shapiro package
+or a causal-propagation theorem.
 """
 
 from __future__ import annotations
@@ -43,22 +43,25 @@ def _rmse(left: list[float], right: list[float]) -> float:
 
 
 def _checks(cache_text: str, note_text: str) -> tuple[list[tuple[str, bool]], dict[str, list[float] | float]]:
-    causal = _extract_curve(cache_text, "causal mean curve")
-    static_cone = _extract_curve(cache_text, "static cone curve")
-    static_schedule = _extract_curve(cache_text, "static schedule curve")
-    cone_rmse = _rmse(causal, static_cone)
-    schedule_rmse = _rmse(causal, static_schedule)
+    snapshot = _extract_curve(cache_text, "cone snapshot mean curve")
+    equal_array = _extract_curve(cache_text, "equal-array witness curve")
+    fixed_layer = _extract_curve(cache_text, "fixed-layer proxy curve")
+    equal_array_rmse = _rmse(snapshot, equal_array)
+    snapshot_span = max(snapshot) - min(snapshot)
+    fixed_layer_span = max(fixed_layer) - min(fixed_layer)
     header_sha = _extract_header_value(cache_text, "runner_sha256")
 
     checks = [
         ("static-discriminator cache exits cleanly", _extract_header_value(cache_text, "exit_code") == "0" and _extract_header_value(cache_text, "status") == "ok"),
         ("static-discriminator cache is SHA-fresh", header_sha == _sha(STATIC_RUNNER)),
-        ("causal and static-cone curves match to displayed precision", cone_rmse <= 5e-5),
-        ("static scheduling remains separated from causal curve", schedule_rmse >= 5e-3),
+        ("cone-snapshot and equal-array curves match to displayed precision", equal_array_rmse <= 5e-5),
+        ("fixed-layer proxy span is below 1e-3 rad", fixed_layer_span < 1e-3),
+        ("snapshot/fixed-layer span gap exceeds 2e-2 rad", snapshot_span - fixed_layer_span > 2e-2),
+        ("static-discriminator cache carries an assertive pass certificate", "ASSERTIONS: PASS" in cache_text),
         (
             "source note is bounded and does not use retained-chain wording",
             "**Claim type:** no_go" in note_text
-            and "bounded no-unique-discriminator boundary verifier" in note_text
+            and "bounded input-interface/history-label boundary verifier" in note_text
             and "retained Shapiro chain" not in note_text
             and "retained c-dependent" not in note_text
             and "proposed_retained" not in note_text,
@@ -71,16 +74,17 @@ def _checks(cache_text: str, note_text: str) -> tuple[list[tuple[str, bool]], di
         ),
         (
             "source note preserves the no-unique-causality boundary",
-            "not a unique causal-propagation discriminator" in note_text
-            and "static cone-shape" in note_text,
+            "input-interface/history-label no-go" in note_text
+            and "equal-array witness" in note_text,
         ),
     ]
     payload: dict[str, list[float] | float] = {
-        "causal": causal,
-        "static_cone": static_cone,
-        "static_schedule": static_schedule,
-        "cone_rmse": cone_rmse,
-        "schedule_rmse": schedule_rmse,
+        "snapshot": snapshot,
+        "equal_array": equal_array,
+        "fixed_layer": fixed_layer,
+        "equal_array_rmse": equal_array_rmse,
+        "snapshot_span": snapshot_span,
+        "fixed_layer_span": fixed_layer_span,
     }
     return checks, payload
 
@@ -93,43 +97,45 @@ def main() -> int:
     cache_text = STATIC_CACHE.read_text(encoding="utf-8")
     note_text = NOTE.read_text(encoding="utf-8")
     checks, payload = _checks(cache_text, note_text)
-    causal = payload["causal"]
-    static_cone = payload["static_cone"]
-    static_schedule = payload["static_schedule"]
-    assert isinstance(causal, list)
-    assert isinstance(static_cone, list)
-    assert isinstance(static_schedule, list)
-    cone_rmse = float(payload["cone_rmse"])
-    schedule_rmse = float(payload["schedule_rmse"])
+    snapshot = payload["snapshot"]
+    equal_array = payload["equal_array"]
+    fixed_layer = payload["fixed_layer"]
+    assert isinstance(snapshot, list)
+    assert isinstance(equal_array, list)
+    assert isinstance(fixed_layer, list)
+    equal_array_rmse = float(payload["equal_array_rmse"])
+    snapshot_span = float(payload["snapshot_span"])
+    fixed_layer_span = float(payload["fixed_layer_span"])
     ok = all(flag for _label, flag in checks)
 
     print("=" * 88)
     print("SHAPIRO UNIQUE DISCRIMINATOR V2: BOUNDED BOUNDARY VERIFIER")
-    print("  cache-backed check against the static-cone no-go boundary")
+    print("  cache-backed check of the input-interface/history-label no-go boundary")
     print("=" * 88)
     print()
     print("Source cache:")
     print("  logs/runner-cache/shapiro_static_discriminator.txt")
     print()
-    print(f"{'mode':>20s} {'c=2.0':>10s} {'c=1.0':>10s} {'c=0.5':>10s} {'c=0.25':>10s}")
+    print(f"{'mode':>20s} {'q=2.0':>10s} {'q=1.0':>10s} {'q=0.5':>10s} {'q=0.25':>10s}")
     print("-" * 72)
-    print(f"{'causal dynamic cone':>20s} {_fmt_curve(causal)}")
-    print(f"{'static cone shape':>20s} {_fmt_curve(static_cone)}")
-    print(f"{'static scheduling':>20s} {_fmt_curve(static_schedule)}")
+    print(f"{'cone snapshot':>20s} {_fmt_curve(snapshot)}")
+    print(f"{'equal-array witness':>20s} {_fmt_curve(equal_array)}")
+    print(f"{'fixed-layer proxy':>20s} {_fmt_curve(fixed_layer)}")
     print()
     print("Boundary diagnostics:")
-    print(f"  causal vs static-cone RMSE: {cone_rmse:.4f}")
-    print(f"  causal vs static-schedule RMSE: {schedule_rmse:.4f}")
+    print(f"  snapshot vs equal-array RMSE: {equal_array_rmse:.4f}")
+    print(f"  cone-snapshot span: {snapshot_span:.4f}")
+    print(f"  fixed-layer span: {fixed_layer_span:.4f}")
     print()
     print("RUNNER CHECKS")
     for label, flag in checks:
         print(f"  [{'PASS' if flag else 'FAIL'}] {label}")
     print()
     print("Safe read:")
-    print("  - the detector-line proxy phase is not a unique causal-propagation discriminator")
-    print("  - the static cone-shape proxy reproduces the displayed curve")
-    print("  - static scheduling remains separated and near-flat")
-    print("  - a stricter discriminator needs a second observable beyond this phase line")
+    print("  - the supplied kernel receives a position-only cone snapshot, not a causal history")
+    print("  - the equal-array witness reproduces the displayed curve on the unconstrained input surface")
+    print("  - the configured fixed-layer proxy remains separated and near-flat")
+    print("  - no physically admissible static solution is constructed by this verifier")
     print()
     print(f"ASSERTIONS: {'PASS' if ok else 'FAIL'}")
     return 0 if ok else 1

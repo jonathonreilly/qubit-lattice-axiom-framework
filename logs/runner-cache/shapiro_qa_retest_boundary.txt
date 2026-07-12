@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/shapiro_qa_retest_boundary.py
-runner_sha256: ee2eddfdf08b5cc3e891e6c0d66ea1521a412e3b7ba8b55a88995c362c7f5bcd
+runner_sha256: 3685bd307fb9614fb4f855e0771d9d8f0f0282a7f8c1bcafa92ff2c4be6ee702
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
@@ -12,8 +12,9 @@ SHAPIRO QA RETEST: BOUNDED CACHE VERIFIER
 ========================================================================================
 
 phase replay max spread: 0.0002
-static cone RMSE: 0.0000
-static schedule RMSE: 0.0128
+snapshot/equal-array RMSE: 0.0000
+cone-snapshot span: 0.0290
+fixed-layer span: 0.0005
 
 RUNNER CHECKS
   [PASS] phase-lag cache exits cleanly
@@ -22,15 +23,18 @@ RUNNER CHECKS
   [PASS] static-discriminator cache is SHA-fresh
   [PASS] phase replay has exact instantaneous zero control
   [PASS] phase replay family spread is bounded by 2.5e-4 rad
-  [PASS] static cone reproduces causal curve to displayed precision
-  [PASS] static scheduling remains separated
+  [PASS] cone snapshot and equal-array witness match to displayed precision
+  [PASS] fixed-layer proxy span is below 1e-3 rad
+  [PASS] snapshot/fixed-layer span gap exceeds 2e-2 rad
+  [PASS] static-discriminator cache carries an assertive pass certificate
   [PASS] source note is bounded QA and has no retained/archived live dependency wording
   [PASS] source note preserves claim boundary
 
 Safe read:
   - this is bounded QA over existing caches
   - archived failed bridge rows are not live dependencies
-  - static-cone mimic remains the no-unique-discriminator boundary
+  - snapshot/equal-array equality remains the exact input-interface no-go
+  - the configured fixed-layer proxy remains a bounded secondary control
   - no tracker issue is implied by the checked caches
 
 ASSERTIONS: PASS

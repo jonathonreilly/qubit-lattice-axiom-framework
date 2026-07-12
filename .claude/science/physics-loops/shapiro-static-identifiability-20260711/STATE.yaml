@@ -1,0 +1,51 @@
+loop: shapiro-static-identifiability-20260711
+mode: run
+runtime_budget: 3h
+start_utc: 2026-07-12T03:21:37Z
+target_stop_utc: 2026-07-12T06:21:37Z
+checkpoint_interval: 30m
+cycle: 1
+block: 1
+branch: physics-loop/shapiro-static-discriminator-block01-20260711
+base: origin/main@a38ff111de4740cd954345c0898355dbabdc26f4
+goal: close the missing derivation in docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md
+target_status: best-honest-status
+actual_current_surface_status: no-go
+active_route: exact input-interface/history-label no-go for the memoryless field-array harness
+hard_residual: determine whether detector-line phase alone identifies causal history when the propagation functional receives only one node-wise field array
+A_min:
+  - configured grown directed geometry and deterministic amplitude kernel
+  - node-wise scalar field array supplied to the amplitude kernel
+  - detector-line normalized overlap phase observable
+  - configured c values, family parameters, seeds, and fixed-delay controls
+forbidden_imports:
+  - observed target phase values as proof inputs
+  - fitted static selectors
+  - unstated source history or source turn-on time
+  - unstated probe speed or detector clock
+  - literature wave equations or physical-unit identifications
+lock_mode: branch_local_supervisor
+lock_note: cooperative lock failed because scripts/automation_lock.py targets inaccessible /Users/jonreilly
+lock_status: released_before_commit
+files_touched:
+  - .claude/science/physics-loops/shapiro-static-identifiability-20260711/
+  - docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md
+  - scripts/shapiro_static_discriminator.py
+  - logs/runner-cache/shapiro_static_discriminator.txt
+  - docs/SHAPIRO_QA_RETEST_NOTE.md
+  - scripts/shapiro_qa_retest_boundary.py
+  - logs/runner-cache/shapiro_qa_retest_boundary.txt
+  - docs/SHAPIRO_UNIQUE_DISCRIMINATOR_V2_NOTE.md
+  - scripts/shapiro_unique_discriminator_v2.py
+  - logs/runner-cache/shapiro_unique_discriminator_v2.txt
+open_imports:
+  - temporal state variable for any physical causal-propagation claim
+  - source history and boundary/initial conditions for any retarded-field claim
+  - history-sensitive observable for any positive causal discriminator
+no_go_routes:
+  - treating the existing causal label as an independently propagated field
+trace_gate_classification: direct_blocker_closure
+review_disposition: pass_after_iteration_2
+pr_status: pending
+next_exact_action: update from current origin/main, rerun final validation gates, then commit, push, and open one review PR
+stop_condition: coherent block reviewed, pushed, and represented by exactly one verified review PR

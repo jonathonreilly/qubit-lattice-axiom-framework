@@ -1,12 +1,20 @@
 # Shapiro Unique Discriminator V2 Note
 
-**Date:** 2026-04-06; bounded-source repair 2026-06-17
+**Date:** 2026-04-06; bounded-source repair 2026-06-17; snapshot-boundary
+alignment 2026-07-11
+
 **Type:** no_go
+
 **Claim type:** no_go
-**Status:** bounded no-unique-discriminator boundary verifier; independent
+
+**Status:** bounded input-interface/history-label boundary verifier; independent
 audit required before any effective status change
-**Primary runner:** [`scripts/shapiro_unique_discriminator_v2.py`](../scripts/shapiro_unique_discriminator_v2.py)
-**Cached runner output:** [`logs/runner-cache/shapiro_unique_discriminator_v2.txt`](../logs/runner-cache/shapiro_unique_discriminator_v2.txt)
+
+**Primary runner:**
+[`scripts/shapiro_unique_discriminator_v2.py`](../scripts/shapiro_unique_discriminator_v2.py)
+
+**Cached runner output:**
+[`logs/runner-cache/shapiro_unique_discriminator_v2.txt`](../logs/runner-cache/shapiro_unique_discriminator_v2.txt)
 
 ## Artifact Chain
 
@@ -14,98 +22,88 @@ audit required before any effective status change
 - [`logs/runner-cache/shapiro_unique_discriminator_v2.txt`](../logs/runner-cache/shapiro_unique_discriminator_v2.txt)
 - [`logs/runner-cache/shapiro_static_discriminator.txt`](../logs/runner-cache/shapiro_static_discriminator.txt)
 - [`SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md`](SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md)
-- [`SHAPIRO_DELAY_NOTE.md`](SHAPIRO_DELAY_NOTE.md)
-- [`SHAPIRO_FAMILY_PORTABILITY_NOTE.md`](SHAPIRO_FAMILY_PORTABILITY_NOTE.md)
 
 The archived complex-interaction and diamond-bridge renderer notes are not
-live dependencies for this bounded boundary verifier. The Shapiro delay and
-family-portability rows are used only within their bounded proxy replay scope.
+live dependencies for this bounded verifier.
 
 ## Question
 
-Does the current Shapiro detector-line proxy phase give a unique
-causal-propagation discriminator, or can a static lookalike reproduce it?
+Does the current detector-line phase identify the history label attached to
+the node field, or does a position-only field with the same node values give
+an exact equal-array witness on the runner's unconstrained input surface?
 
 ## Cache-Backed Boundary Result
 
 The primary runner reads
-[`logs/runner-cache/shapiro_static_discriminator.txt`](../logs/runner-cache/shapiro_static_discriminator.txt)
-and verifies that the cache is SHA-fresh for
-[`scripts/shapiro_static_discriminator.py`](../scripts/shapiro_static_discriminator.py).
+[`logs/runner-cache/shapiro_static_discriminator.txt`](../logs/runner-cache/shapiro_static_discriminator.txt),
+verifies that it is SHA-fresh for
+[`scripts/shapiro_static_discriminator.py`](../scripts/shapiro_static_discriminator.py),
+and requires the upstream `ASSERTIONS: PASS` certificate.
 
 The parsed mean curves are:
 
-| mode | c=2.0 | c=1.0 | c=0.5 | c=0.25 |
-| --- | ---: | ---: | ---: | ---: |
-| causal dynamic cone | `+0.0372` | `+0.0446` | `+0.0569` | `+0.0662` |
-| static cone shape | `+0.0372` | `+0.0446` | `+0.0569` | `+0.0662` |
-| static scheduling | `+0.0446` | `+0.0445` | `+0.0446` | `+0.0450` |
+| mode | q=2.0 | q=1.0 | q=0.5 | q=0.25 |
+|---|---:|---:|---:|---:|
+| cone snapshot | `+0.0372` | `+0.0446` | `+0.0569` | `+0.0662` |
+| equal-array position-only witness | `+0.0372` | `+0.0446` | `+0.0569` | `+0.0662` |
+| configured fixed-layer proxy | `+0.0446` | `+0.0445` | `+0.0446` | `+0.0450` |
 
 The cache-backed diagnostics are:
 
-- causal vs static-cone RMSE: `0.0000`;
-- causal vs static-schedule RMSE: `0.0128`;
-- exact zero controls remain part of the static-discriminator packet.
+- snapshot and equal-array witness curves are exactly equal;
+- cone-snapshot span minus fixed-layer-proxy span is above `2e-2 rad`; and
+- the upstream cache completes with all assertive checks passing.
 
 ## Boundary Read
 
-The detector-line proxy phase is compatible with the causal-cone model, but it
-is not a unique causal-propagation discriminator. A static cone-shape proxy
-reproduces the displayed phase curve to the cache precision. Static scheduling
-does not reproduce the curve and stays near-flat.
+The supplied kernel receives a node-wise field snapshot and contains no causal
+time evolution. Its detector phase therefore cannot identify a history label
+that is absent from the interface. The equal-array witness is the same element
+of the runner's unconstrained node-array input space. No static field equation,
+source law, boundary data, or physical admissibility condition is supplied.
+The fixed-layer rows remain a bounded secondary control, not an exhaustion of
+schedules.
 
-This is therefore a no-unique-discriminator boundary, not a stronger
-discriminator result and not a physical field-speed measurement.
-
-## Safe Read
-
-- the phase line remains a bounded proxy observable;
-- the static cone-shape no-go is load-bearing;
-- no diamond/NV calibration or lab unit bridge is supplied here;
-- a stricter discriminator would need another observable not reproduced by the
-  static cone-shape field family.
+This is an input-interface/history-label no-go, not a physical field-speed or
+static-solution result and not a theorem about history-sensitive observables.
 
 ## No-Go Discipline Gate
 
-**Claim tested:** only the detector-line proxy phase curve on the cached
-`c`-grid is not a unique causal-propagation discriminator, because the
-static cone-shape comparator reproduces that displayed curve. This note does
-not rule out second observables, higher precision probes, physical source
-dynamics, or lab calibration.
+- **N1 — alternative routes:** seven attacks are separated: hidden
+  history-label input, direct cone-index leakage, stateful/nondeterministic
+  propagation, unequal fixed instances/baselines, zero-norm phase, a physical
+  static-solution restriction, and one witness fixed across all indices. The
+  first four are absent from the inspected interface, undefined phase is
+  excluded, and the last two change the comparator class or quantifier.
+- **N2 — wall independence:** the exact equal-input theorem has no residual
+  walls; temporal extensions are not counted as multiple failures.
+- **N3 — hidden-wall scan:** the fixed configured instance and unconstrained
+  node-array input class are explicit. The cache verifier imports no physical
+  time, speed, static-solution admissibility, source history, observed value,
+  fitted selector, or lab calibration.
+- **N4 — residual matching:** the verifier checks the same residual as its
+  source note: history identifiability from one field-array detector phase.
+- **N5 — rhetoric audit:** the negative claim is only for this unconstrained
+  node-array interface and deterministic phase readout, not for physical
+  static solutions, edge-time, multi-time, one-field-across-index, or
+  all-observable resolutions. More same-time detector components do not evade
+  equal-input determinism unless they carry independent history.
+- **N6 — partial-closure scan:** an explicit temporal field plus a
+  history-sensitive readout is the live route around the no-go.
+- **N7 — steelman:** the equal-array witness need not be a physically
+  admissible static solution, one physically fixed field may fail to reproduce
+  the indexed curve, and a retarded field along a probe path need not reduce to
+  one snapshot. Those objections defeat a physical/global claim, so none is
+  made; they do not alter the exact result on the unconstrained input class.
+- **N8 — cross-cycle echo:** the earlier Shapiro cone-mask rows did not add
+  temporal evolution. The known retirement route is the explicit temporal
+  extension, not a causal reinterpretation of the cone index.
 
-- **N1 alternative routes:** phase curve alone, monotone `c` trend, exact-zero
-  control plus phase curve, static-scheduling-only comparison, and portability
-  of the same phase observable all fail to restore uniqueness at this scope:
-  the static cone-shape curve remains an explicit matching comparator. A
-  second observable is an open route, not closed by this note.
-- **N2 wall independence:** single counterexample wall only: the static
-  cone-shape comparator matches the displayed causal curve. No inflated
-  multi-wall count is used.
-- **N3 hidden-wall scan:** `current`, `cache-backed`, and `static cone-shape`
-  are explicit scope restrictions, not hidden admissions. No axiom,
-  primitive, lab bridge, or dynamics premise is smuggled.
-- **N4 residual matching:** the residual matches the static-discriminator
-  boundary exactly: uniqueness of the detector-line proxy phase against
-  static field-shape effects.
-- **N5 rhetoric audit:** the negative is only for this detector-line phase
-  curve over the cached `c`-grid. It is not a per-site, all-observable,
-  lattice-wide, lab, or physical field-speed no-go.
-- **N6 partial-closure scan:** a second observable, higher precision
-  discriminator, physical source model, or lab bridge could still build a
-  stricter discriminator. None is claimed absent or axiom-forbidden.
-- **N7 steelman:** a hostile reviewer can reasonably argue that another
-  channel, a higher-precision curve, or a source-to-lab readout could separate
-  causal propagation from static cone-shape effects. That does not defeat this
-  note, because the shipped no-go is limited to the present detector-line phase
-  observable.
-- **N8 cross-cycle echo:** the prior static-discriminator boundary is the same
-  residual, not a different wall. No retired convention or primitive changes
-  the displayed curve equality.
-
-**No-go-discipline status:** PASS for the narrowed claim above.
+**No-go-discipline status:** PASS for the narrow source-side claim above.
 
 ## Claim Boundary
 
-This row may support a no-unique-discriminator boundary if audit
-accepts the cache-backed verifier and scope. It does not retain the physical
-Shapiro package, any lab-facing bridge, or any unique-causality claim.
+This row may support the narrow no-go if independent audit accepts the
+cache-backed verifier and scope. It does not establish a physical Shapiro
+package, lab-facing bridge, causal field-speed interpretation, physical static
+solution, single-fixed-field theorem, or all-observable no-go.

@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 387 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2729 |
+| unaudited | 2728 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 72 |
-| ~~audited_failed~~ | 11 |
+| ~~audited_failed~~ | 12 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -48,18 +48,18 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 503 |
 | `audited_conditional` | 72 |
 | `audited_decoration` | 20 |
-| `audited_failed` | 33 |
+| `audited_failed` | 34 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3079 |
+| `unaudited` | 3078 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2052 |
+| `bounded_theorem` | 2053 |
 | `decoration` | 23 |
 | `meta` | 357 |
 | `no_go` | 470 |
-| `open_gate` | 198 |
+| `open_gate` | 197 |
 | `positive_theorem` | 654 |
 
 | criticality | count |
@@ -762,6 +762,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_generated_support_mass_scaling_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `source_resolved_geometry_rule_repair_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `structured_mirror_bornsafe_scan_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
+| `teleportation_apparatus_dynamics_closure_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `testable_predictions_map_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -8477,6 +8478,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Within the stated small closed-system model, the source-note numbers match the live runner output and the runner computes the finite-time evolution, logical trace, teleportation fidelity, null control, and no-message checks. The closure is only for the bounded diagnostic, not for scalable or physical hardware preparation.
 - **rationale:** The scoped claim is a bounded numerical diagnostic, not the hinted open gate or a physical preparation theorem. The live runner output supports the finite-time candidate, the null non-resource control, and Bob pre-message input-independence under the stated ideal protocol boundary. No hidden matter-transfer, FTL, scaling, or hardware-readout claim is needed for the audited statement.
 - **auditor confidence:** high
+
+### `teleportation_apparatus_dynamics_closure_note`
+
+- **Note:** [`TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md`](../../docs/TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The packet verifies algebraic overlap, teleportation, finite-lattice arrival, and branch-ledger formulas for an engineered finite candidate, but not the claimed explicit controlled-unitary transducer, explicit spin-bath dynamics, irreversible durable decoherence, or full apparatus-Hamiltonian conservation.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00229-teleportation_apparatus_dyna`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Tracing the finite spin bath produces an effectively classical durable record without inserting a projective collapse step.  _(class `A`)_
+- **chain closes:** False — The runner evaluates closed-form overlap and ledger formulas but never constructs the pointer unitaries U_j, a bath Hilbert-space unitary and reduced state, or a full apparatus Hamiltonian. Consequently the dynamical and irreversibility claims do not follow even within the stated candidate.
+- **rationale:** Issue: several PASS labels exceed what the runner computes: controlled_unitary_error tests projector idempotence, the bath is represented only by an overlap formula, and conservation is an engineered equal scalar ledger rather than Hamiltonian conservation. Why this blocks: those omitted constructions are precisely the note's load-bearing apparatus-dynamics claims. Repair target: construct and test the complete controlled unitary, explicit system-pointer-bath evolution and partial trace, finite-time recurrence/durability boundary, and a full Hamiltonian with conserved operators. Claim boundary until fixed: the reported finite overlap, teleportation, arrival, and scalar-ledger calculations remain valid properties of the supplied formulas.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 contains open and untested dynamical routes.
+    - N5 finds untested resolutions behind the note's projector-replacement, irreversibility, durability, and conservation rhetoric.
 
 ### `teleportation_causal_channel_note`
 

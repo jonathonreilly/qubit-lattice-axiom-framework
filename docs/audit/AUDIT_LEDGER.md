@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 380 |
+| **retained_bounded** | 381 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2744 |
+| unaudited | 2743 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 495 |
+| `audited_clean` | 496 |
 | `audited_conditional` | 65 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3094 |
+| `unaudited` | 3093 |
 
 | claim_type | count |
 |---|---:|
@@ -322,6 +322,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_native_beta_no_half_attractor_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_q1_default_rests_on_prr_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
+| `flavor_so2_readout_false_binary_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -4073,6 +4074,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
   - **gate failures:**
     - N1 contains OPEN and UNTESTED physical bridge routes, so route exhaustion is not established.
+
+### `flavor_so2_readout_false_binary_note_2026-05-30`
+
+- **Note:** [`FLAVOR_SO2_READOUT_FALSE_BINARY_NOTE_2026-05-30.md`](../../docs/FLAVOR_SO2_READOUT_FALSE_BINARY_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite algebra of the supplied C3 generator, circulant spectrum, and 1+2 projector decomposition: discrete rephase compatibility, delta-independent Q, the two determinant/counting products, and degeneracy at delta=m*pi/3.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00428-flavor_so2_readout_false_bin`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the supplied C3 generator, circulant spectrum, and 1+2 projector decomposition, direct algebra gives the discrete rephase condition, delta-independent trace ratio, determinant/counting products, and degeneracy locus.  _(class `A`)_
+- **chain closes:** True — The four conclusions follow algebraically from the matrices, projectors, and spectrum defined in the runner. They do not establish any framework-wide readout-normalization or physical selector theorem.
+- **rationale:** The runner instantiates the supplied matrices and computes substantive algebra rather than merely printing expected constants. From its definitions, (exp(i alpha)C)^3=exp(3i alpha)I, the trace sums make Q delta-independent, alpha Ps+beta Pd has eigenvalues alpha,beta,beta, and pairwise equality of the cosine eigenvalues occurs exactly at delta=m*pi/3 for the fixed nonzero b. The note explicitly excludes the broader physical selector and exhaustiveness conclusions that these identities cannot support.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `flavor_substrate_parent_separate_note_2026-05-30`
 

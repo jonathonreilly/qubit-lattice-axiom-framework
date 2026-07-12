@@ -400,3 +400,39 @@ are stripped before delivery.
 Delivery: stacked PR
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5258 is
 open on the onsite-charge common-H head. Independent audit remains required.
+
+## Free staggered same-action scalar spectral continuum block
+
+The actual `d=3` two-step transfer, four-dimensional staggered covariance,
+Gaussian-measure, conditional OS/Wightman, and transfer-log quasilocality
+sources were read and their load-bearing runners replayed. The new calculation
+derives the blocked-time covariance and two-step transfer from one `A_a` with
+`M(a)=am`, proving `z_pole=e^{-2E}=lambda_stable(T_2)`,
+`T_2=T_even^dag T_even>0`, and an exact eight-dimensional pole-solution to
+stable-eigenspace map. Runner/cache: `PASS=23 FAIL=0`.
+
+### Continuum block review iteration 1
+
+Independent review rejected the first “same-object free QFT gateway” wording.
+Pole location alone did not establish pole residues, equal-time CAR
+projectors, coherent-state correlator equality, or comparison across
+`a`-dependent Hilbert spaces. Review also caught vacuous taste and synthetic
+Pfaffian checks, missing explicit Fock-log/factorization tests, undisclosed
+field normalization, and an incomplete current-schema N1--N8 packet.
+
+### Continuum block review iteration 2
+
+PASS WITH BOUNDED CLAIMS. The source is narrowed to a same-action scalar
+spectral/solution-space theorem and explicitly leaves residue/CAR/coherent-state
+equality open. The runner now checks `Cl_4` algebra/commutant dimensions,
+positive factorization, the full stable-space intertwiner, Fock logarithm,
+and an actual Nambu-doubled covariance Pfaffian. `D_phys`, field/Fourier
+normalization, and the compact-band comparison isometry are explicit. N1--N8
+contains seven attempted routes, fifteen bidirectional condition pairs plus
+the selector subwall audit, actual phrase and residual scans, resolution and
+primitive/reframe tables, a hostile steelman, and cross-cycle retirement.
+Code/math, claim/Nature, and governance re-reviews pass. Audit validation seeds
+one `bounded_theorem` / `unaudited` row with exactly five intended candidate
+dependencies; the final note hash matches, strict lint has no errors, vocab
+lint has zero violations, and generated audit/status surfaces are stripped.
+No axiom-update stop condition is triggered.

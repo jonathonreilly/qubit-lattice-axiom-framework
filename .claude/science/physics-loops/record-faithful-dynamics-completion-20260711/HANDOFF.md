@@ -1,6 +1,26 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block18-coupled-os-descent-20260712`.
+The coupled OS descent/infinite-time runner reports `PASS=9 FAIL=0`.
+Support-controlled finite-circle cores have exact OS-null descent. Universal
+finite thermal contraction is false as a consequence of the named positivity
+premises: the exact `L_t=6` `Z_3` analogue has density ratio `29/25`, although
+its natural first-boundary core contracts. At fixed finite spatial volume and
+`m>0`, uniform resolvent/Wick bounds give an infinite-time diagonal
+subsequence. Its OS quotient carries a positive self-adjoint two-step
+contraction, logarithmic Hamiltonian, Euclidean semigroup, and spectral
+real-time unitary group on the nonzero-transfer support. The limit is not yet
+unique or boundary independent, and no thermodynamic or continuum result is
+claimed. Independent code/math, physics/import/Nature, governance, and full
+N1--N8 reviews pass with bounded claims. The audit pipeline seeds exactly the
+coupled periodic two-seam reflected-Gram parent; audit remains authoritative.
+
+The next exact route is an interacting two-step gauge-fermion kernel or a
+quantitative mixing/boundary-comparison theorem that removes the subsequence.
+No axiom-update stop is triggered.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block17-coupled-circle-os-20260712`.
 The coupled-circle runner reports `PASS=16 FAIL=0`. The full finite-circle
 SU(3) Wilson-staggered reflected Gram is now proved on individually

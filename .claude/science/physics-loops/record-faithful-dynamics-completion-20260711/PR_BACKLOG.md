@@ -1,5 +1,24 @@
 # PR Delivery
 
+The coupled OS interior descent and subsequential infinite-time transfer is
+prepared as the next stacked review block:
+
+- base: `physics-loop/record-faithful-dynamics-block17-coupled-circle-os-20260712`
+- head: `physics-loop/record-faithful-dynamics-block18-coupled-os-descent-20260712`
+- source runner: `PASS=9 FAIL=0`
+- disposition: PASS WITH BOUNDED CLAIMS after independent code/math,
+  physics/import/Nature, governance, labeling, and repaired full N1--N8 review;
+  finite-circle interior descent and a subsequential fixed-spatial-volume
+  interacting OS transfer/Hamiltonian close, while unique infinite time,
+  thermodynamic volume, continuum, SM, and GR remain open
+- audit compatibility: one `bounded_theorem` / `unaudited` row, exactly the
+  coupled periodic two-seam reflected-Gram dependency, matching note hash,
+  strict lint zero errors, vocabulary lint zero violations, generated
+  audit/status outputs stripped
+- delivery: PR pending
+
+No merge is authorized. Independent audit remains authoritative.
+
 The two-band BdG strict-time and scalar-cubic boundary is delivered as the
 next stacked review PR:
 

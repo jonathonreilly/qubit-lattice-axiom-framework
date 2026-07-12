@@ -1,0 +1,10 @@
+PASS Exact finite-group boundary core descends to a positive contraction matrix: spectrum=0.007514585,0.010250103,0.010250103,0.059941919,0.125364431,1.000000000
+PASS Exact finite-circle multi-slice contraction counterexample is 29 over 25: B2(n2,n2)/B0(n2,n2)=1.160000000000
+PASS Vacuum normalization blocks a scalar contraction repair: vacuum ratio=1.000000000000, density ratio=1.160000000000
+PASS Strict seam-kernel positivity does not remove the broad counterexample: seam spectrum=[0.9999999999999992, 0.9999999999999998, 3.999999999999999], density ratio=1.160000000000
+PASS Broad finite-circle core is positive but noncontractive: minimum=3.744627e-03, maximum=191.403587
+PASS Massive staggered resolvent obeys the uniform one over m bound: maximum ||D^-1||-1/m=0.000e+00
+PASS Positive spectral moments are bounded log-convex and nonincreasing: max log-convex defect=-7.562e-05, max increase=-4.314e-04
+PASS Support-controlled B0 pairing kills every B0-null first slot: finite matrix model of B2(F,G)=B0(F,tau2 G)
+PASS Source-note boundary and N1-N8 contract: schema present; attempted routes=8; directional pairs=15
+SCORECARD PASS=9 FAIL=0

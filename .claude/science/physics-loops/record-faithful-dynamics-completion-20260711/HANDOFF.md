@@ -19,6 +19,11 @@ https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
 is open and mergeable against the record-observable branch; its audit-lane
 workflow was queued at the delivery checkpoint.
 
+Covariant-effect nonselection and repeat-certainty collapse review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5202
+is open and mergeable against the minimal-dilation branch; its audit-lane
+workflow was running at the delivery checkpoint.
+
 ## Central thesis
 
 The next move is not another sector Hamiltonian or continuum fit. It is to make

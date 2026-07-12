@@ -52,7 +52,8 @@ def main() -> int:
     cycle = frozenset({(0, 0, 0), (1, 0, 0), (0, 1, 0)})
 
     section("Part A: exact beta family")
-    betas = [Fraction(-1), Fraction(0), Fraction(1, 3), beta_target, beta_counter]
+    betas = [Fraction(1, 3), Fraction(1, 2), beta_target, Fraction(3, 2), beta_counter]
+    check("tested beta family is strictly positive", all(beta > 0 for beta in betas))
     check("empty record reads zero for every tested beta", all(readout(beta, h, empty) == 0 for beta in betas))
     check(
         "finite disjoint additivity holds for every tested beta",
@@ -175,7 +176,10 @@ def main() -> int:
     check("scale reference withholds dimensionless readout content", "no mass ratio, coupling, mixing angle, phase, selector, readout bridge" in scale_flat)
     check("kinetic isotropy withholds phase and readout bridge", "No mass ratio, coupling, mixing angle, phase, or selector is supplied" in kinetic_flat and "readout bridge" in kinetic_flat)
     check("note grants h-class explicitly", "Grant the R-eta h-class hypothesis" in note)
-    check("note states the beta countermodel", "I_beta(R) = beta h N(R)" in note)
+    check(
+        "note states the positive beta countermodel",
+        "Every positive real `beta`" in note and "I_beta(R) = beta h N(R)" in note,
+    )
     check("note matches singleton eta angle and cycle holonomy", "|delta_beta| = I_beta({x}) = beta h" in note and "Phi_beta = I_beta(C) = 3 beta h" in note)
     check("note limits claim to current finite-record surface", "finite-record, current-surface" in note)
     check("note preserves a future same-observable theorem", "future same-observable holonomy theorem" in note)

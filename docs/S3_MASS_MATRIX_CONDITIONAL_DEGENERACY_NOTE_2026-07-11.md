@@ -61,14 +61,23 @@ This is a review-only N1-N8 record for the consequence on line 32. It does not
 pre-assign an audit verdict; the independent audit lane must rebuild the packet
 against authenticated evidence.
 
-- **N1 — five distinct attacks.** (1) Schur decomposition gives two
-  multiplicity-one blocks; (2) exact simultaneous commutation with the two
-  generating transpositions gives a two-dimensional commutant; (3) character
-  multiplicities give `1^2+1^2=2`; (4) the explicit group-average projector on
-  `End(V)` has rank two and contains `I_3,P_(A_1)`; (5) direct diagonalization
-  of `alpha I_3+beta P_(A_1)` gives the displayed spectrum for arbitrary real
-  `alpha,beta`. Routes 1-4 close the operator class; route 5 closes its spectral
-  consequence. All five are `ATTEMPTED` in the proof or paired runner.
+- **N1 — six distinct attacks.** (1) An exact simultaneous-commutator solve for
+  the two generating transpositions leaves dimension two (`ATTEMPTED` in the
+  runner). (2) The independent character calculation gives multiplicities
+  `m_(A_1)=1`, `m_(A_2)=0`, `m_E=1` (`ATTEMPTED`). (3) A combinatorial orbit
+  count on ordered matrix-entry labels gives only the diagonal and off-diagonal
+  entry classes (`ATTEMPTED`). These three routes close the stated commutant by
+  linear-algebra, character, and orbit methods rather than by repeating one
+  calculation. (4) Weakening exact `S_3` to the axis-fixing `Z_2` raises the
+  commutant dimension to five (`ATTEMPTED`) and is an explicit escape outside
+  the symmetry hypothesis. (5) Replacing `A_1 direct-sum E` by three repeated
+  trivial irreps gives commutant dimension nine and permits a generic three-way
+  spectrum (`ATTEMPTED`), an escape outside the representation hypothesis.
+  (6) On the stated representation, `diag(1,2,3)` has three eigenvalues but a
+  nonzero commutator with a generating transposition (`ATTEMPTED`), so the
+  direct counterexample route leaves exact invariance rather than defeating the
+  lemma. Schur decomposition and exact diagonalization then cross-check the
+  positive characterization; they are not counted as additional N1 attacks.
 - **N2 — condition independence.** The supplied unitary representation
   `V ~= A_1 direct-sum E` does not imply that a chosen operator is exactly
   `S_3` invariant, and exact invariance does not select that representation.
@@ -86,11 +95,15 @@ against authenticated evidence.
   or introducing multiplicities can permit a three-value spectrum. Those are
   honest escape routes outside the two explicit hypotheses, not new axioms and
   not counterexamples to the scoped lemma.
-- **N7 — steelman.** A physical flavor carrier need not be this representation,
-  and a physical mass operator need not commute with exact `S_3`; either fact
-  defeats any physical three-generation no-go. That strongest objection is why
-  the theorem excludes the carrier bridge and claims only the abstract
-  commutant characterization.
+- **N7 — steelman.** The strongest objection to the abstract wording is that an
+  “`S_3`-invariant mass construction” may mean an equivariant family `M(phi)`
+  whose background transforms with `phi`, not a pointwise invariant operator.
+  A realized symmetry-breaking `phi_0` can then give `M(phi_0)` three distinct
+  eigenvalues while the full family remains covariant. That would refute a
+  family-level reading. The lemma survives only because its hypothesis is the
+  narrower pointwise equation `U_g M U_g^* = M` for every `g` on the supplied
+  ordinary representation; the note makes no claim about equivariant families
+  or realized symmetry-breaking backgrounds.
 - **N8 — cross-cycle echo.** The older S3 note overlaid this algebra with a
   physical `hw=1`/taste-cube reading. The applicable retirement mechanism is
   precisely the one used here: split the exact abstract lemma from the
@@ -105,6 +118,8 @@ physical-carrier or universal flavor conclusions remain outside scope.
 python3 scripts/frontier_s3_mass_matrix_no_go.py
 ```
 
-The runner checks the commutant dimensions, projector form, two-value spectrum,
-and the residual `Z_2` dimension. Its historical filename does not turn this
-narrow positive lemma into a no-go claim.
+The runner checks the commutant by generator equations, characters, ordered-pair
+orbits, and group averaging; checks the projector form and two-value spectrum;
+and constructs the residual-`Z_2`, repeated-irrep, and broken-invariance escape
+routes. Its historical filename does not turn this narrow positive lemma into a
+no-go claim.

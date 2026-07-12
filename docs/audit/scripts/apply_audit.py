@@ -30,6 +30,7 @@ from __future__ import annotations
 
 import argparse
 import copy
+import hashlib
 import json
 import os
 import re
@@ -44,6 +45,17 @@ LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 AXIOM_PREMISE_NODES_PATH = REPO_ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
 
 _AXIOM_PREMISE_IDS: set[str] | None = None
+CLIPPED_EVIDENCE_MARKERS = (
+    "... [packet-clipped ",
+    "... [truncated; runner is ",
+    "... [truncated; helper is ",
+    "[runner stdout clipped; ",
+    "[runner cache excerpt clipped; ",
+)
+LOAD_BEARING_EVIDENCE_ROLES = {
+    "source", "authority", "runner", "helper", "runner_stdout",
+    "runner_stdout_cache_eligible",
+}
 
 
 def trusted_evidence_manifest(
@@ -102,6 +114,33 @@ def audit_invocation_seen(row: dict, invocation_id: str | None) -> bool:
         },
         sort_keys=True,
     )
+
+
+def resolved_audit_invocation_id(blob: dict) -> str:
+    """Return an explicit one-use id or a stable replay fingerprint."""
+    explicit = blob.get("audit_invocation_id")
+    if isinstance(explicit, str) and explicit:
+        return explicit
+    canonical = json.dumps(blob, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()[:32]
+
+
+def clipped_clean_evidence_error(manifest: dict[str, dict]) -> str | None:
+    clipped_paths = sorted(
+        path
+        for path, entry in manifest.items()
+        if set(entry.get("roles") or []) & LOAD_BEARING_EVIDENCE_ROLES
+        and any(
+            marker in str(entry.get("text") or "")
+            for marker in CLIPPED_EVIDENCE_MARKERS
+        )
+    )
+    if clipped_paths:
+        return (
+            "audited_clean requires complete load-bearing packet surfaces; "
+            f"clipped evidence: {clipped_paths}"
+        )
+    return None
 
 
 def consume_audit_invocation(row: dict, invocation_id: str | None) -> None:
@@ -794,7 +833,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     # pre_audit_prose_fix or packet mutations into the live ledger. Paths that
     # intentionally record a disagreement explicitly assign this copy back.
     row = copy.deepcopy(rows[cid])
-    invocation_id = judgment.get("audit_invocation_id")
+    invocation_id = resolved_audit_invocation_id(judgment)
     invocation_error = audit_invocation_error(judgment)
     if invocation_error:
         return False, invocation_error
@@ -904,6 +943,10 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
             row, rows, REPO_ROOT
         )
+    if ratified_verdict == "audited_clean":
+        clipped_error = clipped_clean_evidence_error(evidence_manifest)
+        if clipped_error:
+            return False, clipped_error
     if isinstance(judgment.get("no_go_discipline"), dict):
         manifest_error = trusted_manifest_current_error(
             judgment["no_go_discipline"], evidence_manifest, row, rows
@@ -1021,7 +1064,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     # Keep all pre-verdict mutations transactional. Only explicit accepted or
     # disagreement-recording paths assign this detached copy back to rows.
     row = copy.deepcopy(rows[cid])
-    invocation_id = audit.get("audit_invocation_id")
+    invocation_id = resolved_audit_invocation_id(audit)
     invocation_error = audit_invocation_error(audit)
     if invocation_error:
         return False, invocation_error
@@ -1068,6 +1111,10 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
             row, rows, REPO_ROOT
         )
+    if verdict == "audited_clean":
+        clipped_error = clipped_clean_evidence_error(evidence_manifest)
+        if clipped_error:
+            return False, clipped_error
     if isinstance(audit.get("no_go_discipline"), dict):
         manifest_error = trusted_manifest_current_error(
             audit["no_go_discipline"], evidence_manifest, row, rows

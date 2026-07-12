@@ -426,29 +426,26 @@ observable algebra admits no proper exact quotient, and the physical-lattice,
 no-rooting, and anomaly-forced-chirality boundary keeps the claim narrower than
 a conventional lattice-regulator loophole theorem.*
 
-### 4.4 Exact $I_3=0$, exact CPT, Bell/CHSH support, and emergent Lorentz invariance
+### 4.4 Exact $I_3=0$, Bell/CHSH support, and fixed-action Lorentz diagnostics
 
 Three support theorems remain important and compact:
 
 - exact $I_3=0$ and no third-order interference on the Hilbert surface;
-- exact CPT on the free staggered lattice.
+- the former exact-CPT claim is excluded because its source is
+  `audited_failed`;
 - retained Bell/CHSH support on explicit two-species tensor-product lattice
   systems, where the local measurement algebra is supplied by explicit
   Kogut-Susskind taste operators and periodic Poisson coupling yields
   finite-lattice violations while the $G=0$ null control stays exactly at the
   classical bound.
 
-These are not decorative extras. They certify that the same discrete framework
-supports both the gauge/matter backbone and nontrivial exact consistency
-theorems. On top of that surface, exact cubic symmetry, exact CPT, and exact
-parity force the first Lorentz-violating correction to appear only at
-dimension $6$, with a unique cubic-harmonic $\ell=4$ signature and
-$(E/M_{\mathrm{Pl}})^2$ suppression on the retained hierarchy surface.
-On the same fixed Hamiltonian-lattice surface, the continuum-limit
-1+1D and 3+1D free-scalar two-point functions close as Lorentz scalars, and
-Stone's theorem fixes the per-step unitary propagator
-$U(a)=\exp(-i a H_{\rm lat})$. The separate directional-measure gravity-card
-kernel remains outside that closure.
+The exact $I_3=0$ and Bell/CHSH rows remain support results at their governed
+statuses. The Lorentz calculations are instead unaudited diagnostics on a
+supplied finite-difference kinetic operator and fixed free-scalar
+Hamiltonian-lattice action. They do not derive the action, kinetic operator,
+Planck spacing, CPT/parity protection, or carrier from the four axioms and are
+not publication-usable pending fresh audit. Their checked content is limited
+to fixed-action Taylor, cubic-harmonic, continuum, and Stone identities.
 
 ### 4.5 Strong CP
 
@@ -974,8 +971,9 @@ that exact theorem on the live plaquette chain.
 
 ![Extended Data Figure 1. Weak-field support theorems](./figures/extended_data_1_support_theorems.svg)
 
-*Extended Data Figure 1. Weak-field gravity corollaries, exact $I_3=0$, and
-exact CPT as compact support results on the same retained discrete surface.*
+*Extended Data Figure 1. Weak-field gravity corollaries and exact $I_3=0$ as
+compact support results. The former exact-CPT claim is excluded after its
+`audited_failed` verdict.*
 
 ### B.2 Extended Data Figure 2
 

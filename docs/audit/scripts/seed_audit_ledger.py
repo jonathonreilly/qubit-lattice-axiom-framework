@@ -130,6 +130,10 @@ def reset_unaudited_audit_fields(row: dict) -> None:
     """Clear stale audit-owned residue from rows already back in the queue."""
     if row.get("audit_status") != "unaudited":
         return
+    invocation_history = list(row.get("audit_invocation_history") or [])
+    live_invocation = row.get("audit_invocation_id")
+    if live_invocation and live_invocation not in invocation_history:
+        invocation_history.append(live_invocation)
     history = list(row.get("previous_audits") or [])
     exact_fields = {
         field: row.get(field)
@@ -177,6 +181,10 @@ def reset_unaudited_audit_fields(row: dict) -> None:
             row["unattributed_audit_provenance"] = unattributed
     for k, v in EMPTY_AUDIT.items():
         row[k] = v if not isinstance(v, (list, dict)) else (list(v) if isinstance(v, list) else dict(v))
+    # Accepted archive/requeue transitions consume the incoming invocation even
+    # though they leave the row unaudited. Reseeding must not make that token
+    # replayable merely because the live audit-owned fields were cleared.
+    row["audit_invocation_history"] = invocation_history
     row.pop("no_go_discipline", None)
 
 

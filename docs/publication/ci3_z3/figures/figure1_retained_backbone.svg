@@ -50,7 +50,7 @@
   <text class="body" x="735" y="375" text-anchor="middle">anomaly-forced 3+1</text>
   <text class="body" x="735" y="402" text-anchor="middle">one-generation closure</text>
   <text class="body" x="735" y="429" text-anchor="middle">three-generation physical species structure</text>
-  <text class="body" x="735" y="456" text-anchor="middle">exact I3 = 0, exact CPT, emergent Lorentz</text>
+  <text class="body" x="735" y="456" text-anchor="middle">exact I3 = 0; CPT/Lorentz excluded pending audit</text>
 
   <rect class="box quant" x="890" y="300" width="250" height="210"/>
   <text class="label" x="1015" y="340" text-anchor="middle">Quantitative package</text>

@@ -66,6 +66,12 @@ NEGATIVE_ASSERTION_RE = re.compile(
     r"[^\n.;:]{0,160}\b(?:route|derivation|selector|closure|solution|carrier|operator)s?\b|"
     r"\bfailure\s+of\s+(?:every|all)\s+(?:route|attempt|construction)s?\b|"
     r"\b(?:non[- ]?derivability|underdetermination|inability|non[- ]?supply|non[- ]?closure)\b|"
+    r"\b(?:every|all)\s+(?:attempted\s+)?(?:routes?|attempts?|constructions?)\s+"
+    r"remain(?:s)?\s+(?:open|unclosed|unresolved)\b|"
+    r"(?<!does not )(?<!do not )\brules?\s+out\s+(?:every|all)\s+"
+    r"(?:candidate\s+)?(?:routes?|attempts?|constructions?|carriers?|selectors?)\b|"
+    r"\b(?:the\s+)?(?:selector|source|carrier|route|construction)\s+"
+    r"remain(?:s)?\s+underdetermined\b|"
     r"(?:cannot|can not|is not|are not) (?:be )?deriv(?:ed|able)(?: from)?|"
     r"(?:does not|cannot|fails? to|failed to) lift|"
     r"\b(?:cannot|does not|do not)\s+(?:select|orient|factor|factorize|derive|supply|"
@@ -205,13 +211,43 @@ LOCAL_SCOPE_EXCLUSION_RE = re.compile(
     r"(?:here|in this (?:note|theorem|section|work)|within this (?:note|scope|theorem))\b|"
     r"\b(?:it|this\s+(?:note|runner|script|calculation|result|theorem|lemma))\s+"
     r"(?:still\s+)?does\s+not\s+(?:derive|establish|prove|claim|identify)\b"
-    r"[^\n.;:]*?(?=\s+\b(?:and|but|yet)\b|[\n.;:]|$)",
+    r"[^\n.;:]*?(?=\s+\b(?:and|but|yet|because|although|though|while|whereas|since|so)\b|[\n.;:]|$)",
     re.IGNORECASE,
 )
-FORCED_SPECTRAL_BOUNDARY_RE = re.compile(
-    r"\b(?:allows?|permits?|has|have|yields?|gives?|forces?|contains?)\s+"
-    r"(?:at\s+most|no\s+more\s+than)\s+(?:\d+|one|two|three|four|five)\s+"
-    r"(?:distinct\s+)?(?:eigenvalues?|spectral\s+values?)\b",
+SPECTRAL_COUNT = r"(?:\d+|one|two|three|four|five)"
+FORCED_SPECTRAL_BOUNDARY_RES = (
+    re.compile(
+        rf"\b(?:allows?|permits?|has|have|yields?|gives?|forces?|contains?)\s+"
+        rf"(?:at\s+most|no\s+more\s+than)\s+{SPECTRAL_COUNT}\s+"
+        r"(?:distinct\s+)?(?:eigenvalues?|spectral\s+values?)\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        rf"\b(?:spectrum|spectral\s+set|eigenvalue\s+set)\s+"
+        rf"(?:has|have)\s+cardinality\s+(?:at\s+most|no\s+more\s+than)\s+"
+        rf"{SPECTRAL_COUNT}\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        rf"\b(?:at\s+most|no\s+more\s+than)\s+{SPECTRAL_COUNT}\s+"
+        r"(?:distinct\s+)?(?:eigenvalues?|spectral\s+values?)\s+"
+        r"(?:occur|occurs|appear|appears|are\s+possible|can\s+occur)\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        rf"\bthere\s+(?:is|are)\s+(?:at\s+most|no\s+more\s+than)\s+"
+        rf"{SPECTRAL_COUNT}\s+(?:distinct\s+)?"
+        r"(?:eigenvalues?|spectral\s+values?)\b",
+        re.IGNORECASE,
+    ),
+)
+SPECTRAL_NEGATION_PREFIX_RE = re.compile(
+    r"\b(?:not|never|cannot|can't|does\s+not|doesn't|do\s+not|don't|"
+    r"did\s+not|didn't|is\s+not|isn't|are\s+not|aren't)\b[^,;:.!?]{0,48}$",
+    re.IGNORECASE,
+)
+SPECTRAL_QUESTION_PREFIX_RE = re.compile(
+    r"^\s*(?:can|could|does|do|did|is|are|may|might|would|will|should)\b",
     re.IGNORECASE,
 )
 OUTPUT_BOUNDARY_FIELDS = (
@@ -1392,13 +1428,42 @@ def _has_governed_no_existence(text: str) -> bool:
     )
 
 
+def _has_forced_spectral_boundary(text: str) -> bool:
+    """Detect affirmative spectral-cardinality bounds, not questions/denials."""
+    for pattern in FORCED_SPECTRAL_BOUNDARY_RES:
+        for match in pattern.finditer(text):
+            clause_start = max(
+                text.rfind(mark, 0, match.start()) for mark in "\n.;:!?"
+            ) + 1
+            clause_end_candidates = [
+                index for mark in "\n.;:!?"
+                if (index := text.find(mark, match.end())) >= 0
+            ]
+            clause_end = min(clause_end_candidates, default=len(text))
+            clause = text[clause_start:clause_end]
+            prefix = text[clause_start:match.start()]
+            prefix = re.split(
+                r"\b(?:and|but|yet|because|although|though|while|whereas|since|so)\b",
+                prefix,
+                flags=re.IGNORECASE,
+            )[-1]
+            if "?" in text[clause_start:clause_end + 1]:
+                continue
+            if SPECTRAL_QUESTION_PREFIX_RE.search(clause):
+                continue
+            if SPECTRAL_NEGATION_PREFIX_RE.search(prefix):
+                continue
+            return True
+    return False
+
+
 def _has_negative_boundary_assertion(text: str) -> bool:
     # Inline Markdown/TeX delimiters are presentation, not grammar. Removing
     # them lets `kappa_EW`, `$Z$`, and route labels such as `(S1)-(S3)` use the
     # same governed subject rules as plain prose.
     prose = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
     prose = re.sub(
-        r"`[^`\n]*(?:[/_.-]|\.(?:py|md|json|txt))[^`\n]*`", "", prose
+        r"`[^`\n]*(?:[/_.]|\.(?:py|md|json|txt))[^`\n]*`", "", prose
     )
     prose = re.sub(
         r"\b[\w./-]*(?:firewall|no[-_]?go)[\w./-]*\.(?:py|md|json|txt)\b",
@@ -1413,7 +1478,7 @@ def _has_negative_boundary_assertion(text: str) -> bool:
     if (
         EXPLICIT_NEGATIVE_CLOSURE_RE.search(cleaned)
         or NEGATIVE_SUBJECT_CLOSURE_RE.search(cleaned)
-        or FORCED_SPECTRAL_BOUNDARY_RE.search(cleaned)
+        or _has_forced_spectral_boundary(cleaned)
         or _has_governed_no_existence(cleaned)
         or INABILITY_CLOSURE_RE.search(cleaned)
         or BOUNDARY_SUBJECT_NEGATIVE_RE.search(cleaned)
@@ -1439,10 +1504,9 @@ def source_requires_no_go_discipline(
     if claim_type_hint == "no_go" or explicit_claim_type == "no_go":
         return True
     path_text = re.sub(r"[_-]+", " ", note_path or "")
-    if explicit_claim_type not in {
-        "positive_theorem", "bounded_theorem", "open_gate", "decoration", "meta"
-    }:
-        if PATH_TRIGGER_RE.search(path_text):
+    if PATH_TRIGGER_RE.search(path_text):
+        normalized_body = re.sub(r"[`*_~$(){}\[\]]", "", body)
+        if not NEGATED_LABEL_ASSURANCE_RE.search(normalized_body):
             return True
     return _has_negative_boundary_assertion(body)
 

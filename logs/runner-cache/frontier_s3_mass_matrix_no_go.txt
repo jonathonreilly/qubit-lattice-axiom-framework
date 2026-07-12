@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_s3_mass_matrix_no_go.py
-runner_sha256: e0e4c9c075be0cb26bfb874f8b83408a77baf9e8e55df43b13b78bb903ee7e34
+runner_sha256: b3ebc04cecc1b4f62e796f9960b5d9caad85353629be8d708144586689631eda
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================
@@ -14,6 +14,9 @@ S_3 CONDITIONAL MASS-MATRIX DEGENERACY LEMMA
 PART 1: S_3-invariant Hermitian algebra on A_1 direct-sum E
 ========================================================================
   [PASS] dim End(C^3)^(S_3) = 2  (rank = 2)
+  [PASS] generator-commutator solve gives dimension 2  (dimension = 2)
+  [PASS] character multiplicities are A_1 + E  (multiplicities = (1.0, 0.0, 1.0))
+  [PASS] ordered-pair orbit classification has two entry classes  (orbits = 2)
   [PASS] I_3 is S_3-invariant
   [PASS] J_3 is S_3-invariant
   [PASS] P_(A_1) is idempotent
@@ -40,7 +43,13 @@ PART 4: Residual Z_2 dimension jump
   [PASS] dim End(C^3)^(Z_2) = 5  (rank = 5)
 
 ========================================================================
-TOTAL: PASS=13, FAIL=0
+PART 5: Explicit escape routes outside the two hypotheses
+========================================================================
+  [PASS] repeated-irrep carrier escape permits three spectral values  (commutant dimension = 9)
+  [PASS] generic three-way split leaves exact S_3 invariance  (commutator norm = 1.414214)
+
+========================================================================
+TOTAL: PASS=18, FAIL=0
 ========================================================================
 
 ----- stderr -----

@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_lorentz_derived.py
-runner_sha256: 535fa2bfcce38bf7293fc6d8393b21ccf0bd7eb81e035f53a640f6bb7bb58ed3
+runner_sha256: fb93b0add915fba524110cadeef059e85d8ff5a794684d1299ce700baabcc3fd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.85
+elapsed_sec: 2.40
 status: ok
 ----- stdout -----
 Lorentz derived legacy-runner compatibility
 ========================================================================
   [PASS] live Lorentz note names the current replacement runner
-  [PASS] live Lorentz note is a bounded companion, not retained flagship
-  [PASS] live Lorentz note keeps the cubic-lattice symmetry statement
+  [PASS] live Lorentz note is an unaudited fixed-action target
+  [PASS] live Lorentz note keeps the scoped cubic-symbol symmetry statement
   [PASS] current replacement runner exits successfully (returncode=0)
   [PASS] replacement runner retains cubic-harmonic identity check
   [PASS] replacement runner completes the Lorentz/SME experiment

@@ -1,0 +1,49 @@
+campaign: axiom-reconciliation
+started: 2026-07-03
+resumed: 2026-07-12
+owner_directive: >
+  2026-07-03 "full rework of the previous science ... lane by lane" against
+  the 2026-06-29 four axioms (+ 2026-07-04 Records-form sentence). Resumed
+  2026-07-12 on "ok do this then: the axiom-reconciliation blocks".
+worktree: /Users/jonBridger/tp-axiom-recon
+branch: repair/axiom-recon-block03-index-20260712
+blocks_done:
+  - block: 1
+    what: landing verification of the mechanical baseline
+    evidence: >
+      PR #4908 MERGED (dynamics-content sort re-key); PR #4910 MERGED
+      (Reconciliation Block 2 title, three live-guard runners); PR #4887
+      CLOSED with content landed as commit 71cc2ec52 (Record-wording guard
+      surfaces, 13 files); #4910 body records "all 23 axiom-live-guard
+      runners green" as the Block 1 baseline.
+  - block: 2
+    what: three live-guard runner re-keys
+    evidence: PR #4910 MERGED 2026-07-03.
+block_current:
+  block: 3
+  what: >
+    Fresh index. The 2026-07-03 index (2,278-row scratchpad artifact) was
+    never banked and is lost. Rebuilt as a regenerable scan:
+    scripts/axiom_reconciliation_rescan_2026_07_12.py — needles = superseded
+    Record wording + legacy axiom-set naming, joined to ledger rows via
+    note_path. Result @ 7b9260b85: HARD=141 live files (98 docs, 43 scripts),
+    SOFT_ONLY=740 (mostly superseded-memo citations), 8 hard files carry
+    retained audit status (invalidation-pipeline gap — flag to audit lane,
+    do NOT touch ledger).
+  triage: >
+    30 codex batches (gpt-5.6-sol, effort max, 5 files each, bounded specs
+    with pre-extracted hit lines) classify each hard file REKEY /
+    CONTENT-FLIP / REOPENED-WALL / HISTORICAL-OK / DELIBERATE-OLD-TEXT.
+    Outputs: logs/runner-cache/recon_triage/<batch>.tsv (committed evidence).
+    Supervisor line-reviews every classification before any edit wave.
+blocks_planned:
+  - "4+: mechanical re-key waves per lane (REKEY class), one PR per wave, stacked"
+  - "content flips with refutation seats (worker panel, supervisor verdict)"
+  - "reopened walls last (incl. flavor states-are-records / June-11 det1 dependency)"
+  - "soft-only 740: policy decision in index note; not triaged this block"
+constraints:
+  - never touch docs/audit/data/, ledgers, queues, publication effective-status
+  - no audit verdicts, no effective_status changes, no registry edits
+  - vocab_lint --fix before every commit; commit early
+  - Claude never lands/merges PRs; reviewer handoff briefs only
+  - plain language on owner surfaces; no internal premise labels

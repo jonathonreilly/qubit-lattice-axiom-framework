@@ -199,6 +199,22 @@ term_families:
       no_go_discipline_packet_missing:
         definition: "A clean negative-boundary audit has no structured N1-N8 packet; archive it and return the row to fresh audit before it can remain authoritative."
 
+  negative_assertion_classes:
+    description: "Mandatory auditor declaration on every incoming audit: the no-go-discipline policy classes the artifact asserts, judged semantically from the full note. Any non-empty declaration requires the N1-N8 packet; an empty declaration never bypasses the mechanical trigger."
+    authority: docs/ai_methodology/skills/no-go-discipline/SKILL.md
+    scope_tag: audit_physics_process
+    values:
+      no_go_result:
+        definition: "Asserts a no_go outcome: structurally closed, no route exists, no retained primitive supplies the target."
+      stretch_attempt_negative:
+        definition: "Asserts a stretch-attempt negative outcome: the attempted route does not close."
+      bounded_with_named_walls:
+        definition: "Asserts a bounded result conditional on named walls or admissions."
+      derived_no_go_boundary:
+        definition: "Asserts a derived no-go boundary inside a positive theorem, such as a per-element identity that does not lift."
+      conditional_wall_rationale:
+        definition: "An audit rationale that names a residual wall as the reason a verdict is conditional."
+
   independence:
     description: "Adversarial-review independence tier between auditor and author. auditor ≠ author required."
     authority: docs/audit/FRESH_LOOK_REQUIREMENTS.md

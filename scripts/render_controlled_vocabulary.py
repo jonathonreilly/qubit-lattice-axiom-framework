@@ -289,6 +289,17 @@ def render_audit_lane_field_vocabulary(data: dict) -> str:
     for name, entry in tf["no_go_discipline_invalidation"]["values"].items():
         lines.append(f"- `{name}` — {entry['definition']}")
     lines.append("")
+    lines.append(
+        "`negative_assertion_classes` is the mandatory auditor declaration on "
+        "every incoming audit: the policy assertion classes the artifact makes, "
+        "judged semantically from the full note (empty list when none). Any "
+        "non-empty declaration requires the N1-N8 packet; an empty declaration "
+        "never bypasses the mechanical trigger. Allowed classes:"
+    )
+    lines.append("")
+    for name, entry in tf["negative_assertion_classes"]["values"].items():
+        lines.append(f"- `{name}` — {entry['definition']}")
+    lines.append("")
 
     # independence
     lines.append("### Independence tiers")

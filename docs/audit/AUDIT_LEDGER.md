@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 93 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 371 |
+| **retained_bounded** | 372 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2765 |
+| unaudited | 2764 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 484 |
+| `audited_clean` | 485 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 32 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3115 |
+| `unaudited` | 3114 |
 
 | claim_type | count |
 |---|---:|
@@ -268,6 +268,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
+| `dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_neutrino_weak_vector_theorem_note_2026-04-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3138,6 +3139,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The explicit determinant evaluations give det(m I_n + j M)/m^n = 1 - j^2/m^2 for S_cls, T_gamma, and Z_odd, while their spectra directly give M^3 = M.  _(class `A`)_
 - **chain closes:** True — The conclusions follow by direct characteristic-polynomial, matrix-power, and symbolic determinant calculations on the explicit matrices. No physical normalization rule, branch convention, external comparator, or upstream authority is needed for the stated narrow scope.
 - **rationale:** The load-bearing step is genuine class (A) exact algebra: the runner instantiates the three matrices and computes their spectra, powers, determinants, normalized ratios, and curvature rather than printing or importing the claimed result. The symbolic determinant ratios establish the log-absolute-determinant identity throughout the stated real domain; the finite rational checks are supplementary. This verdict covers only the finite-dimensional scalar-baseline theorem and does not ratify |c_odd| = 1, c_odd = +1, a physical observable bridge, or the parent normalization row.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-dimensional identities for F00=J3/3 and F_row=J2/2: spectra, idempotency, scalar-baseline log-absolute-determinant response, and the explicit H_core and runner-instantiated B trace pairings; no physical K00 identification or non-scalar-baseline extension.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00406-dm_neutrino_k00_bosonic_norm`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because F00 and F_row are rank-one projectors, their scalar deformations have determinants m^2(m+j) and m(m+j), respectively, so both baseline-subtracted log-absolute-determinant responses equal log|1+j/m|.  _(class `A`)_
+- **chain closes:** True — The explicit matrices alone determine the projector spectra, determinant polynomials, and trace pairings by exact algebra. No upstream physical bridge or external comparator is required for the narrowed scope.
+- **rationale:** The runner constructs the stated matrices and performs genuine exact SymPy multiplication, eigenspectrum, determinant, and trace computations rather than merely printing or importing the expected conclusions. The determinant ratios establish the log-absolute response wherever m and m+j are nonzero, and the trace corollaries hold for the explicit matrices instantiated in the runner. The R2 prose incorrectly says each row of B has zero row-sum; individual rows do not, but the total sum of all entries vanishes, and the runner directly verifies Tr(B F00)=0, so this non-load-bearing explanation error does not invalidate the scoped identity.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

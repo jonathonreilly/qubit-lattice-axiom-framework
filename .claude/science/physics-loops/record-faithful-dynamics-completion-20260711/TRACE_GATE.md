@@ -1,11 +1,11 @@
 ---
 trace_class: direct_blocker_closure
-target_claim_id: autonomous_intermittent_record_instrument_calibration_nonselection_bounded_theorem_note_2026-07-11
+target_claim_id: overlapping_edge_instrument_order_and_time_rate_nonselection_bounded_theorem_note_2026-07-11
 target_blocker_text: "A unique or severely constrained dynamics/admissibility law, including time and the probability rule."
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Read the event-order/time-rate and overlapping-instrument lanes, then classify two exact schedules on overlapping supports before importing a clock or QCA rule."
+next_trace_action: "Read the simultaneous-tick, strict-QCA, cubic-covariance, index, locality, and continuum-obstruction lanes; then classify one simultaneous 3D coherent update without importing an ordered edge schedule."
 ---
 
 # Trace Gate
@@ -38,3 +38,11 @@ surface and remaining CP-instrument freedom on one abstract carrier. It also
 proves that auxiliary locked-register absorption and same-map reuse do not
 imply blank-sector calibration. The next trace action is the overlap-order seam,
 not a second single-cell instrument construction.
+
+The overlap-order block now proves that separately normalized identical edge
+instruments can produce different raw layered and first-nonempty stopping
+channels on supplied finite tensor carriers. Commuting incomparable channels
+make raw schedule order irrelevant, but no composition semantics or priority
+is selected, and an event order leaves clock/rate rescaling free. The next
+trace action is one simultaneous 3D coherent QCA/tick classification, not a
+more elaborate sequential schedule.

@@ -9,6 +9,19 @@ The cubic neighbor-response result was pushed and opened for review:
 
 No merge was performed. Independent audit remains authoritative.
 
+The overlapping-edge schedule and time/rate nonselection result is prepared
+for the next stacked review PR:
+
+- base: `physics-loop/record-faithful-dynamics-block05-full-instrument-20260711`
+- head: `physics-loop/record-faithful-dynamics-block06-event-order-time-rate-20260711`
+- source runner: `PASS=47 FAIL=0`
+- disposition: independent claim, code/math, governance, and N1--N8 review
+  passed after narrow scope and runner repairs; the audit pipeline seeded the
+  intended two dependencies and strict lint passed with no errors; generated
+  status surfaces were stripped before delivery
+
+No merge is authorized. Independent audit remains authoritative.
+
 The covariant-effect nonselection and repeat-certainty collapse result is
 prepared for the next stacked review PR:
 

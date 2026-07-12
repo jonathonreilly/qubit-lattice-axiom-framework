@@ -174,3 +174,34 @@ violations. The audit pipeline seeded the bounded theorem as `unaudited` with
 exactly three dependencies: `minimal_axioms`, the locked-output normal form,
 and the reconciled Kraus--Choi theorem. Strict lint passed with no errors, and
 generated audit/effective-status surfaces were stripped before delivery.
+
+## Overlap order and time/rate internal result
+
+- Identical normalized five-outcome edge instruments give distinct raw and
+  first-nonempty channels on overlapping supports.
+- Full matrix-unit controls verify channel commutation for disjoint supports,
+  identity no-record branches, and `q=0` projective edges.
+- A finite-DAG adjacent-swap theorem supplies the exact positive raw-schedule
+  closure condition.
+- Six proper-cubic matchings partition even finite tori only for side `L>=4`;
+  `L=2` is explicitly excluded.
+- Runner/cache: `PASS=47 FAIL=0`.
+
+### Overlap-order review iteration 1
+
+Independent reviews caught the false all-even-tori quantifier at `L=2`,
+fixture-only commutation checks, absorption language for a one-attempt stopping
+instrument, an implicit multisite tensor-carrier import, an incomplete split
+between composition semantics and order/priority, stale authority labels, and
+imprecise N1--N8 evidence. The theorem and checklist were narrowed and the
+runner upgraded to full matrix-unit channel checks.
+
+### Overlap-order review iteration 2
+
+Claim and governance review passed the repaired bounded theorem. Code/math
+review caught one final wording conflation between symmetrized raw order and
+first-nonempty priority; source, runner, and cache were corrected. Independent
+re-review passed. The audit pipeline seeded exactly `minimal_axioms` and the
+preceding finite-carrier instrument normal form, strict lint passed with no
+errors, and generated audit/effective-status surfaces were stripped before
+delivery. Independent audit remains required.

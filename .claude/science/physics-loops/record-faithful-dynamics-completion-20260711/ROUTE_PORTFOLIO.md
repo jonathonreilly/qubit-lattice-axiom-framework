@@ -11,7 +11,8 @@ Scores are provisional `0..3`; risk is negative.
 | graded-constraint/Born composition | 3 | 3 | 3 | 3 | -2 | static additivity/covariance leave a depolarizing family; exact closure is menu normalization plus physically derived `RC_i` |
 | strengthened exchange countermodel | 3 | 3 | 3 | 3 | -1 | completed on a supplied one-excitation sector: rank-three minimal outcome-forgotten `I-SWAP` channels change absorbing outcome-label weights |
 | intermittent finite-carrier instrument normal form | 3 | 3 | 3 | 3 | -1 | complete abstract parameterization; auxiliary absorption/reuse does not imply blank-sector calibration |
-| overlapping-instrument order | 3 | 3 | 3 | 2 | -2 | highest next discriminator: identical normalized edge rules can compose differently on overlapping supports |
+| overlapping-instrument order | 3 | 3 | 3 | 3 | -1 | completed bounded fork: raw and stopping composition differ; commutation is the exact raw schedule-independence condition |
+| simultaneous cubic QCA/tick | 3 | 3 | 3 | 2 | -2 | next discriminator: one global channel could replace unselected sequential layer composition |
 | unified continuum limit | 3 | 3 | 3 | 1 | -3 | deferred until the microscopic process object and carrier class are fixed |
 
 ## Route ordering
@@ -25,5 +26,6 @@ leverage point was effect/Born selection: it isolated `RC_i` plus menu
 normalization as the exact conditional selector. The finite-carrier instrument
 normal form now exposes event efficiency and no-record channel freedom while
 the auxiliary-register countermodel leaves physical calibration open. The next
-route is overlapping-edge order/scheduling, followed by simultaneous-QCA
-classification before continuum extrapolation.
+route was overlapping-edge order/scheduling: it exposed independent
+composition-semantics and priority coordinates and left metric rate free. The
+next route is simultaneous-QCA classification before continuum extrapolation.

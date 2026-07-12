@@ -35,7 +35,7 @@
   and derivation of `RC_i` retained as separate open bridges;
 - deterministic 51-check runner, full N1--N8 packet, and stacked review PR.
 
-## Full finite-carrier instrument normal form — current result
+## Full finite-carrier instrument normal form — delivered
 
 - classify formation effects and the complementary no-record effect under
   conditional cross-label exclusion;
@@ -46,10 +46,24 @@
 - keep menu selection, physical readout, framework-Record realization, and
   `Z^3` overlap composition open.
 
-## Event order, time, and rate — next
+## Event order, time, and rate — current result
 
-- classify overlapping local-instrument schedules before adding a time metric;
-- distinguish event partial order, layer order, tick count, and rate.
+- exact raw-layer and first-nonempty schedule forks for identical normalized
+  instruments on two overlapping qubit edges;
+- exact schedule-independence theorem for commuting incomparable channels;
+- proper-cubic six-matching family on even finite tori of side `L>=4`, with no
+  layer order selected;
+- explicit separation of composition semantics, edge priority, clock, and
+  dimensionful rate;
+- deterministic 47-check runner and complete N1--N8 packet.
+
+## Simultaneous 3D coherent QCA/tick — next
+
+- read and reconcile the actual strict-QCA, cubic-covariance, finite-depth,
+  index, locality, and continuum-obstruction lanes;
+- replace sequential overlap composition by one simultaneous global update;
+- exhaust the admissible coherent tick class before selecting a continuum
+  branch.
 
 ## Continuum gateway
 

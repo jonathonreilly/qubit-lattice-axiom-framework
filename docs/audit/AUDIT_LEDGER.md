@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 36 |
-| **retained_bounded** | 384 |
+| **retained_bounded** | 385 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2736 |
+| unaudited | 2735 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 500 |
+| `audited_clean` | 501 |
 | `audited_conditional` | 68 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3086 |
+| `unaudited` | 3085 |
 
 | claim_type | count |
 |---|---:|
@@ -367,6 +367,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hard_geometry_gravity_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `hard_geometry_local_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | D | - |
 | `harmonic_ladder_weight_law_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | C | - |
+| `hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `hierarchy_spatial_bc_and_u0_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -4865,6 +4866,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner constructs the finite L=3 realized states, determinant Laurent coefficients, principal-branch phase increments, Fourier weights, root data, single-sideband refutation, and tail orders within the restricted packet. No upstream dependency or external comparator is needed for the bounded finite-state claim.
 - **rationale:** The bounded finite claim closes inside the restricted packet: the runner recomputes the determinant-root and Laurent-Arg machinery rather than merely printing the headline result. Frozen tables act as regression and staleness gates, while the load-bearing Laurent-law comparison is computed from the determinant construction. Residual risk is numerical scope only: this is double-precision finite-state verification, not a symbolic proof or a generalization beyond the four listed realized states.
 - **auditor confidence:** high
+
+### `hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16`
+
+- **Note:** [`HIERARCHY_ALPHA_LM_DIM_TRANS_REFRAMING_BOUNDED_NOTATION_EQUIVALENCE_NOTE_2026-05-16.md`](../../docs/HIERARCHY_ALPHA_LM_DIM_TRANS_REFRAMING_BOUNDED_NOTATION_EQUIVALENCE_NOTE_2026-05-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact real-variable notation equivalence alpha^N = exp(-c_eff/alpha) for alpha > 0 and positive integer N, including only the alpha_LM, N = 16 substitution and the conclusion that this rewrite alone supplies no physical hierarchy mechanism.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00220-hierarchy_alpha_lm_dim_trans`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Defining c_eff(alpha, N) := N alpha ln(1/alpha) gives -c_eff/alpha = N ln(alpha), hence exp(-c_eff/alpha) = alpha^N.  _(class `A`)_
+- **chain closes:** True — The logarithm and exponential identities prove the stated equality directly after the explicit definition of c_eff. No physical value, hierarchy exponent, coupling-independent constant, or readout bridge is required for this narrowly scoped result.
+- **rationale:** The load-bearing step is a genuine class-A algebraic closure over arbitrary positive alpha and positive integer N. The runner source performs symbolic simplification, numerical and rational checks, a coupling-dependence check for c_eff, and source-boundary inspection rather than merely printing success. The note explicitly excludes derivation of alpha_LM, N = 16, and any physical hierarchy mechanism, so those wider open questions are not dependencies of the audited identity.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `hierarchy_matsubara_decomposition_note`
 

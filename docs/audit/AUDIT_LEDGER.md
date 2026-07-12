@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 400 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2689 |
+| unaudited | 2688 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 81 |
+| ~~audited_conditional~~ | 82 |
 | ~~audited_failed~~ | 19 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 526 |
-| `audited_conditional` | 81 |
+| `audited_conditional` | 82 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 41 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3039 |
+| `unaudited` | 3038 |
 
 | claim_type | count |
 |---|---:|
@@ -708,6 +708,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `hierarchy_matsubara_decomposition_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -5150,6 +5151,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 2 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared bounded scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified D-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
 - **auditor confidence:** high
+
+### `harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`HARMONIC_DEPTH_HANKEL_RANK_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/HARMONIC_DEPTH_HANKEL_RANK_MECHANISM_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact runner-defined L=3, NC=3, tau=0.35, T=256 fixture with fixed seeds, windows 64/128, relative thresholds 1e-5 through 1e-7, and coupling floor 1e-8.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00276-harmonic_depth_hankel_rank_m`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the fixed realized states, K=6 has the smallest uncensored numerical trajectory rank at windows 64 and 128 across the tested thresholds, while all states have three coupled spectral gaps, so gap count does not explain the ordering.  _(class `C`)_
+- **chain closes:** False — The numerical relations close for the code-defined fixture, but the restricted premises do not derive its color-diagonal hopping Hamiltonian, NC=3 carrier, evolution normalization, or fixed realized-state contents. A retained fixture derivation or fully explicit conditional-fixture boundary is missing.
+- **rationale:** The runner genuinely constructs the finite trajectories, performs the Hankel decompositions, and computes the rank ordering and coupled-gap counts rather than printing the contested results. Its two landed capture anchors are hard-coded cross-note comparison values, but they are not needed to generate the rank tables. The physical fixture and realized-state contents are nevertheless supplied by the runner rather than derived from the accepted premise surface.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 contains OPEN and UNTESTED explanatory routes, including coupling-weight distribution, nonlinear phase mixing, alternate realized states, and fixture derivation.
+    - N5 shows that the negative rhetoric is supported only for scalar gap cardinality, with richer spectral and state-dependent resolutions untested.
 
 ### `harmonic_ladder_weight_law_bounded_theorem_note_2026-06-12`
 

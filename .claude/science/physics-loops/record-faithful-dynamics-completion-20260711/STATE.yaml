@@ -69,10 +69,11 @@ no_go_routes:
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
 review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_pending_delivery
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_mergeable_checks_running
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
+block04_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5202
 next_exact_action: >-
   Read the actual full-instrument, persistent-record, local-composition,
   repeatability, and readout-formation lanes; then classify a normalized local

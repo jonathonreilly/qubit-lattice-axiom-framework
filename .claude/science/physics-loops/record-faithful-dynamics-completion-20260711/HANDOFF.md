@@ -216,3 +216,7 @@ eight-product level is one spatial/cyclic orbit; the fully order-faithful level
 has 15 spatial and 120 cyclic orbits. Forward/inverse graph radii are exact.
 Runner/cache: `PASS=23 FAIL=0`. The next route is common-Hamiltonian
 simultaneous evolution, not an axiom update.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5215 is
+open and mergeable on Block08; the independent audit workflow is queued.

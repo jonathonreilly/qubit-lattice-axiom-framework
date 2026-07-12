@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 105 |
 | **retained_no_go** | 46 |
-| **retained_bounded** | 419 |
+| **retained_bounded** | 420 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
 | unaudited | 2624 |
-| audit_in_progress | 29 |
+| audit_in_progress | 28 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 29 |
-| `audited_clean` | 557 |
+| `audit_in_progress` | 28 |
+| `audited_clean` | 558 |
 | `audited_conditional` | 101 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 47 |
@@ -127,7 +127,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `dm_neutrino_dirac_bridge_theorem_note_2026-04-15` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `flavor_native_double_shift_corner_coupling_note_2026-05-30` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -347,6 +346,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `formation_rate_law_class_reduction_bounded_note_2026-07-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
+| `free_dirac_poincare_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -4671,6 +4671,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** Under H1-H4 and the displayed inverse electromagnetic coupling rule, alpha_3(bare)/alpha_em(bare) = 2d + 3 and sin^2(theta_W)(bare) = (d + 1)/(2d + 3).  _(class `A`)_
 - **chain closes:** True — The displayed identities follow by exact rational algebra from the explicitly supplied formal hypotheses and inverse-coupling rule. Closure is limited to that formal implication and does not derive physical coupling inputs or phenomenology.
 - **rationale:** The load-bearing result is a genuine class-A implication over explicit formal inputs: reciprocation and addition give 1/g_em^2=2d+3, and direct substitution gives the ratio and weak-angle expressions. The runner performs exact Fraction arithmetic; its hard-coded expected fractions test the stated formal theorem rather than masquerading as a first-principles physical coupling computation. The two SU(5) comparator checks are ancillary and do not support the audited conclusion. This verdict certifies only the bounded formal identity, while the note correctly withholds any physical EW-normalization or low-energy claim.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `free_dirac_poincare_representation_bounded_note_2026-05-30`
+
+- **Note:** [`FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md`](../../docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Internal algebraic and finite-compute consistency of the explicitly defined textbook continuum free massive Dirac/Poincare construction, excluding domain, exponentiation, reconstruction, spin-statistics, and lattice-emergence claims.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00122-free_dirac_poincare_represen`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The explicitly defined continuum free massive Dirac generators satisfy the stated Lorentz/Poincare brackets, preserve the positive mass shell and invariant measure, yield a nonnegative CAR-relabeled finite-mode Hamiltonian, and transform the bispinor numerator covariantly.  _(class `A`)_
+- **chain closes:** True — The runner directly constructs the relevant gamma matrices, representations, mass-shell operators, boosts, measure flow, spectra, and bispinor transforms. All eight bounded checks close without cross-note inputs, external comparators, or tuned target matching.
+- **rationale:** All eight checks are substantive algebraic or analytic-identity computations on explicitly instantiated textbook objects rather than printed constants, imported contested premises, external comparisons, or tuned numerical matches. The source code includes nontrivial wrong-sign and flat-measure controls. The clean verdict is limited to the bounded continuum construction and supplies no domain theorem, group exponentiation, reconstruction theorem, spin-statistics result, or derivation from the lattice framework.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

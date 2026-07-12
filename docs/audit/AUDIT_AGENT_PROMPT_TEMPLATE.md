@@ -547,7 +547,7 @@ verbatim at the single cited `evidence_path`. The combined text must contain a
 literal marker accepted for its `route_class`:
 
 - `algebraic_rearrangement`: algebra, identity, rearrange, factor, cancel, solve;
-- `symmetry_or_representation`: symmetry, representation, commutator, character, irrep, group;
+- `symmetry_or_representation`: symmetry, invariant, representation, commutator, character, irrep, group;
 - `alternate_carrier_or_sector`: carrier, sector, module, space, irrep;
 - `boundary_or_initial_condition`: boundary, initial, background, state, pointwise;
 - `normalization_or_units`: normalization, unit, scale, dimensionful;
@@ -593,6 +593,15 @@ axiom/approved-primitive vocabulary is explicit accepted premise content and
 is separately guarded by premise-purity checks; it is not a hidden admission
 inside the audited claim. The authenticated manifest remains available for N1,
 N2, N4, N6, and N7 authority checks.
+
+For an N3 hit, `retained_authority` classifies the provenance of the hit's
+whole `evidence_path`, not the semantics of a word such as `axiom` inside that
+path. It is legal exactly when the manifest entry has an `authority`,
+`framework_premise`, or `premise_registry` role and also has retained-grade
+`effective_status` or `accepted_premise_type: axiom_or_approved_primitive`.
+A path whose manifest role is `source` cannot be `retained_authority`; classify
+its hit as `hidden_admission` with the matching N2 wall or as
+`non_load_bearing` with the required substantive rationale.
 
 For every N3 hit and N5 statement, copy `phrase` byte-for-byte from the
 corresponding `full_phrase_groups[].phrase` value in the evidence manifest.

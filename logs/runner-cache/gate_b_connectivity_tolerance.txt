@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gate_b_connectivity_tolerance.py
-runner_sha256: 571998caea2c9ab6f61db078e247e664c891aad9ecdb7ac41bf54f7ea4966aac
-timeout_sec: 180
+runner_sha256: 54265225cd5ba224e35fb98376f14f19f57ff68cd20f25e9cc27930b681ad646
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 5.03
+elapsed_sec: 4.52
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -35,16 +35,16 @@ Architecture comparison
   snapped/grid-like      58.3%    -0.000002    0.58
 
 Interpretation:
-  - Fixed connectivity tolerates substantial position noise.
-  - Once connectivity is recomputed from geometry, the gain becomes mixed.
-  - The local F~M fit stays in a non-catastrophic linear-response band.
-  - This is a connectivity-vs-noise audit, not a Gate B theorem.
+  - The fixed-connectivity jitter sweep is nonmonotonic and includes both mean-delta signs.
+  - The architecture comparison changes geometry and, for K-NN, connectivity together.
+  - It does not isolate connectivity as the cause of the mixed response.
+  - This is a finite diagnostic replay, not a Gate B theorem.
 
 Source-boundary checks
 ----------------------------------------
-[PASS] note declares bounded finite-replay status and 2026-07-12 audit-scope firewall
+[PASS] note declares bounded finite-replay type/status and 2026-07-12 audit-scope firewall
 [PASS] GB-S1b-b/GB-S2b/GB-S3b physical inputs remain supplied row-local premises
-[PASS] note forbids Gate B dynamics closure and axiom/admission/status changes
+[PASS] note forbids Gate B dynamics closure and axiom/primitive/status changes
 BOUNDARY_CHECKS: PASS=3 FAIL=0
 
 ----- stderr -----

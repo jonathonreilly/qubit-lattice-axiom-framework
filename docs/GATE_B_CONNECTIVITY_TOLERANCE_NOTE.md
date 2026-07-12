@@ -1,26 +1,28 @@
 # Gate B Connectivity Tolerance Note
 
 **Date:** 2026-04-04  
+**Type:** bounded_theorem
 **Status:** bounded Gate B replay frozen on disk, not a dynamics theorem
 
 ## One-line read
 
 Within this frozen finite replay, and under the supplied Gate B harness choices
-recorded below, the replay supports a narrow bounded reading:
+recorded below, the replay supports two narrow diagnostic observations:
 
-- on this fixed connectivity backbone, the swept position noise is tolerated
-- once connectivity is recomputed from geometry, the sampled response becomes mixed
+- the six-point fixed-connectivity jitter sweep is nonmonotonic and includes
+  both positive and negative mean detector-window gains
+- the architecture comparison also gives mixed outcomes, but it changes
+  geometry and, for the K-NN case, connectivity together
 
-Read strictly inside that finite harness, connectivity structure — not position
-noise — is where the sampled response first becomes mixed. That is a
-finite-replay observation under the supplied choices, not a derived theorem that
-connectivity is intrinsically the Gate B bottleneck, and it does **not** close
-Gate B.
+Read strictly inside that finite harness, the replay does not isolate
+connectivity as the cause of the mixed response and does not rank connectivity
+against position noise as an intrinsic Gate B bottleneck. It motivates a
+controlled comparison; it does **not** close Gate B.
 
 ## Primary artifact
 
-- Script: [`scripts/gate_b_connectivity_tolerance.py`](/Users/jonreilly/Projects/Physics/scripts/gate_b_connectivity_tolerance.py)
-- Log: [`logs/2026-04-04-gate-b-connectivity-tolerance.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-04-gate-b-connectivity-tolerance.txt)
+- Script: [`scripts/gate_b_connectivity_tolerance.py`](../scripts/gate_b_connectivity_tolerance.py)
+- Log: [`logs/2026-04-04-gate-b-connectivity-tolerance.txt`](../logs/2026-04-04-gate-b-connectivity-tolerance.txt)
 
 ## What was compared
 
@@ -61,16 +63,16 @@ The jitter sweep on fixed connectivity is the cleanest tolerance check:
 ## Safe interpretation (finite replay only)
 
 Read as frozen-replay observations under the supplied harness, not as general
-theorems:
+theorems or a causal comparison:
 
-- On this fixed connectivity backbone, the sampled response survives the swept
-  position noise.
-- Geometry-recomputed connectivity is where the sampled response first becomes
-  mixed in this replay.
-- The response does not show a cliff at jitter `0.5`; it degrades gradually
-  across the swept points.
+- The fixed-connectivity sweep is nonmonotonic across the six sampled jitter
+  values and its mean detector-window gain changes sign.
+- The architecture rows do not isolate connectivity: coordinate geometry changes
+  across the comparison, and the K-NN row changes connectivity as well.
+- The highest sampled jitter point does not show a terminal collapse, but the
+  six points do not establish a monotonic tolerance law.
 - The local response-slope probe stays in a bounded linear-response band across
-  the swept points rather than collapsing.
+  the swept points; that is a row-local diagnostic, not a universal law.
 
 ## What this is not
 
@@ -81,14 +83,14 @@ theorems:
 
 ## Why it matters
 
-Within this finite replay the remaining Gate B gap looks sharper:
+This finite replay sharpens the next diagnostic task:
 
-- across the swept points, position noise is not what mixes the response first
-- recomputed connectivity is
+- compare fixed and recomputed connectivity on the same coordinates
+- compare coordinate perturbations while holding the connectivity graph fixed
 
-Read as a finite-replay signpost and not a general theorem, the next growth rule
-to try is not “more jitter tolerance” but a rule that produces structured
-connectivity without turning the graph into a hand-imposed lattice.
+Those controls are needed before interpreting connectivity as a bottleneck or
+choosing a growth rule on that basis. This is a finite-replay signpost, not a
+general theorem.
 
 ## Audit scope firewall (2026-07-12)
 
@@ -104,6 +106,6 @@ tracked here with the shared supplied-residue vocabulary of
 
 Because those inputs are supplied row-local premises rather than cited retained
 authorities, this note does not derive a Gate B dynamics theorem, supplies no
-physical gravity/readout bridge, and introduces no new axiom, Tier-A admission,
+physical gravity/readout bridge, and introduces no new axiom, approved primitive,
 or audit-status change. The "connectivity is the current bottleneck" reading is a
-finite-replay observation under those supplied choices, not a general theorem.
+question for a controlled comparison, not a result of this finite replay.

@@ -291,6 +291,7 @@ def archive_invalid_first_and_require_fresh_packet(row: dict, first: dict) -> No
     archive_replaced_cross_confirmation_first(row, first)
     row.pop("cross_confirmation", None)
     row.pop("no_go_discipline", None)
+    row.pop("negative_assertion_classes", None)
     row["audit_status"] = "unaudited"
     row["blocker"] = "invalid_cross_confirmation_first_archived_reaudit_required"
 
@@ -470,6 +471,31 @@ def cross_confirmation_error(first: dict, audit: dict) -> str | None:
     return None
 
 
+def normalized_negative_assertion_classes(blob: dict) -> tuple[str, ...]:
+    """Return the declaration as a stable component of the audit tuple.
+
+    Missing legacy declarations are treated as the historical equivalent of an
+    empty declaration. New audit inputs are separately required to carry an
+    explicit validated list before they reach any comparison path.
+    """
+    declared = blob.get("negative_assertion_classes")
+    if not isinstance(declared, list):
+        return ()
+    return tuple(sorted({item for item in declared if isinstance(item, str)}))
+
+
+def audit_tuples_match(first: dict, second: dict) -> bool:
+    """Compare every field whose disagreement requires governed resolution."""
+    return (
+        first.get("verdict") == second.get("verdict")
+        and first.get("claim_type") == second.get("claim_type")
+        and first.get("load_bearing_step_class")
+        == second.get("load_bearing_step_class")
+        and normalized_negative_assertion_classes(first)
+        == normalized_negative_assertion_classes(second)
+    )
+
+
 def third_confirmation_error(cross_confirmation: dict, audit: dict) -> str | None:
     """Return a rejection reason when the third audit is not independent."""
     prior_auditors = {
@@ -513,6 +539,9 @@ def audit_summary_from_row(row: dict) -> dict:
         "claim_type": row.get("claim_type"),
         "claim_scope": row.get("claim_scope"),
         "load_bearing_step_class": row.get("load_bearing_step_class"),
+        "negative_assertion_classes": list(
+            normalized_negative_assertion_classes(row)
+        ),
         "verdict": row.get("audit_status"),
         "audit_invocation_id": row.get("audit_invocation_id"),
     }
@@ -532,6 +561,9 @@ def audit_summary_from_blob(audit: dict) -> dict:
         "claim_type": audit.get("claim_type"),
         "claim_scope": audit.get("claim_scope"),
         "load_bearing_step_class": audit.get("load_bearing_step_class"),
+        "negative_assertion_classes": list(
+            normalized_negative_assertion_classes(audit)
+        ),
         "verdict": audit.get("verdict"),
         "audit_invocation_id": audit.get("audit_invocation_id"),
     }
@@ -551,6 +583,9 @@ def judicial_summary_from_blob(judgment: dict) -> dict:
         "claim_type": judgment.get("ratified_claim_type"),
         "claim_scope": judgment.get("ratified_claim_scope"),
         "load_bearing_step_class": judgment.get("ratified_load_bearing_step_class"),
+        "negative_assertion_classes": list(
+            normalized_negative_assertion_classes(judgment)
+        ),
         "verdict": judgment.get("ratified_verdict"),
         "audit_invocation_id": judgment.get("audit_invocation_id"),
         "sided_with": judgment.get("sided_with"),
@@ -928,6 +963,14 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
                 f"ratified_claim_type {ratified_claim_type!r} does not match "
                 f"{chosen_label}_audit claim_type {chosen_claim_type!r}"
             )
+        if (
+            normalized_negative_assertion_classes(judgment)
+            != normalized_negative_assertion_classes(chosen)
+        ):
+            return False, (
+                "negative_assertion_classes does not match the ratified "
+                f"{chosen_label}_audit declaration"
+            )
     ratified_decoration_parent = (
         judgment.get("ratified_decoration_parent_claim_id")
         or judgment.get("decoration_parent_claim_id")
@@ -1095,6 +1138,11 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     else:
         row["decoration_parent_claim_id"] = judgment.get("decoration_parent_claim_id")
     row["auditor_confidence"] = judgment.get("auditor_confidence", "judicial")
+    row["negative_assertion_classes"] = list(
+        normalized_negative_assertion_classes(
+            chosen if side in {"first", "second"} else judgment
+        )
+    )
     if judgment.get("no_go_discipline") is None:
         row.pop("no_go_discipline", None)
     else:
@@ -1369,11 +1417,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             return False, "explicit second-seat cross-confirmation requires independence != 'weak'"
 
         second = audit_summary_from_blob(audit)
-        matches = (
-            first.get("verdict") == second.get("verdict")
-            and first.get("claim_type") == second.get("claim_type")
-            and first.get("load_bearing_step_class") == second.get("load_bearing_step_class")
-        )
+        matches = audit_tuples_match(first, second)
         row["cross_confirmation"] = {
             "first_audit": first,
             "second_audit": second,
@@ -1419,11 +1463,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             return False, "terminal cross-confirmation requires independence != 'weak'"
 
         second = audit_summary_from_blob(audit)
-        matches = (
-            first.get("verdict") == second.get("verdict")
-            and first.get("claim_type") == second.get("claim_type")
-            and first.get("load_bearing_step_class") == second.get("load_bearing_step_class")
-        )
+        matches = audit_tuples_match(first, second)
         row["cross_confirmation"] = {
             "first_audit": first,
             "second_audit": second,
@@ -1472,16 +1512,8 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         first_verdict = first.get("verdict")
         second_verdict = second.get("verdict")
         third_verdict = third.get("verdict")
-        third_matches_first = (
-            third_verdict == first_verdict
-            and third.get("claim_type") == first.get("claim_type")
-            and third.get("load_bearing_step_class") == first.get("load_bearing_step_class")
-        )
-        third_matches_second = (
-            third_verdict == second_verdict
-            and third.get("claim_type") == second.get("claim_type")
-            and third.get("load_bearing_step_class") == second.get("load_bearing_step_class")
-        )
+        third_matches_first = audit_tuples_match(third, first)
+        third_matches_second = audit_tuples_match(third, second)
         if third_matches_first:
             row["cross_confirmation"]["third_audit"] = third
             row["cross_confirmation"]["status"] = "third_confirmed_first"
@@ -1490,6 +1522,9 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             audit["verdict"] = first["verdict"]
             audit["claim_type"] = first["claim_type"]
             audit["load_bearing_step_class"] = first["load_bearing_step_class"]
+            audit["negative_assertion_classes"] = list(
+                normalized_negative_assertion_classes(first)
+            )
         elif third_matches_second:
             row["cross_confirmation"]["third_audit"] = third
             row["cross_confirmation"]["status"] = "third_confirmed_second"
@@ -1498,6 +1533,9 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             audit["verdict"] = second["verdict"]
             audit["claim_type"] = second["claim_type"]
             audit["load_bearing_step_class"] = second["load_bearing_step_class"]
+            audit["negative_assertion_classes"] = list(
+                normalized_negative_assertion_classes(second)
+            )
         else:
             row["cross_confirmation"]["third_audit"] = third
             row["cross_confirmation"]["status"] = "three_way_disagreement"
@@ -1539,11 +1577,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
 
         second = audit_summary_from_blob(audit)
         row["cross_confirmation"]["second_audit"] = second
-        matches = (
-            first.get("verdict") == second.get("verdict")
-            and first.get("claim_type") == second.get("claim_type")
-            and first.get("load_bearing_step_class") == second.get("load_bearing_step_class")
-        )
+        matches = audit_tuples_match(first, second)
         if matches:
             row["cross_confirmation"]["status"] = "confirmed"
         else:
@@ -1606,6 +1640,8 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         if (
             first.get("load_bearing_step_class") != audit.get("load_bearing_step_class")
             or first.get("claim_type") != claim_type
+            or normalized_negative_assertion_classes(first)
+            != normalized_negative_assertion_classes(audit)
         ):
             row["cross_confirmation"]["second_audit"] = audit_summary_from_blob(audit)
             row["cross_confirmation"]["status"] = "disagreement"
@@ -1613,7 +1649,8 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             row["blocker"] = "cross_confirmation_disagreement"
             accept_row()
             return True, (
-                "first and second audits disagree on claim_type or load_bearing_step_class "
+                "first and second audits disagree on claim_type, "
+                "load_bearing_step_class, or negative_assertion_classes "
                 f"({first.get('claim_type')!r}/{first.get('load_bearing_step_class')!r} vs "
                 f"{claim_type!r}/{audit.get('load_bearing_step_class')!r}); "
                 "promote to third-auditor review"
@@ -1643,6 +1680,9 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     row["open_dependency_paths"] = audit.get("open_dependency_paths", [])
     row["decoration_parent_claim_id"] = audit.get("decoration_parent_claim_id")
     row["auditor_confidence"] = audit.get("auditor_confidence")
+    row["negative_assertion_classes"] = list(
+        normalized_negative_assertion_classes(audit)
+    )
     if audit.get("no_go_discipline") is None:
         row.pop("no_go_discipline", None)
     else:

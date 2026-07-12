@@ -414,6 +414,13 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
     if audit_status == "audit_in_progress":
         return None
 
+    if (
+        audit_status not in {None, "unaudited"}
+        and bool(row.get("negative_assertion_classes"))
+        and packet is None
+    ):
+        return "no_go_discipline_packet_missing"
+
     if audit_status == "audited_clean":
         output_required = no_go_discipline_gate.output_requires_no_go_discipline(
             {**row, "verdict": audit_status}
@@ -718,6 +725,7 @@ def archive_and_reset(row: dict, reason: str) -> dict:
         else:
             new_row[k] = v
     new_row.pop("no_go_discipline", None)
+    new_row.pop("negative_assertion_classes", None)
     source_hint = row.get("claim_type_author_hint")
     if source_hint in CLAIM_TYPES:
         new_row["claim_type"] = source_hint
@@ -755,6 +763,9 @@ def soft_reset_to_cross_confirmation_pending(row: dict, reason: str) -> dict:
         "claim_type": row.get("claim_type"),
         "claim_scope": row.get("claim_scope"),
         "load_bearing_step_class": row.get("load_bearing_step_class"),
+        "negative_assertion_classes": list(
+            row.get("negative_assertion_classes") or []
+        ),
         "verdict": row.get("audit_status"),
     }
     if row.get("no_go_discipline") is not None:

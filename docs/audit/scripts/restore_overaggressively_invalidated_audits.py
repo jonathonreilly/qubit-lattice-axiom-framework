@@ -142,6 +142,7 @@ ARCHIVED_FIELDS = (
     "claim_type_last_reviewed",
     "notes_for_re_audit_if_any",
     "no_go_discipline",
+    "negative_assertion_classes",
     "audit_invocation_id",
     "audit_invocation_history",
     "negative_assertion_classes",
@@ -603,6 +604,11 @@ def restore_audit_from_previous(
         isinstance(d, list) and bool(d)
         for d in (declared_archived, declared_live)
     )
+    if (
+        bool(new_row.get("negative_assertion_classes"))
+        and new_row.get("no_go_discipline") is None
+    ):
+        return None
     if (
         new_row.get("audit_status") == "audited_clean"
         and (source_required or output_required or declared_requires)

@@ -2217,12 +2217,18 @@ def main() -> int:
                     }) + "\n")
                 continue
             if transport_bound:
+                transport_disposition = (
+                    "clean forbidden"
+                    if transport_forensic
+                    else "development-tier structural bound; verdict not forced"
+                )
                 print(
                     "  N8 transport-bound: "
                     f"{transport_bound['rendered_candidates']}/"
                     f"{transport_bound['authenticated_candidates']} candidates, "
                     f"{transport_bound['prompt_chars_before']} -> "
-                    f"{transport_bound['prompt_chars_after']} chars; clean forbidden"
+                    f"{transport_bound['prompt_chars_after']} chars; "
+                    f"{transport_disposition}"
                 )
 
             if args.dry_run:

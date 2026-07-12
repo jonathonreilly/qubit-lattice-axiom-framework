@@ -1274,6 +1274,119 @@ class ApplyAuditTest(unittest.TestCase):
                 ) or "",
             )
 
+    def test_negative_assertion_declaration_is_persisted_and_cleared(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_declared_negative")
+        led = self.fx.read_ledger()
+        declared = {
+            "claim_id": "test_declared_negative",
+            "verdict": "audited_conditional",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "bounded structural scope",
+            "auditor": "declaration-auditor",
+            "negative_assertion_classes": ["bounded_with_named_walls"],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "A",
+            "no_go_discipline": {"status": "PASS"},
+        }
+        with mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value=None,
+        ):
+            ok, msg = m.apply_one(led, declared)
+        self.assertTrue(ok, msg)
+        self.assertEqual(
+            led["rows"]["test_declared_negative"]["negative_assertion_classes"],
+            ["bounded_with_named_walls"],
+        )
+
+        self._seed_one_row("test_cleared_negative")
+        clear_led = self.fx.read_ledger()
+        clear_led["rows"]["test_cleared_negative"][
+            "negative_assertion_classes"
+        ] = ["bounded_with_named_walls"]
+        cleared = {
+            "claim_id": "test_cleared_negative",
+            "verdict": "audited_conditional",
+            "claim_type": "positive_theorem",
+            "claim_scope": "positive structural scope",
+            "auditor": "clearing-auditor",
+            "negative_assertion_classes": [],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "C",
+        }
+        ok, msg = m.apply_one(clear_led, cleared)
+        self.assertTrue(ok, msg)
+        self.assertEqual(
+            clear_led["rows"]["test_cleared_negative"][
+                "negative_assertion_classes"
+            ],
+            [],
+        )
+
+    def test_cross_confirmation_disagrees_when_negative_declaration_changes(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_negative_tuple",
+            criticality="critical",
+        )
+        led = self.fx.read_ledger()
+        first = {
+            "claim_id": "test_negative_tuple",
+            "verdict": "audited_clean",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "bounded structural scope",
+            "auditor": "first-declaration-auditor",
+            "negative_assertion_classes": ["bounded_with_named_walls"],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "cross_family",
+            "load_bearing_step_class": "A",
+            "no_go_discipline": {"status": "PASS"},
+        }
+        with mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value=None,
+        ):
+            ok, msg = m.apply_one(led, first)
+        self.assertTrue(ok, msg)
+        self.assertEqual(
+            led["rows"]["test_negative_tuple"]["cross_confirmation"][
+                "first_audit"
+            ]["negative_assertion_classes"],
+            ["bounded_with_named_walls"],
+        )
+
+        second = {
+            **first,
+            "auditor": "second-declaration-auditor",
+            "independence": "fresh_context",
+            "negative_assertion_classes": [],
+            "no_go_discipline": None,
+        }
+        with mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value=None,
+        ):
+            ok, msg = m.apply_one(led, second)
+        self.assertTrue(ok, msg)
+        row = led["rows"]["test_negative_tuple"]
+        self.assertEqual(row["audit_status"], "audit_in_progress")
+        self.assertEqual(row["cross_confirmation"]["status"], "disagreement")
+        self.assertEqual(row["blocker"], "cross_confirmation_disagreement")
+
     def test_judicial_packet_transport_is_tier_gated(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
@@ -1767,7 +1880,7 @@ class ApplyAuditTest(unittest.TestCase):
         second_audit = {
             **fresh_audit,
             "auditor": "fresh-packeted-second",
-            "negative_assertion_classes": [],
+            "negative_assertion_classes": ["no_go_result"],
             "independence": "fresh_context",
             "audit_invocation_id": "f" * 32,
         }
@@ -7346,11 +7459,17 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "claim_type": "no_go",
             "claim_type_author_hint": "no_go",
             "no_go_discipline": packet,
+            "negative_assertion_classes": ["no_go_result"],
             "previous_audits": [],
         }
         reset = m.archive_and_reset(row, "test invalidation")
         self.assertEqual(reset["previous_audits"][0]["no_go_discipline"], packet)
+        self.assertEqual(
+            reset["previous_audits"][0]["negative_assertion_classes"],
+            ["no_go_result"],
+        )
         self.assertNotIn("no_go_discipline", reset)
+        self.assertNotIn("negative_assertion_classes", reset)
 
     def test_packetless_clean_no_go_is_invalidated(self):
         m = _import("invalidate_stale_audits")
@@ -7375,6 +7494,20 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 m.detect_invalidation(row, {"legacy_no_go": row}),
                 "no_go_discipline_packet_missing",
             )
+
+    def test_packetless_declared_negative_conditional_is_invalidated(self):
+        m = _import("invalidate_stale_audits")
+        row = {
+            "claim_id": "declared_negative_conditional",
+            "note_path": "docs/POSITIVE_SOURCE.md",
+            "audit_status": "audited_conditional",
+            "claim_type": "bounded_theorem",
+            "negative_assertion_classes": ["bounded_with_named_walls"],
+        }
+        self.assertEqual(
+            m.detect_invalidation(row, {"declared_negative_conditional": row}),
+            "no_go_discipline_packet_missing",
+        )
 
     def test_live_packet_invalid_under_current_policy_is_invalidated(self):
         m = _import("invalidate_stale_audits")
@@ -8793,6 +8926,25 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             invalidation_reason="criticality_increased:leaf->medium",
         )
         archived["chain_closes"] = True
+        row = self._seed_with_archived(cid, archived)
+        row["note_path"] = note_path
+        self.assertIsNone(
+            m.restore_audit_from_previous(row, {cid: row})
+        )
+
+    def test_restore_refuses_packetless_declared_negative_conditional(self):
+        m = self._import_and_patch()
+        cid = "packetless_declared_conditional"
+        note_path = "docs/POSITIVE_CONDITIONAL.md"
+        self.fx.write_note(note_path, "# Positive bounded source\n")
+        archived = self._archived_audit(
+            audit_status="audited_conditional",
+            claim_type="bounded_theorem",
+            invalidation_reason="criticality_increased:leaf->medium",
+        )
+        archived["negative_assertion_classes"] = [
+            "bounded_with_named_walls"
+        ]
         row = self._seed_with_archived(cid, archived)
         row["note_path"] = note_path
         self.assertIsNone(

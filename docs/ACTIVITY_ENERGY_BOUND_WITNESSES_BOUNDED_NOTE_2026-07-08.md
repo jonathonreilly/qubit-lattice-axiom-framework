@@ -59,11 +59,11 @@ threshold, or a deposition probability.
 
 - The exact inequality is finite-dimensional and uses the declared local-term
   decomposition.
-- The profile comparisons use absolute apportioned energy expectations,
-  thresholded supports, and finite time samples. They are diagnostics, not
-  identities.
+- The profile comparisons use unthresholded bond-activity and absolute
+  apportioned bond-energy arrays, with full-profile overlaps and centroids at
+  finite sample times. They are diagnostics, not identities.
 - The dense three-site model and one-particle chain, including their terms,
-  preparation choices, sizes, mass, thresholds, and finite times, are supplied.
+  preparation choices, sizes, mass, and finite times, are supplied.
 - No gravity conclusion or physical sourcing law is made.
 
 ## Dependencies

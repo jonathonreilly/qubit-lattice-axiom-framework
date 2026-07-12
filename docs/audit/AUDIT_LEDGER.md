@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 105 |
-| **retained_no_go** | 47 |
+| **retained_no_go** | 48 |
 | **retained_bounded** | 421 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
 | unaudited | 2617 |
-| audit_in_progress | 29 |
+| audit_in_progress | 28 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -46,8 +46,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 29 |
-| `audited_clean` | 560 |
+| `audit_in_progress` | 28 |
+| `audited_clean` | 561 |
 | `audited_conditional` | 104 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 48 |
@@ -141,7 +141,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `single_clock_uniqueness_scope_boundary_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
-| `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -579,6 +578,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_transverse_green_corrected_boundary_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_transverse_propagating_green_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `source_resolved_wavefield_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `spectral_closure_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `spectral_symmetry_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `stable_post_record_dial_location_certificate_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
@@ -9238,6 +9238,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The fresh cached run for runner SHA bb0f86c1bca9d547eba476212a3c43bd39192823a69c7919705c5a48a65bbebe exits 0 and its stdout matches the note's reductions, row table, TOWARD count, and fitted exponents. The visible runner computes the finite-lattice fields, propagation, centroid shifts, phase-ramp metrics, and power fits rather than printing the frozen table as constants; this closes only the bounded runner-output claim.
 - **rationale:** The scoped claim is exactly the finite computation printed by the current cache: both zero-source shifts are zero, all five wavefield centroid shifts are positive, and the fitted exponents are near unity for the centroid and detector phase-ramp observables. No external comparator, continuum limit, generated-geometry transfer, or experimental-amplitude bridge is needed for this bounded scope. The clean verdict should not be read as validating any broader continuum or physical-source theorem beyond the stated finite runner family.
 - **auditor confidence:** high
+
+### `spatial_cubic_time_anisotropy_gate_no_go_2026-06-06`
+
+- **Note:** [`SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md`](../../docs/SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On the stated Z^3 x Z_tau quadratic kinetic surface, spatial O_h symmetry and time parity alone permit independent temporal and spatial coefficients; therefore spatial cubic or quartic-artifact checks alone do not establish SO(4) kinetic covariance.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00134-spatial_cubic_time_anisotrop`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Spatial O_h symmetry leaves the quadratic form Q(p)=c_t p_tau^2+c_s|p_spatial|^2 with two independent coefficients, so it does not force c_t=c_s.  _(class `A`)_
+- **chain closes:** True — The exact invariant-space calculation and explicit anisotropic counterexample establish the scoped non-implication. The approved kinetic-isotropy primitive supplies a valid stronger premise but is not needed for, and does not contradict, the O_h-alone no-go.
+- **rationale:** The runner genuinely enumerates the signed-permutation groups, computes exact invariant-space dimensions, and checks an explicit anisotropic quadratic form rather than merely printing expected values. Independent algebra gives coefficient vectors of the form (c_t,c_s,c_s,c_s) under spatial O_h and (c,c,c,c) under B4; the displayed counterexample is spatially invariant but fails a time-space swap and an SO(4) rotation. The hard-coded truth value in S3 is rhetorical and non-load-bearing. The conclusion remains carefully scoped and explicitly preserves normalization, B4, and other bridge routes.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `spectral_closure_2026-04-09`
 

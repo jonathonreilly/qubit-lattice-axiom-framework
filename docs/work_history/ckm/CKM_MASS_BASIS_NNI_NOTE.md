@@ -1,244 +1,317 @@
-# Historical CKM Mass-Basis NNI Note: V_ub from Schur Complement + Mass-Ratio Suppression
+# CKM Mass-Basis NNI Reparameterization Boundary
 
-**Status (effective 2026-05-16):** historical bounded CKM route note. Re-audited
-2026-05-05 as `audited_numerical_match` (class G); see
-[AUDIT_LEDGER](../../audit/AUDIT_LEDGER.md) entry
-`work_history.ckm.ckm_mass_basis_nni_note`. This file is NOT a live
-authority. It is retained as a route-history / diagnostic note.
+**Date:** 2026-07-12
+**Type:** no_go
+**Claim type:** no_go
+**Status:** source-side exact negative boundary; independent audit is required
+before any effective-status change.
+**Claim scope:** if the displayed coefficient map
+`p_ij = g_ij sqrt(mu_i/mu_j)` is used as a reparameterization of the same
+Hermitian texture, it cannot suppress a CKM entry. The historical `1.14 x`
+output inserts `p_13` into the geometric reconstruction law and therefore
+computes a different texture. Whether that operation is intended as a
+physical deformation is a separate open interpretation and derivation route.
+**Script:**
+[`scripts/frontier_ckm_mass_basis_nni_reparameterization_no_go.py`](../../../scripts/frontier_ckm_mass_basis_nni_reparameterization_no_go.py)
+**Cached output:**
+[`logs/runner-cache/frontier_ckm_mass_basis_nni_reparameterization_no_go.txt`](../../../logs/runner-cache/frontier_ckm_mass_basis_nni_reparameterization_no_go.txt)
 
-**Script:** `scripts/frontier_ckm_mass_basis_nni.py`
+The previous numerical runner is preserved at
+`scripts/frontier_ckm_mass_basis_nni.py` as historical instrumentation. Its
+PDG masses, fitted coefficients, and PDG CKM entries remain observational and
+fitted inputs. They are not used by the theorem or its primary runner.
 
-**Cites (for context, not load-bearing):** `CKM_SCHUR_COMPLEMENT_THEOREM`,
-`CABIBBO_BOUND_NOTE.md`, `JARLSKOG_PHASE_BOUND_NOTE.md`.
+## Exact result
 
-**Publication disposition:** bounded flavor companion only. Not on the
-retained flagship claim surface (see cycle-safe textual reference
-`docs/publication/ci3_z3/DERIVATION_ATLAS.md`, row "CKM mass-basis route").
+Let `0 < mu_1 < mu_2 < mu_3` and let a Hermitian texture be parameterized in
+the geometric convention by
 
----
+```text
+M_ij = g_ij sqrt(mu_i mu_j),                 i < j,
+M_ji = conjugate(M_ij).
+```
 
-## What this note actually certifies (the scoped bounded statement)
+Define the displayed coefficient map
 
-The companion runner certifies four pure-algebra source theorems that hold
-identically for ANY positive masses and ANY positive geometric-mean
-coefficients. These are the only theorem-grade content of the note.
+```text
+p_ij = Phi_ij(g_ij) = g_ij sqrt(mu_i/mu_j), i < j.
+```
 
-Let `m_1 < m_2 < m_3` be any positive reals and let `(c_12, c_23)` be any
-positive geometric-mean NNI off-diagonal coefficients in the Hermitian NNI
-mass matrix `M_ij = c_ij * sqrt(m_i * m_j)`. Define the mass-eigenvalue
-NNI normalization (Branco-Lavoura-Silva, "CP Violation," Ch. 6):
+Solving for `g_ij` and substituting into the same matrix entry gives the
+unique consistent reconstruction law
 
-    c_ij^phys = c_ij^geom * sqrt(m_i / m_j)    for i < j.
+```text
+g_ij = p_ij sqrt(mu_j/mu_i),
+M_ij = p_ij mu_j.                            (1)
+```
 
-Then:
+Therefore
 
-- **(T1) Chain rule.** `sqrt(m_1/m_3) = sqrt(m_1/m_2) * sqrt(m_2/m_3)`.
-- **(T2) Geometric Schur normalization.**
-  `M_13^geom / (M_12^geom * M_23^geom) = 1/m_2`.
-- **(T3) `geom -> phys` is closed under (T1).**
-  `c_13^phys = c_12^phys * c_23^phys`.
-- **(T4) Gap-closure ratio is exactly `sqrt(m_1/m_3)`.**
-  `c_13^phys / c_13^geom = sqrt(m_1/m_3)`, independent of `(c_12, c_23)`.
+```text
+R_phys(Phi(g))_ij
+  = p_ij mu_j
+  = g_ij sqrt(mu_i/mu_j) mu_j
+  = g_ij sqrt(mu_i mu_j)
+  = R_geom(g)_ij.                            (2)
+```
 
-The runner verifies (T1)-(T4) at machine precision over 200 random
-ordered mass triples in Part 0. No PDG input, no quark mass, no fitted
-coefficient is touched in that block.
+Equation (2) is entrywise equality of the matrices. Consequently their
+spectra and diagonalizer sets agree. For nondegenerate spectra, matched mass
+ordering and phase conventions give the same CKM moduli. With degeneracies,
+the set of possible CKM moduli is the same, and an identical basis choice
+inside each common degenerate eigenspace gives identical moduli. A consistent
+same-texture application of `Phi` cannot suppress or enhance `|V_ub|`; it
+changes coefficient coordinates, not the matrices.
 
----
+## What the historical runner actually computes
 
-## What this note imports (and therefore does NOT derive)
+The historical runner forms
 
-The runner also evaluates (T1)-(T4) on PDG inputs and reports a
-numerical correspondence with PDG CKM values. The illustration uses:
+```text
+p_13 = g_13 sqrt(mu_1/mu_3)
+```
 
-- **PDG 2024 quark masses** (`M_UP`, `M_CHARM`, ..., `M_BOTTOM`).
-- **Fitted O(1) geometric-mean NNI coefficients**
-  (`C12_U_FIT = 1.48`, `C23_U_FIT = 0.65`, `C12_D_FIT = 0.91`,
-  `C23_D_FIT = 0.65`), themselves fitted to observed CKM mixing angles
-  in `scripts/frontier_ckm_schur_complement.py` and imported here.
-- **PDG 2024 CKM comparators** (`V_US_PDG`, `V_CB_PDG`, `V_UB_PDG`,
-  `J_PDG`, `LAMBDA_PDG`, `A_PDG`, `RHO_BAR_PDG`, `ETA_BAR_PDG`).
+and then inserts `p_13` into the *geometric* reconstruction law. That gives
 
-The 2026-05-05 audit verdict (`audited_numerical_match`, class G) is
-correct on this point: the headline "`|V_ub|_pred = 1.14x PDG`" in the
-calibrated illustration is a numerical match under imported inputs, not
-a first-principles closure from any retained axiom. The 2026-05-16
-patch keeps the calibrated block for diagnostic continuity but
-brackets it as imports-dependent and separates it from the structural
-source theorems above.
+```text
+M_13^legacy
+  = p_13 sqrt(mu_1 mu_3)
+  = g_13 mu_1,                               (3)
+```
 
----
+whereas the original entry is
 
-## Safe claim boundary
+```text
+M_13^geom = g_13 sqrt(mu_1 mu_3).            (4)
+```
 
-### Safe to say
+Thus
 
-- The four structural identities (T1)-(T4) hold identically for any
-  positive masses and any positive geometric-mean coefficients in the
-  Hermitian NNI mass matrix.
-- In particular, applying the mass-eigenvalue normalization
-  `c_ij^phys = c_ij^geom * sqrt(m_i/m_j)` to a Schur-complement-induced
-  `c_13^geom = c_12 * c_23` rescales the (1,3) off-diagonal exactly by
-  the factor `sqrt(m_1/m_3)`, independent of (c_12, c_23).
-- Evaluated on imported PDG 2024 quark masses and imported fitted O(1)
-  geometric-mean NNI coefficients, the resulting `|V_ub|_pred` lies
-  within about 14% of the PDG 2024 central value. This is a numerical
-  consistency check, useful as a diagnostic.
+```text
+M_13^legacy / M_13^geom = sqrt(mu_1/mu_3).   (5)
+```
 
-### NOT safe to say
+For `g_13 != 0` and `mu_1 < mu_3`, equations (3) and (4) are unequal. The
+factor advertised as “mass-basis suppression” is exactly the factor by which
+the runner changes the matrix entry after mixing the two reconstruction
+conventions.
 
-- That this note derives the CKM matrix from framework axioms.
-- That this note derives the quark mass hierarchy. (The runner imports
-  PDG masses; the prior claim that "all mass ratios are framework-derived"
-  via an EWSB cascade was not backed by any runner-level instantiation
-  of such a cascade and has been removed from this revision.)
-- That the bounded `1.14x` numerical match upgrades the lane status; it
-  does not, and the audit ledger row remains `audited_numerical_match`
-  (class G) under this patch.
-- That the calibrated block exhibits a first-principles closure of
-  Wolfenstein parameters. The Wolfenstein correspondence in Part 6 is
-  a numerical match under imports, conditional on the same fitted O(1)
-  coefficients.
+This is not a merely verbal distinction. Holding every other entry fixed,
+the Hermitian Frobenius invariant changes by
 
----
+```text
+tr[(M^legacy)^2] - tr[(M^geom)^2]
+  = 2 |g_13|^2 mu_1 (mu_1 - mu_3) < 0.       (6)
+```
 
-## Source-theorem table (machine-precision algebraic checks)
+So the legacy insertion is a genuine texture deformation. It may change a
+numerically diagonalized CKM matrix, but that change is not produced by a
+same-texture coordinate transformation. Calling the deformation a physical
+normalization would require a separate semantic and dynamical authority; this
+note neither assumes nor rules out that interpretation.
 
-| ID | Statement | Class | Where verified |
-|----|-----------|-------|----------------|
-| T1 | `sqrt(m_1/m_3) = sqrt(m_1/m_2) * sqrt(m_2/m_3)` for any `m_i > 0` | algebraic identity | runner Part 0 (200 random triples) |
-| T2 | `M_13^geom / (M_12^geom * M_23^geom) = 1/m_2` in the NNI parametrization | algebraic identity | runner Part 0 (200 random triples) |
-| T3 | `c_13^phys = c_12^phys * c_23^phys` under the geom->phys map | algebraic identity (corollary of T1) | runner Part 0 + Parts 1, 2 |
-| T4 | `c_13^phys / c_13^geom = sqrt(m_1/m_3)` independent of `(c_12, c_23)` | algebraic identity | runner Part 0 (200 random triples) |
+## Independent obstruction to the “mass-eigenvalue” wording
 
-All four pass at worst relative deviation `< 1e-12` on the random sample.
+The historical construction also uses `mu_i` as diagonal entries while
+calling them mass eigenvalues. For a Hermitian instance with any nonzero
+off-diagonal coefficient,
 
----
+```text
+tr(M^2) - sum_i mu_i^2
+  = 2 sum_{i<j} |g_ij|^2 mu_i mu_j > 0.       (7)
+```
 
-## Calibrated illustration (imports-dependent; NOT load-bearing)
+If the eigenvalue multiset of `M` were `{mu_1,mu_2,mu_3}`, the left-hand side
+would be zero. Hence the displayed non-diagonal matrix cannot simultaneously
+have the `mu_i` as its diagonal entries and as its eigenvalues. A different
+inverse-eigenvalue construction could adjust the diagonal entries, but the
+historical runner does not perform one.
 
-The remaining sections of the runner evaluate (T1)-(T4) at PDG and
-fitted-coefficient inputs and tabulate the resulting CKM-like numbers.
-These are kept for continuity with the older note but should not be
-read as a derivation:
+Equation (7) is a second exact obstruction. It is not needed for the
+reparameterization no-go in equations (1)-(6), but it prevents the current
+matrix builder from supplying the missing eigenvalue-to-texture bridge by
+terminology alone.
 
-- **Mass-ratio suppression factors** at PDG inputs: `sqrt(m_d/m_b) ~ 0.033`,
-  `sqrt(m_u/m_t) ~ 0.0035` (both pure consequences of PDG imports + T1).
-- **Mass-basis coefficients** at PDG and fitted-coefficient inputs:
-  `c_13^phys(down) ~ 0.020`, `c_13^phys(up) ~ 3.4e-3`.
-- **CKM comparison table** at imports:
+## Schur-chain identity retained at its safe boundary
 
-  | Element | Mass-basis NNI (at imports) | PDG | Ratio | Status |
-  |---------|-----------------------------|-----|-------|--------|
-  | `|V_us|` | 0.2251 | 0.2243 | 1.004 | numerical match (imports) |
-  | `|V_cb|` | 0.0420 | 0.0422 | 0.994 | numerical match (imports) |
-  | `|V_ub|` | 0.00435 | 0.00382 | 1.14  | numerical match (imports) |
-  | `J`      | 4.5e-6 | 3.1e-5 | 0.15  | bounded (imports) |
+If `g_13 = g_12 g_23`, then the coefficient map still obeys the exact chain
 
-  Read every entry as `(operation T1-T4) applied to (PDG mass imports +
-  fitted geometric-mean coefficient imports)`. No row is a first-principles
-  derivation from retained axioms.
+```text
+p_13 = p_12 p_23,
+```
 
-- **Gap-closure scan** (Part 5): a numerical scan of `c_13` from the
-  geometric-mean value down to the mass-basis value, showing that the
-  geometric-mean overshoot factor (`5.3x` PDG) collapses to `1.14x` PDG
-  exactly when `c_13` is multiplied by `sqrt(m_1/m_3)`. This is (T4)
-  evaluated at imports.
+because the square-root ratios multiply. This is a coefficient identity. It
+does not identify `p_13` with `V_ub`, and it does not override the
+reconstruction identity `M_13 = p_13 mu_3`.
 
----
+The standalone structural note
+`docs/CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md`
+is context only and is not a load-bearing dependency of the present proof;
+the primary runner reconstructs all algebra used here.
 
-## Open issues (NOT addressed by this patch)
+## Consequence for the former `1.14 x` statement
 
-1. **Jarlskog invariant.** `J` is suppressed by ~7x relative to PDG in
-   the calibrated block. See
-   `JARLSKOG_PHASE_BOUND_NOTE.md` for the
-   currently-active bounded Jarlskog statement on the publication surface.
+The old claim that the displayed map, *as a same-texture normalization*,
+suppresses the geometric `|V_ub|` overshoot to approximately `1.14` times a
+quoted PDG value does not survive this exact check. The numerical statement
+has three separate layers:
 
-2. **`rho_bar` and `eta_bar`.** These Wolfenstein parameters are off in
-   the calibrated block (`rho_bar` too large, `eta_bar` too small),
-   related to the `J` suppression.
+1. imported PDG quark masses;
+2. fitted geometric coefficients and an imported PDG CKM comparator;
+3. a texture deformation obtained by using `p_13` with the geometric rather
+   than the converted reconstruction law.
 
-3. **No framework derivation of the geometric-mean coefficients
-   `(c_12, c_23)`.** Until such a derivation is in hand, every entry of
-   the calibrated illustration block remains imports-conditional.
+Deriving the masses or coefficients would retire the first two imports, but
+it would not turn layer 3 into a same-texture reparameterization. A
+reparameterization of an unchanged matrix remains observable-invariant. To
+retain a positive numerical route, a future source could interpret and derive
+the *deformed texture itself* and a physical texture-to-CKM bridge, then
+compare its independently derived output with observation. That separate
+physical-deformation route remains open.
 
-4. **No framework derivation of the quark mass hierarchies.** The earlier
-   prose claim that "the EWSB cascade gives the mass hierarchy from
-   loop suppressions" is not instantiated by this runner and was
-   removed in the 2026-05-16 patch.
+The current quark-mass authority independently confirms that five non-top
+quark masses remain open rather than framework-derived; see the
+non-load-bearing route context
+`docs/lanes/open_science/03_QUARK_MASS_RETENTION_OPEN_LANE_2026-04-26.md`.
+No quark mass or CKM observation is needed for the exact negative boundary.
 
-Closing any of (3) or (4) at retained-axiom grade would be required to
-upgrade the lane status; this patch does not attempt either.
+## No-go discipline gate
 
----
+### N1 — Alternative routes
 
-## 2026-05-16 patch (audit response)
+| Attack route | Attempt and result | Marker |
+|---|---|---|
+| Consistent coefficient reparameterization | Reconstruct with `M_ij=p_ij mu_j`; equation (2) returns the original matrix entrywise, so no CKM observable changes. | `ATTEMPTED` — symbolic proof and exact controls in the primary runner |
+| Active unitary basis change | A common weak-basis change acts on the matrices and their diagonalizers covariantly; it cannot turn equation (2) into the changed entry (3). The runner’s operation is not such a transformation. | `ATTEMPTED` — matrix-equality and CKM-invariance controls |
+| Interpret the legacy insertion as a new texture | This does change CKM numerically, but equations (5)-(6) show why: it changes a matrix invariant. It escapes only by abandoning the normalization claim. | `ATTEMPTED` — exact invariant and synthetic two-sector controls |
+| Derive the quark mass hierarchy first | Framework-derived `mu_i` would remove an input import but equation (2) holds for every positive triple, so it cannot make a reparameterization suppress `V_ub`. | `ATTEMPTED` — universal symbolic variables; current mass lane checked as route context |
+| Derive the geometric coefficients first | Framework-derived `g_ij` would remove fitted inputs but equations (2), (5), and (6) hold for every nonzero coefficient, so it cannot repair the reconstruction mismatch. | `ATTEMPTED` — universal symbolic coefficients |
+| Import the separate CKM atlas prediction | The atlas can supply an independent `V_ub` formula, but substituting that target into this texture would be a readout assumption or fit and would not turn the legacy deformation into normalization. | `ATTEMPTED` — dependency and circularity audit |
 
-Audit row: `work_history.ckm.ckm_mass_basis_nni_note`
-(`audited_numerical_match`, class G, auditor
-`codex-cli-gpt-5.5-20260505-040942-beec6e04`, independence `cross_family`).
+These routes close only the narrow proposition “the displayed normalization
+itself produces the suppression.” They do not claim that no framework texture
+can ever predict `V_ub`.
 
-Auditor-quoted load-bearing step:
-"The conversion `c_ij^phys = c_ij^geom * sqrt(m_i/m_j)` for `i < j`
-applies the quark mass-ratio suppression that brings `|V_ub|` near PDG."
+### N2 — Wall independence
 
-Auditor rationale (excerpt): "The runner performs real matrix and ratio
-computations, but those computations are over hard-coded external quark
-masses, PDG comparator values, and fitted geometric coefficients. The
-quoted 1.14x `|V_ub|` agreement is therefore a numerical match after
-importing calibrated inputs, not a first-principles closure from the
-axiom. The runner source does not instantiate the claimed framework
-operators or derive the mass hierarchy internally, despite the note
-saying the mass ratios are framework-derived."
+The exact no-go has one algebraic wall, not an inflated list of independent
+walls: consistent reconstruction returns the same matrix. Missing mass
+derivations, coefficient derivations, and physical readout theorems are walls
+for a *new positive texture prediction*, but none is a premise of equations
+(1)-(6), and closing any of them does not alter the reparameterization
+identity.
 
-This patch addresses the audit at the note + runner level by:
+### N3 — Hidden-wall scan
 
-  (P1) **Scope reduction to source theorems (T1)-(T4).** The runner now
-       begins with a Part 0 block that verifies the four structural
-       identities at machine precision over 200 random ordered mass
-       triples and random positive O(1) coefficients. These are
-       axiom-free algebraic identities; no PDG input is read.
+The matrix-equality proof assumes only positive ordered scale labels and a
+Hermitian texture with the displayed reconstruction laws; coefficients may be complex. “Mass
+eigenvalue,” “NNI,” “Schur complement,” PDG data, fitted coefficients,
+framework operators, and the minimal axioms are not hidden proof inputs. The
+strict inequality in (6) additionally requires `g_13 != 0` and
+`mu_1 < mu_3`; the matrix-equality result (2) does not. A unique CKM-modulus
+representative additionally requires nondegenerate spectra or a common basis
+prescription inside degenerate eigenspaces. Without that choice, equality
+holds for the full set of allowed representatives rather than one unique
+matrix of moduli.
 
-  (P2) **Explicit source-citation of every import.** The runner header
-       and the constants block now mark every numerical constant as an
-       external import: PDG 2024 quark masses, PDG 2024 CKM comparators,
-       and the fitted O(1) coefficients lifted from
-       `scripts/frontier_ckm_schur_complement.py`. The note's "What this
-       note imports" section repeats the same enumeration.
+### N4 — Residual matching
 
-  (P3) **Removal of the false "framework-derived" prose.** The earlier
-       sentences asserting that the mass hierarchy is supplied by an
-       EWSB cascade have been removed both from the note and from the
-       runner's Part 1 commentary. The EWSB-cascade `ALPHA_S_PL`,
-       `ALPHA_2_PL`, `M_PL`, `V_EW`, `SIN2_TW`, `C_F`, `N_C`
-       parameters were unused in the actual computation and have been
-       removed from the runner.
+| Prior finding | Residual it attacked | Residual closed here | Match? |
+|---|---|---|---|
+| `docs/audit/data/audit_ledger.json:993647-993700` (2026-04-30 judicial history) | asserted identification of normalized coefficients with CKM observables | a same-texture coefficient reparameterization does not change the matrix or CKM moduli | yes, for the same-texture reading |
+| `docs/audit/data/audit_ledger.json:993739` (2026-05-05 numerical-match history) | imported masses, fitted coefficients, and an asserted normalization bridge | the same-texture reading is invariant before numerical imports are evaluated | yes for that bridge reading; a physical-deformation reading remains open |
+| `docs/QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md:32` | CKM closure is a mixing theorem, not a five-mass theorem | whether framework masses can rescue this same-texture map | no; retained only as route context, not a witness |
 
-  (P4) **Honest framing of Parts 1-7 as an imports-dependent
-       illustration.** Each subsequent block now declares its inputs and
-       reframes its checks as evaluations of (T1)-(T4) at imports.
-       The Wolfenstein block (Part 6) is relabeled "Wolfenstein
-       correspondence" rather than "Wolfenstein identification" and no
-       longer asserts that the parametrization is derived.
+The audit histories are residual provenance, not premises of the theorem.
 
-  (P5) **Safe-to-say / NOT-safe-to-say block.** Added above, mirroring
-       the format used in
-       `JARLSKOG_PHASE_BOUND_NOTE.md`.
+### N5 — Rhetoric audit
 
-The class-G `audited_numerical_match` status is unchanged by this
-patch; the patch removes the runner-level and prose-level discretion
-the audit objected to, but does not attempt the structural derivation
-(of either the geometric-mean coefficients or the mass hierarchy) that
-would be required to upgrade the lane.
+- Per-entry: equations (1)-(5) are exact for each upper-triangular entry.
+- Whole single matrix: entrywise equality in (2) fixes the complete matrix.
+- Two-sector CKM readout: identical up/down matrix pairs have the same
+  diagonalizer sets. For nondegenerate spectra their CKM moduli agree after
+  matched ordering and phases; for degenerate spectra the sets of possible
+  CKM moduli agree, or a common basis prescription gives identical
+  representatives. The runner verifies one nondegenerate synthetic control.
+- Framework- or lattice-wide: not claimed. The theorem does not forbid a
+  separately derived texture deformation or another flavor mechanism.
 
----
+Accordingly, “cannot suppress” always means “cannot suppress by the displayed
+map while representing the same matrix.”
 
-## Pointers
+### N6 — Partial-closure paths
 
-- Live bounded Cabibbo authority: `CABIBBO_BOUND_NOTE.md`.
-- Live bounded Jarlskog statement: `JARLSKOG_PHASE_BOUND_NOTE.md`.
-- Retained Schur-complement source theorem:
-  `CKM_SCHUR_COMPLEMENT_THEOREM.md`.
-- Runner: [scripts/frontier_ckm_mass_basis_nni.py](../../../scripts/frontier_ckm_mass_basis_nni.py).
-- Cached runner output:
-  [logs/runner-cache/frontier_ckm_mass_basis_nni.txt](../../../logs/runner-cache/frontier_ckm_mass_basis_nni.txt).
+There is a legitimate positive continuation: explicitly rename the legacy
+operation a texture deformation, derive that deformation from retained
+framework dynamics, derive its quark-mass and coefficient inputs, and prove a
+texture-to-CKM observable bridge. No new axiom is automatically required;
+ordinary retained theorems could in principle close those steps. The approved
+scale-reference, kinetic-isotropy, and realized-state primitives supply no
+mass ratio, coefficient, mixing angle, or flavor readout and are irrelevant
+to the exact algebraic no-go.
+
+### N7 — Steelman
+
+The strongest objection is that the historical author may have intended
+`p_13` not as a coordinate for the same matrix but as a physically distinct
+mass-suppressed coupling prescription. Under that interpretation the changed
+matrix is intentional, and the numerical scan is a valid exploration of a
+new texture. This objection is correct but does not defeat the narrow no-go:
+it concedes that the result is a deformation requiring its own dynamical and
+observable derivation. The note therefore preserves the old runner as
+historical instrumentation and rejects only the normalization-based closure.
+
+### N8 — Cross-cycle echo
+
+The required repo and no-go-ledger search found these similar wall shapes:
+
+| Prior wall | Current/retired state | Retirement mechanism | Could it apply here? |
+|---|---|---|---|
+| Overall hypercharge-coordinate selection, `docs/audit/data/premise_decision_history.json:13-15` | reclassified as a vacuous normalization convention; the current source row is awaiting re-audit | convention reframe under reciprocal charge/coupling scaling | yes in method: distinguish coordinate reparameterization from physical content. Applied here by leaving the deformation interpretation open. |
+| Bare-coupling coordinate selection, `docs/audit/data/premise_decision_history.json:16-21` | reclassified as a rescaling convention; the current source row is awaiting re-audit | reciprocal coupling/action normalization reframe | yes in method, but it cannot make two unequal matrices equal. |
+| Endpoint-blind Route-2 renormalization, `docs/QUARK_ROUTE2_ENDPOINT_BLIND_RENORMALIZATION_NO_GO_NOTE_2026-06-21.md:24-54` | not retired; current row is unaudited | none; nonseparable physical readout remains the named escape | yes: a transformation that changes the invariant is new readout/texture content, not an endpoint-blind reparameterization. Used only as a similar-shape search result, not authority. |
+| CKM-to-five-mass promotion, `.claude/science/physics-loops/lane3-quark-mass-retention-20260428/NO_GO_LEDGER.md:5-7` | not retired; five non-top masses remain open | no current retirement mechanism | no direct retirement of this algebraic result; it only confirms that deriving masses is a separate program. |
+
+The earlier judicial history for this row identified a symbol-to-observable
+renaming. The present proof resolves only the same-texture coordinate reading.
+The convention-reframe examples prevent the stronger claim that all physical
+meanings of the historical word “normalization” are impossible.
+
+**No-go discipline disposition:** `PASS` for the narrow
+reparameterization-only claim. The broader problems of deriving a physical
+quark texture, five non-top masses, and a texture-to-CKM bridge remain open.
+
+## Falsifiers and scope boundaries
+
+The exact negative claim is falsified by either of the following:
+
+- an algebraic counterexample to `p_ij mu_j = g_ij sqrt(mu_i mu_j)` under the
+  displayed definition of `p_ij`;
+- a nondegenerate pair of identical up/down matrices whose CKM moduli differ
+  after matched eigenstate ordering and phase conventions solely because one
+  pair is written with `g` and the other with `p`; or, in a degenerate case,
+  unequal sets of possible CKM moduli for the two parameterizations.
+
+The source-attribution claim that the historical runner computes a deformation
+would separately be falsified if its source reconstructed the converted entry
+as `p_13 mu_3`; it currently reconstructs with
+`p_13 sqrt(mu_1 mu_3)`.
+
+Not claimed:
+
+- a first-principles value of any quark mass, NNI coefficient, CKM entry, or
+  Jarlskog invariant;
+- a global no-go against all NNI or other flavor textures;
+- a no-go against a dynamically derived mass-suppressed texture;
+- any audit verdict or publication promotion.
+
+## Verification
+
+```bash
+python3 scripts/frontier_ckm_mass_basis_nni_reparameterization_no_go.py
+```
+
+The runner uses positive symbolic variables, exact rational matrices, and a
+synthetic two-sector diagonalization control. It contains no PDG mass, CKM
+entry, fitted flavor coefficient, observed target, or framework-derived
+numeric value.

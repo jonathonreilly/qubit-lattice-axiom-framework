@@ -1,0 +1,36 @@
+loop: ckm-mass-basis-nni-reparameterization-20260712
+mode: run
+target: best-honest-status
+current_goal: "Resolve the historical claim that the displayed mass-ratio coefficient map suppresses V_ub to about 1.14 times PDG without importing fitted physics as derivation evidence."
+branch: physics-loop/ckm-mass-basis-nni-block01-20260712
+base: origin/main
+science_block: 1
+cycle_count: 1
+active_route: consistent_reparameterization_invariance
+hard_residual: "A positive mass-texture prediction would require a framework-derived deformation and a texture-to-CKM bridge; the displayed normalization cannot supply either."
+actual_current_surface_status: no-go
+conditional_surface_status: null
+hypothetical_axiom_status: null
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: partially_closes
+review_disposition: pass
+pr_status: pending
+lock:
+  default_path: unavailable_wrong_local_account
+  fallback_path: /tmp/cl3-lattice-framework-physics_worker_lock.json
+  holder_id: ckm-nni-20260712-root
+files_touched:
+  - docs/work_history/ckm/CKM_MASS_BASIS_NNI_NOTE.md
+  - scripts/frontier_ckm_mass_basis_nni.py
+  - scripts/frontier_ckm_mass_basis_nni_reparameterization_no_go.py
+  - logs/runner-cache/frontier_ckm_mass_basis_nni.txt
+  - logs/runner-cache/frontier_ckm_mass_basis_nni_reparameterization_no_go.txt
+open_imports_for_positive_route:
+  - framework_derived_non_top_quark_masses
+  - framework_derived_texture_coefficients
+  - physical_texture_deformation_law
+  - texture_to_CKM_observable_bridge
+no_go_routes:
+  - normalization_alone_changes_Vub
+next_exact_action: "Commit the review-clean block, rebase onto current origin/main, rerun focused checks, push, and open one review PR."
+stop_condition: "One coherent exact no-go science block is review-clean and delivered as an open review PR."

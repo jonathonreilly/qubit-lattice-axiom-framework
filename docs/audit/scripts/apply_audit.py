@@ -932,6 +932,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         "verdict_rationale": judgment.get("judgment_rationale"),
         "notes_for_re_audit_if_any": judgment.get("notes_for_re_audit_if_any"),
         "no_go_discipline": judgment.get("no_go_discipline"),
+        "negative_assertion_classes": judgment.get("negative_assertion_classes"),
     }
     try:
         evidence_manifest = trusted_evidence_manifest(cid, invocation_id)
@@ -981,6 +982,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         source_required=source_requires_no_go,
         evidence_manifest=evidence_manifest,
         prior_claim_scope=prior_claim_scope_for_row(row),
+        require_declaration=True,
     )
     if no_go_error:
         return False, no_go_error
@@ -1142,6 +1144,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         source_required=source_requires_no_go,
         evidence_manifest=evidence_manifest,
         prior_claim_scope=prior_claim_scope_for_row(row),
+        require_declaration=True,
     )
     if no_go_error:
         return False, no_go_error

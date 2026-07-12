@@ -56,7 +56,7 @@ Q0 = sp.kronecker_product(P0, I2)
 Q1 = sp.kronecker_product(P1, I2)
 
 
-# R1: the note's four quotations are verbatim Record-memo text.
+# Record-clause quotation checks.
 memo_flat = flatten(MEMO.read_text(encoding="utf-8"))
 record_clauses = (
     (
@@ -78,12 +78,12 @@ record_clauses = (
 )
 for clause_label, clause_text in record_clauses:
     check(
-        f"R1 {clause_label} quotation occurs verbatim in the flattened memo",
+        f"record-clause quotations: {clause_label} occurs verbatim in the flattened memo",
         flatten(clause_text) in memo_flat,
     )
 
 
-# R2: solve C3 on a fully general joint 4 x 4 operator, restricted to |b>.
+# Pointer non-demolition block solve on a general joint operator restricted to |b>.
 # A register basis change sets the blank to e0 for this calculation.
 g = sp.symbols("g0:16", complex=1)
 K_general = sp.Matrix(4, 4, g)
@@ -111,25 +111,25 @@ A_c3_expected = sp.kronecker_product(P0, v0_general) + sp.kronecker_product(
 )
 
 check(
-    "R2 C3 has four independent blank-input demolition constraints",
+    "pointer non-demolition block solve: four independent blank-input constraints",
     c3_coefficients.rank() == sp.Integer(4),
 )
 check(
-    "R2 symbolic solution has exactly the two conditional register vectors",
+    "pointer non-demolition block solve: exactly two conditional register vectors",
     matrix_equal(A_c3, A_c3_expected),
 )
 check(
-    "R2 the surviving blank-input parameters are precisely v_0 and v_1",
+    "pointer non-demolition block solve: surviving parameters are precisely v_0 and v_1",
     A_c3.free_symbols == {g[0], g[4], g[10], g[14]},
 )
 check(
-    "R2 the solved family has zero off-diagonal pointer blocks",
+    "pointer non-demolition block solve: zero off-diagonal pointer blocks",
     matrix_equal(Q1 * A_c3 * P0, sp.zeros(4, 2))
     and matrix_equal(Q0 * A_c3 * P1, sp.zeros(4, 2)),
 )
 
 
-# R3: impose the declared C1 reading and blank-input normalization.
+# Rank-one Kraus/isometry classification under declared C1 and normalization.
 z00, z01, z10, z11 = sp.symbols("z00 z01 z10 z11", complex=1)
 v0_raw = sp.Matrix([z00, z01])
 v1_raw = sp.Matrix([z10, z11])
@@ -138,7 +138,7 @@ n0_raw = (v0_raw.H * v0_raw)[0]
 n1_raw = (v1_raw.H * v1_raw)[0]
 
 check(
-    "R3 blank-input completeness reduces to the two conditional norms",
+    "rank-one Kraus/isometry classification: completeness reduces to two conditional norms",
     matrix_equal(V_raw.H * V_raw, sp.diag(n0_raw, n1_raw)),
 )
 
@@ -149,7 +149,7 @@ normalization_solution = sp.solve(
     dict=1,
 )
 check(
-    "R3 trace preservation forces both conditional norms to one",
+    "rank-one Kraus/isometry classification: trace preservation fixes both norms",
     normalization_solution
     == [{n0_symbol: sp.Integer(1), n1_symbol: sp.Integer(1)}],
 )
@@ -167,16 +167,16 @@ r1 = sp.exp(I * gamma) * sp.Matrix(
 V = sp.kronecker_product(P0, r0) + sp.kronecker_product(P1, r1)
 
 check(
-    "R3 C1 gives perfectly distinguishable conditional register vectors",
+    "rank-one Kraus/isometry classification: C1 gives orthogonal register vectors",
     scalar_zero((r0.H * r1)[0]),
 )
 check(
-    "R3 the C1 register frame is normalized",
+    "rank-one Kraus/isometry classification: the C1 register frame is normalized",
     scalar_zero((r0.H * r0)[0] - 1)
     and scalar_zero((r1.H * r1)[0] - 1),
 )
 check(
-    "R3 the resulting controlled-copy block column is an isometry",
+    "rank-one Kraus/isometry classification: controlled-copy block is an isometry",
     matrix_equal(V.H * V, I2),
 )
 
@@ -192,7 +192,7 @@ A0 = c0 * V
 A1 = c1 * V
 
 check(
-    "R3 the normalized common-vector Kraus completeness is identity",
+    "rank-one Kraus/isometry classification: common-vector completeness is identity",
     scalar_zero(coefficient_norm - 1)
     and matrix_equal(A0.H * A0 + A1.H * A1, I2),
 )
@@ -201,7 +201,7 @@ rho_symbols = sp.symbols("rho00 rho01 rho10 rho11", complex=1)
 rho = sp.Matrix(2, 2, rho_symbols)
 family_output = A0 * rho * A0.H + A1 * rho * A1.H
 check(
-    "R3 the declared rank-one Kraus family is exactly the V channel",
+    "rank-one Kraus/isometry classification: declared family is exactly the V channel",
     matrix_equal(family_output, V * rho * V.H),
 )
 
@@ -209,7 +209,7 @@ check(
 D0 = sp.kronecker_product(P0, e0)
 D1 = sp.kronecker_product(P1, e1)
 check(
-    "R3 weaker constraints admit a dephasing family excluded by declared C1",
+    "rank-one Kraus/isometry classification: weaker constraints admit dephasing",
     matrix_equal(D0.H * D0 + D1.H * D1, I2)
     and not matrix_equal(
         D0 * rho * D0.H + D1 * rho * D1.H,
@@ -218,7 +218,7 @@ check(
 )
 
 
-# R4: C2 fixes each already-written record ray (phase is immaterial).
+# Written-projector permanence under the declared C2 reading.
 label0 = e0
 label1 = e1
 W_canonical = sp.kronecker_product(P0, label0) + sp.kronecker_product(
@@ -248,29 +248,30 @@ L1 = sp.kronecker_product(P0, label0 * e1.T) + sp.kronecker_product(
 repeat_family = (L0, L1)
 
 check(
-    "R4 a trace-preserving repeat extension exists",
+    "written-projector permanence: a trace-preserving repeat extension exists",
     matrix_equal(L0.H * L0 + L1.H * L1, sp.eye(4)),
 )
 check(
-    "R4 repeat application fixes the written P_0 record",
+    "written-projector permanence: repeat application fixes the P_0 record",
     matrix_equal(apply_channel(repeat_family, rho_q0), rho_q0),
 )
 check(
-    "R4 repeat application fixes the written P_1 record",
+    "written-projector permanence: repeat application fixes the P_1 record",
     matrix_equal(apply_channel(repeat_family, rho_q1), rho_q1),
 )
 
 mix = sp.symbols("mix", real=1)
 written_mixture = mix * rho_q0 + (1 - mix) * rho_q1
 check(
-    "R4 the classical written-record sector is idempotently stable",
+    "written-projector permanence: classical mixtures are idempotently stable",
     matrix_equal(
         apply_channel(repeat_family, written_mixture), written_mixture
     ),
 )
 
-# On a one-dimensional record ray, no leakage fixes the content uniquely;
-# normalization leaves only a phase.
+# Each Kraus member of a channel fixing a pure written projector must preserve
+# its one-dimensional ray. Channel normalization constrains the squared
+# amplitudes; it does not make every memberwise amplitude a phase.
 xr, xi, yr, yi = sp.symbols("xr xi yr yi", real=1)
 generic_record_output = (xr + I * xi) * label0 + (yr + I * yi) * label1
 leakage = (label1.T * generic_record_output)[0]
@@ -278,40 +279,48 @@ no_leakage_solution = sp.solve(
     (sp.re(leakage), sp.im(leakage)), (yr, yi), dict=1
 )
 check(
-    "R4 C2 leaves no cross-record component on a fixed record ray",
+    "written-projector permanence: C2 leaves no cross-record component",
     no_leakage_solution == [{yr: sp.Integer(0), yi: sp.Integer(0)}],
 )
 
-record_phase = sp.symbols("record_phase", real=1)
-phase_shifted_label = sp.exp(I * record_phase) * label0
+repeat_split, repeat_phase0, repeat_phase1 = sp.symbols(
+    "repeat_split repeat_phase0 repeat_phase1", real=1
+)
+lambda0 = sp.exp(I * repeat_phase0) * sp.cos(repeat_split)
+lambda1 = sp.exp(I * repeat_phase1) * sp.sin(repeat_split)
+ray_channel_output = (
+    lambda0 * q0 * (lambda0 * q0).H
+    + lambda1 * q0 * (lambda1 * q0).H
+)
 check(
-    "R4 the remaining phase freedom fixes the record content projector",
-    matrix_equal(phase_shifted_label * phase_shifted_label.H, P0),
+    "written-projector permanence: normalized Kraus amplitudes fix the content projector",
+    matrix_equal(ray_channel_output, rho_q0),
 )
 
-# A reset-to-blank channel is CPTP but fails permanence on both written rays.
-blank_record = (label0 + label1) / sp.sqrt(2)
+# The original blank is label0 in this chosen basis. Resetting the register to
+# it is CPTP, leaves the coincident P_0 ray unchanged, and overwrites P_1.
+blank_record = label0
 E0 = sp.kronecker_product(I2, blank_record * label0.T)
 E1 = sp.kronecker_product(I2, blank_record * label1.T)
-eraser_family = (E0, E1)
-erased_q0 = apply_channel(eraser_family, rho_q0)
-erased_q1 = apply_channel(eraser_family, rho_q1)
+reset_family = (E0, E1)
+reset_q0 = apply_channel(reset_family, rho_q0)
+reset_q1 = apply_channel(reset_family, rho_q1)
 
 check(
-    "R4 the eraser negative control is a normalized channel",
+    "written-projector permanence: reset-to-blank control is normalized",
     matrix_equal(E0.H * E0 + E1.H * E1, sp.eye(4)),
 )
 check(
-    "R4 the eraser moves written content back to the blank ray",
-    (not matrix_equal(erased_q0, rho_q0))
-    and (not matrix_equal(erased_q1, rho_q1)),
+    "written-projector permanence: reset overwrites P_1 but leaves coincident P_0 fixed",
+    matrix_equal(reset_q0, rho_q0)
+    and (not matrix_equal(reset_q1, rho_q1)),
 )
 
 
-# R5: all orthonormal record frames lie in one register-unitary orbit.
+# Register-unitary orbit of orthonormal record frames.
 U_register = sp.Matrix.hstack(r0, r1)
 check(
-    "R5 the general record-frame matrix is unitary",
+    "register-unitary orbit: the general record-frame matrix is unitary",
     matrix_equal(U_register.H * U_register, I2),
 )
 
@@ -320,22 +329,22 @@ expected_rotated_write = sp.kronecker_product(
     P0, U_register * label0
 ) + sp.kronecker_product(P1, U_register * label1)
 check(
-    "R5 register-unitary conjugation preserves the controlled-copy class",
+    "register-unitary orbit: conjugation preserves the controlled-copy class",
     matrix_equal(rotated_write, expected_rotated_write),
 )
 check(
-    "R5 the unitary orbit sends the canonical labels to the general pair",
+    "register-unitary orbit: canonical labels map to the general pair",
     matrix_equal(U_register * label0, r0)
     and matrix_equal(U_register * label1, r1),
 )
 
 
-# R6: negative controls must be rejected by the named constraints.
+# Named negative controls rejected by the declared constraints.
 noncorrelating_v0 = label0
 noncorrelating_v1 = label0
 noncorrelating_overlap = (noncorrelating_v0.H * noncorrelating_v1)[0]
 check(
-    "R6a a non-correlating write is rejected by C1",
+    "named negative controls: non-correlating write is rejected by C1",
     not scalar_zero(noncorrelating_overlap),
 )
 
@@ -345,14 +354,14 @@ demolition_write = sp.kronecker_product(
 ) + sp.kronecker_product(P1, label1)
 demolition_block = Q1 * demolition_write * P0
 check(
-    "R6b a pointer-demolishing write is rejected by C3",
+    "named negative controls: pointer-demolishing write is rejected by C3",
     not matrix_equal(demolition_block, sp.zeros(4, 2)),
 )
 
 check(
-    "R6c an eraser is rejected by C2",
-    (not matrix_equal(erased_q0, rho_q0))
-    and (not matrix_equal(erased_q1, rho_q1)),
+    "named negative controls: reset of P_1 to blank is rejected by C2",
+    matrix_equal(reset_q0, rho_q0)
+    and (not matrix_equal(reset_q1, rho_q1)),
 )
 
 contraction = sp.Rational(1, 2)
@@ -363,12 +372,12 @@ contracted_input_norm = (
     e0.H * contracting_write.H * contracting_write * e0
 )[0]
 check(
-    "R6d a non-isometric contraction is rejected by normalization",
+    "named negative controls: non-isometric contraction fails normalization",
     not scalar_zero(contracted_input_norm - 1),
 )
 
 
-# R7: consumed audited-row surfaces are present verbatim.
+# Consumed dependency-source surfaces are present verbatim.
 controlled_copy_flat = flatten(CONTROLLED_COPY.read_text(encoding="utf-8"))
 kraus_bridge_flat = flatten(KRAUS_BRIDGE.read_text(encoding="utf-8"))
 controlled_copy_scope_quote = flatten(
@@ -384,11 +393,11 @@ kraus_bridge_scope_quote = flatten(
     "`K_r = <r| W = P_r`."
 )
 check(
-    "R7 controlled-copy dependency states the derived write-isometry surface",
+    "dependency-scope quotations: controlled-copy write-isometry surface",
     controlled_copy_scope_quote in controlled_copy_flat,
 )
 check(
-    "R7 Kraus dependency states the projective extracted-block form",
+    "dependency-scope quotations: projective extracted-block form",
     kraus_bridge_scope_quote in kraus_bridge_flat,
 )
 

@@ -1,0 +1,49 @@
+Fermionic realification and Pfaffian determinant power
+================================================================
+
+Part A: block-Pfaffian identity
+-------------------------------
+  [PASS] rank-1 kernel is antisymmetric
+  [PASS] rank-1 Pfaffian has determinant power one
+  [PASS] rank-2 kernel is antisymmetric
+  [PASS] generic rank-2 block Pfaffian identity
+  [PASS] rank-3 kernel is antisymmetric
+  [PASS] generic rank-3 block Pfaffian identity
+
+Part B: quadratic form and coordinate covariance
+------------------------------------------------
+  [PASS] exterior-algebra quadratic is chibar K chi
+  [PASS] Pfaffian congruence carries det(M)
+  [PASS] exterior top form independently gives det(M)
+  [PASS] inverse top-form Jacobian cancels congruence factor
+  [PASS] rank-1 negative-exponent Gaussian top sign
+  [PASS] rank-1 oriented Gaussian equals det(K)
+  [PASS] rank-2 negative-exponent Gaussian top sign
+  [PASS] rank-2 oriented Gaussian equals det(K)
+  [PASS] rank-3 negative-exponent Gaussian top sign
+  [PASS] rank-3 oriented Gaussian equals det(K)
+
+Part C: conjugate sector and ordinary realification
+---------------------------------------------------
+  [PASS] single-sector Pfaffian equals z
+  [PASS] conjugate-sector Pfaffian equals conjugate(z)
+  [PASS] direct-sum Pfaffian is the product of sector Pfaffians
+  [PASS] paired Pfaffian is modulus square
+  [PASS] ordinary realification determinant matches paired sectors
+  [PASS] generic rank-2 realification is the conjugate determinant product
+  [PASS] generic rank-2 conjugate direct sum has no residual sign
+  [PASS] single sector retains complex phase
+  [PASS] paired sectors cancel complex phase
+  [PASS] ordinary realification need not be antisymmetric
+  [PASS] singular complex determinant vanishes
+  [PASS] singular block Pfaffian vanishes
+  [PASS] singular realification determinant vanishes
+
+Scope guards
+------------
+  [PASS] source states determinant-power preservation under coordinate change
+  [PASS] source excludes a derived charged-lepton action
+  [PASS] source does not force r=1/2
+
+================================================================
+TOTAL: PASS=32, FAIL=0

@@ -27,7 +27,8 @@ the next stacked review PR:
   governance, labeling/import, and full current-schema N1--N8 review pass;
   audit validation seeds exactly five intended candidate dependencies and
   strict lint has no errors; generated audit/status surfaces are stripped
-- delivery: pending commit/push/PR
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5262
+- delivery: open, mergeable, independent audit workflow running
 
 No merge is authorized. Independent audit remains authoritative.
 

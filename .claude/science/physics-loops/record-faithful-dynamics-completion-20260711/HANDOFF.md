@@ -12,6 +12,8 @@ quasilocal scales converge at `O(a^2)`. The finite-`a` pole-residue,
 equal-time-CAR metric, and coherent-state Berezin/transfer correlator equality
 remain the next exact bridge. Do not attach SM or GR recovery labels before
 that bridge and the interacting/joint limits are controlled.
+Stacked PR #5262 is open and mergeable on the Block12 head; the independent
+audit workflow was running at the delivery checkpoint.
 
 The campaign is initialized on
 `physics-loop/admissibility-dynamics-realization-bridge-20260711` from current

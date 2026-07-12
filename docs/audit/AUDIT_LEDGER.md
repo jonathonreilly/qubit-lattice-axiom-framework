@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 7 |
-| unaudited | 2799 |
+| unaudited | 2798 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 44 |
+| ~~audited_conditional~~ | 45 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 466 |
-| `audited_conditional` | 44 |
+| `audited_conditional` | 45 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3149 |
+| `unaudited` | 3148 |
 
 | claim_type | count |
 |---|---:|
@@ -606,6 +606,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `ac_reta_hclass_hunit_readout_derivation_obligation` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | F | - |
 | `activity_energy_bound_witnesses_bounded_note_2026-07-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `adaptive_coevolving_geometry_no_go` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
@@ -900,6 +901,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The operator inequality closes by standard partial-trace and trace-norm arguments, and the runner genuinely computes the reported stationary, far-region, overlap, and centroid diagnostics. The diagnostic chain is incomplete because the note says the profile comparisons use thresholded supports, but the runner defines no support threshold and evaluates full-array overlaps and centroids.
 - **rationale:** Issue: the note characterizes the profile comparisons as using thresholded supports, but the supplied runner contains no thresholded-support computation. Why this blocks: the exact bound closes, but the restricted packet does not substantiate that declared diagnostic methodology. Repair target: remove the thresholded-support statement or implement and report the stated thresholding in the runner and cache. Claim boundary until fixed: the exact activity bound and unthresholded finite-time toy diagnostics are supported, while AO remains only an explicit optional premise.
 - **auditor confidence:** high
+
+### `adaptive_coevolving_geometry_no_go`
+
+- **Note:** [`ADAPTIVE_COEVOLVING_GEOMETRY_NO_GO.md`](../../docs/ADAPTIVE_COEVOLVING_GEOMETRY_NO_GO.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Only the finite completed N-sweep's failure to satisfy the printed EMERGENT criterion; not the source note's alpha-level TOWARD counts or a general adaptive-geometry no-go.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00367-adaptive_coevolving_geometry`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The reported alpha sweep has a mixed, seed-sensitive gravity-shift sign and therefore does not provide a robust retained gravity signal.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the configured finite scout, but it does not emit or reproduce the source note's alpha-level TOWARD counts and quoted means. The broader no-go also leaves distinct control-law, scale, boundary, and normalization routes untested.
+- **rationale:** Issue: the source note's load-bearing TOWARD counts and alpha-level means are not emitted by the supplied runner and do not match its N-indexed aggregates. Why this blocks: the qualitative finite-scout conclusion is plausible, but its stated statistical evidence cannot be verified from the restricted packet and the no-go discipline gate leaves several mechanism classes open. Repair target: update the note to the current N-sweep or provide a deterministic runner/cache that emits the quoted seed-level sign statistics. Claim boundary until fixed: the current output supports only the narrow observation that no adaptive row at N=40 satisfies the runner's printed EMERGENT conjunction.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1: distinct direct-control, scale-limit, boundary-family, normalization, and seed-sign routes remain open or untested.
+    - N5: the bounded-no-go rhetoric has untested resolutions outside the configured finite sweep.
+    - Source/runner mismatch: the alpha-level TOWARD counts and quoted means are not emitted or reproduced by the supplied runner.
 
 ### `affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02`
 

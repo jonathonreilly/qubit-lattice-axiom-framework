@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11.py
-runner_sha256: c773305844b6932bf08fc0eb2bde47543bfd83bfbfecf2f70a17b1a483dbe5cc
+runner_sha256: a54194b99bbbce98a27fe9fc8354255cb9d8cddb8f1271e6411156da03719897
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 1.53
 status: ok
 ----- stdout -----
 Registered positive-mass C3 Fourier coordinate theorem
@@ -52,10 +52,10 @@ Part D: folded phase and unordered reconstruction
 Scope guards
 ------------
   [PASS] source requires an independently defined mass functional
-  [PASS] source says primitive is not a mathematical premise
-  [PASS] source does not retire owner atoms
-  [PASS] source does not force r
-  [PASS] source excludes observed comparators
+  [PASS] source keeps the primitive outside its mathematical premise set
+  [PASS] source separates the AC obligation-retirement domain
+  [PASS] source keeps r free
+  [PASS] source keeps comparator and premise surfaces unchanged
 
 ====================================================================
 TOTAL: PASS=33, FAIL=0

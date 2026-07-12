@@ -137,10 +137,24 @@ def main() -> int:
     section("Scope guards")
     note = NOTE.read_text(encoding="utf-8")
     check("source requires an independently defined mass functional", "independently defined registered-mass functional" in note)
-    check("source says primitive is not a mathematical premise", "does not use that primitive as a mathematical premise" in note)
-    check("source does not retire owner atoms", "does not retire AC(i) or AC(ii)" in note)
-    check("source does not force r", "does not force `r=1/2`" in note)
-    check("source excludes observed comparators", "No observed mass table, fit, comparator" in note)
+    check(
+        "source keeps the primitive outside its mathematical premise set",
+        "realized-state primitive is\noutside the mathematical premise set"
+        in note,
+    )
+    check(
+        "source separates the AC obligation-retirement domain",
+        "retirement of the AC(i) and AC(ii) derivation obligations" in note,
+    )
+    check(
+        "source keeps r free",
+        "`r`, which remains a free\ndial" in note,
+    )
+    check(
+        "source keeps comparator and premise surfaces unchanged",
+        "import, comparator, and premise-registry surfaces are\nunchanged"
+        in note,
+    )
 
     print("\n" + "=" * 68)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")

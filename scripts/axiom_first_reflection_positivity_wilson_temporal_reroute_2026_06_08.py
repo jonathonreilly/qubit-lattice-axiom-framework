@@ -24,11 +24,14 @@ if str(SCRIPTS_DIR) not in sys.path:
 
 import axiom_first_rp_two_step_transfer_matrix_positivity as base_runner
 import su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09 as su3_supplier
+import rp_multislice_halfspace_os_gram_certificate as ms_supplier
 
 
 NOTE_PATH = ROOT / "docs" / "AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md"
 COUPLED_SUPPLIER_NAME = "RP_COUPLED_TWO_SLICE_GAUGE_STAGGERED_BEREZIN_GRAM_NARROW_THEOREM_NOTE_2026-07-10.md"
 COUPLED_SUPPLIER_PATH = ROOT / "docs" / COUPLED_SUPPLIER_NAME
+MULTISLICE_SUPPLIER_NAME = "RP_COUPLED_MULTISLICE_HALFSPACE_GAUGE_STAGGERED_OS_GRAM_NARROW_THEOREM_NOTE_2026-07-11.md"
+MULTISLICE_SUPPLIER_PATH = ROOT / "docs" / MULTISLICE_SUPPLIER_NAME
 LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 BASE_RUNNER_PATH = ROOT / "scripts" / "axiom_first_rp_two_step_transfer_matrix_positivity.py"
 
@@ -192,6 +195,7 @@ def check_reroute_guard() -> None:
         "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05": "bounded_theorem",
         "rp_p2_gauge_extension_and_realization_residual_note_2026-05-28": "bounded_theorem",
         "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09": "positive_theorem",
+        "rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11": "positive_theorem",
     }
 
     foundational_ok = True
@@ -284,12 +288,59 @@ def check_reroute_guard() -> None:
     )
 
 
+def check_multislice_halfspace_supplier() -> None:
+    section("C8 multi-slice half-space OS Gram in-packet supplier (2026-07-11)")
+    text = NOTE_PATH.read_text(encoding="utf-8")
+    normalized = " ".join(text.split())
+    check(
+        "parent note links the multi-slice half-space supplier",
+        f"[{MULTISLICE_SUPPLIER_NAME}]({MULTISLICE_SUPPLIER_NAME})" in text,
+    )
+    ms_phrases = [
+        "full positive-time half-space algebra",
+        "A_+^half",
+        "2026-07-11 multi-slice half-space in-packet supplier",
+    ]
+    ms_missing = [p for p in ms_phrases if p not in normalized]
+    check(
+        "parent note states the multi-slice half-space extension",
+        not ms_missing,
+        detail=", ".join(ms_missing),
+    )
+    ms_note_text = (
+        MULTISLICE_SUPPLIER_PATH.read_text(encoding="utf-8")
+        if MULTISLICE_SUPPLIER_PATH.exists()
+        else ""
+    )
+    ms_note_norm = " ".join(ms_note_text.split()).lower()
+    check(
+        "multi-slice supplier note exists and pins half-space multi-slice coverage",
+        MULTISLICE_SUPPLIER_PATH.exists()
+        and "a_+^half" in ms_note_norm
+        and "multi-slice" in ms_note_norm
+        and "half-space" in ms_note_norm,
+    )
+    results: list[tuple[str, bool, str]] = []
+    ms_supplier.gate_G0(results)
+    ms_supplier.gate_L4(results)
+    ms_supplier.gate_L2(results)
+    ms_supplier.gate_L3(results)
+    ms_supplier.gate_H1(results)
+    gate_failures = [name for name, ok, _ in results if not ok]
+    check(
+        "live multi-slice half-space supplier gates all pass",
+        not gate_failures and len(results) >= 13,
+        detail=f"n_checks={len(results)}, failures={gate_failures}",
+    )
+
+
 def main() -> int:
     print("Axiom-first RP Wilson temporal-gauge reroute guard")
     print(f"note: {NOTE_PATH}")
     print(f"base runner: {BASE_RUNNER_PATH}")
     check_free_two_step_construction(base_runner)
     check_reroute_guard()
+    check_multislice_halfspace_supplier()
     print()
     print(f"PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:

@@ -638,3 +638,6 @@ coupled OS subsequential-transfer dependency and source hash
 `4b4d6d9587024060...`; strict lint has no errors, vocabulary lint has zero
 violations, and generated audit/status surfaces are stripped. No axiom-update
 stop is triggered.
+
+Delivery: stacked PR #5294 is open on the coupled OS
+subsequential-transfer head. Independent audit remains authoritative.

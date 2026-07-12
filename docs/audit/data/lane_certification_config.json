@@ -1,6 +1,6 @@
 {
   "schema": "lane_certification_config_v1",
-  "description": "Flagship lanes for rolling certification. Each lane is certified when every row in its root's transitive dependency closure is retained-grade (or an accepted premise) against the current repository state. Hand-edited; owner-approved 2026-07-12.",
+  "description": "Flagship lanes for rolling certification. Each lane is certified when every row in its root's transitive dependency closure is chain-satisfying against the current repository state: retained-grade rows, decorations of retained parents, registered accepted premises, and permitted metadata context satisfy; registered non-evidence context does not. Hand-edited; owner-approved 2026-07-12.",
   "lanes": [
     {"lane": "charged_lepton_koide_value", "root": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"},
     {"lane": "acphilambda_retirement_basis", "root": "acphilambda_retirement_basis_rematch_and_claim_surface_note_2026-07-06"},

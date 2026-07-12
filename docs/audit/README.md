@@ -401,7 +401,10 @@ The lane runs two assurance tiers:
 continuously reports, per flagship lane
 (`docs/audit/data/lane_certification_config.json` →
 `docs/audit/data/lane_certification.json`), whether the root claim's entire
-transitive dependency closure is retained-grade against the current state.
+transitive dependency closure is chain-satisfying against the current state:
+retained-grade rows, decorations of retained parents, registered accepted
+premises, and permitted metadata context all satisfy the marker; metadata
+registered as non-evidence context does not.
 Certification is a state the repository re-enters as audit throughput
 catches up; a marker rolling back after an axiom or source change is the
 honest coordination signal for collaborators, not an error. If a publication

@@ -1194,6 +1194,7 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_type": "positive_theorem",
             "claim_scope": "exact positive source identity",
             "auditor": "blind-auditor",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.6",
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",

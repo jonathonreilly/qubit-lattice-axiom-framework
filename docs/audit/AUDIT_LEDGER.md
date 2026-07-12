@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 400 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2691 |
+| unaudited | 2690 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 80 |
-| ~~audited_failed~~ | 18 |
+| ~~audited_failed~~ | 19 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -48,10 +48,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 526 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 20 |
-| `audited_failed` | 40 |
+| `audited_failed` | 41 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3041 |
+| `unaudited` | 3040 |
 
 | claim_type | count |
 |---|---:|
@@ -767,6 +767,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cpt_exact_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -2290,6 +2291,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing content is a genuine class-(A) algebraic closure with no fitted value, physical readout, external comparator, or open dependency. The runner performs exact Pauli-matrix, real-linear-independence, central-idempotent, and commutant checks, and its 38 reported checks agree with the proof. The K4d runner flag is initialized rather than solved computationally, but the accompanying scalar-anticommutation proof independently establishes that subclaim, so this implementation weakness does not break the theorem.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `cl3_gamma_involution_determinant_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/CL3_GAMMA_INVOLUTION_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Audited the adjugate and grade-action identities, the claimed Clifford grade-0 gamma-norm identity, and the stated non-lift to the full lattice determinant readout.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00274-cl3_gamma_involution_determi`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** From M·γ(M)=det(M)·I₂, the note identifies the Clifford scalar (grade-0 / identity-coefficient) component ⟨M·γ(M)⟩₀ with det(M).  _(class `A`)_
+- **chain closes:** False — The adjugate identity closes, but the claimed grade-0 projection does not: under the real-algebra identification Cl(3,0)≅M₂(C), a complex scalar zI₂ decomposes as Re(z)·1+Im(z)·ω, so its Clifford grade-0 component is Re(z), not z. The runner instead reads the matrix entry prod[0,0], which is the complex scalar-matrix coefficient and does not verify the asserted Clifford grade projection.
+- **rationale:** The symbolic computation correctly proves γ(M)=adj(M), Mγ(M)=det(M)I₂, and the stated sign action in the Pauli representation. However, the note conflates the complex coefficient of a scalar matrix with the real Clifford grade-0 projection; for example det(M)=i gives iI₂=ω, whose grade-0 component is zero rather than i. The runner reproduces this conflation by defining scalar_part as prod[0,0], so its PASS result does not repair the false gamma-norm premise as written.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1 contains two OPEN routes and one UNTESTED tensor/zeta-extension route, so the boundary has not passed route exhaustion.
+    - The source and runner conflate a complex scalar-matrix coefficient with the real Clifford grade-0 projection.
 
 ### `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10`
 

@@ -15,10 +15,10 @@ endpoint interpolant. Only the constructed interpolant is differentiated.
 
 ## Claim movement
 
-Current author-side state is `bounded-support` pending the required review
-loop. If review passes without an open import, the intended author-side state
-is `candidate-retained-grade` with `target_claim_type: bounded_theorem`.
-Independent audit remains required before any effective retained status.
+Current author-side state is `candidate-retained-grade` with
+`target_claim_type: bounded_theorem`. Three review iterations passed without an
+open load-bearing import. Independent audit remains required before any
+effective retained status.
 
 ## Exclusions
 
@@ -31,10 +31,17 @@ Independent audit remains required before any effective retained status.
 ## Verification
 
 - primary runner: `PASS=10 FAIL=0 TOTAL=10`;
-- remaining checks and review: pending.
+- independent helper-pipeline/math cross-check: pass;
+- sibling phrase/scope runners: `14/14` and `65/65`;
+- `py_compile`, vocabulary lint, and diff check: pass;
+- audit validation pipeline: pass; target row is `bounded_theorem`, `deps=[]`,
+  `helper_runner_paths=[]`, and `ready=true`;
+- strict audit lint: pass with existing repo warnings/notices and no errors;
+- regenerated audit/publication/front-door outputs: stripped before commit;
+- review-loop disposition: pass after three iterations.
 
 ## Exact next action
 
-Run the required `review-loop` against the scoped note, runner, and loop pack;
-apply every narrow finding; then update the certificate, commit, push, and open
-one review PR.
+Commit the final review/checkpoint updates, push the dedicated science branch,
+open and verify one review PR, then hand the target to the independent audit
+lane after merge.

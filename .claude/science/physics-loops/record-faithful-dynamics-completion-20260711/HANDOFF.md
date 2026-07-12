@@ -1,19 +1,17 @@
 # Handoff
 
 Current branch:
-`physics-loop/record-faithful-dynamics-block14-free-staggered-residue-car-20260712`.
-The reflected-Gram/CAR-Fock runner reports `PASS=22 FAIL=0`. Independent
-code/math, claim/import/Nature, governance, labeling, and full N1--N8 review
-pass at bounded strength. The exact result derives the infinite-time reflected
-residue, OS support/quotient, full finite-even-3D operator frames, and every
-finite multitime positive-time unbarred Wick-to-Fock exterior identity. The
-canonical quotient `A` and boundary-insertion normalization are separated;
-no original-field equal-time CAR anticommutator is claimed. Next derive the
-reciprocal barred pole and contact/time-ordering all-field functional, then
-open the interacting gauge continuum campaign. Block13 PR #5262 is open and
-mergeable; its audit workflow succeeded at the latest check.
-Stacked Block14 PR #5264 is open and mergeable on Block13; the independent
-audit workflow was queued at the delivery checkpoint.
+`physics-loop/record-faithful-dynamics-block15-circle-spin-holonomy-boundary-20260712`.
+The circle-boundary runner reports `PASS=25 FAIL=0`. The first proposed
+interacting transfer theorem was rejected before shipping: the July `C_f`
+matrix is `4^N` feature/GNS data, not a `2^N` one-sided Fock operator; a
+periodic circle also has a second-seam sign and residual Polyakov-holonomy
+boundary. The corrected bounded result gives an explicit counterexample to
+periodic wrap plus a uniform reflection phase, then proves the
+twisted-antiperiodic free repair for both adjacent reflection-plane classes.
+The full coupled circle remains open on the two-seam forest gauge/holonomy
+lemma. Block14 PR #5264 remains the stacked base and independent audit remains
+authoritative.
 
 The campaign is initialized on
 `physics-loop/admissibility-dynamics-realization-bridge-20260711` from current
@@ -282,3 +280,27 @@ Two-band BdG stacked review PR:
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5258
 is open against the onsite-charge branch; independent audit remains the only
 status authority.
+
+## Periodic-circle boundary and twisted-antiperiodic free repair
+
+The actual July 9--11 Wilson-plane, coupled two-slice, and multislice
+half-space sources were read before attempting the interacting OS transfer.
+Hostile review rejected the first assembly because it confused the `4^N`
+Grassmann feature matrix with a `2^N` CAR Fock carrier and assigned the slab
+adjoint by construction. A second circle route was then falsified directly:
+periodic fermion wrap plus one uniform reflection phase is indefinite on the
+strict positive semicircle and locally at the far seam.
+
+The corrected exact free repair uses antiperiodic fermion wrap and a
+transported step phase. Both reflection-plane classes preserve the action and
+have PSD full positive-half Grams; exhaustive dimensions are `16,64,256`.
+Independently computed `G_0` and `G_tau` reconstruct positive contractions
+whose spectra converge to `{1,z,z,z^2}`, with the semigroup thermal-image
+error falling to `1.489e-10` by `L=32`. Runner/cache: `PASS=25 FAIL=0`.
+
+The coupled theorem is not claimed. Global temporal gauge on a circle would
+restrict to trivial Polyakov holonomy. The next exact route is to gauge-fix
+only the two crossing-link forests, keep interior temporal links/holonomy
+dynamical, prove constant measure disintegration and reflection preservation,
+then combine the two positive fermion seams with the Wilson character kernel.
+No axiom-update stop condition is triggered.

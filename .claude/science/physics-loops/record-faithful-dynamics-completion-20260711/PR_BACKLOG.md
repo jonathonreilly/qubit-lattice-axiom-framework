@@ -17,6 +17,22 @@ next stacked review PR:
 
 No merge is authorized. Independent audit remains authoritative.
 
+The periodic-circle boundary and twisted-antiperiodic free repair is prepared
+as the next stacked review block:
+
+- base: `physics-loop/record-faithful-dynamics-block14-free-staggered-residue-car-20260712`
+- head: `physics-loop/record-faithful-dynamics-block15-circle-spin-holonomy-boundary-20260712`
+- source runner: `PASS=25 FAIL=0`
+- disposition: PASS WITH BOUNDED CLAIMS after independent math/physics,
+  governance/Nature, and full N1--N8 review; the attempted coupled transfer
+  was rejected and withdrawn, and the artifact ships only the exact
+  periodic/uniform counterexample, free AP+seam repair, and named holonomy route
+- audit compatibility: one `bounded_theorem` / `unaudited` row, exactly three
+  dependencies, matching source hash, and strict lint with no errors
+- delivery check: ready for commit, push, and stacked PR
+
+No merge is authorized. Independent audit remains authoritative.
+
 The free reflected-Gram / CAR-Fock representation block is prepared for the
 next stacked review PR:
 

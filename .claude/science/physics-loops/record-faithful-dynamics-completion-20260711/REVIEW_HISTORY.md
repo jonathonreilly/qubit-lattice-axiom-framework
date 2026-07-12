@@ -479,3 +479,31 @@ Delivery: stacked PR
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5264 is
 open and mergeable on the same-action scalar continuum head; the independent
 audit workflow was queued at the delivery checkpoint.
+
+## Circle/holonomy block review iteration 1
+
+REJECT. The draft placed the `4^N` July Grassmann crossing feature matrix on a
+`2^N` one-sided CAR Fock carrier, generated a random side map, assigned its
+reflection as the adjoint, and then defined the shifted Gram from the same
+transfer. None of those checks derived action-to-operator gluing.
+
+## Circle/holonomy block review iteration 2
+
+REJECT. After the category repair, full positive-semicircle tests exposed a
+second-seam counterexample to periodic fermion wrap plus one uniform
+reflection phase. Periodic temporal gauge also hid the Polyakov-holonomy
+boundary. The proposed coupled circle RP and thermodynamic-time OS theorem was
+withdrawn before delivery.
+
+## Circle/holonomy block review iteration 3
+
+The source is narrowed to the exact failed convention and its free
+twisted-antiperiodic repair. The runner now exhausts full half-space algebras
+through dimension `256`, independently checks both adjacent reflection-plane
+classes and action covariance, reconstructs transfer from direct `G_0,G_tau`,
+and keeps the coupled holonomy lemma open. Runner/cache: `PASS=25 FAIL=0`.
+Independent math/physics review passes with bounded claims after the exact
+`-2/7`, `-1/49`, adjacent-plane, Hermiticity, `I-C`, and finite-`q_N`
+repairs. Governance/Nature and full N1--N8 re-review also pass. Final audit
+validation seeded one `bounded_theorem` / `unaudited` row with exactly three
+declared dependencies and source hash `0ff1f739...`; strict lint has no errors.

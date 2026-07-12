@@ -1,5 +1,25 @@
 # PR Delivery
 
+The massive Wilson--staggered Dobrushin spatial-uniqueness wedge is prepared
+as the next stacked review block:
+
+- base: `physics-loop/record-faithful-dynamics-block20-spatial-thermodynamic-limit-20260712`
+- head: `physics-loop/record-faithful-dynamics-block21-dobrushin-spatial-uniqueness-20260712`
+- source runner: `PASS=7 FAIL=0`
+- disposition: PASS WITH BOUNDED CLAIMS after independent code/math,
+  physics/import/Nature, governance, labeling, and full N1--N8 review; the
+  explicit strict wedge has one DLR/gauge--fermion functional, exponential
+  clustering, and a positive gap with one invariant vacuum on the supplied
+  gauge-invariant OS Hilbert space
+- audit compatibility: one `bounded_theorem` / `unaudited` row, exactly the
+  spatial DLR accumulation dependency, matching note hash, strict lint zero
+  errors, vocabulary lint zero violations, generated audit/status outputs
+  stripped
+- PR: pending
+- delivery: prepared on the spatial DLR accumulation head
+
+No merge is authorized. Independent audit remains authoritative.
+
 The massive Wilson--staggered spatial DLR accumulation and OS-transfer theorem
 is prepared as the next stacked review block:
 

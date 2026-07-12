@@ -676,3 +676,36 @@ is triggered.
 
 Delivery: stacked PR #5297 is open on the massive infinite-time uniqueness
 head. Independent audit remains authoritative.
+
+## Massive Wilson--staggered Dobrushin uniqueness review iteration 1
+
+The exact nonbacktracking split `M^2=-2I+R` leaves 56 two-hop words of block
+norm `1/4`, giving absolute row norm `14`. The initial packet combined that
+with the Wilson `6*3*beta` link-incidence bound and the rooted-loop
+mass-transport factor `3kappa^n/4`. Code/math review confirmed the constants
+and half-L1 total-variation convention but required the orientation division
+to be stated on `Z^4` or cubic tori, not arbitrary rectangles. Physics review
+required separation of infinite-interaction DLR boundaries from unproved open
+Dirac regulators, an explicit regulator-order/wrap-tail bridge, and a
+cross-Wick proof before mixed fermion clustering. Governance required the
+weighted Dobrushin comparison theorem to be cited at the exact decay residual.
+
+## Massive Wilson--staggered Dobrushin uniqueness review iteration 2
+
+PASS WITH BOUNDED CLAIMS. The repaired source proves the strict condition
+`18 beta +(3/2)kappa^2(2-kappa)/(1-kappa)^2<1`, with
+`kappa=14/(m^2+2)<1`, as a sufficient full-sequence uniqueness criterion. It
+adds the cofinal-limit DLR argument, direct `m>4` off-diagonal inverse bound,
+cross-Wick clustering, and weighted comparison. Common exponential decay on
+dense centered OS vectors plus positivity of `T_2` gives a one-dimensional
+invariant vacuum and gap `Delta_OS>0` on the fixed-lattice gauge-invariant OS
+Hilbert space. Scalar `U(1)` finite-matrix sampling is disclosed; `SU(3)`
+enters analytically through unitary block norms and color factor three.
+
+The runner/cache report `PASS=7 FAIL=0`. Audit validation seeds one
+`bounded_theorem` / `unaudited` row with only the spatial DLR accumulation
+dependency and source hash `b959d252286830db...`; strict lint has no errors,
+vocabulary lint has zero violations, and generated audit/status surfaces are
+stripped. The wedge is not a phase boundary and gives no `beta=6`, light-mass,
+charged-sector, continuum, SM, GR, action-selection, or physical-probability
+claim. No axiom-update stop is triggered.

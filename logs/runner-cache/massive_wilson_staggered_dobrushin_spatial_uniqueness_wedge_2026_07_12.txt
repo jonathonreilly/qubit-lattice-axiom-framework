@@ -1,0 +1,8 @@
+PASS Eight oriented hops split into eight reversals and 56 nonbacktracking two-hop words: oriented=8, reversals=8, nonbacktracking=56, absolute row sum=14
+PASS A random four-dimensional carrier checks the minus-two diagonal and safe R spectrum: anti-Hermitian=0.000e+00, diagonal residual=4.441e-16, spec(R)=[-4.901374,1.999946]
+PASS Closed rooted paths distribute occurrence mass equally over four link orientations: n=2:closed=104,occurrences=(104, 104, 104, 104); n=3:closed=2112,occurrences=(3168, 3168, 3168, 3168)
+PASS Half-L1 total variation obeys the likelihood-ratio oscillation bound: N=2:TV=0.037513<=tanh(osc/4)=0.082166; N=5:TV=0.371720<=tanh(osc/4)=0.709518; N=13:TV=0.316531<=tanh(osc/4)=0.635448
+PASS Fermion incidence series and explicit nonempty uniqueness intervals agree: m=6:kappa=0.368421,alphaF=0.832785,beta<0.0092897; m=8:kappa=0.212121,alphaF=0.194392,beta<0.0447560; m=10:kappa=0.137255,alphaF=0.070719,beta<0.0516267
+PASS The beta-zero wedge has the stated sharp threshold for this sufficient bound: m0=5.809057503266, alphaF(m0)=1.000000000000
+PASS Source-note boundary and N1-N8 contract: missing=[]; forbidden=[]; attempted=8; independent pairs=9
+SCORECARD PASS=7 FAIL=0

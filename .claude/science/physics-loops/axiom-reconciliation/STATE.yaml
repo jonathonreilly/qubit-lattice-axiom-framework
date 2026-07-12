@@ -27,11 +27,11 @@ block_current:
     scripts/axiom_reconciliation_rescan_2026_07_12.py — needles = superseded
     Record wording + legacy axiom-set naming, joined to ledger rows via
     note_path. Result @ 7b9260b85: HARD=146 live files (102 docs, 44 scripts; whitespace-tolerant needles after the 2026-07-12 wrap-gap fix),
-    SOFT_ONLY=740 (mostly superseded-memo citations), 8 hard files carry
+    SOFT_ONLY=739 (mostly superseded-memo citations), 8 hard files carry
     retained audit status (invalidation-pipeline gap — flag to audit lane,
     do NOT touch ledger).
   triage: >
-    30 codex batches (gpt-5.6-sol, effort max, 5 files each, bounded specs
+    31 codex batches (gpt-5.6-sol, effort max, 5 files each, bounded specs
     with pre-extracted hit lines) classify each hard file REKEY /
     CONTENT-FLIP / REOPENED-WALL / HISTORICAL-OK / DELIBERATE-OLD-TEXT.
     Outputs: logs/runner-cache/recon_triage/<batch>.tsv (committed evidence).

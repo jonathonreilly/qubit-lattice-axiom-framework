@@ -10,7 +10,7 @@
   (writes `logs/runner-cache/axiom_reconciliation_rescan_2026_07_12.tsv`
   and prints the summary; TOTAL: HARD=146 SOFT_ONLY=739
   RETAINED_STATUS_HARD=8 at the base commit).
-- Triage: 30 codex batches classify the 141 hard files. Batch specs and
+- Triage: 31 codex batches classify the 146 hard files. Batch specs and
   full logs live in the session scratchpad
   (`recon_batches/*_spec.md`, `*_full.log`); the DELIVERABLES are the
   committed TSVs at `logs/runner-cache/recon_triage/<batch>.tsv`

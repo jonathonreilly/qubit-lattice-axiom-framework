@@ -1,0 +1,28 @@
+FINITE TENSOR-FACTORIZATION EXACT SUPPORT/BOUNDARY CERTIFICATE
+No observed values, fits, or hidden selector inputs.
+
+THEOREM 1: FACTOR-ALGEBRA LOCALITY
+[PASS] disjoint-factor operators commute
+[PASS] the statement is factor-specific rather than global commutativity
+
+THEOREM 2: SUPPLIED SUPPORT RECOVERY
+[PASS] supplied graph support is recovered exactly
+[PASS] Hilbert--Schmidt coefficients equal supplied edge coefficients
+
+THEOREM 3: HERMITIAN GENERATOR IMPLIES UNITARITY
+[PASS] supplied generator is Hermitian
+[PASS] exponential of the supplied Hermitian involution is unitary
+
+THEOREM 4: BORN QUADRATIC READOUT GIVES I3 = 0
+exact rational residuals: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)]
+[PASS] Born inclusion--exclusion residuals vanish exactly
+
+SOURCE CONTRACT
+[PASS] source note declares bounded_theorem type
+[PASS] source note names the leaf selector no-go without a positive dependency edge
+[PASS] source note rejects the invalid historical localization comparison
+
+SYNTHESIS
+checks: 10/10 PASS
+Factor locality is intrinsic. Graph support, unitarity, and I3=0
+are exact consequences only after their named inputs are supplied.

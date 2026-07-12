@@ -1,0 +1,55 @@
+FINITE FACTORIZED HILBERT-BASE UNDERDETERMINATION CERTIFICATE
+Exact countermodels; no observed or fitted inputs.
+base: 4 qubit factors, total dimension 16
+
+GRAPH COUNTERMODELS ON ONE FACTORIZED HILBERT SPACE
+[PASS] path XX support is recovered exactly
+[PASS] complete XX support is recovered exactly
+[PASS] both support witnesses are Hermitian on the same base space
+path degree multiset:     (1, 1, 2, 2)
+complete degree multiset: (3, 3, 3, 3)
+[PASS] path and complete graphs are not related by factor relabeling
+
+DYNAMICS COUNTERMODELS ON THE SAME BASE
+[PASS] the reversible extension is unitary
+unitary purity:   1.000000000000
+dephased purity:  0.553229252190
+[PASS] unitary dynamics preserves purity
+[PASS] dephasing dynamics is nonunitary
+[PASS] dephasing is trace preserving by Kraus completeness
+[PASS] dephasing is completely positive by Choi positivity
+[PASS] the nonunitary extension obeys the semigroup law on the full matrix algebra
+
+READOUT COUNTERMODELS ON ONE STATE AND PVM
+common projective amplitudes: (Fraction(1, 1), Fraction(2, 1))
+p=2 weights: (Fraction(1, 5), Fraction(4, 5))
+p=4 weights: (Fraction(1, 17), Fraction(16, 17))
+[PASS] p=2 context probabilities are normalized
+[PASS] p=4 context probabilities are normalized
+[PASS] both context probability assignments are nonnegative
+[PASS] the same Hilbert amplitudes permit distinct normalized readouts
+
+EXACT POSITIVE SURVIVOR
+[PASS] operators on disjoint factors commute
+[PASS] factorization does not make every operator commute
+
+PAIRWISE-INDEPENDENT SELECTOR WITNESSES
+  path / unitary / p2: valid=True, degree=(1, 1, 2, 2), purity=1.0, P0=1/5
+  path / unitary / p4: valid=True, degree=(1, 1, 2, 2), purity=1.0, P0=1/17
+  path / dephasing / p2: valid=True, degree=(1, 1, 2, 2), purity=0.6510193687, P0=1/5
+  path / dephasing / p4: valid=True, degree=(1, 1, 2, 2), purity=0.6510193687, P0=1/17
+  complete / unitary / p2: valid=True, degree=(3, 3, 3, 3), purity=1.0, P0=1/5
+  complete / unitary / p4: valid=True, degree=(3, 3, 3, 3), purity=1.0, P0=1/17
+  complete / dephasing / p2: valid=True, degree=(3, 3, 3, 3), purity=0.6510193687, P0=1/5
+  complete / dephasing / p4: valid=True, degree=(3, 3, 3, 3), purity=0.6510193687, P0=1/17
+[PASS] all 2 x 2 x 2 concrete selector combinations are valid and distinct
+[PASS] source note declares no_go type
+[PASS] source note carries the complete N1-N8 discipline record
+[PASS] source note links the current minimal-axiom authority
+[PASS] invalid historical participation-ratio comparison is rejected
+
+SYNTHESIS
+checks: 21/21 PASS
+The same tensor-factorized Hilbert base admits incompatible graph,
+dynamics, and readout expansions. Only factor-algebra locality is
+derived. Richer operational premises remain valid positive routes.

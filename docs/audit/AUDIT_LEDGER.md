@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 5 |
-| unaudited | 2820 |
+| unaudited | 2819 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
 | ~~audited_conditional~~ | 35 |
-| ~~audited_failed~~ | 6 |
+| ~~audited_failed~~ | 7 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 1 |
@@ -47,10 +47,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 455 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 18 |
-| `audited_failed` | 28 |
+| `audited_failed` | 29 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3170 |
+| `unaudited` | 3169 |
 
 | claim_type | count |
 |---|---:|
@@ -668,6 +668,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `shapiro_diamond_frequency_bridge_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | F | - |
 | `shapiro_five_family_portability_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `shapiro_scaling_direct_replay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `source_resolved_geometry_rule_repair_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `structured_mirror_bornsafe_scan_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `testable_predictions_map_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -6403,6 +6404,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The wavefield update is distinguishable from static and causal smoothing, but on the compact generated family it remains a bridge result rather than stable weak-field transfer or closure.  _(class `C`)_
 - **chain closes:** True — The artifact-chain runner reproduces every frozen summary row and wavefield-vs-static gain in the note. The source note explicitly keeps the result bounded and does not claim generated-family closure.
 - **rationale:** The current script output matches the note: zero-source reduction is 0 across rows, baseline/static is 4/16 with F~M=0.199 and N_eff=2.69, baseline/causal is 3/16 with F~M=-0.308 and N_eff=2.50, baseline/wavefield is 0/16 with F~M=0.655 and N_eff=2.53, tweak/static is 9/16 with F~M=-0.316 and N_eff=5.31, tweak/causal is 9/16 with F~M=0.444 and N_eff=5.67, and tweak/wavefield is 6/16 with F~M=0.098 and N_eff=5.14. The wavefield-vs-static deltas also match and are negative for aggregate centroid gain. Residual risk is that the ledger runner_path is unset even though the note's artifact chain names the script; the audit result is clean for the bounded claim as written, not for metadata completeness or closure.
+- **auditor confidence:** high
+
+### `source_resolved_geometry_rule_repair_note`
+
+- **Note:** [`SOURCE_RESOLVED_GEOMETRY_RULE_REPAIR_NOTE.md`](../../docs/SOURCE_RESOLVED_GEOMETRY_RULE_REPAIR_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite seeds 0..3 comparison of the stated kNN-floor baseline against the claimed additive adaptive-sector-fan repair under the fixed static Green-kernel fixture.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260711T170149Z-ee259212-00441-source_resolved_geometry_rul`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The repair changes the aggregate result from 7/16 TOWARD, N_eff=5.06, and alpha=0.058 to 8/16 TOWARD, N_eff=2.80, and alpha=0.335, so it is a mixed partial improvement rather than the intended support-broadening repair.  _(class `C`)_
+- **chain closes:** False — The reported arithmetic is reproduced by genuine computation, but the runner tests a different geometry transformation from the one stated. `_augment_sector_repair` constructs a fresh sector/floor adjacency list and assigns `adj[src] = selected`, discarding baseline edges not reselected instead of adding the sector fan to the retained kNN-floor bridge.
+- **rationale:** The cached values agree with the runner's computation, including zero shifts, sign counts, exponents, and support metrics. However, the source note's candidate is the retained kNN-floor bridge plus an adaptive sector fan, while the implementation replaces each source's adjacency with a newly selected sector/floor list. Consequently, the numerical result cannot establish the bounded claim for the geometry repair actually described.
 - **auditor confidence:** high
 
 ### `source_resolved_retarded_green_corrected_packet_note_2026-05-29`

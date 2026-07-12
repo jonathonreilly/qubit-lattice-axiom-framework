@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py
-runner_sha256: 1bcfadf10d38a9fbd778405028b407eb726984372930dcd6a3efe297359a5222
+runner_sha256: 1ceb434401a62d51b3e204429951539a3f36a8eeec246cc6c34de82643f43f7c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.42
+elapsed_sec: 1.22
 status: ok
 ----- stdout -----
 
@@ -12,12 +12,10 @@ Source-anchor checks
 ------------------------------------------------------------------------------
 PASS docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md exists
 PASS docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md contains: trace/RN expectation identity
-PASS docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md contains: Total source/trace prototype rows indexed here: `26`.
+PASS docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md contains: Total source/trace prototype rows indexed here: `27`.
 PASS docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md contains: Does not identify the unique tracial state with the physical pre-record
 PASS docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md contains: Does not derive a measure, prior, source law, Born law, or selector from
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md exists
-PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: `source_measure_or_rn_bridge` | 16
-PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: `trace_normalization_reference` | 10
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Normalized measure is not selected dial.
 PASS docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md contains: Does not derive a prior, measure, source unit, trace state, or weight rule
 PASS docs/SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md exists
@@ -32,6 +30,18 @@ PASS docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md exist
 PASS docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md contains: unique tracial state
 PASS docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md contains: pre-record reference state
 PASS docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md contains: open admission
+
+------------------------------------------------------------------------------
+Helper packet checks
+------------------------------------------------------------------------------
+PASS measure subdivision helper source exists
+PASS measure subdivision helper cache exists
+PASS helper cache names the measure subdivision runner :: scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py == scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py
+PASS helper cache SHA pins the current helper source :: 5a5f22be64bdee292d77c77f961559704eda00fd34b2c76ff6c56deb57d044f7 == 5a5f22be64bdee292d77c77f961559704eda00fd34b2c76ff6c56deb57d044f7
+PASS helper cache records successful exit :: 0
+PASS helper cache status is ok :: ok
+PASS helper cache certifies source_measure_or_rn_bridge count :: SOURCE_MEASURE_OR_RN_BRIDGE_ROWS=17
+PASS helper cache certifies trace_normalization_reference count :: TRACE_NORMALIZATION_REFERENCE_ROWS=10
 
 ------------------------------------------------------------------------------
 Finite source-measure trace/RN checks
@@ -50,40 +60,40 @@ PASS selector rule is still needed for selected dial readiness
 ------------------------------------------------------------------------------
 Source/trace row checks
 ------------------------------------------------------------------------------
-PASS source/trace prototype row count is current snapshot :: 26
-PASS source/trace lane counts match expected :: Counter({'source_measure_or_rn_bridge': 16, 'trace_normalization_reference': 10})
-PASS source/trace lane counts sum to row count :: Counter({'source_measure_or_rn_bridge': 16, 'trace_normalization_reference': 10})
+PASS source/trace prototype row count is current snapshot :: 27
+PASS source/trace lane counts match expected :: Counter({'source_measure_or_rn_bridge': 17, 'trace_normalization_reference': 10})
+PASS source/trace lane counts sum to row count :: Counter({'source_measure_or_rn_bridge': 17, 'trace_normalization_reference': 10})
 PASS representative row present in source_measure_or_rn_bridge :: source_measure_pcal_rn_cocycle_theorem_note_2026-05-30
 PASS representative row present in trace_normalization_reference :: pre_record_reference_state_tracial_derivation_note_2026-05-20
-PASS audit ledger hash is unchanged :: 2ac5344278b0e37ee6419068aa1e0588600fbc98d8ed55d56650fb4b0e555b83
+PASS audit ledger hash is unchanged :: 2f4052766ca2215fde72e9e4b8628e51a4e0c4184f5425dbaa191cb5b5d2b6e1
 
 Source/trace prototype lane counts:
-  source_measure_or_rn_bridge: 16
+  source_measure_or_rn_bridge: 17
   trace_normalization_reference: 10
 
 [source_measure_or_rn_bridge]
   higgs_x_s4b_combined_higgs_ewsb_g2_note_2026-05-08_probex_s4b_combined | unaudited | unaudited | bounded_theorem | docs/HIGGS_X_S4B_COMBINED_HIGGS_EWSB_G2_NOTE_2026-05-08_probeX_S4b_combined.md
   i1_static_readout_is_native_field_integration_2026-06-06 | unaudited | unaudited | bounded_theorem | docs/I1_STATIC_READOUT_IS_NATIVE_FIELD_INTEGRATION_2026-06-06.md
-  link_local_first_variation_selector_bridge_narrow_theorem_note_2026-05-10 | audited_clean | retained_bounded | bounded_theorem | docs/LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md
   observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21 | unaudited | unaudited | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_FREE_CUMULANT_ROUTE_NARROW_NOTE_2026-05-21.md
-  prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22 | audited_clean | retained_bounded | bounded_theorem | docs/PRR_LOCAL_DERIVATION_FROM_JAYNES_MAX_ENTROPY_NARROW_THEOREM_NOTE_2026-05-22.md
+  prr_local_derivation_from_jaynes_max_entropy_narrow_theorem_note_2026-05-22 | unaudited | unaudited | bounded_theorem | docs/PRR_LOCAL_DERIVATION_FROM_JAYNES_MAX_ENTROPY_NARROW_THEOREM_NOTE_2026-05-22.md
+  quark_route2_dual_normalized_source_readout_two_factor_bridge_conditional_note_2026-06-21 | unaudited | unaudited | bounded_theorem | docs/QUARK_ROUTE2_DUAL_NORMALIZED_SOURCE_READOUT_TWO_FACTOR_BRIDGE_CONDITIONAL_NOTE_2026-06-21.md
+  quark_route2_source_count_selector_bridge_boundary_note_2026-06-21 | unaudited | unaudited | bounded_theorem | docs/QUARK_ROUTE2_SOURCE_COUNT_SELECTOR_BRIDGE_BOUNDARY_NOTE_2026-06-21.md
   source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30 | audited_clean | retained_bounded | bounded_theorem | docs/SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md
   source_measure_pcal_retirement_synthesis_note_2026-05-30 | unaudited | unaudited | bounded_theorem | docs/SOURCE_MEASURE_PCAL_RETIREMENT_SYNTHESIS_NOTE_2026-05-30.md
   source_measure_pcal_rn_cocycle_theorem_note_2026-05-30 | unaudited | unaudited | bounded_theorem | docs/SOURCE_MEASURE_PCAL_RN_COCYCLE_THEOREM_NOTE_2026-05-30.md
   source_measure_planck_action_rn_source_unit_bridge_note_2026-05-30 | unaudited | unaudited | bounded_theorem | docs/SOURCE_MEASURE_PLANCK_ACTION_RN_SOURCE_UNIT_BRIDGE_NOTE_2026-05-30.md
-  source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/SOURCE_MEASURE_SHARP_RECORD_ORTHONORMAL_RESPONSE_BASIS_NARROW_THEOREM_NOTE_2026-06-05.md
 
 [trace_normalization_reference]
-  busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05 | audited_clean | retained_bounded | bounded_theorem | docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  busch_povm_effect_gleason_qubit_authority_bridge_narrow_theorem_note_2026-06-05 | unaudited | unaudited | bounded_theorem | docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  dm_wilson_direct_descendant_constructive_transport_plateau_normalized_schur_determinant_selector_note_2026-04-19 | unaudited | unaudited | bounded_theorem | docs/DM_WILSON_DIRECT_DESCENDANT_CONSTRUCTIVE_TRANSPORT_PLATEAU_NORMALIZED_SCHUR_DETERMINANT_SELECTOR_NOTE_2026-04-19.md
   gauge_vacuum_plaquette_readout_form_trace_vs_perron_bounded_note_2026-06-12 | unaudited | unaudited | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_READOUT_FORM_TRACE_VS_PERRON_BOUNDED_NOTE_2026-06-12.md
-  gauge_vacuum_plaquette_spatial_environment_character_measure_finite_box_convolution_realization_uniqueness_narrow_note_2026-05-17 | audited_clean | retained_bounded | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_FINITE_BOX_CONVOLUTION_REALIZATION_UNIQUENESS_NARROW_NOTE_2026-05-17.md
-  gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note | audited_clean | retained_bounded | bounded_theorem | docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_CHARACTER_MEASURE_THEOREM_NOTE.md
+  gleason_on_qubit_lattice_projection_lattice_narrow_theorem_note_2026-05-20 | unaudited | unaudited | bounded_theorem | docs/GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+  harmonic_ladder_weight_law_bounded_theorem_note_2026-06-12 | audited_clean | retained_bounded | bounded_theorem | docs/HARMONIC_LADDER_WEIGHT_LAW_BOUNDED_THEOREM_NOTE_2026-06-12.md
   hierarchy_delta0_b4_attachment_observable_enumeration_note_2026-06-11 | unaudited | unaudited | bounded_theorem | docs/HIERARCHY_DELTA0_B4_ATTACHMENT_OBSERVABLE_ENUMERATION_NOTE_2026-06-11.md
-  inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20 | audited_clean | retained_bounded | bounded_theorem | docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md
-  magnitude_4pi_is_native_coupling_not_gaussian_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/MAGNITUDE_4PI_IS_NATIVE_COUPLING_NOT_GAUSSIAN_2026-06-06.md
-  magnitude_temporal_factor_is_count_not_rate_2026-06-06 | audited_clean | retained_bounded | bounded_theorem | docs/MAGNITUDE_TEMPORAL_FACTOR_IS_COUNT_NOT_RATE_2026-06-06.md
+  inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20 | unaudited | unaudited | bounded_theorem | docs/INNER_AUTOMORPHISM_INVARIANCE_TRACIAL_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-20.md
   observable_principle_p1_bridge_pre_record_tracial_route_narrow_note_2026-05-21 | unaudited | unaudited | bounded_theorem | docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_PRE_RECORD_TRACIAL_ROUTE_NARROW_NOTE_2026-05-21.md
-  pre_record_reference_state_tracial_derivation_note_2026-05-20 | audited_clean | retained_bounded | bounded_theorem | docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md
+  pre_record_reference_state_tracial_derivation_note_2026-05-20 | unaudited | unaudited | bounded_theorem | docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md
+  theta_sector_level_loop_insertions_closed_surface_bounded_theorem_note_2026-07-02 | unaudited | unaudited | bounded_theorem | docs/THETA_SECTOR_LEVEL_LOOP_INSERTIONS_CLOSED_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-02.md
 
 
 ------------------------------------------------------------------------------
@@ -101,9 +111,9 @@ PASS Record-derived source law flag is false
 PASS production dynamics derived flag is false
 PASS Record-derived physical arrow flag is false
 
-SUMMARY: PASS=49 FAIL=0
-SOURCE_TRACE_PROTOTYPE_ROWS=26
-SOURCE_MEASURE_OR_RN_BRIDGE_ROWS=16
+SUMMARY: PASS=55 FAIL=0
+SOURCE_TRACE_PROTOTYPE_ROWS=27
+SOURCE_MEASURE_OR_RN_BRIDGE_ROWS=17
 TRACE_NORMALIZATION_REFERENCE_ROWS=10
 AUDIT_LEDGER_WRITTEN=FALSE
 AUDIT_VERDICT_APPLIED=FALSE

@@ -249,7 +249,7 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
 
     representatives = {
         "character_path_channel_weight": "architecture_note_directional_measure",
-        "generic_measure_weight_import": "born_scattering_comparison_note",
+        "generic_measure_weight_import": "central_band_born_dense_sweep_note",
         "selector_tangent_readout_weight": "yt_exact_hessian_selector_uniqueness_note",
         "source_measure_or_rn_bridge": "source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30",
         "trace_normalization_reference": "pre_record_reference_state_tracial_derivation_note_2026-05-20",

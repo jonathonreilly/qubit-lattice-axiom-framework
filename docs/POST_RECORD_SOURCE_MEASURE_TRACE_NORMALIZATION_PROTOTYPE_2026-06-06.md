@@ -10,6 +10,10 @@ bare_retained_allowed=false.
 [`scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py`](../scripts/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_source_measure_trace_normalization_prototype_2026_06_06.txt)
+**Row-enumeration helper:**
+[`scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py`](../scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py)
+**Helper cached log:**
+[`logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt)
 
 ## Result
 
@@ -24,10 +28,10 @@ supplied finite carrier
   => normalized source measure and trace/RN expectation identity
 ```
 
-The prototype covers the `16` `source_measure_or_rn_bridge` rows and the `10`
+The prototype covers the `17` `source_measure_or_rn_bridge` rows and the `10`
 `trace_normalization_reference` rows from the measure/weight subdivision.
 
-Total source/trace prototype rows indexed here: `26`.
+Total source/trace prototype rows indexed here: `27`.
 
 ## Meaning
 
@@ -81,13 +85,15 @@ The runner verifies:
 
 - source anchors in this note, the measure/weight subdivision, source-measure
   RN/cumulant notes, and the pre-record tracial note;
+- the row-enumeration helper source and cached output are present, and the
+  cache records the current helper SHA-256 plus a successful run;
 - supplied finite trace/reference weights and source weights normalize exactly;
 - RN densities are positive, normalized over the reference, and recover source
   expectations;
 - unsupported source measures are rejected;
 - RN densities compose exactly;
-- the `16` source-measure/RN rows and `10` trace-normalization rows are present;
-- the combined source/trace prototype row count is `26`;
+- the `17` source-measure/RN rows and `10` trace-normalization rows are present;
+- the combined source/trace prototype row count is `27`;
 - the audit ledger hash is unchanged after the scan;
 - no audit verdict, audit-data write, retained/promoted claim,
   normalized-measure selector, generation/Koide selection, physical-reference

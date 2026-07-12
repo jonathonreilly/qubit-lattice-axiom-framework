@@ -7,35 +7,30 @@ from collections import Counter, defaultdict
 from fractions import Fraction
 from pathlib import Path
 import hashlib
-import importlib.util
-import json
 import sys
+
+import frontier_post_record_measure_weight_normalization_subdivision_2026_06_06 as measure
 
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
-MEASURE_RUNNER = ROOT / "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py"
+MEASURE_RUNNER = (
+    ROOT
+    / "scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py"
+)
+MEASURE_CACHE = (
+    ROOT
+    / "logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt"
+)
 PASS = 0
 FAIL = 0
 
 PROTOTYPE_LANES = {"source_measure_or_rn_bridge", "trace_normalization_reference"}
 EXPECTED_LANE_COUNTS = {
-    "source_measure_or_rn_bridge": 16,
+    "source_measure_or_rn_bridge": 17,
     "trace_normalization_reference": 10,
 }
-
-
-def load_module(name: str, path: Path):
-    spec = importlib.util.spec_from_file_location(name, path)
-    if spec is None or spec.loader is None:
-        raise RuntimeError(f"cannot load {path}")
-    module = importlib.util.module_from_spec(spec)
-    sys.modules[name] = module
-    spec.loader.exec_module(module)
-    return module
-
-
-measure = load_module("measure_weight_subdivision", MEASURE_RUNNER)
+EXPECTED_TOTAL_ROWS = sum(EXPECTED_LANE_COUNTS.values())
 
 
 def report(label: str, ok: bool, detail: str = "") -> None:
@@ -59,6 +54,17 @@ def section(title: str) -> None:
 
 def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def cache_header(path: Path) -> dict[str, str]:
+    fields: dict[str, str] = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line == "----- stdout -----":
+            break
+        key, separator, value = line.partition(":")
+        if separator:
+            fields[key.strip()] = value.strip()
+    return fields
 
 
 def read_rel(path: str) -> str:
@@ -127,7 +133,7 @@ def source_anchor_checks() -> None:
         "docs/POST_RECORD_SOURCE_MEASURE_TRACE_NORMALIZATION_PROTOTYPE_2026-06-06.md",
         [
             "trace/RN expectation identity",
-            "Total source/trace prototype rows indexed here: `26`.",
+            "Total source/trace prototype rows indexed here: `27`.",
             "Does not identify the unique tracial state with the physical pre-record",
             "Does not derive a measure, prior, source law, Born law, or selector from",
         ],
@@ -135,8 +141,6 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md",
         [
-            "`source_measure_or_rn_bridge` | 16",
-            "`trace_normalization_reference` | 10",
             "Normalized measure is not selected dial.",
             "Does not derive a prior, measure, source unit, trace state, or weight rule",
         ],
@@ -167,6 +171,42 @@ def source_anchor_checks() -> None:
     )
 
 
+def helper_packet_checks() -> None:
+    section("Helper packet checks")
+    report("measure subdivision helper source exists", MEASURE_RUNNER.is_file())
+    report("measure subdivision helper cache exists", MEASURE_CACHE.is_file())
+    if not MEASURE_RUNNER.is_file() or not MEASURE_CACHE.is_file():
+        return
+
+    header = cache_header(MEASURE_CACHE)
+    cache_text = MEASURE_CACHE.read_text(encoding="utf-8")
+    expected_runner = MEASURE_RUNNER.relative_to(ROOT).as_posix()
+    current_sha = digest(MEASURE_RUNNER)
+    report(
+        "helper cache names the measure subdivision runner",
+        header.get("runner") == expected_runner,
+        f"{header.get('runner', '')} == {expected_runner}",
+    )
+    report(
+        "helper cache SHA pins the current helper source",
+        header.get("runner_sha256") == current_sha,
+        f"{header.get('runner_sha256', '')} == {current_sha}",
+    )
+    report(
+        "helper cache records successful exit",
+        header.get("exit_code") == "0",
+        header.get("exit_code", ""),
+    )
+    report("helper cache status is ok", header.get("status") == "ok", header.get("status", ""))
+    for lane, count in sorted(EXPECTED_LANE_COUNTS.items()):
+        summary_line = f"{lane.upper()}_ROWS={count}"
+        report(
+            f"helper cache certifies {lane} count",
+            summary_line in cache_text,
+            summary_line,
+        )
+
+
 def certificate_checks() -> None:
     section("Finite source-measure trace/RN checks")
     reference = normalize({"minus": Fraction(1), "plus": Fraction(1)})
@@ -174,11 +214,31 @@ def certificate_checks() -> None:
     density = rn_density(source, reference)
     observable = {"minus": Fraction(-1), "plus": Fraction(1)}
 
-    report("supplied trace/reference weights normalize", reference == {"minus": Fraction(1, 2), "plus": Fraction(1, 2)}, str(reference))
-    report("supplied source weights normalize", source == {"minus": Fraction(1, 4), "plus": Fraction(3, 4)}, str(source))
-    report("RN density is exact", density == {"minus": Fraction(1, 2), "plus": Fraction(3, 2)}, str(density))
-    report("RN density integrates to one over reference", expectation(reference, density) == 1, str(expectation(reference, density)))
-    report("source expectation equals RN-weighted trace expectation", expectation(source, observable) == rn_expectation(reference, density, observable))
+    report(
+        "supplied trace/reference weights normalize",
+        reference == {"minus": Fraction(1, 2), "plus": Fraction(1, 2)},
+        str(reference),
+    )
+    report(
+        "supplied source weights normalize",
+        source == {"minus": Fraction(1, 4), "plus": Fraction(3, 4)},
+        str(source),
+    )
+    report(
+        "RN density is exact",
+        density == {"minus": Fraction(1, 2), "plus": Fraction(3, 2)},
+        str(density),
+    )
+    report(
+        "RN density integrates to one over reference",
+        expectation(reference, density) == 1,
+        str(expectation(reference, density)),
+    )
+    report(
+        "source expectation equals RN-weighted trace expectation",
+        expectation(source, observable)
+        == rn_expectation(reference, density, observable),
+    )
 
     try:
         normalize({"bad": Fraction(-1)})
@@ -229,9 +289,21 @@ def row_checks() -> tuple[list[dict], Counter[str]]:
     section("Source/trace row checks")
     before = digest(LEDGER)
     rows, counts = prototype_rows()
-    report("source/trace prototype row count is current snapshot", len(rows) == 26, str(len(rows)))
-    report("source/trace lane counts match expected", dict(counts) == EXPECTED_LANE_COUNTS, str(counts))
-    report("source/trace lane counts sum to row count", sum(counts.values()) == len(rows), str(counts))
+    report(
+        "source/trace prototype row count is current snapshot",
+        len(rows) == EXPECTED_TOTAL_ROWS,
+        str(len(rows)),
+    )
+    report(
+        "source/trace lane counts match expected",
+        dict(counts) == EXPECTED_LANE_COUNTS,
+        str(counts),
+    )
+    report(
+        "source/trace lane counts sum to row count",
+        sum(counts.values()) == len(rows),
+        str(counts),
+    )
 
     representatives = {
         "source_measure_or_rn_bridge": "source_measure_pcal_rn_cocycle_theorem_note_2026-05-30",
@@ -294,6 +366,7 @@ def firewall_checks() -> None:
 
 def main() -> int:
     source_anchor_checks()
+    helper_packet_checks()
     certificate_checks()
     rows, counts = row_checks()
     firewall_checks()

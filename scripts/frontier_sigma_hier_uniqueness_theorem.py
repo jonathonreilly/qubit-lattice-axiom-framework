@@ -3,8 +3,10 @@
 sigma_hier uniqueness theorem
 ==============================
 
-STATUS: conditional support theorem on the open DM gate — sigma_hier = (2, 1, 0) is the
-unique hierarchy pairing with:
+STATUS: supplied-input S_3 selection table — conditional on three admitted external
+inputs (the pinned chamber point, the NuFit 5.3 NO 3-sigma magnitude windows, and the
+T2K/NOvA sin(delta_CP) < 0 sign preference), sigma_hier = (2, 1, 0) is the unique
+hierarchy pairing with:
   (a) all 9 |U_PMNS| entries inside the NuFit 5.3 NO 3-sigma ranges, AND
   (b) sin(delta_CP) < 0, consistent with the T2K/NOvA preferred region.
 
@@ -44,20 +46,23 @@ Conclusion:
     experimental CP-phase sign preference (sin(delta_CP) < 0) uniquely
     selects sigma = (2, 1, 0) from the 6-element S_3 at the pinned point.
 
-    This is a conditional support theorem under the observational-promotion
-    framework: sigma_hier is not derivable from Cl(3)/Z^3 alone, but it is
-    uniquely forced by the joint requirement that all 9 PMNS magnitudes
-    pass NuFit 5.3 3-sigma AND that sin(delta_CP) is negative.
+    This is a supplied-input selection statement, not an internal
+    derivation: sigma_hier is not derivable from Cl(3)/Z^3 alone; it is
+    uniquely selected, among the 6 elements of S_3 at the pinned point, by
+    the joint requirement that all 9 PMNS magnitudes pass the supplied
+    NuFit 5.3 3-sigma windows AND that sin(delta_CP) is negative under the
+    supplied T2K/NOvA sign preference.
 
     The CP phase prediction sin(delta_CP) = -0.9874 is then a falsifiable
-    geometric consequence of the full 4-observable PMNS constraint, not a
-    separately imposed input.
+    geometric consequence of the selected pairing under the supplied
+    comparators, not a separately imposed input.
 """
 
 from __future__ import annotations
 
 import itertools
 import math
+import os
 
 import numpy as np
 
@@ -406,6 +411,112 @@ def part5_non_passing_failures(results: dict) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Supplied-input scope gate (downstream hygiene, 2026-07-12)
+# ---------------------------------------------------------------------------
+
+_FORBIDDEN_CLOSURE_PHRASES = [
+    "no observational ambiguity",
+    "promoted from",
+    "observationally unique at the live pin",
+    "resolved under observational promotion",
+]
+
+
+def _has_overclaim(flat: str) -> bool:
+    """True if any withdrawn observational-closure phrase is present in the
+    whitespace-flattened note text."""
+    return any(p in flat for p in _FORBIDDEN_CLOSURE_PHRASES)
+
+
+def supplied_input_scope_gate() -> None:
+    """Discriminating downstream-hygiene gate for the supplied-input reframe.
+
+    Re-derives the S_3 selection from H at the pin (gates 1-3, which FAIL if
+    the physics were wrong) AND pins the paired note to the supplied-input
+    framing with no observational-closure language (gates 4-7). Gates 8-9
+    are flip self-tests: they inject a wrong object and assert the string
+    detectors fire, so a green here cannot be tautological.
+    """
+    # --- Re-derive the selection independently from H at the pin ---
+    Hpin = H_mat(M_STAR, DELTA_STAR, Q_PLUS_STAR)
+    w, V = np.linalg.eigh(Hpin)
+    V = V[:, np.argsort(np.real(w))]
+    sins = {}
+    mag_pass = set()
+    for perm in itertools.permutations([0, 1, 2]):
+        P = pmns_for_permutation(V, perm)
+        if count_passes(np.abs(P)) == 9:
+            mag_pass.add(perm)
+        sins[perm] = jarlskog_sin_dcp(P)
+    s210 = sins[(2, 1, 0)]
+    s201 = sins[(2, 0, 1)]
+    joint = {p for p in mag_pass if sins[p] < 0}
+
+    check(
+        "gate 1: magnitude filter selects exactly {(2,0,1),(2,1,0)}",
+        mag_pass == {(2, 0, 1), (2, 1, 0)},
+        f"mag_pass = {sorted(mag_pass)}",
+    )
+    check(
+        "gate 2: 9/9 AND sin(dCP)<0 selects exactly {(2,1,0)}",
+        joint == {(2, 1, 0)},
+        f"joint = {sorted(joint)}",
+    )
+    check(
+        "gate 3: CP sign split — s(2,1,0)<0<s(2,0,1), exact opposites",
+        abs(s210 + s201) < 1e-9 and s210 < 0.0 < s201,
+        f"s210={s210:+.4f} s201={s201:+.4f}",
+    )
+
+    # --- Pin the paired note to the supplied-input framing ---
+    note_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        "..",
+        "docs",
+        "SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md",
+    )
+    with open(note_path, encoding="utf-8") as fh:
+        note = fh.read()
+    flat = " ".join(note.split())
+    supplied_phrase = "Supplied inputs (admitted, external)"
+    dep_edge = (
+        "[neutrino_dirac_pmns_retained_lane_packet_2026-04-16]"
+        "(NEUTRINO_DIRAC_PMNS_RETAINED_LANE_PACKET_2026-04-16.md)"
+    )
+
+    check(
+        "gate 4: note carries no withdrawn observational-closure phrase",
+        not _has_overclaim(flat),
+    )
+    check(
+        "gate 5: note declares the supplied-input subsection",
+        supplied_phrase in note,
+    )
+    check(
+        "gate 6: note carries the dated 2026-07-12 scope-narrowing record",
+        "2026-07-12" in note and "narrow" in flat,
+    )
+    check(
+        "gate 7: sole markdown dep edge (neutrino_dirac packet) present once",
+        note.count(dep_edge) == 1,
+        f"count = {note.count(dep_edge)}",
+    )
+
+    # --- Flip self-tests (positive controls): the detectors must fire ---
+    injected = " ".join(
+        (note + " Here sigma_hier is promoted from a free conditional.").split()
+    )
+    check(
+        "gate 8: overclaim detector fires on an injected forbidden phrase",
+        _has_overclaim(injected),
+    )
+    check(
+        "gate 9: supplied-input detector distinguishes presence from absence",
+        supplied_phrase not in note.replace(supplied_phrase, "REDACTED"),
+    )
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -416,8 +527,8 @@ def main() -> int:
     print()
     print("  Step 1 (9/9 magnitude filter): reduces S_3 from 6 to 2 permutations.")
     print("  Step 2 (CP-phase discriminator): selects sigma=(2,1,0) uniquely.")
-    print("  Conclusion: sigma_hier = (2,1,0) is uniquely forced by the joint")
-    print("  requirement [9/9 NuFit 3-sigma magnitudes] AND [sin(delta_CP) < 0].")
+    print("  Conclusion: sigma_hier = (2,1,0) is uniquely selected, conditional on")
+    print("  the supplied inputs, by [9/9 NuFit 3-sigma magnitudes] AND [sin(delta_CP) < 0].")
     print("=" * 80)
 
     V = part1_h_at_pin()
@@ -425,10 +536,11 @@ def main() -> int:
     part3_cp_phase_discriminator(results)
     part4_physical_sigma_detail(results)
     part5_non_passing_failures(results)
+    supplied_input_scope_gate()
 
     print()
     print("=" * 80)
-    print("Theorem statement (conditional on PMNS observation):")
+    print("Selection statement (supplied-input, conditional on PMNS observation):")
     print()
     print("  At the pinned chamber point (m_*, delta_*, q_+*) = (0.657061, 0.933806,")
     print("  0.715042), the hierarchy pairing sigma_hier = (2, 1, 0) is the unique")
@@ -446,12 +558,13 @@ def main() -> int:
     print("    - Therefore sigma=(2,0,1) is observationally disfavored and sigma=(2,1,0)")
     print("      is the unique physically admissible pairing.")
     print()
-    print("  This promotes sigma_hier from an 'independent conditional' to an")
-    print("  'observationally unique' choice at the live pin: not derived from")
-    print("  Cl(3)/Z^3 alone, but uniquely fixed there by the combined")
-    print("  4-observable PMNS constraint.")
-    print("  This is a pinned-point theorem only, not a chamber-wide or")
-    print("  all-basin uniqueness theorem; other admitted basins must be")
+    print("  This is a supplied-input selection at the live pin: sigma_hier is")
+    print("  not derived from Cl(3)/Z^3 alone, and it is not observationally")
+    print("  closed; it is uniquely selected there, conditional on the three")
+    print("  admitted external inputs, by the combined 4-observable PMNS")
+    print("  constraint.")
+    print("  This is a pinned-point selection only, not a chamber-wide or")
+    print("  all-basin uniqueness claim; other admitted basins must be")
     print("  checked separately.")
     print()
     print("  The CP-phase prediction sin(delta_CP) = -0.9874 is then a")

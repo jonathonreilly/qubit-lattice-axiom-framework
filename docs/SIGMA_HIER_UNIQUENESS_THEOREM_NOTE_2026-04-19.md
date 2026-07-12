@@ -1,11 +1,13 @@
 # σ_hier Uniqueness Theorem
 
 **Date:** 2026-04-19  
-**Status:** **conditional support theorem on the open DM gate** — `σ_hier = (2, 1, 0)` is the
-unique hierarchy-pairing permutation satisfying the joint 4-observable PMNS
-constraint at the pinned chamber point  
+**Status:** **supplied-input S_3 selection table** — conditional on three admitted
+external inputs (the pinned chamber point, the NuFit 5.3 NO 3σ magnitude windows, and
+the T2K/NOvA `sin(δ_CP) < 0` sign preference), `σ_hier = (2, 1, 0)` is the unique
+hierarchy-pairing permutation passing the joint 4-observable PMNS filter at the pinned
+chamber point  
 **Runner:** `scripts/frontier_sigma_hier_uniqueness_theorem.py` ([scripts/frontier_sigma_hier_uniqueness_theorem.py](../scripts/frontier_sigma_hier_uniqueness_theorem.py))
-**Runner result:** `PASS = 24, FAIL = 0`
+**Runner result:** `PASS = 33, FAIL = 0`
 
 ## What this theorem establishes
 
@@ -17,10 +19,29 @@ At the pinned chamber point `(m_*, δ_*, q_+*) = (0.657061, 0.933806,
    ranges.
 2. **sin(δ_CP) < 0**, consistent with the T2K/NOvA experimental preference.
 
-This is a conditional support theorem under the observational-promotion
-framework. `σ_hier` is not derivable from the `Cl(3)/Z^3` axiom alone, but
-the combined 4-observable PMNS constraint (3 angles + CP-phase sign) uniquely
-selects it at the pinned chamber point.
+This is a supplied-input selection statement, not an internal derivation.
+`σ_hier` is not derivable from the `Cl(3)/Z^3` axiom alone; conditional on the
+three admitted external inputs below, the combined 4-observable PMNS constraint
+(3 angles + CP-phase sign) uniquely selects it at the pinned chamber point.
+
+## Supplied inputs (admitted, external)
+
+This selection table admits three external inputs. It does not derive any of
+them, and it does not elevate `σ_hier` to an internally-derived or
+observationally-closed quantity:
+
+1. **The pinned chamber point** `(m_*, δ_*, q_+*) = (0.657061, 0.933806,
+   0.715042)` — supplied by the P3 PMNS-as-f(H) map together with the imposed
+   branch-choice rule A-BCC. Treated here as an admitted external input.
+2. **The NuFit 5.3 NO 3σ magnitude windows** on the 9 `|U_PMNS|_{ij}` entries —
+   supplied observational comparators (`PDG_LO`/`PDG_HI` in the runner). An
+   admitted external input.
+3. **The T2K/NOvA `sin(δ_CP) < 0` sign preference** — the supplied experimental
+   sign comparator. An admitted external input.
+
+Conditional on these three admitted external inputs, the table below records
+which element of `S_3` the joint 4-observable PMNS filter selects at the pinned
+point. Nothing below derives `σ_hier` from the `Cl(3)/Z^3` axiom.
 
 ## Proof structure
 
@@ -63,50 +84,57 @@ exclude sin(δ_CP) = +0.987 at ≥ 2σ. Therefore:
 - σ = (2,1,0) is **experimentally preferred** (sin(δ_CP) = −0.987, within
   T2K/NOvA 2σ preferred region).
 
-## Theorem statement
+## Selection statement (supplied-input)
 
-**Theorem (σ_hier conditional uniqueness).** At the pinned chamber point
+**Selection statement (σ_hier, supplied-input).** Conditional on the three
+admitted external inputs above, at the pinned chamber point
 `(m_*, δ_*, q_+*) = (0.657061, 0.933806, 0.715042)`:
 
 > The unique element σ ∈ S_3 with (1) all 9 `|U_PMNS|_{ij}` inside the
 > NuFit 5.3 NO 3σ ranges AND (2) sin(δ_CP) < 0, is σ = (2, 1, 0).
 
-This is exact and verified by the dedicated runner.
+This is a selection among the 6 elements of S_3 under the supplied comparators,
+not an internal derivation. It is exact and verified by the dedicated runner.
 
-## What this closes
+## What the selection table shows
 
-The free `σ_hier` ambiguity at the pinned chamber point is resolved under
-observational promotion:
+Conditional on the three admitted external inputs above, the free `σ_hier`
+choice at the pinned chamber point is narrowed to a single element of `S_3`:
 
 - σ_hier was previously listed as an "independent conditional — an S_3
   involution (order 2), not derivable from the retained C_3 order-3 cycle."
-- This theorem shows it has **no observational ambiguity**: no other σ ∈ S_3
-  passes the joint 4-observable PMNS constraint.
-- `σ_hier` is promoted from "free conditional" to "observationally unique at
-  the live pin": uniquely selected by observation there, not internally
-  derived from the framework alone.
+- Under the supplied NuFit windows and T2K/NOvA sign comparator, exactly one
+  other σ ∈ S_3 survives the magnitude filter, and the CP-phase sign then
+  leaves `σ = (2, 1, 0)` as the sole element passing the joint 4-observable
+  PMNS filter.
+- This is a conditional selection at the live pin, not an internal derivation
+  and not an observational-closure claim: `σ_hier` is uniquely **selected**
+  there by the supplied comparators, not derived from the framework alone.
 
 ## Consequence for the P3 flagship
 
-With `σ_hier` resolved at the pinned point by this theorem:
+With `σ_hier` **selected (not closed)** at the pinned point by this table,
+conditional on the supplied inputs:
 
 - The P3 flagship closure (PMNS-as-f(H) map + chamber pin) depends on:
   1. The imposed branch-choice rule **A-BCC** (physical sheet = `C_base`)
-  2. ~~σ_hier = (2,1,0) as an independent conditional~~ → **now closed by
-     observational uniqueness at the live pin**
+  2. σ_hier = (2,1,0), **selected** at the live pin conditional on the supplied
+     NuFit windows + T2K/NOvA sign (not internally derived, not observationally
+     closed)
 - **A-BCC remains the single named source-side open input on the pinned
   chamber packet.** Broader chamber-wide / all-basin uniqueness is not
-  supplied by this theorem.
+  supplied by this table.
 
 ## Falsifiable prediction
 
 The CP-phase prediction sin(δ_CP) = −0.9874 is a forced geometric
-consequence of the uniquely selected σ_hier. It is not a separately imposed
-input.
+consequence of the selected σ_hier under the supplied comparators. It is not a
+separately imposed input.
 
 A confirmed >3σ measurement of sin(δ_CP) > +0.5 at DUNE / Hyper-Kamiokande
-would falsify the P3 closure (ruling out the only physically consistent
-chamber pin under the 4-observable PMNS constraint).
+would exclude the σ = (2, 1, 0) selection at this pin under the supplied
+comparators (removing the pin's consistency with the 4-observable PMNS
+filter).
 
 ## What this theorem does NOT claim
 
@@ -121,13 +149,25 @@ chamber pin under the 4-observable PMNS constraint).
   other internally consistent PMNS fits. A chamber-wide uniqueness statement
   would require a separate basin analysis.
 
+## 2026-07-12 scope-narrowing (downstream hygiene)
+
+On 2026-07-12 the closure-style language in this note was **narrowed** to match
+its audited scope: the note now presents a **supplied-input `S_3` selection
+table** conditional on three admitted external inputs (the pinned chamber
+point, the NuFit 5.3 windows, and the T2K/NOvA sign preference), and the
+earlier observational-closure wording was withdrawn. The physics is unchanged
+— `σ = (2, 1, 0)`, the pin, and both proof steps are identical; only the
+framing of what the table establishes was narrowed. Editing this note re-enters
+the row into the audit queue for an independent re-read; this paragraph records
+the narrowing and asserts no audit status of its own.
+
 ## Reproduction
 
 ```bash
 PYTHONPATH=scripts python3 scripts/frontier_sigma_hier_uniqueness_theorem.py
 ```
 
-Expected: `PASS = 24, FAIL = 0`.
+Expected: `PASS = 33, FAIL = 0`.
 
 ## Audit dependency repair links
 

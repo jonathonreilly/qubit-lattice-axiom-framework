@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_sigma_hier_uniqueness_theorem.py
-runner_sha256: 0cdf363f44a3cc43ceb6a0110c5283b1140e5524976726810e712450fb6bdc30
+runner_sha256: 64ea97e014840cdcd5307baf350561fda98fdf2498d81a115ad741c0bf23a8f2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
 ================================================================================
@@ -11,8 +11,8 @@ sigma_hier UNIQUENESS THEOREM (two-step)
 
   Step 1 (9/9 magnitude filter): reduces S_3 from 6 to 2 permutations.
   Step 2 (CP-phase discriminator): selects sigma=(2,1,0) uniquely.
-  Conclusion: sigma_hier = (2,1,0) is uniquely forced by the joint
-  requirement [9/9 NuFit 3-sigma magnitudes] AND [sin(delta_CP) < 0].
+  Conclusion: sigma_hier = (2,1,0) is uniquely selected, conditional on
+  the supplied inputs, by [9/9 NuFit 3-sigma magnitudes] AND [sin(delta_CP) < 0].
 ================================================================================
 
 ================================================================================
@@ -91,9 +91,18 @@ Part 5: Non-magnitude-passing permutations — failure entries
   sigma=(1, 0, 2): 4 NuFit failures — |U_e1|=0.370 not in [0.801,0.845]; |U_e3|=0.730 not in [0.143,0.155]... (4 total)
   sigma=(1, 2, 0): 4 NuFit failures — |U_e1|=0.370 not in [0.801,0.845]; |U_e3|=0.730 not in [0.143,0.155]... (4 total)
   [PASS] All 4 magnitude-excluded permutations have >= 4 NuFit failures
+  [PASS] gate 1: magnitude filter selects exactly {(2,0,1),(2,1,0)}  (mag_pass = [(2, 0, 1), (2, 1, 0)])
+  [PASS] gate 2: 9/9 AND sin(dCP)<0 selects exactly {(2,1,0)}  (joint = [(2, 1, 0)])
+  [PASS] gate 3: CP sign split — s(2,1,0)<0<s(2,0,1), exact opposites  (s210=-0.9874 s201=+0.9874)
+  [PASS] gate 4: note carries no withdrawn observational-closure phrase
+  [PASS] gate 5: note declares the supplied-input subsection
+  [PASS] gate 6: note carries the dated 2026-07-12 scope-narrowing record
+  [PASS] gate 7: sole markdown dep edge (neutrino_dirac packet) present once  (count = 1)
+  [PASS] gate 8: overclaim detector fires on an injected forbidden phrase
+  [PASS] gate 9: supplied-input detector distinguishes presence from absence
 
 ================================================================================
-Theorem statement (conditional on PMNS observation):
+Selection statement (supplied-input, conditional on PMNS observation):
 
   At the pinned chamber point (m_*, delta_*, q_+*) = (0.657061, 0.933806,
   0.715042), the hierarchy pairing sigma_hier = (2, 1, 0) is the unique
@@ -111,12 +120,13 @@ Theorem statement (conditional on PMNS observation):
     - Therefore sigma=(2,0,1) is observationally disfavored and sigma=(2,1,0)
       is the unique physically admissible pairing.
 
-  This promotes sigma_hier from an 'independent conditional' to an
-  'observationally unique' choice at the live pin: not derived from
-  Cl(3)/Z^3 alone, but uniquely fixed there by the combined
-  4-observable PMNS constraint.
-  This is a pinned-point theorem only, not a chamber-wide or
-  all-basin uniqueness theorem; other admitted basins must be
+  This is a supplied-input selection at the live pin: sigma_hier is
+  not derived from Cl(3)/Z^3 alone, and it is not observationally
+  closed; it is uniquely selected there, conditional on the three
+  admitted external inputs, by the combined 4-observable PMNS
+  constraint.
+  This is a pinned-point selection only, not a chamber-wide or
+  all-basin uniqueness claim; other admitted basins must be
   checked separately.
 
   The CP-phase prediction sin(delta_CP) = -0.9874 is then a
@@ -124,7 +134,7 @@ Theorem statement (conditional on PMNS observation):
   measurement at DUNE/Hyper-K would rule out this pairing.
 ================================================================================
 
-PASS = 24
+PASS = 33
 FAIL = 0
 
 ----- stderr -----

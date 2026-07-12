@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 36 |
-| **retained_bounded** | 389 |
+| **retained_bounded** | 390 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2724 |
+| unaudited | 2723 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 505 |
+| `audited_clean` | 506 |
 | `audited_conditional` | 73 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 35 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3074 |
+| `unaudited` | 3073 |
 
 | claim_type | count |
 |---|---:|
@@ -473,6 +473,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_oriented_cycle_selection_structure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
 | `quark_route2_eta_floor_hf_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
@@ -6794,6 +6795,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The finite normalization/RN algebra closes from supplied finite weights by direct exact Fraction arithmetic. The full scoped claim does not close because the 16/10/26 row coverage is delegated to dynamically imported `scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py`, whose source/cache are absent from the restricted packet despite being imported by the primary runner.
 - **rationale:** Issue: the primary runner dynamically imports the measure-weight subdivision runner for row enumeration and lane classification, but that helper source is not included while the packet says no helper imports were detected. Why this blocks: stdout alone is not authoritative for the claimed 16 source-measure/RN rows, 10 trace-normalization rows, and total 26-row coverage. Repair target: include the helper runner source and SHA-pinned cache, or inline an independently auditable row enumeration in the packet. Claim boundary until fixed: the supplied finite RN/trace normalization identity is exact, but row-coverage certification remains runner-artifact-conditional.
 - **auditor confidence:** medium
+
+### `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality`
+
+- **Note:** [`PRIMITIVE_P_BAE_M1_M2_DUALITY_NOTE_2026-05-10_pPbae_duality.md`](../../docs/PRIMITIVE_P_BAE_M1_M2_DUALITY_NOTE_2026-05-10_pPbae_duality.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite coefficient-space algebra for the Hermitian C3-circulant: literal trace degeneracy, the positive-energy equal block-log saddle, its BAE amplitude translation, and the factor-two curvature distinction; no physical selector, primitive election, or framework-level BAE closure.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00234-primitive_p_bae_m1_m2_dualit`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Under E_plus = 3a^2 and E_perp = 6|b|^2, the equal block-log stationary condition E_plus = E_perp gives |b|^2/a^2 = 1/2.  _(class `A`)_
+- **chain closes:** True — For N > 0, differentiating log(x)+log(N-x) gives the unique interior stationary point x=N/2, and the displayed Frobenius identities then give the stated amplitude ratio. Trace linearity and direct differentiation also establish the scoped degeneracy and curvature claims.
+- **rationale:** The load-bearing result is exact finite algebra with no empirical, calibrated, or cross-note input. The runner computes the block-log derivatives, stationary point, and curvature relation, while the amplitude translation follows directly from the displayed energy identities. Some runner bookkeeping checks encode those identities as properties rather than constructing the projectors, but the identities are explicit setup for the narrowly scoped theorem and the subsequent inference is independently checkable.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `qcd_low_energy_running_bridge_note_2026-05-01`
 

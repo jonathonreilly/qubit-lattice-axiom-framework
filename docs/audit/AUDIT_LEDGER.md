@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 100 |
-| **retained_no_go** | 44 |
+| **retained_no_go** | 45 |
 | **retained_bounded** | 416 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
 | unaudited | 2644 |
-| audit_in_progress | 28 |
+| audit_in_progress | 27 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 28 |
-| `audited_clean` | 547 |
+| `audit_in_progress` | 27 |
+| `audited_clean` | 548 |
 | `audited_conditional` | 96 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 44 |
@@ -140,7 +140,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `post_record_clock_rate_interface_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -503,6 +502,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `pmns_tm2_residual_consequence_bounded_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `poisson_backreaction_live_threshold_packet_note_2026-05-29` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_admitted_sample_target_vector_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
+| `post_record_clock_rate_interface_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `post_record_directed_certificate_kernel_selection_firewall_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_supplied_kernel_selection_rule_interface_2026-06-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
@@ -7495,6 +7495,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The finite arithmetic implication closes for the supplied examples, but no restricted authority derives the carrier, weights, or physical selector from Record. The note also claims coverage of 10 rows while the completed runner certifies 21, leaving its stated coverage certificate inconsistent.
 - **rationale:** The Fraction-based normalization and path-product calculations are genuine class-A checks, not a first-principles framework computation. The carrier and weights are supplied inputs, while the firewall conclusions are hard-coded false flags and do not derive a physical measure or rule. The 10-versus-21 row-count mismatch is additional evidence that the source certificate is stale, although the bounded finite arithmetic remains valid.
 - **auditor confidence:** high
+
+### `post_record_clock_rate_interface_2026-06-06`
+
+- **Note:** [`POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md`](../../docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite post-record word/count histories determine event order and counts but do not uniquely determine a physical clock or rates; rate formulas are exact only conditional on a supplied strictly increasing clock map.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00086-post_record_clock_rate_inter`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The same finite word/count history admits multiple strictly increasing clock sequences that preserve its order and counts while yielding different elapsed times and rates.  _(class `A`)_
+- **chain closes:** True — The explicit affine and nonuniform clock counterexamples establish algebraic non-identifiability from the fixed history. The accepted premises supply neither a record-event-to-clock map nor a rate-selection rule.
+- **rationale:** The load-bearing result is a genuine finite algebraic counterexample: identical words, counts, and prefix order coexist with elapsed times 4, 8, and 10 and therefore with total rates 1, 1/2, and 2/5. The runner computes these quantities with exact Fraction arithmetic; its source-text checks and fixed firewall booleans are not needed for the no-go. The conclusion is strictly branch-local to clock or rate inference from post-record counts alone and preserves supplied-clock, stochastic-process, and physical-dynamics routes.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `post_record_conditional_audit_evidence_ladder_2026-06-06`
 

@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 95 |
-| **retained_no_go** | 37 |
+| **retained_no_go** | 38 |
 | **retained_bounded** | 395 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2709 |
+| unaudited | 2708 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 513 |
+| `audited_clean` | 514 |
 | `audited_conditional` | 78 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3059 |
+| `unaudited` | 3058 |
 
 | claim_type | count |
 |---|---:|
@@ -445,6 +445,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `multipole_tidal_response_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `native_gauge_closure_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `newtonian_distance_law_confirmed` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `nn_lattice_rescaled_kernel_identification_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | C | - |
 | `nonlabel_grown_basin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6304,6 +6305,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner genuinely constructs the residual swap on the eight cube vertices for all three selected axes, forms the projectors, and checks ranks, trace, Hermiticity, and eigenvalue multiplicities. The dependency checks are ledger/status checks rather than physics derivations, while the load-bearing eigenvalue calculation is algebraic over the retained graph-first SU3 integration parent. Because the same abelian eigenvalue surface is already explicitly contained in that parent and this note deliberately narrows scope rather than adding a new theorem, the appropriate conservative verdict is decoration, not a new bounded theorem.
 - **decoration parent:** `graph_first_su3_integration_note`
 - **auditor confidence:** high
+
+### `native_holonomy_plaquette_center_flux_no_go_note_2026-05-23`
+
+- **Note:** [`NATIVE_HOLONOMY_PLAQUETTE_CENTER_FLUX_NO_GO_NOTE_2026-05-23.md`](../../docs/NATIVE_HOLONOMY_PLAQUETTE_CENTER_FLUX_NO_GO_NOTE_2026-05-23.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The two packet-supplied native hop identifications—Clifford-folded Gamma_mu hops and graph-first cube-axis shifts—have scalar single-plaquette holonomies with zero traceless su(3) component; no broader action-derived or lattice-wide connection route was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00255-native_holonomy_plaquette_ce`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the Clifford-folded hops anticommutation gives W_mu_nu = -I, while for the mutually commuting cube shifts W_mu_nu = +I, so in both cases the traceless component vanishes exactly.  _(class `A`)_
+- **chain closes:** True — The retained authorities supply the explicit Clifford generators and graph-first shifts. Anticommutation or commutation then algebraically fixes every tested plaquette commutator to -I or +I, whose trace subtraction is identically zero.
+- **rationale:** The runner directly constructs the Pauli-tensor operators, forms their group commutators, and computes scalarity and traceless norms; it does not print assumed results or import a comparator. Both cited authorities are retained-grade, and the conclusion is a genuine algebraic closure over their explicit operators. The verdict is restricted to the two named native hop identifications and does not rule out a connection derived from an additional gauge, action, locality, or variational principle.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `newton_law_derived_note`
 

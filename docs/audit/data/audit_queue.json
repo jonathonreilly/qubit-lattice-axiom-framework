@@ -3,7 +3,7 @@
     "critical": 650,
     "high": 335,
     "leaf": 1098,
-    "medium": 742
+    "medium": 741
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -31143,31 +31143,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/flavor_measure_positivity_agnostic_2026_05_31.py",
-      "transitive_descendants": 5
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "native_holonomy_plaquette_center_flux_no_go_note_2026-05-23",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "native_gauge_closure_note",
-        "graph_first_su3_integration_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 3.085,
-      "note_path": "docs/NATIVE_HOLONOMY_PLAQUETTE_CENTER_FLUX_NO_GO_NOTE_2026-05-23.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_holonomy_native_plaquette_discriminator.py",
       "transitive_descendants": 5
     },
     {
@@ -80810,6 +80785,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 543,
-  "total_pending": 2825
+  "ready_count": 542,
+  "total_pending": 2824
 }

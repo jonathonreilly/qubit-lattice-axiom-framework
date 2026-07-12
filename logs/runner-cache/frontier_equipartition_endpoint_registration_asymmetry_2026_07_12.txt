@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/frontier_equipartition_endpoint_registration_asymmetry_2026_07_12.py
+runner_sha256: d89b141eeff9dad964674e9d4af5a6a7b7d9a7362e15c6f8d7f13269bb39cd9d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+[01] [PASS] theta -> theta + 2*pi/3 only permutes the tied spectrum
+[02] [PASS] sum_k lambda_k = 3*a is theta-free
+[03] [PASS] sum_k lambda_k**2 = 3*a**2 + 6*|b|**2 is theta-free
+[04] [PASS] on sqrt(m)=lambda, Q=(1+2*r)/3
+[05] [PASS] reduced-sector cosine gaps have manifest nonnegative forms
+[06] [PASS] min_k cos(theta+2*pi*k/3) = -cos(pi/3-delta)
+[07] [PASS] the spectral minimum decreases monotonically across 0<=delta<=pi/3
+[08] [PASS] the best and worst phase minima are a-|b| and a-2|b|
+[09] [PASS] for |b|<a<2|b|, delta=alpha is the exact zero boundary
+[10] [PASS] the intermediate half-width runs from pi/3 to 0
+[11] [PASS] the worst-phase zero is a=2|b| (the all-phase threshold)
+[12] [PASS] the best-phase zero is a=|b| (the open-window threshold)
+[13] [PASS] r=0 is the all-positive but fully degenerate special case
+[14] [PASS] r=1/2 has exact half-width pi/12
+[15] [PASS] the r=1/2 boundary has one exact zero and no negative eigenvalue
+[16] [PASS] the spectrum is distinct iff |b|>0 and sin(3*theta)!=0
+[17] [PASS] r=1/2 pins Q=2/3 on the positive branch
+[18] [PASS] r=1 has only the zero-width phase set and spectrum (3*a,0,0)
+[19] [PASS] r=1 positive-branch registration is doublet-degenerate
+[20] [PASS] sign branch at theta=pi/6 gives the exact supervisor spectrum
+[21] [PASS] theta=pi/6 is non-degenerate and Q=9/(13+4*sqrt(3))
+[22] [PASS] theta=pi/12 is a second exact non-degenerate sign-branch point
+[23] [PASS] the two non-degenerate sign-branch points have different exact Q
+RESIDUAL (declared-open): sqrt(m_k)=lambda_k is this note's unadopted bridge element.
+RESIDUAL (declared-open): lambda_k>=0 is the positive-branch convention.
+RESIDUAL (declared-open): the three-distinct-value comparator is named, not thresholded.
+RESIDUAL (declared-open): the equipartition/dial law still selects neither endpoint.
+TOTAL: PASS=23 FAIL=0
+VERDICT: exact tied-section asymmetry verified conditionally: r=1 has no non-degenerate positive-branch registration, r=1/2 has an open one with Q=2/3, and the sign branch restores non-degeneracy at r=1 only by making Q phase-dependent. No premise is adopted and no audit status is set.
+
+----- stderr -----
+

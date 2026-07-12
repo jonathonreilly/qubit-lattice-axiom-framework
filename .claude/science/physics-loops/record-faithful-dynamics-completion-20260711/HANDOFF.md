@@ -13,6 +13,10 @@ null descent and contraction need a separate domination/generalized-spectrum
 theorem. Block16 PR #5278 is the stacked base and independent audit remains
 authoritative.
 
+Full coupled periodic two-seam reflected-Gram stacked review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5286
+is open against the Block16 head.
+
 Two-seam forest/holonomy stacked review PR:
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5278
 is open against the Block15 head.

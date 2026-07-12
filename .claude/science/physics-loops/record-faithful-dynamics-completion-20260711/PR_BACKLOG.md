@@ -1,5 +1,20 @@
 # PR Delivery
 
+The onsite-charge common-Hamiltonian strict-QCA dichotomy is delivered as the
+next stacked review PR:
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5250
+- base: `physics-loop/record-faithful-dynamics-block10-common-hamiltonian-20260711`
+- head: `physics-loop/record-faithful-dynamics-block11-noncommuting-common-h-20260712`
+- source runner: `PASS=40 FAIL=0`
+- disposition: exact bounded theorem with explicit larger-carrier escape;
+  independent claim, math/code, governance, N1--N8, and audit-system
+  validation passed; only `minimal_axioms` seeded, strict lint has no errors,
+  and generated status surfaces were stripped
+- delivery check: open, mergeable, audit workflow running
+
+No merge is authorized. Independent audit remains authoritative.
+
 The cubic neighbor-response result was pushed and opened for review:
 
 - PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178

@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 419 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2626 |
+| unaudited | 2625 |
 | audit_in_progress | 28 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 101 |
-| ~~audited_failed~~ | 24 |
+| ~~audited_failed~~ | 25 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -49,10 +49,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 557 |
 | `audited_conditional` | 101 |
 | `audited_decoration` | 22 |
-| `audited_failed` | 46 |
+| `audited_failed` | 47 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2976 |
+| `unaudited` | 2975 |
 
 | claim_type | count |
 |---|---:|
@@ -837,6 +837,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
+| `g_bare_dynamical_fixation_obstruction_note_2026-04-18` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `h0125_failure_derivation` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
@@ -4715,6 +4716,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The proof is elementary algebra over R_{>0}: solve beta*g^2=K under each admission specialization and count the resulting free parameters. The runner verifies the symbolic identities and exact rational witnesses with PASS=52, FAIL=0, and the note has no load-bearing dependencies.
 - **rationale:** The scoped theorem closes because every claimed case follows directly from the single relation beta*g^2=K over positive reals: K alone leaves a one-parameter curve, fixed K and beta or fixed K and g gives a unique positive solution for the third variable, and no admissions leave a two-parameter surface. The runner checks the symbolic substitutions, exact rational samples, dimension count, round trips, and negative examples without importing any physical interpretation. Residual risk is scope drift only: this audit does not ratify any physical claim that g_bare=1 is forced in the lattice gauge setting.
 - **auditor confidence:** high
+
+### `g_bare_dynamical_fixation_obstruction_note_2026-04-18`
+
+- **Note:** [`G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md`](../../docs/G_BARE_DYNAMICAL_FIXATION_OBSTRUCTION_NOTE_2026-04-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The cached L=4 scan supports no detector-loud beta=6 feature for plaquette, log-det density, lambda_min, and the runner's computed per-configuration Polyakov-magnitude, lambda_1-minus-lambda_0 spacing, and truncated low-mode-count surrogates; it does not establish the named |<L>|, spectral-gap, or rho(0) detector claims.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00119-g_bare_dynamical_fixation_ob`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The completed L=4 detector surface does not provide a dynamical critical feature that fixes g_bare = 1.  _(class `C`)_
+- **chain closes:** False — The runner performs a genuine finite-lattice computation, but three computed quantities do not match their named observables: it averages |L_config| rather than computing |<L>|, calls lambda_1-lambda_0 the gap near zero, and calls a thresholded count among only 12 modes rho(0). The six-detector conclusion therefore does not close as written.
+- **rationale:** Issue: the runner misidentifies three of the six named observables even though its harness reports six PASS checks. Why this blocks: the negative conclusion is explicitly quantified over |<L>|, the spectral gap near zero, and rho(0), but the code instead evaluates mean per-configuration magnitude, adjacent-singular-value spacing, and a truncated threshold count. Repair target: compute the named observables or rename and narrow the source note to the actual surrogates, then rerun the detector criterion. Claim boundary until fixed: the finite cache supports only the correctly named observables and the three explicitly identified surrogate quantities.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1: the named Polyakov-loop, spectral-gap, and rho(0) routes remain OPEN because the runner computes different surrogate quantities.
+    - N3: detector identity is an undisclosed wall in the source-to-runner chain.
+    - N5: the six-detector rhetoric includes three untested named resolutions.
 
 ### `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10`
 

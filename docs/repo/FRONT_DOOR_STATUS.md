@@ -32,16 +32,16 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3754 |
-| Applied audit verdicts | 725 |
-| Retained-grade rows, including boxed decorations | 576 |
+| Applied audit verdicts | 731 |
+| Retained-grade rows, including boxed decorations | 579 |
 | Retained positive theorems | 100 |
-| Retained no-go rows | 42 |
-| Retained bounded rows | 414 |
+| Retained no-go rows | 44 |
+| Retained bounded rows | 415 |
 | Boxed decorations under retained parents | 20 |
 | Open gates | 9 |
-| Unaudited rows | 2651 |
+| Unaudited rows | 2644 |
 | Retained-pending-chain rows | 1 |
-| Audited conditional rows | 94 |
+| Audited conditional rows | 96 |
 | Audited renaming rows | 18 |
 | Audited numerical-match rows | 6 |
 | Citation cycles detected | 10 |
@@ -53,10 +53,10 @@ Source: [`docs/audit/AUDIT_LEDGER.md`](../audit/AUDIT_LEDGER.md) and
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2794 |
-| Ready rows | 519 |
+| Total pending rows | 2791 |
+| Ready rows | 518 |
 | Cycle-break targets | 49 |
-| Critical pending | 645 |
+| Critical pending | 642 |
 | High pending | 335 |
 | Medium pending | 718 |
 | Leaf pending | 1096 |
@@ -77,7 +77,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **554**.
+- Non-retained-grade cited rows in publication tables: **553**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
@@ -85,7 +85,7 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | high | `unaudited` | 176 |
 | medium | `unaudited` | 124 |
 | critical | `audited_conditional` | 11 |
-| critical | `audit_in_progress` | 5 |
+| critical | `audit_in_progress` | 4 |
 | critical | `audited_failed` | 3 |
 | critical | `audited_numerical_match` | 2 |
 | critical | `audited_renaming` | 1 |

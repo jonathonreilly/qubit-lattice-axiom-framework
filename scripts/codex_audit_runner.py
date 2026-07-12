@@ -302,6 +302,7 @@ REQUIRED_VERDICT_FIELDS = {
     "chain_closure_explanation",
     "verdict",
     "verdict_rationale",
+    "negative_assertion_classes",
 }
 
 # A validator-guided correction pass may repair evidence locators in the

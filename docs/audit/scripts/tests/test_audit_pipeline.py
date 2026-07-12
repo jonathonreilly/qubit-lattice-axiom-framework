@@ -860,6 +860,7 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_type": "positive_theorem",
             "claim_scope": "test scope",
             "auditor": "test-auditor",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.6",
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
@@ -891,6 +892,7 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_type": "positive_theorem",
             "claim_scope": "test",
             "auditor": "weak-auditor",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.6",
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
@@ -912,6 +914,7 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_type": "positive_theorem",
             "claim_scope": "test scope",
             "auditor": "old-model-auditor",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.5",
             "auditor_model": "gpt-5.5",
             "auditor_reasoning_effort": "xhigh",
@@ -940,6 +943,7 @@ class ApplyAuditTest(unittest.TestCase):
             "status": "awaiting_second",
             "first_audit": {
                 "auditor": "same-session",
+                "negative_assertion_classes": [],
                 "auditor_family": "codex-gpt-5.6",
                 "auditor_model": "gpt-5.6-sol",
                 "auditor_reasoning_effort": "xhigh",
@@ -956,6 +960,7 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_type": "positive_theorem",
             "claim_scope": "test scope",
             "auditor": "same-session",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.6",
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
@@ -989,6 +994,7 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_type": "positive_theorem",
             "claim_scope": "test scope",
             "auditor": "invocation-auditor",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.6",
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
@@ -1013,6 +1019,7 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_type": "positive_theorem",
             "claim_scope": "test scope",
             "auditor": "manual-auditor",
+            "negative_assertion_classes": [],
             "auditor_family": "human",
             "auditor_model": "human-review",
             "auditor_reasoning_effort": "strong",
@@ -1065,6 +1072,7 @@ class ApplyAuditTest(unittest.TestCase):
             "auditor_reasoning_effort": "xhigh",
             "independence": "cross_family",
             "load_bearing_step_class": "C",
+            "negative_assertion_classes": [],
         }
         first = {**base, "auditor": "first", "audit_invocation_id": "a" * 32}
         second = {**base, "auditor": "second", "audit_invocation_id": "b" * 32}
@@ -1088,6 +1096,7 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_type": "positive_theorem",
             "claim_scope": "test scope",
             "auditor": "manifest-auditor",
+            "negative_assertion_classes": [],
             "auditor_family": "human-review",
             "auditor_model": "human",
             "auditor_reasoning_effort": "strong",
@@ -1117,6 +1126,7 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_type": "positive_theorem",
             "claim_scope": "test scope",
             "auditor": "clipped-auditor",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.6",
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
@@ -1219,6 +1229,7 @@ class ApplyAuditTest(unittest.TestCase):
         row = led["rows"]["test_terminal_disagreement"]
         row.update({
             "auditor": "first-auditor",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.6",
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
@@ -1234,6 +1245,7 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_type": "positive_theorem",
             "claim_scope": "second scope",
             "auditor": "second-auditor",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.6",
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
@@ -1270,6 +1282,7 @@ class ApplyAuditTest(unittest.TestCase):
         led = self.fx.read_ledger()
         led["rows"]["test_main_disagreement"].update({
             "auditor": "first-auditor",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.6",
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
@@ -1286,6 +1299,7 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_type": "positive_theorem",
             "claim_scope": "second scope",
             "auditor": "second-auditor",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.6",
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
@@ -1326,6 +1340,7 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_scope": "the scoped selector obstruction mechanism",
             "chain_closes": True,
             "auditor": "fresh-no-go-auditor",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.6",
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
@@ -1457,6 +1472,7 @@ class ApplyAuditTest(unittest.TestCase):
             "cross_confirmation": {
                 "first_audit": {
                     "auditor": "legacy-first", "auditor_family": "codex-gpt-5.5",
+                    "negative_assertion_classes": [],
                     "verdict": "audited_clean", "claim_type": "no_go",
                     "claim_scope": "the scoped selector obstruction mechanism",
                     "load_bearing_step_class": "A",
@@ -1477,6 +1493,7 @@ class ApplyAuditTest(unittest.TestCase):
             "auditor_family": "codex-gpt-5.6", "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh", "independence": "cross_family",
             "load_bearing_step_class": "A", "no_go_discipline": packet,
+            "negative_assertion_classes": ["no_go_result"],
         }
         manifest = m.no_go_discipline_gate.build_evidence_manifest(row, led["rows"], self.tmp_root)
         _set_no_go_scan_coverage(packet, manifest)
@@ -1548,6 +1565,7 @@ class ApplyAuditTest(unittest.TestCase):
         second_audit = {
             **fresh_audit,
             "auditor": "fresh-packeted-second",
+            "negative_assertion_classes": [],
             "independence": "fresh_context",
             "audit_invocation_id": "f" * 32,
         }
@@ -1572,6 +1590,7 @@ class ApplyAuditTest(unittest.TestCase):
             "status": "disagreement",
             "first_audit": {
                 "auditor": "first-auditor",
+                "negative_assertion_classes": [],
                 "auditor_family": "codex-gpt-5",
                 "verdict": "audited_clean",
                 "claim_type": "positive_theorem",
@@ -1579,6 +1598,7 @@ class ApplyAuditTest(unittest.TestCase):
             },
             "second_audit": {
                 "auditor": "second-auditor",
+                "negative_assertion_classes": [],
                 "auditor_family": "codex-gpt-5.5",
                 "verdict": "audited_clean",
                 "claim_type": "bounded_theorem",
@@ -1593,6 +1613,7 @@ class ApplyAuditTest(unittest.TestCase):
             "auditor_reasoning_effort": "xhigh",
             "independence": "judicial_review",
             "sided_with": "hybrid",
+            "negative_assertion_classes": [],
             "ratified_verdict": "audited_clean",
             "ratified_claim_type": "bounded_theorem",
             "ratified_load_bearing_step_class": "C",
@@ -1633,6 +1654,7 @@ class ApplyAuditTest(unittest.TestCase):
             "status": "disagreement",
             "first_audit": {
                 "auditor": "first-auditor",
+                "negative_assertion_classes": [],
                 "auditor_family": "codex-gpt-5.6",
                 "verdict": "audited_clean",
                 "claim_type": "no_go",
@@ -1641,6 +1663,7 @@ class ApplyAuditTest(unittest.TestCase):
             },
             "second_audit": {
                 "auditor": "second-auditor",
+                "negative_assertion_classes": [],
                 "auditor_family": "codex-gpt-5.6",
                 "verdict": "audited_conditional",
                 "claim_type": "no_go",
@@ -1656,6 +1679,7 @@ class ApplyAuditTest(unittest.TestCase):
             "auditor_reasoning_effort": "xhigh",
             "independence": "judicial_review",
             "sided_with": "first",
+            "negative_assertion_classes": [],
             "ratified_verdict": "audited_clean",
             "ratified_claim_type": "no_go",
             "ratified_load_bearing_step_class": "A",
@@ -1717,6 +1741,7 @@ class ApplyAuditTest(unittest.TestCase):
             "status": "disagreement",
             "first_audit": {
                 "auditor": "first-auditor",
+                "negative_assertion_classes": [],
                 "auditor_family": "codex-gpt-5.6",
                 "verdict": "audited_clean",
                 "claim_type": "no_go",
@@ -1725,6 +1750,7 @@ class ApplyAuditTest(unittest.TestCase):
             },
             "second_audit": {
                 "auditor": "second-auditor",
+                "negative_assertion_classes": [],
                 "auditor_family": "codex-gpt-5.6",
                 "verdict": "audited_conditional",
                 "claim_type": "no_go",
@@ -1740,6 +1766,7 @@ class ApplyAuditTest(unittest.TestCase):
             "auditor_reasoning_effort": "xhigh",
             "independence": "judicial_review",
             "sided_with": "neither",
+            "negative_assertion_classes": [],
             "ratified_verdict": "audited_conditional",
             "ratified_claim_type": "no_go",
             "ratified_claim_scope": "the scoped obstruction",
@@ -1990,11 +2017,13 @@ class SeedLedgerTest(unittest.TestCase):
                             {
                                 "verdict": "old",
                                 "auditor": "stale-auditor",
+                                "negative_assertion_classes": [],
                                 "auditor_family": "codex-gpt-5",
                             }
                         ],
                         "audit_status": "unaudited",
                         "auditor": "stale-auditor",
+                        "negative_assertion_classes": [],
                         "auditor_family": "codex-gpt-5",
                         "auditor_model": "gpt-5",
                         "auditor_reasoning_effort": "high",
@@ -2033,6 +2062,7 @@ class SeedLedgerTest(unittest.TestCase):
                 {
                     "verdict": "old",
                     "auditor": "stale-auditor",
+                    "negative_assertion_classes": [],
                     "auditor_family": "codex-gpt-5",
                     "auditor_model": "gpt-5",
                     "auditor_reasoning_effort": "high",
@@ -2045,6 +2075,7 @@ class SeedLedgerTest(unittest.TestCase):
         row = {
             "audit_status": "unaudited",
             "auditor": None,
+            "negative_assertion_classes": [],
             "auditor_family": None,
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
@@ -2052,6 +2083,7 @@ class SeedLedgerTest(unittest.TestCase):
                 {
                     "audit_status": "audited_clean",
                     "auditor": "archived-auditor",
+                    "negative_assertion_classes": [],
                     "auditor_family": "codex-gpt-5.6",
                 }
             ],
@@ -2084,6 +2116,7 @@ class SeedLedgerTest(unittest.TestCase):
         row = {
             "audit_status": "unaudited",
             "auditor": None,
+            "negative_assertion_classes": [],
             "auditor_family": None,
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
@@ -2457,6 +2490,7 @@ class ComputeEffectiveStatusTest(unittest.TestCase):
             "cross_confirmation": {
                 "first_audit": {
                     "auditor": "auditor-1",
+                    "negative_assertion_classes": [],
                     "auditor_family": "codex-gpt-5.5",
                     "independence": "cross_family",
                     "verdict": "audited_clean",
@@ -2880,6 +2914,7 @@ class AuditLintTest(unittest.TestCase):
                 "chain_closes": True,
                 "effective_status": "retained_no_go",
                 "auditor": "lint-auditor",
+                "negative_assertion_classes": [],
                 "auditor_family": "codex-gpt-5.6",
                 "auditor_model": "gpt-5.6-sol",
                 "auditor_reasoning_effort": "xhigh",
@@ -2921,6 +2956,7 @@ class AuditLintTest(unittest.TestCase):
             "status": "awaiting_second",
             "first_audit": {
                 "auditor": "first-auditor",
+                "negative_assertion_classes": [],
                 "auditor_family": "codex-gpt-5.6",
                 "verdict": "audited_clean",
                 "claim_type": "no_go",
@@ -3128,6 +3164,7 @@ class AuditLintTest(unittest.TestCase):
                 "effective_status": "retained",
                 "auditor_family": "codex-current",  # legacy
                 "auditor": "x",
+                "negative_assertion_classes": [],
                 "criticality": "leaf",
                 "load_bearing_step_class": "C",
             },
@@ -3159,6 +3196,7 @@ class AuditLintTest(unittest.TestCase):
                 "claim_scope": "bounded theorem with glossary link",
                 "effective_status": "retained_bounded",
                 "auditor": "synthetic-auditor",
+                "negative_assertion_classes": [],
                 "auditor_family": "codex-gpt-5.6",
                 "auditor_model": "gpt-5.6-sol",
                 "auditor_reasoning_effort": "xhigh",
@@ -3210,6 +3248,7 @@ class AuditLintTest(unittest.TestCase):
                 "effective_status": "retained_bounded",
                 "deps": ["key_terminology"],
                 "auditor": "unit-test-auditor",
+                "negative_assertion_classes": [],
                 "auditor_family": "codex-gpt-5.6",
                 "auditor_model": "gpt-5.6-sol",
                 "auditor_reasoning_effort": "xhigh",
@@ -3406,6 +3445,7 @@ class InvalidateStaleAuditsCriticalityBumpTest(unittest.TestCase):
             "claim_id": "test",
             "audit_status": "audited_clean",
             "auditor": "unique-auditor",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.6",
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
@@ -3548,6 +3588,7 @@ class InvalidateStaleAuditsCriticalityBumpTest(unittest.TestCase):
         row = {
             "audit_status": "audited_clean",
             "auditor": "test-auditor-1",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.5",
             "auditor_model": "gpt-5.5",
             "auditor_reasoning_effort": "xhigh",
@@ -3767,6 +3808,351 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "accepted_premise_type": None,
             },
         }
+
+
+    def test_coverage_disclaimers_and_misparses_do_not_gate(self):
+        m = _import("no_go_discipline_gate")
+        for body in (
+            # Note-subject coverage clauses: the note describes its own
+            # coverage, not a framework boundary.
+            "This note does not derive rho = 1/npair; the parent rows carry it.",
+            "The note does not close the continuum-limit extrapolation here.",
+            "This companion cannot determine the physical anchor by itself.",
+            "That table does not supply the normalization; see the parent row.",
+            # Canonical disclaimer sections, including bullet fragments with
+            # no grammatical subject.
+            "## What this does NOT claim\n- Does not derive rho from anything deeper.\n",
+            "## 8. What this does NOT claim\nDoes not select the carrier.\n",
+            "## Boundaries\n- Does not fix the continuum kernel; carried by the parent row.\n",
+            "## Scope\nDoes not close the beta=6 chain; carried by separate rows.\n",
+            "## Boundaries\nThis note does not determine the physical normalization.\n",
+            # Labeled disclaimer bullets.
+            "- Is not: does not supply the 4D cubic-Coxeter completion.\n",
+            "Does not: derive the mass ratio; that is a parent authority.\n",
+            # Misparses: numeric zero, adjectival closed/fixed, uniqueness
+            # clauses, temporal and hygiene negations.
+            "Setting the leapfrog second time-difference to zero gives the unique fixed point.",
+            "So zero order-beta^6 supports are closable: no new closed surface appears.",
+            "No second distinct one-parameter unitary group on H exists with this generator.",
+            "No other faithful realization exists once the parity block is fixed by K4.",
+            "The draft no longer claims a closed-form beta coefficient.",
+            "No APS fixed-point contribution enters at this order.",
+        ):
+            with self.subTest(body=body):
+                self.assertFalse(
+                    m.source_requires_no_go_discipline(
+                        "docs/POSITIVE.md", body, "bounded_theorem"
+                    )
+                )
+                self.assertFalse(
+                    m.output_requires_no_go_discipline({
+                        "claim_type": "bounded_theorem",
+                        "verdict_rationale": body,
+                    })
+                )
+
+    def test_disclaimer_surfaces_do_not_shield_hard_assertions(self):
+        m = _import("no_go_discipline_gate")
+        for body in (
+            # Framework-subject coverage negatives stay gated everywhere.
+            "Record alone cannot select a value.",
+            "The four axioms do not supply a directed arrow on the record order.",
+            "Cardinality alone does not determine the Hilbert-Schmidt cell structure.",
+            "The radical geometry rule does not produce the hoped-for transfer.",
+            # Hard assertions inside disclaimer surfaces still gate.
+            "## Scope\nNo route exists to derive the selector.\n",
+            "## What this does NOT claim\nThe framework cannot lift the obstruction to Z4.\n",
+            # Framework-subject coverage negatives gate even inside
+            # disclaimer sections; only template fragments and note-subject
+            # clauses are exempt there.
+            "## Scope\nThe four axioms do not supply a directed arrow on the record order.\n",
+            "## Boundaries\nThe finite-k identity does not fix the continuum kernel.\n",
+            "## Boundaries\nThis result is bounded with named walls.\n",
+            "- Is not: closable; the residual wall persists.\n",
+            # A compound sentence keeps its boundary tail after the
+            # note-subject clause is scrubbed.
+            "This note does not derive X, and the selector wall prevents closure.",
+            # Note-subject grammar does not shield authority verbs.
+            "This note proves no route exists to close the gap.",
+            # Anaphoric subjects are not treated as note coverage.
+            "The attempted route is explicit. It does not close.",
+            # Uniqueness grammar does not shield authority subjects:
+            # "no other/second <route-class> exists" is a no-route boundary.
+            "No other viable route exists to close the gap.",
+            "No second derivation exists for the selector.",
+            "No other retained authority exists on this surface.",
+        ):
+            with self.subTest(body=body):
+                self.assertTrue(
+                    m.source_requires_no_go_discipline(
+                        "docs/BOUNDARY.md", body, "bounded_theorem"
+                    )
+                )
+
+    def test_review_smuggle_corpus_gates(self):
+        """Every exact genuine-negative phrasing from the 2026-07-12
+        review-loop adversarial passes must gate."""
+        m = _import("no_go_discipline_gate")
+        for body in (
+            # Policy-list tense/paraphrase completion.
+            "In the previous cycle, no admissible route existed within the retained framework.",
+            "There is no route to recover the selector from the retained primitives.",
+            "After the finite-case check, the attempted route did not close.",
+            "Under the retained assumptions, the route will not close.",
+            "Route C does not yet close under the allowed convention reframe.",
+            "#### Stretch outcome\n- The attempted construction has not closed.",
+            "The conclusion was conditional upon three admissions: scale, sector choice, and normalization.",
+            "- The theorem holds subject to two walls: the selector and the source bridge.",
+            "The blockwise identity did not lift to the continuum limit.",
+            "- The mode-by-mode equality fails to lift to a lattice-wide statement.",
+            "At finite size the local identity will not lift globally.",
+            "> The per-mode equality does not generally lift to the continuum.",
+            # Document-subject laundering.
+            "This no-go note cannot derive a selector from any retained primitive.",
+            "The present appendix does not determine a physical scale from the four axioms.",
+            "This note does not derive the selector, nor is such a derivation available from the retained axioms.",
+            "This note does not determine the scale, which remains underdetermined by the framework.",
+            "This note cannot derive a selector from the retained axioms.",
+            "This note does not derive a unique selector from the four axioms, even in principle.",
+            # Labeled payloads with authority content.
+            "- Is not: The four axioms do not supply a selector for the record order.",
+            "Does not: The retained framework cannot determine the normalization.",
+            "Not claimed: Record alone cannot select a temporal orientation.",
+            "1. Out of scope: The admissibility rule does not produce continuum dynamics.",
+            "- Is not: No other derivation exists for the selector under the retained axioms.",
+            "- Is not: the four axioms cannot derive a selector.",
+            "Does not: no mechanism in the framework yields a probability rule.",
+            # Disclaimer sections with authority payloads.
+            "## Scope\n- Does not derive any selector from the retained axioms.",
+            "## 8. What this does NOT claim\nCannot recover a probability rule from the four axioms.",
+            "### Honest boundary\nCannot select a unique physical carrier from Record alone.",
+            "## Boundary conditions\nCannot generate a continuum Hamiltonian from the four axioms.",
+            "## Scope\nThe framework cannot constrain any mixing angle.",
+            "## Limitations\nThe retained framework leaves the scale underdetermined.",
+            "## Scope\nCannot derive any unique physical scale from retained inputs.",
+            "## Boundaries\nNo admissible construction yields a selector.",
+            "## Limitations\nThe retained axioms do not constrain the phase.",
+            "## Caveats\nThe framework cannot distinguish the two sectors.",
+            # Uniqueness grammar over authority subjects.
+            "No other derivation exists from the retained axioms for the selector.",
+            "No second mechanism exists that can supply the missing time arrow.",
+            "No other route exists.",
+            "No other derivation exists.",
+            "No second mechanism exists.",
+            "No other selector mechanism exists.",
+            "After the attempted construction stalls, no other viable derivation route exists for the selector.",
+            "No second viable derivation route exists after the first route fails.",
+            # Temporal and hygiene forms with scientific subjects.
+            "The selector is no longer derivable from the retained axioms.",
+            "A readout mechanism no longer exists within the retained framework.",
+            "No dynamical law is supplied beyond the kinematic sector.",
+            "The retained framework no longer supplies a physical scale.",
+            "The attempted route no longer closes after the registry change.",
+            "No longer-range route closes the selector gap.",
+            "No longer-lived solution exists under the admissible flow.",
+            # Capability and underdetermination predicates.
+            "The framework cannot constrain the mixing angle.",
+            "The retained axioms do not entail a probability rule.",
+            "Record alone cannot generate time evolution.",
+            "The four axioms leave the physical scale underdetermined.",
+            "A unique continuum normalization is impossible to derive from the retained framework.",
+            "The mixing angle cannot be inferred from the retained primitives.",
+            "The retained framework lacks any mechanism for choosing a time orientation.",
+            "The four axioms cannot distinguish the two dynamical sectors.",
+            "Record content alone does not entail a probability measure.",
+            "The retained framework cannot yield a unique continuum scale.",
+            "Local admissibility does not constrain the global topology.",
+            "The retained primitives cannot furnish a physical normalization.",
+            "The axioms do not imply a unique readout map.",
+            "The framework cannot generate a global time orientation.",
+            "The lattice alone does not encode the observed hierarchy.",
+            "The admissibility rules cannot exclude either continuum sector.",
+            "The supplied record data do not privilege one global foliation.",
+            "There is no derivation of the phase from the four axioms.",
+            "The four axioms are insufficient to establish a unique scale.",
+            "The phase remains underdetermined by every retained primitive.",
+            "Deriving the selector from retained structure is impossible.",
+            "A framework-only construction of the clock is impossible.",
+            "The axioms fail to determine a physical scale.",
+            # Authority assertions placed in heading lines still gate.
+            "## Scope\n### The four axioms do not supply a selector\nBody prose.\n",
+            "## What this does NOT claim: the retained framework cannot determine the normalization\nBody.\n",
+            "## Scope: Cannot derive a selector from retained structure\nBody.\n",
+            # 2026-07-12 iteration-2 CodeRunner must-gate misses.
+            "A residual selector wall survives the exact finite calculation.",
+            "This note does not derive rho and the finite-k identity does not fix the continuum kernel.",
+            "No route exists even though the obsolete wall no longer exists after the repair.",
+            "- Not claimed: Record, by itself, cannot select a temporal orientation.",
+            "No other analytic argument exists for the selector.",
+            # 2026-07-12 iteration-3 CodeRunner must-gate corpus.
+            "The baseline rules did not determine the continuum scale.",
+            "The minimal postulates will not determine a continuum normalization.",
+            "The finite-block identity doesn't lift to the continuum sector.",
+            "The temporal phase can't be derived from the retained inputs.",
+            "The attempted route hasn't closed after the finite scan.",
+            "The construction won't close under the admitted normalization.",
+            "The theorem never closes the selector wall.",
+            "The attempted route never closes at finite cutoff.",
+            "The construction never supplied the required admission.",
+            "Neither admission is supplied by the exact identity.",
+            "Not one admissible route closes the selector gap.",
+            "No means exists to orient the record chain.",
+            "There can be no admissible route to the selector.",
+            "There could be no derivation of the temporal phase.",
+            "An admissible recovery path does not exist in the retained sector.",
+            "No symmetry-compatible route could be found for the normalization.",
+            "The selector admits no derivation from local structure.",
+            "No other derivation from local symmetry exists for the continuum scale.",
+            "No other route through the finite representation exists for the selector.",
+            "## 12. Limitations\nCannot derive the temporal selector from the\nretained axioms.\n",
+            "This note cannot derive the temporal selector from the\nretained axioms.",
+            "Not claimed: cannot derive a temporal selector from the\nretained axioms.",
+            "This note cannot derive a temporal selector \u2014 from any retained primitive.",
+            "This note cannot derive the selector from the approved premises.",
+            "The present appendix does not determine the scale from the baseline postulates.",
+            "That document cannot recover the clock from the accepted assumptions.",
+            "This companion does not select an orientation from the four named principles.",
+            "- Not claimed: The finite-size identity does not determine the continuum kernel.",
+            "## Scope: The finite-size identity does not fix the continuum kernel\nSupporting detail.\n",
+            "The baseline algebra did not supply a unique normalization.",
+            "The selector wall no longer blocks route A but blocks route B.",
+            "The finite-size transfer did not fix the infinite-volume kernel.",
+            # Verb reading of closed/fixes with zero-count subjects.
+            "No symmetry rule fixes points in the residual orbit.",
+            "No numerical route closed loops in the sampled sector.",
+            "Zero candidate operators determine the missing readout.",
+        ):
+            with self.subTest(body=body):
+                self.assertTrue(
+                    m.source_requires_no_go_discipline(
+                        "docs/X.md", body, "bounded_theorem"
+                    ),
+                    body,
+                )
+        for rationale in (
+            "The row remains conditional because the readout wall is still open.",
+            "The bounded verdict was issued subject to an unretired selector wall.",
+        ):
+            with self.subTest(rationale=rationale):
+                self.assertTrue(
+                    m.output_requires_no_go_discipline({
+                        "claim_type": "bounded_theorem",
+                        "verdict_rationale": rationale,
+                    }),
+                    rationale,
+                )
+
+    def test_review_control_corpus_stays_exempt(self):
+        """Every exact coverage/affirmative control from the 2026-07-12
+        review-loop passes must stay non-gating."""
+        m = _import("no_go_discipline_gate")
+        for body in (
+            "The obsolete obstruction no longer exists after the repair.",
+            "The residual wall no longer exists after normalization.",
+            "The draft no longer claims X.",
+            "No additional closed form is introduced by the exact identity.",
+            "No newly closed-loop orbit is asserted in the theorem.",
+            "Zero selects the unique fixed locus of the affine map.",
+            "At coupling zero the transfer map fixes the unique fixed point.",
+            "At zero temperature the exact transfer derives the continuum coefficient.",
+            "For zero momentum the retained operator determines the unique eigenvalue.",
+            "Taking the coefficient to zero produces a unique fixed locus.",
+            "No distinct second admissible extension exists once the generator is fixed.",
+            "7) Not claimed: does not recover the fitted coefficient.\n",
+            "## 7 Scope\nDoes not derive the parent coefficient.\n",
+            "## 7) Scope\nDoes not derive the parent coefficient.\n",
+            "## 4.2 Limitations\nDoes not determine the imported lattice spacing.\n",
+            "## Limitations\n### Parameter routing\nDoes not determine the laboratory scale; the parent row does.\n",
+            "   ## Scope\nDoes not close the imported calibration chain.\n",
+            "## Does not derive\nThe cited parent theorem supplies the coefficient.\n",
+            "## Caveats\n- Does not recover the calibrated unit conversion.\n",
+            "This audit note does not derive the observed scale; the source row carries it.",
+            # 2026-07-12 iteration-2 CodeRunner must-not-gate misses.
+            "## 9.3 Caveats\n2) Does not derive the external calibration constant.\n",
+            "The exact transfer closes every residual wall and removes the obstruction.",
+            "The scalar zero uniquely determines the affine origin.",
+            "No additional fixed point appears in the affine chart.",
+            "The manuscript no longer explicitly reports that a smooth solution exists.",
+            "Following normalization, the obsolete wall demonstrably no longer persists.",
+            "No other unitary representation of the path algebra exists.",
+            "It is by no means impossible to derive the phase; the displayed map derives it.",
+            "## 11: Scope\nDoes not derive the external benchmark.\n",
+            # 2026-07-12 iteration-3 CodeRunner must-not-gate corpus.
+            "No other unitary representation of these directed paths exists.",
+            "No other continuous map between these paths exists.",
+            "No mathematically distinct admissible second representation exists.",
+            "A zero eigenvalue determines the invariant subspace.",
+            "Zero curvature selects the flat connection uniquely.",
+            "No new fixed background enters the expansion.",
+            "No new fixed locus appears in the affine chart.",
+            "No additional fixed background is introduced in this expansion.",
+            "No extra fixed surface emerges after gauge reduction.",
+            "It is not generally impossible to derive the phase; this displayed map does so.",
+            "This note does not derive the retained coefficient; the parent theorem supplies it.",
+            "## 7 - Scope\nDoes not derive external epsilon.\n",
+            "7 - Not claimed: cannot recover the external benchmark.",
+            "17) Out of scope: cannot recover the observed benchmark.",
+            "This audit appendix does not derive the external calibration; the parent row supplies it.",
+        ):
+            with self.subTest(body=body):
+                self.assertFalse(
+                    m.source_requires_no_go_discipline(
+                        "docs/POSITIVE.md", body, "bounded_theorem"
+                    ),
+                    body,
+                )
+
+    def test_negative_assertion_declaration_contract(self):
+        """The auditor's semantic declaration is mandatory on incoming
+        audits and requires the packet independently of the regex floor."""
+        m = _import("no_go_discipline_gate")
+        base = {
+            "claim_type": "bounded_theorem",
+            "verdict": "audited_clean",
+            "claim_scope": "an affirmative identity",
+            "verdict_rationale": "The identity closes.",
+        }
+        # Missing declaration is rejected when required.
+        error = m.validate_no_go_discipline(
+            dict(base), require_declaration=True
+        )
+        self.assertIn("negative_assertion_classes", error or "")
+        # Unknown class slug is rejected.
+        error = m.validate_no_go_discipline(
+            {**base, "negative_assertion_classes": ["spooky_negativity"]},
+            require_declaration=True,
+        )
+        self.assertIn("unknown classes", error or "")
+        # A declared class requires the packet even when the regex floor
+        # does not fire.
+        error = m.validate_no_go_discipline(
+            {**base, "negative_assertion_classes": ["derived_no_go_boundary"]},
+            require_declaration=True,
+        )
+        self.assertEqual(
+            error, "No-Go Discipline N1-N8 packet is required for this audit"
+        )
+        # An empty declaration does not bypass the mechanical floor.
+        error = m.validate_no_go_discipline(
+            {
+                **base,
+                "negative_assertion_classes": [],
+                "verdict_rationale": "A residual selector wall persists.",
+            },
+            require_declaration=True,
+        )
+        self.assertEqual(
+            error, "No-Go Discipline N1-N8 packet is required for this audit"
+        )
+        # Empty declaration + clean prose passes without a packet.
+        self.assertIsNone(
+            m.validate_no_go_discipline(
+                {**base, "negative_assertion_classes": []},
+                require_declaration=True,
+            )
+        )
+        # Archived-blob validation paths do not demand the field.
+        self.assertIsNone(m.validate_no_go_discipline(dict(base)))
 
     def test_source_and_output_triggers_are_conservative(self):
         m = _import("no_go_discipline_gate")
@@ -5534,6 +5920,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "chain_closure_explanation": "the identity closes",
             "verdict": "audited_clean",
             "verdict_rationale": "the algebra closes",
+            "negative_assertion_classes": [],
             "no_go_discipline": None,
         }
         self.assertIsNone(m.validate_verdict(positive, "positive"))
@@ -5604,6 +5991,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "chain_closure_explanation": "one route remains open",
             "verdict": "audited_conditional",
             "verdict_rationale": "the packet is incomplete",
+            "negative_assertion_classes": ["no_go_result"],
             "no_go_discipline": {
                 "required": True,
                 "status": "FAIL",
@@ -6274,6 +6662,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "claim_id": "positive", "note_path": "docs/POSITIVE.md",
                 "audit_status": "audited_clean", "claim_type": "positive_theorem",
                 "auditor": "legacy", "auditor_family": "codex-gpt-5.6",
+                "negative_assertion_classes": [],
             }
             self.assertIsNone(m.detect_invalidation(row, {"positive": row}))
 
@@ -6946,14 +7335,17 @@ class RelabelUnverifiedCodexAuditsTest(unittest.TestCase):
         row = {
             "audit_status": "audited_conditional",
             "auditor": "codex-audit-loop",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5",
             "cross_confirmation": {
                 "first_audit": {
                     "auditor": "codex-audit-loop",
+                    "negative_assertion_classes": [],
                     "auditor_family": "codex-gpt-5",
                 },
                 "second_audit": {
                     "auditor": "independent-human",
+                    "negative_assertion_classes": [],
                     "auditor_family": "codex-gpt-5",
                 },
             },
@@ -7028,6 +7420,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             "audit_status": audit_status,
             "independence": independence,
             "auditor": "codex-test",
+            "negative_assertion_classes": [],
             "auditor_family": auditor_family,
             "auditor_model": "gpt-5.6-sol",
             "auditor_reasoning_effort": "xhigh",
@@ -7504,6 +7897,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             "claim_type": None,
             "claim_type_provenance": "needs_reaudit_after_invalidation",
             "auditor": None,
+            "negative_assertion_classes": [],
             "previous_audits": [archived],
         }
         new_row = m.restore_audit_from_previous(row)
@@ -7545,6 +7939,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             "claim_type": None,
             "claim_type_provenance": "needs_reaudit_after_invalidation",
             "auditor": None,
+            "negative_assertion_classes": [],
             "audit_invocation_id": "b" * 32,
             "audit_invocation_history": ["a" * 32, "b" * 32],
             "previous_audits": [archived],
@@ -7660,6 +8055,7 @@ class ComputeAuditDispatchQueueTest(unittest.TestCase):
             "independence": independence,
             "deps": list(deps or []),
             "auditor": auditor,
+            "negative_assertion_classes": [],
             "auditor_family": auditor_family,
         }
 
@@ -8190,6 +8586,7 @@ class AuditLintDispatchQueueTest(unittest.TestCase):
             "claim_type": "bounded_theorem",
             "effective_status": "retained_bounded",
             "auditor": "x",
+            "negative_assertion_classes": [],
             "auditor_family": "codex-gpt-5.5",
             "criticality": "leaf",
             "claim_scope": "real scope",

@@ -22,6 +22,10 @@ The next exact route is a spatial-volume-uniform tightness/locality theorem and
 one controlled `Lambda_s -> Z^3` Gibbs/OS limit. Gauge infrared control, not
 temporal uniqueness, is now the active wall.
 
+Massive log-determinant Hölder/Ruelle uniqueness stacked review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5294
+is open against the coupled OS subsequential-transfer head.
+
 Previous branch:
 `physics-loop/record-faithful-dynamics-block18-coupled-os-descent-20260712`.
 The coupled OS descent/infinite-time runner reports `PASS=9 FAIL=0`.

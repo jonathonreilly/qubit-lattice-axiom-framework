@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Audit-prep verifier for dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16.
+"""Historical dependency-compatibility verifier for the relative-action note.
 
-Verifies docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16_NOTE_2026-05-17.md.
+Checks the current parent note. The dated findings note documents why its old
+one-edge pin was superseded; this runner does not verify that historical table.
 
 Programmatic checks:
   - The parent note exists at the expected path.
-  - CITED deps (>=1 hit, classification deferred to audit-lane judgment based on context).
+  - Current foundation premise notes are cited (>=1 hit each).
   - NOT-CITED deps (0 hits, programmatically certain).
 """
 
@@ -23,7 +24,10 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 PARENT_PATH = REPO_ROOT / "docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md"
 
 CITED_DEPS = [
-    "dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16",
+    "minimal_axioms_2026-06-29",
+    "realized_state_primitive_note_2026-06-11",
+    "scale_reference_primitive_note",
+    "kinetic_isotropy_primitive_note_2026-06-09",
 ]
 
 NOT_CITED_DEPS = [
@@ -53,7 +57,7 @@ def grep_count(content: str, needle: str) -> int:
 
 def main() -> int:
     print("=" * 78)
-    print("AUDIT-PREP VERIFIER — dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16")
+    print("DEPENDENCY-COMPATIBILITY VERIFIER — dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16")
     print("=" * 78)
 
     if not PARENT_PATH.exists():

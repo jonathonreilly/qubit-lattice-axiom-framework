@@ -1,31 +1,32 @@
 # DM Selector Relative-Action / Recovered Projection Support Theorem
 
 **Date:** 2026-04-21  
-**Status:** selector-side bridge support theorem on the open DM gate  
+**Status:** bounded projection support for a supplied candidate on the open DM gate
+**Claim type:** bounded_theorem
 **Primary runner:** `scripts/frontier_dm_selector_relative_action_recovered_projection_support_2026_04_21.py`
 
 ## Statement
 
-The exact observable-relative-action selector and the recovered
-right-sensitive threshold branch remain distinct exact selector objects.
+The supplied observable-relative-action candidate and the recovered
+right-sensitive threshold candidate remain distinct constructions.
 However, they are no longer disconnected on the current branch science.
 
-There is now a **canonical recovered projection packet** of the internal
-selector:
+There is a reproducible recovered projection packet of the conditional
+candidate:
 
 - the relative-action source is uniquely nearest to the preferred recovered
   lift in Frobenius distance on `H`,
 - uniquely nearest in Euclidean distance on the active target `(delta, q_+)`,
 - uniquely nearest in threshold-profile distance on the exact witness-volume
-  family at the audited anchor positive window,
-- and uniquely nearest across all audited common positive windows in each of:
+  family at the checked anchor positive window,
+- and uniquely nearest across all checked common positive windows in each of:
   - affine-invariant Riemannian distance on `A_mu(H)`,
   - forward LogDet divergence `D(A_rel || A_i)`,
   - reverse LogDet divergence `D(A_i || A_rel)`,
   - inverse-eigenvalue parameter distance.
 
-The same preferred recovered lift is already the unique point selected by the
-exact intrinsic threshold breakpoint candidate
+The same preferred recovered lift is the unique point returned by the
+intrinsic threshold breakpoint candidate
 
 ```text
 tau_b,min = min_i log(1 + b_i).
@@ -33,7 +34,7 @@ tau_b,min = min_i log(1 + b_i).
 
 So the remaining selector burden narrows again. The live positive target is no
 longer to discover some disconnected recovered-bank object. It is to justify
-the projection principle from the exact internal selector to that preferred
+the projection principle from the supplied conditional candidate to that preferred
 recovered lift, or else to replace both current selector objects by a finer
 microscopic law.
 
@@ -46,19 +47,17 @@ Two same-day support theorems had already sharpened the selector lane:
    `tau_b,min`, which belongs uniquely to the preferred recovered lift and
    already selects it on the exact threshold-volume family.
 2. `docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_BRANCH_SEPARATION_SUPPORT_THEOREM_NOTE_2026-04-21.md`
-   proved that the strongest current framework-internal selector law — the
-   exact observable-relative-action law on the fixed native `N_e` seed
-   surface — does not itself land on the recovered selector branch and
+   showed that the supplied observable-relative-action candidate on the fixed
+   `N_e` seed parameterization does not land on the recovered branch and
    instead carries a later breakpoint `tau_b,rel`.
 
-That left the branch with two exact selector objects but no bridge between
-them.
+That left two conditional candidate constructions with no physical bridge.
 
 ## New support theorem
 
 ### 1. Shift-independent nearest recovered point
 
-Let `H_rel` be the exact observable-relative-action source and let
+Let `H_rel` be the conditional relative-action source and let
 `{H_i}` be the recovered bank.
 
 Then:
@@ -66,7 +65,7 @@ Then:
 - the unique nearest recovered point to `H_rel` in Frobenius norm is lift `0`,
 - the unique nearest recovered active target to
   `T_rel = (delta_rel, q_+,rel)` in Euclidean norm is also lift `0`,
-- and at the audited anchor positive window the exact threshold-profile
+- and at the checked anchor positive window the threshold-profile
   distance
 
 ```text
@@ -75,12 +74,12 @@ Then:
 
 is minimized uniquely by lift `0`.
 
-So even before invoking any SPD geometry, the internal selector already points
+So even before invoking any SPD geometry, the supplied candidate points
 canonically to one recovered-bank image.
 
 ### 2. Common-positive-window geometry agrees
 
-For every audited common positive shift
+For every checked common positive shift
 
 ```text
 mu = max repair + offset,
@@ -97,18 +96,18 @@ under each of:
 - reverse LogDet divergence,
 - inverse-eigenvalue parameter distance.
 
-So the canonical recovered projection is stable across the audited common
+So the preferred recovered neighbor is stable across the checked common
 positive windows and across a nontrivial intrinsic metric family.
 
-### 3. Agreement with the recovered threshold selector
+### 3. Agreement with the recovered threshold candidate
 
 The same preferred recovered lift `0` is already selected by the exact
 recovered-bank breakpoint candidate `tau_b,min`.
 
 Therefore the branch now has:
 
-- one exact internal selector object,
-- one exact recovered-bank selector object,
+- one supplied relative-action candidate,
+- one recovered-bank threshold candidate,
 - and one canonical recovered projection packet identifying the same
   preferred recovered lift.
 
@@ -120,13 +119,13 @@ It does sharpen the remaining microscopic burden again.
 
 Before this note, the live selector statement was:
 
-- bridge the exact internal selector law to the recovered right-sensitive
+- derive and bridge the supplied relative-action candidate to the recovered right-sensitive
   selector branch, or replace both by a finer microscopic law.
 
 After this note, the sharper positive target is:
 
-- justify why the physical selector uses the canonical recovered projection of
-  the exact internal selector onto the preferred recovered lift already
+- justify why a physical selector uses the recovered projection of
+  the supplied candidate onto the preferred recovered lift
   singled out by `tau_b,min`, or
 - derive a finer microscopic law that supersedes both current selector
   objects.
@@ -138,13 +137,13 @@ projection-principle problem.
 
 This is a support theorem, not closure.
 
-It does **not** prove that any one audited metric is itself the physical
+It does **not** prove that any one checked metric is itself the physical
 selector law, and it does **not** derive the projection principle from bare
 axioms.
 
-It proves only that the current exact branch science no longer leaves the
-internal selector and the recovered branch unrelated: the same preferred
-recovered lift is already canonical across the audited projection packet.
+It proves only that the supplied conditional calculation and recovered branch
+are metrically related: the same preferred
+recovered lift is consistently nearest across the checked projection packet.
 
 ## Reproduction
 
@@ -155,7 +154,7 @@ PYTHONPATH=scripts python3 scripts/frontier_dm_selector_relative_action_recovere
 Expected:
 
 ```text
-SUMMARY: PASS=13 FAIL=0
+SUMMARY: PASS=12 FAIL=0
 ```
 
 ## Audit dependency repair links

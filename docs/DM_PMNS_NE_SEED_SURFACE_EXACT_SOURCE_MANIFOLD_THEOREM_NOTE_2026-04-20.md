@@ -1,5 +1,6 @@
 # DM PMNS Fixed `N_e` Seed-Surface Exact Source-Manifold Theorem
 
+**Claim type:** bounded_theorem
 **Date:** 2026-04-20  
 **Lane:** PMNS / `I5` remaining angle-pin task  
 **Status:** support - structural or confirmatory support note
@@ -12,28 +13,28 @@ source manifold
 ## Scope and tier
 
 This note is a **bounded structural-regularity claim about the preimage of an
-empirical target** on a framework-derived seed surface. It does **not** derive
+empirical target** on a supplied seed parameterization. It does **not** derive
 the empirical target triple from the baseline physical `Cl(3)` local algebra
 on the `Z^3` spatial substrate alone.
 
 What is claimed (and what the verifier certifies):
 
-1. on the cited framework-derived fixed native `N_e` seed surface `S_Ne`
+1. on the cited supplied fixed `N_e` seed surface `S_Ne`
    (see Inputs below), the cited algebraic angle map `F_Ne` admits at least
    three distinct preimages of the empirical target triple
    `T = (0.307, 0.0218, 0.545)` to numerical precision, established by a
    deterministic compact-chart lattice cover (independent of the polished
    starts listed below) plus local polishing;
-2. at every retained preimage point, the finite-difference Jacobian of
+2. at every checked preimage point, the finite-difference Jacobian of
    `F_Ne` is rank `3` and that rank is stable across two independent
    step-size scales;
-3. the five cited current exact nonlocal seed-surface selector-family
+3. the five cited current conditional nonlocal seed-surface candidate
    points (`aligned seed`, `low-action stationary`, `high-action stationary`,
    `constructive eta=1 closure`, `constructive witness`) all miss `T` by
    macroscopic `chi^2 > 0.03`;
 4. three selector observables (relative action, transport output on the
    favored column, source cubic) vary by amounts well above their noise floor
-   along the retained preimage representatives, so none of them is constant
+   along the checked preimage representatives, so none of them is constant
    on the local preimage manifold.
 
 The empirical target `T` is the NuFit 5.3 / PDG normal-ordering best-fit
@@ -56,7 +57,7 @@ not, by itself, supply that law.
 
 ## Inputs (cited authorities)
 
-This note builds on, and re-uses without re-deriving, the following retained
+This note builds on, and re-uses without re-deriving, the following supplied
 framework objects. The verifier imports each of them directly from the cited
 runner, so the algebraic identities they assert are also re-checked at the
 preimage representatives in the runner.
@@ -67,9 +68,9 @@ preimage representatives in the runner.
 - **The one-sided active-projector packet readout** (`active_packet_from_h`)
   — `|U_PMNS|^2 = |U_act(H_e)|^2^T` on the charged-lepton-side branch — from  
   [`DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md`](./DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md).
-- **The fixed native `N_e` seed pair** `(Xbar_Ne, Ybar_Ne) = (169/300, 23/75)`
-  used as the fixed seed surface center, from  
-  [`DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md`](./DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md)
+- **The supplied `N_e` seed pair** `(Xbar_Ne, Ybar_Ne) = (169/300, 23/75)`
+  used as the conditional seed surface center, from
+  [`DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md`](./DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md)
   and used downstream in
   [`DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md`](./DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md)
   and
@@ -81,10 +82,10 @@ preimage representatives in the runner.
   in fact lie on `S_Ne` (mean-constraint check).
 - **The relative-action observable**
   `S_rel(H_e || H_seed) = Tr(H_seed^{-1} H_e) - log det(H_seed^{-1} H_e) - 3`
-  — from the same observable-relative-action note above.
+  — from the bounded relative-action conditional calculator cited above.
 - **Selector-family points used in the miss table**:
   - `aligned seed` is the trivial fixed-seed point with `x = (Xbar_Ne,...)` and
-    `y = (Ybar_Ne,...)`, defined in the observable-relative-action law note.
+    `y = (Ybar_Ne,...)`, supplied by the relative-action conditional calculator.
   - `low-action stationary` and `high-action stationary` come from  
     [`DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md`](./DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md)
     (the runner re-uses `favored_column_and_extremal_params`,
@@ -105,7 +106,7 @@ step-size scales).
 
 The current `I5` gap is now sharper than “derive three PMNS angles somehow.”
 
-On the fixed native `N_e` seed surface
+On the supplied fixed `N_e` seed surface
 
 ```text
 S_Ne
@@ -122,7 +123,7 @@ Xbar_Ne = 0.5633333333333334,
 Ybar_Ne = 0.30666666666666664,
 ```
 
-the physical PMNS angle triple
+the empirical PMNS angle comparator
 
 ```text
 (sin^2 theta_12, sin^2 theta_13, sin^2 theta_23)
@@ -139,8 +140,8 @@ macroscopic `chi^2`.
 
 So `I5` is reduced to one much sharper remaining object:
 
-> a new `2`-real point-selection law on the exact PMNS source manifold inside
-> the fixed native `N_e` seed surface.
+> a new `2`-real point-selection law on the comparator preimage manifold inside
+> the supplied fixed `N_e` seed surface.
 
 ## 1. Setup
 
@@ -168,13 +169,13 @@ F_Ne(x,y,delta)
 The current theorem asks:
 
 1. does `F_Ne` already hit the physical target triple exactly?
-2. if yes, does the present exact selector stack on `S_Ne` already choose that
+2. if yes, does the present supplied candidate stack on `S_Ne` already choose that
    point?
 
 ## 2. Theorem statement
 
 **Theorem (preimage existence, regularity, and selector-stack miss on the
-fixed native `N_e` seed surface).** Fix the cited framework objects from the
+supplied fixed `N_e` seed surface).** Fix the cited conditional objects from the
 Inputs section: the canonical Hermitian block `H_e(x,y,delta)`, the
 charged-lepton-side active packet readout `F_Ne`, the seed pair
 `(Xbar_Ne, Ybar_Ne) = (169/300, 23/75)`, and the compact chart
@@ -193,7 +194,7 @@ central values). Then:
    ```
 
    to numerical precision;
-3. at each retained preimage point, the finite-difference Jacobian `dF_Ne`
+3. at each checked preimage point, the finite-difference Jacobian `dF_Ne`
    has rank `3`, and this rank is stable across two independent step-size
    scales;
 4. therefore, on the verified regular patch, the preimage
@@ -203,10 +204,10 @@ central values). Then:
    ```
 
    is locally a `2`-real source manifold inside the `5`-real seed surface;
-5. the five cited current exact nonlocal seed-surface selector-family points
+5. the five cited current conditional nonlocal seed-surface candidate points
 
    - aligned seed
-     ([observable-relative-action law note](./DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md)),
+     ([relative-action conditional calculator note](./DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md)),
    - low-action stationary branch
      ([relative-action stationarity theorem note](./DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md)),
    - high-action stationary branch
@@ -220,10 +221,10 @@ central values). Then:
 6. three selector observables (the seed-relative relative action, the
    favored-column transport output, and the source cubic
    `Im(H_12 H_23 H_31)`) all vary by amounts well above the numerical noise
-   floor across the retained preimage representatives, so none of them is
+   floor across the checked preimage representatives, so none of them is
    constant on the local preimage manifold.
 
-Hence the current exact nonlocal selector stack does **not** pick the
+Hence the current conditional nonlocal candidate stack does **not** pick the
 empirical comparator on the charged-lepton-side branch. What remains, on this
 branch, is a genuinely new `2`-real point-selection law on the certified
 preimage manifold.
@@ -255,7 +256,7 @@ All three reproduce
 to the verifier tolerance.
 
 The important point is not the specific coordinates. It is that these points
-are **distinct**, yet all live on the same exact PMNS target fiber.
+are **distinct**, yet all lie on the same empirical-comparator preimage fiber.
 
 ## 4. Regular-manifold consequence
 
@@ -266,25 +267,25 @@ finite-difference Jacobian of
 F_Ne : S_Ne -> R^3
 ```
 
-at the retained exact points and finds
+at the checked comparator-matching points and finds
 
 ```text
 rank dF_Ne = 3.
 ```
 
 So on that regular patch, the implicit-function heuristic is the correct one:
-the exact physical PMNS target is not an isolated source. It is a local
+the empirical PMNS comparator does not have an isolated source. Its preimage is a local
 `2`-real manifold.
 
 This is the sharp new reduction:
 
-- existence of exact PMNS points is no longer the live issue;
+- existence of comparator-matching PMNS points is no longer the live issue;
 - branch isolation is no longer the live issue on this patch;
 - the live issue is selecting one point on that exact source manifold.
 
 ## 5. Current selector-family miss
 
-The verifier checks the current exact nonlocal selector-family points already
+The verifier checks the current conditional nonlocal candidate points already
 on branch:
 
 | selector-family point | PMNS triple | `chi^2` to target |
@@ -295,8 +296,8 @@ on branch:
 | constructive `eta=1` closure | `(0.701614, 0.911995, 0.865291)` | `1.050754` |
 | constructive witness | `(0.737048, 0.951639, 0.878470)` | `1.160744` |
 
-So the current exact seed-surface selector families do **not** land on the
-physical PMNS manifold. This is the nonlocal analogue of the later Schur-line
+So the supplied seed-surface candidate families checked here do **not** land on the
+empirical-comparator preimage manifold. This is the nonlocal analogue of the later Schur-line
 no-go:
 
 - local selector families miss the PMNS target on the active DM source sheet;
@@ -308,9 +309,9 @@ no-go:
 Before this theorem, “`I5` is still open” still left two qualitatively
 different possibilities:
 
-1. maybe the physical PMNS point is not even present on the exact retained
+1. maybe the empirical PMNS comparator has no preimage on the supplied
    charged-lepton-side seed surface;
-2. maybe it is present, but the retained selector stack still does not choose
+2. maybe it is present, but the supplied candidate stack still does not choose
    it.
 
 This theorem closes the first possibility positively and the second
@@ -318,9 +319,9 @@ negatively.
 
 So the sharpened honest state is:
 
-- the physical PMNS angle triple is already exact on the fixed native `N_e`
+- the empirical PMNS angle comparator has numerical preimages on the supplied `N_e`
   seed surface;
-- the current exact nonlocal selector stack does not pick it;
+- the current conditional nonlocal candidate stack does not pick it;
 - the remaining `I5` target is a new `2`-real point-selection law on that
   exact manifold.
 
@@ -340,13 +341,13 @@ can now be sharpened on the charged-lepton-side branch to
 
 ```text
 derive a point-selection law on the exact 2-real PMNS source manifold
-inside the fixed native N_e seed surface.
+inside the supplied fixed N_e seed surface.
 ```
 
 Equivalently:
 
-- the seed pair is already exact,
-- the branch-local carrier already contains the physical PMNS triple,
+- the seed pair is supplied exactly,
+- the supplied parameterization contains empirical-comparator preimages,
 - the remaining science is no longer existence or branch hunting,
 - it is the missing point-selection law on the exact source manifold.
 

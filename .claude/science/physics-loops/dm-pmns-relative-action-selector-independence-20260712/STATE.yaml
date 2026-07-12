@@ -1,0 +1,72 @@
+loop_slug: dm-pmns-relative-action-selector-independence-20260712
+mode: run
+target_status: best-honest-status
+science_block: 1
+cycle: 1
+branch: physics-loop/dm-pmns-relative-action-block01-20260712
+base_ref: origin/main
+start_date: 2026-07-12
+checkpoint_interval: focused-block checkpoints
+lock_mode: dedicated_worktree
+goal: >-
+  Resolve the missing derivation in the PMNS observable-relative-action law
+  note without importing a selector premise.
+active_route: exact conservative-extension selector-independence theorem
+hard_residual: >-
+  Whether Legendre duality entails physical constrained-minimum selection.
+A_min:
+  - Lattice
+  - Qubit
+  - Admissibility
+  - Record
+approved_primitives:
+  - scale_reference_primitive
+  - kinetic_isotropy_primitive
+  - realized_state_primitive
+forbidden_imports:
+  - observed eta_obs as a derived prediction
+  - fitted or supplied selector presented as a theorem
+  - unapproved dynamics, probability, or record-formation rule
+actual_current_surface_status: no-go
+target_claim_type: no_go
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+open_imports_for_no_go: []
+conditional_calculator_imports:
+  - fixed seed and active-source parameterization
+  - transport kernel and normalization package
+  - observed eta_obs comparator
+  - constrained minimum-relative-action selector law
+files_touched:
+  - .claude/science/physics-loops/dm-pmns-relative-action-selector-independence-20260712/
+  - docs/DM_LEPTOGENESIS_PMNS_MINIMAL_A13_SHEET_SELECTOR_THEOREM_NOTE_2026-04-16.md
+  - docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md
+  - docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16_NOTE_2026-05-17.md
+  - docs/DM_LEPTOGENESIS_PMNS_REDUCED_SURFACE_SELECTOR_SUPPORT_NOTE_2026-04-16.md
+  - docs/DM_LEPTOGENESIS_PMNS_REDUCTION_EXHAUSTION_THEOREM_NOTE_2026-04-16.md
+  - docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md
+  - docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md
+  - docs/DM_LEPTOGENESIS_PMNS_SELECTOR_BANK_CP_SHEET_BLINDNESS_THEOREM_NOTE_2026-04-16.md
+  - docs/DM_PMNS_NE_SEED_SURFACE_EXACT_SOURCE_MANIFOLD_THEOREM_NOTE_2026-04-20.md
+  - docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_BRANCH_SEPARATION_SUPPORT_THEOREM_NOTE_2026-04-21.md
+  - docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_PROJECTION_SUPPORT_THEOREM_NOTE_2026-04-21.md
+  - docs/DM_SELECTOR_SHIFTED_DOUBLET_IMAG_SIGN_SUPPORT_THEOREM_NOTE_2026-04-21.md
+  - docs/DM_SELECTOR_SHIFTED_RELATIVE_ACTION_RECOVERED_PACKET_CLOSURE_THEOREM_NOTE_2026-04-21.md
+  - docs/PMNS_BRANCH_SELECTOR_CP_SHEET_BLINDNESS_NOTE_2026-05-03.md
+  - logs/runner-cache/frontier_dm_leptogenesis_pmns_relative_action_selector_independence.txt
+  - scripts/frontier_dm_leptogenesis_pmns_minimal_a13_sheet_selector_theorem.py
+  - scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py
+  - scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16_hostile_audit_findings.py
+  - scripts/frontier_dm_leptogenesis_pmns_reduction_exhaustion_theorem.py
+  - scripts/frontier_dm_leptogenesis_pmns_relative_action_selector_independence.py
+  - scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py
+  - scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py
+  - scripts/frontier_dm_pmns_ne_seed_surface_exact_source_manifold_theorem_2026_04_20.py
+  - scripts/frontier_dm_selector_relative_action_recovered_branch_separation_support_2026_04_21.py
+  - scripts/frontier_dm_selector_relative_action_recovered_projection_support_2026_04_21.py
+  - scripts/frontier_dm_selector_shifted_doublet_imag_sign_support_2026_04_21.py
+  - scripts/frontier_dm_selector_shifted_relative_action_recovered_packet_closure_2026_04_21.py
+review_disposition: pass
+pr_status: pending
+next_exact_action: stage, verify claim typing, commit, rebase, push, and open one review PR
+stop_condition: one coherent reviewed science block and one review PR

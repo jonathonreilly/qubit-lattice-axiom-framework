@@ -1,14 +1,14 @@
 # DM Leptogenesis PMNS Selector-Bank CP-Sheet Blindness Theorem
 
-**Claim type:** positive_theorem
+**Claim type:** bounded_theorem
 
 **Date:** 2026-04-16  
-**Status:** exact negative theorem on the current PMNS-side selector-law bank  
+**Status:** bounded parity theorem on the supplied PMNS candidate bank
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_selector_bank_cp_sheet_blindness_theorem.py`
 
 ## Question
 
-Do any of the current PMNS-side selector laws or positive closure candidates on
+Do any of the supplied PMNS-side objectives or closure candidates on
 this branch already fix the constructive mainline CP sheet?
 
 ## Bottom line
@@ -20,7 +20,7 @@ still **CP-sheet blind**.
 
 The reason is structural:
 
-1. every current PMNS-side selector objective on this branch is even under
+1. every supplied PMNS-side candidate objective checked here is even under
    `delta -> -delta`
 2. the baryogenesis source channel
 
@@ -31,24 +31,25 @@ The reason is structural:
 4. therefore every current selected source or candidate comes with an equally
    selected opposite-CP partner
 
-So none of the current PMNS-side selector laws yet gives a constructive
+So none of the supplied PMNS-side candidate objectives gives a constructive
 source-oriented mainline baryogenesis witness.
 
-## What current laws are covered
+## What current candidate objectives are covered
 
-This theorem covers the current PMNS-side selector bank on the branch:
+This bounded theorem covers the supplied PMNS-side candidate bank checked by
+the runner:
 
 - the minimum-information exact closure law
-- the observable-relative-action exact closure law
+- the observable-relative-action conditional closure calculation
 - the transport-extremal overshooting source candidate
 - the exact `eta = 1` continuity closure point generated from that candidate
 
 ## Exact consequences
 
-### 1. The exact closure laws are CP-sheet blind
+### 1. The supplied closure objectives are CP-sheet blind
 
-The minimum-information closure law and the observable-relative-action closure
-law both reach exact `eta = 1` on the fixed native seed surface.
+The supplied minimum-information and observable-relative-action objectives
+both return `eta = 1` representatives on the conditional fixed seed surface.
 
 But in both cases:
 
@@ -70,8 +71,8 @@ and the exact continuity construction already gives a closure point with
 
 - `eta/eta_obs = 1`.
 
-So the PMNS side has already solved **transport existence** on the fixed native
-seed surface.
+So the supplied PMNS parameterization contains **transport existence**
+examples on its fixed seed surface.
 
 But the same parity problem remains:
 
@@ -100,7 +101,7 @@ This closes the natural objection:
 
 Yes, it did.
 
-But those current selector laws and closure candidates do **not** yet close the
+But those supplied candidate objectives and closure candidates do **not** close the
 baryogenesis-side CP problem, because they do not fix the CP sheet.
 
 So the remaining PMNS-side baryogenesis issue is no longer:
@@ -131,7 +132,7 @@ The runner imports four PMNS-side modules whose framework wrapper notes
 supply the law/candidate/channel definitions enumerated in this CP-sheet
 blindness theorem:
 
-- [DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md) — observable-relative action law (`relaw` module).
+- [DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md](DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md) — conditional observable-relative-action candidate (`relaw` module); the parity result does not promote it to a physical selector.
 - [DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md) — transport-extremal source candidate (`cand` module).
 - [DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_BREAKING_TRIPLET_SOURCE_LAW_NOTE_2026-04-16.md) — breaking-triplet source law (`triplet_channels_from_active_data` from `breaking_triplet_source_law` module).
 - [DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md) — minimum-information source-law module (`minlaw`) used as the explicit selector comparator.

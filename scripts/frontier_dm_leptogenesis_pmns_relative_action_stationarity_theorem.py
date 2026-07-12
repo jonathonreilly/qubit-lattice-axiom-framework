@@ -3,22 +3,21 @@
 DM leptogenesis PMNS relative-action stationarity theorem.
 
 Framework convention:
-  "axiom" means only the single framework axiom Cl(3) on Z^3.
+  The current foundation is Lattice, Qubit, Admissibility, and Record.
 
 Purpose:
-  Close the last selector-principle gap on the PMNS-assisted N_e flavored-DM
-  route as far as the current exact branch honestly allows.
+  Check the exact Legendre identity and the conditional sampled stationarity
+  properties of the supplied PMNS closure problem.
 
-  Earlier work already showed:
-    - the fixed native N_e seed surface is exact
-    - the favored closure column i_* is fixed by the exact transport-extremal
-      class on that surface
-    - exact closure can be reached by minimizing the seed-relative bosonic
-      action
+  Supplied inputs used by the conditional calculation are:
+    - the fixed N_e seed parameterization
+    - the favored closure column i_* returned by the imported
+      transport-extremal calculation
+    - the observed-closure condition and minimum seed-relative-action law
 
-  The remaining question was whether this minimization is merely an added
-  postulate or can be tied back to the framework's own exact observable
-  grammar.
+  The minimization law remains supplied.  Legendre duality does not turn it
+  into a physical selector; the paired selector-independence runner proves
+  that boundary.
 
 Exact content here:
   1. On the positive charged block, the seed-relative bosonic action
@@ -26,15 +25,11 @@ Exact content here:
        S_rel(H || H_seed)
          = Tr(H_seed^{-1} H) - log det(H_seed^{-1} H) - 3
 
-     is the exact Legendre-dual effective action of the sole-axiom scalar
-     observable generator W(K) = log det(I + K).
-  2. Therefore constrained minimization of S_rel on a transport-closure
-     surface is not an external information ansatz; it is the native
-     effective-action selector associated with the exact observable principle.
-  3. On the current fixed N_e seed surface and favored column, sampled
+     is the exact Legendre dual of the supplied scalar generator
+     W(K) = log det(I + K).
+  2. On the supplied fixed N_e seed surface and favored column, sampled
      constrained solves expose more than one stationary branch, but only one
-     branch is the unique lowest-action closure branch; that is the exact
-     effective-action selector.
+     branch is the lowest-action closure branch among the sampled starts.
 
 Status:
   - exact Legendre-dual / effective-action reduction
@@ -244,17 +239,17 @@ def part1_relative_action_is_the_exact_legendre_dual() -> None:
         hess_samples.append(quad)
 
     check(
-        "The seed-relative bosonic action equals the exact Legendre dual of the sole-axiom logdet generator",
+        "The seed-relative bosonic action equals the exact Legendre dual of the supplied logdet generator",
         abs(dual_val - s_rel) < 1e-12,
         f"S_rel={s_rel:.12f}, dual={dual_val:.12f}",
     )
     check(
-        "The dual maximizer is the exact observable-principle source K_* = Y^{-1} - I",
+        "The dual stationary source is K_* = Y^{-1} - I",
         grad_probe < 1e-8,
         f"max directional gradient={grad_probe:.3e}",
     )
     check(
-        "The dual is strictly concave at K_* so S_rel is the unique effective action on the positive cone",
+        "The dual is strictly concave at K_* so the Legendre functional is unique on the positive cone",
         max(hess_samples) < -1e-6,
         f"worst sampled Hessian quadratic={max(hess_samples):.6e}",
     )
@@ -313,7 +308,7 @@ def part2_the_current_closure_patch_has_a_unique_lowest_action_branch() -> tuple
     best_idx = int(np.argmax(etas_sel))
 
     check(
-        "The exact transport-extremal class still fixes the favored closure column on the fixed seed surface",
+        "The imported transport-extremal calculation returns the favored column on the supplied seed parameterization",
         i_star == 0,
         f"favored column={i_star}",
     )
@@ -328,7 +323,7 @@ def part2_the_current_closure_patch_has_a_unique_lowest_action_branch() -> tuple
         f"max low-branch |Δp|={max_low_branch_delta:.3e}, S_min={min_action:.12f}",
     )
     check(
-        "The constrained stationary source closes eta exactly on the favored column",
+        "The conditional stationary source meets the supplied closure constraint on the favored column",
         abs(etas_sel[i_star] - 1.0) < 1e-10 and best_idx == i_star,
         f"etas={np.round(etas_sel, 12)}",
     )
@@ -377,7 +372,7 @@ def part3_the_stationary_point_is_a_strict_local_closure_minimum(i_star: int, p_
         sampled_gaps.append(relative_action_from_params(trial) - relative_action_from_params(p_star))
 
     check(
-        "The exact closure source satisfies the constrained Euler-Lagrange equation for the effective action",
+        "The conditional closure source satisfies the constrained Euler-Lagrange equation",
         float(np.linalg.norm(lag_grad)) < 2e-5,
         f"|∇S-λ∇C|={np.linalg.norm(lag_grad):.3e}",
     )
@@ -398,25 +393,26 @@ def part3_the_stationary_point_is_a_strict_local_closure_minimum(i_star: int, p_
     print(f"  min sampled closure gap        = {min(sampled_gaps):.12e}")
 
 
-def part4_bottom_line() -> None:
+def part4_boundary(i_star: int, p_star: np.ndarray) -> None:
     print("\n" + "=" * 88)
-    print("PART 4: BOTTOM LINE")
+    print("PART 4: CLAIM BOUNDARY")
     print("=" * 88)
 
+    seed_action = relative_action_from_params(SEED_ZERO)
+    seed_eta = eta_i(SEED_ZERO, i_star)
+    _x, _y, _delta, selected_h, _etas = source_from_params(p_star)
+    selected_y = seed_normalized_h(selected_h)
+    selected_k = np.linalg.inv(selected_y) - np.eye(DIM)
+    check("The source-free action minimum is the seed", abs(seed_action) < 1e-14)
     check(
-        "The relative bosonic action is now an exact sole-axiom effective action, not an imported information ansatz",
-        True,
-        "it is the Legendre dual of the exact log|det| observable generator",
+        "The supplied observed-closure constraint excludes the seed",
+        abs(seed_eta - 1.0) > 1e-2,
+        f"eta_i(seed)/eta_obs={seed_eta:.12f}",
     )
     check(
-        "On the current PMNS-assisted N_e closure patch, the selector is the unique lowest-action branch of that effective action",
-        True,
-        "stationarity alone is not enough; minimization picks the physical branch",
-    )
-    check(
-        "So the remaining selector gap is no longer the action principle itself but only any future demand for a branch-global analytic uniqueness proof",
-        True,
-        "the current branch already carries the constrained effective-action selector",
+        "The conditional off-seed solution carries a nonzero dual source",
+        float(np.linalg.norm(selected_k)) > 1e-2,
+        f"|K_*|_F={np.linalg.norm(selected_k):.6f}",
     )
 
 
@@ -426,29 +422,25 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Framework convention:")
-    print('  "axiom" means only Cl(3) on Z^3.')
+    print("  The current foundation is Lattice, Qubit, Admissibility, and Record.")
     print()
     print("Question:")
-    print("  Is minimizing the seed-relative bosonic action on the fixed N_e seed")
-    print("  surface an extra selector postulate, or is it already the native")
-    print("  effective-action law attached to the sole-axiom observable principle?")
+    print("  What follows from the Legendre identity, and what remains conditional")
+    print("  on the supplied minimum-action closure law?")
 
     part1_relative_action_is_the_exact_legendre_dual()
     i_star, p_star = part2_the_current_closure_patch_has_a_unique_lowest_action_branch()
     part3_the_stationary_point_is_a_strict_local_closure_minimum(i_star, p_star)
-    part4_bottom_line()
+    part4_boundary(i_star, p_star)
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Exact reduction:")
-    print("    - S_rel is the exact Legendre-dual effective action of the")
-    print("      sole-axiom scalar observable generator")
-    print("    - the PMNS-assisted N_e closure source is the unique")
-    print("      lowest-action constrained branch on the exact closure surface")
+    print("  Exact algebra + conditional calculation:")
+    print("    - S_rel is the Legendre dual of the supplied log-det generator")
+    print("    - the supplied selector returns the lowest-action sampled branch")
     print()
-    print("  So on the current branch, minimal relative bosonic action is no longer")
-    print("  an external selector ansatz; it is the native effective-action law.")
+    print("  Legendre duality does not derive the physical minimization law.")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

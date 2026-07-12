@@ -1,129 +1,228 @@
-# DM Leptogenesis PMNS Observable-Relative-Action Law
+# DM Leptogenesis PMNS Relative-Action Selector Independence
 
-**Date:** 2026-04-16 (initial); 2026-05-16 prose recast so the load-bearing
-selector law is explicitly carried by its already-derived effective-action
-identity rather than presented as a free postulate.  
-**Status:** support - structural / confirmatory support note attached to the
-already-landed `DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16`.  
-**Script:** `scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py`  
-**Framework baseline:** physical `Cl(3)` local algebra on the `Z^3`
-spatial substrate.
+**Date:** 2026-04-16 (initial); 2026-07-12 exact selector-independence
+repair.
+**Status:** exact negative boundary; independent audit is required before any
+retained-grade effect.
+**Claim type:** no_go
+**Primary runner:**
+[`scripts/frontier_dm_leptogenesis_pmns_relative_action_selector_independence.py`](../scripts/frontier_dm_leptogenesis_pmns_relative_action_selector_independence.py)
+**Conditional operational calculator:**
+[`scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py`](../scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py)
 
-## Role of this note
+## Claim boundary for independent audit
 
-This note records the **operational PMNS-assisted off-seed source selector**
-used on the current refreshed DM branch and the numerical source it picks
-out. It is a support note, not a free selector ansatz: the underlying
-**why** of the selector — that the seed-relative bosonic action is the exact
-Legendre-dual effective action of the baseline-framework observable
-generator — is
-the load-bearing content of the sister theorem note
-`DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16`
-and is exercised here so a reader of this note alone still sees the
-derivation chain wired in.
+The exact claim is narrow:
 
-## Selector law (operational form)
+> The current Lattice, Qubit, Admissibility, and Record foundation does not
+> entail that the physically selected positive off-seed source is the
+> minimizer of the seed-relative action on the favored-column closure set.
+> This remains true for an explicit conservative extension in which a static
+> seed, a non-singleton finite closure set, and the log-det Legendre packet are
+> granted but no selector orientation is supplied.
 
-On the fixed native charged-lepton-active seed surface, define the exact
-relative bosonic action
+This is a no-go for the implication **Legendre-dual functional therefore
+physical constrained-minimum selector** on the current premise surface. It is
+not a no-go against a future dynamics or record-formation theorem that supplies
+that implication.
 
-`S_rel(H_e || H_seed) = Tr(H_seed^{-1} H_e) - log det(H_seed^{-1} H_e) - 3`
+The previous version of this note made precisely that invalid implication. Its
+numerical optimization was real, but the word “effective action” was used to
+orient a physical selection law that had not been derived.
 
-where:
+## Minimal premises and strengthening grants
 
-- `H_seed` is the exact aligned-seed charged Hermitian block
-- `H_e` is the charged Hermitian block induced by the off-seed source
+The load-bearing foundation is the current
+[Minimal Framework Axioms](MINIMAL_AXIOMS_2026-06-29.md). It explicitly leaves
+log-det readout, source/action identification, weighting, probability,
+dynamics, and state-selection outside the four axioms. The registered
+[realized-state primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) grants
+pointwise evaluation at a supplied realized state and explicitly supplies no
+state-selection rule. The approved
+[scale-reference primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md) and
+[kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md)
+also explicitly supply no selector; the proof grants their complete narrow
+content and does not treat either as an import or bounded-status source.
 
-Then:
+To make the negative result stronger, the proof grants without deriving:
 
-1. determine the favored flavor column `i_*` from the exact transport-extremal
-   class
-2. among all positive off-seed sources on the same seed surface satisfying
-   `eta_{i_*} / eta_obs = 1`, choose the one minimizing `S_rel`
+1. a positive seed matrix `H_seed` and positive source matrix `H_e`;
+2. the normalized matrix
+   `Y = H_seed^(-1/2) H_e H_seed^(-1/2)`;
+3. the generator `W(K) = log det(I+K)` and its Legendre dual;
+4. an abstract favored column `i_*`, comparator `eta_obs`, two positive source
+   points, and a closure readout taking the value `eta_obs` on both points.
 
-## Why the operational law is not an extra postulate
+These strengthening grants are explicit hypotheses of the finite countermodel
+and are instantiated locally rather than imported as authority dependencies.
+The proof shows that even this enlarged static packet does not contain the
+missing physical selector bridge.
 
-The seed-normalized matrix `Y = H_seed^{-1/2} H_e H_seed^{-1/2}` satisfies
+## Exact algebra that does close
 
-`S_rel(Y) = sup_K [ log det(I + K) - Tr(K Y) ]`
+For positive `Y`,
 
-with unique maximizer `K_* = Y^{-1} - I`. That is, `S_rel` is the **exact
-Legendre dual** of the baseline-framework scalar observable generator
-`W(K) = log det(I + K)`. This identity is proved and numerically exercised
-in `DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16`
-(`scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py`,
-Part 1) and is **re-exercised inside this note's own runner** in Part 0 so
-the derivation chain is visible from the support runner alone.
+`S_rel(Y) = Tr(Y) - log det(Y) - n`
 
-Because `S_rel` is the effective action attached to the framework's exact
-observable generator, the operational law above is the **native
-effective-action selector** on the fixed seed surface, restricted by the
-exact transport-favored column. The previous prose treated the
-minimization step as a separate philosophical assumption; on the current
-branch that assumption has already been discharged at the effective-action
-reduction level, and uniqueness of the lowest-action closure branch on the
-current closure patch is verified directly by the stationarity-theorem
-runner.
+satisfies
 
-Operationally, that means the support law inherits from its sister theorem:
+`S_rel(Y) = sup_{K>-I} [log det(I+K) - Tr(KY)]`
 
-- exact Legendre-dual / effective-action reduction of the objective
-- exact transport-favored column on the fixed seed surface
-- exact closure constraint `eta_{i_*}(H_e) / eta_obs = 1`
-- uniqueness of the lowest-action closure branch on the current closure
-  patch (bounded uniqueness, sampled feasible starts)
+with unique dual stationary source
 
-so the operational law here is a re-statement of that already-derived
-selector on the same closure patch, used to produce the explicit numerical
-source on the current refreshed DM branch.
+`K_* = Y^(-1) - I`.
 
-## Output of the operational law on the current branch
+If `lambda_a` are the eigenvalues of `Y`, then
 
-The operational law selects:
+`S_rel(Y) = sum_a (lambda_a - log(lambda_a) - 1) >= 0`,
 
-- `x_rel = (0.47167533, 0.55381069, 0.66451397)`
-- `y_rel = (0.20806279, 0.46438280, 0.24755440)`
-- `delta_rel ~ 0`
+with equality only at `Y=I`. Equivalently, the unique unconstrained minimum is
+`H_e = H_seed`, and its dual source is `K_*=0`.
 
-so the off-seed source is
+This is the exact positive-cone result. It determines the functional and its
+source-response relation. It does not state which source is physically
+realized.
 
-- `xi_rel = (-0.09165800, -0.00952264, 0.10118064)`
-- `eta_rel = (-0.09860388, 0.15771613, -0.05911224)`
-- `delta_rel ~ 0`
+## Exact selector-independence theorem
 
-and the resulting transport values are
+Define the explicit finite static countermodel by
 
-`eta / eta_obs = (1.0, 0.75917896, 0.48458840)`,
+- `H_seed = I_3`;
+- source domain and closure set `F = {Y_a,Y_b}`;
+- `Y_a = diag(2,1,1)` and `Y_b = diag(3,1,1)`; and
+- a supplied closure readout with
+  `eta_{i_*}(Y_a) = eta_{i_*}(Y_b) = eta_obs`.
 
-with the exact relative action value `S_rel = 0.240906701369` (matches the
-Legendre-dual functional to ~1e-12 in the runner's Part 0).
+The closure set contains exactly the two positive matrices
 
-The favored column remains column `0`, and exact closure is reached there.
+`Y_a = diag(2,1,1)` and `Y_b = diag(3,1,1)`.
 
-## What this note still does not claim
+Their relative actions are
 
-This note does **not** claim, on its own:
+`S_rel(Y_a) = 1-log 2 < 2-log 3 = S_rel(Y_b)`.
 
-1. a branch-global analytic proof that no second disconnected closure
-   component exists anywhere else on the full seed surface
-2. a full PMNS microscopic solve beyond the current branch
-3. promotion of any upstream row beyond what
-   `DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16`
-   itself claims
+Consider two completions of the same static packet:
 
-The current bounded scope is identical to that of the sister theorem
-note: exact at the effective-action reduction, branch-exact at the
-closure equation, and bounded-unique on the sampled current closure
-patch.
+- `L_min` selects the unique `argmin_F S_rel`;
+- `L_max` selects the unique `argmax_F S_rel`.
 
-## Command
+The finite domain makes both extrema existent and unique. Both laws are
+deterministic functions of the supplied condition, invariant
+under simultaneous basis changes, and give exactly one answer. They agree on
+the four axioms, every approved primitive, `H_seed`, `F`, `W`, `S_rel`, the
+Legendre identity, the static closure readout, and the closure predicate. They differ
+only in the selector orientation. Therefore the shared premise packet cannot
+entail `L_min`: if it did, `L_max` could not be a completion of the same
+packet.
+
+This is an abstract conservative-extension countermodel. It does not assert
+that `Y_a` and `Y_b` are points of the numerical PMNS closure surface. The
+conditional PMNS calculator below separately demonstrates off-seed solutions;
+none of those calculations is load-bearing for the exact logical result.
+
+The exact runner also closes a stronger naturality objection. On the
+two-point feasible set
+
+`Y_c = diag(1/10,1,1)`, `Y_d = diag(2,2,1)`,
+
+relative action uniquely prefers `Y_d`, while the positive, seed-zero,
+basis-invariant, direct-sum-additive Frobenius divergence
+
+`D_F(Y) = Tr[(Y-I)^2]`
+
+uniquely prefers `Y_c`. Thus positivity, seed normalization, spectral
+naturality, basis invariance, and independent-block additivity do not select
+the relative-action objective either.
+
+## Consequence for the reported off-seed PMNS source
+
+The old operational calculator minimizes `S_rel` only after imposing
+
+`eta_{i_*}(H_e)/eta_obs = 1`.
+
+On that imported transport surface, the seed gives
+
+`eta/eta_obs = (0.433077252873, 0.719082664368, 0.719082664368)`,
+
+so favored-column-0 closure excludes the unique source-free action minimum.
+The reported off-seed point has
+
+- `S_rel = 0.240906701369`;
+- generalized eigenvalues approximately `(0.645736, 0.853724, 1.641616)`; and
+- `||K_*||_F approximately 0.695054`, hence a nonzero dual source.
+
+It is therefore an `eta_obs`-conditioned projection on the supplied closure
+surface, not the zero-source consequence of the Legendre identity and not a
+prediction of `eta_obs`. The calculator remains useful as a conditional
+answer to:
+
+> If the relative-action minimization law, the transport packet, and the
+> observed closure condition are supplied, which local source does the stated
+> optimizer return?
+
+It must not be cited as a derivation of the supplied law or comparator.
+
+The conditional calculator additionally consumes `PLAQ_MC = 0.5934` as a
+measured lattice input, `G_WEAK = 0.653` as fitted phenomenology, standard
+sphaleron/thermal/entropy factors, the approved scale-reference units
+conversion, and the helper transport/projector machinery. These inputs affect
+only the conditional numerical replay and are not proof inputs for the no-go.
+
+## Route audit
+
+Five first-principles routes were tested:
+
+1. **Legendre/Fenchel duality:** derives the functional and `K_*`, not a
+   realized-source rule.
+2. **Convexity and KKT stationarity:** prove a conditional constrained
+   minimizer once an objective and constraint are chosen; unconstrained
+   convexity selects the non-closing seed.
+3. **Bregman or minimum-information projection:** requires a probability,
+   covariance, conditioning, or update principle absent from the foundation.
+4. **Naturality and invariance:** fail to choose the objective, as the exact
+   preference-reversal witness shows.
+5. **Least-action or equilibrium language:** requires an oriented dynamics,
+   Gibbs/large-deviation measure, or record-formation rule; none follows from
+   static Admissibility or Record additivity.
+
+Favored-column extremality selects an index, not a source. Exact equality to
+the observed comparator defines a target surface, not a formation law.
+
+## What would falsify this no-go
+
+The no-go is retired by a retained theorem on the current framework surface
+that derives the physical selector orientation under the supplied closure
+condition—for example, a theorem that supplies both:
+
+1. an identification of the static source functional with the physical
+   record-formation or persistence law;
+2. an orientation principle such as a derived Gibbs or large-deviation weight
+   with fixed sign and a controlled concentration limit.
+
+A non-observational derivation of the closure condition is additionally
+required for a full baryon-ratio prediction, but it is not required merely to
+falsify this selector-independence no-go.
+
+Merely renaming a Legendre dual “the effective action,” proving local
+stationarity, or finding a unique numerical constrained minimum does not
+falsify the theorem.
+
+## What this note does not claim
+
+This note does not claim that no future PMNS source selector can be derived. It
+does not invalidate the Legendre identity or the conditional optimizer. It
+does not prove global properties of the full PMNS closure manifold. It does
+not treat `eta_obs`, the fixed seed, transport normalization, or helper
+machinery as framework-derived inputs.
+
+## Verification
 
 ```bash
-python3 scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py
+python3 scripts/frontier_dm_leptogenesis_pmns_relative_action_selector_independence.py
+PYTHONPATH=scripts python3 scripts/frontier_dm_leptogenesis_pmns_observable_relative_action_law.py
 ```
 
-## Audit dependency repair links
-
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [dm_leptogenesis_pmns_relative_action_stationarity_theorem_note_2026-04-16](DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md)
+The first command tests the exact no-go witnesses. The second replays the
+conditional numerical calculator and is not a proof of physical selection.
+The cached primary-runner transcript is
+[`logs/runner-cache/frontier_dm_leptogenesis_pmns_relative_action_selector_independence.txt`](../logs/runner-cache/frontier_dm_leptogenesis_pmns_relative_action_selector_independence.txt).

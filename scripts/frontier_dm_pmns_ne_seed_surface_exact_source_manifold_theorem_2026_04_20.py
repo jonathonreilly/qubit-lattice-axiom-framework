@@ -3,17 +3,17 @@
 DM PMNS fixed-N_e-seed-surface exact source-manifold theorem.
 
 Question:
-  On the charged-lepton-side minimal PMNS branch, does the physical PMNS angle
-  triple already live on the exact fixed native N_e seed surface, and if so
-  do the current exact nonlocal selector families on that surface pick it?
+  On the charged-lepton-side PMNS parameterization, does the empirical angle
+  comparator have regular preimages on the supplied fixed N_e seed surface, and if so
+  do the current conditional nonlocal candidate families on that surface pick it?
 
 Answer:
   Yes to existence, no to selection.
 
-  The fixed native N_e seed surface already contains exact realizations of the
-  physical PMNS angle triple. At the verified exact points, the PMNS-angle
+  The supplied N_e seed surface contains numerical realizations of the
+  empirical PMNS comparator. At the verified points, the PMNS-angle
   Jacobian has full rank 3, so the exact preimage is a local 2-real regular
-  source manifold on that surface. The current exact nonlocal seed-surface
+  source manifold on that surface. The current conditional nonlocal seed-surface
   selector families (aligned seed, stationary effective-action branches,
   constructive eta=1 closure point, constructive witness) all miss this exact
   PMNS manifold by macroscopic chi^2. Therefore the remaining I5 object on the
@@ -64,8 +64,8 @@ TARGET = np.array([0.307, 0.0218, 0.545], dtype=float)
 CHART_LO = np.array([1.0e-6, 1.0e-6, 1.0e-6, 1.0e-6, -math.pi], dtype=float)
 CHART_HI = np.array([1.0 - 1.0e-6, 1.0 - 1.0e-6, 1.0 - 1.0e-6, 1.0 - 1.0e-6, math.pi], dtype=float)
 
-# Diverse deterministic starts on the fixed native N_e seed chart.  Each one
-# lands on an exact physical PMNS point after local polishing.
+# Diverse deterministic starts on the supplied N_e seed chart. Each one
+# lands on a comparator-matching PMNS point after local polishing.
 SEED_CHART_STARTS = [
     np.array([0.036052, 0.460525, 0.541825, 0.581724, -1.533871], dtype=float),
     np.array([0.102254, 0.462703, 0.493331, 0.565381, 0.789612], dtype=float),
@@ -251,19 +251,19 @@ def selector_family_points() -> list[tuple[str, np.ndarray]]:
     return rows
 
 
-def part1_exact_points_exist_on_the_fixed_native_seed_surface() -> list[ExactPoint]:
+def part1_comparator_points_exist_on_the_supplied_seed_surface() -> list[ExactPoint]:
     print("\n" + "=" * 88)
     print("PART 1: EXACT PHYSICAL PMNS POINTS EXIST ON THE FIXED NATIVE N_e SEED SURFACE")
     print("=" * 88)
 
     reps = distinct_exact_points()
     check(
-        "The verifier finds at least three distinct exact PMNS points on the fixed native N_e seed surface",
+        "The verifier finds at least three distinct comparator-matching points on the supplied N_e seed surface",
         len(reps) >= 3,
         f"distinct exact points={len(reps)}",
     )
     check(
-        "Every retained representative reproduces the physical PMNS angle triple to high precision",
+        "Every polished representative reproduces the empirical PMNS comparator to high precision",
         all(point.chi2 < 1.0e-8 for point in reps),
         f"chi2 values={[round(point.chi2, 12) for point in reps]}",
     )
@@ -284,12 +284,12 @@ def part2_the_exact_preimage_is_a_regular_two_real_source_manifold(reps: list[Ex
     print("=" * 88)
 
     check(
-        "At every retained exact PMNS point the angle-map Jacobian has full rank 3",
+        "At every checked comparator preimage the angle-map Jacobian has full rank 3",
         all(point.rank == 3 for point in reps),
         f"ranks={[point.rank for point in reps]}",
     )
     check(
-        "Therefore each retained exact point lies on a local 2-real regular preimage inside the 5-real seed surface",
+        "Therefore each checked comparator-matching point lies on a local 2-real regular preimage inside the 5-real seed surface",
         all(point.rank == 3 for point in reps),
         "dim(seed surface)=5 and rank(dF)=3",
     )
@@ -308,7 +308,7 @@ def part3_current_nonlocal_selector_families_do_not_pick_the_exact_pmns_manifold
         print(f"  {name:<24s} chi^2 = {miss:.12f}, obs = {np.round(obs, 9)}")
 
     check(
-        "Every current exact nonlocal selector-family point misses the physical PMNS triple by chi^2 > 0.03",
+        "Every current nonlocal candidate point misses the empirical PMNS comparator by chi^2 > 0.03",
         all(miss > 3.0e-2 for _name, miss in misses),
         f"misses={[round(miss, 6) for _name, miss in misses]}",
     )
@@ -324,17 +324,17 @@ def part4_current_selector_observables_vary_along_the_exact_manifold(reps: list[
     cubic_values = np.array([point.source_cubic for point in reps], dtype=float)
 
     check(
-        "The exact PMNS manifold carries a macroscopic relative-action spread",
+        "The comparator preimage manifold carries a macroscopic relative-action spread",
         float(np.max(rel_values) - np.min(rel_values)) > 1.0,
         f"S_rel range=({np.min(rel_values):.6f},{np.max(rel_values):.6f})",
     )
     check(
-        "The exact PMNS manifold carries distinct transport outputs on the favored column",
+        "The comparator preimage manifold carries distinct transport outputs on the favored column",
         float(np.max(eta0_values) - np.min(eta0_values)) > 5.0e-3,
         f"eta_0 range=({np.min(eta0_values):.6f},{np.max(eta0_values):.6f})",
     )
     check(
-        "The exact PMNS manifold carries both source-cubic orientations",
+        "The comparator preimage manifold carries both source-cubic orientations",
         np.min(cubic_values) < 0.0 < np.max(cubic_values),
         f"cubic range=({np.min(cubic_values):.6e},{np.max(cubic_values):.6e})",
     )
@@ -351,10 +351,10 @@ def part0_cited_authorities_round_trip() -> None:
     print("PART 0: CITED-AUTHORITY ROUND-TRIP IDENTITIES")
     print("=" * 88)
 
-    # (a) Seed pair lives where the cited observable-relative-action law note
-    #     puts it: (169/300, 23/75).
+    # (a) Seed pair matches the values supplied by the cited conditional
+    #     calculator: (169/300, 23/75).
     check(
-        "Cited fixed native N_e seed pair matches the rational form (169/300, 23/75)",
+        "The supplied N_e seed pair matches the rational form (169/300, 23/75)",
         abs(XBAR_NE - 169.0 / 300.0) < 1e-15 and abs(YBAR_NE - 23.0 / 75.0) < 1e-15,
         f"(XBAR_NE, YBAR_NE) = ({XBAR_NE!r}, {YBAR_NE!r})",
     )
@@ -515,12 +515,12 @@ def part2b_rank_is_stable_across_step_sizes(reps: list[ExactPoint]) -> None:
         ranks_b.append(int(np.linalg.matrix_rank(jac_b, tol=1.0e-5)))
 
     check(
-        f"Finite-difference Jacobian rank is 3 at every retained point for eps={eps_a:.1e}",
+        f"Finite-difference Jacobian rank is 3 at every checked point for eps={eps_a:.1e}",
         all(r == 3 for r in ranks_a),
         f"ranks_a = {ranks_a}",
     )
     check(
-        f"Finite-difference Jacobian rank is 3 at every retained point for eps={eps_b:.1e}",
+        f"Finite-difference Jacobian rank is 3 at every checked point for eps={eps_b:.1e}",
         all(r == 3 for r in ranks_b),
         f"ranks_b = {ranks_b}",
     )
@@ -534,8 +534,8 @@ def part5_the_note_records_the_correct_i5_reduction() -> None:
     note = read("docs/DM_PMNS_NE_SEED_SURFACE_EXACT_SOURCE_MANIFOLD_THEOREM_NOTE_2026-04-20.md")
 
     check(
-        "The note records exact PMNS realizability on the fixed native N_e seed surface",
-        "fixed native `N_e` seed surface" in note and "physical PMNS angle triple" in note,
+        "The note records comparator realizability on the supplied N_e seed surface",
+        "supplied fixed `N_e` seed surface" in note and "empirical target triple" in note,
     )
     check(
         "The note records the regular 2-real source-manifold consequence",
@@ -554,7 +554,7 @@ def part5_the_note_records_the_correct_i5_reduction() -> None:
         "NuFit 5.3" in note and "observational comparator" in note,
     )
     check(
-        "The note lists explicit framework-authority citations for every imported routine",
+        "The note lists explicit authority or conditional-calculator citations for every imported routine",
         all(
             tag in note
             for tag in (
@@ -562,7 +562,7 @@ def part5_the_note_records_the_correct_i5_reduction() -> None:
                 "DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md",
                 "DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md",
                 "DM_LEPTOGENESIS_PMNS_REDUCED_SURFACE_SELECTOR_SUPPORT_NOTE_2026-04-16.md",
-                "DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md",
+                "DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md",
                 "DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md",
                 "DM_LEPTOGENESIS_PMNS_CONSTRUCTIVE_CONTINUITY_CLOSURE_THEOREM_NOTE_2026-04-17.md",
             )
@@ -577,11 +577,11 @@ def main() -> int:
     print()
     print("Question:")
     print("  Does the empirical PMNS angle comparator already lie on the cited")
-    print("  fixed native N_e seed surface as a regular preimage, and do the")
+    print("  supplied fixed N_e seed surface as a regular preimage, and do the")
     print("  current cited nonlocal selector families on that surface pick it?")
 
     part0_cited_authorities_round_trip()
-    reps = part1_exact_points_exist_on_the_fixed_native_seed_surface()
+    reps = part1_comparator_points_exist_on_the_supplied_seed_surface()
     part1b_independent_lattice_sweep_existence(reps)
     part1c_polished_points_lie_on_the_seed_surface(reps)
     part2_the_exact_preimage_is_a_regular_two_real_source_manifold(reps)
@@ -594,11 +594,11 @@ def main() -> int:
     print("RESULT")
     print("=" * 88)
     print("  Exact reduction answer:")
-    print("    - the fixed native N_e seed surface already contains exact physical")
+    print("    - the supplied N_e seed surface contains comparator-matching")
     print("      PMNS points")
     print("    - on the verified regular patch those points form a local 2-real")
     print("      source manifold")
-    print("    - current exact nonlocal seed-surface selector families do not pick")
+    print("    - current conditional nonlocal seed-surface candidates do not pick")
     print("      that manifold")
     print("    - so the remaining I5 object is a new 2-real point-selection law on")
     print("      the exact N_e PMNS source manifold")

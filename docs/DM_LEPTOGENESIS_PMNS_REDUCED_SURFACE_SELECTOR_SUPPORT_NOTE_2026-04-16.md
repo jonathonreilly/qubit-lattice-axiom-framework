@@ -1,5 +1,6 @@
 # DM Leptogenesis PMNS Reduced-Surface Selector Support
 
+**Claim type:** bounded_theorem
 **Status:** bounded - bounded or caveated result note
 **Date:** 2026-04-16
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_reduced_surface_selector_support.py`
@@ -7,8 +8,8 @@
 
 ## Question
 
-The existing PMNS-assisted `N_e` selector theorem already found the lowest-action
-closure branch on the exact reduced surface by a multistart constrained scan.
+The conditional PMNS-assisted `N_e` calculator found a lowest-action closure
+branch on the supplied reduced surface by a multistart constrained scan.
 The remaining review question was whether that lower-action branch can be
 certified as the unique global minimum on the exact reduced domain by a more
 exhaustive optimization argument, rather than just a branch scan.
@@ -18,8 +19,8 @@ strong optimization support rather than a live theorem-grade certification.
 
 ## What the reduced domain is
 
-The reduction-exhaustion theorem already eliminated all admissible closure
-components beyond the fixed native `N_e` seed surface. On that exact domain we
+The bounded reduction note already identifies the supplied conditional
+parameter domain with the fixed `N_e` seed surface. On that supplied domain we
 use the compact chart
 
 `(u_1, u_2, v_1, v_2, delta) in [0,1]^4 x [-pi, pi]`
@@ -30,9 +31,9 @@ with
 
 `y = 3 YBAR_NE * (v_1, (1-v_1)v_2, (1-v_1)(1-v_2))`
 
-This chart is exact and surjective onto the fixed native `N_e` seed surface.
-So a global optimization over this compact chart is already a global
-optimization over the admissible PMNS-assisted closure domain.
+This chart is surjective onto the supplied fixed `N_e` seed parameterization.
+So a global optimization over this compact chart covers that conditional
+parameter domain; it does not derive its physical admissibility.
 
 ## What is supported
 
@@ -51,8 +52,8 @@ the refreshed branch. The support result is:
 - the lower branch closes the favored column exactly
 - the lower branch is separated from the next branch by a finite action gap
 
-The lower-action branch is the same exact branch already seen in the earlier
-selector theorem:
+The lower-action branch is the same numerical branch already returned by the
+conditional calculator:
 
 - `x = (0.471675, 0.553810, 0.664515)`
 - `y = (0.208063, 0.464382, 0.247555)`
@@ -96,7 +97,7 @@ The runner imports four PMNS-side modules; each has a framework wrapper note:
 
 - [DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md) — flavor-column functional theorem (`func` module).
 - [DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md) — active-projector reduction (`act` module).
-- [DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md) — observable-relative action law (`rel` module).
+- [DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md](DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md) — conditional relative-action objective/calculator (`rel` module); no physical selector authority.
 - [DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md](DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md) — projector interface supplying `canonical_h`.
 
 ## Command

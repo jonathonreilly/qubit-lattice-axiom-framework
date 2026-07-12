@@ -129,8 +129,9 @@ not execute or request it.
 2. K-odd Hermitian observables EXIST — i(C - C^2) is Hermitian with
    eigenvalues {-sqrt(3), 0, +sqrt(3)} and would resolve the doublet; the
    theorem shows it is conjugation-ODD, so a law privileging it depends on
-   the complex-unit convention and is available only as an ADMITTED premise
-   (quote the Qualification clause's "unless that choice is admitted").
+   the complex-unit convention and is available only as an ADMITTED premise —
+   the Qualification clause itself provides that route: "unless that choice is
+   admitted."
 3. The physical charged-lepton carrier identification is not derived here.
 4. No measure/grain selection (that is the sibling theorem's L3), no R-eta,
    no delta, no mass content, no comparator, no threshold.

@@ -3,7 +3,7 @@ runner: scripts/koide_sector_orbit_partition_complex_unit_convention_2026_07_12.
 runner_sha256: 26ec3be9676275442b3892d0349d80017d238738cf7aa32876830dc985fe2a99
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.45
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 PASS V1.1 Qubit real-presentation clause verbatim

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 420 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2621 |
+| unaudited | 2620 |
 | audit_in_progress | 29 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 101 |
+| ~~audited_conditional~~ | 102 |
 | ~~audited_failed~~ | 26 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -48,12 +48,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 29 |
 | `audited_clean` | 558 |
-| `audited_conditional` | 101 |
+| `audited_conditional` | 102 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2971 |
+| `unaudited` | 2970 |
 
 | claim_type | count |
 |---|---:|
@@ -787,6 +787,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_generated_family_probe_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `source_resolved_generated_wavefield_transfer_v2_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `source_resolved_radical_geometry_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `staggered_3d_self_gravity_sign_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `staggered_fermion_card_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | B | - |
 | `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `structured_chokepoint_bridge_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -9210,6 +9211,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The affine contraction identity follows by direct subtraction, and 0<alpha<1 gives attraction. Substitution into pi_s, r(s), and Q(s) gives (1/2,1/2), 1/2, and 2/3 at s=0, with the table's s=1 entries also checking algebraically.
 - **rationale:** The audited claim is deliberately bounded to stability under a supplied affine reset map and a supplied dial parametrization, not selection of that map or a physical dial value. Independent algebra confirms the contraction, stationarity, and displayed dial substitutions without using the runner implementation path. The runner contains many documentation and sibling-note string checks, but the source note's load-bearing mathematical claim closes from the displayed definitions and standard algebra.
 - **auditor confidence:** high
+
+### `staggered_3d_self_gravity_sign_note_2026-04-11`
+
+- **Note:** [`STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md`](../../docs/STAGGERED_3D_SELF_GRAVITY_SIGN_NOTE_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The runner verifies final-time contraction and sign nonseparation for the listed blocked-width, core-probability, and blocked-centroid observables on the centered N_STEPS=20 fixture at side lengths 9, 11, and 13; it does not establish a general trajectory-sign no-go or derive the physical self-gravity model from the framework premises.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00128-staggered_3d_self_gravity_si`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For side lengths 9, 11, and 13, the computed blocked width and core observables contract for both source signs while the centered trajectory readouts remain effectively unchanged under the sign flip.  _(class `C`)_
+- **chain closes:** False — The numerical computation closes on its explicitly programmed finite model, but the source overextends that result to a robust primary-architecture self-gravity statement and a broader failure of sign-selective trajectory closure. A framework-native dynamics/source bridge and tests of off-center, longer-time, or genuinely different trajectory observables are missing.
+- **rationale:** The runner genuinely constructs the lattice operators, solves the six nonlinear evolutions, and reproduces the reported finite rows without hard-coding their outputs. However, the Hamiltonian, parity-coupled self-field law, coupling strength, centered initial condition, blocking prescription, and finite duration are supplied model choices rather than consequences of the accepted framework premises. The completed evidence supports the exact finite fixture, but not the note's broader physical-architecture and sign-closure language.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1 contains untested off-center, longer-time, and alternate-carrier routes.
+    - N5 identifies untested resolutions behind the robust and sign-closure rhetoric.
 
 ### `staggered_axis_symmetry_is_s3_narrow_theorem_note_2026-05-23`
 

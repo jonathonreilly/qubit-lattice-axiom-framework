@@ -1,4 +1,7 @@
 # PR Backlog
 
-No delivery failure is currently recorded. One review PR is pending after the
-review-loop disposition is `pass`.
+- Review PR: [#5277](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5277)
+- Status: open; review-loop disposition `pass`
+- Merge: not performed by this physics loop
+- Post-merge action: independent audit of
+  `dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16`

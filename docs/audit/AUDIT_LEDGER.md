@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 100 |
 | **retained_no_go** | 41 |
-| **retained_bounded** | 406 |
+| **retained_bounded** | 407 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2677 |
+| unaudited | 2676 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 533 |
+| `audited_clean` | 534 |
 | `audited_conditional` | 85 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3027 |
+| `unaudited` | 3026 |
 
 | claim_type | count |
 |---|---:|
@@ -440,6 +440,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `matched_2d_4d_decoherence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_decay_diagnosis_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `memory_mu2_geometry_sweep_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `mesoscopic_surrogate_localization_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `mirror_2d_gravity_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `mirror_2d_validation_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -6362,6 +6363,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The registered runner exits 0 and reproduces the scaled-geometry decay and fixed-geometry survival/strengthening tables exactly, including the mu^2=0 and mu^2=0.22 anchor values quoted in the note.
 - **rationale:** The bounded diagnosis closes against scripts/frontier_memory_mu2_size_sweep.py. The current output matches the note's scaled-geometry rows, including N=61 mu2=0 memory +0.020854 vs mu2=0.22 +0.016780 and N=121 mu2=0 +0.001767 vs mu2=0.22 +0.000865, and it matches the fixed-geometry rows, including N=81 mu2=0 +0.231199 vs mu2=0.22 +0.244260 and N=121 mu2=0 +2.580905 vs mu2=0.22 +2.599619. The note does not promote a publication-grade memory claim; it only narrows the failure mode.
 - **auditor confidence:** high
+
+### `mermin_wagner_bogoliubov_textbook_import_note_2026-05-18`
+
+- **Note:** [`MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md`](../../docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite Gibbs-state Bogoliubov inequality and lattice IR-sum certificate only; excludes Ward-normalized order-parameter extraction and the no-continuous-symmetry-SSB conclusion.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00288-mermin_wagner_bogoliubov_tex`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The finite Gibbs-state Bogoliubov inequality and the dimension-dependent infrared behavior of I_d(L) follow directly from finite spectral algebra and the lattice dispersion E_k = 2 sum_mu(1-cos k_mu).  _(class `C`)_
+- **chain closes:** True — The spectral Cauchy-Schwarz argument closes the finite matrix inequality, while the exact one-dimensional identity and the small-k behavior E_k asymptotic to |k|^2 establish the stated infrared dimension threshold. The missing Ward normalization affects only the explicitly excluded order-parameter consequence.
+- **rationale:** The runner genuinely constructs Gibbs matrices and lattice sums rather than printing or importing the contested results, and its PASS=5 FAIL=0 output agrees with the source's bounded core. Random matrix trials alone would not prove the universal Bogoliubov inequality, but the source supplies the standard finite spectral/Cauchy-Schwarz proof route; likewise, the asymptotic threshold follows analytically from the stated lattice dispersion rather than solely from the finite ladders. The source consistently labels the Ward-normalized order-parameter bound as conditional and excludes it from the audited load-bearing scope.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `mesoscopic_surrogate_localization_sweep_note`
 

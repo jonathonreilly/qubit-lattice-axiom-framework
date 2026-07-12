@@ -3,7 +3,7 @@
     "critical": 650,
     "high": 335,
     "leaf": 1098,
-    "medium": 722
+    "medium": 721
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -31482,28 +31482,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/mermin_wagner_bogoliubov_bounded_certificate.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "post_record_admitted_sample_target_vector_interface_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -50480,6 +50458,31 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
+        "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 1.5,
+      "note_path": "docs/CMW_WARD_NORMALIZED_BOGOLIUBOV_BRIDGE_THEOREM_NOTE_2026-06-04.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/cmw_ward_normalized_bogoliubov_bridge_2026_06_04.py",
+      "transitive_descendants": 1
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "color_orientation_three_vs_threebar_succession_candidate_conditional_bounded_theorem_note_2026-07-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -57551,31 +57554,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/cl3_closure_t2_gnewton_reaudit_2026_05_10_t2gnewton.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "cmw_ward_normalized_bogoliubov_bridge_theorem_note_2026-06-04",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29",
-        "mermin_wagner_bogoliubov_textbook_import_note_2026-05-18"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/CMW_WARD_NORMALIZED_BOGOLIUBOV_BRIDGE_THEOREM_NOTE_2026-06-04.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/cmw_ward_normalized_bogoliubov_bridge_2026_06_04.py",
       "transitive_descendants": 1
     },
     {
@@ -80348,5 +80326,5 @@
     }
   ],
   "ready_count": 525,
-  "total_pending": 2805
+  "total_pending": 2804
 }

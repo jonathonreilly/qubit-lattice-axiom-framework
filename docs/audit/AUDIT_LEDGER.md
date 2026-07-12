@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 100 |
 | **retained_no_go** | 41 |
-| **retained_bounded** | 405 |
+| **retained_bounded** | 406 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2678 |
+| unaudited | 2677 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 532 |
+| `audited_clean` | 533 |
 | `audited_conditional` | 85 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3028 |
+| `unaudited` | 3027 |
 
 | claim_type | count |
 |---|---:|
@@ -350,6 +350,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-current | A | - |
 | `gate_b_no_restore_joint_package_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `gate_b_nonlabel_sign_grown_transfer_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -4760,6 +4761,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The cited grown-distance-law authority is retained_bounded and supplies the bounded grown row. The primary runner and included helper source instantiate the grown geometry, source field, propagation, detector centroid, and transfer checks directly rather than replaying hard-coded expected values.
 - **rationale:** The load-bearing evidence is the completed runner output with PASS=14 FAIL=0, supported by source code that actually computes the quantities under test. The only one-hop cited authority is retained_bounded and is used narrowly to identify the grown-row construction and parameters. The claim remains bounded to this seed-0 finite-runner row and does not establish a family-wide replacement or general geometry-sector theory.
 - **auditor confidence:** high
+
+### `gauge_factor_preservation_record_typed_selector_conditional_decomposition_bounded_theorem_note_2026-07-06`
+
+- **Note:** [`GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md`](../../docs/GAUGE_FACTOR_PRESERVATION_RECORD_TYPED_SELECTOR_CONDITIONAL_DECOMPOSITION_BOUNDED_THEOREM_NOTE_2026-07-06.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** On the supplied C^3 tensor C^2 carrier, the ordered infinitesimal stabilizer of M_3 tensor I_2 and I_3 tensor M_2 inside u(6) is the 12-dimensional factorwise image, with semisimple su(3) direct-sum su(2) and one central u(1); REGISTERED-FACTOR and all physical identifications remain explicit conditions or outside scope.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00287-gauge_factor_preservation_re`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Given the supplied C^6=C^3 tensor C^2 split and ordered preservation of M_3 tensor I_2 and I_3 tensor M_2, the stabilizer inside u(6) equals the 12-dimensional factorwise algebra.  _(class `A`)_
+- **chain closes:** True — The runner independently constructs the antihermitian basis, exact rational stabilizer equations, factorwise span, Lie brackets, center, and Killing form, establishing T1 on the supplied finite-dimensional surface. T2 contributes only the explicitly conditional convention that compatibility with a registered split means preserving it.
+- **rationale:** The load-bearing result is genuine exact matrix-algebra closure, not a physical gauge-selection or carrier derivation, and the six substantive algebra checks pass over exact rationals. The failed quotation audit identifies a non-load-bearing wording mismatch with the current axiom memo; the current memo still directly supports the narrower premise boundary that REGISTERED-FACTOR is not axiom content. The claim consistently excludes gauging, chirality, hypercharge, physical color/weak identification, and derivation of the C^6 carrier.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `gauge_scalar_temporal_completion_theorem_note`
 

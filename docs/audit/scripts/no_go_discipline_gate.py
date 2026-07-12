@@ -528,6 +528,13 @@ def runner_stdout_evidence_path(claim_id: str) -> str:
     return f"audit-packet://runner-stdout/{claim_id}"
 
 
+def blind_reaudit_control_path(claim_id: str) -> str:
+    return f"audit-packet://blind-reaudit-control/{claim_id}"
+
+
+BLIND_REAUDIT_PRIOR_SCOPE = "WITHHELD_FOR_FRESH_CONTEXT"
+
+
 SEARCH_STOPWORDS = {
     "about", "after", "against", "before", "bounded", "claim", "clean",
     "conditional", "current", "derived", "framework", "note", "result",
@@ -566,53 +573,6 @@ def build_cross_cycle_index(
     cid = str(row.get("claim_id") or "")
     root = Path(repo_root)
     current_terms = _row_search_terms(row, root)
-
-    def add_history(
-        source_id: str, history: list[Any], *, require_overlap: bool = False
-    ) -> None:
-        for index, archived in enumerate(history):
-            if not isinstance(archived, dict):
-                continue
-            overlap = sorted(
-                current_terms.intersection(
-                    _search_terms(json.dumps(archived, sort_keys=True))
-                )
-            )
-            if require_overlap and len(overlap) < 2:
-                continue
-            invalidation_reason = str(archived.get("invalidation_reason") or "")
-            explicitly_retired = bool(
-                re.search(
-                    r"(?:^|[_:\s-])(?:retired|superseded|source_removed|note_removed)(?:$|[_:\s-])",
-                    invalidation_reason,
-                    re.IGNORECASE,
-                )
-            )
-            candidates.append(
-                {
-                    "candidate_id": f"{source_id}:previous_audit:{index}",
-                    "kind": "prior_audit_cycle",
-                    "source_claim_id": source_id,
-                    "claim_type": archived.get("claim_type"),
-                    "claim_scope": archived.get("claim_scope"),
-                    "invalidation_reason": invalidation_reason,
-                    "matching_terms": overlap,
-                    "lifecycle_state": "retired" if explicitly_retired else "active",
-                    "retired": explicitly_retired,
-                    # Lifecycle and current applicability are independent.
-                    # The auditor must decide applicability from the indexed
-                    # mechanism and record a substantive disposition.
-                    "applicable": None,
-                }
-            )
-
-    add_history(cid, list(row.get("previous_audits") or []))
-    for dep_id in row.get("deps") or []:
-        add_history(
-            dep_id,
-            list(ledger_rows.get(dep_id, {}).get("previous_audits") or []),
-            require_overlap=True,
-        )
 
     obligations = _load_json(root, OBLIGATION_REGISTRY)
     for obligation_id, record in sorted((obligations.get("nodes") or {}).items()):
@@ -743,11 +703,10 @@ def build_cross_cycle_index(
             }
         )
     kind_priority = {
-        "prior_audit_cycle": 0,
-        "open_gate": 1,
-        "similar_negative_boundary": 2,
-        "repo_negative_phrase_hit": 3,
-        "physics_loop_no_go_ledger": 4,
+        "open_gate": 0,
+        "similar_negative_boundary": 1,
+        "repo_negative_phrase_hit": 2,
+        "physics_loop_no_go_ledger": 3,
     }
     ordered_candidates = sorted(
         candidates,
@@ -799,8 +758,11 @@ def build_cross_cycle_index(
             "schema": "no_go_cross_cycle_index_v1",
             "claim_id": cid,
             "search_scope": {
-                "current_row_audit_history": True,
-                "one_hop_authority_audit_history": True,
+                # Prior audit judgments are deliberately excluded. N8 is a
+                # fresh search over source-cycle artifacts, open gates, and
+                # governed no-go ledgers, not a replay of earlier verdicts.
+                "current_row_audit_history": False,
+                "one_hop_authority_audit_history": False,
                 "historical_dispositions": True,
                 "open_gates": True,
                 "candidate_limit": {
@@ -3306,27 +3268,38 @@ def validate_no_go_discipline(
             return "No-Go Discipline FAIL narrowed_claim_scope must equal the applied claim_scope"
         if not _text(packet.get("prior_claim_scope")):
             return "No-Go Discipline FAIL requires prior_claim_scope"
-        if prior_claim_scope is None:
-            return "No-Go Discipline FAIL requires an authentic pre-audit ledger scope"
-        if packet["prior_claim_scope"] != prior_claim_scope:
-            return "No-Go Discipline FAIL prior_claim_scope must equal the pre-audit ledger scope"
-        if _norm(packet["prior_claim_scope"]) == _norm(packet["narrowed_claim_scope"]):
-            return "No-Go Discipline FAIL must actually narrow the pre-audit claim scope"
-        prior_tokens = _scope_tokens(packet["prior_claim_scope"])
-        narrowed_tokens = _scope_tokens(packet["narrowed_claim_scope"])
-        if not narrowed_tokens or not narrowed_tokens < prior_tokens:
-            return (
-                "No-Go Discipline FAIL narrowed_claim_scope must be a strict lexical "
-                "subset of prior_claim_scope"
-            )
-        if (
-            prior_tokens.intersection(LOGICAL_SCOPE_TOKENS)
-            != narrowed_tokens.intersection(LOGICAL_SCOPE_TOKENS)
-        ):
-            return (
-                "No-Go Discipline FAIL narrowing must preserve logical polarity "
-                "tokens such as no/not/without/only/all"
-            )
+        blind_reaudit = any(
+            "blind_reaudit_control" in set(entry.get("roles") or [])
+            for entry in (evidence_manifest or {}).values()
+        )
+        if blind_reaudit:
+            if packet["prior_claim_scope"] != BLIND_REAUDIT_PRIOR_SCOPE:
+                return (
+                    "blind re-audit prior_claim_scope must use the authenticated "
+                    "WITHHELD_FOR_FRESH_CONTEXT marker"
+                )
+        else:
+            if prior_claim_scope is None:
+                return "No-Go Discipline FAIL requires an authentic pre-audit ledger scope"
+            if packet["prior_claim_scope"] != prior_claim_scope:
+                return "No-Go Discipline FAIL prior_claim_scope must equal the pre-audit ledger scope"
+            if _norm(packet["prior_claim_scope"]) == _norm(packet["narrowed_claim_scope"]):
+                return "No-Go Discipline FAIL must actually narrow the pre-audit claim scope"
+            prior_tokens = _scope_tokens(packet["prior_claim_scope"])
+            narrowed_tokens = _scope_tokens(packet["narrowed_claim_scope"])
+            if not narrowed_tokens or not narrowed_tokens < prior_tokens:
+                return (
+                    "No-Go Discipline FAIL narrowed_claim_scope must be a strict lexical "
+                    "subset of prior_claim_scope"
+                )
+            if (
+                prior_tokens.intersection(LOGICAL_SCOPE_TOKENS)
+                != narrowed_tokens.intersection(LOGICAL_SCOPE_TOKENS)
+            ):
+                return (
+                    "No-Go Discipline FAIL narrowing must preserve logical polarity "
+                    "tokens such as no/not/without/only/all"
+                )
         if not _list(packet.get("corrected_wall_set")) or not all(_text(x) for x in packet["corrected_wall_set"]):
             return "No-Go Discipline FAIL corrected_wall_set must be a list of non-empty strings"
         collapsed = packet.get("N2_wall_independence", {}).get("collapsed_wall_set") or []

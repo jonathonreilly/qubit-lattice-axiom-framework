@@ -81,7 +81,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 32 | resolved_or_superseded | `action_normalization_note` | no_go / unaudited / unaudited |
 | 33 | resolved_or_superseded | `packet_memory_note` | bounded_theorem / unaudited / unaudited |
 | 34 | resolved_or_superseded | `sigma_mnu_f3_stuck_fanout_synthesis_note_2026-04-28` | no_go / unaudited / unaudited |
-| 35 | resolved_or_superseded | `weak_coupling_sign_sensitivity_note_2026-04-11` | open_gate / unaudited / unaudited |
+| 35 | resolved_or_superseded | `weak_coupling_sign_sensitivity_note_2026-04-11` | open_gate / audited_conditional / audited_conditional |
 | 36 | resolved_or_superseded | `work_history.yt.yt_unbounded_program_note` | open_gate / unaudited / unaudited |
 | 37 | invalid_missing_claim_id | `cl4c_carrier_axiom_consequence_map_note_2026-04-28` | None / None / None |
 | 38 | invalid_missing_claim_id | `hubble_lane5_c1_a5_minimal_carrier_axiom_audit_note_2026-04-28` | None / None / None |

@@ -1790,9 +1790,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "unaudited",
+      "actual_audit_status": "audited_conditional",
       "actual_claim_type": "open_gate",
-      "actual_effective_status": "unaudited",
+      "actual_effective_status": "audited_conditional",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",

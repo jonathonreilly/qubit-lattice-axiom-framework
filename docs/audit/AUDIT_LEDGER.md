@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 37 |
-| **retained_bounded** | 392 |
+| **retained_bounded** | 393 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2717 |
+| unaudited | 2716 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 510 |
+| `audited_clean` | 511 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 36 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3067 |
+| `unaudited` | 3066 |
 
 | claim_type | count |
 |---|---:|
@@ -622,6 +622,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wave_direct_dm_h025_feasibility_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_high_band_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `wave_direct_dm_h025_low_band_retention_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `wave_direct_dm_h025_seed0_crossfamily_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `wave_direct_dm_h025_seed1_crossfamily_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `wave_direct_dm_h025_two_point_synthesis_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | B | - |
 | `wave_direct_dm_matched_history_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -9459,6 +9460,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The one-hop dependency is retained_bounded for the same Fam1 seed-1 H=0.25 control ladder, and the primary no-argument wrapper pins exactly family=Fam1, seed=1, H=0.25 before delegating to the included computation helpers. The cached runner output matches the source row and summary; independent arithmetic from the printed values confirms the negative signs, R_hist scale, and approximately 5.2% scaled-spread.
 - **rationale:** Clean within the stated bounded scope. The runner is not a constant-printer: the wrapper pins the intended Fam1/seed1/H=0.25 arguments, the helper constructs source histories and wave/beam responses, and the cache completes under the declared 1800 s budget. The note also correctly demotes the H=0.5/H=0.35 comparison rows and broader cross-seed/portability discussion to non-load-bearing context.
 - **auditor confidence:** high
+
+### `wave_direct_dm_h025_seed0_crossfamily_note`
+
+- **Note:** [`WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md`](../../docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic sign and depth comparison of the SHA-pinned Fam1 and Fam2 seed-0, H=0.25, S=0.004 rows, together with verification that each belongs to its retained-bounded four-strength control ladder; no surface-selection, magnitude, portability, or amplitude law was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00244-wave_direct_dm_h025_seed0_cr`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** From the two retained input rows, both selected delta_hist values are negative and the inequalities |D_Fam2(0.004)| > |D_Fam1(0.004)| and R_Fam2(0.004) < R_Fam1(0.004) < 0 establish the stated finite ordering.  _(class `A`)_
+- **chain closes:** True — The two one-hop authorities are explicitly retained_bounded, and the runner verifies their ledger status, registered paths, exact artifact hashes, parsed coordinates, nulls, ladder signs, spreads, and selected-row inequalities. The conclusion is therefore an algebraic closure over independent retained-grade inputs.
+- **rationale:** The load-bearing step is an exact sign-and-order comparison over two independent retained-bounded source packets, not a derivation of their underlying magnitudes. The runner contains no expected delta_hist or R_hist targets: it SHA-pins and parses the upstream artifacts, recomputes the ladder controls, and evaluates the finite inequalities. The fixed H, seed, family, and strength are expressly the bounded proposition's coordinates rather than a calibrated external comparator, and all wider structural or portability readings are excluded.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `wave_direct_dm_h025_seed1_crossfamily_note`
 

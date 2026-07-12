@@ -29,9 +29,9 @@ symmetric line. Its spectrum is therefore
 {alpha, alpha, alpha + beta}.
 ```
 
-Thus this explicitly supplied representation permits at most two distinct
-eigenvalues under exact `S_3` invariance. Under an axis-fixing `Z_2` subgroup,
-the invariant Hermitian space has real dimension five.
+The displayed spectrum records one singlet eigenvalue and one doublet
+eigenvalue. Under an axis-fixing `Z_2` subgroup, the invariant Hermitian space
+has real dimension five.
 
 ## Proof
 
@@ -55,68 +55,6 @@ The older `S3_MASS_MATRIX_NO_GO_NOTE.md` bundles the algebra with a
 physical-carrier assertion and is separately targeted for fresh-context
 re-audit. It is historical context, not authority for this lemma.
 
-## No-Go Discipline Gate For The Derived Spectral Boundary
-
-This is a review-only N1-N8 record for the consequence on line 32. It does not
-pre-assign an audit verdict; the independent audit lane must rebuild the packet
-against authenticated evidence.
-
-- **N1 — six distinct attack classes.** (1) **Symmetry/representation:** solve
-  the simultaneous generator commutators; the commutant is two-dimensional.
-  Character and ordered-pair-orbit calculations are cross-checks of this one
-  route, not additional attacks. (2) **Alternate carrier:** replace
-  `A_1 direct-sum E` by three repeated trivial irreps; the commutant becomes
-  nine-dimensional and a three-way spectrum is possible outside the carrier
-  hypothesis. (3) **Boundary/background:** weaken pointwise `S_3` to the
-  axis-fixing `Z_2`; the invariant Hermitian space has dimension five outside
-  the exact-symmetry hypothesis. (4) **Alternate observable/readout:** apply a
-  polynomial spectral readout to `alpha I + beta P_(A_1)`; functional calculus
-  still cannot create a third spectral value. (5) **Approximate-symmetry
-  limit:** add an arbitrarily small generic diagonal perturbation; it splits
-  three ways only with a nonzero generator commutator. (6)
-  **Dynamical/equivariant family:** `M(phi)=diag(phi)` is covariant as a family,
-  and a generic realized background has three values, but it is not a
-  pointwise invariant operator. The runner executes all six attack classes;
-  normalization/unitary-basis changes provide an additional cardinality
-  cross-check.
-- **N2 — condition independence.** The supplied unitary representation
-  `V ~= A_1 direct-sum E` does not imply that a chosen operator is exactly
-  `S_3` invariant, and exact invariance does not select that representation.
-  Both conditions are explicit and neither is counted as a derived wall.
-- **N3 — hidden-condition scan.** The proof uses only the supplied unitary
-  representation, exact invariance, Hermiticity, Schur's lemma, and the spectral
-  theorem. No physical generation, taste-cube, `hw=1`, mass, selector, dynamics,
-  or four-axiom bridge is imported.
-- **N4 — residual matching.** No prior negative claim is used as a witness.
-  In particular, the older physical-carrier note is excluded from the proof.
-- **N5 — rhetoric resolution.** The runner emits all five required resolution
-  checks: `per_element` distinguishes the two matrix-entry orbits; `per_site`
-  denies a site/physical-site identification; `per_mode` counts only the
-  `A_1` singlet and `E` doublet modes; `per_block` limits the result to one
-  supplied three-dimensional operator block; and `lattice_wide` denies any
-  lattice-wide or physical-generation exclusion.
-- **N6 — partial-closure paths.** Breaking `S_3`, changing the representation,
-  or introducing multiplicities can permit a three-value spectrum. Those are
-  honest escape routes outside the two explicit hypotheses, not new axioms and
-  not counterexamples to the scoped lemma.
-- **N7 — steelman.** The strongest objection to the abstract wording is that an
-  “`S_3`-invariant mass construction” may mean an equivariant family `M(phi)`
-  whose background transforms with `phi`, not a pointwise invariant operator.
-  A realized symmetry-breaking `phi_0` can then give `M(phi_0)` three distinct
-  eigenvalues while the full family remains covariant. That would refute a
-  family-level reading. The runner now tests this equivariant family and its
-  generic realized background directly. The lemma survives only because its hypothesis is the
-  narrower pointwise equation `U_g M U_g^* = M` for every `g` on the supplied
-  ordinary representation; the note makes no claim about equivariant families
-  or realized symmetry-breaking backgrounds.
-- **N8 — cross-cycle echo.** The older S3 note overlaid this algebra with a
-  physical `hw=1`/taste-cube reading. The applicable retirement mechanism is
-  precisely the one used here: split the exact abstract lemma from the
-  separately dispatched carrier-scope re-audit.
-
-**N1-N8 review status:** `PASS` for the narrow derived spectral boundary;
-physical-carrier or universal flavor conclusions remain outside scope.
-
 ## Reproduction
 
 ```bash
@@ -124,7 +62,7 @@ python3 scripts/frontier_s3_mass_matrix_no_go.py
 ```
 
 The runner checks the commutant by generator equations, characters, ordered-pair
-orbits, and group averaging; checks the projector form and two-value spectrum;
-and constructs the residual-`Z_2`, repeated-irrep, and broken-invariance escape
-routes. Its historical filename does not turn this narrow positive lemma into a
-no-go claim.
+orbits, and group averaging; checks the projector form and displayed spectral
+multiplicities; and constructs the residual-`Z_2`, repeated-irrep, and
+broken-invariance comparison cases. Its historical filename does not turn this
+narrow positive classification into a no-go claim.

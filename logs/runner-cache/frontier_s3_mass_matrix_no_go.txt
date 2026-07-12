@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_s3_mass_matrix_no_go.py
-runner_sha256: 7d548c512d914fd8a003e74bc92fd2d35dbc82091eec2f18652c0476f8287a5a
+runner_sha256: 9f1dcfd06d37ff045f096da2828a909943ae8e6eeaaf520e18e44a3bc73bdf61
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.23
 status: ok
 ----- stdout -----
 ========================================================================
@@ -49,20 +49,15 @@ PART 5: Explicit escape routes outside the two hypotheses
   [PASS] generic three-way split leaves exact S_3 invariance  (commutator norm = 1.414214)
 
 ========================================================================
-PART 6: Distinct attack routes and resolution-specific scope
+PART 6: Hypothesis comparisons and invariant checks
 ========================================================================
   [PASS] alternate polynomial spectral readout preserves the two-value bound  (distinct = 2)
   [PASS] approximate-symmetry perturbation splits only by leaving exact invariance  (distinct = 3, commutator = 1.414e-06)
   [PASS] equivariant family permits a split background outside pointwise invariance  (distinct = 3)
   [PASS] normalization and unitary-basis changes preserve spectral cardinality  (distinct = 2)
-  [PASS] per_element: matrix entries fall into diagonal/off-diagonal permutation orbits
-  [PASS] per_site: no lattice-site or physical-site identification is asserted
-  [PASS] per_mode: only the A_1 singlet and E doublet spectral modes are counted
-  [PASS] per_block: the statement concerns one supplied three-dimensional operator block
-  [PASS] lattice_wide: no lattice-wide or physical-generation exclusion is asserted
 
 ========================================================================
-TOTAL: PASS=27, FAIL=0
+TOTAL: PASS=22, FAIL=0
 ========================================================================
 
 ----- stderr -----

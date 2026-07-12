@@ -130,11 +130,10 @@ H_0 = 67.4\,\mathrm{km\,s^{-1}\,Mpc^{-1}}. \tag{1}
 $$
 
 These are not inputs to the retained structural core. They are epoch-selection
-data for the bounded cosmology portfolio. By contrast, the electroweak scale is
-not an external datum on the current paper surface. The exact hierarchy theorem
-fixes the source-response structure on the minimal block, and the quoted number
-is the canonical same-surface evaluation on the current plaquette-derived
-normalization chain.
+data for the bounded cosmology portfolio. The quoted electroweak-scale value is
+also not a four-axiom output. It is a conditional evaluation using the T1-d
+determinant-readout quotient, a source-block/record bridge, normalization, the
+current plaquette chain, the scale reference, and a supplied physical carrier.
 
 ### 2.2 What is and is not claimed
 
@@ -775,7 +774,7 @@ The fastest way to read the quantitative package is Table 1.
 
 | Row | Canonical output | Status on current paper surface |
 | --- | --- | --- |
-| Electroweak scale | $v = 246.282818290129\,\mathrm{GeV}$ | exact theorem + canonical same-surface evaluation |
+| Electroweak scale | $v = 246.282818290129\,\mathrm{GeV}$ | open audit target; conditional on determinant readout, source/record bridge, normalization, plaquette, scale, and carrier inputs |
 | Strong coupling | $\alpha_s(M_Z)=0.1181$ | retained standalone quantitative lane |
 | Electroweak normalization | $g_1(v)=0.4644$, $g_2(v)=0.6480$ | retained standalone quantitative lane |
 | CKM | $\lambda^2=\alpha_s(v)/2$, $A^2=2/3$, atlas-leading $|V_{ud}|_0=0.973824$, $|V_{us}|_0=0.22727$, $|V_{cb}|=0.04217$, $|V_{ub}|_0=0.003913$, $\phi_s(B_s)=-0.03850\,\mathrm{rad}$, $\phi_s/\sin(2\beta_d)=-0.05165$, CP-product $\alpha_s$ estimator, kaon $\epsilon_K$ CKM factors $(2J_0,-J_0,-5\alpha_s(v)^2J_0/18)$, NLO protected $\bar\gamma=65.905^\circ$ | promoted algebraic package |
@@ -884,7 +883,7 @@ identification on one chosen canonical textbook target. The gauge and matter
 side is no longer just structural algebra: it includes anomaly-forced $3+1$,
 retained three-generation structure, retained action-surface strong-CP
 closure on the retained Wilson-plus-staggered action surface, exact
-confinement, emergent Lorentz invariance, and a promoted
+confinement, a selected-action cubic-anisotropy diagnostic, and a promoted
 algebraic CKM atlas/axiom package. The quantitative side is no longer just a set of
 promising near-misses: it contains a canonical same-surface electroweak-scale
 evaluation, retained electroweak and strong-coupling lanes, and bounded
@@ -958,14 +957,15 @@ surface while still avoiding any unrestricted all-formulations claim.
 
 ### A.5 Proof sketch for Theorem 5
 
-Exact Grassmann factorization makes partition functions multiplicative under
-independent direct sums. A scalar observable generator must therefore be
-additive, and CPT-even bosonic observables can depend only on the modulus of
-the partition amplitude. Continuity then forces $W[J]=\log|\det(D+J)|-\log|\det D|$.
-Expanding $W[J]$ on the exact minimal block yields the previously isolated
-hierarchy kernel, while the temporal APBC selector gives the $(7/8)^{1/4}$
-factor. The quoted value of $v$ is the canonical same-surface evaluation of
-that exact theorem on the live plaquette chain.
+Given the T1-d determinant-readout quotient, source-block/record bridge, and
+normalization, exact Grassmann factorization makes partition functions
+multiplicative under independent direct sums and the supplied generator is
+additive. On those conditions one obtains
+$W[J]=\log|\det(D+J)|-\log|\det D|$. Expanding this conditional generator on
+the minimal block yields the hierarchy kernel, while the temporal APBC
+selector supplies the $(7/8)^{1/4}$ factor. The quoted value of $v$ additionally
+uses the current plaquette chain, scale reference, and physical carrier; the
+four axioms alone do not force this readout or evaluation.
 
 ## Appendix B. Supplementary Figures
 

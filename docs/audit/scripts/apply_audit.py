@@ -39,6 +39,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import no_go_discipline_gate
+import audit_invocation
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
@@ -82,7 +83,7 @@ def trusted_evidence_manifest(
         raise ValueError("trusted evidence manifest claim_id mismatch")
     if expected_invocation_id is not None and invocation_id != expected_invocation_id:
         raise ValueError("trusted evidence manifest audit_invocation_id mismatch")
-    if not isinstance(invocation_id, str) or not re.fullmatch(r"[0-9a-f]{32}", invocation_id):
+    if audit_invocation.validation_error(invocation_id, required=True):
         raise ValueError("trusted evidence manifest audit_invocation_id is malformed")
     if not isinstance(issued_at, str):
         raise ValueError("trusted evidence manifest issued_at is missing")
@@ -170,11 +171,7 @@ def audit_invocation_error(blob: dict) -> str | None:
         if os.environ.get("CODEX_AUDIT_TRUSTED_EVIDENCE_MANIFEST"):
             return "trusted evidence manifest requires audit_invocation_id"
         return None
-    if not isinstance(invocation_id, str) or not re.fullmatch(
-        r"[0-9a-f]{32}", invocation_id
-    ):
-        return "audit_invocation_id must be 32 lowercase hexadecimal characters"
-    return None
+    return audit_invocation.validation_error(invocation_id, required=True)
 
 
 def trusted_manifest_current_error(

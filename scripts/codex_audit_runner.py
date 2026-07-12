@@ -61,6 +61,7 @@ AUDIT_DIR = REPO_ROOT / "docs" / "audit"
 sys.path.insert(0, str(AUDIT_DIR / "scripts"))
 import premise_nodes
 import no_go_discipline_gate
+import audit_invocation
 
 LEDGER_PATH = AUDIT_DIR / "data" / "audit_ledger.json"
 QUEUE_PATH = AUDIT_DIR / "data" / "audit_queue.json"
@@ -1147,6 +1148,11 @@ def validate_verdict(
         return f"missing fields: {sorted(missing)}"
     if blob.get("claim_id") != expected_cid:
         return f"claim_id mismatch: expected {expected_cid!r}, got {blob.get('claim_id')!r}"
+    invocation_error = audit_invocation.validation_error(
+        blob.get("audit_invocation_id"), required=expected_invocation_id is not None
+    )
+    if invocation_error:
+        return invocation_error
     if expected_invocation_id is not None and blob.get("audit_invocation_id") != expected_invocation_id:
         return "audit_invocation_id is absent or does not match the prompt-bound invocation"
     if blob.get("verdict") == "audited_clean" and evidence_manifest is not None:
@@ -1286,9 +1292,9 @@ def apply_one(
     """Pipe a verdict blob through apply_audit.py via stdin."""
     verdict_blob = dict(verdict_blob)
     invocation_id = verdict_blob.get("audit_invocation_id")
-    if not isinstance(invocation_id, str) or not re.fullmatch(r"[A-Za-z0-9._:-]{16,128}", invocation_id):
-        canonical = json.dumps(verdict_blob, sort_keys=True, separators=(",", ":"))
-        invocation_id = hashlib.sha256(canonical.encode("utf-8")).hexdigest()[:32]
+    invocation_error = audit_invocation.validation_error(invocation_id, required=True)
+    if invocation_error:
+        return False, invocation_error
     verdict_blob["audit_invocation_id"] = invocation_id
     cmd = [sys.executable, str(APPLY_AUDIT_SCRIPT)]
     if not propagate:

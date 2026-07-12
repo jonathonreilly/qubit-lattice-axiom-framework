@@ -1543,15 +1543,17 @@ def _has_negative_boundary_assertion(text: str) -> bool:
     )
     prose = re.sub(r"(?m)^\s*[^\n.!?]*\?\s*$", "", prose)
     prose = re.sub(
-        r"(?im)^\s*(?:see|refer\s+to|compare|cf\.)\b[^\n.!?]*"
-        r"\b(?:no[- ]?go|obstruction|firewall)\b[^\n.!?]*[.!]?\s*$",
+        r"(?im)^\s*(?:see|refer\s+to|compare|cf\.)\b[^\n:;.!?]*"
+        r"\b(?:no[- ]?go|obstruction|firewall)\b[^\n:;.!?]*[.!]?\s*$",
         "",
         prose,
     )
     prose = re.sub(
         r"(?im)^\s*(?:the\s+)?(?:runner|script|implementation|renderer|tool)\s+"
         r"(?:does\s+not|cannot|fails?\s+to)\s+"
-        r"(?:produce|render|write|emit|plot|display)\b[^\n.!?]*[.!]?\s*$",
+        r"(?:produce|render|write|emit|plot|display)\s+"
+        r"(?:plots?|figures?|charts?|files?|artifacts?|logs?|output|stdout|stderr|"
+        r"markdown|json|images?|tables?|labels?|links?)\b[^\n.!?]*[.!]?\s*$",
         "",
         prose,
     )
@@ -1998,6 +2000,7 @@ def _validate_n2(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     dependent_walls: set[str] = set()
     directional_edges: list[tuple[str, str]] = []
     equivalent_pairs: list[tuple[str, str]] = []
+    closure_relation: dict[tuple[str, str], bool] = {}
     for index, check in enumerate(checks, 1):
         if not isinstance(check, dict) or not _text(check.get("left")) or not _text(check.get("right")):
             return f"N2 pairwise check {index} must name left and right walls"
@@ -2020,6 +2023,10 @@ def _validate_n2(packet: dict, status: str, manifest: dict[str, dict] | None) ->
         expected_independent = not check["left_closes_right"] and not check["right_closes_left"]
         if check["independent"] != expected_independent:
             return f"N2 pairwise check {index}.independent is inconsistent"
+        left_wall = _norm(check["left"])
+        right_wall = _norm(check["right"])
+        closure_relation[(left_wall, right_wall)] = check["left_closes_right"]
+        closure_relation[(right_wall, left_wall)] = check["right_closes_left"]
         if not _text(check.get("rationale")) or len(_norm(check["rationale"])) < 40:
             return f"N2 pairwise check {index}.rationale must explain the directional test"
         if _norm(check["left"]) not in _norm(check["rationale"]) or _norm(check["right"]) not in _norm(check["rationale"]):
@@ -2060,6 +2067,25 @@ def _validate_n2(packet: dict, status: str, manifest: dict[str, dict] | None) ->
 
     for left, right in equivalent_pairs:
         union(left, right)
+    components: dict[str, list[str]] = {}
+    for wall in wall_map:
+        components.setdefault(find(wall), []).append(wall)
+    for root, members in components.items():
+        for outside in wall_map:
+            if find(outside) == root:
+                continue
+            signatures = {
+                (
+                    closure_relation[(member, outside)],
+                    closure_relation[(outside, member)],
+                )
+                for member in members
+            }
+            if len(signatures) != 1:
+                return (
+                    "N2 mutually closing walls must have congruent closure "
+                    "relations with every third wall"
+                )
     graph: dict[str, set[str]] = {find(wall): set() for wall in wall_map}
     dependent_components: set[str] = set()
     for source, target in directional_edges:
@@ -2085,9 +2111,6 @@ def _validate_n2(packet: dict, status: str, manifest: dict[str, dict] | None) ->
 
     if any(has_cycle(wall) for wall in graph):
         return "N2 directional closure relation must be acyclic"
-    components: dict[str, list[str]] = {}
-    for wall in wall_map:
-        components.setdefault(find(wall), []).append(wall)
     expected_collapsed = {
         sorted(members)[0]
         for root, members in components.items()

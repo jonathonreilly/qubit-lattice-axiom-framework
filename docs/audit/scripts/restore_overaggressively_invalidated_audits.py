@@ -496,6 +496,17 @@ def restore_audit_from_previous(
     for field in ARCHIVED_FIELDS:
         if field in archived:
             new_row[field] = archived[field]
+    invocation_history: list[str] = []
+    for value in (
+        *(archived.get("audit_invocation_history") or []),
+        archived.get("audit_invocation_id"),
+        *(row.get("audit_invocation_history") or []),
+        row.get("audit_invocation_id"),
+    ):
+        if isinstance(value, str) and value and value not in invocation_history:
+            invocation_history.append(value)
+    if invocation_history:
+        new_row["audit_invocation_history"] = invocation_history
     note_body = ""
     note_path = str(new_row.get("note_path") or "")
     try:

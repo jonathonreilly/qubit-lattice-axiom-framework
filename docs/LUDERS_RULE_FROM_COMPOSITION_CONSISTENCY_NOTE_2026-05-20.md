@@ -319,10 +319,12 @@ pre-record density state + physical instrument/readout context
   -> selective conditioning update as a physical record update.
 ```
 
-The 2026-06-05 Record axiom explicitly supplies durable realized-outcome
-registration and finite scalar additivity only after a readout context is
-given; it supplies no probability, normalization, measurement/decoherence
-dynamics, or instrument generation. Therefore the parent row remains
+The landed Record axiom (`MINIMAL_AXIOMS_2026-06-29.md`) supplies fixed
+locking of exactly one admissible local possibility, permanence, and finite
+scalar readout additivity over disjoint records; it
+supplies no probability, normalization, measurement/decoherence dynamics, or
+instrument generation.
+Therefore the parent row remains
 conditional-support unless a separate retained measurement-side bridge is
 accepted. The exact subclaims above can be independently useful audit targets
 and can retire bare textbook *algebra* imports, but they do not by themselves

@@ -1,5 +1,11 @@
 # Handoff
 
+Branch: `claude/science-fix/epsstar_full_kernel_coefficient_derivation_bounded_theorem_n-2cbfadf8`
+
+Science commit: `0267f9857`
+
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5229
+
 Current claim movement: the historical coefficient language has been narrowed
 to a finite-scale quotient/sign identity, with direct retained-bounded model
 and coefficient-limit-boundary dependencies.

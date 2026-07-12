@@ -290,3 +290,34 @@ independent claim and math/code review pass. Audit validation seeds only
 strict lint has no errors. Final governance/N1--N8 re-review passes after
 group-wide fixed-point wording and residual/primitive tables were repaired.
 Generated status surfaces are stripped.
+
+## Pairwise-commuting common-edge Hamiltonian internal result
+
+- Exact Pauli and operator-Schmidt proofs give, up to a uniform onsite frame,
+  `h=c II+r(ZI+IZ)+g ZZ` from endpoint symmetry and overlap commutation.
+- The uniform cubic interaction factorizes without edge order and defines a
+  strict radius-at-most-one local automorphism at every real time.
+- Exact radius is one iff `sin(2gt)!=0`; all local axis observables are
+  conserved and the one-defect sector is flat.
+- Runner/cache: `PASS=25 FAIL=0`.
+
+### Common-Hamiltonian review iteration 1
+
+Independent claim, math/code, and governance reads agree on the normal form
+and radius theorem. Review rejected broad common-Hamiltonian wording: the
+theorem is restricted to pairwise-overlap-commuting two-qubit edge densities.
+Generic noncommuting sums, special-time and complete-layer cancellations,
+partitioned/larger-cell dynamics, and physical selection remain live. The
+full N1--N8 check therefore does not trigger the axiom-update stop condition.
+
+### Common-Hamiltonian review iteration 2
+
+PASS WITH BOUNDED CLAIMS. Governance re-review passed after every N4 residual
+received a file-and-line witness and internal branch/block labels were removed
+from the new scientific surfaces. The runner's radius certificate was
+strengthened with an exact four-site nonincident-edge cancellation check and
+remains cache-identical at `PASS=25 FAIL=0`. Vocabulary lint has zero
+violations. Audit validation seeds only `minimal_axioms`, leaves the claim
+`bounded_theorem` / `unaudited`, attaches no helper runners, and strict lint
+has no errors. Generated audit/effective-status surfaces are stripped before
+delivery; independent audit remains required.

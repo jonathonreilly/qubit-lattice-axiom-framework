@@ -1,11 +1,11 @@
 ---
-target_claim_id: symmetric_two_qubit_clifford_cubic_matching_qca_classification_bounded_theorem_note_2026-07-11
+target_claim_id: pairwise_commuting_endpoint_symmetric_edge_hamiltonian_classification_and_strict_qca_boundary_bounded_theorem_note_2026-07-12
 target_claim_type: bounded_theorem
-claim_type_reason: "Exhaustive 11,520/192/26 signed-Pauli Clifford gate classification and exact 48/48/96 schedule-product trichotomy under supplied carrier, gate-class, parity, and macro-tick inputs."
+claim_type_reason: "Exact ten-real-parameter classification under supplied endpoint symmetry and pairwise overlap commutation, including degeneracies, factorization, infinite local automorphism, exact radius, and conserved-axis boundary."
 actual_current_surface_status: bounded-support
 trace_class: direct_blocker_closure
 reachability_to_target: partially_closes
-conditional_surface_status: "In the supplied endpoint-symmetric Clifford six-matching grammar, 48 gates give one invariant product, 48 give eight products, and 96 give 720; common-Hamiltonian, non-Clifford, physical tick, Record, and continuum selection remain open."
+conditional_surface_status: "In the supplied pairwise-overlap-commuting endpoint-symmetric common-edge class, every density is one rotated Ising family with order-free strict radius at most one and no common-axis transport; noncommuting common Hamiltonians, physical tick, Record, and continuum selection remain open."
 hypothetical_axiom_status: null
 admitted_observation_status: none
 proposal_allowed: false
@@ -84,3 +84,17 @@ products, including separate spatial/cyclic/inverse/range controls and the
 36-local-commuting plus 12-complete-layer-cancellation refinement. Runner/cache:
 `PASS=23 FAIL=0`. The result is bounded to this finite gate/grammar class and
 does not trigger the axiom-update stop condition.
+
+The pairwise-commuting common-edge extension exactly classifies every
+endpoint-SWAP-symmetric Hermitian two-qubit density satisfying
+`[h_12,h_23]=0`. Up to one uniform onsite frame it is
+`c II+r(ZI+IZ)+g ZZ`. The translated interaction factorizes without schedule,
+defines a strict radius-at-most-one local automorphism, has exact radius one
+iff `sin(2gt)!=0`, conserves every local common-axis observable, and has a
+flat one-defect sector. Runner/cache: `PASS=25 FAIL=0`.
+
+The overlap-commutation hypothesis is intentionally strong. Arbitrary
+noncommuting common Hamiltonians, special finite-time and complete-layer
+cancellations, larger carriers/cells, and physical process selection remain
+open. The result is bounded, audit-pending, and does not trigger the campaign's
+axiom-update stop condition.

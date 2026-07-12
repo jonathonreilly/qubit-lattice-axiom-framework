@@ -220,3 +220,22 @@ simultaneous evolution, not an axiom update.
 Delivery: stacked PR
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5215 is
 open and mergeable on Block08; the independent audit workflow is queued.
+
+## Pairwise-commuting common-edge Hamiltonian classification
+
+The actual transfer-log, exact-H expansion, finite-range-H/LR, clock-factor,
+minimal-axiom, and matching-QCA lanes were read before fixing the scope. For
+one identical endpoint-SWAP-symmetric Hermitian edge density, exact overlap
+commutation holds iff, up to one uniform onsite frame,
+`h=c II+r(ZI+IZ)+g ZZ`. Every translated edge term then commutes, so the
+common flow is exactly order-free and defines a strict radius-at-most-one
+infinite-lattice automorphism. The radius is one exactly when
+`sin(2gt)!=0`, and zero at the complete exceptional set. Every `Z_x` is
+conserved and the one-defect sector is flat, so this class supplies phase
+entanglement but not common-axis transport. Runner/cache: `PASS=25 FAIL=0`.
+
+This is not an exhaustive common-Hamiltonian theorem. Noncommuting common
+sums, special-time or complete-layer cancellations, larger cells, and
+partitioned/clocked routes remain live. No axiom-update stop condition is
+triggered. The next exact discriminator is the noncommuting finite-time
+strictness boundary.

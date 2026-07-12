@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 105 |
-| **retained_no_go** | 48 |
+| **retained_no_go** | 49 |
 | **retained_bounded** | 421 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
 | unaudited | 2617 |
-| audit_in_progress | 28 |
+| audit_in_progress | 27 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -46,8 +46,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 28 |
-| `audited_clean` | 561 |
+| `audit_in_progress` | 27 |
+| `audited_clean` | 562 |
 | `audited_conditional` | 104 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 48 |
@@ -140,7 +140,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `poisson_self_gravity_mechanism_note` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
-| `single_clock_uniqueness_scope_boundary_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -553,6 +552,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `single_clock_uniqueness_scope_boundary_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `site_phase_cube_shift_intertwiner_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `sixth_family_complex_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
 | `sixth_family_sheared_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | B | - |
@@ -8812,6 +8812,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
   - **gate failures:**
     - N1: the discrete_entire_interpolation attack remains open against the source's unique-analytic-continuation wording.
+
+### `single_clock_uniqueness_scope_boundary_2026-06-06`
+
+- **Note:** [`SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md`](../../docs/SINGLE_CLOCK_UNIQUENESS_SCOPE_BOUNDARY_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite-dimensional algebra shows that Stone uniqueness is relative to a supplied positive transfer and fixed tau; it does not by itself fix the clock unit, select a unique transfer or reflection-positive axis, or exclude separately supplied commuting transfer factors.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00135-single_clock_uniqueness_scop`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The same positive transfer is reconstructed by different pairs (tau,H), while distinct commuting tensor-factor transfers coexist, so fixed-transfer Stone uniqueness cannot by itself fix clock normalization or exclude a second supplied transfer.  _(class `A`)_
+- **chain closes:** True — The exact rescaling and tensor-product counterexamples establish the stated non-entailments directly. The conclusion is restricted to what finite-dimensional Stone uniqueness supplies and does not assert a framework-wide impossibility of a second physical clock.
+- **rationale:** The runner constructs the matrices, logarithmic generators, tensor lifts, unitary groups, commutators, and reconstruction identities symbolically rather than importing a target value. Two scope-summary checks use literal True predicates, but they are non-load-bearing restatements of implications already established by the exact rescaling and commuting-factor calculations. The no-go is clean only at the explicitly narrow Stone-alone boundary and leaves axis selection, transfer selection, and physical treatment of factor clocks to separate premises.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `site_phase_cube_shift_intertwiner_note`
 

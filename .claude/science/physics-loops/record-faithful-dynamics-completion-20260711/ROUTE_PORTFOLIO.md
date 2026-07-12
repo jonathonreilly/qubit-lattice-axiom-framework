@@ -12,7 +12,7 @@ Scores are provisional `0..3`; risk is negative.
 | strengthened exchange countermodel | 3 | 3 | 3 | 3 | -1 | completed on a supplied one-excitation sector: rank-three minimal outcome-forgotten `I-SWAP` channels change absorbing outcome-label weights |
 | intermittent finite-carrier instrument normal form | 3 | 3 | 3 | 3 | -1 | complete abstract parameterization; auxiliary absorption/reuse does not imply blank-sector calibration |
 | overlapping-instrument order | 3 | 3 | 3 | 3 | -1 | completed bounded fork: raw and stopping composition differ; commutation is the exact raw schedule-independence condition |
-| simultaneous cubic QCA/tick | 3 | 3 | 3 | 2 | -2 | next discriminator: one global channel could replace unselected sequential layer composition |
+| simultaneous cubic QCA/tick | 3 | 3 | 3 | 3 | -1 | exact CZ/iSWAP matching-product fork: CZ closes invariantly; iSWAP gives eight exact products in one spatial/cyclic orbit, leaving gate/grammar selection open |
 | scalar Gaussian/CAR-QCA normal form | 3 | 3 | 3 | 3 | -1 | exact one-mode classification plus six-mode escape closes the Bloch-walk/QCA category gap without selecting the physical carrier |
 | unified continuum limit | 3 | 3 | 3 | 1 | -3 | deferred until the microscopic process object and carrier class are fixed |
 
@@ -29,4 +29,6 @@ normal form now exposes event efficiency and no-record channel freedom while
 the auxiliary-register countermodel leaves physical calibration open. The next
 route was overlapping-edge order/scheduling: it exposed independent
 composition-semantics and priority coordinates and left metric rate free. The
-next route is simultaneous-QCA classification before continuum extrapolation.
+matching-product subblock now gives a genuine qubit-QCA counterclassification;
+the next route is the broader interacting/Clifford gate-family normal form or
+common-Hamiltonian simultaneous-update class before continuum extrapolation.

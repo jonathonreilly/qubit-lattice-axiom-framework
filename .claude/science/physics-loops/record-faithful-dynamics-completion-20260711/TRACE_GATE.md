@@ -1,11 +1,11 @@
 ---
 trace_class: direct_blocker_closure
-target_claim_id: scalar_cubic_car_qca_triviality_and_six_direction_escape_bounded_theorem_note_2026-07-11
+target_claim_id: cubic_matching_product_qubit_qca_schedule_orbit_bounded_theorem_note_2026-07-11
 target_blocker_text: "A unique or severely constrained dynamics/admissibility law, including time and the probability rule."
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Classify the 720 six-matching coherent qubit-circuit products modulo spatial symmetry, cyclic phase, and reversal, then compare that interacting circuit surface with the scalar CAR-QCA normal form."
+next_trace_action: "Classify a broader interacting/Clifford gate family or a common-Hamiltonian simultaneous update beyond the exact CZ/iSWAP matching-product fork, then decide whether the microscopic QCA class is controlled enough to begin the unified continuum campaign."
 ---
 
 # Trace Gate
@@ -54,3 +54,14 @@ six-mode construction restores strict radius-one cubic transport. This closes
 the one-particle-versus-QCA category gap on the Gaussian surface but does not
 select a carrier or classify general one-qubit-site circuits. The next trace
 action is the exact matching-product qubit-QCA schedule orbit.
+
+The matching-product subblock now supplies that genuine qubit-circuit surface.
+CZ collapses all 720 words to one translation/proper-cubic-invariant
+graph-radius-one automorphism. iSWAP gives exactly eight graph-radius-six
+products, 90 words each, in one proper-cubic and cyclic time-origin conjugacy
+orbit; no member is invariant under every unit translation, although even
+translations remain symmetries. Fixed-gate reversal gives the exact inverse,
+and `L=4` is the sharp finite-size alias. This is a gate-dependent
+counterclassification rather than a physical selector. The next trace action
+is therefore a broader gate-family or common-Hamiltonian simultaneous-update
+classification, not an axiom proposal or continuum extrapolation.

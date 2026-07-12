@@ -184,6 +184,18 @@ QCA is a strict radius-one, translation- and proper-cubic-covariant transport
 escape with determinant winding zero. Runner/cache: `PASS=34 FAIL=0`; claim,
 code/math, governance, and N1--N8 reviews pass. No axiom update is triggered.
 
-This is not the end of Campaign 5. The next exact subblock is the 720-order
-six-matching qubit-circuit schedule orbit, followed by the broader interacting
-QCA normal-form question.
+## Cubic matching-product qubit-QCA schedule orbit
+
+All 720 six-layer schedules were classified for two supplied gates. CZ gives
+one exact translation/proper-cubic-invariant graph-radius-one automorphism.
+iSWAP gives eight exact graph-radius-six automorphisms, 90 schedules each, in
+one proper-cubic and cyclic-time-origin conjugacy orbit; no member is invariant
+under every unit translation, though every member retains even translations.
+Fixed-gate reversal is the exact inverse, `L=4` is the sharp alias, and the
+local proof extends to a supplied quasi-local `Z^3` carrier. Runner/cache:
+`PASS=26 FAIL=0`; claim, code/math, and N1--N8 reviews pass. No axiom update is
+triggered.
+
+This is not the end of Campaign 5. The next exact subblock is a broader
+interacting/Clifford gate-family normal form or one common-Hamiltonian
+simultaneous-update class before deciding whether continuum work is controlled.

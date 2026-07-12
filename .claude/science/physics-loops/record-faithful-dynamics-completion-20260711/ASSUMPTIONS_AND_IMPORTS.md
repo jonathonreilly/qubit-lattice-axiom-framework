@@ -116,3 +116,19 @@ physical probability/time interpretation in this block.
 
 No physical tick selector, qubit-tensor QCA, interacting/Clifford circuit,
 Record coupling, clock/rate, or continuum generator is imported.
+
+## Matching-product qubit-QCA conditional inputs
+
+- A supplied finite tensor-product qubit carrier on an even periodic torus;
+  the infinite corollary separately supplies the quasi-local tensor-product
+  algebra and a parity origin.
+- The six nearest-neighbor parity matchings, each used exactly once in a
+  sequential six-layer word.
+- One identical symmetric gate on every matching edge, restricted here to CZ
+  or iSWAP with its full phase convention.
+- The convention that the entire six-layer sweep is one macro-tick, together
+  with distinct exact, spatial, cyclic-time-origin, and inverse equivalences.
+
+The theorem imports no Record coupling, physical probability, gate selector,
+clock duration, Hamiltonian, QCA phase/index claim, continuum map, SM sector,
+or GR sector. All such interfaces remain open.

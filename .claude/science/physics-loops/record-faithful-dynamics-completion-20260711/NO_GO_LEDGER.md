@@ -16,6 +16,8 @@
 | discrete event order selects physical time/rate | falsified under explicit clock rescaling | the same ordered history embeds in clocks with different rates, and `q=exp(-lambda Delta t)` fixes only the product |
 | a one-mode scalar Gaussian/CAR tick supports nontrivial full-cubic finite-range transport | closed negatively on the supplied CAR surface | scalar Laurent unitarity gives one monomial and the 24 rotations force its winding vector to zero |
 | zero determinant winding implies no multicomponent transport | falsified | opposite-moving bands and the six-direction cubic CAR QCA transport with zero total winding |
+| one fixed six-layer iSWAP matching product is invariant under all unit translations | closed negatively inside the supplied matching grammar for even `L>=6` and `Z^3` | the 720 words give eight exact products in one proper-cubic/cyclic orbit; every unit translation flips one scheduling sign, while even translations remain symmetries |
+| matching-product order dependence forbids an invariant coherent qubit automorphism | falsified | CZ makes all six layers commute and gives one exact translation/proper-cubic-invariant graph-radius-one automorphism |
 
 These negatives prune routes, not the full record-instrument program. The live
 escape is a separate classical record register coupled through a local
@@ -39,3 +41,8 @@ The overlap result is not an infinite-lattice or QCA no-go. Commuting overlap,
 a supplied dependency relation, common dilation, randomized composition, and
 one simultaneous global channel remain live routes. It therefore does not
 trigger an axiom-update discussion.
+
+The matching-product result is not a general qubit-QCA no-go. CZ closes the
+same grammar positively, while common-Hamiltonian, clocked/Margolus,
+partial-swap, other-gate, and larger-cell routes remain live. The eight iSWAP
+products are also one cyclic time-origin conjugacy orbit, not eight QCA phases.

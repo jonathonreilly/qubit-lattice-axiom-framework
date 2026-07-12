@@ -57,17 +57,18 @@
   dimensionful rate;
 - deterministic 47-check runner and complete N1--N8 packet.
 
-## Simultaneous 3D coherent QCA/tick — in progress
+## Simultaneous 3D coherent QCA/tick — matching-product subblock complete
 
 - read and reconcile the actual strict-QCA, cubic-covariance, finite-depth,
   index, locality, and continuum-obstruction lanes;
 - completed first exact subblock: finite Laurent unitary to local CAR
   automorphism, one-mode cubic scalar triviality, and a six-direction strict
   carrier escape;
-- next subblock: classify all `6!` matching-product qubit-circuit schedules and
-  their exact spatial/time-reversal orbits;
-- continue toward an honest interacting-QCA normal form before selecting a
-  continuum branch.
+- completed second exact subblock: all `6!` matching-product qubit-circuit
+  schedules for CZ/iSWAP, with exact proper-cubic, cyclic-time-origin,
+  reversal/inverse, graph-radius, and finite/infinite controls;
+- next subblock: classify a broader interacting/Clifford gate family or a
+  common-Hamiltonian simultaneous update before selecting a continuum branch.
 
 ## Continuum gateway
 

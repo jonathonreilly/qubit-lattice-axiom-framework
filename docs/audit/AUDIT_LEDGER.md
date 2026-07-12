@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 420 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2624 |
+| unaudited | 2623 |
 | audit_in_progress | 28 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 101 |
-| ~~audited_failed~~ | 25 |
+| ~~audited_failed~~ | 26 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -49,10 +49,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 558 |
 | `audited_conditional` | 101 |
 | `audited_decoration` | 22 |
-| `audited_failed` | 47 |
+| `audited_failed` | 48 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2974 |
+| `unaudited` | 2973 |
 
 | claim_type | count |
 |---|---:|
@@ -854,6 +854,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `same_family_3d_closure_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
+| `self_gravity_backreaction_closure_note` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `shapiro_complex_interaction_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `shapiro_diamond_bridge_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | F | - |
@@ -8476,6 +8477,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The registered runner exits 0 and reproduces the note's SelfConsist, StaticInit, ShiftedNull, and PhaseNull sign-margin, width-ratio, boundary-alpha, and sigma-separation values; the source keeps the conclusion fixed-surface and non-universal.
 - **rationale:** The bounded structured-null claim closes against scripts/frontier_self_consistency_test.py. Current output matches SelfConsist sign margin +30, width 0.3554, alpha 0.145434; StaticInit +40, 0.3563, 0.159548; ShiftedNull +11, 0.4847, 0.134795; PhaseNull +21.4+/-31.1, 0.4012+/-0.0186, 0.131728+/-0.011976; and the stated width/alpha separations. The note explicitly limits the result to a fixed 10x10 periodic surface and does not claim architecture-wide closure. Plot generation failed locally due missing matplotlib, but the numerical runner output needed for the audit completed.
 - **auditor confidence:** high
+
+### `self_gravity_backreaction_closure_note`
+
+- **Note:** [`SELF_GRAVITY_BACKREACTION_CLOSURE_NOTE.md`](../../docs/SELF_GRAVITY_BACKREACTION_CLOSURE_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The fixed h=0.25, W=3, L=6 Poisson-like backreaction runner, including whether six relaxed iterations and the resulting end-to-end Born value establish the claimed bounded no-go.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00124-self_gravity_backreaction_cl`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The nonlinear loop does not converge under the strict tolerance and the full-loop Born audit is not machine-clean, so no retained nonzero backreaction mechanism survives.  _(class `C`)_
+- **chain closes:** False — The runner computes genuine finite diagnostics, but MAX_ITERS=6 only establishes failure to reach TOL within six relaxed updates, not failure of the nonlinear loop to converge. The end-to-end Born value is then evaluated on unconverged mask-specific states, and no quantitative threshold for "review-clean" is supplied.
+- **rationale:** The exact epsilon=0 identity and the reported finite-run diagnostics are genuinely computed. However, MAX_ITERS=6 with RELAX=0.35 makes the reported nonconvergence only an iteration-cap result; the packet does not exclude convergence after additional iterations. The end-to-end Born residual is computed before those runs converge, and "review-clean" has no declared numerical threshold. The safe surviving result is therefore a six-iteration control diagnostic, not the stated bounded convergence/Born no-go.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-attempt-with-named-untested-routes`)
+  - **gate failures:**
+    - N1: continuing the registered nonlinear iteration, converged end-to-end Born, alternate initialization, and an explicit Born threshold remain open or untested.
+    - N2: the convergence wall subsumes the reported end-to-end Born value because Born is evaluated on unconverged states; the undefined acceptance threshold remains independent.
+    - N3: MAX_ITERS=6 and the undefined review-clean threshold are hidden decision surfaces.
+    - N5: the rhetoric asserts nonlinear nonconvergence beyond the resolution actually tested.
 
 ### `self_gravity_scaling_note_2026-04-10`
 

@@ -31,9 +31,14 @@ gravity across the narrow probe set.
 
 | N | `d_TV` | `pur_cl` | `S_norm` | gravity | Born `|I3|/P` | `k=0` |
 |---|---:|---:|---:|---:|---:|---:|
-| 25 | `0.9626` | `0.9473±0.00` | `1.0125` | `+6.4026±0.185` | `6.77e-16` | `0.00e+00` |
-| 40 | `0.8850` | `0.9491±0.01` | `0.9948` | `+7.4729±0.305` | `8.14e-16` | `0.00e+00` |
-| 60 | `0.6440` | `0.8030±0.04` | `1.0043` | `+5.7613±0.892` | `6.56e-16` | `0.00e+00` |
+| 25 | `0.9626` | `0.9473±0.00` | `1.0125` | `+6.4026±0.185` | `9.24e-16` | `0.00e+00` |
+| 40 | `0.8850` | `0.9491±0.01` | `0.9948` | `+7.4729±0.305` | `7.34e-16` | `0.00e+00` |
+| 60 | `0.6440` | `0.8030±0.04` | `1.0043` | `+5.7613±0.892` | `6.64e-16` | `0.00e+00` |
+
+The Born entries are the machine-precision residual of the exactly-zero
+Born-consistency check `|I3|/P`; the retained content is the bound `< 1e-10`,
+not the last-place digits (which sit at the floating-point noise floor, vary
+across platforms at fixed runner hash, and are not pinned).
 
 ## Narrow Read
 

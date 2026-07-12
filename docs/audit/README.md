@@ -410,3 +410,7 @@ catches up; a marker rolling back after an axiom or source change is the
 honest coordination signal for collaborators, not an error. If a publication
 or replication request ever needs a citable artifact, snapshot the lane's
 currently-certified commit and run the forensic tier over its closure there.
+Some configured roots intentionally name unresolved scientific `open_gate`
+obligations. Those lanes remain uncertified until source-level science retires
+or replaces the open root; audit throughput alone cannot certify an open gate,
+and substituting an already-retained surrogate would hide the live obligation.

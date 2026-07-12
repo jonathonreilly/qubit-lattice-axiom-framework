@@ -6,9 +6,10 @@ scientific root claim or claims and their transitive dependency closure and
 report whether every row is currently chain-satisfying: retained-grade, a
 decoration of a retained parent, or an accepted premise.
 Certification is a state the repository re-enters continuously as audit
-throughput catches up with landings — never a scheduled event. A lane's
-marker rolling back (after an axiom edit or source change) is the honest
-coordination signal, not an error.
+throughput and source-level science catch up with landings — never a scheduled
+event. A configured open-gate root intentionally remains uncertified until the
+obligation is retired or replaced. A lane's marker rolling back (after an axiom
+edit or source change) is the honest coordination signal, not an error.
 """
 from __future__ import annotations
 

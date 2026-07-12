@@ -1,6 +1,6 @@
 {
   "schema": "lane_certification_config_v2",
-  "description": "Flagship lanes for rolling certification. Each lane is certified when every configured scientific root and every row in their combined transitive dependency closure is chain-satisfying against the current repository state: retained-grade rows, decorations of retained parents, and registered accepted premises satisfy. Metadata does not. Hand-edited; owner-approved 2026-07-12.",
+  "description": "Flagship lanes for rolling certification. Each lane is certified when every configured scientific root and every row in their combined transitive dependency closure is chain-satisfying against the current repository state: retained-grade rows, decorations of retained parents, and registered accepted premises satisfy. Metadata does not. A configured open-gate root intentionally keeps its lane uncertified until source-level science retires or replaces that obligation; audit throughput alone cannot certify it. Hand-edited; owner-approved 2026-07-12.",
   "lanes": [
     {"lane": "charged_lepton_koide_value", "root": "charged_lepton_koide_value_full_chain_of_custody_2026-06-02"},
     {"lane": "acphilambda_retirement_basis", "roots": ["ac_orbit_occupancy_statistical_grain_derivation_obligation", "ac_reta_hclass_hunit_readout_derivation_obligation"]},

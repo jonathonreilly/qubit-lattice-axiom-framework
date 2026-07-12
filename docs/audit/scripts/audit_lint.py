@@ -83,6 +83,35 @@ ALLOWED_CLAIM_TYPES = {
 RETAINED_GRADES = {"retained", "retained_no_go", "retained_bounded"}
 
 
+def normalized_claim_scope(audit_like: dict) -> str:
+    """Normalize insignificant whitespace without weakening scoped agreement."""
+    scope = audit_like.get("claim_scope")
+    if not isinstance(scope, str):
+        return ""
+    return " ".join(scope.split())
+
+
+def normalized_negative_assertion_classes(audit_like: dict) -> tuple[str, ...]:
+    """Return the declared negative-assertion classes as a stable tuple."""
+    declared = audit_like.get("negative_assertion_classes")
+    if not isinstance(declared, list):
+        return ()
+    return tuple(sorted({item for item in declared if isinstance(item, str)}))
+
+
+def audit_summary_tuples_match(first: dict, second: dict) -> bool:
+    """Mirror apply_audit's full cross-confirmation agreement tuple."""
+    return (
+        first.get("verdict") == second.get("verdict")
+        and first.get("claim_type") == second.get("claim_type")
+        and normalized_claim_scope(first) == normalized_claim_scope(second)
+        and first.get("load_bearing_step_class")
+        == second.get("load_bearing_step_class")
+        and normalized_negative_assertion_classes(first)
+        == normalized_negative_assertion_classes(second)
+    )
+
+
 def is_retained_grade(status):
     """Mirror compute_effective_status.is_retained_grade: literal retained-grade
     keywords plus `decoration_under_<parent>` (which is only assigned when the
@@ -1026,16 +1055,11 @@ def main() -> int:
                             "second_audit.independence='fresh_context'"
                         )
                     if xc_status == "confirmed":
-                        if first.get("claim_type") != second.get("claim_type"):
+                        if not audit_summary_tuples_match(first, second):
                             errors.append(
-                                f"{cid}: critical cross-confirmation claim_type mismatch "
-                                f"{first.get('claim_type')!r} vs {second.get('claim_type')!r}"
-                            )
-                        if first.get("load_bearing_step_class") != second.get("load_bearing_step_class"):
-                            errors.append(
-                                f"{cid}: critical cross-confirmation load_bearing_step_class mismatch "
-                                f"{first.get('load_bearing_step_class')!r} vs "
-                                f"{second.get('load_bearing_step_class')!r}"
+                                f"{cid}: critical cross-confirmation full audit tuple mismatch "
+                                "(verdict, claim_type, normalized claim_scope, "
+                                "load_bearing_step_class, negative_assertion_classes)"
                             )
                     if xc_status in {"third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
                         third = xc.get("third_audit") or {}
@@ -1065,12 +1089,11 @@ def main() -> int:
                                     )
                             else:
                                 winning = first if xc_status == "third_confirmed_first" else second
-                                for key in ("verdict", "claim_type", "load_bearing_step_class"):
-                                    if third.get(key) != winning.get(key):
-                                        errors.append(
-                                            f"{cid}: {xc_status} third_audit {key}={third.get(key)!r} "
-                                            f"does not match winning audit {winning.get(key)!r}"
-                                        )
+                                if not audit_summary_tuples_match(third, winning):
+                                    errors.append(
+                                        f"{cid}: {xc_status} third_audit full audit tuple "
+                                        "does not match the winning audit"
+                                    )
 
         if a == "audited_decoration":
             parent = row.get("decoration_parent_claim_id")

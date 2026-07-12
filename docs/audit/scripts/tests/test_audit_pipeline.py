@@ -3375,6 +3375,85 @@ class AuditLintTest(unittest.TestCase):
             row.setdefault("deps", [])
         self.fx.write_ledger({"schema_version": 1, "rows": rows})
 
+    def test_cross_confirmation_tuple_normalization_matches_apply_gate(self):
+        m = _import("audit_lint")
+        first = {
+            "verdict": "audited_clean",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "bounded structural scope",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [
+                "conditional_wall_rationale",
+                "bounded_with_named_walls",
+            ],
+        }
+        equivalent = {
+            **first,
+            "claim_scope": " bounded   structural\nscope ",
+            "negative_assertion_classes": [
+                "bounded_with_named_walls",
+                "conditional_wall_rationale",
+                "bounded_with_named_walls",
+            ],
+        }
+        self.assertTrue(m.audit_summary_tuples_match(first, equivalent))
+        self.assertFalse(m.audit_summary_tuples_match(
+            first, {**equivalent, "claim_scope": "different scope"}
+        ))
+        self.assertFalse(m.audit_summary_tuples_match(
+            first, {**equivalent, "negative_assertion_classes": []}
+        ))
+
+    def test_lint_rejects_confirmed_scope_mismatch(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        first = {
+            "auditor": "first-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "independence": "cross_family",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "first scoped theorem",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [],
+        }
+        second = {
+            **first,
+            "auditor": "second-auditor",
+            "independence": "fresh_context",
+            "claim_scope": "substantively different theorem",
+        }
+        rows = {
+            "critical_claim": {
+                "claim_id": "critical_claim",
+                "audit_status": "audited_clean",
+                "effective_status": "retained",
+                "claim_type": "positive_theorem",
+                "claim_scope": second["claim_scope"],
+                "chain_closes": True,
+                "auditor": second["auditor"],
+                "auditor_family": second["auditor_family"],
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
+                "independence": "fresh_context",
+                "criticality": "critical",
+                "load_bearing_step_class": "A",
+                "negative_assertion_classes": [],
+                "cross_confirmation": {
+                    "status": "confirmed",
+                    "first_audit": first,
+                    "second_audit": second,
+                },
+            }
+        }
+        self._write_minimal_ledger(rows)
+        import contextlib, io
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("full audit tuple mismatch", output.getvalue())
+
     def test_front_door_current_markdown_link_passes(self):
         m = _import("audit_lint")
         errors = m.front_door_axiom_pointer_errors(

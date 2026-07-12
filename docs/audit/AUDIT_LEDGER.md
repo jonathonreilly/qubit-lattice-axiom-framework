@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 420 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2620 |
+| unaudited | 2619 |
 | audit_in_progress | 29 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 102 |
+| ~~audited_conditional~~ | 103 |
 | ~~audited_failed~~ | 26 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -48,12 +48,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 29 |
 | `audited_clean` | 558 |
-| `audited_conditional` | 102 |
+| `audited_conditional` | 103 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2970 |
+| `unaudited` | 2969 |
 
 | claim_type | count |
 |---|---:|
@@ -767,6 +767,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `planck_boundary_orientation_incidence_no_go_note_2026-04-30` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `poisson_self_field_supplied_branch_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -7506,6 +7507,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The note's narrowed claim is exactly the finite construction checked by the runner. There are no direct dependencies, and the runner constructs the finite complexes from R, counts the relevant faces/edges/tetrahedra, checks the apex link and Euler characteristics, and also checks that the note boundary withdraws the prior external PL-topology and physical-closure imports.
 - **rationale:** The current note no longer imports PL Schoenflies, homogeneity, every-cap-homeomorphic closure, S^3 compactification, or physical closure as load-bearing conclusions. The executable evidence is bounded to R = 2, 3, 4 and verifies only finite combinatorial identities for the declared cubical-boundary cone-cap construction. This is clean as a bounded finite certificate, but it must not be cited as a general PL topology theorem or as a physical compactification theorem.
 - **auditor confidence:** high
+
+### `planck_boundary_orientation_incidence_no_go_note_2026-04-30`
+
+- **Note:** [`PLANCK_BOUNDARY_ORIENTATION_INCIDENCE_NO_GO_NOTE_2026-04-30.md`](../../docs/PLANCK_BOUNDARY_ORIENTATION_INCIDENCE_NO_GO_NOTE_2026-04-30.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Given the supplied finite exterior-algebra event cell and Euclidean Hodge map, oriented four-cell boundary incidence alone does not distinguish the P_1 normal carrier from the P_3 face carrier.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00129-planck_boundary_orientation_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The oriented face-incidence carrier is the Hodge image of the normal one-form carrier, so the perfect P_1/P_3 pairing identifies the carriers but does not select P_1.  _(class `A`)_
+- **chain closes:** False — The finite Hodge-duality result closes algebraically, but the note also claims exhaustion of reflection-positive-time and intrinsic-active-module routes that the runner represents only through symmetry/rank proxies. The granted event-cell substrate is also not derived from an accepted premise in the restricted packet.
+- **rationale:** The runner genuinely constructs the exterior-algebra basis, Hodge star, projectors, face columns, incidence pairing, and local operators, establishing the narrow P_1/P_3 duality as a class-A algebraic closure. It does not instantiate reflection positivity or a Clifford-module action, so checks 9's corresponding booleans do not establish the broader stuck-fan-out claim. The result is therefore sound only on the explicitly granted boundary-incidence surface, not as complete route exhaustion from the framework axioms.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: reflection-positive-time and intrinsic-active-module mechanisms were not actually tested by their runner proxies.
+    - N5: the statement that none of the fan-out routes supplies a selector exceeds the resolutions computed.
 
 ### `plaquette_self_consistency_note`
 

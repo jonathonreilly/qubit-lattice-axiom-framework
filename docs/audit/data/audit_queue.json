@@ -3,7 +3,7 @@
     "critical": 650,
     "high": 335,
     "leaf": 1098,
-    "medium": 748
+    "medium": 747
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -30876,28 +30876,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_source_measure_sharp_record_tangent_space.py",
-      "transitive_descendants": 8
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "nn_lattice_rescaled_kernel_identification_note_2026-05-10",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 3,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 4.67,
-      "note_path": "docs/NN_LATTICE_RESCALED_KERNEL_IDENTIFICATION_NOTE_2026-05-10.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/lattice_nn_rescaled_kernel_identification.py",
       "transitive_descendants": 8
     },
     {
@@ -80950,6 +80928,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 547,
-  "total_pending": 2831
+  "ready_count": 546,
+  "total_pending": 2830
 }

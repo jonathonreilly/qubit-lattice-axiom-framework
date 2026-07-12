@@ -50,11 +50,11 @@
     "decoration_under_plaquette_self_consistency_note": 1,
     "meta": 350,
     "open_gate": 5,
-    "retained": 86,
+    "retained": 87,
     "retained_bounded": 360,
     "retained_no_go": 27,
     "retained_pending_chain": 1,
-    "unaudited": 2819
+    "unaudited": 2818
   },
   "retained_pending_chain_count": 1,
   "retained_pending_chain_examples": [

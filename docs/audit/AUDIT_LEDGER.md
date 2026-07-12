@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 372 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2764 |
+| unaudited | 2763 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 56 |
-| ~~audited_failed~~ | 10 |
+| ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -48,10 +48,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 485 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 20 |
-| `audited_failed` | 32 |
+| `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3114 |
+| `unaudited` | 3113 |
 
 | claim_type | count |
 |---|---:|
@@ -707,6 +707,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_dple_abcc_no_go_note_2026-04-19` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
+| `dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -3169,6 +3170,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The scoped theorem is an exact algebraic statement on a fully specified three-real-dimensional Hermitian circulant coefficient space. The runner constructs the matrices and verifies the parity decomposition, CP-kernel identity, and complex 1+2 bridge directly rather than printing or importing contested outputs. Clean status is restricted to those local identities and does not derive a nonzero c_odd activation law or identify the displayed kernel algebra with complete physical leptogenesis phenomenology.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`DM_NEUTRINO_VEVEN_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/DM_NEUTRINO_VEVEN_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The explicit spectra, Frobenius pairings, and normalized determinant identities on their nonsingular domain; the stronger assertion that |j|<m guarantees a stable W2 log domain was also audited.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00407-dm_neutrino_veven_bosonic_no`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The exact normalized determinant ratios are equal, det(m I_3+jF1)/m^3=det(m I_2+j sqrt(3/8)Z_row)/m^2 and analogously for F2, so their baseline-subtracted log-absolute-determinant responses agree wherever the determinants are nonzero.  _(class `A`)_
+- **chain closes:** False — The matrix and determinant identities close exactly, but the stated W2 domain does not: for positive m, j=±sqrt(8/9)m satisfies |j|<m while both W2 determinants vanish, making the logarithms undefined.
+- **rationale:** The runner genuinely constructs the matrices and verifies the Gram matrix, characteristic polynomials, determinants, and normalized determinant ratios symbolically; it is not a print-only or tuned certificate. Those calculations also expose a source-level domain error: det(mI+jF2)=m^3(1-(9/8)j^2/m^2) vanishes at |j|=sqrt(8/9)|m|, which lies inside the claimed |j|<m interval for m>0. Thus the finite-dimensional identities are valid on the nonsingular domain, but the theorem as stated does not hold for every point in its advertised interval.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: corrected_domain_certificate remains UNTESTED because neither the source nor runner certifies a corrected nonsingular domain statement.
 
 ### `dm_neutrino_weak_vector_theorem_note_2026-04-15`
 

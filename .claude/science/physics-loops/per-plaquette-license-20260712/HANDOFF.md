@@ -96,3 +96,72 @@ acyclic — upstream note backticks the parent); dated Repair Note quotes the
 archived-verdict blocker. Parent runner +4 wiring pins (PASS 9->13); cache
 regenerated; vocab lint clean. Stacked on block 01 (uses its note file).
 Proposed weaving beyond this: none (publication surfaces untouched per skill).
+
+## Block 03 — Covariant-subdomain completeness classification
+
+**Date:** 2026-07-12  
+**Claim type:** bounded_theorem  
+**Actual current-surface status:** exact-support  
+**Trace class:** upstream_support  
+**Reachability to the parent row:** supports  
+**Independent audit:** pending
+
+### What landed
+
+- `docs/PER_PLAQUETTE_LICENSE_COVARIANT_SUBDOMAIN_CLASSIFICATION_NOTE_2026-07-12.md`
+  proves completeness of the endpoint-containing covariant one-step domain
+  lattice and states the enumerated-domain interval theorem.
+- `scripts/per_plaquette_license_covariant_subdomain_classification_2026_07_12.py`
+  constructs `G_l`, checks its group action, exhausts all 1024 candidate
+  subsets, recomputes the five-row loop table, and pins the note surface.
+- `logs/runner-cache/per_plaquette_license_covariant_subdomain_classification_2026_07_12.txt`
+  is the generated deterministic cache.
+- `STATE.yaml`, `CLAIM_STATUS_CERTIFICATE.md`, and this handoff record the
+  block-03 exact-support boundary and upstream-support trace.
+
+Blocks 01 and 02, the downstream parent, and all ledger/authority surfaces are
+unchanged in block 03.
+
+### Exact result
+
+- The proper-rotation stabilizer of `{0,e1}` has order 8, is closed under all
+  64 ordered products, fixes the undirected endpoint set, and splits into four
+  endpoint-preserving and four endpoint-swapping elements.
+- Its `C_1` orbits have sizes `2/2/8`: endpoints `E`, axial exterior `A`, and
+  transverse `T`. The ten non-endpoint sites have exactly the two orbits `A`
+  and `T`.
+- Exhaustive filtering of all `2^10 = 1024` non-endpoint subsets leaves
+  exactly `E`, `E∪A`, `E∪T`, and `C_1`, with sizes `2/4/10/12`.
+
+| domain | length 4 | length 6 | one-tick |
+| --- | ---: | ---: | :---: |
+| `E` | 0/24 | 0/264 | yes |
+| `E∪A` | 0/24 | 0/264 | yes |
+| `E∪T` | 24/24 | 0/264 | yes |
+| `C_1` | 24/24 | 0/264 | yes |
+| radius-2 | 24/24 | 264/264 | NO |
+
+The previously unchecked `E∪A` row is therefore empty at both lengths. The
+cubic Manhattan radius-2 link domain has 38 sites, not the provisional 32:
+its two 25-site endpoint balls have a 12-site intersection. The named point
+`-2e1=(-2,0,0)` is outside `C_1` and matches the block-01 radius-2
+source/target violation class.
+
+### Status firewall and stop point
+
+This exact support classifies covariant domains and the enumerated lengths 4
+and 6 only. It does not retire `(P-FUND-1TICK)`, prove a fundamental
+per-plaquette action, touch `theta_bare`, or change an axiom/primitive. It is
+upstream support toward the bounded parent row, not direct blocker closure.
+
+Verification at the block checkpoint:
+
+```text
+new runner: TOTAL: PASS=39 FAIL=0 (exit 0)
+cache: ok=1, nonzero_exit=0, timeout=0, error=0, missing=0
+block-01 runner: TOTAL: PASS=51 FAIL=0 (exit 0)
+parent runner: SUMMARY: PASS=13 FAIL=0 (exit 0)
+```
+
+Stop after the requested final verification. Do not commit, push, open a PR,
+or weave this support into the parent in block 03.

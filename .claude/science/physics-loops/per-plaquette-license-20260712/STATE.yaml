@@ -11,32 +11,33 @@ started: 2026-07-12T16:06-04:00
 deadline: 2026-07-12T22:06-04:00
 target_status: best-honest-status
 cycle: 1
-block: 02
-active_route: parent-consumption-wiring (block 02, stacked on block 01)
-active_route_status: conditional-support
+block: 03
+active_route: covariant-subdomain-completeness-classification (stacked on blocks 01/02)
+active_route_status: exact-support
+actual_current_surface_status: exact-support
 files_touched:
-  - docs/PER_PLAQUETTE_LICENSE_ONE_TICK_REACHABILITY_DERIVATION_NARROW_THEOREM_NOTE_2026-07-12.md
-  - scripts/per_plaquette_license_one_tick_reachability_derivation_2026_07_12.py
-  - logs/runner-cache/per_plaquette_license_one_tick_reachability_derivation_2026_07_12.txt
+  - docs/PER_PLAQUETTE_LICENSE_COVARIANT_SUBDOMAIN_CLASSIFICATION_NOTE_2026-07-12.md
+  - scripts/per_plaquette_license_covariant_subdomain_classification_2026_07_12.py
+  - logs/runner-cache/per_plaquette_license_covariant_subdomain_classification_2026_07_12.txt
   - .claude/science/physics-loops/per-plaquette-license-20260712/STATE.yaml
   - .claude/science/physics-loops/per-plaquette-license-20260712/CLAIM_STATUS_CERTIFICATE.md
   - .claude/science/physics-loops/per-plaquette-license-20260712/HANDOFF.md
 hard_residual: >
-  Lemma B fundamentality reading: a fundamental one-tick multi-link term's
-  availability is evaluable at each constituent link within that link's
-  one-tick dependency domain C_1. Close from Record/Admissibility +
-  joint-presentation surface, or name as the explicit thin premise
-  (P-FUND-1TICK).
-open_imports:
-  - none identified yet beyond the named-premise candidate (P-FUND-1TICK)
+  The finite covariant-domain completeness gap is closed. P-FUND-1TICK
+  remains load-bearing for the downstream derivation of the C_1 license and
+  is not retired by this classification; no per-plaquette action is derived.
+open_imports: []
+downstream_imports_not_retired:
+  - P-FUND-1TICK
 no_go_routes:
   - R1-minimal-nonempty-covariant-lift (pruned pre-execution; see NO_GO_LEDGER)
-trace_class: direct_blocker_closure
-pr_status: block01 PR #5274 open; block02 stacked PR pending
+trace_class: upstream_support
+reachability_to_target: supports
+pr_status: block 03 bounded execution; no commit, push, or PR by supervisor spec
 next_action: >
-  Independently audit the block-01 note, runner, cache, and conditional-status
-  certificate; if accepted, block 03 may wire the parent note to consume this
-  upstream result without enlarging its bounded claim.
-stop_condition: runtime 6h OR queue exhaustion per skill
+  After the requested verification stop, independently audit the block-03
+  exact finite classification and decide whether the downstream parent row
+  should consume this upstream support; perform no automatic weaving here.
+stop_condition: complete the requested runner/cache/regression/status verification, then stop
 lock_note: repo automation_lock.py errors on stale /Users/jonreilly path on
   this machine (infra N/A); branch-local supervisor discipline in force.

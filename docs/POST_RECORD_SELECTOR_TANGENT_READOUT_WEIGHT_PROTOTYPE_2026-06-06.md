@@ -1,93 +1,147 @@
 # Post-Record Selector/Tangent Readout Weight Prototype
 
 **Date:** 2026-06-06
-**Type:** open_gate / supplied selector-tangent-readout weight prototype
-**Claim type:** open_gate
-**Status:** open_gate / conditional-support source-side diagnostic for supplied
-finite selector/tangent/readout weights; not a bounded support theorem over the
-framework baseline; audit_required_before_effective_retained=true;
-bare_retained_allowed=false.
+**Updated:** 2026-07-12
+**Type:** bounded_theorem / explicitly accepted finite-packet arithmetic
+**Claim type:** bounded_theorem
+**Status:** proposed_retained exact finite-packet theorem; independent audit is
+required before effective status changes;
+audit_required_before_effective_retained=true; bare_retained_allowed=false.
 **Primary runner:**
 [`scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py`](../scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.py)
 **Cached log:**
 [`logs/runner-cache/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_selector_tangent_readout_weight_prototype_2026_06_06.txt)
-**Load-bearing upstream helper:**
-[`scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py`](../scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py)
+**Diagnostic inventory helper (not a theorem dependency):**
+`scripts/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.py`
 with cache
-[`logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt`](../logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt)
+`logs/runner-cache/frontier_post_record_measure_weight_normalization_subdivision_2026_06_06.txt`
 
 ## Result
 
-This block gives the `selector_tangent_readout_weight` lane a finite supplied
-readout/tangent-weight diagnostic prototype:
+This block proves exact finite readout/tangent-weight arithmetic for one
+explicitly accepted packet:
 
 ```text
-supplied finite tangent/readout carrier
-  + supplied positive tangent metric or Hessian
-  + supplied nonnegative readout weights
-  + exact normalization and quadratic check
-  => finite readout/tangent weight arithmetic inside that supplied packet
+explicitly accepted finite carrier, weights, and maps
+  + explicitly accepted symmetric positive-definite metric/Hessian
+  => exact normalized push-forward weights and positive quadratic form
 ```
 
-The prototype indexes the current `12` `selector_tangent_readout_weight` rows
-from the measure/weight subdivision. It does not supply authority for those
-rows; it only shows where a supplied readout/tangent bridge would enter.
+The result is a theorem about the accepted mathematical packet, not a
+derivation of that packet from Record. The live
+`selector_tangent_readout_weight` ledger bucket is printed only as a diagnostic
+snapshot. Its cardinality is not a theorem premise and cannot make this
+arithmetic pass or fail.
+
+## Explicit supplied-packet bridge theorem
+
+### Accepted local premises
+
+For this theorem only, the supplied packet is explicitly accepted as local
+mathematical hypotheses, not as framework primitives, chain-satisfying physics
+premises, or physical authority:
+
+1. The supplied packet carrier is
+   \(C = \{c_0, \ldots, c_{15}\}\), with raw rational weight
+   \(u(c_i)=1\) for every \(i\).
+2. The supplied endpoint map is
+   \(e(c_i)=\texttt{endpoint_lo}\) for \(0\leq i<4\), and
+   \(e(c_i)=\texttt{endpoint_hi}\) otherwise.
+3. The supplied readout map is
+   \(r(c_0)=\texttt{ground}\) and
+   \(r(c_i)=\texttt{excited}\) for \(1\leq i<16\).
+4. The supplied tangent metric/Hessian and tangent vector are
+   \[
+   G=\begin{pmatrix}3&1\\1&2\end{pmatrix},
+   \qquad v=\begin{pmatrix}1\\1/2\end{pmatrix}.
+   \]
+
+No value in this list is inferred from a ledger row, an observed target, a
+fit, or the Record axiom. These are the complete non-derived inputs to the
+claim scope.
+
+### Theorem
+
+Let \(C\) be a nonempty finite carrier with supplied weights
+\(u(c)\in\mathbb Q_{\geq0}\) and \(U=\sum_{c\in C}u(c)>0\). For any supplied
+map \(f:C\to Y\), define
+
+\[
+p_f(y)=\frac{\sum_{c:f(c)=y}u(c)}{U}.
+\]
+
+Then every \(p_f(y)\) is nonnegative and
+\(\sum_{y\in f(C)}p_f(y)=1\). If a supplied symmetric matrix
+\(G=\bigl(\begin{smallmatrix}a&b\\b&d\end{smallmatrix}\bigr)\) satisfies
+\(a>0\) and \(\det G>0\), then \(x^T Gx>0\) for every nonzero
+\(x\in\mathbb Q^2\).
+
+For the supplied packet above, the theorem gives exactly
+
+\[
+(p_e(\texttt{endpoint_lo}),p_e(\texttt{endpoint_hi}))=(1/4,3/4),
+\]
+\[
+(p_r(\texttt{ground}),p_r(\texttt{excited}))=(1/16,15/16),
+\]
+\[
+\det G=5>0,\qquad v^T Gv=9/2.
+\]
+
+### Proof
+
+Nonnegativity follows from \(u(c)\geq0\). Because the nonempty fibers
+\(f^{-1}(y)\) partition \(C\), summing their numerators gives \(U\), so the
+normalized push-forward sums to one. For the quadratic form,
+
+\[
+x^T Gx
+=a\left(x_1+\frac{b}{a}x_2\right)^2
++\frac{\det G}{a}x_2^2.
+\]
+
+Both coefficients are positive; the two squares can vanish simultaneously
+only when \(x=0\). Thus \(G\) is positive definite. Direct finite sums on the
+two supplied maps give \(4/16,12/16\) and \(1/16,15/16\); direct rational
+arithmetic gives \(\det G=3\cdot2-1=5\) and \(v^TGv=9/2\). This closes the
+finite readout/tangent weight arithmetic inside the explicitly accepted packet.
 
 ## 2026-06-18 Record-axiom non-supply repair
 
 The current Record axiom
-([`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)) is an approved
-axiom-premise node for durable realized-outcome registration and finite scalar
-additivity after a readout context is supplied. It explicitly does not supply a
-readout context, central-sector decomposition, `K`/CPT structure, weighting,
-normalization, probability, measurement dynamics, tangent metric, or Hessian.
+([`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)) is an approved
+axiom-premise node for fixed records and finite scalar readout additivity. It
+explicitly does not supply context selection, measurement basis selection,
+Born weights, probability rules, source/action or physical-observable
+identification, a tangent metric, or a Hessian.
 
-Therefore the strongest honest current-surface status of this source packet is
-open-gate conditional support, not bounded support theorem. The supplied finite
-arithmetic remains useful as a diagnostic and as a target shape for future
-theorems, but it is not Record-derived selector/readout/tangent authority.
+The theorem above neither needs nor asserts such a derivation: packet
+provenance is excluded from its claim scope. Consequently, its exact
+finite-packet conclusion can be reviewed independently of the still-open
+physical supplier problem. It remains not selector/tangent/readout authority.
 
-## 2026-06-08 supplied-support safe-narrow
+## 2026-07-12 missing-bridge closure
 
 The audit blocker asks for a retained bridge deriving or explicitly accepting
 the selector/tangent/readout carrier, readout weights, and positive tangent
 metric/Hessian, or else for the row to remain scoped as supplied-support only.
 
-This source note takes the second route. It is a supplied-support finite
-diagnostic for a prototype carrier, metric/Hessian, and readout weights. It
-does not assert that Record derives those structures, does not turn the
-prototype into selector authority, and does not claim a positive theorem or
-bounded theorem beyond the supplied finite packet.
-
-The carrier, readout weights/readout map, metric, and Hessian are not accepted
-framework primitives in this note. They are supplied finite packet data. The
-strongest current-surface reading is therefore conditional supplied-support /
-open gate, not `retained`, not `retained_bounded`, not a positive theorem over
-the framework baseline, and not selector/tangent/readout authority. In short:
-not selector/tangent/readout authority.
+This repair takes the explicit-acceptance route. The carrier, raw weights, two
+maps, metric/Hessian, and test vector are enumerated above and accepted as
+local mathematical hypotheses of the bounded theorem. They are supplied finite packet data.
+The proof derives every claimed output from exactly those inputs.
+This acceptance does not register them as framework primitives. The theorem
+does not derive selector/readout/tangent authority from Record or make a claim
+about the packet's physical origin. Record-derived selector/readout/tangent authority remains open.
 
 ## Meaning
 
-The prototype can certify finite tangent/readout weights, positive supplied
-quadratic form, and exact projection/readout normalization. It cannot certify
+The theorem certifies finite tangent/readout weights, positive supplied
+quadratic form, and exact projection/readout normalization for its accepted
+packet. It cannot certify
 that the readout is the selected physical selector, that a missing endpoint is
 chosen, or that Record derives the selector, metric, readout map, Born law, or
 physical measure.
-
-## Status certificate
-
-```yaml
-actual_current_surface_status: conditional-support
-trace_class: upstream_support
-reachability_to_target: supports
-conditional_surface_status: "supplied finite selector/tangent/readout arithmetic is checked; Record-derived selector/readout/tangent authority remains open"
-hypothetical_axiom_status: null
-admitted_observation_status: null
-proposal_allowed: false
-proposal_allowed_reason: "This packet checks a supplied finite prototype and explicitly does not derive selector/readout/tangent authority from Record."
-audit_required_before_effective_retained: true
-bare_retained_allowed: false
-```
 
 ## Boundaries
 
@@ -105,11 +159,13 @@ bare_retained_allowed: false
 
 ## Runner certificate
 
-The runner verifies source anchors, exact finite arithmetic under supplied
-weights/metric/Hessian, projection weights, the 12-row live bucket, unchanged audit
-ledger hash, the 2026-06-05 Record-axiom non-supply clauses, and firewalls
-against selector authority, Born law, physical measure, production dynamics,
-and audit verdicts.
+The runner constructs the complete accepted packet, checks that its carrier,
+weights, maps, and symmetric positive-definite metric/Hessian satisfy the
+theorem contract, and then recomputes the exact rational outputs. It also
+prints the current live diagnostic row count without treating that count as a
+premise, verifies stable semantic source anchors, preserves the audit-ledger
+hash. Its final uppercase fields are informational scope declarations, not
+self-verifying tests of absent physical derivations or audit actions.
 
 Run:
 
@@ -119,6 +175,7 @@ python3 scripts/frontier_post_record_selector_tangent_readout_weight_prototype_2
 
 ## Audit dependency repair links
 
-This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
-
-- [post_record_measure_weight_normalization_subdivision_2026-06-06](POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md)
+The prior conditional review named
+`POST_RECORD_MEASURE_WEIGHT_NORMALIZATION_SUBDIVISION_2026-06-06.md` as a
+diagnostic inventory surface. It is deliberately not a Markdown dependency
+because it supplies no premise used by the exact finite-packet proof.

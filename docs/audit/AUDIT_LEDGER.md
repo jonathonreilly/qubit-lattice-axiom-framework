@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 375 |
+| **retained_bounded** | 376 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2755 |
+| unaudited | 2754 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 490 |
+| `audited_clean` | 491 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3105 |
+| `unaudited` | 3104 |
 
 | claim_type | count |
 |---|---:|
@@ -316,6 +316,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_carrier_momentum_type_from_translation_theorem_note_2026-06-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `flavor_doublet_rotation_exhaustive_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -3879,6 +3880,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Using C^3=I, C†=C^2, tr(C)=tr(C^2)=0, the independent trace calculation gives <I,I>=3 and <C+C^2,C+C^2>=<i(C-C^2),i(C-C^2)>=6 with zero cross terms. The det_R/det_C arithmetic and the two stated obstructions then follow algebraically within the packet's bounded scope.
 - **rationale:** The runner source genuinely instantiates the C3 shift matrix and computes the HS Gram matrix rather than merely printing expected constants. An independent trace audit confirms the displayed diag(3,6,6), the conditional r and Q readings, the Hermitian-observable obstruction for multiplication by i, and the discrete-only rephasing condition e^{3i alpha}=1. The note does not promote a det_R default, exclude all field-space complex structures, or claim a physical mass readout theorem, so the bounded conclusion closes as stated.
 - **auditor confidence:** high
+
+### `flavor_doublet_rotation_exhaustive_note_2026-05-30`
+
+- **Note:** [`FLAVOR_DOUBLET_ROTATION_EXHAUSTIVE_NOTE_2026-05-30.md`](../../docs/FLAVOR_DOUBLET_ROTATION_EXHAUSTIVE_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the finite signed-permutation/O_h, elementary bit-flip, central `iI3`, and real `C3`-circulant packet, the audited result is the stated `hw=1` action counts, non-preservation results, distinction of `iI3` from `J_cs`, and uniqueness of `J_cs` up to sign.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00418-flavor_doublet_rotation_exha`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Direct finite enumeration gives the six signed-permutation actions and excludes order-four and one-bit-flip preservation of `hw=1`, while the real circulant equations give exactly `X=±(C-C^2)/sqrt(3)`.  _(class `A`)_
+- **chain closes:** True — The runner genuinely enumerates the finite affine cube actions and exactly solves the real circulant polynomial system. These computations establish the explicitly bounded conclusions without relying on the excluded projective, anti-unitary, cohomological, measure, or determinant-readout classifications.
+- **rationale:** E1-E3 are direct finite enumerations rather than printed constants, and E5 uses an exact symbolic solve whose two solutions agree with the independently stated circulant identities. For E4, the constructed `J_cs` has a zero eigenvalue and is visibly non-scalar, whereas `iI3` is central and invertible, so they are distinct. The note expressly excludes broader classification and readout claims, leaving no missing bridge inside the audited scope.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02`
 

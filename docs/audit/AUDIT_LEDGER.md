@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 417 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2643 |
+| unaudited | 2642 |
 | audit_in_progress | 25 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 97 |
+| ~~audited_conditional~~ | 98 |
 | ~~audited_failed~~ | 22 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 25 |
 | `audited_clean` | 550 |
-| `audited_conditional` | 97 |
+| `audited_conditional` | 98 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 44 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2993 |
+| `unaudited` | 2992 |
 
 | claim_type | count |
 |---|---:|
@@ -780,6 +780,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_measurement_record_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `third_grown_family_complex_boundary_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `two_sign_comparison_note_2026-04-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `universal_gr_block_normalization_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -10085,6 +10086,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N1 leaves the long-time and larger-size instability route untested.
     - N2 does not close the exhaustiveness wall.
     - N5 finds headline rhetoric extending beyond the tested finite resolution.
+
+### `u0_plaquette_quartic_derivation_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/U0_PLAQUETTE_QUARTIC_DERIVATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The algebraic implication u_0=<P>^{1/4} from the explicitly supplied four-link plaquette hypothesis P1 and unit-mean rescaling premise P2; neither P2 nor a numerical plaquette value is derived.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00091-u0_plaquette_quartic_derivat`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** At loop length L=4, the unit-mean condition gives <P>/u_0^4=1, hence u_0^4=<P> and the unique positive solution is u_0=<P>^{1/4}.  _(class `A`)_
+- **chain closes:** False — The algebra is correct conditional on P1 and P2, but P2 is explicitly a named external admission and is neither an accepted framework premise nor a retained-grade cited authority in the restricted packet.
+- **rationale:** The runner contains substantive symbolic factorization and positive-root solving, so the load-bearing manipulation is class A rather than a printed definition or tuned numerical match. However, the source explicitly imports P2 while declaring no load-bearing cited authority, and the premise registry contains no approved mean-field unit-normalization primitive. The verdict is therefore conditional even though the implication from P1 and P2 is correct. The runner also does not validate the note's incidental assertion that changing the normalization target changes the exponent; a different constant target changes the prefactor, not the power of <P>.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `unification_basin_failure_note`
 

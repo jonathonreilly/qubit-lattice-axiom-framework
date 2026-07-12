@@ -526,7 +526,7 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     error = audit_runner.validate_verdict(blob, cid, **validation_args)
     def _packet_error(err: object) -> bool:
         return bool(re.search(
-            r"(?:\bN[1-8]\b|No-Go Discipline|no_go_discipline)",
+            r"(?:\bN[1-8](?:\b|_)|No-Go Discipline|no_go_discipline)",
             str(err or ""),
         ))
 

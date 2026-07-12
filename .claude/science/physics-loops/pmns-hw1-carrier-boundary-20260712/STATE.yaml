@@ -5,7 +5,7 @@ goal: >-
   boundary note, or replace it with the sharpest exact obstruction that the
   current framework surface supports.
 target_status: best-honest-status
-actual_current_surface_status: exact-support
+actual_current_surface_status: candidate-retained-grade
 target_claim_type: bounded_theorem
 trace_class: direct_blocker_closure
 reachability_to_target: closes
@@ -14,8 +14,8 @@ hypothetical_axiom_status: null
 admitted_observation_status: null
 claim_type_reason: >-
   The block proves the exact conditional joint-commutant/scalar-family theorem
-  and a formal same-premise normalization obstruction; review-loop re-review is
-  pending after iteration-1 fixes.
+  and a formal same-premise normalization obstruction; review-loop passed
+  after three iterations. Independent audit remains required.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 runtime_budget: interactive targeted block; no unattended runtime requested
@@ -37,16 +37,17 @@ open_imports:
   - active/passive response convention is disclosed as a defined theorem interface
 no_go_routes:
   - projector-resolution of an inserted I_3 does not derive its normalization
-review_findings: iteration-1 fixes applied; iteration-2 re-review pending
-review_disposition: pending_re_review
+review_findings: all iteration-1 findings fixed; two narrow iteration-2 prose/checklist remnants fixed; iteration-3 targeted re-review clean
+review_disposition: pass
 pr_status: pending
 lock:
   shared_lock_status: unavailable_hardcoded_other_user_home
   fallback_lock_path: /private/tmp/pmns_hw1_source_transfer_boundary.physics-lock.json
   fallback_lock_holder: pmns-hw1-872bcebf
 next_exact_action: >-
-  Run review-loop iteration 2 on the files changed by the iteration-1 fixes,
-  then validate audit ingestion and strip all generated authority outputs.
+  Commit the final review/pipeline certificate, push the dedicated science
+  branch, open and verify one review PR, then leave independent audit as the
+  next post-landing action.
 stop_condition: >-
   Stop only after a review-clean theorem/obstruction packet is committed,
   pushed, and represented by one verified review PR, or after a precise

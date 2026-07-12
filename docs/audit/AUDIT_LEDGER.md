@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2789 |
+| unaudited | 2788 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 50 |
+| ~~audited_conditional~~ | 51 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 470 |
-| `audited_conditional` | 50 |
+| `audited_conditional` | 51 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3139 |
+| `unaudited` | 3138 |
 
 | claim_type | count |
 |---|---:|
@@ -620,6 +620,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `charged_lepton_op_local_source_selected_line_selector_no_go_note_2026-04-27` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1819,6 +1820,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The provided runner and helper sources actually generate matched graphs, compute gravity deltas for the declared modes and mass counts, and fit the declared positive window without hard-coded target values. The cached stdout matches the note's numerical claims and supports the bounded, mixed conclusion.
 - **rationale:** The source note makes a narrow bounded claim about the runner's computed mass-window fits, not a full gravity-law rescue. The runner source and helper chain compute the graph, pruning, propagation, deltas, and log-log fits directly from the declared simulation setup, and the reported R^2 comparisons are reproduced in the provided stdout. No cited non-retained authority, external comparator, renaming, or tuned imported value is load-bearing in this packet.
 - **auditor confidence:** high
+
+### `charged_lepton_op_local_source_selected_line_selector_no_go_note_2026-04-27`
+
+- **Note:** [`CHARGED_LEPTON_OP_LOCAL_SOURCE_SELECTED_LINE_SELECTOR_NO_GO_NOTE_2026-04-27.md`](../../docs/CHARGED_LEPTON_OP_LOCAL_SOURCE_SELECTED_LINE_SELECTOR_NO_GO_NOTE_2026-04-27.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Conditional finite-C3 no-go: a strict-onsite C3-fixed scalar source plus an unbased Brannen selected-line orbit cannot select a unique physical charged-lepton generation label.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00379-charged_lepton_op_local_sour`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** A selector from unbased quotient data to one generation label would have to return a C3-fixed label, but the cyclic action on the three labels is free and has no fixed label.  _(class `A`)_
+- **chain closes:** False — The finite-group obstruction closes algebraically after the source and selected-line premises are granted. The restricted packet provides no retained one-hop authorities deriving those granted physical premises, so the complete repository-level chain remains conditional.
+- **rationale:** The runner genuinely enumerates the C3 action, invariant subsets, heaviest-slot rotations, and the three based equivariant selectors; the scoped algebraic obstruction is correct. However, it hard-codes the source-erasure criterion, the Brannen carrier, and delta=2/9 while relying on textual checks of upstream notes that are not supplied as one-hop authorities. The result therefore supports the stated conditional selector no-go, but not retained physical source, phase, or charged-lepton mass closure.
+- **open / conditional deps cited:**
+  - `KOIDE_Q_OP_LOCALITY_C3_FIXED_SOURCE_SUPPORT_NOTE_2026-04-27.md`
+  - `CHARGED_LEPTON_SELECTED_LINE_GENERATION_SELECTOR_NO_GO_NOTE_2026-04-27.md`
+  - `KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11`
 

@@ -95,6 +95,12 @@
       "transitive_descendants": 1048
     },
     {
+      "claim_id": "kinetic_isotropy_primitive",
+      "criticality": "critical",
+      "load_bearing_score": 37.425,
+      "transitive_descendants": 485
+    },
+    {
       "claim_id": "staggered_dirac_realization_gate_note_2026-05-03",
       "criticality": "critical",
       "load_bearing_score": 37.043,
@@ -129,12 +135,6 @@
       "criticality": "critical",
       "load_bearing_score": 33.774,
       "transitive_descendants": 618
-    },
-    {
-      "claim_id": "kinetic_isotropy_primitive",
-      "criticality": "critical",
-      "load_bearing_score": 33.425,
-      "transitive_descendants": 485
     },
     {
       "claim_id": "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",

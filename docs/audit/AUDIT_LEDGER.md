@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 90 |
-| **retained_no_go** | 31 |
+| **retained_no_go** | 32 |
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2794 |
+| unaudited | 2793 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 468 |
+| `audited_clean` | 469 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3144 |
+| `unaudited` | 3143 |
 
 | claim_type | count |
 |---|---:|
@@ -97,13 +97,13 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 11 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1309 | 39.85 | `unaudited` | unaudited |
 | 12 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 423 | 39.73 | `unaudited` | unaudited |
 | 13 | `alpha_s_derived_note` | bounded_theorem | critical | 1048 | 39.03 | `unaudited` | unaudited |
-| 14 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1054 | 37.04 | `unaudited` | unaudited |
-| 15 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 612 | 36.76 | `unaudited` | unaudited |
-| 16 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
-| 17 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 435 | 35.27 | `unaudited` | unaudited |
-| 18 | `yt_ew_color_projection_theorem` | no_go | critical | 885 | 33.79 | `audited_clean` | **retained_no_go** |
-| 19 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 618 | 33.77 | `unaudited` | unaudited |
-| 20 | `kinetic_isotropy_primitive` | meta | critical | 485 | 33.42 | `unaudited` | meta |
+| 14 | `kinetic_isotropy_primitive` | meta | critical | 485 | 37.42 | `unaudited` | meta |
+| 15 | `staggered_dirac_realization_gate_note_2026-05-03` | bounded_theorem | critical | 1054 | 37.04 | `unaudited` | unaudited |
+| 16 | `cl3_color_automorphism_theorem` | bounded_theorem | critical | 612 | 36.76 | `unaudited` | unaudited |
+| 17 | `s3_time_theta_to_slice_coupling_note` | open_gate | critical | 126 | 35.99 | `unaudited` | unaudited |
+| 18 | `koide_circulant_character_derivation_note_2026-04-18` | bounded_theorem | critical | 435 | 35.27 | `unaudited` | unaudited |
+| 19 | `yt_ew_color_projection_theorem` | no_go | critical | 885 | 33.79 | `audited_clean` | **retained_no_go** |
+| 20 | `axiom_first_reflection_positivity_theorem_note_2026-04-29` | bounded_theorem | critical | 618 | 33.77 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 864 | 32.76 | `unaudited` | unaudited |
 | 22 | `cpt_exact_note` | positive_theorem | critical | 726 | 31.51 | `audited_failed` | ~~audited_failed~~ |
 | 23 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 466 | 31.37 | `unaudited` | unaudited |
@@ -140,6 +140,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
+| `acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -793,6 +794,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For every complex n-by-n matrix K, det_R R(K)=det_C(K)det_C(conjugate(K))=|det_C(K)|^2, while the stated left-Berezin ordering gives integral exp(-chibar K chi)=det_C(K).  _(class `A`)_
 - **chain closes:** True — The block identity S R(K)=diag(K,conjugate(K)) S proves the realification formula without invertibility, and expansion of -chibar K chi in the displayed variable order yields the determinant permutation signs. Independent exact integer determinants and an unrelated tuple-based left-derivative calculation confirmed both formula families, including odd-dimensional signs.
 - **rationale:** The theorem is exact algebra and closes without cited dependencies, hidden physical premises, normalization imports, or observable identifications. The runner's 18 checks agree with independent block-algebra, exact determinant, and explicit left-Berezin derivative checks; the differential order and exponent sign produce det(K) for both odd and even dimensions. Residual risk is limited to downstream misuse: the audited scope deliberately supplies no charged-lepton carrier, measure, selector, or occupancy bridge.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04`
+
+- **Note:** [`ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** After granting a nonzero R-eta h-class representative, the supplied axioms and approved primitives do not entail beta=1 for finite Record readouts; the beta=2 countermodel preserves the stated requirements.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-xhigh-acii-reeta-graph-reaudit-20260711-acphilambda_r_eta_direct-001`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The explicit beta=2 readout I_beta(R)=beta h N(R) satisfies the supplied finite-Record axioms while giving |delta_beta|=2h rather than h.  _(class `A`)_
+- **chain closes:** True — Cardinality makes I_beta empty-zero, content-determined, and finitely additive for each fixed beta, while the accepted premises supply no normalization selecting beta=1. The explicit beta=2 model therefore establishes the scoped non-entailment.
+- **rationale:** The load-bearing result is a constructive algebraic countermodel, not a fitted value, definition, or imported open bridge. The runner correctly verifies the finite examples and source boundaries, while the general additivity claim follows analytically from cardinality. The phrase “every real beta” is too broad if beta h is literally interpreted as a nonnegative magnitude for beta<0, but the positive beta=2 witness independently suffices for the audited no-go.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

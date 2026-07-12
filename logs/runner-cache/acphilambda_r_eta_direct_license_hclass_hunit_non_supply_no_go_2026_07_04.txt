@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py
-runner_sha256: 44a70a4d553b49d998b10369de1a2496228ccc09afa785bb05a41a7796183ff7
+runner_sha256: b9211c0318c1110acc3e2b06a5d638bd6e55100fcc8ac5fc27dfc3245b8c4b95
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.10
 status: ok
 ----- stdout -----
 Record additivity and the R-eta unit-calibration countermodel
@@ -11,6 +11,7 @@ Record additivity and the R-eta unit-calibration countermodel
 
 Part A: exact beta family
 -------------------------
+  [PASS] tested beta family is strictly positive
   [PASS] empty record reads zero for every tested beta
   [PASS] finite disjoint additivity holds for every tested beta
   [PASS] target singleton eta angle is 2/9
@@ -55,7 +56,7 @@ Part E: source and axiom guards
   [PASS] scale reference withholds dimensionless readout content
   [PASS] kinetic isotropy withholds phase and readout bridge
   [PASS] note grants h-class explicitly
-  [PASS] note states the beta countermodel
+  [PASS] note states the positive beta countermodel
   [PASS] note matches singleton eta angle and cycle holonomy
   [PASS] note limits claim to current finite-record surface
   [PASS] note preserves a future same-observable theorem
@@ -71,7 +72,7 @@ Part E: source and axiom guards
   [PASS] discipline gate records PASS
 
 ========================================================================
-TOTAL: PASS=46, FAIL=0
+TOTAL: PASS=47, FAIL=0
 
 ----- stderr -----
 

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 386 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2733 |
+| unaudited | 2732 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 69 |
+| ~~audited_conditional~~ | 70 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 502 |
-| `audited_conditional` | 69 |
+| `audited_conditional` | 70 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3083 |
+| `unaudited` | 3082 |
 
 | claim_type | count |
 |---|---:|
@@ -643,6 +643,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `ac_reta_hclass_hunit_readout_derivation_obligation` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | F | - |
 | `acphilambda_ambient_equivariant_heat_trace_face_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `action_power_3d_gravity_sign_closure_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `activity_energy_bound_witnesses_bounded_note_2026-07-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `adaptive_coevolving_geometry_no_go` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -943,6 +944,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The supplied runner source actually generates the DAGs, propagates both actions, and computes the reported table rather than printing fixed constants. The source note's safe interpretation is limited to the tested scripted slice and matches the completed stdout.
 - **rationale:** Clean for the bounded computational claim only: the note freezes the parameters, the runner computes the finite replay, and the stdout supports a mixed, non-monotonic shift in the scripted readout. The result does not rely on unlisted dependencies or external comparators, and the note explicitly does not claim a universal action unification or continuum theorem. Residual risk is scope creep if later citations treat this as a physical bridge beyond the frozen generated-DAG experiment.
 - **auditor confidence:** medium
+
+### `action_power_3d_gravity_sign_closure_note`
+
+- **Note:** [`ACTION_POWER_3D_GRAVITY_SIGN_CLOSURE_NOTE.md`](../../docs/ACTION_POWER_3D_GRAVITY_SIGN_CLOSURE_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite detector z-centroid sign results at BETA=0.8 and K=5.0 for L=12, W=6, h=1.0 ordered 3D power-action close-slit runs over the exact 14 strength/mass rows, three spans, and 32 jitter/seed rows emitted by the runner.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00224-action_power_3d_gravity_sign`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Across the tested field-strength, connectivity, and jitter rows, the detector z-centroid shift is never positive (toward), so the tested barrier-sign sweep is a bounded negative.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes all 49 finite cases and supports their reported signs. It does not establish the broader ordered-family lane closure, and the note omits the load-bearing BETA=0.8 and K=5.0 model settings imported from the helper.
+- **rationale:** The primary runner constructs the lattice, propagates amplitudes, and computes detector centroids rather than printing expected constants. Its output agrees with every finite summary in the note. The conclusion must nevertheless remain conditional and narrower because BETA and K are unstated supplied model parameters and the finite grid does not exhaust the current ordered family.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: topology-changing, continuum-limit, and alternate-action routes remain untested.
+    - N3: the note omits load-bearing BETA=0.8 and K=5.0 settings.
+    - N5: ordered-family lane-closing rhetoric exceeds the exact finite grid.
 
 ### `action_power_note`
 

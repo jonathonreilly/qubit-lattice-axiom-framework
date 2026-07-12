@@ -22,11 +22,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 301 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2952 |
+| unaudited | 2951 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 21 |
+| ~~audited_conditional~~ | 22 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -39,21 +39,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audited_clean` | 375 |
-| `audited_conditional` | 21 |
+| `audited_conditional` | 22 |
 | `audited_decoration` | 15 |
 | `audited_failed` | 24 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3302 |
+| `unaudited` | 3301 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2058 |
+| `bounded_theorem` | 2059 |
 | `decoration` | 20 |
 | `meta` | 357 |
 | `no_go` | 472 |
 | `open_gate` | 199 |
-| `positive_theorem` | 650 |
+| `positive_theorem` | 649 |
 
 | criticality | count |
 |---|---:|
@@ -502,6 +502,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `shapiro_static_discriminator_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `structured_chokepoint_bridge_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -5055,6 +5056,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `SHAPIRO_EXPERIMENTAL_CARD.md`
   - `SHAPIRO_DIAMOND_FREQUENCY_BRIDGE_NOTE.md`
+- **auditor confidence:** high
+
+### `shapiro_static_discriminator_note`
+
+- **Note:** [`SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md`](../../docs/SHAPIRO_STATIC_DISCRIMINATOR_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the supplied runner, the matched-c static-cone and causal field builders are algebraically identical, while the completed finite sweep over fixed delays 0 through 3 produces a near-flat scheduling curve.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00154-shapiro_static_discriminator`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The frozen static cone-shape proxy reproduces the full c-dependent causal phase curve to numerical precision.  _(class `A`)_
+- **chain closes:** False — The runner establishes its internal proxy comparison, but the packet supplies no theorem identifying its spatial-only causal builder with the retained causal propagating-field observable invoked by the note.
+- **rationale:** Issue: `_causal_field` and `_static_cone_field` implement the same spatial field law, so their exact match is an algebraic consequence of the runner definitions rather than an independent causal-versus-static comparison. Why this blocks: no cited authority or construction establishes that the runner's so-called causal branch represents the retained propagating-field lane. Repair target: supply a retained bridge deriving this causal comparator from that lane and verify an actual zero-strength control rather than assigning `zero_ok` to zero. Claim boundary until fixed: the internal equality and the sampled delay-0-through-3 scheduling mismatch remain valid finite-model results.
 - **auditor confidence:** high
 
 ### `sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06`

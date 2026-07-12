@@ -726,3 +726,25 @@ contains all five conditions and ten wall pairs. Runner/cache: `PASS=8 FAIL=0`.
 Audit validation seeds one `no_go` / `unaudited` row with source hash
 `b9a08d8ef90d8600...` and the sole Dobrushin uniqueness dependency. PR #5303
 is open; no axiom-update stop is triggered.
+
+## Wilson--staggered Dobrushin certificate-boundary critical-scaling review
+
+PASS WITH NARROW NO-GO BOUNDARY. The exact `SU(3)` range
+`-3/2<=Re Tr U<=3` reduces each Wilson plaquette-change oscillation to
+`3 beta`, hence each half-`L1` incidence influence to at most `3 beta/4`
+and the full Wilson row to `27 beta/2`. On the old equality curve the sharper
+row is `1-(9/2)beta`, so every positive-`beta` point remains in a rigorous
+mixing region. A universal weighted-row derivative bound below nine gives
+`lambda=delta/100`, the displayed `1/delta` comparison prefactor, and
+`Delta_OS>=delta/(100 a_tau)`. Bounded-energy isotropic propagation therefore
+requires `delta=O(a)` inside this wedge, without any converse criticality claim.
+
+Independent code/math, physics/import, and governance reviewers pass the
+result. One context-only Block22 markdown link was removed so the citation
+graph seeds exactly one direct dependency. N1--N8 keeps actual correlation and
+spectral measurements, block criteria, polymers, constructive RG, weak-
+coupling/light-mass scaling, and alternative actions live. Runner/cache:
+`PASS=9 FAIL=0`. Audit validation seeds one `no_go` / `unaudited` row with
+source hash `0520812a24cfb747...` and the sole Dobrushin uniqueness dependency;
+strict lint has zero errors and vocabulary lint has zero violations. PR #5305
+is open; no axiom-update stop is triggered.

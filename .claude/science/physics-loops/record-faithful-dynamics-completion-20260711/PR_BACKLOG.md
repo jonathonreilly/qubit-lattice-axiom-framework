@@ -1,5 +1,19 @@
 # PR Delivery
 
+The Wilson--staggered Dobrushin certificate-boundary critical-scaling no-go is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block22-controlled-ultralocal-continuum-20260712`
+- head: `physics-loop/record-faithful-dynamics-block23-critical-scaling-necessary-conditions-20260712`
+- runner: `PASS=9 FAIL=0`
+- scope: exact `27 beta/2` Wilson row, old-boundary non-identification, and
+  `delta=O(a)` necessary certificate tuning for bounded-energy propagation;
+  no physical criticality or continuum-existence converse
+- audit compatibility: one `no_go` / `unaudited` row, exactly the Dobrushin
+  uniqueness dependency; strict lint zero errors; generated outputs stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5305
+
+No merge is authorized. Independent audit remains authoritative.
+
 The compact-interior Dobrushin continuum no-go is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block21-dobrushin-spatial-uniqueness-20260712`

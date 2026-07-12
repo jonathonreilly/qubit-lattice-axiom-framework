@@ -26,7 +26,7 @@ blocks: >
   supervisor validate (four cold doublet builds incl. lambda=0.02,
   30 min allowance). Block04: detached full run (~7 h), bounded note,
   PR (base = d3-bar-location branch, stacks above #5144).
-current_block: block04 — full run EXECUTING (launched 2026-07-11
+current_block: CLOSED 2026-07-11 — BAR-DERIVED-EFFECTIVE shipped (block04 was: launched 2026-07-11
   ~08:35 EDT, detached, re-parented to launchd, caffeinate held;
   supervisor VALIDATION-PASS at
   logs/runner-cache/d3_bar_window_validate_2026_07_11.txt; preflight
@@ -38,6 +38,6 @@ imports: inherited verbatim from the parent frozen memo (QD reading;
 discipline: physics-loop standard; vocab_lint before commits; commit
   early; stop and write up on any axiom trigger; no retuning after
   freeze — the delta memo is already frozen and hashed.
-next_exact_action: on run exit — --report, line review, bounded
-  note, PR (base = d3-bar-location branch); see RESUME.md
+next_exact_action: none — campaign closed; verdict theta*=0.500752,
+  window {0.02,0.05,0.10}, boundary (0.10,0.20); see HANDOFF.md
 stop_condition_hit: none

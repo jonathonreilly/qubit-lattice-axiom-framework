@@ -43,8 +43,11 @@ And nothing here derives the physical normalization or the phase value.
 ## Frame And Retained Inputs
 The dependency source is
 [KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05](KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md).
-It supplies the pinned local row: "**(B) The weight `(1,2)` is forced and gives local density `2/9`.**"
-It also pins the scope exclusion: "It does **not** supply the physical single-summand readout".
+It supplies the pinned local value: "L_C_3(N) = (1/3)(1/3+1/3) = 2/9."
+It also pins the scope exclusion: "No physical single-summand readout is derived."
+(The supplier note was made self-contained after this note was written; the
+pinned sentences above quote its current text, which derives the same `2/9`
+density with the same readout exclusion.)
 The axiom memo `docs/MINIMAL_AXIOMS_2026-06-29.md` supplies the lattice objects:
 "Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor
 adjacency, standard translations, and proper cubic rotations about each site."

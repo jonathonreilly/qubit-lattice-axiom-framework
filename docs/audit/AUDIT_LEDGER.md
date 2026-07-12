@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 372 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2763 |
+| unaudited | 2762 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 56 |
+| ~~audited_conditional~~ | 57 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,21 +46,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 485 |
-| `audited_conditional` | 56 |
+| `audited_conditional` | 57 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3113 |
+| `unaudited` | 3112 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2051 |
 | `decoration` | 23 |
 | `meta` | 357 |
-| `no_go` | 467 |
+| `no_go` | 468 |
 | `open_gate` | 198 |
-| `positive_theorem` | 658 |
+| `positive_theorem` | 657 |
 
 | criticality | count |
 |---|---:|
@@ -647,6 +647,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dirac_v4_convergence_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3186,6 +3187,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
   - **gate failures:**
     - N1: corrected_domain_certificate remains UNTESTED because neither the source nor runner certifies a corrected nonsingular domain statement.
+
+### `dm_neutrino_weak_matching_obstruction_note_2026-04-15`
+
+- **Note:** [`DM_NEUTRINO_WEAK_MATCHING_OBSTRUCTION_NOTE_2026-04-15.md`](../../docs/DM_NEUTRINO_WEAK_MATCHING_OBSTRUCTION_NOTE_2026-04-15.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The displayed finite Clifford representation refutes unchanged reuse of the universal G5 commutation/factorization proof for Gamma_1; it does not exclude a distinct weak-sector Ward identity or establish the later physical benchmark selector.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00408-dm_neutrino_weak_matching_ob`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because Gamma_1 is non-central and does not commute with the displayed propagator and gauge chain, the exact G5-based factorization route cannot simply be ported to the direct Gamma_1 bridge.  _(class `C`)_
+- **chain closes:** False — The runner supplies valid counterexamples to universal Gamma_1 commutation, but the note also asserts generic-momentum failure, physical bridge identification, broader machinery non-transfer, and a later bosonic selector without closing those steps. A new non-centrality-independent Ward identity remains explicitly untested.
+- **rationale:** Issue: the computation cleanly refutes the unchanged central-factorization identity, but one sampled momentum does not by itself prove the stated generic-momentum claim or exhaust other Ward/Slavnov-Taylor mechanisms. Why this blocks: the restricted packet supplies neither the physical Gamma_1 bridge theorem nor the later bosonic-normalization selector, and the mandatory no-go gate leaves distinct routes open. Repair target: narrow the result to the explicit universal-identity counterexample or add analytic genericity, bridge, and route-exhaustion theorems. Claim boundary until fixed: the old G5 commutation proof cannot be reused unchanged in the displayed representation.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the non-centrality-independent weak Ward identity, exceptional-momentum route, and normalization-only coefficient-sharing route remain open or untested.
+    - N3: the physical Gamma_1 bridge and later bosonic selector are unsupported hidden inputs in the restricted packet.
+    - N5: generic-momentum and broad machinery-nontransfer rhetoric exceeds the tested finite commutator witnesses.
 
 ### `dm_neutrino_weak_vector_theorem_note_2026-04-15`
 

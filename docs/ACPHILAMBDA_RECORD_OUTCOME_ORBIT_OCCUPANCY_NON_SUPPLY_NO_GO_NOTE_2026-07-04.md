@@ -203,6 +203,15 @@ narrow non-entailment claim, because neither the factor-one normalization nor
 the physical Berezin/action bridge appears in the four axioms. The convention
 and action routes remain available.
 
+The companion runner executes this objection rather than checking its wording:
+it verifies `F_R/2=F_C` on exact finite carriers and record collections,
+computes the block-Pfaffian determinant power of a generic supplied complex
+Grassmann sector, and shows that the modulus-square power appears when an
+independent conjugate sector is adjoined. It then checks directly that the
+accepted axiom memo withholds the physical CAR/action and readout selector.
+These computations preserve the normalization and future-action paths while
+leaving the scoped current-surface non-entailment intact.
+
 ### N8 — cross-cycle echo
 
 | Similar mechanism | Was its wall retired? | Applicability here |
@@ -225,4 +234,4 @@ Run:
 python3 scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py
 ```
 
-Expected result: `PASS=60`, `FAIL=0`.
+Expected result: `PASS=75`, `FAIL=0`.

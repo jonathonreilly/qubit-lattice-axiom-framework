@@ -1,0 +1,35 @@
+loop_slug: s3-time-tensor-primitive
+goal: "Close the missing derivation in docs/S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md at the narrowest honest retained-grade boundary."
+target_status: best-honest-status
+mode: run
+started_at: "2026-07-12T18:48:38Z"
+cycle_count: 1
+block_count: 1
+active_route: bounded_source_step_free_finite_operator_replay
+hard_residual: "Replace the definitional gamma-pair step with an inspectable computation and state exactly what the finite replay proves."
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+claim_type_reason: "fixed finite-operator computation with explicit conditions and an eleven-point residual bound"
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/S3_TIME_TENSOR_PRIMITIVE_PROTOTYPE_NOTE.md
+  - scripts/frontier_s3_time_tensor_primitive_prototype.py
+  - logs/runner-cache/frontier_s3_time_tensor_primitive_prototype.txt
+  - .claude/science/physics-loops/s3-time-tensor-primitive/
+open_imports:
+  - "physical selection of the cubic interpolation contract"
+  - "physical interpretation of the two-channel response as a GR tensor primitive"
+no_go_routes:
+  - "exact-affine wording for the current nonlinear max/absolute-value response; only a bounded numerical witness is certified"
+trace_gate_classification: direct_blocker_closure
+review_disposition: pass
+pr_status: pending
+repo_lock:
+  mode: branch_local_fallback
+  reason: "checked-in default lock path is unavailable on this host; guarded shared temporary lock used"
+next_exact_action: "Push the rebased reviewed block, open the single review PR, and verify it."
+stop_condition: "A review-loop pass and one verified review PR, or an honestly isolated blocker after the required stretch attempt."

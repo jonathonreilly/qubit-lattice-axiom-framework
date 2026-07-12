@@ -9,8 +9,8 @@
 | 5 | select formation effects from static covariance/additivity conditions | falsified; conditional selector isolated | physical menu plus `RC_i` derivation | high | high | depolarizing family survives; normalization plus `RC_i` forces projectors |
 | 6 | full finite-carrier record-instrument normal form | completed bounded candidate | physical menu/readout/Record realization and overlap composition | high | high | auxiliary absorption does not derive blank-sector calibration; normal form exposes `e_i` and no-record CP freedom |
 | 7 | overlapping local-instrument schedule and event order | completed bounded candidate | composition semantics, priority, simultaneous global law, and clock/rate | high | high | exact forks survive; commuting incomparable channels give the positive conditional closure |
-| 8 | exhaustive simultaneous 3D coherent QCA/tick | one-mode, matching-Clifford, commuting-H, and onsite-charge common-H classes closed; 16-mode flat escape explicit | charge-breaking/BdG discriminator, carrier selection, and record-instrument coupling | high | medium | decide whether BdG closure is required before the continuum gateway |
-| 9 | controlled QCA-to-Hamiltonian continuum limit | 0.20 exact | scale/rate, RG control, universality | low | low | establish one microscopic carrier before testing Lorentz/QFT limits |
+| 8 | exhaustive simultaneous 3D coherent QCA/tick | bounded campaign complete through scalar CAR, matching-Clifford, commuting/charge common-H, and two-band BdG classes; flat escapes explicit | physical carrier selection and record-instrument coupling | high | medium | carry the exact strict-vs-quasilocal boundary into continuum control |
+| 9 | controlled microscopic-to-continuum limit | active next campaign | same-object `3+1` transfer/action identity, scaling topology, physical-distance quasilocality, later RG control | medium | medium | unify the massive free staggered two-step family before Lorentz/QFT extension |
 
 The queue prioritizes the law/probability/time seam because every SM/GR
 continuum claim currently consumes a supplied kinetic/action surface. Closing

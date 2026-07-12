@@ -1,0 +1,32 @@
+PASS A01: the endpoint-symmetric parity-even spin-density basis has six independent real directions
+PASS A02: all six directions are endpoint-SWAP symmetric
+PASS A03: all six directions conserve total fermion parity
+PASS A04: the first four directions are exactly the charge-preserving Block11 class
+PASS A05: XX-YY and XY+YX are exactly the two charge-breaking pairing directions
+PASS A06: the even-parity block spans every Hermitian 2x2 matrix
+PASS A07: the odd-parity block spans exactly the I,X commutant of endpoint SWAP
+PASS B01: every traceless Hermitian two-band symbol obeys D^2=s I
+PASS B02: the closed flat-band expression has generator center I+D
+PASS B03: D^2=rho^2 I makes the closed finite-Laurent exponential exactly unitary
+PASS B04: cos(time sqrt(s)) is a nonpolynomial entire function of s at every nonzero time
+PASS B05: a nonconstant Laurent s has unbounded pole order under the nonterminating entire series
+PASS B06: the generic one-variable slice has a genuine pole, so the composition has an essential singularity
+PASS M01: the essential-singularity obstruction disappears when the band square is constant
+PASS C01: the signed-permutation enumeration is exactly the 24-element proper cubic group
+PASS C02: the proper-cubic vector fixed space is zero-dimensional
+PASS C03: a proper rotation sends each nearest-neighbor direction to its reverse
+PASS C04: every one-dimensional proper-cubic onsite character squares trivially on a pair
+PASS C05: nonzero cubic hopping generically makes the two-band square momentum-dependent
+PASS C06: flat spectrum in the nearest-neighbor scalar cubic normal symbol forces zero hopping
+PASS D01: the lower-symmetry Kitaev symbol (cos k)Z+(sin k)Y is an exact flat involution
+PASS D02: the Laurent coefficients obey the spinless BdG particle-hole relation
+PASS D03: the flat BdG exponential is a strict radius-one Bogoliubov/CAR convolution with local inverse
+PASS D04: the lower-symmetry positive escape is strict for every time, not at an isolated time
+PASS E01: the dispersive scalar hopping exponential has Bessel support beyond every tested cutoff
+PASS E02: the two-sided Bessel series reconstructs the exact dispersive Laurent exponential
+PASS E03: the tail obstruction is compatible with exact one-particle unitarity
+PASS F01: seven explicit Hermitian 8x8 gammas satisfy the exact Cl(7) relations
+PASS F02: the multicomponent cubic Laurent symbol is an exact radius-one flat involution
+PASS F03: the irreducible 8-mode orientation obstruction is present on half the cubic rotations
+PASS F04: doubling the Clifford chirality restores the flat escape under all 24 proper cubic rotations
+SUMMARY PASS=31 FAIL=0

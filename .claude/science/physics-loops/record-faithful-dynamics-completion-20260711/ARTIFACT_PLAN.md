@@ -78,11 +78,19 @@
   into the strict commuting branch and a nonzero-exchange branch with infinite
   support at every nonzero time; a fully cubic 16-mode flat involution is the
   explicit larger-carrier strict escape;
-- next decision: one charge-nonconserving/BdG discriminator or the controlled
-  continuum gateway.
+- completed sixth exact subblock: every two-band finite-Laurent Hermitian
+  generator is strict at one nonzero time iff its spectrum is flat iff it is
+  strict at every time; the scalar one-mode nearest-neighbor proper-cubic BdG
+  class is onsite only, while lower-symmetry and 16-mode flat escapes prevent
+  overreach;
+- Campaign 5 bounded microscopic classification is complete at the declared
+  carrier/class resolution. Physical carrier selection remains separate.
 
-## Continuum gateway
+## Continuum gateway — next
 
-- only after a microscopic process class is fixed;
-- define one scaling family and common renormalization conditions;
-- test Lorentz/unitarity/QFT behavior before attaching SM or GR labels.
+- use the repo's strongest same-object candidate: the massive free `3+1`
+  staggered two-step family;
+- unify action, direct `3+1` transfer positivity, exact-log Hamiltonian,
+  covariance, CAR/Fock dynamics, and `M(a)=a m_phys` in one scaling parameter;
+- prove a stated convergence topology and physical-distance quasilocal bound;
+- test Lorentz/unitarity/free-QFT behavior before attaching SM or GR labels.

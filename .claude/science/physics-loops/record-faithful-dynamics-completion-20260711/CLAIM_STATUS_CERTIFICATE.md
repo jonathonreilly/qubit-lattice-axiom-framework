@@ -1,20 +1,33 @@
 ---
-target_claim_id: onsite_charge_conserving_endpoint_symmetric_common_hamiltonian_strict_qca_dichotomy_bounded_theorem_note_2026-07-12
+target_claim_id: two_band_bdg_strict_time_flat_spectrum_and_cubic_scalar_boundary_bounded_theorem_note_2026-07-12
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact four-parameter onsite-charge density classification, all-nonzero-time exchange-tail theorem, I-SWAP graph-Laplacian corollary, and explicit 16-mode flat-involution escape."
+claim_type_reason: "Exact six-direction parity spin classification, complete two-band strict-time/flat-spectrum equivalence, scalar one-mode proper-cubic BdG boundary, and explicit lower-symmetry/multicomponent escapes."
 actual_current_surface_status: bounded-support
 trace_class: direct_blocker_closure
 reachability_to_target: partially_closes
-conditional_surface_status: "The one-qubit onsite-charge class has a complete strict/tail dichotomy; a supplied fully cubic 16-mode flat involution is a noncommuting strict escape. Charge-breaking, physical tick, Record, and continuum selection remain open."
+conditional_surface_status: "The two-band finite-Laurent class has a complete strict-once/flat/all-times equivalence; the scalar one-mode proper-cubic nearest-neighbor BdG class is onsite only. CAR realization, multiband selection, Record coupling, and continuum control remain supplied or open."
 hypothetical_axiom_status: null
 admitted_observation_status: none
 proposal_allowed: false
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-review_loop_disposition: pass_with_bounded_claims_audit_compatible
+review_loop_disposition: pending_review
 ---
 
 # Claim Status Certificate
+
+The current source closes the final bounded Gaussian special-time seam before
+the continuum campaign. It proves that a `2 x 2` finite-Laurent Hermitian
+generator is strict at one nonzero time iff its spectrum is momentum-independent
+iff it is strict at every time. It separately classifies the literal
+endpoint-symmetric parity-even two-qubit spin density, refuses an unsupported
+local `Z^3` spin-to-CAR identification, and proves the scalar one-mode
+nearest-neighbor proper-cubic BdG class is onsite only. Lower-symmetry Kitaev
+and doubled `16`-mode cubic flat involutions remain explicit positive escapes.
+Runner/cache: `PASS=31 FAIL=0`. Independent review and audit remain required.
+
+No axiom or primitive update is proposed. The next campaign object is the
+same-object massive free `3+1` staggered two-step scaling family.
 
 The current source classifies all six-layer matching products for CZ and iSWAP
 as full qubit circuit automorphisms and supplies the direct quasi-local `Z^3`

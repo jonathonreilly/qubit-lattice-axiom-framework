@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 98 |
 | **retained_no_go** | 41 |
-| **retained_bounded** | 399 |
+| **retained_bounded** | 400 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2693 |
+| unaudited | 2692 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 524 |
+| `audited_clean` | 525 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 40 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3043 |
+| `unaudited` | 3042 |
 
 | claim_type | count |
 |---|---:|
@@ -611,6 +611,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_round_pl_s3_regge_hessian_canonical_channels_narrow_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_supermetric_normal_form_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -9496,6 +9497,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source constructs the lattice operators, conserved and naive Dirac operators, TT modes, lattice diffeomorphism variation, finite-difference dW/depsilon, and 16-point fourth cross term directly; it does not read or hard-code the contested residuals. Manual checks of the sine-expansion coefficients, cross-stencil normalization, TT transversality/tracelessness, and momentum closure match the stated bounded diagnostic.
 - **rationale:** The load-bearing step is a first-principles finite computation from the framework baseline, not a definition, renaming, external comparator, or tuned numerical match. The included source computes the residuals from instantiated lattice matrices and asserts three bounded checks: conserved-vs-naive contrast at L=6, amplitude robustness at amp 0.04 and 0.09, and conserved decrease from L=6 to L=8 with naive flatness. There are no cited non-retained authorities or missing helper imports in the restricted packet. The clean verdict is limited to the bounded runner-defined quintic diagnostic, not an all-order Einstein-Hilbert closure claim.
 - **auditor confidence:** high
+
+### `universal_gr_round_pl_s3_regge_hessian_canonical_channels_narrow_theorem_note_2026-06-10`
+
+- **Note:** [`UNIVERSAL_GR_ROUND_PL_S3_REGGE_HESSIAN_CANONICAL_CHANNELS_NARROW_THEOREM_NOTE_2026-06-10.md`](../../docs/UNIVERSAL_GR_ROUND_PL_S3_REGGE_HESSIAN_CANONICAL_CHANNELS_NARROW_THEOREM_NOTE_2026-06-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The supplied three-dimensional Lambda-Regge action on the unit-edge round boundary of the 4-simplex: its symmetric critical Lambda, curved-background Hessian, S5 channel decomposition, measured channel spectrum, and absence of complement-frame ambiguity at that round point.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00272-universal_gr_round_pl_s3_reg`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** At the round point the Regge Hessian is S5-equivariant and the edge representation decomposes multiplicity-free as 10 = 1 ⊕ 4 ⊕ 5, so H = h1 P1 + h4 P4 + h5 P5 and the channel split is unique.  _(class `C`)_
+- **chain closes:** True — The runner constructs the tetrahedral dihedral angles and volumes, differentiates and assembles the full Hessian, constructs the S5 edge representation and projectors, and independently checks the action second variation. The result closes only for the explicitly supplied action and round finite spatial background.
+- **rationale:** The runner is not a print-only or hard-coded-spectrum certificate: it symbolically constructs tetrahedral geometry, assembles the Regge derivatives, and obtains the channel eigenvalues from the resulting matrix. S5 equivariance, the 1+4+5 orthogonal decomposition, scalar action on each channel, and the distinct 4- and 5-channel eigenvalues establish the claimed round-point canonicity. The source explicitly excludes action selection, off-round backgrounds, a 3+1 extension, and continuum-limit claims.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10`
 

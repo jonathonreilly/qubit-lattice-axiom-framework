@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 421 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2613 |
+| unaudited | 2612 |
 | audit_in_progress | 31 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 104 |
+| ~~audited_conditional~~ | 105 |
 | ~~audited_failed~~ | 26 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -48,12 +48,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 31 |
 | `audited_clean` | 562 |
-| `audited_conditional` | 104 |
+| `audited_conditional` | 105 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2963 |
+| `unaudited` | 2962 |
 
 | claim_type | count |
 |---|---:|
@@ -750,6 +750,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_interacting_matter_build_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `flavor_r_half_is_the_records_flow_separatrix_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_retention_law_is_a2plus_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_substrate_bridge_fails_source_operator_asymmetry_note_2026-05-31` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `frw_c3_eos_component_labels_kinetic_bridge_bounded_support_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -4506,6 +4507,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The entropy statement reduces to the binary entropy maximum at equal sector weights, which gives 1/(1+2r)=2r/(1+2r) and hence r=1/2. The Q-table entries and imbalance/fixed-point claims are direct algebraic substitutions; the broader lane-assignment dynamics is explicitly outside the audited scope.
 - **rationale:** The displayed closed-form identities check out under the note's own definitions: S(r) has its unique interior maximum at r=1/2, the imbalance |3-6r| vanishes there, and the listed Q values follow by substitution. The per-DOF caveat is also consistent with equal per-DOF weights giving r=1. This is a bounded algebraic/calculus closure, not a derivation of the physical lane assignment or charged-lepton sector selection.
 - **auditor confidence:** high
+
+### `flavor_r_half_is_the_records_flow_separatrix_2026-06-02`
+
+- **Note:** [`FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md`](../../docs/FLAVOR_R_HALF_IS_THE_RECORDS_FLOW_SEPARATRIX_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic audit of the stipulated two-sector Lüders update: r maps to 2r², r=1/2 is repelling, and the S2 and S3 entropy maxima occur at r=1/2 and r=1 respectively.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00141-flavor_r_half_is_the_records`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Sharpening p→p²/Z on the stipulated two-sector distribution reduces to r↦2r², whose derivative at r=1/2 is 2, making that fixed point repelling.  _(class `A`)_
+- **chain closes:** False — The algebra closes under the stated update and distribution, but the restricted packet supplies no cited authority deriving either as the physical records law. Thus the result remains conditional on those stipulated inputs.
+- **rationale:** Direct substitution gives r′=(p′d/p′s)/2=2r², and the fixed-point, derivative, basin, and entropy statements follow correctly. The runner performs substantive algebraic and numerical checks rather than merely printing expected constants. However, despite the source referring to a retained Lüders authority, the restricted packet declares that there are no cited authorities, so the sharpening law and physical two-sector records identification remain supplied premises rather than closed inputs.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `flavor_readout_gate_equals_carrier_identification_2026-05-31`
 

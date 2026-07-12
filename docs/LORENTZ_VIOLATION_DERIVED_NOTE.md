@@ -2,6 +2,7 @@
 
 **Script:** `scripts/frontier_lorentz_violation.py`
 **PStack:** `frontier-lorentz-violation-derived`
+**Claim type:** bounded_theorem
 **Status:** unaudited audit target after scope repair
 
 **Current publication disposition:** not publication-usable. The calculations

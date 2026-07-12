@@ -28,9 +28,9 @@
         {
           "audit_question": "Fresh-context re-audit: does the bounded dimension-6 cubic-anisotropy result remain valid only under an explicitly selected Planck-spaced cubic finite-difference kinetic operator, with scale reference granting units conversion and kinetic isotropy granting only c_t = c_s, rather than as zero-input four-axiom Lorentz authority?",
           "claim_id": "lorentz_violation_derived_note",
-          "current_audit_status": "audited_clean",
+          "current_audit_status": "unaudited",
           "current_claim_type": "bounded_theorem",
-          "current_effective_status": "retained_bounded",
+          "current_effective_status": "unaudited",
           "note_path": "docs/LORENTZ_VIOLATION_DERIVED_NOTE.md"
         }
       ]

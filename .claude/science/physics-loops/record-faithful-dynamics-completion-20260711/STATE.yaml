@@ -8,28 +8,29 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block11-noncommuting-common-h-20260712
+branch: physics-loop/record-faithful-dynamics-block12-bdg-flat-band-20260712
 base_commit_at_start: 9d1636f05f
-cycle_count: 11
-block_count: 11
-active_route: charge_nonconserving_bdg_or_continuum_gateway_decision
+cycle_count: 12
+block_count: 12
+active_route: controlled_free_staggered_continuum_gateway
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: onsite_charge_conserving_endpoint_symmetric_common_hamiltonian_strict_qca_dichotomy_bounded_theorem_note_2026-07-12
+produced_claim_id: two_band_bdg_strict_time_flat_spectrum_and_cubic_scalar_boundary_bounded_theorem_note_2026-07-12
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  The complete endpoint-SWAP-symmetric onsite-charge-conserving edge class is
-  c II+r(ZI+IZ)+g ZZ+J(XX+YY). J=0 is strict and commuting; J nonzero has
-  infinite support at every nonzero time. A fully cubic noncommuting 16-mode
-  flat involution is a strict larger-carrier escape.
+  For every 2x2 finite-Laurent Hermitian generator, strict at one nonzero time
+  is equivalent to momentum-independent spectrum and to strict at every time.
+  The scalar one-mode nearest-neighbor proper-cubic BdG class is onsite only;
+  lower-symmetry two-band and fully cubic 16-mode flat escapes remain positive.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source classifies the full four-parameter charge-conserving density,
-  proves the every-time Laurent/Bessel tail obstruction, matches I-SWAP to
-  6I-A, and supplies a doubled-carrier escape to any broader no-go.
+  The source classifies the six-dimensional parity-even spin-edge complement,
+  proves the complete two-band strict-time/flat-spectrum equivalence, guards
+  the spin-vs-CAR category split, closes the scalar cubic one-mode carrier, and
+  supplies explicit lower-symmetry and multicomponent escapes.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -72,6 +73,9 @@ files_touched:
   - docs/ONSITE_CHARGE_CONSERVING_ENDPOINT_SYMMETRIC_COMMON_HAMILTONIAN_STRICT_QCA_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-12.md
   - scripts/onsite_charge_conserving_common_hamiltonian_strict_qca_dichotomy_2026_07_12.py
   - logs/runner-cache/onsite_charge_conserving_common_hamiltonian_strict_qca_dichotomy_2026_07_12.txt
+  - docs/TWO_BAND_BDG_STRICT_TIME_FLAT_SPECTRUM_AND_CUBIC_SCALAR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/two_band_bdg_strict_time_flat_spectrum_2026_07_12.py
+  - logs/runner-cache/two_band_bdg_strict_time_flat_spectrum_2026_07_12.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -97,10 +101,12 @@ no_go_routes:
   - pairwise-overlap-commuting endpoint-symmetric common edge Hamiltonians are single-axis Ising families and cannot transport their conserved common-axis configuration
   - nonzero exchange in the onsite-charge-conserving one-qubit class has infinite support at every nonzero time and no isolated strict-QCA point
   - all noncommuting common Hamiltonians have tails is falsified by the fully cubic 16-mode flat-involution escape
+  - a dispersive 2x2 finite-Laurent Hermitian generator cannot have an isolated nonzero strict-QCA exponential time; strict once iff flat spectrum iff strict for all times
+  - scalar one-mode proper-cubic nearest-neighbor BdG pairing is killed, but lower-symmetry and multicomponent flat-band escapes remain live
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
-review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_mergeable_checks_running
+review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pending_review
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_not_yet_open
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
@@ -113,8 +119,9 @@ block09_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block10_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5237
 block11_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5250
 next_exact_action: >-
-  Decide whether one charge-nonconserving/BdG subblock is required before the
-  controlled continuum gateway.
+  Review and deliver the two-band BdG block, then build the same-object massive
+  free 3+1 staggered two-step scaling family from transfer positivity through
+  CAR/Fock dynamics and continuum Dirac convergence.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

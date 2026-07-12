@@ -23,6 +23,8 @@
 | pairwise-overlap-commuting endpoint-symmetric common edge Hamiltonians can transport their common-axis configuration | closed negatively in the supplied two-qubit edge class | exact overlap equations force one single-axis Ising family; every local axis observable is conserved and the one-defect sector is flat |
 | nonzero exchange in an endpoint-symmetric onsite-charge-conserving one-qubit common Hamiltonian can hit an isolated strict-QCA time | closed negatively on infinite `Z^3` | its scalar Laurent exponential has essential singularities and unbounded Bessel support for every nonzero time |
 | all noncommuting finite-range common Hamiltonians have tails | falsified | a fully cubic 16-mode flat involution has noncommuting onsite/bond pieces and a strict radius-at-most-one exponential |
+| a dispersive two-band finite-Laurent Hermitian generator can hit one isolated nonzero strict-QCA time | closed negatively on the supplied two-band class | determinant winding fixes the trace and the entire-function essential-singularity argument fixes the band splitting; strict once iff flat iff strict for all times |
+| scalar one-mode proper-cubic nearest-neighbor BdG pairing supplies a transporting strict flow | closed negatively on the supplied minimal CAR/Nambu class | cubic reversals plus fermionic antisymmetry kill pairing, and flat spectrum forces normal hopping to vanish |
 
 These negatives prune routes, not the full record-instrument program. The live
 escape is a separate classical record register coupled through a local
@@ -57,6 +59,9 @@ densities. Generic noncommuting sums, special finite times, complete-layer
 cancellations, larger cells, and quasilocal/Lieb--Robinson continuum routes
 remain live. It does not trigger an axiom-update discussion.
 
-The exchange-tail row is restricted to the one-qubit onsite-charge class.
-The explicit 16-mode escape, charge-breaking/BdG densities, multibody terms,
-and partitioned clocks prevent any framework-wide no-go or axiom request.
+The exchange-tail row is restricted to the one-qubit onsite-charge class. The
+two-band BdG row closes only finite-Laurent `2 x 2` generators and the scalar
+cubic corollary closes only the spinless one-mode nearest-neighbor carrier.
+Lower-symmetry flat pairing, multicomponent flat bands, interacting/multibody
+terms, partitioned clocks, and quasilocal shrinking-step continuum flows remain
+positive or open. No framework-wide no-go or axiom request follows.

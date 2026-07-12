@@ -1385,3 +1385,50 @@ underdetermination into an axiom request.
 
 **No-Go Discipline verdict:** PASS at bounded strength. Axiom-stop is not
 triggered.
+
+# Two-Band BdG Strict-Time and Cubic-Scalar Boundary
+
+## N1--N3 — routes, independence, hidden conditions
+
+| Route | Status | Exact outcome |
+|---|---|---|
+| general two-band finite-Laurent generator | closed | strict at one nonzero time iff flat spectrum iff strict at every time |
+| literal parity-even two-qubit edge | classified with category guard | six real directions, but no local `Z^3` spin-to-CAR bridge is assumed |
+| scalar one-mode nearest-neighbor proper-cubic BdG | closed | pairing vanishes and flat normal spectrum forces onsite flow |
+| lower-symmetry two-band pairing | positive escape | Kitaev flat involution is strict radius one for all times |
+| multicomponent proper-cubic Gaussian carrier | positive escape | doubled `16`-mode Clifford involution is strict and covariant |
+| partitioned/time-dependent or interacting QCA | open outside class | changes the theorem object |
+| quasilocal shrinking-step continuum flow | positive partial path | strict finite support at fixed physical time is not required |
+
+Two-band size, finite Laurent range, Hermiticity, nonzero time, CAR/Nambu
+realization, scalar cubic action, and nearest-neighbor range are named and do
+independent work. `BdG` is never used for an arbitrary spin tensor, and
+`strict` means infinite-lattice finite support rather than finite-volume
+recurrence or numerical smallness.
+
+## N4--N6 — residual, rhetoric, partial closure
+
+The preceding onsite-charge source explicitly left the charge-breaking
+Gaussian special-time seam open. The matrix theorem closes that seam at two
+bands, and the cubic corollary closes the smallest scalar one-mode carrier.
+Physical carrier selection, Record coupling, probability, rate, and continuum
+control remain separate residuals. The primitive registry was checked: the
+approved scale, kinetic-form, and realized-state primitives supply none of
+those missing dynamics and are not treated as negative conditions. A supplied
+same-object continuum family is the next valid partial-closure path.
+
+## N7 — steelman
+
+Flat bands and larger carriers give strict noncommuting flows, while a supplied
+dispersive carrier can enter a controlled quasilocal continuum limit without a
+unique microscopic selector. Both objections are accepted and built into the
+claim boundary through the explicit Kitaev and doubled-Clifford escapes.
+
+## N8 — cross-cycle echo
+
+The result preserves the eta-twisted/larger-cell cone escape, scalar-to-six-mode
+CAR transport escape, and onsite-charge-to-`16`-mode flat-flow escape. It does
+not convert a minimal-carrier negative into a framework-wide no-go.
+
+**No-Go Discipline verdict:** PASS at bounded strength. No axiom or primitive
+update is triggered.

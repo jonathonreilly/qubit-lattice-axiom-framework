@@ -1,5 +1,12 @@
 # Handoff
 
+Current branch:
+`physics-loop/record-faithful-dynamics-block12-bdg-flat-band-20260712`.
+The two-band BdG runner reports `PASS=31 FAIL=0`. The bounded result is pending
+review and delivery. After delivery, open the controlled continuum campaign on
+one massive free `3+1` staggered two-step scaling family; do not attach SM or
+GR labels until that same-object free transfer/action/CAR limit is controlled.
+
 The campaign is initialized on
 `physics-loop/admissibility-dynamics-realization-bridge-20260711` from current
 `origin/main`.

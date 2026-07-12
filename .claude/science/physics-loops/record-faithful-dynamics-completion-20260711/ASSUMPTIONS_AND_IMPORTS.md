@@ -175,3 +175,21 @@ The normal form, one-particle restriction, all-nonzero-time tail obstruction,
 I-SWAP graph-Laplacian match, and flat-involution escape are derived. The
 carrier, charge, coefficients, time, selector, Record coupling, probability,
 and continuum map remain supplied or open.
+
+## Two-band BdG strict-time conditional inputs
+
+- A supplied `2 x 2` torus-Hermitian finite-Laurent generator and nonzero real
+  time for the matrix theorem.
+- Separately, a supplied spinless one-mode CAR/Nambu carrier, canonical
+  particle-hole convention, scalar onsite proper-cubic action, and
+  nearest-neighbor range for the minimal cubic corollary.
+- The literal endpoint-symmetric parity-even two-qubit density is classified
+  as a spin tensor only; no local `Z^3` Jordan--Wigner/CAR bridge is assumed.
+- The lower-symmetry Kitaev and doubled `16`-mode Clifford constructions are
+  positive scope guards, not physical carrier selectors.
+
+No physical CAR statistics, Hamiltonian selector, tick duration, Record
+coupling, probability rule, or continuum scaling law is imported. The exact
+forward constraint is that a dispersive two-band generator must enter the
+continuum through quasilocal tails or a shrinking-step topology rather than an
+isolated strict exponential time.

@@ -1,11 +1,11 @@
 ---
 trace_class: direct_blocker_closure
-target_claim_id: onsite_charge_conserving_endpoint_symmetric_common_hamiltonian_strict_qca_dichotomy_bounded_theorem_note_2026-07-12
+target_claim_id: two_band_bdg_strict_time_flat_spectrum_and_cubic_scalar_boundary_bounded_theorem_note_2026-07-12
 target_blocker_text: "A unique or severely constrained dynamics/admissibility law, including time and the probability rule."
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Decide whether one charge-nonconserving/BdG discriminator is required, then open the controlled continuum campaign on an explicit microscopic class."
+next_trace_action: "Build the same-object massive free 3+1 staggered two-step scaling family and prove the first controlled continuum commuting diagram."
 ---
 
 # Trace Gate
@@ -86,3 +86,13 @@ has infinite support at every nonzero time, while zero exchange is the strict
 commuting family. The 16-mode flat involution is a fully cubic noncommuting
 strict escape, so the result constrains carrier architecture without selecting
 one. The next action is the BdG-versus-continuum decision.
+
+The two-band BdG subblock now closes that decision. A finite-Laurent Hermitian
+`2 x 2` generator is strict at one nonzero time exactly when its two eigenvalues
+are momentum-independent, in which case it is strict for every time. The
+smallest scalar one-mode proper-cubic nearest-neighbor pairing carrier reduces
+to onsite flow, while lower-symmetry and doubled `16`-mode flat involutions are
+positive escapes. The charge-breaking Gaussian special-time seam is therefore
+closed at bounded carrier resolution without selecting physical CAR/BdG
+content. The next trace action is the same-object massive staggered continuum
+gateway, with quasilocal tails and shrinking-step convergence allowed.

@@ -18,8 +18,8 @@ routes fail.
 | Projector-resolution route | Obtain the carrier from `sum_i P_i X P_i` | The exact family is `sum_i P_i(alpha I_3)P_i=alpha I_3`; choosing `X=I_3` inserts the desired value. Verified by the revised runner and note §3. | `ATTEMPTED` |
 | Joint-commutant route | Use all `hw=1` translations plus the supplied proper-cubic cycle | The full joint commutant is `C I_3`; it fixes scalar shape but not `alpha=1`. Verified by direct component proof, numerical nullspace rank, and independent SymPy solve. | `ATTEMPTED` |
 | One-site Clifford route | Use Pauli/`Cl(3,0)` normalization to fix the `3 x 3` taste carrier | The local algebra and taste carrier have different types; [`MINIMAL_AXIOMS_2026-06-29.md`](../../../../docs/MINIMAL_AXIOMS_2026-06-29.md) supplies no map from the former to a sector operator. The runner instantiates both and no such map is assumed. | `ATTEMPTED` |
-| Admissibility route | Read the nearest-neighbor availability rule as a transfer/kinetic selector | The axiom source explicitly says Admissibility is not dynamics and chooses no Hamiltonian or transfer operator (lines 103--118). The runner also constructs a covariant varying admissibility rule held fixed across two different carrier expansions. | `ATTEMPTED` |
-| Record/readout route | Use permanent records and finite additivity to normalize the carrier | Record constrains locking/readout, while source/action and physical-observable identification remain outside the axioms (axiom memo lines 128--134 and 156--173). The same record/readout model supports both carrier normalizations. | `ATTEMPTED` |
+| Admissibility route | Read the nearest-neighbor availability rule as a transfer/kinetic selector | The axiom source explicitly says Admissibility is not dynamics and chooses no Hamiltonian or transfer operator (lines 103--118). Adding either invariant carrier interpretation leaves every Admissibility sentence unchanged because the new carrier symbols do not occur in its signature. | `ATTEMPTED` |
+| Record/readout route | Use permanent records and finite additivity to normalize the carrier | Record constrains locking/readout, while source/action and physical-observable identification remain outside the axioms (axiom memo lines 128--134 and 156--173). Adding either invariant carrier interpretation likewise leaves every Record/readout sentence unchanged. | `ATTEMPTED` |
 | Approved-primitive route | Use scale, kinetic isotropy, or realized-state registration to fix the unit | The [`PRIMITIVE_REGISTRY_CHECK`](../../../../docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md) shows these supply only units conversion, kinetic-form isotropy, and a pointwise state slot respectively; none supplies a PMNS carrier, selector, or dimensionless normalization. | `ATTEMPTED` |
 | Existing PMNS authority route | Reuse an already audited carrier theorem | Repository search found only finite carrier/commutant and conditional response-interface results. The [`PMNS oriented-cycle note`](../../../../docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md) explicitly excludes the physical carrier and primitive derivation; no matching normalization authority exists. | `ATTEMPTED` |
 
@@ -37,22 +37,24 @@ unit pair:
 
 - `W_C` — carrier construction/type: no current-premise map creates
   `D_act,D_pass` and assigns their transformation type;
-- `W_N` — normalization: even after a carrier exists and is restricted to the
-  invariant scalar family, no current-premise theorem fixes both scalars to
-  one;
-- `W_X` — sector relation: no current-premise exchange/same-construction
-  theorem equates the active and passive scalars.
+- `W_A` — active normalization: even after an invariant active carrier exists,
+  no current-premise theorem fixes `alpha=1`;
+- `W_P` — passive normalization: even after an invariant passive carrier
+  exists, no current-premise theorem fixes `beta=1`.
 
 | Pair | Closing first automatically closes second? | Closing second automatically closes first? | Independent? |
 |---|---|---|---|
-| `W_C`,`W_N` | no — a carrier map can leave its trace/scale free | no — a conditional trace/unit theorem need not construct a carrier | yes |
-| `W_C`,`W_X` | no — two constructed sectors need not be exchanged | no — a conditional exchange statement need not construct either sector | yes |
-| `W_N`,`W_X` | no — separately normalized sectors need not be related | no — equal scalars need not equal one | yes |
+| `W_C`,`W_A` | no — a carrier map can leave the active trace/scale free | no — a conditional active trace/unit theorem need not construct a carrier | yes |
+| `W_C`,`W_P` | no — a carrier map can leave the passive trace/scale free | no — a conditional passive trace/unit theorem need not construct a carrier | yes |
+| `W_A`,`W_P` | no — fixing `alpha=1` does not fix `beta` | no — fixing `beta=1` does not fix `alpha` | yes |
 
 Translation/`C_3` invariance and nonsingular resolvents are explicit
 hypotheses delimiting the positive scalar-family theorem, not additional walls
-hidden inside the nonselection statement. The collapsed wall set is therefore
-`{W_C,W_N,W_X}`. `PASS`.
+hidden inside the nonselection statement. A sector-exchange theorem remains an
+alternative retirement route: combined with either one-sector normalization it
+could retire the other normalization wall, but it is not an additional
+independent wall. The collapsed wall set is therefore `{W_C,W_A,W_P}`.
+`PASS`.
 
 ## N3 — Hidden-wall scan
 
@@ -73,7 +75,7 @@ No hidden condition was promoted. `PASS`.
 
 | Witness | Witness residual | Present residual | Match? | Disposition |
 |---|---|---|---|---|
-| [`TRACE_GATE.md`](TRACE_GATE.md), blocker quotation | The runner inserted `I_3` and did not derive it from the axiom/carrier surface | Selection of the unit-normalized `hw=1` active/passive carrier | yes | exact blocker source |
+| [`TRACE_GATE.md`](TRACE_GATE.md), lines 3--5 blocker quotation | The runner inserted `I_3` and did not derive it from the axiom/carrier surface | Selection of the unit-normalized `hw=1` active/passive carrier | yes | exact blocker source |
 | [`MINIMAL_AXIOMS_2026-06-29.md`](../../../../docs/MINIMAL_AXIOMS_2026-06-29.md), lines 103--118 and 128--134 | No Hamiltonian/transfer operator and no source/action bridge are supplied | No axiom map constructs or normalizes the carrier operator | yes | load-bearing premise boundary |
 | [`PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md`](../../../../docs/PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md), lines 47--60 | Its finite matrix identities do not claim a physical carrier or primitive derivation | Existing PMNS finite algebra does not close this carrier residual | yes | matching exclusion, not proof of the new theorem |
 | `STAGGERED_DIRAC_MINIMAL_SURFACE_KINETIC_CORNER_NONFORCING_NO_GO_NOTE_2026-07-10.md` | Nonselection of a physical staggered kinetic/corner law | Nonselection of the PMNS `hw=1` carrier normalization | no | dropped as authority; cross-cycle analogy only |

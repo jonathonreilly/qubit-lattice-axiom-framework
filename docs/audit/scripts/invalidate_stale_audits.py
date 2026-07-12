@@ -269,6 +269,13 @@ def clean_auditor_provenance_is_valid(value: dict) -> bool:
     return independence in {"strong", "external", "judicial_review"}
 
 
+# Dynamic-index growth observed on otherwise-valid authenticated packets.
+# Growth is re-audit signal for the dispatch stream, never retroactive
+# invalidation; main() persists it as a generated artifact.
+INDEX_GROWTH_TARGETS: list[dict] = []
+GROWTH_TARGETS_PATH = REPO_ROOT / "docs" / "audit" / "data" / "no_go_index_growth_targets.json"
+
+
 def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
     audit_status = row.get("audit_status")
     if audit_status == "audited_clean" and not clean_auditor_provenance_is_valid(row):
@@ -304,6 +311,16 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
                 packet, current_manifest
             ):
                 return "no_go_discipline_packet_invalid"
+            growth = no_go_discipline_gate.evidence_snapshot_index_growth(
+                packet, current_manifest
+            )
+            if growth:
+                INDEX_GROWTH_TARGETS.append(
+                    {
+                        "claim_id": str(row.get("claim_id") or ""),
+                        "new_candidates": growth,
+                    }
+                )
         elif evidence_manifest is None:
             evidence_manifest = current_manifest
         packet_error = no_go_discipline_gate.validate_no_go_discipline(
@@ -779,7 +796,25 @@ def main() -> int:
 
     LEDGER_PATH.write_text(json.dumps(ledger, indent=2, sort_keys=True) + "\n")
 
+    GROWTH_TARGETS_PATH.write_text(
+        json.dumps(
+            {
+                "schema": "no_go_index_growth_targets_v1",
+                "description": (
+                    "Rows whose authenticated N6/N8 index universes grew "
+                    "after their packet was authenticated. Re-audit signal "
+                    "for the targeted dispatch stream; verdicts stay valid."
+                ),
+                "targets": INDEX_GROWTH_TARGETS,
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
+
     print(f"invalidate_stale_audits: scanned {len(rows)} rows")
+    print(f"  index-growth re-audit targets: {len(INDEX_GROWTH_TARGETS)}")
     print(f"  invalidated (hard reset): {len(invalidated)}")
     for cid, reason in invalidated[:10]:
         print(f"    {cid}: {reason}")

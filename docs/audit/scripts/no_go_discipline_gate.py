@@ -498,6 +498,24 @@ def set_packet_evidence(
             manifest[path]["invocation_bound_rendered_text"] = True
 
 
+# Per-kind N8 candidate caps. High-signal kinds are uncapped (None) and must
+# be dispositioned in full. The two bulk similarity/scan kinds are capped by
+# the declared relevance order (kind priority, shared-term count descending)
+# with an authenticated omitted-tail summary in the index, so corpus hiding
+# remains impossible while the disposition set stays reviewable at audit
+# scale. 2026-07-12 repair: uncapped scan kinds produced ~1,700-candidate
+# packets on common-vocabulary foundational rows (infeasible to disposition
+# honestly in one session), and together with snapshot set-identity
+# invalidation they decayed every clean audit within hours of landing.
+N8_KIND_CANDIDATE_LIMITS: dict[str, int | None] = {
+    "prior_audit_cycle": None,
+    "open_gate": None,
+    "similar_negative_boundary": 40,
+    "repo_negative_phrase_hit": 60,
+    "physics_loop_no_go_ledger": None,
+}
+
+
 def cross_cycle_index_path(claim_id: str) -> str:
     return f"audit-packet://cross-cycle-index/{claim_id}"
 
@@ -739,10 +757,39 @@ def build_cross_cycle_index(
             str(candidate.get("candidate_id") or ""),
         ),
     )
-    # Every relevant candidate must be dispositioned. The authenticated
-    # no-go universe prevents corpus hiding, and leaving the relevance set
-    # uncapped prevents a large same-kind family from escaping N8 review.
-    candidates = ordered_candidates
+    # Every LISTED candidate must be dispositioned. High-signal kinds are
+    # listed in full; the bulk scan kinds are capped by the declared
+    # relevance order with an authenticated omitted-tail summary below, so
+    # the corpus remains un-hideable (counts + omitted-id hash are part of
+    # the authenticated index) while the disposition set stays reviewable.
+    listed_candidates: list[dict[str, Any]] = []
+    kind_totals: dict[str, int] = {}
+    omitted_by_kind: dict[str, list[str]] = {}
+    for candidate in ordered_candidates:
+        kind = str(candidate.get("kind"))
+        kind_totals[kind] = kind_totals.get(kind, 0) + 1
+        limit = N8_KIND_CANDIDATE_LIMITS.get(kind)
+        if limit is not None and kind_totals[kind] > limit:
+            omitted_by_kind.setdefault(kind, []).append(
+                str(candidate.get("candidate_id") or "")
+            )
+            continue
+        listed_candidates.append(candidate)
+    candidate_truncation = {
+        kind: {
+            "limit": N8_KIND_CANDIDATE_LIMITS.get(kind),
+            "total_hits": total,
+            "listed": total - len(omitted_by_kind.get(kind, [])),
+            "omitted_count": len(omitted_by_kind.get(kind, [])),
+            "omitted_candidate_ids_sha256": hashlib.sha256(
+                json.dumps(
+                    omitted_by_kind.get(kind, []), separators=(",", ":")
+                ).encode("utf-8")
+            ).hexdigest(),
+        }
+        for kind, total in sorted(kind_totals.items())
+    }
+    candidates = listed_candidates
     return json.dumps(
         {
             "schema": "no_go_cross_cycle_index_v1",
@@ -752,7 +799,14 @@ def build_cross_cycle_index(
                 "one_hop_authority_audit_history": True,
                 "historical_dispositions": True,
                 "open_gates": True,
-                "candidate_limit": None,
+                "candidate_limit": {
+                    "per_kind": N8_KIND_CANDIDATE_LIMITS,
+                    "policy": (
+                        "high-signal kinds listed in full; bulk scan kinds "
+                        "capped by declared relevance order with an "
+                        "authenticated omitted-tail summary"
+                    ),
+                },
                 "candidate_order": (
                     "kind priority, shared-term count descending, candidate_id"
                 ),
@@ -766,7 +820,9 @@ def build_cross_cycle_index(
                         "with explicit no-go/boundary triggers"
                     ),
                     "minimum_shared_terms": 2,
-                    "candidate_limit": None,
+                    "candidate_limit": N8_KIND_CANDIDATE_LIMITS[
+                        "similar_negative_boundary"
+                    ],
                 },
                 "physics_loop_no_go_ledgers": {
                     "glob": loop_ledger_glob,
@@ -783,6 +839,7 @@ def build_cross_cycle_index(
             "no_go_row_universe": no_go_universe,
             "no_go_row_universe_count": len(no_go_universe),
             "no_go_row_universe_sha256": no_go_universe_sha256,
+            "candidate_truncation": candidate_truncation,
             "candidates": candidates,
         },
         indent=2,
@@ -1422,9 +1479,23 @@ def evidence_manifest_from_snapshot(packet: dict[str, Any]) -> dict[str, dict] |
 
 
 def evidence_snapshot_current_error(
-    packet: dict[str, Any], current_manifest: dict[str, dict]
+    packet: dict[str, Any],
+    current_manifest: dict[str, dict],
+    *,
+    dynamic_index_drift_invalidates: bool = False,
 ) -> str | None:
-    """Reauthenticate stable file-backed snapshot entries against current bytes."""
+    """Reauthenticate stable file-backed snapshot entries against current bytes.
+
+    Dynamic-index (N6/N8) universes grow with every landed note, loop ledger,
+    and vocabulary row, so by default their drift is NOT an invalidation —
+    growth is re-audit signal (see evidence_snapshot_index_growth), never
+    retroactive deletion of an authenticated verdict. Apply-time REPLAY
+    rejection is the one caller that opts back in with
+    dynamic_index_drift_invalidates=True: a stale replayed prompt manifest is
+    rejected there precisely because the live indexes have moved on.
+    2026-07-12 repair: the unconditional set-identity comparison decayed
+    every clean audit within hours in an active repo, including
+    doubly-confirmed cross-family cleans."""
     stored_manifest = evidence_manifest_from_snapshot(packet)
     if stored_manifest is None:
         return "evidence_snapshot is malformed or predates the current authenticated schema"
@@ -1454,13 +1525,14 @@ def evidence_snapshot_current_error(
         current = current_manifest.get(path)
         if current is None:
             return f"evidence_snapshot path {path!r} is absent from the current packet"
-        if dynamic_index or not stored.get("invocation_bound_rendered_text"):
+        if dynamic_index and not dynamic_index_drift_invalidates:
+            continue
+        if dynamic_index:
             current_text_hash = hashlib.sha256(
                 str(current.get("text") or "").encode("utf-8")
             ).hexdigest()
             if current_text_hash != stored.get("content_sha256"):
                 return f"evidence_snapshot rendered content drifted for {path!r}"
-        if dynamic_index:
             if "cross_cycle_index" in roles:
                 current_candidates = _index_candidates(
                     current, schema="no_go_cross_cycle_index_v1",
@@ -1478,6 +1550,12 @@ def evidence_snapshot_current_error(
             if current_candidates != stored_candidates:
                 return f"evidence_snapshot candidate set drifted for {path!r}"
             continue
+        if not stored.get("invocation_bound_rendered_text"):
+            current_text_hash = hashlib.sha256(
+                str(current.get("text") or "").encode("utf-8")
+            ).hexdigest()
+            if current_text_hash != stored.get("content_sha256"):
+                return f"evidence_snapshot rendered content drifted for {path!r}"
         if not stable_roles.intersection(roles):
             continue
         if stored.get("full_content_sha256") is not None:
@@ -1489,6 +1567,46 @@ def evidence_snapshot_current_error(
             if current.get(field) != stored.get(field):
                 return f"evidence_snapshot {field} drifted for {path!r}"
     return None
+
+
+def evidence_snapshot_index_growth(
+    packet: dict[str, Any], current_manifest: dict[str, dict]
+) -> dict[str, list[str]]:
+    """Dynamic-index candidates that appeared after this packet was
+    authenticated. Growth is re-audit signal for the dispatch stream, never
+    retroactive invalidation of the authenticated verdict."""
+    stored_manifest = evidence_manifest_from_snapshot(packet)
+    growth: dict[str, list[str]] = {}
+    if stored_manifest is None:
+        return growth
+    for path, stored in stored_manifest.items():
+        roles = set(stored.get("roles") or [])
+        if "cross_cycle_index" in roles:
+            current_candidates = _index_candidates(
+                current_manifest.get(path) or {},
+                schema="no_go_cross_cycle_index_v1",
+                stored_field="cross_cycle_candidate_ids",
+                stored_records_field="cross_cycle_candidates",
+            )
+            stored_candidates = _index_candidates(
+                stored,
+                schema="no_go_cross_cycle_index_v1",
+                stored_field="cross_cycle_candidate_ids",
+                stored_records_field="cross_cycle_candidates",
+            )
+        elif "partial_closure_index" in roles:
+            current_candidates = _partial_closure_candidates(
+                current_manifest.get(path) or {}
+            )
+            stored_candidates = _partial_closure_candidates(stored)
+        else:
+            continue
+        new_ids = sorted(
+            set(current_candidates or set()) - set(stored_candidates or set())
+        )
+        if new_ids:
+            growth[path] = new_ids
+    return growth
 
 
 def _has_governed_no_existence(text: str) -> bool:

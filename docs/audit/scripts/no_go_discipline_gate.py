@@ -1553,7 +1553,7 @@ def _has_negative_boundary_assertion(text: str) -> bool:
         r"(?:does\s+not|cannot|fails?\s+to)\s+"
         r"(?:produce|render|write|emit|plot|display)\s+"
         r"(?:plots?|figures?|charts?|files?|artifacts?|logs?|output|stdout|stderr|"
-        r"markdown|json|images?|tables?|labels?|links?)\b[^\n.!?]*[.!]?\s*$",
+        r"markdown|json|images?|tables?|labels?|links?)\b[^\n:;.!?]*[.!]?\s*$",
         "",
         prose,
     )
@@ -2071,6 +2071,15 @@ def _validate_n2(packet: dict, status: str, manifest: dict[str, dict] | None) ->
     for wall in wall_map:
         components.setdefault(find(wall), []).append(wall)
     for root, members in components.items():
+        for left, right in combinations(members, 2):
+            if not (
+                closure_relation[(left, right)]
+                and closure_relation[(right, left)]
+            ):
+                return (
+                    "N2 mutually closing walls must form a complete, "
+                    "transitive equivalence component"
+                )
         for outside in wall_map:
             if find(outside) == root:
                 continue

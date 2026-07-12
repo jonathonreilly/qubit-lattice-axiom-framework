@@ -4064,6 +4064,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         for body in (
             "See the prior no-go theorem: no selector can produce the required carrier.",
             "The runner does not produce three distinct eigenvalues.",
+            "The runner does not produce plots: no selector can produce the required carrier.",
+            "The runner does not produce plots; no selector can produce the required carrier.",
         ):
             with self.subTest(body=body):
                 self.assertTrue(
@@ -4814,6 +4816,56 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         }
         self.assertIn(
             "congruent closure relations",
+            m.validate_no_go_discipline(audit, evidence_manifest=None) or "",
+        )
+
+    def test_mutual_closure_chain_must_form_equivalence_clique(self):
+        m = _import("no_go_discipline_gate")
+        packet = _no_go_packet()
+        section = packet["N2_wall_independence"]
+        section["walls"].append("carrier wall")
+        section["pairwise_checks"] = [
+            {
+                "left": "dynamics wall", "right": "selector wall",
+                "left_closes_right": True, "right_closes_left": True,
+                "independent": False,
+                "rationale": (
+                    "dynamics wall and selector wall mutually close one "
+                    "another in this chained-equivalence test packet"
+                ),
+                "evidence_path": "docs/TEST_NO_GO.md",
+                "evidence_locator": "N2 pair dynamics-selector",
+            },
+            {
+                "left": "selector wall", "right": "carrier wall",
+                "left_closes_right": True, "right_closes_left": True,
+                "independent": False,
+                "rationale": (
+                    "selector wall and carrier wall mutually close one "
+                    "another in this chained-equivalence test packet"
+                ),
+                "evidence_path": "docs/TEST_NO_GO.md",
+                "evidence_locator": "N2 pair selector-carrier",
+            },
+            {
+                "left": "dynamics wall", "right": "carrier wall",
+                "left_closes_right": False, "right_closes_left": False,
+                "independent": True,
+                "rationale": (
+                    "dynamics wall and carrier wall are declared independent "
+                    "in this deliberately non-transitive test packet"
+                ),
+                "evidence_path": "docs/TEST_NO_GO.md",
+                "evidence_locator": "N2 pair dynamics-carrier",
+            },
+        ]
+        section["collapsed_wall_set"] = ["dynamics wall"]
+        audit = {
+            "claim_type": "no_go", "verdict": "audited_clean",
+            "chain_closes": True, "no_go_discipline": packet,
+        }
+        self.assertIn(
+            "transitive equivalence component",
             m.validate_no_go_discipline(audit, evidence_manifest=None) or "",
         )
 

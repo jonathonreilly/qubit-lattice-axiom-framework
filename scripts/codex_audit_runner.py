@@ -1480,7 +1480,10 @@ def validate_verdict(
         or blob.get("claim_type") == "no_go"
         or no_go_discipline_gate.forensic_mode()
     )
-    if transport_bounded_n8 and forensic_tier:
+    transport_bound_is_dispositive = bool(
+        forensic_tier or blob.get("negative_assertion_classes")
+    )
+    if transport_bounded_n8 and transport_bound_is_dispositive:
         packet = blob.get("no_go_discipline")
         n8 = packet.get("N8_cross_cycle_echo") if isinstance(packet, dict) else None
         if blob.get("verdict") == "audited_clean":

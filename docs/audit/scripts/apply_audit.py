@@ -331,6 +331,7 @@ JUDICIAL_REQUIRED_FIELDS = {
     "independence",
     "sided_with",
     "ratified_verdict",
+    "ratified_claim_scope",
     "ratified_load_bearing_step_class",
     "judgment_rationale",
     "first_auditor_error",
@@ -928,6 +929,9 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     ratified_claim_type = judgment.get("ratified_claim_type")
     if ratified_claim_type is not None and ratified_claim_type not in ALLOWED_CLAIM_TYPES:
         return False, f"ratified_claim_type {ratified_claim_type!r} not in {sorted(ALLOWED_CLAIM_TYPES)}"
+    ratified_claim_scope = judgment.get("ratified_claim_scope")
+    if not isinstance(ratified_claim_scope, str) or not ratified_claim_scope.strip():
+        return False, "ratified_claim_scope must be a non-empty string"
 
     err = note_hash_drift_error(row)
     if err:
@@ -958,9 +962,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
             return False, "hybrid judicial review requires hybrid_resolution_note"
         if ratified_claim_type is None:
             return False, "hybrid judicial review requires ratified_claim_type"
-        ratified_scope = judgment.get("ratified_claim_scope")
-        if not isinstance(ratified_scope, str) or not ratified_scope.strip():
-            return False, "hybrid judicial review requires ratified_claim_scope"
+        ratified_scope = ratified_claim_scope
     if side in {"first", "second"}:
         chosen = first if side == "first" else second
         chosen_label = "first" if side == "first" else "second"
@@ -995,10 +997,8 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
                 "ratified_load_bearing_step_class does not match the ratified "
                 f"{chosen_label}_audit class"
             )
-        ratified_scope = judgment.get("ratified_claim_scope")
         if (
-            ratified_scope is not None
-            and normalized_claim_scope({"claim_scope": ratified_scope})
+            normalized_claim_scope({"claim_scope": ratified_claim_scope})
             != normalized_claim_scope(chosen)
         ):
             return False, (
@@ -1800,17 +1800,40 @@ def run_propagation() -> int:
                 print(f"     stderr: {result.stderr.strip()[:400]}", file=sys.stderr)
             return 1
         if script == "invalidate_stale_audits.py":
+            converged = False
             for attempt in range(1, 11):
                 invalidated = len(
                     json.loads(LEDGER_PATH.read_text(encoding="utf-8")).get(
                         "last_invalidations", []
                     )
                 )
-                if invalidated == 0:
+                restore = subprocess.run(
+                    [
+                        sys.executable,
+                        str(scripts_dir / "restore_overaggressively_invalidated_audits.py"),
+                    ],
+                    cwd=REPO_ROOT,
+                    capture_output=True,
+                    text=True,
+                )
+                if restore.returncode != 0:
+                    print(
+                        "     FAIL restore_overaggressively_invalidated_audits.py",
+                        file=sys.stderr,
+                    )
+                    return 1
+                restored_match = re.search(
+                    r"^Restored (\d+) audits",
+                    restore.stdout or "",
+                    re.MULTILINE,
+                )
+                restored = int(restored_match.group(1)) if restored_match else 0
+                if invalidated == 0 and restored == 0:
+                    converged = True
                     break
                 print(
-                    f"     fixed-point pass {attempt}: {invalidated} invalidation(s); "
-                    "recomputing effective status"
+                    f"     fixed-point pass {attempt}: {invalidated} invalidation(s), "
+                    f"{restored} restoration(s); recomputing effective status"
                 )
                 compute = subprocess.run(
                     [sys.executable, str(scripts_dir / "compute_effective_status.py")],
@@ -1826,13 +1849,10 @@ def run_propagation() -> int:
                 if repeat.returncode != 0:
                     print("     FAIL invalidate_stale_audits.py", file=sys.stderr)
                     return 1
-            if len(
-                json.loads(LEDGER_PATH.read_text(encoding="utf-8")).get(
-                    "last_invalidations", []
-                )
-            ) != 0:
+            if not converged:
                 print(
-                    "     FAIL invalidation did not reach a fixed point after 10 passes",
+                    "     FAIL invalidation/restoration did not reach a fixed point "
+                    "after 10 passes",
                     file=sys.stderr,
                 )
                 return 1

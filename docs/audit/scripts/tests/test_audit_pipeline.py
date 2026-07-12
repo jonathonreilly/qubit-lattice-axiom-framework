@@ -1055,6 +1055,40 @@ class ApplyAuditTest(unittest.TestCase):
             self.assertEqual(m.run_propagation(), 0)
         self.assertEqual(invalidation_calls, 2)
 
+    def test_propagation_runs_restoration_to_joint_fixed_point(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        m.LEDGER_PATH.parent.mkdir(parents=True, exist_ok=True)
+        m.LEDGER_PATH.write_text(
+            json.dumps({"rows": {}, "last_invalidations": []}),
+            encoding="utf-8",
+        )
+        invalidation_calls = 0
+        restoration_calls = 0
+
+        def fake_run(cmd, **_kwargs):
+            nonlocal invalidation_calls, restoration_calls
+            name = Path(cmd[1]).name
+            if name == "invalidate_stale_audits.py":
+                invalidation_calls += 1
+                payload = json.loads(m.LEDGER_PATH.read_text(encoding="utf-8"))
+                payload["last_invalidations"] = []
+                m.LEDGER_PATH.write_text(json.dumps(payload), encoding="utf-8")
+            if name == "restore_overaggressively_invalidated_audits.py":
+                restoration_calls += 1
+                restored = 1 if restoration_calls == 1 else 0
+                return mock.Mock(
+                    returncode=0,
+                    stdout=f"Restored {restored} audits across ledger\n",
+                    stderr="",
+                )
+            return mock.Mock(returncode=0, stdout="", stderr="")
+
+        with mock.patch("subprocess.run", side_effect=fake_run):
+            self.assertEqual(m.run_propagation(), 0)
+        self.assertEqual(invalidation_calls, 2)
+        self.assertEqual(restoration_calls, 2)
+
     def test_audit_invocation_history_rejects_replay_after_newer_audit(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
@@ -2192,6 +2226,7 @@ class ApplyAuditTest(unittest.TestCase):
             "negative_assertion_classes": [],
             "ratified_verdict": "audited_clean",
             "ratified_claim_type": "no_go",
+            "ratified_claim_scope": "the obstruction",
             "ratified_load_bearing_step_class": "A",
             "judgment_rationale": "the scoped obstruction closes",
             "first_auditor_error": "none on the scoped result",
@@ -8686,6 +8721,21 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             transport_bounded_n8=True,
         )
         self.assertEqual(error, "transport-bounded N8 evidence forbids audited_clean")
+
+        declared_negative = {
+            **blob,
+            "claim_type": "bounded_theorem",
+            "negative_assertion_classes": ["bounded_with_named_walls"],
+        }
+        self.assertEqual(
+            m.validate_verdict(
+                declared_negative,
+                "target",
+                expected_invocation_id="a" * 32,
+                transport_bounded_n8=True,
+            ),
+            "transport-bounded N8 evidence forbids audited_clean",
+        )
 
     def test_development_runner_validation_ignores_locator_containment(self):
         m = _import_codex_audit_runner()

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 379 |
+| **retained_bounded** | 380 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2746 |
+| unaudited | 2745 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 494 |
+| `audited_clean` | 495 |
 | `audited_conditional` | 64 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3096 |
+| `unaudited` | 3095 |
 
 | claim_type | count |
 |---|---:|
@@ -320,6 +320,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_latitude_quantizer_and_rp_selfdual_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_native_beta_no_half_attractor_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
+| `flavor_q1_default_rests_on_prr_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -4011,6 +4012,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** At t_* = atanh(2^(-1/4)), beta_r(t_*) = 4 * 2^(-3/4) * (1 - 2^(-1/2)) > 0, so r=1/2 is a transit value rather than a fixed point of the supplied path.  _(class `A`)_
 - **chain closes:** True — Direct differentiation gives beta_r(t)=4 tanh^3(t) sech^2(t), which is positive for finite t>0. Substitution at the exact solution tanh(t_*)=2^(-1/4) establishes the scoped conclusion without a framework-native beta-function premise.
 - **rationale:** The note is explicitly restricted to an elementary statement about the supplied tanh^4 path and disclaims the former generic-C3 and flavor-closure conclusions. Its derivative, endpoints, transit time, and positive beta value follow by exact algebra. The runner performs corresponding evaluations rather than importing a contested physical premise or merely printing a pass total.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `flavor_q1_default_rests_on_prr_note_2026-05-30`
+
+- **Note:** [`FLAVOR_Q1_DEFAULT_RESTS_ON_PRR_NOTE_2026-05-30.md`](../../docs/FLAVOR_Q1_DEFAULT_RESTS_ON_PRR_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Given the displayed C3 action and projectors, an explicit admissible non-tracial state proves that C3 covariance alone does not force the tracial 1:2 block weighting; the displayed Q functional is independently rho-free.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00426-flavor_q1_default_rests_on_p`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The explicit state rho_(1:1)=1/2 P_s + 1/4 P_d is positive semidefinite, trace one, and commutes with the C3 shift, while its singlet and doublet block masses are 1:1 rather than the tracial 1:2.  _(class `A`)_
+- **chain closes:** True — The explicit counterexample is sufficient for the scoped non-forcing conclusion, and the runner directly verifies positivity, normalization, C3 commutation, unequal tracial weighting, and symbolic Q independence. The broader assertion that every C3-invariant complex state is scalar on the doublet is unnecessary for this audited scope.
+- **rationale:** The load-bearing step is a genuine finite-dimensional counterexample rather than a definition, imported value, or tuned match. The runner computes the candidate density matrix and verifies all properties needed for the narrowly stated C3 non-forcing result. Full U(3) and any bridge from reference-state weights to the spectral parameter r are explicitly excluded from the conclusion.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

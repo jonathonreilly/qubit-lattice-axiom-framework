@@ -58548,7 +58548,7 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "9925384df368395a40c21b9d754d8663370407a65b609e7f9baad554b096ce12",
+      "note_hash": "a154fe5c322ceac03859e735afd7aab48e5fa731ccaf5cf1acab7702e538fda5",
       "path": "docs/ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md",
       "runner_path": "scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py",
       "title": "Complex Determinant and Realification Determinant Power"
@@ -88246,7 +88246,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "fe76b1d61009771c96afc45085393397deb34fe64c2891211aa130e9ca85986d",
+      "note_hash": "3c7a33c8abac8e70bdcf2e8b9db5d917c0b2cee6fc7cc0ec91c6d803bbb230d2",
       "path": "docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
       "runner_path": "scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py",
       "title": "C\u2083 Body-Diagonal Fixed Locus and Local Inverse-Determinant Density"
@@ -111652,7 +111652,7 @@
         "abj_epsilon_index_square_block_no_go_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ad4f3e5a99140ea72549ae0d173f76481d83e3e95888d71d60f1297ad608ea28",
+      "note_hash": "13f17938da12ae2beeda662480b13177851d09f98a5473afc09a8f0ab2fd32b9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"

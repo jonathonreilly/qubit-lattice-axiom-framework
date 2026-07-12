@@ -18,3 +18,6 @@ Validation ran in a disposable detached worktree so no generated audit or
 publication authority surface enters this branch. The full pipeline and strict
 lint passed with only pre-existing warnings/notices; the regenerated row was
 `bounded_theorem`, `unaudited`, `deps=[]`, and audit-queue `ready=true`.
+
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5231
+(`OPEN`, non-draft, base `main`, head branch verified `MERGEABLE`).

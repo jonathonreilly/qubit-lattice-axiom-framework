@@ -541,9 +541,10 @@ v = M_{\mathrm{Pl}}\left(\frac{7}{8}\right)^{1/4}\alpha_{LM}^{16}
 $$
 
 which is $+0.0255\%$ relative to the comparator $246.22\,\mathrm{GeV}$. The
-quoted number is a conditional same-surface evaluation using the named
-readout, normalization, plaquette, scale, and carrier inputs; it is not an
-axiom-only prediction or a fitted datum.
+quoted number is a conditional same-surface evaluation using the T1-d
+determinant readout, source-block/record bridge, normalization, plaquette,
+scale, and carrier inputs; it is not an axiom-only prediction or a fitted
+datum.
 
 ### 5.2 Retained standalone quantitative lanes
 
@@ -768,13 +769,13 @@ than a full nonperturbative electroweak-transition closure.
 The framework is already predictive; the paper should not read as if prediction
 begins only after the remaining open bridge closes.
 
-### 6.1 Retained and promoted quantitative outputs
+### 6.1 Quantitative outputs by current status
 
 The fastest way to read the quantitative package is Table 1.
 
 | Row | Canonical output | Status on current paper surface |
 | --- | --- | --- |
-| Electroweak scale | $v = 246.282818290129\,\mathrm{GeV}$ | open audit target; conditional on determinant readout, source/record bridge, normalization, plaquette, scale, and carrier inputs |
+| Electroweak scale | $v = 246.282818290129\,\mathrm{GeV}$ | open audit target; conditional on the T1-d determinant readout, source/record bridge, normalization, plaquette, scale, and carrier inputs |
 | Strong coupling | $\alpha_s(M_Z)=0.1181$ | retained standalone quantitative lane |
 | Electroweak normalization | $g_1(v)=0.4644$, $g_2(v)=0.6480$ | retained standalone quantitative lane |
 | CKM | $\lambda^2=\alpha_s(v)/2$, $A^2=2/3$, atlas-leading $|V_{ud}|_0=0.973824$, $|V_{us}|_0=0.22727$, $|V_{cb}|=0.04217$, $|V_{ub}|_0=0.003913$, $\phi_s(B_s)=-0.03850\,\mathrm{rad}$, $\phi_s/\sin(2\beta_d)=-0.05165$, CP-product $\alpha_s$ estimator, kaon $\epsilon_K$ CKM factors $(2J_0,-J_0,-5\alpha_s(v)^2J_0/18)$, NLO protected $\bar\gamma=65.905^\circ$ | promoted algebraic package |
@@ -782,8 +783,7 @@ The fastest way to read the quantitative package is Table 1.
 | Higgs sector | $m_H=125.1\,\mathrm{GeV}$ with retention analysis $125.04 \pm 3.17\,\mathrm{GeV}$ | identification-conditioned follow-on lane |
 | Confinement readout | $\sqrt{\sigma}\approx 465\,\mathrm{MeV}$ | bounded quantitative readout on exact structural theorem |
 
-**Table 1.** Main retained and promoted quantitative outputs on the current
-paper surface.
+**Table 1.** Mixed-status quantitative outputs on the current paper surface.
 
 ### 6.2 Bounded secondary predictions and one dual-status corollary already carried by the package
 
@@ -885,9 +885,11 @@ retained three-generation structure, retained action-surface strong-CP
 closure on the retained Wilson-plus-staggered action surface, exact
 confinement, a selected-action cubic-anisotropy diagnostic, and a promoted
 algebraic CKM atlas/axiom package. The quantitative side is no longer just a set of
-promising near-misses: it contains a canonical same-surface electroweak-scale
-evaluation, retained electroweak and strong-coupling lanes, and bounded
-Yukawa/Higgs authority surfaces with named downstream budgets. The package is already
+promising near-misses: it contains an open electroweak-scale evaluation
+conditional on the T1-d determinant readout, source-block/record bridge,
+normalization, plaquette, scale, and carrier inputs; retained electroweak and
+strong-coupling lanes; and bounded Yukawa/Higgs authority surfaces with named
+downstream budgets. The package is already
 predictive beyond retrospective comparison through the atlas-leading $B_s$
 mixing phase, kaon $\epsilon_K$ CKM-bracket factorization, proton lifetime,
 the CKM-only neutron-EDM corollary with bounded continuation, vacuum

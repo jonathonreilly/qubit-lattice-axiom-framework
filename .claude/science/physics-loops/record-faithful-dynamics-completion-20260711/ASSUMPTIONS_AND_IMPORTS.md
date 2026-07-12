@@ -39,7 +39,7 @@
 | carrier selection | exhaust scalar and vector cubic intertwiners |
 | continuum generator | control the logarithm/coarse-graining branch and locality |
 
-## Minimal-dilation supplied hypotheses
+## Minimal-dilation named conditional inputs
 
 - A finite one-excitation sector on one unoriented nearest-neighbor edge.
 - A supplied complete rank-one `L/R` pointer menu and `0<q<1`.
@@ -52,3 +52,18 @@ These inputs make the exchange counterexample exact but bounded. The external
 outcome label is not derived as a framework Record. The block does not derive
 a physical lattice instrument, Born weights, event rate, simultaneous cubic
 composition, or continuum scaling from the four axioms.
+
+## Effect-selection named conditional inputs
+
+- Finite `d>1`, effects, and a fixed exhaustive rank-one projective menu.
+- Positivity, joint menu normalization, and the condition
+  `RC_i: Tr(P_i E_i)=1` for the collapse theorem.
+- Full effect/POVM additivity, normalization, menu noncontextuality, and
+  unitary covariance for comparison against structural-effect selectors.
+- CP/trace and probability interpretations only as named mathematical
+  hypotheses, not as approved framework premises.
+
+All listed effect-selection conditions carry zero framework-premise weight.
+The theorem does not derive a physical menu, probability semantics,
+framework-Record realization, repeat certainty, event order/rate, or a
+continuum law. No axiom or primitive change is implied.

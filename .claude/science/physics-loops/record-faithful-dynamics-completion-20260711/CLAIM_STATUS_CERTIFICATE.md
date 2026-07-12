@@ -1,11 +1,11 @@
 ---
-target_claim_id: minimal_record_instrument_dilation_scalar_exchange_nonselection_bounded_theorem_note_2026-07-11
+target_claim_id: covariant_effect_map_nonselection_and_repeat_certainty_collapse_bounded_theorem_note_2026-07-11
 target_claim_type: bounded_theorem
-claim_type_reason: "Exact finite-dimensional classification of one-Kraus no-record completions on a supplied one-excitation sector, with two distinct outcome-forgotten channels of minimal Kraus/Choi rank three whose exchange angle changes absorbing outcome-label weights under named process hypotheses."
+claim_type_reason: "Exact finite-dimensional depolarizing counterfamily for static effect selectors and an exact exhaustive-rank-one-menu collapse theorem under named zero-premise-weight hypotheses."
 actual_current_surface_status: bounded-support
 trace_class: direct_blocker_closure
 reachability_to_target: partially_closes
-conditional_surface_status: "A fully normalized instrument on a supplied one-excitation edge sector has K_empty=sqrt(q)U freedom; rank-three minimal outcome-forgotten I-SWAP channels remain label-readout-visible. Label-to-Record realization, effect selection, process derivation, cubic composition, event rate, Born derivation, and continuum dynamics remain open."
+conditional_surface_status: "Static effect/POVM additivity, normalization, noncontextuality, and covariance leave a continuous depolarizing family. On a fixed exhaustive finite rank-one menu, joint normalization plus RC_i force E_i=P_i. Physical menu realization, probability semantics, framework Records, and derivation of RC_i remain open."
 hypothetical_axiom_status: null
 admitted_observation_status: none
 proposal_allowed: false
@@ -16,9 +16,9 @@ review_loop_disposition: iteration_3_pass_bounded
 
 # Claim Status Certificate
 
-The current source classifies the single-Kraus no-record completion of supplied
-rank-one outcome branches and constructs an outcome-label-sensitive exchange
-witness.
+The current source classifies an exact finite-dimensional effect-assignment
+counterfamily and the exact conditions that collapse a fixed exhaustive
+rank-one menu to projectors.
 The exact current status is:
 
 - the four axioms do not supply the required process law;
@@ -28,21 +28,25 @@ The exact current status is:
   by itself select a unique visible law;
 - the Clifford-vector conclusion remains conditional on a faithful spectral
   availability/formation-to-carrier bridge;
-- full normalization forces `K_empty=sqrt(q)U` but leaves `U` arbitrary;
-- two `I-SWAP` choices give outcome-forgotten channels of minimal Kraus/Choi
-  rank three and are not dilation gauge;
-- their eventual absorbing right-label weights are exactly `1/5` and `1/4`;
-- the current runner reports `PASS=44 FAIL=0`; independent source review and
-  independent audit remain required.
+- `T_a(A)=aA+(1-a)Tr(A)I/d` preserves effects, every normalized POVM,
+  noncontextuality, and unitary covariance while leaving `a` free;
+- trace representation can identify the depolarized density operator rather
+  than the input density operator;
+- for a fixed exhaustive rank-one menu, joint normalization plus
+  `RC_i: Tr(P_iE_i)=1` force `E_i=P_i`;
+- both conditions are named conditional hypotheses carrying zero
+  framework-premise weight;
+- the current runner reports `PASS=51 FAIL=0`; independent audit remains
+  required.
 
 No axiom, primitive, or audit status is proposed or changed. The new claim
-depends on `minimal_axioms`, the record-outcome normal form, and the reconciled
-Kraus/Choi theorem; those edges remain subject to independent audit and
+depends on `minimal_axioms` and the record-outcome normal form; the new finite
+algebra is self-contained. Those edges remain subject to independent audit and
 dependency closure.
 
-The bounded nonselection component passed N1--N8 and independent source review
-at supplied one-excitation-sector/minimal-rank-alone scope. The external
-outcome label is not identified as a framework Record. Effect-faithfulness,
-simultaneous cubic QCA, event-rate, and continuum-consistency selectors remain
-open. Because those routes remain live, this result does not trigger the
-campaign's axiom-update stop condition.
+The bounded nonselection/collapse result passed independent claim and code/math
+review after full-effect, claim-scope, and runner repairs. Its full N1--N8
+packet preserves physical menu realization, probability semantics,
+framework-Record realization, `RC_i`, event rate, and continuum control as
+separate walls. Because a local process/repeatability derivation remains live,
+this result does not trigger the campaign's axiom-update stop condition.

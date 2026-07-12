@@ -295,3 +295,158 @@ outcome-forgotten channels, non-gauge distinction, and absorbing label-sensitive
 witness close every promotion condition for the narrow nonselection statement.
 The label-to-Record, effect, cubic-QCA, event-rate, and continuum routes remain
 named and live. Independent review and audit remain required.
+
+---
+
+# No-Go Discipline: Covariant Effect Nonselection And Repeat-Certainty Collapse
+
+**Status:** PASS for the narrow finite-dimensional statement that effect/POVM
+additivity, normalization, noncontextuality, and unitary covariance do not by
+themselves identify the locked-output formation effect with the matching
+rank-one projector. Exhaustive menu normalization plus named conditional repeat
+certainty does make that identification. Probability semantics, framework-
+Record realization, and the physical calibration bridge remain open; no axiom
+update is claimed.
+
+## N1 — Alternative-route enumeration
+
+| Attack route | Marker | Attack and result |
+|---|---|---|
+| projective-menu/Gleason representation | `ATTEMPTED` | the hostile family `E_P=T_a(P)` is positive, normalized, additive, noncontextual, and covariant while `a` remains free; equations (1)--(4) of the [source](../../../../docs/COVARIANT_EFFECT_MAP_NONSELECTION_AND_REPEAT_CERTAINTY_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-11.md#L78) show that trace form can return the depolarized representative rather than the input state |
+| composite `M_4` Gleason menus including entangled resolutions | `ATTEMPTED` | `T_a` is defined in every finite dimension and commutes with unitary conjugation, so enlarging named conditional projective menus does not select `a`; the imported composite-menu theorem still requires its grading/additivity/noncontextuality surface |
+| full effect/POVM Busch route | `ATTEMPTED` | extending `T_a` to every effect preserves effect bounds and every normalized POVM, so M1--M3 still leave the continuous family; see [lines 80--108](../../../../docs/COVARIANT_EFFECT_MAP_NONSELECTION_AND_REPEAT_CERTAINTY_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-11.md#L80) |
+| covariance or menu noncontextuality as the missing selector | `ATTEMPTED` | `T_a(UAU^dag)=U T_a(A)U^dag` identically and depends only on `A`, not its menu, so neither condition selects `a` |
+| exhaustive menu normalization without repeat certainty | `ATTEMPTED` | the same `T_a` family survives for every `0<=a<=1`; this route fails to identify `E_i=P_i` |
+| repeat certainty without joint normalization | `ATTEMPTED` | the hostile assignment `E_i=I` satisfies `Tr(E_iP_i)=1` for every rank-one `P_i` but fails `sum_i E_i=I` for `d>1` |
+| exhaustive menu normalization plus repeat certainty | `ATTEMPTED` | succeeds: positivity, zero-diagonal row/column control, and normalization force `E_i=P_i` for every outcome; see [lines 151--185](../../../../docs/COVARIANT_EFFECT_MAP_NONSELECTION_AND_REPEAT_CERTAINTY_COLLAPSE_BOUNDED_THEOREM_NOTE_2026-07-11.md#L151) |
+
+The successful last route is conditional. The campaign has not derived the
+effect menu, its probability meaning, or repeat certainty from the four
+axioms. This is why the result is a bounded collapse theorem rather than a
+Born-rule derivation or a broad no-go.
+
+## N2 — Wall-independence audit
+
+The collapsed wall set internal to this finite effect-selection theorem has
+one independent pair:
+
+| Pair | First closes second? | Reverse? | Independent? |
+|---|---:|---:|---:|
+| finite exhaustive normalized effect menu / `RC_i: Tr(P_iE_i)=1` | no: the depolarizing family remains | no: `E_i=I` has `RC_i` but fails normalization | yes |
+
+The physical application has a dependency chain, not five independent walls:
+
+```text
+framework-Record realization
+  -> readout probability semantics
+  -> deterministic repeat readout
+  -> readout/formation calibration
+  -> RC_i for the formation effects.
+```
+
+Event order/rate and continuum control remain downstream out-of-scope
+campaign gates. Neither algebraic wall is derived by this theorem.
+
+## N3 — Hidden-wall scan
+
+The source, runner, and campaign packet were scanned for `we assume`,
+`assum*`, `by construction`, `as is standard`, `framework provides`, `bridge
+context`, `background`, `naturally`, `obviously`, `standard QFT`, `registered`,
+and `canonical`.
+
+All load-bearing conditions are explicit: finite `d>1`; effects and named
+conditional CP/trace semantics; an exhaustive rank-one projective menu; positivity and
+joint normalization; full effect/POVM additivity and noncontextuality only when
+comparing with Busch; and repeat certainty only for the collapse theorem. The
+runner's finite exact fixtures certify examples and reject mutations; the
+analytical proofs, not the fixture count, carry the universal claims. No label
+is promoted to a framework Record, and no empirical count is promoted to a
+predictive probability.
+
+| Phrase hit | Classification |
+|---|---|
+| `it assumes grading` in the replay paragraph | non-load-bearing comparator description |
+| `candidate and unregistered` | non-load-bearing status context; grants no premise weight |
+| the quoted scan vocabulary in this checklist | scan metadata, not a theorem premise |
+| `named conditional hypotheses` | explicit open conditions carrying zero framework-premise weight |
+
+## N4 — Residual matching
+
+| Witness | Witness residual | Residual used here | Match? |
+|---|---|---|---:|
+| [rank-one locked-output source, lines 192--219](../../../../docs/RECORD_OBSERVABLE_QUOTIENT_AND_RANK_ONE_FORMATION_OUTCOME_OPERATION_NORMAL_FORM_BOUNDED_THEOREM_NOTE_2026-07-11.md#L192) | `J_P(rho)=Tr(E_P rho)P` with `E_P` unselected | attack precisely the identification of `E_P` | yes |
+| [composite Gleason bridge](../../../../docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md) | trace representation after named conditional grading, frame additivity, noncontextuality, and full composite menus | same-shape representation-versus-identification comparator, not an exact prior closure | adjacent only |
+| [qubit Busch/effect bridge](../../../../docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) | trace representation after named conditional POVM-effect M1--M3 | same-shape representation-versus-identification comparator, not proof authority | adjacent only |
+| [readout frame-extension bridge](../../../../docs/READOUT_BRIDGE_FRAME_EXTENSION_UNIFIES_MARGINAL_READ_AND_REGISTERED_FACTOR_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md) | realized disjoint Records do not automatically provide all projection-menu frame relations | adjacent physical-menu realization residual | adjacent only |
+| [post-record probability firewall](../../../../docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md) | counts do not derive predictive weights | different residual; context only, not witness support | no |
+
+The effect-identification residual is not substituted for the distinct
+probability, event-rate, or continuum residuals.
+
+## N5 — Rhetoric and resolution matrix
+
+| Resolution | Tested/proved? | Honest scoped statement |
+|---|---:|---|
+| arbitrary finite-dimensional effect/POVM | analytical | `T_a` maps every effect to an effect and every POVM to a POVM |
+| arbitrary fixed finite rank-one menu under named conditions | analytical | normalization plus repeat certainty forces `E_i=P_i` |
+| exact low-dimensional fixtures | runner: `d=2,4` plus a rational nonprojective POVM | fixtures corroborate algebra and catch context/collapse mutations; they are not called a universal numerical proof |
+| per lattice site or simultaneous QCA | no | open physical realization/composition problem |
+| infinite lattice, momentum mode, or continuum | no | no extrapolation is claimed |
+| Standard Model or gravity sector | no | no sector recovery is claimed |
+
+The phrase `Born-form trace weights` is therefore used only for equation (10)
+under named conditional CP/trace and probability semantics. The source does not say
+that the four axioms derive the Born probability rule.
+
+## N6 — Partial-closure and governance paths
+
+| Candidate path | Current status | What it could close |
+|---|---|---|
+| [composite Gleason bridge](../../../../docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md) | `audited_conditional` | representation form after its grading/menu premises; cannot identify `sigma=rho` by itself |
+| [graded-constraint interface](../../../../docs/GRADED_CONSTRAINT_INTERFACE_CONSISTENCY_BOUNDED_NOTE_2026-07-04.md) | `audited_conditional` consistency result; proposed v2 is candidate/unregistered | presently supplies nothing; could close only after retained-grade derivation or explicit approval and registry update |
+| [readout frame extension](../../../../docs/READOUT_BRIDGE_FRAME_EXTENSION_UNIFIES_MARGINAL_READ_AND_REGISTERED_FACTOR_CONDITIONAL_BOUNDED_THEOREM_NOTE_2026-07-06.md) | bounded conditional bridge | could connect realized readouts to full frame menus if its hypotheses are discharged |
+| local instrument composition/coarse-graining | current next campaign route | could derive menu normalization, repeat readout, and formation/readout calibration together |
+| explicitly approved probability/process primitive | governance route only | presently neither proposed nor approved and carrying zero premise weight; approval and registry update would be required |
+| approved primitive registry | checked | `scale_reference`, `kinetic_isotropy`, and `realized_state` close none of menu, probability, repeat-certainty, or calibration walls |
+
+These routes remain live. Their existence prevents the hostile family from
+being advertised as proof that the axioms must be amended.
+
+## N7 — Steelman
+
+A hostile reviewer can accept the finite collapse algebra and still reject its
+physical use: framework Record permanence concerns an already realized record,
+whereas `E_i` governs formation of a candidate future record. A local
+instrument may use one channel to read the former and a different covariant
+channel `T_a` to form the latter. Nothing in the four axioms presently says
+those operational families coincide, and repeat certainty for the readout does
+not transfer to formation without calibration. This steelman is accepted. It
+does not refute the conditional theorem; it exactly identifies the next
+full-instrument/readout-to-formation attack.
+
+## N8 — Cross-cycle echo
+
+| Prior surface | Current status | Retirement/change mechanism and applicability |
+|---|---|---|
+| [finite ideal-record Born parent](../../../../docs/BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md) | unaudited conditional source | takes ideal sharp projectors, a reference state, and Lüders structure as named conditional inputs; current result does not inherit those as axioms |
+| [composite Gleason bridge](../../../../docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md) | `audited_conditional` | closed representation form, not grading/menu derivation or representative-state identification |
+| [post-record probability firewall](../../../../docs/POST_RECORD_COUNT_PROBABILITY_FIREWALL_2026-06-06.md) | unaudited no-go source | its count-to-prediction wall is neither retired nor reused as a broader impossibility theorem |
+| [minimal axioms](../../../../docs/MINIMAL_AXIOMS_2026-06-29.md) | approved axiom-premise node | Record says that Records form but supplies no formation rule, weights, or rate; this result adds none |
+| [minimal-dilation exchange result](../../../../docs/MINIMAL_RECORD_INSTRUMENT_DILATION_SCALAR_EXCHANGE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md) | bounded theorem, unaudited | effect selection was a named residual; the current theorem narrows it to explicit menu/readout/calibration bridges but does not close lattice composition |
+
+Current-main `premise_decision_history.json` is provenance only and cannot
+chain-satisfy a claim. Prior probability walls can close only through a
+retained-grade derivation or an explicitly approved primitive recorded in the
+registry. No historical governance entry or relabeling convention retires
+them here.
+
+## Effect-selection gate conclusion
+
+All N1--N8 checks pass for the bounded theorem. The depolarizing family is an
+exact counterexample to structural-effect uniqueness, while the exhaustive
+menu collapse theorem gives a precise positive closure route after named
+conditional repeat certainty. The physical effect menu, framework-Record realization,
+same-carrier probability/readout semantics, readout-to-formation calibration,
+event law, and continuum limit remain named. The result therefore advances the
+campaign without triggering its axiom-update stop condition. Independent
+review and audit remain required.

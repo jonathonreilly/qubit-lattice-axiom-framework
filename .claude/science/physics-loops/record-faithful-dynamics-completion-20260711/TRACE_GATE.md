@@ -1,11 +1,11 @@
 ---
 trace_class: direct_blocker_closure
-target_claim_id: minimal_record_instrument_dilation_scalar_exchange_nonselection_bounded_theorem_note_2026-07-11
+target_claim_id: covariant_effect_map_nonselection_and_repeat_certainty_collapse_bounded_theorem_note_2026-07-11
 target_blocker_text: "A unique or severely constrained dynamics/admissibility law, including time and the probability rule."
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Read the composite-menu/Born lane and attack effect selection without importing a probability measure or preferred pointer frame."
+next_trace_action: "Read the full-instrument/composition/repeatability lane and test whether one normalized local process derives the effect menu and RC_i without importing probability semantics."
 ---
 
 # Trace Gate
@@ -24,3 +24,11 @@ normalization and minimal outcome-forgotten-channel rank do not select away an
 weights on a supplied one-excitation sector. A label-to-Record realization,
 effect selection, full lattice composition, event rate, and continuum control
 remain open.
+
+The effect-selection block now proves that the static structural conditions
+normally used for trace representation leave an exact depolarizing freedom.
+It also proves that a fixed exhaustive rank-one menu, joint normalization, and
+`RC_i` force the locked-output effects to be projectors. This directly narrows
+the Born/effect blocker but does not derive probability semantics or `RC_i`.
+The next trace action is therefore the full local instrument rather than a
+second representation theorem.

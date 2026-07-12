@@ -283,10 +283,13 @@ def main() -> int:
         "coordinate change cannot alter the determinant\npower" in note,
     )
     check(
-        "source excludes a derived charged-lepton action",
-        "does not derive from the four axioms that the charged-lepton carrier has" in note,
+        "source limits the theorem to a supplied algebraic domain",
+        "The theorem domain is a supplied Grassmann action" in note,
     )
-    check("source does not force r=1/2", "force `r=1/2`" in note)
+    check(
+        "source leaves registered r outside the theorem domain",
+        "grain, registered `r`, `delta`, and R-eta readout lies outside" in note,
+    )
 
     print("\n" + "=" * 64)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")

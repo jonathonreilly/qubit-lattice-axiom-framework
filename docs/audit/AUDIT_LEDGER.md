@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 409 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2671 |
+| unaudited | 2670 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 87 |
+| ~~audited_conditional~~ | 88 |
 | ~~audited_failed~~ | 20 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 537 |
-| `audited_conditional` | 87 |
+| `audited_conditional` | 88 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3021 |
+| `unaudited` | 3020 |
 
 | claim_type | count |
 |---|---:|
@@ -763,6 +763,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
+| `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
 | `canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16` | decoration | ~~audited_decoration~~ | `decoration_under_plaquette_self_consistency_note` | cross_family | codex-gpt-5.5 | A | `plaquette_self_consistency_note` |
@@ -10625,6 +10626,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The channel-scaling calculation is a correct algebraic identity once scalar propagator scaling is assumed. However, neither the cited authority nor the runner derives G_full = u_0 G_V from the link-level factorization U -> u_0 V; the runner imposes that relation directly, while a propagator generally depends nonlinearly on links through an inverse operator. The advertised CMT-level no-go therefore remains conditional on a missing link-to-propagator bridge.
 - **rationale:** The channel-scaling calculation is a correct algebraic identity once scalar propagator scaling is assumed. However, neither the cited authority nor the runner derives G_full = u_0 G_V from the link-level factorization U -> u_0 V; the runner imposes that relation directly, while a propagator generally depends nonlinearly on links through an inverse operator. The advertised CMT-level no-go therefore remains conditional on a missing link-to-propagator bridge.
 - **auditor confidence:** high
+
+### `yt_qubit_democratic_top_coefficient_candidate_note_2026-05-25`
+
+- **Note:** [`YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md`](../../docs/YT_QUBIT_DEMOCRATIC_TOP_COEFFICIENT_CANDIDATE_NOTE_2026-05-25.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite-dimensional lemma: assuming V=C^6 is the Q_L color-isospin carrier, the unique S_6-invariant unit vector has each component 1/sqrt(6); the identification with y_33 or y_t was not established.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00295-yt_qubit_democratic_top_coef`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For V = C^6, S_6 invariance forces all components equal, and unit normalization therefore gives each component amplitude 1/sqrt(6).  _(class `A`)_
+- **chain closes:** False — The finite-dimensional algebra closes on an assumed six-component carrier. The restricted packet neither cites a retained derivation identifying that carrier with physical Q_L nor supplies the explicitly open response bridge equating its component amplitude with y_33.
+- **rationale:** The runner genuinely solves the permutation-invariance equations and verifies normalization and component amplitudes, so the C^6 lemma is exact rather than a printed constant. However, its authority checks read ledger entries and files not supplied as one-hop authorities, while the physical Q_L carrier identification and top-response bridge remain underived. The runner's candidate_available and bridge_closed values are hard-coded boundary declarations, not computations of either missing bridge.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1 has four open mechanism classes: physical Q_L carrier derivation, dynamical response, direct measurement, and physical normalization.
+    - N5 identifies untested physical carrier, response-theorem, and measurement resolutions.
 
 ### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`
 

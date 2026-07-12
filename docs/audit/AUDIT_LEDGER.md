@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 100 |
-| **retained_no_go** | 42 |
+| **retained_no_go** | 43 |
 | **retained_bounded** | 414 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
 | unaudited | 2651 |
-| audit_in_progress | 28 |
+| audit_in_progress | 27 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 28 |
-| `audited_clean` | 543 |
+| `audit_in_progress` | 27 |
+| `audited_clean` | 544 |
 | `audited_conditional` | 94 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 43 |
@@ -140,7 +140,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_clock_rate_interface_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
-| `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -512,6 +511,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rconn_derived_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `relative_orientation_fusion_state_selection_pointer_frame_one_vacuous_quotient_bounded_theorem_note_2026-06-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `replay_environment_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | B | - |
@@ -7786,6 +7786,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source constructs the finite sparse Fock systems, evolves them with expm_multiply, computes determinant phases, prefix statistics, sampled-null p95 values, min-gains, and medians, and its cached output matches the source note. The closure is only for the explicitly scoped finite diagnostic, not an exhaustive permutation null, asymptotic law, or physical U(1) gauge-field claim.
 - **rationale:** The load-bearing numbers are computed directly by the provided runner rather than imported from the cited authority or hard-coded as a print-only result. The one-hop authority is retained_bounded, which is retained-grade under the rubric, and the source note explicitly confines load-bearing content to the runner-defined finite objects. The negative conclusion is scoped to the displayed finite period series and does not overclaim an all-permutation null, asymptotic behavior, L>=6 behavior, or a physical gauge interpretation.
 - **auditor confidence:** high
+
+### `record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06`
+
+- **Note:** [`RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md`](../../docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The current minimal axioms entail generic record occurrence but do not entail a concrete formation rule, production process, state trigger, site, weight, or rate.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00073-record_formation_not_uncondi`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The current Record axiom supplies occurrence through "Records form.", while the accepted premise surface explicitly leaves the formation rule, production process, state trigger, site, weight, and rate outside axiom content.  _(class `A`)_
+- **chain closes:** True — The accepted minimal-axiom authority explicitly supplies occurrence and excludes the claimed residual formation details. The runner independently computes the stated finite-dimensional coherence and stationarity controls and treats coupled decoherence only as contrast.
+- **rationale:** The load-bearing result is an exact logical boundary check over the accepted minimal-axiom premise, not a definition, tuned match, or imported physical bridge. The runner genuinely computes the H=0, decoupled-H, eigenstate, and coupled-H coherence checks; its string checks accurately verify the cited premise boundary. These finite controls are supporting witnesses rather than a universal decoherence theorem, and the scoped no-go leaves conditional record-production models open.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `record_markov_generator_premise_classifier_2026-06-06`
 

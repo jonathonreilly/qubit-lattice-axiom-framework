@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 645,
+    "critical": 644,
     "high": 335,
     "leaf": 1096,
     "medium": 718
@@ -2957,31 +2957,6 @@
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06",
-      "claim_scope": "The current minimal axioms force generic record occurrence but do not force a concrete formation rule, production process, state trigger, site, weight, or rate.",
-      "claim_type": "no_go",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "record_formation_append_consistency_sweep_2026-07-04",
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 11,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 14.311,
-      "note_path": "docs/RECORD_FORMATION_NOT_UNCONDITIONALLY_FORCED_BY_MINIMAL_AXIOMS_NARROW_NO_GO_NOTE_2026-06-06.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_record_formation_not_unconditionally_forced_by_minimal_axioms.py",
-      "transitive_descendants": 448
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
@@ -3643,6 +3618,31 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.py",
+      "transitive_descendants": 428
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "minimal_axioms",
+        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 9.245,
+      "note_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py",
       "transitive_descendants": 428
     },
     {
@@ -15674,31 +15674,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/observable_principle_p1_exponent_attack_2026_06_10.py",
-      "transitive_descendants": 428
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "record_local_finite_atom_availability_narrow_theorem_note_2026-06-17",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "record_formation_not_unconditionally_forced_by_minimal_axioms_narrow_no_go_note_2026-06-06"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 9.245,
-      "note_path": "docs/RECORD_LOCAL_FINITE_ATOM_AVAILABILITY_NARROW_THEOREM_NOTE_2026-06-17.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_record_local_finite_atom_availability_2026_06_17.py",
       "transitive_descendants": 428
     },
     {
@@ -80097,5 +80072,5 @@
     }
   ],
   "ready_count": 519,
-  "total_pending": 2794
+  "total_pending": 2793
 }

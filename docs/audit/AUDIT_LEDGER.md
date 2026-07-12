@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 100 |
 | **retained_no_go** | 41 |
-| **retained_bounded** | 404 |
+| **retained_bounded** | 405 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2679 |
+| unaudited | 2678 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 531 |
+| `audited_clean` | 532 |
 | `audited_conditional` | 85 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3029 |
+| `unaudited` | 3028 |
 
 | claim_type | count |
 |---|---:|
@@ -341,6 +341,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `gate_b_finite_path_sum_propagation_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
+| `gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_grown_distance_law_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `gate_b_grown_trapping_frontier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `gate_b_grown_trapping_frontier_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -4639,6 +4640,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The recursion a_j(new) += a_i(old) W_ij equals the finite sum over all directed source-to-detector paths avoiding blocked nodes, with each path weighted by the product of its edge weights.  _(class `A`)_
 - **chain closes:** True — For the bounded runner claim, finite-DAG induction gives the path expansion, and the independent enumerator agrees with the imported recursion to numerical precision. The helper source is present and confirms that the compared recursion, kernel, blocking, and normalization operations are the ones described.
 - **rationale:** The load-bearing result is a genuine algebraic identity for a supplied finite DAG and edge kernel, not a definition, tuned numerical match, or imported physical comparator. The primary runner independently enumerates paths and checks recursion equality, linearity, blocking, finiteness, and normalization, while the included helper source makes every imported load-bearing operation inspectable. The source consistently limits the result to GB-S2a and leaves all physical Gate B semantics open.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18`
+
+- **Note:** [`GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md`](../../docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite runner-local GB-S1b-a equality and algebraic properties of the regularized radial scalar on the supplied Gate B coordinate slab; no physical Poisson, regulator-selection, normalization, readout, connectivity-generation, or dynamics closure was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00286-gate_b_finite_radial_scalar_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The helper's field values equal strength/(r+0.1), from which finiteness, positivity, radial monotonicity, and linear strength scaling follow on the supplied finite slab.  _(class `A`)_
+- **chain closes:** True — The included helper source explicitly computes strength divided by Euclidean distance plus 0.1, and the primary runner independently evaluates that formula over all 100 supplied sites. The claimed bounded algebraic consequences follow directly, while physical interpretation and selection claims are excluded from scope.
+- **rationale:** The helper source is present and shows that `_field_for_mass` computes the stated regularized radial formula rather than merely printing an expected result. The primary runner independently checks equality, positivity, finiteness, radial nonincrease, linear scaling, global normalization, and the action normalization degeneracy. This is a clean class-A finite code-and-algebra theorem, not a derivation of a physical gravity scalar or Gate B dynamics.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

@@ -3,7 +3,7 @@
     "critical": 650,
     "high": 335,
     "leaf": 1098,
-    "medium": 724
+    "medium": 723
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -31476,30 +31476,6 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_frw_c3_eos_component_labels_kinetic_bridge_2026_06_18.py",
-      "transitive_descendants": 2
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "gate_b_finite_radial_scalar_bridge_bounded_theorem_note_2026-06-18",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 2,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [
-        "scripts/gate_b_connectivity_tolerance.py"
-      ],
-      "load_bearing_score": 2.585,
-      "note_path": "docs/GATE_B_FINITE_RADIAL_SCALAR_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/gate_b_finite_radial_scalar_bridge_2026_06_18.py",
       "transitive_descendants": 2
     },
     {
@@ -80395,6 +80371,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 527,
-  "total_pending": 2807
+  "ready_count": 526,
+  "total_pending": 2806
 }

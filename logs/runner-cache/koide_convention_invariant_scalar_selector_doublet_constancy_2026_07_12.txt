@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/koide_convention_invariant_scalar_selector_doublet_constancy_2026_07_12.py
+runner_sha256: 5e8afefedf6b2440e48c5558e913550c9dfe29e6d38f53a9c6e7510d5534f7ce
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.45
+status: ok
+----- stdout -----
+PASS V1.1 Qubit real-presentation clause verbatim
+PASS V1.2 no-possibility-privileged clause verbatim
+PASS V1.3 Qualification choice clause verbatim
+PASS V1.4 Record additivity clause verbatim
+PASS V1.5 named-primitive-content burden clause verbatim
+PASS V2.1 Pauli generators satisfy Cl(3,0)
+PASS V2.2 pseudoscalar equals iI
+PASS V2.3 pseudoscalar squares to -I
+PASS V2.4 conjugated generators satisfy Cl(3,0)
+PASS V2.5 conjugated pseudoscalar equals -iI
+PASS V2.6 real-span central square roots are exactly +/-ps
+PASS V2.7 both roots are central and square to -I
+PASS V2.8 entrywise conjugation exchanges the two roots
+PASS V2.9 two-model witness: conjugation is multiplicative over all 64 monomial products
+PASS V2.10 two-model witness: conjugation is R-linear over the spanning basis
+PASS V3.1 grade involution multiplicative on all 8x8 basis products
+PASS V3.2 grade involution sends ps to -ps
+PASS V4.1 character projectors resolve identity
+PASS V4.2 character projectors are idempotent
+PASS V4.3 character projectors are pairwise orthogonal
+PASS V4.4 C Pw = w Pw
+PASS V4.5 C and P1 are conjugation-fixed
+PASS V4.6 conjugation swaps Pw and P_wbar
+PASS V4.7 doublet block is conjugation-fixed
+PASS V4.8 doublet block has rank 2
+PASS V5.1 exactly 9 of 27 selectors are swap-invariant
+PASS V5.2 fixed-label swap invariance forces doublet constancy
+PASS V5.3 invariant fixed-label selector fibers give exactly two partitions
+PASS V5.4 finest fixed-label scalar-selector fiber partition has 2 blocks
+PASS V6a.1 i(C-C^2) is Hermitian
+PASS V6a.2 i(C-C^2) is conjugation-odd
+PASS V6a.3 i(C-C^2) has the resolving spectrum
+PASS V6a.4 unordered three-atom PVM is conjugation-stable
+PASS V6b.1 C+C^2 is conjugation-even
+PASS V6b.2 C+C^2 has singlet-doublet spectrum
+PASS V6b.3 C+C^2 retains a rank-1/rank-2 distinction
+PASS V6c character-w selector flips under conjugation
+PASS V7.1 sibling supplied-context declaration verbatim
+PASS V7.2 bridge supplied ORBIT-INDEXING bullet verbatim
+PASS V7.3 bridge supplied-context framing verbatim
+TOTAL: PASS=40 FAIL=0
+
+----- stderr -----
+

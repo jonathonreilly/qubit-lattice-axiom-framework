@@ -306,6 +306,7 @@ DISCLAIMER_HEADING_RE = re.compile(
     r"(?:what\s+this\b.*\bdoes\s+not\b|what\s+this\s+note\b.*\bdoes\s+not\b|"
     r"what\s+remains\b|does\s+not\b|not\s+claimed\b|non-?claims?\b|"
     r"non-?goals?\b|(?:claim\s+)?scope\b|limitations?\b|caveats?\b|"
+    r"out[-\s]of[-\s]scope\b|"
     r"honest\b|open\s+(?:items?|questions?|problems?)\b|"
     r"boundar(?:y|ies)\b(?!\s+conditions?)|out\s+of\s+scope\b|safe\s+read\b)",
     re.IGNORECASE,
@@ -332,7 +333,7 @@ AUTHORITY_UNIQUENESS_SUBJECT_RE = re.compile(
 )
 BOUNDARY_REMOVED_TEMPORAL_RE = re.compile(
     r"\b(?:walls?|admissions?|obstructions?)\s+(?:\w+\s+){0,2}no\s+longer\s+"
-    r"(?:exists?|remains?|persists?|applies|holds?|blocks?)\b[^.;:,\n]*",
+    r"(?:exists?|remains?|persists?|applies|holds?|blocks?)\b(?:[^.;:,\n]|,(?=\s*(?:but|and|yet)\s))*",
     re.IGNORECASE,
 )
 CONTRACTION_RE = re.compile(
@@ -353,7 +354,7 @@ NEGATED_PREDICATE_PRESCRUBS = (
         re.IGNORECASE,
     ),
     re.compile(r"\b(?:does|do|did)\s+not\s+lack\b"
-        r"(?:(?!\s+(?:but|and|nor|yet|while|whereas)\s)[^\n.;:]){0,60}",
+        r"(?:(?!\s+(?:but|and|nor|yet|while|whereas|although|though|because|since)\s)[^\n.;:]){0,60}",
         re.IGNORECASE,
     ),
     re.compile(
@@ -370,7 +371,8 @@ NEGATED_PREDICATE_PRESCRUBS = (
         r"(?:explicitly\s+)?den(?:ies|ied)\s+that\b|"
         r"is\s+false\s+that\b|refutes?\s+that\b|"
         r"retract(?:s|ed)?\s+that\b|withdraw(?:s|ed)?\s+that\b)"
-        r"(?:(?!\s+(?:but|and|nor|yet|while|whereas)\s)[^\n.;:,\u2014])*",
+        r"(?:(?!\s+(?:but|and|nor|yet|while|whereas|although|though|"
+        r"because|since)\s)[^\n.;:,\u2014])*",
         re.IGNORECASE,
     ),
     # Rejection frames scoped to their claim noun or that-complement, in
@@ -463,7 +465,7 @@ def _strip_disclaimer_sections(text: str) -> str:
                 # after a "## Scope: <assertion>" colon is judged normally.
                 stripped = re.sub(r"^[ \t]{0,3}#{1,6}\s+", "", line)
                 title_only = re.sub(r"^\s*\d+(?:\.\d+)*(?:[.):]|\s*[-\u2013\u2014])?\s*", "", stripped).strip()
-                parts = re.split(r":|\s+[\u2014\u2013-]\s+", stripped, maxsplit=1)
+                parts = re.split(r":|\s*[\u2014\u2013]\s*|\s+-\s+|-(?=[A-Z])", stripped, maxsplit=1)
                 remainder = parts[1].strip() if len(parts) == 2 else ""
                 if not remainder and not DISCLAIMER_HEADING_RE.match(title_only):
                     # A full-subject assertion used as a heading is prose,
@@ -594,11 +596,11 @@ def _scrub_removed_boundaries(text: str) -> str:
         # ordinary matchers ("no longer persists and the exact map
         # closes ..." keeps the affirmative tail; "... but blocks the
         # readout channel" keeps the live negative).
-        parts = re.split(r"(\s(?:but|and|yet)\s)", span, maxsplit=1, flags=re.IGNORECASE)
+        parts = re.split(r"(,?\s(?:but|and|yet)\s)", span, maxsplit=1, flags=re.IGNORECASE)
         if len(parts) == 3:
             tail = parts[2]
             if re.match(
-                r"\s*(?:no\b|not\b|cannot|never|blocks?|prevents?|"
+                r"\s*(?:still\s+|also\s+)?(?:no\b|not\b|cannot|never|blocks?|prevents?|"
                 r"precludes?|fails?)",
                 tail,
                 re.IGNORECASE,
@@ -2324,10 +2326,11 @@ def _has_governed_no_existence(text: str) -> bool:
 
     for match in NO_EXISTENCE_ASSERTION_RE.finditer(text):
         tail = text[match.end(): match.end() + 60]
-        if re.match(
-            r"s?\s+for\s+(?:deriv|obtain|reach|suppl|select|clos|recover|"
-            r"construct)",
-            tail,
+        span = match.group(0) + tail
+        if re.search(
+            r"\b(?:for|to)\s+(?:deriv|produc|obtain|reach|suppl|select|"
+            r"clos|recover|construct)",
+            span,
             re.IGNORECASE,
         ):
             # "no other X exists for deriving Y" asserts route absence

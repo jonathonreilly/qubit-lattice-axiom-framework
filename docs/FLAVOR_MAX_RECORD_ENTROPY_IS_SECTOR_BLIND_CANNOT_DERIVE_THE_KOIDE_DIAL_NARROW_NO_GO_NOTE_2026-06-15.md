@@ -67,10 +67,10 @@ conditional hypothesis.
 **(N-import) The entropy-MAX selection sign is an unforced import, and is not even unique.**
 The only currently retained-bounded records flow here is the forward sharpening map `r → 2r²`, whose dynamics points
 *away* from 1/2 (r = 1/2 is its unstable separatrix). Choosing the entropy-*increasing* /
-backward sign that makes 1/2 an attractor is an unaudited arrow-posit, not one of the three
-axioms (Lattice, Quantum, Record) and not retained — and it re-introduces a weighting *reading* the
-Record axiom (register-not-read) does not supply. Worse, "maximum entropy" is ambiguous: maximizing the
-2-cell *weight* entropy gives r = 1/2, but maximizing the *state* (von Neumann) entropy — the
+backward sign that makes 1/2 an attractor is an unaudited arrow-posit, not one of the four
+axioms (Lattice, Qubit, Admissibility, Record) and not retained — and it re-introduces a weighting *reading* even though
+the axiom set supplies neither an entropy-max nor a weighting rule. Worse, "maximum entropy" is
+ambiguous: maximizing the 2-cell *weight* entropy gives r = 1/2, but maximizing the *state* (von Neumann) entropy — the
 maximally-mixed generation state I/3, block weights (1/3, 2/3) — gives **r = 1** (dimension
 weighting). Selecting the weight-uniform reading that lands on 1/2 is itself a measure choice
 (runner step 4), consistent with the weighting-principle dial of

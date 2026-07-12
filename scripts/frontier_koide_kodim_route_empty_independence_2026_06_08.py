@@ -11,9 +11,10 @@ projection giving r=1/2 is NOT J-real => r=1/2 FORBIDDEN => r=1 hard-forced."
 
 This runner shows that claim is a TRIPLE INVERSION and blocks it; the honest content is
 the opposite: the real structure is SILENT on r (both r=1 and r=1/2 are J-real readouts),
-which -- with the model-theoretic independence (both readouts satisfy {Lattice,Quantum,
-Record} verbatim) -- makes r UNDETERMINED by {axioms + real structure}. The physical
-selection requires exactly TWO admitted bits (a K-odd/T-violating delta=0 pin; the
+which -- with the model-theoretic independence (both readouts satisfy {Lattice,Qubit,
+Admissibility,Record} verbatim) -- makes r UNDETERMINED by
+{axioms + real structure}. The physical selection requires exactly TWO admitted bits (a
+K-odd/T-violating delta=0 pin; the
 det_C-vs-det_R measure) = the AC_phi_lambda admission.
 
 Framework real structure (the landed BAE_NCG_KODIM_REAL_STRUCTURE construction):

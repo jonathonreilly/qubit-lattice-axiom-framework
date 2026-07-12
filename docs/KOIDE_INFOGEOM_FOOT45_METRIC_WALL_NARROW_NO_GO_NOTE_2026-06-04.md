@@ -154,8 +154,9 @@ is
 
 This note imports no measured masses, no PDG values, no fitted selector, no
 literature numerical comparator, and no new axiom or framework primitive. The
-current repo baseline is named explicitly as Lattice, Quantum, and Record in
-[MINIMAL_AXIOMS_2026-06-04.md](MINIMAL_AXIOMS_2026-06-04.md); this note neither
+current repo baseline is named explicitly as Lattice, Qubit, Admissibility,
+and Record in
+[MINIMAL_AXIOMS_2026-06-29.md](MINIMAL_AXIOMS_2026-06-29.md); this note neither
 modifies that baseline nor treats it as a bounded import.
 
 The only missing input in the `r = 1/2` route is the block-weight selector that

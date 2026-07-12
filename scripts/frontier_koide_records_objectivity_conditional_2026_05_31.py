@@ -97,7 +97,9 @@ def main():
            "source-bounded conditional algebra certificate" in note_flat
            and "if both inputs are supplied, `r=1/2` and `Q=2/3` follow" in note_flat)
     record("F0.5 firewall names the Record axiom's non-supply boundary",
-           "durable realized-outcome registration and finite additivity" in note_flat
+           "a record locks exactly one admissible local possibility" in note_flat
+           and "records are permanent" in note_flat
+           and "scalar readout `I` is additive" in note_flat
            and "does not supply weighting, normalization, probability" in note_flat
            and "no new axiom, no Tier-A admission, and no audit-status change" in note_flat)
     record("F0.6 note records 2026-06-16 post-audit source boundary",

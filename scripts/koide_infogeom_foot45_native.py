@@ -4,8 +4,8 @@ TARGET: derive beta/a = 1/sqrt(2)  <=>  r = |b|^2/a^2 = 1/2  <=>  Q = 2/3
         via (1) INFORMATION GEOMETRY (Fisher-Rao / quantum geometric tensor)
         and  (2) FOOT 45 degrees as native geometry (equal singlet/doublet weight).
 
-The repo baseline axioms are named Lattice, Quantum, and Record. This runner
-does not add or alter that baseline; it tests the native C_3 circulant
+The repo baseline axioms are named Lattice, Qubit, Admissibility, and Record. This
+runner does not add or alter that baseline; it tests the native C_3 circulant
 generation class used by the cited Koide notes:
         H = a I + b C + conj(b) C^2 ,   C = order-3 cyclic shift,  R^3=I.
 Eigenvalues (signed/Hermitian, Brannen/det_R readout): v_g = a + 2 beta cos(phi + 2 pi g /3),

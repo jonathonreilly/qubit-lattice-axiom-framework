@@ -121,8 +121,8 @@ remains a separate residual.
 ## What is NOT claimed
 
 - This note does **not** claim that `M(j) = D + J(j)` is forced by the
-  framework axioms (Lattice, Quantum, Record). The three axioms are
-  consistent with the additive site-diagonal shift but do not select
+  framework axioms (Lattice, Qubit, Admissibility, Record). The four axioms
+  are consistent with the additive site-diagonal shift but do not select
   it uniquely without the additional retained-surface evidence cited
   here.
 

@@ -58,10 +58,10 @@ one parameter; it is the honest residual input, not a closed prediction.
    `K`/CPT-real readout condition fixes `a` real and the two-block readout
    (see
    [`RECORD_GENERATION_READOUT_TWO_SECTORS`](RECORD_GENERATION_READOUT_TWO_SECTORS_2026-06-05.md)).
-   Lattice, Quantum, and Record do not constrain the magnitude ratio `|b|/a`;
-   Record explicitly supplies no weighting or occupancy rule. (Runner: each
-   structural predicate holds flavor-blind across the whole family; additivity
-   never fixes the ratio.)
+   Lattice, Qubit, Admissibility, and Record do not constrain the magnitude
+   ratio `|b|/a`; Record explicitly supplies no weighting or occupancy rule.
+   (Runner: each structural predicate holds flavor-blind across the whole
+   family; additivity never fixes the ratio.)
 4. **Reduction.** Hence the per-sector generation Koide data = one real modulus
    `r` on the derived dial. Companion no-go surfaces such as
    [`KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md`](KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md) and

@@ -15,8 +15,11 @@ with cache
 
 The audited missing bridge is exactly the point of this note: neither the
 equal-block sector measure nor the records/objectivity selector is derived
-here. The 2026-06-05 Record axiom supplies durable realized-outcome
-registration and finite additivity after a readout context is supplied; it
+here. The landed Record axiom (`MINIMAL_AXIOMS_2026-06-29.md`) supplies fixed
+locking — a record locks exactly one admissible local possibility, a site
+never carries more than one record, and records are permanent — and finite
+readout additivity (for pairwise-disjoint records, scalar readout `I` is
+additive, with `I(empty)=0`); it
 explicitly does not supply weighting, normalization, probability, measurement
 dynamics, readout context selection, or an occupancy rule.
 

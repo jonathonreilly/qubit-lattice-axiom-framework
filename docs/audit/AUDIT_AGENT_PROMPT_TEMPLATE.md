@@ -513,6 +513,27 @@ Use `null` only when the gate is not required. Otherwise replace it with:
 }
 ```
 
+For every N1 route, `mechanism`, `attempt`, and `outcome` must each occur
+verbatim at the single cited `evidence_path`. The combined text must contain a
+literal marker accepted for its `route_class`:
+
+- `algebraic_rearrangement`: algebra, identity, rearrange, factor, cancel, solve;
+- `symmetry_or_representation`: symmetry, representation, commutator, character, irrep, group;
+- `alternate_carrier_or_sector`: carrier, sector, module, space, irrep;
+- `boundary_or_initial_condition`: boundary, initial, background, state, pointwise;
+- `normalization_or_units`: normalization, unit, scale, dimensionful;
+- `dynamical_or_effective_action`: dynamic, effective, action, evolution, equivariant family;
+- `lattice_scale_or_limit`: lattice, continuum, limit, finite-size, asymptotic, approximate;
+- `numerical_or_finite_case`: numeric, finite, sample, scan, compute;
+- `convention_or_relabeling`: convention, relabel, rename, basis label;
+- `alternate_observable_or_readout`: observable, readout, nonlinear, spectrum, eigenvalue;
+- `topology_or_global_structure`: topology, global, bundle, homotopy, cohomology;
+- `dependency_or_registry_reclassification`: dependency, registry, reclassification, premise, authority.
+
+When the gate is `FAIL`, list only the genuinely evidenced routes; fewer than
+five is valid and records the N1 failure. Do not fabricate extra routes merely
+to reach five.
+
 For `PASS`, omit the five FAIL-only fields. For `FAIL`, all five are required.
 The orchestrator adds `evidence_snapshot` after validating the exact rendered
 packet; do not emit or fabricate that field. An `audited_clean` PASS must carry
@@ -535,7 +556,13 @@ occurrences of `absent`, `cannot`, `does not`, `fails`, `impossible`,
 `no nonzero`, `no-go`, `obstruction`, `requires a new axiom`, `rule out`,
 `rules out`, `structurally undecidable`, `unavailable`, `is not`, and `are not`,
 and must test all five resolution classes substantively against cited live
-current-cycle runner stdout evidence.
+current-cycle runner stdout evidence. For each N5 statement,
+`resolution_classes_checked` must equal the five canonical classes exactly,
+and `tested_resolutions` must contain exactly five entries: one and only one
+entry prefixed `per_element:`, `per_site:`, `per_mode:`, `per_block:`, and
+`lattice_wide:`. Put unexecuted classes in `untested_resolutions` as well; do
+not omit their prefixed `tested_resolutions` entry, which must state that the
+class was checked and not executed.
 
 N6 must bind every indexed candidate to an exact quoted indexed basis, an N2
 wall, and a substantive closure mechanism. N7 must cite the N1 route surface

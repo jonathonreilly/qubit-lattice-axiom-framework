@@ -66,6 +66,7 @@ import audit_invocation
 LEDGER_PATH = AUDIT_DIR / "data" / "audit_ledger.json"
 QUEUE_PATH = AUDIT_DIR / "data" / "audit_queue.json"
 REAUDIT_CANDIDATES_PATH = AUDIT_DIR / "data" / "reaudit_candidates.json"
+DISPATCH_QUEUE_PATH = AUDIT_DIR / "data" / "audit_dispatch_queue.json"
 PROMPT_TEMPLATE_PATH = AUDIT_DIR / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
 APPLY_AUDIT_SCRIPT = AUDIT_DIR / "scripts" / "apply_audit.py"
 ISOLATED_BASE = Path("/tmp/codex-audit-isolated")
@@ -109,6 +110,13 @@ CLIPPED_EVIDENCE_MARKERS = (
     "[runner stdout clipped; ",
     "[runner cache excerpt clipped; ",
 )
+
+# Codex rejects turn input above 1,048,576 characters. Keep a safety margin
+# for transport framing while retaining the complete trusted evidence
+# manifest used by validate/apply. Only the rendered N8 candidate list may be
+# transport-bounded, and that fallback is explicitly non-clean.
+CODEX_INPUT_CHAR_LIMIT = 1_000_000
+OUTPUT_INSTRUCTIONS_MARKER = "\n\n---\nOUTPUT INSTRUCTIONS (binding):"
 
 
 def clip_packet_text(text: str, limit: int, label: str) -> str:
@@ -497,6 +505,38 @@ def load_reaudit_candidates(criticality_filter: str | None = None,
             -(e.get("load_bearing_score") or 0.0),
         )
     )
+    return normalized
+
+
+def load_dispatch_targets(
+    ledger_rows: dict[str, dict],
+    criticality_filter: str | None = None,
+    ready_only: bool = True,
+) -> list[dict]:
+    """Load live targeted re-audits without exposing the dispatch manifest.
+
+    Dispatch metadata selects the claim and supplies the audit question. The
+    restricted evidence packet is still built exclusively from the ledger
+    row, source/dependencies, runner surfaces, and standard audit context.
+    """
+    payload = json.loads(DISPATCH_QUEUE_PATH.read_text(encoding="utf-8"))
+    normalized: list[dict] = []
+    seen_ids: set[str] = set()
+    for entry in payload.get("live", []):
+        cid = entry.get("claim_id")
+        if not cid or cid in seen_ids:
+            continue
+        if ready_only and not entry.get("ready"):
+            continue
+        ledger_row = ledger_rows.get(cid)
+        if not isinstance(ledger_row, dict):
+            continue
+        row = {**ledger_row, **entry, "claim_id": cid}
+        if criticality_filter and row.get("criticality") != criticality_filter:
+            continue
+        row.setdefault("queue_reason", "targeted_dispatch")
+        normalized.append(row)
+        seen_ids.add(cid)
     return normalized
 
 
@@ -922,6 +962,13 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     # compute must NOT be converted to terminal verdicts. If codex returns
     # COMPUTE_REQUIRED, the wrapper detects it and skips the row (no
     # apply, no commit, logged for compute-rerun follow-up).
+    audit_question = str(row.get("audit_question") or "").strip()
+    if audit_question:
+        prompt += (
+            "\n\n---\n"
+            "TARGETED DISPATCH QUESTION (binding scope; question, not evidence):\n"
+            f"{audit_question}\n"
+        )
     prompt += (
         "\n\n---\n"
         "OUTPUT INSTRUCTIONS (binding):\n"
@@ -938,6 +985,89 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         "outside the JSON.\n"
     )
     return prompt
+
+
+def fit_prompt_to_transport_limit(
+    prompt: str,
+    evidence_manifest: dict[str, dict],
+    claim_id: str,
+    *,
+    max_chars: int = CODEX_INPUT_CHAR_LIMIT,
+) -> tuple[str, dict[str, int] | None]:
+    """Fit an oversized no-go prompt by bounding only rendered N8 records.
+
+    The trusted manifest remains complete and is still supplied unchanged to
+    validation and apply. Because the auditor cannot inspect every rendered
+    N8 candidate, the inserted binding notice requires an incomplete N8 FAIL
+    packet and forbids ``audited_clean``. If even an empty rendered candidate
+    list cannot fit, fail closed instead of clipping source/runner evidence.
+    """
+    if len(prompt) <= max_chars:
+        return prompt, None
+    cross_path = no_go_discipline_gate.cross_cycle_index_path(claim_id)
+    entry = evidence_manifest.get(cross_path)
+    full_text = str((entry or {}).get("text") or "")
+    if not full_text or prompt.count(full_text) != 1:
+        raise ValueError(
+            f"prompt is {len(prompt)} chars and has no uniquely rendered "
+            "authenticated N8 index to transport-bound"
+        )
+    try:
+        payload = json.loads(full_text)
+    except json.JSONDecodeError as exc:
+        raise ValueError("authenticated N8 index is not valid JSON") from exc
+    candidates = payload.get("candidates")
+    if not isinstance(candidates, list):
+        raise ValueError("authenticated N8 index has no candidate list")
+
+    def render(candidate_count: int) -> str:
+        bounded = dict(payload)
+        bounded["candidates"] = candidates[:candidate_count]
+        bounded_text = json.dumps(bounded, indent=2, sort_keys=True)
+        notice = (
+            "\n\n---\n"
+            "N8 TRANSPORT BOUND (binding; transport metadata, not evidence):\n"
+            f"The authenticated repository scan found {len(candidates)} "
+            f"cross-cycle candidates; this transport renders the first "
+            f"{candidate_count} in the orchestrator's relevance order while "
+            "retaining the complete no-go-row universe count and digest. "
+            "Therefore set N8_cross_cycle_echo.packet_complete=false, keep "
+            "N8_cross_cycle_echo.unresolved nonempty, set the overall "
+            "no_go_discipline.status=FAIL, and do not return audited_clean. "
+            "Use only verbatim locators from rendered authenticated records.\n"
+        )
+        fitted = prompt.replace(full_text, bounded_text, 1)
+        if OUTPUT_INSTRUCTIONS_MARKER not in fitted:
+            raise ValueError("binding output-instructions marker is absent")
+        return fitted.replace(
+            OUTPUT_INSTRUCTIONS_MARKER,
+            notice + OUTPUT_INSTRUCTIONS_MARKER,
+            1,
+        )
+
+    low, high = 0, len(candidates)
+    best: tuple[int, str] | None = None
+    while low <= high:
+        mid = (low + high) // 2
+        fitted = render(mid)
+        if len(fitted) <= max_chars:
+            best = (mid, fitted)
+            low = mid + 1
+        else:
+            high = mid - 1
+    if best is None:
+        zero = render(0)
+        raise ValueError(
+            f"prompt remains {len(zero)} chars after removing rendered N8 "
+            "candidates; source/runner packet must be repaired or split"
+        )
+    shown, fitted_prompt = best
+    return fitted_prompt, {
+        "authenticated_candidates": len(candidates),
+        "rendered_candidates": shown,
+        "prompt_chars_before": len(prompt),
+        "prompt_chars_after": len(fitted_prompt),
+    }
 
 
 def run_codex(prompt: str, isolated_dir: Path, timeout_sec: int,
@@ -1139,6 +1269,7 @@ def validate_verdict(
     evidence_manifest: dict[str, dict] | None = None,
     prior_claim_scope: str | None = None,
     expected_invocation_id: str | None = None,
+    transport_bounded_n8: bool = False,
 ) -> str | None:
     """Return an error string if the verdict is unusable, else None."""
     if not isinstance(blob, dict):
@@ -1155,6 +1286,18 @@ def validate_verdict(
         return invocation_error
     if expected_invocation_id is not None and blob.get("audit_invocation_id") != expected_invocation_id:
         return "audit_invocation_id is absent or does not match the prompt-bound invocation"
+    if transport_bounded_n8:
+        packet = blob.get("no_go_discipline")
+        n8 = packet.get("N8_cross_cycle_echo") if isinstance(packet, dict) else None
+        if blob.get("verdict") == "audited_clean":
+            return "transport-bounded N8 evidence forbids audited_clean"
+        if not isinstance(packet, dict) or packet.get("status") != "FAIL":
+            return "transport-bounded N8 evidence requires no_go_discipline.status=FAIL"
+        if not isinstance(n8, dict) or n8.get("packet_complete") is not False:
+            return "transport-bounded N8 evidence requires packet_complete=false"
+        unresolved = n8.get("unresolved") if isinstance(n8, dict) else None
+        if not isinstance(unresolved, list) or not unresolved:
+            return "transport-bounded N8 evidence requires a nonempty unresolved list"
     if blob.get("verdict") == "audited_clean" and evidence_manifest is not None:
         clipped_paths = sorted(
             path
@@ -1218,6 +1361,41 @@ def render_validation_repair_prompt(
         "reference.\n\n"
         f"VALIDATION ERROR:\n{validation_error}\n\n"
         f"REJECTED JSON TO CORRECT:\n{prior_json}\n"
+    )
+
+
+def fresh_schema_retry_eligible(validation_error: str | None) -> bool:
+    """Allow a new isolated audit only for structured N1-N8 schema rejects."""
+    if not validation_error:
+        return False
+    return bool(re.match(r"^(?:N[1-8]\b|No-Go Discipline\b)", validation_error))
+
+
+def render_fresh_schema_retry_prompt(
+    original_prompt: str,
+    validation_error: str,
+    attempt: int,
+) -> str:
+    """Request a fresh judgment without exposing the rejected JSON.
+
+    Unlike locator repair, this starts a distinct isolated Codex context and
+    discards the prior object completely. The only prior-turn information is
+    the deterministic validator error, which is format/control-plane context,
+    not scientific evidence or a prior conclusion.
+    """
+    return (
+        f"{original_prompt}\n\n"
+        "---\n"
+        f"FRESH SCHEMA RETRY {attempt} (binding):\n"
+        "A separate restricted-context attempt was rejected before apply by "
+        "the unchanged deterministic N1-N8 validator. You are not given its "
+        "JSON or conclusion. Reperform the scientific audit from the supplied "
+        "evidence and return a wholly fresh JSON object. The validator error "
+        "below is control-plane schema guidance only, not scientific evidence. "
+        "Do not infer or preserve any prior verdict. Recheck every N1-N8 array "
+        "cardinality, enum, evidence-containment rule, and required resolution "
+        "prefix before responding.\n\n"
+        f"VALIDATOR ERROR:\n{validation_error}\n"
     )
 
 
@@ -1355,6 +1533,12 @@ def main() -> int:
                         "validator-guided JSON corrections (default 1; 0 "
                         "disables). Every correction must pass the unchanged "
                         "validator and apply gate.")
+    p.add_argument("--fresh-schema-retry-attempts", type=int, default=2,
+                   help="After a complete verdict fails an N1-N8 structural "
+                        "schema rule that is not eligible for locator-only "
+                        "repair, rerun the full restricted audit in this many "
+                        "new isolated contexts (default 2; 0 disables). The "
+                        "rejected JSON/conclusion is never passed forward.")
     p.add_argument("--runner-timeout-sec", type=int, default=120,
                    help="Per-row primary-runner timeout (default 120).")
     p.add_argument("--no-propagate", action="store_true",
@@ -1402,6 +1586,11 @@ def main() -> int:
                         "audit pass that can now potentially close the chain. "
                         "--allow-blocked is ignored for this alternate source; "
                         "the candidate producer owns eligibility.")
+    p.add_argument("--from-dispatch", action="store_true",
+                   help="Pull live targeted re-audits from "
+                        "docs/audit/data/audit_dispatch_queue.json. Only the "
+                        "claim id and audit question select/scope the audit; "
+                        "the dispatch manifest is not evidence.")
     p.add_argument("--no-runner-drift-candidates", action="store_true",
                    help="With --from-reaudit-candidates, skip the "
                         "runner_drift_candidates stream (only re-audit on "
@@ -1422,6 +1611,12 @@ def main() -> int:
 
     if not 0 <= args.validation_repair_attempts <= 3:
         print("REFUSING: --validation-repair-attempts must be between 0 and 3.")
+        return 2
+    if not 0 <= args.fresh_schema_retry_attempts <= 3:
+        print("REFUSING: --fresh-schema-retry-attempts must be between 0 and 3.")
+        return 2
+    if args.from_dispatch and args.from_reaudit_candidates:
+        print("REFUSING: choose only one of --from-dispatch and --from-reaudit-candidates.")
         return 2
     if args.no_propagate and args.push_mode != "none":
         p.error("--no-propagate is allowed only with --push-mode none")
@@ -1481,7 +1676,10 @@ def main() -> int:
     print("  second-pass after a prior audit by a different family -> cross_family")
     print("  second-pass after a prior audit by Codex            -> fresh_context")
     print("  rows in disagreement / awaiting-judicial-review     -> skipped (manual)")
-    if args.from_reaudit_candidates:
+    if args.from_dispatch:
+        print("Source: audit_dispatch_queue.json (live targeted re-audits)")
+        print(f"  ready_only={not args.allow_blocked}")
+    elif args.from_reaudit_candidates:
         print("Source: reaudit_candidates.json (rows whose chain may now close "
               "after dependency strengthening or runner SHA drift)")
         print(f"  include_runner_drift={not args.no_runner_drift_candidates}")
@@ -1516,7 +1714,13 @@ def main() -> int:
                 return 2
 
     ledger_rows = load_ledger_rows()
-    if args.from_reaudit_candidates:
+    if args.from_dispatch:
+        queue = load_dispatch_targets(
+            ledger_rows,
+            args.criticality,
+            ready_only=not args.allow_blocked,
+        )
+    elif args.from_reaudit_candidates:
         queue = load_reaudit_candidates(
             args.criticality,
             include_runner_drift=not args.no_runner_drift_candidates,
@@ -1524,8 +1728,8 @@ def main() -> int:
     else:
         queue = load_queue(args.criticality, ready_only=not args.allow_blocked)
     if args.only_awaiting_cross_confirmation:
-        if args.from_reaudit_candidates:
-            print("REFUSING: --only-awaiting-cross-confirmation applies to audit_queue.json, not re-audit candidates.")
+        if args.from_reaudit_candidates or args.from_dispatch:
+            print("REFUSING: --only-awaiting-cross-confirmation applies only to audit_queue.json.")
             return 2
         queue = only_awaiting_cross_confirmation(queue, ledger_rows)
     if args.claim_id:
@@ -1533,14 +1737,17 @@ def main() -> int:
             targets = select_named_targets(queue, args.claim_id)
         except ValueError as exc:
             print(f"REFUSING targeted selection: {exc}")
-            if not args.allow_blocked and not args.from_reaudit_candidates:
+            if not args.allow_blocked and not args.from_reaudit_candidates and not args.from_dispatch:
                 print("A named row may be dependency-blocked; rerun with "
                       "--allow-blocked only if auditing that blocked state is intended.")
             return 2
     else:
         targets = queue[: args.n]
     if not targets:
-        if args.from_reaudit_candidates:
+        if args.from_dispatch:
+            print("No live dispatch targets in this filter. Run the audit pipeline "
+                  "to refresh readiness or inspect ready_blocker metadata.")
+        elif args.from_reaudit_candidates:
             print("No re-audit candidates in this filter. Either no upstream "
                   "deps have ratified since prior audits, or the candidates "
                   "stream is empty. Run `bash docs/audit/scripts/run_pipeline.sh` "
@@ -1579,7 +1786,9 @@ def main() -> int:
             role, role_info = determine_audit_role(
                 full_led_row,
                 auditor_family,
-                is_reaudit_candidate=args.from_reaudit_candidates,
+                is_reaudit_candidate=(
+                    args.from_reaudit_candidates or args.from_dispatch
+                ),
             )
             if role == "skip":
                 print(f"  SKIP: {role_info}")
@@ -1645,11 +1854,35 @@ def main() -> int:
                                        evidence_manifest_out=exact_evidence_manifest,
                                        audit_invocation_id=audit_invocation_id)
 
+            try:
+                prompt, transport_bound = fit_prompt_to_transport_limit(
+                    prompt, exact_evidence_manifest, cid
+                )
+            except ValueError as exc:
+                print(f"  SKIP prompt transport: {exc}")
+                skipped += 1
+                with run_log.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps({
+                        "claim_id": cid,
+                        "phase": "skip_prompt_transport",
+                        "reason": str(exc),
+                    }) + "\n")
+                continue
+            if transport_bound:
+                print(
+                    "  N8 transport-bound: "
+                    f"{transport_bound['rendered_candidates']}/"
+                    f"{transport_bound['authenticated_candidates']} candidates, "
+                    f"{transport_bound['prompt_chars_before']} -> "
+                    f"{transport_bound['prompt_chars_after']} chars; clean forbidden"
+                )
+
             if args.dry_run:
                 print(f"  [dry-run] prompt size: {len(prompt)} chars")
                 with run_log.open("a", encoding="utf-8") as f:
                     f.write(json.dumps({
-                        "claim_id": cid, "phase": "dry-run", "prompt_size": len(prompt)
+                        "claim_id": cid, "phase": "dry-run", "prompt_size": len(prompt),
+                        "transport_bound": transport_bound,
                     }) + "\n")
                 continue
 
@@ -1725,6 +1958,7 @@ def main() -> int:
                 evidence_manifest=exact_evidence_manifest,
                 prior_claim_scope=prior_claim_scope_for_row(full_led_row),
                 expected_invocation_id=audit_invocation_id,
+                transport_bounded_n8=transport_bound is not None,
             )
             initial_validation_error = err
             initial_rejected_blob = blob
@@ -1783,6 +2017,7 @@ def main() -> int:
                             evidence_manifest=exact_evidence_manifest,
                             prior_claim_scope=prior_claim_scope_for_row(full_led_row),
                             expected_invocation_id=audit_invocation_id,
+                            transport_bounded_n8=transport_bound is not None,
                         )
                     with run_log.open("a", encoding="utf-8") as f:
                         f.write(json.dumps({
@@ -1806,6 +2041,90 @@ def main() -> int:
                         )
                         break
                 elapsed += repair_elapsed
+            schema_retry_compute_required: str | None = None
+            if (
+                err
+                and args.fresh_schema_retry_attempts > 0
+                and fresh_schema_retry_eligible(err)
+            ):
+                schema_elapsed = 0.0
+                for schema_attempt in range(1, args.fresh_schema_retry_attempts + 1):
+                    print(
+                        f"  fresh schema retry {schema_attempt}/"
+                        f"{args.fresh_schema_retry_attempts}: {err}"
+                    )
+                    schema_prompt = render_fresh_schema_retry_prompt(
+                        prompt, err, schema_attempt
+                    )
+                    schema_dir = isolated / f"fresh-schema-retry-{schema_attempt:02d}"
+                    schema_t0 = time.time()
+                    schema_ok, schema_stdout, schema_stderr = run_codex(
+                        schema_prompt,
+                        schema_dir,
+                        args.codex_timeout_sec,
+                        reasoning_effort=reasoning_effort,
+                        model=audit_model,
+                    )
+                    schema_elapsed += time.time() - schema_t0
+                    if not schema_ok:
+                        err = (
+                            "fresh schema retry codex exec failed: "
+                            f"{schema_stderr.strip()[:300]}"
+                        )
+                        continue
+                    schema_reply = extract_response(schema_stdout)
+                    cr_match = re.search(
+                        r"COMPUTE_REQUIRED:\s*(.+?)(?:\n|$)",
+                        schema_reply or "",
+                        re.IGNORECASE,
+                    )
+                    if cr_match:
+                        schema_retry_compute_required = cr_match.group(1).strip()[:300]
+                        break
+                    schema_blob = parse_verdict_json(schema_reply or "")
+                    if schema_blob is None:
+                        err = "fresh schema retry reply not valid JSON"
+                        continue
+                    schema_error = validate_verdict(
+                        schema_blob,
+                        cid,
+                        source_requires_no_go=source_requires_no_go,
+                        evidence_manifest=exact_evidence_manifest,
+                        prior_claim_scope=prior_claim_scope_for_row(full_led_row),
+                        expected_invocation_id=audit_invocation_id,
+                        transport_bounded_n8=transport_bound is not None,
+                    )
+                    with run_log.open("a", encoding="utf-8") as f:
+                        f.write(json.dumps({
+                            "claim_id": cid,
+                            "phase": (
+                                "fresh_schema_retry_passed"
+                                if schema_error is None
+                                else "fresh_schema_retry_failed"
+                            ),
+                            "attempt": schema_attempt,
+                            "error": schema_error,
+                        }) + "\n")
+                    blob = schema_blob
+                    err = schema_error
+                    if err is None:
+                        print(
+                            "  fresh schema retry passed "
+                            f"({schema_elapsed:.1f}s cumulative)"
+                        )
+                        break
+                elapsed += schema_elapsed
+            if schema_retry_compute_required is not None:
+                print(f"  COMPUTE_REQUIRED: {schema_retry_compute_required[:200]}")
+                skipped += 1
+                with run_log.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps({
+                        "claim_id": cid,
+                        "phase": "compute_required",
+                        "elapsed_sec": elapsed,
+                        "reason": schema_retry_compute_required,
+                    }) + "\n")
+                continue
             if err:
                 print(f"  FAIL validate: {err}")
                 failed += 1

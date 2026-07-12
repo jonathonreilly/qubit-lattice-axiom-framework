@@ -26,8 +26,9 @@ clustering, a gap, or continuum control. The next exact route is a separate
 small-`beta`, large-`m` Dobrushin/polymer uniqueness wedge with independently
 checked influence constants.
 
-Spatial DLR accumulation/OS stacked review PR: pending delivery against the
-massive infinite-time uniqueness head.
+Spatial DLR accumulation/OS stacked review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5297
+is open against the massive infinite-time uniqueness head.
 
 Previous branch:
 `physics-loop/record-faithful-dynamics-block19-infinite-time-uniqueness-20260712`.

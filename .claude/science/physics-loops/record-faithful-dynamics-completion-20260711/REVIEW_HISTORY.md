@@ -673,3 +673,6 @@ violations, and generated audit/status surfaces are stripped. At `beta=6`
 the result asserts only existence of an accumulation state, not uniqueness,
 plaquette value, clustering, gap, or continuum closure. No axiom-update stop
 is triggered.
+
+Delivery: stacked PR #5297 is open on the massive infinite-time uniqueness
+head. Independent audit remains authoritative.

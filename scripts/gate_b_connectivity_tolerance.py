@@ -64,8 +64,9 @@ def _source_boundary_checks() -> None:
     print("Source-boundary checks")
     print("-" * 40)
     _check(
-        "note declares bounded finite-replay status and 2026-07-12 audit-scope firewall",
-        "bounded Gate B replay frozen on disk, not a dynamics theorem" in text
+        "note declares bounded finite-replay type/status and 2026-07-12 audit-scope firewall",
+        "**Type:** bounded_theorem" in text
+        and "bounded Gate B replay frozen on disk, not a dynamics theorem" in text
         and "2026-07-12 audit scope: finite connectivity replay, not dynamics closure" in text,
     )
     _check(
@@ -78,10 +79,10 @@ def _source_boundary_checks() -> None:
         and "physical selection/dynamical generation of the connectivity stencil remains supplied" in flat,
     )
     _check(
-        "note forbids Gate B dynamics closure and axiom/admission/status changes",
+        "note forbids Gate B dynamics closure and axiom/primitive/status changes",
         "does not derive a Gate B dynamics theorem" in flat
         and "physical gravity/readout bridge" in flat
-        and "introduces no new axiom, Tier-A admission, or audit-status change" in flat,
+        and "introduces no new axiom, approved primitive, or audit-status change" in flat,
     )
 
 
@@ -478,10 +479,10 @@ def main() -> None:
 
     print()
     print("Interpretation:")
-    print("  - Fixed connectivity tolerates substantial position noise.")
-    print("  - Once connectivity is recomputed from geometry, the gain becomes mixed.")
-    print("  - The local F~M fit stays in a non-catastrophic linear-response band.")
-    print("  - This is a connectivity-vs-noise audit, not a Gate B theorem.")
+    print("  - The fixed-connectivity jitter sweep is nonmonotonic and includes both mean-delta signs.")
+    print("  - The architecture comparison changes geometry and, for K-NN, connectivity together.")
+    print("  - It does not isolate connectivity as the cause of the mixed response.")
+    print("  - This is a finite diagnostic replay, not a Gate B theorem.")
     _source_boundary_checks()
     print(f"BOUNDARY_CHECKS: PASS={CHECK_PASS} FAIL={CHECK_FAIL}")
     if CHECK_FAIL:

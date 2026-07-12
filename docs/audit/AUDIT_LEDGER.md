@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 382 |
+| **retained_bounded** | 383 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2741 |
+| unaudited | 2740 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 497 |
+| `audited_clean` | 498 |
 | `audited_conditional` | 66 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3091 |
+| `unaudited` | 3090 |
 
 | claim_type | count |
 |---|---:|
@@ -326,6 +326,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `formation_rate_law_class_reduction_bounded_note_2026-07-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -4145,6 +4146,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The live runner recomputes the fixed-lattice F~M exponent, six grown-seed F~M exponents at drift=0.2 and restore=0.7, their mean/spread, and the fixed-grown sigma comparison. The note explicitly excludes geometry-generic transfer, other drift/restore values, and other observables.
 - **rationale:** The claim is a bounded numerical computation, not a broad universality theorem: the current runner reproduces the frozen fixed exponent, all six grown-seed exponents, the grown aggregate, and the 0.3 sigma fixed-grown comparison. The source note keeps the conclusion on the specified grown row and explicitly does not claim other geometries, drift/restore values, or observables. Residual boundary: the quoted uncertainty is the finite six-seed grown spread used by the runner, so the retained content is only this finite transfer check.
 - **auditor confidence:** high
+
+### `formation_rate_law_class_reduction_bounded_note_2026-07-08`
+
+- **Note:** [`FORMATION_RATE_LAW_CLASS_REDUCTION_BOUNDED_NOTE_2026-07-08.md`](../../docs/FORMATION_RATE_LAW_CLASS_REDUCTION_BOUNDED_NOTE_2026-07-08.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The conditional logarithmic chain-rule identity at a supplied positive reference point, including the five stated rate-law examples.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00432-formation_rate_law_class_red`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Applying the chain rule and factoring by the positive quantities A0 and F(A0) gives (F'(A0)A'(r0))/F(A0) = [F'(A0)A0/F(A0)][A'(r0)/A0].  _(class `A`)_
+- **chain closes:** True — The ordinary chain rule gives the left side as F'(A0)A'(r0)/F(A0), and multiplication and division by A0 yields the stated factorization. The positivity assumptions make both normalizations well-defined; no physical rate-law selection is needed.
+- **rationale:** The load-bearing result is a genuine algebraic closure from the explicitly stated differentiability and positivity hypotheses. The runner computes the analytic responses, independently finite-differences fifteen supplied compositions, and verifies five closed forms rather than merely printing expected outcomes. The source confines the conclusion to a conditional calculus identity and does not claim that the framework selects A, F, or a physical formation process.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `fourth_family_quadrant_note`
 

@@ -1,18 +1,17 @@
 # Handoff
 
 Current branch:
-`physics-loop/record-faithful-dynamics-block16-two-seam-holonomy-20260712`.
-The two-seam forest runner reports `PASS=37 FAIL=0`. For each adjacent
-reflection plane, the two crossing temporal-link layers form a
-reflection-invariant matching that can be fixed to identity with exact
-normalized-Haar and Berezin factor one. Full Polyakov conjugacy data remains
-arbitrary on the unfixed temporal links, and both Wilson and repaired
-staggered seam factors reduce to positive local kernels. The two planes use
-separate gauge charts. A single literal identity-link chart containing all
-four seam layers and invariant under both reflections closes to the whole
-temporal cycle, so it is not a forest and forces trivial holonomy. The theorem
-does not yet claim the complete coupled circle Gram or transfer. Block15 PR
-#5270 is the stacked base and independent audit remains authoritative.
+`physics-loop/record-faithful-dynamics-block17-coupled-circle-os-20260712`.
+The coupled-circle runner reports `PASS=16 FAIL=0`. The full finite-circle
+SU(3) Wilson-staggered reflected Gram is now proved on individually
+gauge-invariant positive-half cylinder polynomials for both adjacent planes.
+The proof uses separate forest charts, the complete side-action split, a
+combined two-seam Wilson-times-fermion coefficient kernel, and unrestricted
+integrated Polyakov holonomy. The adjacent two-step correlation form is
+positive. It is not yet a quotient operator: exact countermodels show that
+null descent and contraction need a separate domination/generalized-spectrum
+theorem. Block16 PR #5278 is the stacked base and independent audit remains
+authoritative.
 
 Two-seam forest/holonomy stacked review PR:
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5278

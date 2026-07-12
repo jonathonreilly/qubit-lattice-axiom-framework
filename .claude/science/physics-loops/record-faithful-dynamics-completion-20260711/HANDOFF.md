@@ -28,8 +28,9 @@ route is the first controlled lattice-spacing limit inside a compact subwedge;
 the expected theorem is an honest ultralocal/trivial limit, which will expose
 the tuning needed for a nontrivial continuum.
 
-Dobrushin uniqueness/gap stacked review PR: pending delivery against the
-spatial DLR accumulation head.
+Dobrushin uniqueness/gap stacked review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5301
+is open against the spatial DLR accumulation head.
 
 Previous branch:
 `physics-loop/record-faithful-dynamics-block20-spatial-thermodynamic-limit-20260712`.

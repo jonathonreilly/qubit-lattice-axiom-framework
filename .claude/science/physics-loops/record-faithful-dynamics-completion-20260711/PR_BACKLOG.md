@@ -17,6 +17,20 @@ next stacked review PR:
 
 No merge is authorized. Independent audit remains authoritative.
 
+The free staggered same-action scalar spectral continuum block is prepared for
+the next stacked review PR:
+
+- base: `physics-loop/record-faithful-dynamics-block12-bdg-flat-band-20260712`
+- head: `physics-loop/record-faithful-dynamics-block13-free-staggered-continuum-20260712`
+- source runner: `PASS=23 FAIL=0`
+- disposition: bounded theorem; independent code/math, claim/Nature,
+  governance, labeling/import, and full current-schema N1--N8 review pass;
+  audit validation seeds exactly five intended candidate dependencies and
+  strict lint has no errors; generated audit/status surfaces are stripped
+- delivery: pending commit/push/PR
+
+No merge is authorized. Independent audit remains authoritative.
+
 The onsite-charge common-Hamiltonian strict-QCA dichotomy is delivered as the
 next stacked review PR:
 

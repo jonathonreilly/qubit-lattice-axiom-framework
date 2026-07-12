@@ -1,12 +1,17 @@
 # Handoff
 
 Current branch:
-`physics-loop/record-faithful-dynamics-block12-bdg-flat-band-20260712`.
-The two-band BdG runner reports `PASS=33 FAIL=0`. Independent code/math,
-claim/import/Nature, governance, labeling, and full N1--N8 review pass at
-bounded strength. Stacked PR #5258 is open. Next, open the controlled continuum campaign on
-one massive free `3+1` staggered two-step scaling family; do not attach SM or
-GR labels until that same-object free transfer/action/CAR limit is controlled.
+`physics-loop/record-faithful-dynamics-block13-free-staggered-continuum-20260712`.
+The first continuum-block runner reports `PASS=23 FAIL=0`. Independent
+code/math, claim/import/Nature, governance, labeling, and full N1--N8 review
+pass at bounded strength. The exact result is a same-action scalar spectral
+spine: `T_2=T_even^dag T_even>0`, the covariance pole equals the stable
+two-step eigenvalue, and an explicit map identifies their eight-dimensional
+solution/eigenspaces. Compact-band energy, covariance, and physical
+quasilocal scales converge at `O(a^2)`. The finite-`a` pole-residue,
+equal-time-CAR metric, and coherent-state Berezin/transfer correlator equality
+remain the next exact bridge. Do not attach SM or GR recovery labels before
+that bridge and the interacting/joint limits are controlled.
 
 The campaign is initialized on
 `physics-loop/admissibility-dynamics-realization-bridge-20260711` from current

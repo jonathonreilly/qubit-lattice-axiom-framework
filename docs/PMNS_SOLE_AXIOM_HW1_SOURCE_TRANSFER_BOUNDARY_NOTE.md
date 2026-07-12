@@ -1,189 +1,350 @@
-# PMNS Baseline `hw=1` Source/Transfer Boundary
+# PMNS `hw=1` Carrier Nonselection and Scalar Source/Transfer Boundary
 
-**Status:** bounded - bounded or caveated result note
-**Claim type:** bounded_theorem
-**Date:** 2026-04-16  
-**Revision:** 2026-05-07 - the runner instantiates the restricted
-`Cl(3)` / `Z^3` `hw=1` packet, computes the projector-resolved identity sector
-operator from joint translation characters, and verifies the resulting
-trivial pack is rejected by the lower-level PMNS closure stack.  
-**Revision:** 2026-05-16 - reframed to make the load-bearing step the
-algebraic identity `sum_i P_i I_3 P_i = sum_i P_i = I_3` on the joint
-character projectors, and added an explicit `Admitted-context inputs` section
-declaring the carrier-construction admission and the lower-level closure
-helper import that were previously implicit.  
-**Script:** `scripts/frontier_pmns_sole_axiom_hw1_source_transfer_boundary.py`
-**Framework baseline:** physical `Cl(3)` local algebra on the `Z^3`
-spatial substrate; the file path keeps its historical name only.
+**Status:** exact boundary theorem on the baseline-framework carrier interface
+**Type:** bounded_theorem
+**Date:** 2026-04-16
+**Revision:** 2026-07-12 — replaces the unsupported claim that the framework
+axioms select the active/passive pair `(I_3,I_3)` with (i) an exact joint-
+commutant classification, (ii) an explicit same-axiom model-separation
+witness for the unfixed scalar normalization, and (iii) a family-wide
+source/transfer rejection theorem that does not require the unit choice.
+**Primary runner:**
+[`scripts/frontier_pmns_sole_axiom_hw1_source_transfer_boundary.py`](../scripts/frontier_pmns_sole_axiom_hw1_source_transfer_boundary.py)
+**Status authority:** independent audit lane only.
 
 ## Question
 
-For the canonical `hw=1` sector operator admitted from the upstream PMNS
-authority chain (see `Admitted-context inputs` below), does the algebraic
-projector resolution on the `Cl(3)` / `Z^3` joint character triplet, followed
-by native source insertion and graph-first forward transport, generate a pack
-that is accepted by the retained PMNS closure stack?
+On the three-dimensional `hw=1` joint-character carrier, what follows for an
+active/passive pair **if** each candidate block is invariant under the three
+restricted translations and the proper-cubic three-cycle? Do the current
+Lattice, Qubit, Admissibility, and Record axioms select the implemented unit
+pair `(I_3,I_3)`, and does the conditional source/transfer boundary depend on
+that normalization?
 
 ## Answer
 
-No.
+The unit pair is **not** selected by the current axiom surface. Within the
+explicit invariant candidate class, the exact result is sharper and
+normalization-independent:
 
-The canonical `hw=1` sector operator on this triplet algebraically reduces to
-the identity, so:
+1. an endomorphism invariant under all three restricted lattice translations
+   and the supplied proper-cubic three-cycle is necessarily `alpha I_3`;
+2. applied separately, the most the symmetry classification gives is
+   `(D_act,D_pass)=(alpha I_3,beta I_3)` — it neither fixes either scalar nor
+   equates them;
+3. the current axioms contain no carrier/source-action map, transfer operator,
+   active/passive sector split, or normalization rule that could select
+   `alpha=beta=1`;
+4. under the explicitly defined response and one-sided-minimal support
+   interfaces, every nonsingular
+   scalar pair produces only scalar multiples of the three basis-source
+   columns and a scalar-weighted cycle frame, and every such pair is rejected
+   by the displayed support criterion.
 
-- the baseline active resolvent is the identity on the `hw=1` triplet
-- the baseline passive resolvent is only a scalar multiple of the identity
-- source insertion through the native site projectors therefore gives only the
-  basis columns `e1,e2,e3`, up to the passive scalar weight
-- graph-first forward transport fixes the ordered frame `E12,E23,E31`
-- but that transport contributes only support/frame information, not nontrivial
-  PMNS value data
+Thus `(I_3,I_3)` remains one valid implementation point in the scalar family,
+but it is not a first-principles consequence. The source/transfer rejection
+boundary survives for the entire invariant family, so the missing
+normalization is no longer load-bearing.
 
-So even this source-inserted transfer attack does not evade the free-profile
-boundary, given the admitted carrier-construction identification.
+## Claim scope and premises
 
-## Admitted-context inputs
+This note proves a bounded exact theorem with four distinct layers.
 
-This note is bounded by two explicit admissions imported from upstream. These
-are not derived inside the restricted packet of this note's runner; the
-verdict scope is bounded accordingly.
+### Framework premise
 
-1. **Carrier-construction admission.**  The identification
+The only supplied physics premise is the current
+[`Lattice + Qubit + Admissibility + Record` axiom memo](MINIMAL_AXIOMS_2026-06-29.md).
+The runner instantiates the one-site `M_2(C) ~= Cl(3,0)` presentation, the
+three `hw=1` lattice characters, and the proper-cubic three-cycle directly.
 
-   ```
-   D_act_hw1 := sum_i P_i  I_3  P_i,
-   D_pass_hw1 := sum_i P_i  I_3  P_i,
-   ```
+The axiom memo also fixes the relevant boundary: Admissibility is not a
+dynamics axiom and does not choose a Hamiltonian or transfer operator. The
+axioms supply no source/action or physical-observable identification. No
+approved primitive is invoked by this theorem.
 
-   i.e. the statement that the active and passive sector operators on the
-   `hw=1` triplet, in the zero-input free configuration, are the
-   projector-resolved identity sector built from the joint character
-   projectors `P_1, P_2, P_3`, is admitted from the upstream PMNS authority
-   chain.  This is the same admission paid for by the sibling note
-   [`PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md`](PMNS_ORIENTED_CYCLE_SELECTION_STRUCTURE_NOTE.md)
-   and explicitly disclaimed by the narrow bridge theorem runner
-   `scripts/frontier_pmns_sole_axiom_free_point_identity_block_2026-05-16.py`,
-   which states: "This runner exercises only finite-dimensional algebra; it
-   does not derive the active-operator construction itself from the sole
-   axiom.  The carrier derivation is the role of the upstream retained hw=1
-   authority chain."  The present note inherits the same carrier admission.
+### Explicit mathematical hypothesis
 
-2. **Lower-level PMNS closure-stack import.**  The retained PMNS closure
-   stack used for the rejection step is imported through
-   `frontier_pmns_lower_level_end_to_end_closure.close_from_lower_level_observables`,
-   which is currently `support`-tier (audited_conditional, see
-   [`PMNS_LOWER_LEVEL_END_TO_END_CLOSURE_NOTE.md`](PMNS_LOWER_LEVEL_END_TO_END_CLOSURE_NOTE.md)).
-   The rejection conclusion ("the canonical hw=1 source/transfer pack is not
-   on a one-sided minimal PMNS class") is closed locally by the
-   `local_one_sided_minimal_pmns_rejection` check in the runner; the closure
-   stack import provides a cross-check, not a load-bearing closure.
+The scalar-shape theorem is conditional on the candidate `hw=1` endomorphism
+being invariant under the restricted translations and the proper-cubic
+three-cycle:
 
-The load-bearing step of this note is the **algebraic** identity in section
-"Exact content" below, not the carrier-construction admission and not the
-closure-stack import.
-
-## Exact content
-
-The restricted packet computes the projector-resolved identity sector
-operator algebraically from the joint character projectors.  It does not
-hard-code `active_block = I3` or `passive_block = I3`; instead the runner
-constructs the projectors `P_i` from `Cl(3)` / `Z^3` data and computes
-`sum_i P_i I_3 P_i` step by step.
-
-### 1. Axiom packet and source projectors
-
-The runner first instantiates `Cl(3)` by Pauli generators
-`gamma_1,gamma_2,gamma_3` and checks
-
-`gamma_i gamma_j + gamma_j gamma_i = 2 delta_ij I`.
-
-It then instantiates the `hw=1` `Z^3` character triplet
-
-`(-1,+1,+1), (+1,-1,+1), (+1,+1,-1)`.
-
-For the three commuting translation involutions `T_x,T_y,T_z`, the native
-source projectors are computed as joint spectral projectors:
-
-`P_chi = prod_a ((I + chi_a T_a) / 2)`.
-
-For the three `hw=1` characters this gives exactly
-
-`P_1 = E11`, `P_2 = E22`, `P_3 = E33`, and
-
-`P_1 + P_2 + P_3 = I3`.
-
-### 2. Identity sector blocks and resolvents
-
-Under the carrier-construction admission named in
-`Admitted-context inputs` above, the zero-input baseline sector operator
-on this triplet is the projector resolution of the identity.
-
-**Load-bearing algebraic identity (Class A):** the runner computes, on the
-projectors `P_i` constructed in section 1,
-
-```
-sum_i P_i I_3 P_i  =  sum_i P_i  =  I_3.
+```text
+[D,T_x]=[D,T_y]=[D,T_z]=0,
+C D C^{-1}=D.
 ```
 
-The first equality uses `P_i I_3 P_i = P_i^2 = P_i` (idempotency of each
-projector).  The second equality is the projector resolution
-`P_1 + P_2 + P_3 = I_3` already verified in section 1.  The runner verifies
-each step (idempotency, mutual orthogonality, projector resolution, and the
-chained identity) numerically rather than asserting the target value.  Under
-the carrier-construction admission, this gives
+This is an explicit mathematical candidate class, not a consequence or a
+maximality theorem extracted from the four axioms. The note does **not** claim
+that the axioms create a physical `D` or assign this transformation type to
+one; the absence of that carrier map is part of the exact nonselection result.
 
-`D_act = D_pass = sum_i P_i I_3 P_i = I_3`.
+### Defined response interface
 
-With the lower-level conventions used by the PMNS closure stack,
+For nonzero probe parameters and away from resolvent poles, the implemented
+PMNS response maps are used as explicit definitions:
 
-`R_act = (I - lambda_act (D_act - I))^-1 = I3`,
+```text
+R_act(D)  = [I_3 - lambda_act (D-I_3)]^{-1},
+R_pass(D) = [I_3 - lambda_pass D]^{-1}.
+```
 
-and
+These asymmetric definitions are an interface for the family theorem, not
+claimed consequences of the four axioms.
 
-`R_pass = (I - lambda_pass D_pass)^-1 = (1 - lambda_pass)^-1 I3`.
+### Defined one-sided-minimal support interface
 
-Source insertion through the rank-one projectors gives the columns
+The local rejection statement also uses an explicit finite support interface,
+not an axiom-derived physical law:
 
-`R_act e_i = e_i`,
+- an active block is support-admissible when a simultaneous permutation of
+  its rows and columns has the six-entry mask `supp(I_3+C)`;
+- a passive block is support-admissible when its mask is one of the three
+  cyclic monomial masks `supp(I_3)`, `supp(C)`, or `supp(C^2)`;
+- a pair is one-sided minimal when exactly one side has active support and the
+  other side has cyclic monomial support.
 
-and
+The runner implements these permutation-orbit/cyclic-mask definitions locally
+and includes positive and negative controls. “Rejected” below means rejected
+by this displayed finite interface; it is not a claim that the four axioms
+derive the PMNS classifier or the response convention.
 
-`R_pass e_i = (1 - lambda_pass)^-1 e_i`.
+No observed PMNS angles, phases, masses, fitted coordinates, literature
+values, new axioms, or new framework primitives enter.
 
-Reconstructing the blocks from these response columns recovers exactly
-`(I3, I3)`.
+## Derivation
 
-### 3. Transfer frame and closure rejection
+### 1. The `hw=1` character carrier
 
-Forward cycle transport of the native projectors gives the graph-first ordered
-frame:
+In the ordered basis for the three weight-one lattice characters,
 
-`E11 C = E12`, `E22 C = E23`, `E33 C = E31`.
+```text
+chi_1=(-1,+1,+1),
+chi_2=(+1,-1,+1),
+chi_3=(+1,+1,-1),
+```
 
-This is support/frame data only. The runner checks locally that the
-projector-derived free pack is not a one-sided minimal PMNS class: both
-sector blocks are diagonal monomial blocks and neither has the active support
-`I + C`. The
-[PMNS lower-level closure stack](PMNS_LOWER_LEVEL_END_TO_END_CLOSURE_NOTE.md)
-is then invoked as a live consistency check and rejects the same pack for the
-same reason.
+the restricted translations are
+
+```text
+T_x=diag(-1,+1,+1),
+T_y=diag(+1,-1,+1),
+T_z=diag(+1,+1,-1).
+```
+
+Their joint spectral projectors are the rank-one matrices
+
+```text
+P_1=E_11,  P_2=E_22,  P_3=E_33,
+P_1+P_2+P_3=I_3.
+```
+
+The proper-cubic rotation about the `(1,1,1)` axis restricts to the cyclic
+matrix `C`, which transitively permutes these three character lines. The runner
+constructs every object above from the character table and verifies the
+projector identities rather than importing a PMNS helper.
+
+### 2. Joint-commutant theorem
+
+Let `D=(D_ij)` commute with all three translations. In the character basis,
+
+```text
+([D,T_a])_ij = (chi_j(a)-chi_i(a)) D_ij.
+```
+
+Every pair of distinct joint characters is separated by at least one
+translation, so `D_ij=0` for `i != j`. Therefore the translation commutant is
+the diagonal algebra
+
+```text
+Cent(T_x,T_y,T_z)=span_C{P_1,P_2,P_3}.
+```
+
+Independently, `Cent(C)=span_C{I_3,C,C^2}`. Requiring a diagonal `D` also to
+commute with the transitive cycle forces its three diagonal entries to be
+equal. Hence
+
+```text
+Cent(T_x,T_y,T_z,C) = C I_3.
+```
+
+For Hermitian blocks the scalar is real; positivity would only add
+`alpha >= 0`. Applied separately to the two response sectors,
+
+```text
+D_act=alpha I_3,  D_pass=beta I_3.
+```
+
+Nothing in this calculation supplies a sector-exchange map, so it does not
+imply `alpha=beta`.
+
+The runner verifies the result a second way by constructing the full linear
+commutator constraint matrix. It obtains translation-commutant dimension `3`,
+cycle-commutant dimension `3`, and joint-commutant dimension `1`, with the
+joint nullspace exactly spanned by `I_3`.
+
+### 3. Why projector resolution does not select the unit
+
+The translation-projector map is the dephasing conditional expectation
+
+```text
+E_T(X) = sum_i P_i X P_i.
+```
+
+For a scalar seed,
+
+```text
+E_T(alpha I_3) = alpha sum_i P_i = alpha I_3.
+```
+
+The old calculation
+
+```text
+sum_i P_i I_3 P_i = I_3
+```
+
+is the special case `alpha=1`: it evaluates the already supplied algebra unit.
+It does not derive a physical active/passive carrier operator or its
+normalization.
+
+Adding the `C_3` average makes the type distinction even clearer:
+
+```text
+E_G(X) = (1/3) sum_{k=0}^2 C^k E_T(X) C^{-k}
+       = (Tr X / 3) I_3.
+```
+
+Symmetry fixes the scalar **shape**; the input trace fixes the value. A theorem
+such as `Tr D=3`, a unital carrier functor, or a separately derived physical
+normalization would select `I_3`, but none is present in the current premise
+surface.
+
+### 4. Formal same-premise expansion argument
+
+The nonselection statement is not inferred from missing prose alone. In the
+formal premise signature, the four axioms constrain the lattice, one-site
+possibility algebra, nearest-neighbor admissibility, records, and finite record
+readout. They contain no symbols `D_act` or `D_pass`, no map into
+`End(H_hw1)`, and no equation fixing a carrier trace or unit normalization.
+
+Take any model of those four axioms and adjoin the displayed finite `hw=1`
+character/rotation carrier as the explicit mathematical hypothesis of this
+note. Expanding that same premise structure by either of the following
+assignments cannot change the truth of any axiom sentence, because the new
+carrier symbols occur in none of those sentences:
+
+```text
+M_1:   D_act=D_pass=I_3,
+M_1/2: D_act=D_pass=(1/2) I_3.
+```
+
+Both pairs are state-independent positive Hermitian contractions, commute
+with every named carrier symmetry, and preserve active/passive equality. They
+differ only in an added symbol and normalization not constrained by the
+premise signature. Thus the axioms plus the named invariant `hw=1` carrier
+data cannot entail the unit pair.
+
+This is a narrow model-separation result about the `3 x 3` carrier-construction
+map. The runner verifies the syntactic boundary in the current axiom source
+and checks that both displayed expansions satisfy Hermiticity, positivity,
+contraction, and every explicit carrier invariance. It does not claim to
+encode a complete infinite-lattice axiom model. This is not a claim that no
+future carrier theorem can exist.
+
+### 5. Scalar-family response theorem
+
+For the complete invariant pair and away from poles,
+
+```text
+R_act(alpha)  = [1-lambda_act(alpha-1)]^{-1} I_3,
+R_pass(beta)  = [1-lambda_pass beta]^{-1} I_3.
+```
+
+Source insertion through the joint-character lines therefore gives
+
+```text
+c_i^act  = r_act e_i,
+c_i^pass = r_pass e_i.
+```
+
+Inverting these response-column matrices with the implemented reconstruction
+formulas returns `alpha I_3` and `beta I_3` exactly. The runner verifies this
+over a deterministic grid of unequal/equal, zero/unit/nonunit scalar pairs.
+
+Forward graph transport contributes only
+
+```text
+P_1 C=E_12,  P_2 C=E_23,  P_3 C=E_31,
+```
+
+with any source amplitude remaining a common scalar. It supplies the ordered
+cycle frame but no relative cycle values.
+
+Finally, a scalar block remains diagonal under every simultaneous
+permutation, so it never has the six-entry active support mask of `I_3+C`. A
+nonzero scalar block has the allowed identity monomial mask; a zero scalar
+block has empty support. Therefore neither member of a scalar pair has active
+support, so no nonsingular scalar pair can realize the displayed
+one-sided-minimal support interface.
+
+At
+
+```text
+alpha=1+1/lambda_act  or  beta=1/lambda_pass,
+```
+
+the corresponding resolvent is undefined, so there is no valid response pack
+rather than a PMNS escape.
+
+## Falsifiers and boundary
+
+The theorem would be moved by any one of the following:
+
+1. a retained carrier/source-action theorem that constructs `D_act,D_pass`
+   from the four axioms and assigns their transformation type;
+2. a retained normalization theorem fixing `alpha` and `beta` (and, if needed,
+   a sector-exchange theorem equating them);
+3. a derived non-scalar source or state tensor that breaks at least one of the
+   explicit translation/`C_3` invariances.
+
+The runner includes the last possibility as a negative control:
+`I_3+epsilon C` has the desired `I_3+C` support shape but fails translation
+invariance. This shows exactly where nontrivial PMNS support can enter and why
+it is outside the zero-input invariant family.
+
+This note does **not** claim:
+
+- that `I_3` is impossible or physically wrong;
+- that every lattice or PMNS operator must be scalar;
+- that the axioms forbid a future carrier, kinetic, source, or normalization
+  derivation;
+- that the implemented asymmetric response formulas are axiom-derived;
+- full PMNS value, mass, angle, phase, or selector closure;
+- rejection of any route carrying an explicit non-scalar source or
+  symmetry-breaking input.
+
+For downstream runner compatibility, the paired script retains the historical
+function name `sole_axiom_hw1_source_transfer_pack` as an alias of
+`conditional_unit_hw1_source_transfer_pack`. Its docstring and returned
+`normalization_status` metadata identify it explicitly as the conditional
+`alpha=beta=1` member of the family. The revised derivation never calls that
+wrapper.
 
 ## Consequence
 
-This strengthens the bounded PMNS boundary statement, under the explicit
-carrier-construction admission named above:
+The earlier load-bearing sentence must be replaced:
 
-- not only do the lower-level response profiles stay trivial on the projector-
-  resolved free pack
-- even the canonical source-inserted / graph-first-transferred `hw=1` pack
-  stays trivial
+```text
+Unsupported: the framework axioms therefore give exactly (I_3,I_3).
 
-So the remaining blocker is not "we forgot to insert sources" or "we forgot to
-use the graph-first transfer frame." Those routes are closed on the current
-exact bank, conditional on the admitted carrier-construction identification.
-A genuinely baseline-framework derivation of the carrier construction itself is the
-role of the upstream retained `hw=1` authority chain and is out of the
-restricted scope of this note.
+Exact boundary: every jointly translation/C_3-invariant hw=1 block is scalar;
+the axioms do not select its normalization, while the implemented PMNS
+source/transfer interface rejects the entire nonsingular scalar pair family.
+```
+
+This closes the audited definition/renaming defect without pretending that an
+absent carrier law has been derived. The remaining scientific target is a
+non-scalar carrier/source theorem, not another evaluation of the identity
+projector sum.
 
 ## Verification
 
@@ -191,8 +352,5 @@ restricted scope of this note.
 python3 scripts/frontier_pmns_sole_axiom_hw1_source_transfer_boundary.py
 ```
 
-Expected:
-
-```text
-PASS=37 FAIL=0
-```
+The runner is deterministic, imports no PMNS helper, and exits nonzero on any
+failed check. Its result line reports the exact PASS/FAIL count.

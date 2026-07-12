@@ -45,18 +45,26 @@ MIN_DELIVERY_BYTES = 200
 
 
 def sh(cmd: list[str], timeout: int | None = None) -> subprocess.CompletedProcess:
+    proc = subprocess.Popen(
+        cmd,
+        cwd=REPO_ROOT,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        start_new_session=True,
+    )
     try:
-        return subprocess.run(
-            cmd,
-            cwd=REPO_ROOT,
-            capture_output=True,
-            text=True,
-            timeout=timeout,
+        stdout, stderr = proc.communicate(timeout=timeout)
+        return subprocess.CompletedProcess(cmd, proc.returncode, stdout, stderr)
+    except subprocess.TimeoutExpired:
+        try:
+            os.killpg(proc.pid, signal.SIGKILL)
+        except ProcessLookupError:
+            pass
+        stdout, stderr = proc.communicate()
+        return subprocess.CompletedProcess(
+            cmd, 124, stdout or "", stderr or f"timed out after {timeout}s"
         )
-    except subprocess.TimeoutExpired as exc:
-        stdout = exc.stdout.decode() if isinstance(exc.stdout, bytes) else (exc.stdout or "")
-        stderr = exc.stderr.decode() if isinstance(exc.stderr, bytes) else (exc.stderr or "")
-        return subprocess.CompletedProcess(cmd, 124, stdout, stderr or f"timed out after {timeout}s")
 
 
 def load_rows() -> dict[str, dict]:
@@ -317,6 +325,18 @@ def wait_workers(jobs: list[dict], stall_minutes: int = 45) -> None:
                 job["log_handle"].close()
 
 
+def terminate_workers(jobs: list[dict]) -> None:
+    for job in jobs:
+        if job["proc"].poll() is None:
+            try:
+                os.killpg(job["proc"].pid, signal.SIGKILL)
+            except ProcessLookupError:
+                pass
+            job["returncode"] = job["proc"].wait()
+        if not job["log_handle"].closed:
+            job["log_handle"].close()
+
+
 def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     cid = job["cid"]
     base = {"cid": cid, "pass": job["pass"]}
@@ -520,16 +540,24 @@ def apply_serialized(
     jobs: list[dict],
     report: list[dict],
     retries: int = 3,
-) -> bool:
+) -> tuple[bool, set[str]]:
     deliveries: dict[tuple[str, int], tuple[dict, dict]] = {}
     invalid_claims: set[str] = set()
+    compute_skips: set[str] = set()
     for job in sorted(jobs, key=lambda item: (item["cid"], item["pass"])):
         envelope, result = finalize_worker(job)
         if envelope is None:
             report.append(result)
-            invalid_claims.add(job["cid"])
+            if result["result"] == "compute_required":
+                compute_skips.add(job["cid"])
+            else:
+                invalid_claims.add(job["cid"])
             continue
         deliveries[(job["cid"], job["pass"])] = (job, envelope)
+
+    for cid in compute_skips:
+        for key in [key for key in deliveries if key[0] == cid]:
+            deliveries.pop(key, None)
 
     fresh_critical = {
         job["cid"]
@@ -539,6 +567,8 @@ def apply_serialized(
     }
     for cid in fresh_critical:
         available = {seat for delivery_cid, seat in deliveries if delivery_cid == cid}
+        if cid in compute_skips:
+            continue
         if available != {1, 2}:
             invalid_claims.add(cid)
             for seat in sorted(available):
@@ -556,8 +586,8 @@ def apply_serialized(
         ok, result = apply_one_serialized(job, envelope, retries)
         report.append(result)
         if not ok:
-            return False
-    return not invalid_claims
+            return False, compute_skips
+    return not invalid_claims, compute_skips
 
 
 def selected_batch(targets: list[dict], max_workers: int) -> list[dict]:
@@ -616,6 +646,7 @@ def main() -> int:
         or f"/tmp/audit_batch_{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')}_{uuid.uuid4().hex[:8]}"
     )
     report: list[dict] = []
+    session_skipped: set[str] = set()
     if not args.dry_run:
         workdir.mkdir(parents=True, exist_ok=False)
 
@@ -626,6 +657,17 @@ def main() -> int:
         except ValueError as exc:
             print(str(exc))
             return 2
+        existing_disagreements = sorted(
+            cid
+            for cid in scope
+            if (rows.get(cid, {}).get("cross_confirmation") or {}).get("status")
+            in {"disagreement", "three_way_disagreement", "disagreement_irresolvable"}
+        )
+        for cid in existing_disagreements:
+            if cid not in session_skipped:
+                report.append({"cid": cid, "result": "judicial_panel_required"})
+                session_skipped.add(cid)
+        scope.difference_update(session_skipped)
         targets, skipped = compute_targets(scope, rows)
         print(f"== round {round_no}: {len(targets)} dep-ready targets, {len(skipped)} skipped")
         for line in skipped:
@@ -648,33 +690,39 @@ def main() -> int:
             break
         jobs: list[dict] = []
         launch_blocked = False
-        for row in batch:
-            for pass_no in passes_for_row(row):
-                try:
-                    jobs.append(
-                        launch_worker(row, rows, pass_no, workdir, args.runner_timeout_sec)
-                    )
-                except ValueError as exc:
-                    launch_blocked = True
-                    report.append({
-                        "cid": row["claim_id"],
-                        "pass": pass_no,
-                        "result": "prompt_transport_blocked",
-                        "detail": str(exc),
-                    })
-                except Exception as exc:
-                    launch_blocked = True
-                    report.append({
-                        "cid": row["claim_id"],
-                        "pass": pass_no,
-                        "result": "worker_launch_failed",
-                        "detail": f"{type(exc).__name__}: {exc}",
-                    })
+        try:
+            for row in batch:
+                for pass_no in passes_for_row(row):
+                    try:
+                        jobs.append(
+                            launch_worker(row, rows, pass_no, workdir, args.runner_timeout_sec)
+                        )
+                    except ValueError as exc:
+                        launch_blocked = True
+                        report.append({
+                            "cid": row["claim_id"],
+                            "pass": pass_no,
+                            "result": "prompt_transport_blocked",
+                            "detail": str(exc),
+                        })
+                    except Exception as exc:
+                        launch_blocked = True
+                        report.append({
+                            "cid": row["claim_id"],
+                            "pass": pass_no,
+                            "result": "worker_launch_failed",
+                            "detail": f"{type(exc).__name__}: {exc}",
+                        })
+        except BaseException:
+            terminate_workers(jobs)
+            raise
         if not jobs:
             break
         print(f"   launched {len(jobs)} detached workers; waiting (stall {args.stall_minutes}m)")
         wait_workers(jobs, args.stall_minutes)
-        if not apply_serialized(jobs, report, args.push_retries) or launch_blocked:
+        applied_ok, compute_skips = apply_serialized(jobs, report, args.push_retries)
+        session_skipped.update(compute_skips)
+        if not applied_ok or launch_blocked:
             break
         (workdir / "report.jsonl").write_text(
             "".join(json.dumps(item, sort_keys=True) + "\n" for item in report),

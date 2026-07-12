@@ -23,7 +23,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 420 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2622 |
+| unaudited | 2621 |
 | audit_in_progress | 29 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -37,6 +37,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | 1 |
 | `decoration_under_graph_first_su3_integration_note` | 8 |
 | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | 1 |
+| `decoration_under_koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | 1 |
 | `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | 1 |
 | `decoration_under_linear_response_true_kubo_note` | 1 |
 | `decoration_under_mirror_mutual_information_chokepoint_note` | 1 |
@@ -48,20 +49,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audit_in_progress` | 29 |
 | `audited_clean` | 558 |
 | `audited_conditional` | 101 |
-| `audited_decoration` | 22 |
+| `audited_decoration` | 23 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2972 |
+| `unaudited` | 2971 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2054 |
-| `decoration` | 26 |
+| `decoration` | 27 |
 | `meta` | 357 |
 | `no_go` | 472 |
 | `open_gate` | 196 |
-| `positive_theorem` | 649 |
+| `positive_theorem` | 648 |
 
 | criticality | count |
 |---|---:|
@@ -814,6 +815,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12` | decoration | ~~audited_decoration~~ | `decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | cross_family | codex-gpt-5.6 | A | `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` |
 | `ew_current_fierz_channel_decomposition_note_2026-05-01` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02` | decoration | ~~audited_decoration~~ | `decoration_under_koide_dweh_cyclic_compression_note_2026-04-18` | cross_family | codex-gpt-5.5 | A | `koide_dweh_cyclic_compression_note_2026-04-18` |
+| `koide_mru_demotion_note_2026-04-20` | decoration | ~~audited_decoration~~ | `decoration_under_koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` | cross_family | codex-gpt-5.6 | A | `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19` |
 | `kubo_range_of_validity_note` | decoration | ~~audited_decoration~~ | `decoration_under_linear_response_true_kubo_note` | cross_family | codex-gpt-5.5 | A | `linear_response_true_kubo_note` |
 | `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | cross_family | codex-gpt-5.6 | A | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` |
 | `left_handed_charge_matching_note` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
@@ -6017,6 +6019,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The stationarity equations imply rho_plus^2 = rho_perp^2, so the constraint fixes both squares to E_tot/2 and the defined ratio kappa equals 2.  _(class `A`)_
 - **chain closes:** True — The Lagrange equations, positivity, constraint substitution, and boundary divergence establish the unique maximum directly. No physical charged-lepton, SO(2)-quotient, observable-readout, or operator-side identification is part of the audited claim.
 - **rationale:** The source has been narrowed to a self-contained formal constrained-extremum theorem, and its proof is correct. The runner performs symbolic differentiation, constraint arithmetic, finite numerical checks, and a weighted-functional negative control; it imports no external value or physical premise. Although some symbolic assertions instantiate the expected solution directly, the note's analytic Lagrange and boundary argument independently closes the result.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `koide_mru_demotion_note_2026-04-20`
+
+- **Note:** [`KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md`](../../docs/KOIDE_MRU_DEMOTION_NOTE_2026-04-20.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Route-local algebraic demotion: generic SO(2) phase rotations on Herm_circ(3) are not spectral symmetries; the exact kappa bridge is only a corollary of the retained-bounded spectrum-operator parent, while MRU and block-total framing are not independent closure routes here.
+- **audit_status:** ~~audited_decoration~~
+- **effective_status:** `decoration_under_koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`  (reason: `decoration_parent_retained`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00126-koide_mru_demotion_note_2026`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because tr(H^3) and det(H) retain cos(3 arg b), a generic continuous phase rotation b -> e^{i theta}b changes spectrum-native scalar observables, so the displayed spectral-observable Path A does not derive the SO(2) quotient.  _(class `A`)_
+- **chain closes:** False — The scoped algebra is correct, but no independent physical theorem closes: the bridge corollary is inherited from one retained-bounded parent and the remaining contribution is standard Hermitian-circulant algebra supporting a route-local status demotion.
+- **rationale:** The runner genuinely computes the corrected cubic trace, determinant-sensitive SO(2) obstruction, and exact Fourier residual identity; it does not hard-code the contested formulas, and it contains no external-comparator checks. The source carefully limits the obstruction to the displayed spectral-observable route and does not promote block-total Frobenius support or derive spectrum-side Q = 2/3. The resulting packet is algebraically sound but reduces to one retained-bounded bridge parent plus standard mathematics and status bookkeeping, so it is decoration-grade rather than an independent theorem.
+- **decoration parent:** `koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19`
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

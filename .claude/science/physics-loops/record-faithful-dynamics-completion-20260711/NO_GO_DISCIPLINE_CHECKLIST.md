@@ -1392,7 +1392,7 @@ triggered.
 
 The binding full N1--N8 packet is
 [`TWO_BAND_BDG_STRICT_TIME_FLAT_SPECTRUM_AND_CUBIC_SCALAR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md`, section 7](../../../../docs/TWO_BAND_BDG_STRICT_TIME_FLAT_SPECTRUM_AND_CUBIC_SCALAR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md#7-negative-claim-discipline-n1--n8).
-It contains the eight marked N1 routes, ten-pair N2 table, actual-phrase N3
+It contains the seven marked N1 routes, fifteen-pair N2 table, actual-phrase N3
 scan, per-citation N4 residual table, N5 resolution matrix, N6 path/status
 table and primitive check, authority-cited N7 steelman, and path/status/mechanism
 N8 echo table.

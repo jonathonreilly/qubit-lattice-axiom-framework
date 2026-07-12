@@ -349,38 +349,45 @@ nearest-neighbor scalar one-mode ordinary proper-cubic BdG class.
 | use spinless one-mode nearest-neighbor cubic pairing | `ATTEMPTED` | ordinary scalar cubic covariance plus antisymmetry kills pairing, and flat normal spectrum forces `J=0` | current source equations (13)--(15), lines 220--255; runner `C01--C06` |
 | drop ordinary scalar cubic symmetry | `ATTEMPTED` | succeeds as a positive scope guard: the one-dimensional Kitaev involution is strict at radius at most one | current source equation (16), lines 265--275; runner `D01--D04` |
 | enlarge the carrier or use spinorial cubic symmetry | `ATTEMPTED` | succeeds as a positive scope guard on the even/quadratic algebra; it does not falsify the two-band theorem | current source lines 277--290; runner `F01--F06` |
-| use a multiband, interacting, time-dependent, partitioned, or quasilocal flow | `ATTEMPTED` | not classified; these routes are explicitly outside the negative claim and remain open | current source lines 291--306 and section 8 |
 
-The route count is eight. No route is marked `RULED OUT BY PRIOR`; the exact
+The route count is seven. No route is marked `RULED OUT BY PRIOR`; the exact
 negative authority is proved self-containedly in this cycle, while prior notes
-only locate the question.
+only locate the question. Multiband, interacting, time-dependent, partitioned,
+and quasilocal alternatives are untested outside-class routes recorded in N5
+and N7, not mislabeled as attempted routes.
 
 ### N2 -- open-condition independence
 
-Collapse the scope to five conditions:
+Collapse the scope to six conditions:
 
 - `C1`: a torus-Hermitian `2 x 2` finite-Laurent, time-independent generator;
 - `C2`: exact finite support at one supplied nonzero time on the infinite lattice;
 - `C3`: a separately supplied CAR/Nambu realization for the BdG reading;
 - `C4`: one spinless mode, nearest-neighbor range, and an ordinary scalar
   proper-cubic onsite action for the minimal corollary;
-- `C5`: a physical carrier selector and continuum convergence topology.
+- `C5`: a physical carrier selector;
+- `C6`: a continuum convergence topology.
 
 | pair | first closes second? | second closes first? | independent? |
 |---|---|---|---|
 | `C1,C2` | no: a generator class does not grant strictness | no: a strict tick need not be an exponential of `C1` | yes |
 | `C1,C3` | no: matrix Laurent data do not supply CAR | no: CAR does not force two bands or finite range | yes |
 | `C1,C4` | no: the general theorem has no cubic scalar action | no: `C4` does not fix a generator or spectrum | yes |
-| `C1,C5` | no: a supplied matrix is not physically selected | no: a selector/topology need not choose `C1` | yes |
+| `C1,C5` | no: a supplied matrix is not physically selected | no: a selector need not choose `C1` | yes |
+| `C1,C6` | no: a generator class does not choose convergence | no: a topology need not choose `C1` | yes |
 | `C2,C3` | no: strict matrix support does not supply CAR | no: CAR does not grant strict time evolution | yes |
 | `C2,C4` | no: strictness does not impose the minimal carrier | no: the minimal carrier can have dispersive tails | yes |
-| `C2,C5` | no: strictness does not select a continuum law | no: a continuum law may be quasilocal | yes |
+| `C2,C5` | no: strictness does not select the physical carrier | no: a selector may choose a nonstrict flow | yes |
+| `C2,C6` | no: strictness does not choose continuum convergence | no: a continuum topology may allow quasilocal flow | yes |
 | `C3,C4` | no: general CAR allows larger representations | no: the minimal representation still needs a CAR bridge | yes |
-| `C3,C5` | no: CAR does not select the realized carrier | no: a continuum selector could choose another category | yes |
-| `C4,C5` | no: the minimal class is not physically selected | no: continuum control does not force one scalar mode | yes |
+| `C3,C5` | no: CAR does not select the realized carrier | no: a selector could choose another category | yes |
+| `C3,C6` | no: CAR supplies no convergence theorem | no: a topology need not use CAR | yes |
+| `C4,C5` | no: the minimal class is not physically selected | no: a selector does not force one scalar mode | yes |
+| `C4,C6` | no: the minimal class supplies no topology | no: continuum control does not force one scalar mode | yes |
+| `C5,C6` | no: selecting a carrier proves no convergence | no: convergence does not select the realized carrier | yes |
 
 No condition collapses into another. The theorem closes `C1+C2`; the cubic
-corollary adds `C3+C4`; `C5` stays open.
+corollary adds `C3+C4`; `C5` and `C6` stay independently open.
 
 ### N3 -- hidden-condition scan
 
@@ -394,7 +401,7 @@ corollary adds `C3+C4`; `C5` stays open.
 
 The scan found no remaining `we assume`, `by construction`, `as is standard`,
 `framework provides`, `bridge context`, `background`, `naturally`, `obviously`,
-or `standard QFT` phrase carrying hidden claim weight.
+`standard QFT`, or `canonical` phrase carrying hidden claim weight.
 
 ### N4 -- residual matching
 
@@ -417,7 +424,7 @@ closed.
 | one two-qubit spin edge | yes | six-dimensional parity-preserving class; no CAR identification |
 | one spinless CAR mode/site, nearest-neighbor cubic block | yes | pairing killed and strict common-generator flow onsite only |
 | arbitrary two-band Laurent momentum block | yes | strict once iff flat spectrum iff strict all times |
-| lattice-wide two-band Gaussian automorphism | conditional | finite Laurent lift is strict only after CAR/Nambu canonical data are supplied |
+| lattice-wide two-band Gaussian automorphism | conditional | finite Laurent lift is strict only after the CAR/Nambu carrier and particle-hole data are supplied |
 | `4 x 4` or larger momentum block | no | open; no isolated-time claim |
 | interacting/multibody full CAR or qubit algebra | no | open; no no-go claim |
 | physical lattice process / Record formation | no | open; no selection or occurrence claim |

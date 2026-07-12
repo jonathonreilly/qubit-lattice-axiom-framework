@@ -180,7 +180,7 @@ and continuum map remain supplied or open.
 
 - A supplied `2 x 2` torus-Hermitian finite-Laurent generator and nonzero real
   time for the matrix theorem.
-- Separately, a supplied spinless one-mode CAR/Nambu carrier, canonical
+- Separately, a supplied spinless one-mode CAR/Nambu carrier, supplied
   particle-hole convention, scalar onsite proper-cubic action, and
   nearest-neighbor range for the minimal cubic corollary.
 - The literal endpoint-symmetric parity-even two-qubit density is classified

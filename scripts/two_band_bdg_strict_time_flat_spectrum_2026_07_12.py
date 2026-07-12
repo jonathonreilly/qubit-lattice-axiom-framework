@@ -333,6 +333,7 @@ def main():
             phase = np.trace(target_lift.conj().T @ product) / 16
             projective_errors.append(np.linalg.norm(product - phase * target_lift))
             projective_errors.append(abs(abs(phase) - 1))
+            projective_errors.append(abs(phase ** 2 - 1))
             cocycles[(tuple(left.reshape(-1)), tuple(right.reshape(-1)))] = phase
     check("F05", max(projective_errors) < 2e-11,
           "the 24 intertwiners close projectively, so conjugation is an honest action on the even/quadratic algebra")

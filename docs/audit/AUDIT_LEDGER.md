@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 97 |
 | **retained_no_go** | 40 |
-| **retained_bounded** | 398 |
+| **retained_bounded** | 399 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2699 |
+| unaudited | 2698 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 521 |
+| `audited_clean` | 522 |
 | `audited_conditional` | 79 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3049 |
+| `unaudited` | 3048 |
 
 | claim_type | count |
 |---|---:|
@@ -593,6 +593,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_no_signaling_audit` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | B | - |
 | `teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_poisson_resource_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `teleportation_resource_fidelity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `teleportation_retained_axis_operator_algebra_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `third_grown_family_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
 | `third_grown_family_complex_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -9048,6 +9049,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner constructs the Poisson-coupled two-species Hamiltonian, solves the ground state, traces to the logical taste qubits, and computes Bell overlap, fixed-protocol teleportation fidelity, CHSH, purity, and negativity rather than reading those quantities from another note. Within the explicitly bounded grid and ordinary quantum-state teleportation scope, the reported parameter-window conclusion follows.
 - **rationale:** The source note makes a bounded, non-uniform numerical claim and the supplied runner performs the load-bearing computation from instantiated lattice, Poisson, Hamiltonian, ground-state, partial-trace, and teleportation-resource calculations. The code does not merely print constants, import the contested result from another note, or tune against an external comparator. The clean verdict is limited to the stated small sweep and does not promote matter transport, FTL signaling, or a uniform theorem over all parameters.
 - **auditor confidence:** medium
+
+### `teleportation_resource_fidelity_note`
+
+- **Note:** [`TELEPORTATION_RESOURCE_FIDELITY_NOTE.md`](../../docs/TELEPORTATION_RESOURCE_FIDELITY_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Ordinary single-qubit state teleportation with an arbitrary supplied physical two-qubit resource density matrix, ideal Bell measurement, ideal two-bit record, and the fixed Z^z X^x correction convention; the audited result is the exact average-fidelity formula and its fixed-frame 2/3 threshold, not preparation dynamics, protocol noise, local-frame optimization, field-theoretic communication, or matter transport.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00266-teleportation_resource_fidel`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the fixed Bell-basis measurement and fixed Pauli corrections, Bell-basis coherences cancel after summing the four records, yielding the Pauli channel with entanglement fidelity <Phi+|rho_RB|Phi+> and therefore F_avg=(1+2<Phi+|rho_RB|Phi+>)/3.  _(class `A`)_
+- **chain closes:** True — Bell-character orthogonality removes off-diagonal Bell coherences and leaves a Pauli channel whose identity-error probability is the Phi+ overlap; the standard qubit-channel relation then gives the stated formula and threshold. The runner independently constructs the corrected channel and normalized Choi matrix and agrees with the Bell-overlap prediction to numerical precision.
+- **rationale:** The load-bearing result is a genuine finite-dimensional algebraic closure for the explicitly fixed protocol, not a definition, relabeling, tuned numerical match, or external comparison. The runner performs the Bell projection, partial trace, correction, channel action, and Choi construction rather than merely printing the claimed formula, and all six acceptance gates pass. The source keeps every broader physical interpretation outside the audited claim.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `teleportation_retained_axis_operator_algebra_closure_note`
 

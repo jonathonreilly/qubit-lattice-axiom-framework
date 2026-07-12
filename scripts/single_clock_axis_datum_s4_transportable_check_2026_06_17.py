@@ -12,27 +12,29 @@ computed the "sharpened pin": a single per-axis Z_2 boundary-condition datum
 (antiperiodic-tau / periodic-space) breaks W exactly, and named it the minimal
 axis-selecting input.
 
-This runner SHARPENS that pin. It shows the antiperiodic-axis DATUM is itself
-transportable around all four axes by the staggered signed-permutation
-automorphism group: the adjacent transpositions W_{a,a+1} = P_{a<->a+1} .
-diag((-1)^{x_a x_{a+1}}) each (i) preserve the periodic staggered hop exactly
-and (ii) map the antiperiodic-axis-a configuration exactly onto the
-antiperiodic-axis-(a+1) configuration. These transpositions generate S_4 acting
-transitively on the four axes. Hence the per-axis Z_2 datum selects the
-evolution axis ONLY relative to an already-privileged axis -- it is not itself a
-non-transportable axis supplier. The reality/CPT structure is likewise
-W-inert (block [R]), confirming that this tested grading carries no axis label.
+This runner SHARPENS that pin on its L=(4,4,4,4), time-first, m=0.3 surface.
+For each adjacent pair it constructs
+W_{a,a+1} = P_{a<->a+1} . diag((-1)^{x_a x_{a+1}}) and checks that the map
+(i) preserves the periodic staggered hop exactly and (ii) maps the
+antiperiodic-axis-a configuration exactly onto the
+antiperiodic-axis-(a+1) configuration. The underlying coordinate swaps
+generate S_4 acting transitively on the four axis labels. Hence the per-axis
+Z_2 datum selects the evolution axis ONLY relative to an already-privileged
+axis on that finite surface -- it is not itself a non-transportable axis
+supplier there. The sublattice-parity grading is likewise W-inert (block [R]),
+confirming that this tested grading carries no axis label.
 
 Block tags: [S] baseline exchange certificate; [T] S_4 transitivity of the
 antiperiodic-axis datum (the new load-bearing result); [REST] restoration /
-falsification legs; [R] reality/CPT W-inertness.
+falsification legs; [R] realness and sublattice-parity W-inertness.
 
 All legs are class-A finite-dimensional exact linear algebra. Deterministic,
 no RNG, runtime well under one minute. Convention note: the absolute
 break-magnitude of a single-axis antiperiodic flip is hop-normalization
-dependent; every load-bearing assertion below is a CONVENTION-INDEPENDENT
-exact-zero (transport / restoration / preservation) or a strict nonzero
-(non-triviality / break) result.
+dependent; every load-bearing assertion below is classified by an exact-zero
+(transport / restoration / preservation) or a strict nonzero
+(non-triviality / break) result. No alternate staggered-phase convention is
+tested.
 """
 from __future__ import annotations
 
@@ -113,10 +115,10 @@ def r(A):
 
 # --------------------------------------------------------------------------
 # [S] baseline exchange certificate (recomputed, with the no-sign falsifier)
-#     Cubic-symmetric block (every axis pair equal-extent) so the full S_4 of
-#     signed-permutation automorphisms is well-defined.
+#     On the tested equal-extent block, each checked coordinate swap maps the
+#     site set to itself.
 # --------------------------------------------------------------------------
-L4 = (4, 4, 4, 4)                       # even cubic-symmetric block, N = 256
+L4 = (4, 4, 4, 4)                       # tested block, N = 256
 Mper, sites, idx = build_staggered(L4, [1, 1, 1, 1])
 W01 = signed_exchange(sites, idx, 0, 1)
 N = len(sites)
@@ -156,26 +158,25 @@ for (a, b) in [(0, 1), (1, 2), (2, 3)]:
     check("T", f"W_{a}{b} genuinely MOVES the antiperiodic axis (not a fixed point)",
           selfres > NONTRIV, f"||W M_ap{a} W^T - M_ap{a}||={selfres:.3f} (>1 required)")
 
-print("[T] NOTE: (0,1),(1,2),(2,3) generate S_4, which acts TRANSITIVELY on the "
-      "4 axes; the antiperiodic-axis label is therefore a single 4-element orbit.")
+print("[T] NOTE: the underlying swaps (0,1),(1,2),(2,3) generate S_4, which acts "
+      "TRANSITIVELY on the 4 axis labels; compositions of the checked transports "
+      "therefore give a single 4-element orbit on the tested surface.")
 
 # --------------------------------------------------------------------------
-# [SCOPE] even-extent requirement (validity boundary, falsifier).
-#     The exact-zero preservation/transport claims hold on EVEN cubic blocks
-#     only: the periodic staggered eta-phase closes consistently across the
-#     boundary wrap iff the extent is even (the standard staggered-fermion
-#     even-extent condition). On ODD cubic blocks W is still well-defined
-#     (equal extents) but does NOT preserve the periodic hop -- the claim
-#     scope is "even cubic-symmetric block", not all cubic blocks.
+# [SCOPE] tested odd-block falsifier.
+#     The positive claim above is restricted to L=(4,4,4,4). At the tested
+#     odd cubic block W is still well-defined but does NOT preserve the
+#     periodic hop. This refutes extension to all finite cubic blocks; it is
+#     not a proof for the untested family of even cubic blocks.
 # --------------------------------------------------------------------------
 Lodd = (3, 3, 3, 3)
 Modd, sodd, iodd = build_staggered(Lodd, [1, 1, 1, 1])
 Wodd = signed_exchange(sodd, iodd, 0, 1)
 odd_break = r(Wodd @ Modd @ Wodd.T - Modd)
-check("SCOPE", "EVEN extent is required: at ODD cubic L=(3,3,3,3) W01 does NOT preserve "
-      "the periodic hop (falsifier; claim scope is EVEN cubic)",
-      odd_break > NONTRIV, f"||W M_per W^T - M_per||_odd={odd_break:.3f} (>1: even-extent boundary)")
-check("SCOPE", "...while at EVEN L=(4,4,4,4) it is exact (recap of [S])",
+check("SCOPE", "at tested ODD cubic L=(3,3,3,3), W01 does NOT preserve the periodic "
+      "hop (falsifier of an all-finite-cubic extension)",
+      odd_break > NONTRIV, f"||W M_per W^T - M_per||_odd={odd_break:.3f} (>1 required)")
+check("SCOPE", "at the claimed L=(4,4,4,4) surface it is exact (recap of [S])",
       r(W01 @ Mper @ W01.T - Mper) < TOL)
 
 # --------------------------------------------------------------------------
@@ -191,17 +192,15 @@ check("REST", "antiperiodic in BOTH 0,1 restores W01 exactly (symmetric -> symme
       restore < TOL, f"||W M_ap01 W^T - M_ap01||={restore:.2e}")
 
 # --------------------------------------------------------------------------
-# [R] reality / discrete grading structure is W-inert (cannot be an axis
+# [R] realness / discrete grading structure is W-inert (cannot be an axis
 #     selector). The staggered sublattice-parity grading eps(x) =
 #     (-1)^{x0+x1+x2+x3} anticommutes with the massless hop (eps D eps = -D)
-#     and is the discrete reality/CPT-type grading on the surface. It is
-#     EXACTLY W-invariant: W permutes coordinates (sum-invariant) and its
+#     on the tested surface. It is EXACTLY W-invariant: W permutes
+#     coordinates (sum-invariant) and its
 #     diagonal sign field commutes with the diagonal eps. So no axis label
-#     is carried by the grading -- it is W-inert, not a selector. (Corroborates
-#     the wave-2 computed finding that the per-site Cl(3) reality structure,
-#     living on the internal C^2 fibre, is untouched by the real site-exchange W.
-#     This is an invariance fact about the grading operator, not a chirality
-#     identification -- no collision with the narrow chirality no-go.)
+#     is carried by the grading -- it is W-inert, not a selector. This is only
+#     an invariance fact about the displayed grading operator, not a chirality
+#     or CPT identification.
 # --------------------------------------------------------------------------
 Dhop, _, _ = build_staggered(L4, [1, 1, 1, 1], include_mass=False)   # real antisymmetric
 eps = np.diag([(-1.0) ** (s[0] + s[1] + s[2] + s[3]) for s in sites])

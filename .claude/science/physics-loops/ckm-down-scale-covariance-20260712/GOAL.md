@@ -7,4 +7,3 @@ five-sixths bridge and scale prescription. If that target is not entailed,
 deliver the strongest exact algebraic core and the narrowest rigorous
 obstruction without using observed masses, a fitted exponent, or a selected
 comparison scale as proof inputs.
-

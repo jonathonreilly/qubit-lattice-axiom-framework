@@ -10,4 +10,3 @@
 
 The current block does not rule out future dynamics. It rules out only the
 listed current-packet and scale-rescue routes.
-

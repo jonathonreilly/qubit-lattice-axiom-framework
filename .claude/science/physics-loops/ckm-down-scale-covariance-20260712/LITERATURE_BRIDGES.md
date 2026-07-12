@@ -8,4 +8,3 @@ Flavor-universal multiplicative mass running is an explicit bounded theorem
 condition, not a hidden literature-derived closure. The decisive transport
 cancellation is self-contained algebra for arbitrary positive `T` and does not
 depend on a perturbative coefficient or measured coupling.
-

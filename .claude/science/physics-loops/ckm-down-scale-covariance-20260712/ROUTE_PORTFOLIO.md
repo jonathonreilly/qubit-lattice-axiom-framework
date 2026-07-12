@@ -23,4 +23,3 @@ the operator or the CKM readout. RG covariance proves that scale transport
 cannot improve a relative discrepancy when applied to both sides. The best
 remaining positive attack is therefore not another scale calculation; it is
 the pair of typed maps (4.1)-(4.2) named in the source note.
-

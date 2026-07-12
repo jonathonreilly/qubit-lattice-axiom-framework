@@ -709,3 +709,6 @@ vocabulary lint has zero violations, and generated audit/status surfaces are
 stripped. The wedge is not a phase boundary and gives no `beta=6`, light-mass,
 charged-sector, continuum, SM, GR, action-selection, or physical-probability
 claim. No axiom-update stop is triggered.
+
+Delivery: stacked PR #5301 is open on the spatial DLR accumulation head.
+Independent audit remains authoritative.

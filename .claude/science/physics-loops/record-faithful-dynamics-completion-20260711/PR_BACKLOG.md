@@ -15,8 +15,8 @@ as the next stacked review block:
   spatial DLR accumulation dependency, matching note hash, strict lint zero
   errors, vocabulary lint zero violations, generated audit/status outputs
   stripped
-- PR: pending
-- delivery: prepared on the spatial DLR accumulation head
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5301
+- delivery: open on the spatial DLR accumulation head
 
 No merge is authorized. Independent audit remains authoritative.
 

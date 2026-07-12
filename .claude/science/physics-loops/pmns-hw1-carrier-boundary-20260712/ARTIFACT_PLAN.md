@@ -6,7 +6,7 @@
    - instantiate the local `Cl(3,0)` presentation and the `hw=1` lattice
      character representation;
    - solve the joint commutant independently by linear constraints;
-   - exhibit the scalar family and two distinct equivariant countermodels;
+   - exhibit the scalar family and two distinct formal same-premise carrier expansions;
    - propagate arbitrary non-pole active/passive scalars through the resolvent
      and response-column formulas;
    - reconstruct the blocks without hard-coded expected outputs;

@@ -10,8 +10,8 @@ with the complete finite result on the named carrier:
 1. the joint commutant of the three hw=1 translation involutions and the
    proper-cubic three-cycle is C I_3;
 2. the four framework axioms do not supply a carrier operator or select the
-   scalar normalization, as witnessed by two expansions of one explicit
-   Lattice/Qubit/Admissibility/Record reduct;
+   scalar normalization; two formal expansions of the same premise signature
+   witness the non-entailment;
 3. every nonsingular scalar active/passive pair produces only scalar basis
    columns and cycle-frame support under the implemented response interface,
    and is rejected by the explicitly defined one-sided-minimal support

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gate_b_connectivity_tolerance.py
-runner_sha256: bb89d656466f7d9cbb44a085f554cdfaac8587d1a1eb3905700127d4a67c0aed
-timeout_sec: 120
+runner_sha256: 571998caea2c9ab6f61db078e247e664c891aad9ecdb7ac41bf54f7ea4966aac
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 4.91
+elapsed_sec: 5.03
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -42,8 +42,8 @@ Interpretation:
 
 Source-boundary checks
 ----------------------------------------
-[PASS] note claim type is open_gate and has 2026-06-12 source-index firewall
-[PASS] GB-S1b-b/GB-S2b/GB-S3b residues remain supplied row-local data
+[PASS] note declares bounded finite-replay status and 2026-07-12 audit-scope firewall
+[PASS] GB-S1b-b/GB-S2b/GB-S3b physical inputs remain supplied row-local premises
 [PASS] note forbids Gate B dynamics closure and axiom/admission/status changes
 BOUNDARY_CHECKS: PASS=3 FAIL=0
 

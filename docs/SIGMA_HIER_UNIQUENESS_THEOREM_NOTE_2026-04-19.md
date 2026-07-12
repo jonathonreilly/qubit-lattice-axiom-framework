@@ -12,7 +12,7 @@ chamber point
 ## What this theorem establishes
 
 At the pinned chamber point `(m_*, δ_*, q_+*) = (0.657061, 0.933806,
-0.715042)` (retained by the P3 PMNS-as-f(H) map), the hierarchy pairing
+0.715042)` (supplied by the P3 PMNS-as-f(H) map), the hierarchy pairing
 `σ_hier = (2, 1, 0)` is the **unique** element of S_3 satisfying both:
 
 1. **All 9** `|U_PMNS|_{ij}` entries inside the NuFit 5.3 NO 3σ experimental
@@ -102,7 +102,7 @@ Conditional on the three admitted external inputs above, the free `σ_hier`
 choice at the pinned chamber point is narrowed to a single element of `S_3`:
 
 - σ_hier was previously listed as an "independent conditional — an S_3
-  involution (order 2), not derivable from the retained C_3 order-3 cycle."
+  involution (order 2), not derivable from the C_3 order-3 cycle."
 - Under the supplied NuFit windows and T2K/NOvA sign comparator, exactly one
   other σ ∈ S_3 survives the magnitude filter, and the CP-phase sign then
   leaves `σ = (2, 1, 0)` as the sole element passing the joint 4-observable

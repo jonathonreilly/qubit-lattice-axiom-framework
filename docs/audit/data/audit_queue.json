@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 650,
     "high": 335,
-    "leaf": 1128,
+    "leaf": 1127,
     "medium": 755
   },
   "cycle_break_target_count": 49,
@@ -52447,28 +52447,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "charged_lepton_typeb_radian_readout_generation_selector_no_go_note_2026-04-27",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "migration_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/CHARGED_LEPTON_TYPEB_RADIAN_READOUT_GENERATION_SELECTOR_NO_GO_NOTE_2026-04-27.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_charged_lepton_typeb_radian_readout_generation_selector_no_go.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26",
       "claim_scope": null,
       "claim_type": "positive_theorem",
@@ -81797,6 +81775,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 582,
-  "total_pending": 2868
+  "ready_count": 581,
+  "total_pending": 2867
 }

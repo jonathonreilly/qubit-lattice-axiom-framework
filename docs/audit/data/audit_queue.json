@@ -30803,12 +30803,12 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
+      "audit_status": "audited_failed",
       "blocker": null,
       "claim_id": "lattice_3d_dense_refinement_reconciliation_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "migration_hint",
+      "claim_scope": "The stated finite h = 1.0 versus h = 0.5 reconciliation on the ordered 3D dense spent-delay harness, including its reported barrier and distance summaries.",
+      "claim_type": "no_go",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -30816,13 +30816,13 @@
         "action_power_note"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
+      "effective_status": "audited_failed",
       "helper_runner_paths": [
         "scripts/action_power_canonical_harness.py"
       ],
       "load_bearing_score": 3.822,
       "note_path": "docs/LATTICE_3D_DENSE_REFINEMENT_RECONCILIATION_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_failed",
       "ready": true,
       "runner_path": "scripts/lattice_3d_dense_refinement_reconciliation.py",
       "transitive_descendants": 9

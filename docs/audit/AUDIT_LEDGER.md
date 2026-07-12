@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 387 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2727 |
+| unaudited | 2726 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 73 |
-| ~~audited_failed~~ | 12 |
+| ~~audited_failed~~ | 13 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -48,19 +48,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 503 |
 | `audited_conditional` | 73 |
 | `audited_decoration` | 20 |
-| `audited_failed` | 34 |
+| `audited_failed` | 35 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3077 |
+| `unaudited` | 3076 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2054 |
 | `decoration` | 23 |
 | `meta` | 357 |
-| `no_go` | 470 |
+| `no_go` | 471 |
 | `open_gate` | 196 |
-| `positive_theorem` | 654 |
+| `positive_theorem` | 653 |
 
 | criticality | count |
 |---|---:|
@@ -751,6 +751,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
+| `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -5421,6 +5422,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The source explicitly scopes the theorem to the supplied magnetic star product, and the runner computes the B^2 coefficient by symbolic star-power recursion plus a separately verified divergence identity. The finite-lattice Hofstadter diagonalization is independent of the LP formula and supports the sign/factor convention rather than supplying a fitted prefactor.
 - **rationale:** The runner source does not hard-code the contested -1/12 as an input; it derives the prefactor from the symbolic B^2 star expansion and checks that a nearby wrong prefactor leaves a residual. The periodic-torus reduction of the Q term is explicitly verified symbolically, and the direct Peierls diagonalization is a separate finite-lattice comparator within the stated convention. This clean verdict is bounded to the supplied one-band Peierls/Moyal expansion and does not audit derivation of that expansion from broader framework axioms or a universal thermodynamic-limit theorem.
 - **auditor confidence:** high
+
+### `lattice_3d_dense_refinement_reconciliation_note`
+
+- **Note:** [`LATTICE_3D_DENSE_REFINEMENT_RECONCILIATION_NOTE.md`](../../docs/LATTICE_3D_DENSE_REFINEMENT_RECONCILIATION_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The stated finite h = 1.0 versus h = 0.5 reconciliation on the ordered 3D dense spent-delay harness, including its reported barrier and distance summaries.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00231-lattice_3d_dense_refinement_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The older h = 0.5 positive-refinement narrative does not survive the corrected comparison because the no-barrier companion has no hierarchy-aligned attractive rows at h = 0.5.  _(class `C`)_
+- **chain closes:** False — The runner computes and supports the qualitative h = 0.5 negative result, but its completed output contradicts material source-note results: h = 1.0 gives 3/5 attractive rows and b^(-0.61), R² = 0.966, rather than 5/5 and b^(-0.94), R² = 0.934. The displayed Born values also disagree.
+- **rationale:** The primary runner constructs and propagates the lattice instead of printing hard-coded targets, so the load-bearing computation is class C. Its SHA-pinned output supports the bounded qualitative conclusion that the tested h = 0.5 row does not preserve the chosen positive hierarchy. However, the source note's h = 1.0 hierarchy count, fitted exponent, R², and both Born summaries are stale, so the stated reconciliation does not close as written.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 leaves normalization variation, additional refinement scales, and geometry variation untested, so the bounded finite result cannot pass as an exhaustive no-go.
+    - The source note's quantitative table is inconsistent with the completed SHA-pinned runner.
 
 ### `lattice_3d_dense_spent_delay_note`
 

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2790 |
+| unaudited | 2789 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 49 |
+| ~~audited_conditional~~ | 50 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 470 |
-| `audited_conditional` | 49 |
+| `audited_conditional` | 50 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3140 |
+| `unaudited` | 3139 |
 
 | claim_type | count |
 |---|---:|
@@ -619,6 +619,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `beyond_lattice_qcd_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1536,6 +1537,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The source is support-tier and explicitly bounded to externally imposed two-branch tripartite entanglement. The current robustness runner recomputes the source/coupling surface and prints tau_3 = 0, W/W-asym classification in 25/25 configurations, and positive bipartite entropies.
 - **rationale:** The load-bearing support claim closes because the note clearly makes the later robustness harness, not the historical standalone heuristic runner, the canonical interpretation surface. That canonical runner reproduces the stated W-type result and the note keeps the boundary narrow: fixed adjacency, externally imposed branch, not a full three-body BMV witness or topology-superposition claim. The historical runner's GHZ-like rows are not a contradiction because both the source note and that runner label them as non-canonical heuristic output.
 - **auditor confidence:** high
+
+### `born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04`
+
+- **Note:** [`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](../../docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional mathematical implication only: assuming H1-H4 and the named Gleason bridge, the composite grading has Born trace form, its single-site restrictions have Born form, and the explicit one-site rogue assignment cannot extend to that composite measure.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00378-born_form_from_lawful_graded`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because the bonded pair has Hilbert dimension 4, Gleason's theorem applied under H1-H4 gives w(E)=Tr(rho E), and restricting to P tensor I gives w(P tensor I)=Tr(rho_1 P).  _(class `A`)_
+- **chain closes:** False — The algebraic implication closes on its stated assumptions, but the framework chain does not establish H1, H4's full entangled composite-menu ontology, or adoption of the Gleason bridge as framework content.
+- **rationale:** The exact M2 rogue construction, the dimension-4 Gleason consequence, the partial-trace restriction, and the R3 contradiction are mathematically sound within the declared premises. The runner genuinely checks the finite algebraic consequences but does not prove Gleason or derive the grading and composite-menu premises. Minimal axioms supply site-local M2 and adjacency, while explicitly withholding weights and pair-level entangled menu eligibility, so the result cannot be promoted beyond its bridge-conditional scope.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1 contains OPEN and UNTESTED routes: neighbor-composite physical eligibility, full-unitary symmetry, record-conditioned values, and primitive registration are not closed.
 
 ### `born_lane_comparison_note`
 

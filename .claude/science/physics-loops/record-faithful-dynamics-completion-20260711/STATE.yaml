@@ -8,33 +8,34 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block19-infinite-time-uniqueness-20260712
+branch: physics-loop/record-faithful-dynamics-block20-spatial-thermodynamic-limit-20260712
 base_commit_at_start: 9d1636f05f
-cycle_count: 19
-block_count: 19
-active_route: massive_logdet_holder_ruelle_full_sequence_uniqueness
+cycle_count: 20
+block_count: 20
+active_route: massive_spatial_dlr_accumulation_and_state_specific_os_transfer
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: massive_staggered_logdet_holder_ruelle_infinite_time_uniqueness_bounded_theorem_note_2026-07-12
+produced_claim_id: massive_wilson_staggered_spatial_dlr_accumulation_os_transfer_bounded_theorem_note_2026-07-12
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  At fixed finite bipartite spatial volume, beta>=0, and every m>0, the
-  Wilson-staggered determinant has an exact exponentially Holder blocked-time
-  interaction: A=DdaggerD=m^2I-M^2 and Q=I-A/(m^2+16) is a strict range-two
-  contraction. Compact-alphabet Bowen/Ruelle uniqueness gives a unique
-  full-sequence L_t-to-infinity local Euclidean functional. The OS quotient,
-  positive two-step contraction, and Hamiltonian are canonical at fixed
-  spatial volume; spatial thermodynamic and continuum closure remain open.
+  At fixed lattice spacing, beta>=0, and every m>0, the exact site-anchored
+  Q-series is uniformly absolutely and diameter-weighted summable in all four
+  Euclidean directions. Every even periodic spatial van Hove sequence has a
+  subsequence converging on the full local gauge-invariant polynomial algebra
+  to a full-four-dimensional DLR functional. Reflection and adjacent-form
+  positivity pass, so each selected spatial phase has a positive two-step OS
+  contraction and Hamiltonian. Spatial uniqueness, boundary independence,
+  clustering/gap, and continuum closure remain open.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source proves fixed-spatial-volume, all-m>0 infinite-time uniqueness and
-  boundary independence under supplied Wilson-staggered, spin, geometry,
-  Haar-weight, and observable-domain conditions. It removes the temporal
-  subsequence without importing a mixed Fock transfer kernel, while leaving
-  the massless, spatial thermodynamic, continuum, SM, and GR limits open.
+  The source proves all-beta, all-m>0 spatial thermodynamic accumulation/DLR
+  existence and state-specific OS reconstruction under supplied
+  Wilson-staggered, spin, geometry, Haar-weight, exhaustion, and
+  observable-domain conditions. It takes a controlled spatial subsequence but
+  does not select a phase or prove full-sequence spatial convergence.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -101,6 +102,9 @@ files_touched:
   - docs/MASSIVE_STAGGERED_LOGDET_HOLDER_RUELLE_INFINITE_TIME_UNIQUENESS_BOUNDED_THEOREM_NOTE_2026-07-12.md
   - scripts/massive_staggered_logdet_holder_ruelle_uniqueness_2026_07_12.py
   - logs/runner-cache/massive_staggered_logdet_holder_ruelle_uniqueness_2026_07_12.txt
+  - docs/MASSIVE_WILSON_STAGGERED_SPATIAL_DLR_ACCUMULATION_OS_TRANSFER_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/massive_wilson_staggered_spatial_dlr_accumulation_os_transfer_2026_07_12.py
+  - logs/runner-cache/massive_wilson_staggered_spatial_dlr_accumulation_os_transfer_2026_07_12.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -138,10 +142,11 @@ no_go_routes:
   - positivity of the original and adjacent correlation forms alone does not imply OS-null descent or contraction; exact 2x2 countermodels require a coupled domination or generalized-spectrum theorem
   - strict seam positivity and two-plane reflected-form positivity do not imply contraction on every finite thermal core; the exact L_t=6 Z3 analogue has B2(n2,n2)/B0(n2,n2)=29/25 while its natural first-boundary core contracts
   - temporal subsequence nonuniqueness is not an irreducible interacting wall at fixed finite spatial volume: the exact massive log-determinant contraction makes the blocked gauge-history potential Holder and Bowen/Ruelle unique for every fixed m>0
+  - spatial thermodynamic existence is not blocked by the open beta-six plaquette-value hierarchy: site-anchored Q summability and compact-link DLR extraction give accumulation states for every beta>=0 and m>0, while phase uniqueness remains separate
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
-review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open
+review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_bounded
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_prepared
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
@@ -162,10 +167,11 @@ block17_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block18_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5290
 block19_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5294
 next_exact_action: >-
-  Prove a spatial-volume-uniform tightness/locality theorem for the unique
-  infinite-time Wilson-staggered functionals, isolate the gauge-sector
-  infrared input needed for Lambda_s-to-Z3, and take one controlled spatial
-  thermodynamic limit before attempting lattice-spacing or Lorentz closure.
+  Prove an explicit nonempty small-beta, large-m Dobrushin or polymer
+  uniqueness wedge for the full four-dimensional Wilson-staggered DLR
+  interaction, with independently checked link-influence constants. Then use
+  that full-sequence spatial region for the first controlled lattice-spacing
+  scaling attempt.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

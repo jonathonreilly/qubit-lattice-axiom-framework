@@ -203,6 +203,14 @@ def main() -> int:
             - 2 * sp.expand_log(lattice_fc, force=True)
         ) == 0,
     )
+    check(
+        "N2 wall W_power: one complex carrier supports two distinct additive determinant powers",
+        sp.simplify(scalar_det_r - scalar_det_c * sp.conjugate(scalar_det_c)) == 0
+        and sp.simplify(
+            sp.expand_log(mode_fr, force=True)
+            - 2 * sp.expand_log(mode_fc, force=True)
+        ) == 0,
+    )
 
     section("Part G: source and axiom guards")
     note = NOTE.read_text(encoding="utf-8")

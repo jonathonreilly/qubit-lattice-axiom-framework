@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py
-runner_sha256: 32f18b31492f765ff7b5ec35d3ccf138f5820a3cb9f2b439cd7a157cc9929fae
+runner_sha256: 44a70a4d553b49d998b10369de1a2496228ccc09afa785bb05a41a7796183ff7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 Record additivity and the R-eta unit-calibration countermodel
@@ -45,6 +45,7 @@ Part D: rhetoric-resolution lifts
   [PASS] per_mode: disjoint finite-mode decomposition preserves additivity while leaving beta free
   [PASS] per_block: disjoint record blocks preserve additivity for both beta normalizations
   [PASS] lattice_wide: finite lattice partition preserves both laws while beta remains unselected
+  [PASS] N2 wall W_unit: beta-one and beta-two singleton laws share h but remain distinct
 
 Part E: source and axiom guards
 -------------------------------
@@ -70,7 +71,7 @@ Part E: source and axiom guards
   [PASS] discipline gate records PASS
 
 ========================================================================
-TOTAL: PASS=45, FAIL=0
+TOTAL: PASS=46, FAIL=0
 
 ----- stderr -----
 

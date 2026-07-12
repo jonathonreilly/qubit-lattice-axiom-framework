@@ -16,9 +16,11 @@ board, or canonical harness file is part of this science block.
 
 ## Exact next action
 
-Open the single draft review PR for this coherent block, then send the new
-no-go row to independent audit. Do not retype the original target row, merge
-the PR, or land generated audit/effective-status files from validation.
+Submit the new no-go row in [draft PR 5307](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5307)
+to independent audit. Do not retype the original target row, merge the PR, or
+land generated audit/effective-status files from validation.
+
+Science commit: `a54f031ca`.
 
 ## Verification and review
 

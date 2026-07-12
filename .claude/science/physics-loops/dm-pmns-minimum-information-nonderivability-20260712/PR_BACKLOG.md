@@ -1,4 +1,4 @@
 # PR Backlog
 
-No backlog item. Review-loop passed; draft PR creation is the current exact
-action.
+No backlog item. The coherent science block is open as
+[draft PR 5307](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5307).

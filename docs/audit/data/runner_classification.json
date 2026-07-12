@@ -492,6 +492,18 @@
       "dominant_class": "C",
       "runner": "scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py"
     },
+    "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11": {
+      "assert_count": 1,
+      "counts": {
+        "A": 23,
+        "B": 5,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "runner": "scripts/acphilambda_occupancy_grain_rule_class_universality_2026_07_11.py"
+    },
     "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11": {
       "assert_count": 2,
       "counts": {
@@ -1585,10 +1597,10 @@
       "runner": "scripts/asymmetry_persistence_pilot.py"
     },
     "atomic_hydrogen_helium_probe_note": {
-      "assert_count": 0,
+      "assert_count": 1,
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 0,
         "D": 11
       },
@@ -3666,7 +3678,7 @@
         "A": 39,
         "B": 1,
         "C": 0,
-        "D": 3
+        "D": 2
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -43021,6 +43033,21 @@
       "dominant_class": "C",
       "exists": true
     },
+    "scripts/acphilambda_occupancy_grain_rule_class_universality_2026_07_11.py": {
+      "assert_count": 1,
+      "claims": [
+        "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11"
+      ],
+      "counts": {
+        "A": 23,
+        "B": 5,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true
+    },
     "scripts/acphilambda_occurrence_clock_composition_delta_blindness_2026_07_02.py": {
       "assert_count": 2,
       "claims": [
@@ -47655,7 +47682,7 @@
         "A": 39,
         "B": 1,
         "C": 0,
-        "D": 3
+        "D": 2
       },
       "decoration_candidate": false,
       "dominant_class": "A",
@@ -52858,13 +52885,13 @@
       "exists": true
     },
     "scripts/frontier_atomic_hydrogen_helium_probe.py": {
-      "assert_count": 0,
+      "assert_count": 1,
       "claims": [
         "atomic_hydrogen_helium_probe_note"
       ],
       "counts": {
         "A": 0,
-        "B": 0,
+        "B": 2,
         "C": 0,
         "D": 11
       },
@@ -93368,15 +93395,15 @@
   },
   "schema_version": 1,
   "stats": {
-    "decoration_candidates": 721,
+    "decoration_candidates": 722,
     "dominant_class_distribution": {
-      "A": 517,
+      "A": 518,
       "B": 663,
       "C": 1317,
       "D": 453,
       "none": 453
     },
-    "runners_classified": 3403,
+    "runners_classified": 3404,
     "runners_with_C": 1795,
     "runners_with_D": 1096
   }

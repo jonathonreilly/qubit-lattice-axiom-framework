@@ -649,6 +649,22 @@
       "to": "ac_orbit_occupancy_statistical_grain_derivation_obligation"
     },
     {
+      "from": "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11",
+      "to": "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11"
+    },
+    {
+      "from": "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11",
+      "to": "tier_a_residual_owner_adoption_retirement_2026-07-04"
+    },
+    {
+      "from": "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11",
+      "to": "minimal_axioms"
+    },
+    {
+      "from": "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11",
+      "to": "ac_orbit_occupancy_statistical_grain_derivation_obligation"
+    },
+    {
       "from": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
       "to": "kcpt_orbit_constancy_and_determinant_character_boundary_supplied_context_bridge_note_2026-07-04"
     },
@@ -58592,6 +58608,23 @@
       "runner_path": "scripts/acphilambda_occupancy_formation_append_non_supply_no_go_2026_07_04.py",
       "title": "AC_phi_lambda Occupancy Formation-Append Non-Supply No-Go"
     },
+    "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11": {
+      "claim_id": "acphilambda_occupancy_grain_rule_class_universality_bounded_theorem_note_2026-07-11",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "deps": [
+        "record_write_admissible_one_step_class_controlled_copy_narrow_theorem_note_2026-07-11",
+        "tier_a_residual_owner_adoption_retirement_2026-07-04",
+        "minimal_axioms",
+        "ac_orbit_occupancy_statistical_grain_derivation_obligation"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "bee067ac51c1eed6e5261789467b08d3661ad52b0e113c4aa128fddf29544114",
+      "path": "docs/ACPHILAMBDA_OCCUPANCY_GRAIN_RULE_CLASS_UNIVERSALITY_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+      "runner_path": "scripts/acphilambda_occupancy_grain_rule_class_universality_2026_07_11.py",
+      "title": "Occupancy-Grain Universality over the Admissible Record-Write Class: Bounded Theorem"
+    },
     "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11": {
       "claim_id": "acphilambda_occupancy_selection_realized_state_reduction_note_2026-06-11",
       "claim_type_author_hint": "bounded_theorem",
@@ -61446,7 +61479,7 @@
         "bound_state_selection_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1e1e19ffee0c1d45257d50a70b5ef5034e55eacf78dfae32d10cd03e4b7bb1c8",
+      "note_hash": "a130aec6f29bcd390a80f566847b8f1813ea51c31fe44c4798ded0789d4b0df1",
       "path": "docs/ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md",
       "runner_path": "scripts/frontier_atomic_hydrogen_helium_probe.py",
       "title": "Atomic Hydrogen and Helium Probe --- Standard-QM Scaffold Lane"
@@ -64953,7 +64986,7 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "70a4f934a134aeaf5ab2a92c36f4a7dcf7036a6a51f6126137f3aadfa9d40cc8",
+      "note_hash": "96d829f594877f5c842fb081aa88f87ccd70dc32d63fc3ace3826fdee91cc9bb",
       "path": "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
       "runner_path": "scripts/charged_lepton_registered_mass_dft_coordinate_theorem_2026_07_11.py",
       "title": "Registered Positive Mass Triple: Exact C3 Fourier Coordinates and Koide Identity"
@@ -111696,7 +111729,7 @@
         "abj_epsilon_index_square_block_no_go_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "b736bb823f37f8f0b7b429eaf9c18d957d2c3870ffa98336754db1c304094118",
+      "note_hash": "1b07863bf8e293f9e541bd42ef37ebb4e02e101f4e0c34695a7a2ae2ead4a2c9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -128727,7 +128760,7 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1632,
+      "bounded_theorem": 1633,
       "decoration": 3,
       "meta": 333,
       "no_go": 336,
@@ -128736,7 +128769,7 @@
       "positive_theorem": 284
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2031,
+      "bounded_theorem": 2032,
       "decoration": 3,
       "meta": 333,
       "no_go": 439,
@@ -128744,10 +128777,10 @@
       "open_gate": 212,
       "positive_theorem": 663
     },
-    "edge_count": 14452,
-    "leaf_count": 1335,
-    "node_count": 3929,
+    "edge_count": 14456,
+    "leaf_count": 1334,
+    "node_count": 3930,
     "root_count": 1113,
-    "runners_with_path": 3546
+    "runners_with_path": 3547
   }
 }

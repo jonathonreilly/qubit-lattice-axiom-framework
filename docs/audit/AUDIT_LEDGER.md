@@ -22,12 +22,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 301 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2947 |
+| unaudited | 2949 |
 | audit_in_progress | 1 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 21 |
+| ~~audited_conditional~~ | 20 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -42,16 +42,16 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 379 |
-| `audited_conditional` | 21 |
+| `audited_conditional` | 20 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3297 |
+| `unaudited` | 3299 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2044 |
+| `bounded_theorem` | 2045 |
 | `decoration` | 19 |
 | `meta` | 357 |
 | `no_go` | 439 |
@@ -60,20 +60,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 745 |
-| `high` | 400 |
+| `critical` | 746 |
+| `high` | 399 |
 | `medium` | 945 |
-| `leaf` | 1645 |
+| `leaf` | 1646 |
 
 - **Retained pending chain closure:** 1
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
 
-- runners classified: 3403
+- runners classified: 3404
 - runners with (C) first-principles compute hits: 1795
 - runners with (D) external comparator hits: 1096
-- decoration candidates (no C, no D): 721
+- decoration candidates (no C, no D): 722
 
 ## Top 25 by load-bearing score (topology only)
 
@@ -81,14 +81,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | # | claim_id | claim_type | criticality | desc | score | audit_status | effective |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | `minimal_axioms` | meta | critical | 1972 | 224.95 | `unaudited` | meta |
+| 1 | `minimal_axioms` | meta | critical | 1973 | 225.45 | `unaudited` | meta |
 | 2 | `graph_first_su3_integration_note` | positive_theorem | critical | 1600 | 64.64 | `audited_clean` | **retained** |
 | 3 | `three_generation_observable_theorem_note` | bounded_theorem | critical | 1181 | 62.21 | `unaudited` | unaudited |
 | 4 | `quark_route2_exact_readout_map_note_2026-04-19` | positive_theorem | critical | 197 | 61.63 | `unaudited` | unaudited |
 | 5 | `observable_principle_from_axiom_note` | bounded_theorem | critical | 1042 | 61.53 | `unaudited` | unaudited |
 | 6 | `plaquette_self_consistency_note` | bounded_theorem | critical | 1168 | 50.19 | `unaudited` | unaudited |
 | 7 | `minimal_axioms_2026-05-03` | meta | critical | 1068 | 45.06 | `unaudited` | meta |
-| 8 | `key_terminology` | meta | critical | 1189 | 44.22 | `unaudited` | meta |
+| 8 | `key_terminology` | meta | critical | 1190 | 44.22 | `unaudited` | meta |
 | 9 | `yt_ward_identity_derivation_theorem` | bounded_theorem | critical | 941 | 39.88 | `unaudited` | unaudited |
 | 10 | `anomaly_forces_time_theorem` | bounded_theorem | critical | 1307 | 39.85 | `unaudited` | unaudited |
 | 11 | `staggered_dirac_substep4_ac_narrow_bounded_note_2026-05-07_substep4ac` | bounded_theorem | critical | 421 | 39.72 | `unaudited` | unaudited |
@@ -496,7 +496,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `activity_energy_bound_witnesses_bounded_note_2026-07-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
-| `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
@@ -956,19 +955,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** During layer-by-layer generation, low-asymmetry post-barrier candidate nodes are rejected, and the primary runner reproduces the sparse N=40/N=60 baseline-vs-threshold rows plus the N=80 sparse failure entry.  _(class `C`)_
 - **chain closes:** True — The primary runner and included helper source compute the graph generation, asymmetry persistence rule, propagation, binning, purity, S_norm, and gravity readouts without hard-coded result tables. Dense N=80/N=100 and layernorm-stacking rows are explicitly outside this audited scope.
 - **rationale:** Within the narrowed scope, the cached stdout matches the sparse rows quoted in the note, and the runner source shows those rows are produced by deterministic seeded computation rather than by printing constants. The transitive helper source is included and supplies the load-bearing readout implementation, so the earlier packet-completeness defect is repaired for the sparse table. The dense and layernorm sections remain scientific context only and do not affect this scoped verdict.
-- **auditor confidence:** high
-
-### `atomic_hydrogen_helium_probe_note`
-
-- **Note:** [`ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md`](../../docs/ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** A standard-QM numerical scaffold reproduces the listed finite-grid hydrogen energies and evaluates the stated independent-electron and one-parameter variational helium benchmarks.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.6-sol-20260709-225957-eb48eb29-atomic_hydrogen_helium_p-074`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** Diagonalizing the textbook radial Schrödinger Hamiltonian on the stated finite grid and evaluating the one-parameter helium variational formula yields the reported agreement with analytic and experimental benchmarks.  _(class `D`)_
-- **chain closes:** False — The runner genuinely performs the hydrogen diagonalization and helium variational calculation, but the chain imports the textbook Hamiltonian, physical conversion constant, analytic Bohr spectrum, and experimental helium value without deriving or independently closing them. It also does not compute an exact helium result within any basis.
-- **rationale:** The source code constructs and diagonalizes the finite-difference hydrogen Hamiltonian rather than merely printing the cached values, and its output supports the tabulated finite-grid comparison. The helium runner evaluates only the stated textbook independent-electron and one-parameter variational formulas, with the experimental value embedded as an external comparator. Consequently this is a valid bounded standard-QM scaffold, not a class-(C) framework derivation, and the phrase claiming helium is exact within an available basis is unsupported.
 - **auditor confidence:** high
 
 ### `axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`

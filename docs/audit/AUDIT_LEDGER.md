@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 384 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2739 |
+| unaudited | 2738 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 65 |
+| ~~audited_conditional~~ | 66 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,21 +46,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 500 |
-| `audited_conditional` | 65 |
+| `audited_conditional` | 66 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3089 |
+| `unaudited` | 3088 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2051 |
 | `decoration` | 23 |
 | `meta` | 357 |
-| `no_go` | 468 |
+| `no_go` | 469 |
 | `open_gate` | 198 |
-| `positive_theorem` | 657 |
+| `positive_theorem` | 656 |
 
 | criticality | count |
 |---|---:|
@@ -645,6 +645,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `adaptive_coevolving_geometry_no_go` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `alt_connectivity_family_complex_failure_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `atomic_hydrogen_helium_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
 | `atomic_lane2_alpha0_running_bridge_boundary_note_2026-04-29` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | D | - |
 | `axiom_first_spectrum_condition_blocked_time_normalization_bridge_narrow_theorem_note_2026-06-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -1116,6 +1117,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The dependency is retained_bounded and supplies the alternative family/sign setup; the basin runner extends it over the explicitly listed finite drift/seed grid and computes the row outcomes. The source note's bounded, non-universal safe read follows from the cached runner output.
 - **rationale:** The load-bearing result is a finite deterministic sweep, not a generic physics bridge, and the note correctly limits the claim to a bounded basin rather than universal closure. The cached runner completes successfully and computes the 32/45 row count from the grown geometries, alternative connectivity construction, propagated source fields, and explicit ok gate; it does not use an external comparator or import the 32/45 result as an input. Residual risk is that the runner's final mean-exponent summary appears to index the neutral column rather than the exponent column, but the row-level exponents and ok predicate still support the source note's near-linear scaling statement.
 - **auditor confidence:** high
+
+### `alt_connectivity_family_complex_failure_note`
+
+- **Note:** [`ALT_CONNECTIVITY_FAMILY_COMPLEX_FAILURE_NOTE.md`](../../docs/ALT_CONNECTIVITY_FAMILY_COMPLEX_FAILURE_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On the runner-tested grid drifts 0.15, 0.20, 0.25; seeds 0, 1, 2; and gammas 0.0, 0.1, 0.2, 0.5, the script-defined centroid shift does not change sign between gamma 0 and the tested positive gamma values.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00217-alt_connectivity_family_comp`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** There is no TOWARD -> AWAY crossover.  _(class `C`)_
+- **chain closes:** False — The direct computation supports the finite-grid no-crossover statement. It does not prove the note's broader structural family-level non-transfer language, continuous-gamma behavior, or behavior on untested family members.
+- **rationale:** The runner constructs the stated parity-rotated connectivity and directly computes propagation and detector-centroid shifts for nine drift/seed cases, with all four sampled gamma values retaining the gamma-zero sign. The raw rows therefore support a finite diagnostic, although the runner supplies no explicit negative-result PASS predicate and its displayed `ok` condition instead includes an incompatible near-zero gamma-zero response test. The finite samples do not establish the note's structural or family-wide non-transfer conclusion over continuous gamma, other seeds, other drifts, refinements, or alternative observables.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: four distinct attack routes remain OPEN and one remains UNTESTED.
+    - N3: the structural extrapolation is not supplied by a retained theorem.
+    - N5: continuous-gamma, untested-family, normalization, and observable resolutions remain untested.
 
 ### `alt_connectivity_family_failure_note`
 

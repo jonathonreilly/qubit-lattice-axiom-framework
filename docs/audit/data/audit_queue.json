@@ -30533,12 +30533,12 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "alt_connectivity_family_complex_failure_note",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "default_positive_theorem",
+      "claim_scope": "On the runner-tested grid drifts 0.15, 0.20, 0.25; seeds 0, 1, 2; and gammas 0.0, 0.1, 0.2, 0.5, the script-defined centroid shift does not change sign between gamma 0 and the tested positive gamma values.",
+      "claim_type": "no_go",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -30546,14 +30546,14 @@
         "alt_connectivity_family_sign_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [
         "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py",
         "scripts/gate_b_no_restore_farfield.py"
       ],
       "load_bearing_score": 4.7,
       "note_path": "docs/ALT_CONNECTIVITY_FAMILY_COMPLEX_FAILURE_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/ALT_CONNECTIVITY_FAMILY_COMPLEX_SWEEP.py",
       "transitive_descendants": 12

@@ -6705,6 +6705,25 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertIn("prior=archived unrestricted scope", prompt)
         self.assertNotIn("{{PRIOR_CLAIM_SCOPE}}", prompt)
 
+    def test_no_go_prompt_requires_exact_unjoined_phrase_groups(self):
+        template = (
+            PROJECT_ROOT / "docs" / "audit" / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
+        ).read_text(encoding="utf-8")
+        template_flat = " ".join(template.split())
+        self.assertIn(
+            "copy `phrase` byte-for-byte from the corresponding "
+            "`full_phrase_groups[].phrase`",
+            template_flat,
+        )
+        self.assertIn(
+            "Never paraphrase a phrase, join two phrases with punctuation or a slash",
+            template_flat,
+        )
+        self.assertIn(
+            "`boundary` and `primitive` require separate objects",
+            template_flat,
+        )
+
     def test_prompt_uses_neutral_dispatch_task_without_raw_question(self):
         m = _import_codex_audit_runner()
         with tempfile.TemporaryDirectory() as tmp:

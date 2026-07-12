@@ -13,7 +13,7 @@ set or predict an audit verdict.
 ## Narrow no-go claim
 
 Grant the R-eta h-class hypothesis: the charged-lepton eta readout lies in the
-fixed-locus density class represented by a nonzero local scalar `h`. This grants
+fixed-locus density class represented by a positive local scalar `h`. This grants
 the class, not its identity calibration. Even with that grant, the
 [four axioms](MINIMAL_AXIOMS_2026-06-29.md) do not entail
 
@@ -22,14 +22,14 @@ the class, not its identity calibration. Even with that grant, the
 Phi = 3|delta| = 3h.
 ```
 
-They admit a real one-parameter family of readouts
+They admit a positive-real one-parameter family of readouts
 
 ```text
 I_beta(R) = beta h N(R),
 ```
 
 where `N(R)` is the number of records in a finite pairwise-disjoint record
-collection. Every real `beta` satisfies empty-zero, record-content
+collection. Every positive real `beta` satisfies empty-zero, record-content
 determination, and finite additivity. The target is `beta=1`; `beta=2` is an
 explicit countermodel with the same axiom structure and the same granted `h`.
 For a singleton record `x` and a three-record cycle `C`, respectively,
@@ -56,7 +56,7 @@ its cardinality. Because cardinality depends on record content and not on a
 site label, it is invariant under translations, proper cubic rotations, and
 permutations of the three cycle positions.
 
-For any real `beta`, set
+For any positive real `beta`, set
 
 ```text
 I_beta(empty) = 0,
@@ -104,9 +104,9 @@ Historical decision text identifies provenance only and is not used as proof.
 
 | Route tested against the countermodel | Marker | Result and authority/check |
 |---|---|---|
-| Full Record readout route | ATTEMPTED | Empty-zero, record-content determination, and finite disjoint additivity all hold for every real `beta`; Record clause in the [axiom memo](MINIMAL_AXIOMS_2026-06-29.md), runner Parts A--C. |
+| Full Record readout route | ATTEMPTED | Empty-zero, record-content determination, and finite disjoint additivity all hold for every positive real `beta`; Record clause in the [axiom memo](MINIMAL_AXIOMS_2026-06-29.md), runner Parts A--C. |
 | Lattice and cycle symmetry | ATTEMPTED | `N(R)` is invariant under translations, proper cubic rotations, and cycle-position permutations; Lattice clause in the [axiom memo](MINIMAL_AXIOMS_2026-06-29.md), runner Part B. |
-| K/CPT-even real readout | ATTEMPTED | Real `beta` and real `h` make `I_beta` unchanged by complex conjugation; this is an extra grant checked in runner Part B, not axiom content. |
+| K/CPT-even real readout | ATTEMPTED | Positive real `beta` and real `h` make `I_beta` unchanged by complex conjugation; this is an extra grant checked in runner Part B, not axiom content. |
 | Pointwise realized-state evaluation | ATTEMPTED | Evaluating the same realized record state leaves the law-level coefficient `beta` free; [realized-state primitive](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md) boundary plus runner Parts A--C. |
 | Dimensionful scale reference | ATTEMPTED | The [scale-reference primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md) supplies units conversion and no dimensionless phase, selector, or readout bridge; `beta` is dimensionless, runner Part D. |
 | Kinetic-form isotropy | ATTEMPTED | The [kinetic-isotropy primitive](KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md) supplies `c_t=c_s` and no phase, selector, or readout bridge; the family is unchanged, runner Part D. |
@@ -208,4 +208,4 @@ Run:
 python3 scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py
 ```
 
-Expected result: `PASS=46`, `FAIL=0`.
+Expected result: `PASS=47`, `FAIL=0`.

@@ -1951,6 +1951,39 @@ class ApplyAuditTest(unittest.TestCase):
             ) or "",
         )
 
+    def test_dev_tier_prior_conditional_seat_packet_optional(self):
+        """A prior non-clean seat whose rationale names walls does not need
+        the structured packet in the development tier; a prior clean seat
+        with the same rationale still does."""
+        m = _import("apply_audit")
+        seat = {
+            "verdict": "audited_conditional",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "an affirmative identity",
+            "verdict_rationale": "A residual selector wall persists.",
+        }
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}):
+            self.assertIsNone(
+                m.cross_summary_no_go_error(
+                    seat, source_required=False, current_evidence_manifest={}
+                )
+            )
+            self.assertIn(
+                "N1-N8 packet is required for the prior seat",
+                m.cross_summary_no_go_error(
+                    {**seat, "verdict": "audited_clean"},
+                    source_required=False,
+                    current_evidence_manifest={},
+                ) or "",
+            )
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
+            self.assertIn(
+                "N1-N8 packet is required for the prior seat",
+                m.cross_summary_no_go_error(
+                    seat, source_required=False, current_evidence_manifest={}
+                ) or "",
+            )
+
     def test_packeted_audit_archives_invalid_first_and_reuses_fresh_source_packet(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
@@ -4718,6 +4751,80 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                     "claim_scope": "The exact positive identity closes.",
                     "negative_assertion_classes": [],
                 })
+            )
+
+    def test_dev_tier_packet_demand_binds_clean_verdicts_only(self):
+        """Development-tier calibration (2026-07-12): the wall-naming
+        output/declaration trigger mandates the structured packet only for
+        claim-cementing audited_clean verdicts. Non-clean verdicts are the
+        repair queue — the wall-naming judgment stays in prose there — while
+        no-go judgments, source-required rows, and the forensic tier bind
+        every verdict, and a supplied packet is always validated."""
+        m = _import("no_go_discipline_gate")
+        packet_required = "No-Go Discipline N1-N8 packet is required for this audit"
+        wall = {
+            "claim_type": "bounded_theorem",
+            "claim_scope": "an affirmative identity",
+            "verdict_rationale": "A residual selector wall persists.",
+        }
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}):
+            for verdict in ("audited_conditional", "audited_failed"):
+                with self.subTest(verdict=verdict):
+                    self.assertIsNone(
+                        m.validate_no_go_discipline(
+                            {
+                                **wall,
+                                "verdict": verdict,
+                                "negative_assertion_classes": [
+                                    "conditional_wall_rationale"
+                                ],
+                            },
+                            require_declaration=True,
+                        )
+                    )
+            self.assertEqual(
+                m.validate_no_go_discipline(
+                    {
+                        **wall,
+                        "verdict": "audited_clean",
+                        "negative_assertion_classes": [
+                            "conditional_wall_rationale"
+                        ],
+                    },
+                    require_declaration=True,
+                ),
+                packet_required,
+            )
+            self.assertEqual(
+                m.validate_no_go_discipline(
+                    {**wall, "claim_type": "no_go", "verdict": "audited_conditional"}
+                ),
+                packet_required,
+            )
+            self.assertEqual(
+                m.validate_no_go_discipline(
+                    {**wall, "verdict": "audited_conditional"},
+                    source_required=True,
+                ),
+                packet_required,
+            )
+            # A packet supplied alongside a non-clean verdict is still
+            # validated structurally rather than waved through.
+            self.assertIsNotNone(
+                m.validate_no_go_discipline(
+                    {
+                        **wall,
+                        "verdict": "audited_conditional",
+                        "no_go_discipline": {"required": True},
+                    }
+                )
+            )
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
+            self.assertEqual(
+                m.validate_no_go_discipline(
+                    {**wall, "verdict": "audited_conditional"}
+                ),
+                packet_required,
             )
 
     def test_n3_excludes_explicit_accepted_premise_vocabulary(self):

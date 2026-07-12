@@ -9307,7 +9307,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         )
         self.assertIsNone(m.restore_audit_from_previous(row, {cid: row}))
 
-    def test_restore_tier_gates_packet_snapshot_currency(self):
+    def test_restore_requires_packet_snapshot_currency(self):
         m = self._import_and_patch()
         cid = "bounded_packet_restore"
         note_path = "docs/POSITIVE_PACKET_SOURCE.md"
@@ -9323,17 +9323,9 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         })
         row = self._seed_with_archived(cid, archived)
         row["note_path"] = note_path
-        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}):
-            self.assertIsNotNone(
-                m.restore_audit_from_previous(row, {cid: row})
-            )
-
-        row = self._seed_with_archived(cid, archived)
-        row["note_path"] = note_path
-        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
-            self.assertIsNone(
-                m.restore_audit_from_previous(row, {cid: row})
-            )
+        self.assertIsNone(
+            m.restore_audit_from_previous(row, {cid: row})
+        )
 
     def test_select_restore_candidates_picks_criticality_increased(self):
         m = self._import_and_patch()
@@ -9830,10 +9822,24 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             notes_for_re_audit_if_any="other: conditional row round-trip",
         )
         ok["negative_assertion_classes"] = ["bounded_with_named_walls"]
+        ok["no_go_discipline"] = {"status": "PASS"}
         row2 = self._seed_with_archived("declared_conditional", ok)
-        restored = m.restore_audit_from_previous(
-            dict(row2), {"declared_conditional": row2}
-        )
+        with mock.patch.object(
+            m.no_go_discipline_gate,
+            "evidence_manifest_from_snapshot",
+            return_value={"authenticated": {}},
+        ), mock.patch.object(
+            m.no_go_discipline_gate,
+            "evidence_snapshot_current_error",
+            return_value=None,
+        ), mock.patch.object(
+            m.no_go_discipline_gate,
+            "validate_no_go_discipline",
+            return_value=None,
+        ):
+            restored = m.restore_audit_from_previous(
+                dict(row2), {"declared_conditional": row2}
+            )
         self.assertIsNotNone(restored)
         self.assertEqual(
             restored["negative_assertion_classes"], ["bounded_with_named_walls"]

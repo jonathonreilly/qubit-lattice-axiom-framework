@@ -39,42 +39,51 @@ EXCLUDED_HISTORICAL = (
     "docs/MINIMAL_AXIOMS_2026-06-05.md",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "docs/audit/AXIOM_MINIMALITY_POLICY.md",
+    # campaign's own surfaces quote the needles as documentation
+    "docs/AXIOM_RECONCILIATION_INDEX_2026-07-12.md",
 )
 
 # Needle categories. Each entry: (category, severity, compiled regex).
 # severity "hard" = wording that cannot appear in a post-reset-consistent
 # surface outside a marked historical quote; "soft" = naming that is often
 # legitimate historical context and needs triage.
+# Multi-word needles use \s+ between words: prose in this repo is hard-wrapped,
+# so a literal-space needle misses any phrase broken across a line (found the
+# hard way: the objectivity note's firewall paragraph, 2026-07-12).
+def _p(words: str) -> str:
+    return words.replace(" ", r"\s+")
+
+
 NEEDLES = [
     # -- legacy axiom-set naming ------------------------------------------
     ("three-framework-axioms", "hard",
-     re.compile(r"[Tt]hree [Ff]ramework [Aa]xioms")),
+     re.compile(_p(r"[Tt]hree [Ff]ramework [Aa]xioms"))),
     ("lattice-quantum-record", "hard",
      re.compile(r"Lattice\s*[,/]\s*Quantum\s*[,/]\s*(?:and\s+)?Record")),
     ("quantum-axiom-name", "soft",
-     re.compile(r"Quantum axiom|axiom\s+named\s+Quantum")),
+     re.compile(_p(r"Quantum axiom|axiom named Quantum"))),
     ("three-axiom-baseline", "soft",
-     re.compile(r"\bthree[- ]axiom\b|\b3-axiom\b")),
+     re.compile(r"\bthree[-\s]+axiom\b|\b3-axiom\b")),
     ("superseded-memo-cite", "soft",
      re.compile(r"MINIMAL_AXIOMS_2026-0(?:4-11|5-03|5-20|6-04|6-05)")),
     # -- superseded Record wording ----------------------------------------
     ("durable-registration", "hard",
-     re.compile(r"durable (?:registration of the realized outcome|"
-                r"realized-outcome registration)")),
+     re.compile(_p(r"durable (?:registration of the realized outcome|"
+                   r"realized-outcome registration)"))),
     ("kcpt-orbit-realized", "hard",
-     re.compile(r"CPT orbit of the realized")),
+     re.compile(_p(r"CPT orbit of the realized"))),
     ("central-sector-readout-context", "hard",
-     re.compile(r"readout context with a finite central-sector "
-                r"decomposition")),
+     re.compile(_p(r"readout context with a finite central-sector "
+                   r"decomposition"))),
     ("locks-one-nonadmissible", "hard",
-     re.compile(r"locks exactly one local possibility")),
+     re.compile(_p(r"locks exactly one local possibility"))),
     ("site-need-not-carry", "hard",
-     re.compile(r"[Aa] site need not carry a record")),
+     re.compile(_p(r"[Aa] site need not carry a record"))),
     ("subset-available-under-admissibility", "hard",
-     re.compile(r"from the subset available at that site under "
-                r"Admissibility")),
+     re.compile(_p(r"from the subset available at that site under "
+                   r"Admissibility"))),
     ("invariant-repeated-readout", "hard",
-     re.compile(r"invariant under repeated readout")),
+     re.compile(_p(r"invariant under repeated readout"))),
 ]
 
 LANE_BUCKETS = [

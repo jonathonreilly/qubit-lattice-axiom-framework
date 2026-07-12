@@ -26,7 +26,7 @@ block_current:
     never banked and is lost. Rebuilt as a regenerable scan:
     scripts/axiom_reconciliation_rescan_2026_07_12.py — needles = superseded
     Record wording + legacy axiom-set naming, joined to ledger rows via
-    note_path. Result @ 7b9260b85: HARD=141 live files (98 docs, 43 scripts),
+    note_path. Result @ 7b9260b85: HARD=146 live files (102 docs, 44 scripts; whitespace-tolerant needles after the 2026-07-12 wrap-gap fix),
     SOFT_ONLY=740 (mostly superseded-memo citations), 8 hard files carry
     retained audit status (invalidation-pipeline gap — flag to audit lane,
     do NOT touch ledger).

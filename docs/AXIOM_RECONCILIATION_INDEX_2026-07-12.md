@@ -38,20 +38,33 @@ file is joined to its audit-ledger row by `note_path`.
 Scanned: 8,583 files (`docs/**/*.md` except `docs/audit/data/`, plus
 `scripts/*.py`).
 
-- **141 live hard-needle files** (98 notes, 43 scripts): superseded Record
+- **146 live hard-needle files** (102 notes, 44 scripts): superseded Record
   wording or legacy axiom-set naming outside marked-historical files.
-  By ledger status: 85 unaudited, 2 audit_in_progress, 8 with retained
-  audit status (see the audit-lane flag below), 46 with no ledger row
-  (scripts and non-claim docs).
-- **740 soft-only files**: only superseded-memo citations or generic
+  Of these, 8 carry retained audit status (see the audit-lane flag below)
+  and 47 have no ledger row (scripts and non-claim docs); the rest are
+  unaudited or in progress.
+- **739 soft-only files**: only superseded-memo citations or generic
   legacy naming. Dated split: 607 pre-reset, 131 undated legacy-era, and
   2 post-reset scripts — both of which turned out to be deliberate
   absence-guards (they assert that superseded memo links are GONE from
   their notes), i.e. zero real post-reset drafting slips.
-- 7 files intentionally excluded as historical authority (the
-  `MINIMAL_AXIOMS_*` lineage and `docs/audit/AXIOM_MINIMALITY_POLICY.md`).
+- 8 files intentionally excluded as historical/campaign authority (the
+  `MINIMAL_AXIOMS_*` lineage, `docs/audit/AXIOM_MINIMALITY_POLICY.md`, and
+  this index note, which quotes the needles as documentation).
 
-## Classification (triage of all 141 hard files)
+Scan correction (2026-07-12, same day): the first scan pass used
+literal-space needles, and this repo hard-wraps prose — a stale phrase
+broken across a line escaped detection. Found live when a re-keyed runner
+needle failed against `KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md`
+(whose firewall paragraph wraps "durable realized-outcome registration").
+All multi-word needles are now whitespace-tolerant; the fix surfaced five
+additional hard files (three REKEY — the objectivity note itself, repaired
+in the Block 6 wave; the Darwinism-bridge residual note; the
+magnitude-reads note — and two CONTENT-FLIP — the native-carrier
+registration-kernel note, a post-reset note still using the central-sector
+reading, and the PMNS TM2 runner, which joins its note in the flip set).
+
+## Classification (triage of all 146 hard files)
 
 Each hard file was classified by a bounded worker pass (rubric frozen in the
 campaign pack; every row carries evidence line numbers, a representative
@@ -68,15 +81,15 @@ Classes:
 - **DELIBERATE-OLD-TEXT** — runner references old wording by design (flip
   demonstrations, absence guards).
 
-Counts over the 141 hard files:
+Counts over the 146 hard files:
 
-- **CONTENT-FLIP**: 25
+- **CONTENT-FLIP**: 27
 - **REOPENED-WALL**: 15
-- **REKEY**: 85
+- **REKEY**: 88
 - **DELIBERATE-OLD-TEXT**: 3
 - **HISTORICAL-OK**: 13
 
-### CONTENT-FLIP (25)
+### CONTENT-FLIP (27)
 
 - `docs/ACPHILAMBDA_R_ETA_W2_REGISTRABILITY_CONTEXT_BRIDGE_NOTE_2026-06-18.md` — Recast the result as a conditional downstream readout-context bridge and replace the old Record dependency with retained authorities for central sectors and K/CPT orbit structure.
 - `docs/FIBER_FRAME_LOCAL_REDUNDANCY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-09.md` — Split off F1 or add a retained readout-context bridge proving that local U(3) leaves record content and readout fixed; otherwise narrow the theorem to F2-F4 and refresh the axiom citation and names.
@@ -104,6 +117,9 @@ Counts over the 141 hard files:
 - `scripts/generation_weight_dial_structure_2026_06_05.py` — Recast the result as conditional on a separately retained central-sector/K/CPT bridge, rekey the four axioms, and recheck the open-position claim.
 - `scripts/record_outcome_observable_principle_runner.py` — Make the result conditional on separate retained central-sector, K/CPT, and record-map/readout authorities; remove the axiom-direct claim.
 
+- `docs/NATIVE_CARRIER_REGISTRATION_KERNEL_RATE_VS_UNIT_VARIANCE_POINT_THEOREM_NOTE_2026-07-02.md` — Reopen the kernel derivation: derive the neighbor-conditioned admissible sector set and recompute, or state full central resolution as a supplied bridge premise.
+- `scripts/pmns_tm2_trimaximal_from_record_central_sector_runner.py` — Recast the runner as conditional on an explicit central-sector dephasing/K-reality bridge and remove the verdict that the trimaximal column follows from Record alone.
+
 ### REOPENED-WALL (15)
 
 - `docs/EDGE_TWO_SITE_FRAMING_SUPPLIES_NO_NATIVE_COLOR_ROUTE_RECORD_TEXT_NARROW_NO_GO_NOTE_2026-06-08.md` — Reopen the no-go under the four axioms; rebuild G-B/G-C around admissible local record content and update the runner's authority needles.
@@ -122,7 +138,7 @@ Counts over the 141 hard files:
 - `scripts/generation_dial_occupancy_free_input_2026_06_05.py` — Rebuild the independence proof against Lattice/Qubit/Admissibility/Record and retain the free-r conclusion only if admissibility cannot constrain it.
 - `scripts/one_time_dimension_dt1_reduction_check_2026_06_17.py` — Rebuild the countermodel under all four current axioms, including nearest-neighbor admissibility and record locking, before retaining the d_t=1 open-gate conclusion.
 
-### REKEY (85) — full list in the triage TSVs
+### REKEY (88) — full list in the triage TSVs
 
 ### No-fix classes
 

@@ -8,7 +8,7 @@
 - The fresh index is REGENERABLE: run
   `python3 scripts/axiom_reconciliation_rescan_2026_07_12.py`
   (writes `logs/runner-cache/axiom_reconciliation_rescan_2026_07_12.tsv`
-  and prints the summary; TOTAL: HARD=141 SOFT_ONLY=740
+  and prints the summary; TOTAL: HARD=146 SOFT_ONLY=739
   RETAINED_STATUS_HARD=8 at the base commit).
 - Triage: 30 codex batches classify the 141 hard files. Batch specs and
   full logs live in the session scratchpad

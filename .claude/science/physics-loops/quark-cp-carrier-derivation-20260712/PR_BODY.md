@@ -20,13 +20,13 @@ conventions, and other mass constructions remain open.
 
 ## Artifacts
 
-- [Rewritten target](../../../../docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md)
-- [Exact obstruction runner](../../../../scripts/frontier_quark_cp_carrier_spectrum_basis_obstruction.py)
-- [Paired output](../../../../logs/2026-07-12-quark-cp-carrier-spectrum-basis-obstruction.txt)
-- [Handoff](HANDOFF.md)
-- [Trace gate](TRACE_GATE.md)
-- [No-go discipline](NO_GO_DISCIPLINE_CHECKLIST.md)
-- [Review history](REVIEW_HISTORY.md)
+- [Rewritten target](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/quark-cp-carrier-derivation-block01-20260712/docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md)
+- [Exact obstruction runner](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/quark-cp-carrier-derivation-block01-20260712/scripts/frontier_quark_cp_carrier_spectrum_basis_obstruction.py)
+- [Paired output](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/quark-cp-carrier-derivation-block01-20260712/logs/2026-07-12-quark-cp-carrier-spectrum-basis-obstruction.txt)
+- [Handoff](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/quark-cp-carrier-derivation-block01-20260712/.claude/science/physics-loops/quark-cp-carrier-derivation-20260712/HANDOFF.md)
+- [Trace gate](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/quark-cp-carrier-derivation-block01-20260712/.claude/science/physics-loops/quark-cp-carrier-derivation-20260712/TRACE_GATE.md)
+- [No-go discipline](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/quark-cp-carrier-derivation-block01-20260712/.claude/science/physics-loops/quark-cp-carrier-derivation-20260712/NO_GO_DISCIPLINE_CHECKLIST.md)
+- [Review history](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/quark-cp-carrier-derivation-block01-20260712/.claude/science/physics-loops/quark-cp-carrier-derivation-20260712/REVIEW_HISTORY.md)
 
 ## Validation
 

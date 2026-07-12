@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 417 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2638 |
+| unaudited | 2637 |
 | audit_in_progress | 28 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 98 |
-| ~~audited_failed~~ | 22 |
+| ~~audited_failed~~ | 23 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -49,10 +49,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 550 |
 | `audited_conditional` | 98 |
 | `audited_decoration` | 22 |
-| `audited_failed` | 44 |
+| `audited_failed` | 45 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2988 |
+| `unaudited` | 2987 |
 
 | claim_type | count |
 |---|---:|
@@ -847,6 +847,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `shapiro_diamond_frequency_bridge_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | F | - |
 | `shapiro_five_family_portability_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `shapiro_scaling_direct_replay_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `source_resolved_generated_support_mass_scaling_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `source_resolved_geometry_rule_repair_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `structured_mirror_bornsafe_scan_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -8480,6 +8481,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - **gate failures:**
     - N1: the generic all-even proof, claimed L=6 robustness, alternate phase convention, and native Z3 dynamics routes remain OPEN or UNTESTED
     - N5: theorem-wide even-block and dynamics rhetoric includes resolutions not exercised by the runner
+
+### `single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The finite-dimensional construction of H_gen, its unique unitary group, and T^n=U(-inτ) is valid, but the further assertion that the discrete powers uniquely determine an analytic continuation is not.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00096-single_clock_stone_finite_di`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The note asserts that the discrete values T^n uniquely analytically continue to U(t) because the spectral terms are entire and the expansion is finite.  _(class `A`)_
+- **chain closes:** False — N1-N3 and the functional-calculus identity T^n=U(-inτ) close. The claimed uniqueness of analytic continuation from the discrete positive-integer samples does not: entire functions may agree at every positive integer without agreeing elsewhere.
+- **rationale:** Issue: the note says the discrete sequence T^n has a unique analytic continuation merely because the displayed spectral terms are entire and finite in number. Why this blocks: values on the positive integers have no finite accumulation point, so they do not uniquely determine an entire function; the runner checks only the prescribed exponential continuation. Repair target: remove the uniqueness-from-discrete-data assertion or add and prove a condition such as the one-parameter-group/semigroup law that selects the exponential. Claim boundary until fixed: H_gen uniqueness, finite-dimensional Stone uniqueness, and the identity T^n=U(-inτ) remain valid.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the discrete_entire_interpolation attack remains open against the source's unique-analytic-continuation wording.
 
 ### `site_phase_cube_shift_intertwiner_note`
 

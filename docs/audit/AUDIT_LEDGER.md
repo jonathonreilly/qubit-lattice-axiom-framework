@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 92 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 364 |
+| **retained_bounded** | 365 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2777 |
+| unaudited | 2776 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 476 |
+| `audited_clean` | 477 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3127 |
+| `unaudited` | 3126 |
 
 | claim_type | count |
 |---|---:|
@@ -221,6 +221,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `continuum_limit_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `critical_exponents_topology_live_scout_note_2026-06-04` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `critical_exponents_topology_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `cross_family_universality_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -2305,6 +2306,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - **gate failures:**
     - N1: only the frozen forward-diffusion fixture is closed; gain, weak-response, decay, angular-kernel, carrier, architecture, and family routes remain open or untested.
     - N5: architecture-wide rescue rhetoric exceeds the resolutions actually tested.
+
+### `cpt_d_level_finite_lattice_algebraic_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`CPT_D_LEVEL_FINITE_LATTICE_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/CPT_D_LEVEL_FINITE_LATTICE_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic identity CPT H (CPT)^{-1}=H for a real Hermitian H and operators C, P, T satisfying the stated involution, reality, and action hypotheses.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00392-cpt_d_level_finite_lattice_a`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Using THT^{-1}=H, PHP=-H, and CHC=-H gives CPT H (CPT)^{-1}=CPHPC=C(-H)C=H.  _(class `A`)_
+- **chain closes:** True — The inverse order and antilinear conjugation are handled correctly, after which direct substitution of premises (3), (2), and (1) proves the identity for arbitrary finite N. No physical-Hamiltonian, SME, continuum, or interacting-theory bridge enters the scoped conclusion.
+- **rationale:** The load-bearing step is a universal class-A algebraic identity over explicitly stated hypotheses, not a definition, numerical match, or imported physical bridge. The runner genuinely performs exact SymPy calculations and counterfactual probes; its finite instances corroborate rather than establish the universal proof. The 2x2 choice P=sigma_z is not an ordinary unsigned permutation matrix, so that instance does not certify the full stated P type axiom, but this is non-load-bearing because the proof needs only the involution, reality, and action identities and the 4x4 instance uses a genuine permutation. The note explicitly excludes all downstream physical identifications.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `cpt_exact_note`
 

@@ -18,13 +18,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 101 |
+| **retained** | 102 |
 | **retained_no_go** | 45 |
 | **retained_bounded** | 417 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
 | unaudited | 2637 |
-| audit_in_progress | 28 |
+| audit_in_progress | 27 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 28 |
-| `audited_clean` | 550 |
+| `audit_in_progress` | 27 |
+| `audited_clean` | 551 |
 | `audited_conditional` | 98 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 45 |
@@ -134,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gravity_full_self_consistency_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -391,6 +390,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `harmonic_ladder_weight_law_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-current | C | - |
 | `hierarchy_alpha_lm_dim_trans_reframing_bounded_notation_equivalence_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `hierarchy_alpha_lm_exponent_species_count_bridge_regulator_dependence_no_go_note_2026-05-10` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
+| `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `hierarchy_spatial_bc_and_u0_scaling_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `higher_symmetry_gravity_probe_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -5426,6 +5426,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For fixed nonzero C and fixed positive alpha != 1, unequal integer species-count readouts N_species(R) != N_species(R') imply C alpha^N_species(R) != C alpha^N_species(R').  _(class `A`)_
 - **chain closes:** True — The scoped implication follows from injectivity of n -> alpha^n on integer exponents for positive alpha != 1. B1, B2, the regulator table, and the staggered-carrier gate are contextual witnesses and are not needed for this implication.
 - **rationale:** The load-bearing result is a genuine exact algebraic implication over explicit hypotheses, not a definition, fitted numerical match, or imported physical bridge. The runner computes the symbolic ratio and concrete consequences; its hard-coded B1/B2 checks are contextual and do not carry the scoped theorem. The result does not establish that distinct physical regulator readouts actually occur or that O1/O2 cannot be adopted; it establishes only that those choices alter the fixed-alpha, fixed-prefactor regulator-independent bridge.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The self-contained integer-s theorem that g(s)=(eta(s)/zeta(s))^(1/s) is strictly increasing to 1 for integers s>=2 and equals (7/8)^(1/4) only at s=4, together with the limited dimensional-bookkeeping statement that a mass-dimension-d quantity has simple-power mass-dimension-one extraction f^(1/d). No framework observable or hierarchy formula was audited as closed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00097-hierarchy_joint_riemann_diri`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The eta-zeta identity gives g(s)=(1-2^(1-s))^(1/s), and a term-by-term comparison of -log(1-x) proves g(s+1)>g(s) for every integer s>=2, making g(4)=(7/8)^(1/4) unique.  _(class `A`)_
+- **chain closes:** True — The eta-zeta ratio follows by absolutely convergent odd/even sum splitting, and the displayed positive-term Taylor-series comparison proves strict monotonicity for every integer in the stated domain. The exact value at s=4 then gives uniqueness; the dimensional component is only elementary mass-dimension bookkeeping.
+- **rationale:** The load-bearing proof is exact and self-contained: every Taylor-series term on the right of the monotonicity inequality strictly exceeds its counterpart, so the finite numerical scan is not being used to infer the infinite-domain theorem. The runner's 15 checks are class-A algebraic or numerical sanity checks; several are extraneous to the scoped theorem, but none imports a contested physical premise. Part (D) establishes only the exponent bookkeeping and explicitly withholds any identification of f with a framework observable, so no physical bridge is smuggled into the audited conclusion.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

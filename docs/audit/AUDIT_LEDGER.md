@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 37 |
-| **retained_bounded** | 393 |
+| **retained_bounded** | 394 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2712 |
+| unaudited | 2711 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 511 |
+| `audited_clean` | 512 |
 | `audited_conditional` | 77 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3062 |
+| `unaudited` | 3061 |
 
 | claim_type | count |
 |---|---:|
@@ -208,6 +208,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `chiral_3plus1d_boundary_phase_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_coupled_coin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
+| `chiral_3plus1d_mixing_period_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `chiral_3plus1d_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_split_mass_gravity_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2077,6 +2078,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source directly constructs the coin, shift, dispersion, and loop-response observables and produces the values reported in the note without importing another note or hard-coding the contested results. The closure is bounded to this scan family, parameter grid, and observable definitions.
 - **rationale:** The note is scoped as an exploratory bounded computational claim, not as a broad 3+1D transport theorem. Within that bounded scope, the completed runner output matches the note and the source computes the reported scan metrics from the locally defined lattice walk rather than printing constants or reading upstream results. The interpretation that coupling helps but is insufficient for a clean isotropic KG law follows from the reported improvement in R^2 and gauge visibility together with the still-moderate dispersion quality.
 - **auditor confidence:** high
+
+### `chiral_3plus1d_mixing_period_note`
+
+- **Note:** [`CHIRAL_3PLUS1D_MIXING_PERIOD_NOTE.md`](../../docs/CHIRAL_3PLUS1D_MIXING_PERIOD_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite periodic 3+1D chiral-walk sweep at theta0=0.3, strength=5e-4, mass offset=3, n in {15,21,23,25,31}, and L in {12,14,16,18,20,28}, establishing n-dependent coherent sign classifications and persistent classical/phase-kill AWAY cases; no predictive recurrence or universal phase-offset law is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00250-chiral_3plus1d_mixing_period`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The computed coherent AWAY windows vary with lattice size, while the classical and phase-kill evolutions coincide and retain AWAY windows.  _(class `C`)_
+- **chain closes:** True — The supplied runner constructs and evolves the coherent, classical-probability, and layerwise phase-kill states on the periodic lattice, then computes the finite sign-window sets. Its hard-coded expected sets are post-computation regression assertions rather than inputs to the evolved distributions.
+- **rationale:** Within the stated finite parameter grid, the runner genuinely computes all three propagation modes and reproduces the note's sign-window tables. Classical and phase-kill values coincide, and both retain negative-response cases, so the bounded decoherence conclusion follows without an external comparator or imported target value. The evidence rejects a size-independent theta0-only sign rule on this grid, but it does not establish the predictive recurrence or geometry-induced phase-offset law explicitly left open.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `chiral_3plus1d_recurrence_note`
 

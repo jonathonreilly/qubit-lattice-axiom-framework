@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 417 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2629 |
+| unaudited | 2628 |
 | audit_in_progress | 31 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 99 |
+| ~~audited_conditional~~ | 100 |
 | ~~audited_failed~~ | 24 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 31 |
 | `audited_clean` | 553 |
-| `audited_conditional` | 99 |
+| `audited_conditional` | 100 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 46 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2979 |
+| `unaudited` | 2978 |
 
 | claim_type | count |
 |---|---:|
@@ -748,6 +748,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `gauge_vacuum_plaquette_framework_point_underdetermination_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hierarchy_matsubara_decomposition_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -5436,6 +5437,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing result is a genuine exact algebraic implication over explicit hypotheses, not a definition, fitted numerical match, or imported physical bridge. The runner computes the symbolic ratio and concrete consequences; its hard-coded B1/B2 checks are contextual and do not carry the scoped theorem. The result does not establish that distinct physical regulator readouts actually occur or that O1/O2 cannot be adopted; it establishes only that those choices alter the fixed-alpha, fixed-prefactor regulator-independent bridge.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16`
+
+- **Note:** [`HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md`](../../docs/HIERARCHY_D4_DENSITY_SCALE_READOUT_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Algebraic corollary that a positive fixed D=4 density readout maps coefficient ratios to inverse fourth-root scale ratios with the stated sign and reference normalization; no physical VEV identification is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00109-hierarchy_d4_density_scale_r`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** From rho_* = A_ref v_ref^4 = A(L) v(L)^4, positivity gives v(L) / v_ref = (A_ref / A(L))^(1/4).  _(class `A`)_
+- **chain closes:** False — The conditional positive-real algebra closes, but the restricted packet does not derive the fixed-density readout as a physical electroweak order parameter, select the physical coefficient surface, or provide the absolute hierarchy normalization.
+- **rationale:** The inverse fourth-root placement, normalization, and sign follow exactly once the fixed positive density equation is assumed, and the runner correctly checks those algebraic consequences without an external comparator. The source explicitly withholds the physical VEV/readout identification, physical endpoint-surface selection, absolute normalization, and correction control. Because the mandatory discipline gate retains open and untested routes, the bounded result remains conditional rather than clean.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 contains open physical-order-parameter, endpoint-surface, and absolute-normalization routes plus an untested radiative/continuum route.
+    - N5 confirms that only the fixed-density algebra and finite endpoint substitutions were tested, not the broader physical resolutions.
 
 ### `hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`
 

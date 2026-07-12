@@ -19,12 +19,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 100 |
-| **retained_no_go** | 41 |
+| **retained_no_go** | 42 |
 | **retained_bounded** | 412 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
 | unaudited | 2655 |
-| audit_in_progress | 28 |
+| audit_in_progress | 27 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 28 |
-| `audited_clean` | 540 |
+| `audit_in_progress` | 27 |
+| `audited_clean` | 541 |
 | `audited_conditional` | 93 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 43 |
@@ -134,7 +134,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `generation_degeneracy_minimal_symmetry_breaking_narrow_theorem_note_2026-05-23` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `gravity_full_self_consistency_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -408,6 +407,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_cyclic_projector_block_democracy_note_2026-04-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_cyclic_wilson_descendant_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_dweh_cyclic_compression_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
+| `koide_frobenius_isotype_split_uniqueness_note_2026-04-21` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | judicial_review | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `koide_gamma_orbit_selector_bridge_note_2026-04-18` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -5767,6 +5767,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The audited scope is a finite-dimensional linear-algebra theorem: cyclic group averaging is a canonical projector, its image is the stated circulant Hermitian basis, and the trace responses reconstruct the projected component. This does not audit the upstream microscopic source law, Koide selector principle, or charged-lepton readout, which the note explicitly leaves open.
 - **rationale:** Within the bounded algebraic scope, the load-bearing step closes: the note states the projector, the basis-level action, the generic coefficient formula, and the response reconstruction, and the cached runner confirms all algebraic identities with PASS=11 FAIL=0. The two D-class checks are only witness/comparator checks for the observed amplitude target and are not needed to prove the compression theorem. This clean verdict must not be read as closing the microscopic source law for (r0,r1,r2), the selector principle, or the final charged-lepton readout, all of which remain explicitly outside this claim scope.
 - **auditor confidence:** high
+
+### `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`
+
+- **Note:** [`KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md`](../../docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Within the displayed B_{alpha,beta} family on Herm(3), positive-definiteness, Ad-invariance, and scalar/traceless orthogonality leave a free relative isotype weight and do not force beta = 0.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00063-koide_frobenius_isotype_spli`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The positive-definite Ad-invariant form B_{1,1} has scalar weight 4 and traceless weight 1, providing a counterexample to any claim that the listed premises force beta = 0.  _(class `A`)_
+- **chain closes:** True — The exact scalar/traceless decomposition gives the positivity region, and alpha = beta = 1 is an explicit witness satisfying every listed premise while having unequal isotype weights. The conditional Koide corollary is not load-bearing.
+- **rationale:** The load-bearing result is an exact finite-dimensional counterexample, not a fitted value, definition, or imported normalization. Trace invariance makes B_{1,1} Ad-invariant, the displayed decomposition proves positive-definiteness and isotype orthogonality, and its 4:1 relative weighting excludes beta = 0. The verdict is confined to the stated linear-algebra premises and does not rule out an independent future normalization authority.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18`
 

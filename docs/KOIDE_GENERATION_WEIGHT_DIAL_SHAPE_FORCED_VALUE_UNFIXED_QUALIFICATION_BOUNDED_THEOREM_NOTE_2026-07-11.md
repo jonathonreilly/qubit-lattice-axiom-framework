@@ -1,0 +1,333 @@
+# Generation Weight Dial: Shape Forced, Value Unfixed (from the Qualification) — Bounded Theorem
+
+**Date:** 2026-07-11
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Claim scope:** Conditional on a density-operator realization of weights on the
+canonical `C3` generation readout context and invariance under the supplied
+automorphisms — the `C3` action and the supplied readout-context antiunitary
+`K`/CPT exchange of the two doublet characters — every such invariant density
+operator lies on the one-parameter dial
+`rho = diag(p_s, p_d/2, p_d/2)`. Doublet-internal equality is forced; the
+singlet-versus-doublet split is not. By the current axiom memo's Qualification,
+the point on that dial is a choice not fixed by the supplied structure and
+therefore remains a named conditional or open dependency unless a retained
+derivation or bridge closes it. A pointwise registered value is data, not
+premise authority. This note derives no `r` value, prefers no `r` value, claims
+no uniqueness of the dial family beyond the stated density-state and
+invariance scope, touches no quark/neutrino lane, proposes no axiom or primitive
+change, and sets no audit status.
+**Status authority:** independent audit lane only. This source note sets no audit
+outcome, predicts no audit outcome, and changes no registry row.
+**Current-main posture (2026-07-11):** proposed bounded supporting science in
+the `r = 1/2` lane. It changes no premise registry or retirement history.
+**Primary runner:**
+[`scripts/frontier_koide_dial_shape_qualification_2026_07_11.py`](../scripts/frontier_koide_dial_shape_qualification_2026_07_11.py)
+**Runner cache:**
+[`logs/runner-cache/frontier_koide_dial_shape_qualification_2026_07_11.txt`](../logs/runner-cache/frontier_koide_dial_shape_qualification_2026_07_11.txt)
+  (17 checks, all PASS)
+
+## Purpose
+
+The `r = 1/2` lane has a stable dial setting but no unconditional derivation of
+the value. Prior lane work established negative facts — the listed `C3`/`S3`
+symmetry routes do not fix `r = 1/2`
+([`KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md`](KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md)).
+This note states a conditional positive classification using the canonical
+readout context, a named supplied antiunitary, and an explicit density-state
+input:
+
+1. the **shape** of every invariant density-state weight rule in that class is
+   forced onto a single one-parameter dial;
+2. the **point** on that dial is, by the Qualification's current boundary, an
+   unfixed choice and therefore remains conditional/open unless retained
+   science closes it.
+
+This is a shape/value separation. It does not close the value question; it
+certifies that the value question is open in the precise sense the Qualification
+names.
+
+## Supplied premises (named exactly)
+
+Two kinds of input are used, and they are kept distinct throughout.
+
+### Axiom content (quoted verbatim from `docs/MINIMAL_AXIOMS_2026-06-29.md`)
+
+The **Qualification** (current law/choice discipline):
+
+> These axioms state only their named primitive content. Further physical
+> structure requires a retained derivation or bridge, or explicit approved-
+> primitive registration, before use as a premise. A choice not fixed by the
+> supplied structure remains a named conditional or open dependency.
+
+> A state is a configuration of records.
+
+> A law privileges no states. Its domain is a supplied condition, and at every
+> state where the condition holds it gives exactly one answer.
+
+The **Qubit** non-privilege sentence:
+
+> No possibility is privileged. Possibilities are distinguished by the supplied
+> algebraic structure alone.
+
+### Supplied readout-context content (NOT axiom content)
+
+The theorem is **conditional** on two supplied elements of the canonical
+context; neither is promoted to axiom content, and the axiom memo explicitly
+leaves `K`/CPT structure downstream:
+
+- **S1 — the canonical `C3` generation readout context.** The `hw = 1`
+  generation factor identified with `C^3`, cyclic shift `U`, supplied circulant
+  class `Y = a I + b U + conj(b) U^{-1}`, with two cells: the **singlet cell**
+  (unit direction `I`, the eigenvalue-`1` character of `U`) and the **doublet
+  cell** (the Hilbert–Schmidt orthocomplement `B = J - I`, the two remaining
+  characters). Source:
+  [`C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md`](C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md).
+  This supplies the `C3` action `U`.
+
+- **S2 — the antiunitary `K`/CPT exchange of the two doublet characters.** The
+  standard-basis conjugation `K` that identifies the two doublet characters
+  `omega <-> conj(omega)` as one `K`/CPT orbit (the "doublet `K`-orbit outcome
+  `d`" of the canonical context). Per the axiom memo, "`K`/CPT orbit structure,
+  central-sector decomposition, and any sector generation rule are downstream
+  readout-context content, not generic axiom content," and "context selection,
+  measurement basis selection, Born weights, probability rules" remain outside
+  axiom content. **`K`/CPT structure is therefore a supplied readout-context
+  element, not axiom content.** T1 below is conditional on S2; the note names it
+  as such and does not silently upgrade it. The canonical definition note is a
+  naming ratification only and supplies no structure; the supplied-context
+  class that carries a fixed `K`/CPT action on this surface is the one used by
+  [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)
+  (supplied ORBIT-INDEXING with fixed `K`/CPT action, cited at its claim scope
+  as the established supplied-context class, not as a derivation of S2).
+
+**Provenance note on S2 (read carefully).** In the standard basis `U` is a real
+permutation, so `K` (coordinate conjugation) commutes with `U` as operators.
+`K` nonetheless exchanges the two doublet characters, because it is antilinear:
+if `U v = omega v` then `U (K v) = K (U v) = conj(omega) (K v)`, so `K` carries
+the `omega`-eigenspace to the `conj(omega)`-eigenspace and fixes the real
+singlet eigenspace. The exchange is a consequence of antilinearity, not of a
+`U -> U^{-1}` relation. Runner CHECK 06 verifies exactly this.
+
+### Explicit state-form input (NOT axiom content)
+
+- **S3 — density-operator realization.** The weight rule is represented on the
+  supplied three-dimensional carrier by a positive trace-one operator `rho`,
+  with projection weights `w(P) = Tr(rho P)`. The minimal axioms, S1, and S2 do
+  not supply this Born/state-form representation. It is an explicit bounded
+  input to the classification below. The theorem does not claim that every
+  framework weight rule has this form.
+
+## T1 — Invariant density-state dial shape is forced
+
+**Statement.** Let `w(P) = Tr(rho P)` be a density-operator weight rule (S3) on
+the canonical `C3` generation readout context, and assume `rho` is invariant
+under the supplied automorphism group generated by the `C3` action `U` (S1)
+and the antiunitary `K`/CPT doublet-character exchange (S2). Then every such
+invariant state has the form, in the character (DFT) basis,
+
+```text
+rho = diag(p_s, p_d/2, p_d/2),   p_s, p_d >= 0.
+```
+
+Doublet-internal equality (`p_d/2 = p_d/2`) is **forced**. The singlet-versus-
+doublet split (`p_s` vs `p_d`) is **not** forced. The invariant family is a
+one-parameter dial; its coordinate is `r = p_d/(2 p_s)`.
+
+**Proof.**
+
+*Invariant-state hypothesis.* Invariance under `U` and `K` is explicit in the
+statement. The Qualification and Qubit non-privilege language motivate testing
+this natural class, but they are not used as a hidden derivation of covariance,
+of the density operator, or of a weighting rule.
+
+*`C3`-invariance ⇒ character-diagonal.* `U` has three distinct eigenvalues
+`{1, omega, conj(omega)}` (three inequivalent `C3` characters; CHECK 02). Its
+commutant is exactly the circulant algebra — the char-diagonal matrices, complex
+dimension 3 (CHECK 04). A `C3`-invariant Hermitian state is therefore
+`rho = a I + b U + conj(b) U^{-1}` with `a` real, `b` complex — three real
+parameters. In the character basis this is `diag(p_0, p_1, p_2)` with the two
+doublet weights `p_1, p_2` **free**: `p_1 = p_2` iff `b` is real, and `p_1 != p_2`
+for non-real `b` (CHECK 05). So `C3` alone does **not** equalize the doublet.
+
+*Antiunitary exchange ⇒ doublet-internal equality.* `K`-invariance
+`K rho K^{-1} = rho` reads, in the standard basis, `conj(rho) = rho`, forcing the
+circulant coefficient `b` real, hence `p_1 = p_2` (CHECK 06, CHECK 07). The joint
+  invariant Hermitian operator space then has real dimension 2 and equals
+  `{diag(x, y, y)}` (CHECK 07); its positive trace-one slice is exactly the
+  density-state dial `{diag(p_s, p_d/2, p_d/2)}`. Two hundred random Hermitian
+  operators project onto this form (CHECK 08).
+
+*Split not forced — the obstruction.* The singlet cell is the rank-1 projector
+onto the eigenvalue-`1` character; the doublet cell is the rank-2 projector onto
+the other two characters. No supplied automorphism, unitary or antiunitary, maps
+the rank-1 cell to the rank-2 cell: a unitary or antiunitary preserves subspace
+dimension, and `1 != 2` (CHECK 09). Equivalently, every one of the six group
+elements fixes the singlet cell and permutes the doublet characters among
+themselves, so the singlet orbit never meets the doublet cell (CHECK 10). Hence
+`p_s` and `p_d` are independent invariants: the split is a genuinely free ratio.
+The dial is one-parameter, coordinate `r = p_d/(2 p_s)`. ∎
+
+## T2 — Value is unfixed: the Qualification boundary
+
+**Statement.** There exist two density-state weight rules, both invariant under
+everything in T1, that assign different `r`. Under the ratified component
+dictionary `p_s = a^2`, `p_d = 2|b|^2`, `r = p_d/(2 p_s)` (reading the singlet
+cell weight as `p_s` and the total doublet weight as `p_d`):
+
+- the **dimension rule** `rho = I/3 = diag(1/3, 1/3, 1/3)` (equal weight per
+  carrier dimension) gives `r = 1` (CHECK 11);
+- the **cell-equipartition rule** `rho = diag(1/2, 1/4, 1/4)` (equal weight per
+  cell, split evenly inside the doublet) gives `r = 1/2` (CHECK 12).
+
+Both are positive, trace-one, and invariant under `U` and `K` (CHECK 11,
+CHECK 12). They disagree: `1 != 1/2` (CHECK 13). Therefore the supplied
+symmetries and state-form input do not fix the singlet/doublet weight. In the
+Qualification's current words, it remains "a named conditional or open
+dependency" unless a retained derivation or bridge closes it. ∎
+
+The two rules are the two most symmetric readings of "no possibility is
+privileged": privilege no **dimension** (uniform over the three characters) or
+privilege no **cell** (uniform over the two outcome cells). The supplied
+structure distinguishes the two cells but assigns no relative weight between
+them, so it does not adjudicate between counting dimensions and counting cells.
+That undetermined arbitration **is** the free coordinate `r`.
+
+**Corollary (stated plainly).** A pointwise value of `r` may be recorded as
+realized-state data, but that filing does not turn the value into premise
+authority. Any downstream law-dependent use must cite a retained derivation or
+bridge; otherwise the value remains a named conditional/open dependency. The
+open positive consumer is the durability/`kappa` dynamical-selection lane. This
+note names that consumer, takes no dependence on it, and derives no part of it.
+An approved-primitive route would require a separate explicit owner decision
+and registry review; no such route is proposed here.
+
+## T3 — Consistency corollary (recovers the known facts)
+
+T1 recovers, as special cases, the symmetry facts of
+[`KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md`](KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md).
+This is consistency, not novelty.
+
+- **`C3` leaves `r` free.** Under `C3` alone the doublet-split coordinate is a
+  free real parameter (two `C3`-invariant states with different doublet weights;
+  CHECK 05, CHECK 15). That is exactly the no-go's "`C3` leaves `r` free
+  (`Q = (1 + 2r)/3` is non-constant)."
+- **No unitary singlet/doublet swap.** The rank/dimension obstruction `1 != 2`
+  forbids any unitary in the supplied group from swapping the cells (CHECK 09,
+  CHECK 15) — the no-go's "the singlet (dim 1) and doublet (dim 2) are
+  different-dimensional irreps, so no unitary singlet/doublet swap exists."
+- **Norm-balance dictionary.** With `p_s = a^2`, `p_d = 2|b|^2`, one has
+  `r = |b|^2/a^2 = p_d/(2 p_s)`, `Q = (1 + 2r)/3`, and `r = 1/2` iff the channel
+  energies balance `E_+ = 3 a^2 = E_perp = 6|b|^2` (CHECK 14) — the no-go's
+  equal-channel-energy characterization of `r = 1/2`.
+
+## Overlap check — what is new versus the Frobenius isotype-weight no-go
+
+Compared with
+[`KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md`](KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md).
+**Verdict: this note is NOT a restatement of the Frobenius note.** There is a
+real structural echo — each ends with one ratio freedom between two isotype
+blocks — but the object, the group, the equalizing mechanism, and the binding
+content all differ.
+
+| | Frobenius note (2026-04-21) | This note (2026-07-11) |
+|---|---|---|
+| Object classified | Ad-invariant **inner products** (bilinear forms `alpha Tr(AB) + beta tr(A)tr(B)`) | Automorphism-invariant **states / weight rules** `rho` |
+| Underlying space | operator space `Herm(3)` (real dim 9) | outcome carrier `C^3` (the readout cells) |
+| Symmetry group | full **adjoint** action (SU(3)/U(3)) | **`C3`** cyclic group + supplied **antiunitary `K`** exchange |
+| Isotype decomposition | scalar (dim 1) ⊕ traceless (dim 8) | singlet character ⊕ two doublet characters |
+| Why the "internal" block is equal-weighted | automatic by **Schur** (the 8-dim traceless block is a single irreducible Ad-isotype) | **not** automatic — the two doublet characters are inequivalent 1-dim `C3` irreps; equality is forced only by the **supplied antiunitary S2** |
+| Freedom left | scalar/traceless weight ratio `beta/alpha` | singlet/doublet split ratio `r` |
+| Binding new content | none of the below | the **Qualification boundary**: the free ratio is a choice not fixed by the supplied structure and remains conditional/open until retained science closes it |
+| Grounding | pre-reset linear-algebra premises (PD + Ad-invariance + orthogonality) | current Qualification boundary + explicit S1-S3 conditional inputs |
+
+What the Qualification adds that the Frobenius note lacks: the Frobenius note
+ends at "future positive work must supply an independent authority that fixes the
+ratio." This note places that same residual in the current taxonomy: a pointwise
+registered value remains data, while a law-dependent consumer needs a retained
+derivation or bridge and otherwise stays conditional/open. The equalizing
+mechanism is also genuinely different: Frobenius gets internal equality for free
+by Schur on an irreducible block, whereas here the two doublet characters are
+inequivalent under the supplied `C3` action and their equality is a
+**conditional** consequence of the named antiunitary S2. Remove S2 and the
+doublet split reopens (CHECK 05); there is no analog of that dependence in the
+Frobenius picture.
+
+## What this note does NOT claim
+
+- Does not derive, prefer, or predict any `r` value (in particular does not
+  derive `r = 1/2`).
+- Does not claim the dial family is unique beyond the stated density-state and
+  invariance scope on this canonical context under the group generated by `U`
+  and `K`.
+- Does not promote the antiunitary `K`/CPT exchange to axiom content; T1 is
+  conditional on the supplied readout-context element S2, and this is stated in
+  the premise list.
+- Does not touch the quark or neutrino lanes.
+- Does not propose or depend on any axiom change or primitive registration;
+  historical admission language supplies no authority. It sets no audit status
+  and uses no `effective_status` verdict language.
+- Does not consume PDG values, fitted selectors, lattice numerics, or unit
+  conventions. The charged-lepton `Q = 2/3` is a comparator only, not an input.
+- Does not derive the durability/`kappa` dynamical selection law; it names that
+  lane as the open derivational consumer and takes no dependence on it.
+
+## Boundaries and residues
+
+- The shape result T1 is conditional on S1-S3 and the explicit invariance
+  hypothesis; the value result T2 states that the shape's one coordinate is not
+  fixed by those inputs. Neither closes the value question.
+- The open positive route is a derived dynamical selection law (route (b) of the
+  T2 corollary), gated on the durability/`kappa` lane. Nothing here derives it.
+- A pointwise registered value remains data and does not chain-satisfy a
+  downstream dependency. A new approved primitive would require a separate
+  owner decision and registry review; this note neither proposes nor assumes
+  one.
+
+## Validation
+
+Run:
+
+```bash
+python3 scripts/frontier_koide_dial_shape_qualification_2026_07_11.py
+```
+
+Expected terminal form: `CHECK NN: PASS/FAIL -- <description>` lines followed by
+the four-line summary whose final line is `TOTAL: PASS=17 FAIL=0`. The 17 checks:
+(01) `U` unitary of order 3; (02) three distinct `C3` characters; (03) `U`
+diagonal in the character basis; (04) commutant = circulant algebra (dim 3);
+(05) `C3` alone leaves the doublet weights free; (06) antiunitary `K` swaps the
+doublet characters, fixes the singlet; (07) `K`-invariance forces `p_1 = p_2`
+(joint-invariant Hermitian operators are `diag(x,y,y)`, real dim 2); (08)
+robustness over 200 random Hermitian operators; (09) cell rank obstruction (no singlet→doublet map);
+(10) cell orbit obstruction; (11) dimension rule `rho = I/3` gives `r = 1`;
+(12) cell-equipartition rule `diag(1/2,1/4,1/4)` gives `r = 1/2`; (13) unfixed-
+value witness (`1 != 1/2`); (14) dictionary/`Q`/equal-energy consistency;
+(15) file-4 recovery (`C3` leaves `r` free; no unitary swap); (16) current
+Qualification wording guard; (17) S2 supplied-context source guard.
+
+## Dependencies
+
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — Qualification,
+  law-discipline, and Qubit non-privilege sentences (quoted verbatim above); and
+  the memo's statement that `K`/CPT structure is downstream readout-context
+  content.
+- [`C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md`](C3_GENERATION_READOUT_CONTEXT_CANONICAL_DEFINITION_NOTE_2026-07-02.md)
+  — the canonical context, its two cells, and the ratified component dictionary
+  `p_s = a^2`, `p_d = 2|b|^2`, `r = p_d/(2 p_s)`.
+- [`KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`](KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md)
+  — the supplied-context class carrying the fixed `K`/CPT action used as S2;
+  this row is not treated as an axiom or as a derivation of that supplied input.
+- [`REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md`](REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md)
+  — pointwise registration discipline: a state-contingent value is data, not
+  derivation output or premise authority.
+
+## Cross-references
+
+- [`KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md`](KOIDE_R_HALF_NOT_SYMMETRY_PROTECTED_DYNAMICAL_NORM_BALANCE_NARROW_NO_GO_NOTE_2026-06-04.md)
+  — T3 recovers its `C3`-leaves-`r`-free and no-unitary-swap facts; consistent
+  with its equal-channel-energy characterization of `r = 1/2`.
+- [`KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md`](KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md)
+  — overlap check above; distinct object (states vs inner products), group
+  (`C3`+antiunitary vs Ad), equalizing mechanism, and binding content
+  (current Qualification boundary).

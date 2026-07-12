@@ -17,7 +17,20 @@
   preserving the historical bounded/non-exact scope markers. The separate
   `frontier_v_even_theorem_retention.py` run has one preexisting prototype-note
   phrase failure unrelated to this changed note.
-- Required `review-loop` iteration 2: pending.
+- Iteration 2 passed the physics boundary, Nature-retention, labeling, import,
+  and governance reviews after two final schema/vocabulary fixes. No-Go
+  Discipline was not applicable because `NO_GO_LEDGER.md` records prior review
+  memory and advances no negative theorem.
+- Iteration 3 fixed and rechecked one AST sign-handling bug in the literal
+  firewall and one remaining state-schema field set.
+- Final dispositions: Code/Runner `PASS`; Physics Claim `BOUNDED`; Imports
+  `PASS`; Nature Retention `BOUNDED`; Labeling `PASS`; No-Go Discipline `NOT
+  APPLICABLE`; Repo Governance `PASS`; Audit Compatibility `PASS`.
+- Total unique findings: 14; fixed: 14; skipped: 0.
+- Audit validation pipeline: target row parsed as `bounded_theorem` with
+  `deps=[]`, `helper_runner_paths=[]`, `ready=true`; strict lint had no errors.
+- All regenerated audit, publication-effective-status, and front-door outputs
+  were stripped before the final commit.
 - Independent audit: required; not performed by this science block.
 
 ## Promotion value gate

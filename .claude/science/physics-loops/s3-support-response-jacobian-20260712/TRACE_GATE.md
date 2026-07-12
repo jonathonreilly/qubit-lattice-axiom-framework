@@ -7,7 +7,7 @@ target_blocker_text: "The load-bearing step is a definition of a new symbol as a
 source_of_blocker_text: audit_ledger
 reachability_to_target: closes
 artifact_role: runner_certificate
-next_trace_action: "independently review the self-contained four-evaluation endpoint coefficient and bounded affine-interpolation theorem"
+next_trace_action: "after merge, run the independent audit on the self-contained endpoint coefficient and bounded affine-interpolation theorem"
 ```
 
 The exact closure path is:

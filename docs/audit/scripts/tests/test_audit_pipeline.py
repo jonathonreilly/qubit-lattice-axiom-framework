@@ -6273,6 +6273,25 @@ class CodexAuditRunnerReauditCandidatesTest(unittest.TestCase):
         )
         self.assertEqual((role, independence), ("reaudit", "cross_family"))
 
+    def test_reset_dispatch_row_uses_archived_auditor_for_reaudit_role(self):
+        m = _import_codex_audit_runner()
+        role, independence = m.determine_audit_role(
+            {
+                "audit_status": "unaudited",
+                "previous_audits": [{"auditor_family": "codex-gpt-5.6"}],
+            },
+            "codex-gpt-5.6",
+            is_reaudit_candidate=True,
+        )
+        self.assertEqual((role, independence), ("reaudit", "fresh_context"))
+
+        role, independence = m.determine_audit_role(
+            {"audit_status": "unaudited", "previous_audits": []},
+            "codex-gpt-5.6",
+            is_reaudit_candidate=True,
+        )
+        self.assertEqual((role, independence), ("first", "cross_family"))
+
     def test_reaudit_role_still_skips_judicial_blockers(self):
         m = _import_codex_audit_runner()
 
@@ -6362,6 +6381,7 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
                         "claim_id": "ready",
                         "ready": True,
                         "audit_question": "Does the scoped result survive?",
+                        "note_path": "docs/MALICIOUS.md",
                     },
                     {"claim_id": "blocked", "ready": False},
                     {"claim_id": "missing", "ready": True},
@@ -6391,6 +6411,27 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             )
             self.assertEqual([row["claim_id"] for row in all_rows], ["ready", "blocked"])
 
+    def test_dispatch_rejects_nonstandard_allowed_context(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "dispatch.json"
+            path.write_text(json.dumps({
+                "live": [{
+                    "claim_id": "ready",
+                    "ready": True,
+                    "allowed_context_paths": ["docs/UNRELATED_SCIENCE.md"],
+                }]
+            }), encoding="utf-8")
+            m.DISPATCH_QUEUE_PATH = path
+            with self.assertRaisesRegex(ValueError, "nonstandard context paths"):
+                m.load_dispatch_targets({
+                    "ready": {
+                        "claim_id": "ready",
+                        "note_path": "docs/READY.md",
+                        "deps": [],
+                    }
+                })
+
     def test_transport_bounds_rendered_n8_but_preserves_trusted_manifest(self):
         m = _import_codex_audit_runner()
         cid = "target"
@@ -6417,9 +6458,34 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         self.assertIsNotNone(metadata)
         self.assertLess(metadata["rendered_candidates"], 30)
         self.assertEqual(metadata["authenticated_candidates"], 30)
-        self.assertEqual(manifest[path]["text"], full)
+        self.assertNotEqual(manifest[path]["text"], full)
+        self.assertEqual(
+            manifest[path]["transport_bounded_full_content_sha256"],
+            hashlib.sha256(full.encode("utf-8")).hexdigest(),
+        )
+        self.assertEqual(
+            manifest[path]["transport_bounded_rendered_candidate_count"],
+            metadata["rendered_candidates"],
+        )
         self.assertIn("N8 TRANSPORT BOUND", fitted)
         self.assertIn("do not return audited_clean", fitted)
+
+        snapshot = m.no_go_discipline_gate.build_evidence_snapshot({}, manifest)
+        packet = {"evidence_snapshot": snapshot}
+        current = {path: {"text": full, "roles": ["cross_cycle_index"]}}
+        self.assertIsNone(
+            m.no_go_discipline_gate.evidence_snapshot_current_error(packet, current)
+        )
+        changed_payload = dict(payload)
+        changed_payload["candidates"] = list(payload["candidates"])
+        changed_payload["candidates"][0] = {
+            "candidate_id": "candidate-0", "text": "tampered"
+        }
+        current[path]["text"] = json.dumps(changed_payload, indent=2, sort_keys=True)
+        self.assertIn(
+            "full index content drifted",
+            m.no_go_discipline_gate.evidence_snapshot_current_error(packet, current) or "",
+        )
 
     def test_transport_bound_verdict_fails_closed(self):
         m = _import_codex_audit_runner()
@@ -6446,15 +6512,36 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         self.assertTrue(m.fresh_schema_retry_eligible(
             "N5 statement 1 must record one tested resolution per required class"
         ))
+        self.assertTrue(m.fresh_schema_retry_eligible(
+            "no_go_discipline.status must be PASS or FAIL"
+        ))
         self.assertFalse(m.fresh_schema_retry_eligible("claim_id mismatch"))
+        code = m.fresh_schema_retry_code(
+            "N1 route prior_secret.route_class exposes prior content"
+        )
+        self.assertEqual(code, "N1_SCHEMA_REJECT")
         prompt = m.render_fresh_schema_retry_prompt(
             "ORIGINAL RESTRICTED PACKET",
-            "N1 route class mismatch",
+            code,
             1,
         )
         self.assertIn("ORIGINAL RESTRICTED PACKET", prompt)
-        self.assertIn("N1 route class mismatch", prompt)
+        self.assertIn("N1_SCHEMA_REJECT", prompt)
+        self.assertNotIn("prior_secret", prompt)
         self.assertIn("not given its JSON or conclusion", prompt)
+
+    def test_compute_required_escape_must_be_exact_one_line(self):
+        m = _import_codex_audit_runner()
+        self.assertEqual(
+            m.compute_required_reason("COMPUTE_REQUIRED: need the long run"),
+            "need the long run",
+        )
+        self.assertIsNone(m.compute_required_reason(
+            '{"verdict_rationale":"COMPUTE_REQUIRED: quoted only"}'
+        ))
+        self.assertIsNone(m.compute_required_reason(
+            "COMPUTE_REQUIRED: first line\nextra output"
+        ))
 
 
 class RelabelUnverifiedCodexAuditsTest(unittest.TestCase):

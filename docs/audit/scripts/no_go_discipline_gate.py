@@ -1464,6 +1464,14 @@ def build_evidence_snapshot(
             snapshot_entry["no_go_row_universe_sha256"] = cross_payload.get(
                 "no_go_row_universe_sha256"
             )
+            for field in (
+                "transport_bounded_full_content_sha256",
+                "transport_bounded_full_candidate_count",
+                "transport_bounded_rendered_candidate_count",
+                "transport_bounded_rendered_candidate_ids",
+            ):
+                if field in entry:
+                    snapshot_entry[field] = entry[field]
         if "partial_closure_index" in set(entry.get("roles") or []):
             candidates = _partial_closure_candidates(entry)
             if candidates is None:
@@ -1606,6 +1614,14 @@ def evidence_manifest_from_snapshot(packet: dict[str, Any]) -> dict[str, dict] |
                 return None
         universe_count = stored.get("no_go_row_universe_count")
         universe_sha256 = stored.get("no_go_row_universe_sha256")
+        transport_full_sha = stored.get("transport_bounded_full_content_sha256")
+        transport_full_count = stored.get("transport_bounded_full_candidate_count")
+        transport_rendered_count = stored.get(
+            "transport_bounded_rendered_candidate_count"
+        )
+        transport_rendered_ids = stored.get(
+            "transport_bounded_rendered_candidate_ids"
+        )
         if "cross_cycle_index" in set(roles):
             if not isinstance(universe_count, int) or universe_count < 0:
                 return None
@@ -1613,6 +1629,27 @@ def evidence_manifest_from_snapshot(packet: dict[str, Any]) -> dict[str, dict] |
                 r"[0-9a-f]{64}", universe_sha256
             ):
                 return None
+            transport_values = (
+                transport_full_sha,
+                transport_full_count,
+                transport_rendered_count,
+                transport_rendered_ids,
+            )
+            if any(value is not None for value in transport_values):
+                if not (
+                    isinstance(transport_full_sha, str)
+                    and re.fullmatch(r"[0-9a-f]{64}", transport_full_sha)
+                    and isinstance(transport_full_count, int)
+                    and transport_full_count >= 0
+                    and isinstance(transport_rendered_count, int)
+                    and 0 <= transport_rendered_count <= transport_full_count
+                    and isinstance(transport_rendered_ids, list)
+                    and len(transport_rendered_ids) == transport_rendered_count
+                    and all(_text(item) for item in transport_rendered_ids)
+                    and len(set(transport_rendered_ids))
+                    == len(transport_rendered_ids)
+                ):
+                    return None
         manifest[path] = {
             "path": path,
             "roles": list(roles),
@@ -1632,6 +1669,10 @@ def evidence_manifest_from_snapshot(packet: dict[str, Any]) -> dict[str, dict] |
             ),
             "no_go_row_universe_count": universe_count,
             "no_go_row_universe_sha256": universe_sha256,
+            "transport_bounded_full_content_sha256": transport_full_sha,
+            "transport_bounded_full_candidate_count": transport_full_count,
+            "transport_bounded_rendered_candidate_count": transport_rendered_count,
+            "transport_bounded_rendered_candidate_ids": transport_rendered_ids,
             "partial_closure_candidate_ids": stored.get("partial_closure_candidate_ids"),
             "partial_closure_candidates": stored.get("partial_closure_candidates"),
             "partial_closure_candidate_id_universe": stored.get(
@@ -1640,6 +1681,62 @@ def evidence_manifest_from_snapshot(packet: dict[str, Any]) -> dict[str, dict] |
             "phrase_occurrences": phrase_occurrences,
         }
     return manifest
+
+
+def _transport_bounded_cross_cycle_error(
+    stored: dict[str, Any], current: dict[str, Any]
+) -> str | None:
+    """Reauthenticate a rendered N8 prefix against the current full index."""
+    full_text = str(current.get("text") or "")
+    if hashlib.sha256(full_text.encode("utf-8")).hexdigest() != stored.get(
+        "transport_bounded_full_content_sha256"
+    ):
+        return "transport-bounded N8 full index content drifted"
+    try:
+        payload = json.loads(full_text)
+    except json.JSONDecodeError:
+        return "transport-bounded N8 current full index is malformed"
+    candidates = payload.get("candidates") if isinstance(payload, dict) else None
+    if not isinstance(candidates, list):
+        return "transport-bounded N8 current full index lacks candidates"
+    candidate_ids = [
+        str(candidate.get("candidate_id"))
+        for candidate in candidates
+        if isinstance(candidate, dict) and _text(candidate.get("candidate_id"))
+    ]
+    if len(candidate_ids) != len(candidates) or len(set(candidate_ids)) != len(candidate_ids):
+        return "transport-bounded N8 current candidate ids are malformed"
+    full_count = stored.get("transport_bounded_full_candidate_count")
+    rendered_count = stored.get("transport_bounded_rendered_candidate_count")
+    rendered_ids = stored.get("transport_bounded_rendered_candidate_ids")
+    if full_count != len(candidates):
+        return "transport-bounded N8 full candidate count drifted"
+    if rendered_ids != candidate_ids[:rendered_count]:
+        return "transport-bounded N8 rendered ids are not the authenticated prefix"
+    stored_candidates = _index_candidates(
+        stored,
+        schema="no_go_cross_cycle_index_v1",
+        stored_field="cross_cycle_candidate_ids",
+        stored_records_field="cross_cycle_candidates",
+    )
+    expected_candidates = {
+        candidate_ids[index]: candidates[index]
+        for index in range(rendered_count)
+    }
+    if stored_candidates != expected_candidates:
+        return "transport-bounded N8 rendered candidate records drifted"
+    bounded_payload = dict(payload)
+    bounded_payload["candidates"] = candidates[:rendered_count]
+    bounded_text = json.dumps(bounded_payload, indent=2, sort_keys=True)
+    if hashlib.sha256(bounded_text.encode("utf-8")).hexdigest() != stored.get(
+        "content_sha256"
+    ):
+        return "transport-bounded N8 rendered prefix hash drifted"
+    current_universe = _cross_cycle_no_go_universe(current)
+    stored_universe = _cross_cycle_no_go_universe(stored)
+    if current_universe != stored_universe:
+        return "transport-bounded N8 no-go universe digest drifted"
+    return None
 
 
 def evidence_snapshot_current_error(
@@ -1690,6 +1787,16 @@ def evidence_snapshot_current_error(
         if current is None:
             return f"evidence_snapshot path {path!r} is absent from the current packet"
         if dynamic_index and not dynamic_index_drift_invalidates:
+            continue
+        transport_bounded_cross = bool(
+            dynamic_index
+            and "cross_cycle_index" in roles
+            and stored.get("transport_bounded_full_content_sha256")
+        )
+        if transport_bounded_cross:
+            error = _transport_bounded_cross_cycle_error(stored, current)
+            if error:
+                return error
             continue
         if dynamic_index:
             current_text_hash = hashlib.sha256(

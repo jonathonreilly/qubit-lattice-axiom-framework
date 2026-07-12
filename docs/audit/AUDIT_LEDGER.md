@@ -18,11 +18,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 77 |
+| **retained** | 78 |
 | **retained_bounded** | 301 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2948 |
+| unaudited | 2947 |
 | audit_in_progress | 1 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
@@ -41,13 +41,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 1 |
-| `audited_clean` | 380 |
+| `audited_clean` | 381 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3298 |
+| `unaudited` | 3297 |
 
 | claim_type | count |
 |---|---:|
@@ -164,6 +164,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `central_band_dense_largen_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_layernorm_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `central_band_mass_window_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `chiral_3plus1d_boundary_phase_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_coupled_coin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -1334,6 +1335,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** On the densest slice N = 100, both pruned rows fit cleaner power laws than either plain mode, with pruned LN R^2 = 0.994 and pruned linear R^2 = 0.825 versus plain linear R^2 = 0.634 and plain LN R^2 = 0.248.  _(class `C`)_
 - **chain closes:** True — The provided runner and helper sources actually generate matched graphs, compute gravity deltas for the declared modes and mass counts, and fit the declared positive window without hard-coded target values. The cached stdout matches the note's numerical claims and supports the bounded, mixed conclusion.
 - **rationale:** The source note makes a narrow bounded claim about the runner's computed mass-window fits, not a full gravity-law rescue. The runner source and helper chain compute the graph, pruning, propagation, deltas, and log-log fits directly from the declared simulation setup, and the reported R^2 comparisons are reproduced in the provided stdout. No cited non-retained authority, external comparator, renaming, or tuned imported value is load-bearing in this packet.
+- **auditor confidence:** high
+
+### `charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11`
+
+- **Note:** [`CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md`](../../docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For any supplied positive real mass triple, the normalized C3 DFT gives exact reconstruction, a symmetric scale- and permutation-invariant r coordinate, Q = 1/3 + 2r/3 with r unselected, and an S3-invariant folded phase for the unordered triple, including the c = 0 boundary.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-fresh-registered-mass-repaired-retry-2026-07-12`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Parseval in the stated normalization gives sum_j z_j^2 = 3(a^2 + 2|c|^2), hence Q = 1/3 + 2r/3, while the S3 action on c folds phi to an unordered-triple invariant.  _(class `A`)_
+- **chain closes:** True — Root-of-unity orthogonality and real conjugacy close the result directly, and an independent exact Q(omega) calculation confirms every displayed identity. Positivity supplies a > 0 and in fact restricts the coordinate to 0 <= r < 1, while the theorem asserts the weaker r >= 0 and leaves its value unselected.
+- **rationale:** Direct expansion in Q(omega), using omega^2 + omega + 1 = 0, independently reproduces the inverse transform, the 6|c|^2 variance identity, Parseval, and Q = 1/3 + 2r/3. The S3 action phi -> +/-phi + 2pi k/3 proves folded-phase invariance and unordered reconstruction, including the c = 0 limit. The scope starts from a supplied positive triple; physical functional construction and empirical comparison are explicitly outside scope, and r remains unselected.
 - **auditor confidence:** high
 
 ### `chiral_3plus1d_boundary_phase_note`

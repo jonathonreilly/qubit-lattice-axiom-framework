@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 97 |
+| **retained** | 98 |
 | **retained_no_go** | 40 |
 | **retained_bounded** | 399 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2698 |
+| unaudited | 2697 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 522 |
+| `audited_clean` | 523 |
 | `audited_conditional` | 79 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 38 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3048 |
+| `unaudited` | 3047 |
 
 | claim_type | count |
 |---|---:|
@@ -179,6 +179,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bmv_entanglement_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -1626,6 +1627,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N1 contains open and untested alternative reproduction routes.
     - N5 finds untested resolutions behind the lattice-QCD impossibility language.
     - The finite runner does not close the physical graph-gravity, probability/readout, or comparative walls.
+
+### `bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** Standalone rational-algebra equivalence of A·c and A/(4G), its c=1/4 and G=1 specializations, and the positive-rational curve 4Gc=1; no physical Wald, Newton-constant, or black-hole-entropy identification was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00267-bh_quarter_wald_newton_coeff`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** From A·c=A/(4G) with A,G>0, divide by A and cross-multiply by 4G to obtain c=1/(4G), equivalently 4Gc=1.  _(class `A`)_
+- **chain closes:** True — Positivity makes A and G nonzero, so cancellation and cross-multiplication are valid. The specializations, listed points, proper-subset result, and smoothness of the algebraic curve follow directly.
+- **rationale:** The result is a self-contained algebraic theorem with no load-bearing cited authority or physical identification. The runner performs exact symbolic factorization, solving, substitution, and rational-point checks; although one quantifier-reduction check is encoded as a literal True, the source proof independently supplies the valid cancellation argument. The principal residual risk is downstream misuse of this abstract identity as a derivation of the physical Bekenstein-Hawking coefficient or Newton constant.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26`
 

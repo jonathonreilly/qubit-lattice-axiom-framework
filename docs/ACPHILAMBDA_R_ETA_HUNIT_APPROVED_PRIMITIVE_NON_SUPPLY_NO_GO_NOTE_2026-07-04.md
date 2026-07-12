@@ -15,6 +15,8 @@ axiom, primitive, audit verdict, or publication-status surface.
 **Audit boundary:** independent audit lane only.
 **Primary runner:**
 [`scripts/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.py`](../scripts/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.py)
+**Paired runner output:**
+[`logs/runner-cache/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.txt`](../logs/runner-cache/acphilambda_r_eta_hunit_approved_primitive_non_supply_no_go_2026_07_04.txt)
 
 ## Target
 
@@ -69,12 +71,54 @@ approved primitive, or derived theorem.
   `ACPHILAMBDA_REGISTRABLE_CYCLE_HOLONOMY_NORMAL_FORM_2026-07-01.md` name
   adjacent route vocabulary. The proof below checks the approved-premise
   registry and beta-family/type mismatch directly rather than importing those
-  unaudited rows as retained-grade proof.
+  context rows as retained-grade proof.
 - `docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md` and
   `docs/audit/data/premise_decision_history.json` preserve the former
   `delta_readout_identification_R_eta` wording as non-authoritative provenance.
-  The current scientific target is the zero-weight `open_gate` in
-  [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md).
+  As non-load-bearing context, the current scientific target is recorded as a
+  zero-weight `open_gate` in
+  `AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`. That open row is not
+  a dependency of this registry-local no-go.
+
+## Registry Exhaustiveness And Governance Separation
+
+The exhaustiveness statement in this no-go is about the supplied foundation,
+not about every historical governance document. The machine-readable source of
+truth is
+[`docs/audit/data/axiom_premise_nodes.json`](audit/data/axiom_premise_nodes.json).
+Its `canonical_ids` array contains exactly the following four entries, and the
+audit pipeline's [`accepted_premise_ids()`](audit/scripts/premise_nodes.py)
+function returns the same set:
+
+```text
+minimal_axioms
+scale_reference_primitive
+kinetic_isotropy_primitive
+realized_state_primitive
+```
+
+The literal registry snapshot is the load-bearing exhaustiveness evidence. The
+runner's execution of `accepted_premise_ids()` is a non-load-bearing
+consistency check that the audit pipeline consumes that same registry.
+
+The former `owner_governed_premise_nodes.json` registry is absent on the
+current surface. The attempted AC owner-governance retirement survives only in
+[`premise_decision_history.json`](audit/data/premise_decision_history.json)
+under `retired_derivation_targets`, where its mechanism is recorded as
+`historical_governance_retirement_withdrawn_obligations_reopened`. The Tier-A
+index is document-authority class `G` in
+[`doc_authority_registry.json`](audit/data/doc_authority_registry.json), has
+`chain_satisfying: false`, and says the historical record has zero premise
+weight. R-eta is instead present in
+[`derivation_obligations.json`](audit/data/derivation_obligations.json) as
+`ac_reta_hclass_hunit_readout_derivation_obligation`, an `open_gate` that is
+not accepted by [`premise_nodes.py`](audit/scripts/premise_nodes.py) as a
+supplied premise.
+
+Thus the two surfaces do not compete. The four-node foundation registry is the
+exhaustive supplied-premise allowlist. Historical owner governance explains
+why AC was once described as retired, but it supplies no angle-readout bridge
+and does not enlarge that allowlist.
 
 ## Theorem
 
@@ -109,15 +153,21 @@ several alternatives is not the same as deriving the identity member unless the
 surface is proven exhaustive and the identity rule itself is licensed.
 
 Therefore the h-unit identity remains live. A future theorem must derive why
-the fixed-locus density is identity-read as a bare holonomy angle, or owner
-governance must register that narrow premise explicitly.
+the fixed-locus density is identity-read as a bare holonomy angle. An intentional
+bypass would instead require explicit owner approval plus a reviewed update
+registering a narrow approved primitive; governance provenance alone has no
+premise weight.
 
 ## Exact Checks
 
 The paired runner verifies:
 
 - the approved-premise registry contains exactly the four current premise ids
-  and no R-eta/h-unit premise;
+  and no R-eta/h-unit premise, and the audit pipeline computes the same exact
+  accepted-premise set;
+- the former owner-governed registry is absent, the AC governance retirement
+  is historical/withdrawn, the Tier-A index is non-chain-satisfying, and the
+  current R-eta row is a zero-weight open derivation obligation;
 - the minimal axiom memo leaves readout bridges and physical-observable
   identification outside axiom content;
 - scale reference carries zero dimensionless content;
@@ -171,8 +221,8 @@ proof.
 
 **N1 alternative route enumeration.** The block tests minimal axioms,
 scale-reference primitive, kinetic-isotropy primitive, realized-state
-primitive, retained `c != 1` carrier elimination, holonomy normal form, and
-rescale obstruction.
+primitive, unaudited support-only `c != 1` carrier-elimination context,
+holonomy normal form, and rescale obstruction.
 
 **N2 wall independence.** No new wall is introduced. The wall is h-unit/A2,
 one component of `A_R-eta`, inside the already named
@@ -215,13 +265,19 @@ PYTHONPATH=scripts python3 scripts/acphilambda_r_eta_hunit_approved_primitive_no
 Expected close:
 
 ```text
-TOTAL: PASS>=120 FAIL=0
+APPROVED_PREMISE_NODE_SET: ["minimal_axioms","scale_reference_primitive","kinetic_isotropy_primitive","realized_state_primitive"]
+PIPELINE_ACCEPTED_PREMISE_SET: ["kinetic_isotropy_primitive","minimal_axioms","realized_state_primitive","scale_reference_primitive"]
+FORMER_OWNER_GOVERNED_REGISTRY_PRESENT: false
+AC_OWNER_GOVERNANCE_STATUS: historical_governance_retirement_withdrawn_obligations_reopened
+AC_R_ETA_CURRENT_SURFACE: open_gate; premise_weight=none; accepted_premise=false
+TOTAL: PASS>=170 FAIL=0
 ```
 
-## Current Dependency Routing (2026-07-11)
+## Current Dependency And Context Routing (2026-07-12)
 
-Historical decision records have zero premise weight. The unresolved content
-used by this note is routed through the following current foundation or
-zero-weight open obligation:
+The load-bearing dependency surface is the four linked foundation nodes listed
+above. Historical decision records and zero-weight obligations have no premise
+weight. The unresolved physical target is tracked, for non-load-bearing context
+only, in:
 
-- [`AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`](AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md)
+- `AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`

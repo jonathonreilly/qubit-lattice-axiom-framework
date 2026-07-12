@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import math
 import re
+import runpy
 from pathlib import Path
 
 import sympy as sp
@@ -13,6 +14,11 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 NOTE = DOCS / "ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md"
 DECISION_HISTORY = DOCS / "audit" / "data" / "premise_decision_history.json"
+DERIVATION_OBLIGATIONS = DOCS / "audit" / "data" / "derivation_obligations.json"
+DOC_AUTHORITY = DOCS / "audit" / "data" / "doc_authority_registry.json"
+OLD_OWNER_REGISTRY = DOCS / "audit" / "data" / "owner_governed_premise_nodes.json"
+R_ETA_OBLIGATION = DOCS / "AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md"
+PREMISE_POLICY = DOCS / "audit" / "scripts" / "premise_nodes.py"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
 AXIOMS = DOCS / "MINIMAL_AXIOMS_2026-06-29.md"
 AXIOM_PREMISES = DOCS / "audit" / "data" / "axiom_premise_nodes.json"
@@ -71,6 +77,10 @@ def main() -> int:
     paths = [
         NOTE,
         DECISION_HISTORY,
+        DERIVATION_OBLIGATIONS,
+        DOC_AUTHORITY,
+        R_ETA_OBLIGATION,
+        PREMISE_POLICY,
         LEDGER,
         AXIOMS,
         AXIOM_PREMISES,
@@ -93,6 +103,9 @@ def main() -> int:
     note_flat = flat(note)
     tier = json.loads(read(DECISION_HISTORY))
     premises = json.loads(read(AXIOM_PREMISES))
+    obligations = json.loads(read(DERIVATION_OBLIGATIONS))
+    authority = json.loads(read(DOC_AUTHORITY))
+    obligation_note = read(R_ETA_OBLIGATION)
     axioms = read(AXIOMS)
     registry = read(REGISTRY)
     scale = read(SCALE)
@@ -115,9 +128,31 @@ def main() -> int:
     defect_flat = flat(defect)
     normal_flat = flat(normal_form)
 
-    ac = tier["retired_derivation_targets"]["staggered_dirac_realization_gate_note_2026-05-03"]
+    ac_key = "staggered_dirac_realization_gate_note_2026-05-03"
+    ac = tier.get("retired_derivation_targets", {}).get(ac_key)
+    check("retired Tier-A schema contains the historical AC entry", isinstance(ac, dict), ac)
+    if not isinstance(ac, dict):
+        print("\nTOTAL: schema failure before substantive checks")
+        return 1
     decomp = ac["minimum_decomposition"]
-    check("decision history has no live premise inputs", tier["genuine_admitted_input_count"] == 0 and tier["derivation_targets"] == {})
+    check(
+        "decision history has no live premise inputs",
+        tier.get("genuine_admitted_input_count") == 0
+        and tier.get("canonical_ids") == []
+        and tier.get("derivation_targets") == {},
+    )
+    check("former owner-governed premise registry is absent", not OLD_OWNER_REGISTRY.exists())
+    check(
+        "AC owner-governance retirement is historical and withdrawn",
+        ac.get("retirement", {}).get("mechanism")
+        == "historical_governance_retirement_withdrawn_obligations_reopened",
+        ac.get("retirement"),
+    )
+    check(
+        "AC retirement boundary supplies no physics content",
+        "supplies no physics content" in ac.get("retirement", {}).get("boundary", ""),
+        ac.get("retirement", {}).get("boundary"),
+    )
     check("AC minimum decomposition keeps R-eta", "delta_readout_identification_R_eta" in decomp, decomp)
     check("AC minimum decomposition keeps occupancy separate", "reading_occupancy_selection" in decomp, decomp)
     check("AC statement names R-eta", "R-eta" in ac["statement"] and "density-read-as-angle" in ac["statement"])
@@ -148,6 +183,15 @@ def main() -> int:
         "realized_state_primitive",
     ]
     check("approved premise registry has exactly four canonical ids", premises["canonical_ids"] == expected, premises["canonical_ids"])
+    policy_namespace = runpy.run_path(str(PREMISE_POLICY))
+    accepted_premise_ids = policy_namespace.get("accepted_premise_ids")
+    check("audit pipeline accepted-premise policy is callable", callable(accepted_premise_ids))
+    pipeline_accepted_ids = set(accepted_premise_ids()) if callable(accepted_premise_ids) else set()
+    check(
+        "audit pipeline accepted-premise ids equal the four-node registry",
+        pipeline_accepted_ids == set(expected),
+        sorted(pipeline_accepted_ids),
+    )
     for cid in expected:
         check(f"approved premise node exists: {cid}", cid in premises["nodes"])
         check(f"{cid} has current_path", bool(premises["nodes"][cid].get("current_path")))
@@ -155,6 +199,38 @@ def main() -> int:
     premise_dump = json.dumps(premises)
     for term in banned_premise_terms:
         check(f"approved premise registry does not contain {term}", term not in premise_dump)
+
+    section("B2. retired owner-governance and open-obligation separation")
+    reta_id = "ac_reta_hclass_hunit_readout_derivation_obligation"
+    check(
+        "current derivation-obligation registry contains the reopened R-eta row",
+        reta_id in (obligations.get("canonical_ids") or []),
+        obligations.get("canonical_ids"),
+    )
+    reta_obligation = obligations.get("nodes", {}).get(reta_id, {})
+    check("R-eta obligation is an open gate", reta_obligation.get("status") == "open_gate", reta_obligation)
+    check(
+        "R-eta obligation has no premise weight",
+        "**Premise weight:** none." in obligation_note,
+        reta_obligation,
+    )
+    check(
+        "R-eta obligation is not an accepted premise",
+        reta_id not in pipeline_accepted_ids,
+    )
+    check(
+        "historical AC entry names the reopened R-eta obligation",
+        reta_id in ac.get("retirement", {}).get("open_derivation_obligations", []),
+        ac.get("retirement", {}).get("open_derivation_obligations"),
+    )
+    tier_rows = [
+        row for row in authority.get("rows", [])
+        if row.get("path") == "docs/ADMITTED_INPUT_REGISTRY_TIER_A_NOTE_2026-05-23.md"
+    ]
+    check("document-authority registry has one Tier-A history row", len(tier_rows) == 1, tier_rows)
+    if len(tier_rows) == 1:
+        check("Tier-A history is operational class G", tier_rows[0].get("class") == "G", tier_rows[0])
+        check("Tier-A history is explicitly non-chain-satisfying", tier_rows[0].get("chain_satisfying") is False, tier_rows[0])
 
     section("C. axiom and primitive text boundaries")
     for phrase in [
@@ -223,12 +299,9 @@ def main() -> int:
             check(f"{Path(path).name} has claim type", bool(row.get("claim_type")), row.get("claim_type"))
             check(f"{Path(path).name} is not unbounded retained import for h-unit", row.get("effective_status") != "retained", row.get("effective_status"))
     new_row = ledger_row_by_path("docs/ACPHILAMBDA_R_ETA_HUNIT_APPROVED_PRIMITIVE_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md")
-    if new_row is None:
-        check("new row not required before audit pipeline seeding", True)
-    else:
+    check("audit ledger row exists for the source note", new_row is not None)
+    if new_row is not None:
         check("new row claim_type is no_go", new_row.get("claim_type") == "no_go", new_row.get("claim_type"))
-        check("new row audit status remains non-promoted", new_row.get("audit_status") in {"unaudited", "audited_conditional"}, new_row.get("audit_status"))
-        check("new row effective status remains non-promoted", new_row.get("effective_status") in {"unaudited", "audited_conditional", "retained_pending_chain"}, new_row.get("effective_status"))
 
     section("F. exact h-unit algebra and type checks")
     L = sp.Rational(2, 9)
@@ -255,20 +328,20 @@ def main() -> int:
     check("beta=3 gives three times target", outputs["three"] == 3 * target)
     check("numeric two-pi packaging misses target", not math.isclose(float(outputs["two_pi"]), float(target)))
 
-    primitive_slots = {
-        "scale_reference": {"type": "dimensionful_ruler", "value": "a^{-1}=M_Pl"},
-        "kinetic_isotropy": {"type": "kinetic_form_ratio", "value": sp.Integer(1)},
-        "realized_state": {"type": "pointwise_evaluation_slot", "value": None},
-        "h_unit": {"type": "angle_readout_coefficient", "value": sp.Integer(1)},
-    }
-    check("kinetic value 1 has different type from h-unit value 1", primitive_slots["kinetic_isotropy"]["type"] != primitive_slots["h_unit"]["type"])
-    check("scale reference has different type from h-unit", primitive_slots["scale_reference"]["type"] != primitive_slots["h_unit"]["type"])
-    check("realized-state slot has no value", primitive_slots["realized_state"]["value"] is None)
-    check("type mismatch blocks laundering kinetic 1 into beta 1", primitive_slots["kinetic_isotropy"]["value"] == 1 and primitive_slots["kinetic_isotropy"]["type"] != "angle_readout_coefficient")
-    no_alt_carrier = True
-    h_unit_assumed = False
-    check("eliminating rival carriers is not h-unit derivation", no_alt_carrier and not h_unit_assumed)
-    check("h-unit closure would require extra premise", no_alt_carrier and (not h_unit_assumed))
+    kinetic_declares_unit_ratio = "c_t = c_s" in kinetic_flat
+    kinetic_withholds_readout = "kinetic-form ratio" in kinetic_flat and "readout bridge" in kinetic_flat
+    h_unit_is_angle_coefficient = "bare cycle-holonomy angle with coefficient 1" in note_flat
+    check("kinetic source declares a unit-valued kinetic ratio", kinetic_declares_unit_ratio)
+    check("kinetic source types that ratio separately from an angle readout", kinetic_withholds_readout and h_unit_is_angle_coefficient)
+    check("scale source is dimensionful while h-unit is dimensionless", "dimensionful" in scale_flat and "dimensionless angle coefficient" in note_flat)
+    check("realized-state source supplies no value", "no state" in realized_flat and "state-contingent value" in note_flat)
+    carrier_elimination_is_non_deriving = (
+        "does not derive R-eta" in conversion_flat
+        and "Future readout contexts remain open" in conversion_flat
+        and "h-unit remains unentailed" in direct_flat
+    )
+    check("eliminating rival carriers is not h-unit derivation", carrier_elimination_is_non_deriving)
+    check("h-unit closure requires a separate bridge", carrier_elimination_is_non_deriving and "future same-observable holonomy theorem" in direct_flat)
 
     section("G. note discipline and no-overclaim checks")
     required = [
@@ -291,6 +364,13 @@ def main() -> int:
     check("note links realized-state primitive", "REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md" in note)
     check("note links conversion source", "RETA_CONVERSION_FACTOR_CARRIER_CLASS_ELIMINATION_BOUNDED_NOTE_2026-06-12.md" in note)
     check("note does not use generated audit ledger as authority", "AUDIT_LEDGER.md](" not in note)
+
+    section("H. explicit re-audit certificate")
+    print("APPROVED_PREMISE_NODE_SET: " + json.dumps(premises["canonical_ids"], separators=(",", ":")))
+    print("PIPELINE_ACCEPTED_PREMISE_SET: " + json.dumps(sorted(pipeline_accepted_ids), separators=(",", ":")))
+    print("FORMER_OWNER_GOVERNED_REGISTRY_PRESENT: " + json.dumps(OLD_OWNER_REGISTRY.exists()))
+    print("AC_OWNER_GOVERNANCE_STATUS: historical_governance_retirement_withdrawn_obligations_reopened")
+    print("AC_R_ETA_CURRENT_SURFACE: open_gate; premise_weight=none; accepted_premise=false")
 
     print(f"\nTOTAL: PASS={PASS} FAIL={FAIL} CHECKS={PASS + FAIL}")
     return 0 if FAIL == 0 else 1

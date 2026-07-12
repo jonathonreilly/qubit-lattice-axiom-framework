@@ -10,3 +10,5 @@ to `unaudited` and places it in the ordinary queue with `ready=true`; no
 dispatcher sidecar is needed. Exact next action: submit the source note,
 runner, and refreshed cache for independent re-audit. Do not edit or apply an
 audit verdict from this author branch.
+
+Review PR: [#5224](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5224).

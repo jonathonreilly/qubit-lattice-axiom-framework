@@ -191,7 +191,7 @@ def trusted_manifest_current_error(
         row, rows, REPO_ROOT
     )
     return no_go_discipline_gate.evidence_snapshot_current_error(
-        probe_packet, current_manifest
+        probe_packet, current_manifest, dynamic_index_drift_invalidates=True
     )
 
 

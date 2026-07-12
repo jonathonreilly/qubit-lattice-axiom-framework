@@ -23,8 +23,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 421 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2610 |
-| audit_in_progress | 33 |
+| unaudited | 2609 |
+| audit_in_progress | 34 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -46,14 +46,14 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 33 |
+| `audit_in_progress` | 34 |
 | `audited_clean` | 562 |
 | `audited_conditional` | 105 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 48 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2960 |
+| `unaudited` | 2959 |
 
 | claim_type | count |
 |---|---:|
@@ -151,6 +151,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `universal_gr_lorentzian_global_atlas_closure_note` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `yt_source_action_support_packet_note_2026-05-22` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |

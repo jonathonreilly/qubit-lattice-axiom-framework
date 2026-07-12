@@ -241,8 +241,15 @@ NEGATIVE_SUBJECT_CLOSURE_RE = re.compile(
     r"\b(?:(?:no(?!\s+longer\s+(?:\w+ly\s+)?(?:claims?|asserts?|states?|"
     r"reports?|presents?|carries|includes?))|neither|"
     r"zero(?!\s+(?:modes?|eigenvalues?|eigenvectors?|crossings?|energy)\b)"
-r"(?=\s+(?:[\w-]+\s+){0,3}"
-r"(?!(?:fixes|closes|determines|derives|selects|supplies|removes|resolves|yields|chooses|decides|gives|produces|maps|sets|takes|returns|equals|denotes|defines)\b)[\w-]+s\s))\s+"
+    r"(?=\s+(?:[\w-]+\s+){0,3}"
+    r"(?:(?!(?:fixes|closes|determines|derives|selects|supplies|removes|"
+    r"resolves|yields|chooses|decides|gives|produces|maps|sets|takes|"
+    r"returns|equals|denotes|defines)\b)[\w-]+s"
+    # maps/sets/yields/returns read as plural nouns when a distinct
+    # closure predicate follows ("zero candidate maps determine ...").
+    r"|(?:maps|sets|yields|returns)(?=\s+(?:[\w-]+\s+){0,2}"
+    r"(?:determin|select|fix|constrain|supply|suppl|deriv|clos|recover|"
+    r"produc|resolv)))\s))\s+"
     r"(?:(?!(?:because|although|but|while|once|when|after|before|if|and|so|since|as|whereas|"
     r"is|are|was|were|has|have|had|remains?|exists?|required?|needed|introduced)\b)"
     r"[\w-]+\s+){1,10}|"
@@ -366,7 +373,7 @@ NOTE_SUBJECT_DISCLAIMER_RE = re.compile(
     re.IGNORECASE,
 )
 LABELED_DISCLAIMER_LINE_RE = re.compile(
-    r"(?im)^(?P<label>[ \t]*(?:>[ \t]*)?(?:[-*+]|\d+(?:[.):]|\s*[-\u2013])?)?[ \t]*"
+    r"(?im)^(?P<label>[ \t]*(?:>[ \t]*)?(?:[-*+]|\d+(?:[.):]|\s*[-\u2013\u2014])?)?[ \t]*"
     r"(?:what\s+(?:this|it)\s+is\s+not|is\s+not|does\s+not|not\s+claimed|"
     r"non-?claims?|deliberately\s+not\s+claimed|out\s+of\s+scope)"
     r"\s*[:\u2014-])(?P<payload>[^\n]*)$",
@@ -381,7 +388,7 @@ DISCLAIMER_HEADING_RE = re.compile(
 )
 MARKDOWN_HEADING_RE = re.compile(r"(?m)^[ \t]{0,3}(#{1,6})\s+(.*)$")
 DISCLAIMER_FRAGMENT_LINE_RE = re.compile(
-    r"^[ \t]*(?:(?:[-*+]|\d+(?:[.)]|\s*[-\u2013])?)[ \t]*)?"
+    r"^[ \t]*(?:(?:[-*+]|\d+(?:[.):]|\s*[-\u2013\u2014])?)[ \t]*)?"
     r"(?:does\s+not|do\s+not|did\s+not|cannot|can\s+not|is\s+not|are\s+not|"
     r"not|no)\b",
     re.IGNORECASE,
@@ -392,7 +399,8 @@ UNIQUENESS_SUBJECT_RE = re.compile(
 )
 AUTHORITY_UNIQUENESS_SUBJECT_RE = re.compile(
     r"(?:routes?|derivations?|attempts?|constructions?|mechanisms?|arguments?|"
-    r"ways?|avenues?|"
+    r"ways?|avenues?|strateg(?:y|ies)|approach(?:es)?|procedures?|schemes?|"
+    r"options?|"
     r"methods?|paths?|closures?|proofs?|selectors?|carriers?|axioms?|"
     r"primitives?|admissions?|witness(?:es)?|suppliers?|bridges?|lifts?|"
     r"authorit(?:y|ies))",
@@ -415,7 +423,7 @@ CANT_RE = re.compile(r"\bcan[\u2019']t\b", re.IGNORECASE)
 # that the phase is underdetermined") are untouched.
 NEGATED_PREDICATE_PRESCRUBS = (
     re.compile(
-        r"\b(?:is|are|was|were)\s+not\s+(?:\w+ly\s+)?"
+        r"\b(?:is|are|was|were)\s+(?:\w+ly\s+)?not\s+(?:\w+ly\s+)?"
         r"(?:underdetermined|undetermined|unspecified|impossible|incapable|"
         r"insufficient|unliftable|unavailable|unobtainable|unclosed)\b",
         re.IGNORECASE,
@@ -431,7 +439,22 @@ NEGATED_PREDICATE_PRESCRUBS = (
         r"(?:explicitly\s+)?den(?:ies|ied)\s+that\b|"
         r"is\s+false\s+that\b|refutes?\s+that\b|"
         r"retract(?:s|ed)?\s+that\b|withdraw(?:s|ed)?\s+that\b)"
-        r"[^\n.;:]*",
+        r"[^\n.;:,\u2014]*",
+        re.IGNORECASE,
+    ),
+    # Rejection frames scoped to their claim noun or that-complement, in
+    # active and passive voice.
+    re.compile(
+        r"\b(?:rejects?|disproves?|falsif(?:y|ies)|repudiates?|overturns?)\s+"
+        r"(?:the\s+)?(?:claim|assertion|reading|conclusion)\s+"
+        r"(?:of\s+[\w-]+|that\b[^\n.;:,\u2014]*)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:claim|assertion|reading|conclusion)\s+of\s+"
+        r"(?:underdetermination|impossibility|insufficiency|non[- ]?derivability|"
+        r"non[- ]?closure)\b[^\n.;:]{0,50}\b(?:is|was|has\s+been)\s+"
+        r"(?:rejected|disproved|refuted|overturned|falsified)\b",
         re.IGNORECASE,
     ),
 )
@@ -467,7 +490,7 @@ def _strip_disclaimer_sections(text: str) -> str:
     spans: list[tuple[int, int]] = []
     for index, match in enumerate(headings):
         title = re.sub(
-            r"^\s*\d+(?:\.\d+)*(?:[.):]|\s*[-\u2013])?\s*", "", match.group(2)
+            r"^\s*\d+(?:\.\d+)*(?:[.):]|\s*[-\u2013\u2014])?\s*", "", match.group(2)
         ).strip()
         if not DISCLAIMER_HEADING_RE.match(title):
             continue
@@ -494,11 +517,13 @@ def _strip_disclaimer_sections(text: str) -> str:
         kept_lines = []
         section_lines = section.split("\n")
         for line_index, line in enumerate(section_lines):
-            continuation = (
-                section_lines[line_index + 1]
-                if line_index + 1 < len(section_lines)
-                else ""
-            )
+            rest = " ".join(section_lines[line_index + 1 : line_index + 5])
+            stop = len(rest)
+            for ch in ".;:!?":
+                idx = rest.find(ch)
+                if 0 <= idx < stop:
+                    stop = idx
+            continuation = rest[:stop]
             wrapped = line + " " + continuation
             is_heading = bool(re.match(r"[ \t]{0,3}#{1,6}\s", line))
             if is_heading:
@@ -545,8 +570,16 @@ def _fragment_veto_span(payload: str) -> str:
 def _scrub_labeled_disclaimer_lines(text: str) -> str:
     def replace(match: re.Match[str]) -> str:
         payload = match.group("payload").strip()
-        continuation = match.string[match.end(): match.end() + 160].split("\n")
-        next_line = continuation[1] if len(continuation) > 1 else ""
+        tail = match.string[match.end(): match.end() + 400]
+        stop = len(tail)
+        for ch in ".;:!?":
+            idx = tail.find(ch)
+            if 0 <= idx < stop:
+                stop = idx
+        blank = tail.find("\n\n")
+        if 0 <= blank < stop:
+            stop = blank
+        next_line = tail[:stop].replace("\n", " ")
         # A payload ending mid-claim (no sentence terminator) keeps its
         # soft-wrapped continuation in the veto span; a complete payload
         # followed by independent prose does not.

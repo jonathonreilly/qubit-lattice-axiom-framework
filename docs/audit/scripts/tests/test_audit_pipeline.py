@@ -4017,6 +4017,24 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "The baseline algebra did not supply a unique normalization.",
             "The selector wall no longer blocks the transfer route but blocks the readout route.",
             "The finite-size transfer did not fix the infinite-volume kernel.",
+            # Coordinated affirmative reporting after a denial; route
+            # synonyms under uniqueness grammar; homograph plural subjects;
+            # multi-wrap authority spans; em-dash numbered labels.
+            "The paper denies that the first route is underdetermined, but proves that no admissible route exists for the selector.",
+            "The appendix retracts that the first construction is impossible, yet shows that the second route cannot close the normalization wall.",
+            "No other admissible strategy exists for deriving the selector.",
+            "No alternative derivational approach exists under the retained premises.",
+            "No further procedure exists for closing the normalization wall.",
+            "No additional route-finding scheme exists for obtaining a clock.",
+            "No second viable option exists for selecting the carrier.",
+            "Zero candidate maps determine the missing readout.",
+            "Zero admissible maps select a temporal orientation.",
+            "Zero candidate sets fix the continuum normalization.",
+            "Zero candidate yields constrain the asymptotic scale.",
+            "Zero candidate returns supply the missing coefficient.",
+            "## Scope\nCannot derive a selector from the\nfour retained\naxioms.\n",
+            "Not claimed: cannot derive a selector from the\nfour retained\naxioms.",
+            "3 \u2014 Out of scope: cannot derive a selector from retained axioms.",
             # Passive negative closure with quantified boundary subjects.
             "Neither residual wall is closed by the identity.",
             "No remaining obstruction was resolved by the finite scan.",
@@ -4097,6 +4115,13 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "No additional fixed point exists in the affine chart.",
             "No alternative unitary dilation exists once the boundary data are fixed.",
             "Zero modes determine the topological index.",
+            # Adverbial and rejection-frame denial paraphrases; em-dash
+            # numbered disclaimer labels.
+            "The phase is certainly not underdetermined.",
+            "The paper rejects the claim that the phase is underdetermined.",
+            "The claim of underdetermination is rejected by the calculation.",
+            "The analysis disproves the assertion that the axioms are insufficient to fix the scale.",
+            "3 \u2014 Out of scope: does not derive imported epsilon.",
             # Negation, withdrawal, denial, and refutation of negative
             # predicates are not negative assertions.
             "The manuscript no longer asserts that the phase is underdetermined.",

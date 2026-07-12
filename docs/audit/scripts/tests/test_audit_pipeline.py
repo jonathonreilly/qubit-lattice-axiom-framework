@@ -3891,8 +3891,9 @@ class NoGoDisciplineGateTest(unittest.TestCase):
 
     def test_authority_negative_corpus_gates(self):
         """Exact genuine-negative phrasings that the mechanical floor
-        gates; the floor is monotone-narrower than main's, so every case
-        here also gates on main."""
+        gates. Most also gate on main's floor; the note-subject
+        authority-naming and non-note-subject coverage cases exercise the
+        two deliberate stricter-than-main classes disclosed in the PR."""
         m = _import("no_go_discipline_gate")
         for body in (
             "- The mode-by-mode equality fails to lift to a lattice-wide statement.",

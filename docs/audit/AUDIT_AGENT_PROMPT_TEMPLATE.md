@@ -221,7 +221,13 @@ index.
 For N8, the orchestrator has also supplied a cross-cycle search index. It is
 constructed from source-cycle historical dispositions, open derivation
 obligations, similar `no_go` rows in the audit ledger, and every tracked
-`.claude/science/physics-loops/**/NO_GO_LEDGER.md` file. The index metadata
+`.claude/science/physics-loops/**/NO_GO_LEDGER.md` file. Packet evidence requirements are tier-scoped (owner-approved 2026-07-12):
+for development-tier rows (everything except `claim_type: no_go` rows,
+no-go-named files, and `AUDIT_FORENSIC_MODE=1` certification runs), supply
+the N1-N8 packet as structured judgment with quoted evidence -- it is
+validated structurally, without manifest-containment, live-stdout, or
+full-universe disposition plumbing. The forensic requirements below bind the
+forensic tier. The index metadata
 states the exact glob, scanned file count and paths, similarity threshold, and
 per-kind candidate limits. High-signal kinds (prior audit cycles, open gates,
 loop ledgers) are listed in full; the bulk similarity/scan kinds are capped by

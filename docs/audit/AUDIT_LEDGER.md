@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 385 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2735 |
+| unaudited | 2734 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 68 |
+| ~~audited_conditional~~ | 69 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 501 |
-| `audited_conditional` | 68 |
+| `audited_conditional` | 69 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3085 |
+| `unaudited` | 3084 |
 
 | claim_type | count |
 |---|---:|
@@ -706,6 +706,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `wave_3plus1d_promotions_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `weak_coupling_sign_sensitivity_note_2026-04-11` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `wilson_mu2_distance_sweep_note_2026-04-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
@@ -9415,6 +9416,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — For the scoped finite claim, the runner constructs Q diagonal by occupation number and H only within equal-charge blocks, so [Q,H]=0 and exp(-beta H)/Tr exp(-beta H) preserves the same sectors. An independent check using omega=4 sum sin^2(pi n/L) reproduces the quoted IR values and strict growth from L=16 to L=32 in d=1 and d=2.
 - **rationale:** The displayed matrix identities and finite numerical table entries match both the runner source and an independent recomputation: I_1 gives 1.328125 and 2.6640625, and I_2 gives approximately 0.4899245 and 0.6003262. The runner does not hard-code the contested outputs or import a cross-note premise; it constructs the finite symmetric block Hamiltonian and directly computes the Gibbs commutator and lattice sums. The stronger low-dimensional no-SSB and Noether-current bridges are explicitly excluded as non-claims, so the bounded conclusion does not depend on those open bridges.
 - **auditor confidence:** high
+
+### `wilson_mu2_distance_sweep_note_2026-04-11`
+
+- **Note:** [`WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md`](../../docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The cache-backed open-boundary Wilson sweep on sides 11, 13, 15 with G=5, d=3..6, and mu^2 in {0.22, 0.05, 0.01, 0.005, 0.001}, plus only the current shared-minus-self centroid observable's failure to establish full Newton closure; no universal no-go or Newton derivation was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00221-wilson_mu2_distance_sweep_no`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** As screening is reduced across the five-value mu^2 grid, the fitted exponent softens monotonically while every sampled row remains clean and attractive.  _(class `C`)_
+- **chain closes:** False — The primary and helper sources genuinely compute the finite lattice rows and power-law fits supporting the distance calibration. The full note also advances a no-go-style Newton-closure boundary whose strongest alternative readouts remain untested and whose both-masses computation is not included as a runner artifact.
+- **rationale:** Issue: the five-point distance sweep is computed and internally consistent, but the note also treats the failed shared-minus-self both-masses observable as the boundary of full Newton closure without supplying that runner and while naming untested alternative observables. Why this blocks: the distance calibration closes, whereas the broader negative boundary does not satisfy the required no-go discipline. Repair target: split the cache-backed distance theorem from the both-masses failure claim and audit the latter with its runner plus the named alternative-readout tests. Claim boundary until fixed: cite only the finite screened distance-law crossover and the failure of the presently tested centroid residual, not a general obstruction to Newton closure.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the mid-plane flux, perturbative-window, and antisymmetrized-impulse routes remain untested.
+    - N7: the strongest local momentum-flux steelman remains unresolved.
 
 ### `wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`
 

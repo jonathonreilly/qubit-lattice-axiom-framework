@@ -30608,12 +30608,12 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
+      "audit_status": "audited_conditional",
       "blocker": null,
       "claim_id": "wilson_mu2_distance_sweep_note_2026-04-11",
-      "claim_scope": null,
+      "claim_scope": "The cache-backed open-boundary Wilson sweep on sides 11, 13, 15 with G=5, d=3..6, and mu^2 in {0.22, 0.05, 0.01, 0.005, 0.001}, plus only the current shared-minus-self centroid observable's failure to establish full Newton closure; no universal no-go or Newton derivation was audited.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "migration_hint",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -30621,13 +30621,13 @@
         "wilson_two_body_open_note_2026-04-11"
       ],
       "direct_in_degree": 1,
-      "effective_status": "unaudited",
+      "effective_status": "audited_conditional",
       "helper_runner_paths": [
         "scripts/frontier_wilson_two_body_open.py"
       ],
       "load_bearing_score": 4.085,
       "note_path": "docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/frontier_wilson_mu2_distance_sweep.py",
       "transitive_descendants": 11

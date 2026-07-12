@@ -22,6 +22,6 @@ no_go_routes:
 trace_gate_classification: negative_route_pruning
 reachability_to_target: prunes
 review_disposition: pass
-pr_status: pending
-next_exact_action: "Commit and push the reviewed science block, open one review PR, verify it, and record the PR URL."
+pr_status: "opened: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5230"
+next_exact_action: "After review and landing, run the independent audit lane on universal_gr_tensor_action_blocker_note; keep non-pullback Pi_curv/Regge work open."
 stop_condition: "review PASS and one verified review PR, or a review finding that forces honest demotion"

@@ -109,7 +109,7 @@ det_R R(U_beta)=|det_C(U_beta)|^2=1.
 
 Thus, at `beta=1`, the constructed nonzero determinant phase distinguishes the supplied
 single sector from the supplied conjugate-paired total determinant. A
-coordinate rewrite of the single sector does not erase it.
+coordinate rewrite of the single sector preserves the phase.
 
 ## Determinant-character weights
 
@@ -142,43 +142,47 @@ delta_(k,beta)=2 k beta/9.
 
 The target magnitude `2/9` therefore corresponds algebraically to
 `|k beta|=1`. The displayed phase equation depends on the product `k beta`.
-Without a separately derived physical-faithfulness condition or connection
-normalization, that equation does not choose either factor.
+The equation fixes the product. Selection of the character factor belongs to
+a physical-faithfulness theorem; selection of the connection factor belongs
+to a normalization theorem.
 
 ## Physical identification boundary
 
-The theorem constructs `B`, `U_beta`, and their determinant lines from the
-finite normal representation. It does not derive that:
+The theorem domain is the finite construction of `B`, `U_beta`, and their
+determinant lines above. The following physical identifications are separate
+theorem targets:
 
-- `B` is the physical charged-lepton connection or action generator;
-- the physical fermionic kernel is `U_1`, `bC`, or another matrix carrying
-  this determinant line;
-- `beta=1` rather than another real normalization;
-- the physical Record character is faithful and therefore fundamental within
-  the displayed integer-character family;
-- the physical Record scalar is the folded principal determinant phase;
-- the cycle has three symmetry-equivalent physical Record contributions whose
-  additive lift is represented by `E`;
-- the physical Record reads the total determinant rather than factor-resolved
-  phases of a paired carrier.
+- identification of `B` with the physical charged-lepton connection or action
+  generator;
+- identification of the physical fermionic kernel with `U_1`, `bC`, or another
+  matrix carrying this determinant line;
+- normalization `beta=1`;
+- physical Record-character faithfulness within the displayed
+  integer-character family;
+- identification of the physical Record scalar with the folded principal
+  determinant phase;
+- physical realization of the `E` lift by three symmetry-equivalent Record
+  contributions;
+- selection between total-determinant and factor-resolved readout for a paired
+  carrier.
 
-The normal rotation itself has `det(P_N)=1` and hence no determinant phase.
-The phase-bearing object here is the constructed resolvent exponential, not a
-relabeling of `P_N`.
+The normal rotation has `det(P_N)=1`. The phase-bearing object is the
+constructed resolvent exponential.
 
-Consequently this theorem does not, by itself, discharge the physical
-charged-lepton occupancy-grain or R-eta readout obligations. It identifies a
-joint positive theorem target. A future theorem would need to derive that the
-physical total action determinant is built from the displayed `U_1` sector,
-with or without its independent conjugate; that Record reads the folded
-principal phase of that total determinant through a faithful character; and
-that three symmetry-equivalent physical contributions realize the displayed
-`E` lift. Under those derived conditions, the nonzero h readout rules out the
-conjugate-paired total determinant.
+The theorem scope is the finite algebra above. The physical occupancy-grain
+and R-eta readout claims lie outside that scope and have separate source rows.
+Their joint positive theorem target identifies the physical total action
+determinant with the displayed `U_1` sector, with or without its independent
+conjugate; gives Record the folded principal phase of that total determinant
+through a faithful character; and realizes the displayed `E` lift through
+three symmetry-equivalent physical contributions. Under those derived
+conditions, the single-sector total carries the nonzero `h` readout, whereas
+the conjugate-paired total evaluates to phase-free `1`; the nonzero total phase
+then matches the single-sector entry.
 
-No value or equation involving the registered-mass amplitude ratio `r` enters
-the construction. The theorem does not force `r=1/2`. It adds no axiom,
-primitive, imported value, comparator, or premise-registry entry.
+The construction is constant over every supplied registered-mass amplitude
+ratio `r`; `r` remains a free dial. Axiom, primitive, import, comparator, and
+premise-registry surfaces are unchanged.
 
 ## Verification
 

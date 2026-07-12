@@ -519,6 +519,21 @@ def restore_audit_from_previous(
     if not history:
         return None
     archived = history[-1]
+    # Axiom-premise pre-check (mirrors invalidate_stale_audits.py's
+    # axiom_premise_changed trigger exactly, including its tolerance for
+    # snapshots that predate the hash map): an audit performed under
+    # different axiom-premise text is re-audit material, never restore
+    # material. Without this, a restored stale-premise verdict is briefly
+    # LIVE in the ledger until the next sweep re-invalidates it — a window
+    # in which dispatch producers, lane certification, or a collaborator
+    # can read a verdict audited under different axioms as current.
+    if rows is not None:
+        snap = archived.get("audit_state_snapshot") or {}
+        snap_axiom_hash = snap.get("dep_axiom_premise_note_hash") or {}
+        for dep, before in snap_axiom_hash.items():
+            after = (rows.get(dep) or {}).get("note_hash")
+            if before is not None and after is not None and before != after:
+                return None
     new_row = dict(row)
     new_row["previous_audits"] = history
     archived_reference = hashlib.sha256(

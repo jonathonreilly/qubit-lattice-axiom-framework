@@ -1,6 +1,35 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block20-spatial-thermodynamic-limit-20260712`.
+The spatial DLR accumulation/OS runner reports `PASS=7 FAIL=0`. For every
+fixed lattice spacing, `beta>=0`, and `m>0`, the site-anchored exact
+`Q=(16I+M^2)/(m^2+16)` series defines a volume-uniform absolutely and
+diameter-weighted summable four-dimensional determinant interaction. Every
+even periodic spatial van Hove sequence, after the unique time-first limit,
+has a subsequence converging on all fixed local gauge-invariant
+gauge--fermion polynomials to a DLR Euclidean functional. Gauge invariance,
+blocked translations, time-reflection positivity, adjacent positivity, and
+the OS contraction/Hamiltonian pass to each selected spatial phase.
+
+Independent code/math, physics/import/Nature, governance, labeling, and full
+N1--N8 reviews pass after the iterated-limit diagonal bridge, determinant
+sign/factor, four-axiom vocabulary, and reduced-runner-scope repairs. The
+audit-compatibility pipeline seeds one `bounded_theorem` / `unaudited` row
+with exactly the massive infinite-time uniqueness dependency; strict lint has
+zero errors. Generated audit/status outputs are stripped. No axiom-update stop
+is triggered.
+
+The result is spatial accumulation existence, including at `beta=6`; it is
+not phase uniqueness, boundary independence, a unique plaquette value,
+clustering, a gap, or continuum control. The next exact route is a separate
+small-`beta`, large-`m` Dobrushin/polymer uniqueness wedge with independently
+checked influence constants.
+
+Spatial DLR accumulation/OS stacked review PR: pending delivery against the
+massive infinite-time uniqueness head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block19-infinite-time-uniqueness-20260712`.
 The massive log-determinant Hölder/Ruelle runner reports `PASS=8 FAIL=0`.
 For every fixed finite bipartite spatial volume, `beta>=0`, and `m>0`, the

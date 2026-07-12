@@ -1,5 +1,24 @@
 # PR Delivery
 
+The massive Wilson--staggered spatial DLR accumulation and OS-transfer theorem
+is prepared as the next stacked review block:
+
+- base: `physics-loop/record-faithful-dynamics-block19-infinite-time-uniqueness-20260712`
+- head: `physics-loop/record-faithful-dynamics-block20-spatial-thermodynamic-limit-20260712`
+- source runner: `PASS=7 FAIL=0`
+- disposition: PASS WITH BOUNDED CLAIMS after independent code/math,
+  physics/import/Nature, governance, labeling, and full N1--N8 review; every
+  fixed-`m>0` spatial sequence has DLR/OS accumulation states, while phase
+  uniqueness, boundary independence, gap, and continuum closure remain open
+- audit compatibility: one `bounded_theorem` / `unaudited` row, exactly the
+  massive infinite-time uniqueness dependency, matching note hash, strict lint
+  zero errors, vocabulary lint zero violations, generated audit/status outputs
+  stripped
+- PR: pending
+- delivery: prepared on the massive infinite-time uniqueness head
+
+No merge is authorized. Independent audit remains authoritative.
+
 The massive log-determinant Hölder/Ruelle infinite-time uniqueness theorem is
 prepared as the next stacked review block:
 

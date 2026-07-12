@@ -641,3 +641,35 @@ stop is triggered.
 
 Delivery: stacked PR #5294 is open on the coupled OS
 subsequential-transfer head. Independent audit remains authoritative.
+
+## Spatial DLR accumulation / OS transfer review iteration 1
+
+The source proves a volume-uniform site-anchored determinant interaction for
+every `m>0`: the order-`n` term has norm at most `3r^n/(2n)`, support radius
+`2n+1`, and dimension-four absolute and first-moment majorants summable
+uniformly in volume. Code/math and physics reviewers accepted the core DLR
+existence and state-specific OS theorem but found four precision defects: the
+time-first iterated limit needed an explicit diagonal bridge, the inverse
+variation bound missed a factor two, the determinant log-weight sign needed
+to be stated, and the reduced `1+1` runner scope needed separation from the
+analytic `3+1` theorem. Governance also rejected branch-local numeric block
+labels and the legacy three-name axiom phrase.
+
+## Spatial DLR accumulation / OS transfer review iteration 2
+
+PASS WITH BOUNDED CLAIMS. The repaired source enumerates the local cylinder
+algebra and constructs a finite-temporal diagonal realizing every spatial
+accumulation point of the time-first states; it states the determinant
+log-weight/energy signs and factor-two resolvent variation, uses the four
+native axioms, replaces branch labels with scientific names, cites compact-spin
+DLR existence machinery, and discloses that only analytic four-dimensional
+majorants carry the `3+1` theorem. The runner/cache report `PASS=7 FAIL=0` and
+the source contract rejects missing bridge/scope language and legacy names.
+
+Audit validation seeds one `bounded_theorem` / `unaudited` row with exactly
+the massive infinite-time uniqueness dependency and source hash
+`16537973b420cde3...`; strict lint has no errors, vocabulary lint has zero
+violations, and generated audit/status surfaces are stripped. At `beta=6`
+the result asserts only existence of an accumulation state, not uniqueness,
+plaquette value, clustering, gap, or continuum closure. No axiom-update stop
+is triggered.

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 417 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
-| unaudited | 2636 |
+| unaudited | 2635 |
 | audit_in_progress | 26 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 98 |
+| ~~audited_conditional~~ | 99 |
 | ~~audited_failed~~ | 23 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 26 |
 | `audited_clean` | 553 |
-| `audited_conditional` | 98 |
+| `audited_conditional` | 99 |
 | `audited_decoration` | 22 |
 | `audited_failed` | 45 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2986 |
+| `unaudited` | 2985 |
 
 | claim_type | count |
 |---|---:|
@@ -752,6 +752,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | decoration | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
@@ -6008,6 +6009,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N1 leaves the physical carrier, Fourier/readout alternative, channel scoring, and direction scoring routes OPEN and the future readout theorem UNTESTED.
     - N5 identifies untested framework-native carrier and channel-count selector resolutions.
     - The packet does not provide five distinct closed attack routes, so the mandatory discipline gate cannot pass.
+
+### `koide_z3_scalar_potential_lepton_mass_tower_note_2026-04-19`
+
+- **Note:** [`KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md`](../../docs/KOIDE_Z3_SCALAR_POTENTIAL_LEPTON_MASS_TOWER_NOTE_2026-04-19.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For the displayed T_m and stipulated V normalization, the pure m² and m³ self-contributions are 3/2 and 1/6; the total quadratic coefficient and charged-lepton mass-tower interpretation are not established without K_frozen trace and selector/readout authorities.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00102-koide_z3_scalar_potential_le`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The note infers from T_m² = I_3 that Tr(T_m²) = 3 and Tr(T_m³) = 1, thereby assigning g_2 = 3/2 and g_3 = 1/6 in the stated potential.  _(class `A`)_
+- **chain closes:** False — The finite matrix identities and pure self-contributions close directly. The full m² coefficient additionally requires Tr(K_frozen)=0 to eliminate the cubic cross-term, while the physical mass-tower interpretation requires the admitted H_* selector, readout, and scale inputs.
+- **rationale:** Issue: the displayed matrix proves the pure trace identities, but the asserted total g_2=3/2 coefficient also uses the unwired identity Tr(K_frozen)=0. Why this blocks: expanding Tr((K_frozen+mT_m)^3) produces an m² term proportional to Tr(K_frozen), and the broader mass-tower claim additionally imports the H_* selector, physical readout, and overall scale. Repair target: cite and retain the selected-slice authority proving the frozen trace identity and separately wire the selector/readout authorities. Claim boundary until fixed: only the local matrix identities and pure m²/m³ self-contributions are exact from this packet.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 contains open frozen-cross-term, mass-scale, and physical-readout routes.
+    - N5 identifies untested microscopic-selector and alternate-effective-action resolutions.
 
 ### `kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`
 

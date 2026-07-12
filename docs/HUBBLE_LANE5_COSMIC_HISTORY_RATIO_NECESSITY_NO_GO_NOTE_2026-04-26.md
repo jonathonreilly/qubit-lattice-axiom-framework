@@ -20,7 +20,7 @@ cosmic-history content needed for a numerical `H_0` closure.
 ## 0. Statement
 
 Let the **current framework baseline** be the three named axioms in
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md):
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md):
 Lattice, Quantum, and Record. Let the registered
 [`scale_reference_primitive`](SCALE_REFERENCE_PRIMITIVE_NOTE.md) be available
 only in its approved role: it converts lattice-natural units to physical
@@ -74,7 +74,7 @@ sufficient on its own.
 
 | Identity | Authority |
 |---|---|
-| current Lattice + Quantum + Record baseline | [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) |
+| current Lattice + Qubit + Admissibility + Record baseline | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) |
 | scale-reference primitive is units-only and non-bounding | [`SCALE_REFERENCE_PRIMITIVE_NOTE.md`](SCALE_REFERENCE_PRIMITIVE_NOTE.md) |
 | `Lambda = 3 / R_Lambda^2` retained spectral-gap identity | `COSMOLOGICAL_CONSTANT_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md` |
 | `H_inf = c / R_Lambda` scale identification | `COSMOLOGY_SCALE_IDENTIFICATION_AND_REDUCTION_NOTE.md` |
@@ -223,7 +223,7 @@ pathway. There is currently no active `(C3)` pathway.
 
 ## 8. Cross-references
 
-- `MINIMAL_AXIOMS_2026-06-05.md` — current Lattice + Quantum + Record
+- `MINIMAL_AXIOMS_2026-06-29.md` — current Lattice + Qubit + Admissibility + Record
   baseline.
 - `SCALE_REFERENCE_PRIMITIVE_NOTE.md` — units-only scale primitive.
 - `PLANCK_SCALE_LANE_STATUS_NOTE_2026-04-23.md`,
@@ -323,7 +323,7 @@ for baseline-plus-units-primitive closure, not a no-go against the live
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- [minimal_axioms](MINIMAL_AXIOMS_2026-06-05.md)
+- [minimal_axioms](MINIMAL_AXIOMS_2026-06-29.md)
 - [scale_reference_primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md)
 - [cosmology_open_number_reduction_theorem_note_2026-04-26](COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md)
 - [omega_lambda_derivation_note](OMEGA_LAMBDA_DERIVATION_NOTE.md)

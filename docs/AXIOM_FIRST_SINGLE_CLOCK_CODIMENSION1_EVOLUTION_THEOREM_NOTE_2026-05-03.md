@@ -199,8 +199,8 @@ rather than derived.
   now source-supported: for the imported `T_hat^2` object the aligned
   reconstruction uses `1/(2a_tau)`, and the `1/a_tau` denominator would
   double the generator. The absolute physical clock unit represented
-  by `a_tau` is still not derived from Lattice, Quantum, Record, or
-  post-record counts alone. This does not close axis/transfer
+  by `a_tau` is still not derived from Lattice, Qubit, Admissibility,
+  Record, or post-record counts alone. This does not close axis/transfer
   construction uniqueness (B-AXIS.2), does not exclude independent
   commuting transfer factors (B-AXIS.3), and does not make this row a
   retained-grade proposal.
@@ -227,9 +227,9 @@ and needs a follow-up edit there.
 ## Framework objects in use
 
 Current baseline carrier:
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
-(Lattice supplies the `Z^3` carrier; Quantum supplies the one-qubit
-local algebra per site; Record is not load-bearing here).
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
+(Lattice supplies the `Z^3` carrier; Qubit supplies the one-qubit
+local algebra per site; Admissibility and Record are not load-bearing here).
 
 - **Per-site algebra.** Each site `x ∈ Z^3` carries the one-qubit
   algebra `M_2(C)`; the retained
@@ -423,7 +423,7 @@ of the imported two-step object is fixed to `2a_tau`.
 - (a) the mutually commuting equal-time local algebra
   `A(Σ_t) = ⊗_{x ∈ Σ_t} M_2(C)_x` — raw tensor-factor commutation
   and factorization by (R-ET), per-site factor content by (R-CL3)
-  on the Quantum-axiom one-qubit carrier;
+  on the Qubit-axiom one-qubit carrier;
 - (b) codimension 1: `dim(Σ_t) = 3 = dim(Λ) - 1`;
 - (c) free-sector finite-speed propagation: on the free `U = 1`
   bilinear exact-log sector, the same reconstructed Hamiltonian
@@ -675,7 +675,7 @@ authority for effective status.
 
 ## Citations
 
-- baseline carrier: [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+- baseline carrier: [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 - Stone core (retained): [`SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md`](SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md)
 - transfer supply (retained_bounded):
   [`AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md),

@@ -89,8 +89,8 @@ no-go is shipped.
   routes, not hidden copies of the same wall.
 - **N3 - Hidden-wall scan.** The source/action convention, positive-source
   regime, scalar-`W` ansatz, and healthy kinetic sign are explicit premises or
-  open inputs. None is silently granted by Lattice, Quantum, Record, the
-  scale-reference primitive, or the kinetic-isotropy primitive.
+  open inputs. None is silently granted by Lattice, Qubit, Admissibility,
+  Record, the scale-reference primitive, or the kinetic-isotropy primitive.
 - **N4 - Residual matching.** The residual matched here is the TT spin-2
   kinetic sign on the gravity-sign surface. The scalar-`W` kernel only shows
   that this residual is not fixed by that scalar Hessian.

@@ -101,8 +101,8 @@ def main() -> int:
     )
     check(
         "current named framework baseline cited",
-        "MINIMAL_AXIOMS_2026-06-04.md" in note
-        and "Lattice, Quantum, and Record" in note,
+        "MINIMAL_AXIOMS_2026-06-29.md" in note
+        and "Lattice, Qubit, Admissibility, and Record" in note,
     )
     check(
         "adjacent notes are source references, not status imports",

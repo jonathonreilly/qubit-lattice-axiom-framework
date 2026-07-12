@@ -27,7 +27,7 @@ RUNNER = "scripts/frontier_hubble_lane5_cosmic_history_ratio_no_go_source_packet
 CACHE = "logs/runner-cache/frontier_hubble_lane5_cosmic_history_ratio_no_go_source_packet.txt"
 
 DEPENDENCIES = {
-    "minimal_axioms": "docs/MINIMAL_AXIOMS_2026-06-05.md",
+    "minimal_axioms": "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "scale_reference_primitive": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
     "cosmology_open_number_reduction_theorem_note_2026-04-26": (
         "docs/COSMOLOGY_OPEN_NUMBER_REDUCTION_THEOREM_NOTE_2026-04-26.md"
@@ -127,9 +127,10 @@ def part2_registered_dependencies() -> None:
     c2_gate = read(DEPENDENCIES["hubble_lane5_eta_retirement_gate_audit_note_2026-04-26"])
 
     check(
-        "minimal axiom source is current Lattice/Quantum/Record baseline",
+        "minimal axiom source is current Lattice/Qubit/Admissibility/Record baseline",
         "Lattice" in minimal
-        and "Quantum" in minimal
+        and "Qubit" in minimal
+        and "Admissibility" in minimal
         and "Record" in minimal
         and "scale-reference primitive" in minimal,
     )

@@ -110,9 +110,9 @@ The companion runner reproves:
 
 Load-bearing:
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — baseline
-  Lattice, Quantum, and Record semantics; Record supplies no coupling,
-  weighting, probability, dynamics, source/action, or arbitrary observable
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — baseline
+  Lattice, Qubit, Admissibility, and Record semantics; Record supplies no
+  coupling, weighting, probability, dynamics, source/action, or arbitrary observable
   identification.
 - [`ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`](ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md)
   — retained-bounded arrow-as-boundary context; the runner also reproves the

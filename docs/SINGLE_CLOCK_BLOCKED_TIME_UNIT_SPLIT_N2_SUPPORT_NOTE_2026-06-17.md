@@ -59,13 +59,13 @@ minimal axioms and outside Record alone.
   the transfer alone derive an absolute clock unit, axis uniqueness, or
   no-second-clock result.
 - **Minimal framework axioms.**
-  [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) states that
+  [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) states that
   Lattice supplies no metric scale, lattice spacing, or physical unit
   conversion, and Record supplies no time metric or dynamics. This markdown
-  link is a load-bearing dependency edge (added 2026-07-10): the `2026-06-05`
-  path is an aliased path of the canonical `minimal_axioms` premise node in
-  `docs/audit/data/axiom_premise_nodes.json` (current path
-  `MINIMAL_AXIOMS_2026-06-29.md`), so the edge resolves to the live
+  link is a load-bearing dependency edge (added 2026-07-10): the
+  `MINIMAL_AXIOMS_2026-06-29.md` path is the current path of the canonical
+  `minimal_axioms` premise node in
+  `docs/audit/data/axiom_premise_nodes.json`, so the edge resolves to the live
   minimal-axioms authority and its full text and effective status enter this
   note's dependency packet.
 - **Post-record clock/rate boundary.**
@@ -140,8 +140,8 @@ The single-clock parent can safely refine (B-AXIS.1) as follows:
 T_hat^2, so the source-side block denominator is 2 a_tau.
 
 (B-AXIS.1b) still open/supplied: the absolute physical clock unit or time
-metric represented by a_tau is not derived from Lattice, Quantum, Record, or
-post-record counts alone.
+metric represented by a_tau is not derived from Lattice, Qubit, Admissibility,
+Record, or post-record counts alone.
 ```
 
 This does not close (B-AXIS.2) axis/transfer-construction uniqueness and does

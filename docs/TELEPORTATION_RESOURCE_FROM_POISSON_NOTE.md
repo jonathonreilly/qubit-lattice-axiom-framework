@@ -372,8 +372,8 @@ The source claim is therefore narrower than promotion:
   certificate.
 - The Poisson/CHSH source chain is visible in the runner packet: the runner
   links, hashes, and checks `scripts/frontier_bell_inequality.py`.
-- The current framework baseline is [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md):
-  Lattice, Quantum, and Record. No new axiom or primitive is introduced here.
+- The current framework baseline is [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md):
+  Lattice, Qubit, Admissibility, and Record. No new axiom or primitive is introduced here.
 - This note asserts only the finite retained-axis logical-operator source, not
   that the last taste bit has been derived as a native physical carrier.
 - The missing native preparation/readout theorem remains the next positive
@@ -402,7 +402,7 @@ The source chain on this row currently stands as follows.
 | Adjacent Poisson resource sweep | [`TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md`](TELEPORTATION_POISSON_RESOURCE_SWEEP_NOTE.md) | adjacent diagnostic | not a substitute for the missing native-carrier bridge theorem |
 | Adjacent resource fidelity note | [`TELEPORTATION_RESOURCE_FIDELITY_NOTE.md`](TELEPORTATION_RESOURCE_FIDELITY_NOTE.md) | bounded fidelity protocol | not a physical apparatus theorem |
 | Adjacent measurement-record / apparatus-dynamics-closure | [`TELEPORTATION_MEASUREMENT_RECORD_NOTE.md`](TELEPORTATION_MEASUREMENT_RECORD_NOTE.md), [`TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md`](TELEPORTATION_APPARATUS_DYNAMICS_CLOSURE_NOTE.md) | adjacent bounded results | do not derive native preparation/readout for this Poisson resource |
-| Current framework baseline | [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md) | Lattice / Quantum / Record baseline | the native preparation/readout theorem has not yet been derived from that baseline |
+| Current framework baseline | [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | Lattice / Qubit / Admissibility / Record baseline | the native preparation/readout theorem has not yet been derived from that baseline |
 
 The remaining repair path is to prove the native preparation/readout theorem
 for this retained-axis last-taste carrier. Until that lands, the small-surface

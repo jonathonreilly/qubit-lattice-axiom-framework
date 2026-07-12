@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 387 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2728 |
+| unaudited | 2727 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 72 |
+| ~~audited_conditional~~ | 73 |
 | ~~audited_failed~~ | 12 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,20 +46,20 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 503 |
-| `audited_conditional` | 72 |
+| `audited_conditional` | 73 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 34 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3078 |
+| `unaudited` | 3077 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2053 |
+| `bounded_theorem` | 2054 |
 | `decoration` | 23 |
 | `meta` | 357 |
 | `no_go` | 470 |
-| `open_gate` | 197 |
+| `open_gate` | 196 |
 | `positive_theorem` | 654 |
 
 | criticality | count |
@@ -705,6 +705,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `structured_chokepoint_bridge_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `teleportation_3d_initial_ramp_probe_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `teleportation_measurement_record_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `third_grown_family_complex_boundary_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `universal_gr_block_normalization_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -8576,6 +8577,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **open / conditional deps cited:**
   - `TELEPORTATION_LOGICAL_READOUT_AUDIT.md`
 - **auditor confidence:** high
+
+### `teleportation_measurement_record_note`
+
+- **Note:** [`TELEPORTATION_MEASUREMENT_RECORD_NOTE.md`](../../docs/TELEPORTATION_MEASUREMENT_RECORD_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The supplied runner algebraically verifies the stipulated ideal orthogonal Bell-record model, but the packet does not derive the record register's physical formation, durability, orthogonality, or measurement dynamics from the framework premises.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00230-teleportation_measurement_re`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Given the stipulated orthogonal record isometry, tracing out A, R, and M leaves Bob in an input-independent I/2 state, while conditioning on a delivered label and applying U_zx reconstructs the input.  _(class `A`)_
+- **chain closes:** False — The numerical Bell-projector, marginal, and correction checks close within the stipulated model. The chain from the accepted framework premises to that model remains open because no bridge identifies M with a physical permanent Record-axiom record or derives its orthogonality and measurement dynamics.
+- **rationale:** The runner performs genuine linear-algebra calculations rather than printing hard-coded targets, and its five acceptance gates support the narrowly stated ideal-model consequences. However, the orthogonal record carrier, branch-conditioning rule, Bell resource, and physical record interpretation are stipulated rather than derived from the supplied axioms or retained authorities. The result is therefore a sound bounded model calculation but not a closed framework-native measurement-record derivation.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1 contains untested noisy-carrier and apparatus-dynamics routes and an open endogenous-readout route.
+    - N5 confirms that physical apparatus, decoherence, durability, and Born-rule resolutions were not tested.
 
 ### `teleportation_native_axioms_theory_note`
 

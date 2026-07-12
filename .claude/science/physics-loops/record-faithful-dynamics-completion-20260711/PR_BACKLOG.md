@@ -1,5 +1,23 @@
 # PR Delivery
 
+The massive log-determinant Hölder/Ruelle infinite-time uniqueness theorem is
+prepared as the next stacked review block:
+
+- base: `physics-loop/record-faithful-dynamics-block18-coupled-os-descent-20260712`
+- head: `physics-loop/record-faithful-dynamics-block19-infinite-time-uniqueness-20260712`
+- source runner: `PASS=8 FAIL=0`
+- disposition: PASS WITH BOUNDED CLAIMS after independent code/math,
+  physics/import/Nature, governance, labeling, and full N1--N8 review; the
+  temporal-circle functionals converge uniquely for all fixed `m>0` and the OS
+  transfer/Hamiltonian becomes canonical at fixed spatial volume
+- audit compatibility: one `bounded_theorem` / `unaudited` row, exactly the
+  coupled OS subsequential-transfer dependency, matching note hash, strict lint
+  zero errors, vocabulary lint zero violations, generated audit/status outputs
+  stripped
+- delivery: PR pending
+
+No merge is authorized. Independent audit remains authoritative.
+
 The coupled OS interior descent and subsequential infinite-time transfer is
 prepared as the next stacked review block:
 

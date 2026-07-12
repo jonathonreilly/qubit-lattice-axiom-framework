@@ -1,6 +1,28 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block19-infinite-time-uniqueness-20260712`.
+The massive log-determinant Hölder/Ruelle runner reports `PASS=8 FAIL=0`.
+For every fixed finite bipartite spatial volume, `beta>=0`, and `m>0`, the
+normalized even antiperiodic Wilson-staggered temporal-circle functionals now
+converge without subsequences on the full local gauge-invariant polynomial
+algebra. The exact object is `Q=I-(D^dagger D)/(m^2+16)`, a positive range-two
+contraction with radius `16/(m^2+16)<1`; its logarithm and inverse series make
+the determinant interaction and Wick insertions exponentially Hölder in
+blocked time. Compact-alphabet Bowen/Ruelle uniqueness removes boundary and
+seam dependence in the admissible class. The prior OS contraction and
+Hamiltonian are therefore canonical at fixed spatial volume.
+
+Independent code/math, physics/import/Nature, governance, and full N1--N8
+reviews pass after within-symbol Hölder, no-Ruelle-gap, finite-group scope, and
+source-contract repairs. The audit pipeline seeds exactly the coupled OS
+subsequential theorem. No axiom-update stop is triggered.
+
+The next exact route is a spatial-volume-uniform tightness/locality theorem and
+one controlled `Lambda_s -> Z^3` Gibbs/OS limit. Gauge infrared control, not
+temporal uniqueness, is now the active wall.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block18-coupled-os-descent-20260712`.
 The coupled OS descent/infinite-time runner reports `PASS=9 FAIL=0`.
 Support-controlled finite-circle cores have exact OS-null descent. Universal

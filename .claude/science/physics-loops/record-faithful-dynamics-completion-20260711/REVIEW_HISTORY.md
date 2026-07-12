@@ -608,3 +608,33 @@ stop is triggered.
 
 Delivery: stacked PR #5290 is open on the coupled periodic two-seam
 reflected-Gram head. Independent audit remains authoritative.
+
+## Massive log-determinant Hölder/Ruelle uniqueness review iteration 1
+
+The source bypasses the unproved enlarged gauge--Fock transfer representation.
+For `A=D^dagger D=m^2I-M^2`, `c=m^2+16`, and `Q=I-A/c`, it proves
+`0<=Q<=16/c<1`, exact operator-norm logarithm/inverse series, exponential
+blocked-time determinant variations, and quasilocal Wick insertions for every
+fixed `m>0`. Compact-alphabet Bowen/Ruelle uniqueness then collapses all
+temporal accumulation functionals.
+
+Code/math and physics/import/Nature review passed the load-bearing theorem but
+requested an explicit within-symbol compact-group Lipschitz estimate and a
+clear denial of a Ruelle spectral-gap claim. Governance review required the
+finite-group sentence to say trace-equivalent spectral realization rather than
+an observable transfer kernel, and strengthened source guards for N3/N4/N5/N8.
+
+## Massive log-determinant Hölder/Ruelle uniqueness review iteration 2
+
+PASS WITH BOUNDED CLAIMS. The telescoping power identity supplies within-symbol
+Lipschitz control; the theorem uses only Bowen eigenprobability/DLR uniqueness.
+The `Z_3` statement is narrowed to the exact `n_2` thermal-image channel and a
+trace-equivalent positive spectrum without an insertion intertwiner. The
+runner/cache report `PASS=8 FAIL=0`; an independent random-link `3+1`
+calculation reproduces the hop, `A,Q`, and log-determinant identities.
+
+Audit validation seeds one `bounded_theorem` / `unaudited` row with exactly the
+coupled OS subsequential-transfer dependency and source hash
+`4b4d6d9587024060...`; strict lint has no errors, vocabulary lint has zero
+violations, and generated audit/status surfaces are stripped. No axiom-update
+stop is triggered.

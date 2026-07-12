@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 415 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2647 |
+| unaudited | 2646 |
 | audit_in_progress | 28 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 95 |
+| ~~audited_conditional~~ | 96 |
 | ~~audited_failed~~ | 21 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 28 |
 | `audited_clean` | 546 |
-| `audited_conditional` | 95 |
+| `audited_conditional` | 96 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 43 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2997 |
+| `unaudited` | 2996 |
 
 | claim_type | count |
 |---|---:|
@@ -743,6 +743,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -5789,6 +5790,26 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The audited scope is a finite-dimensional linear-algebra theorem: cyclic group averaging is a canonical projector, its image is the stated circulant Hermitian basis, and the trace responses reconstruct the projected component. This does not audit the upstream microscopic source law, Koide selector principle, or charged-lepton readout, which the note explicitly leaves open.
 - **rationale:** Within the bounded algebraic scope, the load-bearing step closes: the note states the projector, the basis-level action, the generic coefficient formula, and the response reconstruction, and the cached runner confirms all algebraic identities with PASS=11 FAIL=0. The two D-class checks are only witness/comparator checks for the observed amplitude target and are not needed to prove the compression theorem. This clean verdict must not be read as closing the microscopic source law for (r0,r1,r2), the selector principle, or the final charged-lepton readout, all of which remain explicitly outside this claim scope.
 - **auditor confidence:** high
+
+### `koide_emergent_time_eta_conjugation_parity_bounded_note_2026-05-30`
+
+- **Note:** [`KOIDE_EMERGENT_TIME_ETA_CONJUGATION_PARITY_BOUNDED_NOTE_2026-05-30.md`](../../docs/KOIDE_EMERGENT_TIME_ETA_CONJUGATION_PARITY_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The audit verifies conjugation-even spectra and zero spectral one-form curl for the displayed C_3 circulant, plus conjugation-even spectra for transpose-preserving real extensions; it does not establish vanishing of eigenvector-dependent Berry/eta terms for those extensions.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00082-koide_emergent_time_eta_conj`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Transpose/similarity preserves the spectrum under b -> conj(b), so every spectrum-only functional is conjugation-even and cannot contain the stated conjugation-odd term.  _(class `A`)_
+- **chain closes:** False — The spectrum-only algebra closes, including the fixed Fourier-basis calculation for the displayed family. The broader Berry/eta conclusion for transpose-preserving extensions lacks a theorem reducing the geometric coefficient to instantaneous spectral data.
+- **rationale:** The runner performs genuine symbolic and matrix calculations: it proves the P similarity, spectral multiset invariance, exactness of the displayed spectrum-derived one-form, and spectral invariance of the real transpose-preserving extension. However, Check 6 tests only eigenvalues; transpose-related spectra do not by themselves control an eigenvector-dependent Berry connection or eta term. The claim is therefore clean only after restricting the conclusion to spectrum-only functionals, while the broader extension requires an additional bridge theorem.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1 contains OPEN and UNTESTED mechanisms explicitly outside the runner's spectral checks.
+    - N2 leaves the spectrum-to-eigenvector-Berry/eta bridge unresolved.
+    - N3 identifies a hidden spectrum-only assumption in the broader Berry/eta inference.
+    - N5 finds negative rhetoric extending beyond the tested spectral resolutions.
+    - N7's strongest eigenvector-dependent Berry steelman succeeds against the broad extension.
 
 ### `koide_frobenius_isotype_split_uniqueness_note_2026-04-21`
 

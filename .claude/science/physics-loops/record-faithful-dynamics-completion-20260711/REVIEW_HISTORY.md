@@ -363,3 +363,36 @@ violations. Audit validation seeds only `minimal_axioms`, leaves the row
 `bounded_theorem` / `unaudited`, attaches no helper runner, and strict lint
 has no errors. Generated audit/effective-status surfaces are stripped before
 delivery; independent audit remains required.
+
+## Two-band BdG strict-time review
+
+The new source proves the complete `2 x 2` finite-Laurent
+strict-once/flat-spectrum/strict-all-times equivalence and the ordinary-scalar
+one-mode nearest-neighbor proper-cubic BdG corollary. Runner/cache:
+`PASS=33 FAIL=0`.
+
+### Two-band BdG review iteration 1
+
+Independent review required five material repairs: the literal parity-even
+qubit edge had to remain separate from local CAR/BdG dynamics; the continuum
+consequence and campaign-completion language had to stay at supplied two-band
+scope; sine-zero times had to be removed from exact-radius wording; ordinary
+proper-cubic character exhaustiveness needed a commutator-subgroup proof; and
+the doubled `16`-mode rotation lifts had to be tested as a group rather than
+only element by element. Context-only links were also converted so the graph
+seeds only `minimal_axioms`.
+
+### Two-band BdG review iteration 2
+
+PASS WITH BOUNDED CLAIMS. The runner now checks the proper-cubic commutator
+subgroup, all `576` projective composition pairs, `phase^2=1`, and an explicit
+nontrivial spinorial cocycle. The source states an honest cubic action only on
+the even/quadratic algebra, keeps odd CAR generators projective, and leaves
+multiband/interacting/time-dependent/partitioned/quasilocal routes open. The
+full N1--N8 packet has seven attempted routes, fifteen independence pairs, an
+actual-phrase scan, residual and resolution tables, primitive/path scan,
+authority-cited steelman, and cross-cycle table. Code/math, claim/import/Nature,
+governance, labeling, and no-go re-reviews pass. Audit validation seeds one
+`bounded_theorem` / `unaudited` row with only `minimal_axioms`; strict lint has
+no errors, vocabulary lint has zero violations, and generated audit surfaces
+are stripped before delivery.

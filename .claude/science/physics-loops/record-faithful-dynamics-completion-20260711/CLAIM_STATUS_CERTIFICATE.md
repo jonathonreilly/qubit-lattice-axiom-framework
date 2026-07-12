@@ -11,7 +11,7 @@ admitted_observation_status: none
 proposal_allowed: false
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-review_loop_disposition: pending_review
+review_loop_disposition: pass_with_bounded_claims_audit_compatible
 ---
 
 # Claim Status Certificate

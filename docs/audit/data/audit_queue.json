@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 628,
     "high": 335,
-    "leaf": 1096,
+    "leaf": 1095,
     "medium": 718
   },
   "cycle_break_target_count": 49,
@@ -2979,28 +2979,6 @@
       "ready": true,
       "runner_path": "scripts/kraus_choi_normalization_convention_check_2026_06_05.py",
       "transitive_descendants": 448
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "persistent_record_as_kraus_operator_note_2026-05-20",
-      "claim_scope": "For arbitrary finite d and R, a given linear isometry W:H_sys\u2192H_sys\u2297H_record with an orthonormal record-block decomposition yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states; no persistent-record construction of W is audited.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 6,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 11.807,
-      "note_path": "docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/persistent_record_kraus_instrument_certificate.py",
-      "transitive_descendants": 447
     },
     {
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
@@ -9789,6 +9767,32 @@
       "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
       "audit_status": "unaudited",
       "blocker": null,
+      "claim_id": "rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11",
+      "claim_scope": null,
+      "claim_type": "positive_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "critical",
+      "criticality_rank": 3,
+      "cross_confirmation_status": null,
+      "deps": [
+        "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10",
+        "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
+        "staggered_only_det_positivity_case_a_note_2026-05-17"
+      ],
+      "direct_in_degree": 1,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 9.776,
+      "note_path": "docs/RP_COUPLED_MULTISLICE_HALFSPACE_GAUGE_STAGGERED_OS_GRAM_NARROW_THEOREM_NOTE_2026-07-11.md",
+      "queue_reason": "unaudited",
+      "ready": false,
+      "runner_path": "scripts/rp_multislice_halfspace_os_gram_certificate.py",
+      "transitive_descendants": 619
+    },
+    {
+      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
+      "audit_status": "unaudited",
+      "blocker": null,
       "claim_id": "axiom_first_reflection_positivity_theorem_note_2026-04-29",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -9805,6 +9809,7 @@
         "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
         "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
         "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10",
+        "rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11",
         "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02"
       ],
       "direct_in_degree": 49,
@@ -9812,6 +9817,7 @@
       "helper_runner_paths": [
         "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py",
         "scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py",
+        "scripts/rp_multislice_halfspace_os_gram_certificate.py",
         "scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py"
       ],
       "load_bearing_score": 33.774,
@@ -75651,32 +75657,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11",
-      "claim_scope": null,
-      "claim_type": "positive_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "rp_coupled_two_slice_gauge_staggered_berezin_gram_narrow_theorem_note_2026-07-10",
-        "su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09",
-        "staggered_only_det_positivity_case_a_note_2026-05-17"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/RP_COUPLED_MULTISLICE_HALFSPACE_GAUGE_STAGGERED_OS_GRAM_NARROW_THEOREM_NOTE_2026-07-11.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/rp_multislice_halfspace_os_gram_certificate.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "rp_gauge_half_wilson_temporal_bridge_narrow_theorem_note_2026-06-06",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -79701,6 +79681,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 508,
-  "total_pending": 2777
+  "ready_count": 507,
+  "total_pending": 2776
 }

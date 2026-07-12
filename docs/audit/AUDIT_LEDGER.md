@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 105 |
 | **retained_no_go** | 46 |
-| **retained_bounded** | 420 |
+| **retained_bounded** | 421 |
 | _retained_pending_chain_ | 2 |
 | open_gate | 9 |
 | unaudited | 2616 |
-| audit_in_progress | 31 |
+| audit_in_progress | 30 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -46,8 +46,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 31 |
-| `audited_clean` | 558 |
+| `audit_in_progress` | 30 |
+| `audited_clean` | 559 |
 | `audited_conditional` | 104 |
 | `audited_decoration` | 23 |
 | `audited_failed` | 48 |
@@ -66,10 +66,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 750 |
+| `critical` | 751 |
 | `high` | 401 |
 | `medium` | 940 |
-| `leaf` | 1663 |
+| `leaf` | 1662 |
 
 - **Retained pending chain closure:** 2
 - **Citation cycles detected:** 10
@@ -137,7 +137,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `poisson_self_gravity_mechanism_note` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_count_probability_firewall_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_finite_to_unbounded_family_lift_no_go_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -502,6 +501,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `persistent_object_top3_multistage_probe_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `persistent_object_top4_multistage_outer_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `persistent_object_top4_multistage_transfer_sweep_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
+| `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `persistent_record_matched_compare_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `persistent_record_overlap_kernel_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
@@ -7475,6 +7475,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The restricted packet supports the first audit. The source note is explicitly bounded and its exclusions match the audited scope. The primary runner enumerates the 13 listed cases, fixes top_keep=4 by default, delegates the admissibility computation to _run_case, and the imported computation fixes h=0.25, blend=0.25, N_UPDATES=3, N_STAGES=3, and gates overlap, direction, alpha band, kappa drift, and stage carry. The completed cache status is ok, its primary runner SHA matches the current file, and stdout reports 11/13 admissible with failures only at source0p75 and source1p00. The now-complete packet includes scripts/persistent_object_adaptive_readout_probe.py, resolving the second auditor's missing-file objection; inspection shows the adaptive readout functions used by _blended_probs are available in-packet and compute detector weights/centroids rather than hard-code the 11/13 outcome.
 - **rationale:** The restricted packet supports the first audit. The source note is explicitly bounded and its exclusions match the audited scope. The primary runner enumerates the 13 listed cases, fixes top_keep=4 by default, delegates the admissibility computation to _run_case, and the imported computation fixes h=0.25, blend=0.25, N_UPDATES=3, N_STAGES=3, and gates overlap, direction, alpha band, kappa drift, and stage carry. The completed cache status is ok, its primary runner SHA matches the current file, and stdout reports 11/13 admissible with failures only at source0p75 and source1p00. The now-complete packet includes scripts/persistent_object_adaptive_readout_probe.py, resolving the second auditor's missing-file objection; inspection shows the adaptive readout functions used by _blended_probs are available in-packet and compute detector weights/centroids rather than hard-code the 11/13 outcome.
 - **auditor confidence:** high
+
+### `persistent_record_as_kraus_operator_note_2026-05-20`
+
+- **Note:** [`PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md`](../../docs/PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For finite-dimensional H_sys and a finite orthonormal record basis, any assumed normalized linear isometry W yields Kraus completeness, a CPTP unconditional map, and positive normalized nonzero selective states; no physical derivation of W or record orthogonality is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-loop-solB-20260711`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Because the record basis is orthonormal, W†W = sum_r K_r†K_r, so the isometry condition W†W = I_sys gives the Kraus resolution.  _(class `A`)_
+- **chain closes:** True — The theorem follows exactly from the stated finite-dimensional isometry and orthonormal-basis hypotheses. The persistent-record-to-isometry bridge is explicitly outside the audited scope and is not used in the proof.
+- **rationale:** The load-bearing identity is a genuine algebraic closure over the theorem's explicit finite-isometry hypothesis, and the CP, trace-preservation, and selective-state claims follow without an imported physical bridge. The cached runner is SHA-matched to the supplied source and performs 75 algebraic assertions; an independent d=4, R=3 construction outside its random-QR path also confirms completeness, Choi positivity, channel normalization, basis covariance, and selective normalization. Residual physical risk is confined to the expressly excluded task of deriving W and orthogonal record labels from persistent-record dynamics.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `persistent_record_matched_compare_note`
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 94 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 373 |
+| **retained_bounded** | 374 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2760 |
+| unaudited | 2759 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 487 |
+| `audited_clean` | 488 |
 | `audited_conditional` | 57 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3110 |
+| `unaudited` | 3109 |
 
 | claim_type | count |
 |---|---:|
@@ -280,6 +280,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `edge_deletion_boundary_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `eigenvalue_anderson_phase_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `electrostatics_card_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
+| `electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `electrostatics_superposition_proxy_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | C | - |
 | `em_gravity_coexistence_2x2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `emergent_geometry_growth_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -3339,6 +3340,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner explicitly instantiates the 3D ordered lattice, constructs scalar source fields, propagates charged test packets, and computes the reported centroid shifts rather than printing constants. The audited conclusion is limited to the constructed scalar sign-law probe and does not require Maxwell, gauge, magnetic, or radiative structure.
 - **rationale:** The provided source code performs an internal numerical computation over the lattice machinery and derives the sign antisymmetry, null cancellation, dipole flip, charge-scaling exponent, and screening attenuation values shown in stdout. The reported numbers are not hard-coded expected outputs, and no external comparator or cross-note value is imported. The clean verdict applies only to the narrow scalar sign-coupled construction as stated, not to any broader electromagnetic theory.
 - **auditor confidence:** high
+
+### `electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/ELECTROSTATICS_GROWN_SIGN_LAW_SOURCE_FIELD_LINEARITY_PARITY_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact source-field linearity, signed parity, same-point cancellation, and C1-C5 under the explicitly hypothesized signed-linear source-field rule and Phi(0,q_test)=centroid_z(free) baseline.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00411-electrostatics_grown_sign_la`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substitution into F({(z_k,q_k)}_k)[i] := sum_k q_k g(z_k,i) gives charge scaling, sign parity, and exact same-point cancellation componentwise.  _(class `A`)_
+- **chain closes:** True — The conclusions are componentwise algebraic consequences of the theorem's explicit hypotheses. The runner genuinely constructs the symbolic expressions and simplifies them to zero; no geometry construction, downstream sign response, or numerical target is required.
+- **rationale:** The theorem is deliberately conditional and narrowly scoped to algebraic substitution in the supplied signed-linear field map. P1-P3 and C2-C5 follow directly, while C1 follows after the separately explicit zero-field baseline hypothesis; the runner source computes these identities rather than merely printing expected answers. The parent-correspondence message is inspection-only, but it is not load-bearing for the audited conditional implication.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `electrostatics_superposition_proxy_note`
 

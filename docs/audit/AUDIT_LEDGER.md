@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 411 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2668 |
+| unaudited | 2667 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 88 |
-| ~~audited_failed~~ | 20 |
+| ~~audited_failed~~ | 21 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -48,10 +48,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 539 |
 | `audited_conditional` | 88 |
 | `audited_decoration` | 20 |
-| `audited_failed` | 42 |
+| `audited_failed` | 43 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3018 |
+| `unaudited` | 3017 |
 
 | claim_type | count |
 |---|---:|
@@ -805,6 +805,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `if_program_closing_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
+| `meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `neutrino_lane4_4f_sigma_m_nu_functional_form_theorem_note_2026-04-28` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -6413,6 +6414,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The runner genuinely constructs Gibbs matrices and lattice sums rather than printing or importing the contested results, and its PASS=5 FAIL=0 output agrees with the source's bounded core. Random matrix trials alone would not prove the universal Bogoliubov inequality, but the source supplies the standard finite spectral/Cauchy-Schwarz proof route; likewise, the asymptotic threshold follows analytically from the stated lattice dispersion rather than solely from the finite ladders. The source consistently labels the Ward-normalized order-parameter bound as conditional and excludes it from the audited load-bearing scope.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30`
+
+- **Note:** [`MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md`](../../docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The runner verifies agreement of two finite block-propagator constructions and their use in the same connected-loop formula on the listed carriers; it does not verify the claimed full four-field Berezin correlator with the same fermion matrix whose determinant weights the average.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00299-meson_gauge_invariant_os_tra`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The load-bearing independent content is the claimed identity G_f^Berezin == G_f^operator, verified through temporal-chain and full-spacetime constructions, from which the meson correlator equality is said to follow.  _(class `C`)_
+- **chain closes:** False — The function named meson_correlator_full_berezin does not evaluate a four-field Wick sum or the full-spacetime inverse; it contracts a previously reduced block propagator through the same loop formula used on the operator side. In addition, the determinant weight uses Lt=2 through nt_det=1 while the asserted block correlator uses NT_BULK=14, so the weighted correlator and determinant do not arise from one common finite fermion matrix.
+- **rationale:** The source is complete and performs substantial finite-matrix computation, so the proposed load-bearing class is C rather than a printed-pass or numerical-match artifact. However, meson_correlator_full_berezin never calls wick or a full-spacetime Minv and instead performs the same reduced trace contraction after constructing Gf, leaving the advertised genuine four-field Berezin path untested. The determinant average also combines an Lt=2 determinant with a block kernel extracted using Lt=28, contrary to the claim that both belong to the same finite Berezin measure.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1 leaves the direct full-spacetime four-field Wick route open.
+    - The inspected runner exposes an independent common-measure temporal-extent mismatch.
 
 ### `mesoscopic_surrogate_localization_sweep_note`
 

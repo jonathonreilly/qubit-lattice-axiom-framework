@@ -81,6 +81,7 @@ ALLOWED_CLAIM_TYPES = {
     None,
 }
 RETAINED_GRADES = {"retained", "retained_no_go", "retained_bounded"}
+AUDIT_TUPLE_AGREEMENT_SCHEMA = "audit_tuple_v2"
 
 
 def normalized_claim_scope(audit_like: dict) -> str:
@@ -935,8 +936,28 @@ def main() -> int:
                     )
 
         xc = row.get("cross_confirmation") or {}
-        if isinstance(xc, dict) and xc.get("status") in {"third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
-            xc_status = xc.get("status")
+        xc_status = xc.get("status") if isinstance(xc, dict) else None
+        exact_tuple_schema = (
+            isinstance(xc, dict)
+            and xc.get("agreement_schema") == AUDIT_TUPLE_AGREEMENT_SCHEMA
+        )
+        if isinstance(xc, dict) and xc_status == "confirmed":
+            first = xc.get("first_audit") or {}
+            second = xc.get("second_audit") or {}
+            if not audit_summary_tuples_match(first, second):
+                message = (
+                    f"{cid}: confirmed cross-confirmation full audit tuple mismatch "
+                    "(verdict, claim_type, normalized claim_scope, "
+                    "load_bearing_step_class, negative_assertion_classes)"
+                )
+                if exact_tuple_schema:
+                    errors.append(message)
+                else:
+                    add_notice(
+                        "legacy_cross_confirmation_tuple_mismatch",
+                        message + "; legacy confirmation requires fresh re-audit",
+                    )
+        if isinstance(xc, dict) and xc_status in {"third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
             expected_side = {
                 "third_confirmed_first": "first",
                 "third_confirmed_second": "second",
@@ -954,16 +975,20 @@ def main() -> int:
                     errors.append(
                         f"{cid}: {xc_status} conflicts with third_audit.sided_with={side!r}"
                     )
-                if (
-                    expected_side != "hybrid"
-                    and third.get("verdict")
-                    and winning.get("verdict")
-                    and third.get("verdict") != winning.get("verdict")
+                if expected_side != "hybrid" and not audit_summary_tuples_match(
+                    third, winning
                 ):
-                    errors.append(
-                        f"{cid}: {xc_status} third_audit verdict={third.get('verdict')!r} "
-                        f"does not match winning audit {winning.get('verdict')!r}"
+                    message = (
+                        f"{cid}: {xc_status} third_audit full audit tuple does not "
+                        "match the winning audit"
                     )
+                    if exact_tuple_schema:
+                        errors.append(message)
+                    else:
+                        add_notice(
+                            "legacy_cross_confirmation_tuple_mismatch",
+                            message + "; legacy confirmation requires fresh re-audit",
+                        )
                 if row.get("claim_type_provenance") == "judicial_review":
                     for key in ("verdict", "claim_type", "load_bearing_step_class"):
                         row_key = "audit_status" if key == "verdict" else key
@@ -1054,13 +1079,6 @@ def main() -> int:
                             f"{cid}: same-family critical cross-confirmation requires "
                             "second_audit.independence='fresh_context'"
                         )
-                    if xc_status == "confirmed":
-                        if not audit_summary_tuples_match(first, second):
-                            errors.append(
-                                f"{cid}: critical cross-confirmation full audit tuple mismatch "
-                                "(verdict, claim_type, normalized claim_scope, "
-                                "load_bearing_step_class, negative_assertion_classes)"
-                            )
                     if xc_status in {"third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
                         third = xc.get("third_audit") or {}
                         if not third:
@@ -1086,13 +1104,6 @@ def main() -> int:
                                     errors.append(
                                         f"{cid}: third_confirmed_hybrid requires "
                                         f"third_audit.sided_with='hybrid'"
-                                    )
-                            else:
-                                winning = first if xc_status == "third_confirmed_first" else second
-                                if not audit_summary_tuples_match(third, winning):
-                                    errors.append(
-                                        f"{cid}: {xc_status} third_audit full audit tuple "
-                                        "does not match the winning audit"
                                     )
 
         if a == "audited_decoration":

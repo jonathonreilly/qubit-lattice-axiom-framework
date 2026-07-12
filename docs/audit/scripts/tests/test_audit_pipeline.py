@@ -2070,6 +2070,12 @@ class ApplyAuditTest(unittest.TestCase):
             ok, msg = m.apply_one(led, second_audit)
         self.assertTrue(ok, msg)
         self.assertEqual(msg, "applied")
+        self.assertEqual(
+            led["rows"]["legacy_pending_no_go"]["cross_confirmation"][
+                "agreement_schema"
+            ],
+            "audit_tuple_v2",
+        )
 
     def test_hybrid_judicial_review_records_applyable_third_tuple(self):
         m = _import("apply_audit")
@@ -2123,6 +2129,9 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertTrue(ok, msg)
         row = led["rows"]["test_hybrid"]
         self.assertEqual(row["cross_confirmation"]["status"], "third_confirmed_hybrid")
+        self.assertEqual(
+            row["cross_confirmation"]["agreement_schema"], "audit_tuple_v2"
+        )
         self.assertEqual(row["cross_confirmation"]["third_audit"]["sided_with"], "hybrid")
         self.assertEqual(row["audit_status"], "audited_clean")
         self.assertEqual(row["claim_type"], "bounded_theorem")
@@ -3441,6 +3450,7 @@ class AuditLintTest(unittest.TestCase):
                 "negative_assertion_classes": [],
                 "cross_confirmation": {
                     "status": "confirmed",
+                    "agreement_schema": "audit_tuple_v2",
                     "first_audit": first,
                     "second_audit": second,
                 },
@@ -3453,6 +3463,97 @@ class AuditLintTest(unittest.TestCase):
             rc = m.main()
         self.assertEqual(rc, 1, output.getvalue())
         self.assertIn("full audit tuple mismatch", output.getvalue())
+
+        ledger = self.fx.read_ledger()
+        cross = ledger["rows"]["critical_claim"]["cross_confirmation"]
+        cross.pop("agreement_schema")
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 0, output.getvalue())
+        self.assertIn("legacy_cross_confirmation_tuple_mismatch", output.getvalue())
+
+        cross["agreement_schema"] = "audit_tuple_v2"
+        cross["second_audit"]["claim_scope"] = cross["first_audit"]["claim_scope"]
+        cross["second_audit"]["negative_assertion_classes"] = [
+            "bounded_with_named_walls"
+        ]
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("full audit tuple mismatch", output.getvalue())
+
+    def test_lint_enforces_versioned_tuple_for_all_confirmed_paths(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        base = {
+            "auditor": "first-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "independence": "cross_family",
+            "verdict": "audited_conditional",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "first bounded scope",
+            "load_bearing_step_class": "A",
+            "negative_assertion_classes": [],
+        }
+        for status, winner in (
+            ("confirmed", None),
+            ("third_confirmed_first", "first"),
+            ("third_confirmed_second", "second"),
+        ):
+            with self.subTest(status=status):
+                first = dict(base)
+                second = {
+                    **base,
+                    "auditor": "second-auditor",
+                    "independence": "fresh_context",
+                    "claim_scope": "second bounded scope",
+                }
+                cross = {
+                    "status": status,
+                    "agreement_schema": "audit_tuple_v2",
+                    "first_audit": first,
+                    "second_audit": second,
+                }
+                if winner:
+                    chosen = first if winner == "first" else second
+                    cross["third_audit"] = {
+                        **chosen,
+                        "auditor": "third-auditor",
+                        "independence": "judicial_review",
+                        "claim_scope": "third mismatched scope",
+                        "sided_with": winner,
+                    }
+                rows = {
+                    "terminal_claim": {
+                        "claim_id": "terminal_claim",
+                        "audit_status": "audited_conditional",
+                        "effective_status": "audited_conditional",
+                        "claim_type": "bounded_theorem",
+                        "claim_scope": "terminal bounded scope",
+                        "chain_closes": False,
+                        "auditor": "terminal-auditor",
+                        "auditor_family": "codex-gpt-5.6",
+                        "auditor_model": "gpt-5.6-sol",
+                        "auditor_reasoning_effort": "xhigh",
+                        "independence": "fresh_context",
+                        "criticality": "leaf",
+                        "load_bearing_step_class": "A",
+                        "negative_assertion_classes": [],
+                        "notes_for_re_audit_if_any": "other: tuple test",
+                        "cross_confirmation": cross,
+                    }
+                }
+                self._write_minimal_ledger(rows)
+                import contextlib, io
+                output = io.StringIO()
+                with contextlib.redirect_stdout(output):
+                    rc = m.main()
+                self.assertEqual(rc, 1, output.getvalue())
+                self.assertIn("full audit tuple", output.getvalue())
 
     def test_front_door_current_markdown_link_passes(self):
         m = _import("audit_lint")

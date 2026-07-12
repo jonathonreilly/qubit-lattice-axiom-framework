@@ -436,6 +436,7 @@ def _canonicalize_existing_auditor_family(family: str | None) -> str | None:
 
 
 ALLOWED_JUDICIAL_SIDES = {"first", "second", "hybrid", "neither"}
+AUDIT_TUPLE_AGREEMENT_SCHEMA = "audit_tuple_v2"
 JUDICIAL_REVIEWABLE_STATUSES = {
     "disagreement",
     "third_confirmed_first",
@@ -1147,6 +1148,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         "second": "third_confirmed_second",
         "hybrid": "third_confirmed_hybrid",
     }[side]
+    row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
     row["audit_status"] = ratified_verdict
     row["auditor"] = judgment["third_auditor"]
     row["auditor_family"] = judgment["auditor_family"]
@@ -1467,6 +1469,8 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             "status": "confirmed" if matches else "disagreement",
             "mode": "explicit_second_seat",
         }
+        if matches:
+            row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
         if not matches:
             row["audit_status"] = "audit_in_progress"
             row["blocker"] = "cross_confirmation_disagreement"
@@ -1514,6 +1518,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             "mode": "terminal_second_pass",
         }
         if matches:
+            row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
             terminal_second_pass_msg = "terminal verdict cross-confirmed"
         else:
             terminal_second_pass_msg = (
@@ -1561,6 +1566,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             row["cross_confirmation"]["third_audit"] = third
             row["cross_confirmation"]["status"] = "third_confirmed_first"
             row["cross_confirmation"]["mode"] = "terminal_third_pass"
+            row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
             third_pass_msg = "third auditor confirmed first verdict"
             audit["verdict"] = first["verdict"]
             audit["claim_type"] = first["claim_type"]
@@ -1572,6 +1578,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             row["cross_confirmation"]["third_audit"] = third
             row["cross_confirmation"]["status"] = "third_confirmed_second"
             row["cross_confirmation"]["mode"] = "terminal_third_pass"
+            row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
             third_pass_msg = "third auditor confirmed second verdict"
             audit["verdict"] = second["verdict"]
             audit["claim_type"] = second["claim_type"]
@@ -1623,6 +1630,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         matches = audit_tuples_match(first, second)
         if matches:
             row["cross_confirmation"]["status"] = "confirmed"
+            row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
         else:
             row["cross_confirmation"]["status"] = "disagreement"
             row["audit_status"] = "audit_in_progress"
@@ -1698,6 +1706,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         # Concordant second audit: promote.
         row["cross_confirmation"]["second_audit"] = audit_summary_from_blob(audit)
         row["cross_confirmation"]["status"] = "confirmed"
+        row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
 
     # Apply the audit fields.
     row["audit_status"] = verdict

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 409 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2673 |
+| unaudited | 2672 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 86 |
+| ~~audited_conditional~~ | 87 |
 | ~~audited_failed~~ | 20 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 536 |
-| `audited_conditional` | 86 |
+| `audited_conditional` | 87 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3023 |
+| `unaudited` | 3022 |
 
 | claim_type | count |
 |---|---:|
@@ -750,6 +750,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `structured_chokepoint_bridge_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `teleportation_3d_initial_ramp_probe_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `teleportation_bell_measurement_circuit_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `teleportation_measurement_record_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `third_grown_family_complex_boundary_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `two_sign_comparison_note_2026-04-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -9254,6 +9255,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - **gate failures:**
     - N1 contains open and untested dynamical routes.
     - N5 finds untested resolutions behind the note's projector-replacement, irreversibility, durability, and conservation rhetoric.
+
+### `teleportation_bell_measurement_circuit_note`
+
+- **Note:** [`TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md`](../../docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** The ideal taste-qubit Bell measurement is algebraically decomposed into equivalent ZZ/XX parity measurements and a CNOT-H computational-readout circuit; physical gate, apparatus, readout, record, resource, and imperfection mechanisms remain open.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00293-teleportation_bell_measureme`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Pulling the final computational measurements back through CNOT(A -> R) followed by H(A) gives Z_A output -> X_A X_R and Z_R output -> Z_A Z_R, so the circuit projectors equal P_zx.  _(class `A`)_
+- **chain closes:** False — The finite matrix identities and ideal teleportation behavior close on their stated logical surface. The packet does not derive a native apparatus Hamiltonian, gate schedule, physical readout, durable record mechanism, encoded Bell-resource preparation, or quantified error model.
+- **rationale:** The primary runner genuinely constructs the finite operators and verifies the stabilizer, Heisenberg-pullback, correction, and no-signaling identities rather than merely printing expected constants. Its boundary helper is bookkeeping and does not supply the Bell-circuit identity. However, the mandatory no-go-discipline stress test leaves several physically distinct implementation routes open or untested, so the open physical-implementation boundary cannot receive an audited-clean verdict.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1 contains OPEN and UNTESTED physical implementation routes.
+    - N5 identifies untested native-schedule, apparatus, decoherence, and durable-record resolutions.
 
 ### `teleportation_causal_channel_note`
 

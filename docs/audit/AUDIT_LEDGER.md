@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 384 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2738 |
+| unaudited | 2737 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 66 |
+| ~~audited_conditional~~ | 67 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 500 |
-| `audited_conditional` | 66 |
+| `audited_conditional` | 67 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3088 |
+| `unaudited` | 3087 |
 
 | claim_type | count |
 |---|---:|
@@ -697,6 +697,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_generated_wavefield_transfer_v2_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `source_resolved_radical_geometry_probe_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `teleportation_3d_initial_ramp_probe_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `universal_gr_block_normalization_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -8202,6 +8203,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner directly constructs the stated random DAG pocket, propagates with the stated valley-linear field and kernel, and reports the TOWARD counts, local power-law fits, and no-field controls. No external dependency or graph-universality claim is needed for the narrowed harness-level statement.
 - **rationale:** The bounded claim closes as a direct numerical harness result: n=200 gives 28/32 TOWARD rows and n=500 gives 21/32 TOWARD rows, with F~M median 1.00 and zero no-field controls in both reported sizes. The source note's n=500 table value is stale relative to current runner output, but this does not change the load-bearing majority-TOWARD and near-linear positive-row conclusion. Exact-count citation should use the current runner values until the note table is refreshed.
 - **auditor confidence:** high
+
+### `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05`
+
+- **Note:** [`SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md`](../../docs/SU3_LOW_RANK_IRREP_PICARD_FUCHS_ODES_NOTE_2026-05-05.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The source note's seven displayed order-3 Picard-Fuchs equations for the actual SU(3) character integrals, with bounded-search and finite-sample qualifications.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00218-su3_low_rank_irrep_picard_fu`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The seven displayed order-3 polynomial differential operators are asserted to annihilate the corresponding SU(3) character integrals, with order 3 the smallest fit found inside r <= 6 and degree <= 8.  _(class `C`)_
+- **chain closes:** False — The runner derives non-hard-coded candidates from 50 Taylor coefficients and verifies additional coefficients and four numerical samples, but it supplies neither an all-order annihilation certificate nor an in-packet proof equating its Bessel-determinant construction with the defining SU(3) integrals.
+- **rationale:** Issue: the note still says the character integrals satisfy closed-form Picard-Fuchs ODEs and possess exact symbolic structure, although the runner establishes only a finite Taylor/nullspace and finite-sample certificate. Why this blocks: exact residual cancellation through a truncation and agreement with the same Bessel-determinant evaluator at four points do not prove an all-order differential identity for the defining Haar integrals. Repair target: either add an exact determinant-to-integral and creative-telescoping certificate, or consistently narrow the headline, catalog, and significance text to ODE candidates verified by the finite runner. Claim boundary until fixed: the displayed coefficients, bounded search result, and reported finite numerical checks are reproducible computational certificates.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: all six distinct closure routes remain open; the packet supplies neither an all-order derivation nor an independent Haar-integral check.
+    - N3: the generalized Bars/Schur determinant representation remains an unresolved hidden input.
+    - N5: the all-order, full-representation-box, and outside-window resolutions are explicitly untested.
 
 ### `su3_wigner_block4_staging_block5_orientation_diagnostics_narrow_theorem_note_2026-05-10`
 

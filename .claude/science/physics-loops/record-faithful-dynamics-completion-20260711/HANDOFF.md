@@ -1,6 +1,28 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block24-coupled-one-step-rg-map-20260712`.
+The factor-two block/Schur/OS runner reports `PASS=10 FAIL=0`. The declared
+straight-link map has exact Haar disintegration, gauge covariance, all-mass
+Schur elimination, positive eliminated determinant, fixed-background
+exponential locality, and a strictly positive continuous finite coarse gauge
+density. In the strict Dobrushin wedge the image measures inherit exponential
+mixing. The coarse gauge-observable OS transfer is the fine `T_2` restriction;
+with doubled time spacing the physical Hamiltonian is unchanged on the blocked
+nonzero-transfer subspace.
+
+Independent code/math, physics/import, governance, and full N1--N8 reviews
+pass after restoring the antiperiodic seam, finite-torus divisibility, positive
+Block21 dependency, and the exact OS null/kernel domains. Audit validation
+seeds one `bounded_theorem` / `unaudited` row with exactly the positive
+Dobrushin uniqueness dependency; strict lint and vocabulary lint have zero
+errors/violations, and generated audit outputs are stripped.
+
+Factor-two coupled block/Schur/OS PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5310
+is open against the certificate-boundary head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block23-critical-scaling-necessary-conditions-20260712`.
 The certificate-boundary runner reports `PASS=9 FAIL=0`. The exact `SU(3)`
 trace range sharpens the Wilson one-link Dobrushin row from `18 beta` to
@@ -22,7 +44,7 @@ Certificate-boundary critical-scaling PR:
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5305
 is open against the compact-interior continuum head.
 
-Previous branch:
+Earlier branch:
 `physics-loop/record-faithful-dynamics-block22-controlled-ultralocal-continuum-20260712`.
 The compact-interior continuum runner reports `PASS=8 FAIL=0`. On every
 compact subset of the strict Dobrushin wedge, uniform weighted mixing forces

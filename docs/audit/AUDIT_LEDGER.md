@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 413 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2655 |
+| unaudited | 2654 |
 | audit_in_progress | 26 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 93 |
+| ~~audited_conditional~~ | 94 |
 | ~~audited_failed~~ | 21 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -47,21 +47,21 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 26 |
 | `audited_clean` | 542 |
-| `audited_conditional` | 93 |
+| `audited_conditional` | 94 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 43 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3005 |
+| `unaudited` | 3004 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2055 |
-| `decoration` | 24 |
+| `decoration` | 25 |
 | `meta` | 357 |
 | `no_go` | 471 |
 | `open_gate` | 196 |
-| `positive_theorem` | 651 |
+| `positive_theorem` | 650 |
 
 | criticality | count |
 |---|---:|
@@ -740,6 +740,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_q_onsite_source_domain_no_go_synthesis_note_2026-04-25` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_tracial_standard_form_carrier_narrow_note_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20` | decoration | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `newton_law_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `p_lh_ncg_primitive_underdetermination_boundary_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `pmns_uniform_scalar_deformation_boundary_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -5912,6 +5913,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Direct matrix-unit expansion proves the reconstruction and partial-trace identities for arbitrary finite d, while spectral decomposition of a positive Choi matrix gives the stated Kraus operators and operator-sum map. The accepted Qubit premise supplies the finite-region matrix-algebra substrate without adding an open physical bridge.
 - **rationale:** The formulas are a genuine algebraic normalization closure, not a definition, tuned numerical match, or external-comparator inference. The runner source performs substantive symbolic and numerical calculations, including exact M₂ reconstruction, d=2 and d=4 round trips, named channels, a non-CP boundary example, and both mixed-convention scaling defects; it does not hard-code the conclusions. Although the finite tests alone would not establish the universal theorem, the all-d result follows directly from the displayed matrix-unit and spectral-decomposition algebra.
 - **auditor confidence:** high
+
+### `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`
+
+- **Note:** [`KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](../../docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+- **claim_type:** `decoration`
+- **claim_scope:** Finite-region specialization of the retained single-convention Kraus-Choi correspondence to A_Lambda = tensor_{x in Lambda} M_2(C) isomorphic to M_{2^|Lambda|}(C), excluding infinite-volume channels and specific record dynamics.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00067-kraus_choi_representation_on`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because the finite qubit-lattice algebra A_Lambda is isomorphic to M_d(C) with d = 2^|Lambda|, the retained finite-dimensional Kraus-Choi correspondence applies directly.  _(class `A`)_
+- **chain closes:** False — The finite-region conclusion is mathematically correct, but the row contributes only an algebraic specialization of one retained parent theorem to the matrix algebra supplied by the accepted Qubit premise. It therefore does not close as an independent positive theorem under the decoration policy.
+- **rationale:** The retained normalization-reconciled authority already supplies the complete finite-dimensional Kraus representation, Choi-positivity equivalence, inverse formula, and TP condition. This note's only load-bearing move is substituting A_Lambda isomorphic to M_{2^|Lambda|}(C), supplied by the accepted Qubit premise, into that parent theorem. The required no-go discipline gate fails because several broader or independent routes remain open or untested, so the row cannot receive a clean or decoration-terminal verdict in this audit pass.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the source is a positive finite-region specialization rather than a scoped no-go, so it does not close five distinct negative attack routes; the independent all-d, infinite-volume, and record-dynamics routes remain open or untested.
 
 ### `ks_eta_vs_jw_string_car_locality_no_go_note_2026-06-02`
 

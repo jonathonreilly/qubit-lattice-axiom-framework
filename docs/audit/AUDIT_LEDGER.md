@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 376 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2754 |
+| unaudited | 2753 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 59 |
+| ~~audited_conditional~~ | 60 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 491 |
-| `audited_conditional` | 59 |
+| `audited_conditional` | 60 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3104 |
+| `unaudited` | 3103 |
 
 | claim_type | count |
 |---|---:|
@@ -656,6 +656,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3894,6 +3895,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** E1-E3 are direct finite enumerations rather than printed constants, and E5 uses an exact symbolic solve whose two solutions agree with the independently stated circulant identities. For E4, the constructed `J_cs` has a zero eigenvalue and is visibly non-scalar, whereas `iI3` is central and invertible, so they are distinct. The note expressly excludes broader classification and readout claims, leaving no missing bridge inside the audited scope.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02`
+
+- **Note:** [`FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md`](../../docs/FLAVOR_FIND_J_CONSOLIDATION_KAPPA_IS_THE_INPUT_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Within the finite real regular C3 packet, the projector and invariant-metric-family computation shows that K0 block count and the tested per-DOF alternatives do not by themselves force equal-block det_C/r=1/2; no exhaustive no-forcing theorem beyond those routes was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00419-flavor_find_j_consolidation_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The same two central idempotents admit positive C3-invariant metric families with different trivial:standard energy ratios, so K0 counts blocks but does not select an energy weighting.  _(class `A`)_
+- **chain closes:** False — The finite K0/projector counterexample closes algebraically, but the mandatory no-go gate does not: operator-level sector-factorization is explicitly untested, and the trace route is not independently established as a selector theorem.
+- **rationale:** Issue: the finite algebra supports the K0 non-selector result, but operator-level sector-factorization remains explicitly open and the trace route is not separately derived. Why this blocks: the mandatory N1-N8 gate cannot certify exhaustive non-forcing, so audited_clean is unavailable. Repair target: test the operator-superselection route and independently establish the trace-measure premise. Claim boundary until fixed: retain only the finite C3 projector, metric-family, and measure-comparison result.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: operator-level sector-factorization is untested and the physical trace-selector route remains open.
+    - N5: the non-forcing rhetoric has untested operator-level and trace-readout resolutions.
+    - N6: the directly relevant AC occupancy statistical-grain obligation remains open.
+    - N7: the strongest operator-factorization steelman defeats an exhaustive no-forcing conclusion.
 
 ### `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02`
 

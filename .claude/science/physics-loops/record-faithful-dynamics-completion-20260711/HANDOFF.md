@@ -1,6 +1,37 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block21-dobrushin-spatial-uniqueness-20260712`.
+The Dobrushin spatial-uniqueness runner reports `PASS=7 FAIL=0`. With
+`kappa=14/(m^2+2)`, `m>sqrt(12)`, and
+`18 beta +(3/2)kappa^2(2-kappa)/(1-kappa)^2<1`, the nonbacktracking
+two-hop determinant-loop interaction and Wilson plaquettes have one-link
+influence row below one. The full `Z^4` gauge DLR state and local
+gauge--fermion functional are unique; periodic and DLR-kernel finite-volume
+families converge without subsequences; weighted comparison gives exponential
+clustering. Positivity then gives a one-dimensional invariant vacuum and a
+positive Hamiltonian gap on the supplied fixed-lattice gauge-invariant OS
+Hilbert space.
+
+Independent code/math, physics/import/Nature, governance, labeling, and full
+N1--N8 reviews pass after the cubic-incidence, boundary/regulator-order,
+cross-Wick, weighted-comparison citation, scalar-carrier disclosure, and
+runner-wording repairs. The audit-compatibility pipeline seeds one
+`bounded_theorem` / `unaudited` row with exactly the spatial DLR accumulation
+dependency; strict lint has zero errors and generated audit/status outputs are
+stripped. No axiom-update stop is triggered.
+
+The wedge is sufficient only. It does not reach `beta=6`, light/massless
+fermions, unconstructed charged sectors, continuum Yang--Mills, the Standard
+Model, GR, action selection, or the physical probability rule. The next exact
+route is the first controlled lattice-spacing limit inside a compact subwedge;
+the expected theorem is an honest ultralocal/trivial limit, which will expose
+the tuning needed for a nontrivial continuum.
+
+Dobrushin uniqueness/gap stacked review PR: pending delivery against the
+spatial DLR accumulation head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block20-spatial-thermodynamic-limit-20260712`.
 The spatial DLR accumulation/OS runner reports `PASS=7 FAIL=0`. For every
 fixed lattice spacing, `beta>=0`, and `m>0`, the site-anchored exact

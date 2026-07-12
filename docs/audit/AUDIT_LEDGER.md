@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 395 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2710 |
+| unaudited | 2709 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 77 |
+| ~~audited_conditional~~ | 78 |
 | ~~audited_failed~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 513 |
-| `audited_conditional` | 77 |
+| `audited_conditional` | 78 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3060 |
+| `unaudited` | 3059 |
 
 | claim_type | count |
 |---|---:|
@@ -682,6 +682,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `flavor_find_j_consolidation_kappa_is_the_input_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `flavor_find_j_round1_jcs_measure_neutral_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_find_j_round2_power_not_count_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_find_j_round3_dirac_generation_blind_2026-06-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_interacting_matter_build_note_2026-05-30` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -4050,6 +4051,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N5: the non-forcing rhetoric has untested operator-level and trace-readout resolutions.
     - N6: the directly relevant AC occupancy statistical-grain obligation remains open.
     - N7: the strongest operator-factorization steelman defeats an exhaustive no-forcing conclusion.
+
+### `flavor_find_j_round1_jcs_measure_neutral_2026-06-02`
+
+- **Note:** [`FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md`](../../docs/FLAVOR_FIND_J_ROUND1_JCS_MEASURE_NEUTRAL_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Direct finite-dimensional checks of J_cs and Gamma_chi, plus SO(2) invariance of the isotropic doublet metric and commutation for the tested circulant examples; no general det_C selector no-go was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00253-flavor_find_j_round1_jcs_mea`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** exp(theta J_cs) is an SO(2) rotation on the real doublet plane, preserves the Hilbert-Schmidt block metric 6I, and has determinant one, so the static rotation does not choose between real and holomorphic measure conventions.  _(class `A`)_
+- **chain closes:** False — The matrix identities and metric-preservation result close, but preserving 6I and determinant one does not exclude using the supplied complex structure to define a holomorphic polarization or measure. The packet lacks an explicit competing-measure construction or readout-exhaustion theorem establishing the broader non-selection claim.
+- **rationale:** The runner genuinely constructs the matrices and checks the stated finite algebra rather than printing hard-coded conclusions. Its R1-R4 results support the bounded identities, including the distinction between Gamma_chi and J_cs and invariance of the isotropic doublet metric. However, the no-go-discipline stress test leaves the holomorphic-readout and dynamical-action routes open: SO(2) metric invariance alone does not prove that J_cs cannot canonically participate in selecting det_C.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 leaves the holomorphic-readout and first-order-action mechanism classes open.
+    - N5 finds that the headline non-selection rhetoric exceeds the tested static resolutions.
+    - N7's strongest J_cs-induced holomorphic-polarization steelman is not defeated by the packet.
 
 ### `flavor_find_j_round2_power_not_count_2026-06-02`
 

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 100 |
 | **retained_no_go** | 41 |
-| **retained_bounded** | 409 |
+| **retained_bounded** | 410 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2670 |
+| unaudited | 2669 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 537 |
+| `audited_clean` | 538 |
 | `audited_conditional` | 88 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3020 |
+| `unaudited` | 3019 |
 
 | claim_type | count |
 |---|---:|
@@ -212,6 +212,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chiral_3plus1d_coupled_coin_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `chiral_3plus1d_mixing_period_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `chiral_3plus1d_recurrence_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `chiral_layer_oscillation_2026-04-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `chiral_split_mass_gravity_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -2174,6 +2175,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The cached runner computes and asserts the coherent, classical, and phase-kill AWAY-window sets used in the note. The lambda and delta columns are direct arithmetic from the asserted finite table, while the note explicitly withholds a universal recurrence law.
 - **rationale:** The bounded finite-volume recurrence diagnostic closes from the runner-backed AWAY-window sets and arithmetic ratios. The note's qualitative wrap/recurrence reading is limited to clustering observations on the audited grid and explicitly states that no closed-form recurrence-scale law for arbitrary (n,L) is derived. Residual risk is only the out-of-scope predictive law, not the finite table.
 - **auditor confidence:** high
+
+### `chiral_layer_oscillation_2026-04-09`
+
+- **Note:** [`CHIRAL_LAYER_OSCILLATION_2026-04-09.md`](../../docs/CHIRAL_LAYER_OSCILLATION_2026-04-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-slice numerical sign noninvariance of the shell-difference proxy at n=15, theta0=0.3, strength=5e-4, periodic boundaries, mass offset +3 on the runner's third coordinate, and N in {12,14,16,18,20}.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00296-chiral_layer_oscillation_202`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The computed shell-difference signal takes both positive and negative values across N in {12, 14, 16, 18, 20} at the stated finite operating point.  _(class `C`)_
+- **chain closes:** True — The primary runner computes each signal from the supplied coin-and-shift evolution and density functions, then verifies that the finite sweep contains both signs. No expected per-N signal or external comparator is hard-coded.
+- **rationale:** The helper source explicitly constructs the balanced state, position-dependent coin, periodic shifts, and probability density, while the primary runner derives the shell-difference values rather than printing or matching stored targets. The completed output agrees with the source note's frozen table and establishes both positive and negative signals on exactly the stated finite sweep. This verdict does not ratify the proposed phase-mismatch mechanism, a continuum oscillation law, physical propagation-distance identification, or universal Newtonian gravity.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `chiral_split_mass_gravity_note`
 

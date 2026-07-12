@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py
-runner_sha256: 95e2e44830b022271adba798cc42efdd2d3f8b4fd35ec7d2d4ad84f3ab633143
-timeout_sec: 200
+runner_sha256: 0c340af168d48db0f4a7e65fd8a93ce7ed26267a632c20014aab3e7b90334407
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 1.17
+elapsed_sec: 1.98
 status: ok
 ----- stdout -----
 Axiom-first RP Wilson temporal-gauge reroute guard
-note: /private/tmp/claude-501/-Users-jonreilly-Projects-Physics/a8af9aa6-5249-4cdf-b3b0-6f8ee8a1edfe/scratchpad/rp-a-review-wt/docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
-base runner: /private/tmp/claude-501/-Users-jonreilly-Projects-Physics/a8af9aa6-5249-4cdf-b3b0-6f8ee8a1edfe/scratchpad/rp-a-review-wt/scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
+note: /private/tmp/claude-501/-Users-jonreilly-Projects-Physics/a8af9aa6-5249-4cdf-b3b0-6f8ee8a1edfe/scratchpad/pr-b-wt/docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md
+base runner: /private/tmp/claude-501/-Users-jonreilly-Projects-Physics/a8af9aa6-5249-4cdf-b3b0-6f8ee8a1edfe/scratchpad/pr-b-wt/scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
 
 ----------------------------------------------------------------------------------------
 C1-C6 free staggered two-step construction reused from retained runner
@@ -28,14 +28,35 @@ C7 retained Wilson temporal-gauge reroute guard
   [PASS] parent note links the coupled-Gram supplier
   [PASS] coupled-Gram supplier exists and pins tensor-product entangled coverage
   [PASS] foundational reroute dependencies remain retained-grade (gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10:('positive_theorem', 'audited_clean', 'retained'); staggered_only_det_positivity_case_a_note_2026-05-17:('positive_theorem', 'audited_clean', 'retained'); reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10:('positive_theorem', 'audited_clean', 'retained'))
-  [PASS] in-packet reroute suppliers present, typed, and not audit-rejected (axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05:('bounded_theorem', 'unaudited', 'unaudited'); rp_p2_gauge_extension_and_realization_residual_note_2026-05-28:('bounded_theorem', 'audited_conditional', 'audited_conditional'); su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09:('positive_theorem', 'unaudited', 'unaudited'))
+  [PASS] in-packet reroute suppliers present, typed, and not audit-rejected (axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05:('bounded_theorem', 'unaudited', 'unaudited'); rp_p2_gauge_extension_and_realization_residual_note_2026-05-28:('bounded_theorem', 'audited_conditional', 'audited_conditional'); su3_wilson_plane_kernel_character_positivity_and_composed_gram_narrow_theorem_note_2026-07-09:('positive_theorem', 'unaudited', 'unaudited'); rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11:('positive_theorem', 'unaudited', 'unaudited'))
   [PASS] actual SU(3) plane-kernel Haar Gram is positive semidefinite (min eig=+7.348e+00 (n=64, beta=1.0))
   [PASS] no-conjugation plane-kernel rejector is decisively non-PSD (min eig=-3.146e+01)
   [PASS] actual composed two-slice pure-gauge SU(3) Gram is PSD within sampling error (min eig=+9.347452e-04, negative allowance=2.279e-02)
   [PASS] pure-gauge composed-form sampling error is controlled (mc_noise=7.597e-03)
   [PASS] no-conjugation pure-gauge composed control is non-PSD (min eig=-4.149715e-01)
 
-PASS=17 FAIL=0
+----------------------------------------------------------------------------------------
+C8 multi-slice half-space OS Gram in-packet supplier (2026-07-11)
+----------------------------------------------------------------------------------------
+  [PASS] parent note links the multi-slice half-space supplier
+  [PASS] parent note states the multi-slice half-space extension
+  [PASS] multi-slice supplier note exists and pins half-space multi-slice coverage
+[PASS] G0_engine_anchor_exact: max entrywise mismatch from exact 4x4 anchor = 2.220e-16
+[PASS] G0_engine_unphased_discriminates: unphased odd diagonals = -0.500,-0.500; min-eig = -0.500
+[PASS] L4a_open_even_det_positive: open-even {-1,0,1,2}: min Re(det)=1.8444e-05>0, max |det-prod(m^2+lam^2)|_rel=1.36e-15, max pairing err=1.55e-15, max ||{eps,M}||_F=0.00e+00
+[PASS] L4b_open_odd_det_positive: open-odd {0,1,2}: min Re(det)=4.9951e-04>0, max |det-prod(m^2+lam^2)|_rel=2.04e-15, max pairing err=1.33e-15, max ||{eps,M}||_F=0.00e+00
+[PASS] L4c_periodic_control_breaks: periodic-odd: ||{eps,M}||_F=3.464e+00>1e-6 (breaks), det leaves R_>0 = True
+[PASS] L2a_multislice_side_covariance: max |I_-[theta(A)] - conj(I_+[A])| over 4 multi-slice/gauge-dressed A (conj rule) = 1.694e-16
+[PASS] L2b_noconj_gauge_discriminates: no-conj gauge reflection residual = 6.253e-02 vs signal scale 3.229e-01 (conj-rule residual 1.7e-16)
+[PASS] L3a_exact_per_config_hermitian: max ||G-G^dagger||_F over 3 reflected backgrounds = 3.943e-13 (no Hermitization applied)
+[PASS] L3b_exact_per_config_psd: min lambda_min(G) over 3 backgrounds = 8.370126e-01
+[PASS] L3c_crossing_flip_discriminates: worst (largest) crossing-flip lambda_min = -1.8544e+02 << 0
+[PASS] L3d_unphased_discriminates: worst (largest) unphased lambda_min = -1.8544e+02 << 0
+[PASS] H1a_union_gram_psd: 19-dim union min-eig = 3.514747e-01; ||G-G^dagger||_F = 1.061e-14
+[PASS] H1b_collapse_matches_anchor: one-site/one-color H=1 Gram vs exact anchor: max mismatch = 2.220e-16
+  [PASS] live multi-slice half-space supplier gates all pass (n_checks=13, failures=[])
+
+PASS=21 FAIL=0
 VERDICT: parent reroute guard passes; free two-step construction remains unchanged, and the Wilson temporal-gauge application is routed through retained-grade dependencies without promoting the parent row.
 
 ----- stderr -----

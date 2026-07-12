@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/frontier_record_permanence_double_registration_2026_07_11.py
+runner_sha256: 5e00c00c967116215ed67d64128177f4700e050986972688bfe9218719f785c1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+CHECK 01: PASS -- live Record quote: records form
+CHECK 02: PASS -- live Record quote: a record locks one admissible local possibility
+CHECK 03: PASS -- live Record quote: one record per site and permanence
+CHECK 04: PASS -- live Record quote: readout is determined by record content
+CHECK 05: PASS -- live Record quote: scalar readout I is additive over disjoint records
+CHECK 06: PASS -- T1 necessary direction: every Record-clause-compatible history uses fresh sites
+CHECK 07: PASS -- T1 compatible histories retain every earlier site/content assignment
+CHECK 08: PASS -- T1 repeated-site negative control: coexistence and overwrite fail different Record clauses
+CHECK 09: PASS -- T1 converse guard: injective Record compatibility need not imply full Admissibility
+CHECK 10: PASS -- same-site pinch support check: D(D(M))=D(M)
+CHECK 11: PASS -- T2 supplied agreement filter reduces exactly to f(r)=2r^2; r_next=2*r**2
+CHECK 12: PASS -- T2 complete finite nonnegative fixed set is {0,1/2}; fixed=[0, 1/2]
+CHECK 13: PASS -- T2 on the test grid, constant supplied-map orbit iff fixed point
+CHECK 14: PASS -- T2 negative control: a nonfixed value does not persist; orbit=[1, 2, 8]
+CHECK 15: PASS -- readout-rule exhibit: two per-record ratios and pooled ratio are distinct observables; values=(1/2, 1, 2/3)
+CHECK 16: PASS -- additive quadratic aggregates do not make their ratio additive or select a cross-epoch rule
+CHECK 17: PASS -- positive control: equal per-record ratios pool to their common value
+CHECK 18: PASS -- T3 exact conjugacy: q=2r gives q_next=q^2 and q_3=q_0^8
+CHECK 19: PASS -- T3 local multiplier at r*=1/2 is 2
+CHECK 20: PASS -- T3 direct Decimal iteration matches both exact escape formulas; [{'epsilon': Decimal('0.00001'), 'band': Decimal('0.1'), 'positive_direct': 14, 'positive_closed': 14, 'negative_direct': 14, 'negative_closed': 14, 'expected': 14}, {'epsilon': Decimal('1E-8'), 'band': Decimal('0.2'), 'positive_direct': 25, 'positive_closed': 25, 'negative_direct': 25, 'negative_closed': 25, 'expected': 25}]
+CHECK 21: PASS -- T3 discriminator: changing (epsilon,band) changes the escape count
+CHECK 22: PASS -- T3 finite-horizon allowed-offset intervals are nonzero and shrink with the window; {5: (Decimal('-0.003474489691815761825376705597610820910453922149979371977901448107811266184940264768804165'), Decimal('0.002856905274886154398683977134158722366968291295653566509279371839220327911731199951993705')), 14: (Decimal('-0.000006809754387145475668892481961990716807576113847212187424231960300831067572038441027668'), Decimal('0.000005564043311679437836368195465289260210281357325837343015911523118372159851916705613005')), 25: (Decimal('-3.3250980164443787200254623957768552775175454653467072451805278248583409151628625585E-9'), Decimal('2.71680291428098622854363019792980042163779472014291712506328110709127102227764495E-9'))}
+CHECK 23: PASS -- T3 counterexample: a nonzero offset survives the 14-step finite window; offset=0.0000027820216558397189181840977326446301051406786629186715079557615591860799259583528065025
+CHECK 24: PASS -- T3 permanence role: once an out-of-band fresh-site record forms, later snapshots retain it; first_out=14
+CHECK 25: PASS -- conditional agreement arithmetic: per-filter probability 1/2 and n-filter fraction 2^-n
+CHECK 26: PASS -- flow-class boundary: psi(r)=r^2 has fixed set {0,1} and is not selected here
+SUMMARY T1: in the site-tagged monotone model, fresh sites and full retention are necessary after events are identified as record formation; no converse to full Admissibility.
+SUMMARY T2: constant orbit iff fixed point under the supplied map and common epoch-comparable readout rule.
+SUMMARY T3: exact finite-horizon bounds replace the withdrawn finite-time exactness claim; nonzero offsets survive every finite window.
+SUMMARY files: docs/RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md; scripts/frontier_record_permanence_double_registration_2026_07_11.py
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

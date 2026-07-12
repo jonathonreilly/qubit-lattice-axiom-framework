@@ -1,4 +1,4 @@
 # PR backlog
 
-No backlog entry. The reviewed block is committed and rebased; PR creation is
-the remaining closeout action.
+No backlog entry. The coherent science block is represented by the single open
+review PR [#5267](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5267).

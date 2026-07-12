@@ -6,9 +6,10 @@ bug. The fixes demote the negative result to a bounded numerical witness,
 declare every finite-operator condition, pin helper hashes, and add N1-N8.
 
 The science block is committed and rebased on `origin/main`; the primary
-certificate and scoped checks pass on that base. Exact next action: push, open
-the single review PR, and verify it. Independent audit follows the review
-landing path; no generated authority files ship.
+certificate and scoped checks pass on that base. Review PR
+[#5267](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5267)
+is open. Exact next action: independent science review and audit of the bounded
+theorem packet. No generated authority files ship in this block.
 
 Remaining science blockers outside the bounded theorem are physical selection
 of the interpolation/readout contract and a support-to-physical-tensor bridge.

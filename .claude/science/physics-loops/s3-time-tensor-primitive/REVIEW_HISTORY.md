@@ -31,3 +31,7 @@ of the block.
   pipeline validation completed with no errors and the target queued normally.
 
 Final review-loop recommendation: `PASS WITH BOUNDED CLAIMS`.
+
+The reviewed block was opened as the single review PR
+[#5267](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5267);
+independent audit remains required before any effective retained status.

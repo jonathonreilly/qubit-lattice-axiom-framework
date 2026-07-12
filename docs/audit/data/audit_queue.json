@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 651,
     "high": 334,
-    "leaf": 1145,
+    "leaf": 1144,
     "medium": 756
   },
   "cycle_break_target_count": 49,
@@ -51394,31 +51394,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12",
-        "d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/D3_TRUNCATION_COMMENSURATION_CRITERION_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_d3_commensuration_criterion_2026_06_12.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "dynamics_coupling_residual_classifier_2026-06-06",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -52948,6 +52923,30 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/color_comp_hurwitz_clause_scope_reduction_2026_07_06.py",
+      "transitive_descendants": 0
+    },
+    {
+      "audit_independence_required": "any_non_self",
+      "audit_status": "unaudited",
+      "blocker": null,
+      "claim_id": "commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12",
+      "claim_scope": null,
+      "claim_type": "bounded_theorem",
+      "claim_type_provenance": "author_hint",
+      "criticality": "leaf",
+      "criticality_rank": 0,
+      "cross_confirmation_status": null,
+      "deps": [
+        "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12"
+      ],
+      "direct_in_degree": 0,
+      "effective_status": "unaudited",
+      "helper_runner_paths": [],
+      "load_bearing_score": 0.0,
+      "note_path": "docs/COMMENSURATION_GENERAL_LEMMA_PERIOD_PARITY_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "queue_reason": "unaudited",
+      "ready": true,
+      "runner_path": "scripts/frontier_commensuration_general_lemma_2026_06_12.py",
       "transitive_descendants": 0
     },
     {
@@ -65310,30 +65309,6 @@
       "queue_reason": "unaudited",
       "ready": false,
       "runner_path": "scripts/frontier_color_su3_restricted_transport_profile_2026_06_05.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/COMMENSURATION_GENERAL_LEMMA_PERIOD_PARITY_BOUNDED_THEOREM_NOTE_2026-06-12.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/frontier_commensuration_general_lemma_2026_06_12.py",
       "transitive_descendants": 0
     },
     {
@@ -82221,5 +82196,5 @@
     }
   ],
   "ready_count": 596,
-  "total_pending": 2886
+  "total_pending": 2885
 }

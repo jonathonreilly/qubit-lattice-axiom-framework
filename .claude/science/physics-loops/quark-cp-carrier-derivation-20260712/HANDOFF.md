@@ -1,5 +1,9 @@
 # Handoff
 
+**Review PR:**
+[qubit-lattice-axiom-framework#5218](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5218)
+— open and intentionally unmerged.
+
 ## Delivered science block
 
 The target note is retyped from a bounded numerical existence claim to a
@@ -61,6 +65,6 @@ determinant/anomaly/readout bridge.
 
 ## Next action
 
-Review-loop iteration 2 passed all three lanes, and the rebased landing gates
-passed. Open one review PR. After landing, the independent audit lane should re-audit
+Review-loop iteration 2 passed all three lanes, the rebased landing gates
+passed, and the single review PR is open. After landing, the independent audit lane should re-audit
 the rewritten target and regenerate/wire the repo-wide authority surfaces.

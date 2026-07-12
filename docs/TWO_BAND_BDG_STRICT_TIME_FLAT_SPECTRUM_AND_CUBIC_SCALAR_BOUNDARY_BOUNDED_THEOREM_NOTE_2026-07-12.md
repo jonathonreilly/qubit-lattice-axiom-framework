@@ -1,7 +1,7 @@
 ---
 claim_id: two_band_bdg_strict_time_flat_spectrum_and_cubic_scalar_boundary_bounded_theorem_note_2026-07-12
 claim_type: bounded_theorem
-claim_scope: "Exact finite-Laurent two-band generator theorem and scalar one-mode proper-cubic nearest-neighbor BdG corollary. For any supplied 2x2 torus-Hermitian finite Laurent generator H and nonzero real t0, exp(-it0 H) is finite Laurent iff H has momentum-independent eigenvalues; equivalently strict once iff flat spectrum iff strict for every time. Separately, the endpoint-SWAP-symmetric parity-preserving two-qubit spin density is six-dimensional, with two charge-breaking pairing directions, but it is not identified with a local Z3 CAR/BdG density. On a separately supplied spinless one-mode CAR/Nambu carrier with scalar proper-cubic onsite action and nearest-neighbor range, odd pairing is killed and flatness forces the normal hopping to vanish, leaving only onsite flow. A lower-symmetry Kitaev involution and the existing doubled 16-mode cubic flat involution are positive escapes. CAR/Nambu realization, particle-hole convention, generator, time, carrier dimension, range, symmetry action, physical selection, Record coupling, probability, and continuum scaling are supplied or open."
+claim_scope: "Exact finite-Laurent two-band generator theorem and scalar one-mode proper-cubic nearest-neighbor BdG corollary. For any supplied 2x2 torus-Hermitian finite Laurent generator H and nonzero real t0, exp(-it0 H) is finite Laurent iff H has momentum-independent eigenvalues; equivalently strict once iff flat spectrum iff strict for every time. Separately, the endpoint-SWAP-symmetric parity-preserving two-qubit spin density is six-dimensional, with two charge-breaking pairing directions, but it is not identified with a local Z3 CAR/BdG density. On a separately supplied spinless one-mode CAR/Nambu carrier with ordinary scalar proper-cubic onsite action and nearest-neighbor range, odd pairing is killed and flatness forces the normal hopping to vanish, leaving only onsite flow. A lower-symmetry Kitaev involution and a doubled 16-mode spinorial-cubic flat involution are positive escapes; the latter is an honest cubic action only on the even/quadratic algebra. CAR/Nambu realization, particle-hole convention, generator, time, carrier dimension, range, symmetry action, physical selection, Record coupling, probability, and continuum scaling are supplied or open."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/two_band_bdg_strict_time_flat_spectrum_2026_07_12.py
@@ -24,10 +24,11 @@ primitive, framework rule, or audit verdict.
 
 ## Question and exact bounded answer
 
-Does the charge-breaking/Bogoliubov complement of the preceding
-onsite-charge theorem contain a dispersive two-band Hamiltonian whose
+Does a separately supplied two-band Gaussian/Bogoliubov class adjacent to the
+preceding onsite-charge theorem contain a dispersive Hamiltonian whose
 exponential becomes an exactly finite-radius Gaussian QCA at one exceptional
-nonzero time?
+nonzero time? This does not identify the literal charge-breaking qubit class
+with local CAR dynamics.
 
 For the complete `2 x 2` finite-Laurent generator class, the answer is no.
 Let
@@ -53,7 +54,7 @@ strict once  <=>  flat two-band spectrum  <=>  strict for all times. (3)
 There is no isolated strict time. Flat-band Hamiltonians are the exact positive
 escape, not an exception hidden by the proof.
 
-A second result closes the smallest fully cubic pairing carrier. On a supplied
+A second result closes the smallest ordinary-scalar cubic pairing carrier. On a supplied
 spinless one-mode CAR algebra per simple-cubic site, with scalar onsite action
 of all `24` proper cubic rotations and nearest-neighbor range, fermionic
 antisymmetry and cubic covariance kill every pairing coefficient. The surviving
@@ -74,24 +75,24 @@ target.
   convention, Hamiltonian, Nambu doubling, particle-hole law, time, or dynamics
   selector.
 - The preceding
-  [onsite-charge common-Hamiltonian dichotomy](ONSITE_CHARGE_CONSERVING_ENDPOINT_SYMMETRIC_COMMON_HAMILTONIAN_STRICT_QCA_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-12.md)
+  `onsite-charge common-Hamiltonian dichotomy`
   classifies the full charge-preserving one-qubit edge density and explicitly
   leaves charge-breaking/BdG densities open. It also supplies the doubled
   `16`-mode flat-involution escape that prevents a broader noncommuting-tail
   no-go.
 - The
-  [scalar cubic CAR-QCA theorem](SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11.md)
+  `scalar cubic CAR-QCA theorem`
   proves only the number-preserving scalar Laurent class and explicitly leaves
   Bogoliubov mixing and intermediate carrier dimensions open.
 - The repository's Majorana/Nambu notes, including
-  [the Nambu source principle](NEUTRINO_MAJORANA_NAMBU_SOURCE_PRINCIPLE_NOTE.md),
+  `the Nambu source principle`,
   use a finite local two-mode pseudospin/source grammar. They do not supply a
   translation-invariant local `Z^3` CAR dynamics or identify a two-qubit spin
   edge with a local BdG edge.
 - The exact-log transfer sources distinguish finite range from exponential
   quasilocality. That distinction becomes decisive for the continuum campaign:
-  a dispersive relativistic generator should not be required to have a strict
-  exponential at finite physical time.
+  a dispersive generator in the scoped class should not be required to have a
+  strict exponential at a fixed supplied nonzero time parameter.
 
 Those sources determine the category boundary and the open residual. Equations
 (1)--(16) below are self-contained. The only declared graph dependency is
@@ -204,13 +205,14 @@ exp(-i t H(z)) = e^(-iat)
  [ cos(t rho) I - i sin(t rho) D(z)/rho ].                (12)
 ```
 
-The right side has exactly the Laurent range of `D` for every `t`, so it is
-strict for all times. If `rho=0`, Hermiticity on the torus and `D^2=0` imply
+The right side has at most the Laurent range of `D` for every `t`, with the
+non-onsite range collapsing whenever `sin(t rho)=0`; it is therefore strict
+for all times. If `rho=0`, Hermiticity on the torus and `D^2=0` imply
 `D=0`; the flow is an onsite phase. This proves (2)--(3), including all
 degenerate cases.
 
 When the two components are separately declared to be a Nambu carrier and the
-Laurent coefficients satisfy the canonical particle-hole constraints, the
+Laurent coefficients satisfy the supplied particle-hole constraints, the
 finite Laurent `U_t` and its finite Laurent inverse lift to a strict Gaussian
 Bogoliubov automorphism of the CAR algebra. That lift is conditional category
 data, not a consequence of the Qubit axiom.
@@ -226,8 +228,10 @@ H_BdG(k) = [[xi(k), Delta(k)],
 
 Fermionic antisymmetry requires `Delta(-k)=-Delta(k)`. At nearest-neighbor
 range, its coefficient data are an odd cubic vector. A scalar onsite action of
-the proper cubic group can carry only a one-dimensional character `chi`; every
-such character has `chi^2=1`, so it acts trivially on a pair. For each cubic
+the proper cubic group uses an ordinary one-dimensional character `chi`. The
+proper cubic group is `O isomorphic to S_4`; its commutator subgroup has order
+`12`, so its abelianization is `C_2` and every such character has `chi^2=1`.
+It therefore acts trivially on a pair. For each cubic
 axis there is a proper `pi` rotation taking the positive bond to the negative
 bond. Covariance and antisymmetry then give
 
@@ -264,35 +268,42 @@ In one dimension,
 q(k) = cos(k) Z + sin(k) Y,        q(k)^2=I,              (16)
 ```
 
-obeys the standard spinless particle-hole relation. Equation (12) makes its
-exponential a strict radius-one Bogoliubov automorphism for every time. Thus
+obeys the supplied spinless particle-hole relation. Equation (12) makes its
+exponential a strict radius-at-most-one Bogoliubov automorphism for every time,
+with exact radius one when `sin(t)!=0`. Thus
 pairing plus noncommutation is fully compatible with strict flow; the cubic
 scalar representation is load-bearing in the preceding corollary.
 
-### 4.2 Fully cubic multicomponent escape
+### 4.2 Spinorial cubic multicomponent escape
 
 The runner also rechecks the preceding doubled-Clifford construction. Six
 bond Clifford generators plus one onsite generator produce a radius-one flat
 involution. The irreducible `8`-mode version has an orientation obstruction
 for half of the `24` proper cubic rotations; doubling opposite Clifford
-chiralities to `16` modes restores covariance. Its exponential is strict for
-every time. Therefore no claim extends from the scalar one-mode corollary to
-multicomponent cubic Gaussian carriers.
+chiralities to `16` modes supplies a unitary intertwiner for every rotation.
+Those intertwiners close only projectively: commuting spatial pi rotations can
+anticommute on odd CAR generators. Their conjugation action is an honest cubic
+action on the even/quadratic observable algebra, not an ordinary `24`-element
+action on the full odd CAR generators. The exponential is strict for every
+time. Therefore no claim extends from the scalar one-mode corollary to
+multicomponent spinorial-cubic Gaussian carriers.
 
 ## 5. Continuum consequence
 
-This block closes the obvious charge-breaking two-band special-time loophole,
-but it does not select the physical microscopic carrier. Its main forward
+This block closes the separately supplied two-band Gaussian special-time route,
+not the literal charge-breaking qubit class or any multiband class. It does not
+select the physical microscopic carrier. Its main forward
 consequence is methodological and exact:
 
-> A dispersive relativistic two-band Hamiltonian cannot simultaneously be a
-> finite-Laurent generator and have an exactly strict exponential at a fixed
-> nonzero physical time.
+> A dispersive two-band Hamiltonian in this supplied finite-Laurent
+> common-generator class cannot have an exactly strict exponential at a fixed
+> nonzero supplied time parameter.
 
-The controlled continuum campaign must therefore permit quasilocal tails,
-use a shrinking step with a stated convergence topology, or begin from a
-fundamental partitioned tick rather than impose strict support on
-`exp(-itH)` at finite physical time. The repository's massive staggered
+If the controlled continuum campaign keeps this two-band common-generator
+class, it must therefore permit quasilocal tails or use a shrinking step with a
+stated convergence topology. Multiband isolated-time constructions,
+interacting flows, and fundamental partitioned ticks remain open alternatives.
+The repository's massive staggered
 two-step transfer family is the strongest current candidate for that next
 campaign because it already has separate positivity, dispersion,
 exact-log-quasilocality, covariance, and Gaussian convergence packets. Those
@@ -325,59 +336,142 @@ registry change.
 
 The scoped negative claims are: no isolated strict time for finite-Laurent
 two-band generators, and no non-onsite strict common flow in the supplied
-nearest-neighbor scalar one-mode proper-cubic BdG class.
+nearest-neighbor scalar one-mode ordinary proper-cubic BdG class.
 
-**N1 -- alternative routes.** The general two-band matrix route is handled by
-the determinant/trace/essential-singularity proof; the literal parity-even
-spin edge is classified but kept outside CAR until a locality bridge is
-supplied; the lower-symmetry flat Kitaev route is positive; the multicomponent
-fully cubic flat route is positive; partitioned/time-dependent ticks,
-interacting qubit QCAs, and quasilocal shrinking-step continuum flows remain
-open; dimensions at least four are not classified by the two-band theorem.
+### N1 -- alternative route enumeration
 
-**N2 -- open-condition independence.** Two-band size, finite Laurent range,
-Hermiticity, nonzero time, CAR/Nambu realization, scalar cubic onsite action,
-and nearest-neighbor range do separate work. Dropping cubic scalar symmetry
-allows (16); enlarging the carrier allows the doubled-Clifford escape; dropping
-strict support admits the dispersive quasilocal continuum route.
+| attack route | marker | test and outcome | proof/authority surface |
+|---|---|---|---|
+| hide momentum dependence in `tr H` while making the determinant finite Laurent | `ATTEMPTED` | scalar Laurent unitarity plus the global logarithm makes every determinant winding zero and fixes `tr H` | current source equations (8)--(9), lines 152--171; runner `B01--B03` |
+| keep constant trace but a nonconstant band splitting | `ATTEMPTED` | a generic monomial slice turns nonconstant `s` into a pole, and nonpolynomial-entire `F(s)` into an essential singularity | current source equations (10)--(11), lines 173--196; runner `B04--B06` |
+| tune one exceptional time so the sine coefficient cancels transport | `ATTEMPTED` | finite support at that time already forces flat spectrum; sine-zero times then collapse a flat family onsite rather than create an isolated dispersive point | current source equation (12), lines 198--211; runner `M01` |
+| use the literal parity-even two-qubit pairing directions as local cubic BdG terms | `ATTEMPTED` | the six spin directions are classified, but no local `Z^3` spin-to-CAR bridge is supplied; this route remains outside the BdG theorem rather than being falsely ruled out | current source equations (4)--(5), lines 99--130; runner `A01--A07` |
+| use spinless one-mode nearest-neighbor cubic pairing | `ATTEMPTED` | ordinary scalar cubic covariance plus antisymmetry kills pairing, and flat normal spectrum forces `J=0` | current source equations (13)--(15), lines 220--255; runner `C01--C06` |
+| drop ordinary scalar cubic symmetry | `ATTEMPTED` | succeeds as a positive scope guard: the one-dimensional Kitaev involution is strict at radius at most one | current source equation (16), lines 265--275; runner `D01--D04` |
+| enlarge the carrier or use spinorial cubic symmetry | `ATTEMPTED` | succeeds as a positive scope guard on the even/quadratic algebra; it does not falsify the two-band theorem | current source lines 277--290; runner `F01--F06` |
+| use a multiband, interacting, time-dependent, partitioned, or quasilocal flow | `ATTEMPTED` | not classified; these routes are explicitly outside the negative claim and remain open | current source lines 291--306 and section 8 |
 
-**N3 -- hidden-condition scan.** `BdG` means a separately supplied graded
-Nambu carrier, not an arbitrary two-qubit matrix. `Strict` means finite Laurent
-support on the infinite lattice, not finite-volume recurrence or numerical
-smallness. `Two-band`, `nearest-neighbor`, `scalar onsite action`, and
-`proper-cubic` are all headline scope conditions.
+The route count is eight. No route is marked `RULED OUT BY PRIOR`; the exact
+negative authority is proved self-containedly in this cycle, while prior notes
+only locate the question.
 
-**N4 -- residual matching.** The preceding onsite-charge theorem explicitly
-left charge-breaking/Bogoliubov special-time flow open. Equations (2)--(3)
-close that special-time question for every two-band finite-Laurent generator;
-equations (13)--(15) close the smallest scalar cubic pairing carrier. Physical
-carrier selection and continuum control are different residuals and are not
-claimed closed.
+### N2 -- open-condition independence
 
-**N5 -- rhetoric audit.** `No isolated strict time` is restricted to the
-two-band finite-Laurent generator class. `Onsite only` is restricted to the
-spinless one-mode scalar proper-cubic nearest-neighbor BdG corollary. No phrase
-such as `all BdG`, `all common Hamiltonians`, or `all QCAs` is used as a
-conclusion.
+Collapse the scope to five conditions:
 
-**N6 -- partial-closure and primitive scan.** A supplied-carrier continuum
-theorem remains a valid partial-closure route. Approved scale, kinetic-form,
-and realized-state primitives are not obstructions and are not inflated into
-dynamics. No unapproved primitive receives claim weight. The result narrows a
-class; it does not imply an axiom update.
+- `C1`: a torus-Hermitian `2 x 2` finite-Laurent, time-independent generator;
+- `C2`: exact finite support at one supplied nonzero time on the infinite lattice;
+- `C3`: a separately supplied CAR/Nambu realization for the BdG reading;
+- `C4`: one spinless mode, nearest-neighbor range, and an ordinary scalar
+  proper-cubic onsite action for the minimal corollary;
+- `C5`: a physical carrier selector and continuum convergence topology.
 
-**N7 -- steelman.** The strongest objection is that flat-band and larger
-carriers give strict noncommuting cubic flows, while a fixed supplied
-dispersive carrier can enter continuum analysis without waiting for a unique
-microscopic selector. Both points are correct: the positive escapes are
-explicit, and Campaign 6 may now proceed conditionally on one supplied
-same-object scaling family.
+| pair | first closes second? | second closes first? | independent? |
+|---|---|---|---|
+| `C1,C2` | no: a generator class does not grant strictness | no: a strict tick need not be an exponential of `C1` | yes |
+| `C1,C3` | no: matrix Laurent data do not supply CAR | no: CAR does not force two bands or finite range | yes |
+| `C1,C4` | no: the general theorem has no cubic scalar action | no: `C4` does not fix a generator or spectrum | yes |
+| `C1,C5` | no: a supplied matrix is not physically selected | no: a selector/topology need not choose `C1` | yes |
+| `C2,C3` | no: strict matrix support does not supply CAR | no: CAR does not grant strict time evolution | yes |
+| `C2,C4` | no: strictness does not impose the minimal carrier | no: the minimal carrier can have dispersive tails | yes |
+| `C2,C5` | no: strictness does not select a continuum law | no: a continuum law may be quasilocal | yes |
+| `C3,C4` | no: general CAR allows larger representations | no: the minimal representation still needs a CAR bridge | yes |
+| `C3,C5` | no: CAR does not select the realized carrier | no: a continuum selector could choose another category | yes |
+| `C4,C5` | no: the minimal class is not physically selected | no: continuum control does not force one scalar mode | yes |
 
-**N8 -- cross-cycle echo.** `No cone at this density` was escaped by twisted or
-larger cells; scalar CAR triviality was escaped by six modes; a broad
-noncommuting-tail claim was escaped by the `16`-mode flat involution. This block
-therefore keeps its negative result at two bands and its cubic corollary at one
-scalar mode.
+No condition collapses into another. The theorem closes `C1+C2`; the cubic
+corollary adds `C3+C4`; `C5` stays open.
+
+### N3 -- hidden-condition scan
+
+| phrase hit | classification | disposition |
+|---|---|---|
+| `Assume now, separately` (line 134) | hidden condition made explicit | this is `C1`, not framework content |
+| `supplied particle-hole constraints` (line 215) | explicit condition | part of `C3`; not used by the general matrix theorem |
+| `supplied spinless particle-hole relation` (line 271) | explicit condition | positive Kitaev control only |
+| `registered` primitive language (section 6) | cited registry context | primitive registry checked; no primitive supplies dynamics |
+| existing-science `context` / `current candidate` language | non-load-bearing context | code-formatted pointers create no graph dependency and prove no theorem step |
+
+The scan found no remaining `we assume`, `by construction`, `as is standard`,
+`framework provides`, `bridge context`, `background`, `naturally`, `obviously`,
+or `standard QFT` phrase carrying hidden claim weight.
+
+### N4 -- residual matching
+
+| witness | witness residual | residual claimed closed here | match? |
+|---|---|---|---|
+| `docs/ONSITE_CHARGE_CONSERVING_ENDPOINT_SYMMETRIC_COMMON_HAMILTONIAN_STRICT_QCA_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-12.md:272-282` | all charge-breaking/BdG and larger-carrier common-H routes | finite-Laurent two-band Gaussian isolated-time route | no; question provenance only, dropped as proof authority |
+| `docs/SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11.md:4,247-258` | number-preserving scalar CAR tick and its category boundary | two-band generator exponential and one-mode BdG pairing | no; category context only, dropped as proof authority |
+| `docs/NEUTRINO_MAJORANA_NAMBU_SOURCE_PRINCIPLE_NOTE.md:60-123` | finite local two-mode source grammar | translation-invariant Laurent dynamics | no; category context only, dropped as proof authority |
+| `docs/TWO_BAND_BDG_STRICT_TIME_FLAT_SPECTRUM_AND_CUBIC_SCALAR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md:134-255` plus paired runner | exactly the `C1+C2` matrix residual and `C3+C4` minimal corollary | same | yes; sole load-bearing proof surface |
+
+After dropping the three nonmatching contextual witnesses, the claim remains
+supported because its proof is self-contained. The literal charge-breaking
+qubit class, physical carrier selection, and continuum control are not claimed
+closed.
+
+### N5 -- rhetoric and resolution audit
+
+| resolution | tested? | narrow result |
+|---|---|---|
+| one two-qubit spin edge | yes | six-dimensional parity-preserving class; no CAR identification |
+| one spinless CAR mode/site, nearest-neighbor cubic block | yes | pairing killed and strict common-generator flow onsite only |
+| arbitrary two-band Laurent momentum block | yes | strict once iff flat spectrum iff strict all times |
+| lattice-wide two-band Gaussian automorphism | conditional | finite Laurent lift is strict only after CAR/Nambu canonical data are supplied |
+| `4 x 4` or larger momentum block | no | open; no isolated-time claim |
+| interacting/multibody full CAR or qubit algebra | no | open; no no-go claim |
+| physical lattice process / Record formation | no | open; no selection or occurrence claim |
+
+Accordingly `no isolated strict time` always means the `2 x 2`
+finite-Laurent common-generator class, and `onsite only` always means the
+ordinary-scalar one-mode nearest-neighbor proper-cubic corollary.
+
+### N6 -- partial-closure and primitive scan
+
+| candidate path | live status | what it can close |
+|---|---|---|
+| current two-band theorem and scalar cubic corollary | bounded candidate, audit pending | closes only `C1+C2` and `C3+C4` |
+| lower-symmetry Kitaev involution | exact positive control in current runner | shows flat pairing can be strict |
+| doubled `16`-mode spinorial-cubic involution | exact positive control in current runner | shows larger carriers evade the scalar corollary on the even/quadratic algebra |
+| `docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md` | `unaudited` in the live ledger | candidate quasilocal generator path without strict finite range |
+| massive free staggered same-object scaling family | not yet assembled | could close the first controlled continuum commuting diagram on a supplied carrier |
+| `scale_reference_primitive` | approved, units only | closes units conversion only; no dynamics or selector |
+| `kinetic_isotropy_primitive` | approved, form only | closes structural `c_t=c_s` only; no Lorentz or dynamics theorem |
+| `realized_state_primitive` | approved, point evaluation only | closes no state selection, measure, or probability rule |
+
+The primitive registry contains no admission class and no unapproved primitive
+receives weight. A bounded supplied-carrier theorem followed by an
+import-retirement audit is a valid path; no new axiom is inferred.
+
+### N7 -- steelman
+
+A hostile reviewer should say: this is only a `2 x 2` theorem. Larger matrices
+can have flat or specially phased subblocks; a fundamental partitioned tick
+need not be `exp(-itH)`; and a continuum flow can be exponentially quasilocal
+rather than strict. The strongest concrete authority is the flat-involution
+construction in
+`docs/ONSITE_CHARGE_CONSERVING_ENDPOINT_SYMMETRIC_COMMON_HAMILTONIAN_STRICT_QCA_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-12.md:289-359`, corrected here to a projective spinorial action on odd CAR generators
+and an honest cubic action on the even/quadratic algebra. This steelman defeats
+every broader BdG/common-H/QCA no-go, but it does not defeat equations
+(8)--(12). The result therefore stays bounded to two bands and one ordinary
+scalar cubic mode.
+
+### N8 -- cross-cycle echo
+
+| prior path | live status | later escape/change mechanism | implication here |
+|---|---|---|---|
+| `docs/KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BOUNDED_THEOREM_NOTE_2026-06-10.md` | `unaudited` | eta-twisted/larger classes escaped the analyzed no-cone surface | do not generalize a carrier-density result |
+| `docs/SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11.md` | branch-local / audit pending | six modes escaped scalar CAR transport triviality | keep the one-mode qualifier |
+| `docs/ONSITE_CHARGE_CONSERVING_ENDPOINT_SYMMETRIC_COMMON_HAMILTONIAN_STRICT_QCA_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-07-12.md` | branch-local / audit pending | flat `16`-mode spinorial construction escaped the one-qubit tail pattern | keep the two-band qualifier and projective-action guard |
+| `docs/TRANSFER_MATRIX_LOG_QUASILOCALITY_NARROW_THEOREM_NOTE_2026-06-10.md` | `unaudited` | strict finite range was replaced by a quasilocal positive theorem | allow quasilocal continuum dynamics |
+
+Each similar negative was retired or narrowed by enlarging the carrier,
+changing symmetry realization, or weakening strict support to controlled
+quasilocality. All three mechanisms remain explicit open conditions here.
+
+**No-Go Discipline verdict:** `PASS` for the narrow two-band theorem and
+ordinary-scalar one-mode corollary. It is `FAIL` for any exhaustive BdG,
+all-common-Hamiltonian, all-QCA, or axiom-update conclusion; none is shipped.
 
 ## 8. What this does not establish
 
@@ -398,15 +492,16 @@ python3 scripts/two_band_bdg_strict_time_flat_spectrum_2026_07_12.py
 Expected scorecard:
 
 ```text
-SUMMARY PASS=31 FAIL=0
+SUMMARY PASS=33 FAIL=0
 ```
 
 The runner checks the six-dimensional parity spin class, exact
 Cayley--Hamilton identities, the nonterminating entire-function/pole
 mechanism, all `24` proper cubic rotations, the scalar nearest-neighbor
 flatness kill, the lower-symmetry particle-hole flat involution, strict CAR
-coefficient convolution, dispersive Bessel tails, and the doubled `16`-mode
-cubic escape.
+coefficient convolution, dispersive Bessel tails, the proper-cubic
+commutator subgroup, and the doubled `16`-mode spinorial/projective cubic
+escape including its nontrivial cocycle.
 
 **No-promotion statement:** this note does not promote, demote, or set the
 audit status of any dependency or contextual source. Independent audit is the

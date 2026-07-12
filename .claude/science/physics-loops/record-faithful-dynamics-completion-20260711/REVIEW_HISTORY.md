@@ -335,9 +335,11 @@ open and mergeable on the symmetric-Clifford head; audit workflow running.
 - Exact four-parameter local normal form and `J=0`/`J!=0` split.
 - Essential-Laurent and eventual-Bessel proofs exclude every nonzero-time
   finite-radius point in the exchange branch; `I-SWAP` gives `6I-A`.
-- A fully cubic 16-mode doubled-chirality flat involution is the exact
-  noncommuting strict-flow escape; the irreducible 8-mode attempt fails the
-  orientation test for half the proper-cubic group.
+- A 16-mode doubled-chirality flat involution supplies every proper-cubic
+  rotation intertwiner and is the exact noncommuting strict-flow escape on the
+  even/quadratic algebra; the irreducible 8-mode attempt fails the orientation
+  test for half the group, while the doubled odd-CAR action remains
+  spinorial/projective.
 - Runner/cache: `PASS=40 FAIL=0`.
 
 Independent claim, code/math, governance, and N1--N8 review are requested.

@@ -12,7 +12,7 @@ Scores are provisional `0..3`; risk is negative.
 | strengthened exchange countermodel | 3 | 3 | 3 | 3 | -1 | completed on a supplied one-excitation sector: rank-three minimal outcome-forgotten `I-SWAP` channels change absorbing outcome-label weights |
 | intermittent finite-carrier instrument normal form | 3 | 3 | 3 | 3 | -1 | complete abstract parameterization; auxiliary absorption/reuse does not imply blank-sector calibration |
 | overlapping-instrument order | 3 | 3 | 3 | 3 | -1 | completed bounded fork: raw and stopping composition differ; commutation is the exact raw schedule-independence condition |
-| simultaneous cubic QCA/tick | 3 | 3 | 3 | 3 | -1 | two-band BdG now has the exact strict-once/flat/all-times equivalence; the scalar cubic one-mode class is onsite only, while flat lower-symmetry and 16-mode escapes remain explicit |
+| simultaneous cubic QCA/tick | 3 | 3 | 3 | 3 | -1 | two-band BdG now has the exact strict-once/flat/all-times equivalence; the scalar cubic one-mode class is onsite only, while lower-symmetry and 16-mode projective/even-algebra escapes remain explicit; exhaustive multiband/interacting classes stay open |
 | scalar Gaussian/CAR-QCA normal form | 3 | 3 | 3 | 3 | -1 | exact one-mode classification plus six-mode escape closes the Bloch-walk/QCA category gap without selecting the physical carrier |
 | unified continuum limit | 3 | 3 | 3 | 1 | -3 | deferred until the microscopic process object and carrier class are fixed |
 
@@ -31,6 +31,6 @@ route was overlapping-edge order/scheduling: it exposed independent
 composition-semantics and priority coordinates and left metric rate free. The
 matching-product subblock now gives a genuine qubit-QCA counterclassification;
 the onsite-charge common-Hamiltonian class closes its noncommuting finite-time
-boundary; and the two-band BdG theorem closes the remaining Gaussian
-special-time seam while preserving flat-band/larger-carrier escapes. The next
+boundary; and the two-band BdG theorem closes its Gaussian special-time
+subroute while preserving flat-band/larger-carrier escapes. The next
 route is the same-object massive staggered continuum gate.

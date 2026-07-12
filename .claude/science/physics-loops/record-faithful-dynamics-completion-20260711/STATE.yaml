@@ -24,7 +24,8 @@ conditional_surface_status: >-
   For every 2x2 finite-Laurent Hermitian generator, strict at one nonzero time
   is equivalent to momentum-independent spectrum and to strict at every time.
   The scalar one-mode nearest-neighbor proper-cubic BdG class is onsite only;
-  lower-symmetry two-band and fully cubic 16-mode flat escapes remain positive.
+  lower-symmetry two-band and spinorial/projective cubic 16-mode flat escapes
+  remain positive.
 admitted_observation_status: none
 claim_type_reason: >-
   The source classifies the six-dimensional parity-even spin-edge complement,
@@ -100,7 +101,7 @@ no_go_routes:
   - local overlap commutation is not necessary for global matching-layer schedule independence because 12 gates close only after full layer assembly
   - pairwise-overlap-commuting endpoint-symmetric common edge Hamiltonians are single-axis Ising families and cannot transport their conserved common-axis configuration
   - nonzero exchange in the onsite-charge-conserving one-qubit class has infinite support at every nonzero time and no isolated strict-QCA point
-  - all noncommuting common Hamiltonians have tails is falsified by the fully cubic 16-mode flat-involution escape
+  - all noncommuting common Hamiltonians have tails is falsified by the 16-mode spinorial/projective cubic flat-involution escape on the even/quadratic algebra
   - a dispersive 2x2 finite-Laurent Hermitian generator cannot have an isolated nonzero strict-QCA exponential time; strict once iff flat spectrum iff strict for all times
   - scalar one-mode proper-cubic nearest-neighbor BdG pairing is killed, but lower-symmetry and multicomponent flat-band escapes remain live
 trace_gate_classification: direct_blocker_closure

@@ -76,15 +76,18 @@
   common-axis transport;
 - completed fifth exact subblock: the onsite-charge-conserving class splits
   into the strict commuting branch and a nonzero-exchange branch with infinite
-  support at every nonzero time; a fully cubic 16-mode flat involution is the
-  explicit larger-carrier strict escape;
+  support at every nonzero time; a 16-mode spinorial/projective cubic flat
+  involution is the explicit larger-carrier strict escape on the
+  even/quadratic algebra;
 - completed sixth exact subblock: every two-band finite-Laurent Hermitian
   generator is strict at one nonzero time iff its spectrum is flat iff it is
   strict at every time; the scalar one-mode nearest-neighbor proper-cubic BdG
   class is onsite only, while lower-symmetry and 16-mode flat escapes prevent
   overreach;
-- Campaign 5 bounded microscopic classification is complete at the declared
-  carrier/class resolution. Physical carrier selection remains separate.
+- Campaign 5 has completed this declared scalar/two-band/class ladder, not an
+  exhaustive all-QCA classification. Multiband, interacting, multibody,
+  non-Clifford, and time-dependent classes remain open alongside physical
+  carrier selection.
 
 ## Continuum gateway — next
 

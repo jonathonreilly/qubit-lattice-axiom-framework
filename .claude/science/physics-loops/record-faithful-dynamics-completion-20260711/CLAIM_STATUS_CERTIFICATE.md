@@ -16,15 +16,17 @@ review_loop_disposition: pending_review
 
 # Claim Status Certificate
 
-The current source closes the final bounded Gaussian special-time seam before
+The current source closes the bounded two-band Gaussian special-time seam before
 the continuum campaign. It proves that a `2 x 2` finite-Laurent Hermitian
 generator is strict at one nonzero time iff its spectrum is momentum-independent
 iff it is strict at every time. It separately classifies the literal
 endpoint-symmetric parity-even two-qubit spin density, refuses an unsupported
 local `Z^3` spin-to-CAR identification, and proves the scalar one-mode
 nearest-neighbor proper-cubic BdG class is onsite only. Lower-symmetry Kitaev
-and doubled `16`-mode cubic flat involutions remain explicit positive escapes.
-Runner/cache: `PASS=31 FAIL=0`. Independent review and audit remain required.
+and doubled `16`-mode spinorial/projective cubic flat involutions remain
+explicit positive escapes; the latter is an honest action only on the
+even/quadratic algebra.
+Runner/cache: `PASS=33 FAIL=0`. Independent review and audit remain required.
 
 No axiom or primitive update is proposed. The next campaign object is the
 same-object massive free `3+1` staggered two-step scaling family.
@@ -87,8 +89,10 @@ The onsite-charge extension classifies every endpoint-SWAP-symmetric density
 commuting with one supplied total edge charge. Its nonzero-exchange branch has
 infinite support at every nonzero time; its zero-exchange branch is the prior
 strict family. The `I-SWAP` competitor is exactly `6I-A`. A 16-mode doubled-
-chirality flat involution supplies a fully cubic noncommuting strict-flow
-escape and blocks any broader no-go. Runner/cache: `PASS=40 FAIL=0`.
+chirality flat involution supplies a spinorial/projective cubic noncommuting
+strict-flow escape on the even/quadratic algebra and blocks any broader no-go.
+Runner/cache: `PASS=40 FAIL=0` for the predecessor; the group-law correction
+is carried by the current `PASS=33 FAIL=0` runner.
 
 The result remains bounded and audit-pending. Charge-breaking/BdG, multibody,
 physical selection, and continuum routes remain open, so the axiom-update stop

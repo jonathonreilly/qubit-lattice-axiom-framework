@@ -2,7 +2,7 @@
 
 Current branch:
 `physics-loop/record-faithful-dynamics-block12-bdg-flat-band-20260712`.
-The two-band BdG runner reports `PASS=31 FAIL=0`. The bounded result is pending
+The two-band BdG runner reports `PASS=33 FAIL=0`. The bounded result is pending
 review and delivery. After delivery, open the controlled continuum campaign on
 one massive free `3+1` staggered two-step scaling family; do not attach SM or
 GR labels until that same-object free transfer/action/CAR limit is controlled.
@@ -259,9 +259,11 @@ is `c II+r(ZI+IZ)+g ZZ+J(XX+YY)`. The `J=0` branch is the commuting strict
 family. For every `J!=0` and `t!=0`, the one-excitation Laurent multiplier has
 essential singularities and its Bessel kernel has unbounded support, so the
 full automorphism is not finite radius. The repo's `I-SWAP` competitor is the
-`6I-A` member. A fully cubic 16-mode flat involution has noncommuting
-onsite/bond pieces yet remains strict radius at most one, preventing any broad
-common-H no-go. Runner/cache: `PASS=40 FAIL=0`. No axiom update is triggered.
+`6I-A` member. A 16-mode spinorial/projective cubic flat involution has
+noncommuting onsite/bond pieces yet remains strict radius at most one, with an
+honest symmetry action on the even/quadratic algebra; it prevents any broad
+common-H no-go. The predecessor runner/cache reports `PASS=40 FAIL=0`, and the
+current cocycle correction reports `PASS=33 FAIL=0`. No axiom update is triggered.
 
 Delivery: stacked PR
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5250 is

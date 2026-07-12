@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 92 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 362 |
+| **retained_bounded** | 363 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2784 |
+| unaudited | 2783 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,22 +44,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 474 |
+| `audited_clean` | 475 |
 | `audited_conditional` | 51 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3134 |
+| `unaudited` | 3133 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2049 |
+| `bounded_theorem` | 2050 |
 | `decoration` | 21 |
 | `meta` | 357 |
 | `no_go` | 467 |
 | `open_gate` | 198 |
-| `positive_theorem` | 661 |
+| `positive_theorem` | 660 |
 
 | criticality | count |
 |---|---:|
@@ -210,6 +210,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `chiral_split_mass_gravity_note` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.5 | C | - |
 | `circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `circulant_response_master_identity_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
+| `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `claude_complex_action_carryover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `claude_complex_action_grown_companion_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2033,6 +2034,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The arithmetic closes after assuming the bridge and supplied numerical inputs, but neither the bridge nor the selection of the mixed-scale comparator is derived from the restricted packet.
 - **rationale:** Issue: the runner assumes the contested five-sixths bridge by evaluating v_cb**(6/5), imports alpha_s(v) from a helper rooted in the hard-coded CANONICAL_PLAQUETTE = 0.5934, and uses mixed-scale PDG values as the close comparator. Why this blocks: it verifies algebra and a scale-dependent numerical coincidence rather than deriving the bridge or scale-selection rule from framework premises. Repair target: independently derive both the bridge and comparator-scale selection, then make the runner construct them without hard-coding the contested inputs. Claim boundary until fixed: the SU(3) identity, one-loop transport exponent, and conditional numerical decompositions are supported, but the claimed physical preference for the mixed/self-scale surface is not.
 - **auditor confidence:** high
+
+### `ckm_magnitudes_structural_counts_narrow_theorem_note_2026-05-02`
+
+- **Note:** [`CKM_MAGNITUDES_STRUCTURAL_COUNTS_NARROW_THEOREM_NOTE_2026-05-02.md`](../../docs/CKM_MAGNITUDES_STRUCTURAL_COUNTS_NARROW_THEOREM_NOTE_2026-05-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional algebraic derivation of (M1)-(M5) and the two stated ratios from the four parametric identities, the Wolfenstein-leading defining expressions, and n_quark = n_pair * n_color, without physical CKM identification.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00384-ckm_magnitudes_structural_co`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Substituting the four stated parametric identities into the five Wolfenstein-leading expressions and then applying n_quark = n_pair * n_color gives (M1)-(M5).  _(class `A`)_
+- **chain closes:** True — The claimed formulas follow by exact symbolic substitution and simplification. The conclusion is bounded to the explicitly supplied identities and does not derive or physically identify those inputs.
+- **rationale:** The load-bearing work is genuine class-A algebra: all five formulas and both ratios follow exactly from the stated symbolic inputs and count constraint. The runner computes these reductions rather than merely printing outcomes; its final parent-ledger metadata check is class B but is not load-bearing. No numerical alpha_s value, comparator, fitted selector, or physical CKM bridge enters the audited scope.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `cl3_complexification_split_narrow_theorem_note_2026-05-10`
 

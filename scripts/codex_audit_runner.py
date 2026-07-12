@@ -1493,8 +1493,7 @@ def validate_verdict(
         if not isinstance(unresolved, list) or not unresolved:
             return "transport-bounded N8 evidence requires a nonempty unresolved list"
     if (
-        forensic_tier
-        and blob.get("verdict") == "audited_clean"
+        blob.get("verdict") == "audited_clean"
         and evidence_manifest is not None
     ):
         clipped_paths = sorted(

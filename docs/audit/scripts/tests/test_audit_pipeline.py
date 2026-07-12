@@ -1387,6 +1387,152 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertEqual(row["cross_confirmation"]["status"], "disagreement")
         self.assertEqual(row["blocker"], "cross_confirmation_disagreement")
 
+    def test_cross_confirmation_disagrees_when_claim_scope_changes(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_scope_tuple", criticality="critical")
+        led = self.fx.read_ledger()
+        first = {
+            "claim_id": "test_scope_tuple",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "the identity for n = 2",
+            "auditor": "first-scope-auditor",
+            "negative_assertion_classes": [],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "cross_family",
+            "load_bearing_step_class": "C",
+        }
+        ok, msg = m.apply_one(led, first)
+        self.assertTrue(ok, msg)
+        second = {
+            **first,
+            "auditor": "second-scope-auditor",
+            "independence": "fresh_context",
+            "claim_scope": "the identity for every n",
+        }
+        ok, msg = m.apply_one(led, second)
+        self.assertTrue(ok, msg)
+        row = led["rows"]["test_scope_tuple"]
+        self.assertEqual(row["audit_status"], "audit_in_progress")
+        self.assertEqual(row["cross_confirmation"]["status"], "disagreement")
+
+    def test_development_apply_preserves_core_evidence_gates(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_stale_development_transport")
+        stale_led = self.fx.read_ledger()
+        audit = {
+            "claim_id": "test_stale_development_transport",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "the exact positive identity",
+            "auditor": "development-auditor",
+            "negative_assertion_classes": [],
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "load_bearing_step_class": "C",
+        }
+        manifest = {
+            "docs/TEST.md": {"roles": ["source"], "text": "old source"}
+        }
+        with mock.patch.object(
+            m, "trusted_evidence_manifest", return_value=manifest
+        ), mock.patch.object(
+            m, "trusted_manifest_current_error", return_value="source drifted"
+        ) as current_check:
+            ok, msg = m.apply_one(stale_led, audit)
+        self.assertFalse(ok)
+        self.assertIn("trusted evidence manifest is stale", msg)
+        self.assertFalse(
+            current_check.call_args.kwargs["dynamic_index_drift_invalidates"]
+        )
+
+        self._seed_one_row("test_clipped_development_transport")
+        clipped_led = self.fx.read_ledger()
+        clipped_audit = {
+            **audit,
+            "claim_id": "test_clipped_development_transport",
+            "auditor": "clipped-development-auditor",
+        }
+        clipped_manifest = {
+            "docs/TEST.md": {
+                "roles": ["source"],
+                "text": "... [packet-clipped docs/TEST.md; 999 chars total] ...",
+            }
+        }
+        with mock.patch.object(
+            m, "trusted_evidence_manifest", return_value=clipped_manifest
+        ):
+            ok, msg = m.apply_one(clipped_led, clipped_audit)
+        self.assertFalse(ok)
+        self.assertIn("complete load-bearing packet surfaces", msg)
+
+    def test_judicial_side_must_preserve_chosen_scope_and_class(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_judicial_tuple",
+            audit_status="audit_in_progress",
+            claim_type="positive_theorem",
+            criticality="critical",
+        )
+        led = self.fx.read_ledger()
+        seat = {
+            "auditor": "first-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "the identity for n = 2",
+            "load_bearing_step_class": "C",
+            "negative_assertion_classes": [],
+        }
+        led["rows"]["test_judicial_tuple"]["cross_confirmation"] = {
+            "status": "disagreement",
+            "first_audit": seat,
+            "second_audit": {
+                **seat,
+                "auditor": "second-auditor",
+                "verdict": "audited_conditional",
+            },
+        }
+        judgment = {
+            "claim_id": "test_judicial_tuple",
+            "third_auditor": "judicial-panel",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "judicial_review",
+            "sided_with": "first",
+            "negative_assertion_classes": [],
+            "ratified_verdict": "audited_clean",
+            "ratified_claim_type": "positive_theorem",
+            "ratified_claim_scope": "the identity for n = 2",
+            "ratified_load_bearing_step_class": "D",
+            "judgment_rationale": "confirm the first seat",
+            "first_auditor_error": "none",
+            "second_auditor_error": "overstated the blocker",
+        }
+        ok, msg = m.apply_one(json.loads(json.dumps(led)), judgment)
+        self.assertFalse(ok)
+        self.assertIn("ratified_load_bearing_step_class", msg)
+
+        scope_judgment = {
+            **judgment,
+            "ratified_load_bearing_step_class": "C",
+            "ratified_claim_scope": "the identity for every n",
+        }
+        ok, msg = m.apply_one(json.loads(json.dumps(led)), scope_judgment)
+        self.assertFalse(ok)
+        self.assertIn("ratified_claim_scope", msg)
+
     def test_judicial_packet_transport_is_tier_gated(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
@@ -4159,6 +4305,24 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 m.source_requires_no_go_discipline(
                     "docs/BOUNDED_ROW.md", wall_body, "bounded_theorem"
                 )
+            )
+
+    def test_development_output_trigger_cannot_be_bypassed_by_empty_declaration(self):
+        m = _import("no_go_discipline_gate")
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}):
+            self.assertTrue(
+                m.output_requires_no_go_discipline({
+                    "claim_type": "bounded_theorem",
+                    "claim_scope": "No retained primitive supplies the wall.",
+                    "negative_assertion_classes": [],
+                })
+            )
+            self.assertFalse(
+                m.output_requires_no_go_discipline({
+                    "claim_type": "positive_theorem",
+                    "claim_scope": "The exact positive identity closes.",
+                    "negative_assertion_classes": [],
+                })
             )
 
     def test_n3_excludes_explicit_accepted_premise_vocabulary(self):
@@ -8479,6 +8643,20 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
                 evidence_manifest=unrelated_manifest,
             )
         )
+        clipped_manifest = {
+            "docs/BOUNDED.md": {
+                "roles": ["source"],
+                "text": "... [packet-clipped docs/BOUNDED.md; 999 chars total] ...",
+            }
+        }
+        self.assertIn(
+            "complete load-bearing packet surfaces",
+            m.validate_verdict(
+                blob,
+                "bounded",
+                evidence_manifest=clipped_manifest,
+            ) or "",
+        )
         with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
             self.assertIsNotNone(
                 m.validate_verdict(
@@ -9032,7 +9210,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
 
         self.assertIsNotNone(m.restore_audit_from_previous(row, {cid: row}))
 
-    def test_restore_tier_gates_packetless_clean_output_negative_authority(self):
+    def test_restore_refuses_packetless_clean_output_negative_authority(self):
         m = self._import_and_patch()
         cid = "packetless_output_negative"
         note_path = "docs/POSITIVE_SOURCE.md"
@@ -9053,24 +9231,12 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
                 archived["claim_type"],
             )
         )
-        self.assertFalse(
+        self.assertTrue(
             m.no_go_discipline_gate.output_requires_no_go_discipline(
                 {**archived, "verdict": archived["audit_status"]}
             )
         )
-        self.assertIsNotNone(m.restore_audit_from_previous(row, {cid: row}))
-
-        row = self._seed_with_archived(cid, archived)
-        row["note_path"] = note_path
-        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
-            self.assertTrue(
-                m.no_go_discipline_gate.output_requires_no_go_discipline(
-                    {**archived, "verdict": archived["audit_status"]}
-                )
-            )
-            self.assertIsNone(
-                m.restore_audit_from_previous(row, {cid: row})
-            )
+        self.assertIsNone(m.restore_audit_from_previous(row, {cid: row}))
 
     def test_restore_tier_gates_packet_snapshot_currency(self):
         m = self._import_and_patch()

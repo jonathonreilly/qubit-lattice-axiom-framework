@@ -191,8 +191,10 @@ def trusted_manifest_current_error(
     trusted_manifest: dict[str, dict],
     row: dict,
     rows: dict[str, dict],
+    *,
+    dynamic_index_drift_invalidates: bool = True,
 ) -> str | None:
-    """Reject replayed prompt evidence after source or dynamic-index drift."""
+    """Reject replayed evidence after stable-content or governed index drift."""
     probe_packet = dict(packet)
     probe_packet["evidence_snapshot"] = (
         no_go_discipline_gate.build_evidence_snapshot(
@@ -206,7 +208,9 @@ def trusted_manifest_current_error(
         current_row, rows, REPO_ROOT
     )
     return no_go_discipline_gate.evidence_snapshot_current_error(
-        probe_packet, current_manifest, dynamic_index_drift_invalidates=True
+        probe_packet,
+        current_manifest,
+        dynamic_index_drift_invalidates=dynamic_index_drift_invalidates,
     )
 
 
@@ -484,6 +488,14 @@ def normalized_negative_assertion_classes(blob: dict) -> tuple[str, ...]:
     return tuple(sorted({item for item in declared if isinstance(item, str)}))
 
 
+def normalized_claim_scope(blob: dict) -> str:
+    """Normalize insignificant whitespace without weakening scoped agreement."""
+    scope = blob.get("claim_scope")
+    if not isinstance(scope, str):
+        return ""
+    return " ".join(scope.split())
+
+
 def audit_tuples_match(first: dict, second: dict) -> bool:
     """Compare every field whose disagreement requires governed resolution."""
     return (
@@ -491,6 +503,7 @@ def audit_tuples_match(first: dict, second: dict) -> bool:
         and first.get("claim_type") == second.get("claim_type")
         and first.get("load_bearing_step_class")
         == second.get("load_bearing_step_class")
+        and normalized_claim_scope(first) == normalized_claim_scope(second)
         and normalized_negative_assertion_classes(first)
         == normalized_negative_assertion_classes(second)
     )
@@ -971,6 +984,25 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
                 "negative_assertion_classes does not match the ratified "
                 f"{chosen_label}_audit declaration"
             )
+        if (
+            judgment.get("ratified_load_bearing_step_class")
+            != chosen.get("load_bearing_step_class")
+        ):
+            return False, (
+                "ratified_load_bearing_step_class does not match the ratified "
+                f"{chosen_label}_audit class"
+            )
+        ratified_scope = judgment.get("ratified_claim_scope")
+        if (
+            ratified_scope is not None
+            and normalized_claim_scope({"claim_scope": ratified_scope})
+            != normalized_claim_scope(chosen)
+        ):
+            return False, (
+                "ratified_claim_scope does not match the ratified "
+                f"{chosen_label}_audit scope; use sided_with='hybrid' to "
+                "ratify a different scope"
+            )
     ratified_decoration_parent = (
         judgment.get("ratified_decoration_parent_claim_id")
         or judgment.get("decoration_parent_claim_id")
@@ -1034,13 +1066,17 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
             row, rows, REPO_ROOT
         )
-    if ratified_verdict == "audited_clean" and forensic_probe:
+    if ratified_verdict == "audited_clean":
         clipped_error = clipped_clean_evidence_error(evidence_manifest)
         if clipped_error:
             return False, clipped_error
-    if trusted_transport and forensic_probe:
+    if trusted_transport:
         manifest_error = trusted_manifest_current_error(
-            judgment.get("no_go_discipline") or {}, evidence_manifest, row, rows
+            judgment.get("no_go_discipline") or {},
+            evidence_manifest,
+            row,
+            rows,
+            dynamic_index_drift_invalidates=forensic_probe,
         )
         if manifest_error:
             return False, f"trusted evidence manifest is stale: {manifest_error}"
@@ -1234,13 +1270,17 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
             row, rows, REPO_ROOT
         )
-    if verdict == "audited_clean" and _forensic:
+    if verdict == "audited_clean":
         clipped_error = clipped_clean_evidence_error(evidence_manifest)
         if clipped_error:
             return False, clipped_error
-    if trusted_transport and _forensic:
+    if trusted_transport:
         manifest_error = trusted_manifest_current_error(
-            audit.get("no_go_discipline") or {}, evidence_manifest, row, rows
+            audit.get("no_go_discipline") or {},
+            evidence_manifest,
+            row,
+            rows,
+            dynamic_index_drift_invalidates=_forensic,
         )
         if manifest_error:
             return False, f"trusted evidence manifest is stale: {manifest_error}"
@@ -1637,20 +1677,17 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         err = cross_confirmation_error(first, audit)
         if err:
             return False, err
-        if (
-            first.get("load_bearing_step_class") != audit.get("load_bearing_step_class")
-            or first.get("claim_type") != claim_type
-            or normalized_negative_assertion_classes(first)
-            != normalized_negative_assertion_classes(audit)
-        ):
-            row["cross_confirmation"]["second_audit"] = audit_summary_from_blob(audit)
+        second = audit_summary_from_blob(audit)
+        if not audit_tuples_match(first, second):
+            row["cross_confirmation"]["second_audit"] = second
             row["cross_confirmation"]["status"] = "disagreement"
             row["audit_status"] = "audit_in_progress"
             row["blocker"] = "cross_confirmation_disagreement"
             accept_row()
             return True, (
                 "first and second audits disagree on claim_type, "
-                "load_bearing_step_class, or negative_assertion_classes "
+                "claim_scope, load_bearing_step_class, or "
+                "negative_assertion_classes "
                 f"({first.get('claim_type')!r}/{first.get('load_bearing_step_class')!r} vs "
                 f"{claim_type!r}/{audit.get('load_bearing_step_class')!r}); "
                 "promote to third-auditor review"

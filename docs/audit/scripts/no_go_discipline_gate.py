@@ -2709,8 +2709,6 @@ def source_requires_no_go_discipline(
 def output_requires_no_go_discipline(audit: dict[str, Any]) -> bool:
     if audit.get("claim_type") == "no_go":
         return True
-    if not forensic_mode():
-        return False
     boundary = "\n".join(str(audit.get(field) or "") for field in OUTPUT_BOUNDARY_FIELDS)
     if _has_negative_boundary_assertion(boundary):
         return True

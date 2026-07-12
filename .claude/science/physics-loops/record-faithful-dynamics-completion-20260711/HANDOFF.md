@@ -29,6 +29,11 @@ https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5205
 is open and mergeable against the effect-selection branch; its audit-lane
 workflow was running at the delivery checkpoint.
 
+Overlapping-edge order and time/rate review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5207
+is open and mergeable against the full-instrument branch; its audit-lane
+workflow was running at the delivery checkpoint.
+
 ## Central thesis
 
 The next move is not another sector Hamiltonian or continuum fit. It is to make

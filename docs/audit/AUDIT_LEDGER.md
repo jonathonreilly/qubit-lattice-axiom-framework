@@ -18,11 +18,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 76 |
+| **retained** | 77 |
 | **retained_bounded** | 301 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2949 |
+| unaudited | 2948 |
 | audit_in_progress | 1 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
@@ -41,13 +41,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 1 |
-| `audited_clean` | 379 |
+| `audited_clean` | 380 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3299 |
+| `unaudited` | 3298 |
 
 | claim_type | count |
 |---|---:|
@@ -454,6 +454,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_poisson_finite_extraction_core_bounded_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_poisson_resource_sweep_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `teleportation_retained_axis_operator_algebra_closure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
+| `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `two_field_retarded_family_closure_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `two_field_retarded_probe_note_2026-04-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
 | `unification_basin_failure_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -5719,6 +5720,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The row's load-bearing packet is only P_THOOFT_REG: a pure syntactic vocabulary registration and open-gate boundary for abelian-projection, monopole/dual-superconductor, center-vortex, symbolic action-form, and Wilson-loop area-law notation.  _(class `E`)_
 - **chain closes:** True — The restricted packet closes only the definitional registration and boundary disclaimer. It does not close any physical confinement mechanism or framework bridge, and the note explicitly excludes those conclusions.
 - **rationale:** Issue: the load-bearing move is the definition/registration of P_THOOFT_REG plus boundary disclaimers, while the runner verifies text presence and tautological symbolic identities. Why this blocks: no retained authority or derivation establishes monopole condensation, center-vortex percolation, Wilson-loop area law, positive string tension, or a framework observable bridge. Repair target: add retained one-hop authorities or retained bridge theorems before using this row as theorem input. Claim boundary until fixed: pure syntactic open-gate vocabulary catalogue.
+- **auditor confidence:** high
+
+### `three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** The specified cyclic permutation and three diagonal involutions on abstract C^3 generate M_3(C), implying irreducibility and the stated Burnside corollary.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00237-three_generation_observable_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The explicit identities E_ij = P_i C^((i-j) mod 3) P_j place all nine matrix units in A, so A = M_3(C).  _(class `A`)_
+- **chain closes:** True — The projector formulas select the three coordinate lines, and the cyclic permutation connects every ordered pair of those lines, yielding every matrix unit. The conclusions then follow by elementary finite-dimensional linear algebra without physical or numerical imports.
+- **rationale:** The load-bearing matrix-unit construction is a genuine algebraic closure over the matrices explicitly defined in the note. The runner source performs exact symbolic calculations rather than printing hard-coded expected results, and its 50 successful checks support the stated projector, spanning, irreducibility, and rank-one conclusions. Two displayed scalar-factor annotations in the P_1 calculations are typographical errors, but the resulting projector actions and the load-bearing derivation remain correct.
 - **auditor confidence:** high
 
 ### `two_field_retarded_family_closure_note_2026-04-10`

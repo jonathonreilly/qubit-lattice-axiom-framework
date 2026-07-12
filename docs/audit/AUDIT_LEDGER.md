@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 95 |
+| **retained** | 96 |
 | **retained_no_go** | 39 |
 | **retained_bounded** | 397 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2704 |
+| unaudited | 2703 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 517 |
+| `audited_clean` | 518 |
 | `audited_conditional` | 79 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3054 |
+| `unaudited` | 3053 |
 
 | claim_type | count |
 |---|---:|
@@ -606,6 +606,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_quadratic_mode_gluing_derivation_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `universal_gr_quartic_diffeo_ward_continuum_closure_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_quintic_diffeo_ward_closure_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | A | - |
 | `universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `universal_gr_supermetric_normal_form_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `universality_classifier_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -9345,6 +9346,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source constructs the lattice operators, conserved and naive Dirac operators, TT modes, lattice diffeomorphism variation, finite-difference dW/depsilon, and 16-point fourth cross term directly; it does not read or hard-code the contested residuals. Manual checks of the sine-expansion coefficients, cross-stencil normalization, TT transversality/tracelessness, and momentum closure match the stated bounded diagnostic.
 - **rationale:** The load-bearing step is a first-principles finite computation from the framework baseline, not a definition, renaming, external comparator, or tuned numerical match. The included source computes the residuals from instantiated lattice matrices and asserts three bounded checks: conserved-vs-naive contrast at L=6, amplitude robustness at amp 0.04 and 0.09, and conserved decrease from L=6 to L=8 with naive flatness. There are no cited non-retained authorities or missing helper imports in the restricted packet. The clean verdict is limited to the bounded runner-defined quintic diagnostic, not an all-order Einstein-Hilbert closure claim.
 - **auditor confidence:** high
+
+### `universal_gr_so3_isotypic_orbit_flat_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** For Sym^2(R^4) under 1 ⊕ SO(3) and isotropic spatial diagonal weights, the lapse-plus-spatial-trace projector is fixed, the complement weighted Frobenius energy is constant on each orbit, generic complement coordinates move, and E_{α,β} cannot distinguish frames within a nontrivial orbit.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00261-universal_gr_so3_isotypic_or`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Because the isotropic weighted norm is additive across the orthogonal Pi_A1 plus Pi_perp split, invariance of the total norm and pointwise invariance of Pi_A1 imply ||Pi_perp(h')||^2_d = ||Pi_perp(h)||^2_d.  _(class `A`)_
+- **chain closes:** True — The result follows from exact block-conjugation identities, trace invariance, and orthogonal invariance of the weighted Frobenius norm. No physical action, fitted value, external comparator, or upstream scientific claim is required.
+- **rationale:** The source gives a self-contained class-(A) proof, and the runner genuinely computes the symbolic identities rather than printing or importing the conclusions. It also verifies coordinate movement and supplies an anisotropic control showing that spatial isotropy is load-bearing. The verification prose has a non-load-bearing sign typo for h'_02, but the proof, concrete calculation, and runner consistently establish the required nonzero movement and equal energy.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `universal_gr_stress_ward_transverse_seagull_bounded_theorem_note_2026-06-08`
 

@@ -113,6 +113,45 @@ def audit_summary_tuples_match(first: dict, second: dict) -> bool:
     )
 
 
+def audit_summary_tuple_schema_error(summary: object) -> str | None:
+    """Require a complete, typed v2 agreement tuple before comparison."""
+    if not isinstance(summary, dict) or not summary:
+        return "audit summary must be a non-empty object"
+    required = {
+        "verdict",
+        "claim_type",
+        "claim_scope",
+        "load_bearing_step_class",
+        "negative_assertion_classes",
+    }
+    missing = required - set(summary)
+    if missing:
+        return f"audit summary missing tuple fields: {sorted(missing)}"
+    verdict = summary.get("verdict")
+    if verdict not in ALLOWED_AUDIT_STATUSES or verdict in {
+        "unaudited", "audit_in_progress"
+    }:
+        return f"audit summary has non-terminal verdict {verdict!r}"
+    claim_type = summary.get("claim_type")
+    if claim_type not in ALLOWED_CLAIM_TYPES or claim_type is None:
+        return f"audit summary has invalid claim_type {claim_type!r}"
+    scope = summary.get("claim_scope")
+    if not isinstance(scope, str) or not scope.strip():
+        return "audit summary claim_scope must be a non-empty string"
+    step_class = summary.get("load_bearing_step_class")
+    if not isinstance(step_class, str) or not step_class.strip():
+        return "audit summary load_bearing_step_class must be a non-empty string"
+    declared = summary.get("negative_assertion_classes")
+    if not isinstance(declared, list) or not all(
+        isinstance(item, str) for item in declared
+    ):
+        return "audit summary negative_assertion_classes must be a list of strings"
+    unknown = sorted(set(declared) - no_go_discipline_gate.POLICY_NEGATIVE_CLASSES)
+    if unknown:
+        return f"audit summary has unknown negative_assertion_classes: {unknown}"
+    return None
+
+
 def is_retained_grade(status):
     """Mirror compute_effective_status.is_retained_grade: literal retained-grade
     keywords plus `decoration_under_<parent>` (which is only assigned when the
@@ -937,13 +976,26 @@ def main() -> int:
 
         xc = row.get("cross_confirmation") or {}
         xc_status = xc.get("status") if isinstance(xc, dict) else None
+        agreement_schema = xc.get("agreement_schema") if isinstance(xc, dict) else None
+        if agreement_schema not in {None, AUDIT_TUPLE_AGREEMENT_SCHEMA}:
+            errors.append(
+                f"{cid}: unsupported cross_confirmation.agreement_schema "
+                f"{agreement_schema!r}"
+            )
         exact_tuple_schema = (
             isinstance(xc, dict)
-            and xc.get("agreement_schema") == AUDIT_TUPLE_AGREEMENT_SCHEMA
+            and agreement_schema == AUDIT_TUPLE_AGREEMENT_SCHEMA
         )
         if isinstance(xc, dict) and xc_status == "confirmed":
             first = xc.get("first_audit") or {}
             second = xc.get("second_audit") or {}
+            if exact_tuple_schema:
+                for label, summary in (("first_audit", first), ("second_audit", second)):
+                    schema_error = audit_summary_tuple_schema_error(summary)
+                    if schema_error:
+                        errors.append(
+                            f"{cid}: versioned cross_confirmation.{label} {schema_error}"
+                        )
             if not audit_summary_tuples_match(first, second):
                 message = (
                     f"{cid}: confirmed cross-confirmation full audit tuple mismatch "
@@ -970,6 +1022,18 @@ def main() -> int:
             if not third:
                 errors.append(f"{cid}: {xc_status} requires third_audit")
             else:
+                if exact_tuple_schema:
+                    for label, summary in (
+                        ("first_audit", first),
+                        ("second_audit", second),
+                        ("third_audit", third),
+                    ):
+                        schema_error = audit_summary_tuple_schema_error(summary)
+                        if schema_error:
+                            errors.append(
+                                f"{cid}: versioned cross_confirmation.{label} "
+                                f"{schema_error}"
+                            )
                 side = third.get("sided_with")
                 if side is not None and side != expected_side:
                     errors.append(

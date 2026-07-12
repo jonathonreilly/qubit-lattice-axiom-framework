@@ -3466,6 +3466,14 @@ class AuditLintTest(unittest.TestCase):
 
         ledger = self.fx.read_ledger()
         cross = ledger["rows"]["critical_claim"]["cross_confirmation"]
+        cross["agreement_schema"] = "audit_tuple_v999"
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("unsupported cross_confirmation.agreement_schema", output.getvalue())
+
         cross.pop("agreement_schema")
         self.fx.write_ledger(ledger)
         output = io.StringIO()
@@ -3485,6 +3493,32 @@ class AuditLintTest(unittest.TestCase):
             rc = m.main()
         self.assertEqual(rc, 1, output.getvalue())
         self.assertIn("full audit tuple mismatch", output.getvalue())
+
+        cross["first_audit"]["claim_scope"] = " normalized   scoped\ntheorem "
+        cross["second_audit"]["claim_scope"] = "normalized scoped theorem"
+        cross["first_audit"]["negative_assertion_classes"] = [
+            "conditional_wall_rationale",
+            "bounded_with_named_walls",
+        ]
+        cross["second_audit"]["negative_assertion_classes"] = [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "bounded_with_named_walls",
+        ]
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 0, output.getvalue())
+
+        cross["first_audit"] = {}
+        cross["second_audit"] = {}
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("audit summary must be a non-empty object", output.getvalue())
 
     def test_lint_enforces_versioned_tuple_for_all_confirmed_paths(self):
         m = _import("audit_lint")

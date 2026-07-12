@@ -18,11 +18,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 78 |
+| **retained** | 77 |
 | **retained_bounded** | 303 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2945 |
+| unaudited | 2946 |
 | audit_in_progress | 1 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 5 |
@@ -41,22 +41,22 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 1 |
-| `audited_clean` | 383 |
+| `audited_clean` | 382 |
 | `audited_conditional` | 20 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3295 |
+| `unaudited` | 3296 |
 
 | claim_type | count |
 |---|---:|
-| `bounded_theorem` | 2045 |
+| `bounded_theorem` | 2046 |
 | `decoration` | 19 |
 | `meta` | 357 |
 | `no_go` | 439 |
 | `open_gate` | 201 |
-| `positive_theorem` | 675 |
+| `positive_theorem` | 674 |
 
 | criticality | count |
 |---|---:|
@@ -212,7 +212,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
-| `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `edge_deletion_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -502,6 +501,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_s_universal_two_loop_beta_kernel_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.6 | A | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -513,7 +513,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `shapiro_static_discriminator_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
-| `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `structured_chokepoint_bridge_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
@@ -2047,14 +2046,14 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 ### `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16`
 
 - **Note:** [`DM_LEPTOGENESIS_PMNS_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md`](../../docs/DM_LEPTOGENESIS_PMNS_SOLE_AXIOM_BOUNDARY_NOTE_2026-04-16.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** **retained**  (reason: `self`)
-- **auditor:** `codex-audit-loop:leaf-resweep-2026-04-30`  (codex-gpt-5; independence=cross_family)
-- **load-bearing step:** **Script:** `scripts/frontier_dm_leptogenesis_pmns_sole_axiom_boundary.py`  _(class `C`)_
-- **chain closes:** True — Yes. The registered runner exits cleanly and exposes 2 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
-- **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Whether, on the stated current branch, the sole axiom and native seed pair fail to determine a unique active five-real off-seed source and PMNS-assisted eta value.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-20260712-203012-f022c5b2-f022c5b261b5414d8df3d4656cedda20-dm_leptogenesis_pmns_sol-001`  (codex-gpt-5.6; independence=weak)
+- **load-bearing step:** Two exact active microscopic points can share the same native seed pair while carrying different off-seed five-real source data.  _(class `A`)_
+- **chain closes:** False — The supplied arrays establish non-injectivity of the seed-average map and different downstream outputs, but the packet never derives that both active points are admissible consequences of Cl(3) on Z^3 or that the seed pair exhausts the axiom-fixed information.
+- **rationale:** Issue: the runner proves only that two hand-chosen arrays have equal means but different source coordinates and transport outputs. Why this blocks: several decisive conclusions are checked with literal True, while the transport chain imports chosen physical constants and a hard-coded canonical eta target, so it does not establish the claimed sole-axiom boundary. Repair target: derive the admissible active-source family from Cl(3) on Z^3 and exhibit two axiom-compatible points, or restrict the claim to the finite supplied-sample map. Claim boundary until fixed: the examples support algebraic seed-map nonuniqueness and differing downstream numerical outputs conditional on the imported model.
 - **auditor confidence:** high
 
 ### `dm_lepton_synthesis_note_2026-04-19`
@@ -4867,18 +4866,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — All displayed quantitative identities reduce to finite-sum algebra: normalization gives sum_i dp_i=0, the RN coordinate derivative gives the Fisher quadratic form, W'(0)=E_0[O]=0, and the two-outcome uniform record has mean 0 and second moment 1. No cited authority, primitive, bridge, or external comparator is needed.
 - **rationale:** The independent formula inventory checks the RN score identity, Fisher quadratic form, exponential-chart normalization and derivative, and the two-outcome epsilon arithmetic directly from finite probability definitions. The runner source performs symbolic finite-probability checks rather than importing fitted values or hard-coding a contested physical premise. The claim is narrow and explicitly excludes the broader physical source, closure, and Standard Model matching assertions, so the audited theorem closes as standard finite probability geometry.
 - **auditor confidence:** high
-
-### `sigma_hier_uniqueness_theorem_note_2026-04-19`
-
-- **Note:** [`SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md`](../../docs/SIGMA_HIER_UNIQUENESS_THEOREM_NOTE_2026-04-19.md)
-- **claim_type:** `open_gate`
-- **claim_scope:** At the pinned PMNS chamber point (m_*, delta_*, q_+*)=(0.657061, 0.933806, 0.715042), the S3 hierarchy pairing sigma=(2,1,0) is the unique permutation satisfying the runner's NuFit 5.3 NO magnitude windows and the imposed sin(delta_CP)<0 comparator, with chamber-wide uniqueness and derivation of the pin/A-BCC out of scope.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop-20260708`  (codex-current; independence=weak)
-- **load-bearing step:** The theorem selects sigma=(2,1,0) by combining all-nine PMNS magnitude-window passes at the pinned chamber point with the external sin(delta_CP)<0 preference; the runner hard-codes the pinned point, NuFit windows, and CP-sign comparator and verifies PASS=24 FAIL=0 for that screen.  _(class `D`)_
-- **chain closes:** False — The finite S3 screen closes only after the pinned PMNS chamber point, A-BCC/physical-sheet convention, NuFit magnitude windows, and T2K/NOvA CP-sign comparator are supplied; those load-bearing authorities are not carried as retained direct dependencies by this row.
-- **rationale:** Issue: the row's claimed observational uniqueness rests on supplied external comparator windows and a supplied pinned PMNS chamber/A-BCC setup, while the direct ledger dependency is only a meta PMNS packet and does not retain those load-bearing authorities. Why this blocks: the runner verifies the arithmetic table for the supplied pin and comparator, but a hostile auditor can reject retained/open-gate closure because the pin, physical-sheet choice, and experimental CP-preference gate are not independently ratified direct inputs to this claim. Repair target: add or audit direct dependency edges for the pinned PMNS map/chamber authority, the A-BCC or physical-sheet gate, and the exact external NuFit/T2K/NOvA comparator authority used by the runner, or narrow the row to a pure computational table with those inputs admitted. Claim boundary until fixed: a bounded finite pinned-point replay shows that, under the supplied windows and sin(delta_CP)<0 filter, sigma=(2,1,0) is the unique S3 permutation in the runner; no framework derivation, chamber-wide uniqueness, or retained observational open-gate closure is established.
 
 ### `sign_portability_invariant_family_second_grown_derivation_theorem_note_2026-05-09`
 

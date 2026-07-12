@@ -572,3 +572,6 @@ Audit validation seeds one `bounded_theorem` / `unaudited` row with exactly
 three dependencies and matching source hash `c5c187bf...`; strict lint has no
 errors, vocabulary lint has zero violations, and generated audit/status
 surfaces are stripped. No axiom-update stop is triggered.
+
+Delivery: stacked PR #5286 is open on Block16. Independent audit remains
+authoritative.

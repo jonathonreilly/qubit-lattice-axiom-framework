@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 368 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2773 |
+| unaudited | 2772 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 54 |
+| ~~audited_conditional~~ | 55 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 481 |
-| `audited_conditional` | 54 |
+| `audited_conditional` | 55 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3123 |
+| `unaudited` | 3122 |
 
 | claim_type | count |
 |---|---:|
@@ -640,6 +640,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `coupled_field_generated_family_probe_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `d3_landau_peierls_single_band_normalization_bounded_theorem_note_2026-06-18` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -2697,6 +2698,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner constructs each finite state, computes the determinant phase increments, reconstructs and factors the Laurent determinant, and independently evaluates both the measured tails and scalar-form residuals. These computations establish the stated finite-fixture refutation and ordering.
 - **rationale:** The source is not a printout-only matcher: it constructs the Hamiltonian and state projectors, evaluates determinant phases, validates the Laurent reconstruction on held-out angles, factors the roots, and computes harmonic weights, residuals, and orderings. Hard-coded landed values and expected orderings serve as cross-check anchors, while the scalar-form refutation is independently recomputed from the finite state fixtures. The verdict is limited to the supplied L=3 K3-K6 evaluations and makes no all-L or universal scalar-invariant claim.
 - **auditor confidence:** high
+
+### `det_holonomy_trivial_on_hermitian_positive_circulant_edge_content_bounded_note_2026-06-12`
+
+- **Note:** [`DET_HOLONOMY_TRIVIAL_ON_HERMITIAN_POSITIVE_CIRCULANT_EDGE_CONTENT_BOUNDED_NOTE_2026-06-12.md`](../../docs/DET_HOLONOMY_TRIVIAL_ON_HERMITIAN_POSITIVE_CIRCULANT_EDGE_CONTENT_BOUNDED_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** For positive-definite Hermitian edge content, including the supplied circulant family with a > 2B > 0, every polar link is identity and hence every cycle holonomy and its determinant phase are trivial; no generic non-Hermitian, sign-sector, or R-eta conclusion is audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00397-det_holonomy_trivial_on_herm`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For positive-definite Hermitian P, |P|=(P^2)^(1/2)=P, so its polar unitary is U=P|P|^-1=I.  _(class `A`)_
+- **chain closes:** False — The algebraic Hermitian-positive identity closes, but the mandatory no-go-discipline gate does not: the note deliberately leaves the non-Hermitian, sign-sector, generic induced-link, and R-eta routes open or untested.
+- **rationale:** The runner genuinely computes the polar identity, positive circulant witnesses, holonomy phase, harmonic/K-parity projections, and negative controls; it does not hard-code a target physical value. The scoped Hermitian-positive algebra is sound, and the accepted minimal-axiom authority supplies no hidden load-bearing input. However, an audited-clean result is barred because the required no-go gate contains explicitly open and untested alternative routes, so the source cannot pass the gate as currently framed.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1 fails because the non-Hermitian, off-positivity, generic induced-link, and R-eta routes are OPEN or UNTESTED; therefore the gate lacks five distinct closed mechanism classes.
 
 ### `det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12`
 

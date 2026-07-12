@@ -20,6 +20,10 @@ The next exact route is an interacting two-step gauge-fermion kernel or a
 quantitative mixing/boundary-comparison theorem that removes the subsequence.
 No axiom-update stop is triggered.
 
+Coupled OS interior descent / subsequential transfer stacked review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5290
+is open against the coupled periodic two-seam reflected-Gram head.
+
 Previous branch:
 `physics-loop/record-faithful-dynamics-block17-coupled-circle-os-20260712`.
 The coupled-circle runner reports `PASS=16 FAIL=0`. The full finite-circle

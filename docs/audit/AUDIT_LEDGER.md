@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 391 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2720 |
+| unaudited | 2719 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 74 |
-| ~~audited_failed~~ | 13 |
+| ~~audited_failed~~ | 14 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -48,10 +48,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 508 |
 | `audited_conditional` | 74 |
 | `audited_decoration` | 20 |
-| `audited_failed` | 35 |
+| `audited_failed` | 36 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3070 |
+| `unaudited` | 3069 |
 
 | claim_type | count |
 |---|---:|
@@ -759,6 +759,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `kernel_vs_gravity_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `lattice_3d_dense_refinement_reconciliation_note` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `moonshot_other_testables_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
+| `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `portable_card_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `portable_package_extension_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `session_summary_2026-04-01_topology` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -6303,6 +6304,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The narrowed conclusion follows from standard finite Fraction arithmetic and polynomial/Cauchy-product algebra as exercised by the runner. The note explicitly excludes the physics claims that would require external NSPT or lattice-gauge authorities.
 - **rationale:** The operative claim is narrowed to elementary algebra over rational formal series, not a physical NSPT computation. The runner source performs finite Fraction arithmetic, Cauchy products, a geometric truncation calculation, and boundary-text checks; it does not import contested external constants or rely on a calibrated numerical match. Hard-coded expected values are used only as elementary algebraic test expectations for worked examples, not as imported premises for a broader physical conclusion.
 - **auditor confidence:** high
+
+### `observable_principle_p1_bridge_jones_index_subfactor_narrow_note_2026-05-21`
+
+- **Note:** [`OBSERVABLE_PRINCIPLE_P1_BRIDGE_JONES_INDEX_SUBFACTOR_NARROW_NOTE_2026-05-21.md`](../../docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_JONES_INDEX_SUBFACTOR_NARROW_NOTE_2026-05-21.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Route-scoped negative result limited to fixed register-extension, direct power-family, and cumulant-import constructions; the broader canonical-inclusion no-go remains unproved.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00240-observable_principle_p1_brid`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The identification W[J] = log[A(D+J):A(D)] requires a non-canonical J-dependent inclusion, and admitting that inclusion is asserted to be the P1/Pattern-L selection step.  _(class `A`)_
+- **chain closes:** False — The packet proves that a fixed register-extension index is J-independent and therefore cannot equal generic W[J]. It does not exhaust canonical J-dependent subfactor assignments, and its register-index calculation is internally inconsistent: an m-qubit extension has index 4^m under the runner's own k^2 formula, not 2^m.
+- **rationale:** Issue: T4-T7 use 2^m as the Jones index of an m-qubit register extension, contradicting T1's [M_nk:M_n]=k^2, which gives 4^m, while the decisive noncanonicity conclusions are implemented as unconditional check(True) assertions. Why this blocks: the runner establishes only the J-independence mismatch for one fixed inclusion, not the claimed exhaustion of canonical J-dependent subfactor constructions. Repair target: correct the index and log-index throughout, define the admissible class of D,J-dependent inclusions, and prove an exhaustive no-selection theorem or narrow the claim to the fixed-register route. Claim boundary until fixed: tensor-product index multiplicativity and the fixed-register J-independence obstruction remain valid.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the spectral-subalgebra route is untested and the entropy-inclusion route remains open.
+    - N5: the broad noncanonicity rhetoric exceeds the tested mechanisms.
+    - N7: the strongest spectral-net steelman is unresolved.
+    - Runner consistency: the claimed m-qubit register index 2^m contradicts the runner's own k^2 type-I formula.
 
 ### `ollivier_einstein_proxy_note_2026-04-11`
 

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 6 |
-| unaudited | 2805 |
+| unaudited | 2804 |
 | audit_in_progress | 24 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 43 |
+| ~~audited_conditional~~ | 44 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 24 |
 | `audited_clean` | 460 |
-| `audited_conditional` | 43 |
+| `audited_conditional` | 44 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3155 |
+| `unaudited` | 3154 |
 
 | claim_type | count |
 |---|---:|
@@ -640,6 +640,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `wave_3plus1d_promotions_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `weak_coupling_sign_sensitivity_note_2026-04-11` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
@@ -8253,6 +8254,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The supplied runner source genuinely constructs the declared graph instances, evolves attractive, repulsive, and free cases, computes shell TOWARD counts and norms, and the cached stdout reports shell margin >= 10 and norm conserved on 60/60 runs. The note explicitly excludes broader graph-family, coordinate-force, and stable spectral-gap inferences from binding scope.
 - **rationale:** For the narrowed claim, the load-bearing evidence is a bounded finite computation, not a theorem over all admissible irregular graphs. The runner source does not hard-code the retained counts or import them from another note; it computes the graph instances, evolution, shell-force counts, and norm checks directly on the declared surface. The live-stale spectral-gap row and wrong registered runner path are acknowledged as out of scope, so they do not block the narrowed shell-margin/norm finite-surface claim.
 - **auditor confidence:** high
+
+### `weak_coupling_sign_sensitivity_note_2026-04-11`
+
+- **Note:** [`WEAK_COUPLING_SIGN_SENSITIVITY_NOTE_2026-04-11.md`](../../docs/WEAK_COUPLING_SIGN_SENSITIVITY_NOTE_2026-04-11.md)
+- **claim_type:** `open_gate`
+- **claim_scope:** For the supplied runner at G=5 and G=10 on three graph families and five seeds per family, attractive coupling yields w_asym < 1 in 14/15 runs at each G and stronger but non-universal shell-force separation.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00360-weak_coupling_sign_sensitivi`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The weak-coupling regime is the strongest currently known sign-sensitive regime on the irregular graph families.  _(class `C`)_
+- **chain closes:** False — The runner computes the stated bounded G=5 and G=10 statistics, but it does not compare them against the stronger retained operating points needed to establish the load-bearing strongest-currently-known claim. Universal or retained blocker closure also remains explicitly unproved.
+- **rationale:** The source genuinely instantiates graph families, evolves the parity-coupled system, and computes widths, spectral gaps, norms, and shell-force counts without hard-coding the reported outputs. Its stdout supports the exact 14/15 and mean-effect summaries, including the disclosed counterexamples. However, only G=5 and G=10 are run, so the comparative claim that this is the strongest currently known regime relative to higher retained operating points is not established by the restricted packet, and the note itself leaves the retained directional-observable gate open.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1 contains OPEN and UNTESTED routes for universality, family expansion, retained semantics, and cross-regime comparison.
+    - N5 finds that the strongest-currently-known language was not tested against the stronger retained operating points.
+    - The mandatory clean no-go-discipline standard is therefore unmet.
 
 ### `wide_lattice_h2t_distance_law_note`
 

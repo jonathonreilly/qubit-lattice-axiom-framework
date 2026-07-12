@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 402 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2684 |
+| unaudited | 2683 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 83 |
+| ~~audited_conditional~~ | 84 |
 | ~~audited_failed~~ | 20 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 528 |
-| `audited_conditional` | 83 |
+| `audited_conditional` | 84 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3034 |
+| `unaudited` | 3033 |
 
 | claim_type | count |
 |---|---:|
@@ -685,6 +685,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `charged_lepton_two_higgs_canonical_reduction_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `conditional_law_prefix_ladder_no_finite_k_exhaustion_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `correlator_cycle_phases_readback_blind_or_state_contingent_bounded_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -2431,6 +2432,26 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N1: eight distinct positive closure routes remain OPEN.
     - N3: the canonical transfer reconstruction, physical correlator bridge, and positive gap remain unsupported inputs.
     - N5: spatial, thermodynamic-limit, continuum, and gap-producing resolutions were not tested.
+
+### `cluster_decomposition_spatial_slab_bridge_theorem_note_2026-05-17`
+
+- **Note:** [`CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md`](../../docs/CLUSTER_DECOMPOSITION_SPATIAL_SLAB_BRIDGE_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Conditional finite-dimensional and compact positive-self-adjoint bridge H1+H2 ⇒ (S.7), and (S.8) when the thermal operator is trace-class; the finite-Λ pure-Wilson composition is not closed by the supplied one-hop authority.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00281-cluster_decomposition_spatia`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The spectral expansion is bounded by Cauchy–Schwarz as |Σ_{k≥1}(λ_k/M_x)^d⟨0_x|A_p|k⟩⟨k|B_q|0_x⟩| ≤ exp(-dΔ_x)‖A_p‖‖B_q‖.  _(class `A`)_
+- **chain closes:** False — The algebraic implication closes under the stated positive-self-adjoint hypotheses. The claimed pure-Wilson composition does not: its one-hop authority establishes a trace-class positivity-improving compact operator but does not establish the positive self-adjoint/Hermitian property required by the bridge.
+- **rationale:** The spectral, Cauchy–Schwarz, and trace-distance arguments are correct on their stated finite-dimensional and compact positive-self-adjoint surfaces, and the runner performs genuine finite-matrix checks rather than hard-coding a physical gap. However, the runner assumes H1/H2, and the cited axis-permutation authority's theorem states only trace-class positivity-improving compactness, not positive self-adjointness or Hermiticity. Consequently the abstract conditional bridge is supported, but the asserted finite-Λ pure-Wilson corollary is not closed by the restricted packet.
+- **open / conditional deps cited:**
+  - `CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md`
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 contains the open pure-Wilson positive-self-adjointness route.
+    - N2 retains an unresolved pure-Wilson operator-property wall.
+    - N3 identifies an unsupported Hermitian/self-adjoint identification.
 
 ### `color_composition_rule_matter_bilinear_polar_transport_conditional_bounded_theorem_note_2026-07-06`
 

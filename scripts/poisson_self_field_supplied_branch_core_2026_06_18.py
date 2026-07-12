@@ -10,12 +10,17 @@ from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 1800
 
-import importlib.util
 import inspect
 import math
+import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+
+from scripts import poisson_self_field as _poisson_self_field  # noqa: E402
+
 PARENT_RUNNER = REPO_ROOT / "scripts" / "poisson_self_field.py"
 PARENT_NOTE = REPO_ROOT / "docs" / "POISSON_SELF_FIELD_NOTE.md"
 CORE_NOTE = (
@@ -26,12 +31,7 @@ CORE_NOTE = (
 
 
 def load_parent():
-    spec = importlib.util.spec_from_file_location("poisson_self_field", PARENT_RUNNER)
-    if spec is None or spec.loader is None:
-        raise RuntimeError(f"cannot import {PARENT_RUNNER}")
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module
+    return _poisson_self_field
 
 
 class Score:

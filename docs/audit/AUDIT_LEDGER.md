@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 6 |
-| unaudited | 2806 |
+| unaudited | 2805 |
 | audit_in_progress | 24 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 42 |
+| ~~audited_conditional~~ | 43 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 24 |
 | `audited_clean` | 460 |
-| `audited_conditional` | 42 |
+| `audited_conditional` | 43 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3156 |
+| `unaudited` | 3155 |
 
 | claim_type | count |
 |---|---:|
@@ -639,6 +639,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `universal_gr_block_normalization_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `wave_3plus1d_promotions_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
@@ -7898,6 +7899,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source contains a first-principles replay path that instantiates the stated lattice, field, propagator, action, kernel, and detector readout, and the registered verifier checks a SHA-pinned frozen replay log while recomputing the peak and log-log tail fits from parsed rows. The note’s conclusion is explicitly bounded to this finite replay window and does not claim asymptotic or dimensional universality.
 - **rationale:** The load-bearing numerical result is not a definition, renaming, or external comparator match; it is a bounded framework computation with a frozen-row verifier that recomputes the contested peak and tail regressions rather than merely accepting prose. The helper source supplies the actual lattice construction, valley-linear propagation, h^2/L^2 weighting, field source, slit setup, and log-log fit used by the parent runner. The note scopes the result conservatively as a finite-lattice replay and explicitly excludes universal continuum or all-dimension claims.
 - **auditor confidence:** high
+
+### `wave_3plus1d_promotions_note`
+
+- **Note:** [`WAVE_3PLUS1D_PROMOTIONS_NOTE.md`](../../docs/WAVE_3PLUS1D_PROMOTIONS_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite (3+1)D wave-operator result: delta-pulse first arrival is first_dt = r for r=2..8, and the moving-source history differs from the stitched late-time-frozen c=1 comparator by 30.44%, 26.47%, and 30.72% on Fam1/Fam2/Fam3; a true c->infinity comparator, framework derivation of the physical operator, and combined Lane-8 closure are excluded.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00359-wave_3plus1d_promotions_note`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The runner computes first_dt = r for r = 2..8 and three 26–31% gaps between the moving-source wave history and the layerwise stitched late-time-frozen comparator.  _(class `C`)_
+- **chain closes:** False — The finite tables are genuinely computed, but the stitched NL=30 frozen-wave slice is not shown to equal a layerwise elliptic or c->infinity field. The physical-operator identification and Lane-8 radiation result are also not derived or supplied in this packet.
+- **rationale:** Issue: the runner computes the displayed finite tables but its I branch remains a late-time slice of a finite-c wave solve, not a derived instantaneous c->infinity solution. Why this blocks: the literal retardation claim, physical-operator language, and combined three-signature closure do not follow from the restricted packet. Repair target: implement a layerwise elliptic/Poisson comparator or prove a runner-asserted convergence bound, supply the operator bridge, and audit Lane 8 separately. Claim boundary until fixed: retain only the strict finite lightcone result and the three-family gap against the specifically defined frozen-wave comparator.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 contains two OPEN repair routes and one UNTESTED combined-lane route.
+    - N5 identifies untested elliptic, convergence, and Lane-8 resolutions.
+    - The positive source does not provide the five-closed-route basis required for a no-go-discipline PASS.
 
 ### `wave_amplification_near_horizon_note`
 

@@ -3970,6 +3970,9 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "No symmetry rule fixes points in the residual orbit.",
             "No numerical route closed loops in the sampled sector.",
             "Zero candidate operators determine the missing readout.",
+            "This appendix does not determine the clock, given only the accepted premises.",
+            "This companion cannot recover the selector, when restricted to the four axioms.",
+            "This document cannot supply a scale \u2014 while operating within the baseline postulates.",
         ):
             with self.subTest(body=body):
                 self.assertTrue(
@@ -4152,6 +4155,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "7 - Not claimed: cannot recover the external benchmark.",
             "17) Out of scope: cannot recover the observed benchmark.",
             "This audit appendix does not derive the external calibration; the parent row supplies it.",
+            "This appendix does not determine the clock, because the parent row carries it.",
+            "This document cannot supply the scale, while the source theorem supplies it.",
         ):
             with self.subTest(body=body):
                 self.assertFalse(

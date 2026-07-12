@@ -539,7 +539,12 @@ def _scrub_local_scope_exclusions(text: str) -> str:
 # axioms do derive it") is routing attribution and stays out of the
 # veto span.
 NEGATIVE_CONTINUATION_RE = re.compile(
-    r"\s*(?:[\u2014-]\s*)?(?:from|under|using|given|within)\b"
+    # Prepositional sources, subordinate qualifiers, and appended negative
+    # clauses extend the claim; the authority veto then judges the full
+    # span. Routing attributions ("because the parent row carries it")
+    # extend the span too and stay exempt because they name no authority.
+    r"\s*[,\u2014-]?\s*(?:from|under|using|given|within|when|while|"
+    r"because|once|unless|if|provided|operating|restricted)\b"
     r"|\s*,?\s*even\b"
     r"|\s*,?\s*nor\b"
     r"|\s*[,;]\s*(?:and\s+)?no(?:t|r)?\b",

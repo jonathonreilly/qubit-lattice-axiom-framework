@@ -60,7 +60,14 @@ python3 docs/audit/scripts/compute_load_bearing.py
 echo "==> 6/16 compute_effective_status.py"
 python3 docs/audit/scripts/compute_effective_status.py
 
-echo "==> 7/16 invalidate_stale_audits.py"
+echo "==> 7/16 invalidate_stale_audits.py + restore loop"
+# Invalidation and restoration run to a JOINT fixed point. Restoration can
+# expose masked dependency verdicts when a chain recovers (a dep whose
+# effective status showed unaudited can re-expose a lower-ranked terminal
+# verdict), which the next invalidation pass then applies with an accurate
+# fresh reason; the restore selector's before-tier comparison cannot pick
+# such a row up again, so the loop is monotone and terminates. Weakened
+# chains recover one dependency hop per pass inside the same run.
 for attempt in 1 2 3 4 5 6 7 8 9 10; do
   python3 docs/audit/scripts/invalidate_stale_audits.py
   invalidated="$(
@@ -70,15 +77,20 @@ with open("docs/audit/data/audit_ledger.json", encoding="utf-8") as f:
     print(len(json.load(f).get("last_invalidations", [])))
 PY
   )"
-  if [[ "${invalidated}" == "0" ]]; then
+  restored="$(
+    python3 docs/audit/scripts/restore_overaggressively_invalidated_audits.py \
+      | sed -n 's/^Restored \([0-9][0-9]*\) audits.*/\1/p'
+  )"
+  restored="${restored:-0}"
+  if [[ "${invalidated}" == "0" && "${restored}" == "0" ]]; then
     break
   fi
-  echo "==> 7.${attempt}/16 compute_effective_status.py post-invalidation (${invalidated} invalidated)"
+  echo "==> 7.${attempt}/16 compute_effective_status.py post-invalidation/restore (${invalidated} invalidated, ${restored} restored)"
   python3 docs/audit/scripts/compute_effective_status.py
 done
 
-if [[ "${invalidated}" != "0" ]]; then
-  echo "invalidate_stale_audits.py did not reach a fixed point after 10 passes" >&2
+if [[ "${invalidated}" != "0" || "${restored}" != "0" ]]; then
+  echo "invalidate/restore did not reach a fixed point after 10 passes (joint invalidation/restoration)" >&2
   exit 1
 fi
 

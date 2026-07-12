@@ -24,6 +24,11 @@ https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5202
 is open and mergeable against the minimal-dilation branch; its audit-lane
 workflow was running at the delivery checkpoint.
 
+Intermittent finite-carrier instrument normal-form review PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5205
+is open and mergeable against the effect-selection branch; its audit-lane
+workflow was running at the delivery checkpoint.
+
 ## Central thesis
 
 The next move is not another sector Hamiltonian or continuum fit. It is to make

@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 90 |
-| **retained_no_go** | 30 |
+| **retained_no_go** | 31 |
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2795 |
+| unaudited | 2794 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 467 |
+| `audited_clean` | 468 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3145 |
+| `unaudited` | 3144 |
 
 | claim_type | count |
 |---|---:|
@@ -140,6 +140,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
+| `acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -792,6 +793,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For every complex n-by-n matrix K, det_R R(K)=det_C(K)det_C(conjugate(K))=|det_C(K)|^2, while the stated left-Berezin ordering gives integral exp(-chibar K chi)=det_C(K).  _(class `A`)_
 - **chain closes:** True — The block identity S R(K)=diag(K,conjugate(K)) S proves the realification formula without invertibility, and expansion of -chibar K chi in the displayed variable order yields the determinant permutation signs. Independent exact integer determinants and an unrelated tuple-based left-derivative calculation confirmed both formula families, including odd-dimensional signs.
 - **rationale:** The theorem is exact algebra and closes without cited dependencies, hidden physical premises, normalization imports, or observable identifications. The runner's 18 checks agree with independent block-algebra, exact determinant, and explicit left-Berezin derivative checks; the differential order and exponent sign produce det(K) for both odd and even dimensions. Residual risk is limited to downstream misuse: the audited scope deliberately supplies no charged-lepton carrier, measure, selector, or occupancy bridge.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04`
+
+- **Note:** [`ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite-carrier countermodel theorem: the four axioms and pointwise realized-state evaluation do not entail whether an explicitly granted auxiliary complex determinant readout uses F_C=log|det_C| or the realified raw normalization F_R=2F_C; no physical AC(i) matter-action or occupancy-grain discharge is claimed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-audit-loop-gpt-5.6-sol-xhigh-reaudit-aci-nogo-graph-20260711`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The record-level construction shows that I_C(C)=N(C)log(2) and I_R(C)=2N(C)log(2) are distinct scalar readouts on the same unchanged four-axiom record model, so the axiom surface does not select the raw complex-versus-realified determinant power.  _(class `A`)_
+- **chain closes:** True — A manual check independent of the runner complexifies the realification to diag(A, conjugate(A)), giving det_R R(A)=det_C(A) conjugate(det_C(A))=|det_C(A)|^2; block determinants multiply and exp(t) scaling gives degrees n and 2n. The two cardinality readouts then satisfy the same accepted Record clauses on one unchanged model, establishing the stated non-entailment.
+- **rationale:** The same-model counterexample closes: the four axioms allow both content-only, empty-zero, finitely additive readouts, while the realized-state primitive supplies no selector or normalization. Independently of SymPy, realification is complex-similar to diag(A, conjugate(A)), proving the squared-modulus identity and the factor-two scaling exactly. This ratifies only raw determinant-normalization non-entailment on the granted finite carrier; the physical AC(i) action/occupancy target remains outside scope and non-load-bearing.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

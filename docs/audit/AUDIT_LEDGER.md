@@ -18,12 +18,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | effective_status | count |
 |---|---:|
-| **retained** | 94 |
+| **retained** | 95 |
 | **retained_no_go** | 35 |
 | **retained_bounded** | 374 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2757 |
+| unaudited | 2756 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 488 |
+| `audited_clean` | 489 |
 | `audited_conditional` | 59 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3107 |
+| `unaudited` | 3106 |
 
 | claim_type | count |
 |---|---:|
@@ -290,6 +290,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `epsstar_coefficient_richardson_moff0_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `epsstar_curve_pt_boundary_quadrature_collapse_bounded_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `eta_ud2_fixed_token_square_homology_certificate_2026-06-06` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.6 | C | - |
 | `evolving_network_prototype_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `evolving_network_prototype_v2_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `evolving_network_prototype_v4_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -3506,6 +3507,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - **gate failures:**
     - N1 leaves full finite-T differentiation OPEN and fixed-kernel regularization/limit stability UNTESTED.
     - N2-N5 do not establish the causal-exclusion wall behind the statement that every correct derivation must retain explicit kernel T-dependence.
+
+### `eta_ud2_fixed_token_square_homology_certificate_2026-06-06`
+
+- **Note:** [`ETA_UD2_FIXED_TOKEN_SQUARE_HOMOLOGY_CERTIFICATE_2026-06-06.md`](../../docs/ETA_UD2_FIXED_TOKEN_SQUARE_HOMOLOGY_CERTIFICATE_2026-06-06.md)
+- **claim_type:** `positive_theorem`
+- **claim_scope:** In the explicit six-vertex, six-edge subgraph of Z^3 consisting of a unit square and two-edge parking tail, the fixed-token square loop is nonzero in H_1(UD_2(G); GF(2)) and therefore is not null-homotopic; no conclusion about its image in full UD_2(Z^3) or the closed-PR detour swaps is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00414-eta_ud2_fixed_token_square_h`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The fixed-token square cycle is not in the image of boundary_2, so it represents a nonzero mod-2 homology class and cannot be null-homotopic in the explicit finite UD_2(G) model.  _(class `C`)_
+- **chain closes:** True — The runner constructs the specified graph and unordered configuration complex, computes both cellular boundary maps over GF(2), and finds that adjoining the loop increases rank(im boundary_2) from 8 to 9. The standard implication that null-homotopic loops are null-homologous then closes the finite-model claim.
+- **rationale:** The load-bearing rank test is genuinely computed from enumerated UD_2 cells and cellular boundaries; the runner neither imports nor hard-codes the contested homology conclusion. The reported cell counts, ranks, cycle condition, and augmented-rank obstruction are mutually consistent. The source confines the theorem to the explicit finite model and expressly leaves the ambient UD_2(Z^3) and detour-swap questions open.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `evolving_network_prototype_note`
 

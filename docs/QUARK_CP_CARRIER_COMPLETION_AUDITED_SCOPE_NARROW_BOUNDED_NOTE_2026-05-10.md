@@ -5,11 +5,15 @@
 **Status authority:** source-note proposal only; audit verdict and
 effective status are set by the independent audit lane.
 **Primary runner:** [`scripts/frontier_quark_cp_carrier_completion.py`](../scripts/frontier_quark_cp_carrier_completion.py)
+**Current claim scope:** historical numerical existence of a CKM/J comparator
+match on the stated complex-coordinate ansatz, together with an explicit
+firewall that the optimized diagonal labels are not the completed matrices'
+physical singular-value mass ratios.
 
 ## Why this note exists
 
-The 2026-05-05 audit pass on the parent
-[`QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md`](QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md)
+The 2026-05-05 audit pass on the historical revision of
+`QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md`
 returned `audited_numerical_match` with the explicit verdict:
 
 > The load-bearing step is an optimized numerical completion using
@@ -27,16 +31,17 @@ with re-audit guidance:
 > solve_magnitude_surface implementation if the audit scope is
 > expanded beyond this restricted packet.
 
-This note narrows the parent's audited scope into the explicit
-existence-of-fit content that the runner does close, separated from
-the absence of a retained derivation of the carrier coefficients.
+This note now narrows the historical fit to the explicit CKM/J and diagonal-
+label content that the runner actually computes, separated from both the
+physical singular-spectrum mismatch and the absence of a retained derivation
+of the carrier coefficients.
 
 This is a bounded scope-narrowing companion of an existing audited
 note. It does not add a new axiom, does not add a new repo-wide theory
 class, does not propose a status promotion, and does not modify the
 parent note's audit ledger row.
 
-## Audited verdict (verbatim, for clarity)
+## Historical audit context (verbatim, not current authority)
 
 - `audit_status: audited_numerical_match`
 - `audit_date: 2026-05-05`
@@ -46,30 +51,30 @@ parent note's audit ledger row.
   m_c/m_t, |V_us|, |V_cb|, |V_ub|, and J while keeping
   arg det(M_u M_d) numerically zero."
 
-The parent note's `Safe statement`, `What closes`, and `What does not
-close` sections already record the same boundary in source form.
-This narrowing companion isolates the **within-scope existence
-content** that the audit verdict accepts as a numerical match.
+The 2026-07-12 source correction to the parent found a load-bearing readout
+error not tested in that historical audit: the optimizer compared its diagonal
+input labels with mass-ratio targets but never compared the completed matrices'
+singular-value ratios. Independent re-audit owns the consequence of that
+correction. The table below states only the current source/runner boundary.
 
-## Narrow within-scope content (what the audited row does close)
+## Narrow current source/runner content
 
 Inside the audited bounded-existence scope, the runner verifies the
 following structural facts. Each is independent of any claim that the
 solved carriers `xi_u`, `xi_d` are derived from framework primitives:
 
-| Audited content | Status |
+| Current source/runner content | Source-side boundary |
 |---|---|
-| The minimal Schur-NNI carrier closes the quark magnitudes while failing the CKM CP area on its own (no-go on minimal carrier) | audited PASS (parent runner) |
-| Phase-only relaxation on the minimal Schur-NNI carrier does not repair J | audited PASS |
-| Adding one determinant-neutral complex 1-3 carrier `xi_u`, `xi_d` per sector admits a numerical fit of `(m_u/m_c, m_c/m_t, \|V_us\|, \|V_cb\|, \|V_ub\|, J)` to ~1% or better at the comparator surface | audited PASS (G-class numerical match) |
-| `arg det(M_u M_d) = 0 mod 2pi` is maintained numerically by the fit (1e-16) | audited PASS |
-| The completed surface lifts `J` by more than a factor of 6 over the Schur-only anchor | audited PASS |
-| The fitted carriers `xi_u`, `xi_d` are non-perturbatively large relative to the Schur 1-3 base term: `|xi_u|/c13_u^{base} ~ 102`, `|xi_d|/c13_d^{base} ~ 6.6` | audited PASS (recorded as caveat, not closure) |
+| The minimal Schur-NNI anchor under-produces the CKM CP area | historical numerical control |
+| The optimizer places its two diagonal labels near the imported up-sector mass-ratio comparators | diagonal-parameter fit only; not a physical mass check |
+| The completed up-sector singular-value ratios are about `5.36e-3` and `4.28e-3`, not the imported `1.70e-3` and `7.38e-3` comparators | current runner PASS; physical-spectrum firewall |
+| The two complex coordinates admit a numerical match of `(\|V_us\|, \|V_cb\|, \|V_ub\|, J)` on the diagonal-label ansatz | bounded numerical match |
+| `arg det(M_u M_d) = 0 mod 2pi` is maintained numerically by the Hermitian fit | matrix-arithmetic check, not a carrier-phase or strong-CP derivation |
+| The fitted coordinates are non-perturbatively large relative to the Schur `1-3` base term | bounded caveat |
 
-The within-scope conclusion is an existence statement: the CKM atlas
-and quark mass-ratio target surface admit a determinant-neutral
-extended-carrier solution. This is a non-trivial computational
-existence result, but it is **not** a derivation of the carriers from
+The within-scope conclusion is an existence statement only for the CKM/J
+comparator match on a diagonal-label ansatz. It is not a simultaneous physical
+quark-mass plus CKM completion and is not a derivation of the coordinates from
 framework primitives.
 
 ## What the narrow scope does **not** close
@@ -80,6 +85,7 @@ one place for re-audit traceability:
 
 - a retained derivation of `xi_u`, `xi_d` from framework primitives
   (the parent flags these as numerical bounded carrier coefficients);
+- a physical mass-ratio match using the completed matrices' singular values;
 - a perturbatively small correction interpretation: the fitted
   carriers dominate the Schur 1-3 base term, especially in the up
   sector, so this is not a small retained correction;
@@ -87,10 +93,10 @@ one place for re-audit traceability:
   minimal carrier remains intact;
 - promotion of the row from `bounded` to `retained`.
 
-A complementary stronger reduced-closure attempt is recorded in
-[`QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md`](QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md);
-that note continues to live as a separate bounded surface and is
-**not** load-bearing for this narrowing companion.
+A complementary reduced-coordinate attempt is recorded in
+`QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md`. That name is
+non-load-bearing context and is intentionally not a citation-graph dependency
+of this narrowing companion.
 
 ## What would close the open dependency (Path A future work)
 
@@ -98,30 +104,32 @@ Promoting the parent row from `audited_numerical_match` to a retained
 theorem-grade derivation would require, per the audit verdict's
 repair target:
 
-1. an independent retained theorem fixing `xi_u` and `xi_d` from
+1. a corrected mass readout that evaluates the completed matrices' singular
+   values rather than their diagonal input labels;
+2. an independent retained theorem fixing `xi_u` and `xi_d` from
    framework primitives, including their carrier normalization,
    readout convention, and determinant-neutral constraint;
-2. an updated runner that **tests** the derived carrier point
+3. an updated runner that **tests** the derived carrier point
    (rejecting if it deviates from the derived value) rather than
    **fitting** to the comparator surface;
-3. an explicit retained statement of why the determinant-neutral
+4. an explicit retained statement of why the determinant-neutral
    1-3 carrier is the minimal admissible CP-carrier slot beyond the
    Schur-NNI base.
 
-Until at least (1) is supplied, the row remains a bounded numerical
-existence-of-fit support note at the audited scope.
+Until these are supplied, this row is bounded numerical CKM/J fit context with
+an explicit physical-spectrum failure, not a full-quark existence result.
 
-## Dependencies
+## Non-dependency context
 
-- [`QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md`](QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md)
-  for the parent audited support note.
-- [`QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md`](QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md)
-  for the complementary reduced-closure attempt (not load-bearing
-  here).
+- `QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md` is the historically related
+  row and now carries the exact route obstruction.
+- `QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md` is a separate
+  reduced-coordinate attempt.
 
-These are imported authorities for a bounded scope-narrowing companion
-note. The row remains unaudited until the independent audit lane
-reviews this companion, its dependencies, and the runner.
+Neither name is a proof authority for this companion. The bounded numerical
+content is exercised directly by the historical optimizer runner, and the row
+remains unaudited until the independent audit lane reviews the changed source
+and runner.
 
 ## Boundaries
 
@@ -130,6 +138,7 @@ This companion note does **not**:
 - modify the parent note's audit-ledger row;
 - promote the parent's `audit_status` from `audited_numerical_match`;
 - derive `xi_u` or `xi_d` from framework primitives;
+- claim that the optimized diagonal labels equal physical quark masses;
 - claim a small-correction interpretation of the fit;
 - change the Schur-NNI minimal-surface CP no-go;
 - extend the audited scope beyond what the parent already declares.
@@ -142,25 +151,23 @@ Run:
 PYTHONPATH=scripts python3 scripts/frontier_quark_cp_carrier_completion.py
 ```
 
-Expected (unchanged from parent):
+Expected after the physical-spectrum firewall correction:
 
 ```text
 TOTAL: PASS=11, FAIL=0
 ```
 
-The runner is the same one cited by the parent note. This narrowing
-companion does not introduce a new runner because the audited within-
-scope existence content is already exercised. The new content is the
-explicit scope-narrowing recording of what the audit verdict accepts
-as a within-scope numerical existence match versus what remains open
-as a derivation gap.
+The runner preserves the historical optimizer and public helper API used by
+the small-correction companion, but its first two completion checks now verify
+the singular-spectrum mismatch instead of mislabeling diagonal parameters as
+physical mass ratios. The separate exact obstruction runner is cited by the
+revised parent note.
 
 ```yaml
 claim_id: quark_cp_carrier_completion_audited_scope_narrow_bounded_note_2026-05-10
 note_path: docs/QUARK_CP_CARRIER_COMPLETION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md
 runner_path: scripts/frontier_quark_cp_carrier_completion.py
 proposed_claim_type: bounded_theorem
-deps:
-  - quark_cp_carrier_completion_note_2026-04-18
+deps: []
 audit_authority: independent audit lane only
 ```

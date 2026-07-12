@@ -1,0 +1,64 @@
+slug: quark-cp-carrier-derivation-20260712
+mode: run
+target: best-honest-status
+science_block: 1
+branch: physics-loop/quark-cp-carrier-derivation-block01-20260712
+base_branch: main
+started_at_utc: "2026-07-12T06:02:32Z"
+last_checkpoint_utc: "2026-07-12T06:42:00Z"
+checkpoint_interval_minutes: 30
+current_status: block_complete_review_pass
+actual_current_surface_status: no-go
+target_claim_type: no_go
+active_lane: quark CP carrier completion
+active_route: physical-spectrum and weak-basis identifiability obstruction
+hard_residual: derive xi_u and xi_d without fitted targets or an unproved basis/readout selector
+a_min:
+  - Lattice
+  - Qubit
+  - Admissibility
+  - Record
+approved_primitives:
+  - scale_reference_primitive
+  - kinetic_isotropy_primitive
+  - realized_state_primitive
+forbidden_imports:
+  - observed quark masses as proof inputs
+  - observed CKM magnitudes or J as proof inputs
+  - fitted carrier coefficients as derived outputs
+  - an unregistered weak-basis or texture selector
+files_touched:
+  - docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md
+  - docs/QUARK_CP_CARRIER_COMPLETION_AUDITED_SCOPE_NARROW_BOUNDED_NOTE_2026-05-10.md
+  - docs/QUARK_CP_CARRIER_SLOT_MINIMALITY_THEOREM_NOTE_2026-06-17.md
+  - docs/QUARK_MASS_RATIO_FULL_SOLVE_NOTE_2026-04-18.md
+  - docs/QUARK_MASS_RATIO_NOTE_2026-04-18.md
+  - docs/QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-04-19.md
+  - docs/QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-05-10.md
+  - docs/QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md
+  - scripts/frontier_quark_cp_carrier_completion.py
+  - scripts/frontier_quark_cp_carrier_spectrum_basis_obstruction.py
+  - scripts/frontier_quark_projector_parameter_audit_terminal_synthesis.py
+  - logs/2026-07-12-quark-cp-carrier-spectrum-basis-obstruction.txt
+  - .claude/science/physics-loops/quark-cp-carrier-derivation-20260712/
+open_imports:
+  - physical weak-basis and texture selector for the Schur-NNI coordinates
+  - physical mass-spectrum readout replacing diagonal parameter labels
+  - framework-derived quark mass and CKM target surface
+no_go_routes:
+  - reinterpret diagonal matrix entries as physical singular masses after adding nonzero off-diagonal carriers
+  - interpret xi_u and xi_d as weak-basis-invariant observables without a basis selector
+trace_gate_class: negative_route_pruning
+review_findings:
+  - iteration_1_exact_ratio_certificate_required_fixed
+  - iteration_1_basis_orbit_scope_narrowing_fixed
+  - iteration_1_positive_dependent_semantics_fixed
+  - iteration_1_historical_runner_overclaim_fixed
+  - iteration_1_loop_pack_and_log_hygiene_fixed
+  - iteration_2_code_math_pass
+  - iteration_2_physics_no_go_pass
+  - iteration_2_imports_governance_pass
+lock_status: local Codex cooperative lock acquired through scripts/automation_lock.py
+pr_status: not_opened
+next_exact_action: push the reviewed branch and open one unmerged review PR
+stop_condition: review-loop pass followed by one verified review PR, or an honestly isolated narrower blocker

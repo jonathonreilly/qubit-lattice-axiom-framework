@@ -1,0 +1,79 @@
+==============================================================================
+QUARK CP CARRIER: EXACT SPECTRUM AND BASIS OBSTRUCTION
+==============================================================================
+
+==============================================================================
+PART 1: Exact spectrum, determinant, and real-tree orbit identities
+==============================================================================
+  [PASS] Frobenius/singular-spectrum identity is exact
+  [PASS] off-diagonal excess is exactly 2(x^2+y^2+|z|^2)
+  [PASS] Hermitian determinant formula is exact
+  [PASS] Hermitian determinant has zero symbolic imaginary part
+  [PASS] common 1-3 rotation keeps the 1-2 tree edge real with the stated formula
+  [PASS] common 1-3 rotation keeps the 2-3 tree edge real with the stated formula
+  [PASS] common 1-3 rotation changes the 1-3 coordinate by the stated formula
+  [PASS] d Re(M13')/dtheta at zero equals a-c
+
+==============================================================================
+PART 2: Independent exact rational similarity control
+==============================================================================
+  [PASS] rational 1-3 control is exactly orthogonal
+  [PASS] exact similarity preserves determinant
+  [PASS] exact similarity preserves trace
+  [PASS] exact similarity preserves the characteristic polynomial
+  [PASS] exact similarity preserves tr(M M^dagger)
+
+==============================================================================
+PART 3: Historical fitted point reads diagonal labels, not masses
+==============================================================================
+  [PASS] up matrix is Hermitian  (max delta=0.000e+00)
+  [PASS] down matrix is Hermitian  (max delta=0.000e+00)
+  [PASS] up normalized coordinate reproduces historical xi_u  (max delta=0.000e+00)
+  [PASS] down normalized coordinate reproduces historical xi_d  (max delta=0.000e+00)
+  [PASS] exact rational brackets isolate all three Hermitian eigenvalues  (endpoint signs=[(-1, 1), (1, -1), (-1, 1)])
+  [PASS] exact sigma_u/sigma_c bracket excludes its imported comparator  (bracket=[5.348837209e-03,5.594405594e-03])
+  [PASS] exact sigma_c/sigma_t bracket excludes its imported comparator  (bracket=[4.272908367e-03,4.287138584e-03])
+
+  up diagonal labels: [1.24954567e-05 7.40035600e-03 1.00000000e+00]
+  up singular values: [2.30375220e-05 4.29427910e-03 1.00314161e+00]
+  up singular ratios: [0.0053647  0.00428083]
+  imported comparators: [0.00169678 0.00737672]
+  down singular values (context only): [2.80900716e-04 1.42172042e-02 1.00960990e+00]
+  [PASS] up numerical trace excess matches exact off-diagonal formula  (max delta=1.041e-17)
+  [PASS] up singular ratios are not the optimizer's diagonal ratios
+  [PASS] up singular ratios miss both imported comparators materially
+
+==============================================================================
+PART 4: Common weak-basis orbit preserves observables and changes xi
+==============================================================================
+  [PASS] numeric common rotation is unitary  (max delta=6.139e-20)
+  [PASS] rotated up tree edges remain real  (max delta=0.000e+00)
+  [PASS] rotated down tree edges remain real  (max delta=0.000e+00)
+  [PASS] up singular spectrum is orbit-invariant  (max delta=7.373e-17)
+  [PASS] down singular spectrum is orbit-invariant  (max delta=6.939e-18)
+  [PASS] all CKM moduli are orbit-invariant  (max delta=7.562e-13)
+  [PASS] signed Jarlskog invariant is orbit-invariant  (max delta=1.691e-16)
+  [PASS] up determinant is orbit-invariant  (max delta=1.609e-22)
+  [PASS] down determinant is orbit-invariant  (max delta=4.863e-20)
+
+  theta = 1.000e-03
+  xi_u: (0.340735-0.063203j) -> (0.06211223244648873-0.06717182740475298j)
+  xi_d: (0.078186+0.108371j) -> (0.04940567868222051+0.10863813696551962j)
+  [PASS] xi_u changes on an observable-preserving orbit
+  [PASS] xi_d changes on an observable-preserving orbit
+  [PASS] both historical Hermitian sector determinants are real
+  [PASS] the historical determinant product is positive by a discrete sign pairing
+
+==============================================================================
+PART 5: Honest endpoint
+==============================================================================
+
+  Exact no-go: the current diagonal-mass/fitted-xi route cannot be
+  promoted as a first-principles physical completion.  A positive
+  reopening needs a singular-spectrum readout and a derived joint
+  weak-basis/texture selector (or invariant carrier replacement).
+  No claim is made that every corrected quark-CP completion fails.
+
+==============================================================================
+TOTAL PASS=36 FAIL=0
+==============================================================================

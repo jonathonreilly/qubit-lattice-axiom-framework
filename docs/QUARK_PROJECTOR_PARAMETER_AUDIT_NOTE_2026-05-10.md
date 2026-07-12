@@ -18,6 +18,12 @@ spend cycles attempting to close this leaf.
 **Primary runner:** [`scripts/frontier_quark_projector_parameter_audit_terminal_synthesis.py`](../scripts/frontier_quark_projector_parameter_audit_terminal_synthesis.py)
 **Cached output:** [`logs/runner-cache/frontier_quark_projector_parameter_audit_terminal_synthesis.txt`](../logs/runner-cache/frontier_quark_projector_parameter_audit_terminal_synthesis.txt)
 
+**Historical-supersession notice (2026-07-12):** the carrier-completion row
+has been rewritten as an exact spectrum/basis route obstruction and its old
+optimizer now exposes the physical singular-spectrum mismatch. This meta note
+preserves the earlier audit history only; it is not current evidence for a
+positive free-carrier existence claim and does not depend on the rewritten row.
+
 ## Authority disclaimer
 
 This is a source-note proposal. Pipeline-derived status is generated
@@ -33,7 +39,10 @@ audit verdicts as the authority.
 Throughout this note:
 - **"the leaf"** = [`docs/QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-04-19.md`](QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-04-19.md) — claim_id `quark_projector_parameter_audit_note_2026-04-19`
 - **"the projector ray dep"** = [`docs/QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md`](QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md) — claim_id `quark_projector_ray_phase_completion_note_2026-04-18`
-- **"the carrier-completion dep"** = [`docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md`](QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md) — claim_id `quark_cp_carrier_completion_note_2026-04-18`
+- **"the historical carrier-completion row"** =
+  `docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md` — claim_id
+  `quark_cp_carrier_completion_note_2026-04-18`; current source is not a
+  dependency of this historical synthesis.
 - **"terminal verdict"** = an `audited_*` verdict that is not `audited_clean` and that the audit lane records as terminal (`audited_numerical_match`, `audited_renaming`, `audited_failed`, `audited_decoration`); per [`docs/audit/README.md`](audit/README.md) lines 87-88, terminal non-clean verdicts on active claims block retained propagation.
 - **"definition-as-derivation"** = the audit-lane failure mode named in [`docs/audit/README.md`](audit/README.md) where a symbol is defined via a numerical fit against external comparators and then re-presented as if derived; one of the four failure modes the audit lane was built to detect.
 
@@ -91,8 +100,8 @@ Auditor rationale (verbatim from the recorded `verdict_rationale`):
 > until fixed: Bounded numerical support that such an extended carrier
 > surface can fit the listed targets."
 
-Magnitudes recorded in the carrier-completion note itself
-([`docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md`](QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md) lines 75-80):
+Magnitudes recorded in the historical carrier-completion revision and frozen
+here as audit-history context:
 
 ```
 xi_u = +0.340735 - 0.063203 i
@@ -264,7 +273,8 @@ campaigns and retained-promotion campaigns:
 - Sibling terminal-block synthesis: [`KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md`](KOIDE_BAE_30_PROBE_CAMPAIGN_NOTE_2026-05-09.md)
 - Leaf source note: [`docs/QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-04-19.md`](QUARK_PROJECTOR_PARAMETER_AUDIT_NOTE_2026-04-19.md)
 - Projector-ray dep source note: [`docs/QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md`](QUARK_PROJECTOR_RAY_PHASE_COMPLETION_NOTE_2026-04-18.md)
-- Carrier-completion dep source note: [`docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md`](QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md)
+- Historical carrier-completion row (non-dependency context):
+  `docs/QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md`
 - Audit ledger row data: [`docs/audit/data/audit_ledger.json`](audit/data/audit_ledger.json)
 - Sibling synthesis-template authority: [`docs/AUDIT_BACKLOG_NOTE_2026-05-02.md`](AUDIT_BACKLOG_NOTE_2026-05-02.md)
 

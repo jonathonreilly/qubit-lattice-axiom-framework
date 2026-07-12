@@ -126,9 +126,11 @@ So the current closure target is now much sharper:
 
 ## Relation to the earlier bounded completion
 
-[QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md](./QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md)
-remains valid as a general existence proof using sector-specific complex
-carriers.
+The historical revision of
+`QUARK_CP_CARRIER_COMPLETION_NOTE_2026-04-18.md` supplied the freer comparison
+surface. Its 2026-07-12 revision proves that the old optimizer did not test
+physical singular-value mass ratios and is no longer cited as a general
+existence proof.
 
 This note is stronger because it shows that the same closure can be compressed
 to a much smaller ansatz that is visibly aligned with the exact CKM projector

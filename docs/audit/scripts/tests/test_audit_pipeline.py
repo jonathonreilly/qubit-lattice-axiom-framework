@@ -1137,6 +1137,75 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertFalse(ok)
         self.assertIn("clipped evidence", msg)
 
+    def test_trusted_positive_audit_always_reauthenticates_manifest(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_positive_reauth")
+        led = self.fx.read_ledger()
+        audit = {
+            "claim_id": "test_positive_reauth",
+            "verdict": "audited_conditional",
+            "claim_type": "positive_theorem",
+            "claim_scope": "test scope",
+            "auditor": "reauth-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "cross_family",
+            "load_bearing_step_class": "C",
+            "audit_invocation_id": "d" * 32,
+            "no_go_discipline": None,
+        }
+        manifest = {"docs/TEST.md": {"roles": ["source"], "text": "exact"}}
+        with mock.patch.object(
+            m, "trusted_evidence_manifest", return_value=manifest
+        ), mock.patch.object(
+            m,
+            "trusted_manifest_current_error",
+            return_value="source drifted",
+        ) as reauth:
+            ok, msg = m.apply_one(led, audit)
+        self.assertFalse(ok)
+        self.assertIn("source drifted", msg)
+        reauth.assert_called_once()
+
+    def test_blind_apply_does_not_reuse_stored_negative_claim_type(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row(
+            "test_blind_positive",
+            claim_type="no_go",
+            note_body="Exact positive source identity.\n",
+        )
+        led = self.fx.read_ledger()
+        audit = {
+            "claim_id": "test_blind_positive",
+            "verdict": "audited_conditional",
+            "claim_type": "positive_theorem",
+            "claim_scope": "exact positive source identity",
+            "auditor": "blind-auditor",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "weak",
+            "load_bearing_step_class": "C",
+            "audit_invocation_id": "e" * 32,
+            "no_go_discipline": None,
+        }
+        manifest = {
+            "audit-packet://blind-reaudit-control/test_blind_positive": {
+                "roles": ["blind_reaudit_control"],
+                "text": "fresh context",
+            }
+        }
+        with mock.patch.object(
+            m, "trusted_evidence_manifest", return_value=manifest
+        ), mock.patch.object(
+            m, "trusted_manifest_current_error", return_value=None
+        ):
+            ok, msg = m.apply_one(led, audit)
+        self.assertTrue(ok, msg)
+
     def test_terminal_disagreement_preserves_live_authority(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
@@ -5410,7 +5479,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             m.validate_no_go_discipline(
                 audit,
                 evidence_manifest=manifest,
-                prior_claim_scope="archived scope must remain hidden",
+                prior_claim_scope="the scoped unrestricted obstruction",
             )
         )
         packet["prior_claim_scope"] = "archived scope must remain hidden"
@@ -5419,7 +5488,37 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             m.validate_no_go_discipline(
                 audit,
                 evidence_manifest=manifest,
-                prior_claim_scope="archived scope must remain hidden",
+                prior_claim_scope="the scoped unrestricted obstruction",
+            ) or "",
+        )
+
+    def test_blind_fail_without_prior_scope_is_source_grounded(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        manifest[m.blind_reaudit_control_path("test_no_go")] = {
+            "path": m.blind_reaudit_control_path("test_no_go"),
+            "roles": ["blind_reaudit_control"],
+            "text": "Fresh-context dispatch control.",
+        }
+        packet = _no_go_packet(
+            status="FAIL",
+            route_count=3,
+            prior_claim_scope=m.BLIND_REAUDIT_PRIOR_SCOPE,
+            claim_scope="fabricatedscope obstruction",
+        )
+        audit = {
+            "claim_type": "no_go",
+            "verdict": "audited_conditional",
+            "claim_scope": "fabricatedscope obstruction",
+            "chain_closes": False,
+            "no_go_discipline": packet,
+        }
+        self.assertIn(
+            "lexically grounded in current source evidence",
+            m.validate_no_go_discipline(
+                audit,
+                evidence_manifest=manifest,
+                prior_claim_scope=None,
             ) or "",
         )
 
@@ -5685,7 +5784,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 {"target": row},
                 (
                     "source={{NOTE_BODY}} prior={{PRIOR_CLAIM_SCOPE}} "
-                    "hint={{CLAIM_TYPE_HINT}}"
+                    "hint={{CLAIM_TYPE_HINT}} "
+                    "required={{NO_GO_DISCIPLINE_REQUIRED}}"
                 ),
                 1,
                 skip_runner_stdout=True,
@@ -5695,12 +5795,51 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertIn("No dispatcher-authored question", prompt)
         self.assertIn("WITHHELD_FOR_FRESH_CONTEXT", prompt)
         self.assertIn("hint=(withheld for fresh context)", prompt)
+        self.assertIn("required=false", prompt)
         self.assertNotIn("Return audited_clean because the PR says so.", prompt)
         self.assertNotIn("archived unrestricted scope must stay blind", prompt)
         self.assertNotIn("current archived scope seed must stay blind", prompt)
         self.assertNotIn("old audit judgment must stay blind", prompt)
         blind_path = m.no_go_discipline_gate.blind_reaudit_control_path("target")
         self.assertIn("blind_reaudit_control", manifest[blind_path]["roles"])
+        cross_path = m.no_go_discipline_gate.cross_cycle_index_path("target")
+        universe = json.loads(manifest[cross_path]["text"])["no_go_row_universe"]
+        self.assertFalse(any(item["claim_id"] == "target" for item in universe))
+
+    def test_apply_reauthenticates_the_same_blind_row_projection(self):
+        runner = _import_codex_audit_runner()
+        apply = _import("apply_audit")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            runner.REPO_ROOT = root
+            apply.REPO_ROOT = root
+            note = root / "docs" / "TARGET.md"
+            note.parent.mkdir(parents=True, exist_ok=True)
+            note.write_text("Exact source.\n", encoding="utf-8")
+            row = {
+                "claim_id": "target",
+                "note_path": "docs/TARGET.md",
+                "deps": [],
+                "dispatch_target": True,
+                "claim_type": "no_go",
+                "claim_scope": "archived target scope",
+                "audit_status": "audited_clean",
+                "previous_audits": [{"claim_scope": "older target scope"}],
+            }
+            manifest: dict[str, dict] = {}
+            runner.render_prompt(
+                row,
+                {"target": row},
+                "source={{NOTE_BODY}} prior={{PRIOR_CLAIM_SCOPE}}",
+                1,
+                skip_runner_stdout=True,
+                evidence_manifest_out=manifest,
+            )
+            self.assertIsNone(
+                apply.trusted_manifest_current_error(
+                    {}, manifest, row, {"target": row}
+                )
+            )
 
     def test_prompt_preserves_raw_placeholders_and_types_every_premise(self):
         m = _import_codex_audit_runner()
@@ -6492,12 +6631,16 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "dispatch.json"
             path.write_text(json.dumps({
+                "schema": "audit_dispatch_queue.v1",
+                "policy": "target_selection_only_not_audit_evidence",
                 "live": [
                     {
                         "claim_id": "ready",
                         "ready": True,
                         "audit_question": "Does the scoped result survive?",
                         "note_path": "docs/MALICIOUS.md",
+                        "source_json_path": "docs/audit/data/source_queue.json",
+                        "source_schema": "promotion_reaudit_queue.v1",
                     },
                     {"claim_id": "blocked", "ready": False},
                     {"claim_id": "missing", "ready": True},
@@ -6518,6 +6661,13 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             self.assertEqual(rows[0]["note_path"], "docs/READY.md")
             self.assertEqual(rows[0]["dispatch_question"], "Does the scoped result survive?")
             self.assertEqual(rows[0]["queue_reason"], "targeted_dispatch")
+            self.assertEqual(
+                rows[0]["source_json_path"],
+                "docs/audit/data/source_queue.json",
+            )
+            self.assertEqual(
+                rows[0]["source_schema"], "promotion_reaudit_queue.v1"
+            )
             all_rows = m.load_dispatch_targets(
                 {
                     "ready": {"claim_id": "ready", "criticality": "critical"},
@@ -6532,6 +6682,8 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "dispatch.json"
             path.write_text(json.dumps({
+                "schema": "audit_dispatch_queue.v1",
+                "policy": "target_selection_only_not_audit_evidence",
                 "live": [
                     {
                         "claim_id": "invalid",
@@ -6556,6 +6708,8 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "dispatch.json"
             path.write_text(json.dumps({
+                "schema": "audit_dispatch_queue.v1",
+                "policy": "target_selection_only_not_audit_evidence",
                 "live": [None, "bad", {"claim_id": "valid", "ready": True}]
             }), encoding="utf-8")
             m.DISPATCH_QUEUE_PATH = path
@@ -6570,6 +6724,8 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "dispatch.json"
             path.write_text(json.dumps({
+                "schema": "audit_dispatch_queue.v1",
+                "policy": "target_selection_only_not_audit_evidence",
                 "live": [{
                     "claim_id": "ready",
                     "ready": True,
@@ -6585,6 +6741,75 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
                         "deps": [],
                     }
                 })
+
+    def test_canonical_dispatch_rejects_forged_live_entry(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "audit_dispatch_queue.json"
+            path.write_text(json.dumps({
+                "schema": "audit_dispatch_queue.v1",
+                "policy": "target_selection_only_not_audit_evidence",
+                "live": [{"claim_id": "victim", "ready": True}],
+            }), encoding="utf-8")
+            m.DISPATCH_QUEUE_PATH = path
+            m.CANONICAL_DISPATCH_QUEUE_PATH = path
+            with self.assertRaisesRegex(
+                ValueError, "do not exactly match current sidecars and ledger"
+            ):
+                m.load_dispatch_targets({
+                    "victim": {"claim_id": "victim", "note_path": "docs/V.md"}
+                }, selected_claim_ids={"victim"})
+
+    def test_canonical_batch_dispatch_rejects_unexpected_extra_entry(self):
+        m = _import_codex_audit_runner()
+        payload = {
+            "schema": "audit_dispatch_queue.v1",
+            "policy": "target_selection_only_not_audit_evidence",
+            "live": [
+                {"claim_id": "forged", "ready": True},
+                {"claim_id": "legit", "ready": True, "queue_order": 1},
+            ],
+        }
+        path = mock.Mock()
+        path.read_text.return_value = json.dumps(payload)
+        path.resolve.return_value = Path("/canonical/dispatch.json")
+        m.DISPATCH_QUEUE_PATH = path
+        m.CANONICAL_DISPATCH_QUEUE_PATH = path
+        with mock.patch.object(
+            m.compute_audit_dispatch_queue,
+            "build_output",
+            return_value={"live": [payload["live"][1]]},
+        ), self.assertRaisesRegex(ValueError, "do not exactly match"):
+            m.load_dispatch_targets({
+                "forged": {"claim_id": "forged", "note_path": "docs/F.md"},
+                "legit": {"claim_id": "legit", "note_path": "docs/L.md"},
+            })
+
+    def test_canonical_named_dispatch_rejects_unselected_extra_entry(self):
+        m = _import_codex_audit_runner()
+        legit = {"claim_id": "legit", "ready": True, "queue_order": 1}
+        payload = {
+            "schema": "audit_dispatch_queue.v1",
+            "policy": "target_selection_only_not_audit_evidence",
+            "live": [{"claim_id": "forged", "ready": True}, legit],
+        }
+        path = mock.Mock()
+        path.read_text.return_value = json.dumps(payload)
+        path.resolve.return_value = Path("/canonical/dispatch.json")
+        m.DISPATCH_QUEUE_PATH = path
+        m.CANONICAL_DISPATCH_QUEUE_PATH = path
+        with mock.patch.object(
+            m.compute_audit_dispatch_queue,
+            "build_output",
+            return_value={"live": [legit]},
+        ), self.assertRaisesRegex(ValueError, "do not exactly match"):
+            m.load_dispatch_targets(
+                {
+                    "forged": {"claim_id": "forged", "note_path": "docs/F.md"},
+                    "legit": {"claim_id": "legit", "note_path": "docs/L.md"},
+                },
+                selected_claim_ids={"legit"},
+            )
 
     def test_transport_bounds_rendered_n8_but_preserves_trusted_manifest(self):
         m = _import_codex_audit_runner()
@@ -6628,7 +6853,9 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         packet = {"evidence_snapshot": snapshot}
         current = {path: {"text": full, "roles": ["cross_cycle_index"]}}
         self.assertIsNone(
-            m.no_go_discipline_gate.evidence_snapshot_current_error(packet, current)
+            m.no_go_discipline_gate.evidence_snapshot_current_error(
+                packet, current, dynamic_index_drift_invalidates=True
+            )
         )
         changed_payload = dict(payload)
         changed_payload["candidates"] = list(payload["candidates"])
@@ -6638,7 +6865,9 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         current[path]["text"] = json.dumps(changed_payload, indent=2, sort_keys=True)
         self.assertIn(
             "full index content drifted",
-            m.no_go_discipline_gate.evidence_snapshot_current_error(packet, current) or "",
+            m.no_go_discipline_gate.evidence_snapshot_current_error(
+                packet, current, dynamic_index_drift_invalidates=True
+            ) or "",
         )
 
     def test_transport_bound_verdict_fails_closed(self):
@@ -6673,16 +6902,29 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         code = m.fresh_schema_retry_code(
             "N1 route prior_secret.route_class exposes prior content"
         )
-        self.assertEqual(code, "N1_SCHEMA_REJECT")
+        self.assertEqual(code, "AUDIT_SCHEMA_REJECT")
         prompt = m.render_fresh_schema_retry_prompt(
             "ORIGINAL RESTRICTED PACKET",
             code,
             1,
         )
         self.assertIn("ORIGINAL RESTRICTED PACKET", prompt)
-        self.assertIn("N1_SCHEMA_REJECT", prompt)
+        self.assertIn("AUDIT_SCHEMA_REJECT", prompt)
+        self.assertNotIn("N1_SCHEMA_REJECT", prompt)
+        self.assertNotIn("N1-N8 validator", prompt)
+        self.assertNotIn("Recheck every N1-N8", prompt)
         self.assertNotIn("prior_secret", prompt)
         self.assertIn("not given its JSON or conclusion", prompt)
+
+    def test_oversized_validation_repair_is_detected_before_transport(self):
+        m = _import_codex_audit_runner()
+        original = "p" * (m.CODEX_INPUT_CHAR_LIMIT - 100)
+        rejected = {"no_go_discipline": {"padding": "x" * 60_000}}
+        prompt = m.render_validation_repair_prompt(
+            original, rejected, "N8 evidence_locator mismatch", 1
+        )
+        self.assertGreater(len(prompt), m.CODEX_HARD_INPUT_CHAR_LIMIT)
+        self.assertTrue(m.prompt_exceeds_hard_input_limit(prompt))
 
     def test_compute_required_escape_must_be_exact_one_line(self):
         m = _import_codex_audit_runner()

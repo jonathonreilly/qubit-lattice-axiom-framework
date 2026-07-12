@@ -399,11 +399,8 @@ def render_markdown(output: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
-def main() -> int:
-    if not LEDGER_PATH.exists():
-        raise SystemExit("audit_ledger.json missing")
-    rows = load_json(LEDGER_PATH).get("rows", {})
-
+def build_output(rows: dict[str, dict]) -> dict:
+    """Recompute the complete generated dispatch payload without writing it."""
     live: list[dict] = []
     resolved_or_invalid: list[dict] = []
     retired: list[dict] = []
@@ -433,7 +430,7 @@ def main() -> int:
         key=lambda e: (e.get("group_order") or 9999, e.get("generated_order") or 9999, e.get("claim_id") or "")
     )
 
-    output = {
+    return {
         "schema": "audit_dispatch_queue.v1",
         "policy": "target_selection_only_not_audit_evidence",
         "source_json_paths": source_paths,
@@ -445,6 +442,13 @@ def main() -> int:
         "resolved_targets": resolved_targets,
         "retired": retired,
     }
+
+
+def main() -> int:
+    if not LEDGER_PATH.exists():
+        raise SystemExit("audit_ledger.json missing")
+    rows = load_json(LEDGER_PATH).get("rows", {})
+    output = build_output(rows)
     OUT_JSON.write_text(json.dumps(output, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     OUT_MD.write_text(render_markdown(output), encoding="utf-8")
 
@@ -452,10 +456,10 @@ def main() -> int:
     print(f"Wrote {OUT_MD.relative_to(REPO_ROOT)}")
     print(f"  live dispatch entries: {output['live_count']}")
     print(f"  ready dispatch entries: {output['ready_count']}")
-    print(f"  resolved (post-manifest re-audit) entries: {len(resolved_targets)}")
-    print(f"  retired dispatch entries: {len(retired)}")
-    if unsupported:
-        print(f"  unsupported sidecars: {len(unsupported)}")
+    print(f"  resolved (post-manifest re-audit) entries: {len(output['resolved_targets'])}")
+    print(f"  retired dispatch entries: {len(output['retired'])}")
+    if output["unsupported_source_json"]:
+        print(f"  unsupported sidecars: {len(output['unsupported_source_json'])}")
     return 0
 
 

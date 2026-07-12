@@ -187,8 +187,11 @@ def trusted_manifest_current_error(
             probe_packet, trusted_manifest
         )
     )
+    current_row = row
+    if no_go_discipline_gate.manifest_has_blind_reaudit_control(trusted_manifest):
+        current_row = no_go_discipline_gate.blind_reaudit_row_projection(row)
     current_manifest = no_go_discipline_gate.build_evidence_manifest(
-        row, rows, REPO_ROOT
+        current_row, rows, REPO_ROOT
     )
     return no_go_discipline_gate.evidence_snapshot_current_error(
         probe_packet, current_manifest, dynamic_index_drift_invalidates=True
@@ -934,6 +937,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         evidence_manifest = trusted_evidence_manifest(cid, invocation_id)
     except ValueError as exc:
         return False, str(exc)
+    trusted_transport = evidence_manifest is not None
     if evidence_manifest is None and judgment.get("no_go_discipline") is not None:
         return False, "No-Go Discipline apply requires trusted orchestrator evidence transport"
     if evidence_manifest is None:
@@ -944,14 +948,22 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         clipped_error = clipped_clean_evidence_error(evidence_manifest)
         if clipped_error:
             return False, clipped_error
-    if isinstance(judgment.get("no_go_discipline"), dict):
+    if trusted_transport:
         manifest_error = trusted_manifest_current_error(
-            judgment["no_go_discipline"], evidence_manifest, row, rows
+            judgment.get("no_go_discipline") or {}, evidence_manifest, row, rows
         )
         if manifest_error:
             return False, f"trusted evidence manifest is stale: {manifest_error}"
     source_requires_no_go = no_go_discipline_gate.source_requires_no_go_discipline(
-        note_path, note_body, row.get("claim_type") or final_claim_type
+        note_path,
+        note_body,
+        (
+            ""
+            if no_go_discipline_gate.manifest_has_blind_reaudit_control(
+                evidence_manifest
+            )
+            else row.get("claim_type") or final_claim_type
+        ),
     )
     if side in {"first", "second"}:
         chosen_gate_error = cross_summary_no_go_error(
@@ -1091,17 +1103,11 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             note_body = (REPO_ROOT / note_path).read_text(encoding="utf-8")
         except OSError:
             pass
-    source_requires_no_go = (
-        no_go_discipline_gate.source_requires_no_go_discipline(
-            note_path,
-            note_body,
-            row.get("claim_type") or claim_type,
-        )
-    )
     try:
         evidence_manifest = trusted_evidence_manifest(cid, invocation_id)
     except ValueError as exc:
         return False, str(exc)
+    trusted_transport = evidence_manifest is not None
     if evidence_manifest is None and audit.get("no_go_discipline") is not None:
         return False, "No-Go Discipline apply requires trusted orchestrator evidence transport"
     if evidence_manifest is None:
@@ -1112,12 +1118,25 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         clipped_error = clipped_clean_evidence_error(evidence_manifest)
         if clipped_error:
             return False, clipped_error
-    if isinstance(audit.get("no_go_discipline"), dict):
+    if trusted_transport:
         manifest_error = trusted_manifest_current_error(
-            audit["no_go_discipline"], evidence_manifest, row, rows
+            audit.get("no_go_discipline") or {}, evidence_manifest, row, rows
         )
         if manifest_error:
             return False, f"trusted evidence manifest is stale: {manifest_error}"
+    source_requires_no_go = (
+        no_go_discipline_gate.source_requires_no_go_discipline(
+            note_path,
+            note_body,
+            (
+                ""
+                if no_go_discipline_gate.manifest_has_blind_reaudit_control(
+                    evidence_manifest
+                )
+                else row.get("claim_type") or claim_type
+            ),
+        )
+    )
     no_go_error = no_go_discipline_gate.validate_no_go_discipline(
         audit,
         source_required=source_requires_no_go,
@@ -1434,7 +1453,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             accept_row()
             return True, (
                 "legacy packetless/invalid first audit archived; incoming packet "
-                "not applied because N8 must be rebuilt against the updated history"
+                "not applied because cross-confirmation must restart from a fresh first seat"
             )
         err = cross_confirmation_error(first, audit)
         if err:

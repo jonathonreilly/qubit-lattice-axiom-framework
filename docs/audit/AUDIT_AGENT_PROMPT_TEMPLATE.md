@@ -578,7 +578,9 @@ receive full echoes.
 FAIL narrowing must be a strict lexical subset that preserves logical polarity
 when the prior scope is supplied. For a blind re-audit carrying
 `WITHHELD_FOR_FRESH_CONTEXT`, derive the top-level scope only from the current
-packet; the hidden prior scope cannot be used for lexical comparison. Every
+source and use only lexical tokens that occur in that source. The orchestrator
+privately rejects expansion against a usable hidden prior scope; legacy
+backfill placeholders are replaced only by a source-grounded scope. Every
 failure string must begin with its failing `N1:` through `N8:` item.
 Any `OPEN`/`UNTESTED` route, unresolved N2-N6/N8 item, mismatched witness,
 untested rhetoric resolution, unaddressed partial-closure candidate, unresolved

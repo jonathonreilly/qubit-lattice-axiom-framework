@@ -1,28 +1,28 @@
 ===== runner cache v1 =====
 runner: scripts/shapiro_static_discriminator.py
-runner_sha256: b389f53a964d4b199b54ec64e8a745a38f9bd819630af113a204b2fd53b9b184
+runner_sha256: 9e2398ef6c3349d1f5978dcdf9abfd1a09cb256ffd06f4fe77708dbb11d8c156
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 398.81
+elapsed_sec: 93.99
 status: ok
 ----- stdout -----
 ========================================================================================
-SHAPIRO STATIC DISCRIMINATOR
-  static field shape / scheduling proxies vs retained c-dependent phase lag
+SHAPIRO SNAPSHOT-IDENTIFIABILITY NO-GO
+  exact equal-array witness + bounded fixed-layer scheduling control
 ========================================================================================
 
 families=3 seeds=2 c-values=[2.0, 1.0, 0.5, 0.25]
 static cone candidates=[2.0, 1.0, 0.5, 0.25]
 static schedule delays=[0, 1, 2, 3]
 
-CAUSAL PHASE CURVE
+C-INDEXED CONE-SNAPSHOT PHASE CURVE
               family       zero      c=2.0      c=1.0      c=0.5     c=0.25
 ------------------------------------------------------------------------
                 Fam1 +0.000e+00    +0.0372    +0.0446    +0.0568    +0.0662
                 Fam2 +0.000e+00    +0.0372    +0.0448    +0.0570    +0.0662
                 Fam3 +0.000e+00    +0.0371    +0.0445    +0.0567    +0.0662
 
-STATIC CONE-SHAPE FAMILY
+EXACT EQUAL-ARRAY-WITNESS FAMILY
               family   cone=2.0   cone=1.0   cone=0.5  cone=0.25
 ------------------------------------------------------------------------
                 Fam1    +0.0372    +0.0446    +0.0568    +0.0662
@@ -36,19 +36,32 @@ STATIC SCHEDULE FAMILY
                 Fam2    +0.0448    +0.0446    +0.0447    +0.0451
                 Fam3    +0.0445    +0.0444    +0.0445    +0.0448
 
-DISCRIMINATOR
-  causal mean curve: +0.0372, +0.0446, +0.0569, +0.0662
-  static cone curve:  +0.0372, +0.0446, +0.0569, +0.0662
-  static schedule curve: +0.0446, +0.0445, +0.0446, +0.0450
-  best static cone match: static-cone (rmse=0.0000)
-  best static schedule match: static-schedule (rmse=0.0128)
+CERTIFICATE
+  cone snapshot mean curve: +0.0372, +0.0446, +0.0569, +0.0662
+  equal-array witness curve: +0.0372, +0.0446, +0.0569, +0.0662
+  fixed-layer proxy curve: +0.0446, +0.0445, +0.0446, +0.0450
+  equal-array witness equality: exact by definition on the input class
+  cone snapshot span: 0.028991 rad
+  fixed-layer proxy span: 0.000446 rad
+  snapshot/fixed-layer span gap: 0.028544 rad
+  snapshot/witness max node delta: 0.000e+00
+
+ASSERTIVE CHECKS
+  [PASS] all 24 configured cone snapshots have exact equal-array witnesses
+  [PASS] maximum snapshot/witness node delta is exactly zero
+  [PASS] all baseline self-overlap phases are zero within 1e-15 rad
+  [PASS] snapshot and equal-array-witness curves are exactly equal
+  [PASS] configured fixed-layer proxy span is below operational tolerance 1e-03 rad
+  [PASS] snapshot/fixed-layer span gap exceeds 2e-02 rad
 
 SAFE READ
-  - Exact zero control stays exact.
-  - The causal phase lag is portable across the three families and varies with c.
-  - Static cone-shape exactly reproduces the same c-dependent portable curve.
-  - Static scheduling does not reproduce the curve and stays near-flat.
-  - The Shapiro-style phase lag is a portable observable, but not a unique discriminator against static field-shape effects.
+  - The runner contains no causal time evolution; c indexes a spatial cone snapshot.
+  - Any supplied snapshot has an exact equal-array witness on the unconstrained field-array input surface.
+  - Detector-line phase therefore cannot identify a history label absent from this interface.
+  - The four configured fixed-layer proxies stay near-flat and separated.
+  - No physical static-solution, universal schedule, or history-sensitive-observable claim is made.
+
+ASSERTIONS: PASS
 
 ----- stderr -----
 

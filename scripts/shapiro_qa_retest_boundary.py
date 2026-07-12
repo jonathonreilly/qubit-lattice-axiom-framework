@@ -45,7 +45,7 @@ def _rmse(left: list[float], right: list[float]) -> float:
 def _phase_spreads(phase_text: str) -> list[float]:
     spreads: list[float] = []
     for line in phase_text.splitlines():
-        if not re.match(r"^\|\s*\d", line):
+        if not line.lstrip().startswith("|"):
             continue
         cells = [cell.strip(" `") for cell in line.strip().strip("|").split("|")]
         if len(cells) >= 3:
@@ -59,11 +59,12 @@ def main() -> int:
     note = NOTE.read_text(encoding="utf-8")
     phase = PHASE_CACHE.read_text(encoding="utf-8")
     static = STATIC_CACHE.read_text(encoding="utf-8")
-    causal = _curve(static, "causal mean curve")
-    cone = _curve(static, "static cone curve")
-    schedule = _curve(static, "static schedule curve")
-    cone_rmse = _rmse(causal, cone)
-    schedule_rmse = _rmse(causal, schedule)
+    snapshot = _curve(static, "cone snapshot mean curve")
+    equal_array = _curve(static, "equal-array witness curve")
+    fixed_layer = _curve(static, "fixed-layer proxy curve")
+    equal_array_rmse = _rmse(snapshot, equal_array)
+    snapshot_span = max(snapshot) - min(snapshot)
+    fixed_layer_span = max(fixed_layer) - min(fixed_layer)
     phase_spreads = _phase_spreads(phase)
 
     checks = [
@@ -73,8 +74,10 @@ def main() -> int:
         ("static-discriminator cache is SHA-fresh", _header_value(static, "runner_sha256") == _sha(STATIC_RUNNER)),
         ("phase replay has exact instantaneous zero control", "phase lag `0.000 rad`" in phase or "c = inst" in phase),
         ("phase replay family spread is bounded by 2.5e-4 rad", bool(phase_spreads) and max(phase_spreads) <= 2.5e-4),
-        ("static cone reproduces causal curve to displayed precision", cone_rmse <= 5e-5),
-        ("static scheduling remains separated", schedule_rmse >= 5e-3),
+        ("cone snapshot and equal-array witness match to displayed precision", equal_array_rmse <= 5e-5),
+        ("fixed-layer proxy span is below 1e-3 rad", fixed_layer_span < 1e-3),
+        ("snapshot/fixed-layer span gap exceeds 2e-2 rad", snapshot_span - fixed_layer_span > 2e-2),
+        ("static-discriminator cache carries an assertive pass certificate", "ASSERTIONS: PASS" in static),
         (
             "source note is bounded QA and has no retained/archived live dependency wording",
             "bounded QA cache-verifier" in note
@@ -85,8 +88,9 @@ def main() -> int:
         (
             "source note preserves claim boundary",
             "not a retained physical Shapiro package" in note
-            and "not a unique" in note
-            and "causal discriminator" in note,
+            and "input-interface/history-label no-go" in note
+            and "not a physical" in note
+            and "causal-propagation theorem" in note,
         ),
     ]
     ok = all(flag for _label, flag in checks)
@@ -97,8 +101,9 @@ def main() -> int:
     print("=" * 88)
     print()
     print(f"phase replay max spread: {max(phase_spreads) if phase_spreads else float('nan'):.4g}")
-    print(f"static cone RMSE: {cone_rmse:.4f}")
-    print(f"static schedule RMSE: {schedule_rmse:.4f}")
+    print(f"snapshot/equal-array RMSE: {equal_array_rmse:.4f}")
+    print(f"cone-snapshot span: {snapshot_span:.4f}")
+    print(f"fixed-layer span: {fixed_layer_span:.4f}")
     print()
     print("RUNNER CHECKS")
     for label, flag in checks:
@@ -107,7 +112,8 @@ def main() -> int:
     print("Safe read:")
     print("  - this is bounded QA over existing caches")
     print("  - archived failed bridge rows are not live dependencies")
-    print("  - static-cone mimic remains the no-unique-discriminator boundary")
+    print("  - snapshot/equal-array equality remains the exact input-interface no-go")
+    print("  - the configured fixed-layer proxy remains a bounded secondary control")
     print("  - no tracker issue is implied by the checked caches")
     print()
     print(f"ASSERTIONS: {'PASS' if ok else 'FAIL'}")

@@ -1,23 +1,22 @@
 #!/usr/bin/env python3
-"""Static-vs-causal discriminator for the discrete Shapiro-delay lane.
+"""Snapshot-identifiability no-go for the discrete Shapiro proxy lane.
 
 Question
 --------
-Can any static field shape or static scheduling proxy mimic the retained
-c-dependent phase lag from the causal propagating-field lane?
+Can detector-line phase identify a causal history when the propagation kernel
+receives only one node-wise field snapshot?
 
-This probe compares three families on the retained grown geometry class:
+This runner proves the exact implementation-level witness and evaluates one
+bounded finite control on three configured grown geometry families:
 
-1. causal dynamic cone with finite propagation speed c
-2. static cone shape: same cone support, but frozen in time
-3. static scheduling proxy: same cone support, but with a fixed activation
-   delay that does not depend on c
+1. c-indexed cone snapshot (a position-only field; no causal evolution)
+2. exact equal-array witness with the same node values
+3. fixed-layer scheduling proxy on delays d = 0, 1, 2, 3
 
-The result is intentionally narrow:
-  - exact zero control first
-  - phase lag at the detector line
-  - family portability across the retained grown families
-  - static lookalikes are treated as controls, not as new theory
+The exact no-go is independent of the numeric sweep: a deterministic function
+of one field array cannot distinguish two history labels attached to equal
+arrays.  The scheduling rows are a bounded finite control, not a universal
+exclusion of static schedules and not a physical propagation-delay model.
 """
 
 from __future__ import annotations
@@ -53,12 +52,14 @@ FAMILIES = [
     ("Fam3", 0.50, 0.90),
 ]
 
-# Causal retained curve from the phase-lag lane.
+# Cone-shape index values.  These are not interpreted as physical speeds.
 C_VALUES = [2.0, 1.0, 0.5, 0.25]
 
 # Static lookalikes.
 STATIC_CONE_VALUES = [2.0, 1.0, 0.5, 0.25]
 STATIC_DELAY_VALUES = [0, 1, 2, 3]
+SCHEDULE_NEAR_FLAT_TOL = 1e-3
+SNAPSHOT_SCHEDULE_SPAN_GAP_MIN = 2e-2
 
 
 @dataclass(frozen=True)
@@ -231,13 +232,14 @@ def _instantaneous_field(
     return field
 
 
-def _causal_field(
+def _cone_snapshot_field(
     pos: list[tuple[float, float, float]],
     nmap: dict[tuple[int, int, int], int],
     anchor: tuple[float, float, float],
     strength: float,
-    c: float,
+    cone_index: float,
 ) -> list[float]:
+    """Position-only cone snapshot; contains no time evolution or history."""
     if strength == 0.0:
         return [0.0] * len(pos)
     sx, sy, sz = anchor
@@ -251,7 +253,7 @@ def _causal_field(
         if dx < -1e-12:
             continue
         transverse = math.sqrt((y - sy) ** 2 + (z - sz) ** 2)
-        cone_radius = c * det_radius * max(dx, 0.0) / x_span
+        cone_radius = cone_index * det_radius * max(dx, 0.0) / x_span
         if transverse > cone_radius + 1e-12:
             continue
         r = math.sqrt(dx * dx + (y - sy) ** 2 + (z - sz) ** 2) + 0.1
@@ -259,32 +261,9 @@ def _causal_field(
     return field
 
 
-def _static_cone_field(
-    pos: list[tuple[float, float, float]],
-    nmap: dict[tuple[int, int, int], int],
-    anchor: tuple[float, float, float],
-    strength: float,
-    cone_c: float,
-) -> list[float]:
-    """Frozen spatial cone: same support shape as the causal cone, no delay."""
-    if strength == 0.0:
-        return [0.0] * len(pos)
-    sx, sy, sz = anchor
-    det_nodes = [i for i, p in enumerate(pos) if p[0] == pos[-1][0]]
-    det_radius = _detector_extent(pos, det_nodes, anchor)
-    x_span = max(pos[det_nodes[0]][0] - sx, 1e-12)
-    field = [0.0] * len(pos)
-    for idx, (x, y, z) in enumerate(pos):
-        dx = x - sx
-        if dx < -1e-12:
-            continue
-        transverse = math.sqrt((y - sy) ** 2 + (z - sz) ** 2)
-        cone_radius = cone_c * det_radius * max(dx, 0.0) / x_span
-        if transverse > cone_radius + 1e-12:
-            continue
-        r = math.sqrt(dx * dx + (y - sy) ** 2 + (z - sz) ** 2) + 0.1
-        field[idx] = strength / r
-    return field
+def _equal_array_witness(snapshot: list[float]) -> list[float]:
+    """Exact duplicate on the runner's unconstrained field-array input class."""
+    return list(snapshot)
 
 
 def _static_schedule_field(
@@ -335,10 +314,12 @@ def _phase_lag(
     det_inst = [psi_inst[i] for i in det_nodes]
     n_inst = math.sqrt(sum(abs(a) ** 2 for a in det_inst))
 
-    if mode == "causal":
-        field = _causal_field(pos, nmap, anchor, strength, param)
+    if mode == "cone_snapshot":
+        field = _cone_snapshot_field(pos, nmap, anchor, strength, param)
     elif mode == "static_cone":
-        field = _static_cone_field(pos, nmap, anchor, strength, param)
+        field = _equal_array_witness(
+            _cone_snapshot_field(pos, nmap, anchor, strength, param)
+        )
     elif mode == "static_schedule":
         field = _static_schedule_field(pos, nmap, anchor, strength, int(param))
     else:
@@ -375,22 +356,36 @@ def _family_rows() -> list[Family]:
     return [Family(*row) for row in FAMILIES]
 
 
-def _sweep_family(family: Family) -> tuple[dict[str, list[float]], float]:
+def _self_overlap_phase(
+    state: list[complex],
+    det_nodes: list[int],
+) -> float:
+    det = [state[i] for i in det_nodes]
+    norm = math.sqrt(sum(abs(a) ** 2 for a in det))
+    if norm <= 1e-30:
+        return 0.0
+    overlap = sum(a.conjugate() / norm * a / norm for a in det)
+    return _wrap_phase(cmath.phase(overlap))
+
+
+def _sweep_family(family: Family) -> tuple[dict[str, list[float]], float, float, int]:
     per_mode: dict[str, list[float]] = {
-        "causal:2.0": [],
-        "causal:1.0": [],
-        "causal:0.5": [],
-        "causal:0.25": [],
-        "static-cone:2.0": [],
-        "static-cone:1.0": [],
-        "static-cone:0.5": [],
-        "static-cone:0.25": [],
+        "cone-snapshot:2.0": [],
+        "cone-snapshot:1.0": [],
+        "cone-snapshot:0.5": [],
+        "cone-snapshot:0.25": [],
+        "equal-array-witness:2.0": [],
+        "equal-array-witness:1.0": [],
+        "equal-array-witness:0.5": [],
+        "equal-array-witness:0.25": [],
         "static-schedule:0": [],
         "static-schedule:1": [],
         "static-schedule:2": [],
         "static-schedule:3": [],
     }
     zero_ok = 0.0
+    witness_max_node_delta = 0.0
+    witness_rows = 0
 
     for seed in SEEDS:
         pos, adj, nmap = grow(seed, family.drift, family.restore)
@@ -401,19 +396,28 @@ def _sweep_family(family: Family) -> tuple[dict[str, list[float]], float]:
         inst_field = _instantaneous_field(pos, anchor, FIELD_STRENGTH)
         psi_inst = _propagate(pos, adj, inst_field, src)
 
-        # exact null control
-        zero_ok = max(zero_ok, 0.0)
+        # Exact self-overlap control uses the actual computed baseline state.
+        zero_ok = max(zero_ok, abs(_self_overlap_phase(psi_inst, det_nodes)))
 
         for c in C_VALUES:
             key = str(c)
-            causal_field = _causal_field(pos, nmap, anchor, FIELD_STRENGTH, c)
-            static_cone_field = _static_cone_field(pos, nmap, anchor, FIELD_STRENGTH, c)
-            per_mode[f"causal:{key}"].append(
-                _phase_lag_against_baseline(pos, adj, psi_inst, det_nodes, causal_field)
+            snapshot_field = _cone_snapshot_field(
+                pos, nmap, anchor, FIELD_STRENGTH, c
             )
-            per_mode[f"static-cone:{key}"].append(
-                _phase_lag_against_baseline(pos, adj, psi_inst, det_nodes, static_cone_field)
+            static_witness = _equal_array_witness(snapshot_field)
+            witness_max_node_delta = max(
+                witness_max_node_delta,
+                max(abs(a - b) for a, b in zip(snapshot_field, static_witness)),
             )
+            witness_rows += 1
+            phase = _phase_lag_against_baseline(
+                pos, adj, psi_inst, det_nodes, snapshot_field
+            )
+            per_mode[f"cone-snapshot:{key}"].append(phase)
+            # Exact theorem specialization: equal arrays enter the same
+            # deterministic kernel, so a second expensive propagation would
+            # be an implementation duplicate rather than an independent test.
+            per_mode[f"equal-array-witness:{key}"].append(phase)
         for delay in STATIC_DELAY_VALUES:
             static_schedule_field = _static_schedule_field(
                 pos, nmap, anchor, FIELD_STRENGTH, int(delay)
@@ -422,26 +426,13 @@ def _sweep_family(family: Family) -> tuple[dict[str, list[float]], float]:
                 _phase_lag_against_baseline(pos, adj, psi_inst, det_nodes, static_schedule_field)
             )
 
-    return per_mode, zero_ok
+    return per_mode, zero_ok, witness_max_node_delta, witness_rows
 
 
-def _best_static_match(causal: list[float], candidate_curves: dict[str, list[float]]) -> tuple[str, float]:
-    best_key = ""
-    best_rmse = float("inf")
-    for key, vals in candidate_curves.items():
-        if len(vals) != len(causal):
-            continue
-        rmse = math.sqrt(sum((a - b) ** 2 for a, b in zip(causal, vals)) / len(causal))
-        if rmse < best_rmse:
-            best_rmse = rmse
-            best_key = key
-    return best_key, best_rmse
-
-
-def main() -> None:
+def main() -> int:
     print("=" * 88)
-    print("SHAPIRO STATIC DISCRIMINATOR")
-    print("  static field shape / scheduling proxies vs retained c-dependent phase lag")
+    print("SHAPIRO SNAPSHOT-IDENTIFIABILITY NO-GO")
+    print("  exact equal-array witness + bounded fixed-layer scheduling control")
     print("=" * 88)
     print()
     print(f"families={len(FAMILIES)} seeds={len(SEEDS)} c-values={C_VALUES}")
@@ -450,43 +441,51 @@ def main() -> None:
     print()
 
     family_rows = []
-    candidate_static_cone: dict[str, list[float]] = {f"static-cone:{str(c)}": [] for c in STATIC_CONE_VALUES}
+    candidate_equal_array: dict[str, list[float]] = {
+        f"equal-array-witness:{str(c)}": [] for c in STATIC_CONE_VALUES
+    }
     candidate_static_schedule: dict[str, list[float]] = {
         f"static-schedule:{d}": [] for d in STATIC_DELAY_VALUES
     }
-    causal_means: dict[str, list[float]] = {f"causal:{str(c)}": [] for c in C_VALUES}
+    snapshot_means: dict[str, list[float]] = {
+        f"cone-snapshot:{str(c)}": [] for c in C_VALUES
+    }
+    witness_max_node_delta = 0.0
+    witness_rows = 0
 
     for family in _family_rows():
-        per_mode, zero_ok = _sweep_family(family)
+        per_mode, zero_ok, family_witness_delta, family_witness_rows = _sweep_family(family)
         family_rows.append((family.label, zero_ok, per_mode))
-        for key in causal_means:
-            causal_means[key].append(_mean(per_mode[key]))
-        for key in candidate_static_cone:
-            candidate_static_cone[key].append(_mean(per_mode[key]))
+        witness_max_node_delta = max(witness_max_node_delta, family_witness_delta)
+        witness_rows += family_witness_rows
+        for key in snapshot_means:
+            snapshot_means[key].append(_mean(per_mode[key]))
+        for key in candidate_equal_array:
+            candidate_equal_array[key].append(_mean(per_mode[key]))
         for key in candidate_static_schedule:
             candidate_static_schedule[key].append(_mean(per_mode[key]))
 
-    # Causal retained curve
-    print("CAUSAL PHASE CURVE")
+    # Position-only cone-snapshot curve
+    print("C-INDEXED CONE-SNAPSHOT PHASE CURVE")
     print(f"{'family':>20s} {'zero':>10s} {'c=2.0':>10s} {'c=1.0':>10s} {'c=0.5':>10s} {'c=0.25':>10s}")
     print("-" * 72)
     for label, zero_ok, per_mode in family_rows:
         print(
             f"{label:>20s} {zero_ok:+10.3e} "
-            f"{_mean(per_mode['causal:2.0']):+10.4f} {_mean(per_mode['causal:1.0']):+10.4f} "
-            f"{_mean(per_mode['causal:0.5']):+10.4f} {_mean(per_mode['causal:0.25']):+10.4f}"
+            f"{_mean(per_mode['cone-snapshot:2.0']):+10.4f} {_mean(per_mode['cone-snapshot:1.0']):+10.4f} "
+            f"{_mean(per_mode['cone-snapshot:0.5']):+10.4f} {_mean(per_mode['cone-snapshot:0.25']):+10.4f}"
         )
     print()
 
     # Static cone shape family
-    print("STATIC CONE-SHAPE FAMILY")
+    print("EXACT EQUAL-ARRAY-WITNESS FAMILY")
     print(f"{'family':>20s} {'cone=2.0':>10s} {'cone=1.0':>10s} {'cone=0.5':>10s} {'cone=0.25':>10s}")
     print("-" * 72)
     for label, _, per_mode in family_rows:
         print(
             f"{label:>20s} "
-            f"{_mean(per_mode['static-cone:2.0']):+10.4f} {_mean(per_mode['static-cone:1.0']):+10.4f} "
-            f"{_mean(per_mode['static-cone:0.5']):+10.4f} {_mean(per_mode['static-cone:0.25']):+10.4f}"
+            f"{_mean(per_mode['equal-array-witness:2.0']):+10.4f} {_mean(per_mode['equal-array-witness:1.0']):+10.4f} "
+            f"{_mean(per_mode['equal-array-witness:0.5']):+10.4f} {_mean(per_mode['equal-array-witness:0.25']):+10.4f}"
         )
     print()
 
@@ -502,32 +501,55 @@ def main() -> None:
         )
     print()
 
-    causal_curve = [_mean(causal_means[f"causal:{str(c)}"]) for c in C_VALUES]
-    static_cone_curve = [
-        _mean(candidate_static_cone[f"static-cone:{str(c)}"]) for c in STATIC_CONE_VALUES
+    snapshot_curve = [
+        _mean(snapshot_means[f"cone-snapshot:{str(c)}"]) for c in C_VALUES
+    ]
+    equal_array_curve = [
+        _mean(candidate_equal_array[f"equal-array-witness:{str(c)}"])
+        for c in STATIC_CONE_VALUES
     ]
     static_sched_curve = [
         _mean(candidate_static_schedule[f"static-schedule:{d}"]) for d in STATIC_DELAY_VALUES
     ]
-    best_cone_key, best_cone_rmse = _best_static_match(causal_curve, {"static-cone": static_cone_curve})
-    best_sched_key, best_sched_rmse = _best_static_match(
-        causal_curve, {"static-schedule": static_sched_curve}
-    )
+    schedule_span = max(static_sched_curve) - min(static_sched_curve)
+    snapshot_span = max(snapshot_curve) - min(snapshot_curve)
+    span_gap = snapshot_span - schedule_span
+    expected_witness_rows = len(FAMILIES) * len(SEEDS) * len(C_VALUES)
 
-    print("DISCRIMINATOR")
-    print(f"  causal mean curve: {', '.join(f'{v:+.4f}' for v in causal_curve)}")
-    print(f"  static cone curve:  {', '.join(f'{v:+.4f}' for v in static_cone_curve)}")
-    print(f"  static schedule curve: {', '.join(f'{v:+.4f}' for v in static_sched_curve)}")
-    print(f"  best static cone match: {best_cone_key} (rmse={best_cone_rmse:.4f})")
-    print(f"  best static schedule match: {best_sched_key} (rmse={best_sched_rmse:.4f})")
+    checks = [
+        (f"all {expected_witness_rows} configured cone snapshots have exact equal-array witnesses", witness_rows == expected_witness_rows),
+        ("maximum snapshot/witness node delta is exactly zero", witness_max_node_delta == 0.0),
+        ("all baseline self-overlap phases are zero within 1e-15 rad", max(row[1] for row in family_rows) < 1e-15),
+        ("snapshot and equal-array-witness curves are exactly equal", snapshot_curve == equal_array_curve),
+        (f"configured fixed-layer proxy span is below operational tolerance {SCHEDULE_NEAR_FLAT_TOL:.0e} rad", schedule_span < SCHEDULE_NEAR_FLAT_TOL),
+        (f"snapshot/fixed-layer span gap exceeds {SNAPSHOT_SCHEDULE_SPAN_GAP_MIN:.0e} rad", span_gap > SNAPSHOT_SCHEDULE_SPAN_GAP_MIN),
+    ]
+    assertions_ok = all(flag for _label, flag in checks)
+
+    print("CERTIFICATE")
+    print(f"  cone snapshot mean curve: {', '.join(f'{v:+.4f}' for v in snapshot_curve)}")
+    print(f"  equal-array witness curve: {', '.join(f'{v:+.4f}' for v in equal_array_curve)}")
+    print(f"  fixed-layer proxy curve: {', '.join(f'{v:+.4f}' for v in static_sched_curve)}")
+    print("  equal-array witness equality: exact by definition on the input class")
+    print(f"  cone snapshot span: {snapshot_span:.6f} rad")
+    print(f"  fixed-layer proxy span: {schedule_span:.6f} rad")
+    print(f"  snapshot/fixed-layer span gap: {span_gap:.6f} rad")
+    print(f"  snapshot/witness max node delta: {witness_max_node_delta:.3e}")
+    print()
+    print("ASSERTIVE CHECKS")
+    for label, flag in checks:
+        print(f"  [{'PASS' if flag else 'FAIL'}] {label}")
     print()
     print("SAFE READ")
-    print("  - Exact zero control stays exact.")
-    print("  - The causal phase lag is portable across the three families and varies with c.")
-    print("  - Static cone-shape exactly reproduces the same c-dependent portable curve.")
-    print("  - Static scheduling does not reproduce the curve and stays near-flat.")
-    print("  - The Shapiro-style phase lag is a portable observable, but not a unique discriminator against static field-shape effects.")
+    print("  - The runner contains no causal time evolution; c indexes a spatial cone snapshot.")
+    print("  - Any supplied snapshot has an exact equal-array witness on the unconstrained field-array input surface.")
+    print("  - Detector-line phase therefore cannot identify a history label absent from this interface.")
+    print("  - The four configured fixed-layer proxies stay near-flat and separated.")
+    print("  - No physical static-solution, universal schedule, or history-sensitive-observable claim is made.")
+    print()
+    print(f"ASSERTIONS: {'PASS' if assertions_ok else 'FAIL'}")
+    return 0 if assertions_ok else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

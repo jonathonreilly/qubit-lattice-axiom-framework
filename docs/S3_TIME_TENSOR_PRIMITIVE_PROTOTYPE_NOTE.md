@@ -1,242 +1,221 @@
-# Route 2 Tensor Primitive Prototype on `A1 x {E_x, T1x}`
+# Finite-stencil tensor response on the trivial cubic scalar-irrep support segment
 
-**Status:** class-A definition only — the support-block prototype
-`Theta_R^(0)(q) = (gamma_E(q), gamma_T(q))` is **defined** as an ordered
-pair of named admitted-input readouts on the seven-site star support, and
-the runner verifies the affine `delta_A1` reproduction identities follow
-mechanically once the named inputs are admitted. This note **does not**
-derive the named inputs themselves, the bright-channel identification,
-the asserted endpoint coefficient values, or any "physical tensor
-primitive" interpretation of `Theta_R^(0)`.
-**Date:** 2026-04-14 (originally); 2026-05-10 (audit-narrowing as
-`audited_renaming`: explicit class-A definition framing under named
-admitted inputs).
-**Claim type:** open_gate
+**Status:** bounded support; candidate bounded theorem pending milestone review
+and independent audit. The endpoint secant is a bounded approximation on the
+declared grid, not an exact affine support law.
+**Date:** 2026-04-14 (original prototype); 2026-07-12 (source-step-free
+finite-operator repair).
+**Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
-**Authority role:** records a class-A staging definition under named
-admitted inputs; explicitly **does not** propose retained, bounded, or
-positive-theorem promotion. Names the upstream gaps as the open theorem
-targets.
-**Primary runner:** [`scripts/frontier_s3_time_tensor_primitive_prototype.py`](../scripts/frontier_s3_time_tensor_primitive_prototype.py) (PASS=4/0)
+**Primary runner:**
+[`scripts/frontier_s3_time_tensor_primitive_prototype.py`](../scripts/frontier_s3_time_tensor_primitive_prototype.py)
+(`PASS=11`, `FAIL=0`).
+**Runner cache:**
+[`logs/runner-cache/frontier_s3_time_tensor_primitive_prototype.txt`](../logs/runner-cache/frontier_s3_time_tensor_primitive_prototype.txt).
+**Implementation helpers:**
+[`quark_route2_endpoint_step_free_active_branch_slopes_bounded_2026_06_12.py`](../scripts/quark_route2_endpoint_step_free_active_branch_slopes_bounded_2026_06_12.py)
+and
+[`quark_route2_t_balance_exact_algebraic_value_bounded_2026_06_12.py`](../scripts/quark_route2_t_balance_exact_algebraic_value_bounded_2026_06_12.py).
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "fixed finite-operator computation with explicit conditions, endpoint values, and an eleven-point residual bound"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
 
-## Audit boundary
+## Bounded theorem domain
 
-The 2026-05-05 audit recorded the verdict `audited_renaming`, classifying
-the load-bearing step as a definitional staging object whose asserted
-endpoint coefficients, normalization, and affine reproduction values are
-not derived from any cited authority or runner-internal first-principles
-computation. The 2026-05-10 audit-narrowing refresh confirms there is
-**no upstream retained-grade derivation** of the named inputs on `main`,
-and adopts the explicit class-A definition framing.
-
-**Cited authorities (one-hop deps; cited, not closed in this note):**
-
-- [`S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md)
-  (`claim_type: open_gate`, `audit_status: audited_renaming`) — sibling
-  Route-2 bilinear-carrier definition note. Cited as related, not as
-  authority closure.
-- [`S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md`](S3_TIME_SPACETIME_TENSOR_PRIMITIVE_NOTE.md)
-  (`claim_type: bounded_theorem`, `audit_status: audited_conditional`)
-  — sibling Route-2 spacetime-tensor candidate that consumes
-  `Theta_R^(0)` as a bounded source-side input. Cited as related, not as
-  authority closure.
-- [`OH_SCHUR_BOUNDARY_ACTION_NOTE.md`](OH_SCHUR_BOUNDARY_ACTION_NOTE.md)
-  (`claim_type: bounded_theorem`, `effective_status: retained_bounded`)
-  — canonical Schur-boundary-action surface. Cited as the namesake of
-  the support-side decomposition, not as the source of the
-  `delta_A1`-decoupling derivation in this note.
+Fix the following finite-operator conditions. They define the theorem domain;
+they are not supplied by the framework axioms.
 
-**Admitted-context derivation gap (real, not import-redirect):**
+- a `15^3` cubic box with zero Dirichlet boundary and `13^3` interior;
+- the nearest-neighbor negative Laplacian and seven Green columns on the
+  center-plus-six-arms star;
+- the `R=4` exterior projector and `(3,3,0)` anisotropic orbit functional;
+- `scipy.ndimage.map_coordinates(order=3, mode="nearest", prefilter=True)`;
+- the static conformal metric
+  `g_00=-[(1-phi)/(1+phi)]^2`, `g_ii=(1+phi)^4`;
+- centered coordinate step `h=1/25`;
+- probes `(0,4.25,0,0)`,
+  `(0.3,4.25/sqrt(2),4.25/sqrt(2),0)`, and
+  `(0.6,4.25/sqrt(3),4.25/sqrt(3),4.25/sqrt(3))`;
+- the maximum absolute spatial trace-free Einstein component as readout;
+- NumPy `2.4.1`, SciPy `1.17.0`, and mpmath `1.3.0` for the frozen replay.
 
-This note explicitly admits the following upstream gaps. None of the
-three cited authorities, and no other current atlas surface, supplies a
-retained-grade derivation of any of them; there is therefore **no**
-upstream authority closure for the named inputs.
+The high-precision interpolation emulation uses edge padding `PAD=12`, a
+rational tridiagonal spline-coefficient solve, and cubic B-spline weights. The
+runner pins SHA-256 fingerprints of both implementation helpers.
 
-1. A retained-grade derivation of the bright-channel identification
-   `gamma_E(q) = <E_x, ·>` and `gamma_T(q) = <T1x, ·>` from a canonical
-   bright/dark decomposition on the seven-site star support.
-2. A retained-grade derivation of the exact reduced anisotropic shell
-   amplitude that is used as the prototype's normalization.
-3. A bridge theorem identifying the support-block pair `Theta_R^(0)`
-   with any physical tensor primitive in the GR-readout chain (rather
-   than as a definitional bounded readout asserted to be the right
-   staging object).
+The trivial cubic scalar irrep is denoted below by the established runner token
+`A1`. `E_x` and `T1x` are the tangent directions fixed by the proper cubic
+quarter-turn about the `+x` probe axis. “Route 2” is only the legacy program
+label for this construction.
 
-These are **real derivation gaps**, not dependency-citation issues. The
-note's name "tensor primitive prototype" is a label only; the in-note
-content is restricted to the class-A definition of `Theta_R^(0)` under
-the named admitted inputs and the runner-verified affine `delta_A1`
-reproduction identity.
+On the unit-charge scalar segment
 
-## Verdict (class-A definition only)
+`q_x = x e0 + (1-x) s_unit`, `x = 0,1/10,...,1`,
 
-The exact tensor-valued Route-2 support observable is still missing.
+the fixed operator satisfies these bounded statements:
 
-The current frontier supplies a class-A staging definition:
+1. `delta_A1(q_x)=x/6` by exact finite-lattice algebra.
+2. The negative `probe0:xx` entry is the unique maximum on the eleven-point
+   grid, with minimum gap `1.208546819918e-05`.
+3. Stabilizer-dark tangent responses `E_perp,T1y,T1z` are below `8.7e-17` in
+   the replay, while the `E_x,T1x` responses are nonzero.
+4. The common shell normalization and endpoint coefficients are computed
+   without a source-amplitude finite difference.
+5. The endpoint secant residual is below `5e-9` in E and `1.1e-8` in T on the
+   grid.
+6. Two numerical implementations give positive midpoint defects above `4e-9`
+   and `1e-8`. This is a bounded numerical non-affinity witness, not an
+   interval-certified exact nonzero theorem.
 
-- `Theta_R^(0)(q) := (gamma_E(q), gamma_T(q))`
+No fitted source family, observation, literature value, reported endpoint
+target, or imported decimal normalization is load-bearing.
 
-on the microscopic support block
+## Exact finite-operator reduction
 
-- `A1 x {E_x, T1x}`,
+Let
 
-evaluated by reading off the aligned `E_x` and `T1x` response coefficients
-after normalizing by the exact reduced anisotropic shell amplitude. This is
-class-A polynomial algebra in the named admitted inputs (see "Audit
-boundary" above).
+`s_unit=(1/6) sum_arms e_arm`, `d=e0-s_unit`.
 
-It is the correct first working **definitional staging object** for the
-Route-2 tool-build program. It is explicitly **not** a theorem-grade
-tensor observable; the gap to such an observable is named as upstream
-open derivation work above.
+The center row of the nearest-neighbor negative Laplacian gives
 
-## Class-A definition under named admitted inputs
+`d = H[(1/6) delta_center]`.
 
-Fix the exact seven-site star support and the adapted support basis
+Therefore
 
-- `A1(center) ⊕ A1(shell) ⊕ E_x ⊕ E_perp ⊕ T1x ⊕ T1y ⊕ T1z`.
+`Gd=(1/6) delta_center`,
 
-For a scalar `A1` background `q`, **define** (under the three named
-admitted inputs in "Audit boundary" above) the current bright-channel
-coefficient pair by
+`q_delta=s_unit+6 delta d`,
 
-- `Theta_R^(0)(q) := (gamma_E(q), gamma_T(q))`
+`phi_delta=phi_shell+delta delta_center`, `0<=delta<=1/6`.
 
-where:
+This derives `delta_A1(q_delta)=delta`. It also shows that the two raw lattice
+fields differ only at the center.
 
-- `gamma_E(q)` is the aligned `E_x` response coefficient
-- `gamma_T(q)` is the aligned `T1x` response coefficient
+The `R=4` exterior projector kills that center spike. Its total shell charge
+and anisotropic orbit functional are consequently constant on the scalar
+segment. The finite sine-sum replay computes
 
-after normalizing by the exact reduced anisotropic shell amplitude.
+`A_aniso = 0.0814354029959012027063775747854140534`
 
-This is the class-A definitional staging object currently available on
-the Route-2 support block. The note **does not** derive the named
-admitted inputs (bright-channel identification, exact reduced shell
-amplitude, physical tensor-primitive bridge) — see "Audit boundary"
-above for the explicit gap list.
+at shell, midpoint, and center, with 90-digit anchor drift below `2e-91`; the
+total shell charge equals `Q=1` with drift below `3e-89`. These extra digits
+identify the high-precision replay, not physical precision.
 
-## Why this is the staging definition
+## Analytic source derivative
 
-Under the named admitted inputs (see "Audit boundary"), the existing
-runner already exhibits:
+For a support tangent `v`, set `phi_v=Gv`. At every coordinate-stencil sample,
 
-1. the route-2 scalar machinery stays scalar-only
-2. the tensor boundary drive is bright only on
-   - `E_x`
-   - `T1x`
-3. the remaining `A1` dependence is controlled by the exact support-side
-   scalar
-   - `delta_A1`
+`D_v g_00 = 4(1-phi)/(1+phi)^3 phi_v`,
 
-So the first staging object is not a large tensor algebra. It is the
-smallest support observable that records those two bright coefficients.
+`D_v g_ii = 4(1+phi)^3 phi_v`.
 
-That is exactly what the class-A definition of `Theta_R^(0)` does. This
-is a definitional choice under named admitted inputs, not a theorem that
-the staging object is the unique correct primitive.
+The runner applies
 
-## Endpoint coefficients (runner readouts under named inputs)
+`D_v(g^-1)=-g^-1(D_v g)g^-1`
 
-On the two unit-charge `A1` endpoint backgrounds:
+and the product rule through the centered Christoffel, Ricci, Einstein, and
+trace-free constructions. This removes the former `epsilon=0.005`
+source-amplitude difference from the load-bearing calculation.
 
-- center background `e0`
-- shell background `s / sqrt(6)`
+Let `F(q)` be the active `probe0:xx` entry. It is negative at every declared
+grid point, so on the checked branch
 
-the prototype coefficients **read off the runner under the named admitted
-inputs** are:
+`beta_v(q)=D_v|F(q)|=-D_vF(q)`.
 
-- `Theta_R^(0)(e0) = (gamma_E, gamma_T)`
-  - `(-3.772329e-04, +3.359952e-04)`
-- `Theta_R^(0)(s / sqrt(6)) = (gamma_E, gamma_T)`
-  - `(-2.010572e-04, +4.031968e-04)`
+The reported finite response is
 
-These are runner-internal readouts conditional on the named admitted
-bright-channel identification and reduced-shell normalization (see
-"Audit boundary"). They are **not** independently derived endpoint
-coefficient theorems on this note's scope.
+`Theta_R^(0)(q)=(beta_Ex(q)/A_aniso,beta_T1x(q)/A_aniso)`.
 
-## Affine support law (runner-verified identity under named inputs)
+Naming the pair is secondary. The load-bearing result is its explicit
+derivative, normalization, active-branch, endpoint, and residual computation.
 
-The exact support-side scalar is
+## Stabilizer-selected tangent channels
 
-- `delta_A1(r) = 1 / (6 (1 + sqrt(6) r))`
+The proper cubic quarter-turn about the `+x` probe axis fixes `E_x` and `T1x`.
+It sends `E_perp` to its negative and rotates the `T1y,T1z` plane without a
+fixed vector. Because the scalar background and active `xx` entry are fixed by
+this stabilizer, their linear response annihilates the complementary tangent
+space. The runner also finds
 
-on the canonical `Q = 1` `A1` family.
+`max(|gamma_Eperp|,|gamma_T1y|,|gamma_T1z|)<8.7e-17`
 
-Using the two endpoint values above, the class-A definition gives an
-affine support-law identity
+at shell, midpoint, and center. This selects the two tangent channels for the
+fixed readout; it does not establish a unique physical GR bright pair.
 
-- `gamma_E(delta_A1)`
-- `gamma_T(delta_A1)`
+## Endpoint values and affine secant
 
-verified by the runner to reproduce:
+The source-step-free sparse replay gives
 
-- the canonical `A1` family at the `1e-8` level
-- the exact local `O_h` and finite-rank `A1` baselines at the `few x 1e-6`
-  level
+`Theta_R^(0)(e0)=(-3.772329630900e-04,+3.359952161280e-04)`,
 
-The runner verifies the affine identity follows by polynomial-arithmetic
-substitution from the class-A definition under the named admitted inputs.
-This is class-A reproduction-identity arithmetic, not a derivation of the
-named inputs themselves.
+`Theta_R^(0)(s_unit)=(-2.010571753887e-04,+4.031967438104e-04)`,
 
-## What this changes
+`Theta_R^(0)(q_mid)=(-2.891402561310e-04,+3.696066929060e-04)`.
 
-This note narrows the earlier blocker:
+The 60- and 90-digit helper evaluations differ below `1.5e-62`; the
+sparse-double analytic derivative differs below `2.6e-15`. A separate central
+source-amplitude finite difference reproduces the values within `1.5e-10`.
 
-> "Route 2 lacks any concrete staging object for the first missing
-> tensor-valued support observable."
+The endpoint secant is
 
-The note supplies a class-A definitional staging object under named
-admitted inputs. It does **not** close any of the upstream derivations,
-the bright-channel identification, the reduced-shell normalization, or
-the physical tensor-primitive bridge.
+`gamma_E^sec(delta)=-2.010571753887e-04-1.057054726208e-03 delta`,
 
-What remains open is narrower and is named explicitly above:
+`gamma_T^sec(delta)=+4.031967438104e-04-4.032091660945e-04 delta`.
 
-> close the three upstream gaps in "Audit boundary" and identify the
-> staging object with a physical tensor primitive in the GR-readout
-> chain.
+Its eleven-point maximum residual is `4.813108758989e-09` in E and
+`1.071293969295e-08` in T. At `delta_A1=1/12`,
 
-## What this does not close
+`R_E=gamma_E(mid)-[gamma_E(shell)+gamma_E(center)]/2`
 
-This note still does **not** close:
+`=+4.813108344220e-09`,
 
-1. an exact tensor-valued support observable theorem
-2. an exact endpoint coefficient theorem
-3. an exact support-to-slice time-coupling law
-4. full GR on Route 2
+`R_T=gamma_T(mid)-[gamma_T(shell)+gamma_T(center)]/2`
 
-## Atlas-facing interpretation
+`=+1.071293674114e-08`.
 
-This note **should not enter the atlas as a retained tool**.
+These values rule out affinity at the stated numerical tolerances. Exact
+algebraic non-affinity remains open without a validated error enclosure.
 
-It is a class-A definitional staging object under named admitted inputs.
-Once the upstream open derivations close, this staging object and its
-runner-verified affine identity become the obvious comparison surface
-for a future retained-grade tensor support observable theorem.
+## Interpolation boundary and physical firewall
 
-## Bottom line (scope-bounded)
+The identity `G(e0-s_unit)=delta_center/6` makes the exterior raw lattice
+fields identical. On the `probe0` curvature-stencil samples, local linear
+interpolation sees their difference only at `2.1e-18`, whereas the frozen cubic
+prefilter replay produces a tail as large as `4.322e-04`.
 
-The class-A definition under named admitted inputs is:
+Thus the observed scalar-segment dependence at the shell-adjacent readout is
+interpolation-contract dependent in this replay. The cubic contract supports
+the bounded finite computation, but this note does not derive it as a physical
+support-to-shell map.
 
-- `Theta_R^(0)(q) := (gamma_E(q), gamma_T(q))`
+The note does not claim an interpolation-independent or continuum endpoint,
+an exact affine law, a unique physical tensor primitive, support-to-slice
+coupling, or GR closure.
 
-with `gamma_E`, `gamma_T` the aligned `E_x` / `T1x` response coefficients
-under the named bright-channel identification and reduced-shell
-normalization. The runner verifies the affine `delta_A1` reproduction
-identity follows from this definition by polynomial-arithmetic
-substitution, conditional on the named admitted inputs.
+For compatibility with downstream boundary checks, the broader physical gaps
+are also recorded in the older vocabulary:
 
-The three open theorem targets are upstream of this note and are listed
-explicitly in the "Audit boundary" section above:
+- Outside the fixed algorithm, This note **does not**
+derive the named inputs themselves on an interpolation-independent surface.
+- Open physical phrases: exact reduced anisotropic shell amplitude; bridge theorem identifying the support-block pair.
+- This note still does **not** close an exact endpoint coefficient theorem on
+  an interpolation-independent or continuum surface.
 
-1. retained-grade derivation of the bright-channel identification;
-2. retained-grade derivation of the exact reduced anisotropic shell
-   amplitude used as the prototype's normalization;
-3. retained-grade bridge theorem identifying `Theta_R^(0)` with a
-   physical tensor primitive in the GR-readout chain.
+## Historical repair boundary
 
-None of these is closed in this note. The note's contribution is the
-class-A definition only.
+The historical review objected that the prototype was a renaming with no
+inspectable endpoint, normalization, or affine-residual computation. The new
+runner computes those quantities, makes the naming secondary, and exposes the
+interpolation condition. This closes the quoted artifact blocker for review of
+the bounded fixed-operator claim. Independent audit and dependency closure
+determine any retained-grade effective status.

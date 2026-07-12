@@ -1,42 +1,54 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_s3_time_tensor_primitive_prototype.py
-runner_sha256: 322db0d1eeafeb623b89b76e3dc21fcf074aaf73d3bf18032465cec7dd29c3a4
-timeout_sec: 120
+runner_sha256: ec6994858dfa38573d45241fb8a1a85a4376459ff4c4e01abf3d2dc003a51c50
+timeout_sec: 900
 exit_code: 0
-elapsed_sec: 71.27
+elapsed_sec: 45.68
 status: ok
 ----- stdout -----
-Route 2 tensor primitive prototype
+Finite cubic-star tensor response: source-step-free certificate
 ==============================================================================
-Prototype endpoint values:
-  Theta_R^(0)(e0)         = (-3.772329168017e-04, +3.359952396063e-04)
-  Theta_R^(0)(s/sqrt(6))  = (-2.010571874025e-04, +4.031967723697e-04)
+Claim surface: SIZE=15, interior=13^3, R=4, h=1/25,
+cubic map_coordinates(order=3, mode="nearest", prefilter=True),
+three fixed probes; Route 2 is the legacy program label.
+versions: numpy=2.4.1, scipy=1.17.0, mpmath=1.3.0
+[REPRODUCIBILITY] PASS: the two implementation-helper sources match the reviewed fingerprints
+    quark_route2_endpoint_step_free_active_branch_slopes_bounded_2026_06_12.py=87c70736f62c2e845d8b750e1341fddb16f0be5a64427bb408178c5d7a39f64e; quark_route2_t_balance_exact_algebraic_value_bounded_2026_06_12.py=58fca749d3f95c02f7775f45d889bcc0e0ebe04636a88b0aaeb59617cdd3ff36
+[EXACT-ALGEBRA] PASS: the declared adapted support basis is orthonormal
+    max Gram residual=2.220e-16
+[EXACT-ALGEBRA] PASS: the cubic-scalar endpoint difference is a center Kronecker spike
+    G(e0-s_unit)=delta_center/6, max residual=2.776e-17
+  Therefore q_delta=s_unit+6 delta(e0-s_unit) and
+  phi_delta=phi_shell+delta*delta_center, 0 <= delta <= 1/6.
+[EXACT-ALGEBRA] PASS: the +x-probe stabilizer fixes exactly the E_x and T1x tangent directions
+    bright fixed residual=5.551e-17; rank(R_x90-I) on dark block=3
+[FINITE-COMPUTE] PASS: the reduced R=4 shell normalization is computed, nonzero, and constant on the cubic-scalar segment
+    A=0.0814354029959012027063775747854140534; max anchor drift=1.9943192e-91; max total-shell-Q drift=2.0004556e-89
+[FINITE-COMPUTE] PASS: probe0:xx is the unique negative active branch on the declared 11-point cubic-scalar grid
+    minimum max-branch gap=1.208546819918e-05
+[FINITE-COMPUTE] PASS: stabilizer-dark tangent responses vanish while both bright responses are nonzero
+    max |dark gamma|=8.694e-17; min |bright gamma|=2.011e-04
+[FINITE-COMPUTE] PASS: 60-dps and 90-dps finite-operator endpoint/midpoint replays agree
+    precision drift=1.4881372e-62; sparse-double drift=2.5235306e-15
 
-Affine support law in delta_A1:
-  gamma_E(delta) = -2.010571874025e-04 + (-1.057054376395e-03) delta
-  gamma_T(delta) = +4.031967723697e-04 + (-4.032091965809e-04) delta
-canonical r=0.25: delta=1.033673504811e-01, gamma_E err=4.507e-09, gamma_T err=1.000e-08
-canonical r=0.50: delta=7.491495713053e-02, gamma_E err=4.762e-09, gamma_T err=1.067e-08
-canonical r=0.75: delta=5.874507418157e-02, gamma_E err=4.386e-09, gamma_T err=9.798e-09
-canonical r=1.00: delta=4.831632475944e-02, gamma_E err=3.972e-09, gamma_T err=8.787e-09
-canonical r=1.50: delta=3.565646152233e-02, gamma_E err=3.265e-09, gamma_T err=7.134e-09
-canonical r=2.00: delta=2.825347453309e-02, gamma_E err=2.664e-09, gamma_T err=6.029e-09
-exact local O_h: delta=6.242611227355e-02, gamma_E err=4.382e-07, gamma_T err=1.171e-07
-finite-rank: delta=3.307783365857e-02, gamma_E err=3.380e-06, gamma_T err=4.190e-06
-[BOUNDED] PASS: the first missing Route-2 primitive has a clean bounded prototype on A1 x {E_x, T1x}
-    Theta_R^(0)(q) := (gamma_E(q), gamma_T(q))
-[BOUNDED] PASS: the prototype endpoint coefficients are well defined at e0 and s/sqrt(6)
-    center=(-0.00037723291680174647, 0.0003359952396062656), shell=(-0.00020105718740250195, 0.0004031967723697443)
-[BOUNDED] PASS: the affine delta_A1 law reproduces the canonical A1 family
-    max canonical errors: gamma_E=4.762e-09, gamma_T=1.067e-08
-[BOUNDED] PASS: the same bounded prototype tracks the audited exact-local and finite-rank A1 baselines
-    max audited-family errors: gamma_E=3.380e-06, gamma_T=4.190e-06
+Source-step-free normalized endpoint values (12 displayed decimals)
+  Theta_R^(0)(e0)        = (-3.772329630900e-04, +3.359952161280e-04)
+  Theta_R^(0)(s_unit)    = (-2.010571753887e-04, +4.031967438104e-04)
+  Theta_R^(0)(midpoint)  = (-2.891402561310e-04, +3.696066929060e-04)
+[BOUNDED-OBSTRUCTION] PASS: the declared numerical replay is inconsistent with affinity at the stated tolerance
+    midpoint defects: R_E=0.00000000481310834421991687763936586986, R_T=0.0000000107129367411360702442948886778
+[BOUNDED-COMPUTE] PASS: the endpoint secant is a bounded approximation on the declared cubic-scalar grid
+    max residuals: E=4.813108758989e-09, T=1.071293969295e-08
+[BOUNDED-OBSTRUCTION] PASS: the cubic prefilter supplies the observed scalar-segment variation at the shell stencil in this replay
+    max interpolated |G(e0-s_unit)|: order1=2.049e-18, order3=4.322e-04
 
-Summary:
-  First missing primitive: tensor-valued support observable
-  Current bounded prototype: Theta_R^(0)(q) = (gamma_E(q), gamma_T(q))
-  Endpoint theorem: not exact yet, but endpoint data are now explicit
-PASS=4 FAIL=0
+Claim firewall
+  - finite fixed-stencil derivative and grid bound: certified
+  - exact affine support identity: numerically disfavored, not exactly certified
+  - interpolation-independent or continuum coefficient: not claimed
+  - physical tensor primitive / GR bridge: not claimed
+==============================================================================
+TOTAL: PASS=11 FAIL=0
 
 ----- stderr -----
 

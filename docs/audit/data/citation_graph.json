@@ -730,10 +730,6 @@
     },
     {
       "from": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
-      "to": "ac_orbit_occupancy_statistical_grain_derivation_obligation"
-    },
-    {
-      "from": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
       "to": "realized_state_primitive"
     },
     {
@@ -783,10 +779,6 @@
     {
       "from": "acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04",
       "to": "minimal_axioms"
-    },
-    {
-      "from": "acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04",
-      "to": "ac_reta_hclass_hunit_readout_derivation_obligation"
     },
     {
       "from": "acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04",
@@ -59047,13 +59039,12 @@
       "claim_type_seed_hint": "no_go",
       "deps": [
         "minimal_axioms",
-        "ac_reta_hclass_hunit_readout_derivation_obligation",
         "realized_state_primitive",
         "scale_reference_primitive",
         "kinetic_isotropy_primitive"
       ],
       "helper_runner_paths": [],
-      "note_hash": "cc47d1b6e54ea26605eb76924f39bdef628528f1f9eed0e97ea3a018accf71c6",
+      "note_hash": "ccf314389933c1f8ba0defc27feb18b612810a4a8ba219c78d67bc1c823c4a98",
       "path": "docs/ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
       "runner_path": "scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py",
       "title": "Record Additivity Does Not Fix the R-eta Unit Calibration"
@@ -59227,11 +59218,10 @@
       "claim_type_seed_hint": "no_go",
       "deps": [
         "minimal_axioms",
-        "ac_orbit_occupancy_statistical_grain_derivation_obligation",
         "realized_state_primitive"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3e1b27a325ea50025873bcecd66ea79ff3dd78687d5157a5c2b5bbe85e9715e9",
+      "note_hash": "f5eac7bcc3c76c0aa5beb472857d4c4240bcf06a93f3efa05e9eff5779b3d78b",
       "path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
       "runner_path": "scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py",
       "title": "The Axiom Surface Does Not Select a Complex-vs-Realified Determinant Power"
@@ -129176,7 +129166,7 @@
       "open_gate": 209,
       "positive_theorem": 661
     },
-    "edge_count": 14549,
+    "edge_count": 14547,
     "leaf_count": 1335,
     "node_count": 3925,
     "root_count": 1116,

@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 90 |
 | **retained_no_go** | 30 |
 | **retained_bounded** | 362 |
-| _retained_pending_chain_ | 3 |
+| _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2793 |
+| unaudited | 2795 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 469 |
+| `audited_clean` | 467 |
 | `audited_conditional` | 47 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3143 |
+| `unaudited` | 3145 |
 
 | claim_type | count |
 |---|---:|
@@ -63,12 +63,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | criticality | count |
 |---|---:|
-| `critical` | 751 |
-| `high` | 400 |
+| `critical` | 750 |
+| `high` | 401 |
 | `medium` | 940 |
 | `leaf` | 1662 |
 
-- **Retained pending chain closure:** 3
+- **Retained pending chain closure:** 1
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
@@ -140,8 +140,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `acphilambda_hw_complementation_equivariance_support_note_2026-06-09` | open_gate | ~~audited_clean~~ | open_gate | cross_family | codex-gpt-5.6 | A | - |
 | `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
-| `acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_clean~~ | _retained_pending_chain_ | fresh_context | codex-gpt-5.6 | C | - |
-| `acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -794,38 +792,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For every complex n-by-n matrix K, det_R R(K)=det_C(K)det_C(conjugate(K))=|det_C(K)|^2, while the stated left-Berezin ordering gives integral exp(-chibar K chi)=det_C(K).  _(class `A`)_
 - **chain closes:** True — The block identity S R(K)=diag(K,conjugate(K)) S proves the realification formula without invertibility, and expansion of -chibar K chi in the displayed variable order yields the determinant permutation signs. Independent exact integer determinants and an unrelated tuple-based left-derivative calculation confirmed both formula families, including odd-dimensional signs.
 - **rationale:** The theorem is exact algebra and closes without cited dependencies, hidden physical premises, normalization imports, or observable identifications. The runner's 18 checks agree with independent block-algebra, exact determinant, and explicit left-Berezin derivative checks; the differential order and exponent sign produce det(K) for both odd and even dimensions. Residual risk is limited to downstream misuse: the audited scope deliberately supplies no charged-lepton carrier, measure, selector, or occupancy bridge.
-- **auditor confidence:** high
-- **No-Go Discipline:** `PASS`
-
-### `acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04`
-
-- **Note:** [`ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md)
-- **claim_type:** `no_go`
-- **claim_scope:** After granting a nonzero R-eta h-class representative, the four axioms and approved primitives do not entail the identity coefficient beta=1 for finite Record readouts; beta=2 preserves the stated Record and symmetry requirements.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:ac_reta_hclass_hunit_readout_derivation_obligation`)
-- **auditor:** `codex-gpt-5.6-sol-audit-acii-nogo-20260711`  (codex-gpt-5.6; independence=fresh_context)
-- **load-bearing step:** The target is beta=1; beta=2 is an explicit countermodel with the same axiom structure and the same granted h.  _(class `C`)_
-- **chain closes:** True — Independently, |R disjoint-union S|=|R|+|S| proves I_beta is additive for every real beta, while beta=1 and beta=2 share h and all supplied structures but disagree on singleton and three-record values. This closes only normalization non-entailment, not the full physical AC(ii) readout obligation.
-- **rationale:** The explicit beta family is a valid constructive countermodel: cardinality gives empty-zero and finite additivity for all real beta, and neither lattice symmetry, real K/CPT evenness, realized-state evaluation, scale reference, nor kinetic isotropy selects beta=1. The safe boundary is narrow: the result grants h-class and establishes only h-unit/normalization non-entailment on finite Record readouts; it neither derives nor forbids a future physical same-observable AC(ii) theorem.
-- **open / conditional deps cited:**
-  - `AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`
-- **auditor confidence:** high
-- **No-Go Discipline:** `PASS`
-
-### `acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04`
-
-- **Note:** [`ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md)
-- **claim_type:** `no_go`
-- **claim_scope:** On a granted finite invertible complex carrier, the four axioms plus pointwise realized-state evaluation do not select between the additive raw determinant readouts log|det_C A| and log det_R R(A)=2 log|det_C A|; no physical charged-lepton action or measure claim is included.
-- **audit_status:** ~~audited_clean~~
-- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:ac_orbit_occupancy_statistical_grain_derivation_obligation`)
-- **auditor:** `codex-gpt-5.6-sol-xhigh-acphilambda-occupancy-20260711`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** The two scalar laws I_C(C)=N(C) log 2 and I_R(C)=2N(C) log 2 share the same non-readout record-model reduct and both satisfy content-only finite additivity, while det_R R(A)=|det_C A|^2 makes their raw determinant powers distinct.  _(class `A`)_
-- **chain closes:** True — Two models with the same lattice, local possibility structure, admissibility, records, record contents, and auxiliary carrier but different allowed scalar-readout normalizations are enough to refute entailment of either raw power. Exact algebra and an independent non-SymPy finite determinant check confirm the factor, additivity, and n versus 2n scaling.
-- **rationale:** The same-reduct countermodels satisfy Record's empty-zero, record-content-only, and finite disjoint-additivity clauses, while exact realification forces F_R=2F_C; therefore the supplied axiom and primitive surface does not select the raw determinant normalization. Residual risk is intentionally outside this scope: the construction neither builds nor distinguishes physical charged-lepton actions or Gaussian measures and does not discharge AC(i); the directly cited occupancy obligation remains open and will block effective retained-grade propagation.
-- **open / conditional deps cited:**
-  - `AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

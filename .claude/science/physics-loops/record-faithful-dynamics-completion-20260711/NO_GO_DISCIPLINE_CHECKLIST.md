@@ -911,3 +911,137 @@ choice-free law, and overlapping-lattice composition remain live
 stronger routes. The result therefore advances the campaign without
 triggering the axiom-update stop condition. Independent review and audit remain
 required.
+
+---
+
+# No-Go Discipline: Cubic Matching-Product Qubit-QCA Schedule Orbit
+
+**Status:** PASS for the narrow statement that no member of the supplied
+six-layer iSWAP matching-product class is invariant under every one-site
+translation on infinite `Z^3` or an even torus with `L>=6`. CZ closes the same
+grammar to one invariant automorphism. No general-QCA, simultaneous-tick, or
+axiom-level no-go is claimed.
+
+## N1 — Alternative routes
+
+| Route | Marker | Exact result |
+|---|---|---|
+| commuting gate | `ATTEMPTED` | CZ collapses all 720 words to one invariant graph-radius-one automorphism, defeating a gate-independent obstruction |
+| noncommuting exchange | `ATTEMPTED` | full monomial enumeration gives eight iSWAP products, 90 words each |
+| spatial quotient | `ATTEMPTED` | all 24 proper rotations act transitively, while unit translations flip sign coordinates; orbit equivalence is not member invariance |
+| cyclic time-origin quotient | `ATTEMPTED` | one-layer shifts change exact products but connect all eight by finite-depth conjugacy |
+| reversal/inversion | `ATTEMPTED` | `L_m^2=P` makes fixed-gate reversal the exact inverse after six layers; opposite sign triples are paired, not selected |
+| finite-size/infinite control | `ATTEMPTED` | `L=4` aliases, while local algebra and the one-excitation formula prove the result for every even `L>=6` and the supplied quasi-local extension |
+
+No route is `RULED OUT BY PRIOR`; the proof is self-contained.
+
+## N2 — Wall independence
+
+The named inputs are `W_T` (global finite/quasi-local tensor carrier), `W_M`
+(parity matching cover and boundary convention), `W_G` (gate/phase), `W_C`
+(each layer once and the whole sweep called a tick), and `W_E` (exact,
+spatial, cyclic, and inverse equivalence semantics).
+
+| Pair | First closes second? | Reverse? | Independent? |
+|---|---:|---:|---:|
+| `W_T/W_M` | no | no | yes |
+| `W_T/W_G` | no | no | yes |
+| `W_T/W_C` | no | no | yes |
+| `W_T/W_E` | no | no | yes |
+| `W_M/W_G` | no | no | yes |
+| `W_M/W_C` | no | no | yes |
+| `W_M/W_E` | no | no | yes |
+| `W_G/W_C` | no | no | yes |
+| `W_G/W_E` | no | no | yes |
+| `W_C/W_E` | no | no | yes |
+
+These are theorem conditions, not five asserted missing axioms.
+
+## N3 — Hidden-wall scan
+
+The source/runner were scanned for assumptions and for `supplied`, `QCA`,
+`simultaneous`, `tick`, `time reversal`, and `radius`.
+
+| Coordinate | Classification |
+|---|---|
+| global qubit tensor/quasi-local composition | explicit input; one-site `M_2(C)` does not supply it |
+| even torus, periodic boundary, parity origin | explicit; `L=4` is separated from `L>=6` |
+| identical CZ or iSWAP on every edge | explicit gate and phase input |
+| six layers used once in sequence | explicit composition/clock grammar |
+| exact unitary versus automorphism equality | full phase polynomial tested; vacuum phase removes scalar ambiguity |
+| spatial/cyclic orbit versus member equality | tested and stated separately; no phase/index claim |
+| reversal versus physical time reversal | narrowed to exact inverse; bare `K` and optional chosen `RK` are disclosed |
+| radius | nearest-neighbor graph/`l1`; iSWAP `l_infinity=2` also disclosed |
+| Record, probability, rate, continuum, SM, GR | absent and explicitly open |
+
+No hidden input broadens the theorem.
+
+## N4 — Residual matching
+
+| Surface/status | Residual there | Use here | Match? |
+|---|---|---|---:|
+| [minimal axioms, lines 106--117](../../../../docs/MINIMAL_AXIOMS_2026-06-29.md#L106), approved premise | graph, symmetry, one-site algebra; explicitly no Hamiltonian, transfer operator, weights, time metric, or record process | sole framework dependency | authority context |
+| [overlap-order source, lines 236--255](../../../../docs/OVERLAPPING_EDGE_INSTRUMENT_ORDER_AND_TIME_RATE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md#L236), branch-local/audit-pending | six matching family but no coherent QCA or ordering | exact combinatorial precursor only; circuit algebra is recomputed | adjacent |
+| [scalar CAR-QCA source, lines 245--261](../../../../docs/SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11.md#L245), branch-local/audit-pending | Gaussian/CAR classification with general qubit/Clifford QCA open | category contrast only | no |
+| [3D Bloch tick, lines 64--83](../../../../docs/KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BOUNDED_THEOREM_NOTE_2026-06-10.md#L64), `unaudited` | supplied factorized one-particle walk; broader amplitude-mixing class open | no many-body authority imported | no |
+| [eta-twisted family, lines 60--80](../../../../docs/ETA_TWISTED_WALK_FAMILY_RIGID_DRIFT_DISCOVERY_BOUNDED_THEOREM_NOTE_2026-06-10.md#L60), `unaudited` | curved one-particle covariant escape outside the factorized class | warning against carrier-independent rhetoric; no circuit proof imported | adjacent only |
+| [tick/Admissibility bridge, lines 244--256](../../../../docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md#L244), `audited_conditional`, `chain_closes=false` | supplied one-axis realization predicate remains downstream | selects no present gate/grammar | no |
+| [kinetic-isotropy primitive, lines 64--75](../../../../docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md#L64), approved primitive | structural `c_t=c_s` only; no selector or dynamics | no gate, schedule, or Lorentz theorem | no |
+
+Adjacent negatives are not proof authority for the new result.
+
+## N5 — Resolution audit
+
+| Resolution | Tested? | Honest result |
+|---|---:|---|
+| gate/layer | exact | only CZ and iSWAP in the named matching grammar |
+| all 720 words | exact | one CZ product; eight iSWAP products, 90 each |
+| full unitary equality | exact permutation plus phase | not merely support/symplectic equality |
+| spatial/cyclic/inverse quotients | exact | one orbit under each named conjugacy; opposite signs are inverses |
+| causal support | analytic lower and depth upper bound | graph radius one/six |
+| all sizes/infinite | analytic local proof | `L=4` exception; even `L>=6` and supplied `Z^3` extension |
+| all gates/general QCA | no | open |
+| physical tick/Record/continuum | no | open |
+
+The negative is never widened beyond the fixed iSWAP grammar.
+
+## N6 — Positive closure paths
+
+| Candidate route | Exact path/status | What it could close |
+|---|---|---|
+| CZ/commuting controlled phases | [current source, lines 95--112](../../../../docs/CUBIC_MATCHING_PRODUCT_QUBIT_QCA_SCHEDULE_ORBIT_BOUNDED_THEOREM_NOTE_2026-07-11.md#L95), bounded theorem/audit-pending | already closes schedule dependence for CZ; a broader commuting-family theorem could classify its extent |
+| common Hamiltonian `exp(-i sum_e h_e)` | no current repo source; open | replaces ordered products with one simultaneous generator |
+| clock/control register | no current repo source; open | cycles or coherently controls parity phases without selecting one raw word |
+| partitioned/Margolus circuit | no current repo source; open | changes composition grammar while preserving strict locality |
+| partial-iSWAP/other interacting gates | no current repo classification; open | locates covariance and degeneracy loci between the two exact controls |
+| larger cell/alternate cover | [3D Bloch tick, lines 64--83](../../../../docs/KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BOUNDED_THEOREM_NOTE_2026-06-10.md#L64), `unaudited` context only | can absorb a period-two phase; does not presently supply a many-body QCA |
+| schedule-averaged CPTP channel | [overlap-order source, lines 193--202](../../../../docs/OVERLAPPING_EDGE_INSTRUMENT_ORDER_AND_TIME_RATE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md#L193), branch-local/audit-pending analogue | restores channel covariance in some cases but is not generally an automorphism |
+| Admissibility-to-update/Record order | [tick bridge, lines 244--256](../../../../docs/TICK_ADMISSIBILITY_REALIZATION_BRIDGE_CLAUSE_TO_PREDICATE_NARROW_THEOREM_NOTE_2026-07-10.md#L244), `audited_conditional`, `chain_closes=false` | could select the physical gate, grammar, and event direction if its realization residual closes |
+| approved primitive registry | [axiom/primitive registry](../../../../docs/audit/data/axiom_premise_nodes.json), checked current | none of the four nodes selects a QCA; no update is forced while derivation/model routes remain live |
+
+## N7 — Steelman
+
+CZ already supplies a coherent translation/proper-cubic-invariant,
+schedule-independent automorphism in the identical grammar. All eight iSWAP
+products are finite-depth circuits in one proper-cubic and cyclic-time-origin
+orbit, so raw multiplicity can be micromotion gauge rather than eight laws.
+Common-Hamiltonian, clocked, Margolus, partial-swap, larger-cell, and other-gate
+routes remain unclassified. A framework-wide QCA no-go or axiom update would
+therefore be premature.
+
+## N8 — Cross-cycle echo
+
+| Prior surface/status | Retired or changed? / mechanism | Applicability here |
+|---|---|---|
+| [overlap-order CP instruments, lines 193--202 and 289--301](../../../../docs/OVERLAPPING_EDGE_INSTRUMENT_ORDER_AND_TIME_RATE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md#L193), branch-local/audit-pending | not retired; commuting and symmetrized positive controls narrowed the raw noncommuting fork | gate/process choice must remain explicit |
+| [scalar CAR-QCA source, lines 245--261](../../../../docs/SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11.md#L245), branch-local/audit-pending | scalar obstruction is not general; six-mode carrier enlargement supplies a transport escape | other gates/carriers remain live |
+| [factorized 3D class, lines 64--83](../../../../docs/KINETIC_ISOTROPY_3D_SIMULTANEOUS_TICK_BOUNDED_THEOREM_NOTE_2026-06-10.md#L64), `unaudited`; [eta escape, lines 60--80](../../../../docs/ETA_TWISTED_WALK_FAMILY_RIGID_DRIFT_DISCOVERY_BOUNDED_THEOREM_NOTE_2026-06-10.md#L60), `unaudited` | bounded factorized result not retired; broader “no cone at this carrier density” rhetoric was narrowed after the eta family exhibited curvature | keep the present negative inside its exact grammar |
+| [same-carrier Record obstruction, lines 235--249](../../../../docs/RECORD_OBSERVABLE_QUOTIENT_AND_RANK_ONE_FORMATION_OUTCOME_OPERATION_NORMAL_FORM_BOUNDED_THEOREM_NOTE_2026-07-11.md#L235), branch-local/audit-pending; [auxiliary-register escape, lines 313--330](../../../../docs/AUTONOMOUS_INTERMITTENT_RECORD_INSTRUMENT_CALIBRATION_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md#L313), branch-local/audit-pending | not retired framework-wide; carrier/register enlargement evades only the finite same-carrier route | clock/control and cell enlargement can analogously escape |
+| [minimal axioms, lines 178--187](../../../../docs/MINIMAL_AXIOMS_2026-06-29.md#L178), approved axiom premise | occurrence residual retired by owner-approved Record wording clarification “Records form”; process/site/weight/rate remain open | no precedent for adding a schedule axiom |
+| [kinetic-isotropy primitive, lines 64--75](../../../../docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md#L64), approved primitive | structural graining registered as a primitive, not an axiom update; dynamics and selectors remain open | cannot be repurposed as gate/schedule selection |
+
+## Matching-product conclusion
+
+All N1--N8 checks pass. The exact CZ counterroute, quotient relations, other
+gates, common Hamiltonians, and clocked/larger-cell constructions block any
+broader negative. No axiom or primitive update is required by this result.

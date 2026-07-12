@@ -234,3 +234,37 @@ Independent claim, code/math, and governance re-reviews passed. The audit
 pipeline seeded only `minimal_axioms`, strict lint passed with no errors, and
 generated audit/effective-status surfaces were stripped before delivery.
 Independent audit remains required.
+
+## Matching-product qubit-QCA internal result
+
+- CZ gives one exact translation/proper-cubic-invariant graph-radius-one
+  automorphism across all 720 schedules.
+- iSWAP gives eight full monomial unitaries, 90 schedules each, for even
+  `L>=6`; they form one proper-cubic and cyclic-conjugacy orbit.
+- No iSWAP member is invariant under every unit translation; all retain even
+  translations and exact graph radius six.
+- Fixed-gate reversal is the exact inverse, and `L=4` is the sharp aliasing
+  exception.
+- Runner/cache: `PASS=26 FAIL=0`.
+
+### Matching-product review iteration 1
+
+Independent review found an incorrect claim that time reversal required
+gatewise iSWAP adjoints. It also required separation of finite-torus circuits
+from infinite quasi-local automorphisms, an analytic all-even-size proof,
+nearest-neighbor graph-radius wording, proper-cubic member orbits versus
+one-member invariance, cyclic conjugacy versus exact equality, and QCA phases
+versus finite-depth products.
+
+### Matching-product review iteration 2
+
+The source now proves the all-size displacement formula and infinite local
+automorphism extension, treats global parity as a finite-torus operator and an
+onsite parity automorphism on `Z^3`, classifies spatial/cyclic/inverse
+relations separately, and narrows physical time-reversal language. The runner
+now checks actual CZ layer accumulation, all 24 rotations, cyclic connectivity,
+both inverse constructions for all 720 schedules, and an omitted-layer
+mutation. Claim, code/math, governance, and N1--N8 reviews pass. Audit-system
+validation seeds only `minimal_axioms`; strict lint passes with no errors, and
+the row remains `bounded_theorem` / `unaudited` with no helper runners.
+Generated audit/effective-status surfaces are stripped before delivery.

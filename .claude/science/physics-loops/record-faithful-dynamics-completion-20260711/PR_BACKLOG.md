@@ -24,6 +24,21 @@ for the next stacked review PR:
 
 No merge is authorized. Independent audit remains authoritative.
 
+The cubic matching-product qubit-QCA schedule-orbit classification is prepared
+for the next stacked review PR:
+
+- base: `physics-loop/record-faithful-dynamics-block07-simultaneous-qca-20260711`
+- head: `physics-loop/record-faithful-dynamics-block08-matching-qca-20260711`
+- source runner: `PASS=26 FAIL=0`
+- disposition: independent claim, code/math, governance, and N1--N8 review
+  passed after finite/infinite category, all-even-size, graph-radius,
+  spatial/cyclic/inverse, and reversal repairs; the audit pipeline seeds only
+  `minimal_axioms`, strict lint passes with no errors, and generated status
+  surfaces are stripped
+- delivery check: prepared; PR URL pending push/open
+
+No merge is authorized. Independent audit remains authoritative.
+
 The scalar cubic CAR-QCA classification and six-direction escape is prepared
 for the next stacked review PR:
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_d3_landau_peierls_single_band_normalization_2026_06_18.py
-runner_sha256: 204d061f4e9b23e55d770b411af3e4a85363192ec04baa868cdb2948eaa7f0b1
+runner_sha256: 2c9eb43acc0b962833bb0ee9e65e9c2a88a8b5332039483495f07704340231f0
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.18
 status: ok
 ----- stdout -----
 d=3 single-band Landau-Peierls normalization source-boundary runner

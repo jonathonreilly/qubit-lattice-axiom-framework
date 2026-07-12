@@ -367,6 +367,9 @@ def main() -> int:
     scope_required = (
         "**Derived scope (positive-definite elliptic patches).**",
         "positive-definite elliptic (band-minimum)",
+        "Omega''_{P_+}(0)",
+        "integral_{P_+}",
+        "remaining Brillouin-zone patches is not derived here",
         "does not remove the parent full-Brillouin-zone input",
         "explicit open conjecture",
         "not part of the derived bounded claim",

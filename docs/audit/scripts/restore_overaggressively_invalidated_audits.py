@@ -1,9 +1,30 @@
 #!/usr/bin/env python3
-"""One-shot restoration of audits over-aggressively invalidated before
-PR #907's policy refinement of `criticality_increased` and the
-soft-reset propagation rule in `compute_effective_status`.
+"""Restoration of audits over-aggressively invalidated by a since-refined
+policy. Originally the one-shot PR #907 pass for `criticality_increased`;
+now also the standing recovery lane for `no_go_discipline_packet_missing`
+archives whose gating was narrowed by the trigger-precision repair, and
+for `dep_weakened` archives whose dependency has recovered. Idempotent;
+safe to run on every pipeline pass.
 
-Two categories of archived audits are restored:
+Restored categories:
+
+  3. `no_go_discipline_packet_missing` invalidations whose archived audit
+     is restorable under the CURRENT no-go trigger. The restoration guard
+     re-runs the live source/output gate: a row that still asserts a
+     gated negative boundary without a packet, or whose archived packet
+     does not round-trip validation, stays invalidated for fresh audit.
+     Only rows the trigger-precision repair no longer gates (honest
+     scoping surfaces and misparse classes) become eligible.
+
+  4. `dep_weakened:dep_id:before->after` invalidations whose `dep_id`
+     has already recovered on the live ledger — through a landed
+     re-audit or an earlier restoration pass — to a tier at least as
+     strong as the archived audit's recorded `before` tier, with every
+     other still-live invalidation check clean. Chains recover one
+     dependency hop per pass; the pipeline's joint invalidate/restore
+     loop iterates passes to a fixed point within one run (ten-pass cap).
+
+Original PR #907 categories, retained verbatim:
 
   1. `criticality_increased:before->after` invalidations where PR #907's
      `_categorize_criticality_bump` would have returned `noop` or
@@ -39,7 +60,7 @@ Other invalidation reasons (`note_hash` drift handled by
 `runner_artifact_issue_resolved`) are NOT touched; those reflect real
 state changes that genuinely invalidated the audit.
 
-Both restoration categories also require the archived audit to satisfy
+Every restoration category also requires the archived audit to satisfy
 current audit-lane lint requirements (claim_type, claim_scope, repair
 class prefix for audited_conditional rows, and current auditor-family
 floor). Older archived audits that do not meet those requirements remain
@@ -55,15 +76,18 @@ is a no-op on the second run.
 
 Sequencing:
 
-  1. PR #907 must be merged (the policy code that holds soft-reset
-     deps at retained-grade and produces the new `criticality_soft_reset`
-     reason class).
-  2. Run this script (modifies the ledger).
-  3. Run `bash docs/audit/scripts/run_pipeline.sh` to propagate.
-     `invalidate_stale_audits.py` will see the restored audits and
-     soft-reset the criticality-bumped clean rows;
-     `compute_effective_status.py` will hold their effective_status at
-     retained-grade so downstream rows stay valid.
+  This script now runs inside `run_pipeline.sh` step 7, interleaved with
+  `invalidate_stale_audits.py` to a joint fixed point: invalidation
+  settles the gate state, restoration recovers eligible archives, and
+  `compute_effective_status.py` propagates between passes. Restoration
+  can expose a masked lower-ranked dependency verdict; the next
+  invalidation pass applies it with a fresh accurate reason, and the
+  before-tier comparison prevents re-restoration, so the loop is
+  monotone. Standalone invocation (with or without `--dry-run`) remains
+  supported and idempotent.
+
+  Historical PR #907 sequencing (one-shot): merge #907, run this script,
+  then run the pipeline to propagate.
 
 Usage:
   python3 docs/audit/scripts/restore_overaggressively_invalidated_audits.py [--dry-run] [--limit N]
@@ -71,8 +95,10 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import contextlib
 import hashlib
 import json
+import os
 import re
 import sys
 from datetime import datetime, timezone
@@ -118,6 +144,7 @@ ARCHIVED_FIELDS = (
     "no_go_discipline",
     "audit_invocation_id",
     "audit_invocation_history",
+    "negative_assertion_classes",
 )
 
 RANK = {
@@ -465,6 +492,19 @@ def parse_dep_weakened(reason: str) -> tuple[str, str, str] | None:
     return dep_id, before, after
 
 
+@contextlib.contextmanager
+def _forensic_gate():
+    prior = os.environ.get("AUDIT_FORENSIC_MODE")
+    os.environ["AUDIT_FORENSIC_MODE"] = "1"
+    try:
+        yield
+    finally:
+        if prior is None:
+            os.environ.pop("AUDIT_FORENSIC_MODE", None)
+        else:
+            os.environ["AUDIT_FORENSIC_MODE"] = prior
+
+
 def restore_audit_from_previous(
     row: dict,
     rows: dict[str, dict] | None = None,
@@ -513,9 +553,14 @@ def restore_audit_from_previous(
         note_body = (REPO_ROOT / note_path).read_text(encoding="utf-8", errors="replace")
     except OSError:
         pass
-    source_required = no_go_discipline_gate.source_requires_no_go_discipline(
-        note_path, note_body, new_row.get("claim_type")
-    )
+    # Restoring archived clean authority is a certification-like act:
+    # evaluate the negative-boundary gate in the forensic tier so a
+    # packetless negative row cannot re-enter authority through a
+    # development-tier restoration pass (two-tier assurance, 2026-07-12).
+    with _forensic_gate():
+        source_required = no_go_discipline_gate.source_requires_no_go_discipline(
+            note_path, note_body, new_row.get("claim_type")
+        )
     gate_blob = {
         "claim_type": new_row.get("claim_type"),
         "claim_scope": new_row.get("claim_scope"),
@@ -527,12 +572,24 @@ def restore_audit_from_previous(
         "notes_for_re_audit_if_any": new_row.get("notes_for_re_audit_if_any"),
         "no_go_discipline": new_row.get("no_go_discipline"),
     }
-    output_required = no_go_discipline_gate.output_requires_no_go_discipline(
+    with _forensic_gate():
+        output_required = no_go_discipline_gate.output_requires_no_go_discipline(
         gate_blob
+    )
+    # Honor a non-empty declaration present on EITHER storage surface:
+    # the archived audit or the reset live row (legacy archives predate
+    # the field, but a surviving live declaration is still the auditor's
+    # semantic judgment). Absence of the key on genuinely old archives
+    # remains accepted.
+    declared_archived = archived.get("negative_assertion_classes")
+    declared_live = row.get("negative_assertion_classes")
+    declared_requires = any(
+        isinstance(d, list) and bool(d)
+        for d in (declared_archived, declared_live)
     )
     if (
         new_row.get("audit_status") == "audited_clean"
-        and (source_required or output_required)
+        and (source_required or output_required or declared_requires)
         and new_row.get("no_go_discipline") is None
     ):
         return None
@@ -555,26 +612,43 @@ def restore_audit_from_previous(
     if isinstance(cross, dict):
         for audit_key in ("first_audit", "second_audit", "third_audit"):
             summary = cross.get(audit_key)
-            if not isinstance(summary, dict) or summary.get("verdict") != "audited_clean":
+            if not isinstance(summary, dict) or not summary:
                 continue
+            verdict = summary.get("verdict") or summary.get("audit_status")
             summary_requires_packet = (
                 source_required
                 or no_go_discipline_gate.output_requires_no_go_discipline(summary)
             )
-            if not summary_requires_packet:
-                continue
             packet = summary.get("no_go_discipline")
+            if packet is None:
+                # A required clean seat without a packet is not restorable.
+                if summary_requires_packet and verdict == "audited_clean":
+                    return None
+                continue
+            # A PRESENT nested packet must round-trip validation even when
+            # the seat would not independently require one, mirroring the
+            # live invalidator's present-packet checks (restoration always
+            # evaluates in the forensic tier).
             manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
                 packet if isinstance(packet, dict) else {}
             )
-            if manifest is None:
-                return None
-            if no_go_discipline_gate.evidence_snapshot_current_error(
-                packet, current_manifest or {}
-            ):
-                return None
+            if verdict == "audited_clean":
+                if manifest is None:
+                    return None
+                if no_go_discipline_gate.evidence_snapshot_current_error(
+                    packet, current_manifest or {}
+                ):
+                    return None
+            elif manifest is None:
+                manifest = current_manifest
             if no_go_discipline_gate.validate_no_go_discipline(
-                {**summary, "chain_closes": True},
+                {
+                    **summary,
+                    "verdict": verdict,
+                    "chain_closes": summary.get(
+                        "chain_closes", verdict == "audited_clean"
+                    ),
+                },
                 source_required=source_required,
                 evidence_manifest=manifest,
             ):
@@ -600,21 +674,46 @@ def restore_audit_from_previous(
     return new_row
 
 
-def select_restore_candidates(rows: dict[str, dict]) -> tuple[dict[str, str], list[tuple[str, str, str]]]:
-    """First pass: find rows that should be restored under PR #907's policy.
+def select_restore_candidates(
+    rows: dict[str, dict],
+) -> tuple[dict[str, str], list[tuple[str, str, str]], dict[str, str], list[tuple[str, str, str]]]:
+    """First pass: find rows that should be restored.
 
     Returns:
       - `crit_set`: dict mapping `cid` -> archived `audit_status`
         (e.g. `audited_clean`, `audited_conditional`, ...) for rows whose
         most recent invalidation was a `criticality_increased:*` that
-        the new rule would have noop'd or soft_reset'd.
+        PR #907's rule would have noop'd or soft_reset'd.
       - `dep_weakened_set`: list of `(cid, dep_id, archived_status)`
         tuples for rows whose most recent invalidation was a
-        `dep_weakened:*` whose dep is in `crit_set` and whose restored
-        dep tier is no weaker than the archived audit's snapshot.
+        `dep_weakened:*` whose dep is restored in this same pass (via
+        `crit_set` or `packet_set`) and whose restored dep tier is no
+        weaker than the archived audit's snapshot.
+      - `packet_set`: dict mapping `cid` -> archived `audit_status` for
+        rows whose most recent invalidation was
+        `no_go_discipline_packet_missing` and whose archived audit is
+        restorable under the CURRENT no-go trigger: the restoration
+        guard in `restore_audit_from_previous` re-runs the live
+        source/output gate, so a row that still asserts a gated negative
+        boundary without a packet stays invalidated for fresh audit.
+        Only the trigger-precision repair makes rows eligible here.
+      - `recovered_dep_set`: list of `(cid, dep_id, archived_status)`
+        tuples for rows whose most recent invalidation was a
+        `dep_weakened:*` whose dep has ALREADY recovered on the live
+        ledger (a landed re-audit or a prior restoration pass) to a tier
+        no weaker than the one the archived audit closed against, and
+        which pass every other still-live invalidation check.
+
+    Rows further down a weakened chain become eligible on later passes as
+    their dependencies recover; each nightly pipeline run advances the
+    frontier by at least one dependency hop, so recovery converges without
+    any ordering logic here.
     """
     crit_set: dict[str, str] = {}
     crit_archived: dict[str, dict] = {}
+    packet_set: dict[str, str] = {}
+    packet_archived: dict[str, dict] = {}
+    recovered_dep_set: list[tuple[str, str, str]] = []
     dep_weakened_candidates: list[tuple[str, str, str, dict]] = []
 
     for cid, row in rows.items():
@@ -639,6 +738,16 @@ def select_restore_candidates(rows: dict[str, dict]) -> tuple[dict[str, str], li
                 crit_archived[cid] = archived
             continue
 
+        if reason == "no_go_discipline_packet_missing":
+            if (
+                archived_audit_is_lint_compatible(archived)
+                and restore_audit_from_previous(row, rows) is not None
+                and noncritical_invalidation_after_restore(row, rows) is None
+            ):
+                packet_set[cid] = archived.get("audit_status") or "?"
+                packet_archived[cid] = archived
+            continue
+
         dep = parse_dep_weakened(reason)
         if dep is not None:
             if not archived_audit_is_lint_compatible(archived):
@@ -646,19 +755,47 @@ def select_restore_candidates(rows: dict[str, dict]) -> tuple[dict[str, str], li
             if restore_audit_from_previous(row, rows) is None:
                 continue
             dep_id, before_status, _after_status = dep
+            dep_row = rows.get(dep_id)
+            if dep_row is None:
+                # A vanished dependency is never a recovered dependency.
+                dep_weakened_candidates.append(
+                    (cid, dep_id, before_status, archived)
+                )
+                continue
+            current_dep_status = dep_row.get("effective_status") or "unaudited"
+            if (
+                status_rank(current_dep_status) >= status_rank(before_status)
+                and noncritical_invalidation_after_restore(row, rows) is None
+            ):
+                recovered_dep_set.append(
+                    (cid, dep_id, archived.get("audit_status") or "?")
+                )
+                continue
             dep_weakened_candidates.append((cid, dep_id, before_status, archived))
             continue
 
+    restored_this_pass = {**crit_archived, **packet_archived}
     dep_weakened_set: list[tuple[str, str, str]] = []
     for cid, dep_id, before_status, archived in dep_weakened_candidates:
-        dep_archived = crit_archived.get(dep_id)
+        dep_archived = restored_this_pass.get(dep_id)
         if dep_archived is None:
             continue
         restored_dep_status = estimate_restored_effective_status(dep_archived)
-        if status_rank(restored_dep_status) >= status_rank(before_status):
-            dep_weakened_set.append((cid, dep_id, archived.get("audit_status") or "?"))
+        if status_rank(restored_dep_status) < status_rank(before_status):
+            continue
+        # Every other still-live invalidation check must also be clean;
+        # evaluate the blockers with the paired dependency virtually at
+        # its estimated restored tier so only the dependency being
+        # restored this pass is exempt from the comparison.
+        virtual_dep = dict(rows.get(dep_id) or {"claim_id": dep_id})
+        virtual_dep["effective_status"] = restored_dep_status
+        virtual_rows = dict(rows)
+        virtual_rows[dep_id] = virtual_dep
+        if noncritical_invalidation_after_restore(rows[cid], virtual_rows) is not None:
+            continue
+        dep_weakened_set.append((cid, dep_id, archived.get("audit_status") or "?"))
 
-    return crit_set, dep_weakened_set
+    return crit_set, dep_weakened_set, packet_set, recovered_dep_set
 
 
 def select_false_positive_no_go_candidates(rows: dict[str, dict]) -> dict[str, str]:
@@ -725,30 +862,53 @@ def main() -> int:
 
     if args.false_positive_no_go_only:
         crit_set, dep_weakened_set = {}, []
+        packet_set, recovered_dep_set = {}, []
     else:
-        crit_set, dep_weakened_set = select_restore_candidates(rows)
+        crit_set, dep_weakened_set, packet_set, recovered_dep_set = (
+            select_restore_candidates(rows)
+        )
     false_positive_set = select_false_positive_no_go_candidates(rows)
 
     if args.limit is not None:
-        crit_items = sorted(crit_set.items())[: args.limit]
-        crit_set = dict(crit_items)
-        dep_weakened_set = dep_weakened_set[: args.limit]
+        crit_set = dict(sorted(crit_set.items())[: args.limit])
         false_positive_set = dict(sorted(false_positive_set.items())[: args.limit])
+        packet_set = dict(sorted(packet_set.items())[: args.limit])
+        # Same-pass children whose parent was limited out must not restore
+        # ahead of their dependency.
+        surviving_parents = set(crit_set) | set(packet_set)
+        dep_weakened_set = [
+            entry for entry in dep_weakened_set if entry[1] in surviving_parents
+        ][: args.limit]
+        recovered_dep_set = recovered_dep_set[: args.limit]
+
+    def report(label: str, counts_from) -> None:
+        status_counts: dict[str, int] = {}
+        for prev_status in counts_from:
+            status_counts[prev_status] = status_counts.get(prev_status, 0) + 1
+        for status, n in sorted(status_counts.items(), key=lambda x: -x[1]):
+            print(f"    {n:5d}  was {status}")
 
     print(f"Identified {len(crit_set)} criticality_increased restore candidates:")
-    crit_status_counts: dict[str, int] = {}
-    for cid, prev_status in crit_set.items():
-        crit_status_counts[prev_status] = crit_status_counts.get(prev_status, 0) + 1
-    for status, n in sorted(crit_status_counts.items(), key=lambda x: -x[1]):
-        print(f"    {n:5d}  was {status}")
+    report("crit", crit_set.values())
 
     print(f"Identified {len(dep_weakened_set)} dep_weakened restore candidates"
-          f" (cascade from criticality_increased deps):")
-    dep_status_counts: dict[str, int] = {}
-    for _cid, _dep, prev_status in dep_weakened_set:
-        dep_status_counts[prev_status] = dep_status_counts.get(prev_status, 0) + 1
-    for status, n in sorted(dep_status_counts.items(), key=lambda x: -x[1]):
-        print(f"    {n:5d}  was {status}")
+          f" (cascade from deps restored in this pass):")
+    report("dep", [prev for _cid, _dep, prev in dep_weakened_set])
+
+    false_positive_ids = set(false_positive_set)
+    packet_set = {
+        cid: status
+        for cid, status in packet_set.items()
+        if cid not in false_positive_ids
+    }
+    print(f"Identified {len(packet_set)} no_go_discipline_packet_missing restore"
+          f" candidates (archived audit restorable under the current trigger,"
+          f" excluding rows the false-positive lane already selects):")
+    report("packet", packet_set.values())
+
+    print(f"Identified {len(recovered_dep_set)} dep_weakened restore candidates"
+          f" (dep already recovered on the live ledger):")
+    report("recovered", [prev for _cid, _dep, prev in recovered_dep_set])
 
     print(
         f"Identified {len(false_positive_set)} false-positive no-go trigger "
@@ -765,19 +925,24 @@ def main() -> int:
         return 0
 
     restored_count = 0
-    for cid in crit_set:
-        new_row = restore_audit_from_previous(rows[cid], rows)
-        if new_row is None:
+    restore_cids = list(crit_set)
+    restore_cids += [cid for cid, _dep, _prev in dep_weakened_set]
+    restore_cids += list(packet_set)
+    restore_cids += [cid for cid, _dep, _prev in recovered_dep_set]
+    seen: set[str] = set()
+    for cid in restore_cids:
+        if cid in seen:
             continue
-        rows[cid] = new_row
-        restored_count += 1
-    for cid, _dep, _prev in dep_weakened_set:
+        seen.add(cid)
         new_row = restore_audit_from_previous(rows[cid], rows)
         if new_row is None:
             continue
         rows[cid] = new_row
         restored_count += 1
     for cid in false_positive_set:
+        if cid in seen:
+            continue
+        seen.add(cid)
         new_row = restore_audit_from_previous(rows[cid], rows)
         if new_row is None:
             continue

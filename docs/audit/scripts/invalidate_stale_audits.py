@@ -193,6 +193,7 @@ ARCHIVED_FIELDS = [
     "decoration_parent_claim_id",
     "auditor_confidence",
     "no_go_discipline",
+    "negative_assertion_classes",
     "runner_check_breakdown",
     "blocker",
     "audit_state_snapshot",
@@ -414,7 +415,9 @@ def detect_invalidation(row: dict, rows: dict[str, dict]) -> str | None:
         output_required = no_go_discipline_gate.output_requires_no_go_discipline(
             {**row, "verdict": audit_status}
         )
-        required = source_required or output_required
+        declared = row.get("negative_assertion_classes")
+        declared_requires = isinstance(declared, list) and bool(declared)
+        required = source_required or output_required or declared_requires
         if required and packet is None:
             return "no_go_discipline_packet_missing"
         if packet is not None and not isinstance(packet, dict):

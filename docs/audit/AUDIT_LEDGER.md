@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 411 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2666 |
+| unaudited | 2665 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 89 |
+| ~~audited_conditional~~ | 90 |
 | ~~audited_failed~~ | 21 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 539 |
-| `audited_conditional` | 89 |
+| `audited_conditional` | 90 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 43 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3016 |
+| `unaudited` | 3015 |
 
 | claim_type | count |
 |---|---:|
@@ -726,6 +726,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `harmonic_depth_hankel_rank_mechanism_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `hierarchy_matsubara_decomposition_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `hypercharge_alpha_third_normalization_bridge_bounded_note_2026-05-25` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_aps_block_by_block_forcing_note_2026-04-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `koide_phase_delta_is_also_an_admission_clean_modulus_has_only_degenerate_stationary_points_narrow_no_go_note_2026-06-04` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -5582,6 +5583,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The live runner supports the gravity-specific crossover and gamma=0.5 escape suppression, but it contradicts the source's stronger detector-escape claim for any gamma > 0: several nonzero-field rows at gamma=0.1 or 0.2 still have escape ratios above 1.
 - **rationale:** Issue: the source conflates link-level imaginary-action damping with the detector escape observable. The factor exp(-k gamma L f) is below 1 for f > 0 and gamma > 0, but the runner's detector escape ratios are still above 1 for UNIFORM f=0.005 at gamma=0.1 and 0.2, UNIFORM f=0.01 at gamma=0.1 and 0.2, and GRAVITY at gamma=0.1 and 0.2. Why this blocks: the retained separation claim says kernel-generic absorption occurs under any nonzero field at gamma > 0, but the measured observable used by the note only shows suppression at sufficiently large gamma in this setup. Repair target: distinguish local per-link attenuation from total detector escape, or add a theorem/runner proving a thresholded escape-suppression criterion across gamma and field families. Claim boundary until fixed: safely claim only that gamma=0.5 suppresses detector escape for the tested nonzero fields, and that the 1/r gravity field uniquely shows the tested TOWARD -> AWAY centroid crossover by gamma=0.2.
 - **auditor confidence:** high
+
+### `koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24`
+
+- **Note:** [`KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md`](../../docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Conditional arithmetic no-go for the explicitly enumerated APBC/BZ/Z3/C9/finite-Wilson/Berry formulas: their phases are q*pi and cannot equal the nonzero rational 2/9; no exhaustive retained-source or physical selected-line readout no-go was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00049-koide_a1_radian_bridge_irred`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the enumerated periodic sources, every phase is q*pi with rational q, while 2/9 is a nonzero rational, so no listed source supplies literal 2/9 radians.  _(class `A`)_
+- **chain closes:** False — The exact q*pi versus 2/9 separation closes for the enumerated formulas. The packet does not derive that this list exhausts retained phase/readout mechanisms or that the Brannen selected-line parameter is the physical observable.
+- **rationale:** Issue: the runner verifies arithmetic on hard-coded examples but does not derive the retained-source taxonomy, its exhaustiveness, or the selected-line physical readout. Why this blocks: an allowed observable law choosing the acknowledged period-1-rad convention would evade the broader irreducibility language without contradicting any runner check. Repair target: register retained one-hop authorities for the phase-source classification and Brannen target, then prove an exhaustive readout-factorization theorem or narrow the source claim permanently. Claim boundary until fixed: the listed finite periodic sources and finite-Wilson constructions do not themselves produce literal 2/9 radians.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: the period-one selected-line readout route remains OPEN.
+    - N3: retained-source exhaustiveness and physical selected-line identification are hidden unsupported premises.
+    - N5: broader no-go rhetoric includes continuous and general readout resolutions not tested by the runner.
+    - N7: the strongest period-one-rad convention steelman is unresolved.
 
 ### `koide_anticommuting_operator_derivation_theorem_note_2026-05-10`
 

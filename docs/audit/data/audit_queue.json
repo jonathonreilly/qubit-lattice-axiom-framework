@@ -31218,12 +31218,12 @@
     },
     {
       "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
+      "audit_status": "audited_failed",
       "blocker": null,
       "claim_id": "same_family_3d_closure_note",
-      "claim_scope": null,
+      "claim_scope": "Live finite-lattice W=10 closure rows at h=0.25, L=8,10,12, while checking\u2014but not accepting\u2014the conflicting W=12 companion descriptions.",
       "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
+      "claim_type_provenance": "audited",
       "criticality": "medium",
       "criticality_rank": 1,
       "cross_confirmation_status": null,
@@ -31233,13 +31233,13 @@
         "valley_linear_asymptotic_bridge_note"
       ],
       "direct_in_degree": 2,
-      "effective_status": "unaudited",
+      "effective_status": "audited_failed",
       "helper_runner_paths": [
         "scripts/lattice_3d_valley_linear_card.py"
       ],
       "load_bearing_score": 3.322,
       "note_path": "docs/SAME_FAMILY_3D_CLOSURE_NOTE.md",
-      "queue_reason": "unaudited",
+      "queue_reason": "non_terminal_failed",
       "ready": true,
       "runner_path": "scripts/same_family_3d_closure.py",
       "transitive_descendants": 4

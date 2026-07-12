@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 650,
     "high": 335,
-    "leaf": 1137,
+    "leaf": 1136,
     "medium": 755
   },
   "cycle_break_target_count": 49,
@@ -52265,30 +52265,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "yt_scalar_taste_condensate_selector_no_go_note_2026-05-23",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "yt_color_projection_correction_note"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_yt_scalar_taste_condensate_selector_no_go.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "acphilambda_ambient_equivariant_heat_trace_face_2026-07-02",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -81999,6 +81975,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 591,
-  "total_pending": 2877
+  "ready_count": 590,
+  "total_pending": 2876
 }

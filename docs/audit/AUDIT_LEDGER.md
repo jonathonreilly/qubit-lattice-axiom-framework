@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 89 |
-| **retained_no_go** | 27 |
+| **retained_no_go** | 28 |
 | **retained_bounded** | 361 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 6 |
-| unaudited | 2802 |
+| unaudited | 2801 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 463 |
+| `audited_clean` | 464 |
 | `audited_conditional` | 44 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3152 |
+| `unaudited` | 3151 |
 
 | claim_type | count |
 |---|---:|
@@ -600,6 +600,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `yt_color_projection_correction_note` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
 | `yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `yt_ew_color_projection_theorem` | no_go | ~~audited_clean~~ | **retained_no_go** | fresh_context | codex-gpt-5.6 | A | - |
+| `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `z2_hw1_mass_matrix_parametrization_note` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5 | A | - |
 | `ac_reta_hclass_hunit_readout_derivation_obligation` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | F | - |
 | `activity_energy_bound_witnesses_bounded_note_2026-07-08` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -8480,6 +8481,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** False — The channel-scaling calculation is a correct algebraic identity once scalar propagator scaling is assumed. However, neither the cited authority nor the runner derives G_full = u_0 G_V from the link-level factorization U -> u_0 V; the runner imposes that relation directly, while a propagator generally depends nonlinearly on links through an inverse operator. The advertised CMT-level no-go therefore remains conditional on a missing link-to-propagator bridge.
 - **rationale:** The channel-scaling calculation is a correct algebraic identity once scalar propagator scaling is assumed. However, neither the cited authority nor the runner derives G_full = u_0 G_V from the link-level factorization U -> u_0 V; the runner imposes that relation directly, while a propagator generally depends nonlinearly on links through an inverse operator. The advertised CMT-level no-go therefore remains conditional on a missing link-to-propagator bridge.
 - **auditor confidence:** high
+
+### `yt_scalar_taste_condensate_selector_no_go_note_2026-05-23`
+
+- **Note:** [`YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md`](../../docs/YT_SCALAR_TASTE_CONDENSATE_SELECTOR_NO_GO_NOTE_2026-05-23.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The standard one-Higgs, color-singlet scalar/taste-condensate insertion cannot derive kappa_Y = 0 through the direct Hilbert-Schmidt color-projection route; no global no-go for other matching rules or BSM scalars was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00364-yt_scalar_taste_condensate_s`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** SU(N) invariance forces a one-Higgs color-singlet Yukawa insertion to be M_color = c I_color, which cannot be both nonzero and traceless, whereas the direct projection route to kappa_Y = 0 requires a nonzero traceless insertion.  _(class `A`)_
+- **chain closes:** True — The route-specific contradiction follows from finite-dimensional SU(N) invariance and trace algebra together with the retained conditional kappa_Y family. Alternative matching and direct-observable routes remain outside the audited negative scope.
+- **rationale:** The load-bearing result is an exact algebraic obstruction: a nonzero SU(N)-invariant fundamental-color insertion is proportional to the identity and therefore is not traceless. The retained upstream authority supplies the conditional selector family without importing kappa_Y = 0, and the source confines its conclusion to the direct one-Higgs scalar/taste projection route. The runner computes the projection consequences and source guards; although its Schur-lemma helper is schematic, the note contains the complete elementary argument needed for the algebraic closure.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `yukawa_color_projection_theorem`
 

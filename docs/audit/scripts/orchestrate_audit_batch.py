@@ -22,6 +22,7 @@ import hashlib
 import json
 import os
 import re
+import shutil
 import signal
 import subprocess
 import sys
@@ -42,6 +43,10 @@ REASONING = "xhigh"
 RETAINED = {"retained", "retained_bounded", "retained_no_go", "meta"}
 AUDITABLE_TYPES = {"positive_theorem", "bounded_theorem", "open_gate"}
 MIN_DELIVERY_BYTES = 200
+PACKET_REQUIRED_MARKER = "N1-N8 packet is required"
+PACKET_COMPLETION_STALL_SECONDS = 20 * 60
+PACKET_COMPLETION_POLL_SECONDS = 15
+PACKET_COMPLETION_EXIT_GRACE_SECONDS = 10
 
 
 def sh(cmd: list[str], timeout: int | None = None) -> subprocess.CompletedProcess:
@@ -268,6 +273,7 @@ def launch_worker(
         "delivery": delivery,
         "log_path": log_path,
         "log_handle": log_handle,
+        "isolated": isolated,
         "evidence_manifest": evidence_manifest,
         "invocation_id": invocation_id,
         "transport_bound": None,
@@ -338,6 +344,126 @@ def terminate_workers(jobs: list[dict]) -> None:
             job["log_handle"].close()
 
 
+def packet_completion_pass(job: dict, blob: dict, workdir: Path) -> dict | None:
+    """One mechanical follow-up when an auditor's wall-naming output omitted
+    the structural no_go_discipline object (canary finding, theta lane
+    2026-07-12: two independent seats skipped it despite the template
+    instruction — prompt strength alone is insufficient). Same restricted
+    audit seat; judgments must not change; one attempt."""
+    if job.get("packet_completion_attempted"):
+        return None
+    job["packet_completion_attempted"] = True
+    if blob.get("no_go_discipline") is not None:
+        return None
+
+    cid = job["row"]["claim_id"]
+    key = artifact_key(cid)
+    blob_path = workdir / f"completion-{key}-p{job['pass']}.json"
+    blob_path.write_text(json.dumps(blob, indent=1), encoding="utf-8")
+    out_path = workdir / f"completion-{key}-p{job['pass']}-out.json"
+    out_path.unlink(missing_ok=True)
+    log_path = workdir / f"completion-{key}-p{job['pass']}.log"
+    spec = (
+        f"# FOCUSED COMPLETION (audit seat {job['auditor']})\n\n"
+        "Reopen AUDIT_TASK.md in the current directory. It is the complete "
+        "restricted packet used by this audit seat; do not inspect any other "
+        "evidence. "
+        f"Your audit JSON for claim {cid} is at: {blob_path}\n\n"
+        "Your verdict output names walls/negative boundaries, so the apply "
+        "gate requires a structural `no_go_discipline` object (development "
+        "tier). Use the N1-N8 schema in AUDIT_TASK.md. Add the object to your "
+        "JSON: N1-N8 answered as "
+        "structured judgments with quoted evidence from the note/runner you "
+        "already audited (structural validation; no manifest-containment, "
+        "live-stdout, transport, or full-universe disposition plumbing). "
+        "Change NOTHING else — preserve every original field and value. "
+        "Return the complete JSON as your final response: one JSON object, "
+        "with no code fence or commentary."
+    )
+    codex_bin = shutil.which("codex")
+    if not codex_bin:
+        return None
+    command = [
+        codex_bin, "exec", "--skip-git-repo-check", "--ignore-rules",
+        "--ignore-user-config", "--ephemeral",
+        "--sandbox", "read-only", "--model", MODEL,
+        "-c", f"model_reasoning_effort='{REASONING}'",
+        "--output-last-message", str(out_path), spec,
+    ]
+    sandbox_exec = Path("/usr/bin/sandbox-exec")
+    if sandbox_exec.exists():
+        escaped_root = str(REPO_ROOT).replace("\\", "\\\\").replace('"', '\\"')
+        profile = (
+            '(version 1) (allow default) '
+            f'(deny file-write* (subpath "{escaped_root}"))'
+        )
+        command = [str(sandbox_exec), "-p", profile, *command]
+    else:
+        try:
+            launcher_text = Path(codex_bin).read_text(encoding="utf-8")
+        except (OSError, UnicodeDecodeError):
+            launcher_text = ""
+        if "dangerously-bypass-approvals-and-sandbox" in launcher_text:
+            return None
+
+    with log_path.open("w", encoding="utf-8") as log:
+        proc = subprocess.Popen(
+            command,
+            stdin=subprocess.DEVNULL,
+            stdout=log,
+            stderr=log,
+            cwd=job["isolated"],
+            start_new_session=True,
+        )
+        deadline = time.monotonic() + PACKET_COMPLETION_STALL_SECONDS
+        polling_failed = False
+        try:
+            while time.monotonic() < deadline and proc.poll() is None:
+                time.sleep(PACKET_COMPLETION_POLL_SECONDS)
+            if proc.poll() is None:
+                try:
+                    proc.wait(timeout=PACKET_COMPLETION_EXIT_GRACE_SECONDS)
+                except subprocess.TimeoutExpired:
+                    pass
+        except OSError:
+            polling_failed = True
+        finally:
+            if proc.poll() is None:
+                try:
+                    os.killpg(proc.pid, signal.SIGKILL)
+                except ProcessLookupError:
+                    pass
+            returncode = proc.wait()
+
+    if polling_failed or returncode != 0:
+        return None
+    if not (out_path.exists() and out_path.stat().st_size > MIN_DELIVERY_BYTES):
+        return None
+    try:
+        completed = json.loads(out_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return None
+    if not isinstance(completed, dict):
+        return None
+    packet = completed.get("no_go_discipline")
+    if not isinstance(packet, dict):
+        return None
+
+    # This is packet completion, not a second scientific audit: the only
+    # permitted delta is adding the missing structural packet.
+    expected = dict(blob)
+    expected["no_go_discipline"] = packet
+    canonical_completed = json.dumps(
+        completed, sort_keys=True, separators=(",", ":"), ensure_ascii=False
+    )
+    canonical_expected = json.dumps(
+        expected, sort_keys=True, separators=(",", ":"), ensure_ascii=False
+    )
+    if canonical_completed != canonical_expected:
+        return None
+    return completed
+
+
 def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     cid = job["cid"]
     base = {"cid": cid, "pass": job["pass"]}
@@ -353,63 +479,6 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     if compute_reason:
         return None, {**base, "result": "compute_required", "detail": compute_reason}
     blob = audit_runner.parse_verdict_json(reply or "")
-PACKET_REQUIRED_MARKER = "N1-N8 packet is required"
-
-
-def packet_completion_pass(job: dict, blob: dict, workdir: Path) -> dict | None:
-    """One mechanical follow-up when an auditor's wall-naming output omitted
-    the structural no_go_discipline object (canary finding, theta lane
-    2026-07-12: two independent seats skipped it despite the template
-    instruction — prompt strength alone is insufficient). Same auditor
-    lineage; judgments must not change; one attempt."""
-    cid = job["row"]["claim_id"]
-    key = artifact_key(cid)
-    blob_path = workdir / f"completion-{key}-p{job['pass']}.json"
-    blob_path.write_text(json.dumps(blob, indent=1), encoding="utf-8")
-    out_path = workdir / f"completion-{key}-p{job['pass']}-out.json"
-    spec = (
-        f"# FOCUSED COMPLETION (same audit, auditor lineage {job['auditor']})\n\n"
-        f"Your audit JSON for claim {cid} is at: {blob_path}\n\n"
-        "Your verdict output names walls/negative boundaries, so the apply "
-        "gate requires a structural `no_go_discipline` object (development "
-        "tier). Read docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md for the N1-N8 "
-        "packet schema. Add the object to your JSON: N1-N8 answered as "
-        "structured judgments with quoted evidence from the note/runner you "
-        "already audited (structural validation; no manifest-containment, "
-        "live-stdout, transport, or full-universe disposition plumbing). "
-        "Change NOTHING else — same verdict, same rationale, same fields. "
-        f"Write the complete JSON to: {out_path}\n"
-        "Single JSON object, written once at the end."
-    )
-    log = open(workdir / f"completion-{key}-p{job['pass']}.log", "w")
-    proc = subprocess.Popen(
-        ["codex", "exec", "-m", MODEL, "-c", f"model_reasoning_effort={REASONING}",
-         "-s", "read-only", "-C", str(REPO_ROOT), spec],
-        stdin=subprocess.DEVNULL, stdout=log, stderr=log, cwd=str(REPO_ROOT),
-    )
-    deadline = time.time() + 20 * 60
-    while time.time() < deadline and proc.poll() is None:
-        if out_path.exists() and out_path.stat().st_size > MIN_DELIVERY_BYTES:
-            break
-        time.sleep(15)
-    if proc.poll() is None:
-        proc.kill()
-    log.close()
-    if not (out_path.exists() and out_path.stat().st_size > MIN_DELIVERY_BYTES):
-        return None
-    try:
-        completed = json.loads(out_path.read_text(encoding="utf-8"))
-    except json.JSONDecodeError:
-        return None
-    if not isinstance(completed.get("no_go_discipline"), dict):
-        return None
-    # Judgments must be unchanged: verdict and rationale are immutable.
-    for field in ("verdict", "verdict_rationale", "claim_type", "claim_scope"):
-        if completed.get(field) != blob.get(field):
-            return None
-    return completed
-
-
     if blob is None:
         return None, {**base, "result": "malformed_json"}
     if blob.get("claim_type") == "no_go":
@@ -428,33 +497,24 @@ def packet_completion_pass(job: dict, blob: dict, workdir: Path) -> dict | None:
         note_body,
         row.get("claim_type") or row.get("claim_type_author_hint"),
     )
-    error = audit_runner.validate_verdict(
-        blob,
-        cid,
-        source_requires_no_go=source_requires_no_go,
-        evidence_manifest=None,
-        prior_claim_scope=audit_runner.prior_claim_scope_for_row(row),
-        expected_invocation_id=job["invocation_id"],
-        transport_bounded_n8=job["transport_bound"] is not None,
-    )
-    clipped = prompt_has_clipped_evidence(job["evidence_manifest"])
-    if not error and blob.get("verdict") == "audited_clean" and clipped:
-        error = f"audited_clean packet has clipped evidence: {clipped}"
+    validation_args = {
+        "source_requires_no_go": source_requires_no_go,
+        "evidence_manifest": None,
+        "prior_claim_scope": audit_runner.prior_claim_scope_for_row(row),
+        "expected_invocation_id": job["invocation_id"],
+        "transport_bounded_n8": job["transport_bound"] is not None,
+    }
+    error = audit_runner.validate_verdict(blob, cid, **validation_args)
     if error and PACKET_REQUIRED_MARKER in str(error) and not isinstance(
         blob.get("no_go_discipline"), dict
     ):
         completed = packet_completion_pass(job, blob, job["workdir"])
         if completed is not None:
             blob = completed
-            error = audit_runner.validate_verdict(
-                blob,
-                cid,
-                source_requires_no_go=source_requires_no_go,
-                evidence_manifest=None,
-                prior_claim_scope=audit_runner.prior_claim_scope_for_row(row),
-                expected_invocation_id=job["invocation_id"],
-                transport_bounded_n8=job["transport_bound"] is not None,
-            )
+            error = audit_runner.validate_verdict(blob, cid, **validation_args)
+    clipped = prompt_has_clipped_evidence(job["evidence_manifest"])
+    if not error and blob.get("verdict") == "audited_clean" and clipped:
+        error = f"audited_clean packet has clipped evidence: {clipped}"
     if error:
         return None, {**base, "result": "validation_failed", "detail": error}
 

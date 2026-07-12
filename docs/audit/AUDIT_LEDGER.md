@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 368 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2772 |
+| unaudited | 2771 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
 | ~~audited_conditional~~ | 55 |
-| ~~audited_failed~~ | 8 |
+| ~~audited_failed~~ | 9 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -48,10 +48,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 481 |
 | `audited_conditional` | 55 |
 | `audited_decoration` | 20 |
-| `audited_failed` | 30 |
+| `audited_failed` | 31 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3122 |
+| `unaudited` | 3121 |
 
 | claim_type | count |
 |---|---:|
@@ -698,6 +698,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `ai_methodology.raw.prompts_session_ebae4639_jonreilly` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `causal_propagating_field_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `cpt_exact_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
+| `det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `distance_law_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `dm_abcc_basin_enumeration_completeness_theorem_note_2026-04-20` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | C | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -2714,6 +2715,26 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
   - **gate failures:**
     - N1 fails because the non-Hermitian, off-positivity, generic induced-link, and R-eta routes are OPEN or UNTESTED; therefore the gate lacks five distinct closed mechanism classes.
+
+### `det_phase_few_frequency_law_refuted_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`DET_PHASE_FEW_FREQUENCY_LAW_REFUTED_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/DET_PHASE_FEW_FREQUENCY_LAW_REFUTED_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite L=3, tau=0.35, T=256 five-state computation and its seven-bin capture fractions were audited; the claimed inference that these fractions refute the order-3 frequency law was also audited.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00398-det_phase_few_frequency_law_`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The seven rounded order-3 gap-sum bins capture only 0.33–0.85 of the increment spectral power, so the order-3 state-independent spectral law fails at the worst tested state.  _(class `C`)_
+- **chain closes:** False — The runner computes the stated finite data, but it does not establish that power outside the nearest rounded bins contradicts an order-3 off-grid frequency carrier. A leakage-aware carrier calculation or an independently justified rejection threshold is missing.
+- **rationale:** Issue: the runner treats less than 50 percent power in seven nearest rounded DFT bins as refutation while explicitly acknowledging that the proposed frequencies are off-grid and leak across the finite-window DFT. Why this blocks: neither exact spectral support nor a leakage-aware order-3 template predicts confinement to those seven bins, and the 0.5 cutoff is not derived or preregistered. Repair target: compare the increments against the full Dirichlet-leakage templates of the proposed off-grid frequencies, or fit the corresponding time-domain exponential family with an independently justified error criterion. Claim boundary until fixed: the runner establishes only the bounded seven-bin capture fractions, full thresholded DFT support, amplitude variation, and nonsingular tested blocks.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1: leakage-aware, time-domain, threshold, unwrap, and alternate-observable routes remain open or untested.
+    - N2: both rounded-bin completeness and the half-power criterion remain unresolved.
+    - N3: the half-power rejection criterion is a hidden load-bearing premise.
+    - N5: refutation rhetoric exceeds the tested rounded-bin resolution.
+    - N7: the strongest finite-window leakage steelman is unresolved.
 
 ### `det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12`
 

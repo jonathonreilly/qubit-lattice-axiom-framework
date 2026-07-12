@@ -24,9 +24,9 @@
         {
           "audit_question": "Fresh-context re-audit: does the current S_3 mass-matrix no-go source justify retained_no_go authority under N1-N8 when its physical hw=1 generation-carrier identification and taste-cube reuse have no direct dependency edges, or must authority narrow to the abstract A_1 direct-sum E commutant lemma?",
           "claim_id": "s3_mass_matrix_no_go_note",
-          "current_audit_status": "audited_clean",
+          "current_audit_status": "unaudited",
           "current_claim_type": "no_go",
-          "current_effective_status": "retained_no_go",
+          "current_effective_status": "unaudited",
           "note_path": "docs/S3_MASS_MATRIX_NO_GO_NOTE.md"
         }
       ]

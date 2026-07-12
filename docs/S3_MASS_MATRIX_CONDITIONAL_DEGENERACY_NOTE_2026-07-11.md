@@ -10,15 +10,19 @@ generation-carrier identification is claimed
 
 ## The Lemma
 
-Let `V` be a supplied three-dimensional complex representation of `S_3`
-isomorphic to `A_1 direct-sum E`. Every `S_3`-invariant Hermitian operator on
+Let `V` be a supplied three-dimensional **unitary** complex representation of
+`S_3`, unitarily isomorphic to the permutation representation
+`A_1 direct-sum E` with its invariant Hermitian inner product. Here `A_1` is
+the trivial one-dimensional irrep and `E` is the standard two-dimensional
+irrep. Every `S_3`-invariant Hermitian operator on
 `V` has the form
 
 ```text
 M = alpha I_3 + beta P_(A_1),
 ```
 
-with real `alpha,beta` and the orthogonal projector `P_(A_1)` onto the
+with real `alpha,beta` and the orthogonal trivial-isotypic projector
+`P_(A_1)` onto the
 symmetric line. Its spectrum is therefore
 
 ```text

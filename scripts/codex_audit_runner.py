@@ -70,16 +70,14 @@ ISOLATED_BASE = Path("/tmp/codex-audit-isolated")
 LOG_DIR = REPO_ROOT / "logs" / "codex-audit-runs"
 
 # These fields are NOT controlled by the LLM; we set them on the runner side.
-# Clean authority is pinned to the exact model/family accepted atomically by
-# apply_audit.py, invalidation, and lint. A newer or fallback model must first
-# go through an explicit policy migration rather than silently changing the
-# authority contract.
+# The runner selects the best available full Codex model at xhigh and records
+# the exact model/family. The numeric floor is stable while newer frontier
+# models are adopted automatically, as required by FRESH_LOOK_REQUIREMENTS.
 # Independence is determined PER ROW (see determine_audit_role) because it
 # depends on whether this is a first-pass (typically cross_family vs Claude
 # autopilot authors) or a same-family second-pass (must be fresh_context).
 AUDIT_REASONING_EFFORT = "xhigh"
-REQUIRED_AUDIT_MODEL = "gpt-5.6-sol"
-MODEL_FALLBACK = REQUIRED_AUDIT_MODEL
+MODEL_FALLBACK = "gpt-5.6-sol"
 SUPPORTED_AUDIT_MODEL_RE = re.compile(
     r"gpt-(?P<version>\d+(?:\.\d+)*)(?:-sol)?$"
 )
@@ -223,33 +221,32 @@ def best_cached_codex_model() -> tuple[str | None, str | None]:
 
 
 def resolve_audit_model() -> tuple[str, str, str, list[str]]:
-    """Return the exact audit-authority model and provenance contract."""
+    """Return the best available full audit model and provenance contract."""
     warnings: list[str] = []
     detected, detected_note = best_cached_codex_model()
     configured = os.environ.get("CODEX_AUDIT_MODEL")
     forced = os.environ.get("CODEX_AUDIT_FORCE_MODEL")
 
-    if forced and forced != REQUIRED_AUDIT_MODEL:
-        warnings.append(
-            f"Ignoring CODEX_AUDIT_FORCE_MODEL={forced!r}; clean audit authority "
-            f"is pinned to {REQUIRED_AUDIT_MODEL!r}."
-        )
-    if configured and configured != REQUIRED_AUDIT_MODEL:
-        warnings.append(
-            f"Ignoring CODEX_AUDIT_MODEL={configured!r}; clean audit authority "
-            f"is pinned to {REQUIRED_AUDIT_MODEL!r}."
-        )
-    if detected != REQUIRED_AUDIT_MODEL:
-        warnings.append(
-            f"Cached best model is {detected!r} ({detected_note}); using pinned "
-            f"audit authority {REQUIRED_AUDIT_MODEL!r}."
-        )
-    return (
-        REQUIRED_AUDIT_MODEL,
-        codex_family_for_model(REQUIRED_AUDIT_MODEL),
-        "pinned-exact-policy",
-        warnings,
-    )
+    selected = detected
+    source = detected_note or "local model cache"
+    if forced:
+        selected = forced
+        source = "CODEX_AUDIT_FORCE_MODEL break-glass override"
+        warnings.append(f"Using explicit break-glass model override {forced!r}.")
+    elif configured:
+        if selected is None or _model_newer_than(configured, selected):
+            selected = configured
+            source = "CODEX_AUDIT_MODEL newer than cached best"
+        elif configured != selected:
+            warnings.append(
+                f"Ignoring stale CODEX_AUDIT_MODEL={configured!r}; cached best is "
+                f"{selected!r}."
+            )
+    if selected is None:
+        selected = MODEL_FALLBACK
+        source = f"fallback after cache discovery failure: {detected_note}"
+        warnings.append(f"Falling back to {MODEL_FALLBACK!r}; cache discovery failed.")
+    return selected, codex_family_for_model(selected), source, warnings
 
 
 # Statuses where this runner SHOULD NOT proceed automatically. Disagreements
@@ -1387,14 +1384,14 @@ def main() -> int:
     reasoning_effort = AUDIT_REASONING_EFFORT
     audit_model, auditor_family, model_source, model_warnings = resolve_audit_model()
 
-    # Defense in depth beneath the exact pinned-model policy above.
+    # Defense in depth beneath best-available model selection.
     if not _meets_floor(audit_model) and not args.allow_low_model:
         floor_str = ".".join(str(x) for x in MIN_AUDIT_MODEL_RANK)
         print(
             f"\nREFUSING to run: resolved audit model {audit_model!r} "
             f"is below the MIN_AUDIT_MODEL_RANK floor (gpt-{floor_str}+).\n"
             f"  Source: {model_source}\n"
-            f"  Refresh Codex access to the pinned {REQUIRED_AUDIT_MODEL} model.\n"
+            f"  Refresh Codex access to a full gpt-{floor_str}+ model at xhigh.\n"
             f"  models_cache.json, or pass --allow-low-model for testing only.\n"
             f"  Existing audits at sub-floor model versions will be re-audited\n"
             f"  on the next batch once this is resolved."

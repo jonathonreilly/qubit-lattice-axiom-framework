@@ -93,8 +93,11 @@ current canonical same-surface evaluated constants on `main`.
 
 Current absolute-scale package rule:
 
-- on the accepted physical-lattice reading, the package currently carries
-  `a^(-1) = M_Pl` as an explicit Planck-scale fallback pin
+- the registered scale-reference primitive supplies the units conversion
+  `a^(-1) = M_Pl`; it is not a promoted numerical derivation or fallback pin.
+  The further statements `a/l_P = 1`, identification of the gravitational
+  carrier, and any dimensionless physical prediction remain conditional on
+  their separately named bridges
 - the attempted same-surface structural derivation from the 2026-04-30
   primitive Clifford-Majorana note was audited as `audited_renaming`: it
   verifies the candidate `Cl_4(C)` / `F(C^2)` carrier algebra, but does not
@@ -116,14 +119,16 @@ Current absolute-scale package rule:
   `G_Newton,lat = 1` on the primitive Clifford/CAR carrier surface;
   equivalently, the bare delta-source label is
   `q_bare = 4 pi M_phys` on the same carrier surface
-- the finite-automorphism-only response route is closed negatively; finite
+- the finite-automorphism-only response route has a scoped negative source
+  candidate awaiting fresh authenticated audit; finite
   primitive-cell automorphisms have no infinitesimal metric/coframe response
   tangent and cannot replace the realified response surface
-- the carrier-only parent-source scalar route is closed negatively; carrier
+- the carrier-only parent-source scalar route has a scoped negative source
+  candidate awaiting fresh authenticated audit; carrier
   data alone leave an affine hidden character `delta`, so scalar equality
   requires a separate no-hidden-character law
-- the simple-fiber Widom entropy-carrier route is an unaudited negative audit
-  target: its source argues that straight cuts with at most one occupied
+- the simple-fiber Widom entropy-carrier route is a proposed scoped bound for
+  fresh authenticated N1–N8 audit: its source argues that straight cuts with at most one occupied
   `k_x` interval per transverse-momentum fiber, plus consistently normalized
   Schur/direct-sum descendants, obey `c_Widom <= 1/6`, not `1/4`; this is not
   a retained closure until the audit lane confirms it

@@ -102,6 +102,27 @@ def audit_invocation_seen(row: dict, invocation_id: str | None) -> bool:
     )
 
 
+def audit_invocation_error(blob: dict) -> str | None:
+    """Validate the one-use invocation envelope for orchestrated audits.
+
+    Human/external audits may still be applied without an orchestrator.  Once
+    the trusted-manifest transport is present, however, omitting the id would
+    detach the evidence snapshot from its one-use invocation and permit replay.
+    Any id that is supplied is therefore validated, and the trusted transport
+    makes it mandatory for both ordinary and judicial inputs.
+    """
+    invocation_id = blob.get("audit_invocation_id")
+    if invocation_id is None:
+        if os.environ.get("CODEX_AUDIT_TRUSTED_EVIDENCE_MANIFEST"):
+            return "trusted evidence manifest requires audit_invocation_id"
+        return None
+    if not isinstance(invocation_id, str) or not re.fullmatch(
+        r"[0-9a-f]{32}", invocation_id
+    ):
+        return "audit_invocation_id must be 32 lowercase hexadecimal characters"
+    return None
+
+
 def trusted_manifest_current_error(
     packet: dict,
     trusted_manifest: dict[str, dict],
@@ -233,12 +254,6 @@ JUDICIAL_REQUIRED_FIELDS = {
 # Reasoning-effort policy for incoming audits. The audit lane runs at xhigh
 # only; weaker effort levels are not accepted as ratifying evidence.
 REQUIRED_REASONING_EFFORT = "xhigh"
-EXACT_CODEX_AUDITOR = {
-    "auditor_family": "codex-gpt-5.6",
-    "auditor_model": "gpt-5.6-sol",
-    "auditor_reasoning_effort": "xhigh",
-}
-
 ALLOWED_VERDICTS = {
     "audited_clean",
     "audited_renaming",
@@ -717,14 +732,17 @@ def validate_auditor_provenance(audit: dict) -> str | None:
     auditor_reasoning = audit.get("auditor_reasoning_effort")
     if not isinstance(auditor_reasoning, str) or not auditor_reasoning.strip():
         return "auditor_reasoning_effort must be a non-empty string (e.g. 'xhigh')"
-    if auditor_reasoning != REQUIRED_REASONING_EFFORT:
+    declared_family = audit.get("auditor_family")
+    is_codex = auditor_model.startswith("gpt-") or (
+        isinstance(declared_family, str) and declared_family.startswith("codex-gpt-")
+    )
+    if is_codex and auditor_reasoning != REQUIRED_REASONING_EFFORT:
         return (
             f"auditor_reasoning_effort={auditor_reasoning!r} must equal "
             f"{REQUIRED_REASONING_EFFORT!r}: the audit lane only accepts "
             f"verdicts produced at {REQUIRED_REASONING_EFFORT} reasoning "
             "effort. Re-run the audit with the correct setting."
         )
-    declared_family = audit.get("auditor_family")
     if auditor_model.startswith("gpt-"):
         if not _SUPPORTED_CODEX_MODEL_RE.fullmatch(auditor_model):
             return (
@@ -745,22 +763,6 @@ def validate_auditor_provenance(audit: dict) -> str | None:
             f"auditor_family={declared_family!r} requires a supported GPT "
             f"auditor_model, got {auditor_model!r}."
         )
-    verdict = audit.get("verdict") or audit.get("ratified_verdict")
-    actual = {key: audit.get(key) for key in EXACT_CODEX_AUDITOR}
-    if isinstance(declared_family, str) and declared_family.startswith("codex-gpt-"):
-        if actual != EXACT_CODEX_AUDITOR:
-            return (
-                "Codex audits require exact provenance "
-                "codex-gpt-5.6/gpt-5.6-sol/xhigh; received "
-                f"{actual!r}"
-            )
-    elif verdict == "audited_clean":
-        if actual != EXACT_CODEX_AUDITOR:
-            return (
-                "audited_clean requires exact provenance "
-                "codex-gpt-5.6/gpt-5.6-sol/xhigh; received "
-                f"{actual!r}"
-            )
     return None
 
 
@@ -778,8 +780,15 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     # intentionally record a disagreement explicitly assign this copy back.
     row = copy.deepcopy(rows[cid])
     invocation_id = judgment.get("audit_invocation_id")
+    invocation_error = audit_invocation_error(judgment)
+    if invocation_error:
+        return False, invocation_error
     if audit_invocation_seen(row, invocation_id):
         return False, "audit_invocation_id has already been consumed for this claim"
+    if invocation_id:
+        # The row is detached, so rejected paths remain transactional while
+        # every accepted state transition consumes the invocation.
+        row["audit_invocation_id"] = invocation_id
 
     if judgment.get("independence") != "judicial_review":
         return False, "judicial third-auditor review requires independence='judicial_review'"
@@ -933,7 +942,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         row["blocker"] = "judicial_review_irresolvable"
         rows[cid] = row
         ledger["rows"] = rows
-        return False, "judicial review found neither prior reading sufficient; human review required"
+        return True, "judicial review recorded that neither prior reading is sufficient"
 
     row["cross_confirmation"]["status"] = {
         "first": "third_confirmed_first",
@@ -1003,8 +1012,15 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     # disagreement-recording paths assign this detached copy back to rows.
     row = copy.deepcopy(rows[cid])
     invocation_id = audit.get("audit_invocation_id")
+    invocation_error = audit_invocation_error(audit)
+    if invocation_error:
+        return False, invocation_error
     if audit_invocation_seen(row, invocation_id):
         return False, "audit_invocation_id has already been consumed for this claim"
+    if invocation_id:
+        # Accepted intermediate states (awaiting-second, disagreement, packet
+        # archival) must consume the same one-use invocation as terminal rows.
+        row["audit_invocation_id"] = invocation_id
 
     verdict = audit["verdict"]
     if verdict not in ALLOWED_VERDICTS:
@@ -1268,15 +1284,20 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         if matches:
             terminal_second_pass_msg = "terminal verdict cross-confirmed"
         else:
-            terminal_second_pass_error = (
+            terminal_second_pass_msg = (
                 "first and second audits disagree "
                 f"({first.get('verdict')!r}/{first.get('claim_type')!r}/"
                 f"{first.get('load_bearing_step_class')!r} vs "
                 f"{second.get('verdict')!r}/{second.get('claim_type')!r}/"
                 f"{second.get('load_bearing_step_class')!r}); "
-                "promote to third-auditor review or human escalation"
+                "promote to the governed judicial/panel review path"
             )
             terminal_second_pass_blocker = "cross_confirmation_disagreement"
+            row["audit_status"] = "audit_in_progress"
+            row["blocker"] = terminal_second_pass_blocker
+            rows[cid] = row
+            ledger["rows"] = rows
+            return True, terminal_second_pass_msg
 
     third_pass = prior_cross_confirmation_status == "disagreement"
     if third_pass:
@@ -1318,16 +1339,22 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             row["cross_confirmation"]["status"] = "third_confirmed_first"
             row["cross_confirmation"]["mode"] = "terminal_third_pass"
             third_pass_msg = "third auditor confirmed first verdict"
+            audit["verdict"] = first["verdict"]
+            audit["claim_type"] = first["claim_type"]
+            audit["load_bearing_step_class"] = first["load_bearing_step_class"]
         elif third_matches_second:
             row["cross_confirmation"]["third_audit"] = third
             row["cross_confirmation"]["status"] = "third_confirmed_second"
             row["cross_confirmation"]["mode"] = "terminal_third_pass"
             third_pass_msg = "third auditor confirmed second verdict"
+            audit["verdict"] = second["verdict"]
+            audit["claim_type"] = second["claim_type"]
+            audit["load_bearing_step_class"] = second["load_bearing_step_class"]
         else:
             row["cross_confirmation"]["third_audit"] = third
             row["cross_confirmation"]["status"] = "three_way_disagreement"
             row["cross_confirmation"]["mode"] = "terminal_third_pass"
-            third_pass_error = (
+            third_pass_msg = (
                 "third auditor introduced a third verdict or claim_type "
                 f"({first_verdict!r}/{first.get('claim_type')!r} vs "
                 f"{second_verdict!r}/{second.get('claim_type')!r} vs "
@@ -1335,6 +1362,11 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
                 "escalate to human review"
             )
             third_pass_blocker = "third_auditor_disagreement"
+            row["audit_status"] = "audit_in_progress"
+            row["blocker"] = third_pass_blocker
+            rows[cid] = row
+            ledger["rows"] = rows
+            return True, third_pass_msg
 
     critical_second_pass = (
         criticality == "critical"
@@ -1438,7 +1470,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             row["blocker"] = "cross_confirmation_disagreement"
             rows[cid] = row
             ledger["rows"] = rows
-            return False, (
+            return True, (
                 "first and second audits disagree on claim_type or load_bearing_step_class "
                 f"({first.get('claim_type')!r}/{first.get('load_bearing_step_class')!r} vs "
                 f"{claim_type!r}/{audit.get('load_bearing_step_class')!r}); "

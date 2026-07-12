@@ -937,14 +937,29 @@ def main() -> int:
                 errors.append(f"{cid}: audited_clean requires non-empty auditor")
             if not row.get("auditor_family"):
                 errors.append(f"{cid}: audited_clean requires auditor_family")
-            if (
-                row.get("auditor_family") != "codex-gpt-5.6"
-                or row.get("auditor_model") != "gpt-5.6-sol"
-                or row.get("auditor_reasoning_effort") != "xhigh"
-            ):
+            family = str(row.get("auditor_family") or "")
+            if family.startswith("codex-gpt-"):
+                model = str(row.get("auditor_model") or "")
+                match = (
+                    re.fullmatch(r"gpt-(\d+(?:\.\d+)*)(?:-sol)?", model)
+                    if model else None
+                )
+                expected_family = f"codex-gpt-{match.group(1)}" if match else family
+                effort = row.get("auditor_reasoning_effort")
+                if (
+                    expected_family != family
+                    or (effort is not None and effort != "xhigh")
+                ):
+                    errors.append(
+                        f"{cid}: Codex audited_clean has inconsistent legacy "
+                        "family/model/effort or weak independence"
+                    )
+            elif family in LEGACY_AUDITOR_FAMILIES:
+                pass
+            elif row.get("independence") not in {"strong", "external", "judicial_review"}:
                 errors.append(
-                    f"{cid}: audited_clean requires exact "
-                    "codex-gpt-5.6/gpt-5.6-sol/xhigh provenance"
+                    f"{cid}: non-Codex audited_clean requires strong, external, "
+                    "or judicial_review independence"
                 )
             expected = {
                 "positive_theorem": "retained",

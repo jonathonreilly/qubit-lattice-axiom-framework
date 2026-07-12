@@ -117,11 +117,11 @@ states, and mixed-entropy subtractions can change the extrapolation.
 
 ## Open Gates
 
-- **OA-1 — mixed-state asymptotic bridge.** Prove the leading asymptotic of
+- **Mixed-state asymptotic bridge.** Prove the leading asymptotic of
   `S_corr` for `C = 1(H<0) + 1/2 1(H=0)` on the open carrier, including the
   contribution of the `O(L)` zero-mode manifold, or replace it with a
   physically selected pure-state prescription and prove that selection.
-- **OA-2 — threshold-rank scaling.** Prove the asymptotic behavior of the
+- **Threshold-rank scaling bridge.** Prove the asymptotic behavior of the
   thresholded `chi_eff(L)`. The sufficient logarithmic statement for the
   intended cancellation is
 
@@ -131,7 +131,7 @@ states, and mixed-entropy subtractions can change the extrapolation.
 
   in two dimensions; the finite equality `chi_eff(64)=64` does not establish
   it.
-- **OA-3 — black-hole observable bridge.** Derive why this carrier, cut,
+- **Black-hole observable bridge.** Derive why this carrier, cut,
   correlation entropy, and threshold-rank denominator represent the physical
   black-hole entropy observable. The current calculation is a comparison, not
   that derivation.
@@ -145,7 +145,7 @@ carrier-wide exclusion of `1/4` is a live claim.
 python3 scripts/frontier_bh_entropy_rt_ratio_widom.py
 ```
 
-Expected current summary: `PASS=11 FAIL=0`. The PASS count means the finite
+Expected current summary: `PASS=10 FAIL=0`. The PASS count means the finite
 diagnostic reproduced its declared checks; it is not an audit grade or an
 asymptotic theorem.
 
@@ -155,4 +155,4 @@ The geometric integral is the standard Widom/Gioev-Klich free-fermion
 coefficient calculation, with rigorous continuum results associated with the
 Widom-Sobolev program and Helling-Leschke-Spitzer. Those pure-state results do
 not automatically settle the mixed open-boundary prescription used here; that
-translation is explicitly OA-1.
+translation is the open mixed-state asymptotic bridge above.

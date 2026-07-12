@@ -4,7 +4,7 @@ This file preserves the superseded author narrative for revision provenance.
 It contains claims and status language that are ahead of the current audit
 ledger, including historical sole-/three-axiom framing. It must not be used as
 a scientific or publication authority. Use
-[ARXIV_DRAFT_EFFECTIVE_STATUS.md](./ARXIV_DRAFT_EFFECTIVE_STATUS.md) and the
+[generated front-door status](../../repo/FRONT_DOOR_STATUS.md) and the
 generated audit-badged surfaces instead.
 
 <details>
@@ -23,7 +23,7 @@ Keywords: discrete gravity, lattice gauge theory, Clifford algebra, CKM, strong 
 
 > **CURRENT AUDIT STATUS GATE.** This author-side source is not itself a
 > retention verdict. The public entry point is
-> [`ARXIV_DRAFT_EFFECTIVE_STATUS.md`](ARXIV_DRAFT_EFFECTIVE_STATUS.md), and the
+> [generated front-door status](../../repo/FRONT_DOOR_STATUS.md), and the
 > generated effective-status tables and divergence report govern every linked
 > claim. Any `retained`, `exact`, `closed`, or `promoted` wording below is
 > automatically non-authoritative wherever the cited authority is not

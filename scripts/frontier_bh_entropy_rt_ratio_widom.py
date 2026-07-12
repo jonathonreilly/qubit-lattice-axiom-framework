@@ -31,7 +31,7 @@ Scope:
 
     This runner checks only the finite L <= 64 numerical tail. It does not
     prove that r(L) converges to c_Widom; that all-L identification is open
-    admission OA-1 in the authority note.
+    open mixed-state asymptotic bridge in the authority note.
 
 What the runner does:
 
@@ -340,10 +340,8 @@ def main() -> None:
           "L<=64 tail-fit intercept is near 1/6 and >20% from 1/4; "
           "no all-L limit is claimed")
 
-    check("SCOPE: finite samples do not establish an exact 1/4 coefficient",
-          True,
-          "L<=64 evidence favors a different tail intercept; the all-L "
-          "identification remains open admission OA-1")
+    print("  [INFO] Scope: finite samples do not establish an exact 1/4 "
+          "coefficient; the all-L mixed-state asymptotic bridge remains open.")
 
     # ----- Summary ----------------------------------------------------------
     print()
@@ -361,7 +359,8 @@ def main() -> None:
         print()
         print("All finite-L<=64 checks passed; the tail-fit intercept favors 1/6")
         print("over 1/4 on this sampled carrier. The all-L ratio limit remains")
-        print("open admission OA-1; this output is not an asymptotic theorem.")
+        print("an open mixed-state asymptotic bridge; this output is not an "
+              "asymptotic theorem.")
         sys.exit(0)
 
 

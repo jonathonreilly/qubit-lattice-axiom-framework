@@ -58,8 +58,9 @@ The current runner reports:
 - three-dimensional `1/L` diagnostic intercept: `0.0644`;
 - monotone entropy decrease for the sampled gravitational modulation at
   `g >= 0.5`;
-- species-counting cancellation of the comparison ratio under the runner's
-  independent-species construction.
+- exact cancellation of duplicate-copy factors under the runner's explicitly
+  independent-copy construction. This is a bookkeeping identity, not a
+  species-universality, Hilbert-dimension, or bond-dimension result.
 
 The fit intercepts are model-dependent finite-size summaries. The 2D
 `1/L` intercept being close to `1/4` is evidence against declaring the finite
@@ -74,12 +75,18 @@ favors a value near `1/6`. Neither fit is an all-`L` theorem.
 - the chosen finite fit families and size windows;
 - the Bekenstein-Hawking `1/4` value as an external comparison target;
 - the gravitational-potential modulation used by the diagnostic.
+- `t=1` in the nearest-neighbor Hamiltonians, the `10^-6` SVD tolerance, the
+  finite size grids, and the selected fit windows/forms;
+- the SI constants (`G`, `c`, `l_P`, and `M_sun`) and benchmark masses used
+  only in the frozen-star comparison table;
+- the convention identifying the counted lattice boundary with the area
+  comparator and the separately supplied `1/4` normalization in that table.
 
 None of these inputs is supplied merely by the four-axiom baseline.
 
 ## Open Gates
 
-1. Derive or explicitly admit a physical state selection and entropy
+1. Derive or explicitly supply as a conditional a physical state selection and entropy
    observable for the intended black-hole carrier.
 2. Prove the mixed-state and threshold-rank asymptotics, rather than selecting
    a finite fit family.

@@ -25,7 +25,7 @@ def check(name, ok):
 
 # ----------------------------------------------------------------------------
 # PROVENANCE MANIFEST: every numeric input tagged by its supplier.
-#   AXIOM            : the framework axioms (Lattice/Quantum/Record)
+#   AXIOM            : the framework axioms (Lattice/Qubit/Admissibility/Record)
 #   RETAINED_SOURCE  : a retained/bounded note, used ONLY for what it actually supplies
 #   PREMISE          : a declared premise edge inherited from the parent theorem
 # native_gauge_closure (GC) is RETAINED_SOURCE for NONABELIAN content + d_s=3 ONLY.

@@ -26,8 +26,8 @@ HONEST RESULT.
       multiplicity) -- IS local observability restated; it is a measure-zero condition, not a corollary.
 
 This CONFIRMS docs/DARWINISM_BRIDGE_RESIDUAL_LOCAL_OBSERVABILITY_OPEN_GATE_NOTE_2026-06-05.md (local
-observability is a NAMED OPEN PREMISE not supplied by {Lattice, Quantum, Record}) and quantifies it
-(measure-zero in the PND coupling space). It also SHARPENS/CORRECTS
+observability is a NAMED OPEN PREMISE not supplied by {Lattice, Qubit, Admissibility, Record})
+and quantifies it (measure-zero in the PND coupling space). It also SHARPENS/CORRECTS
 docs/RECORD_FORMATION_POINTER_NON_DEMOLITION_DYNAMICS_CONSTRAINT_BOUNDED_THEOREM_NOTE_2026-06-05.md item 1
 ("[H,Pi_S]=0 => R_delta=n"): that holds only for the single-site-SUM coupling, NOT for a general PND
 coupling -- Z_S X_1 X_2 is a pointer-non-demolition counterexample with R_delta=1.

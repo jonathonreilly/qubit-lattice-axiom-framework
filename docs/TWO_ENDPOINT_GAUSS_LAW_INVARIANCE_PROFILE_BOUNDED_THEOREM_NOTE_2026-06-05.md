@@ -45,13 +45,14 @@ invariant at both endpoints.
 
 This is bounded because the two-link-end carrier and the endpoint Gauss
 generators are model conventions in this note. They are not supplied by the
-Lattice, Quantum, and Record axioms.
+Lattice, Qubit, Admissibility, and Record axioms.
 
 ## Load-Bearing Inputs
 
-- [`MINIMAL_AXIOMS_2026-06-04.md`](MINIMAL_AXIOMS_2026-06-04.md) supplies the
-  repo baseline Lattice + Quantum + Record language. The axiom baseline
-  chain-satisfies as an approved premise; it is not a source of bounded status.
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies the
+  repo baseline Lattice + Qubit + Admissibility + Record language. The axiom
+  baseline chain-satisfies as an approved premise; it is not a source of bounded
+  status.
 - The two-link-end carrier and the U(1)/SU(2) endpoint Gauss-generator
   definitions above are explicit bounded inputs for this note.
 - [`QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md`](QUBIT_LINK_U2_CONNECTION_ALGEBRA_BOUNDED_THEOREM_NOTE_2026-06-04.md)
@@ -62,8 +63,8 @@ Lattice, Quantum, and Record axioms.
 
 - It does not derive gauge invariance of observables from the Record axiom.
 - It does not identify all gauge-invariant algebra elements with physical observables.
-- It does not derive the endpoint Gauss generators from Lattice + Quantum +
-  Record.
+- It does not derive the endpoint Gauss generators from Lattice + Qubit +
+  Admissibility + Record.
 - It does not derive gauge dynamics, an action, gauge bosons, coupling values,
   beta functions, electroweak symmetry breaking, or color SU(3).
 - It does not require or establish a repo-wide quantum-link ontology.

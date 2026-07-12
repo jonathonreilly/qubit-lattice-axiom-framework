@@ -19,9 +19,9 @@ cosmic-history content needed for a numerical `H_0` closure.
 
 ## 0. Statement
 
-Let the **current framework baseline** be the three named axioms in
+Let the **current framework baseline** be the four named axioms in
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md):
-Lattice, Quantum, and Record. Let the registered
+Lattice, Qubit, Admissibility, and Record. Let the registered
 [`scale_reference_primitive`](SCALE_REFERENCE_PRIMITIVE_NOTE.md) be available
 only in its approved role: it converts lattice-natural units to physical
 units via `a^{-1}=M_Pl`, and supplies no dimensionless content.
@@ -127,7 +127,7 @@ Hence retaining `L` requires retaining at least one cosmic-history ratio.
 The current framework baseline and the scale-reference primitive carry no
 matter/radiation/`Lambda` history ratios. Cosmic history is the time-evolved
 ensemble of matter, radiation, and `Lambda` densities, which is separate
-macroscopic content not supplied by Lattice, Quantum, Record, or a units
+macroscopic content not supplied by Lattice, Qubit, Admissibility, Record, or a units
 conversion.
 
 Therefore the current baseline plus the scale-reference primitive does not

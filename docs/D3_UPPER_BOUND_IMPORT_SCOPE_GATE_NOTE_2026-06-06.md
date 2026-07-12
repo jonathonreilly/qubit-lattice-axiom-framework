@@ -130,7 +130,7 @@ This note does not claim:
 - a framework-internal derivation of the full Bertrand closed-orbit theorem;
 - a framework-internal derivation of atomic stability or a hydrogenic
   spectrum;
-- a full dimension-selection theorem from the current Lattice/Quantum/Record
+- a full dimension-selection theorem from the current Lattice/Qubit/Admissibility/Record
   baseline;
 - a derivation of a `Z^d` substrate from the current `Z^3` substrate;
 - a repo-wide audit verdict;

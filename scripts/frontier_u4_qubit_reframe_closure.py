@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Verify the U4 qubit-reframe closure note on the current axiom surface.
 
-The target note is an axiom-unpacking support note: the current Quantum axiom
+The target note is an axiom-unpacking support note: the current Qubit axiom
 already says that each site carries one qubit, equivalently M_2(C), equivalently
 Cl(3,0) in its real-algebra reading. This runner checks that source boundary
 and verifies the concrete Pauli/M_2(C) realization used by the note.
@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "U4_CLOSES_UNDER_QUBIT_REFRAME_NARROW_THEOREM_NOTE_2026-05-20.md"
-AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-05.md"
+AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 CL3_SPLIT = ROOT / "docs" / "CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md"
 
 EPS = 1e-10
@@ -138,18 +138,23 @@ def main() -> int:
     gate.check("current minimal axiom memo exists", AXIOMS.exists(), str(AXIOMS.relative_to(ROOT)))
     gate.check("CL3 split note exists", CL3_SPLIT.exists(), str(CL3_SPLIT.relative_to(ROOT)))
     gate.check(
-        "current axiom memo has named Lattice/Quantum/Record axioms",
-        "### Lattice" in axioms and "### Quantum" in axioms and "### Record" in axioms,
+        "current axiom memo has named Lattice/Qubit/Admissibility/Record axioms",
+        "### Lattice" in axioms
+        and "### Qubit" in axioms
+        and "### Admissibility" in axioms
+        and "### Record" in axioms,
     )
     gate.check(
-        "Quantum axiom supplies one qubit and M2/Cl3 equivalence",
-        "one qubit" in axioms and "A_x ~= M_2(C)" in axioms and "Cl(3,0)" in axioms,
+        "Qubit axiom supplies one-site possibilities and M2/Cl3 equivalence",
+        "Each site has a domain of local possibilities." in axioms
+        and "The full one-site possibility domain has algebraic presentation `M_2(C)`." in axioms
+        and "A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently" in axioms,
     )
     gate.check(
         "U4 note now cites the current axiom memo",
-        "MINIMAL_AXIOMS_2026-06-05.md" in note
-        and "current Quantum axiom" in note
-        and "MINIMAL_AXIOMS_2026-05-20.md](MINIMAL_AXIOMS_2026-05-20.md)" not in note,
+        "MINIMAL_AXIOMS_2026-06-29.md" in note
+        and "current Qubit axiom" in note
+        and "MINIMAL_AXIOMS_2026-06-05.md](MINIMAL_AXIOMS_2026-06-05.md)" not in note,
     )
     gate.check(
         "U4 note keeps auditor-owned source-side status",
@@ -211,7 +216,7 @@ def main() -> int:
         print("U4 qubit-reframe verifier failed.")
         return 1
     print(
-        "Verified scoped U4 alias closure: the current Quantum axiom supplies "
+        "Verified scoped U4 alias closure: the current Qubit axiom supplies "
         "one qubit/M2(C)/Cl(3,0) per site; Pauli matrices realize the local "
         "Cl(3,0) carrier as all of M2(C), while downstream staggered gates "
         "remain separately auditor-owned."

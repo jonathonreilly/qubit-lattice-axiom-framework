@@ -25,7 +25,7 @@ from:
    [`REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md`](REAL_DIAGONAL_SOURCE_DET_POSITIVITY_AND_LOG_READOUT_LEMMA_NOTE_2026-06-08.md).
 
 The axiom input is
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md): Record supplies
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md): Record supplies
 finite scalar additivity for supplied disjoint record collections, while
 withholding source/action, arbitrary observable identification, readout
 contexts, sector-generation rules, weighting, normalization, and dynamics.
@@ -58,16 +58,16 @@ consequence of Record.
 ## Disjoint-Source To Disjoint-Record Clause
 
 The second half of T1-d is independent for the same reason. The Record axiom
-states finite additivity for pairwise-disjoint records once a readout context
-is supplied. It does not say that two disjoint source blocks must be assigned
-to disjoint records.
+states: for any finite collection of pairwise-disjoint records, scalar readout
+`I` is additive, with `I(empty)=0`. It does not say that two disjoint source
+blocks must be assigned to disjoint records.
 
 A source-to-record assignment can map two disjoint source block labels to the
 same realized record label without contradicting Record, because the premise
 needed for additivity over two records has not been met. Therefore the
 blocks-to-records clause is a genuine bridge premise. It may be supplied by a
 future readout-context theorem or approved primitive, but it is not derivable
-from the present Lattice, Quantum, and Record axioms.
+from the present Lattice, Qubit, Admissibility, and Record axioms.
 
 ## Boundary
 
@@ -94,9 +94,9 @@ fixed-dimension quotient could remove the trace freedom; `diag(4,1)` and
 not. (3) Continuity or smoothness on the positive source cone could force
 `log det`; `W_epsilon` is smooth there. (4) Source-disjoint blocks could be
 automatically record-disjoint; the non-injective source-to-record assignment
-refutes that pure-logic implication. (5) Lattice, Quantum, or Record could
-supply the missing source/action or observable-identification bridge; the
-minimal axiom note explicitly withholds those structures.
+refutes that pure-logic implication. (5) Lattice, Qubit, Admissibility, or
+Record could supply the missing source/action or observable-identification
+bridge; the minimal axiom note explicitly withholds those structures.
 
 **N2 -- Wall independence.** The determinant-only quotient and the
 source-blocks-to-records clause are independent. A determinant-only scalar
@@ -129,8 +129,9 @@ This note does not classify that future path as a new axiom requirement.
 **N7 -- Steelman.** The strongest counterargument is that a richer readout
 context might identify central-sector record labels with determinant data and
 thereby rule out trace-sensitive additive source readouts. That would be a real
-positive bridge if supplied, but it is not in the current Lattice, Quantum, and
-Record axioms or the determinant algebra used by the parent packet.
+positive bridge if supplied, but it is not in the current Lattice, Qubit,
+Admissibility, and Record axioms or the determinant algebra used by the parent
+packet.
 
 **N8 -- Cross-cycle echo.** Similar Record-derived source/action, selection,
 and target-vector walls elsewhere in the repo are handled by explicit supplied

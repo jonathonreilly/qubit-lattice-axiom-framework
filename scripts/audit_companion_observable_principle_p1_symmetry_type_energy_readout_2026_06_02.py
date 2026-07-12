@@ -25,9 +25,9 @@ H-eigenvalue => additive by the tensor structure", or does that route secretly
 re-import additivity? This runner formalizes two pivots and tests each:
 
   Pivot 1 ("energies/H are additive over the tensor product"). In the
-  framework this is NOT supplied by the Quantum axiom; the
-  Lattice/Quantum/Record baseline fixes the lattice, local algebra, and finite
-  scalar record readout, not dynamics. When realized (the cited two-step transfer-
+  framework this is NOT supplied by the Qubit axiom; the
+  Lattice/Qubit/Admissibility/Record baseline fixes the lattice, local algebra,
+  and finite scalar record readout, not dynamics. When realized (the cited two-step transfer-
   matrix construction), H_hat = -log(T_hat^2)/(2 a_tau) with T_hat^2 a
   PRODUCT over modes; H additive <=> T^2 multiplicative <=> the SAME exp/log
   move one level up. Moreover additivity of H over independent subsystems is a

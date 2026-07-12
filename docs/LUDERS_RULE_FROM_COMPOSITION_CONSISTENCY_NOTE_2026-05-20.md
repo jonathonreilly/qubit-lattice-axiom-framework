@@ -36,7 +36,7 @@ record-conditioning update.
 Given the measurement-side trace/effect probability interpretation and the
 standard update-consistency requirements below, on the qubit-lattice
 operator algebra defined by
-[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) (A1+A2,
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) (A1+A2,
 giving per-site `M_2(ℂ)` operator algebra and `Z^3` substrate), the
 **unique** state-update rule for record conditioning that satisfies
 the four standard consistency requirements
@@ -309,7 +309,7 @@ single framework-native Lüders theorem.
 **Residual open bridge for this parent:**
 
 The missing theorem is not another `PEP` algebra check. It is the physical
-measurement-semantics bridge from the approved `{Lattice, Quantum, Record}`
+measurement-semantics bridge from the approved `{Lattice, Qubit, Admissibility, Record}`
 surface to:
 
 ```text
@@ -344,7 +344,7 @@ SUMMARY: PASS=23 FAIL=0
 
 **Upstream framework dependencies** (load-bearing; markdown links so the citation graph records them as deps):
 
-- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra and `Z^3` substrate)
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — supplies A1+A2 (qubit-form local algebra and `Z^3` substrate)
 - [`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) — finite operator-algebra bridge for `M_{P,E}=PEP`, valid-effect bounds, trace-cyclicity algebra, nested compression, and the Jordan-product guard
 - [`LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md`](LSP_PROJECTIVE_CANONICAL_KP_EQUALS_P_NARROW_THEOREM_NOTE_2026-06-05.md) — canonical finite projective Kraus selection `K_r=P_r` under restricted readout-frame scope
 - [`RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md`](RECORD_FORMATION_TO_KRAUS_ISOMETRY_BRIDGE_2026-06-06.md) — finite pointer-record write to projective Kraus isometry bridge under supplied pointer-model premises

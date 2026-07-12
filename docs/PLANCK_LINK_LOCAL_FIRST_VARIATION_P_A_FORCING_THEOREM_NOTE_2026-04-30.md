@@ -56,10 +56,10 @@ duality or after taking higher composite/third-variation data.
 
 The theorem uses:
 
-- [MINIMAL_AXIOMS_2026-06-05.md](./MINIMAL_AXIOMS_2026-06-05.md): the current
-  axiom memo naming the repo-wide base as Lattice, Quantum, and Record while
-  leaving source/action and the staggered-Dirac / Grassmann realization as
-  separate open gates rather than framework axioms;
+- [MINIMAL_AXIOMS_2026-06-29.md](./MINIMAL_AXIOMS_2026-06-29.md): the current
+  axiom memo naming the repo-wide base as Lattice, Qubit, Admissibility, and
+  Record while leaving source/action and the staggered-Dirac / Grassmann
+  realization as separate open gates rather than framework axioms;
 - [LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md](./LINK_LOCAL_FIRST_VARIATION_SELECTOR_BRIDGE_NARROW_THEOREM_NOTE_2026-05-10.md):
   exact conditional algebra proving that a one-link source map plus the
   active-response/support bridge selects `P_1` and excludes `P_3` only on that

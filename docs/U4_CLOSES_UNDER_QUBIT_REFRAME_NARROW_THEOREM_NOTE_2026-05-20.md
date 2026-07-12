@@ -10,8 +10,8 @@
 per-site Hilbert space on the Z^3 substrate IS the Cl(3) faithful
 complex irrep on per-site `V`") — open under the pre-2026-05-20 Cl(3)
 framing — is **directly given by the qubit-per-site baseline** of
-the current Quantum axiom
-([`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)).
+the current Qubit axiom
+([`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)).
 
 **Audit-dispatch parent candidate:** If a future independent audit
 evaluates whether this U4 closure note is a non-chain-closing
@@ -53,14 +53,14 @@ moving the U4-conditional sub-claims of several substep-1 narrow
 theorems (`staggered_dirac_substep1_u4_conditional_single_module`,
 `staggered_dirac_substep1_grassmann_forcing_bridge`,
 `staggered_dirac_substep1_jw_bridge`) from conditional to unconditional
-under the current Quantum axiom. It does not by itself close the parent
+under the current Qubit axiom. It does not by itself close the parent
 `staggered_dirac_realization_gate_note_2026-05-03` (which has additional
 substeps beyond U4) or retag any downstream row.
 
 ## Claim
 
 By the qubit-per-site baseline in
-[`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md)
+[`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 ("At each site `x`, the primitive physical local degree of freedom is
 one qubit; equivalently, the primitive one-site operator algebra is
 `A_x ~= M_2(C)`, equivalently `Cl(3,0)` in its real-algebra reading."):
@@ -109,8 +109,9 @@ additional physical premise — the staggered-Dirac/Grassmann
 one-particle-per-site realization — that lived in the open
 `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03` gate's substep 1.
 
-The current Quantum axiom, introduced by the 2026-05-20 qubit reframe and
-carried by the 2026-06-05 three-axiom memo, replaces this two-step
+The current Qubit axiom (introduced as the Quantum axiom by the 2026-05-20
+qubit reframe, carried through the 2026-06-05 memo, and current in the
+2026-06-29 four-axiom memo), replaces this two-step
 "abstract Cl(3) + open bridge" structure with a single-axiom commitment.
 
 ## Step 1 — The qubit-per-site baseline specifies the per-site object directly
@@ -239,7 +240,7 @@ axiom applied to make the framework's commitments explicit.
 
 **Upstream framework dependencies** (load-bearing; markdown links):
 
-- [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — current axiom memo; supplies the Quantum axiom (one qubit per site = `M_2(C)`, equivalently `Cl(3,0)`)
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — current axiom memo; supplies the Quantum axiom (one qubit per site = `M_2(C)`, equivalently `Cl(3,0)`)
 - [`CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md`](CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md) — retained; §(K2) `M_2(ℂ) ≅ Cl(3,0)` real-algebra isomorphism, §(K4) two-dim irrep dimensional readout
 
 **Upstream standard-math imports** (named non-derivation):

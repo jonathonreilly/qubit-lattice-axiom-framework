@@ -12,6 +12,8 @@ no original-field equal-time CAR anticommutator is claimed. Next derive the
 reciprocal barred pole and contact/time-ordering all-field functional, then
 open the interacting gauge continuum campaign. Block13 PR #5262 is open and
 mergeable; its audit workflow succeeded at the latest check.
+Stacked Block14 PR #5264 is open and mergeable on Block13; the independent
+audit workflow was queued at the delivery checkpoint.
 
 The campaign is initialized on
 `physics-loop/admissibility-dynamics-realization-bridge-20260711` from current

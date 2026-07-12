@@ -748,3 +748,28 @@ coupling/light-mass scaling, and alternative actions live. Runner/cache:
 source hash `0520812a24cfb747...` and the sole Dobrushin uniqueness dependency;
 strict lint has zero errors and vocabulary lint has zero violations. PR #5305
 is open; no axiom-update stop is triggered.
+
+## Exact factor-two gauge block, Schur, and OS-semigroup review
+
+PASS WITH BOUNDED CLAIMS. Disjoint straight two-link skeletons give exact Haar
+disintegration and a gauge-covariant coarse link. For every `m>0`, the
+eliminated staggered block remains anti-Hermitian around its mass, parity pairs
+its spectrum, and has positive determinant. Exact Schur integration preserves
+the retained inverse and yields the all-mass fixed-background tail with
+`r=16/(m^2+16)`. Fully integrating fermions and hidden links gives a positive
+continuous coarse gauge density and exact observable pullback.
+
+In the strict Dobrushin wedge, coarse image measures inherit mixing. The
+coarse/fine reflection-form identity descends through the gauge-observable OS
+null quotient; one coarse time step is `T_2`, and the Hamiltonian agrees on the
+blocked kernel complement after doubling the spacing. The repaired source
+keeps the antiperiodic seam, finite-torus divisibility, taste/form migration,
+fixed-background versus gauge-integrated locality, and generated-loop/
+multi-fermion boundaries explicit.
+
+Independent code/math, physics/import, governance, and N1--N8 reviews pass.
+Runner/cache: `PASS=10 FAIL=0`. Audit validation seeds one
+`bounded_theorem` / `unaudited` row with source hash `b2d8b95312f06ce0...`
+and the sole positive Dobrushin uniqueness dependency; strict lint has zero
+errors and vocabulary lint has zero violations. PR #5310 is open; no
+axiom-update stop is triggered.

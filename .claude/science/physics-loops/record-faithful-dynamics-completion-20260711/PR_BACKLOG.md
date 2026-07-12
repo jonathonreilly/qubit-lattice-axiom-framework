@@ -1,5 +1,20 @@
 # PR Delivery
 
+The exact factor-two Wilson--staggered gauge block, Schur, and OS semigroup is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block23-critical-scaling-necessary-conditions-20260712`
+- head: `physics-loop/record-faithful-dynamics-block24-coupled-one-step-rg-map-20260712`
+- runner: `PASS=10 FAIL=0`
+- scope: exact gauge-covariant pushforward, all-mass fixed-background Schur
+  locality, positive coarse gauge measure, inherited mixing, and gauge-
+  observable OS transfer restriction; no closed action-space RG flow
+- audit compatibility: one `bounded_theorem` / `unaudited` row, exactly the
+  positive Dobrushin uniqueness dependency; strict lint zero errors;
+  generated outputs stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5310
+
+No merge is authorized. Independent audit remains authoritative.
+
 The Wilson--staggered Dobrushin certificate-boundary critical-scaling no-go is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block22-controlled-ultralocal-continuum-20260712`

@@ -29,6 +29,6 @@ audit lane may require cross-confirmation. No audit verdict is predicted here.
 
 ## Next exact action
 
-Run review-loop, apply only scoped fixes, rerun checks, commit, push, and open
-one review PR. After merge by a later process, request independent audit of
+Review [PR #5277](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5277).
+After merge by a later process, request independent audit of
 `dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16`.

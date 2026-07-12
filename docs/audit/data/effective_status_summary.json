@@ -53,11 +53,12 @@
     "retained": 87,
     "retained_bounded": 360,
     "retained_no_go": 27,
-    "retained_pending_chain": 1,
-    "unaudited": 2817
+    "retained_pending_chain": 2,
+    "unaudited": 2816
   },
-  "retained_pending_chain_count": 1,
+  "retained_pending_chain_count": 2,
   "retained_pending_chain_examples": [
+    "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10"
   ]
 }

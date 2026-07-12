@@ -21,9 +21,9 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained** | 87 |
 | **retained_no_go** | 27 |
 | **retained_bounded** | 360 |
-| _retained_pending_chain_ | 1 |
+| _retained_pending_chain_ | 2 |
 | open_gate | 5 |
-| unaudited | 2817 |
+| unaudited | 2816 |
 | audit_in_progress | 24 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 24 |
-| `audited_clean` | 457 |
+| `audited_clean` | 458 |
 | `audited_conditional` | 35 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3167 |
+| `unaudited` | 3166 |
 
 | claim_type | count |
 |---|---:|
@@ -68,7 +68,7 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `medium` | 940 |
 | `leaf` | 1662 |
 
-- **Retained pending chain closure:** 1
+- **Retained pending chain closure:** 2
 - **Citation cycles detected:** 10
 
 ### Runner classification (static heuristic)
@@ -140,6 +140,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `unit_singlet_overlap_narrow_theorem_note_2026-05-02` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
+| `acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04` | no_go | ~~audited_clean~~ | _retained_pending_chain_ | cross_family | codex-gpt-5.6 | A | - |
 | `action_crossover_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | judicial_review | codex-gpt-5.5 | C | - |
 | `action_geometry_bridge_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `action_power_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
@@ -756,6 +757,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** For every complex n-by-n matrix K, det_R R(K)=det_C(K)det_C(conjugate(K))=|det_C(K)|^2, while the stated left-Berezin ordering gives integral exp(-chibar K chi)=det_C(K).  _(class `A`)_
 - **chain closes:** True — The block identity S R(K)=diag(K,conjugate(K)) S proves the realification formula without invertibility, and expansion of -chibar K chi in the displayed variable order yields the determinant permutation signs. Independent exact integer determinants and an unrelated tuple-based left-derivative calculation confirmed both formula families, including odd-dimensional signs.
 - **rationale:** The theorem is exact algebra and closes without cited dependencies, hidden physical premises, normalization imports, or observable identifications. The runner's 18 checks agree with independent block-algebra, exact determinant, and explicit left-Berezin derivative checks; the differential order and exponent sign produce det(K) for both odd and even dimensions. Residual risk is limited to downstream misuse: the audited scope deliberately supplies no charged-lepton carrier, measure, selector, or occupancy bridge.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04`
+
+- **Note:** [`ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md`](../../docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md)
+- **claim_type:** `no_go`
+- **claim_scope:** On a granted finite invertible complex carrier, the four axioms plus pointwise realized-state evaluation do not select between the additive raw determinant readouts log|det_C A| and log det_R R(A)=2 log|det_C A|; no physical charged-lepton action or measure claim is included.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** _retained_pending_chain_  (reason: `chain_waiting_on:ac_orbit_occupancy_statistical_grain_derivation_obligation`)
+- **auditor:** `codex-gpt-5.6-sol-xhigh-acphilambda-occupancy-20260711`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The two scalar laws I_C(C)=N(C) log 2 and I_R(C)=2N(C) log 2 share the same non-readout record-model reduct and both satisfy content-only finite additivity, while det_R R(A)=|det_C A|^2 makes their raw determinant powers distinct.  _(class `A`)_
+- **chain closes:** True — Two models with the same lattice, local possibility structure, admissibility, records, record contents, and auxiliary carrier but different allowed scalar-readout normalizations are enough to refute entailment of either raw power. Exact algebra and an independent non-SymPy finite determinant check confirm the factor, additivity, and n versus 2n scaling.
+- **rationale:** The same-reduct countermodels satisfy Record's empty-zero, record-content-only, and finite disjoint-additivity clauses, while exact realification forces F_R=2F_C; therefore the supplied axiom and primitive surface does not select the raw determinant normalization. Residual risk is intentionally outside this scope: the construction neither builds nor distinguishes physical charged-lepton actions or Gaussian measures and does not discharge AC(i); the directly cited occupancy obligation remains open and will block effective retained-grade propagation.
+- **open / conditional deps cited:**
+  - `AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md`
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

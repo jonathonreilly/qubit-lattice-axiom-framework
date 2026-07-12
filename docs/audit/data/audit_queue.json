@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 651,
     "high": 335,
-    "leaf": 1142,
+    "leaf": 1141,
     "medium": 755
   },
   "cycle_break_target_count": 49,
@@ -63978,32 +63978,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_note_2026-07-04",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "ac_orbit_occupancy_statistical_grain_derivation_obligation",
-        "realized_state_primitive"
-      ],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "action_power_3d_operator_cauchy_note_2026-05-10",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -82148,5 +82122,5 @@
     }
   ],
   "ready_count": 593,
-  "total_pending": 2883
+  "total_pending": 2882
 }

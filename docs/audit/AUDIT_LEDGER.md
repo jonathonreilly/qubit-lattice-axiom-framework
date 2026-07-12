@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 399 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2694 |
+| unaudited | 2693 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 80 |
-| ~~audited_failed~~ | 17 |
+| ~~audited_failed~~ | 18 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -48,10 +48,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 524 |
 | `audited_conditional` | 80 |
 | `audited_decoration` | 20 |
-| `audited_failed` | 39 |
+| `audited_failed` | 40 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3044 |
+| `unaudited` | 3043 |
 
 | claim_type | count |
 |---|---:|
@@ -796,6 +796,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `source_resolved_generated_support_mass_scaling_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `source_resolved_geometry_rule_repair_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `structured_mirror_bornsafe_scan_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
+| `su3_fusion_engine_pr1_theorem_note_2026-05-03` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `teleportation_apparatus_dynamics_closure_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `testable_predictions_map_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `three_family_card_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
@@ -8745,6 +8746,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner directly constructs the stated random DAG pocket, propagates with the stated valley-linear field and kernel, and reports the TOWARD counts, local power-law fits, and no-field controls. No external dependency or graph-universality claim is needed for the narrowed harness-level statement.
 - **rationale:** The bounded claim closes as a direct numerical harness result: n=200 gives 28/32 TOWARD rows and n=500 gives 21/32 TOWARD rows, with F~M median 1.00 and zero no-field controls in both reported sizes. The source note's n=500 table value is stale relative to current runner output, but this does not change the load-bearing majority-TOWARD and near-linear positive-row conclusion. Exact-count citation should use the current runner values until the note table is refreshed.
 - **auditor confidence:** high
+
+### `su3_fusion_engine_pr1_theorem_note_2026-05-03`
+
+- **Note:** [`SU3_FUSION_ENGINE_PR1_THEOREM_NOTE_2026-05-03.md`](../../docs/SU3_FUSION_ENGINE_PR1_THEOREM_NOTE_2026-05-03.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Default NMAX=4, n_grid=80 run producing a 25×25×25 rounded character-integral table with 3049 nonzero entries and PASS on V1–V9 plus the noise diagnostic, including verification of the note's claimed residual bound.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00271-su3_fusion_engine_pr1_theore`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** At NMAX=4 and n_grid=80, the runner numerically evaluates Cartan-torus character-orthogonality integrals, rounds them to a finite fusion table, and reports the validation results and maximum integer residual.  _(class `C`)_
+- **chain closes:** False — The runner performs the stated computation and passes all ten diagnostics, but its completed output reports a maximum residual of 5.187e-15, contradicting the theorem's explicit bound of less than 3.6e-15. The numerical statement must be synchronized or weakened before the bounded theorem closes as written.
+- **rationale:** The supplied source genuinely computes the character table and all 15625 triple integrals rather than printing predetermined fusion multiplicities; V1–V9 and the rounding-safety diagnostic pass, and the table still has 3049 nonzero entries. However, the current completed stdout gives max integer residual 5.187e-15, whereas the note's observed run and theorem assert 3.553e-15 and a strict bound below 3.6e-15. Because that false numerical bound is part of the claimed bounded theorem, the claim does not close on its own stated surface.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1 contains OPEN and UNTESTED downstream routes because the source supplies a positive finite-box theorem, not a five-route no-go proof.
+    - The mandatory source-shape gate cannot pass with zero supported negative walls.
 
 ### `su3_low_rank_irrep_picard_fuchs_odes_note_2026-05-05`
 

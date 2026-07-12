@@ -8294,33 +8294,46 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
 
     def test_restore_refuses_stale_axiom_premise_hash(self):
         m = self._import_and_patch()
+        matching_hash = "c8201cb1" + "0" * 56
         archived = self._archived_audit()
         archived["audit_state_snapshot"] = {
             "criticality": "leaf",
-            "deps": ["minimal_axioms"],
-            "dep_axiom_premise_note_hash": {"minimal_axioms": "c8201cb1" + "0" * 56},
+            "deps": ["minimal_axioms", "scale_reference_primitive"],
+            "dep_axiom_premise_note_hash": {
+                "minimal_axioms": matching_hash,
+                "scale_reference_primitive": "9a2f106e" + "0" * 56,
+            },
         }
         row = self._seed_with_archived("stale_premise_row", archived)
-        row["deps"] = ["minimal_axioms"]
+        row["deps"] = ["minimal_axioms", "scale_reference_primitive"]
         rows = {
             "stale_premise_row": row,
             "minimal_axioms": {
                 "claim_id": "minimal_axioms",
+                "note_hash": matching_hash,
+            },
+            "scale_reference_primitive": {
+                "claim_id": "scale_reference_primitive",
                 "note_hash": "fc4d60cc" + "0" * 56,
             },
         }
-        # Mismatching recorded vs current premise hash: re-audit material,
+        # The axiom matches but a later primitive map entry does not. Every
+        # recorded premise key is checked: the mismatch is re-audit material,
         # never restore material (mirrors invalidate's axiom_premise_changed).
         self.assertIsNone(m.restore_audit_from_previous(row, rows))
 
     def test_restore_proceeds_on_matching_or_absent_axiom_premise_hash(self):
         m = self._import_and_patch()
         matching_hash = "c8201cb1" + "0" * 56
+        matching_primitive_hash = "9a2f106e" + "0" * 56
         archived = self._archived_audit()
         archived["audit_state_snapshot"] = {
             "criticality": "leaf",
-            "deps": ["minimal_axioms"],
-            "dep_axiom_premise_note_hash": {"minimal_axioms": matching_hash},
+            "deps": ["minimal_axioms", "scale_reference_primitive"],
+            "dep_axiom_premise_note_hash": {
+                "minimal_axioms": matching_hash,
+                "scale_reference_primitive": matching_primitive_hash,
+            },
         }
         row = self._seed_with_archived("matching_premise_row", archived)
         rows = {
@@ -8328,6 +8341,10 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             "minimal_axioms": {
                 "claim_id": "minimal_axioms",
                 "note_hash": matching_hash,
+            },
+            "scale_reference_primitive": {
+                "claim_id": "scale_reference_primitive",
+                "note_hash": matching_primitive_hash,
             },
         }
         self.assertIsNotNone(m.restore_audit_from_previous(row, rows))

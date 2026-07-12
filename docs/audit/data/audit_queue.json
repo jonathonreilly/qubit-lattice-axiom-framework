@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 650,
     "high": 335,
-    "leaf": 1132,
+    "leaf": 1131,
     "medium": 755
   },
   "cycle_break_target_count": 49,
@@ -52379,28 +52379,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 0.0,
-      "note_path": "docs/BETA6_PLAQUETTE_CUMULANT_MOMENT_POSITIVITY_NO_GO_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_beta6_cumulant_moment_positivity.py",
-      "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "beyond_lattice_qcd_note",
       "claim_scope": null,
       "claim_type": "bounded_theorem",
@@ -81887,6 +81865,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 586,
-  "total_pending": 2872
+  "ready_count": 585,
+  "total_pending": 2871
 }

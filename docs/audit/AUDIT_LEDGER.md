@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 90 |
-| **retained_no_go** | 29 |
+| **retained_no_go** | 30 |
 | **retained_bounded** | 362 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 7 |
-| unaudited | 2795 |
+| unaudited | 2794 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -44,13 +44,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 468 |
+| `audited_clean` | 469 |
 | `audited_conditional` | 46 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3145 |
+| `unaudited` | 3144 |
 
 | claim_type | count |
 |---|---:|
@@ -175,6 +175,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `backreaction_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `bbs_rg_banach_contraction_external_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bell_inequality_derived_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
 | `bmv_entanglement_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
@@ -1405,6 +1406,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The packet defines the finite lattice operators, Poisson pseudoinverse, tensor-product Hamiltonian, and CHSH/taste operators directly, and the runner source computes the displayed values rather than reading or hard-coding them. The closure is only for the bounded model surface, not for physical gravitational normalization or framework-native registration of the two-species/D5 interpretation.
 - **rationale:** The load-bearing step is class C for the narrowed finite model: the runner constructs the lattice, Clifford/taste operators, Poisson kernel, Hamiltonian, eigenstates, and CHSH matrix from the stated inputs. The displayed taste identities follow algebraically from x_mu = 2X_mu + eta_mu, and independent spot recomputation reproduces representative 1D, 2D, and 3D CHSH entries. The selected G values are part of the bounded model claim rather than an imported calibrated external comparator, so this is not class G on the audited scope. No broader physical or framework-native Bell theorem is ratified here.
 - **auditor confidence:** high
+
+### `beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30`
+
+- **Note:** [`BETA6_PLAQUETTE_CUMULANT_MOMENT_POSITIVITY_NO_GO_NOTE_2026-05-30.md`](../../docs/BETA6_PLAQUETTE_CUMULANT_MOMENT_POSITIVITY_NO_GO_NOTE_2026-05-30.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Given the displayed coefficients d_5=1/472392, d_6=7/5668704, and d_7=5/17006112, they cannot be consecutive moments of a positive real-axis measure; only that Hamburger/Stieltjes positive-measure subfamily is ruled out.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00371-beta6_plaquette_cumulant_mom`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The exact Hankel minor d_5 d_7 - d_6^2 equals -29/32134205039616 and is therefore negative.  _(class `A`)_
+- **chain closes:** True — Exact rational arithmetic gives a negative principal Hankel minor, contradicting the positive-semidefinite Hankel condition necessary for Hamburger moments and therefore also for Stieltjes moments. The conclusion is restricted to representations in which the displayed coefficients are the relevant moment window.
+- **rationale:** The load-bearing result is a genuine class-A algebraic closure over the three explicitly displayed rational inputs. Although the runner hard-codes those inputs and expected check values, it actually performs the rational determinant, independent SymPy calculation, geometric rescaling, and integer-witness arithmetic rather than merely printing a verdict. The negative minor is sufficient for the narrowly stated positive-measure no-go, while non-Stieltjes continuations remain outside the audited conclusion.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`
 

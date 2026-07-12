@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 95 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 376 |
+| **retained_bounded** | 377 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2750 |
+| unaudited | 2749 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 491 |
+| `audited_clean` | 492 |
 | `audited_conditional` | 63 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3100 |
+| `unaudited` | 3099 |
 
 | claim_type | count |
 |---|---:|
@@ -317,6 +317,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `flavor_center_trace_closed_capstone_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `flavor_doublet_metric_default_is_detr_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
 | `flavor_doublet_rotation_exhaustive_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
+| `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `flavor_substrate_parent_separate_note_2026-05-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
@@ -3950,6 +3951,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - **gate failures:**
     - N1: the physical generation-action bridge, noncirculant J carriers, and independent block-count/readout route remain open or untested.
     - N5: doublet-J absence language is not tested across noncirculant, enlarged-carrier, physical-bridge, and alternate-readout resolutions.
+
+### `flavor_find_j_round5_trace_vs_center_state_final_2026-06-02`
+
+- **Note:** [`FLAVOR_FIND_J_ROUND5_TRACE_VS_CENTER_STATE_FINAL_2026-06-02.md`](../../docs/FLAVOR_FIND_J_ROUND5_TRACE_VS_CENTER_STATE_FINAL_2026-06-02.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite real 3x3 C3 algebra: the central projections, tracial and equal-block densities, admissibility and nontraciality of the equal-block state, non-selection of the central weight p, and distinction from continuous rephasing were audited; no physical Q readout or state-selection dynamics was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00422-flavor_find_j_round5_trace_v`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The family rho_p = p e0/Tr(e0) + (1-p)e1/Tr(e1), for 0 <= p <= 1, consists of positive trace-one C3-compatible states, so C3 compatibility alone does not select p.  _(class `A`)_
+- **chain closes:** True — The displayed matrices and density family directly establish positivity, normalization, C3 commutation, unequal trace/equal-block masses, and multiple admissible values of p. These facts prove the stated finite-algebra boundary without importing a physical readout or selector.
+- **rationale:** The runner performs substantive matrix calculations: it constructs C, e0, e1, the state densities, both averaging maps, and a counterexample to the former block-compression claim. The one-parameter family gives explicit admissible states with different block weights, which is sufficient to disprove selection by the stated C3 central-state conditions. The verdict is confined to this finite algebra and does not promote the displayed Q(r) convention, a trace default, or p=1/2 selection to physical theorems.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `flavor_r_half_is_a_stationary_point_not_forced_2026-06-02`
 

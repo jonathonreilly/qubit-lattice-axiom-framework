@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/frontier_formation_weight_expressibility_2026_07_12.py
+runner_sha256: cfa092c82eb6c2fb98cfab991d47768581f480eef14285f5e36b346c5ca700c0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+[PASS] 01 the singlet/doublet projectors are orthogonal and resolve the carrier
+[PASS] 02 carrier ranks and traces give the structural dimension vector (1,2)
+[PASS] 03 K fixes both quotient cells but sends the internal doublet separator to its negative
+[PASS] 04 orbit-constant scalar readouts are diag(x_s,x_d,x_d), a two-dimensional C+C algebra
+[PASS] 05 C+M2 is a strict enlargement: its supported doublet separator is not in C+C
+[PASS] 06 candidate 1: normalized carrier trace gives w=1/3
+[PASS] 07 candidate 2: counting the two minimal central projections gives w=1/2
+[PASS] 08 candidate 3: the regular/HS ranks of licensed C+C are (1,1), hence w=1/2
+[PASS] 09 candidate 3-alt: the unlicensed C+M2 regular ranks (1,4) would give w=1/5
+[PASS] 10 candidate 4: K-orbit sizes are (1,2), reproducing carrier trace w=1/3
+[PASS] 11 T1: deduplication gives exactly {1/3,1/2}, with 1/5 absent
+[PASS] 12 the exact fork map sends w=1/3 to r=1 and w=1/2 to r=1/2
+[PASS] 13 T2 control: rho=I/3 is positive, K-even, unit trace, and realizes (1/3,2/3)
+[PASS] 14 T2 fork: diag(1/2,1/4,1/4) is positive, K-even, unit trace, and realizes (1/2,1/2)
+[PASS] 15 the external exponent family is nonconstant and yields 1/2, 1/3, 1/5 at alpha=0,1,2
+[PASS] 16 symmetry alone leaves the full K-even family diag(t,(1-t)/2,(1-t)/2)
+[PASS] 17 T4 two-cell check: dimensions/orbits (1,3) change the set to {1/4,1/2}
+[PASS] 18 T4 three-cell check: three identical singletons collapse all constructions to uniform thirds
+TOTAL: PASS=18 FAIL=0
+VERDICT: W_expr = {1/3, 1/2}.
+CANDIDATE-3 ALGEBRA: A_reg=C+C because scalar readouts are constant on the K-doublet; C+M2 contains forbidden internal-doublet data, so 1/5 is excluded.
+T1: SOCMLC gives a finite exact two-weight set.
+T2: both exact fork endpoints are lawful and neither is selected.
+T3: conditionally, the continuum dial becomes a finite selection problem; this runner selects nothing.
+T4: changing the supplied menu invariants changes or collapses the set.
+CHECKS: PASS=18 FAIL=0.
+PROPOSED CLAIM_SCOPE: conditional canonical-measure classification on the supplied C3 carrier and its two-cell orbit-constant quotient only.
+UNCERTAINTIES: SOCMLC completeness is contestable; the orbit clause is bridge-carried; a separately supplied block algebra or formation operator would enlarge the set.
+
+----- stderr -----
+

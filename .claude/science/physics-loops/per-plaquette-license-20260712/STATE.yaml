@@ -11,8 +11,8 @@ started: 2026-07-12T16:06-04:00
 deadline: 2026-07-12T22:06-04:00
 target_status: best-honest-status
 cycle: 1
-block: 01
-active_route: R2-one-tick-reachability-bound
+block: 02
+active_route: parent-consumption-wiring (block 02, stacked on block 01)
 active_route_status: conditional-support
 files_touched:
   - docs/PER_PLAQUETTE_LICENSE_ONE_TICK_REACHABILITY_DERIVATION_NARROW_THEOREM_NOTE_2026-07-12.md
@@ -32,7 +32,7 @@ open_imports:
 no_go_routes:
   - R1-minimal-nonempty-covariant-lift (pruned pre-execution; see NO_GO_LEDGER)
 trace_class: direct_blocker_closure
-pr_status: none yet
+pr_status: block01 PR #5274 open; block02 stacked PR pending
 next_action: >
   Independently audit the block-01 note, runner, cache, and conditional-status
   certificate; if accepted, block 03 may wire the parent note to consume this

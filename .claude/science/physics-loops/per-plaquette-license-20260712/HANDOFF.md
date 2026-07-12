@@ -87,3 +87,12 @@ TOTAL: PASS=51 FAIL=0
 
 Stop after the requested verification. Do not commit, push, open a PR, edit the
 parent note, or write under `docs/audit/` in block 01.
+
+## Block 02 (2026-07-12, supervisor-executed)
+
+Parent consumption wiring: the parent note's Role paragraph, Boundaries item,
+and Dependencies now consume the block-01 derivation (markdown link = edge;
+acyclic — upstream note backticks the parent); dated Repair Note quotes the
+archived-verdict blocker. Parent runner +4 wiring pins (PASS 9->13); cache
+regenerated; vocab lint clean. Stacked on block 01 (uses its note file).
+Proposed weaving beyond this: none (publication surfaces untouched per skill).

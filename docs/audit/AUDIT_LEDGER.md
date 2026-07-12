@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 93 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 370 |
+| **retained_bounded** | 371 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2766 |
+| unaudited | 2765 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 483 |
+| `audited_clean` | 484 |
 | `audited_conditional` | 56 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 32 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3116 |
+| `unaudited` | 3115 |
 
 | claim_type | count |
 |---|---:|
@@ -267,6 +267,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_neutrino_weak_vector_theorem_note_2026-04-15` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_pmns_chamber_spectral_completeness_krawczyk_certificate_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
@@ -3125,6 +3126,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N1: the C^16 embedding, physical Dirac-Yukawa operator chain, and neutrino-sector normalization routes remain OPEN.
     - N3: the physical interpretation depends on three explicit unclosed bridge assumptions.
     - N5: the runner tests only the selected C^8 representation and does not test the broader physical resolutions named by the source.
+
+### `dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17`
+
+- **Note:** [`DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md`](../../docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact finite-dimensional spectra, cubic identities, and scalar-baseline log-absolute-determinant equality for the three explicitly supplied matrices S_cls, T_gamma, and Z_odd.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00405-dm_neutrino_codd_bosonic_nor`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The explicit determinant evaluations give det(m I_n + j M)/m^n = 1 - j^2/m^2 for S_cls, T_gamma, and Z_odd, while their spectra directly give M^3 = M.  _(class `A`)_
+- **chain closes:** True — The conclusions follow by direct characteristic-polynomial, matrix-power, and symbolic determinant calculations on the explicit matrices. No physical normalization rule, branch convention, external comparator, or upstream authority is needed for the stated narrow scope.
+- **rationale:** The load-bearing step is genuine class (A) exact algebra: the runner instantiates the three matrices and computes their spectra, powers, determinants, normalized ratios, and curvature rather than printing or importing the claimed result. The symbolic determinant ratios establish the log-absolute-determinant identity throughout the stated real domain; the finite rational checks are supplementary. This verdict covers only the finite-dimensional scalar-baseline theorem and does not ratify |c_odd| = 1, c_odd = +1, a physical observable bridge, or the parent normalization row.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15`
 

@@ -20,11 +20,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 100 |
 | **retained_no_go** | 44 |
-| **retained_bounded** | 415 |
+| **retained_bounded** | 416 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
 | unaudited | 2644 |
-| audit_in_progress | 29 |
+| audit_in_progress | 28 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
@@ -45,8 +45,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 29 |
-| `audited_clean` | 546 |
+| `audit_in_progress` | 28 |
+| `audited_clean` | 547 |
 | `audited_conditional` | 96 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 44 |
@@ -138,7 +138,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `koide_q_readout_factorization_theorem_2026-04-22` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.5 | A | - |
 | `koide_z3_equivariant_anticommuting_no_go_note_2026-05-16` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
-| `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `pmns_graph_first_residual_antiunitary_narrow_theorem_note_2026-05-16` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `post_record_clock_rate_interface_2026-06-06` | no_go | audit_in_progress | audit_in_progress | - | - | - | - |
@@ -476,6 +475,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `nonlinear_born_gravity_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `ollivier_einstein_proxy_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5 | C | - |
+| `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `ordered_lattice_quasi_persistent_relaunch_2d_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
 | `parity_operator_basis_dimension5_lv_no_go_theorem_note_2026-05-02` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `periodic_2d_wraparound_fix_note_2026-04-11` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
@@ -7000,6 +7000,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The primary runner reproduces the screened potential-weighted mean R²=0.9728 while density and combined definitions remain weak. The companion control runner reproduces the screened and low-screening control claims, including random/shuffled collapse and the low-screening shell-averaged near-match that limits the interpretation to a structured proxy.
 - **rationale:** The note's bounded claim is supported by current runners: the potential-weighted construction gives strong R² against G*T, random and shuffled controls collapse, and the low-screening rerun survives. The same current output also supports the caveat that shell-averaged structured fields reproduce almost all of the low-screening signal, so dynamic backreaction and Einstein-equation closure are not established. Residual risk is the declared method-specific observable choice and missing open-boundary/Wilson comparison, both already outside the safe claim.
 - **auditor confidence:** high
+
+### `one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10`
+
+- **Note:** [`ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md`](../../docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic audit of the SHIFT/NEUTRAL_BRANCH right-handed hypercharge completion under b=-n_color*a and the b=-1 convention, including the stated anomaly identities, relabelled branch, and n_color=3 readout; no branch, normalization, color-count, chirality, or particle-identification selector was audited as derived.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00085-one_generation_anomaly_singl`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Substituting the SHIFT assignments gives the four stated singlet hypercharges, and the cubic anomaly reduces to -6(n_color*a+b), which vanishes under the imported left-handed trace relation.  _(class `A`)_
+- **chain closes:** True — The four values follow directly from the explicitly imposed SHIFT equations. Direct expansion verifies the color, mixed gravitational, and cubic anomalies, with only the cubic identity requiring n_color*a+b=0.
+- **rationale:** The load-bearing work is genuine exact algebra over explicitly bounded hypotheses and the retained-bounded one-hop trace authority. The runner constructs and simplifies the anomaly expressions symbolically rather than merely printing expected outcomes; its hard-coded n_color=3 and n_color=5 values are non-load-bearing checks. The note does not claim that anomaly cancellation derives SHIFT, the neutral branch, b=-1, n_color=3, chirality, or SM particle naming.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `ordered_lattice_quasi_persistent_relaunch_2d_note`
 

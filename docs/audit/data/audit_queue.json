@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 642,
+    "critical": 641,
     "high": 335,
     "leaf": 1096,
     "medium": 718
@@ -2978,30 +2978,6 @@
       "queue_reason": "non_terminal_conditional",
       "ready": true,
       "runner_path": "scripts/kraus_choi_normalization_convention_check_2026_06_05.py",
-      "transitive_descendants": 448
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10",
-      "claim_scope": "Exact algebraic audit of the SHIFT/NEUTRAL_BRANCH right-handed hypercharge completion, its anomaly identities, and stated corollaries under the retained LH trace relation and explicitly named conventions.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [
-        "lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.811,
-      "note_path": "docs/ONE_GENERATION_ANOMALY_SINGLET_COMPLETION_NARROW_THEOREM_NOTE_2026-05-10.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/audit_companion_one_generation_anomaly_singlet_completion_exact_2026_05_10.py",
       "transitive_descendants": 448
     },
     {
@@ -80025,6 +80001,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 518,
-  "total_pending": 2791
+  "ready_count": 517,
+  "total_pending": 2790
 }

@@ -516,6 +516,184 @@ N8_KIND_CANDIDATE_LIMITS: dict[str, int | None] = {
 }
 
 
+def _compact_text(value: Any, limit: int = 360) -> str:
+    """Return one deterministic single-line evidence excerpt for an index row."""
+    if isinstance(value, str):
+        text = value
+    else:
+        text = json.dumps(value, sort_keys=True, separators=(",", ":"))
+    return re.sub(r"\s+", " ", text).strip()[:limit]
+
+
+def _semantic_text_values(value: Any) -> list[str]:
+    """Extract substantive text in a stable, schema-aware preference order."""
+    if isinstance(value, str):
+        text = _compact_text(value)
+        return [text] if text else []
+    if isinstance(value, list):
+        values: list[str] = []
+        for item in value:
+            values.extend(_semantic_text_values(item))
+        return values
+    if not isinstance(value, dict):
+        return []
+    preferred_keys = (
+        "target", "note", "text", "claim_scope", "label",
+        "self_liquidation_condition", "definition", "use", "description",
+    )
+    values = []
+    for key in preferred_keys:
+        if key in value:
+            values.extend(_semantic_text_values(value[key]))
+    if values:
+        return values
+    for key in sorted(value):
+        values.extend(_semantic_text_values(value[key]))
+    return values
+
+
+def _semantic_boilerplate(text: str) -> bool:
+    return bool(
+        re.match(r"^#{1,6}\s", text)
+        or re.search(
+            r"(?:^\*\*(?:date|type|claim type|status|status authority|"
+            r"primary runner|runner cache|source-note proposal disclaimer)\b|"
+            r"^\*\*claim boundary:\*\*|audit verdict|downstream status|"
+            r"source-note proposal)",
+            text,
+            re.IGNORECASE,
+        )
+    )
+
+
+def _best_semantic_excerpt(value: Any) -> str:
+    """Prefer an argumentative body line over headings or transport metadata."""
+    values = _semantic_text_values(value)
+    if not values:
+        return ""
+
+    def score(text: str) -> tuple[int, int, int, int, int]:
+        heading = bool(re.match(r"^#{1,6}\s", text))
+        boilerplate = _semantic_boilerplate(text)
+        mechanism_terms = bool(
+            re.search(
+                r"\b(?:derive|entail|select|require|supply|obstruction|residual|"
+                r"countermodel|theorem|readout|action|normalization|bridge)\b",
+                text,
+                re.IGNORECASE,
+            )
+        )
+        return (
+            int(not boilerplate), int(not heading), int(mechanism_terms),
+            int(len(text) >= 40), len(text),
+        )
+
+    return max(values, key=score)
+
+
+def _negative_boundary_values(value: Any) -> list[str]:
+    """Return lines that state a scientific negative/residual mechanism."""
+    negative_re = re.compile(
+        r"(?:\b(?:does not|do not|cannot|fails?|unentailed|underdetermin\w*|"
+        r"not select\w*|not supply\w*|not derive\w*|obstruction|residual)\b|"
+        r"\bno\s+(?:retained|physical|admissible|theorem|bridge|selector|route)\b)",
+        re.IGNORECASE,
+    )
+    return [
+        text
+        for text in _semantic_text_values(value)
+        if not _semantic_boilerplate(text)
+        and (DOCS_NEGATIVE_RE.search(text) or negative_re.search(text))
+    ]
+
+
+def _compact_cross_cycle_candidate(
+    candidate: dict[str, Any], repo_root: str | Path | None = None,
+) -> dict[str, Any]:
+    """Keep every listed N8 identity while removing repeated bulk prose.
+
+    The auditor needs one substantive indexed mechanism per candidate, its
+    lifecycle, and an authenticated source locator/hash. Full candidate-ID
+    universes remain in the trusted manifest rather than the model prompt.
+    """
+    record = candidate.get("record")
+    kind = candidate.get("kind")
+    excerpts = candidate.get("matched_excerpts") or candidate.get("content") or []
+    canonical_negative_excerpts = _negative_boundary_values(excerpts)
+    note_path = candidate.get("note_path")
+    matching_terms = set(candidate.get("matching_terms") or [])
+    needs_full_note_scan = (
+        kind == "similar_negative_boundary"
+        or not canonical_negative_excerpts
+    )
+    if repo_root is not None and note_path and matching_terms and needs_full_note_scan:
+        full_note = _read_text(Path(repo_root), str(note_path))
+        full_matches = [
+            line.strip()
+            for line in full_note.splitlines()
+            if line.strip()
+            and matching_terms.intersection(_search_terms(line))
+        ]
+        if full_matches:
+            excerpts = [*_semantic_text_values(excerpts), *full_matches]
+    if kind in {
+        "similar_negative_boundary", "repo_negative_phrase_hit",
+        "physics_loop_no_go_ledger",
+    }:
+        negative_excerpts = (
+            _negative_boundary_values(excerpts)
+            if kind == "similar_negative_boundary"
+            else canonical_negative_excerpts or _negative_boundary_values(excerpts)
+        )
+        if negative_excerpts:
+            excerpts = negative_excerpts
+    excerpt = _best_semantic_excerpt(excerpts)
+    mechanism = candidate.get("claim_scope")
+    if not mechanism and isinstance(record, dict):
+        mechanism = record.get("target")
+    mechanism = (
+        mechanism
+        or excerpt
+        or candidate.get("invalidation_reason")
+        or candidate.get("candidate_id")
+        or "indexed cross-cycle candidate"
+    )
+    compact = {
+        "candidate_id": candidate.get("candidate_id"),
+        "kind": candidate.get("kind"),
+        "mechanism": _compact_text(mechanism),
+        "lifecycle_state": candidate.get("lifecycle_state"),
+        "retired": candidate.get("retired"),
+        "applicable": None,
+    }
+    source = candidate.get("note_path") or candidate.get("source_claim_id")
+    if source:
+        compact["source"] = source
+    if candidate.get("content_sha256"):
+        compact["content_sha256"] = candidate["content_sha256"]
+    return compact
+
+
+def _compact_partial_closure_candidate(candidate: dict[str, Any]) -> dict[str, Any]:
+    """Keep the N6 identity and strongest indexed basis in compact form."""
+    basis = _best_semantic_excerpt(
+        candidate.get("content") or candidate.get("candidate_id")
+    )
+    kind = candidate.get("kind")
+    if kind == "claim_scope_reframe":
+        kind = "definition_refactor"
+    compact = {
+        "candidate_id": candidate.get("candidate_id"),
+        "kind": kind,
+        "source_path": candidate.get("source_path"),
+        "accepted_premise_type": candidate.get("accepted_premise_type"),
+        "basis": basis,
+    }
+    if candidate.get("content_sha256"):
+        compact["content_sha256"] = candidate["content_sha256"]
+    return compact
+
+
 def cross_cycle_index_path(claim_id: str) -> str:
     return f"audit-packet://cross-cycle-index/{claim_id}"
 
@@ -1166,18 +1344,47 @@ def build_evidence_manifest(
         role="open_obligation_registry",
         text=_read_text(root, OBLIGATION_REGISTRY),
     )
+    cross_path = cross_cycle_index_path(str(row.get("claim_id") or ""))
+    canonical_cross = build_cross_cycle_index(row, ledger_rows, root)
+    cross_payload = json.loads(canonical_cross)
+    cross_payload["canonical_index_sha256"] = hashlib.sha256(
+        canonical_cross.encode("utf-8")
+    ).hexdigest()
+    cross_universe = cross_payload.pop("candidate_id_universe", [])
+    # The complete no-go row set is authenticated by count and digest. The
+    # verbose row list is transport metadata rather than auditor evidence.
+    cross_no_go_rows = cross_payload.pop("no_go_row_universe", [])
+    cross_payload["candidates"] = [
+        _compact_cross_cycle_candidate(candidate, root)
+        for candidate in cross_payload.get("candidates", [])
+    ]
     _add_evidence(
         manifest,
-        path=cross_cycle_index_path(str(row.get("claim_id") or "")),
+        path=cross_path,
         role="cross_cycle_index",
-        text=build_cross_cycle_index(row, ledger_rows, root),
+        text=json.dumps(cross_payload, sort_keys=True, separators=(",", ":")),
     )
+    manifest[cross_path]["cross_cycle_candidate_id_universe"] = cross_universe
+    manifest[cross_path]["cross_cycle_no_go_row_universe"] = cross_no_go_rows
+
+    partial_path = partial_closure_index_path(str(row.get("claim_id") or ""))
+    canonical_partial = build_partial_closure_index(row, ledger_rows, root)
+    partial_payload = json.loads(canonical_partial)
+    partial_payload["canonical_index_sha256"] = hashlib.sha256(
+        canonical_partial.encode("utf-8")
+    ).hexdigest()
+    partial_universe = partial_payload.pop("candidate_id_universe", [])
+    partial_payload["candidates"] = [
+        _compact_partial_closure_candidate(candidate)
+        for candidate in partial_payload.get("candidates", [])
+    ]
     _add_evidence(
         manifest,
-        path=partial_closure_index_path(str(row.get("claim_id") or "")),
+        path=partial_path,
         role="partial_closure_index",
-        text=build_partial_closure_index(row, ledger_rows, root),
+        text=json.dumps(partial_payload, sort_keys=True, separators=(",", ":")),
     )
+    manifest[partial_path]["partial_closure_candidate_id_universe"] = partial_universe
     attach_full_scan_authentication(manifest, root)
     return manifest
 
@@ -1319,7 +1526,7 @@ def _index_candidate_id_universe(
             if stored_set is not None and stored_set != universe:
                 return None
             return universe
-    if not rendered_text and stored_set is not None:
+    if stored_set is not None:
         return stored_set
     candidates = _index_candidates(
         entry,
@@ -2947,8 +3154,14 @@ def _validate_n6(packet: dict, status: str, manifest: dict[str, dict] | None) ->
             return f"N6 candidate {index}.kind does not match the partial-closure index"
         if not _text(candidate.get("indexed_basis")) or len(_norm(candidate["indexed_basis"])) < 20:
             return f"N6 candidate {index}.indexed_basis must quote substantive indexed content"
+        indexed_basis = indexed.get("basis") if indexed is not None else None
+        indexed_basis_surface = (
+            indexed_basis
+            if _text(indexed_basis)
+            else json.dumps(indexed, sort_keys=True)
+        )
         if indexed is not None and _norm(candidate["indexed_basis"]) not in _norm(
-            json.dumps(indexed, sort_keys=True)
+            indexed_basis_surface
         ):
             return f"N6 candidate {index}.indexed_basis is not present in its indexed candidate"
         for field in ("could_close_wall", "addressed"):
@@ -3177,7 +3390,12 @@ def _validate_n8(packet: dict, status: str, manifest: dict[str, dict] | None) ->
             return f"N8 echo {index}.disposition must name its indexed mechanism"
         if candidate_records is not None:
             candidate_record = candidate_records[candidate_id]
-            candidate_text = json.dumps(candidate_record, sort_keys=True)
+            indexed_mechanism = candidate_record.get("mechanism")
+            candidate_text = (
+                indexed_mechanism
+                if _text(indexed_mechanism)
+                else json.dumps(candidate_record, sort_keys=True)
+            )
             if _norm(echo["mechanism"]) not in _norm(candidate_text):
                 return f"N8 echo {index}.mechanism is not evidenced in its indexed candidate"
             lifecycle = candidate_record.get("lifecycle_state")

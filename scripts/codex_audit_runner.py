@@ -1466,7 +1466,12 @@ def validate_verdict(
         return invocation_error
     if expected_invocation_id is not None and blob.get("audit_invocation_id") != expected_invocation_id:
         return "audit_invocation_id is absent or does not match the prompt-bound invocation"
-    if transport_bounded_n8:
+    forensic_tier = bool(
+        source_requires_no_go
+        or blob.get("claim_type") == "no_go"
+        or no_go_discipline_gate.forensic_mode()
+    )
+    if transport_bounded_n8 and forensic_tier:
         packet = blob.get("no_go_discipline")
         n8 = packet.get("N8_cross_cycle_echo") if isinstance(packet, dict) else None
         if blob.get("verdict") == "audited_clean":
@@ -1478,7 +1483,11 @@ def validate_verdict(
         unresolved = n8.get("unresolved") if isinstance(n8, dict) else None
         if not isinstance(unresolved, list) or not unresolved:
             return "transport-bounded N8 evidence requires a nonempty unresolved list"
-    if blob.get("verdict") == "audited_clean" and evidence_manifest is not None:
+    if (
+        forensic_tier
+        and blob.get("verdict") == "audited_clean"
+        and evidence_manifest is not None
+    ):
         clipped_paths = sorted(
             path
             for path, entry in evidence_manifest.items()
@@ -1497,7 +1506,7 @@ def validate_verdict(
     no_go_error = no_go_discipline_gate.validate_no_go_discipline(
         blob,
         source_required=source_requires_no_go,
-        evidence_manifest=evidence_manifest,
+        evidence_manifest=evidence_manifest if forensic_tier else None,
         prior_claim_scope=prior_claim_scope,
     )
     if no_go_error:

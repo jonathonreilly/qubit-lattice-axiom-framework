@@ -490,6 +490,12 @@ def main() -> int:
         if verdict in {None, "unaudited"}:
             return
         packet = audit_like.get("no_go_discipline")
+        forensic_tier = bool(
+            source_required
+            or audit_like.get("claim_type") == "no_go"
+            or row.get("claim_type") == "no_go"
+            or no_go_discipline_gate.forensic_mode()
+        )
         required = source_required or no_go_discipline_gate.output_requires_no_go_discipline(
             audit_like
         )
@@ -520,19 +526,23 @@ def main() -> int:
                 "chain_closes", verdict == "audited_clean"
             ),
         }
-        evidence_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(packet)
-        current_manifest = no_go_discipline_gate.build_evidence_manifest(
-            row, rows, REPO_ROOT
-        )
-        if evidence_manifest is None:
-            report_invalid("authenticated evidence_snapshot is required")
-            return
-        snapshot_error = no_go_discipline_gate.evidence_snapshot_current_error(
-            packet, current_manifest
-        )
-        if snapshot_error:
-            report_invalid(snapshot_error)
-            return
+        evidence_manifest = None
+        if forensic_tier:
+            evidence_manifest = no_go_discipline_gate.evidence_manifest_from_snapshot(
+                packet
+            )
+            current_manifest = no_go_discipline_gate.build_evidence_manifest(
+                row, rows, REPO_ROOT
+            )
+            if evidence_manifest is None:
+                report_invalid("authenticated evidence_snapshot is required")
+                return
+            snapshot_error = no_go_discipline_gate.evidence_snapshot_current_error(
+                packet, current_manifest
+            )
+            if snapshot_error:
+                report_invalid(snapshot_error)
+                return
         error = no_go_discipline_gate.validate_no_go_discipline(
             normalized,
             source_required=source_required,

@@ -980,11 +980,11 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
             row, rows, REPO_ROOT
         )
-    if ratified_verdict == "audited_clean":
+    if ratified_verdict == "audited_clean" and forensic_probe:
         clipped_error = clipped_clean_evidence_error(evidence_manifest)
         if clipped_error:
             return False, clipped_error
-    if trusted_transport:
+    if trusted_transport and forensic_probe:
         manifest_error = trusted_manifest_current_error(
             judgment.get("no_go_discipline") or {}, evidence_manifest, row, rows
         )
@@ -1166,11 +1166,11 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         evidence_manifest = no_go_discipline_gate.build_evidence_manifest(
             row, rows, REPO_ROOT
         )
-    if verdict == "audited_clean":
+    if verdict == "audited_clean" and _forensic:
         clipped_error = clipped_clean_evidence_error(evidence_manifest)
         if clipped_error:
             return False, clipped_error
-    if trusted_transport:
+    if trusted_transport and _forensic:
         manifest_error = trusted_manifest_current_error(
             audit.get("no_go_discipline") or {}, evidence_manifest, row, rows
         )
@@ -1666,6 +1666,7 @@ PROPAGATION_STEPS = (
     ("compute_effective_status.py",        "post-apply effective_status pass"),
     ("invalidate_stale_audits.py",         "invalidate audits whose deps shifted"),
     ("compute_effective_status.py",        "post-invalidation effective_status pass"),
+    ("compute_lane_certification.py",      "refresh rolling lane certification"),
     ("compute_audit_queue.py",             "refresh audit queue"),
     ("compute_reaudit_candidates.py",      "refresh re-audit candidates"),
     ("render_audit_ledger.py",             "render AUDIT_LEDGER.md"),

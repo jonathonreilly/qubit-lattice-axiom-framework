@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Rolling lane certification (two-tier assurance, owner-approved 2026-07-12).
 
-For each flagship lane in lane_certification_config.json, walk the root
-claim's transitive dependency closure in the citation graph and report
-whether every row is currently chain-satisfying: retained-grade, a decoration
-of a retained parent, permitted metadata context, or an accepted premise.
+For each flagship lane in lane_certification_config.json, walk the configured
+scientific root claim or claims and their transitive dependency closure and
+report whether every row is currently chain-satisfying: retained-grade, a
+decoration of a retained parent, or an accepted premise.
 Certification is a state the repository re-enters continuously as audit
 throughput catches up with landings — never a scheduled event. A lane's
 marker rolling back (after an axiom edit or source change) is the honest
@@ -37,8 +37,6 @@ def status_satisfies_certification(claim_id: str, status: object) -> bool:
         return True
     if isinstance(status, str) and status.startswith("decoration_under_"):
         return True
-    if status == "meta":
-        return not premise_nodes.is_non_evidence_context_dep(claim_id)
     return False
 
 
@@ -56,20 +54,50 @@ def main() -> int:
 
     lanes_out = []
     for lane in config.get("lanes", []):
-        root = lane.get("root")
+        configured_roots = lane.get("roots")
+        roots = (
+            [str(value) for value in configured_roots if value]
+            if isinstance(configured_roots, list)
+            else [str(lane.get("root"))] if lane.get("root") else []
+        )
         name = lane.get("lane")
-        if root not in rows:
-            missing = {"claim_id": root, "effective_status": "not_in_ledger"}
+        missing_roots = [root for root in roots if root not in rows]
+        if not roots or missing_roots:
+            missing = [
+                {"claim_id": root, "effective_status": "not_in_ledger"}
+                for root in missing_roots
+            ]
             lanes_out.append({
-                "lane": name, "root": root, "certified": False,
-                "closure_size": 1, "uncertified_count": 1,
-                "blocking": [missing],
-                "note": "root claim not in ledger",
+                "lane": name,
+                "root": roots[0] if len(roots) == 1 else None,
+                "roots": roots,
+                "certified": False,
+                "closure_size": len(roots),
+                "uncertified_count": len(missing) if roots else 1,
+                "blocking": missing,
+                "note": (
+                    "no root claims configured"
+                    if not roots
+                    else f"root claims not in ledger: {missing_roots}"
+                ),
             })
             continue
         seen: set[str] = set()
-        frontier = [root]
+        frontier = list(roots)
         blocking: list[dict] = []
+        invalid_roots: set[str] = set()
+        for root in roots:
+            root_row = rows[root]
+            if not (
+                root_row.get("claim_type") not in {"meta", "decoration"}
+                and root_row.get("effective_status") in RETAINED_GRADE
+            ):
+                invalid_roots.add(root)
+                blocking.append({
+                    "claim_id": root,
+                    "effective_status": root_row.get("effective_status"),
+                    "reason": "root_not_retained_science",
+                })
         while frontier:
             cid = frontier.pop()
             if cid in seen:
@@ -82,14 +110,15 @@ def main() -> int:
                 blocking.append({"claim_id": cid, "effective_status": "not_in_ledger"})
                 continue
             status = row.get("effective_status")
-            if not status_satisfies_certification(cid, status):
+            if cid not in invalid_roots and not status_satisfies_certification(cid, status):
                 blocking.append({"claim_id": cid, "effective_status": status})
             for dep in row.get("deps") or []:
                 if dep not in seen:
                     frontier.append(dep)
         lanes_out.append({
             "lane": name,
-            "root": root,
+            "root": roots[0] if len(roots) == 1 else None,
+            "roots": roots,
             "closure_size": len(seen),
             "uncertified_count": len(blocking),
             "certified": not blocking,
@@ -99,7 +128,7 @@ def main() -> int:
         })
 
     OUT.write_text(json.dumps({
-        "schema": "lane_certification_v1",
+        "schema": "lane_certification_v2",
         "repo_head": head,
         "lanes": lanes_out,
     }, indent=2, sort_keys=True) + "\n", encoding="utf-8")

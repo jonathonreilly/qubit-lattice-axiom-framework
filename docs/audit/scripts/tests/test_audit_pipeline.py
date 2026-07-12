@@ -1140,7 +1140,7 @@ class ApplyAuditTest(unittest.TestCase):
         }
         with mock.patch.object(
             m, "trusted_evidence_manifest", return_value=manifest
-        ):
+        ), mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
             ok, msg = m.apply_one(led, audit)
         self.assertFalse(ok)
         self.assertIn("clipped evidence", msg)
@@ -1171,7 +1171,9 @@ class ApplyAuditTest(unittest.TestCase):
             m,
             "trusted_manifest_current_error",
             return_value="source drifted",
-        ) as reauth:
+        ) as reauth, mock.patch.dict(
+            os.environ, {"AUDIT_FORENSIC_MODE": "1"}
+        ):
             ok, msg = m.apply_one(led, audit)
         self.assertFalse(ok)
         self.assertIn("source drifted", msg)
@@ -3118,6 +3120,44 @@ class AuditLintTest(unittest.TestCase):
             rc = m.main()
         self.assertEqual(rc, 1)
         self.assertIn("cross_confirmation.first_audit invalid", buf.getvalue())
+
+    def test_lint_tier_gates_snapshot_requirement_for_bounded_packet(self):
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        rows = {
+            "bounded": {
+                "claim_id": "bounded",
+                "_body": "# Exact bounded source\n",
+                "audit_status": "audited_clean",
+                "effective_status": "retained_bounded",
+                "claim_type": "bounded_theorem",
+                "claim_scope": "the scoped obstruction",
+                "chain_closes": True,
+                "auditor": "lint-auditor",
+                "auditor_family": "codex-gpt-5.6",
+                "auditor_model": "gpt-5.6-sol",
+                "auditor_reasoning_effort": "xhigh",
+                "independence": "cross_family",
+                "criticality": "leaf",
+                "load_bearing_step_class": "A",
+                "negative_assertion_classes": [],
+                "no_go_discipline": _no_go_packet(),
+            }
+        }
+        self._write_minimal_ledger(rows)
+        import contextlib, io
+        buf = io.StringIO()
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}), \
+             contextlib.redirect_stdout(buf):
+            rc = m.main()
+        self.assertEqual(rc, 0, buf.getvalue())
+
+        buf = io.StringIO()
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}), \
+             contextlib.redirect_stdout(buf):
+            rc = m.main()
+        self.assertEqual(rc, 1)
+        self.assertIn("authenticated evidence_snapshot is required", buf.getvalue())
 
     def test_lint_allows_schema_old_no_go_packet_in_non_authoritative_history(self):
         m = _import("audit_lint")
@@ -7435,6 +7475,7 @@ class ComputeLaneCertificationTest(unittest.TestCase):
         missing = [f"missing_{index:02d}" for index in range(16)]
         rows = {
             "root": {
+                "claim_type": "positive_theorem",
                 "effective_status": "retained",
                 "deps": [
                     "minimal_axioms",
@@ -7478,9 +7519,36 @@ class ComputeLaneCertificationTest(unittest.TestCase):
             [{"claim_id": "absent_root", "effective_status": "not_in_ledger"}],
         )
 
-    def test_meta_context_respects_non_evidence_registry(self):
+    def test_multiple_scientific_roots_share_one_combined_closure(self):
+        rows = {
+            "first": {
+                "claim_type": "positive_theorem",
+                "effective_status": "retained",
+                "deps": ["shared"],
+            },
+            "second": {
+                "claim_type": "bounded_theorem",
+                "effective_status": "retained_bounded",
+                "deps": ["shared"],
+            },
+            "shared": {
+                "claim_type": "positive_theorem",
+                "effective_status": "retained",
+                "deps": [],
+            },
+        }
+        payload, _ = self._run(
+            [{"lane": "multi", "roots": ["first", "second"]}], rows
+        )
+        lane = payload["lanes"][0]
+        self.assertTrue(lane["certified"])
+        self.assertEqual(lane["roots"], ["first", "second"])
+        self.assertEqual(lane["closure_size"], 3)
+
+    def test_metadata_never_satisfies_scientific_certification(self):
         rows = {
             "root": {
+                "claim_type": "positive_theorem",
                 "effective_status": "retained",
                 "deps": ["permitted_meta", "non_evidence_meta"],
             },
@@ -7495,11 +7563,18 @@ class ComputeLaneCertificationTest(unittest.TestCase):
         lane = payload["lanes"][0]
         self.assertEqual(
             lane["blocking"],
-            [{"claim_id": "non_evidence_meta", "effective_status": "meta"}],
+            [
+                {"claim_id": "non_evidence_meta", "effective_status": "meta"},
+                {"claim_id": "permitted_meta", "effective_status": "meta"},
+            ],
         )
 
     def test_output_is_deterministic_and_pipeline_recomputes_after_invalidation(self):
-        rows = {"root": {"effective_status": "retained", "deps": []}}
+        rows = {"root": {
+            "claim_type": "positive_theorem",
+            "effective_status": "retained",
+            "deps": [],
+        }}
         lanes = [{"lane": "stable", "root": "root"}]
         _, first = self._run(lanes, rows)
         _, second = self._run(lanes, rows)
@@ -7513,6 +7588,13 @@ class ComputeLaneCertificationTest(unittest.TestCase):
         self.assertGreater(
             script.index(invocation),
             script.index("did not reach a fixed point after 10 passes"),
+        )
+        apply_script = (
+            PROJECT_ROOT / "docs" / "audit" / "scripts" / "apply_audit.py"
+        ).read_text(encoding="utf-8")
+        self.assertIn(
+            '("compute_lane_certification.py",      "refresh rolling lane certification")',
+            apply_script,
         )
 
 
@@ -8114,6 +8196,7 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         blob.update({
             "claim_id": "target",
             "verdict": "audited_clean",
+            "claim_type": "no_go",
             "audit_invocation_id": "a" * 32,
             "no_go_discipline": {
                 "status": "PASS",
@@ -8127,6 +8210,39 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             transport_bounded_n8=True,
         )
         self.assertEqual(error, "transport-bounded N8 evidence forbids audited_clean")
+
+    def test_development_runner_validation_ignores_locator_containment(self):
+        m = _import_codex_audit_runner()
+        blob = {field: "x" for field in m.REQUIRED_VERDICT_FIELDS}
+        blob.update({
+            "claim_id": "bounded",
+            "verdict": "audited_clean",
+            "claim_type": "bounded_theorem",
+            "claim_scope": "the scoped obstruction",
+            "chain_closes": True,
+            "no_go_discipline": _no_go_packet(),
+        })
+        unrelated_manifest = {
+            "docs/UNRELATED.md": {
+                "roles": ["source"],
+                "text": "no packet locator appears here",
+            }
+        }
+        self.assertIsNone(
+            m.validate_verdict(
+                blob,
+                "bounded",
+                evidence_manifest=unrelated_manifest,
+            )
+        )
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
+            self.assertIsNotNone(
+                m.validate_verdict(
+                    blob,
+                    "bounded",
+                    evidence_manifest=unrelated_manifest,
+                )
+            )
 
     def test_fresh_schema_retry_exposes_error_not_rejected_conclusion(self):
         m = _import_codex_audit_runner()
@@ -8653,7 +8769,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
 
         self.assertIsNotNone(m.restore_audit_from_previous(row, {cid: row}))
 
-    def test_restore_refuses_packetless_clean_output_negative_authority(self):
+    def test_restore_tier_gates_packetless_clean_output_negative_authority(self):
         m = self._import_and_patch()
         cid = "packetless_output_negative"
         note_path = "docs/POSITIVE_SOURCE.md"
@@ -8674,14 +8790,24 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
                 archived["claim_type"],
             )
         )
-        self.assertTrue(
+        self.assertFalse(
             m.no_go_discipline_gate.output_requires_no_go_discipline(
                 {**archived, "verdict": archived["audit_status"]}
             )
         )
-        self.assertIsNone(
-            m.restore_audit_from_previous(row, {cid: row})
-        )
+        self.assertIsNotNone(m.restore_audit_from_previous(row, {cid: row}))
+
+        row = self._seed_with_archived(cid, archived)
+        row["note_path"] = note_path
+        with mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": "1"}):
+            self.assertTrue(
+                m.no_go_discipline_gate.output_requires_no_go_discipline(
+                    {**archived, "verdict": archived["audit_status"]}
+                )
+            )
+            self.assertIsNone(
+                m.restore_audit_from_previous(row, {cid: row})
+            )
 
     def test_select_restore_candidates_picks_criticality_increased(self):
         m = self._import_and_patch()

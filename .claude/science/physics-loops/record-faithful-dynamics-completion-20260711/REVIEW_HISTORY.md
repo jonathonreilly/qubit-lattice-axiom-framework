@@ -98,3 +98,40 @@ were stripped before delivery.
   labels from framework Records, scoping minimality to the outcome-forgotten
   channel, defining common-frame exchange, and disclosing every supplied
   process input. Independent audit remains required.
+
+## Effect-selection and repeat-certainty internal result
+
+- The full-effect depolarizing family preserves effect bounds, normalized
+  POVMs, menu noncontextuality, and unitary covariance while remaining
+  nonprojective for `a<1`.
+- Its trace dual represents weights with the depolarized density operator,
+  exposing why representation form does not identify the physical input.
+- Joint menu normalization plus `RC_i` exactly force every formation effect in
+  a fixed exhaustive finite rank-one menu to equal its projector.
+- Runner/cache: `PASS=51 FAIL=0`.
+
+### Effect-selection review iteration 1
+
+Review found four material blockers: projection-only versus full-POVM scope,
+Born-instrument overstatement, compressed physical walls, and tautological or
+overbroad runner claims. Governance review also required a full N1--N8 packet,
+current-main zero-premise-weight terminology, an exact `RC_i` definition, and
+a genuine shared-projection context mutation.
+
+### Effect-selection review iteration 2
+
+PASS from independent claim and code/math review. The source now covers every
+effect/POVM analytically, scopes fixture claims honestly, separates all
+physical interfaces, and contains a generic `d=2` symbolic certificate plus a
+general-`d` proof. Final governance/no-go re-review and independent audit remain
+required.
+
+### Effect-selection review iteration 3
+
+PASS WITH BOUNDED CLAIMS. Governance re-review confirmed the exact two-wall
+menu/`RC_i` independence table, the physical dependency chain, corrected
+residual matching, current-main zero-premise-weight language, full-effect
+duality, and provenance-only treatment of historical decisions. The citation
+graph seeded only `minimal_axioms` and the Block03 locked-output normal form;
+strict audit lint passed with no errors. Generated audit/effective-status
+surfaces are stripped before delivery. Independent audit remains required.

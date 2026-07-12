@@ -1,0 +1,54 @@
+PASS F01basisd2m0: rank-one menu effects normalize
+PASS F02basisd2m0: all transformed menu elements obey 0<=E<=I
+PASS F01basisd2m1_3: rank-one menu effects normalize
+PASS F02basisd2m1_3: all transformed menu elements obey 0<=E<=I
+PASS F01basisd2m1: rank-one menu effects normalize
+PASS F02basisd2m1: all transformed menu elements obey 0<=E<=I
+PASS F01basisd4m0: rank-one menu effects normalize
+PASS F02basisd4m0: all transformed menu elements obey 0<=E<=I
+PASS F01basisd4m1_3: rank-one menu effects normalize
+PASS F02basisd4m1_3: all transformed menu elements obey 0<=E<=I
+PASS F01basisd4m1: rank-one menu effects normalize
+PASS F02basisd4m1: all transformed menu elements obey 0<=E<=I
+PASS F01belld4m0: rank-one menu effects normalize
+PASS F02belld4m0: all transformed menu elements obey 0<=E<=I
+PASS F01belld4m1_3: rank-one menu effects normalize
+PASS F02belld4m1_3: all transformed menu elements obey 0<=E<=I
+PASS F01belld4m1: rank-one menu effects normalize
+PASS F02belld4m1: all transformed menu elements obey 0<=E<=I
+PASS F03d2: E_0=0
+PASS F04d2: E_I=I
+PASS F05d2: orthogonal additivity holds on every coordinate-projector pair
+PASS F03d4: E_0=0
+PASS F04d4: E_I=I
+PASS F05d4: orthogonal additivity holds on every coordinate-projector pair
+PASS F06: two exact noncommuting witnesses satisfy unitary covariance
+PASS F07: the rational three-outcome input is a nonprojective POVM
+PASS F08: the hostile map preserves full POVM normalization
+PASS F09: transformed nonprojective POVM elements remain effects
+PASS F10: rejector detects a menu-length-dependent mutation on one shared projection
+PASS N01: a=1/3 gives a nonprojective effect
+PASS N02: noisy self-weight is 1/2 rather than one
+PASS N03: eight exact fixtures show trace form can return the depolarized state instead of the input state
+PASS N04: rank-one repeat weight has the exact affine form
+PASS N05: repeat certainty selects a=1 inside the hostile family
+PASS C01: a PSD zero-diagonal 2x2 principal minor forces its off-diagonal entry to vanish
+PASS C02: finite exact control agrees that a real sum of two squares vanishes only at zero
+PASS C03: generic d=2 Hermitian menu is jointly normalized
+PASS C04: the two repeat weights isolate the remaining diagonal b
+PASS C05: second repeat certainty forces b=0
+PASS C06: PSD of the repeat-calibrated E0 forces its off-diagonal to zero
+PASS C07: the generic d=2 menu collapses to P0,P1
+PASS C08d2: repeat certainty alone admits E_i=I
+PASS C09d2: the repeat-only hostile family fails joint normalization
+PASS C08d4: repeat certainty alone admits E_i=I
+PASS C09d4: the repeat-only hostile family fails joint normalization
+PASS S01: source note exists
+PASS S02: source contains boundary marker: readout-to-formation calibration
+PASS S03: source contains boundary marker: does not derive POVM additivity
+PASS S04: source contains boundary marker: does not derive repeat certainty from Record permanence
+PASS S05: source contains boundary marker: does not identify an outcome label as a framework Record
+PASS S06: source contains boundary marker: does not establish that the axioms require amendment
+BOUNDARY: additivity, menu normalization, effects, and repeat certainty are named conditional hypotheses with zero premise weight.
+BOUNDARY: the collapse theorem selects E_i=P_i only after the named condition RC_i=Tr(P_i E_i)=1.
+TOTAL: PASS=51 FAIL=0

@@ -87,3 +87,23 @@ framework Records and does not establish an axiom-update requirement: effect
 selection, full lattice instrument composition, strict-QCA classification,
 and continuum consistency remain live stronger routes. The next campaign is
 effect selection/Born, after reading the actual composite-menu and Born lanes.
+
+## Effect-selection and repeat-certainty result
+
+The actual Gleason, Busch, graded-interface, readout-frame, count-firewall, and
+finite-record Born lanes were replayed before the new attack. The resulting
+hostile family
+`T_a(A)=aA+(1-a)Tr(A)I/d` preserves every effect, normalized POVM,
+noncontextual assignment, and unitary covariance while leaving `a` free. Its
+trace weights are represented by the depolarized density operator rather than
+the input density operator. Structural trace form therefore does not identify
+the formation effects.
+
+For any fixed exhaustive finite rank-one menu, positivity, joint normalization,
+and the named condition `RC_i: Tr(P_i E_i)=1` force `E_i=P_i`. Both conditions
+are load-bearing. The result is conditional and does not derive probability
+semantics, the physical menu, framework-Record realization, or `RC_i` from the
+axioms. Runner/cache: `PASS=51 FAIL=0`; independent claim and code/math reviews
+passed after repairs. No axiom-update stop condition is triggered. The next
+campaign is the full normalized local record-forming instrument, beginning
+with the actual composition/repeatability/readout-to-formation science.

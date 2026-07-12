@@ -15,7 +15,7 @@
 - rank-one locked-output CP outcome-operation normal form;
 - mutation-sensitive runner, cache, N1--N8 packet, and stacked review PR.
 
-## Minimal dilation and exchange escape — current result
+## Minimal dilation and exchange escape — delivered
 
 - exact one-Kraus no-record completion classification `K_empty=sqrt(q)U`;
 - full normalization on a supplied one-excitation edge sector;
@@ -25,14 +25,17 @@
 - decisive same-carrier `I-SWAP` counterexample, with the label-to-Record
   realization kept open.
 
-## Effect selection and Born — next
+## Effect selection and Born — current result
 
-- test whether instrument composition plus exclusive-menu additivity yields a
-  frame function on neighbor composites;
-- derive or isolate effect selection, noncontextuality, and the exact remaining
-  premise behind the quadratic trace rule.
+- exact depolarizing effect family surviving positivity, full POVM
+  normalization/additivity, menu noncontextuality, and covariance;
+- exact theorem that a fixed exhaustive rank-one menu plus joint normalization
+  and `RC_i: Tr(P_i E_i)=1` forces `E_i=P_i`;
+- probability semantics, physical menu realization, framework-Record output,
+  and derivation of `RC_i` retained as separate open bridges;
+- deterministic 51-check runner, full N1--N8 packet, and stacked review PR.
 
-## Full instrument, time, and probability
+## Full instrument, time, and probability — next
 
 - extend beyond the classified finite-edge completion to a local normalized
   record-forming instrument family;

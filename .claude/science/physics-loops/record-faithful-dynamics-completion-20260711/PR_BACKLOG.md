@@ -12,6 +12,7 @@ No merge was performed. Independent audit remains authoritative.
 The overlapping-edge schedule and time/rate nonselection result is prepared
 for the next stacked review PR:
 
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5207
 - base: `physics-loop/record-faithful-dynamics-block05-full-instrument-20260711`
 - head: `physics-loop/record-faithful-dynamics-block06-event-order-time-rate-20260711`
 - source runner: `PASS=47 FAIL=0`
@@ -19,6 +20,7 @@ for the next stacked review PR:
   passed after narrow scope and runner repairs; the audit pipeline seeded the
   intended two dependencies and strict lint passed with no errors; generated
   status surfaces were stripped before delivery
+- delivery check: open, mergeable, audit workflow running
 
 No merge is authorized. Independent audit remains authoritative.
 

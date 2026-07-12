@@ -1,63 +1,61 @@
 #!/usr/bin/env python3
-"""Baseline hw=1 source/transfer boundary for the PMNS lane.
+"""PMNS hw=1 carrier nonselection and scalar source/transfer boundary.
 
-Question:
-  For the canonical hw=1 sector operator admitted from the upstream PMNS
-  authority chain, does the algebraic projector resolution on the Cl(3) / Z^3
-  joint character triplet, followed by native source insertion and
-  graph-first forward transport, generate a pack accepted by the retained
-  PMNS closure stack?
+This runner replaces the old definition-shaped calculation
 
-Answer:
-  No.
+    sum_i P_i I_3 P_i = I_3
 
-  Load-bearing algebraic identity (Class A):
-    sum_i P_i I_3 P_i = sum_i P_i = I_3,
-  where P_i are the joint character projectors built from the Z^3 hw=1
-  translation involutions.  Under the carrier-construction admission named
-  in docs/PMNS_SOLE_AXIOM_HW1_SOURCE_TRANSFER_BOUNDARY_NOTE.md
-  (Admitted-context inputs), this gives D_act = D_pass = I_3 on the hw=1
-  triplet, hence:
-    - the baseline active resolvent is the identity
-    - the baseline passive resolvent is a scalar multiple of the identity
-    - source insertion through the native site projectors yields only the
-      basis columns e1,e2,e3 up to a scalar passive weight
-    - graph-first forward transport fixes the frame E12,E23,E31 exactly, but
-      contributes no nontrivial value data
+with the complete finite result on the named carrier:
 
-  So even the canonical hw=1 source/transfer pack, under the admitted
-  carrier-construction identification, remains support-only / frame-only and
-  is rejected locally and by the PMNS closure stack.
+1. the joint commutant of the three hw=1 translation involutions and the
+   proper-cubic three-cycle is C I_3;
+2. the four framework axioms do not supply a carrier operator or select the
+   scalar normalization, as witnessed by two expansions of one explicit
+   Lattice/Qubit/Admissibility/Record reduct;
+3. every nonsingular scalar active/passive pair produces only scalar basis
+   columns and cycle-frame support under the implemented response interface,
+   and is rejected by the explicitly defined one-sided-minimal support
+   interface.
 
-  Scope:
-    - the carrier-construction identification (the active/passive sector
-      operators on the hw=1 triplet are taken to be sum_i P_i I_3 P_i in the
-      zero-input free configuration) is admitted from the upstream PMNS
-      authority chain.  Same admission as the sibling
-      frontier_pmns_sole_axiom_free_point_identity_block_2026-05-16.py runner.
-    - the close_from_lower_level_observables import is from a
-      support / audited_conditional helper; the local
-      one-sided-minimal-PMNS rejection check is load-bearing for the
-      "rejected by closure stack" conclusion.
+No PMNS helper module, observed value, fitted coordinate, or target PMNS
+matrix is imported.
 """
 
 from __future__ import annotations
 
+import itertools
 import inspect
+import pathlib
 import sys
 
 import numpy as np
 
-from frontier_pmns_lower_level_end_to_end_closure import close_from_lower_level_observables
-
-np.set_printoptions(precision=6, suppress=True, linewidth=140)
+np.set_printoptions(precision=8, suppress=True, linewidth=140)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
+TOL = 1.0e-11
+I2 = np.eye(2, dtype=complex)
 I3 = np.eye(3, dtype=complex)
 CYCLE = np.array([[0, 1, 0], [0, 0, 1], [1, 0, 0]], dtype=complex)
 TARGET_ACTIVE_SUPPORT = (np.abs(I3 + CYCLE) > 0).astype(int)
-BANNED_INPUT_NAMES = {"d0_trip", "dm_trip", "delta_d_act", "diag_a_pq", "m_r"}
+
+
+def permutation_matrices() -> tuple[np.ndarray, ...]:
+    matrices: list[np.ndarray] = []
+    for permutation in itertools.permutations(range(3)):
+        matrix = np.zeros((3, 3), dtype=complex)
+        for row, column in enumerate(permutation):
+            matrix[row, column] = 1.0
+        matrices.append(matrix)
+    return tuple(matrices)
+
+
+PERMUTATION_MATRICES = permutation_matrices()
+CYCLIC_MONOMIAL_SUPPORTS = tuple(
+    (np.abs(np.linalg.matrix_power(CYCLE, power)) > TOL).astype(int)
+    for power in range(3)
+)
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -67,32 +65,22 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
         PASS_COUNT += 1
     else:
         FAIL_COUNT += 1
-    msg = f"  [{status}] {name}"
+    message = f"  [{status}] {name}"
     if detail:
-        msg += f"  ({detail})"
-    print(msg)
+        message += f"  ({detail})"
+    print(message)
     return condition
 
 
-def expect_raises(fn, exc_type) -> tuple[bool, str]:
-    try:
-        fn()
-    except exc_type as e:  # noqa: PERF203
-        return True, str(e)
-    except Exception as e:  # noqa: BLE001
-        return False, f"wrong exception {type(e).__name__}: {e}"
-    return False, "no exception"
-
-
-def e(i: int, j: int) -> np.ndarray:
+def matrix_unit(i: int, j: int) -> np.ndarray:
     out = np.zeros((3, 3), dtype=complex)
     out[i, j] = 1.0
     return out
 
 
-E11 = e(0, 0)
-E22 = e(1, 1)
-E33 = e(2, 2)
+E11 = matrix_unit(0, 0)
+E22 = matrix_unit(1, 1)
+E33 = matrix_unit(2, 2)
 
 
 def pauli_cl3_generators() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
@@ -102,28 +90,31 @@ def pauli_cl3_generators() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     return sigma_x, sigma_y, sigma_z
 
 
-def max_clifford_residual(gammas: tuple[np.ndarray, np.ndarray, np.ndarray]) -> float:
-    ident = np.eye(gammas[0].shape[0], dtype=complex)
+def max_clifford_residual(gammas: tuple[np.ndarray, ...]) -> float:
     residual = 0.0
-    for i, gi in enumerate(gammas):
-        for j, gj in enumerate(gammas):
-            target = 2.0 * ident if i == j else np.zeros_like(ident)
-            residual = max(residual, float(np.linalg.norm(gi @ gj + gj @ gi - target)))
+    for i, gamma_i in enumerate(gammas):
+        for j, gamma_j in enumerate(gammas):
+            target = 2.0 * I2 if i == j else np.zeros_like(I2)
+            residual = max(
+                residual,
+                float(np.linalg.norm(gamma_i @ gamma_j + gamma_j @ gamma_i - target)),
+            )
     return residual
 
 
-def hw1_translation_characters() -> tuple[tuple[int, int, int], tuple[int, int, int], tuple[int, int, int]]:
+def hw1_characters() -> tuple[tuple[int, int, int], ...]:
     return (-1, 1, 1), (1, -1, 1), (1, 1, -1)
 
 
-def hw1_translation_operators() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
-    chars = np.array(hw1_translation_characters(), dtype=int)
-    return tuple(np.diag(chars[:, axis]).astype(complex) for axis in range(3))  # type: ignore[return-value]
+def hw1_translations() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    characters = np.asarray(hw1_characters(), dtype=int)
+    return tuple(
+        np.diag(characters[:, axis]).astype(complex) for axis in range(3)
+    )  # type: ignore[return-value]
 
 
 def joint_character_projector(
-    translations: tuple[np.ndarray, np.ndarray, np.ndarray],
-    character: tuple[int, int, int],
+    translations: tuple[np.ndarray, ...], character: tuple[int, int, int]
 ) -> np.ndarray:
     projector = I3.copy()
     for translation, sign in zip(translations, character, strict=True):
@@ -131,108 +122,111 @@ def joint_character_projector(
     return projector
 
 
-def instantiate_cl3_z3_hw1_packet() -> dict[str, object]:
-    gammas = pauli_cl3_generators()
-    translations = hw1_translation_operators()
-    characters = hw1_translation_characters()
-    projectors = tuple(joint_character_projector(translations, character) for character in characters)
-    hw1_identity = sum(projectors, np.zeros((3, 3), dtype=complex))
-    free_sector = sum((projector @ hw1_identity @ projector for projector in projectors), np.zeros((3, 3), dtype=complex))
-    return {
-        "gammas": gammas,
-        "translations": translations,
-        "characters": characters,
-        "projectors": projectors,
-        "hw1_identity": hw1_identity,
-        "free_sector": free_sector,
-    }
+def hw1_projectors() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    translations = hw1_translations()
+    return tuple(
+        joint_character_projector(translations, character)
+        for character in hw1_characters()
+    )  # type: ignore[return-value]
 
 
-def source_projectors() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
-    packet = instantiate_cl3_z3_hw1_packet()
-    return packet["projectors"]  # type: ignore[return-value]
+def commutant_constraint_matrix(operators: tuple[np.ndarray, ...]) -> np.ndarray:
+    """Return L with L vec(X)=0 iff X commutes with every operator.
+
+    Column-major vectorization gives
+    vec(XA-AX) = (A^T tensor I - I tensor A) vec(X).
+    """
+
+    identity = np.eye(3, dtype=complex)
+    return np.vstack(
+        [np.kron(operator.T, identity) - np.kron(identity, operator) for operator in operators]
+    )
 
 
-def canonical_edge_basis_from_projectors(
-    projectors: tuple[np.ndarray, np.ndarray, np.ndarray],
-) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
-    return tuple(projector @ CYCLE for projector in projectors)  # type: ignore[return-value]
+def numerical_rank(matrix: np.ndarray, tol: float = TOL) -> int:
+    singular_values = np.linalg.svd(matrix, compute_uv=False)
+    return int(np.count_nonzero(singular_values > tol))
 
 
-def source_vector_from_rank_one_projector(projector: np.ndarray) -> np.ndarray:
-    evals, evecs = np.linalg.eigh(projector)
-    vec = evecs[:, int(np.argmax(evals))].astype(complex)
-    pivot = int(np.argmax(np.abs(vec)))
-    phase = vec[pivot] / abs(vec[pivot])
-    vec = vec / phase
-    if np.real(vec[pivot]) < 0:
-        vec = -vec
-    return vec
+def nullspace_basis(matrix: np.ndarray, tol: float = TOL) -> list[np.ndarray]:
+    _u, singular_values, vh = np.linalg.svd(matrix, full_matrices=True)
+    rank = int(np.count_nonzero(singular_values > tol))
+    return [vector.reshape((3, 3), order="F") for vector in vh[rank:].conj()]
 
 
-def source_vectors_from_projectors(projectors: tuple[np.ndarray, np.ndarray, np.ndarray]) -> list[np.ndarray]:
-    return [source_vector_from_rank_one_projector(projector) for projector in projectors]
+def projector_resolve(seed: np.ndarray, projectors: tuple[np.ndarray, ...]) -> np.ndarray:
+    return sum(
+        (projector @ seed @ projector for projector in projectors),
+        np.zeros((3, 3), dtype=complex),
+    )
 
 
-def sole_axiom_hw1_blocks() -> tuple[np.ndarray, np.ndarray, dict[str, object]]:
-    packet = instantiate_cl3_z3_hw1_packet()
-    free_sector = packet["free_sector"]  # type: ignore[assignment]
-    active_block = np.asarray(free_sector, dtype=complex).copy()
-    passive_block = np.asarray(free_sector, dtype=complex).copy()
-    return active_block, passive_block, packet
+def group_average(seed: np.ndarray, projectors: tuple[np.ndarray, ...]) -> np.ndarray:
+    dephased = projector_resolve(seed, projectors)
+    return sum(
+        (
+            np.linalg.matrix_power(CYCLE, power)
+            @ dephased
+            @ np.linalg.matrix_power(CYCLE.conj().T, power)
+            for power in range(3)
+        ),
+        np.zeros((3, 3), dtype=complex),
+    ) / 3.0
 
 
-def active_resolvent_from_block(block: np.ndarray, lam: float, identity: np.ndarray) -> np.ndarray:
-    return np.linalg.inv(identity - lam * (block - identity))
+def is_equivariant(block: np.ndarray, operators: tuple[np.ndarray, ...]) -> bool:
+    return all(np.linalg.norm(block @ operator - operator @ block) < TOL for operator in operators)
 
 
-def passive_resolvent_from_block(block: np.ndarray, lam: float, identity: np.ndarray) -> np.ndarray:
-    return np.linalg.inv(identity - lam * block)
+def active_resolvent(alpha: float, lam: float) -> np.ndarray:
+    denominator = 1.0 - lam * (alpha - 1.0)
+    if abs(denominator) < TOL:
+        raise np.linalg.LinAlgError("active scalar resolvent pole")
+    return I3 / denominator
 
 
-def response_columns_from_resolvent(resolvent: np.ndarray, sources: list[np.ndarray]) -> list[np.ndarray]:
-    return [resolvent @ source for source in sources]
+def passive_resolvent(beta: float, lam: float) -> np.ndarray:
+    denominator = 1.0 - lam * beta
+    if abs(denominator) < TOL:
+        raise np.linalg.LinAlgError("passive scalar resolvent pole")
+    return I3 / denominator
 
 
-def kernel_from_response_columns(columns: list[np.ndarray]) -> np.ndarray:
-    return np.column_stack(columns)
+def response_columns(resolvent: np.ndarray) -> list[np.ndarray]:
+    return [resolvent[:, column].copy() for column in range(3)]
 
 
-def derive_active_block_from_response_columns(
-    response_columns: list[np.ndarray], lam: float
-) -> tuple[np.ndarray, np.ndarray]:
-    kernel = kernel_from_response_columns(response_columns)
+def reconstruct_active_block(columns: list[np.ndarray], lam: float) -> np.ndarray:
+    kernel = np.column_stack(columns)
     delta = (I3 - np.linalg.inv(kernel)) / lam
-    return kernel, I3 + delta
+    return I3 + delta
 
 
-def derive_passive_block_from_response_columns(
-    response_columns: list[np.ndarray], lam: float
-) -> tuple[np.ndarray, np.ndarray]:
-    kernel = kernel_from_response_columns(response_columns)
-    block = (I3 - np.linalg.inv(kernel)) / lam
-    return kernel, block
+def reconstruct_passive_block(columns: list[np.ndarray], lam: float) -> np.ndarray:
+    kernel = np.column_stack(columns)
+    return (I3 - np.linalg.inv(kernel)) / lam
 
 
-def support_mask(block: np.ndarray, tol: float = 1e-12) -> np.ndarray:
+def support_mask(block: np.ndarray, tol: float = TOL) -> np.ndarray:
     return (np.abs(block) > tol).astype(int)
 
 
 def has_active_pmns_support(block: np.ndarray) -> bool:
-    mask = support_mask(block)
-    return bool(np.array_equal(mask, TARGET_ACTIVE_SUPPORT))
+    return any(
+        np.array_equal(
+            support_mask(permutation @ block @ permutation.conj().T),
+            TARGET_ACTIVE_SUPPORT,
+        )
+        for permutation in PERMUTATION_MATRICES
+    )
 
 
 def has_monomial_support(block: np.ndarray) -> bool:
     mask = support_mask(block)
-    return bool(
-        np.count_nonzero(mask) == 3
-        and np.array_equal(mask.sum(axis=0), np.ones(3, dtype=int))
-        and np.array_equal(mask.sum(axis=1), np.ones(3, dtype=int))
-    )
+    return any(np.array_equal(mask, cyclic_mask) for cyclic_mask in CYCLIC_MONOMIAL_SUPPORTS)
 
 
-def local_one_sided_minimal_pmns_rejection(active_block: np.ndarray, passive_block: np.ndarray) -> tuple[bool, str]:
+def locally_rejected(active_block: np.ndarray, passive_block: np.ndarray) -> bool:
     active_support = has_active_pmns_support(active_block)
     passive_support = has_active_pmns_support(passive_block)
     active_monomial = has_monomial_support(active_block)
@@ -242,281 +236,402 @@ def local_one_sided_minimal_pmns_rejection(active_block: np.ndarray, passive_blo
     ) or (
         passive_support and active_monomial and not active_support
     )
-    detail = (
-        f"active_support={active_support}, passive_support={passive_support}, "
-        f"active_monomial={active_monomial}, passive_monomial={passive_monomial}"
-    )
-    return (not one_sided_minimal), detail
+    return not one_sided_minimal
 
 
-def circularity_guard(function, extra_banned: set[str] | None = None) -> tuple[bool, list[str]]:
-    banned = set(BANNED_INPUT_NAMES)
-    if extra_banned:
-        banned |= set(extra_banned)
-    params = set(inspect.signature(function).parameters)
-    closure_vars = set()
-    if function.__closure__:
-        closure_vars = set(function.__code__.co_freevars)
-    source = inspect.getsource(function)
-    bad = sorted((params | closure_vars) & banned)
-    for name in banned - set(bad):
-        if f"{name}=" in source:
-            bad.append(name)
-    return len(bad) == 0, sorted(set(bad))
-
-
-def sole_axiom_hw1_source_transfer_pack(lam_act: float, lam_pass: float) -> dict[str, object]:
-    active_block, passive_block, packet = sole_axiom_hw1_blocks()
-    identity = packet["hw1_identity"]  # type: ignore[assignment]
-    projectors = packet["projectors"]  # type: ignore[assignment]
-    sources = source_vectors_from_projectors(projectors)
-    active_resolvent = active_resolvent_from_block(active_block, lam_act, identity)
-    passive_resolvent = passive_resolvent_from_block(passive_block, lam_pass, identity)
-    active_cols = response_columns_from_resolvent(active_resolvent, sources)
-    passive_cols = response_columns_from_resolvent(passive_resolvent, sources)
+def conditional_unit_hw1_source_transfer_pack(lam_act: float, lam_pass: float) -> dict[str, object]:
+    """Return the explicit conditional ``alpha=beta=1`` family member."""
+    projectors = hw1_projectors()
+    active_block = I3.copy()
+    passive_block = I3.copy()
+    active_r = active_resolvent(1.0, lam_act)
+    passive_r = passive_resolvent(1.0, lam_pass)
     return {
         "active_block": active_block,
         "passive_block": passive_block,
-        "active_resolvent": active_resolvent,
-        "passive_resolvent": passive_resolvent,
-        "active_columns": active_cols,
-        "passive_columns": passive_cols,
+        "active_resolvent": active_r,
+        "passive_resolvent": passive_r,
+        "active_columns": response_columns(active_r),
+        "passive_columns": response_columns(passive_r),
         "source_projectors": projectors,
-        "edge_basis": canonical_edge_basis_from_projectors(projectors),
-        "cl3_z3_packet": packet,
+        "edge_basis": tuple(projector @ CYCLE for projector in projectors),
+        "normalization_status": "conditional_unit_member_not_axiom_selected",
+        "cl3_z3_packet": {
+            "gammas": pauli_cl3_generators(),
+            "translations": hw1_translations(),
+            "characters": hw1_characters(),
+            "projectors": projectors,
+            "hw1_identity": I3.copy(),
+            "free_sector": I3.copy(),
+        },
     }
 
 
-def part1_clifford_lattice_sources_and_graph_first_cycle_frame_are_exact() -> None:
-    print("\n" + "=" * 88)
-    print("PART 1: CLIFFORD/LATTICE AXIOM, NATIVE SOURCES, AND CYCLE FRAME")
-    print("=" * 88)
+def sole_axiom_hw1_source_transfer_pack(lam_act: float, lam_pass: float) -> dict[str, object]:
+    """Compatibility alias for :func:`conditional_unit_hw1_source_transfer_pack`.
 
-    packet = instantiate_cl3_z3_hw1_packet()
-    gammas = packet["gammas"]
-    translations = packet["translations"]
-    s1, s2, s3 = packet["projectors"]
-    b1, b2, b3 = canonical_edge_basis_from_projectors((s1, s2, s3))
-
-    cl_residual = max_clifford_residual(gammas)
-    check("The packet instantiates Cl(3): {gamma_i,gamma_j}=2 delta_ij",
-          cl_residual < 1e-12, f"max_residual={cl_residual:.2e}")
-    check("The three Z^3 hw=1 translations are commuting involutions",
-          all(np.linalg.norm(t @ t - I3) < 1e-12 for t in translations)
-          and all(np.linalg.norm(a @ b - b @ a) < 1e-12 for a in translations for b in translations))
-
-    check("The native hw=1 source projectors resolve the identity exactly",
-          np.linalg.norm((s1 + s2 + s3) - I3) < 1e-12)
-    check("The source projectors are exactly E11,E22,E33",
-          np.linalg.norm(s1 - E11) < 1e-12 and np.linalg.norm(s2 - E22) < 1e-12 and np.linalg.norm(s3 - E33) < 1e-12)
-    check("Forward cycle transport sends the source projectors to the canonical edge frame",
-          np.linalg.norm(s1 @ CYCLE - b1) < 1e-12
-          and np.linalg.norm(s2 @ CYCLE - b2) < 1e-12
-          and np.linalg.norm(s3 @ CYCLE - b3) < 1e-12)
-    check("The graph-first frame is exactly E12,E23,E31",
-          np.allclose(np.stack([b1, b2, b3]), np.stack([e(0, 1), e(1, 2), e(2, 0)]), atol=1e-12))
-
-
-def part2_load_bearing_algebraic_identity_on_projectors() -> None:
-    """Class A algebraic identity step-by-step on the joint character projectors.
-
-    The load-bearing step quoted by the 2026-05-05 auditor verdict was:
-
-      "The baseline active/passive blocks are therefore exactly (I3, I3),
-       so source insertion and graph-first transfer only produce the trivial
-       free pack."
-
-    Under the carrier-construction admission named in the source note's
-    `Admitted-context inputs` section (i.e. the active/passive sector
-    operators on the hw=1 triplet in the zero-input free configuration are
-    sum_i P_i I_3 P_i), this step reduces to the algebraic identity
-
-      sum_i P_i I_3 P_i  =  sum_i P_i  =  I_3.
-
-    This part verifies that identity stepwise on the projectors computed in
-    PART 1 from Cl(3) on Z^3 hw=1 data, with no assertion of a target value.
+    The historical name is retained only because five downstream diagnostic
+    runners import it. Returned metadata makes the conditional normalization
+    machine-visible. This function is not called by the revised derivation.
     """
-    print("\n" + "=" * 88)
-    print("PART 2: LOAD-BEARING ALGEBRAIC IDENTITY ON THE JOINT CHARACTER PROJECTORS")
-    print("=" * 88)
 
-    packet = instantiate_cl3_z3_hw1_packet()
-    p1, p2, p3 = packet["projectors"]  # type: ignore[assignment]
-
-    # Step 2a: P_i are projections (idempotent) on the hw=1 triplet.
-    for label, projector in (("P_1", p1), ("P_2", p2), ("P_3", p3)):
-        check(f"{label} is idempotent: {label}^2 = {label}",
-              np.linalg.norm(projector @ projector - projector) < 1e-12)
-
-    # Step 2b: P_i are mutually orthogonal.
-    for label_left, projector_left, label_right, projector_right in (
-        ("P_1", p1, "P_2", p2),
-        ("P_2", p2, "P_3", p3),
-        ("P_1", p1, "P_3", p3),
-    ):
-        check(f"{label_left} {label_right} = 0 (mutual orthogonality)",
-              np.linalg.norm(projector_left @ projector_right) < 1e-12)
-
-    # Step 2c: I_3 P_i = P_i  (since I_3 is the identity on the hw=1 triplet).
-    for label, projector in (("P_1", p1), ("P_2", p2), ("P_3", p3)):
-        check(f"I_3 {label} = {label}",
-              np.linalg.norm(I3 @ projector - projector) < 1e-12)
-
-    # Step 2d: P_i I_3 P_i = P_i P_i = P_i  (idempotency).
-    for label, projector in (("P_1", p1), ("P_2", p2), ("P_3", p3)):
-        check(f"{label} I_3 {label} = {label}",
-              np.linalg.norm(projector @ I3 @ projector - projector) < 1e-12)
-
-    # Step 2e: sum_i P_i I_3 P_i = sum_i P_i.
-    lhs_summand = sum((projector @ I3 @ projector for projector in (p1, p2, p3)), np.zeros((3, 3), dtype=complex))
-    rhs_summand = sum((p1, p2, p3), np.zeros((3, 3), dtype=complex))
-    check("sum_i P_i I_3 P_i = sum_i P_i  (stepwise expansion equality)",
-          np.linalg.norm(lhs_summand - rhs_summand) < 1e-12)
-
-    # Step 2f: sum_i P_i = I_3  (the joint character projectors resolve the identity).
-    check("sum_i P_i = I_3  (projector resolution of identity)",
-          np.linalg.norm(rhs_summand - I3) < 1e-12)
-
-    # Step 2g: chain the identities → sum_i P_i I_3 P_i = I_3.
-    check("sum_i P_i I_3 P_i = I_3  (load-bearing algebraic identity)",
-          np.linalg.norm(lhs_summand - I3) < 1e-12)
+    return conditional_unit_hw1_source_transfer_pack(lam_act, lam_pass)
 
 
-def part3_sole_axiom_source_insertions_give_only_trivial_response_columns() -> tuple[list[np.ndarray], list[np.ndarray]]:
-    print("\n" + "=" * 88)
-    print("PART 3: BASELINE SOURCE INSERTIONS GIVE ONLY TRIVIAL RESPONSE COLUMNS")
-    print("=" * 88)
-
-    lam_act = 0.31
-    lam_pass = 0.27
-    pack = sole_axiom_hw1_source_transfer_pack(lam_act, lam_pass)
-    active_cols = pack["active_columns"]
-    passive_cols = pack["passive_columns"]
-    active_kernel, active_block = derive_active_block_from_response_columns(active_cols, lam_act)
-    passive_kernel, passive_block = derive_passive_block_from_response_columns(passive_cols, lam_pass)
-    identity = pack["cl3_z3_packet"]["hw1_identity"]
-    active_resolvent = pack["active_resolvent"]
-    passive_resolvent = pack["passive_resolvent"]
-
-    check("The baseline active/passive blocks are projector-derived, not inserted targets",
-          np.linalg.norm(pack["active_block"] - identity) < 1e-12
-          and np.linalg.norm(pack["passive_block"] - identity) < 1e-12)
-    check("The active identity resolvent is computed from I - lambda(D-I)",
-          np.linalg.norm(active_resolvent - I3) < 1e-12)
-    check("The passive identity-sector resolvent is the scalar identity",
-          np.linalg.norm(passive_resolvent - (1.0 / (1.0 - lam_pass)) * I3) < 1e-12)
-
-    check("The baseline active source columns are exactly the basis columns e1,e2,e3",
-          np.linalg.norm(np.column_stack(active_cols) - I3) < 1e-12)
-    check("The baseline passive source columns are exactly a scalar multiple of the basis columns",
-          np.linalg.norm(np.column_stack(passive_cols) - (1.0 / (1.0 - lam_pass)) * I3) < 1e-12)
-    check("The active source-derived block is exactly I3", np.linalg.norm(active_block - I3) < 1e-12)
-    check("The passive source-derived block is exactly I3", np.linalg.norm(passive_block - I3) < 1e-12)
-    check("The active/passive kernels are exactly the free scalar kernels",
-          np.linalg.norm(active_kernel - I3) < 1e-12
-          and np.linalg.norm(passive_kernel - (1.0 / (1.0 - lam_pass)) * I3) < 1e-12)
-
-    return active_cols, passive_cols
+def expect_pole(callable_) -> bool:
+    try:
+        callable_()
+    except np.linalg.LinAlgError:
+        return True
+    return False
 
 
-def part4_graph_first_transfer_adds_only_frame_support_not_value_data(
-    active_cols: list[np.ndarray],
-) -> None:
-    print("\n" + "=" * 88)
-    print("PART 4: GRAPH-FIRST TRANSFER ADDS ONLY FRAME SUPPORT, NOT VALUE DATA")
-    print("=" * 88)
+def part1_framework_and_hw1_packet() -> None:
+    print("\n" + "=" * 92)
+    print("PART 1: FRAMEWORK SURFACE AND HW=1 CHARACTER PACKET")
+    print("=" * 92)
 
-    transported_cols = [CYCLE @ col for col in active_cols]
-    transported_matrix = np.column_stack(transported_cols)
-    b1, b2, b3 = canonical_edge_basis_from_projectors(source_projectors())
-
-    check("Forward transport of the baseline source columns is exactly the cycle matrix",
-          np.linalg.norm(transported_matrix - CYCLE) < 1e-12)
-    check("The transported source frame matches the graph-first ordered cycle support",
-          np.linalg.norm(b1 - E11 @ transported_matrix) < 1e-12
-          and np.linalg.norm(b2 - E22 @ transported_matrix) < 1e-12
-          and np.linalg.norm(b3 - E33 @ transported_matrix) < 1e-12)
-    check("No nontrivial cycle values appear: the transferred columns are fixed entirely by the frame",
-          np.count_nonzero(np.abs(transported_matrix) > 1e-12) == 3,
-          f"transported={np.round(transported_matrix, 6)}")
-
-
-def part5_the_canonical_sole_axiom_pack_is_rejected_by_the_pmns_closure_stack(
-    active_cols: list[np.ndarray],
-    passive_cols: list[np.ndarray],
-) -> None:
-    print("\n" + "=" * 88)
-    print("PART 5: THE CANONICAL BASELINE PACK IS REJECTED BY THE PMNS STACK")
-    print("=" * 88)
-
-    _active_kernel, active_block = derive_active_block_from_response_columns(active_cols, 0.31)
-    _passive_kernel, passive_block = derive_passive_block_from_response_columns(passive_cols, 0.27)
-    locally_rejected, local_detail = local_one_sided_minimal_pmns_rejection(active_block, passive_block)
-    check("Local one-sided-minimal PMNS criterion rejects the projector-derived free pack",
-          locally_rejected, local_detail)
-
-    ok, detail = expect_raises(
-        lambda: close_from_lower_level_observables(active_cols, passive_cols, 0.31, 0.27),
-        ValueError,
+    axiom_path = pathlib.Path(__file__).resolve().parents[1] / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
+    axiom_text = axiom_path.read_text(encoding="utf-8")
+    required_axiom_needles = (
+        "### Lattice / Physical Locality",
+        "### Qubit / Site Possibility",
+        "### Admissibility / Local Constraint",
+        "### Record / Fixed Reality",
+        "choose a Hamiltonian or transfer operator",
+        "source/action and physical-observable identification",
     )
-    check("The PMNS closure stack rejects the canonical baseline hw=1 source/transfer pack",
-          ok, detail)
-    check("Reason: the derived pair is not on a one-sided minimal PMNS class",
-          "one-sided minimal PMNS class" in detail, detail)
-    check("So native source insertion and graph-first transfer do not evade the baseline free boundary", True)
-
-
-def part6_circularity_guard() -> None:
-    print("\n" + "=" * 88)
-    print("PART 6: CIRCULARITY GUARD")
-    print("=" * 88)
-
-    ok, bad = circularity_guard(
-        sole_axiom_hw1_source_transfer_pack,
-        {"x", "y", "delta", "tau", "q", "coeffs", "d0_trip", "dm_trip", "u", "v", "w"},
+    check(
+        "The current premise source names all four axioms and excludes transfer/source-action supply",
+        all(needle in axiom_text for needle in required_axiom_needles),
+        f"source={axiom_path.relative_to(axiom_path.parents[1])}",
     )
-    check("The canonical baseline source/transfer derivation takes no PMNS-side value targets as inputs", ok, f"bad={bad}")
+
+    gammas = pauli_cl3_generators()
+    check(
+        "The one-site packet realizes M_2(C) ~= Cl(3,0)",
+        max_clifford_residual(gammas) < TOL,
+        f"max_residual={max_clifford_residual(gammas):.2e}",
+    )
+
+    translations = hw1_translations()
+    projectors = hw1_projectors()
+    check(
+        "The restricted hw=1 translations are commuting involutions",
+        all(np.linalg.norm(translation @ translation - I3) < TOL for translation in translations)
+        and all(
+            np.linalg.norm(left @ right - right @ left) < TOL
+            for left, right in itertools.product(translations, repeat=2)
+        ),
+    )
+    check(
+        "The joint character projectors are rank-one orthogonal idempotents",
+        all(np.linalg.norm(projector @ projector - projector) < TOL for projector in projectors)
+        and all(round(float(np.trace(projector).real)) == 1 for projector in projectors)
+        and all(
+            np.linalg.norm(projectors[i] @ projectors[j]) < TOL
+            for i in range(3)
+            for j in range(3)
+            if i != j
+        ),
+    )
+    check(
+        "The projectors are E11,E22,E33 and resolve I_3",
+        all(
+            np.linalg.norm(actual - expected) < TOL
+            for actual, expected in zip(projectors, (E11, E22, E33), strict=True)
+        )
+        and np.linalg.norm(sum(projectors, np.zeros((3, 3), dtype=complex)) - I3) < TOL,
+    )
+    check(
+        "The proper-cubic three-cycle permutes the three character lines transitively",
+        all(
+            any(
+                np.linalg.norm(CYCLE @ projector @ CYCLE.conj().T - other) < TOL
+                for other in projectors
+            )
+            for projector in projectors
+        )
+        and np.linalg.norm(np.linalg.matrix_power(CYCLE, 3) - I3) < TOL,
+    )
+    edge_frame = tuple(projector @ CYCLE for projector in projectors)
+    check(
+        "Projector transport gives exactly the ordered cycle matrix-unit frame",
+        all(
+            np.linalg.norm(actual - expected) < TOL
+            for actual, expected in zip(
+                edge_frame,
+                (matrix_unit(0, 1), matrix_unit(1, 2), matrix_unit(2, 0)),
+                strict=True,
+            )
+        ),
+    )
+
+
+def part2_joint_commutant_classification() -> None:
+    print("\n" + "=" * 92)
+    print("PART 2: COMPLETE JOINT-COMMUTANT CLASSIFICATION")
+    print("=" * 92)
+
+    translations = hw1_translations()
+    translation_constraints = commutant_constraint_matrix(translations)
+    cycle_constraints = commutant_constraint_matrix((CYCLE,))
+    joint_constraints = commutant_constraint_matrix((*translations, CYCLE))
+
+    translation_nullity = 9 - numerical_rank(translation_constraints)
+    cycle_nullity = 9 - numerical_rank(cycle_constraints)
+    joint_nullity = 9 - numerical_rank(joint_constraints)
+    check(
+        "The translation commutant has complex dimension 3 (the diagonal algebra)",
+        translation_nullity == 3,
+        f"nullity={translation_nullity}",
+    )
+    check(
+        "The cycle commutant has complex dimension 3 (the circulant algebra)",
+        cycle_nullity == 3,
+        f"nullity={cycle_nullity}",
+    )
+    check(
+        "The joint translation/cycle commutant has complex dimension 1",
+        joint_nullity == 1,
+        f"constraint_rank={numerical_rank(joint_constraints)}, nullity={joint_nullity}",
+    )
+
+    joint_basis = nullspace_basis(joint_constraints)
+    scalar_residuals = [
+        np.linalg.norm(basis - (np.trace(basis) / 3.0) * I3) for basis in joint_basis
+    ]
+    check(
+        "The joint nullspace is exactly C I_3",
+        len(joint_basis) == 1 and max(scalar_residuals, default=np.inf) < TOL,
+        f"max_scalar_residual={max(scalar_residuals, default=np.inf):.2e}",
+    )
+
+    diagonal_control = np.diag([0.5, 1.0, 1.5]).astype(complex)
+    circulant_control = I3 + 0.2 * (CYCLE + CYCLE.conj().T)
+    check(
+        "Negative control: a nonscalar diagonal commutes with translations but not C_3",
+        is_equivariant(diagonal_control, translations)
+        and not is_equivariant(diagonal_control, (CYCLE,)),
+    )
+    check(
+        "Negative control: a nonscalar circulant commutes with C_3 but not all translations",
+        is_equivariant(circulant_control, (CYCLE,))
+        and not is_equivariant(circulant_control, translations),
+    )
+
+
+def part3_projector_map_and_normalization_nonselection() -> None:
+    print("\n" + "=" * 92)
+    print("PART 3: PROJECTOR MAP AND UNIT-NORMALIZATION NONSELECTION")
+    print("=" * 92)
+
+    axiom_path = pathlib.Path(__file__).resolve().parents[1] / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
+    axiom_text = axiom_path.read_text(encoding="utf-8")
+    projectors = hw1_projectors()
+    scalar_samples = (0.0, 0.5, 1.0, 1.75)
+    check(
+        "Projector resolution preserves every scalar seed alpha I_3, not only alpha=1",
+        all(
+            np.linalg.norm(projector_resolve(alpha * I3, projectors) - alpha * I3) < TOL
+            for alpha in scalar_samples
+        ),
+    )
+
+    generic_seed = np.array(
+        [[0.4, 0.2 + 0.1j, -0.3j], [0.2 - 0.1j, 1.1, 0.15], [0.3j, 0.15, 1.7]],
+        dtype=complex,
+    )
+    expected_average = (np.trace(generic_seed) / 3.0) * I3
+    check(
+        "Translation dephasing followed by C_3 averaging fixes shape but preserves input trace",
+        np.linalg.norm(group_average(generic_seed, projectors) - expected_average) < TOL,
+        f"alpha=Tr(X)/3={np.trace(generic_seed)/3.0}",
+    )
+
+    check(
+        "The axiom source contains no active/passive carrier symbol or unit-normalization clause",
+        all(token not in axiom_text for token in ("D_act", "D_pass", "alpha I_3", "beta I_3")),
+    )
+
+    carrier_operators = (*hw1_translations(), CYCLE)
+    model_unit = I3
+    model_half = 0.5 * I3
+    check(
+        "Two formal carrier expansions are positive Hermitian contractions",
+        all(
+            np.linalg.norm(block - block.conj().T) < TOL
+            and np.linalg.eigvalsh(block).min() >= -TOL
+            and np.linalg.eigvalsh(block).max() <= 1.0 + TOL
+            for block in (model_unit, model_half)
+        ),
+    )
+    check(
+        "Both formal expansions obey every explicit translation/C_3 invariance",
+        is_equivariant(model_unit, carrier_operators)
+        and is_equivariant(model_half, carrier_operators),
+    )
+    check(
+        "The two expansions have distinct normalizations on the same axiom/carrier signature",
+        np.linalg.norm(model_unit - model_half) > 0.5,
+        f"Tr(D_1)={np.trace(model_unit).real:.1f}, Tr(D_1/2)={np.trace(model_half).real:.1f}",
+    )
+
+
+def part4_scalar_family_response_and_reconstruction() -> None:
+    print("\n" + "=" * 92)
+    print("PART 4: COMPLETE SCALAR-FAMILY RESPONSE AND RECONSTRUCTION")
+    print("=" * 92)
+
+    lam_act = 0.25
+    lam_pass = 0.25
+    alpha_values = (0.0, 0.5, 1.0, 1.75)
+    beta_values = (0.0, 0.5, 1.0, 2.0)
+
+    response_ok = True
+    reconstruction_ok = True
+    rejection_ok = True
+    frame_ok = True
+    for alpha, beta in itertools.product(alpha_values, beta_values):
+        active_r = active_resolvent(alpha, lam_act)
+        passive_r = passive_resolvent(beta, lam_pass)
+        active_columns = response_columns(active_r)
+        passive_columns = response_columns(passive_r)
+
+        active_scalar = np.trace(active_r) / 3.0
+        passive_scalar = np.trace(passive_r) / 3.0
+        response_ok &= np.linalg.norm(np.column_stack(active_columns) - active_scalar * I3) < TOL
+        response_ok &= np.linalg.norm(np.column_stack(passive_columns) - passive_scalar * I3) < TOL
+
+        active_block = reconstruct_active_block(active_columns, lam_act)
+        passive_block = reconstruct_passive_block(passive_columns, lam_pass)
+        reconstruction_ok &= np.linalg.norm(active_block - alpha * I3) < TOL
+        reconstruction_ok &= np.linalg.norm(passive_block - beta * I3) < TOL
+        rejection_ok &= locally_rejected(active_block, passive_block)
+
+        transported = CYCLE @ np.column_stack(active_columns)
+        frame_ok &= np.linalg.norm(transported - active_scalar * CYCLE) < TOL
+
+    check(
+        "Every scalar pair on the deterministic nonsingular grid gives only scalar basis-source columns",
+        response_ok,
+        f"pairs_tested={len(alpha_values) * len(beta_values)}",
+    )
+    check(
+        "Response inversion reconstructs alpha I_3 and beta I_3 over the grid",
+        reconstruction_ok,
+    )
+    check(
+        "Forward transfer adds only a common scalar times the cycle frame",
+        frame_ok,
+    )
+    check(
+        "The defined one-sided-minimal support interface rejects every tested scalar pair",
+        rejection_ok,
+    )
+
+    unit_active = active_resolvent(1.0, lam_act)
+    unit_passive = passive_resolvent(1.0, lam_pass)
+    half_active = active_resolvent(0.5, lam_act)
+    half_passive = passive_resolvent(0.5, lam_pass)
+    check(
+        "The two same-premise normalizations produce different exact resolvents",
+        np.linalg.norm(unit_active - I3) < TOL
+        and np.linalg.norm(unit_passive - (4.0 / 3.0) * I3) < TOL
+        and np.linalg.norm(half_active - (8.0 / 9.0) * I3) < TOL
+        and np.linalg.norm(half_passive - (8.0 / 7.0) * I3) < TOL,
+    )
+
+    check(
+        "The active scalar pole is rejected as an undefined response pack",
+        expect_pole(lambda: active_resolvent(1.0 + 1.0 / lam_act, lam_act)),
+    )
+    check(
+        "The passive scalar pole is rejected as an undefined response pack",
+        expect_pole(lambda: passive_resolvent(1.0 / lam_pass, lam_pass)),
+    )
+
+
+def part5_escape_falsifier_and_input_firewall() -> None:
+    print("\n" + "=" * 92)
+    print("PART 5: NONSCALAR ESCAPE FALSIFIER AND INPUT FIREWALL")
+    print("=" * 92)
+
+    epsilon = 0.2
+    active_escape = I3 + epsilon * CYCLE
+    check(
+        "A nonscalar I_3+epsilon C block has the active PMNS support shape",
+        has_active_pmns_support(active_escape),
+    )
+    check(
+        "The same nonscalar escape fails the zero-input translation invariance hypothesis",
+        not is_equivariant(active_escape, hw1_translations())
+        and is_equivariant(active_escape, (CYCLE,)),
+    )
+
+    swap_23 = np.array([[1, 0, 0], [0, 0, 1], [0, 1, 0]], dtype=complex)
+    orbit_active = swap_23 @ (I3 + CYCLE) @ swap_23.conj().T
+    check(
+        "The active-support interface recognizes permutation-conjugate I_3+C support",
+        has_active_pmns_support(orbit_active),
+    )
+    check(
+        "The passive interface accepts only the three cyclic monomial masks",
+        has_monomial_support(I3)
+        and has_monomial_support(CYCLE)
+        and has_monomial_support(CYCLE @ CYCLE)
+        and not has_monomial_support(swap_23),
+    )
+
+    forbidden_target_inputs = {
+        "theta12",
+        "theta13",
+        "theta23",
+        "delta_cp",
+        "target_pmns",
+        "observed_pmns",
+    }
+    module_functions = inspect.getmembers(sys.modules[__name__], inspect.isfunction)
+    parameter_names = {
+        parameter
+        for _name, function in module_functions
+        for parameter in inspect.signature(function).parameters
+    }
+    check(
+        "No runner function accepts an observed/fitted PMNS target input",
+        forbidden_target_inputs.isdisjoint(parameter_names),
+        f"function_parameters={sorted(parameter_names)}",
+    )
 
 
 def main() -> int:
-    print("=" * 88)
-    print("PMNS BASELINE HW=1 SOURCE/TRANSFER BOUNDARY")
-    print("=" * 88)
+    print("=" * 92)
+    print("PMNS HW=1 CARRIER NONSELECTION AND SCALAR SOURCE/TRANSFER BOUNDARY")
+    print("=" * 92)
     print()
     print("Question:")
-    print("  For the canonical hw=1 sector operator admitted from the upstream")
-    print("  PMNS authority chain, does the algebraic projector resolution on the")
-    print("  Cl(3) / Z^3 joint character triplet, followed by native source")
-    print("  insertion and graph-first forward transport, generate a pack")
-    print("  accepted by the retained PMNS closure stack?")
+    print("  Within the explicit translation/C3-invariant hw=1 candidate class,")
+    print("  what block shape follows, do the current axioms select its unit")
+    print("  normalization, and does the conditional rejection depend on it?")
 
-    part1_clifford_lattice_sources_and_graph_first_cycle_frame_are_exact()
-    part2_load_bearing_algebraic_identity_on_projectors()
-    active_cols, passive_cols = part3_sole_axiom_source_insertions_give_only_trivial_response_columns()
-    part4_graph_first_transfer_adds_only_frame_support_not_value_data(active_cols)
-    part5_the_canonical_sole_axiom_pack_is_rejected_by_the_pmns_closure_stack(active_cols, passive_cols)
-    part6_circularity_guard()
+    part1_framework_and_hw1_packet()
+    part2_joint_commutant_classification()
+    part3_projector_map_and_normalization_nonselection()
+    part4_scalar_family_response_and_reconstruction()
+    part5_escape_falsifier_and_input_firewall()
 
-    print("\n" + "=" * 88)
+    print("\n" + "=" * 92)
     print("RESULT")
-    print("=" * 88)
-    print("  Load-bearing algebraic identity (Class A) on Cl(3)/Z^3 hw=1 projectors:")
-    print("    sum_i P_i I_3 P_i = sum_i P_i = I_3")
-    print()
-    print("  Under the carrier-construction admission (see Admitted-context")
-    print("  inputs in the source note), this gives D_act = D_pass = I_3 on the")
-    print("  hw=1 triplet, hence:")
-    print("    - native source insertions give only the basis columns e1,e2,e3")
-    print("      up to the passive scalar resolvent weight")
-    print("    - graph-first forward transport fixes only the cycle frame")
-    print("      E12,E23,E31")
-    print("    - the resulting canonical hw=1 source/transfer pack is the")
-    print("      trivial free pack")
-    print("    - the local one-sided-minimal PMNS rejection check and the")
-    print("      lower-level PMNS closure stack reject that pack exactly")
-    print()
-    print("  Scope: the carrier-construction identification is admitted from")
-    print("  the upstream PMNS authority chain, not derived inside this packet.")
+    print("=" * 92)
+    print("  Exact bounded result:")
+    print("    - explicit joint translation/C3 invariance forces D = alpha I_3")
+    print("    - the current axioms do not select alpha=1 or equate two sectors")
+    print("    - projector resolution preserves, rather than selects, alpha")
+    print("    - the analytic formulas give only scalar basis-source columns and")
+    print("      cycle-frame support; the deterministic grid verifies reconstruction")
+    print("    - the defined one-sided-minimal support interface rejects the scalar grid")
+    print("  The unit pair (I_3,I_3) is one implementation point, not an")
+    print("  axiom-derived normalization.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

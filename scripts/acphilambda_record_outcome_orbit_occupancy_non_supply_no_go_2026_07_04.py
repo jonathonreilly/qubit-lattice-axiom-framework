@@ -212,7 +212,65 @@ def main() -> int:
         ) == 0,
     )
 
-    section("Part G: source and axiom guards")
+    section("Part G: executable N7 steelman")
+    # Execute both halves of the strongest objection: normalization removes
+    # the raw factor two, and a supplied single complex Grassmann sector has
+    # determinant power one. Neither calculation supplies a physical action.
+    k11, k12, k21, k22 = sp.symbols("k11 k12 k21 k22")
+    generic_k = sp.Matrix([[k11, k12], [k21, k22]])
+    grassmann_kernel = sp.Matrix.vstack(
+        sp.Matrix.hstack(sp.zeros(2), generic_k),
+        sp.Matrix.hstack(-generic_k.T, sp.zeros(2)),
+    )
+    pfaffian_4 = (
+        grassmann_kernel[0, 1] * grassmann_kernel[2, 3]
+        - grassmann_kernel[0, 2] * grassmann_kernel[1, 3]
+        + grassmann_kernel[0, 3] * grassmann_kernel[1, 2]
+    )
+    oriented_single_sector = -pfaffian_4
+    check(
+        "N7 single complex Grassmann sector has determinant power one",
+        sp.expand(oriented_single_sector - generic_k.det()) == 0,
+    )
+    check(
+        "N7 adjoining the conjugate sector reproduces the realified power",
+        sp.simplify(
+            matrix.det() * sp.conjugate(matrix.det())
+            - realification(matrix).det()
+        ) == 0,
+    )
+
+    for index, example in enumerate(examples, start=1):
+        det_abs_sq = sp.expand(example.det() * sp.conjugate(example.det()))
+        steelman_fc = sp.log(det_abs_sq) / 2
+        steelman_fr = sp.log(realification(example).det())
+        check(
+            f"N7 finite witness {index} satisfies F_R/2=F_C",
+            sp.simplify(steelman_fr / 2 - steelman_fc) == 0,
+        )
+        check(
+            f"N7 finite witness {index} retains a nontrivial raw split",
+            det_abs_sq != 1 and sp.simplify(steelman_fr - steelman_fc) != 0,
+        )
+
+    for count in range(5):
+        steelman_fc = count * sp.log(lam)
+        steelman_fr = 2 * count * sp.log(lam)
+        check(
+            f"N7 record count {count} normalizes F_R/2 to F_C while preserving the raw law",
+            sp.simplify(steelman_fr / 2 - steelman_fc) == 0
+            and (count == 0 or sp.simplify(steelman_fr - steelman_fc) != 0),
+        )
+    check(
+        "N7 normalized readout remains disjoint-union additive",
+        sp.simplify(
+            (10 * sp.log(lam)) / 2
+            - (4 * sp.log(lam)) / 2
+            - (6 * sp.log(lam)) / 2
+        ) == 0,
+    )
+
+    section("Part H: source and axiom guards")
     note = NOTE.read_text(encoding="utf-8")
     note_flat = " ".join(note.split())
     axioms = AXIOMS.read_text(encoding="utf-8")
@@ -220,6 +278,11 @@ def main() -> int:
     check("axioms withhold K/CPT structure", "`K`/CPT structure" in axioms_flat)
     check("axioms withhold source/action identification", "source/action and physical-observable identification" in axioms)
     check("axioms withhold physical observable bridge", "physical observable bridge" in axioms)
+    check(
+        "N7 accepted axiom surface withholds log-det and action/readout selection",
+        "P2/modulus, log-det, source/action, measurement" in axioms
+        and "physical-observable identification" in axioms,
+    )
     check("note grants the auxiliary complex carrier", "Grant an auxiliary invertible complex block carrier" in note)
     check("note contains both countermodel functionals", "F_C(A) = log |det_C A|" in note and "F_R(A) = log det_R R(A)" in note)
     check("note constructs two readouts on one record model", "Same-model conservative extensions" in note and "I_C(C) = F_C(A(C))" in note and "I_R(C) = F_R(A(C))" in note)
@@ -235,6 +298,16 @@ def main() -> int:
     check("N7 contains normalization and complex-field steelmen", "normalization pair" in note and "Qubit axiom uses `M_2(C)`" in note_flat)
     check("N8 distinguishes phase from determinant power", "does not choose determinant modulus power" in note)
     check("discipline gate records PASS", "**Gate result: PASS.**" in note)
+
+    n7_certificate = (
+        "N7_STEELMAN_ARGUMENT route=normalization_or_units; "
+        "mechanism=the exact normalization F_R/2=F_C and the supplied single-complex-sector "
+        "Pfaffian determinant power are executed above; attempt=normalize every finite witness "
+        "and compare a single Grassmann sector with an independently adjoined conjugate sector; "
+        "outcome=normalization removes the coordinate factor two, while the four axioms still "
+        "withhold the physical CAR/action and readout selector, so future action derivations remain open."
+    )
+    print(n7_certificate)
 
     print("\n" + "=" * 68)
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")

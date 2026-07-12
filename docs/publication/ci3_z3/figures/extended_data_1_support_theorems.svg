@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
   <title id="title">Extended Data Figure 1. Weak-field support theorems</title>
-  <desc id="desc">Schematic collecting weak-field gravity corollaries, exact I3 equals zero, and exact CPT as compact supporting results on the retained discrete surface.</desc>
+  <desc id="desc">Schematic collecting weak-field gravity corollaries and exact I3 equals zero; the failed exact-CPT claim is visibly excluded.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#355c7d"/>
@@ -18,7 +18,7 @@
     </style>
   </defs>
   <rect class="bg" x="0" y="0" width="1200" height="760"/>
-  <text class="title" x="600" y="46" text-anchor="middle">Extended Data Figure 1. Weak-Field Gravity Corollaries, Exact $I_3=0$, and Exact CPT</text>
+  <text class="title" x="600" y="46" text-anchor="middle">Extended Data Figure 1. Weak-Field Gravity Corollaries and Exact $I_3=0$</text>
 
   <rect class="box core" x="410" y="95" width="380" height="130"/>
   <text class="label" x="600" y="138" text-anchor="middle">Retained weak-field backbone</text>
@@ -40,12 +40,12 @@
   <text class="body" x="600" y="398" text-anchor="middle">no third-order interference on the Hilbert surface</text>
   <text class="body" x="600" y="432" text-anchor="middle">exact consistency theorem, not a numerical fit</text>
 
-  <rect class="box exact" x="760" y="320" width="320" height="190"/>
-  <text class="label" x="920" y="362" text-anchor="middle">Exact CPT</text>
-  <text class="body" x="920" y="398" text-anchor="middle">free staggered lattice is exactly CPT invariant</text>
-  <text class="body" x="920" y="432" text-anchor="middle">supports the same gauge/matter backbone used in the paper</text>
+  <rect class="box support" x="760" y="320" width="320" height="190"/>
+  <text class="label" x="920" y="362" text-anchor="middle">CPT claim excluded</text>
+  <text class="body" x="920" y="398" text-anchor="middle">former exact-CPT source is audited_failed</text>
+  <text class="body" x="920" y="432" text-anchor="middle">no retained or publication dependency authority</text>
 
   <rect class="box core" x="260" y="570" width="680" height="110"/>
   <text class="label" x="600" y="610" text-anchor="middle">Role in the manuscript</text>
-  <text class="body" x="600" y="642" text-anchor="middle">These results strengthen the retained discrete backbone without widening the main paper claim.</text>
+  <text class="body" x="600" y="642" text-anchor="middle">Only audit-authorized results strengthen the retained discrete backbone.</text>
 </svg>

@@ -1,19 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_s3_mass_matrix_no_go.py
-runner_sha256: b9e9480816a49471c6f84dbd984bb6bf7cda5a8007e8b4cc8071b68c3bd94c6c
+runner_sha256: 9f1dcfd06d37ff045f096da2828a909943ae8e6eeaaf520e18e44a3bc73bdf61
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.23
 status: ok
 ----- stdout -----
 ========================================================================
-S_3 MASS-MATRIX NO-GO ON THE hw=1 TRIPLET
+S_3 CONDITIONAL MASS-MATRIX DEGENERACY LEMMA
 ========================================================================
 
 ========================================================================
-PART 1: S_3-invariant Hermitian algebra on hw=1
+PART 1: S_3-invariant Hermitian algebra on A_1 direct-sum E
 ========================================================================
   [PASS] dim End(C^3)^(S_3) = 2  (rank = 2)
+  [PASS] generator-commutator solve gives dimension 2  (dimension = 2)
+  [PASS] character multiplicities are A_1 + E  (multiplicities = (1.0, 0.0, 1.0))
+  [PASS] ordered-pair orbit classification has two entry classes  (orbits = 2)
   [PASS] I_3 is S_3-invariant
   [PASS] J_3 is S_3-invariant
   [PASS] P_(A_1) is idempotent
@@ -30,7 +33,7 @@ PART 2: Forced two-value spectrum
   [PASS] beta != 0 gives exactly two distinct eigenvalues  (distinct = 2)
 
 ========================================================================
-PART 3: Random audit of the exact S_3 class
+PART 3: Random check of the exact S_3 class
 ========================================================================
   [PASS] no random S_3-invariant sample exceeds two spectral values  (max distinct = 2)
 
@@ -40,7 +43,21 @@ PART 4: Residual Z_2 dimension jump
   [PASS] dim End(C^3)^(Z_2) = 5  (rank = 5)
 
 ========================================================================
-TOTAL: PASS=13, FAIL=0
+PART 5: Explicit escape routes outside the two hypotheses
+========================================================================
+  [PASS] repeated-irrep carrier escape permits three spectral values  (commutant dimension = 9)
+  [PASS] generic three-way split leaves exact S_3 invariance  (commutator norm = 1.414214)
+
+========================================================================
+PART 6: Hypothesis comparisons and invariant checks
+========================================================================
+  [PASS] alternate polynomial spectral readout preserves the two-value bound  (distinct = 2)
+  [PASS] approximate-symmetry perturbation splits only by leaving exact invariance  (distinct = 3, commutator = 1.414e-06)
+  [PASS] equivariant family permits a split background outside pointwise invariance  (distinct = 3)
+  [PASS] normalization and unitary-basis changes preserve spectral cardinality  (distinct = 2)
+
+========================================================================
+TOTAL: PASS=22, FAIL=0
 ========================================================================
 
 ----- stderr -----

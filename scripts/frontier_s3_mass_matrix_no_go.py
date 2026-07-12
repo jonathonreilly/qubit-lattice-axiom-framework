@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Exact S_3 mass-matrix no-go on the hw=1 triplet.
+Exact S_3 conditional mass-matrix degeneracy lemma.
 
 Safe statement:
-  On the hw=1 carrier V = span(X_1, X_2, X_3) with the natural permutation
-  action of S_3, every S_3-invariant Hermitian operator has the form
-  alpha I_3 + beta P_(A_1). Therefore the exact unbroken S_3 class allows at
-  most two distinct eigenvalues on this carrier. The residual axis-fixing Z_2
-  invariant Hermitian space has real dimension 5.
+  On a supplied three-dimensional permutation representation
+  V ~= A_1 direct-sum E, every S_3-invariant Hermitian operator has the form
+  alpha I_3 + beta P_(A_1), with spectrum {alpha, alpha, alpha + beta}. The
+  residual axis-fixing Z_2 invariant Hermitian space has real dimension 5. No
+  physical generation-carrier identification is tested or claimed here.
 """
 
 from __future__ import annotations
@@ -35,7 +35,7 @@ def check(name: str, condition: bool, detail: str = "") -> None:
     print(line)
 
 
-def hw1_s3_representation() -> dict[str, np.ndarray]:
+def supplied_s3_permutation_representation() -> dict[str, np.ndarray]:
     return {
         "e": np.eye(3, dtype=complex),
         "(12)": np.array([[0, 1, 0], [1, 0, 0], [0, 0, 1]], dtype=complex),
@@ -57,15 +57,70 @@ def invariant_projector(operators: dict[str, np.ndarray]) -> np.ndarray:
     return projector
 
 
+def simultaneous_commutant_dimension(generators: list[np.ndarray]) -> int:
+    """Dimension of the exact simultaneous commutant by a direct linear solve."""
+    constraints = []
+    for operator in generators:
+        columns = []
+        for i, j in itertools.product(range(3), repeat=2):
+            basis = np.zeros((3, 3), dtype=complex)
+            basis[i, j] = 1.0
+            columns.append((operator @ basis - basis @ operator).reshape(9))
+        constraints.append(np.column_stack(columns))
+    rank = np.linalg.matrix_rank(np.vstack(constraints), tol=1e-10)
+    return 9 - rank
+
+
+def ordered_pair_orbit_count(operators: dict[str, np.ndarray]) -> int:
+    """Count S_3 orbits on matrix-entry labels (i,j)."""
+    orbits = set()
+    for i, j in itertools.product(range(3), repeat=2):
+        orbit = frozenset(
+            (
+                int(np.argmax(np.abs(operator[:, i]))),
+                int(np.argmax(np.abs(operator[:, j]))),
+            )
+            for operator in operators.values()
+        )
+        orbits.add(orbit)
+    return len(orbits)
+
+
 def part1_invariant_algebra() -> None:
     print("\n" + "=" * 72)
-    print("PART 1: S_3-invariant Hermitian algebra on hw=1")
+    print("PART 1: S_3-invariant Hermitian algebra on A_1 direct-sum E")
     print("=" * 72)
 
-    operators = hw1_s3_representation()
+    operators = supplied_s3_permutation_representation()
     projector = invariant_projector(operators)
     rank = np.linalg.matrix_rank(projector, tol=1e-10)
     check("dim End(C^3)^(S_3) = 2", rank == 2, f"rank = {rank}")
+
+    generator_dim = simultaneous_commutant_dimension(
+        [operators["(12)"], operators["(23)"]]
+    )
+    check(
+        "generator-commutator solve gives dimension 2",
+        generator_dim == 2,
+        f"dimension = {generator_dim}",
+    )
+
+    # Character route for the natural permutation representation:
+    # chi_V(e, transposition, 3-cycle) = (3, 1, 0).
+    multiplicity_a1 = (3 * 1 + 3 * 1 * 1 + 2 * 0 * 1) / 6
+    multiplicity_a2 = (3 * 1 + 3 * 1 * -1 + 2 * 0 * 1) / 6
+    multiplicity_e = (3 * 2 + 3 * 1 * 0 + 2 * 0 * -1) / 6
+    check(
+        "character multiplicities are A_1 + E",
+        (multiplicity_a1, multiplicity_a2, multiplicity_e) == (1, 0, 1),
+        f"multiplicities = {(multiplicity_a1, multiplicity_a2, multiplicity_e)}",
+    )
+    orbit_count = ordered_pair_orbit_count(operators)
+    check(
+        "ordered-pair orbit classification has two entry classes",
+        orbit_count == 2,
+        f"orbits = {orbit_count}",
+    )
 
     identity = np.eye(3, dtype=complex)
     all_ones = np.ones((3, 3), dtype=complex)
@@ -103,9 +158,9 @@ def part2_spectrum() -> None:
     check("beta != 0 gives exactly two distinct eigenvalues", distinct == 2, f"distinct = {distinct}")
 
 
-def part3_random_audit() -> None:
+def part3_random_check() -> None:
     print("\n" + "=" * 72)
-    print("PART 3: Random audit of the exact S_3 class")
+    print("PART 3: Random check of the exact S_3 class")
     print("=" * 72)
 
     rng = np.random.default_rng(42)
@@ -135,14 +190,118 @@ def part4_residual_z2_dimension() -> None:
     check("dim End(C^3)^(Z_2) = 5", rank == 5, f"rank = {rank}")
 
 
+def part5_scoped_escape_routes() -> None:
+    print("\n" + "=" * 72)
+    print("PART 5: Explicit escape routes outside the two hypotheses")
+    print("=" * 72)
+
+    # Changing the representation to three repeated trivial irreps makes the
+    # full 3x3 algebra invariant and permits a generic three-value spectrum.
+    repeated_trivial = {str(i): np.eye(3, dtype=complex) for i in range(6)}
+    repeated_rank = np.linalg.matrix_rank(
+        invariant_projector(repeated_trivial), tol=1e-10
+    )
+    repeated_spectrum = np.linalg.eigvalsh(np.diag([1.0, 2.0, 3.0]))
+    check(
+        "repeated-irrep carrier escape permits three spectral values",
+        repeated_rank == 9 and len(set(repeated_spectrum)) == 3,
+        f"commutant dimension = {repeated_rank}",
+    )
+
+    # Keeping the natural carrier but dropping exact pointwise invariance also
+    # permits a three-way split; the commutator makes the departed hypothesis
+    # explicit rather than treating this as a counterexample to the lemma.
+    generic_split = np.diag([1.0, 2.0, 3.0]).astype(complex)
+    p12 = supplied_s3_permutation_representation()["(12)"]
+    commutator_norm = np.linalg.norm(p12 @ generic_split - generic_split @ p12)
+    check(
+        "generic three-way split leaves exact S_3 invariance",
+        commutator_norm > 1e-10,
+        f"commutator norm = {commutator_norm:.6f}",
+    )
+
+
+def part6_hypothesis_comparisons() -> None:
+    print("\n" + "=" * 72)
+    print("PART 6: Hypothesis comparisons and invariant checks")
+    print("=" * 72)
+
+    identity = np.eye(3, dtype=complex)
+    p_a1 = np.ones((3, 3), dtype=complex) / 3.0
+    base = identity + 2.0 * p_a1
+
+    # Alternate observable/readout: a polynomial spectral readout cannot add
+    # spectral values to an operator that already has only two.
+    polynomial_readout = base @ base + 0.5 * base
+    polynomial_values = len(
+        set(round(float(x), 10) for x in np.real(np.linalg.eigvalsh(polynomial_readout)))
+    )
+    check(
+        "alternate polynomial spectral readout preserves the two-value bound",
+        polynomial_values <= 2,
+        f"distinct = {polynomial_values}",
+    )
+
+    # Approximate-symmetry/limit attack: an arbitrarily small generic
+    # perturbation can split the doublet, but its commutator is nonzero.
+    epsilon = 1e-6
+    perturbed = base + epsilon * np.diag([0.0, 1.0, 2.0])
+    p12 = supplied_s3_permutation_representation()["(12)"]
+    perturbed_values = len(
+        set(round(float(x), 12) for x in np.real(np.linalg.eigvalsh(perturbed)))
+    )
+    perturbed_commutator = np.linalg.norm(p12 @ perturbed - perturbed @ p12)
+    check(
+        "approximate-symmetry perturbation splits only by leaving exact invariance",
+        perturbed_values == 3 and perturbed_commutator > 0,
+        f"distinct = {perturbed_values}, commutator = {perturbed_commutator:.3e}",
+    )
+
+    # Dynamical/equivariant-family attack: M(phi)=diag(phi) is equivariant as
+    # a family although a generic realized background is not pointwise fixed.
+    operators = supplied_s3_permutation_representation()
+    phi = np.array([1.0, 2.0, 3.0])
+    family_covariant = all(
+        np.allclose(U @ np.diag(phi) @ U.conj().T, np.diag(U @ phi))
+        for U in operators.values()
+    )
+    realized_values = len(set(np.linalg.eigvalsh(np.diag(phi))))
+    realized_pointwise_commutator = np.linalg.norm(
+        p12 @ np.diag(phi) - np.diag(phi) @ p12
+    )
+    check(
+        "equivariant family permits a split background outside pointwise invariance",
+        family_covariant
+        and realized_values == 3
+        and realized_pointwise_commutator > 0,
+        f"distinct = {realized_values}",
+    )
+
+    # Normalization/basis route: scalar rescaling and unitary conjugation leave
+    # spectral cardinality unchanged.
+    q, _ = np.linalg.qr(
+        np.array([[1.0, 1.0, 0.0], [0.0, 1.0, 1.0], [1.0, 0.0, 1.0]])
+    )
+    transformed = 7.0 * q @ base @ q.conj().T
+    transformed_values = len(
+        set(round(float(x), 10) for x in np.real(np.linalg.eigvalsh(transformed)))
+    )
+    check(
+        "normalization and unitary-basis changes preserve spectral cardinality",
+        transformed_values == 2,
+        f"distinct = {transformed_values}",
+    )
+
 def main() -> int:
     print("=" * 72)
-    print("S_3 MASS-MATRIX NO-GO ON THE hw=1 TRIPLET")
+    print("S_3 CONDITIONAL MASS-MATRIX DEGENERACY LEMMA")
     print("=" * 72)
     part1_invariant_algebra()
     part2_spectrum()
-    part3_random_audit()
+    part3_random_check()
     part4_residual_z2_dimension()
+    part5_scoped_escape_routes()
+    part6_hypothesis_comparisons()
     print("\n" + "=" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
     print("=" * 72)

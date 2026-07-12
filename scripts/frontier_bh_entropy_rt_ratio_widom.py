@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-BH Entropy RT-Ratio Widom No-Go Theorem runner
-===============================================
+BH Entropy RT-Ratio Widom Finite-Size Evidence runner
+=====================================================
 
-Authority for the retained no-go theorem:
+Authority for the bounded finite-size audit target:
 
     BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md
 
@@ -12,17 +12,16 @@ Question:
     The existing BH entropy bounded companion lane claims that the
     Ryu-Takayanagi bond-dimension ratio
 
-        r(L) = S_ent(L) / (L * ln chi_eff(L))
+        r(L) = S_corr(L) / (L * ln chi_eff(L))
 
-    computed on the OBC L x L free-fermion half-filled square-lattice ground
-    state approaches 1/4 as L -> infinity.  Is 1/4 an exact asymptote?
+    computed on the OBC L x L free-fermion half-filled square lattice was
+    proposed to approach 1/4. Even-L OBC blocks have zero-mode degeneracy, so
+    this runner now fixes the basis-invariant mixed Gaussian prescription
+    C=1(H<0)+1/2 1(H=0) before reporting any finite-size diagnostic.
 
-Answer:
+Scope:
 
-    No.  The Widom-Gioev-Klich theorem pins the asymptote exactly:
-
-        lim r(L)  =  c_Widom
-        L->inf
+    The exact Widom coefficient calculation gives
 
         c_Widom = (1 / (12 (2 pi)^{d-1})) *
                   integral over Fermi surface of |n_x . n_k| dS_k
@@ -30,20 +29,20 @@ Answer:
     For the 2D square-lattice diamond Fermi surface with straight cut:
         c_Widom(2D) = 4 pi / (12 * 2 pi) = 1 / 6
 
-    For the 3D cubic-lattice half-filled surface with straight cut
-    (numerical integral): c_Widom(3D) ~ 0.105.
-
-    In particular c_Widom != 1/4 on every geometry the current lane uses.
+    This runner checks only the finite L <= 64 numerical tail. It does not
+    prove that r(L) converges to c_Widom; that all-L identification is open
+    open mixed-state asymptotic bridge in the authority note.
 
 What the runner does:
 
     1. Compute c_Widom(2D) = 1/6 analytically (exact diamond integral).
     2. Compute c_Widom(3D) numerically from the Fermi-surface Monte Carlo.
-    3. Measure r(L) on OBC L x L lattices for L up to 64 (dense eigh).
-    4. Fit r(L) = c_inf + a / ln(L) on L >= 32 and extract c_inf.
-    5. PASS iff c_inf agrees with 1/6 within 10% and disagrees with 1/4 by
-       at least 20%.  (Numerically r(L=64) has +27% lead above 1/6 and
-       -15.5% lead below 1/4, and the 1/ln(L) fit closes the rest.)
+    3. Measure the correlation-entropy diagnostic r(L) on OBC L x L lattices
+       for L up to 64 (dense eigh) under that explicit prescription.
+    4. Fit the sampled tail r(L) = c_fit + a / ln(L) on L >= 32.
+    5. Check whether that chosen finite-tail diagnostic agrees with 1/6 within
+       10% and differs from 1/4 by at least 20%. This validates the stated fit,
+       not an all-L coefficient or no-go.
 
 Exit code: 0 on full PASS, 1 on any FAIL.
 
@@ -141,11 +140,27 @@ def build_2d_hamiltonian(Lx: int, Ly: int, t: float = 1.0) -> np.ndarray:
     return H
 
 
-def correlation_matrix(eigvecs: np.ndarray, n_occupied: int) -> np.ndarray:
-    return eigvecs[:, :n_occupied] @ eigvecs[:, :n_occupied].T
+def particle_hole_symmetric_correlation(
+    eigvals: np.ndarray, eigvecs: np.ndarray, zero_tol: float = 1e-10
+) -> tuple[np.ndarray, int]:
+    """Basis-invariant half-filled quasifree ensemble correlation matrix.
+
+    OBC even-L squares have an exactly degenerate zero-energy subspace, so
+    choosing the first N/2 eigenvectors is not a state prescription. The
+    spectral function f(E)=1,1/2,0 for E<0,E=0,E>0 is invariant under every
+    zero-mode rotation and has Tr(C)=N/2. It is a mixed Gaussian ensemble,
+    not a uniquely selected pure Slater ground state.
+    """
+    weights = np.where(
+        eigvals < -zero_tol,
+        1.0,
+        np.where(eigvals > zero_tol, 0.0, 0.5),
+    )
+    C = (eigvecs * weights) @ eigvecs.T
+    return C, int(np.sum(np.abs(eigvals) <= zero_tol))
 
 
-def entanglement_entropy(C: np.ndarray, subsystem: list[int]) -> float:
+def gaussian_correlation_entropy(C: np.ndarray, subsystem: list[int]) -> float:
     C_A = C[np.ix_(subsystem, subsystem)]
     evals = np.linalg.eigvalsh(C_A)
     eps = 1e-15
@@ -168,23 +183,30 @@ def transfer_rank(C: np.ndarray, L: int, threshold: float = 1e-6) -> int:
 def measure_rt(L: int) -> dict:
     N = L * L
     H = build_2d_hamiltonian(L, L)
-    _, vecs = eigh(H)
-    C = correlation_matrix(vecs, N // 2)
+    vals, vecs = eigh(H)
+    C, zero_modes = particle_hole_symmetric_correlation(vals, vecs)
+    if not math.isclose(float(np.trace(C)), N / 2, rel_tol=0.0, abs_tol=1e-8):
+        raise AssertionError("particle-hole symmetric prescription lost half filling")
     subsystem = [x * L + y for x in range(L // 2) for y in range(L)]
-    S = entanglement_entropy(C, subsystem)
+    S = gaussian_correlation_entropy(C, subsystem)
     chi_eff = transfer_rank(C, L)
     ln_chi = math.log(chi_eff) if chi_eff > 1 else 0.0
     S_max = L * ln_chi
     rt = S / S_max if S_max > 0 else float("nan")
-    return {"L": L, "S": S, "chi_eff": chi_eff, "rt": rt}
+    return {
+        "L": L, "S": S, "chi_eff": chi_eff, "rt": rt,
+        "zero_modes": zero_modes,
+    }
 
 
 # ============================================================================
 # Part 3.  Verdict logic
 # ============================================================================
 
-def fit_asymptote(records: list[dict], L_min: int = 32) -> tuple[float, float]:
-    """Two-parameter fit r(L) = c_inf + a / ln(L) over L >= L_min."""
+def fit_finite_tail_intercept(
+    records: list[dict], L_min: int = 32
+) -> tuple[float, float]:
+    """Two-parameter finite-tail fit over sampled L >= L_min values."""
     L_arr = np.array([r["L"] for r in records], dtype=float)
     rt_arr = np.array([r["rt"] for r in records], dtype=float)
     mask = L_arr >= L_min
@@ -197,14 +219,15 @@ def fit_asymptote(records: list[dict], L_min: int = 32) -> tuple[float, float]:
 
 def main() -> None:
     print("=" * 72)
-    print("BH Entropy RT-Ratio Widom No-Go Theorem")
+    print("BH Entropy RT-Ratio Widom Finite-Size Evidence")
     print("=" * 72)
     print()
-    print("Question: does r(L) = S_ent / (L * ln chi_eff) approach 1/4 on")
-    print("the OBC L x L free-fermion half-filled square-lattice ground state?")
+    print("Question: what finite-L behavior follows after resolving the OBC")
+    print("half-filled zero-mode ambiguity by a basis-invariant prescription?")
     print()
-    print("Answer: no.  Widom-Gioev-Klich pins r_inf = 1/6 exactly; 1/4 is a")
-    print("finite-L artifact.")
+    print("Scope: the exact Widom coefficient is 1/6; this runner tests only")
+    print("finite L<=64 evidence under the basis-invariant spectral prescription")
+    print("C=1(H<0)+1/2 1(H=0), and leaves the r(L) all-L limit open.")
     print()
 
     t0 = time.time()
@@ -235,52 +258,52 @@ def main() -> None:
     # ----- Part 2: numerical r(L) on 2D OBC ---------------------------------
     print()
     print("-" * 72)
-    print("Part 2.  Numerical r(L) on OBC L x L lattice, half filling")
+    print("Part 2.  Particle-hole-symmetric Gaussian correlation diagnostic")
     print("-" * 72)
     L_list = [8, 12, 16, 20, 24, 28, 32, 40, 48, 56, 64]
-    print(f"  {'L':>4s} {'chi_eff':>8s} {'S_ent':>10s} {'r(L)':>10s} "
+    print(f"  {'L':>4s} {'zero':>5s} {'chi_eff':>8s} {'S_corr':>10s} {'r(L)':>10s} "
           f"{'dev_1/6%':>9s} {'dev_1/4%':>9s}")
-    print("  " + "-" * 58)
+    print("  " + "-" * 65)
     records = []
     for L in L_list:
         r = measure_rt(L)
         dev_sixth = (r["rt"] - 1.0 / 6.0) / (1.0 / 6.0) * 100
         dev_quarter = (r["rt"] - 0.25) / 0.25 * 100
-        print(f"  {r['L']:>4d} {r['chi_eff']:>8d} {r['S']:>10.4f} "
+        print(f"  {r['L']:>4d} {r['zero_modes']:>5d} {r['chi_eff']:>8d} {r['S']:>10.4f} "
               f"{r['rt']:>10.4f} {dev_sixth:>+8.1f}% {dev_quarter:>+8.1f}%")
         records.append(r)
 
-    # ----- Part 3: extract c_inf from the 1/ln(L) tail -----------------------
+    # ----- Part 3: finite-tail intercept diagnostic --------------------------
     print()
     print("-" * 72)
-    print("Part 3.  Asymptotic c_inf from r(L) = c_inf + a / ln(L)")
+    print("Part 3.  Finite-tail intercept from r(L) = c_fit + a / ln(L)")
     print("-" * 72)
     results = {}
     for L_min in [24, 32, 40, 48]:
-        c_inf, a = fit_asymptote(records, L_min=L_min)
-        if math.isnan(c_inf):
+        c_fit, a = fit_finite_tail_intercept(records, L_min=L_min)
+        if math.isnan(c_fit):
             continue
-        dev_sixth = (c_inf - 1.0 / 6.0) / (1.0 / 6.0) * 100
-        dev_quarter = (c_inf - 0.25) / 0.25 * 100
-        print(f"  [L >= {L_min}]  c_inf = {c_inf:.6f}  "
+        dev_sixth = (c_fit - 1.0 / 6.0) / (1.0 / 6.0) * 100
+        dev_quarter = (c_fit - 0.25) / 0.25 * 100
+        print(f"  [L >= {L_min}]  c_fit = {c_fit:.6f}  "
               f"a = {a:+.4f}    "
               f"dev(1/6) = {dev_sixth:+.2f}%  "
               f"dev(1/4) = {dev_quarter:+.2f}%")
-        results[L_min] = (c_inf, dev_sixth, dev_quarter)
+        results[L_min] = (c_fit, dev_sixth, dev_quarter)
 
-    # Use L >= 32 fit as the primary verdict (most data, cleanest asymptotic).
-    c_inf_32, dev6_32, dev4_32 = results[32]
+    # Use the L >= 32 finite-tail fit as the primary numerical diagnostic.
+    c_fit_32, dev6_32, dev4_32 = results[32]
     print()
-    print(f"Verdict fit:  c_inf (L>=32) = {c_inf_32:.6f}")
-    print(f"              |c_inf - 1/6| / (1/6)  = "
+    print(f"Finite-tail fit:  c_fit (L>=32) = {c_fit_32:.6f}")
+    print(f"              |c_fit - 1/6| / (1/6)  = "
           f"{abs(dev6_32):.2f}%")
-    print(f"              |c_inf - 1/4| / (1/4)  = "
+    print(f"              |c_fit - 1/4| / (1/4)  = "
           f"{abs(dev4_32):.2f}%")
     print()
 
     # ----- Part 4: PASS/FAIL assembly ---------------------------------------
     print("-" * 72)
-    print("Part 4.  Theorem verification")
+    print("Part 4.  Finite-size evidence checks")
     print("-" * 72)
     # Monotone decrease for L >= 28 (clean tail; L = 20..24 has a small
     # finite-size bounce from the discrete half-filling offset).
@@ -295,34 +318,30 @@ def main() -> None:
           records[-1]["rt"] < records[0]["rt"],
           f"r(64) = {records[-1]['rt']:.4f} < r(8) = {records[0]['rt']:.4f}")
 
-    # Asymptote matches Widom 1/6 within 10%
-    check("c_inf (L>=32 fit) within 10% of 1/6",
-          abs(c_inf_32 - 1.0 / 6.0) / (1.0 / 6.0) < 0.10,
-          f"c_inf = {c_inf_32:.4f}, |dev| = {abs(dev6_32):.2f}%")
+    # The finite-tail fit intercept is near the exact Widom coefficient.
+    check("finite L>=32 fit intercept within 10% of 1/6",
+          abs(c_fit_32 - 1.0 / 6.0) / (1.0 / 6.0) < 0.10,
+          f"c_fit = {c_fit_32:.4f}, |dev| = {abs(dev6_32):.2f}%")
 
-    # Asymptote is NOT 1/4 (outside 20%)
-    check("c_inf (L>=32 fit) is NOT within 20% of 1/4",
-          abs(c_inf_32 - 0.25) / 0.25 > 0.20,
+    check("finite L>=32 fit intercept is NOT within 20% of 1/4",
+          abs(c_fit_32 - 0.25) / 0.25 > 0.20,
           f"|dev from 1/4| = {abs(dev4_32):.2f}%")
 
-    # Raw data at L=64 is already substantially below 1/4
+    # Raw L=64 data remain close to 1/4; only the fitted tail differs.
     r_L64 = records[-1]["rt"]
-    check("r(L=64) is at least 15% below 1/4",
-          (0.25 - r_L64) / 0.25 > 0.15,
-          f"r(64) = {r_L64:.4f}, below-by = "
-          f"{(0.25 - r_L64) / 0.25 * 100:.1f}%")
+    check("r(L=64) remains within 5% of 1/4",
+          abs(r_L64 - 0.25) / 0.25 < 0.05,
+          f"r(64) = {r_L64:.4f}, relative deviation = "
+          f"{abs(r_L64 - 0.25) / 0.25 * 100:.1f}%")
 
-    # THEOREM statement
-    check("THEOREM: lim_L r(L) = c_Widom = 1/6, NOT 1/4",
-          abs(c_inf_32 - 1.0 / 6.0) / (1.0 / 6.0) < 0.10
-          and abs(c_inf_32 - 0.25) / 0.25 > 0.20,
-          "Widom-Gioev-Klich asymptote confirmed numerically; "
-          "1/4 rejected by >20% margin")
+    check("FINITE-SIZE EVIDENCE: tail fit favors 1/6 over 1/4",
+          abs(c_fit_32 - 1.0 / 6.0) / (1.0 / 6.0) < 0.10
+          and abs(c_fit_32 - 0.25) / 0.25 > 0.20,
+          "L<=64 tail-fit intercept is near 1/6 and >20% from 1/4; "
+          "no all-L limit is claimed")
 
-    check("COROLLARY: existing BH entropy lane stays bounded",
-          True,
-          "the 1/4 in S_BH = A/(4 l_P^2) is not derived from free-fermion "
-          "lattice entanglement on this carrier")
+    print("  [INFO] Scope: finite samples do not establish an exact 1/4 "
+          "coefficient; the all-L mixed-state asymptotic bridge remains open.")
 
     # ----- Summary ----------------------------------------------------------
     print()
@@ -338,10 +357,10 @@ def main() -> None:
         sys.exit(1)
     else:
         print()
-        print("All checks passed. RT-ratio asymptote is c_Widom = 1/6, not 1/4.")
-        print("The free-fermion lattice-entanglement route does NOT derive the")
-        print("coefficient 1/4 in S_BH = A / (4 l_P^2).  The BH entropy lane")
-        print("remains a bounded companion for this retained reason.")
+        print("All finite-L<=64 checks passed; the tail-fit intercept favors 1/6")
+        print("over 1/4 on this sampled carrier. The all-L ratio limit remains")
+        print("an open mixed-state asymptotic bridge; this output is not an "
+              "asymptotic theorem.")
         sys.exit(0)
 
 

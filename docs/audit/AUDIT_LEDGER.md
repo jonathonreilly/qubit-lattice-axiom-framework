@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 401 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2686 |
+| unaudited | 2685 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 82 |
+| ~~audited_conditional~~ | 83 |
 | ~~audited_failed~~ | 20 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 527 |
-| `audited_conditional` | 82 |
+| `audited_conditional` | 83 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3036 |
+| `unaudited` | 3035 |
 
 | claim_type | count |
 |---|---:|
@@ -740,6 +740,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `teleportation_3d_initial_ramp_probe_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `teleportation_measurement_record_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `third_grown_family_complex_boundary_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `two_sign_comparison_note_2026-04-10` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `universal_gr_block_normalization_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -9454,6 +9455,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The source note is bounded to a retarded/hybrid field-law battery and explicitly records the R7 family failures and the diagnostic-only status of R9. The registered runner recomputes the same rows and reproduces the note's 7/8, 8/8, 7/8 scored outcomes with the same sector failures.
 - **rationale:** The current runner output matches the source note's table: zero-source, linearity, additivity, main force, iterative stability, norm, and gauge rows pass as reported, while R7 fails on color-0 for random geometric and color-1 for layered cycle. The note does not promote those irregular sign rows to an attraction theorem and explicitly treats them as field-profile diagnostics under the parity-coupled proxy. Residual risk is confined to the note's own boundary: this is a viable bounded candidate battery with sector robustness still open, not a retained canonical closure.
 - **auditor confidence:** high
+
+### `two_sign_comparison_note_2026-04-10`
+
+- **Note:** [`TWO_SIGN_COMPARISON_NOTE_2026-04-10.md`](../../docs/TWO_SIGN_COMPARISON_NOTE_2026-04-10.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The six implemented diagnostics do not distinguish the two identity-coupling signs on three fixed n=64 graph fixtures over 20 evolution steps at the stated parameters.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00279-two_sign_comparison_note_202`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The finite two-sign runner finds no repulsive-only pathology and no sign-discriminating radial-force response on the three tested n=64 graph fixtures at the stated parameters.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the finite comparison and supports the narrowed fixture-level statement. It does not establish that its finite-window diagnostics exhaust consistency, nor that stability persists at longer times or larger sizes.
+- **rationale:** Issue: the source promotes a three-fixture, 20-step diagnostic result to the broader statement that consistency does not select the sign and describes finite-valued energy and field histories as bounded or convergent. Why this blocks: the code tests only finite-window thresholds; energy_bounded means merely that all 20 sampled energies are finite, and phi_stable is a max/min-ratio test rather than convergence. Repair target: narrow the result to the exact implemented battery or add long-time, size-scaling, and diagnostic-exhaustiveness arguments. Claim boundary until fixed: both signs pass the six stated finite checks on the supplied fixtures.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1 leaves the long-time and larger-size instability route untested.
+    - N2 does not close the exhaustiveness wall.
+    - N5 finds headline rhetoric extending beyond the tested finite resolution.
 
 ### `unification_basin_failure_note`
 

@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 393 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2714 |
+| unaudited | 2713 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 76 |
-| ~~audited_failed~~ | 14 |
+| ~~audited_failed~~ | 15 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -48,10 +48,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 511 |
 | `audited_conditional` | 76 |
 | `audited_decoration` | 20 |
-| `audited_failed` | 36 |
+| `audited_failed` | 37 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3064 |
+| `unaudited` | 3063 |
 
 | claim_type | count |
 |---|---:|
@@ -755,6 +755,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_dple_abcc_no_go_note_2026-04-19` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `dm_neutrino_veven_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `fermion_parity_z2_grading_theorem_note_2026-05-02` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
+| `four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `framework_bare_alpha_3_alpha_em_dimension_fixed_ratio_support_note_2026-04-25` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | A | - |
 | `gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -4251,6 +4252,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing result is a genuine algebraic closure from the explicitly stated differentiability and positivity hypotheses. The runner computes the analytic responses, independently finite-differences fifteen supplied compositions, and verifies five closed forms rather than merely printing expected outcomes. The source confines the conclusion to a conditional calculus identity and does not claim that the framework selects A, F, or a physical formation process.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `four_hats_frame_connection_generator_stratification_non_reduction_narrow_theorem_note_2026-06-09`
+
+- **Note:** [`FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md`](../../docs/FOUR_HATS_FRAME_CONNECTION_GENERATOR_STRATIFICATION_NON_REDUCTION_NARROW_THEOREM_NOTE_2026-06-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The supplied packet supports non-uniqueness of su(3) logarithms of a regular SU(3) connection and identifies the T^2 stabilizer of a complete frame, but does not establish the stated six-dimensional connection ambiguity or the campaign-level four-hat stratification.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00247-four_hats_frame_connection_g`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Arrow 1 not onto AND arrow 2 not onto implies that the frame-to-connection-to-generator chain has two genuine gaps and therefore the four hats occupy distinct chain positions.  _(class `A`)_
+- **chain closes:** False — For a fixed frame, the runner computes the two-dimensional stabilizer but incorrectly calls its six-dimensional complement the residual connection freedom; absent a specified frame-to-connection map, the frame leaves the entire eight-dimensional SU(3) connection choice open. The further identification of campaign hats and Record endpoints is imported or hard-coded without the cited one-hop authorities.
+- **rationale:** The T^2 stabilizer calculation and logarithm-branch witnesses are valid finite-dimensional algebra, although the finite branch list does not itself prove unboundedness without the accompanying integer-family argument. The arrow-1 interpretation conflates the six-dimensional orbit of frames with connection freedom left by a fixed frame; no frame-to-connection map is defined whose surjectivity could be tested. The runner then hard-codes the Record endpoint premises and hat assignments, so the advertised composition does not follow from the restricted packet.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 has OPEN frame-selection, joint-dynamics, and campaign-hat-mapping routes.
+    - N2's arrow-1 wall is misstated as six-dimensional rather than distinguishing the frame orbit from the full connection-selection ambiguity.
+    - N3 finds unsupplied campaign and retained-Record authorities.
+    - N5 finds untested resolutions behind the broad non-collapse rhetoric.
 
 ### `fourth_family_quadrant_note`
 

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 415 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2649 |
+| unaudited | 2648 |
 | audit_in_progress | 27 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 94 |
+| ~~audited_conditional~~ | 95 |
 | ~~audited_failed~~ | 21 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -47,12 +47,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 27 |
 | `audited_clean` | 546 |
-| `audited_conditional` | 94 |
+| `audited_conditional` | 95 |
 | `audited_decoration` | 21 |
 | `audited_failed` | 43 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2999 |
+| `unaudited` | 2998 |
 
 | claim_type | count |
 |---|---:|
@@ -758,6 +758,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `post_record_source_measure_trace_normalization_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
+| `qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `reading_note_final_derivations_motion_closure_bounded_note_2026-07-02` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
@@ -7718,6 +7719,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing step is a class-A implementation identity over the supplied code, not a first-principles physics calculation or tuned numerical match. The runner substantively traces the value through the live call chain, scans for spectral calls, evaluates both endpoints, and inspects the exposed object; its final tautological no-emission check is non-load-bearing. The conclusion is correctly narrowed to the absence of Hellmann-Feynman prerequisites in this implementation and explicitly leaves spectral-operator and direct-envelope derivative routes open.
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
+
+### `qubit_lattice_joint_presentation_tensor_substrate_bridge_note_2026-07-09`
+
+- **Note:** [`QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md`](../../docs/QUBIT_LATTICE_JOINT_PRESENTATION_TENSOR_SUBSTRATE_BRIDGE_NOTE_2026-07-09.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The finite-dimensional tensor-carrier, multiplicity decomposition, minimal-carrier dimension, Gleason dimension threshold, and projection-span conclusions were audited conditional on J1, a supplied commuting joint presentation, and J2, the supplied multiplicity choice m = 1.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00080-qubit_lattice_joint_presenta`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Pairwise elementwise commutation makes Φ(a₁ ⊗ ⋯ ⊗ aₙ)=ι₁(a₁)⋯ιₙ(aₙ) a unital *-homomorphism from the simple algebra M₂(ℂ)^{⊗n}, so its kernel is zero and the generated algebra is M_{2ⁿ}(ℂ).  _(class `A`)_
+- **chain closes:** False — The algebraic conclusions follow once J1 and J2 are assumed, but the restricted accepted-premise surface derives neither the physical commuting joint presentation nor the selection m = 1. The runner verifies consequences of those inputs rather than supplying the missing bridges.
+- **rationale:** Issue: J1 and J2 are explicit load-bearing admissions outside the accepted axiom/approved-primitive registry. Why this blocks: the exact symbolic runner checks tensor generation, commutants, dimensions, and projection span after using canonical commuting embeddings and a chosen minimal carrier; it does not derive either selection from the live axioms. Repair target: supply retained-grade bridge theorems deriving the physical joint presentation and m = 1, or register them as approved primitives. Claim boundary until fixed: the stated finite-dimensional conclusions remain valid as a bounded theorem conditional on J1 and J2.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1: external_tensor_bridge remains OPEN, so the source-shape no-go discipline gate cannot pass.
 
 ### `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08`
 

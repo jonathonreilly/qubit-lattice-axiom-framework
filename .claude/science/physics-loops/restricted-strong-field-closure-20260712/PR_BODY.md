@@ -21,14 +21,14 @@ then proves `j=Lambda f` by block elimination.
 
 ## Artifacts
 
-- [theorem note](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md)
-- [self-contained primary runner](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/scripts/frontier_restricted_strong_field_closure_packet.py)
-- [SHA-pinned output](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/logs/runner-cache/frontier_restricted_strong_field_closure_packet.txt)
-- [assumption/import ledger](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/.claude/science/physics-loops/restricted-strong-field-closure-20260712/ASSUMPTIONS_AND_IMPORTS.md)
-- [trace gate](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/.claude/science/physics-loops/restricted-strong-field-closure-20260712/TRACE_GATE.md)
-- [claim-status certificate](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/.claude/science/physics-loops/restricted-strong-field-closure-20260712/CLAIM_STATUS_CERTIFICATE.md)
-- [review history](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/.claude/science/physics-loops/restricted-strong-field-closure-20260712/REVIEW_HISTORY.md)
-- [handoff](https://github.com/jonathonreilly/cl3-lattice-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/.claude/science/physics-loops/restricted-strong-field-closure-20260712/HANDOFF.md)
+- [theorem note](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md)
+- [self-contained primary runner](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/scripts/frontier_restricted_strong_field_closure_packet.py)
+- [SHA-pinned output](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/logs/runner-cache/frontier_restricted_strong_field_closure_packet.txt)
+- [assumption/import ledger](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/.claude/science/physics-loops/restricted-strong-field-closure-20260712/ASSUMPTIONS_AND_IMPORTS.md)
+- [trace gate](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/.claude/science/physics-loops/restricted-strong-field-closure-20260712/TRACE_GATE.md)
+- [claim-status certificate](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/.claude/science/physics-loops/restricted-strong-field-closure-20260712/CLAIM_STATUS_CERTIFICATE.md)
+- [review history](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/.claude/science/physics-loops/restricted-strong-field-closure-20260712/REVIEW_HISTORY.md)
+- [handoff](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/physics-loop/restricted-strong-field-closure-block01-20260712/.claude/science/physics-loops/restricted-strong-field-closure-20260712/HANDOFF.md)
 
 ## Claim movement
 

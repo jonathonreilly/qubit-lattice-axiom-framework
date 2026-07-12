@@ -2,7 +2,7 @@
   "by_criticality": {
     "critical": 651,
     "high": 335,
-    "leaf": 1141,
+    "leaf": 1140,
     "medium": 755
   },
   "cycle_break_target_count": 49,
@@ -58588,34 +58588,6 @@
       "audit_independence_required": "any_non_self",
       "audit_status": "unaudited",
       "blocker": null,
-      "claim_id": "acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_note_2026-07-04",
-      "claim_scope": null,
-      "claim_type": "no_go",
-      "claim_type_provenance": "author_hint",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "cross_confirmation_status": null,
-      "deps": [
-        "minimal_axioms",
-        "ac_reta_hclass_hunit_readout_derivation_obligation",
-        "realized_state_primitive",
-        "scale_reference_primitive",
-        "kinetic_isotropy_primitive"
-      ],
-      "direct_in_degree": 1,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 1.5,
-      "note_path": "docs/ACPHILAMBDA_R_ETA_DIRECT_LICENSE_HCLASS_HUNIT_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md",
-      "queue_reason": "unaudited",
-      "ready": false,
-      "runner_path": "scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py",
-      "transitive_descendants": 1
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
       "claim_id": "acphilambda_r_eta_occurrence_axiom_hygiene_no_go_note_2026-07-04",
       "claim_scope": null,
       "claim_type": "no_go",
@@ -82122,5 +82094,5 @@
     }
   ],
   "ready_count": 593,
-  "total_pending": 2882
+  "total_pending": 2881
 }

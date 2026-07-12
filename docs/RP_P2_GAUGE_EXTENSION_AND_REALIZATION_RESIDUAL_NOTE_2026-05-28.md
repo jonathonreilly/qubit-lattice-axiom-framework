@@ -282,7 +282,7 @@ row may cite after independent audit.
 
 | Input | Role | Status |
 |---|---|---|
-| Lattice / Quantum / Record baseline, including the `Z^3` lattice and physical `Cl(3,0)` local algebra | repo baseline (setup) | repo baseline surface (see `MINIMAL_AXIOMS_2026-06-04.md`) |
+| Lattice / Qubit / Admissibility / Record baseline, including the `Z^3` lattice and physical `Cl(3,0)` local algebra | repo baseline (setup) | repo baseline surface (see `MINIMAL_AXIOMS_2026-06-29.md`) |
 | Staggered KS operator `M_KS`, phases `eta_0 = 1`, `eta_1(t) = (-1)^t`, `m > 0` | construction surface (Tasks A, B) | definitional (parent reflection-positivity conventions) |
 | Temporal gauge `U_0 = 1` (residual spatial links `U_i`) | gauge-extension setup | standard lattice-gauge gauge fixing |
 | `det(M_KS + m I) >= m^n > 0` config-by-config | downstream full-route context only | separate source row; not a premise of this narrowed fixed-background theorem |
@@ -373,8 +373,8 @@ the citation-graph builder does not parse them as upstream dependency edges:
   downstream P2 phase-blindness bridge. Referenced informationally; this
   narrowed note is a standalone transfer/invariance extension that does not
   modify it.
-- `MINIMAL_AXIOMS_2026-06-04.md` -- repo Lattice / Quantum / Record baseline
-  surface, named as setup context only.
+- `MINIMAL_AXIOMS_2026-06-29.md` -- repo Lattice / Qubit / Admissibility /
+  Record baseline surface, named as setup context only.
 
 ## Validation
 

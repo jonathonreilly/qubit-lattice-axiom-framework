@@ -3221,6 +3221,10 @@
       "to": "bh_entropy_rt_ratio_widom_no_go_note"
     },
     {
+      "from": "bh_entropy_rt_ratio_widom_no_go_note",
+      "to": "key_terminology"
+    },
+    {
       "from": "bh_quarter_wald_noether_framework_carrier_theorem_note_2026-04-29",
       "to": "planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25"
     },
@@ -4158,7 +4162,7 @@
     },
     {
       "from": "canonical_harness_index",
-      "to": "s3_mass_matrix_no_go_note"
+      "to": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11"
     },
     {
       "from": "canonical_harness_index",
@@ -38073,6 +38077,10 @@
       "to": "pl_topology_infrastructure_textbook_import_note_2026-05-17"
     },
     {
+      "from": "s3_mass_matrix_no_go_note",
+      "to": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11"
+    },
+    {
       "from": "s3_route2_endpoint_triple_residual_map_bounded_note_2026-06-21",
       "to": "cte_rconn_spatial_tensor_color_bridge_is_a_cross_domain_coincidence_narrow_no_go_note_2026-06-08"
     },
@@ -48901,88 +48909,16 @@
       "to": "gravity_sign_audit_2026-04-10"
     },
     {
+      "from": "publication.ci3_z3.arxiv_draft",
+      "to": "repo.front_door_status"
+    },
+    {
+      "from": "publication.ci3_z3.arxiv_package",
+      "to": "repo.front_door_status"
+    },
+    {
       "from": "publication.ci3_z3.arxiv_package",
       "to": "publication.ci3_z3.arxiv_draft"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "publication.ci3_z3.prediction_surface_2026-04-15"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "publication.ci3_z3.inputs_and_qualifiers_note"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "publication.ci3_z3.what_this_paper_does_not_claim"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "publication.ci3_z3.publication_matrix"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "publication.ci3_z3.quantitative_summary_table"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "publication.ci3_z3.derivation_atlas"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "publication.ci3_z3.derivation_validation_map"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "publication.ci3_z3.full_claim_ledger"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "publication.ci3_z3.results_index"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "alpha_s_derived_note"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "rconn_derived_note"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "yt_ew_color_projection_theorem"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "yt_ew_delta_r_retention_analysis_note_2026-04-18"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "yt_ward_identity_derivation_theorem"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "yt_uv_to_ir_transport_obstruction_theorem_note_2026-04-17"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "yt_p1_bz_quadrature_full_staggered_pt_note_2026-04-18"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "yt_p1_delta_r_2_loop_extension_note_2026-04-18"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "higgs_vacuum_explicit_systematic_note"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "higgs_mass_derived_note"
-    },
-    {
-      "from": "publication.ci3_z3.arxiv_package",
-      "to": "higgs_mass_retention_analysis_note_2026-04-18"
     },
     {
       "from": "publication.ci3_z3.claims_table",
@@ -48990,7 +48926,7 @@
     },
     {
       "from": "publication.ci3_z3.claims_table",
-      "to": "publication.ci3_z3.arxiv_draft"
+      "to": "repo.front_door_status"
     },
     {
       "from": "publication.ci3_z3.claims_table",
@@ -49119,10 +49055,6 @@
     {
       "from": "publication.ci3_z3.claims_table",
       "to": "planck_source_unit_normalization_support_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.claims_table",
-      "to": "area_law_quarter_broader_no_go_note_2026-04-25"
     },
     {
       "from": "publication.ci3_z3.claims_table",
@@ -49502,6 +49434,10 @@
     },
     {
       "from": "publication.ci3_z3.claims_table",
+      "to": "area_law_quarter_broader_no_go_note_2026-04-25"
+    },
+    {
+      "from": "publication.ci3_z3.claims_table",
       "to": "publication.ci3_z3.derivation_validation_map"
     },
     {
@@ -49514,7 +49450,7 @@
     },
     {
       "from": "publication.ci3_z3.derivation_atlas",
-      "to": "publication.ci3_z3.arxiv_draft"
+      "to": "repo.front_door_status"
     },
     {
       "from": "publication.ci3_z3.derivation_atlas",
@@ -49523,6 +49459,10 @@
     {
       "from": "publication.ci3_z3.derivation_atlas",
       "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "publication.ci3_z3.derivation_atlas",
+      "to": "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
     },
     {
       "from": "publication.ci3_z3.derivation_atlas",
@@ -49842,7 +49782,7 @@
     },
     {
       "from": "publication.ci3_z3.derivation_atlas",
-      "to": "s3_mass_matrix_no_go_note"
+      "to": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11"
     },
     {
       "from": "publication.ci3_z3.derivation_atlas",
@@ -51874,7 +51814,7 @@
     },
     {
       "from": "publication.ci3_z3.derivation_validation_map",
-      "to": "publication.ci3_z3.arxiv_draft"
+      "to": "repo.front_door_status"
     },
     {
       "from": "publication.ci3_z3.derivation_validation_map",
@@ -52246,11 +52186,11 @@
     },
     {
       "from": "publication.ci3_z3.derivation_validation_map",
-      "to": "s3_mass_matrix_no_go_note"
+      "to": "z2_hw1_mass_matrix_parametrization_note"
     },
     {
       "from": "publication.ci3_z3.derivation_validation_map",
-      "to": "z2_hw1_mass_matrix_parametrization_note"
+      "to": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11"
     },
     {
       "from": "publication.ci3_z3.derivation_validation_map",
@@ -52970,279 +52910,15 @@
     },
     {
       "from": "publication.ci3_z3.external_reviewer_guide",
+      "to": "repo.front_door_status"
+    },
+    {
+      "from": "publication.ci3_z3.external_reviewer_guide",
       "to": "minimal_axioms"
     },
     {
       "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "single_axiom_information_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "single_axiom_hilbert_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "continuum_identification_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "publication.ci3_z3.prediction_surface_2026-04-15"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "publication.ci3_z3.inputs_and_qualifiers_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "publication.ci3_z3.what_this_paper_does_not_claim"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "alpha_s_derived_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "rconn_derived_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "yt_ew_color_projection_theorem"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "yt_ew_delta_r_retention_analysis_note_2026-04-18"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "yt_ward_identity_derivation_theorem"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "yt_uv_to_ir_transport_obstruction_theorem_note_2026-04-17"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "yt_p1_bz_quadrature_full_staggered_pt_note_2026-04-18"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "yt_p1_delta_r_2_loop_extension_note_2026-04-18"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "higgs_vacuum_explicit_systematic_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "higgs_mass_derived_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "higgs_mass_retention_analysis_note_2026-04-18"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_atlas_axiom_closure_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_cp_phase_structural_identity_theorem_note_2026-04-24"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_atlas_triangle_right_angle_theorem_note_2026-04-24"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_nlo_barred_triangle_protected_gamma_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_barred_pedoe_similarity_deficit_closed_form_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_first_row_magnitudes_theorem_note_2026-04-24"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_second_row_magnitudes_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_third_row_magnitudes_theorem_note_2026-04-24"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_magnitudes_structural_counts_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_bs_mixing_phase_derivation_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_thales_cross_system_cp_ratio_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_kaon_epsilon_k_jarlskog_decomposition_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "three_generation_observable_theorem_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "site_phase_cube_shift_intertwiner_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "s3_taste_cube_decomposition_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "s3_mass_matrix_no_go_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "z2_hw1_mass_matrix_parametrization_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "cl3_sm_embedding_master_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "cl3_sm_embedding_theorem"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "cl3_color_automorphism_theorem"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "cl3_taste_generation_theorem"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "physical_lattice_necessity_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "three_generation_chirality_boundary_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "koide_q_delta_closure_package_readme_2026-04-21"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "charged_lepton_koide_note_2026-04-18"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "koide_dimensionless_note_2026-04-24"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_koide_cross_sector_z3_closure_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_bernoulli_two_ninths_koide_bridge_support_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_n9_structural_family_koide_bridge_support_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_cubic_bernoulli_koide_bridge_support_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_egyptian_bernoulli_closures_koide_bridge_support_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "ckm_consecutive_primes_s3_koide_bridge_support_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "koide_q_so2_phase_erasure_support_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "signed_gravity_response_lane_status_note_2026-04-26"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "w_mass_derived_note"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "neutrino_retained_status_note_2026-04-16"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "neutrino_retained_lanes_note_2026-04-16"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
       "to": "publication.ci3_z3.arxiv_draft"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "publication.ci3_z3.readme"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "publication.ci3_z3.claims_table"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "publication.ci3_z3.quantitative_summary_table"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "publication.ci3_z3.publication_matrix"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "publication.ci3_z3.derivation_validation_map"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "publication.ci3_z3.derivation_atlas"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "publication.ci3_z3.full_claim_ledger"
-    },
-    {
-      "from": "publication.ci3_z3.external_reviewer_guide",
-      "to": "publication.ci3_z3.results_index"
     },
     {
       "from": "publication.ci3_z3.falsifiable_predictions_2026-06-08",
@@ -53366,7 +53042,7 @@
     },
     {
       "from": "publication.ci3_z3.full_claim_ledger",
-      "to": "publication.ci3_z3.arxiv_draft"
+      "to": "repo.front_door_status"
     },
     {
       "from": "publication.ci3_z3.full_claim_ledger",
@@ -53562,7 +53238,7 @@
     },
     {
       "from": "publication.ci3_z3.full_claim_ledger",
-      "to": "s3_mass_matrix_no_go_note"
+      "to": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11"
     },
     {
       "from": "publication.ci3_z3.full_claim_ledger",
@@ -53599,6 +53275,10 @@
     {
       "from": "publication.ci3_z3.full_claim_ledger",
       "to": "observable_principle_from_axiom_note"
+    },
+    {
+      "from": "publication.ci3_z3.full_claim_ledger",
+      "to": "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16"
     },
     {
       "from": "publication.ci3_z3.full_claim_ledger",
@@ -54206,10 +53886,6 @@
     },
     {
       "from": "publication.ci3_z3.full_claim_ledger",
-      "to": "area_law_quarter_broader_no_go_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.full_claim_ledger",
       "to": "grav_decoherence_derived_note"
     },
     {
@@ -54590,7 +54266,7 @@
     },
     {
       "from": "publication.ci3_z3.publication_matrix",
-      "to": "publication.ci3_z3.arxiv_draft"
+      "to": "repo.front_door_status"
     },
     {
       "from": "publication.ci3_z3.publication_matrix",
@@ -54822,7 +54498,7 @@
     },
     {
       "from": "publication.ci3_z3.publication_matrix",
-      "to": "s3_mass_matrix_no_go_note"
+      "to": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11"
     },
     {
       "from": "publication.ci3_z3.publication_matrix",
@@ -55774,107 +55450,7 @@
     },
     {
       "from": "publication.ci3_z3.readme",
-      "to": "publication.ci3_z3.falsifiable_predictions_2026-06-08"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "publication.ci3_z3.prediction_surface_2026-04-15"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
       "to": "publication.ci3_z3.reproduce"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "publication.ci3_z3.science_map"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "publication.ci3_z3.inputs_and_qualifiers_note"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "publication.ci3_z3.what_this_paper_does_not_claim"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "publication.ci3_z3.publication_matrix"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "publication.ci3_z3.claims_table"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "publication.ci3_z3.derivation_validation_map"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "publication.ci3_z3.gravity_publication_package_summary_2026-04-15"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "publication.ci3_z3.quantitative_summary_table"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "publication.ci3_z3.usable_derived_values_index"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "lanes.open_science.01_hadron_mass_program_open_lane_2026-04-26"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "planck_scale_lane_status_note_2026-04-23"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "planck_scale_conditional_completion_note_2026-04-24"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "planck_source_unit_normalization_support_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "planck_boundary_density_extension_theorem_note_2026-04-24"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "planck_finite_response_no_go_note_2026-04-24"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "planck_parent_source_hidden_character_no_go_note_2026-04-24"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "area_law_multipocket_selector_no_go_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "publication.ci3_z3.release_environment"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "publication.ci3_z3.results_index"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "publication.ci3_z3.reproducibility_freeze_2026-04-14"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "single_axiom_information_note"
-    },
-    {
-      "from": "publication.ci3_z3.readme",
-      "to": "single_axiom_hilbert_note"
     },
     {
       "from": "publication.ci3_z3.reproduce",
@@ -55903,6 +55479,10 @@
     {
       "from": "publication.ci3_z3.results_index",
       "to": "publication.ci3_z3.reproduce"
+    },
+    {
+      "from": "publication.ci3_z3.results_index",
+      "to": "repo.front_door_status"
     },
     {
       "from": "publication.ci3_z3.results_index",
@@ -56174,7 +55754,7 @@
     },
     {
       "from": "publication.ci3_z3.results_index",
-      "to": "s3_mass_matrix_no_go_note"
+      "to": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11"
     },
     {
       "from": "publication.ci3_z3.results_index",
@@ -58775,7 +58355,7 @@
         "acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12"
       ],
       "helper_runner_paths": [],
-      "note_hash": "46d7703e40add10729e5e2788186341adc3de0abf737de22a6fabb4c63062124",
+      "note_hash": "182aafc32b6b6e43edf7163282aab4da6a832e5ffdefce17a524962c3baae5f6",
       "path": "docs/ACPHILAMBDA_C3_RESOLVENT_DETERMINANT_HOLONOMY_COUPLING_NARROW_THEOREM_NOTE_2026-07-12.md",
       "runner_path": "scripts/acphilambda_c3_resolvent_determinant_holonomy_coupling_2026_07_12.py",
       "title": "AC_phi_lambda C3 Resolvent Determinant-Holonomy Coupling"
@@ -63286,29 +62866,31 @@
     },
     "bh_entropy_derived_note": {
       "claim_id": "bh_entropy_derived_note",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
       "deps": [
         "bh_entropy_rt_ratio_widom_no_go_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bbb3b3c0a96e43eaf842ef283e892aa4105f9524db41113a36e25091556217ca",
+      "note_hash": "97c0776bc495d71dd9369c5aa947d27d527c5c0e8ac806bfa8fa47ac8490d747",
       "path": "docs/BH_ENTROPY_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_bh_entropy_derived.py",
-      "title": "Bekenstein-Hawking Entropy Bounded Lattice Companion"
+      "title": "Bekenstein-Hawking Entropy Finite-Lattice Companion"
     },
     "bh_entropy_rt_ratio_widom_no_go_note": {
       "claim_id": "bh_entropy_rt_ratio_widom_no_go_note",
-      "claim_type_author_hint": "bounded_theorem",
-      "claim_type_author_hint_raw": "bounded_theorem",
-      "claim_type_seed_hint": "bounded_theorem",
-      "deps": [],
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "key_terminology"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "2b1f71f18a432ac9881ec9c8fcffb59a27cadaf56befc9bb45a30aee355db2a5",
+      "note_hash": "8a4267f83f86df20504e87a13f72875d59eb7d96d88fc830a29968cf9f6c6a89",
       "path": "docs/BH_ENTROPY_RT_RATIO_WIDOM_NO_GO_NOTE.md",
       "runner_path": "scripts/frontier_bh_entropy_rt_ratio_widom.py",
-      "title": "BH Entropy RT-Ratio Widom No-Go Theorem"
+      "title": "BH Entropy RT-Ratio Widom Finite-Size Diagnostic"
     },
     "bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10": {
       "claim_id": "bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10",
@@ -64376,7 +63958,7 @@
         "ckm_magnitudes_structural_counts_theorem_note_2026-04-25",
         "site_phase_cube_shift_intertwiner_note",
         "s3_taste_cube_decomposition_note",
-        "s3_mass_matrix_no_go_note",
+        "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
         "z2_hw1_mass_matrix_parametrization_note",
         "three_generation_observable_count_corollary_note_2026-05-03",
         "hadronic_charges_from_quark_y_note_2026-05-02",
@@ -64625,7 +64207,7 @@
         "neutrino_lane4_workstream_closeout_note_2026-04-28"
       ],
       "helper_runner_paths": [],
-      "note_hash": "3e537c7e37c5c2a8337e66e6527b8a213389dcefb40a94cb41c266c3014d7bed",
+      "note_hash": "5d95b6215d0783749d895aa0e3185541908c280ce1cf7ad1ca008e4a056dffda",
       "path": "docs/CANONICAL_HARNESS_INDEX.md",
       "runner_path": null,
       "title": "Canonical Harness Index"
@@ -95016,15 +94598,15 @@
     },
     "lorentz_violation_derived_note": {
       "claim_id": "lorentz_violation_derived_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_author_hint_raw": "bounded_theorem",
       "claim_type_seed_hint": "bounded_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "a98aaa669b56ab7ac359a48319da526b98f54aec4b62652195700b46b2543ce6",
+      "note_hash": "b2cef7955394493700e363a914f58e747355d68faee2444e54cd9b33d2e93a80",
       "path": "docs/LORENTZ_VIOLATION_DERIVED_NOTE.md",
       "runner_path": "scripts/frontier_lorentz_violation.py",
-      "title": "Lorentz Violation Derived from Cubic Lattice Structure"
+      "title": "Fixed-Action Cubic-Anisotropy Diagnostic"
     },
     "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12": {
       "claim_id": "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12",
@@ -103925,12 +103507,14 @@
       "claim_type_author_hint": null,
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
-      "deps": [],
+      "deps": [
+        "repo.front_door_status"
+      ],
       "helper_runner_paths": [],
-      "note_hash": "3fece093cdeec1f361d5ffef8d74aa204cfb5d97198a333ba8028b0f522293f7",
+      "note_hash": "5512fed99f217584947dec2b148f5d42a5b7d10e8e44f0d3f7be4fc261d299e8",
       "path": "docs/publication/ci3_z3/ARXIV_DRAFT.md",
       "runner_path": null,
-      "title": "Qubit-Lattice Axiom Framework:"
+      "title": "Historical Author Manuscript Archive \u2014 Not Publication Authority"
     },
     "publication.ci3_z3.arxiv_package": {
       "claim_id": "publication.ci3_z3.arxiv_package",
@@ -103938,30 +103522,11 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "publication.ci3_z3.arxiv_draft",
-        "publication.ci3_z3.prediction_surface_2026-04-15",
-        "publication.ci3_z3.inputs_and_qualifiers_note",
-        "publication.ci3_z3.what_this_paper_does_not_claim",
-        "publication.ci3_z3.publication_matrix",
-        "publication.ci3_z3.quantitative_summary_table",
-        "publication.ci3_z3.derivation_atlas",
-        "publication.ci3_z3.derivation_validation_map",
-        "publication.ci3_z3.full_claim_ledger",
-        "publication.ci3_z3.results_index",
-        "alpha_s_derived_note",
-        "rconn_derived_note",
-        "yt_ew_color_projection_theorem",
-        "yt_ew_delta_r_retention_analysis_note_2026-04-18",
-        "yt_ward_identity_derivation_theorem",
-        "yt_uv_to_ir_transport_obstruction_theorem_note_2026-04-17",
-        "yt_p1_bz_quadrature_full_staggered_pt_note_2026-04-18",
-        "yt_p1_delta_r_2_loop_extension_note_2026-04-18",
-        "higgs_vacuum_explicit_systematic_note",
-        "higgs_mass_derived_note",
-        "higgs_mass_retention_analysis_note_2026-04-18"
+        "repo.front_door_status",
+        "publication.ci3_z3.arxiv_draft"
       ],
       "helper_runner_paths": [],
-      "note_hash": "12c3dbc84dbe3b91e414cbbcd636a7c1da59666207ca0cde2f5cc5029878b7a6",
+      "note_hash": "2e7b15af07909e5b78a28758c37c78f357965aec8fedc201d3904fd7038390a7",
       "path": "docs/publication/ci3_z3/ARXIV_PACKAGE.md",
       "runner_path": null,
       "title": "arXiv Package"
@@ -103973,7 +103538,7 @@
       "claim_type_seed_hint": null,
       "deps": [
         "publication.ci3_z3.quantitative_summary_table",
-        "publication.ci3_z3.arxiv_draft",
+        "repo.front_door_status",
         "minimal_axioms",
         "self_consistency_forces_poisson_note",
         "poisson_exhaustive_uniqueness_note",
@@ -104006,7 +103571,6 @@
         "observable_principle_from_axiom_note",
         "planck_scale_lane_status_note_2026-04-23",
         "planck_source_unit_normalization_support_theorem_note_2026-04-25",
-        "area_law_quarter_broader_no_go_note_2026-04-25",
         "planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25",
         "area_law_multipocket_selector_no_go_note_2026-04-25",
         "area_law_primitive_edge_entropy_selector_no_go_note_2026-04-25",
@@ -104101,10 +103665,11 @@
         "dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25",
         "publication.ci3_z3.prediction_surface_2026-04-15",
         "publication.ci3_z3.publication_matrix",
+        "area_law_quarter_broader_no_go_note_2026-04-25",
         "publication.ci3_z3.derivation_validation_map"
       ],
       "helper_runner_paths": [],
-      "note_hash": "2a642311e324e8c3a0db969b4677976118c0333cd73eecfd29ae0a1add401063",
+      "note_hash": "a0a5fa75f1cad492819879f5d80973ae8aea94e65cda5763e29135a01dad9c9a",
       "path": "docs/publication/ci3_z3/CLAIMS_TABLE.md",
       "runner_path": null,
       "title": "Manuscript Claims Surface"
@@ -104117,9 +103682,10 @@
       "deps": [
         "publication.ci3_z3.usable_derived_values_index",
         "publication.ci3_z3.publication_matrix",
-        "publication.ci3_z3.arxiv_draft",
+        "repo.front_door_status",
         "minimal_axioms",
         "observable_principle_from_axiom_note",
+        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
         "single_axiom_hilbert_note",
         "single_axiom_information_note",
         "i3_zero_exact_theorem_note",
@@ -104199,7 +103765,7 @@
         "unified_matter_content_ewsb_harness_theorem_note_2026-05-03",
         "site_phase_cube_shift_intertwiner_note",
         "s3_taste_cube_decomposition_note",
-        "s3_mass_matrix_no_go_note",
+        "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
         "z2_hw1_mass_matrix_parametrization_note",
         "cl3_sm_embedding_master_note",
         "cl3_sm_embedding_theorem",
@@ -104706,7 +104272,7 @@
         "universal_qg_optional_textbook_comparison_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "04df8da48ae2837059d53b8ba6b04942f9824ca620c54a0933fde53d8a14abde",
+      "note_hash": "bd2c9b485f39e23e0d4b518d7ffd6b97b10a16eeabd8a24224d971fc536442ec",
       "path": "docs/publication/ci3_z3/DERIVATION_ATLAS.md",
       "runner_path": null,
       "title": "Derivation Atlas"
@@ -104720,7 +104286,7 @@
         "publication.ci3_z3.derivation_atlas",
         "publication.ci3_z3.publication_matrix",
         "publication.ci3_z3.quantitative_summary_table",
-        "publication.ci3_z3.arxiv_draft",
+        "repo.front_door_status",
         "minimal_axioms",
         "self_consistency_forces_poisson_note",
         "poisson_exhaustive_uniqueness_note",
@@ -104813,8 +104379,8 @@
         "three_generation_chirality_boundary_note",
         "site_phase_cube_shift_intertwiner_note",
         "s3_taste_cube_decomposition_note",
-        "s3_mass_matrix_no_go_note",
         "z2_hw1_mass_matrix_parametrization_note",
+        "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
         "i3_zero_exact_theorem_note",
         "cpt_exact_note",
         "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25",
@@ -104996,7 +104562,7 @@
         "teleportation_acceptance_suite_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "1a6eb2915948611a1fc54c6930115e67126160a6a9a8a8a2222664987a372262",
+      "note_hash": "ce90dcdeafb9bf506782f7610cb28ad1f0eca035406608c8e10e69e080131a1f",
       "path": "docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP.md",
       "runner_path": null,
       "title": "Derivation / Validation Map"
@@ -105007,78 +104573,12 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
+        "repo.front_door_status",
         "minimal_axioms",
-        "single_axiom_information_note",
-        "single_axiom_hilbert_note",
-        "continuum_identification_note",
-        "publication.ci3_z3.prediction_surface_2026-04-15",
-        "publication.ci3_z3.inputs_and_qualifiers_note",
-        "publication.ci3_z3.what_this_paper_does_not_claim",
-        "alpha_s_derived_note",
-        "rconn_derived_note",
-        "yt_ew_color_projection_theorem",
-        "yt_ew_delta_r_retention_analysis_note_2026-04-18",
-        "yt_ward_identity_derivation_theorem",
-        "yt_uv_to_ir_transport_obstruction_theorem_note_2026-04-17",
-        "yt_p1_bz_quadrature_full_staggered_pt_note_2026-04-18",
-        "yt_p1_delta_r_2_loop_extension_note_2026-04-18",
-        "higgs_vacuum_explicit_systematic_note",
-        "higgs_mass_derived_note",
-        "higgs_mass_retention_analysis_note_2026-04-18",
-        "ckm_atlas_axiom_closure_note",
-        "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24",
-        "ckm_cp_phase_structural_identity_theorem_note_2026-04-24",
-        "ckm_atlas_triangle_right_angle_theorem_note_2026-04-24",
-        "ckm_nlo_barred_triangle_protected_gamma_theorem_note_2026-04-25",
-        "ckm_barred_pedoe_similarity_deficit_closed_form_theorem_note_2026-04-25",
-        "ckm_first_row_magnitudes_theorem_note_2026-04-24",
-        "ckm_second_row_magnitudes_theorem_note_2026-04-25",
-        "ckm_third_row_magnitudes_theorem_note_2026-04-24",
-        "ckm_magnitudes_structural_counts_theorem_note_2026-04-25",
-        "ckm_bs_mixing_phase_derivation_theorem_note_2026-04-25",
-        "ckm_thales_cross_system_cp_ratio_theorem_note_2026-04-25",
-        "ckm_kaon_epsilon_k_jarlskog_decomposition_theorem_note_2026-04-25",
-        "three_generation_observable_theorem_note",
-        "site_phase_cube_shift_intertwiner_note",
-        "s3_taste_cube_decomposition_note",
-        "s3_mass_matrix_no_go_note",
-        "z2_hw1_mass_matrix_parametrization_note",
-        "cl3_sm_embedding_master_note",
-        "cl3_sm_embedding_theorem",
-        "cl3_color_automorphism_theorem",
-        "cl3_taste_generation_theorem",
-        "physical_lattice_necessity_note",
-        "three_generation_chirality_boundary_note",
-        "koide_q_delta_closure_package_readme_2026-04-21",
-        "charged_lepton_koide_note_2026-04-18",
-        "koide_dimensionless_note_2026-04-24",
-        "koide_q_background_zero_z_erasure_criterion_theorem_note_2026-04-25",
-        "ckm_koide_cross_sector_z3_closure_theorem_note_2026-04-25",
-        "ckm_bernoulli_two_ninths_koide_bridge_support_note_2026-04-25",
-        "ckm_n9_structural_family_koide_bridge_support_note_2026-04-25",
-        "ckm_cubic_bernoulli_koide_bridge_support_note_2026-04-25",
-        "ckm_egyptian_bernoulli_closures_koide_bridge_support_note_2026-04-25",
-        "ckm_consecutive_primes_s3_koide_bridge_support_note_2026-04-25",
-        "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25",
-        "koide_q_so2_phase_erasure_support_note_2026-04-25",
-        "chronology_protection_operational_no_past_signaling_theorem_note_2026-04-25",
-        "signed_gravity_response_lane_status_note_2026-04-26",
-        "w_mass_derived_note",
-        "dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25",
-        "neutrino_retained_status_note_2026-04-16",
-        "neutrino_retained_lanes_note_2026-04-16",
-        "publication.ci3_z3.arxiv_draft",
-        "publication.ci3_z3.readme",
-        "publication.ci3_z3.claims_table",
-        "publication.ci3_z3.quantitative_summary_table",
-        "publication.ci3_z3.publication_matrix",
-        "publication.ci3_z3.derivation_validation_map",
-        "publication.ci3_z3.derivation_atlas",
-        "publication.ci3_z3.full_claim_ledger",
-        "publication.ci3_z3.results_index"
+        "publication.ci3_z3.arxiv_draft"
       ],
       "helper_runner_paths": [],
-      "note_hash": "67a2b12484cf3adf0c5bd57dcaa89c73630a6efc6de189a380e22afa3b0aa324",
+      "note_hash": "344f99b728703bceb6e41425193f6c831be962e52b35d557de0da0e5e7649783",
       "path": "docs/publication/ci3_z3/EXTERNAL_REVIEWER_GUIDE.md",
       "runner_path": null,
       "title": "External Reviewer Guide"
@@ -105097,7 +104597,7 @@
         "ckm_jarlskog_exact_nlo_closed_form_theorem_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "03a73d1f11dc2590d076df37b126e8735a4d377e66a5cafb5914fa6e34e83608",
+      "note_hash": "36bf2a3537c002d2893cd3035037181e5294c0350f46fb2122f03443c2f265ee",
       "path": "docs/publication/ci3_z3/FALSIFIABLE_PREDICTIONS_2026-06-08.md",
       "runner_path": "scripts/audit_companion_falsifiable_predictions_catalog_2026_06_08.py",
       "title": "Falsifiable Predictions \u2014 Honest Catalog (Publication Surface)"
@@ -105111,7 +104611,7 @@
         "publication.ci3_z3.figure_plan"
       ],
       "helper_runner_paths": [],
-      "note_hash": "94a2a0ab8f462a23915e28f98e106c2c4d298771f98dcdec419d67b435945c40",
+      "note_hash": "76c8492c3358d68d0050fcf7927f55fa1147cbb6d9173e24256ac067180c941c",
       "path": "docs/publication/ci3_z3/FIGURE_CAPTIONS.md",
       "runner_path": null,
       "title": "Figure Captions"
@@ -105158,7 +104658,7 @@
         "publication.ci3_z3.quantitative_summary_table",
         "publication.ci3_z3.claims_table",
         "publication.ci3_z3.derivation_validation_map",
-        "publication.ci3_z3.arxiv_draft",
+        "repo.front_door_status",
         "minimal_axioms",
         "anomaly_forces_time_theorem",
         "s3_general_r_derivation_note",
@@ -105207,7 +104707,7 @@
         "three_generation_chirality_boundary_note",
         "site_phase_cube_shift_intertwiner_note",
         "s3_taste_cube_decomposition_note",
-        "s3_mass_matrix_no_go_note",
+        "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
         "z2_hw1_mass_matrix_parametrization_note",
         "cl3_sm_embedding_master_note",
         "cl3_sm_embedding_theorem",
@@ -105217,6 +104717,7 @@
         "ckm_neutron_edm_bound_note",
         "universal_theta_induced_edm_vanishing_theorem_note_2026-04-24",
         "observable_principle_from_axiom_note",
+        "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
         "planck_source_unit_normalization_support_theorem_note_2026-04-25",
         "planck_primitive_coframe_boundary_carrier_theorem_note_2026-04-25",
         "i3_zero_exact_theorem_note",
@@ -105368,7 +104869,6 @@
         "taste_scalar_isotropy_theorem_note",
         "persistent_object_exact_lattice_park_note_2026-04-16",
         "bh_entropy_derived_note",
-        "area_law_quarter_broader_no_go_note_2026-04-25",
         "grav_decoherence_derived_note",
         "proton_lifetime_derived_note",
         "vacuum_critical_stability_note",
@@ -105379,7 +104879,7 @@
         "koide_q_source_domain_canonical_descent_theorem_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "f13b2e6b3f51faf5a1e92e244d5e76fa98c8d4f99f01e5f6337e9a2556cb7e02",
+      "note_hash": "6178dcabab886e0847f019ba2e4a77534f250c32b7b5e52b57b7fc3725484618",
       "path": "docs/publication/ci3_z3/FULL_CLAIM_LEDGER.md",
       "runner_path": null,
       "title": "Full Claim Ledger"
@@ -105445,7 +104945,7 @@
         "publication.ci3_z3.prediction_surface_2026-04-15"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bc98b2e465092611b692a16fa3e89f92704ce97a57193e6f70b472d9f3e39fc6",
+      "note_hash": "762b77a979ab8b41f97e8ee37af5aa553761aea0ac623ff86dfcf4142933170a",
       "path": "docs/publication/ci3_z3/INPUTS_AND_QUALIFIERS_NOTE.md",
       "runner_path": null,
       "title": "Inputs And Qualifiers"
@@ -105529,7 +105029,7 @@
       "claim_type_author_hint_raw": null,
       "claim_type_seed_hint": null,
       "deps": [
-        "publication.ci3_z3.arxiv_draft",
+        "repo.front_door_status",
         "minimal_axioms",
         "self_consistency_forces_poisson_note",
         "poisson_exhaustive_uniqueness_note",
@@ -105587,7 +105087,7 @@
         "three_generation_chirality_boundary_note",
         "site_phase_cube_shift_intertwiner_note",
         "s3_taste_cube_decomposition_note",
-        "s3_mass_matrix_no_go_note",
+        "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
         "z2_hw1_mass_matrix_parametrization_note",
         "cl3_sm_embedding_master_note",
         "cl3_sm_embedding_theorem",
@@ -105753,7 +105253,7 @@
         "koide_reviewer_stress_test_note_2026-04-21"
       ],
       "helper_runner_paths": [],
-      "note_hash": "59a7afd2f35d5bf3962e275c874cc4e05889bd4e9a4edeb755d7318e8c42524f",
+      "note_hash": "274a627d2f97472afe0d962667d69055506de69801c249680be7b13da0bb6e59",
       "path": "docs/publication/ci3_z3/PUBLICATION_MATRIX.md",
       "runner_path": null,
       "title": "Publication Matrix"
@@ -105851,38 +105351,13 @@
         "repo.front_door_status",
         "minimal_axioms",
         "publication.ci3_z3.arxiv_draft",
-        "publication.ci3_z3.falsifiable_predictions_2026-06-08",
-        "publication.ci3_z3.prediction_surface_2026-04-15",
-        "publication.ci3_z3.reproduce",
-        "publication.ci3_z3.science_map",
-        "publication.ci3_z3.inputs_and_qualifiers_note",
-        "publication.ci3_z3.what_this_paper_does_not_claim",
-        "publication.ci3_z3.publication_matrix",
-        "publication.ci3_z3.claims_table",
-        "publication.ci3_z3.derivation_validation_map",
-        "publication.ci3_z3.gravity_publication_package_summary_2026-04-15",
-        "publication.ci3_z3.quantitative_summary_table",
-        "publication.ci3_z3.usable_derived_values_index",
-        "lanes.open_science.01_hadron_mass_program_open_lane_2026-04-26",
-        "planck_scale_lane_status_note_2026-04-23",
-        "planck_scale_conditional_completion_note_2026-04-24",
-        "planck_source_unit_normalization_support_theorem_note_2026-04-25",
-        "planck_boundary_density_extension_theorem_note_2026-04-24",
-        "planck_finite_response_no_go_note_2026-04-24",
-        "planck_parent_source_hidden_character_no_go_note_2026-04-24",
-        "area_law_multipocket_selector_no_go_note_2026-04-25",
-        "planck_target3_clifford_phase_bridge_theorem_note_2026-04-25",
-        "publication.ci3_z3.release_environment",
-        "publication.ci3_z3.results_index",
-        "publication.ci3_z3.reproducibility_freeze_2026-04-14",
-        "single_axiom_information_note",
-        "single_axiom_hilbert_note"
+        "publication.ci3_z3.reproduce"
       ],
       "helper_runner_paths": [],
-      "note_hash": "7c4f2be145dd2693b00cc3e15750c531d2d46fb50de45e01d63a4d14c3f46b52",
+      "note_hash": "c2894acbd4d893d4b9037ec0963e6905acd68444f6c1b5d3237059e2ebe9eef6",
       "path": "docs/publication/ci3_z3/README.md",
       "runner_path": null,
-      "title": "Lattice-Qubit-Admissibility-Record Framework Publication Package"
+      "title": "Lattice-Qubit-Admissibility-Record Publication Review Surface"
     },
     "publication.ci3_z3.release_environment": {
       "claim_id": "publication.ci3_z3.release_environment",
@@ -105934,6 +105409,7 @@
         "publication.ci3_z3.publication_matrix",
         "publication.ci3_z3.full_claim_ledger",
         "publication.ci3_z3.reproduce",
+        "repo.front_door_status",
         "publication.ci3_z3.arxiv_draft",
         "minimal_axioms",
         "self_consistency_forces_poisson_note",
@@ -106001,7 +105477,7 @@
         "three_generation_chirality_boundary_note",
         "site_phase_cube_shift_intertwiner_note",
         "s3_taste_cube_decomposition_note",
-        "s3_mass_matrix_no_go_note",
+        "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
         "z2_hw1_mass_matrix_parametrization_note",
         "cl3_sm_embedding_master_note",
         "cl3_sm_embedding_theorem",
@@ -106271,7 +105747,7 @@
         "ckm_thales_pinned_alpha_s_independent_ratios_theorem_note_2026-04-25"
       ],
       "helper_runner_paths": [],
-      "note_hash": "df8e60d66f51ac20f35f6ae019b865a3a97edb0c277c2b31451a1ee14bc9d209",
+      "note_hash": "1dd94f73d20e43e811c02b59fdf0af2bfece2c754ab23c5626adb07a0a683a05",
       "path": "docs/publication/ci3_z3/RESULTS_INDEX.md",
       "runner_path": null,
       "title": "Results Index"
@@ -106452,7 +105928,7 @@
         "minimal_axioms"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bf9fd132c0901fd20b1838e2e3acfe8294bfaddfd3b91591dc17262cc06098a5",
+      "note_hash": "491a91c7cb62b075a5e0190876cde6e9be364553bec2fa190b1f07e96aab3d90",
       "path": "docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md",
       "runner_path": "scripts/pwc_commuting_cgf_framework_native_2026_06_17.py",
       "title": "PWC Derivation from the Standard Cumulant Generating Functional (Narrow)"
@@ -112176,7 +111652,7 @@
         "three_generation_observable_no_proper_quotient_narrow_theorem_note_2026-05-02"
       ],
       "helper_runner_paths": [],
-      "note_hash": "bcda9fbf9a0bff666794276cfd6cb517b8ca844f333c7e4223b26b1f34a7ce51",
+      "note_hash": "ee057a3e24e7a106b41e63a9d9c7e8edc650fd0ef90622e0e6fd76f6bc1e2bf0",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -112885,17 +112361,31 @@
       "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
       "title": "S^3 General-R \u2014 Finite-Radius Cap Certificate"
     },
-    "s3_mass_matrix_no_go_note": {
-      "claim_id": "s3_mass_matrix_no_go_note",
-      "claim_type_author_hint": null,
-      "claim_type_author_hint_raw": null,
+    "s3_mass_matrix_conditional_degeneracy_note_2026-07-11": {
+      "claim_id": "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
+      "claim_type_author_hint": "positive_theorem",
+      "claim_type_author_hint_raw": "positive_theorem",
       "claim_type_seed_hint": "positive_theorem",
       "deps": [],
       "helper_runner_paths": [],
-      "note_hash": "a3bed230d3411aeba5a561220e59a509492070d00c7089b0076a8eec3ddc87fb",
+      "note_hash": "c02adb4be1a11a19ee988fbdfffe5bf60eae8ca8a561b68d9138a6587fadb192",
+      "path": "docs/S3_MASS_MATRIX_CONDITIONAL_DEGENERACY_NOTE_2026-07-11.md",
+      "runner_path": "scripts/frontier_s3_mass_matrix_no_go.py",
+      "title": "S_3 Mass-Matrix Conditional Degeneracy Lemma"
+    },
+    "s3_mass_matrix_no_go_note": {
+      "claim_id": "s3_mass_matrix_no_go_note",
+      "claim_type_author_hint": "open_gate",
+      "claim_type_author_hint_raw": "open_gate",
+      "claim_type_seed_hint": "open_gate",
+      "deps": [
+        "s3_mass_matrix_conditional_degeneracy_note_2026-07-11"
+      ],
+      "helper_runner_paths": [],
+      "note_hash": "115ba5930d0c4b12e8efb567bb15d9ecb4df6e7e67621fb77bb568978016738e",
       "path": "docs/S3_MASS_MATRIX_NO_GO_NOTE.md",
       "runner_path": "scripts/frontier_s3_mass_matrix_no_go.py",
-      "title": "S_3 Mass-Matrix No-Go Note"
+      "title": "S_3 Mass-Matrix Physical-Carrier Open Gate"
     },
     "s3_route2_endpoint_triple_residual_map_bounded_note_2026-06-21": {
       "claim_id": "s3_route2_endpoint_triple_residual_map_bounded_note_2026-06-21",
@@ -128223,7 +127713,6 @@
     "beta6_plaquette_cumulant_moment_positivity_no_go_note_2026-05-30",
     "beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10",
     "beyond_lattice_qcd_note",
-    "bh_entropy_rt_ratio_widom_no_go_note",
     "bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10",
     "binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26",
     "block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02",
@@ -128869,7 +128358,6 @@
     "post_record_two_state_markov_stability_interface_2026-06-06",
     "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality",
     "primitive_p_bae_m1_trace_degeneracy_correction_note_2026-05-10",
-    "publication.ci3_z3.arxiv_draft",
     "publication.ci3_z3.release_environment",
     "publication.ci3_z3.reproducibility_freeze_2026-04-14",
     "publication_ci3_z3_claims_table_note_2026-05-17",
@@ -128919,7 +128407,7 @@
     "s1_rep_dimension_readoff_narrow_theorem_note_2026-05-10",
     "s3_boundary_link_theorem_note",
     "s3_endpoint_fiber_uniform_lift_support_2026-06-27",
-    "s3_mass_matrix_no_go_note",
+    "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
     "s3_taste_cube_decomposition_note",
     "scalar_3plus1_temporal_ratio_note",
     "scalar_kg_rerun_note_2026-04-10",
@@ -129196,27 +128684,27 @@
   "schema_version": 1,
   "stats": {
     "claim_type_author_hint_counts": {
-      "bounded_theorem": 1632,
+      "bounded_theorem": 1631,
       "decoration": 3,
       "meta": 333,
       "no_go": 336,
-      "none": 1205,
-      "open_gate": 135,
-      "positive_theorem": 283
+      "none": 1203,
+      "open_gate": 138,
+      "positive_theorem": 284
     },
     "claim_type_seed_hint_counts": {
-      "bounded_theorem": 2032,
+      "bounded_theorem": 2030,
       "decoration": 3,
       "meta": 333,
       "no_go": 439,
       "none": 248,
-      "open_gate": 209,
+      "open_gate": 212,
       "positive_theorem": 663
     },
-    "edge_count": 14551,
+    "edge_count": 14446,
     "leaf_count": 1334,
-    "node_count": 3927,
-    "root_count": 1116,
-    "runners_with_path": 3544
+    "node_count": 3928,
+    "root_count": 1114,
+    "runners_with_path": 3545
   }
 }

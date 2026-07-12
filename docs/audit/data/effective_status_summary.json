@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2054,
-    "decoration": 27,
+    "bounded_theorem": 2058,
+    "decoration": 20,
     "meta": 357,
-    "no_go": 473,
-    "open_gate": 196,
-    "positive_theorem": 648
+    "no_go": 472,
+    "open_gate": 199,
+    "positive_theorem": 650
   },
   "cycle_examples": [
     [
@@ -33,35 +33,26 @@
   ],
   "cycles_detected": 10,
   "effective_status_counts": {
-    "audit_in_progress": 34,
-    "audited_conditional": 105,
-    "audited_failed": 26,
-    "audited_numerical_match": 6,
-    "audited_renaming": 18,
-    "decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28": 1,
+    "audited_conditional": 21,
+    "audited_failed": 24,
+    "audited_numerical_match": 5,
+    "audited_renaming": 14,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
-    "decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10": 2,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": 1,
     "decoration_under_graph_first_su3_integration_note": 8,
     "decoration_under_koide_dweh_cyclic_compression_note_2026-04-18": 1,
-    "decoration_under_koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19": 1,
-    "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
-    "decoration_under_mirror_mutual_information_chokepoint_note": 1,
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
-    "decoration_under_plaquette_self_consistency_note": 1,
     "meta": 350,
-    "open_gate": 9,
-    "retained": 105,
-    "retained_bounded": 421,
-    "retained_no_go": 49,
-    "retained_pending_chain": 2,
-    "unaudited": 2609
+    "open_gate": 2,
+    "retained": 72,
+    "retained_bounded": 301,
+    "retained_pending_chain": 1,
+    "unaudited": 2952
   },
-  "retained_pending_chain_count": 2,
+  "retained_pending_chain_count": 1,
   "retained_pending_chain_examples": [
-    "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
-    "pre_record_reference_state_tracial_derivation_note_2026-05-20"
+    "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10"
   ]
 }

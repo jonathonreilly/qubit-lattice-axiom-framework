@@ -2499,10 +2499,10 @@
     "bh_entropy_derived_note": {
       "assert_count": 0,
       "counts": {
-        "A": 0,
+        "A": 1,
         "B": 0,
         "C": 16,
-        "D": 3
+        "D": 2
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -2511,7 +2511,7 @@
     "bh_entropy_rt_ratio_widom_no_go_note": {
       "assert_count": 1,
       "counts": {
-        "A": 0,
+        "A": 1,
         "B": 0,
         "C": 5,
         "D": 0
@@ -22794,7 +22794,7 @@
         "A": 3,
         "B": 0,
         "C": 0,
-        "D": 12
+        "D": 8
       },
       "decoration_candidate": false,
       "dominant_class": "D",
@@ -32496,12 +32496,24 @@
       "dominant_class": "B",
       "runner": "scripts/frontier_s3_cap_uniqueness.py"
     },
+    "s3_mass_matrix_conditional_degeneracy_note_2026-07-11": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 18,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "runner": "scripts/frontier_s3_mass_matrix_no_go.py"
+    },
     "s3_mass_matrix_no_go_note": {
       "assert_count": 1,
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 7,
+        "C": 18,
         "D": 0
       },
       "decoration_candidate": false,
@@ -53543,10 +53555,10 @@
         "bh_entropy_derived_note"
       ],
       "counts": {
-        "A": 0,
+        "A": 1,
         "B": 0,
         "C": 16,
-        "D": 3
+        "D": 2
       },
       "decoration_candidate": false,
       "dominant_class": "C",
@@ -53558,7 +53570,7 @@
         "bh_entropy_rt_ratio_widom_no_go_note"
       ],
       "counts": {
-        "A": 0,
+        "A": 1,
         "B": 0,
         "C": 5,
         "D": 0
@@ -68238,7 +68250,7 @@
         "A": 3,
         "B": 0,
         "C": 0,
-        "D": 12
+        "D": 8
       },
       "decoration_candidate": false,
       "dominant_class": "D",
@@ -75803,12 +75815,13 @@
     "scripts/frontier_s3_mass_matrix_no_go.py": {
       "assert_count": 1,
       "claims": [
+        "s3_mass_matrix_conditional_degeneracy_note_2026-07-11",
         "s3_mass_matrix_no_go_note"
       ],
       "counts": {
         "A": 0,
         "B": 0,
-        "C": 7,
+        "C": 18,
         "D": 0
       },
       "decoration_candidate": false,

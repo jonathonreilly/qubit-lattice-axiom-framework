@@ -3,7 +3,7 @@
     "critical": 650,
     "high": 335,
     "leaf": 1098,
-    "medium": 747
+    "medium": 746
   },
   "cycle_break_target_count": 49,
   "cycle_break_targets": [
@@ -30852,31 +30852,6 @@
       "ready": true,
       "runner_path": "scripts/structured_mirror_bornsafe_sliced_runner_2026_05_09.py",
       "transitive_descendants": 9
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "source_measure_sharp_record_tangent_space_theorem_note_2026-05-30",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "cross_confirmation_status": null,
-      "deps": [
-        "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06",
-        "source_measure_sharp_record_orthonormal_response_basis_narrow_theorem_note_2026-06-05"
-      ],
-      "direct_in_degree": 4,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 5.17,
-      "note_path": "docs/SOURCE_MEASURE_SHARP_RECORD_TANGENT_SPACE_THEOREM_NOTE_2026-05-30.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/frontier_source_measure_sharp_record_tangent_space.py",
-      "transitive_descendants": 8
     },
     {
       "audit_independence_required": "any_non_self",
@@ -80928,6 +80903,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 546,
-  "total_pending": 2830
+  "ready_count": 545,
+  "total_pending": 2829
 }

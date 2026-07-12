@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 100 |
 | **retained_no_go** | 41 |
-| **retained_bounded** | 410 |
+| **retained_bounded** | 411 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2669 |
+| unaudited | 2668 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 538 |
+| `audited_clean` | 539 |
 | `audited_conditional` | 88 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3019 |
+| `unaudited` | 3018 |
 
 | claim_type | count |
 |---|---:|
@@ -338,6 +338,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `fm_transfer_note` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `formation_rate_law_class_reduction_bounded_note_2026-07-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `fourth_family_quadrant_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | C | - |
+| `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `g_bare_constraint_vs_convention_restatement_abstract_identity_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
 | `g_bare_forced_by_ward_rep_b_independence_abstract_narrow_theorem_note_2026-05-10` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5.5 | A | - |
@@ -4581,6 +4582,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
   - `retained_EW_bare_coupling_bookkeeping_not_registered_one_hop_dependency`
   - `Cl3_to_SM_dimension_count_d_plus_1_d_plus_2_support_packet_not_registered_one_hop_dependency`
 - **auditor confidence:** high
+
+### `framework_bare_alpha_ratio_assumed_input_identity_support_note_2026-04-30`
+
+- **Note:** [`FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md`](../../docs/FRAMEWORK_BARE_ALPHA_RATIO_ASSUMED_INPUT_IDENTITY_SUPPORT_NOTE_2026-04-30.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Formal assumed-input algebra from H1-H4 and the displayed inverse-EM rule, yielding alpha_3/alpha_em = 2d+3 and the bookkeeping weak-angle identity (d+1)/(2d+3), including 9 and 4/9 at d=3; no physical coupling-normalization bridge is audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00298-framework_bare_alpha_ratio_a`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Under H1-H4 and the displayed inverse electromagnetic coupling rule, alpha_3(bare)/alpha_em(bare) = 2d + 3 and sin^2(theta_W)(bare) = (d + 1)/(2d + 3).  _(class `A`)_
+- **chain closes:** True — The displayed identities follow by exact rational algebra from the explicitly supplied formal hypotheses and inverse-coupling rule. Closure is limited to that formal implication and does not derive physical coupling inputs or phenomenology.
+- **rationale:** The load-bearing result is a genuine class-A implication over explicit formal inputs: reciprocation and addition give 1/g_em^2=2d+3, and direct substitution gives the ratio and weak-angle expressions. The runner performs exact Fraction arithmetic; its hard-coded expected fractions test the stated formal theorem rather than masquerading as a first-principles physical coupling computation. The two SU(5) comparator checks are ancillary and do not support the audited conclusion. This verdict certifies only the bounded formal identity, while the note correctly withholds any physical EW-normalization or low-energy claim.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `frozen_region_record_saturation_local_finality_boundary_influence_bounded_note_2026-07-03`
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_atomic_hydrogen_helium_probe.py
-runner_sha256: a00f965a332955609acf9032545bcdaf2aff3e9cbd6cfc35d05e274beb3ce0b7
-timeout_sec: 600
+runner_sha256: 2f8e12b1247c5653700c1eae9ee9390bc2cdebd044ce9bde2b869ec8200b7af0
+timeout_sec: 300
 exit_code: 0
-elapsed_sec: 183.30
+elapsed_sec: 51.60
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -44,5 +44,22 @@ This script uses STANDARD quantum mechanics with TEXTBOOK inputs.
 It does NOT use any Cl(3)-on-Z^3 framework input.
 See docs/ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md for scope and gap map.
 ==============================================================================
+
+==============================================================================
+SCOPE-NARROWING HYGIENE GATE (paired note)
+------------------------------------------------------------------------------
+  [PASS] hydrogen 1s eigenvalue -13.6036 eV within 0.01 eV of -13.6057 eV
+  [PASS] hydrogen worst |rel_err| 1.56e-04 < 2e-4 (supports the ~1e-4 bounded claim)
+  [PASS] helium optimal Z_eff 1.6875 == 27/16
+  [PASS] helium variational residual -0.0192 in [-0.021, -0.018] (supports the ~2% bounded claim)
+  [PASS] bounded-claims helium overclaim withdrawn (forbidden phrase absent)
+  [PASS] bounded claim 1 narrowed to the computed one-parameter variational benchmark
+  [PASS] dated downstream-hygiene line present (tag '2026-07-12' + marker 'scope-narrowing')
+  [PASS] sibling scaffold pins intact (missing=[])
+  [PASS] overclaim-absence gate discriminates (flips FAIL on a reverted note)
+  [PASS] narrowed-phrase gate discriminates (flips FAIL when the phrase is dropped)
+------------------------------------------------------------------------------
+TOTAL: PASS=10 FAIL=0
+
 ----- stderr -----
 

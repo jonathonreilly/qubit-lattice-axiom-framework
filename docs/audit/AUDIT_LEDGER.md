@@ -23,13 +23,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 415 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 9 |
-| unaudited | 2646 |
+| unaudited | 2645 |
 | audit_in_progress | 28 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
 | ~~audited_conditional~~ | 96 |
-| ~~audited_failed~~ | 21 |
+| ~~audited_failed~~ | 22 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10` | 2 |
@@ -49,19 +49,19 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | `audited_clean` | 546 |
 | `audited_conditional` | 96 |
 | `audited_decoration` | 21 |
-| `audited_failed` | 43 |
+| `audited_failed` | 44 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 2996 |
+| `unaudited` | 2995 |
 
 | claim_type | count |
 |---|---:|
 | `bounded_theorem` | 2055 |
 | `decoration` | 25 |
 | `meta` | 357 |
-| `no_go` | 471 |
+| `no_go` | 472 |
 | `open_gate` | 196 |
-| `positive_theorem` | 650 |
+| `positive_theorem` | 649 |
 
 | criticality | count |
 |---|---:|
@@ -850,6 +850,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `triage_no_promotion_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `unified_basin_freeze_note` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `wave_direct_dm_h025_fam3_seed1_control_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
+| `wave_retardation_lab_prediction_note` | no_go | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `work_history.repo.review_feedback.architecture_portability_audit_2026-04-11` | no_go | ~~audited_failed~~ | **retained_no_go** | cross_family | codex-gpt-5 | B | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.6 | G | - |
 | `distance_law_definitive_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.5 | G | - |
@@ -10658,6 +10659,25 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner constructs the field by an explicit local finite-difference update with a sinusoidal monopole source and computes the detector peaks, slope, DFT magnitudes, and null cases from the simulated histories. The clean result is bounded to that finite numerical experiment; it does not ratify the note's broader asymptotic or full-classical-wave framing.
 - **rationale:** The cached run completes with current output matching the note's peak table and slope -0.469; f=0.10 is the largest DFT magnitude at every listed detector; the f=0 reference peaks are zero; and the S0=0 beam null is exactly zero. The code computes these quantities from the finite-difference evolution rather than hard-coding the reported slope or detector amplitudes. Under hostile review this is a clean bounded theorem, not a positive theorem, because the evidence is for a fixed lattice size, finite time window, chosen source, offsets, and trial frequencies, and because no independent proof of the general far-field PDE asymptotic is in the restricted packet.
 - **auditor confidence:** high
+
+### `wave_retardation_lab_prediction_note`
+
+- **Note:** [`WAVE_RETARDATION_LAB_PREDICTION_NOTE.md`](../../docs/WAVE_RETARDATION_LAB_PREDICTION_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Whether the supplied runner, helper, and cached outputs establish that the two finite sweeps block a clean single-v/c lab-scaling card.
+- **audit_status:** ~~audited_failed~~
+- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T130312Z-96c5c841-00083-wave_retardation_lab_predict`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The two velocity sweeps show that the M − I gap is configuration-dependent and non-monotonic in v/c, so no simple v/c power law supports a lab extrapolation.  _(class `C`)_
+- **chain closes:** False — The primary cache is incompatible with the supplied helper implementation, and the advertised trajectory-fixed sweep does not actually hold the trajectory fixed. A cache-coherent rerun with correctly clamped motion and controlled timing parameters is missing.
+- **rationale:** At v/c = 0.30 the primary cached first sweep reports dI = +0.011242, while the helper cache reports dI = +0.007294 for the same NL, family, source onset, motion law, and instantaneous-field implementation; the identical dM values make this a substantive stale-helper/cache mismatch. More seriously, sweep 2 sets NL from n_active, then recomputes src_layer as NL // 3 and leaves the source velocity unclamped through the remaining layers, so the source does not consistently traverse 6 → 0: for example n_active = 60 gives NL = 74 and only about 50 post-onset layers. Consequently the non-monotonic table is not evidence from the claimed trajectory-fixed experiment, although the code inspection does support the narrower warning that the present harness is confounded.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1 contains open and untested controlled-harness, continuum-limit, observable, and normalization routes.
+    - N5 finds universal no-power-law and unaffected-upstream rhetoric beyond the tested resolutions.
+    - The primary cache is inconsistent with the supplied helper cache and implementation.
+    - The nominal trajectory-fixed sweep does not fix the actual source trajectory.
 
 ### `wave_static_boundary_sensitivity_note`
 

@@ -28,7 +28,7 @@ This cycle synthesizes:
    `η/η_obs|_A = (516/53009) · Y₀² · F_CP · κ_axiom = 0.18879...`,
    from
    [`ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md`](ETA_188_STRUCTURAL_ORIGIN_PARTIAL_NOTE_2026-05-03.md).
-2. **the four candidate Branch-B selectors**:
+2. **the four supplied Branch-B candidate objectives/constructions**:
    - **min-info**: `D_KL(x||x_seed) + D_KL(y||y_seed) + (1 - cos δ)`
    - **observable-relative-action**: `Tr(H_seed^{-1} H_e) -
      log det(H_seed^{-1} H_e) - 3`
@@ -79,7 +79,8 @@ the already-named Y₀² and α_LM imports.
   `δ → -δ`.
 - (A4, support-grade) Four candidate Branch-B selectors:
   - [`DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)
-  - [`DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md)
+  - [`DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md`](DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md)
+    (conditional candidate objective, not physical selector authority)
   - [`DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md)
   - [`DM_LEPTOGENESIS_PMNS_CONSTRUCTIVE_CONTINUITY_CLOSURE_THEOREM_NOTE_2026-04-17.md`](DM_LEPTOGENESIS_PMNS_CONSTRUCTIVE_CONTINUITY_CLOSURE_THEOREM_NOTE_2026-04-17.md)
 - (A5, historical/exact transport provenance)
@@ -102,8 +103,8 @@ the already-named Y₀² and α_LM imports.
   this as cycle 18 already noted.
 - α_LM mass scale: named obstruction inherited from cycle 09 O3.
   **Not a new derivation input.**
-- Cycle 18's `(516/53009) · Y₀² · F_CP · κ_axiom` decomposition is
-  admitted as prior-cycle output, not re-derived here.
+- Cycle 18's `(516/53009) · Y₀² · F_CP · κ_axiom` decomposition is a
+  supplied conditional dependency, not re-derived here.
 
 ## The two branches
 
@@ -329,8 +330,8 @@ verifies:
   (exact obstruction theorem on open gate; effective status pipeline-derived).
 - (A4a) [`DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_MINIMUM_INFORMATION_SOURCE_LAW_NOTE_2026-04-16.md)
   (support-grade).
-- (A4b) [`DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md)
-  (support-grade).
+- (A4b) [`DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md`](DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md)
+  (conditional candidate calculation).
 - (A4c) [`DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_TRANSPORT_EXTREMAL_SOURCE_CANDIDATE_NOTE_2026-04-16.md)
   (support-grade).
 - (A4d) [`DM_LEPTOGENESIS_PMNS_CONSTRUCTIVE_CONTINUITY_CLOSURE_THEOREM_NOTE_2026-04-17.md`](DM_LEPTOGENESIS_PMNS_CONSTRUCTIVE_CONTINUITY_CLOSURE_THEOREM_NOTE_2026-04-17.md)

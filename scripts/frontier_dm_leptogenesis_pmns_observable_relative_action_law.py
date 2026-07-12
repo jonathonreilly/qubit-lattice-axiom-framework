@@ -3,11 +3,11 @@
 DM leptogenesis PMNS observable-relative-action source law.
 
 Framework convention:
-  "axiom" means only the single framework axiom Cl(3) on Z^3.
+  The current foundation is Lattice, Qubit, Admissibility, and Record.
 
 Purpose:
-  Carry the operational PMNS-assisted off-seed source selector and produce
-  the explicit numerical source on the current refreshed DM branch.
+  Carry the conditional PMNS-assisted off-seed source calculation and produce
+  the explicit numerical source returned when its selector law is supplied.
 
   This is a *support runner* for the sister-theorem note
   DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16,
@@ -15,22 +15,22 @@ Purpose:
 
     S_rel(H_e || H_seed) = Tr(H_seed^{-1} H_e) - log det(H_seed^{-1} H_e) - 3
 
-  is the *exact Legendre-dual effective action* of the baseline-framework scalar
-  observable generator W(K) = log det(I + K), so that constrained
-  minimization of S_rel is the native effective-action selector rather
-  than a free postulate.
+  is the exact Legendre dual of the supplied scalar generator
+  W(K) = log det(I + K).  Legendre duality defines the functional but does not
+  derive a physical minimization law.  The exact independence boundary is in
+  frontier_dm_leptogenesis_pmns_relative_action_selector_independence.py.
 
   To keep the derivation chain visible from this support runner alone,
   Part 0 re-exercises the Legendre-dual identity locally before Parts 1-3
   produce the operational source.
 
-Operational law (restated):
-  1. keep the already-derived native N_e seed pair (xbar, ybar) fixed
-  2. determine the favored closure column i_* from the exact transport-extremal
+Conditional operational law (supplied, not derived here):
+  1. keep the supplied N_e seed pair (xbar, ybar) fixed
+  2. determine the favored closure column i_* from the imported transport-extremal
      class
   3. among all positive off-seed sources on that fixed seed surface satisfying
        eta_{i_*} / eta_obs = 1,
-     choose the one minimizing the exact observable-principle relative action
+     choose the one minimizing the supplied relative-action objective
 
        S_rel(H_e || H_seed)
          = Tr(H_seed^{-1} H_e) - log det(H_seed^{-1} H_e) - 3.
@@ -146,8 +146,8 @@ def fmt(v: np.ndarray) -> str:
 def part0_relative_action_is_the_exact_legendre_dual_effective_action() -> None:
     """Local re-derivation: S_rel(Y) = sup_K [ log det(I+K) - Tr(K Y) ].
 
-    The seed-relative bosonic action is the exact Legendre-dual effective
-    action of the baseline-framework scalar observable generator W(K)=log det(I+K).
+    The seed-relative bosonic action is the exact Legendre dual of the supplied
+    scalar generator W(K)=log det(I+K).
     The unique dual maximizer is K_* = Y^{-1} - I.
 
     This part demonstrates that fact directly inside the support runner so
@@ -207,7 +207,7 @@ def part0_relative_action_is_the_exact_legendre_dual_effective_action() -> None:
         hess_samples.append(-float(np.trace(yinv @ v @ yinv @ v).real))
 
     check(
-        "S_rel equals the Legendre dual of the baseline-framework log|det| generator at K_* = Y^{-1} - I",
+        "S_rel equals the Legendre dual of the supplied log|det| generator at K_* = Y^{-1} - I",
         abs(dual_val - s_rel) < 1e-12,
         f"S_rel={s_rel:.12f}, dual={dual_val:.12f}",
     )
@@ -226,13 +226,12 @@ def part0_relative_action_is_the_exact_legendre_dual_effective_action() -> None:
     print("  Effective-action identity (Legendre dual of W(K) = log det(I+K)):")
     print("    S_rel(Y) = sup_K [ log det(I+K) - Tr(K Y) ],   K_* = Y^{-1} - I")
     print(f"  Y = H_seed^(-1/2) H_e H_seed^(-1/2),  S_rel = {s_rel:.12f}")
-    print("  Full proof + bounded-uniqueness: see")
-    print("    docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16.md")
+    print("  This algebra does not derive the supplied physical minimization law.")
 
 
 def part1_transport_extremality_still_fixes_the_favored_column() -> tuple[int, np.ndarray]:
     print("\n" + "=" * 88)
-    print("PART 1: TRANSPORT EXTREMALITY FIXES THE FAVORED COLUMN")
+    print("PART 1: IMPORTED TRANSPORT EXTREMALITY CHOOSES A FAVORED COLUMN")
     print("=" * 88)
 
     result = differential_evolution(
@@ -255,12 +254,12 @@ def part1_transport_extremality_still_fixes_the_favored_column() -> tuple[int, n
     best_idx = int(np.argmax(etas_opt))
 
     check(
-        "The transport-extremal class stays on the exact fixed native seed surface",
+        "The imported extremal calculation stays on the supplied fixed seed parameterization",
         abs(np.mean(x_opt) - XBAR_NE) < 1e-12 and abs(np.mean(y_opt) - YBAR_NE) < 1e-12,
         f"(xbar,ybar)=({np.mean(x_opt):.6f},{np.mean(y_opt):.6f})",
     )
     check(
-        "The favored closure column is fixed by the exact extremal class",
+        "The imported extremal calculation returns favored column 0",
         best_idx == 0,
         f"etas={np.round(etas_opt, 6)}",
     )
@@ -273,7 +272,7 @@ def part1_transport_extremality_still_fixes_the_favored_column() -> tuple[int, n
 
 def part2_observable_relative_action_law(i_star: int, extremal_params: np.ndarray) -> tuple[np.ndarray, np.ndarray, float, np.ndarray, np.ndarray]:
     print("\n" + "=" * 88)
-    print("PART 2: THE OBSERVABLE-RELATIVE-ACTION LAW")
+    print("PART 2: THE SUPPLIED OBSERVABLE-RELATIVE-ACTION RULE")
     print("=" * 88)
 
     def eta_i(params: np.ndarray) -> float:
@@ -310,17 +309,17 @@ def part2_observable_relative_action_law(i_star: int, extremal_params: np.ndarra
     best_idx = int(np.argmax(etas_sel))
 
     check(
-        "The relative-action source stays on the exact fixed seed surface",
+        "The relative-action source stays on the supplied fixed seed parameterization",
         abs(np.mean(x_sel) - XBAR_NE) < 1e-12 and abs(np.mean(y_sel) - YBAR_NE) < 1e-12,
         f"(xbar,ybar)=({np.mean(x_sel):.6f},{np.mean(y_sel):.6f})",
     )
     check(
-        "The law closes eta exactly on the favored column",
+        "The supplied rule meets the observed-closure constraint on the favored column",
         abs(etas_sel[i_star] - 1.0) < 1e-12,
         f"etas={np.round(etas_sel, 12)}",
     )
     check(
-        "The observable-relative-action selector remains genuinely off-seed",
+        "The conditional relative-action solution is genuinely off-seed",
         np.linalg.norm(xi) > 1e-6 and np.linalg.norm(eta) > 1e-6,
         f"xi={fmt(xi)}, eta={fmt(eta)}",
     )
@@ -348,26 +347,23 @@ def part2_observable_relative_action_law(i_star: int, extremal_params: np.ndarra
     return x_sel, y_sel, delta_sel, packet_sel, etas_sel
 
 
-def part3_bottom_line() -> None:
+def part3_boundary() -> None:
     print("\n" + "=" * 88)
-    print("PART 3: BOTTOM LINE")
+    print("PART 3: CLAIM BOUNDARY")
     print("=" * 88)
 
+    seed_h, _seed_packet, seed_etas = eta_columns_from_active(X_SEED, Y_SEED, 0.0)
     check(
-        "The off-seed selector is the native effective-action selector of the exact observable principle",
-        True,
-        "S_rel is the Legendre dual of W(K)=log det(I+K) [Part 0]; minimization is its native rule",
+        "The unconstrained relative-action minimum is the seed",
+        abs(relative_action_h(seed_h)) < 1e-14,
+        f"S_rel(seed)={relative_action_h(seed_h):.3e}",
     )
     check(
-        "The operational law inherits the sister theorem's bounded uniqueness on the current closure patch",
-        True,
-        "see DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16",
+        "The supplied observed-closure condition excludes that source-free minimum on column 0",
+        abs(seed_etas[0] - 1.0) > 1e-2,
+        f"eta/eta_obs(seed)={np.round(seed_etas, 12)}",
     )
-    check(
-        "What remains beyond this support note is only a future branch-global analytic uniqueness proof",
-        True,
-        "the selector principle itself is no longer an external import on the current branch",
-    )
+    print("  The physical minimization law remains a supplied condition for this calculator.")
 
 
 def main() -> int:
@@ -376,33 +372,32 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Framework convention:")
-    print('  "axiom" means only Cl(3) on Z^3.')
+    print("  The current foundation is Lattice, Qubit, Admissibility, and Record.")
     print()
-    print("Law:")
-    print("  On the fixed native N_e seed surface, minimize")
+    print("Conditional law:")
+    print("  On the supplied fixed N_e seed parameterization, minimize")
     print("    S_rel(H_e||H_seed) = Tr(H_seed^{-1} H_e) - log det(H_seed^{-1} H_e) - 3")
-    print("  subject to exact closure on the transport-favored column.")
+    print("  subject to the supplied observed-closure condition on the favored column.")
     print()
-    print("Derivation chain (carried into Part 0 of this runner):")
+    print("Exact algebra and boundary (carried into Part 0 of this runner):")
     print("  S_rel(Y) = sup_K [ log det(I+K) - Tr(K Y) ]  (Legendre dual)")
-    print("  => the minimization rule is the native effective-action selector")
-    print("     attached to the baseline-framework observable generator W(K)=log det(I+K)")
-    print("  (full theorem: DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16)")
+    print("  This identity defines S_rel; it does not derive a physical argmin law.")
+    print("  Exact no-go: DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16")
 
     part0_relative_action_is_the_exact_legendre_dual_effective_action()
     i_star, extremal_params = part1_transport_extremality_still_fixes_the_favored_column()
     part2_observable_relative_action_law(i_star, extremal_params)
-    part3_bottom_line()
+    part3_boundary()
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Observable-principle selector:")
-    print("    - selector objective derived: S_rel is the Legendre-dual effective")
-    print("      action of W(K)=log det(I+K)  [Part 0]")
-    print("    - favored column fixed by exact transport extremality  [Part 1]")
-    print("    - off-seed source fixed by minimum relative bosonic action  [Part 2]")
-    print("    - exact eta/eta_obs = 1 on the current PMNS-assisted N_e branch")
+    print("  Conditional calculator result:")
+    print("    - S_rel is the Legendre dual of supplied W(K)=log det(I+K)  [Part 0]")
+    print("    - the imported transport extremal fixes a favored column  [Part 1]")
+    print("    - the supplied argmin law returns an off-seed source  [Part 2]")
+    print("    - the supplied observed-closure constraint is met on that source")
+    print("  This is not a derivation of the physical selector law or eta_obs.")
     print()
     print(f"PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     return 1 if FAIL_COUNT else 0

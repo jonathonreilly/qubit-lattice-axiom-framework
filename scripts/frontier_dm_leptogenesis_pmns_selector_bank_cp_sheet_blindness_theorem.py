@@ -3,17 +3,17 @@
 DM leptogenesis PMNS selector-bank CP-sheet blindness theorem.
 
 Question:
-  Do any of the current PMNS-side selector laws or positive closure candidates
+  Do any of the current PMNS-side candidate objectives or closure constructions
   on this branch already fix the constructive mainline CP sheet?
 
 Answer:
   No.
 
-  Every current PMNS-side selector objective on this branch is even under
-  delta -> -delta, while gamma is odd and E1, E2 are even. So every current
-  selector/candidate comes with an equally selected opposite-CP partner.
+  Every supplied PMNS-side candidate objective checked here is even under
+  delta -> -delta, while gamma is odd and E1, E2 are even. So every checked
+  candidate comes with an equally selected opposite-CP partner.
 
-  Therefore the current PMNS selector bank is transport-constructive but still
+  Therefore this supplied candidate bank is transport-constructive but still
   CP-sheet blind.
 """
 
@@ -77,9 +77,9 @@ def bank_readout(x: np.ndarray, y: np.ndarray, delta: float) -> dict[str, float]
     }
 
 
-def part1_current_exact_closure_laws_are_cp_sheet_blind() -> None:
+def part1_supplied_closure_candidates_are_cp_sheet_blind() -> None:
     print("\n" + "=" * 88)
-    print("PART 1: CURRENT EXACT CLOSURE LAWS ARE CP-SHEET BLIND")
+    print("PART 1: SUPPLIED CLOSURE CANDIDATES ARE CP-SHEET BLIND")
     print("=" * 88)
 
     i_star, extremal_params = quiet_call(minlaw.part1_transport_extremality_fixes_the_favored_column)
@@ -115,7 +115,7 @@ def part1_current_exact_closure_laws_are_cp_sheet_blind() -> None:
         f"rep=(gamma,E1,E2)=({min_read['gamma']:.3e},{min_read['E1']:.6f},{min_read['E2']:.6f})",
     )
     check(
-        "The observable-relative-action closure law also keeps exact closure and relative action under delta -> -delta",
+        "The conditional observable-relative-action calculation keeps closure and relative action under delta -> -delta",
         abs(etas_rel[0] - 1.0) < 1e-10
         and abs(etas_rel_flip[0] - 1.0) < 1e-10
         and abs(s_rel - s_rel_flip) < 1e-12,
@@ -190,21 +190,8 @@ def part3_no_current_pmns_selector_law_constructively_fixes_the_mainline_cp_shee
     print("PART 3: NO CURRENT PMNS SELECTOR LAW FIXES THE MAINLINE CP SHEET")
     print("=" * 88)
 
-    check(
-        "Current PMNS-side selector laws are already strong enough to construct transport closure or overshoot",
-        True,
-        "eta = 1 and eta > 1 are already realized on the fixed native seed surface",
-    )
-    check(
-        "But none of those current laws constructively fixes the source-oriented mainline CP sheet",
-        True,
-        "their objectives are delta-even and therefore CP-sheet blind",
-    )
-    check(
-        "So the remaining PMNS-side baryogenesis problem is a D_- / dW_e^H sign-law problem, not a transport-existence problem",
-        True,
-        "the open gate is constructive CP-sheet selection on the projected source pack",
-    )
+    print("  The supplied candidate objectives produce closure/overshoot examples.")
+    print("  Their delta-evenness leaves the CP-sheet selector open.")
 
 
 def part4_the_theorem_note_records_the_selector_bank_boundary() -> None:
@@ -230,10 +217,10 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Question:")
-    print("  Do any of the current PMNS-side selector laws or positive closure")
+    print("  Do any of the current PMNS-side candidate objectives or closure")
     print("  candidates on this branch already fix the constructive mainline CP sheet?")
 
-    part1_current_exact_closure_laws_are_cp_sheet_blind()
+    part1_supplied_closure_candidates_are_cp_sheet_blind()
     part2_transport_positive_candidates_are_still_cp_sheet_blind()
     part3_no_current_pmns_selector_law_constructively_fixes_the_mainline_cp_sheet()
     part4_the_theorem_note_records_the_selector_bank_boundary()
@@ -242,8 +229,8 @@ def main() -> int:
     print("RESULT")
     print("=" * 88)
     print("  Exact selector-bank answer:")
-    print("    - current PMNS-side selector laws already construct eta closure or overshoot")
-    print("    - but every current selector objective is delta-even and hence CP-sheet blind")
+    print("    - supplied PMNS-side candidates construct eta closure or overshoot")
+    print("    - every checked candidate objective is delta-even and CP-sheet blind")
     print("    - so none yet gives a constructive mainline baryogenesis witness")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

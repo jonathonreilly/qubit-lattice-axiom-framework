@@ -3,15 +3,15 @@
 DM selector relative-action / recovered-branch separation support theorem.
 
 Question:
-  Does the strongest current framework-internal selector law on the fixed
-  native N_e seed surface already collapse to the recovered selector branch and
-  its canonical threshold candidate?
+  Does the supplied relative-action candidate on the fixed N_e seed
+  parameterization coincide with the recovered selector branch and its
+  canonical threshold candidate?
 
 Answer:
   No.
 
-  The observable-relative-action law still selects an exact eta/eta_obs = 1
-  source on the fixed seed surface, but that source:
+  The conditional calculator returns an eta/eta_obs = 1 source on the supplied
+  seed parameterization, but that source:
 
   - does not coincide with any recovered-bank point,
   - does not coincide with any recovered active target,
@@ -19,7 +19,7 @@ Answer:
   - and instead carries its own later intrinsic breakpoint tau_b,rel.
 
   So the remaining selector burden is sharper than “derive minimal relative
-  action.” The live theorem object must bridge that exact internal selector law
+  action.” A future theorem must derive and bridge that candidate
   to the recovered right-sensitive selector branch, or replace it with a finer
   microscopic law.
 """
@@ -130,9 +130,9 @@ def main() -> int:
     print("DM SELECTOR RELATIVE-ACTION / RECOVERED-BRANCH SEPARATION SUPPORT THEOREM")
     print("=" * 88)
 
-    rel_note = read("docs/DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md")
+    rel_note = read("docs/DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md")
+    own_note = read("docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_BRANCH_SEPARATION_SUPPORT_THEOREM_NOTE_2026-04-21.md")
     thresh_note = read("docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md")
-    review = read("docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md")
 
     i_star, x_sel, y_sel, delta_sel, h_sel, etas_sel = observable_relative_action_selection()
     _lifts, hs_bank, repairs_bank, targets = recovered_bank()
@@ -157,15 +157,15 @@ def main() -> int:
     v_sel_bsel = float(witness_volume_from_atomic_field(params_sel, tau_b_sel))
 
     print("\n" + "=" * 88)
-    print("PART 1: THE RELATIVE-ACTION SOURCE IS THE STRONGEST CURRENT INTERNAL SELECTOR")
+    print("PART 1: THE RELATIVE-ACTION SOURCE IS A SUPPLIED SELECTOR CANDIDATE")
     print("=" * 88)
 
     check(
-        "The existing note still records the observable-relative-action law as the strongest framework-internal selector currently available",
-        "strongest framework-internal selector currently available" in rel_note,
+        "The conditional note records the objective as supplied rather than physically derived",
+        "supplied law" in rel_note and "not a framework derivation" in rel_note,
     )
     check(
-        "The reconstructed source stays on the exact fixed native seed surface",
+        "The reconstructed source stays on the supplied fixed seed parameterization",
         abs(np.mean(x_sel) - XBAR_NE) < 1.0e-12 and abs(np.mean(y_sel) - YBAR_NE) < 1.0e-12,
         f"(xbar,ybar)=({np.mean(x_sel):.6f},{np.mean(y_sel):.6f})",
     )
@@ -190,7 +190,7 @@ def main() -> int:
         f"min target distance = {float(np.min(target_distances)):.12f}",
     )
     check(
-        "The nearest recovered point is the preferred lift, but the gap is still macroscopically nonzero on the audited scale",
+        "The nearest recovered point is the preferred lift, but the gap is still macroscopically nonzero on the checked scale",
         int(np.argmin(h_distances)) == 0 and float(np.min(h_distances)) > 1.0,
         f"nearest recovered index = {int(np.argmin(h_distances))}",
     )
@@ -230,31 +230,26 @@ def main() -> int:
     print("=" * 88)
 
     check(
-        "The review register still names the finer right-sensitive microscopic selector law as open",
-        "finer right-sensitive microscopic selector law" in review
-        or "finer right-sensitive microscopic point-selection law" in review,
+        "The support note leaves the physical bridge open",
+        "derive and bridge the supplied observable-relative-action candidate" in own_note
+        and "support theorem, not closure" in own_note.lower(),
     )
     check(
-        "So the remaining selector burden is not just to force minimal relative action abstractly",
-        True,
-        "the current internal selector and the recovered-bank threshold candidate are distinct exact selector objects",
-    )
-    check(
-        "What remains is a bridge from the internal selector law to the recovered right-sensitive selector branch, or a finer replacement law",
-        True,
-        "support narrowing only",
+        "The relative-action and recovered-bank candidates are distinct on the checked packet",
+        float(np.min(h_distances)) > 1.0e-3 and float(np.min(target_distances)) > 1.0e-3,
+        "conditional support narrowing only",
     )
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  The strongest current framework-internal selector law does not yet")
+    print("  The supplied relative-action candidate does not")
     print("  collapse to the recovered selector branch.")
     print("  Its exact source stays off the recovered bank, carries its own later")
     print("  intrinsic breakpoint, and is not selected by the recovered-bank")
     print("  canonical breakpoint tau_b,min.")
     print("  So the remaining microscopic selector burden is now sharper:")
-    print("    bridge the exact internal selector law to the recovered")
+    print("    derive and bridge the supplied candidate to the recovered")
     print("    right-sensitive selector branch, or replace it with a finer law.")
     print()
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

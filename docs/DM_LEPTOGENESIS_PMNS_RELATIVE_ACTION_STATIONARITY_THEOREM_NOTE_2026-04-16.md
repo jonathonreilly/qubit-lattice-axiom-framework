@@ -19,12 +19,13 @@ behaving as named. The note **does NOT** independently retain those
 helper imports or derive the underlying W_rel/H_seed/eta/favored-
 column structure from `Cl(3)` on `Z^3`. The audit verdict's repair
 sub-target ("include scripts/.../observable_relative_action_law.py
-and the retained theorem deriving W_rel, H_seed, eta, and
-favored-column closure from Cl(3), then re-audit") remains separate
+and a theorem deriving W_rel, H_seed, eta, and favored-column closure
+from the foundation, then re-audit") remains separate
 open work.
 **Status authority:** independent audit lane only.
 **Script:** `scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theorem.py`
-**Framework convention:** “axiom” means only `Cl(3)` on `Z^3`
+**Framework convention:** the current foundation is Lattice, Qubit,
+Admissibility, and Record.
 
 ## Question
 
@@ -34,11 +35,11 @@ extra postulate?
 
 More sharply:
 
-- the exact observable principle already gives the scalar generator
+- the conditional packet supplies the scalar generator
   `W = log|det(D+J)| - log|det D|`
-- the fixed native `N_e` seed pair is already derived
-- the favored closure column is already fixed on the current branch
-- exact closure is reached by minimizing
+- the fixed `N_e` seed pair is supplied by the helper packet
+- the favored closure column is returned by the imported transport calculation
+- observed closure is reached conditionally by minimizing
 
 `S_rel(H_e || H_seed) = Tr(H_seed^{-1} H_e) - log det(H_seed^{-1} H_e) - 3`
 
@@ -47,15 +48,12 @@ an extra selector ansatz.
 
 ## Bottom line
 
-On the current branch, no.
+The positive-cone Legendre identity is exact once its log-det generator is
+supplied. It defines `S_rel`; it does not derive a physical rule that selects
+the constrained minimum. The exact independence boundary is proved in
+[`DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md`](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md).
 
-The seed-relative bosonic action is the exact Legendre-dual effective action
-of the sole-axiom scalar observable generator on the positive charged block.
-So constrained minimization of `S_rel` is not an imported information
-principle. It is the native effective-action selector attached to the exact
-observable grammar.
-
-On the fixed `N_e` seed surface and the already-derived favored closure column,
+On the supplied fixed `N_e` seed surface and imported favored closure column,
 sampled constrained solves expose more than one stationary branch, but only one
 branch is the unique lowest-action closure branch among all sampled feasible
 starts. That branch is a strict local minimum under sampled near-exact
@@ -84,31 +82,28 @@ with unique maximizer
 
 `K_* = Y^(-1) - I`.
 
-So `S_rel` is the exact Legendre dual / effective action of the sole-axiom
-observable generator on the positive charged block.
-
-This is the key closure step. The selector objective is no longer a separate
-principle. It is the effective action already implied by the exact source
-generator.
+So `S_rel` is the exact Legendre dual of the supplied generator on the positive
+charged block. This closes the algebraic identity only. The selector objective
+and its physical minimization remain separate supplied conditions.
 
 ## Closure-surface stationarity
 
 On the refreshed DM branch:
 
-1. the fixed native charged seed surface is exact
-2. the favored closure column on that surface is fixed by the exact transport
-   extremal class
-3. the flavored closure condition is exact:
+1. the fixed charged seed parameterization is supplied
+2. the favored closure column is returned by the imported transport-extremal
+   calculation
+3. the flavored observed-closure condition is supplied:
 
 `eta_{i_*}(H_e) / eta_obs = 1`
 
-The selected PMNS-assisted closure source is then the constrained minimum of
-the effective action:
+Given the supplied minimum-action law, its conditional PMNS-assisted closure
+source satisfies:
 
 `delta[ S_rel(H_e || H_seed) - lambda (eta_{i_*}(H_e)/eta_obs - 1) ] = 0`,
 
-with the physically selected branch being the **lowest-action** solution of
-this equation.
+with the calculator choosing the lowest-action sampled solution of this
+equation. The word “physical” is not implied by the KKT equation.
 
 The script verifies:
 
@@ -143,7 +138,7 @@ Provenance: copied verbatim from
 at branch `physics-loop/audited-cond-dm-lepto-pmns-action-2026-05-18`,
 2026-05-18.
 
-### H_seed (fixed native N_e seed matrix)
+### H_seed (supplied fixed N_e seed matrix)
 
 ```python
 from frontier_dm_leptogenesis_pmns_projector_interface import canonical_h
@@ -275,25 +270,15 @@ So the old exact one-flavor miss
 
 - `eta_obs / eta = 5.297004933778`
 
-is gone on this PMNS-assisted route. The selector is now tied to the exact
-observable grammar itself.
+is removed inside the supplied observed-closure calculation. This is not a
+prediction of `eta_obs` and not a derivation of the selector.
 
 ## What this closes
 
-This closes the “is the minimization rule extra?” loophole on the current
-branch.
-
-The current branch now has:
-
-- exact scalar observable generator from `Cl(3)` on `Z^3`
-- exact seed-relative effective action on the charged block
-- exact closure surface
-- constrained effective-action selector on that surface
-
-So the selector principle is no longer a free import. The exact law is:
-
-> choose the lowest-action closure branch of the exact seed-relative effective
-> action.
+This closes the positive-cone dual identity and records sampled conditional
+stationarity/local-minimum evidence. It does not close the selector principle:
+“choose the lowest-action closure branch” remains the supplied law tested by
+the numerical parts.
 
 ## What this does not claim
 
@@ -302,13 +287,14 @@ This note does **not** claim:
 1. a branch-global analytic proof that no second disconnected closure component
    exists anywhere else on the full seed surface
 2. a full PMNS microscopic solve beyond the current branch
+3. a framework derivation of the physical minimum-action selector
 
 The current theorem is:
 
-- exact at the effective-action reduction level
+- exact at the Legendre-dual algebra level
 - branch-exact at the closure equation level
-- uniqueness of the lowest-action branch / local-minimum verified directly on
-  the current closure patch
+- sampled lowest-action branch / local-minimum evidence on the conditional
+  closure patch
 
 ## Command
 
@@ -320,16 +306,11 @@ python3 scripts/frontier_dm_leptogenesis_pmns_relative_action_stationarity_theor
 
 This graph-bookkeeping section records explicit dependency links named by a prior conditional audit so the audit citation graph can track them. It does not promote this note or change the audited claim scope.
 
-- `dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16`
-  (see-also cross-reference; backticked to break cycle-0010 in the citation
-  graph. The observable-relative-action-law note's own Status line
-  ("support - structural / confirmatory support note attached to the
-  already-landed DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_STATIONARITY_THEOREM_NOTE_2026-04-16")
-  records the present theorem as its load-bearing upstream; the citation
-  direction is *observable_relative_action_law → this_stationarity_theorem*,
-  not vice versa.)
-- `dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16`
-  (see-also; backticked to break cycle-0010)
+- [dm_leptogenesis_pmns_observable_relative_action_law_note_2026-04-16](DM_LEPTOGENESIS_PMNS_OBSERVABLE_RELATIVE_ACTION_LAW_NOTE_2026-04-16.md)
+  (exact selector-independence boundary; negative dependency, not positive
+  selector authority)
+- [dm_leptogenesis_pmns_relative_action_conditional_calculator_note_2026-07-12](DM_LEPTOGENESIS_PMNS_RELATIVE_ACTION_CONDITIONAL_CALCULATOR_NOTE_2026-07-12.md)
+  (conditional numerical helper and supplied objective)
 - [dm_leptogenesis_pmns_projector_interface_note_2026-04-16](DM_LEPTOGENESIS_PMNS_PROJECTOR_INTERFACE_NOTE_2026-04-16.md)
 - [dm_leptogenesis_pmns_active_projector_reduction_note_2026-04-16](DM_LEPTOGENESIS_PMNS_ACTIVE_PROJECTOR_REDUCTION_NOTE_2026-04-16.md)
 - [dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16](DM_LEPTOGENESIS_FLAVOR_COLUMN_FUNCTIONAL_THEOREM_NOTE_2026-04-16.md)

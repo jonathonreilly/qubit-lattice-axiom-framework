@@ -3,7 +3,7 @@
 DM leptogenesis PMNS minimal A13 sheet-selector theorem.
 
 Question:
-  After quotienting by the current exact even PMNS data, what is the smallest
+  After quotienting by the supplied even PMNS data, what is the smallest
   remaining selector object that distinguishes the constructive projected-source
   witness from its CP-flipped partner on the current branch?
 
@@ -11,8 +11,8 @@ Answer:
   It is exactly the sign of the single odd projected-source slot A13, or
   equivalently the sign of gamma = A13 / 2.
 
-  The current exact even data already fix E1, E2, the flavored transport
-  values, and the current even selector objectives. The constructive witness
+  The supplied even data agree on E1, E2, the flavored transport values, and
+  the supplied even candidate objectives. The constructive witness
   and its CP-flipped partner agree on all of those data and differ only by the
   sign of A13.
 """
@@ -113,9 +113,9 @@ def part1_a13_is_exactly_the_odd_projected_source_slot() -> None:
     )
 
 
-def part2_all_current_exact_even_data_agree_on_the_witness_pair() -> None:
+def part2_supplied_even_data_agree_on_the_witness_pair() -> None:
     print("\n" + "=" * 88)
-    print("PART 2: THE CURRENT EXACT EVEN DATA AGREE ON THE WITNESS PAIR")
+    print("PART 2: THE SUPPLIED EVEN DATA AGREE ON THE WITNESS PAIR")
     print("=" * 88)
 
     (h_pos, resp_pos, tri_pos, eta_pos, cp_pos), (h_neg, resp_neg, tri_neg, eta_neg, cp_neg) = witness_pair()
@@ -130,12 +130,12 @@ def part2_all_current_exact_even_data_agree_on_the_witness_pair() -> None:
         f"(E1,E2)=({tri_pos['E1']:.12f},{tri_pos['E2']:.12f})",
     )
     check(
-        "They also have the same exact flavored transport outputs",
+        "They also have the same supplied flavored transport outputs",
         np.linalg.norm(eta_pos - eta_neg) < 1e-12,
         f"eta={np.round(eta_pos, 12)}",
     )
     check(
-        "And the current exact even selector objectives still agree on that pair",
+        "And the supplied even candidate objectives agree on that pair",
         abs(info_pos - info_neg) < 1e-12 and abs(rel_pos - rel_neg) < 1e-12,
         f"(ΔI,ΔS)=({info_pos - info_neg:.3e},{rel_pos - rel_neg:.3e})",
     )
@@ -161,6 +161,8 @@ def part3_a13_is_already_a_legitimate_dminus_level_target() -> None:
     l_neg = schur_eff(dm_neg[:3, :3], dm_neg[:3, 3:5], dm_neg[3:5, :3], dm_neg[3:5, 3:5])
     a13_pos = hermitian_linear_responses(l_pos)[6]
     a13_neg = hermitian_linear_responses(l_neg)[6]
+    direct_a13_pos = hermitian_linear_responses(h_pos)[6]
+    direct_a13_neg = hermitian_linear_responses(h_neg)[6]
 
     check(
         "The microscopic witnesses preserve charge exactly",
@@ -174,9 +176,10 @@ def part3_a13_is_already_a_legitimate_dminus_level_target() -> None:
         f"(A13+,A13-) = ({a13_pos:.12f},{a13_neg:.12f})",
     )
     check(
-        "So the residual sheet selector is already a microscopic law on dW_e^H = Schur_Ee(D_-)",
-        True,
-        "A13 is not a downstream artifact; it is a Schur-side target",
+        "The Schur pushforward localizes the unresolved A13 sign target at dW_e^H = Schur_Ee(D_-)",
+        abs(a13_pos - direct_a13_pos) < 1e-12
+        and abs(a13_neg - direct_a13_neg) < 1e-12,
+        f"round-trip residuals=({a13_pos - direct_a13_pos:.3e},{a13_neg - direct_a13_neg:.3e})",
     )
 
 
@@ -189,7 +192,7 @@ def part4_the_theorem_note_records_the_minimal_selector_object() -> None:
 
     check(
         "The new note records that sign(A13) is the minimal residual selector object",
-        "sign(A13)" in note and "current exact even data" in note and "dW_e^H" in note,
+        "sign(A13)" in note and "supplied even data" in note and "dW_e^H" in note,
     )
     check(
         "The note also records the equivalent identity sign(A13) = sign(2 gamma)",
@@ -203,23 +206,23 @@ def main() -> int:
     print("=" * 88)
     print()
     print("Question:")
-    print("  After quotienting by the current exact even PMNS data, what is the")
+    print("  After quotienting by the supplied even PMNS data, what is the")
     print("  smallest remaining selector object that distinguishes the constructive")
     print("  projected-source witness from its CP-flipped partner?")
 
     part1_a13_is_exactly_the_odd_projected_source_slot()
-    part2_all_current_exact_even_data_agree_on_the_witness_pair()
+    part2_supplied_even_data_agree_on_the_witness_pair()
     part3_a13_is_already_a_legitimate_dminus_level_target()
     part4_the_theorem_note_records_the_minimal_selector_object()
 
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  Exact selector answer:")
-    print("    - after quotienting by current even data, the residual sheet selector")
-    print("      is exactly sign(A13) = sign(2 gamma)")
+    print("  Bounded target-localization answer:")
+    print("    - after quotienting by supplied even data, the unresolved sheet target")
+    print("      is sign(A13) = sign(2 gamma)")
     print("    - the constructive witness and its CP-flipped partner agree on E1, E2,")
-    print("      transport, and current selector objectives")
+    print("      transport, and supplied candidate objectives")
     print("    - so any theorem-grade microscopic sheet selector must reduce to a law")
     print("      fixing A13 > 0 on dW_e^H = Schur_Ee(D_-)")
     print()

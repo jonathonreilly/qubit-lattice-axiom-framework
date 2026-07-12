@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/frontier_dm_leptogenesis_pmns_relative_action_selector_independence.py
+runner_sha256: 5803174eab39ca99201eb64d3e655ab3a0c9019994512b42a4d011d93b5d1358
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+DM LEPTOGENESIS PMNS RELATIVE-ACTION SELECTOR INDEPENDENCE
+Exact claim: the current supplied foundation and static packet do not
+entail that a physical off-seed source minimizes relative action.
+
+PART 1: CURRENT FOUNDATION CONTAINS NO SELECTOR PREMISE
+  [PASS] the supplied-premise registry is the reviewed four-node foundation  (canonical_ids=['kinetic_isotropy_primitive', 'minimal_axioms', 'realized_state_primitive', 'scale_reference_primitive'])
+  [PASS] the minimal-axiom authority withholds log-det, source/action, and state selection
+  [PASS] the realized-state primitive grants evaluation but explicitly withholds selection
+  [PASS] the remaining approved primitives explicitly supply no selector
+
+PART 2: EXACT TWO-COMPLETION SELECTOR WITNESS
+  [PASS] the two closure-feasible positive matrices have the exact stated actions  (actions=[0.30685282 0.90138771])
+  [PASS] minimum-action and maximum-action laws select different unique points  (argmin=0, argmax=1)
+  [PASS] the same log-det Legendre identity holds at both differently selected points  (max residual=1.110e-16)
+  [PASS] both selector laws are basis-covariant rather than label-privileging
+
+PART 3: EXACT NATURAL-OBJECTIVE PREFERENCE REVERSAL
+  [PASS] relative action uniquely prefers the second feasible matrix  (S_rel=[1.40258509 0.61370564])
+  [PASS] a positive seed-zero spectral divergence uniquely prefers the first  (D_F=[0.81 2.  ])
+  [PASS] both objectives are invariant under orthogonal basis changes  (residual=0.000e+00)
+  [PASS] both objectives are additive on independent direct-sum blocks  (residual=4.441e-16)
+
+PART 4: THE SOURCE-FREE RELATIVE-ACTION MINIMUM IS THE SEED
+  [PASS] the first variation vanishes at Y=I  (D S[I](V)=0.000e+00)
+  [PASS] the Hessian is strictly positive in a nonzero Hermitian direction  (D2 S[I](V,V)=8.500000)
+  [PASS] the seed has zero action and zero dual source
+
+RESULT
+  The Legendre identity determines a functional pointwise.
+  It does not supply an oriented physical source-selection law.
+PASS=15 FAIL=0
+
+----- stderr -----
+

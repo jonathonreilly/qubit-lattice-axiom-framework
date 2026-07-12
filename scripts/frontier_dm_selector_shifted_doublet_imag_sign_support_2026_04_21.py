@@ -3,8 +3,8 @@
 DM selector shifted-doublet-imaginary-sign support theorem.
 
 Question:
-  After identifying the canonical recovered projection of the internal
-  selector, can the remaining recovered-bank selector burden be sharpened to
+  After identifying a stable recovered neighbor of the supplied conditional
+  candidate, can the remaining recovered-bank burden be sharpened to
   one exact doublet-block activation side?
 
 Answer:
@@ -16,13 +16,13 @@ Answer:
 
   On the current selector packet:
 
-    - the exact observable-relative-action source lies on the positive side
+    - the supplied conditional relative-action source lies on the positive side
       Im(K_Z3[1,2]) > 0,
     - the preferred recovered lift 0 is the unique recovered lift on that
       same positive side,
     - every other recovered lift lies on the negative side,
     - and the preferred recovered lift is already the unique threshold
-      selector picked by tau_b,min.
+      candidate returned by tau_b,min.
 
   So the live selector burden narrows again: on the current packet, it is
   enough to derive the positive activation law for the shifted imaginary
@@ -109,7 +109,7 @@ def main() -> int:
     doublet_note = read("docs/DM_NEUTRINO_SOURCE_SURFACE_Z3_DOUBLET_BLOCK_POINT_SELECTION_THEOREM_NOTE_2026-04-16.md")
     sep_note = read("docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_BRANCH_SEPARATION_SUPPORT_THEOREM_NOTE_2026-04-21.md")
     proj_note = read("docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_PROJECTION_SUPPORT_THEOREM_NOTE_2026-04-21.md")
-    review = read("docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md")
+    current_note = read("docs/DM_SELECTOR_SHIFTED_DOUBLET_IMAG_SIGN_SUPPORT_THEOREM_NOTE_2026-04-21.md")
 
     _i_star, _x_sel, _y_sel, _delta_sel, h_rel, _etas = observable_relative_action_selection()
     rel_target = np.asarray(active_target_from_h(h_rel), dtype=float)
@@ -143,20 +143,20 @@ def main() -> int:
     )
 
     print("\n" + "=" * 88)
-    print("PART 2: THE INTERNAL SELECTOR LIES ON THE POSITIVE SIDE OF THAT BOUNDARY")
+    print("PART 2: THE SUPPLIED CONDITIONAL CANDIDATE LIES ON THE POSITIVE SIDE")
     print("=" * 88)
 
     check(
-        "The separation note still records the exact internal observable-relative-action selector",
-        "observable-relative-action law" in sep_note and "exact internal selector law" in sep_note,
+        "The separation note records the supplied conditional relative-action candidate",
+        "supplied relative-action candidate" in sep_note and "conditional calculator" in sep_note,
     )
     check(
-        "The internal selector target has delta_rel > delta_cut",
+        "The supplied candidate target has delta_rel > delta_cut",
         rel_target[0] > d_cut,
         f"(delta_rel, delta_cut)=({rel_target[0]:.12f}, {d_cut:.12f})",
     )
     check(
-        "Equivalently, the internal selector has positive shifted imaginary doublet mixing Im(K12) > 0",
+        "Equivalently, the supplied candidate has positive shifted imaginary doublet mixing Im(K12) > 0",
         rel_imag > 0.0,
         f"Im(K12)_rel = {rel_imag:.12e}",
     )
@@ -213,17 +213,17 @@ def main() -> int:
     print("=" * 88)
 
     check(
-        "The projection note still records that the preferred recovered lift is the canonical recovered image of the internal selector",
-        "canonical recovered projection" in flat(proj_note)
-        and "preferred recovered lift `0`" in flat(proj_note),
+        "The projection note records that the supplied candidate is nearest to preferred recovered lift 0 in the checked metric packet",
+        "preferred recovered lift `0`" in flat(proj_note)
+        and "checked projection packet" in flat(proj_note),
     )
     check(
-        "The intrinsic threshold candidate tau_b,min still selects the same preferred recovered lift uniquely",
+        "The intrinsic threshold candidate tau_b,min returns the same preferred recovered lift uniquely",
         tau_idx == 0 and tau_margin > 1.0e-9,
         f"(winner, margin)=({tau_idx}, {tau_margin:.12f})",
     )
     check(
-        "So on the current selector packet the internal selector, the recovered projection, the threshold selector, and the shifted-imaginary sign all agree on the same preferred recovered lift",
+        "So on the checked packet the supplied candidate side, recovered nearest-neighbor packet, threshold candidate, and shifted-imaginary sign agree on the same preferred lift",
         len(positive_idx) == 1 and int(positive_idx[0]) == 0 and tau_idx == 0 and rel_imag > 0.0,
         "same preferred lift 0",
     )
@@ -233,9 +233,9 @@ def main() -> int:
     print("=" * 88)
 
     check(
-        "The review register still names the finer right-sensitive microscopic selector law as open",
-        "finer right-sensitive microscopic point-selection law" in review
-        or "finer right-sensitive microscopic selector law" in review,
+        "The note explicitly keeps the microscopic selector law open",
+        "does **not** close the microscopic selector law" in current_note
+        and "finer microscopic law" in current_note,
     )
     check(
         "On the current selector packet, the shifted-imaginary sign is the first right-sensitive datum that refines the sharp source tuple and constructive triplet chamber",
@@ -254,11 +254,11 @@ def main() -> int:
     print("\n" + "=" * 88)
     print("RESULT")
     print("=" * 88)
-    print("  The internal selector target already lies on the positive side of the")
+    print("  The supplied conditional candidate lies on the positive side of the")
     print("  canonical doublet-block boundary Im(K12)=0.")
     print("  On the recovered bank, the preferred lift 0 is the unique point on that")
-    print("  same positive side, and it is already the recovered threshold selector")
-    print("  chosen by tau_b,min.")
+    print("  same positive side, and it is the recovered threshold candidate")
+    print("  returned by tau_b,min on this packet.")
     print()
     print("  So the remaining selector burden narrows again:")
     print("    derive the positive activation law for the shifted imaginary")

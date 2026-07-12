@@ -1,5 +1,6 @@
 # DM Selector Shifted-Doublet-Imaginary-Sign Support Theorem
 
+**Claim type:** bounded_theorem
 **Date:** 2026-04-21  
 **Status:** selector-side support theorem on the open DM gate  
 **Primary runner:** `scripts/frontier_dm_selector_shifted_doublet_imag_sign_support_2026_04_21.py`
@@ -29,13 +30,13 @@ Im(K_Z3[1,2]) = 0.
 
 On the current selector packet:
 
-- the exact observable-relative-action source lies on the **positive** side of
+- the supplied conditional relative-action source lies on the **positive** side of
   this boundary,
 - the preferred recovered lift `0` is the **unique** recovered lift on that
   same positive side,
 - every competing recovered lift lies on the negative side,
-- and the same preferred lift is already the unique recovered threshold
-  selector chosen by `tau_b,min`.
+- and the same preferred lift is the unique recovered threshold candidate
+  returned by `tau_b,min` on this packet.
 
 So the remaining selector burden narrows again. On the current packet, the
 live positive target is no longer a generic recovered-bank bridge. The
@@ -67,20 +68,20 @@ Three earlier results are used here:
    ```
 
 2. `docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_BRANCH_SEPARATION_SUPPORT_THEOREM_NOTE_2026-04-21.md`
-   shows the exact observable-relative-action selector does not itself land on
-   the recovered selector branch.
+   shows the supplied conditional relative-action candidate does not itself
+   land on the recovered comparison branch.
 3. `docs/DM_SELECTOR_RELATIVE_ACTION_RECOVERED_PROJECTION_SUPPORT_THEOREM_NOTE_2026-04-21.md`
-   shows that the internal selector already has one canonical recovered image:
-   the preferred recovered lift `0`, also selected by `tau_b,min`.
+   shows that the supplied candidate is nearest to the preferred recovered
+   lift `0` across the checked metric packet, which `tau_b,min` also returns.
 
 That still left the remaining bridge framed as a generic projection-principle
 problem.
 
 ## New support theorem
 
-### 1. The internal selector already chooses one side of a canonical doublet-block sign boundary
+### 1. The supplied candidate lies on one side of the doublet-block sign boundary
 
-For the exact observable-relative-action source, the active target
+For the supplied conditional relative-action source, the active target
 `(delta_rel, q_+,rel)` satisfies
 
 ```text
@@ -93,9 +94,9 @@ hence
 Im(K_Z3[1,2])_rel > 0.
 ```
 
-So the internal selector does not merely point toward the preferred recovered
-lift metrically. It already chooses one exact side of the canonical
-doublet-block sign boundary.
+Thus the supplied candidate lies on one side of the exact doublet-block sign
+boundary. This is a property of that input candidate, not a physical choice
+law.
 
 ### 2. On the recovered bank, only the preferred lift lies on that same side
 
@@ -105,7 +106,7 @@ Evaluating the exact recovered bank shows:
 - lifts `1,2,3,4`: `Im(K_Z3[1,2]) < 0`
 
 So the preferred recovered lift is the unique recovered point on the same
-positive side as the internal selector.
+positive side as the supplied candidate.
 
 ### 3. The constructive triplet chamber still does not distinguish the recovered packet
 
@@ -135,17 +136,17 @@ sin(delta) > 0.
 Therefore neither the sharp source tuple nor the constructive triplet chamber
 breaks the recovered selector degeneracy.
 
-### 4. This same lift is already the recovered threshold selector
+### 4. This same lift is returned by the recovered threshold candidate
 
-The exact threshold selector candidate `tau_b,min` already chooses the same
+The threshold candidate `tau_b,min` returns the same
 preferred recovered lift uniquely.
 
 Therefore the branch now has a stronger agreement packet than before:
 
-- the exact internal selector,
+- the supplied conditional candidate,
 - the sharp source tuple and constructive triplet chamber,
-- the canonical recovered projection,
-- the recovered threshold selector,
+- the checked recovered nearest-neighbor packet,
+- the recovered threshold candidate,
 - and the recovered doublet-block sign side
 
 all point to the same recovered lift `0`.
@@ -158,7 +159,7 @@ It does sharpen the remaining positive target again.
 
 Before this theorem, the live selector statement was:
 
-- justify the projection from the exact internal selector to the preferred
+- justify a physical projection from the supplied conditional candidate to the preferred
   recovered lift, or replace both selector objects by a finer microscopic law.
 
 After this theorem, the sharper packet-level statement is:
@@ -179,8 +180,8 @@ activate the positive side of the canonical doublet-block odd direction.
 
 This is a support theorem, not closure.
 
-It does **not** prove that positivity of `Im(K_Z3[1,2])` is already a
-retained-derived law on the full native branch, and it does **not** yet
+It does **not** prove that positivity of `Im(K_Z3[1,2])` is a derived law on
+the full physical branch, and it does **not**
 replace the need for a genuine right-sensitive microscopic selector theorem.
 
 It proves only that on the current selector packet the live burden has

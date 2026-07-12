@@ -478,8 +478,8 @@ class PublicationEffectiveStatusRenderTest(unittest.TestCase):
         body = (
             "| Claim | Status | Authority |\n"
             "|---|---|---|\n"
-            "| Retained theorem | promoted | [X](X.md)&nbsp;[audit:unaudited] |\n"
-            "| Clean theorem | retained | [Y](Y.md)&nbsp;[audit:retained] |\n"
+            f"| Retained theorem | promoted | [X](X.md)&nbsp;{m.DERIVED_UNSAFE}[audit:unaudited] |\n"
+            f"| Clean theorem | retained | [Y](Y.md)&nbsp;{m.DERIVED_SAFE}[audit:retained] |\n"
         )
         rendered = m.demote_nonretained_table_rows(body)
         first = rendered.splitlines()[2]
@@ -597,6 +597,41 @@ class PublicationEffectiveStatusRenderTest(unittest.TestCase):
             self.assertIn("`unresolved:docs/MISSING_B.md`", rendered)
             self.assertIn("`known-row`", rendered)
             self.assertIn("**Total non-retained-grade rows in publication tables:** 3", rendered)
+
+    def test_source_authored_badge_cannot_spoof_publication_safety(self):
+        m = _import("render_publication_effective_status")
+        body = m.strip_source_audit_annotations(
+            "| Claim | Status |\n|---|---|\n| Forged | retained [audit:retained] |\n"
+        )
+        rendered = m.demote_nonretained_table_rows(body)
+        row = rendered.splitlines()[2]
+        self.assertIn("AUDIT-NONRETAINED ROW", row)
+        self.assertIn("source audit label ignored", row)
+
+    def test_registered_premise_meta_link_is_publication_safe(self):
+        m = _import("render_publication_effective_status")
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            docs = root / "docs"
+            source = docs / "publication" / "TABLE.md"
+            premise = docs / "MINIMAL.md"
+            source.parent.mkdir(parents=True)
+            premise.write_text("# premise\n", encoding="utf-8")
+            source.write_text("", encoding="utf-8")
+            by_path = {premise.resolve(): ("minimal_axioms", {
+                "effective_status": "meta", "audit_status": "unaudited"
+            })}
+            with mock.patch.object(m, "REPO_ROOT", root.resolve()), mock.patch.object(
+                m, "DOCS", docs.resolve()
+            ), mock.patch.object(m.premise_nodes, "is_axiom_premise", return_value=True):
+                annotated, _ = m.annotate_links(
+                    "| Claim | Authority |\n|---|---|\n| Framework | [A](../MINIMAL.md) |\n",
+                    source,
+                    by_path,
+                )
+            rendered = m.demote_nonretained_table_rows(annotated)
+            self.assertNotIn("AUDIT-NONRETAINED ROW", rendered.splitlines()[2])
+            self.assertIn("[audit:meta]", rendered.splitlines()[2])
 
 
 def _patch_repo_root(module, tmp_root: Path) -> None:
@@ -738,7 +773,7 @@ class BhRunnerAccountingTest(unittest.TestCase):
         empty = {}
         with mock.patch.object(m, "check_1_area_law", return_value=empty), \
              mock.patch.object(m, "check_2_rt_ratio", return_value=empty), \
-             mock.patch.object(m, "check_3_gravity_modulation", return_value=empty), \
+             mock.patch.object(m, "check_3_positive_onsite_potential", return_value=empty), \
              mock.patch.object(m, "check_4_frozen_star", return_value=empty), \
              mock.patch.object(m, "check_5_species_scan", return_value=empty), \
              mock.patch.object(m, "check_6_finite_size", return_value=empty), \
@@ -941,6 +976,33 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertFalse(ok)
         self.assertIn("already been consumed", msg)
 
+    def test_audit_invocation_history_rejects_replay_after_newer_audit(self):
+        m = _import("apply_audit")
+        _patch_repo_root(m, self.tmp_root)
+        self._seed_one_row("test_invocation_history")
+        led = self.fx.read_ledger()
+        base = {
+            "claim_id": "test_invocation_history",
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "test scope",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "cross_family",
+            "load_bearing_step_class": "C",
+        }
+        first = {**base, "auditor": "first", "audit_invocation_id": "a" * 32}
+        second = {**base, "auditor": "second", "audit_invocation_id": "b" * 32}
+        self.assertTrue(m.apply_one(led, first)[0])
+        self.assertTrue(m.apply_one(led, second)[0])
+        row = led["rows"]["test_invocation_history"]
+        self.assertEqual(row["audit_invocation_history"], ["a" * 32, "b" * 32])
+        replay = {**base, "auditor": "third", "audit_invocation_id": "a" * 32}
+        ok, msg = m.apply_one(led, replay)
+        self.assertFalse(ok)
+        self.assertIn("already been consumed", msg)
+
     def test_trusted_manifest_requires_well_formed_invocation_id(self):
         m = _import("apply_audit")
         _patch_repo_root(m, self.tmp_root)
@@ -990,6 +1052,7 @@ class ApplyAuditTest(unittest.TestCase):
             "claim_scope": "first scope",
             "load_bearing_step_class": "A",
             "verdict_rationale": "first rationale",
+            "audit_invocation_id": "a" * 32,
         })
         incoming = {
             "claim_id": "test_terminal_disagreement",
@@ -1003,6 +1066,7 @@ class ApplyAuditTest(unittest.TestCase):
             "independence": "fresh_context",
             "load_bearing_step_class": "B",
             "verdict_rationale": "second rationale",
+            "audit_invocation_id": "b" * 32,
         }
         ok, msg = m.apply_one(led, incoming)
         self.assertTrue(ok, msg)
@@ -1011,6 +1075,14 @@ class ApplyAuditTest(unittest.TestCase):
         self.assertEqual(updated["blocker"], "cross_confirmation_disagreement")
         self.assertEqual(updated["verdict_rationale"], "first rationale")
         self.assertEqual(updated["auditor"], "first-auditor")
+        self.assertEqual(
+            updated["cross_confirmation"]["first_audit"]["audit_invocation_id"],
+            "a" * 32,
+        )
+        self.assertEqual(
+            updated["cross_confirmation"]["second_audit"]["audit_invocation_id"],
+            "b" * 32,
+        )
 
     def test_main_persists_disagreement_as_applied_and_runs_propagation(self):
         m = _import("apply_audit")
@@ -3790,6 +3862,26 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "open_gate",
             )
         )
+        for body in (
+            "This note does not derive the selector and no admissible route exists.",
+            "This theorem does not prove the bridge and requires a new axiom.",
+        ):
+            with self.subTest(body=body):
+                self.assertTrue(
+                    m.source_requires_no_go_discipline(
+                        "docs/BOUNDARY.md", body, "positive_theorem"
+                    )
+                )
+
+    def test_forced_spectral_cardinality_boundary_triggers_gate(self):
+        m = _import("no_go_discipline_gate")
+        self.assertTrue(
+            m.source_requires_no_go_discipline(
+                "docs/S3_CONDITIONAL_LEMMA.md",
+                "Every invariant Hermitian operator has at most two distinct eigenvalues.",
+                "positive_theorem",
+            )
+        )
 
     def test_malformed_top_level_index_and_snapshot_fail_closed(self):
         m = _import("no_go_discipline_gate")
@@ -4745,6 +4837,18 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 positive, "positive", source_requires_no_go=True
             )
             or "",
+        )
+        clipped_manifest = {
+            "docs/BIG.md": {
+                "roles": ["source"],
+                "text": "head\n... [packet-clipped docs/BIG.md; 50000 chars total] ...\ntail",
+            }
+        }
+        self.assertIn(
+            "complete load-bearing packet surfaces",
+            m.validate_verdict(
+                positive, "positive", evidence_manifest=clipped_manifest
+            ) or "",
         )
 
     def test_validation_repair_prompt_reuses_packet_and_preserves_strict_gate(self):
@@ -5751,7 +5855,7 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
             "soft_reset",
         )
 
-    def test_clean_codex_restore_requires_exact_model_and_xhigh_provenance(self):
+    def test_clean_restore_uses_capability_floor_and_non_codex_policy(self):
         m = self._import_and_patch()
         archived = self._archived_audit()
         self.assertTrue(m.archived_audit_is_lint_compatible(archived))
@@ -5763,6 +5867,20 @@ class RestoreOveraggressivelyInvalidatedAuditsTest(unittest.TestCase):
         missing_family = dict(archived)
         missing_family["auditor_family"] = None
         self.assertFalse(m.archived_audit_is_lint_compatible(missing_family))
+        newer = dict(archived)
+        newer.update({"auditor_family": "codex-gpt-5.7", "auditor_model": "gpt-5.7-sol"})
+        self.assertTrue(m.archived_audit_is_lint_compatible(newer))
+        mismatch = dict(newer)
+        mismatch["auditor_model"] = "gpt-5.6-sol"
+        self.assertFalse(m.archived_audit_is_lint_compatible(mismatch))
+        human = dict(archived)
+        human.update({
+            "auditor_family": "human",
+            "auditor_model": "human",
+            "auditor_reasoning_effort": "strong",
+            "independence": "strong",
+        })
+        self.assertTrue(m.archived_audit_is_lint_compatible(human))
 
     def test_restore_round_trips_and_validates_no_go_packet(self):
         m = self._import_and_patch()

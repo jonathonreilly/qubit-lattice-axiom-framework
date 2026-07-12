@@ -40,6 +40,8 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 DOCS = REPO_ROOT / "docs"
 PUB_DIR = DOCS / "publication" / "ci3_z3"
 LEDGER_PATH = REPO_ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+sys.path.insert(0, str(REPO_ROOT / "docs" / "audit" / "scripts"))
+import premise_nodes
 
 # Tables to render. Each entry: (source_basename, output_basename, scope_label)
 TABLES = [
@@ -73,9 +75,18 @@ RETAINED_GRADE = {
     "retained_no_go",
 }
 AUDIT_BADGE_RE = re.compile(r"\[audit:([^\]]+)\]")
+DERIVED_SAFETY_RE = re.compile(r"<!--AUDIT_DERIVED_(SAFE|UNSAFE)-->")
+DERIVED_SAFE = "<!--AUDIT_DERIVED_SAFE-->"
+DERIVED_UNSAFE = "<!--AUDIT_DERIVED_UNSAFE-->"
 PROTECTED_INLINE_RE = re.compile(
     r"(\[[^\]]+\]\([^)]+\)|\[audit:[^\]]+\]|`[^`]*`)"
 )
+
+
+def strip_source_audit_annotations(body: str) -> str:
+    """Remove badge-shaped source prose before adding ledger-derived badges."""
+    body = DERIVED_SAFETY_RE.sub("", body)
+    return AUDIT_BADGE_RE.sub("[source audit label ignored]", body)
 
 
 def _neutralize_source_status_words(line: str) -> str:
@@ -119,15 +130,13 @@ def demote_nonretained_table_rows(body: str) -> str:
         if is_separator or is_header:
             rendered.append(line)
             continue
-        badges = AUDIT_BADGE_RE.findall(line)
-        # Missing/unresolved authority badges are non-retained by default.
-        # A row is publication-safe only when it carries at least one badge and
-        # every badge is retained-grade (or a boxed retained decoration).
-        nonretained = not badges or any(
-            status not in RETAINED_GRADE
-            and not status.startswith("decoration_under_")
-            for status in badges
-        )
+        safety = DERIVED_SAFETY_RE.findall(line)
+        # Source-authored badge-shaped strings are stripped before annotation.
+        # Only structured markers emitted from ledger lookups can make a row
+        # publication-safe; registered axioms/primitives receive SAFE markers
+        # even though their pipeline effective_status is meta.
+        nonretained = not safety or any(value == "UNSAFE" for value in safety)
+        line = DERIVED_SAFETY_RE.sub("", line)
         if not nonretained:
             rendered.append(line)
             continue
@@ -253,7 +262,7 @@ def annotate_links(body: str, source: Path,
                 "effective_status": "unresolved",
                 "criticality": None,
             })
-            return f"{whole}&nbsp;[audit:unresolved]"
+            return f"{whole}&nbsp;{DERIVED_UNSAFE}[audit:unresolved]"
         cid, row = match
         eff = row.get("effective_status")
         ast = row.get("audit_status")
@@ -264,10 +273,17 @@ def annotate_links(body: str, source: Path,
             "audit_status": ast,
             "effective_status": eff,
             "criticality": crit,
+            "accepted_premise": premise_nodes.is_axiom_premise(cid),
         })
         badge = status_badge(eff, ast)
+        safe = (
+            eff in RETAINED_GRADE
+            or (isinstance(eff, str) and eff.startswith("decoration_under_"))
+            or premise_nodes.is_axiom_premise(cid)
+        )
         # Append the badge AFTER the link, with a thin space
-        return f"{whole}&nbsp;{badge}"
+        marker = DERIVED_SAFE if safe else DERIVED_UNSAFE
+        return f"{whole}&nbsp;{marker}{badge}"
 
     new_body = LINK_RE.sub(repl, body)
     return new_body, lookups
@@ -279,7 +295,7 @@ def render_table(source_name: str, output_name: str, scope_label: str,
     src = PUB_DIR / source_name
     if not src.exists():
         return None, []
-    body = src.read_text(encoding="utf-8")
+    body = strip_source_audit_annotations(src.read_text(encoding="utf-8"))
     annotated, lookups = annotate_links(body, src, by_path)
     if source_name == "ARXIV_DRAFT.md":
         counts: dict[str, int] = {}

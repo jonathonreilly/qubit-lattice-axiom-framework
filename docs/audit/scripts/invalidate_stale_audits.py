@@ -202,6 +202,8 @@ ARCHIVED_FIELDS = [
     "claim_type_provenance",
     "claim_type_last_reviewed",
     "notes_for_re_audit_if_any",
+    "audit_invocation_id",
+    "audit_invocation_history",
 ]
 
 EMPTY_AFTER_INVALIDATION = {
@@ -211,6 +213,8 @@ EMPTY_AFTER_INVALIDATION = {
     "auditor_family": None,
     "auditor_model": None,
     "auditor_reasoning_effort": None,
+    "audit_invocation_id": None,
+    "audit_invocation_history": [],
     "independence": None,
     "load_bearing_step": None,
     "load_bearing_step_class": None,

@@ -346,5 +346,13 @@ def cache_excerpt_for_audit(runner_path: str | Path,
     cur_sha = runner_sha256(runner_path)
     if cur_sha is None or header.get("runner_sha256") != cur_sha:
         return None
-    excerpt = body[-tail_chars:] if len(body) > tail_chars else body
-    return f"[runner cache hit: {p.name}, sha {header['runner_sha256'][:12]}]\n{excerpt}"
+    clipped = len(body) > tail_chars
+    excerpt = body[-tail_chars:] if clipped else body
+    marker = (
+        f"[runner cache excerpt clipped; {len(body)} chars total]\n"
+        if clipped else ""
+    )
+    return (
+        f"[runner cache hit: {p.name}, sha {header['runner_sha256'][:12]}]\n"
+        f"{marker}{excerpt}"
+    )

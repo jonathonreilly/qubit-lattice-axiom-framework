@@ -38,31 +38,34 @@ current paper surface.
 
 ## 2. Explicit external inputs on the current paper surface
 
-Current cosmology-facing rows are conditioned on:
+Current cosmology-facing rows use these observational comparators:
 
 - `T_CMB = 2.7255 K`
 - `H_0 = 67.4 km/s/Mpc`
 
-These are not inputs to the retained structural core. They are explicit
-boundary data for the bounded cosmology lane. The FRW kinematic reduction
+These are not framework inputs or derived constants. They are observational
+comparators for the bounded cosmology lane. The chosen flat-FRW geometry and
+equation-of-state surface are explicit normalization/boundary conditions. The
+FRW kinematic reduction
 adds no new point input; `q_0`, `z_*`, `z_{mLambda}`, and asymptotic `H_inf`
 remain functions of the same open `H_inf/H_0` ratio, with listed cosmology
 numbers used only as comparators.
 
 The Hubble structural-lock theorem adds a sharp late-time stance without
-adding a point input: on the retained `w_Lambda=-1` plus admitted flat-FRW
+adding a point input: on the specified `w_Lambda=-1` plus flat-FRW
 surface, every correctly reduced late-time `H(z)` probe implies the same
 scalar `H_0`. It does not derive that scalar. It rules out late-time-only
 Hubble-tension resolutions inside the current surface and leaves any genuine
 tension to pre-recombination physics or measurement/systematics.
 
 The open-number reduction theorem then packages the late-time bounded
-cosmology surface as two structural degrees of freedom at fixed admitted
+cosmology surface as two structural degrees of freedom at fixed specified
 `Omega_r,0`: `H_0` and `L=(H_inf/H_0)^2`. That is a closure map, not a
 numerical cosmology derivation.
 
 The matter-radiation equality identity adds no new native density derivation:
-`1 + z_mr = Omega_m,0/Omega_r,0` is exact on the admitted FRW/EOS surface, but
+`1 + z_mr = Omega_m,0/Omega_r,0` is an exact conditional identity on the
+specified FRW/EOS surface, but
 the readout `z_mr ~= 3423` uses supplied `Omega_m,0` and observational
 `Omega_r,0` from `T_CMB` plus relativistic-species bookkeeping.
 
@@ -73,8 +76,9 @@ correction and uses observational photon-temperature data when converted into
 `Omega_r,0`.
 
 The dark-matter/cosmology cascade also uses the exact support identity
-`R_base = 31/9`, which depends on the admitted Georgi-Glashow/GUT
-normalization factor `3/5`. That identity is now packaged separately, but it
+`R_base = 31/9`, which depends on the external Georgi-Glashow/GUT
+normalization convention `3/5`. That conditional identity is packaged
+separately, but it
 does not derive the Sommerfeld correction, the full `Omega_DM/Omega_b` value,
 or the downstream `Omega_Lambda` numerics.
 
@@ -86,10 +90,12 @@ an explicit three-real observational pin:
 Those are not inputs to the retained structural core either. They are the
 explicit observational pin behind the charged-lepton bounded row.
 
-## 3. Same-surface derived constants used across the package
+## 3. Computed inputs, conditional identities, and unaudited derived claims
 
-These are not experimental fit parameters or hidden free knobs. They are the
-current canonical same-surface evaluated constants on `main`.
+The entries below have different authority classes. A computed lattice input,
+an exact identity conditional on that input, and an unaudited derived claim are
+not interchangeable. The generated effective-status views remain authoritative
+for audit grade.
 
 Current absolute-scale package rule:
 
@@ -162,18 +168,25 @@ Current absolute-scale package rule:
   [PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md](../../PLANCK_LINK_LOCAL_FIRST_VARIATION_P_A_FORCING_THEOREM_NOTE_2026-04-30.md)
 
 - plaquette surface:
-  - `<P> = 0.5934`
+  - `<P> = 0.5934` is a computed lattice input on the selected finite
+    `SU(3)` Wilson-lattice/`beta` surface, not a value derived from the four
+    axioms and not an infinite-volume certificate
   - authority:
     [PLAQUETTE_SELF_CONSISTENCY_NOTE.md](../../PLAQUETTE_SELF_CONSISTENCY_NOTE.md)
 - mean link:
-  - `u_0 = <P>^(1/4)`
+  - `u_0 = <P>^(1/4)` is an exact algebraic identity conditional on the
+    selected plaquette input
 - strong-coupling chain:
   - `alpha_LM`
   - `alpha_s(v)`
+  - these are unaudited derived claims on the current ledger and must not be
+    reused as retained constants until independent audit closes their chains
   - authority:
     [ALPHA_S_DERIVED_NOTE.md](../../ALPHA_S_DERIVED_NOTE.md)
 - electroweak hierarchy:
   - `v = 246.282818290129 GeV`
+  - this is an unaudited derived claim, not an axiom/primitive value or a
+    same-surface retained constant
   - authority:
     [OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md](../../OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md)
 - color normalization support:

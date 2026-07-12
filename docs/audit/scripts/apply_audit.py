@@ -93,6 +93,8 @@ def audit_invocation_seen(row: dict, invocation_id: str | None) -> bool:
         return False
     if row.get("audit_invocation_id") == invocation_id:
         return True
+    if invocation_id in (row.get("audit_invocation_history") or []):
+        return True
     return f'"audit_invocation_id": "{invocation_id}"' in json.dumps(
         {
             "cross_confirmation": row.get("cross_confirmation"),
@@ -100,6 +102,19 @@ def audit_invocation_seen(row: dict, invocation_id: str | None) -> bool:
         },
         sort_keys=True,
     )
+
+
+def consume_audit_invocation(row: dict, invocation_id: str | None) -> None:
+    """Record accepted invocation IDs append-only before updating the live ID."""
+    if not invocation_id:
+        return
+    history = list(row.get("audit_invocation_history") or [])
+    prior = row.get("audit_invocation_id")
+    for value in (prior, invocation_id):
+        if value and value not in history:
+            history.append(value)
+    row["audit_invocation_history"] = history
+    row["audit_invocation_id"] = invocation_id
 
 
 def audit_invocation_error(blob: dict) -> str | None:
@@ -785,11 +800,6 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         return False, invocation_error
     if audit_invocation_seen(row, invocation_id):
         return False, "audit_invocation_id has already been consumed for this claim"
-    if invocation_id:
-        # The row is detached, so rejected paths remain transactional while
-        # every accepted state transition consumes the invocation.
-        row["audit_invocation_id"] = invocation_id
-
     if judgment.get("independence") != "judicial_review":
         return False, "judicial third-auditor review requires independence='judicial_review'"
     provenance_error = validate_auditor_provenance(judgment)
@@ -940,6 +950,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     if side == "neither":
         row["cross_confirmation"]["status"] = "disagreement_irresolvable"
         row["blocker"] = "judicial_review_irresolvable"
+        consume_audit_invocation(row, invocation_id)
         rows[cid] = row
         ledger["rows"] = rows
         return True, "judicial review recorded that neither prior reading is sufficient"
@@ -985,8 +996,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         row["no_go_discipline"] = judgment.get("no_go_discipline")
     row["blocker"] = None
     row["audit_state_snapshot"] = snapshot_audit_state(row, rows)
-    if invocation_id:
-        row["audit_invocation_id"] = invocation_id
+    consume_audit_invocation(row, invocation_id)
     rows[cid] = row
     ledger["rows"] = rows
     return True, f"judicial third auditor confirmed {side} verdict"
@@ -1017,10 +1027,11 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         return False, invocation_error
     if audit_invocation_seen(row, invocation_id):
         return False, "audit_invocation_id has already been consumed for this claim"
-    if invocation_id:
-        # Accepted intermediate states (awaiting-second, disagreement, packet
-        # archival) must consume the same one-use invocation as terminal rows.
-        row["audit_invocation_id"] = invocation_id
+    def accept_row() -> None:
+        """Commit the detached row and consume this invocation exactly once."""
+        consume_audit_invocation(row, invocation_id)
+        rows[cid] = row
+        ledger["rows"] = rows
 
     verdict = audit["verdict"]
     if verdict not in ALLOWED_VERDICTS:
@@ -1176,8 +1187,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         row["claim_scope"] = claim_scope.strip()
         row["claim_type_provenance"] = "audited_pending_cross_confirmation"
         row["claim_type_last_reviewed"] = audit.get("audit_date") or datetime.now(timezone.utc).isoformat()
-        rows[cid] = row
-        ledger["rows"] = rows
+        accept_row()
         return True, (
             "legacy clean re-audit disagreement recorded "
             f"('audited_clean'/{first.get('claim_type')!r}/"
@@ -1232,8 +1242,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         if not matches:
             row["audit_status"] = "audit_in_progress"
             row["blocker"] = "cross_confirmation_disagreement"
-            rows[cid] = row
-            ledger["rows"] = rows
+            accept_row()
             return True, (
                 "explicit second-seat cross-confirmation disagreement recorded "
                 f"({first.get('verdict')!r}/{first.get('claim_type')!r}/"
@@ -1242,8 +1251,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
                 f"{second.get('load_bearing_step_class')!r}); "
                 "promote to owner review"
             )
-        rows[cid] = row
-        ledger["rows"] = rows
+        accept_row()
         return True, "explicit second-seat cross-confirmation recorded"
 
     terminal_second_pass = (
@@ -1295,8 +1303,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             terminal_second_pass_blocker = "cross_confirmation_disagreement"
             row["audit_status"] = "audit_in_progress"
             row["blocker"] = terminal_second_pass_blocker
-            rows[cid] = row
-            ledger["rows"] = rows
+            accept_row()
             return True, terminal_second_pass_msg
 
     third_pass = prior_cross_confirmation_status == "disagreement"
@@ -1364,8 +1371,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             third_pass_blocker = "third_auditor_disagreement"
             row["audit_status"] = "audit_in_progress"
             row["blocker"] = third_pass_blocker
-            rows[cid] = row
-            ledger["rows"] = rows
+            accept_row()
             return True, third_pass_msg
 
     critical_second_pass = (
@@ -1381,8 +1387,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         )
         if first_gate_error:
             archive_invalid_first_and_require_fresh_packet(row, first)
-            rows[cid] = row
-            ledger["rows"] = rows
+            accept_row()
             return True, (
                 "legacy packetless/invalid first audit archived; incoming packet "
                 "not applied because N8 must be rebuilt against the updated history"
@@ -1404,8 +1409,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             row["cross_confirmation"]["status"] = "disagreement"
             row["audit_status"] = "audit_in_progress"
             row["blocker"] = "cross_confirmation_disagreement"
-            rows[cid] = row
-            ledger["rows"] = rows
+            accept_row()
             return True, (
                 "cross-confirmation disagreement recorded "
                 f"({first.get('verdict')!r}/{first.get('claim_type')!r}/"
@@ -1440,8 +1444,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             row["claim_scope"] = claim_scope.strip()
             row["claim_type_provenance"] = "audited_pending_cross_confirmation"
             row["claim_type_last_reviewed"] = audit.get("audit_date") or datetime.now(timezone.utc).isoformat()
-            rows[cid] = row
-            ledger["rows"] = rows
+            accept_row()
             return True, "first audit recorded; awaiting independent second auditor"
         first_gate_error = cross_summary_no_go_error(
             first,
@@ -1450,8 +1453,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         )
         if first_gate_error:
             archive_invalid_first_and_require_fresh_packet(row, first)
-            rows[cid] = row
-            ledger["rows"] = rows
+            accept_row()
             return True, (
                 "legacy packetless/invalid first audit archived; incoming packet "
                 "not applied because N8 must be rebuilt against the updated history"
@@ -1468,8 +1470,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             row["cross_confirmation"]["status"] = "disagreement"
             row["audit_status"] = "audit_in_progress"
             row["blocker"] = "cross_confirmation_disagreement"
-            rows[cid] = row
-            ledger["rows"] = rows
+            accept_row()
             return True, (
                 "first and second audits disagree on claim_type or load_bearing_step_class "
                 f"({first.get('claim_type')!r}/{first.get('load_bearing_step_class')!r} vs "
@@ -1526,11 +1527,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     # detect changes that warrant re-audit (dep added/removed, dep status
     # changed, criticality bumped).
     row["audit_state_snapshot"] = snapshot_audit_state(row, rows)
-    if invocation_id:
-        row["audit_invocation_id"] = invocation_id
-
-    rows[cid] = row
-    ledger["rows"] = rows
+    accept_row()
     if terminal_second_pass_error:
         return False, terminal_second_pass_error
     if terminal_second_pass_msg:

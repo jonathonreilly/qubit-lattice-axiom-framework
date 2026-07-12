@@ -103,6 +103,8 @@ EMPTY_AUDIT = {
     # snapshot that no longer corresponds to an active audit.
     "audit_state_snapshot": None,
     "cross_confirmation": None,
+    "audit_invocation_id": None,
+    "audit_invocation_history": [],
 }
 
 # Audit fields that are preserved across re-seeds when the note hash is

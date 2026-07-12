@@ -205,7 +205,13 @@ LOCAL_SCOPE_EXCLUSION_RE = re.compile(
     r"(?:here|in this (?:note|theorem|section|work)|within this (?:note|scope|theorem))\b|"
     r"\b(?:it|this\s+(?:note|runner|script|calculation|result|theorem|lemma))\s+"
     r"(?:still\s+)?does\s+not\s+(?:derive|establish|prove|claim|identify)\b"
-    r"[^\n.;:]*",
+    r"[^\n.;:]*?(?=\s+\b(?:and|but|yet)\b|[\n.;:]|$)",
+    re.IGNORECASE,
+)
+FORCED_SPECTRAL_BOUNDARY_RE = re.compile(
+    r"\b(?:allows?|permits?|has|have|yields?|gives?|forces?|contains?)\s+"
+    r"(?:at\s+most|no\s+more\s+than)\s+(?:\d+|one|two|three|four|five)\s+"
+    r"(?:distinct\s+)?(?:eigenvalues?|spectral\s+values?)\b",
     re.IGNORECASE,
 )
 OUTPUT_BOUNDARY_FIELDS = (
@@ -1407,6 +1413,7 @@ def _has_negative_boundary_assertion(text: str) -> bool:
     if (
         EXPLICIT_NEGATIVE_CLOSURE_RE.search(cleaned)
         or NEGATIVE_SUBJECT_CLOSURE_RE.search(cleaned)
+        or FORCED_SPECTRAL_BOUNDARY_RE.search(cleaned)
         or _has_governed_no_existence(cleaned)
         or INABILITY_CLOSURE_RE.search(cleaned)
         or BOUNDARY_SUBJECT_NEGATIVE_RE.search(cleaned)

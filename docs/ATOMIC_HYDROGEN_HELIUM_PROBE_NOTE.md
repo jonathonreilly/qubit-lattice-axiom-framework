@@ -118,8 +118,11 @@ The script demonstrates that:
 
 1. on this codebase, with `numpy + scipy` already in `requirements.txt`,
    standard QM with textbook inputs reproduces the hydrogen spectrum to
-   `~10^-4` relative error and the helium ground state to `~2%` (variational)
-   /  exact (within available basis), in physical eV units;
+   `~10^-4` relative error and reaches the helium ground state to within
+   `~2%` of experiment via the computed one-parameter variational
+   benchmark (the `E_min = -77.49 eV` trial-function minimum, a `+1.52 eV`
+   (`1.92%`) residual above the NIST experimental `-79.005 eV`), in
+   physical eV units;
 2. the harness is structurally ready to accept framework-derived inputs in
    place of textbook constants, if and when those become available.
 
@@ -137,6 +140,16 @@ The script does **not** claim that the framework derives any of:
 Bounded exploratory scaffold lane. **Not** a retained framework result. **Not**
 a retained reproduction of atomic spectra. **Not** a discriminator. The lane is
 a diagnostic that the atomic-scale gap is real, scoped, and harness-ready.
+
+**2026-07-12 scope-narrowing (downstream hygiene).** Bounded claim 1 previously
+appended an unsupported "exact-within-basis" clause to the `~2%` variational
+helium figure, implying a basis-limit-exact three-body result this lane never
+computes. That clause is withdrawn: this lane evaluates only the closed-form
+one-parameter variational benchmark (`E_min = -77.49 eV`), never a
+basis-limit-exact diagonalization of the three-body helium Hamiltonian. Bounded
+claim 1 is narrowed to that computed one-parameter variational benchmark and its
+honest `+1.52 eV` (`1.92%`) residual above the NIST experimental `-79.005 eV`.
+The resulting note-hash change re-opens the note for independent re-audit.
 
 ## Gap map --- what it would take to convert this into a retained lane
 

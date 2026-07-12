@@ -58,6 +58,7 @@ from __future__ import annotations
 AUDIT_TIMEOUT_SEC = 1800
 
 import sys
+from pathlib import Path
 
 import numpy as np
 
@@ -264,6 +265,139 @@ def print_helium(table: dict) -> None:
           f"= {table['variational_Z_eff']:.4f}  (= 27/16)")
 
 
+# =========================================================================
+# Scope-narrowing hygiene gate (2026-07-12 downstream repair)
+# =========================================================================
+#
+# The paired note docs/ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md previously carried
+# an unsupported helium overclaim in bounded claim 1 (a clause asserting the
+# helium ground state was "exact within an available basis"). Downstream
+# hygiene narrows that claim to the one-parameter variational benchmark this
+# lane actually evaluates. The gate below pins the narrowed note to what the
+# numerics support and confirms the overclaim stays withdrawn. It is
+# DISCRIMINATING by construction:
+#   - the physical checks recompute hydrogen / helium energies from the real
+#     solver and closed-form machinery and compare them to FIXED external
+#     anchors (the Rydberg value, Z_eff = 27/16, the NIST helium energy), so
+#     a broken solver or a perturbed formula flips them red;
+#   - the string checks carry flip self-tests proving they FAIL if the
+#     overclaim phrase returns or the narrowed wording is dropped (defeats
+#     the tautological-gate anti-pattern).
+
+FORBIDDEN_HELIUM_OVERCLAIM = "exact (within available basis)"
+NARROWED_CLAIM_PHRASE = "computed one-parameter variational benchmark"
+HYGIENE_DATE_TAG = "2026-07-12"
+HYGIENE_MARKER = "scope-narrowing"
+# Substrings that sibling scaffold-lane runners pin verbatim; the narrowing
+# edit must leave every one intact (verified against the 2026-07 sibling set).
+SCAFFOLD_PIN_SUBSTRINGS = (
+    "textbook inputs",
+    "m_e",
+    "Coulomb coupling",
+    "physical units",
+    "No `Cl(3)` on `Z^3` framework input",
+)
+
+
+def _note_text() -> str:
+    """Read the paired scaffold note, resolving from the script location."""
+    candidates = (
+        Path(__file__).resolve().parents[1]
+        / "docs" / "ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md",
+        Path("docs/ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md"),
+    )
+    for path in candidates:
+        if path.exists():
+            return path.read_text(encoding="utf-8")
+    raise FileNotFoundError(
+        "ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md not found for scope gate"
+    )
+
+
+def _overclaim_absent(text: str) -> bool:
+    return FORBIDDEN_HELIUM_OVERCLAIM not in text
+
+
+def _narrowed_present(text: str) -> bool:
+    return NARROWED_CLAIM_PHRASE in text
+
+
+def scope_narrowing_gate(h_table: dict, he_table: dict) -> tuple[int, int]:
+    """Discriminating gate pinning the narrowed note to the real numerics."""
+    note = _note_text()
+    checks: list[tuple[str, bool]] = []
+
+    # --- physical discriminators: bounded-claim-1 numbers vs fixed anchors --
+    ground = next(r for r in h_table['rows'] if r['l'] == 0 and r['n'] == 1)
+    checks.append((
+        f"hydrogen 1s eigenvalue {ground['E_numerical_eV']:.4f} eV within "
+        f"0.01 eV of -13.6057 eV",
+        abs(ground['E_numerical_eV'] - (-13.6057)) < 0.01,
+    ))
+    worst_rel = max(abs(r['rel_error']) for r in h_table['rows'])
+    checks.append((
+        f"hydrogen worst |rel_err| {worst_rel:.2e} < 2e-4 "
+        f"(supports the ~1e-4 bounded claim)",
+        worst_rel < 2.0e-4,
+    ))
+    checks.append((
+        f"helium optimal Z_eff {he_table['variational_Z_eff']:.4f} == 27/16",
+        abs(he_table['variational_Z_eff'] - 27.0 / 16.0) < 1e-9,
+    ))
+    he_rel = he_table['variational_relative_error']
+    checks.append((
+        f"helium variational residual {he_rel:+.4f} in [-0.021, -0.018] "
+        f"(supports the ~2% bounded claim)",
+        -0.021 < he_rel < -0.018,
+    ))
+
+    # --- scope-narrowing string gates on the paired note --------------------
+    checks.append((
+        "bounded-claims helium overclaim withdrawn (forbidden phrase absent)",
+        _overclaim_absent(note),
+    ))
+    checks.append((
+        "bounded claim 1 narrowed to the computed one-parameter "
+        "variational benchmark",
+        _narrowed_present(note),
+    ))
+    checks.append((
+        f"dated downstream-hygiene line present "
+        f"(tag '{HYGIENE_DATE_TAG}' + marker '{HYGIENE_MARKER}')",
+        (HYGIENE_DATE_TAG in note) and (HYGIENE_MARKER in note),
+    ))
+    missing_pins = [s for s in SCAFFOLD_PIN_SUBSTRINGS if s not in note]
+    checks.append((
+        f"sibling scaffold pins intact (missing={missing_pins})",
+        not missing_pins,
+    ))
+
+    # --- flip self-tests: prove the string gates discriminate ---------------
+    reverted = note + "\n\nhelium is " + FORBIDDEN_HELIUM_OVERCLAIM + ".\n"
+    checks.append((
+        "overclaim-absence gate discriminates "
+        "(flips FAIL on a reverted note)",
+        _overclaim_absent(note) and not _overclaim_absent(reverted),
+    ))
+    stripped = note.replace(NARROWED_CLAIM_PHRASE, "")
+    checks.append((
+        "narrowed-phrase gate discriminates "
+        "(flips FAIL when the phrase is dropped)",
+        _narrowed_present(note) and not _narrowed_present(stripped),
+    ))
+
+    n_pass = sum(1 for _, ok in checks if ok)
+    n_fail = sum(1 for _, ok in checks if not ok)
+    print("=" * 78)
+    print("SCOPE-NARROWING HYGIENE GATE (paired note)")
+    print("-" * 78)
+    for label, ok in checks:
+        print(f"  [{'PASS' if ok else 'FAIL'}] {label}")
+    print("-" * 78)
+    print(f"TOTAL: PASS={n_pass} FAIL={n_fail}")
+    return n_pass, n_fail
+
+
 def main() -> int:
     h_table = hydrogen_table(n_grid=8000, r_max=200.0)
     he_table = helium_table()
@@ -277,7 +411,9 @@ def main() -> int:
     print("It does NOT use any Cl(3)-on-Z^3 framework input.")
     print("See docs/ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md for scope and gap map.")
     print("=" * 78)
-    return 0
+    print()
+    _, n_fail = scope_narrowing_gate(h_table, he_table)
+    return 0 if n_fail == 0 else 1
 
 
 if __name__ == '__main__':

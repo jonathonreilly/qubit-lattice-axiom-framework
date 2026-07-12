@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 374 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2759 |
+| unaudited | 2758 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 18 |
-| ~~audited_conditional~~ | 57 |
+| ~~audited_conditional~~ | 58 |
 | ~~audited_failed~~ | 11 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -46,12 +46,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 23 |
 | `audited_clean` | 488 |
-| `audited_conditional` | 57 |
+| `audited_conditional` | 58 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 33 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3109 |
+| `unaudited` | 3108 |
 
 | claim_type | count |
 |---|---:|
@@ -651,6 +651,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dirac_v4_convergence_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `dm_neutrino_cascade_geometry_note_2026-04-14` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `dm_neutrino_weak_matching_obstruction_note_2026-04-15` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `gate_b_connectivity_tolerance_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `gauge_vacuum_plaquette_connected_hierarchy_theorem_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
@@ -3471,6 +3472,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source directly constructs the finite Harper/PT matrices, evaluates the full PT response, bisects roots, and derives the eps*(T) table from those computed roots. The cited authorities are retained_bounded and no external comparator, empirical value, or hidden bridge is needed for the stated finite-grid scope.
 - **rationale:** The load-bearing result is a first-principles finite-dimensional computation on the declared Harper/PT surface, not a renaming or imported curve. The only imported numerical anchor is used as a provenance sanity check, while the eps*(T) values and spreads are computed from the PT roots in the runner. The printed root table also supports the disclosed residual pattern: per-temperature collapse values decrease with m and have residual signs (+,+,+,-). The claim is clean only within its bounded sampled-grid scope and does not establish continuum behavior or exact m-independence.
 - **auditor confidence:** high
+
+### `epsstar_full_kernel_coefficient_derivation_bounded_theorem_note_2026-06-12`
+
+- **Note:** [`EPSSTAR_FULL_KERNEL_COEFFICIENT_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-12.md`](../../docs/EPSSTAR_FULL_KERNEL_COEFFICIENT_DERIVATION_BOUNDED_THEOREM_NOTE_2026-06-12.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite Q=24, Ly=2, GL=20, m=0 Harper/PT numerical sign-flip check using eta=0.05, the stated branch grids, and a frozen 15% comparison tolerance; no continuum or controlled T-to-zero coefficient theorem was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00412-epsstar_full_kernel_coeffici`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Evaluating the complete finite-temperature divided-difference PT integrand at the fixed scale T=eta=0.05 and dividing by T^2 yields alpha_full=4.1418, whose residual over alpha_seagull is a positive kernel term large enough to flip the sign.  _(class `C`)_
+- **chain closes:** False — The runner genuinely recomputes the finite-model quantities, but the restricted chain does not derive or supply the Harper/PT Hamiltonian, response kernel, branch choice, and finite-scale prescription from an accepted premise. It also lacks a controlled same-response T-to-zero estimate establishing that the one-point quotient is the claimed coefficient.
+- **rationale:** The code performs substantive diagonalization, root finding, and finite-temperature kernel evaluation rather than merely printing the target values. However, the accepted minimal-axiom authority explicitly does not select a Hamiltonian, kinetic branch, or physical response bridge, while those structures are introduced directly by the runner. The reported alpha_kernel is additionally defined as the difference between a one-point full-kernel estimate and a separately regularized Sommerfeld proxy, without a controlled common T-to-zero extrapolation.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `stretch-attempt-with-honest-residual`)
+  - **gate failures:**
+    - N1 contains open framework-model-bridge, common-T-to-zero-limit, and tolerance-robustness routes, so the discipline gate cannot pass.
 
 ### `evolving_network_prototype_note`
 

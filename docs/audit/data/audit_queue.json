@@ -1,7 +1,7 @@
 {
   "by_criticality": {
     "critical": 672,
-    "high": 351,
+    "high": 350,
     "leaf": 1171,
     "medium": 775
   },
@@ -20255,28 +20255,6 @@
       "ready": true,
       "runner_path": "scripts/flavor_r_half_stable_under_thermalizing_arrow_2026_06_02.py",
       "transitive_descendants": 55
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger",
-      "audit_status": "unaudited",
-      "blocker": null,
-      "claim_id": "broad_gravity_derivation_note",
-      "claim_scope": null,
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "author_hint",
-      "criticality": "high",
-      "criticality_rank": 2,
-      "cross_confirmation_status": null,
-      "deps": [],
-      "direct_in_degree": 10,
-      "effective_status": "unaudited",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.7,
-      "note_path": "docs/BROAD_GRAVITY_DERIVATION_NOTE.md",
-      "queue_reason": "unaudited",
-      "ready": true,
-      "runner_path": "scripts/broad_gravity_signature_algebra_scope_check.py",
-      "transitive_descendants": 51
     },
     {
       "audit_independence_required": "fresh_context_or_stronger",
@@ -84299,6 +84277,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 615,
-  "total_pending": 2969
+  "ready_count": 614,
+  "total_pending": 2968
 }

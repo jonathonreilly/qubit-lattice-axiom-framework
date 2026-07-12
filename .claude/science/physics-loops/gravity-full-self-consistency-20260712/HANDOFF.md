@@ -13,3 +13,5 @@ Review-loop passed after three iterations. The exact next action after opening
 the review PR is independent audit of the fixed-`H` no-go row. No effective
 status should be assigned before that audit, and no repo-wide audit or
 publication surface should be edited by this branch.
+
+Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5256

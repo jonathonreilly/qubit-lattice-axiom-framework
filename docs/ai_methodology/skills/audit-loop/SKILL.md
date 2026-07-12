@@ -70,7 +70,27 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   is non-authoritative history and must never satisfy or bound a dependency.
   Scientific content outside the axiom/approved-primitive foundation must be
   retained-derived or remain conditional/open.
-- Apply the No-Go Discipline gate (`no-go-discipline` skill, checks N1-N8) before recording any verdict on a row with `claim_type: no_go`, a `bounded_theorem` whose source note names walls/open conditions, or an `audited_conditional` whose `verdict_rationale` would name walls. Negative-claim overclaims foreclose investigation paths permanently and require the same scrutiny as positive-claim overclaims. If any N1-N8 check fails on the source note, choose the more conservative non-clean verdict whose `verdict_rationale` reflects the honest narrower claim scope; do not record `audited_clean`, and do not transcribe the source note's inflated wall list into the ledger.
+- Apply the No-Go Discipline gate (`no-go-discipline` skill, checks N1-N8)
+  before recording any verdict on a row with `claim_type: no_go`, a
+  `bounded_theorem` whose source note names walls/open conditions, or an
+  `audited_conditional` whose `verdict_rationale` would name walls. **Tier
+  scope (owner-approved 2026-07-12):** the gate is always applied as auditor
+  JUDGMENT, but the heavyweight evidence plumbing is tier-scoped -- see
+  "Two-Tier Assurance" below. Every incoming audit still declares
+  `negative_assertion_classes`; a non-empty declaration requires N1-N8, and
+  an empty declaration never bypasses the mechanical source/output triggers.
+  Forensic packets (manifest-backed containment, live runner-stdout citation,
+  complete index dispositions) are mandatory for `claim_type: no_go` rows,
+  source paths matching the no-go-name trigger (including obstruction,
+  firewall, negative-boundary, no-uniform-sign, and stretch-attempt names),
+  and `AUDIT_FORENSIC_MODE=1` certification runs. Development-tier rows supply
+  the N1-N8 packet as structured judgment with quoted evidence, validated
+  structurally. Negative-claim overclaims foreclose investigation paths
+  permanently and require the same scrutiny as positive-claim overclaims. If
+  any N1-N8 check fails on the source note, choose the more conservative
+  non-clean verdict whose `verdict_rationale` reflects the honest narrower
+  claim scope; do not record `audited_clean`, and do not transcribe the source
+  note's inflated wall list into the ledger.
 - **Vocabulary is auto-corrected, not adjudicated.** The repo's process vocabulary is canonical in [`docs/repo/controlled_vocabulary.yaml`](../../../repo/controlled_vocabulary.yaml) (design in [`VOCABULARY_HYGIENE_DESIGN.md`](../../../repo/VOCABULARY_HYGIENE_DESIGN.md)). Before writing an audit verdict, run `scripts/vocab_lint.py --fix` on the source note under audit. Routine local drift that has a non-link-aware rewrite rule, such as legacy aliases and deprecated wording, is rewritten mechanically; link-aware filename suffix migrations and F-letter finding-label migrations are reported but deferred to Cleanup-2 tooling. This is a normal commit step, never a science verdict. Record what was rewritten in the ledger row's `prose_corrections` field and set `prose_status: auto_corrected`. When `vocab_lint --fix` changed the source note, include a `pre_audit_prose_fix` envelope on the audit blob carrying `{old_hash, new_hash, prose_status, prose_corrections}` so `apply_audit.py` atomically refreshes `note_hash` before the hash-drift check. If `vocab_lint` cannot mechanically rewrite a violation (genuinely new term, link-aware rename pending, or F-letter migration pending), set `prose_status: needs_human_vocab_decision` — but **do not** translate this into a non-clean `audit_status`. Physics and prose are separate verdicts. A clean derivation with vocabulary drift lands as `(audit_status: audited_clean, prose_status: auto_corrected)`; a clean derivation that introduces a genuinely new term lands as `(audit_status: audited_clean, prose_status: needs_human_vocab_decision)`. Never assign `audited_renaming` or `audited_conditional` on prose grounds alone.
 - Repo-wide axioms and explicitly approved framework primitives are accepted
   premises only when already registered in
@@ -126,6 +146,46 @@ Use this skill to audit one claim at a time from the repository audit queue and 
   Audit only the extra content actually claimed.
 - If the author family appears to be Codex and the current auditor is Codex, do not let the current context self-ratify a clean result. Restart the claim in a distinct restricted-input sub-agent when sub-agents are available, and record a clean result only as `independence: fresh_context` with a distinct `auditor` identity if `apply_audit.py` accepts it. If no sub-agent is available, skip clean application and report that a non-Codex, human, or fresh-context agent audit is required.
 - Do not stop after producing an audit JSON unless the user explicitly asks for a dry run, no-apply, or JSON-only result. If the user asks to "return JSON" as part of an audit-loop task, treat that as the required verdict format and still apply, verify, commit, and push the audit result according to this skill.
+
+## Two-Tier Assurance (owner-approved 2026-07-12)
+
+The lane runs two tiers; know which one your row is in before building the
+packet.
+
+- **Development tier (default).** Verdicts bind to claim content (note,
+  runner, premise hashes) and survive unrelated repository growth.
+  Independent cross-family re-derivation at xhigh and two-pass
+  cross-confirmation on critical rows are unchanged and remain the heart of
+  the audit. When walls are named, answer N1-N8 as structured judgments with
+  quoted evidence; the packet is validated structurally (no
+  manifest-containment scans, no live-stdout precondition, no full-universe
+  dispositions, no transport envelope).
+- **Forensic tier.** Mandatory for `claim_type: no_go` rows and source paths
+  matching the no-go-name trigger (including obstruction, firewall,
+  negative-boundary, no-uniform-sign, and stretch-attempt names); forced
+  lane-wide by `AUDIT_FORENSIC_MODE=1` (used for freeze/certification runs
+  against a pinned commit). Requires the full
+  heavyweight regime: orchestrator evidence transport
+  (`CODEX_AUDIT_TRUSTED_EVIDENCE_MANIFEST` envelope: schema
+  `codex_audit_trusted_manifest_v1`, matching `claim_id` and 32-hex
+  `audit_invocation_id`, timezone-aware `issued_at` within 2 hours,
+  `entries` = the rendered manifest), verbatim-contained N1 route evidence,
+  ATTEMPTED routes citing a live entry whose `roles` include
+  `"runner_stdout"`, complete
+  N6/N8 dispositions against the capped indexes (bulk scan kinds carry
+  authenticated omitted-tail summaries in `candidate_truncation`), and
+  snapshot authentication. Dynamic-index growth after packet authentication
+  is re-audit signal (`no_go_index_growth_targets.json`), never retroactive
+  invalidation.
+
+**Rolling lane certification.** `docs/audit/data/lane_certification.json`
+(pipeline step 7b) reports, per flagship lane, whether the root claim's full
+transitive dependency closure is chain-satisfying at the current state:
+retained-grade rows, retained-parent decorations, registered accepted
+premises, and permitted metadata context satisfy the marker. Treat a lane's
+`blocking` list as a high-value targeting input alongside the dispatch and
+cascade queues: draining those rows moves a flagship lane toward
+certification.
 
 ## Setup For Each Session
 

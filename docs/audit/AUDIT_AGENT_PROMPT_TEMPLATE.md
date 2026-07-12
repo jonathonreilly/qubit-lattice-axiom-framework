@@ -171,6 +171,24 @@ runner/helper sources, one-hop authorities, and premise registries supplied
 here. Missing cross-cycle evidence is a checklist failure, not permission to
 browse.
 
+Packet evidence requirements are tier-scoped (owner-approved 2026-07-12),
+but auditor judgment is not. Every triggered row must answer N1-N8, and every
+incoming audit must declare `negative_assertion_classes`; a non-empty
+declaration requires the packet, while an empty declaration never bypasses a
+mechanical source or output trigger.
+
+- **Development tier:** for everything except `claim_type: no_go` rows,
+  source paths matching the no-go-name trigger, and
+  `AUDIT_FORENSIC_MODE=1` certification runs, supply N1-N8 as complete
+  structured judgment with quoted evidence paths and locators. Structural
+  validation does not authenticate manifest containment, require live stdout,
+  require exhaustive N6/N8 index coverage, or require transport and snapshot
+  plumbing.
+- **Forensic tier:** the manifest-containment, live-stdout, complete-index,
+  transport, and snapshot requirements below are mandatory. The no-go-name
+  trigger includes no-go, obstruction, firewall, negative-boundary,
+  no-uniform-sign, and stretch-attempt source paths.
+
 The complete current premise registries and their canonical source notes are
 included below. Use their actual text and boundaries; do not infer a primitive
 from a desired conclusion and do not use a superseded axiom summary.
@@ -188,10 +206,11 @@ Both are flagged `axiom_or_approved_primitive` and do not bound downstream
 status. Open derivation obligations, historical admissions, governance
 decisions, and conventions are not chain-satisfying premises.
 
-Every N1-N8 evidence reference must use a path from this restricted manifest
-and a locator that occurs verbatim in that file's supplied content (whitespace
-normalization is allowed). A locator must contain at least 12 normalized
-characters. The manifest is an allow-list, not evidence by itself:
+For forensic-tier rows, every N1-N8 evidence reference must use a path from
+this restricted manifest and a locator that occurs verbatim in that file's
+supplied content (whitespace normalization is allowed). A locator must contain
+at least 12 normalized characters. The manifest is an allow-list, not evidence
+by itself:
 
 ```json
 {{NO_GO_EVIDENCE_MANIFEST}}
@@ -210,9 +229,10 @@ For N6, the orchestrator has supplied a partial-closure index built from all
 the foundation and open-obligation registries, the controlled vocabulary, every ledger-indexed
 meta note, the active review queue, and repository-visible physics-loop
 handoff/status surfaces. Its metadata declares every scanned path and the
-similarity thresholds and candidate limits. You must disposition every listed
-`candidate_id`; a free-text `none_found_reason` is not a substitute for this
-index.
+similarity thresholds and candidate limits. A forensic-tier packet must
+disposition every listed `candidate_id`; a free-text `none_found_reason` is not
+a substitute for that complete-index disposition. Development-tier packets
+are still structurally checked but do not require exhaustive index coverage.
 
 ```json
 {{NO_GO_PARTIAL_CLOSURE_INDEX}}
@@ -228,10 +248,14 @@ loop ledgers) are listed in full; the bulk similarity/scan kinds are capped by
 the declared relevance order with an authenticated omitted-tail summary
 (`candidate_truncation`: total hits, omitted count, omitted-id hash), so the
 corpus cannot be hidden while the disposition set stays reviewable. Index
-universes that grow after your packet is authenticated are re-audit signal
-for the dispatch stream, never retroactive invalidation of your verdict. You
-must disposition every listed `candidate_id`;
-`packet_complete` is valid only when the N8 evidence path names this index.
+universes that grow after your packet is authenticated are recorded as a
+generated re-audit targeting signal in
+`docs/audit/data/no_go_index_growth_targets.json`, never as retroactive
+invalidation of your verdict. A forensic-tier packet must disposition every
+listed `candidate_id`; for that tier, `packet_complete` is valid only when the
+N8 evidence path names this index. Development-tier packets still require an
+honest structured N8 judgment and `packet_complete=true` for PASS, without
+exhaustive index coverage.
 
 ```json
 {{NO_GO_CROSS_CYCLE_INDEX}}

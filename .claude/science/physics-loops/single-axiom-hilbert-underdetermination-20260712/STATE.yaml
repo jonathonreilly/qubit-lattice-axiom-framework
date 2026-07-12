@@ -1,0 +1,60 @@
+loop_slug: single-axiom-hilbert-underdetermination-20260712
+mode: run
+date_started: 2026-07-12
+target: best-honest-status
+current_goal: >-
+  Close the missing derivation in docs/SINGLE_AXIOM_HILBERT_NOTE.md without
+  importing graph, dynamics, or probability structure into the Hilbert premise.
+branch: physics-loop/single-axiom-hilbert-no-go-block01-20260712
+base_commit_at_start: 0be2f2796cffa4f7839605428244048f2d55dd4d
+lock_status: >-
+  The repo automation-lock script fails because it hardcodes inaccessible
+  /Users/jonreilly; this dedicated worktree plus LOCK.yaml is the single-writer surface.
+cycle_count: 1
+block_count: 1
+active_route: positive_support_and_leaf_no_go_split
+hard_residual: >-
+  Can a finite tensor-factorized Hilbert object select adjacency, physical
+  evolution, and Born readout without any additional operational premise?
+produced_claim_id: finite_factorized_hilbert_physical_selector_nonuniqueness_no_go_note_2026-07-12
+target_claim_id: single_axiom_hilbert_note
+actual_current_surface_status: exact-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: >-
+  The same-path note proposes a bounded exact support/boundary theorem and the
+  new leaf proposes a scoped no_go; neither is an author-side retention claim.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/SINGLE_AXIOM_HILBERT_NOTE.md
+  - scripts/frontier_single_axiom_hilbert.py
+  - docs/FINITE_FACTORIZED_HILBERT_PHYSICAL_SELECTOR_NONUNIQUENESS_NO_GO_NOTE_2026-07-12.md
+  - scripts/finite_factorized_hilbert_physical_selector_nonuniqueness_2026_07_12.py
+  - .claude/science/physics-loops/single-axiom-hilbert-underdetermination-20260712/
+open_imports_for_positive_route:
+  - adjacency or graph-selection rule
+  - physical time-action or dynamics selector
+  - operational probability and measurement premises
+no_go_routes:
+  - factor-permutation naturality cannot select between empty and complete graphs
+  - factorization defines support only after an operator is supplied
+  - Wigner/Stone routes assume the physical symmetry or time action
+  - Hilbert norm does not identify physical readout
+  - Gleason-type routes assume a probability measure and noncontextuality
+  - current framework supplies graph separately and withholds dynamics/Born weights
+trace_gate_classification: direct_blocker_closure
+review_disposition: iteration_3_pass
+audit_compatibility_validation: pending
+pr_status: pending
+pr_url: null
+next_exact_action: >-
+  Validate the audit pipeline in a disposable worktree without retaining
+  generated authority files, then push and open one unmerged review PR.
+stop_condition: >-
+  Stop after one coherent no-go science block passes review, is pushed, and has
+  one unmerged review PR.

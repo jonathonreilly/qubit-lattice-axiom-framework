@@ -1,10 +1,11 @@
 # S_3 Mass-Matrix No-Go Note
 
 **Date:** 2026-04-17
-**Status:** exact support theorem on the proposed_retained `hw=1` carrier
+**Claim type:** no_go
+**Status:** unaudited legacy no-go audit target; not publication-usable
 **Script:** `scripts/frontier_s3_mass_matrix_no_go.py`
-**Authority role:** canonical symmetry constraint for mass-like Hermitian
-operators on the `hw=1` triplet
+**Authority role:** historical proposed symmetry constraint; no current
+retained authority for a physical `hw=1` generation carrier
 
 ## Safe statement
 

@@ -13,3 +13,8 @@ The exact next action after PR delivery is independent reviewer integration,
 followed by a fresh audit of `restricted_strong_field_closure_note` as a
 bounded theorem. The separate physical source/action identification remains
 open and must not be inferred from this block.
+
+Validation ran in a disposable detached worktree so no generated audit or
+publication authority surface enters this branch. The full pipeline and strict
+lint passed with only pre-existing warnings/notices; the regenerated row was
+`bounded_theorem`, `unaudited`, `deps=[]`, and audit-queue `ready=true`.

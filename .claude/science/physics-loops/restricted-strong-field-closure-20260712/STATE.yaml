@@ -33,5 +33,13 @@ trace_gate: direct_blocker_closure
 review_disposition: pass
 pr_status: pending
 lock_status: automation lock unavailable because the script hard-codes an inaccessible canonical path; dedicated worktree used
-next_exact_action: validate audit-pipeline ingestion in a disposable worktree, then commit, push, and open one bounded-support review PR
+validation:
+  primary_runner: PASS=13 FAIL=0 TOTAL=13
+  historical_components: PASS
+  independent_math_check: PASS
+  review_loop: pass
+  audit_pipeline_disposable_worktree: PASS
+  audit_strict_lint: PASS_with_preexisting_warnings_only
+  audit_queue: restricted_strong_field_closure_note ready=true deps=[]
+next_exact_action: push the science branch and open one bounded-support review PR
 stop_condition: one coherent reviewed science block with one verified review PR

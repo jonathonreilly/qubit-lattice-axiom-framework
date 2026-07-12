@@ -43,7 +43,6 @@ REASONING = "xhigh"
 RETAINED = {"retained", "retained_bounded", "retained_no_go", "meta"}
 AUDITABLE_TYPES = {"positive_theorem", "bounded_theorem", "open_gate"}
 MIN_DELIVERY_BYTES = 200
-PACKET_REQUIRED_MARKER = "N1-N8 packet is required"
 PACKET_COMPLETION_STALL_SECONDS = 20 * 60
 PACKET_COMPLETION_POLL_SECONDS = 15
 PACKET_COMPLETION_EXIT_GRACE_SECONDS = 10
@@ -351,27 +350,24 @@ def packet_completion_pass(
     validator_error: str | None = None,
     attempt: int = 1,
 ) -> dict | None:
-    """One mechanical follow-up when an auditor's wall-naming output omitted
-    the structural no_go_discipline object (canary finding, theta lane
-    2026-07-12: two independent seats skipped it despite the template
-    instruction — prompt strength alone is insufficient). Same restricted
-    audit seat; judgments must not change; one attempt."""
-    if job.get("packet_completion_attempted"):
-        return None
-    job["packet_completion_attempted"] = True
-    if blob.get("no_go_discipline") is not None:
-        return None
+    """Mechanically complete or repair one structural N1-N8 packet.
+
+    The same restricted audit seat sees only its original packet, rejected
+    JSON, and exact validator error.  Every top-level judgment remains
+    immutable; only ``no_go_discipline`` may be added or replaced.
+    """
 
     cid = job["row"]["claim_id"]
     key = artifact_key(cid)
-    blob_path = workdir / f"completion-{key}-p{job['pass']}.json"
+    attempt_key = f"{key}-p{job['pass']}-a{attempt}"
+    blob_path = workdir / f"completion-{attempt_key}.json"
     blob_path.write_text(json.dumps(blob, indent=1), encoding="utf-8")
-    out_path = workdir / f"completion-{key}-p{job['pass']}-out.json"
+    out_path = workdir / f"completion-{attempt_key}-out.json"
     out_path.unlink(missing_ok=True)
-    log_path = workdir / f"completion-{key}-p{job['pass']}.log"
+    log_path = workdir / f"completion-{attempt_key}.log"
     error_block = (
         "\nThe validator rejected the previous packet with EXACTLY this "
-        f"error — fix precisely this, nothing else:\n    {0}\n".format(validator_error)
+        f"error — fix precisely this, nothing else:\n    {validator_error}\n"
         if validator_error
         else ""
     )
@@ -393,9 +389,9 @@ def packet_completion_pass(
         "evidence_path.\n"
         "- Otherwise set status FAIL with the honest failures list AND the "
         "FAIL-only fields (demotion, prior_claim_scope, narrowed_claim_scope, "
-        "corrected_wall_set, next_route). For a non-clean verdict like yours "
+        "corrected_wall_set, next_route). For an existing non-clean verdict, "
         "an honest FAIL gate is legitimate and validates; an unearned PASS "
-        "does not.\n"
+        "does not. Preserve the existing verdict either way.\n"
         "- Structured judgments with quoted evidence from the note/runner you "
         "already audited (structural validation; no manifest-containment, "
         "live-stdout, transport, or full-universe disposition plumbing).\n"
@@ -473,7 +469,7 @@ def packet_completion_pass(
         return None
 
     # This is packet completion, not a second scientific audit: the only
-    # permitted delta is adding the missing structural packet.
+    # permitted delta is adding or replacing the structural packet.
     expected = dict(blob)
     expected["no_go_discipline"] = packet
     canonical_completed = json.dumps(
@@ -529,13 +525,18 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     }
     error = audit_runner.validate_verdict(blob, cid, **validation_args)
     def _packet_error(err: object) -> bool:
-        text = str(err or "")
-        return PACKET_REQUIRED_MARKER in text or "No-Go Discipline" in text or any(
-            f"N{i}" in text for i in range(1, 9)
-        )
+        return bool(re.search(
+            r"(?:\bN[1-8]\b|No-Go Discipline|no_go_discipline)",
+            str(err or ""),
+        ))
 
     completion_attempt = 0
-    while error and _packet_error(error) and completion_attempt < 2:
+    while (
+        error
+        and not source_requires_no_go
+        and _packet_error(error)
+        and completion_attempt < 2
+    ):
         completion_attempt += 1
         completed = packet_completion_pass(
             job, blob, job["workdir"],
@@ -544,15 +545,10 @@ def finalize_worker(job: dict) -> tuple[dict | None, dict]:
         if completed is None:
             break
         blob = completed
-        error = audit_runner.validate_verdict(
-            blob,
-            cid,
-            source_requires_no_go=source_requires_no_go,
-            evidence_manifest=None,
-            prior_claim_scope=audit_runner.prior_claim_scope_for_row(row),
-            expected_invocation_id=job["invocation_id"],
-            transport_bounded_n8=job["transport_bound"] is not None,
-        )
+        error = audit_runner.validate_verdict(blob, cid, **validation_args)
+    clipped = prompt_has_clipped_evidence(job["evidence_manifest"])
+    if not error and blob.get("verdict") == "audited_clean" and clipped:
+        error = f"audited_clean packet has clipped evidence: {clipped}"
     if error:
         return None, {**base, "result": "validation_failed", "detail": error}
 

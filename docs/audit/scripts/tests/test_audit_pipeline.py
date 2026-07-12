@@ -3889,12 +3889,12 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                     )
                 )
 
-    def test_review_smuggle_corpus_gates(self):
-        """Every exact genuine-negative phrasing from the 2026-07-12
-        review-loop adversarial passes must gate."""
+    def test_authority_negative_corpus_gates(self):
+        """Exact genuine-negative phrasings across every policy assertion
+        class, tense, and disclaimer surface must gate."""
         m = _import("no_go_discipline_gate")
         for body in (
-            # Policy-list tense/paraphrase completion.
+            # Policy assertion classes across tenses and paraphrases.
             "In the previous cycle, no admissible route existed within the retained framework.",
             "There is no route to recover the selector from the retained primitives.",
             "After the finite-case check, the attempted route did not close.",
@@ -3978,13 +3978,13 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "## Scope\n### The four axioms do not supply a selector\nBody prose.\n",
             "## What this does NOT claim: the retained framework cannot determine the normalization\nBody.\n",
             "## Scope: Cannot derive a selector from retained structure\nBody.\n",
-            # 2026-07-12 iteration-2 CodeRunner must-gate misses.
+            # Wrapped, labeled, and uniqueness authority forms.
             "A residual selector wall survives the exact finite calculation.",
             "This note does not derive rho and the finite-k identity does not fix the continuum kernel.",
             "No route exists even though the obsolete wall no longer exists after the repair.",
             "- Not claimed: Record, by itself, cannot select a temporal orientation.",
             "No other analytic argument exists for the selector.",
-            # 2026-07-12 iteration-3 CodeRunner must-gate corpus.
+            # Tense, contraction, existence, and authority-alias forms.
             "The baseline rules did not determine the continuum scale.",
             "The minimal postulates will not determine a continuum normalization.",
             "The finite-block identity doesn't lift to the continuum sector.",
@@ -4017,6 +4017,12 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "The baseline algebra did not supply a unique normalization.",
             "The selector wall no longer blocks route A but blocks route B.",
             "The finite-size transfer did not fix the infinite-volume kernel.",
+            # Affirmative capability/underdetermination contrasts for the
+            # negated-predicate controls.
+            "The phase is underdetermined by the retained axioms.",
+            "The axioms are insufficient to determine the scale.",
+            "The retained inputs lack a normalization mechanism.",
+            "The framework is incapable of deriving the selector.",
             # Verb reading of closed/fixes with zero-count subjects.
             "No symmetry rule fixes points in the residual orbit.",
             "No numerical route closed loops in the sampled sector.",
@@ -4042,9 +4048,9 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                     rationale,
                 )
 
-    def test_review_control_corpus_stays_exempt(self):
-        """Every exact coverage/affirmative control from the 2026-07-12
-        review-loop passes must stay non-gating."""
+    def test_coverage_routing_controls_stay_exempt(self):
+        """Exact coverage-routing, affirmative, and misparse controls must
+        stay non-gating."""
         m = _import("no_go_discipline_gate")
         for body in (
             "The obsolete obstruction no longer exists after the repair.",
@@ -4067,7 +4073,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "## Does not derive\nThe cited parent theorem supplies the coefficient.\n",
             "## Caveats\n- Does not recover the calibrated unit conversion.\n",
             "This audit note does not derive the observed scale; the source row carries it.",
-            # 2026-07-12 iteration-2 CodeRunner must-not-gate misses.
+            # Scalar, compound-noun, polarity, and numbering controls.
             "## 9.3 Caveats\n2) Does not derive the external calibration constant.\n",
             "The exact transfer closes every residual wall and removes the obstruction.",
             "The scalar zero uniquely determines the affine origin.",
@@ -4077,7 +4083,18 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "No other unitary representation of the path algebra exists.",
             "It is by no means impossible to derive the phase; the displayed map derives it.",
             "## 11: Scope\nDoes not derive the external benchmark.\n",
-            # 2026-07-12 iteration-3 CodeRunner must-not-gate corpus.
+            # Negation, withdrawal, denial, and refutation of negative
+            # predicates are not negative assertions.
+            "The manuscript no longer asserts that the phase is underdetermined.",
+            "The phase is not underdetermined.",
+            "The manuscript no longer claims that the framework cannot constrain the phase.",
+            "The paper explicitly denies that the axioms cannot yield a scale.",
+            "The framework is not incapable of selecting a carrier.",
+            "The axioms are not insufficient to determine the scale.",
+            "The retained inputs do not lack a normalization mechanism.",
+            "It is false that the axioms fail to determine the scale.",
+            "The earlier claim that nothing in the framework singles out a carrier is refuted.",
+            # Uniqueness-object, scalar-zero, and presentation controls.
             "No other unitary representation of these directed paths exists.",
             "No other continuous map between these paths exists.",
             "No mathematically distinct admissible second representation exists.",

@@ -15,12 +15,14 @@ audit status of any dependency. It is not an audit verdict.
 ## Claim
 
 For a spinless single-band lattice Hamiltonian with the repo's Peierls plaquette
-flux convention through the `xy` plaquettes, the smooth-patch small-field
-grand-potential second derivative uses the native single-band normalization
+flux convention through the `xy` plaquettes, let `P_+` denote the union of
+positive-definite elliptic (band-minimum) smooth quadratic patches. The
+midpoint-ladder derivation fixes their contribution to the small-field
+grand-potential second derivative as
 
 ```text
-Omega''(0) = -1/12 * integral f'(E(k))
-             * [E_xx(k) E_yy(k) - E_xy(k)^2] d^3k/(2*pi)^3 .
+Omega''_{P_+}(0) = -1/12 * integral_{P_+} f'(E(k))
+                   * [E_xx(k) E_yy(k) - E_xy(k)^2] d^3k/(2*pi)^3 .
 ```
 
 For the cubic nearest-neighbor band
@@ -30,24 +32,29 @@ E(k) = -2 (cos kx + cos ky + cos kz)
 E_xx E_yy - E_xy^2 = 4 cos(kx) cos(ky),
 ```
 
-this is exactly the normalization used by the d=3 orbital-response
-decomposition note. The derivation below supplies that normalization from the
-Peierls magnetic-translation convention, the local single-band quadratic patch,
-and the midpoint Euler-Maclaurin coefficient. It does not introduce a new axiom,
-primitive, measure, weight, or fitted scalar.
+this is the local normalization used inside the d=3 orbital-response
+decomposition note. The derivation below supplies it on `P_+` from the Peierls
+magnetic-translation convention, the local single-band quadratic patch, and the
+midpoint Euler-Maclaurin coefficient. It does not introduce a new axiom,
+primitive, measure, weight, or fitted scalar. Extending the formula to the
+remaining Brillouin-zone patches is not derived here.
 
 The literature name for the same object is the spinless single-band
 Landau-Peierls intraband term. That name is cited in parallel as context only:
 the source authority in this repo is the derivation and runner named above.
 
-**Derived scope (elliptic patches).** The derivation below establishes this
-normalization for elliptic (positive-determinant) quadratic patches, where the
-local canonical matrix has a real magnetic frequency and a discrete midpoint
-Landau ladder. Extending the same `-det(H_xy)/12` coefficient through the
-determinant-zero lines to saddle (negative-determinant) patches is an explicit
+**Derived scope (positive-definite elliptic patches).** The derivation below
+establishes this normalization for positive-definite elliptic (band-minimum)
+quadratic patches, where the local canonical matrix has a real magnetic
+frequency and the energy has an upward discrete midpoint Landau ladder.
+Positive determinant alone also includes negative-definite band maxima: their
+canonical spectrum is elliptic, but their ladder is downward and needs a
+separate hole/filled-band boundary argument not supplied here. Extending the
+same `-det(H_xy)/12` coefficient to those maxima, and through the
+determinant-zero lines to saddle (negative-determinant) patches, is an explicit
 open conjecture and is not part of the derived bounded claim; the full
 Brillouin-zone reference value is reported as a diagnostic that holds
-conditionally on that conjecture.
+conditionally on that full-patch conjecture.
 
 ## Derivation
 
@@ -80,17 +87,20 @@ conditionally on that conjecture.
    det(H) = a b - c^2.
    ```
 
-   Thus for elliptic (positive-determinant) patches the local magnetic spacing
-   is `B sqrt(det(H))`, a real frequency, and the analytic coefficient carried
-   into the Brillouin-zone formula is the determinant `E_xx E_yy - E_xy^2`. For
-   saddle (negative-determinant) patches the canonical matrix has real
-   eigenvalues, `sqrt(det(H))` is imaginary, and there is no discrete magnetic
-   ladder, so the midpoint derivation of the next step does not apply. The
-   derivation is therefore restricted to elliptic patches; the saddle patches
-   are held out of the derived scope as an explicit open conjecture.
+   Thus for positive-definite elliptic patches the local magnetic spacing is
+   `B sqrt(det(H))`, a real frequency, and the energy has the upward ladder used
+   in the next step. Negative-definite elliptic patches have the same imaginary
+   canonical eigenvalue pair but a downward energy ladder, so the half-line
+   endpoint orientation below does not cover them. For saddle
+   (negative-determinant) patches the canonical matrix has real eigenvalues,
+   `sqrt(det(H))` is imaginary, and there is no discrete magnetic ladder. The
+   derivation is therefore restricted to positive-definite elliptic patches;
+   the negative-definite and saddle patches are held out as an explicit open
+   full-patch conjecture.
 
-3. **Midpoint Euler-Maclaurin coefficient.** The local magnetic levels sample
-   the transverse action by midpoint levels `(n + 1/2) h`, with
+3. **Midpoint Euler-Maclaurin coefficient.** On a positive-definite elliptic
+   patch, the local magnetic levels sample the transverse action by upward
+   midpoint levels `(n + 1/2) h`, with
    `h = B sqrt(det(H))`. For any decaying smooth test function `G`,
 
    ```text
@@ -124,14 +134,14 @@ conditionally on that conjecture.
    Omega''(0) = -1/12 * integral f'(E(k)) det(H_xy(k)) d^3k/(2*pi)^3.
    ```
 
-   This local coefficient is derived for elliptic patches, where the midpoint
-   magnetic ladder exists. Whether the same `-det(H_xy)/12` coefficient
-   continues unchanged across the determinant-zero lines into saddle patches is
+   This local coefficient is derived for positive-definite elliptic patches,
+   where the upward midpoint magnetic ladder exists. Whether the same
+   `-det(H_xy)/12` coefficient continues unchanged onto negative-definite
+   elliptic maxima and across the determinant-zero lines into saddle patches is
    an explicit open conjecture and is not part of the derived bounded claim.
-   The cubic-band runner samples both signs of `det(H_xy)` only to exhibit that
-   the Brillouin zone contains saddle regions held out of the derived elliptic
-   scope; the full-zone integral is reported as a diagnostic, conditional on
-   that conjecture.
+   The cubic-band runner samples all three patch classes only to exhibit the
+   regions held out of the derived scope; the full-zone integral is reported as
+   a diagnostic, conditional on that full-patch conjecture.
 
 5. **Cubic-band substitution.** For the cubic nearest-neighbor band,
    `E_xx = 2 cos(kx)`, `E_yy = 2 cos(ky)`, and `E_xy = 0`, so the determinant
@@ -139,31 +149,32 @@ conditionally on that conjecture.
 
 ## Source Boundary
 
-This note removes the d=3 orbital-response decomposition's naked textbook
-normalization input by deriving the finite-torus `B/(2*pi)` magnetic-cell
-density and the `-1/12` spinless unit-flux factor in the same Peierls-flux
-convention as the finite-torus comparison runner. The note is still bounded:
+Within the positive-definite elliptic scope, this note derives the finite-torus
+`B/(2*pi)` magnetic-cell density and the `-1/12` spinless unit-flux factor in
+the same Peierls-flux convention as the finite-torus comparison runner.
+It does not remove the parent full-Brillouin-zone input: that use remains
+conditional on the open full-patch conjecture. The note is still bounded:
 
 - it is a single-band, smooth-patch, spinless Peierls-flux statement;
 - it does not derive an interacting or continuum-QFT response;
 - it does not assert a thermodynamic-limit theorem for the finite `L=32`
   comparison note;
-- the derived normalization is established only for elliptic
-  (positive-determinant) quadratic patches; the saddle (negative-determinant)
-  full-patch continuation is an explicit open conjecture, not part of the
-  derived bounded claim, and the full Brillouin-zone reference value is a
-  diagnostic conditional on it;
+- the derived normalization is established only for positive-definite elliptic
+  (band-minimum) quadratic patches; the negative-definite elliptic and saddle
+  (negative-determinant) continuation is an explicit open conjecture, not part
+  of the derived bounded claim, and the full Brillouin-zone reference value is
+  a diagnostic conditional on it;
 - it leaves all status decisions to the audit lane.
 
 ## Runner Gates
 
 The runner verifies the finite magnetic-cell degeneracy density, the exact
 Bernoulli coefficients, the local symplectic determinant invariant, the
-elliptic-versus-saddle canonical-eigenvalue dichotomy that restricts the
-derivation to elliptic patches, the cubic-band Hessian determinant, the
-saddle-scope boundary held as an explicit open conjecture, and the parent d=3
-reference Landau-Peierls value reported as a diagnostic conditional on that
-conjecture. The passing run reports:
+positive-definite/negative-definite/saddle canonical dichotomy that restricts
+the written midpoint derivation to positive-definite elliptic patches, the
+cubic-band Hessian determinant, the full-patch boundary held as an explicit
+open conjecture, and the parent d=3 reference Landau-Peierls value reported as a
+diagnostic conditional on that conjecture. The passing run reports:
 
 ```text
 TOTAL: PASS=14 FAIL=0

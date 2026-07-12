@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 93 |
 | **retained_no_go** | 35 |
-| **retained_bounded** | 366 |
+| **retained_bounded** | 367 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 7 |
-| unaudited | 2774 |
+| unaudited | 2773 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 479 |
+| `audited_clean` | 480 |
 | `audited_conditional` | 54 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3124 |
+| `unaudited` | 3123 |
 
 | claim_type | count |
 |---|---:|
@@ -246,6 +246,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `declared_rg_map_uniform_chain_band_edge_fixed_point_nu_half_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | A | - |
 | `decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `dense_prune_guard_seed_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.5 | C | - |
+| `depth_branch_corrected_closed_form_bounded_theorem_note_2026-06-13` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | C | - |
 | `dimensional_gravity_table` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | B | - |
 | `dirac_core_card_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | C | - |
@@ -2668,6 +2669,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The provided runner source and helper sources compute the graph generation, pruning, guarded pruning, gravity, purity, effective channel count, and flip aggregation directly rather than printing hard-coded expected values. The cached stdout supports the narrowed aggregate claim: eff_p changes under the guard in every printed configuration and total flips drop from 7 unguarded to 3 guarded across the four aggregate rows.
 - **rationale:** The source note has been narrowed to exactly the cached runner's aggregate seed-range surface, and the runner output is present with exit_code 0. The primary runner imports helpers that are included in the packet and uses them in the load-bearing path; no helper appears to import the contested conclusion, hard-code the printed aggregate values, or substitute a definition for the claim. The aggregate flip reduction is true in the summed printed rows, although not in every individual configuration, which is acceptable under the narrowed aggregate scope.
 - **auditor confidence:** high
+
+### `depth_branch_corrected_closed_form_bounded_theorem_note_2026-06-13`
+
+- **Note:** [`DEPTH_BRANCH_CORRECTED_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-13.md`](../../docs/DEPTH_BRANCH_CORRECTED_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-13.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite L=3 K3-K6 supplied state records with tau=0.35 and the site-01 determinant-polar readout; no physical state-selection or all-L claim.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00395-depth_branch_corrected_close`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** Applying the integer jump J(theta) to the unwrapped determinant-root phase gives g(theta)=u(theta)-2*pi*J(theta)-mean, whose normalized Fourier weights reproduce the principal determinant-polar depth tails.  _(class `A`)_
+- **chain closes:** True — The runner independently constructs each supplied state, computes the determinant-polar increments and Laurent roots, and obtains the branch correction from those roots without using the frozen tails or weights to construct the result. The resulting pointwise principal phases and discrete Fourier tails agree for all four records within the stated tolerances.
+- **rationale:** This is a bounded algebraic identity over explicitly supplied finite state records, not a derivation of those records or their physical selection. Although reference tails, weights, root splits, and ordering are hard-coded as regression gates, the load-bearing corrected result is constructed independently from recomputed determinants and roots. The K4 branch case supplies a nontrivial falsifier: the unwrapped result fails while the root-derived integer wrapping restores the independently computed principal readout.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12`
 

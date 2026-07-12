@@ -123,12 +123,13 @@ budget, TOWARD shifts, `F~M` slopes, Born ratio, and `s=0` null.
 As of that repair the primary runner still loaded the helper via
 `importlib.util.spec_from_file_location` (a dynamic load inside
 `load_parent()`), not via `from scripts import poisson_self_field`. The
-import-form parser fix landed in PR #4424 targets the `from scripts import X`
-static form, so it did **not** auto-populate `helper_runner_paths` for that
-dynamic load; the 2026-06-20 repair therefore relied on the note-side reference
-above alone. See the 2026-07-12 entry below — that note-side reference did not
-populate the packet on its own, so the runner was subsequently converted to the
-static import form.
+import-form parser fix landed in PR #4424 targeted the `from scripts import X`
+static form, so at that time it did **not** auto-populate `helper_runner_paths`
+for this dynamic load; the 2026-06-20 repair therefore relied on the note-side
+reference above alone. A later generic parser repair (`f373596491`, 2026-07-07)
+added support for statically resolvable dynamic-loader paths. See the 2026-07-12
+entry below for the subsequent conversion of this runner to the canonical
+static-import form.
 
 Status authority: independent audit lane only. This repair sets no
 `audit_status`, `effective_status`, ledger tag, or retained status; it is the
@@ -137,18 +138,20 @@ exact audit-named packaging repair and nothing more.
 ### 2026-07-12 — static-import conversion
 
 The 2026-06-20 note-side reference alone did not place the helper in the
-restricted audit packet: the re-audit still returned `runner_artifact_issue`
-because the packet builder resolves helper sources from a runner's **static**
-`from scripts import X` imports (the PR #4424 parser), and the primary runner
-was still loading the helper through the dynamic
-`importlib.util.spec_from_file_location` form, which that parser does not follow.
+restricted audit packet: the 2026-06-21 re-audit still returned
+`runner_artifact_issue` because the packet builder then resolved helper sources
+from a runner's **static** `from scripts import X` imports (the PR #4424
+parser), while the primary runner used the dynamic
+`importlib.util.spec_from_file_location` form. The later generic parser repair
+`f373596491` can also resolve this statically expressed dynamic-loader path;
+the conversion here removes reliance on that secondary inference path.
 
 This repair converts the primary runner to the static form: it inserts the repo
 root on `sys.path` and imports the helper as `from scripts import
 poisson_self_field`, with `load_parent()` returning that imported module. The
-static import is exactly the form the packet builder resolves, so
-`scripts/poisson_self_field.py` is now shipped into the restricted packet and
-the load-bearing calls become verifiable in-packet.
+static import is exactly the form the PR #4424 parser resolves, so
+`scripts/poisson_self_field.py` remains explicitly discoverable for the
+restricted packet and the load-bearing calls are verifiable in-packet.
 
 No derived value changed. The primary runner still reports
 `SUMMARY: PASS=18 FAIL=0`, with the same residual budget, TOWARD shifts, `F~M`

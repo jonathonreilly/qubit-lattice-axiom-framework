@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 5 |
-| unaudited | 2815 |
+| unaudited | 2814 |
 | audit_in_progress | 24 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 35 |
+| ~~audited_conditional~~ | 36 |
 | ~~audited_failed~~ | 7 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 24 |
 | `audited_clean` | 459 |
-| `audited_conditional` | 35 |
+| `audited_conditional` | 36 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 29 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3165 |
+| `unaudited` | 3164 |
 
 | claim_type | count |
 |---|---:|
@@ -629,6 +629,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `rp_p2_gauge_extension_and_realization_residual_note_2026-05-28` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `s3_boundary_link_theorem_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
+| `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -6262,6 +6263,23 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The runner source constructs the stated lattice operator, O-real basis, relative support frames, transport alignment, and Pfaffian signs directly, with no helper imports or external comparators. The closure is for the measured finite grids only; it does not prove a continuum-in-theta no-crossing theorem between sampled points.
 - **rationale:** The load-bearing result is a first-principles finite computation of the stated matrix family, not a definition substitution or tuned external numerical match. The source code computes the spectra, ranks, transported frames, and Pfaffian signs rather than hard-coding the empty flip set; the hard-coded absolute-cutoff ranks are only a trap-control check and are not used as the label. The displayed main-line and marginal smooth-control numbers are consistent with the executable construction and the stated bounded scope.
 - **auditor confidence:** high
+
+### `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17`
+
+- **Note:** [`SINGLE_CLOCK_ANTIPERIODIC_AXIS_DATUM_S4_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-06-17.md`](../../docs/SINGLE_CLOCK_ANTIPERIODIC_AXIS_DATUM_S4_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-06-17.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite matrix transport on the runner-tested L=(4,4,4,4), time-first staggered, m=0.3 surface, plus the odd L=(3,3,3,3) falsifier and parity-grading invariance; the broader robustness/general even-block scope is not closed by the packet.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00350-single_clock_antiperiodic_ax`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For each adjacent pair, conjugation by W preserves the periodic staggered operator and maps M_ap(a) exactly to M_ap(a+1); because adjacent transpositions generate S4, the antiperiodic-axis label forms one four-axis orbit.  _(class `A`)_
+- **chain closes:** False — The finite L=(4,4,4,4) algebraic result closes, but the source claims checks at m=1.7, L=(6,6,6,6), an equivalent phase convention, and a general even cubic-symmetric theorem that the supplied runner does not establish. A generic link-wise proof or the missing robustness runs are required.
+- **rationale:** The runner genuinely constructs the finite staggered matrices and verifies the displayed L=4 conjugation, transitivity, grading, restoration, and odd-block falsifier facts; it is not a print-only or target-matching runner. However, its source and stdout contain no m=1.7, L=6, or alternate-phase-convention checks, despite the source note asserting those checks, and a single even finite case does not prove the stated all-even scope. The separate physical-dynamics boundary is appropriately disclaimed and does not undermine the narrower finite theorem.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `bounded-with-corrected-wall-count`)
+  - **gate failures:**
+    - N1: the generic all-even proof, claimed L=6 robustness, alternate phase convention, and native Z3 dynamics routes remain OPEN or UNTESTED
+    - N5: theorem-wide even-block and dynamics rhetoric includes resolutions not exercised by the runner
 
 ### `site_phase_cube_shift_intertwiner_note`
 

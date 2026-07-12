@@ -39,10 +39,10 @@ no_go_routes:
   - sharp-projector coordinates alone
   - scalar log-determinant equality alone
   - direct H_core algebra alone
-pr_status: pending
+pr_status: "open draft review PR #5291: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5291"
 next_exact_action: >-
-  Commit the review-clean block, push the dedicated science branch, and open
-  one review PR; after landing, send the target claim to independent audit.
+  After review and landing by an authorized integrator, send the target claim
+  to independent audit; then attack the typed source-action W-map construction.
 stop_condition: >-
   Stop after the coherent block has a passing review disposition and one
   verified review PR, or record a concrete delivery failure in PR_BACKLOG.md.

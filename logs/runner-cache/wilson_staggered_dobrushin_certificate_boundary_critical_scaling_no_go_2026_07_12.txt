@@ -1,0 +1,10 @@
+PASS The exact SU(3) real-trace range has minimum -3/2 and maximum 3: quadratic vertex=0.5, min=-1.500000, max(identity)=3
+PASS Exact oscillation sharpens the Wilson row coefficient to 27/2: osc(phi)/beta=1.500, osc(change)/beta=3.000, row/beta=13.500
+PASS A positive-beta point on the old equality curve is strictly inside the sharp wedge: m=8, beta=0.0447559919, old=1.000000000, sharp=0.798598037
+PASS The full sharp-wedge weighted-row derivative is universally below nine: kappa0=0.3916615362, qmax=0.3995736241, derivative<8.592268<9
+PASS Weight lambda=delta/100 retains at least half of every sampled sharp margin: checked=30, max(value-limit)=-4.726e-05
+PASS The delta=a^p gap certificate separates divergent, finite, and uninformative regimes: p=.5:3.162e+00, p=1:1.000e-02, p=1.5:3.162e-05
+PASS The sharp certificate remains disjoint from weak-beta/light-lattice-mass scaling: beta<2/27=0.074074074, m>5.809057503
+PASS Certificate saturation has a zero-influence non-saturation countermodel: actual rows=0; reported rows=0.500,0.900,0.990,0.999
+PASS Source-note narrow no-go and N1-N8 contract: missing=[]; missing N2 pairs=[]; attempted=8
+SCORECARD PASS=9 FAIL=0

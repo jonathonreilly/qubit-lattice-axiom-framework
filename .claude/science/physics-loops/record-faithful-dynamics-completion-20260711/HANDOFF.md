@@ -1,17 +1,18 @@
 # Handoff
 
 Current branch:
-`physics-loop/record-faithful-dynamics-block15-circle-spin-holonomy-boundary-20260712`.
-The circle-boundary runner reports `PASS=25 FAIL=0`. The first proposed
-interacting transfer theorem was rejected before shipping: the July `C_f`
-matrix is `4^N` feature/GNS data, not a `2^N` one-sided Fock operator; a
-periodic circle also has a second-seam sign and residual Polyakov-holonomy
-boundary. The corrected bounded result gives an explicit counterexample to
-periodic wrap plus a uniform reflection phase, then proves the
-twisted-antiperiodic free repair for both adjacent reflection-plane classes.
-The full coupled circle remains open on the two-seam forest gauge/holonomy
-lemma. Block14 PR #5264 remains the stacked base and independent audit remains
-authoritative.
+`physics-loop/record-faithful-dynamics-block16-two-seam-holonomy-20260712`.
+The two-seam forest runner reports `PASS=37 FAIL=0`. For each adjacent
+reflection plane, the two crossing temporal-link layers form a
+reflection-invariant matching that can be fixed to identity with exact
+normalized-Haar and Berezin factor one. Full Polyakov conjugacy data remains
+arbitrary on the unfixed temporal links, and both Wilson and repaired
+staggered seam factors reduce to positive local kernels. The two planes use
+separate gauge charts. A single literal identity-link chart containing all
+four seam layers and invariant under both reflections closes to the whole
+temporal cycle, so it is not a forest and forces trivial holonomy. The theorem
+does not yet claim the complete coupled circle Gram or transfer. Block15 PR
+#5270 is the stacked base and independent audit remains authoritative.
 
 The campaign is initialized on
 `physics-loop/admissibility-dynamics-realization-bridge-20260711` from current

@@ -8,30 +8,32 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block15-circle-spin-holonomy-boundary-20260712
+branch: physics-loop/record-faithful-dynamics-block16-two-seam-holonomy-20260712
 base_commit_at_start: 9d1636f05f
-cycle_count: 15
-block_count: 15
-active_route: periodic_circle_spin_structure_and_gauge_holonomy_boundary
+cycle_count: 16
+block_count: 16
+active_route: plane_adapted_two_seam_forest_gauge_and_polyakov_holonomy
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: periodic_staggered_os_circle_failure_twisted_antiperiodic_free_repair_bounded_theorem_note_2026-07-12
+produced_claim_id: two_seam_forest_gauge_polyakov_holonomy_preservation_bounded_theorem_note_2026-07-12
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  The naive periodic-fermion/uniform-reflection circle extension of the July
-  coupled half-space Gram fails already in the free temporal reduction at the
-  second seam. Antiperiodic wrap plus a transported seam phase repairs both
-  adjacent free reflection-plane classes and recovers the positive two-step
-  transfer. The coupled circle remains open on a residual temporal-holonomy
-  lemma; global temporal gauge would restrict to trivial Polyakov holonomy.
+  For each adjacent reflection plane, an exact two-seam matching forest can be
+  fixed with normalized-Haar and Berezin factor one while preserving arbitrary
+  Polyakov conjugacy class. The Wilson and twisted-antiperiodic staggered seam
+  kernels then reduce to positive local factors. The two planes require
+  separate charts; a single invariant identity-link forest containing all four
+  seams closes to the full temporal cycle and kills holonomy. The complete
+  coupled circle Gram and compressed-correlation identity remain open.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source gives a finite counterexample to an overbroad periodic circle RP
-  route, derives the exact twisted-antiperiodic free repair and both plane
-  classes, and explicitly leaves the full gauge-holonomy bridge open.
+  The source proves the exact forest/Haar/Polyakov bridge and seam-local
+  Wilson-times-fermion positivity under supplied Wilson-staggered, spin, and
+  observable-domain conditions, while explicitly leaving the full coupled
+  circle Gram, transfer, and continuum open.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -86,6 +88,9 @@ files_touched:
   - docs/PERIODIC_STAGGERED_OS_CIRCLE_FAILURE_TWISTED_ANTIPERIODIC_FREE_REPAIR_BOUNDED_THEOREM_NOTE_2026-07-12.md
   - scripts/periodic_staggered_os_circle_failure_twisted_antiperiodic_free_repair_2026_07_12.py
   - logs/runner-cache/periodic_staggered_os_circle_failure_twisted_antiperiodic_free_repair_2026_07_12.txt
+  - docs/TWO_SEAM_FOREST_GAUGE_POLYAKOV_HOLONOMY_PRESERVATION_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/two_seam_forest_gauge_polyakov_holonomy_2026_07_12.py
+  - logs/runner-cache/two_seam_forest_gauge_polyakov_holonomy_2026_07_12.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -119,10 +124,11 @@ no_go_routes:
   - exact vacuum/infinite-time reflected Grams acquire boundary or thermal-image corrections on finite open chains or temporal circles
   - periodic fermion wrap plus one uniform reflection phase is non-PSD at the second circle seam even in the free temporal reduction
   - global temporal gauge on a periodic gauge circle silently restricts to trivial Polyakov holonomy
+  - one literal identity-link forest invariant under both adjacent reflections and containing all four crossing layers closes to the entire temporal cycle, is not a forest, and forces trivial Polyakov holonomy
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
-review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_checks_running
+review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_bounded
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_preparing
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
@@ -139,9 +145,11 @@ block13_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block14_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5264
 block15_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5270
 next_exact_action: >-
-  Deliver the periodic-circle failure/twisted-antiperiodic free repair, then
-  prove a two-seam temporal-link forest gauge-fixing lemma that leaves the
-  Polyakov holonomy dynamical and supplies both coupled reflection classes.
+  Compose the two positive seam kernels with the full side-local
+  Wilson-staggered action in separate plane-adapted charts, prove the complete
+  coupled finite-circle reflected Gram for both adjacent planes, and construct
+  only the resulting compressed correlation operator before taking the
+  infinite-time transfer-semigroup limit.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

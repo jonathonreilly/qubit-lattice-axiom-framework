@@ -88,6 +88,23 @@ The cubic neighbor-response result was pushed and opened for review:
 
 No merge was performed. Independent audit remains authoritative.
 
+The two-seam forest gauge and Polyakov-holonomy bridge is prepared as the next
+stacked review block:
+
+- base: `physics-loop/record-faithful-dynamics-block15-circle-spin-holonomy-boundary-20260712`
+- head: `physics-loop/record-faithful-dynamics-block16-two-seam-holonomy-20260712`
+- source runner: `PASS=37 FAIL=0`
+- disposition: PASS WITH BOUNDED CLAIMS after independent code/math,
+  claim/import/Nature, governance, labeling, and full N1--N8 review; the
+  artifact proves the plane-adapted forest/Haar/holonomy bridge and
+  seam-local positive kernel while leaving the full coupled circle Gram open
+- audit compatibility: one `bounded_theorem` / `unaudited` row, exactly three
+  dependencies, strict lint with no errors, vocabulary lint with zero
+  violations, and generated audit/effective-status surfaces stripped
+- delivery: PR pending
+
+No merge is authorized. Independent audit remains authoritative.
+
 The overlapping-edge schedule and time/rate nonselection result is prepared
 for the next stacked review PR:
 

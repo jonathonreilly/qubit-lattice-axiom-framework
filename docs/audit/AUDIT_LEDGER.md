@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 5 |
-| unaudited | 2812 |
+| unaudited | 2811 |
 | audit_in_progress | 24 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 37 |
+| ~~audited_conditional~~ | 38 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 24 |
 | `audited_clean` | 459 |
-| `audited_conditional` | 37 |
+| `audited_conditional` | 38 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3162 |
+| `unaudited` | 3161 |
 
 | claim_type | count |
 |---|---:|
@@ -631,6 +631,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `sigma_hier_uniqueness_theorem_note_2026-04-19` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | D | - |
 | `single_clock_antiperiodic_axis_datum_s4_transport_bounded_theorem_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `source_resolved_generated_family_probe_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
+| `source_resolved_generated_wavefield_transfer_v2_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
@@ -6529,6 +6530,22 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The artifact-chain runner reproduces every frozen summary row and wavefield-vs-static gain in the note. The source note explicitly keeps the result bounded and does not claim generated-family closure.
 - **rationale:** The current script output matches the note: zero-source reduction is 0 across rows, baseline/static is 4/16 with F~M=0.199 and N_eff=2.69, baseline/causal is 3/16 with F~M=-0.308 and N_eff=2.50, baseline/wavefield is 0/16 with F~M=0.655 and N_eff=2.53, tweak/static is 9/16 with F~M=-0.316 and N_eff=5.31, tweak/causal is 9/16 with F~M=0.444 and N_eff=5.67, and tweak/wavefield is 6/16 with F~M=0.098 and N_eff=5.14. The wavefield-vs-static deltas also match and are negative for aggregate centroid gain. Residual risk is that the ledger runner_path is unset even though the note's artifact chain names the script; the audit result is clean for the bounded claim as written, not for metadata completeness or closure.
 - **auditor confidence:** high
+
+### `source_resolved_generated_wavefield_transfer_v2_note`
+
+- **Note:** [`SOURCE_RESOLVED_GENERATED_WAVEFIELD_TRANSFER_V2_NOTE.md`](../../docs/SOURCE_RESOLVED_GENERATED_WAVEFIELD_TRANSFER_V2_NOTE.md)
+- **claim_type:** `no_go`
+- **claim_scope:** Finite four-seed (0..3), 16-layer, 24-node-per-layer generated-DAG comparison of the kNN-floor bridge against one z-spread stencil under the runner's fixed propagation and field parameters.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00353-source_resolved_generated_wa`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** For the tested z-spread stencil, detector support decreases and the wavefield mass-law exponent worsens relative to the retained bridge, so the hoped-for transfer is not observed.  _(class `C`)_
+- **chain closes:** False — The runner genuinely computes the quoted finite-case metrics, but the mandatory no-go gate does not close: only one geometry-rule mechanism was tested, while alternate geometry, dynamics, scale, and observable routes remain open.
+- **rationale:** The source and runner agree numerically: the z-spread stencil changes TOWARD by +1 but reduces N_eff in both modes and changes the wavefield F~M exponent from 0.098 to -0.436. The code performs those calculations rather than printing expected constants. Nevertheless, the no-go discipline is incomplete because one finite stencil comparison cannot close the required distinct alternative mechanisms; the result is support for a finite discriminator, not a clean no-go.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-attempt-with-named-untested-routes`)
+  - **gate failures:**
+    - N1: only one geometry-rule mechanism was actually tested; five genuinely distinct alternative mechanisms were not closed.
 
 ### `source_resolved_geometry_rule_repair_note`
 

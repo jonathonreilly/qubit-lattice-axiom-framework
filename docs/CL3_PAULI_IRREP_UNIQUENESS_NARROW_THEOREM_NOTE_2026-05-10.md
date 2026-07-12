@@ -55,12 +55,24 @@ omega gamma_i = gamma_i omega  for all i in {1, 2, 3}.                        (P
 In the Pauli irrep `rho_+(gamma_i) = sigma_i`, `omega -> +i I`. In the
 parity-conjugate irrep `rho_-(gamma_i) = -sigma_i`, `omega -> -i I`.
 
-**(U3) Uniqueness within chirality.** Any faithful irreducible complex
-representation `rho : Cl(3,0) -> End(V)` on a finite-dimensional `V`
-satisfies `dim_C V = 2`, and the central pseudoscalar acts as a scalar
-`rho(omega) = ε i I` with `ε in {+1, -1}` fixed by `rho`. Up to unitary
-equivalence there are exactly two such irreps, distinguished by the
-`omega`-eigenvalue.
+**(U3a) Complex-linear uniqueness within chirality.** Any faithful
+irreducible complex representation `rho : Cl(3,0) -> End(V)` on a
+finite-dimensional `V` satisfies `dim_C V = 2`, and the central
+pseudoscalar acts as a scalar `rho(omega) = ε i I` with `ε in {+1, -1}`
+fixed by `rho`. Up to complex-linear isomorphism there are exactly two
+such irreps, distinguished by the `omega`-eigenvalue. This is the
+unconditional classification; no inner-product structure is used, and it
+is exactly the scope carried by this row.
+
+**(U3b) Unitary refinement under a `*`-representation hypothesis.** If, in
+addition, the representation is a `*`-representation with respect to a
+compatible Hermitian inner product — equivalently, the generators
+`rho(gamma_i)` are Hermitian, as the canonical Pauli generators `sigma_i`
+are — then within each chirality class the irrep is unique up to *unitary*
+equivalence. The Hermitian-form hypothesis is an explicit mathematical
+condition on the representation, not a framework axiom or import; the
+canonical Pauli irrep satisfies it, so the refinement applies to the
+framework's realized generators.
 
 The framework-specific instance — the canonical positive-chirality
 Pauli irrep `gamma_i = sigma_i` with `omega = i I` — is verified
@@ -94,9 +106,11 @@ omega^2 = (gamma_1 gamma_2 gamma_3)(gamma_1 gamma_2 gamma_3).
 ```
 
 Moving each `gamma_i` factor left through the others using
-`{gamma_i, gamma_j} = 0` for `i != j` and `gamma_i^2 = I` produces six
-sign flips total, giving `omega^2 = -I`. Explicitly verified in the
-runner via exact sympy multiplication.
+`{gamma_i, gamma_j} = 0` for `i != j` and `gamma_i^2 = I` requires three
+anticommutation swaps (transpositions of adjacent distinct factors), each
+contributing one sign flip, so the net sign is `(-1)^3 = -1`, giving
+`omega^2 = -I`. Explicitly verified in the runner via exact sympy
+multiplication (Part 8, the three-swap reduction).
 
 **(U2 — P2).** Centrality `omega gamma_i = gamma_i omega` for
 `i in {1, 2, 3}` follows from the same anticommutation calculation: e.g.
@@ -115,7 +129,7 @@ omega gamma_1 = (gamma_1 gamma_2 gamma_3) gamma_1
 And `gamma_1 omega = gamma_1 (gamma_1 gamma_2 gamma_3) = gamma_2 gamma_3`,
 matching. The other directions are analogous. Verified in runner.
 
-**(U3).** From (P1) and (P2), `omega^2 = -I` and `omega` central. By
+**(U3a).** From (P1) and (P2), `omega^2 = -I` and `omega` central. By
 Schur's lemma on a finite-dimensional irrep, `omega` acts as a scalar
 `s I` with `s^2 = -1`, so `s = ±i`. The two cases correspond to the
 two chirality summands. Each summand maps to `M_2(C)` and acts on `C^2`
@@ -133,7 +147,28 @@ e_+ + e_- = I,    e_+ e_- = 0,    e_+^2 = e_+,    e_-^2 = e_-.            (E)
 
 By construction `e_+` projects onto the chirality-`+` summand and
 `e_-` projects onto the chirality-`-` summand. Within each summand,
-Schur's lemma forces dimension 2 and unitary uniqueness.
+Schur's lemma forces dimension 2 and complex-linear uniqueness (the
+unique 2-dimensional irrep of `M_2(C)`).
+
+**(U3b).** Fix a chirality and let `rho, rho' : Cl(3,0) -> End(C^2)` be
+two `*`-representations of that chirality — each `rho(gamma_i)` and
+`rho'(gamma_i)` Hermitian. By (U3a) they are complex-linearly
+equivalent: there is an invertible `T` with
+`rho'(gamma_i) = T rho(gamma_i) T^{-1}` for all `i`. Taking adjoints and
+using Hermiticity on both sides gives
+`rho'(gamma_i) = (T^†)^{-1} rho(gamma_i) T^†`, so `T^† T` commutes with
+every `rho(gamma_i)` and hence with the whole image `M_2(C)`. By Schur
+`T^† T = c I`, and positivity of `T^† T` forces `c > 0`, so
+`U := T / sqrt(c)` is unitary with `rho'(gamma_i) = U rho(gamma_i) U^{-1}`.
+Thus complex-linear equivalence of irreducible `*`-representations upgrades
+to unitary equivalence. The Hermitian-generator hypothesis is load-bearing:
+for a non-unitary intertwiner the images need not be Hermitian and `T^† T`
+need not be scalar, so the upgrade genuinely uses the hypothesis rather
+than holding for every equivalence. The runner verifies this on explicit
+unitary, scaled-unitary, and non-unitary intertwiners (Part 9), including a
+wrong-value rejector: a non-unitary `T` yields at least one non-Hermitian
+image (excluded from the `*`-class) while still realizing a valid
+complex-linear equivalence.
 
 ∎
 
@@ -159,8 +194,10 @@ Both follow algebraically from (U1)-(U3).
 
 - The existence (U1) of the canonical Pauli irrep on `C^2`.
 - The central pseudoscalar relations (P1) and (P2).
-- The uniqueness (U3) of faithful irreducible complex Cl(3)
-  representations up to chirality, with `dim_C V = 2`.
+- The complex-linear uniqueness (U3a) of faithful irreducible complex
+  Cl(3) representations up to chirality, with `dim_C V = 2`, and the
+  unitary refinement (U3b) under the explicit `*`-representation
+  (Hermitian-generator) hypothesis.
 - Two corollaries above, conditional on the standard identification of
   per-site Hilbert space with the faithful irreducible Cl(3) rep.
 
@@ -226,7 +263,11 @@ separate authorities):
 
 None. This narrow note has zero ledger dependencies because it states
 only finite-dimensional Clifford-algebra representation theory on
-abstract generators `gamma_1, gamma_2, gamma_3` satisfying (Cl3).
+abstract generators `gamma_1, gamma_2, gamma_3` satisfying (Cl3). The
+`*`-representation / compatible-Hermitian-inner-product hypothesis used in
+(U3b) is an explicit mathematical condition placed on the representation
+itself; it introduces no ledger dependency, no axiom, and no import, and
+is satisfied by the canonical Pauli generators.
 
 ## Forbidden imports check
 
@@ -235,6 +276,10 @@ abstract generators `gamma_1, gamma_2, gamma_3` satisfying (Cl3).
 - No fitted selectors consumed.
 - No admitted unit conventions load-bearing on the claim.
 - No same-surface family arguments.
+- No inner-product or `*`-structure imported from the axioms; the
+  Hermitian-form hypothesis in (U3b) is an explicit stated condition on the
+  representation, satisfied by the canonical Pauli generators, not a
+  framework import.
 
 ## Validation
 
@@ -247,18 +292,28 @@ verifies, at exact sympy precision:
    `rho_-(omega) = -i I_2`.
 3. (P2) `omega gamma_i = gamma_i omega` for `i in {1, 2, 3}` in both
    chirality summands.
-4. (U3) In both chirality summands, the central idempotents
+4. (U3a) In both chirality summands, the central idempotents
    `e_± := (1 ∓ i omega)/2` are well-defined and satisfy
    `e_+ + e_- = I`, `e_+ e_- = 0`, `e_+^2 = e_+`, `e_-^2 = e_-`.
 5. The negative-chirality irrep `rho_-(gamma_i) = -sigma_i` is NOT
-   unitarily equivalent to `rho_+` (different `omega`-eigenvalue,
-   confirmed by exact comparison).
+   complex-linearly equivalent to `rho_+` (different `omega`-eigenvalue,
+   hence a fortiori not unitarily equivalent; confirmed by exact
+   comparison).
 6. Corollary (C1) tensor-product dim formula:
    `dim_C ⊗_{x ∈ Λ} H_x = 2^{|Λ|}` for small `|Λ| ∈ {1, 2, 3, 4}`.
 7. Counterfactual probe: a one-dimensional candidate "representation"
    `(gamma_i -> +1)` does **not** satisfy
    `{gamma_i, gamma_j} = 2 delta_{ij}` for `i != j`, confirming
    `dim = 1` is forbidden.
+8. (U3b) `*`-representation → unitary upgrade (Part 9): for explicit
+   unitary and scaled-unitary intertwiners `S` (Hadamard, an `SO(2)`
+   rotation, and `3·`Hadamard), every conjugate `S sigma_i S^{-1}` is
+   Hermitian and `S^† S` is a positive scalar multiple of `I` commuting
+   with all `sigma_i`; and a wrong-value rejector: for non-unitary
+   `S in {diag(2, 1), [[1, 1], [0, 1]]}` at least one `S sigma_i S^{-1}`
+   is non-Hermitian (excluded from the `*`-class) and `S^† S` is
+   non-scalar, while `{S sigma_i S^{-1}, S sigma_j S^{-1}} = 2 delta_{ij} I`
+   still holds (a valid complex-linear, non-unitary equivalence).
 
 ## Cross-references
 

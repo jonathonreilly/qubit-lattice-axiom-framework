@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 360 |
 | _retained_pending_chain_ | 3 |
 | open_gate | 6 |
-| unaudited | 2807 |
+| unaudited | 2806 |
 | audit_in_progress | 24 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
 | ~~audited_renaming~~ | 17 |
-| ~~audited_conditional~~ | 41 |
+| ~~audited_conditional~~ | 42 |
 | ~~audited_failed~~ | 8 |
 | `decoration_under_axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28` | 1 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
@@ -45,12 +45,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 24 |
 | `audited_clean` | 460 |
-| `audited_conditional` | 41 |
+| `audited_conditional` | 42 |
 | `audited_decoration` | 18 |
 | `audited_failed` | 30 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 17 |
-| `unaudited` | 3157 |
+| `unaudited` | 3156 |
 
 | claim_type | count |
 |---|---:|
@@ -637,6 +637,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `staggered_os0_supplied_action_ks_blocking_four_taste_module_narrow_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `teleportation_3d_initial_ramp_probe_note` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | C | - |
 | `universal_gr_block_normalization_note` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
+| `universal_gr_complement_canonical_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `uv_gauge_to_yukawa_bridge_sc_vs_pert_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `yt_ew_m_residual_note_2026-05-02` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | judicial_review | codex-gpt-5.6 | A | - |
@@ -7707,6 +7708,24 @@ Criticality and load-bearing score are computed from the citation graph alone. T
     - N2 retains unresolved independent walls.
     - N3 found hidden atlas and rotation premises.
     - N5 found untested resolutions behind the global rhetoric.
+
+### `universal_gr_complement_canonical_note`
+
+- **Note:** [`UNIVERSAL_GR_COMPLEMENT_CANONICAL_NOTE.md`](../../docs/UNIVERSAL_GR_COMPLEMENT_CANONICAL_NOTE.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Exact algebraic witness that one 90-degree spatial rotation preserves the A1 projection and the runner's two-parameter quadratic energy while moving the chosen complement representative; no exhaustive full-SO(3) or all-invariant no-section theorem was audited.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T015154Z-1f0c3329-00358-universal_gr_complement_cano`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** A 90-degree spatial rotation moves the chosen complement coordinates while preserving the A1 projection and every quadratic energy in the runner's checked two-parameter invariant class.  _(class `A`)_
+- **chain closes:** False — The runner closes the finite algebraic witness, but a single rotation and one quadratic family do not establish that full SO(3) is the exact residual gauge or exclude selection by other enumerated or future invariants. The missing step is an exhaustiveness theorem or computation covering the full claimed invariant packet.
+- **rationale:** Issue: the runner genuinely verifies a moved, energy-tied orbit pair, but the note repeatedly promotes that pair to full-SO(3) residual-gauge and complement-section language. Why this blocks: one 90-degree witness and the family alpha E_A1 + beta E_perp do not prove group-wide or invariant-class exhaustiveness. Repair target: supply the admitted exhaustiveness theorem or narrow every operative verdict and strongest-statement sentence to the computed pair and quadratic family. Claim boundary until fixed: the finite algebraic indistinguishability witness is valid.
+- **auditor confidence:** high
+- **No-Go Discipline:** `FAIL` (demotion: `partial-narrowing`)
+  - **gate failures:**
+    - N1: six distinct alternative mechanism classes remain OPEN or UNTESTED.
+    - N3: exact full-SO3 residual-gauge language exceeds the computed one-rotation witness.
+    - N5: the negative rhetoric retains untested nonquadratic, curvature, matter, and external-geometry resolutions.
 
 ### `universal_gr_cubic_ward_finite_scaling_diagnostic_bounded_theorem_note_2026-06-08`
 

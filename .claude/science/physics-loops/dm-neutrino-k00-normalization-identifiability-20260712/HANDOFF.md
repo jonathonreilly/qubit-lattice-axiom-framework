@@ -1,5 +1,8 @@
 # Handoff
 
+**Remote branch:** `physics-loop/dm-neutrino-k00-normalization-block01-20260712`
+**Draft review PR:** [#5291](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5291)
+
 ## Current result
 
 The old positive route is replaced by an exact restricted-packet
@@ -32,9 +35,9 @@ physics branch intentionally does not edit those repo-wide surfaces.
 
 ## Exact next action
 
-Commit/push/open one review PR. After landing and independent audit, the next
-science action is a source-action construction targeting W-map, not another
-isospectrality check.
+Review PR #5291 without merging from this worker. After landing and independent
+audit, the next science action is a source-action construction targeting W-map,
+not another isospectrality check.
 
 ## Verification
 

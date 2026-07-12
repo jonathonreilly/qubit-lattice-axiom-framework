@@ -336,9 +336,19 @@ claim about uninspected literature or future work.
    `w = 1/3`. Status in this note: **not derived, selected, or preferred**;
    payable only by one of T4's explicitly named supplier routes.
 
-There is no Residual Atom 2. The tied measure, two-cell quotient, energy
-dictionary, and endpoint arithmetic are inputs or exact constructions already
-accounted for at their stated grades; none supplies the value of Atom 1.
+2. **The energy dictionary.** The identification that a formation state
+   distributes the total channel energy as shares —
+   `E_s = w E_tot`, `E_d = (1-w) E_tot`, against block 9's landed channel
+   decomposition `E_s = 3a^2`, `E_d = 6|b|^2` — is **this note's own declared
+   modeling element** (the energy-to-formation-state bridge). It is what makes
+   the relocation's `r`-image exact rather than merely analogical. It is not
+   supplied by the Record axiom, by blocks 9/10, or by the R-D surface; an
+   auditor who rejects it keeps T1 (compatibility) and T3 (the two canonical
+   states) but loses the bijection `r = (1-w)/(2w)` of T2.
+
+The tied measure, two-cell quotient, and endpoint arithmetic are inputs or
+exact constructions already accounted for at their stated grades; none
+supplies the value of Atom 1.
 
 ## What This Note Does Not Claim
 

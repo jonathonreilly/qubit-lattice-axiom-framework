@@ -1,77 +1,77 @@
 ===== runner cache v1 =====
 runner: scripts/audit_packet_script_deps.py
-runner_sha256: 5597aa9c8e9c88b120b6fa44085fe20d0d93c59517176d504bc8a17aa7c6f5dd
+runner_sha256: 0458b605de6c1fab6d2230ac0f9b47e2cb6805500f1bd634d2fc330c6c259d80
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 24.23
+elapsed_sec: 26.79
 status: ok
 ----- stdout -----
 ==============================================================================
 AUDIT PACKET SCRIPT-DEP RESOLVER
 ==============================================================================
 
-Total claims in ledger: 3445
-Pending audits in queue: 1535
+Total claims in ledger: 3754
+Pending audits in queue: 2850
 
-Claims with runner path: 3168
+Claims with runner path: 3525
 Claims with no runner declared: 0
-Claims whose runner file is missing: 277
+Claims whose runner file is missing: 229
 
-Pending claims with helper imports (would trigger class-C bug): 355 / 1421
+Pending claims with helper imports (would trigger class-C bug): 612 / 2758
 
 Top 20 most-imported helper scripts:
-   134x  scripts/dm_leptogenesis_exact_common.py
-   123x  scripts/canonical_plaquette_surface.py
-    94x  scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py
-    93x  scripts/frontier_dm_leptogenesis_pmns_projector_interface.py
-    78x  scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py
-    71x  scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py
-    69x  scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py
-    69x  scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py
-    68x  scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py
-    66x  scripts/frontier_dm_neutrino_postcanonical_polar_section.py
-    66x  scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py
-    64x  scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py
-    60x  scripts/frontier_dm_neutrino_source_surface_active_half_plane_theorem.py
-    59x  scripts/frontier_dm_neutrino_source_surface_active_affine_point_selection_boundary.py
-    59x  scripts/frontier_dm_leptogenesis_pmns_active_projector_reduction.py
-    48x  scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py
-    46x  scripts/minimal_source_driven_field_probe.py
-    45x  scripts/_frontier_loader.py
-    45x  scripts/frontier_finite_rank_gravity_residual.py
-    45x  scripts/frontier_same_source_metric_ansatz_scan.py
+   136x  scripts/dm_leptogenesis_exact_common.py
+   126x  scripts/canonical_plaquette_surface.py
+    95x  scripts/frontier_dm_neutrino_breaking_triplet_cp_theorem.py
+    94x  scripts/frontier_dm_leptogenesis_pmns_projector_interface.py
+    79x  scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py
+    72x  scripts/frontier_dm_neutrino_positive_polar_h_cp_theorem.py
+    71x  scripts/_frontier_loader.py
+    71x  scripts/frontier_finite_rank_gravity_residual.py
+    71x  scripts/frontier_same_source_metric_ansatz_scan.py
+    70x  scripts/frontier_coarse_grained_exterior_law.py
+    70x  scripts/frontier_sewing_shell_source.py
+    70x  scripts/frontier_dm_neutrino_hermitian_bridge_carrier.py
+    70x  scripts/frontier_dm_neutrino_exact_h_source_surface_preimage_bundle_theorem.py
+    69x  scripts/frontier_discrete_dtn_shell_kernel.py
+    69x  scripts/frontier_flux_fixed_matching_theorem.py
+    69x  scripts/frontier_star_shell_projector.py
+    69x  scripts/frontier_universal_shell_profile.py
+    69x  scripts/frontier_radial_shell_matching_law.py
+    69x  scripts/frontier_dm_neutrino_source_surface_carrier_normal_form.py
+    68x  scripts/frontier_oh_schur_boundary_action.py
 
 Sample claims that would trigger class-C from missing helpers:
+  - action_power_3d_gravity_sign_closure_note
+      primary: scripts/action_power_3d_gravity_sign_closure.py
+      helpers: ['scripts/action_power_canonical_harness.py']
+  - adaptive_coevolving_geometry_no_go
+      primary: scripts/node_placement_emergence.py
+      helpers: ['scripts/generative_causal_dag_interference.py']
   - alpha_s_derived_note
       primary: scripts/frontier_alpha_s_derived_bounded_chain.py
       helpers: ['scripts/canonical_plaquette_surface.py']
+  - alt_connectivity_family_complex_failure_note
+      primary: scripts/ALT_CONNECTIVITY_FAMILY_COMPLEX_SWEEP.py
+      helpers: ['scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py', 'scripts/gate_b_no_restore_farfield.py']
+  - alt_connectivity_family_operator_cauchy_note_2026-05-10
+      primary: scripts/alt_connectivity_family_operator_cauchy.py
+      helpers: ['scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py', 'scripts/gate_b_no_restore_farfield.py']
   - antigravity_sign_selector_boundary_note
       primary: scripts/gravity_signed_sector_harness.py
       helpers: ['scripts/numpy_replay_bootstrap.py']
-  - beta6_plaquette_tensor_network_finite_irrep_support_and_recoupling_wall_note_2026-06-04
-      primary: scripts/frontier_beta6_plaquette_tensor_network_2026_06_04.py
-      helpers: ['scripts/frontier_beta6_d9_coefficient_2026_06_04.py']
-  - beta_eff_onset_provenance_and_jet_extension_bounded_note_2026-06-12
-      primary: scripts/beta_eff_onset_provenance_jet_extension_2026_06_12.py
-      helpers: ['scripts/canonical_plaquette_surface.py', 'scripts/frontier_gauge_vacuum_plaquette_bridge_support.py', 'scripts/frontier_scalar_3plus1_temporal_ratio.py']
-  - c_iso_numerical_convergence_bounded_support_note_2026-05-10_numconv
-      primary: scripts/cl3_c_iso_numerical_convergence_2026_05_10_numconv.py
-      helpers: ['scripts/cl3_exact_tier_ewitness_2026_05_07_ewitness.py']
-  - causal_impact_parameter_note
-      primary: scripts/causal_impact_parameter_probe.py
-      helpers: ['scripts/evolving_network_prototype_v6.py']
-  - ckm_atlas_axiom_closure_note
-      primary: scripts/frontier_ckm_atlas_axiom_closure.py
-      helpers: ['scripts/_frontier_loader.py', 'scripts/canonical_plaquette_surface.py', 'scripts/frontier_coarse_grained_exterior_law.py', 'scripts/frontier_discrete_dtn_shell_kernel.py', 'scripts/frontier_finite_rank_gravity_residual.py', 'scripts/frontier_flux_fixed_matching_theorem.py', 'scripts/frontier_microscopic_dirichlet_bridge_principle.py', 'scripts/frontier_oh_schur_boundary_action.py', 'scripts/frontier_one_parameter_reduced_shell_law.py', 'scripts/frontier_radial_shell_matching_law.py', 'scripts/frontier_s3_time_bilinear_tensor_primitive.py', 'scripts/frontier_same_source_metric_ansatz_scan.py', 'scripts/frontier_sewing_shell_source.py', 'scripts/frontier_star_shell_projector.py', 'scripts/frontier_tensor_boundary_drive_two_channel.py', 'scripts/frontier_tensor_support_center_excess_law.py', 'scripts/frontier_tensor_universal_kernel.py', 'scripts/frontier_tensorial_einstein_regge_completion.py', 'scripts/frontier_universal_shell_profile.py']
-  - ckm_atlas_triangle_right_angle_theorem_note_2026-04-24
-      primary: scripts/frontier_ckm_atlas_triangle_right_angle.py
-      helpers: ['scripts/canonical_plaquette_surface.py']
-  - ckm_barred_apex_angle_exact_closed_form_theorem_note_2026-04-25
-      primary: scripts/frontier_ckm_barred_apex_angle_exact_closed_form.py
-      helpers: ['scripts/canonical_plaquette_surface.py']
-  - ckm_barred_circumradius_exact_closed_form_theorem_note_2026-04-25
-      primary: scripts/frontier_ckm_barred_circumradius_exact_closed_form.py
-      helpers: ['scripts/canonical_plaquette_surface.py']
+  - architecture_note_directional_measure
+      primary: scripts/architecture_directional_measure_table_runner_2026_05_03.py
+      helpers: ['scripts/three_d_angle_weight.py', 'scripts/three_d_gravity.py']
+  - audited_symmetry_synthesis_note
+      primary: scripts/mirror_2d_validation.py
+      helpers: ['scripts/mirror_born_audit.py']
+  - axiom_first_microcausality_lieb_robinson_theorem_note_2026-05-01
+      primary: scripts/axiom_first_microcausality_check.py
+      helpers: ['scripts/free_bilinear_quasilocal_lr_bridge_2026_06_10.py', 'scripts/transfer_matrix_log_quasilocality_check_2026_06_10.py']
+  - axiom_first_reflection_positivity_theorem_note_2026-04-29
+      primary: scripts/axiom_first_reflection_positivity_wilson_temporal_reroute_2026_06_08.py
+      helpers: ['scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py', 'scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py', 'scripts/su3_wilson_plane_kernel_character_positivity_composed_gram_2026_07_09.py']
 
 Wrote docs/audit/data/audit_packet_script_deps.json
 
@@ -86,7 +86,7 @@ When assembling the audit packet for claim_id X:
   4. NEW: Include all transitive helper scripts named in
      audit_packet_script_deps.json[X]['helper_runner_paths']
 
-This change would prevent 355 pending audits from
+This change would prevent 612 pending audits from
 hitting the class-C 'missing dependency' verdict due to packet
 incompleteness alone.
 

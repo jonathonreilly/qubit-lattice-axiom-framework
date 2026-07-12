@@ -10,7 +10,7 @@ new axiom.
 load-bearing authority for this bounded core.
 **Primary runner:** [`scripts/poisson_self_field_supplied_branch_core_2026_06_18.py`](../scripts/poisson_self_field_supplied_branch_core_2026_06_18.py)
 **Runner cache:** [`logs/runner-cache/poisson_self_field_supplied_branch_core_2026_06_18.txt`](../logs/runner-cache/poisson_self_field_supplied_branch_core_2026_06_18.txt)
-**Helper runners (audit packet must include):** [`scripts/poisson_self_field.py`](../scripts/poisson_self_field.py) — SHA-pinned cache [`logs/runner-cache/poisson_self_field.txt`](../logs/runner-cache/poisson_self_field.txt). The primary runner dynamically loads this helper via `importlib.util.spec_from_file_location("poisson_self_field", scripts/poisson_self_field.py)` (see `load_parent()`), so the load-bearing computation lives here. The primary runner calls the helper's `grow`, `_make_poisson_field` (which internally calls `_solve_poisson_2d`), `_prop_beam`, `_cz`, and `_dp`, plus the constants `H, K, NL, PW, MASS_Z, S, FAMILIES`. This helper source plus its cache must be in the restricted audit packet for the load-bearing calls to be verifiable.
+**Helper runners (audit packet must include):** [`scripts/poisson_self_field.py`](../scripts/poisson_self_field.py) — SHA-pinned cache [`logs/runner-cache/poisson_self_field.txt`](../logs/runner-cache/poisson_self_field.txt). The primary runner dynamically loads this helper via `importlib.util.spec_from_file_location("poisson_self_field", scripts/poisson_self_field.py)` (see `load_parent()`), so the load-bearing computation lives here. The primary runner calls the helper's `grow`, `_make_poisson_field` (which internally calls `_solve_poisson_2d`), `_prop_beam`, `_cz`, and `_dp`, plus the constants `BETA, K, MAX_D_PHYS, H, NL, PW, MASS_Z, S, FAMILIES`. This helper source plus its cache must be in the restricted audit packet for the load-bearing calls to be verifiable.
 
 ## Authority disclaimer
 
@@ -58,6 +58,25 @@ runner verifies the branch-local numerical consequences on the declared lattice:
 PDE, source, boundary condition, normalization, physical gravity readout, and
 longitudinal falloff remain supplied or imposed. This note proves no
 framework-native origin for any of them.
+
+### Supplied finite-algorithm surface
+
+The bounded theorem also treats the following implementation choices as
+supplied finite conditions, not as framework-derived physics:
+
+| Surface | Supplied definition used by the runners |
+| --- | --- |
+| lattice window | `H=0.5`, `NL=30`, `PW=8`, `MAX_D_PHYS=3` |
+| source and response samples | `MASS_Z=3.0`, primary strength `S=0.004`, and `F~M` strengths `{0.001, 0.002, 0.004, 0.008}` |
+| graph families | deterministic seed `0` with `(drift, restore)` equal to `(0.20, 0.70)`, `(0.05, 0.30)`, and `(0.50, 0.90)` |
+| graph construction | `grow`'s Gaussian transverse drift, restoring map, and adjacency cutoff `round(MAX_D_PHYS/H)` |
+| propagation | `_prop_beam` with `K=5.0`, edge phase `K L (1-f_avg)`, angular weight `exp(-BETA theta^2)` at `BETA=0.8`, and transfer weight `H^2/L^2` |
+| centroid diagnostic | `_cz`'s intensity-weighted final-layer `z` centroid |
+| detector diagnostic | `_dp`'s summed final-layer intensity and the declared one-, two-, and three-slit source combinations used for `I3` |
+
+The helper source is the exact definition of these finite algorithms. No
+literature value, observational comparator, or fitted target is used to prove
+the reported residual, sign, scaling, cancellation, or null predicates.
 
 ## Bounded Theorem Statement
 
@@ -132,3 +151,25 @@ whose helpers are loaded dynamically).
 Status authority: independent audit lane only. This repair sets no
 `audit_status`, `effective_status`, ledger tag, or retained status; it is the
 exact audit-named packaging repair and nothing more.
+
+### 2026-07-12 — deterministic restricted-packet repair
+
+The generated packet dependency manifest had remained stale even though the
+citation graph and audit-ledger row named `scripts/poisson_self_field.py` as a
+helper. Both packet dependency resolvers now explicitly register that helper
+for this claim in addition to detecting the dynamic load. Validation-time
+regeneration and a direct restricted-prompt render confirm that the packet
+contains all four inspectable artifacts:
+
+1. this bounded source note;
+2. `scripts/poisson_self_field_supplied_branch_core_2026_06_18.py` and its
+   SHA-pinned cache;
+3. the complete `scripts/poisson_self_field.py` helper source; and
+4. `logs/runner-cache/poisson_self_field.txt`, whose header pins the helper to
+   SHA-256 `1c0e140b3bc17b18e25aa175800e12ce59c3d3e2046854c878e66c10f4774180`.
+
+This addresses only the auditor's `runner_artifact_issue`: it makes `grow`,
+`_make_poisson_field` / `_solve_poisson_2d`, `_prop_beam`, `_cz`, `_dp`, and
+the used constants visible for independent inspection alongside their cached
+execution. It does not alter the supplied-input boundary or promote the claim;
+an independent re-audit remains required and owns the verdict.

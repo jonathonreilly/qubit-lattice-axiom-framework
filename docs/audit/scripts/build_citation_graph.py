@@ -90,6 +90,12 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # The supplied-branch certificate dynamically loads the load-bearing
+    # Poisson implementation. Keep it in the restricted packet even if a
+    # future AST/parser change stops recognizing that loader form.
+    "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18": [
+        "scripts/poisson_self_field.py",
+    ],
     # The atomic work-history note's primary runner is a packet verifier. Its
     # load-bearing companion sources are certified by that verifier but are not
     # imports, so list them explicitly for the restricted audit packet.

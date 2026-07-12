@@ -1,0 +1,25 @@
+loop_slug: poisson-supplied-branch-packet-20260712
+goal: close the restricted-packet helper omission for the supplied Poisson branch bounded theorem
+target_status: best-honest-status
+mode: run
+cycle_count: 1
+active_route: deterministic packet-helper registration
+hard_residual: null
+actual_current_surface_status: bounded-support
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+files_touched:
+  - docs/POISSON_SELF_FIELD_SUPPLIED_BRANCH_CORE_BOUNDED_NOTE_2026-06-18.md
+  - scripts/audit_packet_script_deps.py
+  - docs/audit/scripts/build_citation_graph.py
+  - logs/runner-cache/audit_packet_script_deps.txt
+  - logs/runner-cache/poisson_self_field_supplied_branch_core_2026_06_18.txt
+  - logs/runner-cache/poisson_self_field.txt
+open_imports: []
+no_go_routes: []
+review_disposition: pass
+remote_branch: claude/science-fix/poisson_self_field_supplied_branch_core_bounded_note_2026-06-1c41e761
+pr_status: backlog_review_policy_no_pr
+audit_required_before_effective_retained: true
+next_exact_action: land the reviewed branch through a non-review integration step, then submit the same note and repaired restricted packet for independent re-audit
+stop_condition: packet render exposes the complete helper source and fresh SHA-pinned cache

@@ -43,6 +43,12 @@ SCRIPTS_DIR = REPO_ROOT / "scripts"
 AUDIT_DATA = REPO_ROOT / "docs" / "audit" / "data"
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # The supplied-branch certificate dynamically loads the load-bearing
+    # Poisson implementation. Keep it in the restricted packet even if a
+    # future AST/parser change stops recognizing that loader form.
+    "poisson_self_field_supplied_branch_core_bounded_note_2026-06-18": [
+        "scripts/poisson_self_field.py",
+    ],
     "work_history.atomic.hydrogen_helium_atomic_companion_note_2026-04-18": [
         "scripts/frontier_atomic_hydrogen_lattice_companion.py",
         "scripts/frontier_atomic_helium_hartree_companion.py",

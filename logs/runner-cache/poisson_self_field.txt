@@ -3,7 +3,7 @@ runner: scripts/poisson_self_field.py
 runner_sha256: 1c0e140b3bc17b18e25aa175800e12ce59c3d3e2046854c878e66c10f4774180
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 79.55
+elapsed_sec: 51.28
 status: ok
 ----- stdout -----
 ======================================================================
@@ -36,7 +36,7 @@ NL=30, W=8, s=0.004, z_src=3.0
   Fam3: F~M = 0.9994
 
 4. BORN TEST (Fam1, seed=0, Poisson field active)
-  Born |I3|/P = 9.84e-16
+  Born |I3|/P = 1.32e-15
 
 5. NULL TEST
   s=0: delta = +0.000000e+00

@@ -20,10 +20,10 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | **retained** | 99 |
 | **retained_no_go** | 41 |
-| **retained_bounded** | 402 |
+| **retained_bounded** | 403 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2683 |
+| unaudited | 2682 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 528 |
+| `audited_clean` | 529 |
 | `audited_conditional` | 84 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 42 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3033 |
+| `unaudited` | 3032 |
 
 | claim_type | count |
 |---|---:|
@@ -273,6 +273,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `dm_leptogenesis_pmns_projector_interface_note_2026-04-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
 | `dm_lepton_synthesis_note_2026-04-19` | positive_theorem | ~~audited_clean~~ | **retained** | cross_family | codex-gpt-5 | C | - |
+| `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `dm_neutrino_k00_bosonic_normalization_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
@@ -3382,6 +3383,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — Yes. The registered runner exits cleanly and exposes 9 classified A/B/C/D checks for this leaf claim with no non-retained one-hop dependencies.
 - **rationale:** The restricted packet closes on its declared support scope: the source note has no non-retained one-hop dependencies and the registered runner passes with classified C-dominant checks. This audit ratifies only that bounded/support leaf surface, not any stronger retained-tier conclusion unless the source note is separately re-tiered. Residual risk: the audit relies on the registered runner as the executable witness and does not import broader publication framing.
 - **auditor confidence:** high
+
+### `dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16`
+
+- **Note:** [`DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`](../../docs/DM_NEUTRINO_BOSONIC_NORMALIZATION_OBSERVABLE_PRINCIPLE_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite-dimensional C^16 matrix algebra proving the raw-to-Hermitian-completion Frobenius ratio for Y=P_R Γ_1 P_L, with scalar-baseline determinant identities treated only as diagnostics.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00282-dm_neutrino_bosonic_normaliz`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** From Y†Y = P_L with Tr(P_L) = 8 and Γ_1†Γ_1 = I_16 with trace 16, the ratio is sqrt(8/16) = 1/sqrt(2).  _(class `A`)_
+- **chain closes:** True — The anticommutation and involution assumptions directly imply Y†Y=P_L, equal chiral ranks, and Γ_1†Γ_1=I_16. No real-D observable response or physical neutrino-coupling readout is needed for the narrowed conclusion.
+- **rationale:** The result is a genuine class-A algebraic closure over the stated finite matrix assumptions, not a definition, tuned match, or imported physical identification. The runner constructs an explicit C^16 representation and performs exact symbolic matrix, trace, determinant, and counterfactual calculations rather than printing the target constants. The note explicitly excludes the earlier real-D source-response and physical y_ν/g_weak interpretations; its logarithmic diagnostic formulas are understood on their natural nonzero-determinant domain.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `dm_neutrino_cascade_geometry_note_2026-04-14`
 

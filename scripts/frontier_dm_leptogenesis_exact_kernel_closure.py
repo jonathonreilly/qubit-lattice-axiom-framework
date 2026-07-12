@@ -1,107 +1,36 @@
 #!/usr/bin/env python3
-"""
-DM leptogenesis exact-kernel closure runner.
+"""Exact source-package identifiability boundary for DM leptogenesis.
 
-Framework convention:
-  "axiom" means only the single framework axiom Cl(3) on Z^3.
+This runner no longer assigns ``gamma``, ``E1``, ``E2``, and ``K00`` and
+then treats their downstream arithmetic as a derivation.  It tests the
+load-bearing question directly:
 
-Honest scope (audit class E repair, 2026-05-16):
-  This runner is a downstream consumer of the exact source-and-CP-channel
-  package. The four source-package values
+    Does the current minimal framework axiom surface fix those four numbers?
 
-    gamma = 1/2
-    E1    = sqrt(8/3)
-    E2    = sqrt(8)/3
-    K00   = 2
-
-  are imported from upstream conditional support authorities:
-
-    * gamma = 1/2 (== c_odd a_sel with c_odd = +1, a_sel = 1/2)
-      upstream: DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15
-      (audit row: dm_neutrino_codd_bosonic_normalization_theorem_note_2026-04-15,
-       currently `unaudited`).
-    * (E1, E2) = (sqrt(8/3), sqrt(8)/3)
-      upstream: DM_NEUTRINO_VEVEN_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15
-      (audit row: dm_neutrino_veven_bosonic_normalization_theorem_note_2026-04-15,
-       currently `audited_conditional`).
-    * K00 = 2
-      upstream: DM_NEUTRINO_K00_BOSONIC_NORMALIZATION_THEOREM_NOTE_2026-04-15
-      (audit row: dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15,
-       currently `audited_renaming`).
-
-  They are NOT re-derived from `Cl(3)` on `Z^3` inside this restricted packet.
-  The runner therefore self-classifies the corresponding Part 1 checks
-  (source-package values, CP tensor channels) and Part 2 checks
-  (epsilon_1 / epsilon_DI ratio that propagates them) as class D
-  (conditional-on-imported-upstream), not class C. This matches the live
-  pattern of `frontier_dm_current_bank_quantitative_mapping_2026_04_21.py`
-  for downstream consumers of the same imported package.
-
-  The class-D self-classification of the Part 1 and Part 2 checks is the
-  audit class E repair recorded by the 2026-05-16 science-fix-loop iter18
-  pass (`audited_renaming -> audited_conditional` candidate move once
-  upstream `_codd_bosonic` and `_veven_bosonic` lift past `audited_renaming`).
-  Whether the audit lane actually lifts the verdict is for the audit lane
-  to decide; this runner change does not edit the audit ledger.
-
-Question:
-  Once the exact source package and the exact heavy-basis diagonal
-  normalization are both accepted as imported (see above), what does the
-  standard coherent leptogenesis kernel predict on the refreshed
-  main-derived branch?
-
-Answer:
-  Conditional on the imported source-package values:
-
-    cp1 = -2 gamma E1 / 3
-    cp2 =  2 gamma E2 / 3
-
-  Inserting those into the standard coherent sum
-
-    epsilon_1 = |(1/8pi) y0^2 (cp1 f23 + cp2 f3) / K00|
-
-  gives
-
-    epsilon_1 / epsilon_DI = 0.9276209209...
-    eta / eta_obs          = 0.5578749661...
-
-  on the same retained-fit transport benchmark used on this branch, once the
-  exact `K00` denominator is used consistently in both `epsilon_1` and
-  `m_tilde`.
+It constructs two exact expansions of the same minimal-axiom reduct.  The
+expansions differ only in a downstream Hermitian source carrier ``H -> lam H``.
+The minimal axioms do not mention that carrier, a source/action map, a
+readout-context selector, or a physical-observable identification, so the
+reduct is unchanged.  Both expansions obey the same exact extraction and
+coherent-kernel formulas, but their source packages and epsilon/DI ratios
+differ.  This is a finite symbolic countermodel to axiom-only identifiability,
+not a claim that future retained bridge structure cannot select one member.
 """
 
 from __future__ import annotations
 
-import math
 import sys
+from dataclasses import dataclass
+from pathlib import Path
 
-from dm_leptogenesis_exact_common import exact_package
+import sympy as sp
+
+
+ROOT = Path(__file__).resolve().parents[1]
+MINIMAL_AXIOMS = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
-
-PI = math.pi
-
-g_bare = 1.0
-PLAQ_MC = 0.5934
-u0 = PLAQ_MC ** 0.25
-alpha_bare = g_bare**2 / (4.0 * PI)
-ALPHA_LM = alpha_bare / u0
-
-M_PL = 1.2209e19
-C_APBC = (7.0 / 8.0) ** 0.25
-V_EW = M_PL * C_APBC * ALPHA_LM**16
-
-G_WEAK = 0.653
-Y0 = G_WEAK**2 / 64.0
-Y0_SQ = Y0**2
-
-G_STAR = 106.75
-C_SPH = 28.0 / 79.0
-D_THERMAL = 3.901508e-3
-ETA_OBS = 6.12e-10
-
-
 CLASS_COUNTS: dict[str, int] = {}
 
 
@@ -113,192 +42,338 @@ def check(name: str, condition: bool, detail: str = "", cls: str = "C") -> bool:
     else:
         FAIL_COUNT += 1
     CLASS_COUNTS[cls] = CLASS_COUNTS.get(cls, 0) + 1
-    msg = f"  [{cls}] {status}: {name}"
+    message = f"  [{cls}] {status}: {name}"
     if detail:
-        msg += f"  ({detail})"
-    print(msg)
+        message += f"  ({detail})"
+    print(message)
     return condition
 
 
-def g_self_energy(x: float) -> float:
-    return math.sqrt(x) / (x - 1.0)
+@dataclass(frozen=True)
+class SourcePackage:
+    gamma: sp.Expr
+    e1: sp.Expr
+    e2: sp.Expr
+    k00: sp.Expr
+    cp1: sp.Expr
+    cp2: sp.Expr
 
 
-def f_vertex(x: float) -> float:
-    if abs(x - 1.0) < 1e-6:
-        return 0.5
-    return math.sqrt(x) * (1.0 - (1.0 + x) * math.log((1.0 + x) / x))
+def hermitian_carrier(
+    a: sp.Expr,
+    b: sp.Expr,
+    c: sp.Expr,
+    d: sp.Expr,
+    delta: sp.Expr,
+    rho: sp.Expr,
+    gamma: sp.Expr,
+) -> sp.Matrix:
+    """Breaking-triplet carrier used by the restricted source packet."""
+
+    return sp.Matrix(
+        [
+            [a, b + rho, b - rho - sp.I * gamma],
+            [b + rho, c + delta, d],
+            [b - rho + sp.I * gamma, d, c - delta],
+        ]
+    )
 
 
-def f_total(x: float) -> float:
-    return g_self_energy(x) + f_vertex(x)
+def extract_package(h: sp.Matrix) -> SourcePackage:
+    """Extract the packet's exact coordinates from a Hermitian carrier."""
+
+    a = sp.re(h[0, 0])
+    b = sp.simplify((sp.re(h[0, 1]) + sp.re(h[0, 2])) / 2)
+    c = sp.simplify((sp.re(h[1, 1]) + sp.re(h[2, 2])) / 2)
+    d = sp.re(h[1, 2])
+    delta = sp.simplify((sp.re(h[1, 1]) - sp.re(h[2, 2])) / 2)
+    rho = sp.simplify((sp.re(h[0, 1]) - sp.re(h[0, 2])) / 2)
+    gamma = sp.simplify(-sp.im(h[0, 2]))
+
+    e1 = sp.simplify(delta + rho)
+    e2 = sp.simplify(a + b - c - d)
+
+    uniform = sp.Matrix([1, 1, 1]) / sp.sqrt(3)
+    k00 = sp.simplify((sp.conjugate(uniform).T * h * uniform)[0])
+    cp1 = sp.simplify(-2 * gamma * e1 / 3)
+    cp2 = sp.simplify(2 * gamma * e2 / 3)
+    return SourcePackage(gamma, e1, e2, k00, cp1, cp2)
 
 
-def part1_exact_source_and_diagonal_package() -> tuple[float, float, float, float, float]:
+def reference_carrier() -> sp.Matrix:
+    """One exact positive-definite completion of the reference package."""
+
+    e1 = sp.sqrt(sp.Rational(8, 3))
+    a = 2 + 4 * sp.sqrt(2) / 9
+    b = 0
+    c = 2 - sp.sqrt(2) / 9
+    d = -sp.sqrt(2) / 9
+    delta = sp.Rational(1, 2)
+    rho = e1 - delta
+    return hermitian_carrier(a, b, c, d, delta, rho, sp.Rational(1, 2))
+
+
+def leading_principal_minors(h: sp.Matrix) -> tuple[sp.Expr, sp.Expr, sp.Expr]:
+    minors = [sp.simplify(h[:size, :size].det()) for size in (1, 2, 3)]
+    return minors[0], minors[1], minors[2]
+
+
+def part1_exact_reference_witness() -> tuple[sp.Matrix, SourcePackage]:
     print("\n" + "=" * 88)
-    print("PART 1: IMPORTED SOURCE AND DIAGONAL PACKAGE (UPSTREAM-CONDITIONAL)")
-    print("=" * 88)
-    print(
-        "  (These four source-package values are imported from upstream\n"
-        "   support theorems, not re-derived from Cl(3) on Z^3 inside this\n"
-        "   restricted packet. Per the 2026-05-05 audit verdict the\n"
-        "   corresponding checks are class D conditional-on-import, not\n"
-        "   class C standalone-derivation. See the module docstring for\n"
-        "   the explicit upstream authority citations.)"
-    )
-
-    gamma = 0.5
-    e1 = math.sqrt(8.0 / 3.0)
-    e2 = math.sqrt(8.0) / 3.0
-    k00 = 2.0
-    cp1 = -2.0 * gamma * e1 / 3.0
-    cp2 = 2.0 * gamma * e2 / 3.0
-
-    check(
-        "Imported (upstream-conditional): odd source gamma = 1/2 and even responses E1 = sqrt(8/3), E2 = sqrt(8)/3",
-        abs(gamma - 0.5) < 1e-12 and abs(e1 - math.sqrt(8.0 / 3.0)) < 1e-12 and abs(e2 - math.sqrt(8.0) / 3.0) < 1e-12,
-        f"(gamma,E1,E2)=({gamma:.6f},{e1:.12f},{e2:.12f})"
-        f"  [upstream: _codd_bosonic_normalization_theorem_note_2026-04-15,"
-        f" _veven_bosonic_normalization_theorem_note_2026-04-15]",
-        cls="D",
-    )
-    check(
-        "Imported (upstream-conditional): exact diagonal normalization K00 = 2",
-        abs(k00 - 2.0) < 1e-12,
-        f"K00={k00:.12f}"
-        f"  [upstream: _k00_bosonic_normalization_theorem_note_2026-04-15]",
-        cls="D",
-    )
-    check(
-        "Derived from imports: exact heavy-basis CP tensor channels cp1 = -2 gamma E1 / 3, cp2 = 2 gamma E2 / 3",
-        abs(cp1 + 0.5443310539518174) < 1e-12 and abs(cp2 - 0.3142696805273545) < 1e-12,
-        f"(cp1,cp2)=({cp1:.12f},{cp2:.12f})",
-        cls="D",
-    )
-    return gamma, e1, cp1, cp2, k00
-
-
-def part2_exact_coherent_epsilon(cp1: float, cp2: float, k00: float) -> tuple[float, float, float]:
-    print("\n" + "=" * 88)
-    print("PART 2: COHERENT KERNEL EPSILON_1 (CONDITIONAL ON IMPORTED PART 1)")
-    print("=" * 88)
-    print(
-        "  (The numeric epsilon_1 here is downstream arithmetic on the\n"
-        "   imported (cp1, cp2, K00) of Part 1. The retained benchmark\n"
-        "   constants (k_A = 7, k_B = 8, eps/B = alpha_LM / 2) are\n"
-        "   themselves admitted retained-fit inputs, not derived inside\n"
-        "   this packet. The corresponding checks are therefore class D\n"
-        "   conditional-on-imported-Part-1, not class C standalone.)"
-    )
-
-    k_A = 7
-    k_B = 8
-    A_MR = M_PL * ALPHA_LM**k_A
-    B_MR = M_PL * ALPHA_LM**k_B
-    eps_over_B = ALPHA_LM / 2.0
-
-    M1 = B_MR * (1.0 - eps_over_B)
-    M2 = B_MR * (1.0 + eps_over_B)
-    M3 = A_MR
-
-    m3_GeV = Y0_SQ * V_EW**2 / M1
-    epsilon_di = (3.0 / (16.0 * PI)) * M1 * m3_GeV / V_EW**2
-
-    x23 = (M2 / M1) ** 2
-    x3 = (M3 / M1) ** 2
-    f23 = f_total(x23)
-    f3 = f_total(x3)
-
-    epsilon_1 = abs((1.0 / (8.0 * PI)) * Y0_SQ * (cp1 * f23 + cp2 * f3) / k00)
-    ratio = epsilon_1 / epsilon_di
-
-    check(
-        "Downstream arithmetic on imported (cp1, cp2, K00): epsilon_1 stays below the Davidson-Ibarra ceiling",
-        ratio < 1.0,
-        f"epsilon_1/DI={ratio:.12f}",
-        cls="D",
-    )
-    check(
-        "Downstream arithmetic on imported (cp1, cp2, K00): epsilon_1 / epsilon_DI = 0.9276209209",
-        abs(ratio - 0.9276209209197268) < 1e-12,
-        f"ratio={ratio:.12f}",
-        cls="D",
-    )
-    check(
-        "Downstream arithmetic on imported (cp1, cp2, K00): old 0.30 suppression is gone once K00 = 2 is consumed",
-        ratio > 0.9,
-        f"ratio={ratio:.12f}",
-        cls="D",
-    )
-
-    print()
-    print(f"  epsilon_1 = {epsilon_1:.12e}")
-    print(f"  epsilon_DI = {epsilon_di:.12e}")
-    print(f"  epsilon_1 / epsilon_DI = {ratio:.12f}")
-
-    return epsilon_1, epsilon_di, M1
-
-
-def part3_exact_eta_hits_observation_on_the_retained_benchmark(epsilon_1: float, M1: float) -> None:
-    print("\n" + "=" * 88)
-    print("PART 3: THE EXACT KERNEL ON THE CONSISTENT RETAINED-FIT BENCHMARK")
+    print("PART 1: ONE EXACT DOWNSTREAM COMPLETION REPRODUCES THE REFERENCE PACKAGE")
     print("=" * 88)
 
-    pkg = exact_package()
-    m_tilde_eV = pkg.m_tilde_exact_eV
-    m_star_eV = pkg.m_star_exact_eV
-    k_washout = pkg.k_decay_exact
-    kappa = pkg.kappa_fit_bench
-    ratio = pkg.eta_ratio_fit_bench_exact_bookkeeping
-    eta = ratio * ETA_OBS
+    h = reference_carrier()
+    package = extract_package(h)
 
     check(
-        "Downstream arithmetic on imported K00 and retained washout benchmark: still in strong-washout regime",
-        k_washout > 1.0,
-        f"K={k_washout:.12f}",
-        cls="D",
+        "The constructed carrier is exactly Hermitian",
+        h == sp.conjugate(h).T,
+        cls="A",
+    )
+    d1, d2, d3 = leading_principal_minors(h)
+    expected_d1 = 2 + 4 * sp.sqrt(2) / 9
+    expected_d2 = sp.Rational(643, 324) + 2 * sp.sqrt(6) / 3 + 8 * sp.sqrt(2) / 9
+    expected_d3 = (
+        -sp.Rational(3361, 648)
+        - 16 * sp.sqrt(3) / 27
+        + 227 * sp.sqrt(2) / 108
+        + 8 * sp.sqrt(6) / 3
     )
     check(
-        "The retained-fit benchmark no longer lands near observation once K00 is used consistently in the washout path",
-        ratio < 0.7,
-        f"eta/eta_obs={ratio:.12f}",
-        cls="D",
+        "Sylvester's criterion places H_ref in the positive-polar carrier domain",
+        sp.simplify(d1 - expected_d1) == 0
+        and sp.simplify(d2 - expected_d2) == 0
+        and sp.simplify(d3 - expected_d3) == 0
+        and sp.Rational(7, 5) ** 2 < 2
+        and sp.Rational(12, 5) ** 2 < 6
+        and sp.Rational(7, 4) ** 2 > 3
+        and -sp.Rational(3361, 648)
+        - 16 * sp.Rational(7, 4) / 27
+        + 227 * sp.Rational(7, 5) / 108
+        + 8 * sp.Rational(12, 5) / 3
+        == sp.Rational(2021, 648)
+        and sp.Rational(2021, 648) > 0,
+        f"(D1,D2,D3)=({d1},{d2},{d3})",
+        cls="A",
     )
     check(
-        "Numerically the exact kernel gives eta/eta_obs = 0.5578749661... on the consistent retained-fit benchmark",
-        abs(ratio - 0.557874966110017) < 1e-12,
-        f"ratio={ratio:.12f}",
-        cls="D",
+        "The carrier extraction gives gamma = 1/2",
+        sp.simplify(package.gamma - sp.Rational(1, 2)) == 0,
+        f"gamma={package.gamma}",
+        cls="A",
+    )
+    check(
+        "The carrier extraction gives E1 = sqrt(8/3) and E2 = sqrt(8)/3",
+        sp.simplify(package.e1 - sp.sqrt(sp.Rational(8, 3))) == 0
+        and sp.simplify(package.e2 - sp.sqrt(8) / 3) == 0,
+        f"(E1,E2)=({package.e1},{package.e2})",
+        cls="A",
+    )
+    check(
+        "The uniform heavy-basis projection gives K00 = 2",
+        sp.simplify(package.k00 - 2) == 0,
+        f"K00={package.k00}",
+        cls="A",
+    )
+    check(
+        "The CP channels are extracted rather than independently assigned",
+        sp.simplify(package.cp1 + sp.sqrt(sp.Rational(8, 3)) / 3) == 0
+        and sp.simplify(package.cp2 - sp.sqrt(8) / 9) == 0,
+        f"(cp1,cp2)=({package.cp1},{package.cp2})",
+        cls="A",
+    )
+    return h, package
+
+
+def part2_same_axiom_reduct_has_a_distinct_exact_completion(
+    h_reference: sp.Matrix,
+    reference: SourcePackage,
+) -> tuple[SourcePackage, sp.Expr]:
+    print("\n" + "=" * 88)
+    print("PART 2: A SOURCE-CARRIER RESCALING PRESERVES THE AXIOM REDUCT")
+    print("=" * 88)
+
+    axiom_text = MINIMAL_AXIOMS.read_text(encoding="utf-8")
+    required_absences = (
+        "source/action and physical-observable identification",
+        "source/action and physical-observable identification;",
+    )
+    check(
+        "The current axiom memo explicitly leaves source/action and observable identification outside A_min",
+        any(needle in axiom_text for needle in required_absences),
+        cls="B",
+    )
+    check(
+        "The current axiom memo leaves readout-context and log-determinant selection outside A_min",
+        "readout-context selection" in axiom_text and "log-det readout theorem" in axiom_text,
+        cls="B",
     )
 
-    print()
-    print(f"  kappa = {kappa:.12e}")
-    print(f"  eta = {eta:.12e}")
-    print(f"  eta_obs = {ETA_OBS:.12e}")
-    print(f"  eta / eta_obs = {ratio:.12f}")
+    lam = sp.symbols("lambda", positive=True)
+    h_scaled = sp.simplify(lam * h_reference)
+    scaled = extract_package(h_scaled)
+    ref_minors = leading_principal_minors(h_reference)
+    scaled_minors = leading_principal_minors(h_scaled)
+
+    check(
+        "For every positive lambda, H_lambda stays Hermitian and positive definite",
+        all(sp.simplify(entry) == 0 for entry in h_scaled - sp.conjugate(h_scaled).T)
+        and all(
+            sp.simplify(scaled_minors[index] - lam ** (index + 1) * ref_minors[index]) == 0
+            for index in range(3)
+        ),
+        cls="A",
+    )
+    check(
+        "All four extracted source-package coordinates scale by lambda",
+        all(
+            sp.simplify(getattr(scaled, field) - lam * getattr(reference, field)) == 0
+            for field in ("gamma", "e1", "e2", "k00")
+        ),
+        f"lambda={lam}; scaled=(gamma={scaled.gamma},E1={scaled.e1},E2={scaled.e2},K00={scaled.k00})",
+        cls="A",
+    )
+    check(
+        "The CP channels scale quadratically while the diagonal scales linearly",
+        sp.simplify(scaled.cp1 - lam**2 * reference.cp1) == 0
+        and sp.simplify(scaled.cp2 - lam**2 * reference.cp2) == 0
+        and sp.simplify(scaled.k00 - lam * reference.k00) == 0,
+        cls="A",
+    )
+    check(
+        "The two completions disagree on every claimed absolute package value",
+        all(
+            sp.simplify(getattr(scaled, field).subs(lam, 2) - getattr(reference, field)) != 0
+            for field in ("gamma", "e1", "e2", "k00")
+        ),
+        "the explicit second completion uses lambda=2",
+        cls="A",
+    )
+    return scaled, lam
+
+
+def part3_coherent_kernel_is_not_invariant(
+    reference: SourcePackage,
+    scaled: SourcePackage,
+    lam: sp.Expr,
+) -> None:
+    print("\n" + "=" * 88)
+    print("PART 3: THE COHERENT KERNEL DOES NOT REMOVE THE COMPLETION FREEDOM")
+    print("=" * 88)
+
+    f23, f3, prefactor, epsilon_di = sp.symbols(
+        "f23 f3 prefactor epsilon_DI", nonzero=True, real=True
+    )
+    source_reference = sp.simplify(
+        prefactor * (reference.cp1 * f23 + reference.cp2 * f3) / reference.k00
+    )
+    source_scaled = sp.simplify(
+        prefactor * (scaled.cp1 * f23 + scaled.cp2 * f3) / scaled.k00
+    )
+
+    check(
+        "At fixed benchmark loop functions, epsilon_1 scales by lambda",
+        sp.simplify(source_scaled - lam * source_reference) == 0,
+        cls="A",
+    )
+    ratio_reference = sp.simplify(source_reference / epsilon_di)
+    ratio_scaled = sp.simplify(source_scaled / epsilon_di)
+    check(
+        "At fixed Davidson-Ibarra comparator, epsilon_1/epsilon_DI also scales by lambda",
+        sp.simplify(ratio_scaled - lam * ratio_reference) == 0,
+        cls="A",
+    )
+
+
+def part4_record_additivity_has_the_same_scale_freedom() -> None:
+    print("\n" + "=" * 88)
+    print("PART 4: RECORD ADDITIVITY DOES NOT FIX AN ABSOLUTE READOUT SCALE")
+    print("=" * 88)
+
+    # A finite record readout is a sum of content values.  Multiplying every
+    # content value by a nonzero scalar preserves content determination,
+    # I(empty)=0, and finite additivity exactly.
+    content_values = {"r0": sp.Rational(1, 2), "r1": sp.sqrt(2)}
+    lam = sp.Integer(3)
+
+    def readout(records: tuple[str, ...], scale: sp.Expr = sp.Integer(1)) -> sp.Expr:
+        return sp.simplify(scale * sum((content_values[r] for r in records), sp.Integer(0)))
+
+    left = ("r0",)
+    right = ("r1",)
+    union = left + right
+    check(
+        "The reference readout is finitely additive on disjoint record collections",
+        sp.simplify(readout(union) - readout(left) - readout(right)) == 0,
+        cls="A",
+    )
+    check(
+        "A nontrivially rescaled readout is also finitely additive",
+        sp.simplify(readout(union, lam) - readout(left, lam) - readout(right, lam)) == 0,
+        cls="A",
+    )
+    check(
+        "Both readouts obey I(empty)=0 but disagree on nonempty record content",
+        readout(()) == 0
+        and readout((), lam) == 0
+        and sp.simplify(readout(left, lam) - readout(left)) != 0,
+        cls="A",
+    )
+
+
+def part5_conditional_benchmark_replay(reference: SourcePackage) -> None:
+    print("\n" + "=" * 88)
+    print("PART 5: CONDITIONAL BENCHMARK REPLAY (NOT AN AXIOM DERIVATION)")
+    print("=" * 88)
+
+    # This deliberately consumes the existing conditional package only to
+    # preserve the old downstream arithmetic. It is not used by Parts 1-4.
+    from dm_leptogenesis_exact_common import exact_package
+
+    package = exact_package()
+    check(
+        "The imported conditional package matches the independently extracted reference tuple",
+        abs(package.gamma - float(reference.gamma)) < 1e-15
+        and abs(package.E1 - float(reference.e1)) < 1e-15
+        and abs(package.E2 - float(reference.e2)) < 1e-15
+        and abs(package.K00 - float(reference.k00)) < 1e-15,
+        cls="B",
+    )
+    check(
+        "The conditional coherent kernel gives epsilon_1/epsilon_DI = 0.9276209209",
+        abs(package.epsilon_ratio - 0.9276209209197268) < 1e-12,
+        f"epsilon_1/epsilon_DI={package.epsilon_ratio:.12f}",
+        cls="D",
+    )
+    check(
+        "The consistent conditional benchmark still gives eta/eta_obs = 0.5578749661",
+        abs(package.eta_ratio_fit_bench_exact_bookkeeping - 0.557874966110017) < 1e-12,
+        f"eta/eta_obs={package.eta_ratio_fit_bench_exact_bookkeeping:.12f}",
+        cls="D",
+    )
 
 
 def main() -> int:
     print("=" * 88)
-    print("DM LEPTOGENESIS EXACT-KERNEL CLOSURE")
+    print("DM LEPTOGENESIS SOURCE-PACKAGE IDENTIFIABILITY BOUNDARY")
     print("=" * 88)
 
-    _, _, cp1, cp2, k00 = part1_exact_source_and_diagonal_package()
-    epsilon_1, _, M1 = part2_exact_coherent_epsilon(cp1, cp2, k00)
-    part3_exact_eta_hits_observation_on_the_retained_benchmark(epsilon_1, M1)
+    h_reference, reference = part1_exact_reference_witness()
+    scaled, lam = part2_same_axiom_reduct_has_a_distinct_exact_completion(h_reference, reference)
+    part3_coherent_kernel_is_not_invariant(reference, scaled, lam)
+    part4_record_additivity_has_the_same_scale_freedom()
+    part5_conditional_benchmark_replay(reference)
 
     print("\n" + "=" * 88)
-    print(f"SUMMARY: classified_pass={PASS_COUNT} fail={FAIL_COUNT}")
-    if CLASS_COUNTS:
-        breakdown = ", ".join(f"class {k}: {v}" for k, v in sorted(CLASS_COUNTS.items()))
-        print(f"CLASS BREAKDOWN: {breakdown}")
+    print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    breakdown = ", ".join(f"class {key}: {value}" for key, value in sorted(CLASS_COUNTS.items()))
+    print(f"CLASS BREAKDOWN: {breakdown}")
     print(
-        "AUDIT NOTE: this runner has zero class-C standalone-derivation checks.\n"
-        "All checks are class-D conditional-on-imported-upstream. The imported\n"
-        "source-package values (gamma=1/2, E1=sqrt(8/3), E2=sqrt(8)/3, K00=2)\n"
-        "come from the upstream support theorems named in the module docstring.\n"
-        "This honest self-classification is the audit class-E repair recorded\n"
-        "by the 2026-05-16 science-fix-loop iter18 pass."
+        "BOUNDARY: the current A_min surface does not identify a unique nonzero\n"
+        "(gamma,E1,E2,K00) package or epsilon_1/epsilon_DI value.  The reference\n"
+        "numbers remain a conditional completion.  A normalized carrier theorem\n"
+        "or a scale-invariant kernel bypass remains open."
     )
     print("=" * 88)
     return 0 if FAIL_COUNT == 0 else 1

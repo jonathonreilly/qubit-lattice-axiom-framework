@@ -533,6 +533,32 @@ def blind_reaudit_control_path(claim_id: str) -> str:
 
 
 BLIND_REAUDIT_PRIOR_SCOPE = "WITHHELD_FOR_FRESH_CONTEXT"
+LEGACY_BACKFILL_SCOPE_PREFIX = (
+    "Legacy audit row backfilled during scope-aware classification migration"
+)
+BLIND_REAUDIT_WITHHELD_ROW_FIELDS = {
+    "audit_status", "auditor", "auditor_family", "auditor_model",
+    "audit_date", "claim_scope", "claim_type", "effective_status",
+    "independence", "previous_audits", "verdict_rationale",
+}
+
+
+def blind_reaudit_row_projection(row: dict[str, Any]) -> dict[str, Any]:
+    """Return the one canonical target-row view used by blind dispatches."""
+    return {
+        key: value
+        for key, value in row.items()
+        if key not in BLIND_REAUDIT_WITHHELD_ROW_FIELDS
+    }
+
+
+def manifest_has_blind_reaudit_control(
+    manifest: dict[str, dict] | None,
+) -> bool:
+    return any(
+        "blind_reaudit_control" in set(entry.get("roles") or [])
+        for entry in (manifest or {}).values()
+    )
 
 
 SEARCH_STOPWORDS = {
@@ -654,7 +680,7 @@ def build_cross_cycle_index(
             ),
         }
         for other_id, other in sorted(ledger_rows.items())
-        if str(other.get("claim_type") or "") == "no_go"
+        if other_id != cid and str(other.get("claim_type") or "") == "no_go"
     ]
     no_go_universe_sha256 = hashlib.sha256(
         json.dumps(no_go_universe, sort_keys=True, separators=(",", ":")).encode(
@@ -3268,16 +3294,47 @@ def validate_no_go_discipline(
             return "No-Go Discipline FAIL narrowed_claim_scope must equal the applied claim_scope"
         if not _text(packet.get("prior_claim_scope")):
             return "No-Go Discipline FAIL requires prior_claim_scope"
-        blind_reaudit = any(
-            "blind_reaudit_control" in set(entry.get("roles") or [])
-            for entry in (evidence_manifest or {}).values()
-        )
+        blind_reaudit = manifest_has_blind_reaudit_control(evidence_manifest)
         if blind_reaudit:
             if packet["prior_claim_scope"] != BLIND_REAUDIT_PRIOR_SCOPE:
                 return (
                     "blind re-audit prior_claim_scope must use the authenticated "
                     "WITHHELD_FOR_FRESH_CONTEXT marker"
                 )
+            narrowed_tokens = _scope_tokens(packet["narrowed_claim_scope"])
+            prior_tokens = _scope_tokens(prior_claim_scope or "")
+            legacy_backfill = bool(
+                prior_claim_scope
+                and prior_claim_scope.casefold().startswith(
+                    LEGACY_BACKFILL_SCOPE_PREFIX.casefold()
+                )
+            )
+            if prior_tokens and not legacy_backfill:
+                if not narrowed_tokens or not narrowed_tokens < prior_tokens:
+                    return (
+                        "blind No-Go Discipline FAIL narrowed_claim_scope must "
+                        "privately narrow the pre-audit ledger scope"
+                    )
+                if (
+                    prior_tokens.intersection(LOGICAL_SCOPE_TOKENS)
+                    != narrowed_tokens.intersection(LOGICAL_SCOPE_TOKENS)
+                ):
+                    return (
+                        "blind No-Go Discipline FAIL narrowing must preserve "
+                        "the hidden scope's logical polarity"
+                    )
+            elif legacy_backfill or not prior_tokens:
+                source_text = " ".join(
+                    str(entry.get("text") or "")
+                    for entry in (evidence_manifest or {}).values()
+                    if "source" in set(entry.get("roles") or [])
+                )
+                source_tokens = _scope_tokens(source_text)
+                if not narrowed_tokens or not narrowed_tokens <= source_tokens:
+                    return (
+                        "blind No-Go Discipline FAIL without a usable prior scope "
+                        "must be lexically grounded in current source evidence"
+                    )
         else:
             if prior_claim_scope is None:
                 return "No-Go Discipline FAIL requires an authentic pre-audit ledger scope"

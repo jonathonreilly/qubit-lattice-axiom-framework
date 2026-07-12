@@ -2,8 +2,8 @@
 
 **Date:** 2026-07-04; exact supplier repair 2026-07-11
 **Claim type:** positive_theorem
-**Status authority:** independent audit lane. This source proposal does not
-set or predict an audit verdict.
+**Status authority:** audit verdict authority remains with the independent
+audit lane.
 **Primary runner:**
 [`scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py`](../scripts/acphilambda_occupancy_determinant_power_split_exact_support_2026_07_04.py)
 **Runner cache:**
@@ -65,8 +65,8 @@ det_R R(K)
   = det_C K conjugate(det_C K).
 ```
 
-The result is real and nonnegative. No invertibility assumption is needed;
-the identity is polynomial and includes singular matrices.
+The result is real and nonnegative. Polynomiality extends the identity to
+singular matrices.
 
 ## Berezin determinant power
 
@@ -75,8 +75,8 @@ displayed differential ordering and the minus sign in the exponent, the top
 degree coefficient is the alternating sum over permutations of the matrix
 entries, which is `det_C(K)`. The companion runner performs this exterior
 algebra calculation directly for generic `1 x 1`, `2 x 2`, and `3 x 3`
-kernels. The odd-dimensional checks guard the sign convention that an even
-dimension alone would not detect.
+kernels. The odd-dimensional checks certify the displayed sign convention
+across both dimension parities.
 
 ## Exact checks
 
@@ -88,22 +88,22 @@ The runner verifies:
 - generic `1 x 1`, `2 x 2`, and `3 x 3` Berezin Gaussian coefficients;
 - the phase sensitivity of `det_C(K)` and phase blindness of
   `det_R R(K)`;
-- source guards that keep the physical AC(i) selector and `r` outside this
-  theorem.
+- source guards for the theorem domain and the separate physical AC(i)
+  selector domain.
 
 ## Charged-lepton scope boundary
 
 This theorem supplies the determinant-power fork used to state AC(i)
-precisely. It does not identify the physical charged-lepton matter carrier
-with the complex Gaussian or its realification. It does not select a
-K/CPT-orbit occupancy grain, establish a path-integral measure, choose a
-physical action, register or predict `r`, force `r=1/2`, derive `delta`, or
-supply the R-eta readout license.
+precisely. Its domain consists of the complex Gaussian, its realification, and
+their exact determinant powers. Physical identification of the charged-lepton
+matter carrier, K/CPT-orbit occupancy grain, path-integral measure, action,
+registered-mass coordinate, phase, and R-eta readout belong to separate source
+rows. The construction is constant over every supplied registered-mass ratio
+`r`; `r` remains a free dial.
 
 The two mathematical determinant constructions are both present in the
-theorem. A separate retained physical-carrier theorem or approved primitive is
-required before either construction can be used as the charged-lepton
-occupancy rule.
+theorem. Their use as a charged-lepton occupancy rule is the domain of a
+separate physical-carrier theorem.
 
 ## Verification
 

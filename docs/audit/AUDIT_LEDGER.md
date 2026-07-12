@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 95 |
-| **retained_no_go** | 38 |
+| **retained_no_go** | 39 |
 | **retained_bounded** | 396 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 8 |
-| unaudited | 2707 |
+| unaudited | 2706 |
 | audit_in_progress | 23 |
 | meta | 350 |
 | ~~audited_numerical_match~~ | 6 |
@@ -45,13 +45,13 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | audit_status | count |
 |---|---:|
 | `audit_in_progress` | 23 |
-| `audited_clean` | 515 |
+| `audited_clean` | 516 |
 | `audited_conditional` | 78 |
 | `audited_decoration` | 20 |
 | `audited_failed` | 37 |
 | `audited_numerical_match` | 6 |
 | `audited_renaming` | 18 |
-| `unaudited` | 3057 |
+| `unaudited` | 3056 |
 
 | claim_type | count |
 |---|---:|
@@ -481,6 +481,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `qcd_low_energy_running_bridge_note_2026-05-01` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.5 | A | - |
 | `qnm_control_hardening_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5 | A | - |
+| `quark_c3_circulant_source_law_boundary_note_2026-04-28` | no_go | ~~audited_clean~~ | **retained_no_go** | cross_family | codex-gpt-5.6 | A | - |
 | `quark_route2_eta_floor_hf_boundary_note` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | cross_family | codex-gpt-5.6 | A | - |
 | `radial_scaling_protected_angle_narrow_theorem_note_2026-05-02` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.5 | A | - |
@@ -7029,6 +7030,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **chain closes:** True — The note's claim is a scope restriction and control checklist, not a positive spectral theorem. It explicitly denies a QNM/escape-spectrum result and therefore closes as a bounded control-program note without needing a numerical runner.
 - **rationale:** The source note is audit-clean only for its narrow boundary: QNM remains a hardening target and no quasi-normal-mode or escape-spectrum result is asserted. It does not attempt to derive or validate any spectral observable, and its listed five controls are stated as future prerequisites rather than achieved results. Residual risk is that this clean verdict must not be reused as evidence for a positive QNM lane; it ratifies only the bounded control-program framing.
 - **auditor confidence:** high
+
+### `quark_c3_circulant_source_law_boundary_note_2026-04-28`
+
+- **Note:** [`QUARK_C3_CIRCULANT_SOURCE_LAW_BOUNDARY_NOTE_2026-04-28.md`](../../docs/QUARK_C3_CIRCULANT_SOURCE_LAW_BOUNDARY_NOTE_2026-04-28.md)
+- **claim_type:** `no_go`
+- **claim_scope:** The direct promotion of the stated Hermitian C3 circulant carrier, including the A1/P1 steelman, to retained non-top quark Yukawa ratios was audited.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_no_go**  (reason: `self`)
+- **auditor:** `codex-cli-gpt-5.6-sol-parallel-20260712T063145Z-64413240-00257-quark_c3_circulant_source_la`  (codex-gpt-5.6; independence=cross_family)
+- **load-bearing step:** The inverse Fourier map realizes every real eigenvalue triple with a unique three-real-parameter Hermitian C3 circulant, while A1/P1 still leave the phase, scale, species assignment, and physical quark-Yukawa readout undetermined.  _(class `A`)_
+- **chain closes:** True — The inverse discrete Fourier transform establishes algebraically that the unrestricted carrier represents every real three-generation spectrum. A1 removes only one radial degree of freedom, while P1 and the quark-sector interpretation do not determine the remaining phase, scale, species assignment, or physical readout.
+- **rationale:** The negative boundary is an exact parameter-counting and inverse-Fourier result, not a numerical fit or definition of the desired Yukawa ratios. The runner constructs the C3 operator, verifies its spectrum and inverse map, and tests the A1 and species-dependence consequences without importing observed quark masses. Several prose and file-presence checks are non-decisive, but the load-bearing algebra is independently visible in the supplied source and runner. The result is correctly limited to direct promotion of this carrier; it does not assert that every possible future quark-specific source/readout theorem is impossible.
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
 
 ### `quark_cp_carrier_completion_note_2026-04-18`
 

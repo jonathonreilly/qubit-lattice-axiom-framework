@@ -13426,3 +13426,41 @@ class N5AdministrativeNegationExclusionTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class BatchOrchestratorRetargetFlagTest(unittest.TestCase):
+    """--retarget-conditionals bypasses the repair-wait guard for explicitly
+    named claims only (gate/template calibrations are invisible to the
+    source/dep movement guard; grain wave 6, 2026-07-13)."""
+
+    def test_retarget_bypasses_repair_wait_for_named_claim_only(self):
+        m = _import("orchestrate_audit_batch")
+        row = {
+            "claim_id": "stuck_row",
+            "claim_type": "bounded_theorem",
+            "audit_status": "unaudited",
+            "effective_status": "open_gate",
+            "criticality": None,
+            "deps": [],
+        }
+        with mock.patch.object(
+            m, "awaiting_repair_since_conditional", return_value=True
+        ), mock.patch.object(
+            m, "source_requires_forensic", return_value=False
+        ), mock.patch.object(m, "note_hash_drifted", return_value=False):
+            targets, skipped = m.compute_targets(
+                {"stuck_row"}, {"stuck_row": dict(row)}
+            )
+            self.assertEqual(targets, [])
+            self.assertTrue(any("awaiting repair" in line for line in skipped))
+            targets, _ = m.compute_targets(
+                {"stuck_row"}, {"stuck_row": dict(row)},
+                retarget=frozenset({"stuck_row"}),
+            )
+            self.assertEqual([r["claim_id"] for r in targets], ["stuck_row"])
+            # A different named claim does not unlock this one.
+            targets, _ = m.compute_targets(
+                {"stuck_row"}, {"stuck_row": dict(row)},
+                retarget=frozenset({"other_row"}),
+            )
+            self.assertEqual(targets, [])

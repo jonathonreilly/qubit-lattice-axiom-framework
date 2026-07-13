@@ -44697,6 +44697,10 @@
       "to": "universal_qg_projective_schur_closure_note"
     },
     {
+      "from": "universal_qg_uv_finite_partition_note",
+      "to": "universal_gr_positive_background_local_closure_note"
+    },
+    {
       "from": "universal_theta_induced_edm_vanishing_theorem_note_2026-04-24",
       "to": "strong_cp_theta_zero_note"
     },
@@ -112396,7 +112400,7 @@
         "abj_epsilon_index_square_block_no_go_note_2026-05-30"
       ],
       "helper_runner_paths": [],
-      "note_hash": "926d64af7101180fd50fa3bef6a07a1b6b1b7eac90bc8637f4a29762f9d56375",
+      "note_hash": "eb8a9ea2f0d16a48ede6d7cfa99b588c935c1472968accd36bd205496ca9a9e9",
       "path": "docs/repo/FRONT_DOOR_STATUS.md",
       "runner_path": null,
       "title": "Front Door Status Snapshot"
@@ -123334,10 +123338,11 @@
       "claim_type_seed_hint": "positive_theorem",
       "deps": [
         "universal_gr_lorentzian_global_atlas_closure_note",
-        "universal_qg_projective_schur_closure_note"
+        "universal_qg_projective_schur_closure_note",
+        "universal_gr_positive_background_local_closure_note"
       ],
       "helper_runner_paths": [],
-      "note_hash": "ebbb67213d06602e4576890f662cecc54629b026328bdf46ee72c7494ca341ff",
+      "note_hash": "f1f15ffd4e2439d04fd1f65c1cbde7c5894329212544eb7a68ca03d22737424b",
       "path": "docs/UNIVERSAL_QG_UV_FINITE_PARTITION_NOTE.md",
       "runner_path": "scripts/frontier_universal_qg_uv_finite_partition.py",
       "title": "Universal QG UV-Finite Partition Density Note"
@@ -129449,7 +129454,7 @@
       "open_gate": 212,
       "positive_theorem": 662
     },
-    "edge_count": 14541,
+    "edge_count": 14542,
     "leaf_count": 1330,
     "node_count": 3949,
     "root_count": 1113,

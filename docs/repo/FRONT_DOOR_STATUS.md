@@ -81,14 +81,14 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 255 |
-| high | `unaudited` | 174 |
+| critical | `unaudited` | 254 |
+| high | `unaudited` | 175 |
 | medium | `unaudited` | 126 |
 | ? | `unresolved` | 5 |
-| high | `audited_conditional` | 3 |
 | critical | `audit_in_progress` | 2 |
+| critical | `audited_conditional` | 2 |
+| high | `audited_conditional` | 2 |
 | medium | `audited_conditional` | 2 |
-| critical | `audited_conditional` | 1 |
 | critical | `audited_failed` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | critical | `retained_pending_chain` | 1 |

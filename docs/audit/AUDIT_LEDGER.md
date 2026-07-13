@@ -519,7 +519,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `record_permanence_forces_fresh_site_double_registration_and_agreement_survival_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | C | - |
-| `universal_qg_uv_finite_partition_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
+| `universal_qg_canonical_refinement_net_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
 | `beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08` | decoration | ~~audited_decoration~~ | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | cross_family | codex-gpt-5.5 | A | `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` |
@@ -5969,21 +5969,21 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The load-bearing step is a closed matrix-calculus identity over explicitly stated local inputs, and the note's claim boundary excludes the unproved physical selection and dynamical gluing steps. The runner source directly differentiates the symbolic log determinant for general symmetric h,k, checks the canonical Gram matrix symbolically, and numerically replays the same algebra; it does not hard-code an external comparator or tune a scale. Residual risk is only scope leakage by downstream users: this clean verdict covers the local Hessian normal form, not the route-wide scalar-generator selection premise or full GR/Regge dynamics.
 - **auditor confidence:** high
 
-### `universal_qg_uv_finite_partition_note`
+### `universal_qg_canonical_refinement_net_note`
 
-- **Note:** [`UNIVERSAL_QG_UV_FINITE_PARTITION_NOTE.md`](../../docs/UNIVERSAL_QG_UV_FINITE_PARTITION_NOTE.md)
+- **Note:** [`UNIVERSAL_QG_CANONICAL_REFINEMENT_NET_NOTE.md`](../../docs/UNIVERSAL_QG_CANONICAL_REFINEMENT_NET_NOTE.md)
 - **claim_type:** `positive_theorem`
-- **claim_scope:** Audited the restricted-packet claim that the direct-universal positive-background discrete GR operator yields a finite Euclidean Gaussian partition density whose mean/stationary sector equals the discrete GR stationary field on finite charts and patches as a density across the finite atlas.
+- **claim_scope:** Audit of the claimed canonical barycentric-dyadic refinement/projective net for the discrete PL S^3 x R partition-density and stationary-section family, using only the three cited upstream notes.
 - **audit_status:** ~~audited_conditional~~
 - **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-cli-gpt-5.5-20260505-225305-c0ea7096-universal_qg_uv_finite_p-095`  (codex-gpt-5.5; independence=cross_family)
-- **load-bearing step:** Because K_GR(D) is symmetric positive definite on each finite chart, the finite-dimensional Gaussian integral Z_GR(D,J) exists with the stated determinant formula and mean K_GR(D)^-1 J.  _(class `A`)_
-- **chain closes:** False — The Gaussian conclusion follows algebraically from a finite-dimensional symmetric positive definite K_GR(D), but that SPD positive-background local closure theorem is imported rather than provided as a retained-grade cited authority. In addition, the supplied cited authorities are audited_conditional and unaudited, so retained-grade closure does not propagate.
-- **rationale:** The load-bearing Gaussian finiteness and mean-field statements are standard class-A consequences once finite-dimensional SPD K_GR(D) is granted. The restricted packet does not independently close the required positive-background SPD/local GR theorem, and one cited authority is explicitly audited_conditional while another is unaudited. Therefore the theorem is conditional on upstream retained-grade closure of those inputs rather than clean within this packet.
+- **auditor:** `codex-cli-gpt-5.5-20260505-225305-c0ea7096-universal_qg_canonical_r-094`  (codex-gpt-5.5; independence=cross_family)
+- **load-bearing step:** Once the barycentric-dyadic refinement maps are chosen geometrically, they induce canonical coarse/fine splittings, so the exact Schur pushforward applies directly on the same canonical discrete net.  _(class `A`)_
+- **chain closes:** False — The chain does not close to retained grade because all load-bearing upstream authorities are conditional or unaudited, and the packet does not independently prove that the geometric barycentric-dyadic refinement maps canonically induce the algebraic coarse/fine Schur splittings for the same fields/operators.
+- **rationale:** The source note's main step is an algebraic/geometric compatibility assertion over cited inputs, not a first-principles computation. However, the cited Lorentzian global atlas authority is explicitly audited_conditional, while the UV-finite partition and projective Schur closure authorities are unaudited. In addition, the restricted packet asserts rather than proves the bridge from barycentric-dyadic refinement maps to canonical Schur coarse/fine splittings. Under the rubric, those open dependencies force audited_conditional rather than audited_clean.
 - **open / conditional deps cited:**
   - `UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md`
+  - `UNIVERSAL_QG_UV_FINITE_PARTITION_NOTE.md`
   - `UNIVERSAL_QG_PROJECTIVE_SCHUR_CLOSURE_NOTE.md`
-  - `UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md`
 - **auditor confidence:** high
 
 ### `valley_linear_action_note`

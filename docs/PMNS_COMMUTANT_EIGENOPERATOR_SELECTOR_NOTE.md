@@ -1,159 +1,233 @@
-# PMNS Commutant Eigenoperator Selector
+# PMNS Commutant Corner-Profile Selector-Map Obstruction
 
-**Date:** 2026-04-16  
-**Status:** bounded - bounded or caveated result note
-**Script:** `scripts/frontier_pmns_commutant_eigenoperator_selector.py`
+**Date:** 2026-04-16; exact selector-map repair 2026-07-12
+**Type:** no_go
+**Status:** exact negative boundary
+**Script:**
+[`frontier_pmns_commutant_eigenoperator_selector.py`](../scripts/frontier_pmns_commutant_eigenoperator_selector.py)
 
 ## Question
 
-Can a non-`Cl(3)` projected commutant eigenoperator on the `hw=1` triplet
-produce a corner-distinguishing C3 Fourier-mode decomposition with a
-C3-trivial-rep (even) and C3-fundamental-rep (odd) split, with a derivable
-one-way Cl(3)-span vanishing check and a demonstrated nonzero odd example?
+Do the scalar corner-trace profile of a projected non-`Cl(3)` commutant
+operator and the stated Fourier maps
+
+```text
+tau(v) = 0 if Re(v_+) >= 0 else 1,
+q(v)   = argmax(Re(v_0), Re(v_0)-Re(v_+), Re(v_0)+Re(v_+))
+```
+
+derive the PMNS passive offset and sector-orientation labels?
 
 ## Bottom line
 
-Yes. This note's bounded scope covers exactly the C3-representation-theoretic
-decomposition of the corner-trace profile of a projected non-`Cl(3)`
-commutant generator. It does **not** close a bridge from this Fourier
-decomposition to physical PMNS observables (the τ branch bit, the q passive
-offset class label, or any other PMNS reduced-class readout). That bridge is
-**not** in the load-bearing chain of this note (see "Claim scope" below).
+No, for this scalar profile and these maps.
 
-The projected commutant route produces an exact decomposition law on the
-`hw=1` corner orbit:
+The exact `hw=1` projector algebra forces every operator lifted from one
+corner onto the one-complex-dimensional trace-profile ray
 
-- the C3-trivial-rep Fourier mode of the corner-trace profile is the orbit
-  average (even mode)
-- the C3-fundamental-rep Fourier modes are the corner-distinguishing
-  conjugate pair (odd modes)
-- every projected `Cl(3)`-span element has vanishing odd modes
-- the demonstrated projected non-`Cl(3)` commutant generator has nonzero odd
-  modes
+```text
+(v_1,v_2,v_3) = (t,t/2,t/2),
+(v_0,v_+,v_-) = (2t/3,t/6,t/6),
+t = Tr(M).
+```
 
-So the bounded claim is purely an algebraic-representation-theoretic content
-identity: it gives a canonical even + odd decomposition of any C3-orbit
-3-vector, a one-way `Cl(3)`-span vanishing certificate, and one explicit
-non-`Cl(3)` corner-distinguishing example.
+The old extraction maps fail the internal descent test, and two further
+finite symmetry diagnostics expose the still-missing bridge:
 
-## Claim scope (narrowed)
+1. they change under the unsupplied eigenoperator sign choice `M -> -M`;
+2. on the three cyclic transports of the demonstrated ray, the `q` map
+   returns `(2,1,1)` rather than separating three classes;
+3. `Re(v_+)` is even under the corner reflection `v_2 <-> v_3`, while an
+   abstract orientation-odd coordinate would change sign.
 
-> **Bounded algebraic statement.** On the `hw=1` corner orbit `{X1, X2, X3}`,
-> the corner-trace profile `v = (tr P_i^* M P_i)_{i=1,2,3}` of any operator
-> `M` (literal complex trace, no Hermitianization) admits the canonical
-> decomposition into C3 irreps:
->
-> ```
-> v_0 = (v_1 + v_2 + v_3) / 3                           (C3-trivial rep)
-> v_+ = (v_1 + ω v_2 + ω^2 v_3) / 3                     (C3-fundamental rep, +)
-> v_- = (v_1 + ω^2 v_2 + ω v_3) / 3                     (C3-fundamental rep, -)
-> ```
-> with `ω = exp(2πi/3)`. For Hermitian `M`, `v_i` is real for each `i`, and
-> the two odd modes satisfy `v_- = conj(v_+)`. The runner verifies, on the
-> literal complex profile `v_i = tr(P_i^* M P_i)`, that the odd modes
-> `(v_+, v_-)` vanish on the projected `Cl(3)` basis (hence on its span by
-> linearity), and that they are nonzero on the demonstrated Hermitian
-> projected non-`Cl(3)` commutant generator. The demonstrated generator is
-> chosen to be Hermitian so the literal complex profile is real and the
-> conjugate-pair relation holds on the example; the choice is consistent
-> because the commutant of a Hermitian gamma set is closed under Hermitian
-> conjugation, so the projected commutant always admits a Hermitian
-> representative outside the projected `Cl(3)` span.
+The `C_3` Fourier decomposition remains exact algebra. What fails is the
+claim that the stated formulas are intrinsic to the projected eigenoperator.
+The cyclic and reflection calculations are internal corner-space diagnostics;
+they are not assumed to be PMNS offset or sector-exchange actions.
 
-This is a one-way scope statement. Nonzero odd mode certifies that a generator
-is outside the projected `Cl(3)` span, but zero odd mode is not claimed to
-certify membership in that span.
+## Exact overlap-ray theorem
 
-**This note explicitly does NOT claim:**
+Conditional on the displayed finite staggered corner construction, let `H_i`
+be the three Hermitian `hw=1` corner Hamiltonians at momenta
+`(pi,0,0)`, `(0,pi,0)`, and `(0,0,pi)`. The runner constructs them directly
+from the staggered sign rule and proves, with exact SymPy arithmetic,
 
-- that `v_0` IS the PMNS passive-offset class label `q`;
-- that `Re(v_+)` IS the PMNS branch / orientation selector bit `τ`;
-- that the q/τ extraction maps `q := argmax(...)` and `τ := sign(Re(v_+))`
-  used by the runner are the canonical PMNS-observable readouts;
-- any axiom-native PMNS selector value law beyond the algebraic
-  decomposition itself.
+```text
+H_i^2 = I,
+H_i H_j + H_j H_i = 0       (i != j).
+```
 
-The bridge from `(v_0, v_+)` to PMNS-observable selector labels (`q`, `τ`)
-is the parent's previously load-bearing renaming; under this narrowing it is
-**reframed as an operational definition**, not a derived readout, and is
-explicitly excluded from the load-bearing chain. Any downstream cite of this
-note for a PMNS-physical readout must supply that bridge separately.
+Their positive projectors are
 
-## Exact construction
+```text
+Q_i = (I + H_i)/2.
+```
 
-Start from the exact `Cl(3)` on `Z^3` generation boundary:
+For `i != j`, anticommutation gives
 
-- build the projected commutant on each `hw=1` corner
-- pick a Hermitian projected commutant generator outside the projected
-  `Cl(3)` span (such a representative exists because the commutant of a
-  Hermitian gamma set is closed under Hermitian conjugation)
-- lift that projected eigenoperator back to the ambient taste space
-- compute the literal complex corner-trace profile
-  `v = (tr P_i^* M P_i)_{i=1,2,3}` on `X_1, X_2, X_3` (no Hermitianization
-  of the projected operator; the Hermiticity of `M` makes each `v_i`
-  numerically real on the example)
-- decompose `v` into the C3 Fourier modes `(v_0, v_+, v_-)`
+```text
+Q_i Q_j Q_i = (1/2) Q_i.                    (1)
+```
 
-For the corner profile `v = (v_1, v_2, v_3)`, define
+Take any operator `M_tilde` supported at the first corner,
 
-`v_0 = (v_1 + v_2 + v_3) / 3`
+```text
+M_tilde = Q_1 M_tilde Q_1,
+```
 
-`v_+ = (v_1 + ω v_2 + ω^2 v_3) / 3`
+including the demonstrated lift of the projected non-`Cl(3)` commutant
+witness. Define the literal corner-trace profile
 
-`v_- = (v_1 + ω^2 v_2 + ω v_3) / 3`
+```text
+v_i = Tr(Q_i M_tilde).
+```
 
-with `ω = exp(2πi/3)`.
+Writing `t = Tr(M_tilde)`, cyclicity of trace and (1) give
 
-Then:
+```text
+v_1 = t,
+v_2 = Tr(Q_1 Q_2 Q_1 M_tilde) = t/2,
+v_3 = Tr(Q_1 Q_3 Q_1 M_tilde) = t/2.        (2)
+```
 
-- `v_0` is the C3-trivial-rep (even) mode = orbit average
-- `(v_+, v_-)` are the C3-fundamental-rep (odd) modes = conjugate pair on
-  real profiles
-- `(v_+, v_-)` are zero on the projected `Cl(3)` basis and nonzero on the
-  demonstrated projected non-`Cl(3)` generator
+Thus the entire scalar profile map on this supported lift has rank one over
+the complex numbers. This is stronger than the previous numerical
+corner-distinguishing observation: the ratio `(1,1/2,1/2)` is forced and is
+independent of the internal matrix entries of `M_tilde`.
 
-## Exact theorem statement (narrowed)
+## Exact Fourier image
 
-**Theorem (C3 Fourier decomposition of the projected commutant
-corner-trace profile).** On the `hw=1` triplet, the corner-trace profile of
-the lifted projected non-`Cl(3)` commutant generator admits an exact C3
-representation-theoretic decomposition:
+With `omega = exp(2 pi i/3)`, use
 
-1. the C3-trivial-rep (even) Fourier mode equals the corner-orbit average
-2. the C3-fundamental-rep (odd) Fourier modes form a conjugate pair on real
-   profiles
-3. the odd modes vanish on the projected `Cl(3)` span and are nonzero on the
-   demonstrated projected non-`Cl(3)` commutant generator
+```text
+v_0 = (v_1 + v_2 + v_3)/3,
+v_+ = (v_1 + omega v_2 + omega^2 v_3)/3,
+v_- = (v_1 + omega^2 v_2 + omega v_3)/3.
+```
 
-This is a finite-dimensional representation-theoretic identity. It does not
-constitute a PMNS microscopic closure theorem and it does not derive a
-bridge from the Fourier modes to the PMNS τ/q observable labels.
+Substitution of (2), together with `1 + omega + omega^2 = 0`, gives
 
-## Operational reduction (q, τ): scope-only
+```text
+(v_0,v_+,v_-) = (2t/3,t/6,t/6).             (3)
+```
 
-For an operational tag on the canonical projected generator used by the
-runner, the reduced labels (computed by the operational maps `q :=
-argmax(v_0, v_0 - Re v_+, v_0 + Re v_+)` and `τ := 0 if Re(v_+) >= 0 else
-1`) take the values:
+The nonzero `v_+` on the demonstrated witness is therefore a nonzero trace
+overlap on this ray. It is not an independently variable orientation
+coordinate.
 
-- branch bit `τ = 0`
-- passive offset label `q = 2`
+## Obstruction 1: no eigenoperator-line descent
 
-These are stated **as operational definitions** on the demonstrated
-projected eigenoperator: under this narrowing they are not asserted to
-equal physical PMNS observables, but only to be a canonical operational
-readout of the C3 Fourier decomposition. The theorem-level content is the
-existence of the canonical even + odd Fourier split and the derivable
-one-way vanishing certificate for the odd mode.
+If `M_tilde` is a commutant eigenoperator, so is `-M_tilde`, with the same
+commutation and eigenspace relations. The construction supplies no sign or
+phase normalization that distinguishes the two.
 
-## Consequence
+For a witness oriented so that `t>0`, (3) gives
 
-Within the bounded scope, this note closes the C3
-representation-theoretic content of the projected non-`Cl(3)` commutant
-eigenoperator's corner-trace decomposition. The PMNS-observable readout
-bridge (τ, q ↔ Fourier modes) is removed from the load-bearing chain and
-must be supplied separately by any downstream use that needs a physical
-selector value law.
+```text
+(tau,q)(M_tilde)  = (0,2),
+(tau,q)(-M_tilde) = (1,1).
+```
+
+Therefore the stated maps do not descend to the eigenoperator line. Calling
+one sign the selected generator would add exactly the missing normalization
+rule; it is not a consequence of the present commutant construction.
+
+## Diagnostic 2: cyclic three-class collapse
+
+Transporting the ray through the three corner anchors cyclically permutes its
+profile. For `t>0`, the three profiles are
+
+```text
+(t,t/2,t/2), (t/2,t/2,t), (t/2,t,t/2).
+```
+
+The stated map returns
+
+```text
+q = (2,1,1).
+```
+
+It therefore collapses two distinct cyclic transports and is not a
+three-class readout on this corner orbit. A phase-sector map built from
+`arg(v_+)` could separate the three anchors, but that would be a different
+map and would still require a theorem identifying a corner anchor with the
+passive-block offset.
+
+This diagnostic does not assume that corner transport acts as passive-offset
+shift. The missing intertwiner is precisely why the calculation alone cannot
+be promoted to a physical `q` theorem.
+
+## Diagnostic 3: reflection character
+
+For a real profile `(x,y,z)`,
+
+```text
+Re(v_+) = (2x-y-z)/6.
+```
+
+The corner reflection `S:(x,y,z)->(x,z,y)` exchanges `v_+` and `v_-` but
+leaves `Re(v_+)` fixed. Hence the stated `tau` map is reflection-even under
+this corner involution. The demonstrated ray is itself fixed by `S`, so it
+contains no nonzero corner-reflection-odd scalar datum.
+
+The imaginary part of `v_+` has the correct abstract reflection parity, but
+it vanishes on the demonstrated Hermitian profile. Allowing a non-Hermitian
+generator does not fix the problem because `M -> exp(i alpha) M` rotates that
+phase continuously until an additional phase convention is derived. This
+diagnostic likewise does not identify corner reflection with lepton-sector
+exchange; that physical intertwiner remains open.
+
+## Theorem statement
+
+**Theorem (narrow obstruction to the stated commutant selector maps).** For
+the literal scalar corner-trace profile of an operator lifted from one
+`hw=1` corner, the exact profile image is `(t,t/2,t/2)` and its Fourier image
+is `(2t/3,t/6,t/6)`. The stated `q/tau` maps change under the unsupplied
+replacement `M_tilde -> -M_tilde` and therefore do not descend to the
+projected commutant eigenoperator line. Their cyclic and reflection behavior
+also fails to supply, by itself, the missing passive-offset and sector-
+exchange intertwiners. Therefore the current scalar profile and stated maps
+do not internally derive a PMNS selector value law.
+
+## What remains valid
+
+- Every three-vector has the exact `C_3` Fourier decomposition displayed
+  above.
+- The demonstrated non-`Cl(3)` commutant lift has a nonconstant scalar corner
+  profile and nonzero `v_+`.
+
+None of these statements supplies the missing physical readout bridge.
+
+## Explicit non-claims
+
+This theorem does **not** claim:
+
+- that no matrix-valued or enlarged commutant observable can realize a PMNS
+  selector;
+- that a future carrier/intertwiner theorem is impossible;
+- that the displayed corner cycle or reflection is already the physical PMNS
+  offset or sector-exchange action;
+- that no factorization can exist on a future carrier-constrained physical
+  domain;
+- that every zero-odd profile lies in the projected `Cl(3)` span;
+- any result for the active five-real PMNS source;
+- any observed or fitted PMNS value.
+
+A positive reopen must add an observable with enough representation content
+and prove all of:
+
+1. normalization/phase descent for its commutant eigenoperator;
+2. an intertwiner from corner transport to passive-block offset;
+3. an intertwiner from its orientation involution to lepton-sector exchange.
+
+## Audit repair target
+
+This revision addresses the prior independent-audit issue that the computed
+Fourier modes were renamed as passive-offset and branch/orientation selectors
+without a theorem deriving the readout. The repair does not restore that
+positive claim. It proves the exact obstruction for the stated scalar profile
+and maps. Independent audit remains required before the repository can treat
+this no-go as retained-grade.
 
 ## Command
 
@@ -161,18 +235,8 @@ selector value law.
 python3 scripts/frontier_pmns_commutant_eigenoperator_selector.py
 ```
 
-## Audit dependency repair links
+Expected terminal line:
 
-This graph-bookkeeping section records explicit dependency links named by
-a prior conditional audit so the audit citation graph can track them. It
-does not promote this note or change the audited claim scope.
-
-- The narrowed claim depends only on:
-  - the exact `Cl(3)` on `Z^3` generation boundary geometry
-  - the projected commutant construction on each `hw=1` corner
-  - the C3 cyclic group representation theory (finite-dimensional
-    character decomposition)
-- It does **not** claim the converse that every zero-odd projected commutant
-  direction lies in the projected `Cl(3)` span.
-- It does **not** depend on, and does not derive, any PMNS observable
-  bridge: `τ`, `q`, or any reduced-class-space PMNS selector value law.
+```text
+PASS=30  FAIL=0
+```

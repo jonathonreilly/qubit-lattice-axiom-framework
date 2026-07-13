@@ -1,169 +1,83 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_commutant_eigenoperator_selector.py
-runner_sha256: 6acc2d58b21ce9a96fe37ed1354a361d634147986d6f98cac74e139958ff2adf
+runner_sha256: 6df8f7f173126fd76d5637aa7fc19a2249bf099802547b5f94051603ea87c313
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 ========================================================================================
-PMNS COMMUTANT EIGENOPERATOR SELECTOR (NARROWED SCOPE 2026-05-09)
+PMNS COMMUTANT CORNER-PROFILE SELECTOR-MAP OBSTRUCTION
 ========================================================================================
 
-Inputs reused:
-  - Cl(3) on Z^3 generation boundary
-  - projected commutant / corner-distinguishing generator geometry
-  - hw=1 corner orbit and C3[111] transport
-  - C3 cyclic group representation theory
+Question:
+  Do the stated scalar corner-profile Fourier maps derive the PMNS
+  passive offset q and sector-orientation bit tau?
 
-Question (narrowed):
-  Does the corner-trace profile of a projected non-Cl(3) commutant
-  eigenoperator admit a derivable C3 representation-theoretic
-  decomposition with a one-way Cl(3)-span vanishing check and a
-  demonstrated nonzero C3-fundamental-rep example?
-
-Narrowing context:
-  Audit verdict 2026-05-05 (codex-cli-gpt-5.5) flagged the prior
-  identification of v_0 with PMNS q and v_+ with PMNS tau as a
-  renaming. This runner narrows the load-bearing chain to the
-  C3 representation-theoretic content only; q/tau are framed as
-  operational definitions, not derived PMNS observables.
+Answer (narrow exact no-go):
+  No. The corner-supported trace profile has a one-complex-dimensional
+  image, and the stated maps fail eigenoperator-line descent. Their
+  cyclic and reflection behavior also cannot supply the missing physical
+  bridge without additional intertwiners.
 
 ========================================================================================
-PART 1: PROJECTED COMMUTANT GENERATORS PROVIDE CORNER SPECTRA
+PART 1: EXACT PROJECTOR-OVERLAP IMAGE OF A CORNER-SUPPORTED LIFT
 ========================================================================================
-  [PASS (A)] The projected commutant at X1 has dimension 4
-  [PASS (A)] The projected commutant at X2 has dimension 4
-  [PASS (A)] The projected commutant at X3 has dimension 4
-  [PASS (A)] A Hermitian projected commutant generator outside the projected Cl(3) span exists  (corner-distinguishing Hermitian projected non-Cl(3) generator found)
-  [PASS (A)] The selected projected non-Cl(3) commutant generator is Hermitian  (||M - M^*||_F=0.00e+00)
-  [PASS (A)] The literal complex projected trace tr(P^* M P) at X1 is finite  (trace=1.659016+0.000000j)
-  [PASS (A)] The literal complex projected trace tr(P^* M P) at X1 is real (Im part vanishes within tolerance)  (|Im trace|=3.08e-33)
-  [PASS (A)] The literal complex projected trace tr(P^* M P) at X2 is finite  (trace=0.829508+0.000000j)
-  [PASS (A)] The literal complex projected trace tr(P^* M P) at X2 is real (Im part vanishes within tolerance)  (|Im trace|=3.47e-18)
-  [PASS (A)] The literal complex projected trace tr(P^* M P) at X3 is finite  (trace=0.829508+0.000000j)
-  [PASS (A)] The literal complex projected trace tr(P^* M P) at X3 is real (Im part vanishes within tolerance)  (|Im trace|=0.00e+00)
-  [PASS (A)] The projected non-Cl(3) generator distinguishes the three corners on the literal complex profile  (traces=[(1.6590157818996238+3.0814879110195774e-33j), (0.8295078909498119+3.469446951953614e-18j), (0.8295078909498119+0j)])
-  [PASS (A)] The C3 unitary maps X1 into X2 with unit singular values  (svs=[1. 1. 1. 1.])
+  [PASS (A)] H_1 is Hermitian exactly
+  [PASS (A)] H_1^2 = I exactly
+  [PASS (A)] Q_1 is an exact rank-four projector
+  [PASS (A)] H_2 is Hermitian exactly
+  [PASS (A)] H_2^2 = I exactly
+  [PASS (A)] Q_2 is an exact rank-four projector
+  [PASS (A)] H_3 is Hermitian exactly
+  [PASS (A)] H_3^2 = I exactly
+  [PASS (A)] Q_3 is an exact rank-four projector
+  [PASS (A)] H_1 and H_2 anticommute exactly
+  [PASS (A)] H_1 and H_3 anticommute exactly
+  [PASS (A)] H_2 and H_3 anticommute exactly
+  [PASS (A)] Q_1 Q_2 Q_1 = (1/2) Q_1 exactly
+  [PASS (A)] Q_1 Q_3 Q_1 = (1/2) Q_1 exactly
+  [PASS (A)] The exact 3-by-64 supported-profile functional has rank one with row ratios (1,1/2,1/2)
+  [PASS (A)] The exact Fourier image is (2t/3, t/6, t/6)  ((v0,v+,v-)=(2*t/3,t/6,t/6))
 
-========================================================================================
-PART 2: C3 FOURIER DECOMPOSITION (REPRESENTATION-THEORETIC IDENTITY)
-========================================================================================
-  [PASS (A)] The C3-trivial-rep (even) Fourier mode of the literal complex profile is the corner average  (v0=1.106011+0.000000j, mean=1.106011+0.000000j)
-  [PASS (A)] On the literal complex profile, the two C3-fundamental-rep (odd) modes are exchanged by conjugation (real profile in this example)  (v1=0.276503+0.000000j, v2=0.276503+0.000000j)
-  [PASS (A)] The odd mode of the literal complex profile is nonzero because the projected commutant generator distinguishes corners  (|v1|=0.276503)
-  [INFO] The even mode is invariant under cyclic relabeling of the corners  (orbit average is C3-trivial)
-
-  This is the exact C3 representation-theoretic decomposition:
-    - C3-trivial rep:   v_0 = orbit average
-    - C3-fundamental:   (v_+, v_-) = conjugate pair on real profiles
-    - corner-distinguishing data enter only through the C3 orbit
-  NOTE (narrowed scope): identification of v_0/v_+ with PMNS
-  observables tau, q is NOT in the load-bearing chain (see Part 3a).
+  For every operator supported on Q_1, cyclicity of trace and the
+  projector sandwiches force v=(t,t/2,t/2), t=Tr(M).
+  The scalar profile therefore has one complex degree of freedom,
+  not an independently variable even mode plus orientation mode.
 
 ========================================================================================
-PART 2a: C3 REPRESENTATION-THEORY BRIDGE (DERIVATION)
+PART 2: NUMERICAL REPRODUCTION ON THE NON-Cl(3) COMMUTANT WITNESS
 ========================================================================================
-  [PASS (A)] C3 character e_0 has unit-normalized inner product with itself  (<e0|e0>=0.333333+0.000000j)
-  [PASS (A)] C3 character e_+ is orthogonal to e_0  (<e0|e_+>=-0.000000+0.000000j)
-  [PASS (A)] C3 character e_- is orthogonal to e_0  (<e0|e_->=-0.000000+0.000000j)
-  [PASS (A)] C3 characters e_+ and e_- are orthogonal  (<e_+|e_->=0.000000-0.000000j)
-  [PASS (A)] On a C3-symmetric profile, the even mode equals the constant value  (v0=2.500000+0.000000j)
-  [PASS (A)] On a C3-symmetric profile, the C3-fundamental-rep modes vanish identically  (|v_+|=2.96e-16, |v_-|=2.96e-16)
-  [PASS (A)] Every projected Cl(3) basis element has a real-valued literal complex corner-trace profile  (max|Im v_i|=0.00e+00)
-  [PASS (A)] On the literal complex profile, every projected Cl(3) basis element has vanishing C3-fundamental-rep modes  (max_odd=4.68e-16, profiles=[[(4+0j), (4+0j), (4+0j)], [(-0+0j), 0j, 0j], [0j, (-0+0j), 0j], [0j, 0j, 0j], [0j, 0j, 0j], [0j, 0j, 0j], [0j, 0j, 0j], [0j, 0j, 0j]])
-  [PASS (A)] Linearity of the literal-complex-trace Fourier projection extends odd-mode vanishing from the projected Cl(3) basis to its span  (v_i = tr(P^* M P) and v_+ = (v_1 + omega v_2 + omega^2 v_3)/3 are both linear in M)
-
-  Bridge derivation summary:
-    (i)  C3 character orthogonality: e_0, e_+, e_- are pairwise orthogonal
-         under the standard C3 inner product. (Verified above.)
-    (ii) C3-symmetric => fundamental-rep modes vanish: any constant
-         3-vector projects to zero under the C3-fundamental projector.
-    (iii) The projected Cl(3) basis has C3-symmetric profiles; by
-          linearity, the projected Cl(3) span has zero odd modes.
-    (iv) The nonzero odd mode on the demonstrated non-Cl(3) generator
-         is an explicit example, not a converse theorem.
-         Zero odd mode is not used as a Cl(3)-membership test.
-
-  This is the derivable bridge content of the narrowed theorem.
-  The PMNS-observable bridge (Fourier mode -> tau/q) is NOT
-  derivable here and is excluded from the load-bearing chain.
+  [PASS (A)] The explicit ambient witness commutes with every Cl(3) generator  (max commutator norm=0.00e+00)
+  [PASS (A)] The explicit projected witness lies outside the projected Cl(3) span
+  [PASS (A)] The explicit projected witness is Hermitian with positive nonzero trace  (Tr M=4.000000+0.000000j)
+  [PASS (C)] The numerical witness obeys the exact overlap-ray formula  (v=[4.+0.j 2.+0.j 2.+0.j])
+  [PASS (C)] The numerical Fourier modes obey (v0,v+,v-)=(2t/3,t/6,t/6)  (modes=[2.666667+0.j 0.666667+0.j 0.666667+0.j])
+  [PASS (C)] The demonstrated odd mode is nonzero only as a trace-overlap witness  (|v+|=0.666667, |Tr M|=4.000000)
 
 ========================================================================================
-PART 3: OPERATIONAL q/tau DEFINITIONS ON THE FOURIER MODES
+PART 3: THE STATED q/tau MAPS FAIL DESCENT AND SELECTOR COVARIANCE
 ========================================================================================
-
-  Per audit verdict (audited_renaming, codex-cli-gpt-5.5-20260505):
-  the previous load-bearing identification of v_0 with the PMNS
-  passive-offset class q and v_+ with the PMNS branch bit tau
-  was a definitional substitution rather than a derivation.
-
-  Under the narrowed claim scope (2026-05-09), q and tau are now
-  operational definitions on the Fourier modes, not derived PMNS
-  observables.
-
-  [PASS (OP)] Operational tau is a one-bit quantity by definition  (operational tau=0, by definition tau := (sign(Re v_+) < 0))
-  [PASS (OP)] Operational q is a Z_3-valued class label by definition  (operational q=2, by definition q := argmax(Re v_0, Re v_0 +/- Re v_+))
-
-  Operational q/tau values on the demonstrated generator: tau=0, q=2
-  These are tags from the canonical Fourier readout, not
-  PMNS-physical observables.
+  [PASS (A)] M and -M give different stated selector pairs  (M -> (0,2), -M -> (1,1))
+  [PASS (A)] The stated maps therefore do not descend to the eigenoperator line
+  [PASS (A)] The actual C3 taste unitary cyclically transports the three corner projectors
+  [PASS (A)] Actual C3 conjugation reproduces the three cyclic profile transports  (profiles=[[(4+0j), (2+0j), (2+0j)], [(2-0j), (4-0j), (2+0j)], [(2+0j), (2-0j), (4+0j)]])
+  [PASS (A)] The three cyclic transports produce only two stated q labels  ((tau,q) orbit=[(0, 2), (1, 1), (1, 1)])
+  [PASS (A)] The stated q map is not a three-class cyclic readout on this orbit
+  [PASS (A)] Re(v+) is exactly invariant under the corner reflection v2 <-> v3  (Re(v+)=x/3 - y/6 - z/6)
+  [PASS (A)] The demonstrated profile is reflection-fixed and carries no orientation-odd datum  (tau=0)
 
 ========================================================================================
-PART 4: THE 3-CORNER FOURIER ROUTE IS TOO SMALL FOR THE 5-REAL SOURCE
+RESULT
 ========================================================================================
-  [PASS (A)] The active corner-breaking source has five real coordinates  (xi1, xi2, eta1, eta2, delta)
-  [PASS (A)] The projected commutant eigenoperator route supplies only the 3-corner orbit data  (one even mode + two odd modes)
-  [PASS (A)] A 3-corner Fourier readout cannot uniquely determine a 5-real active source  (5 > 3)
+  Exact negative boundary:
+    - the C3 Fourier decomposition remains valid algebra
+    - the stated q/tau maps do not descend to the eigenoperator line
+    - the physical PMNS carrier intertwiners remain open
+    - no broader no-go is claimed for matrix-valued commutant observables
+    - the active five-real PMNS source remains outside this result
 
-  So even on the narrowed Fourier-decomposition reading, the
-  3-corner orbit data is too small to determine the full active
-  5-real corner-breaking source. (Independent of any PMNS-
-  observable bridge interpretation.)
-
-========================================================================================
-PART 5: SCOPE DISCIPLINE (AUDIT-NARROWING VERIFICATION)
-========================================================================================
-
-  Verifies that the load-bearing chain under the narrowed claim
-  scope contains only the C3 representation-theoretic content,
-  and does NOT contain the previously-load-bearing PMNS-observable
-  identification.
-
-  [PASS (A)] Load-bearing chain class set includes only algebraic class (A)  (load-bearing checks tagged class=A only)
-  [PASS (A)] Operational q/tau definitions are tagged as scope-only (class OP)  (q/tau outputs scoped as operational definitions)
-  [PASS (A)] PMNS-observable bridge (Fourier mode -> tau/q) is NOT in load-bearing chain  (narrowing per audit verdict 2026-05-05 (codex-cli-gpt-5.5))
-
-  Bounded scope (load-bearing):
-    - C3 even/odd Fourier decomposition of corner-trace profile
-    - projected Cl(3)-span odd-mode vanishing (one-way)
-    - demonstrated non-Cl(3) generator with nonzero odd mode
-  Excluded from load-bearing chain:
-    - bridge from v_0 to PMNS q observable
-    - bridge from v_+ to PMNS tau observable
-    - any axiom-native PMNS selector value law
-
-========================================================================================
-RESULT (NARROWED SCOPE)
-========================================================================================
-  Exact theorem status (under narrowed claim 2026-05-09):
-    - C3 representation-theoretic decomposition: YES (load-bearing)
-    - odd-mode vanishing on projected Cl(3) span: YES (derived)
-    - zero odd mode => projected Cl(3) membership: NOT claimed
-    - PMNS-observable bridge to tau/q: NOT in load-bearing chain
-
-  Bounded scope (load-bearing):
-    - canonical even + odd Fourier decomposition of corner-trace
-      profile via C3 character orthogonality
-    - projected Cl(3)-basis profiles are C3-symmetric, hence
-      the projected Cl(3) span has vanishing odd modes by linearity
-
-  Excluded from load-bearing chain (operational only):
-    - q := argmax(Re v_0, Re v_0 +/- Re v_+)
-    - tau := (sign(Re v_+) < 0)
-    - any PMNS-physical observable identification
-
-PASS=33  FAIL=0
+PASS=30  FAIL=0
 
 ----- stderr -----
 

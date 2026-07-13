@@ -57,11 +57,13 @@ audit_compatibility_validation: >-
   errors; the original row remained meta/unaudited and the separate no_go row
   seeded unaudited with dependency minimal_axioms, its paired runner, and audit
   queue visibility. No generated audit authority was copied to this branch.
-pr_status: pending
+pr_status: open
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5323
+pr_merge_state_at_verification: CLEAN / MERGEABLE
 next_exact_action: >-
-  Push the reviewed branch and open one unmerged review PR. After landing,
-  independently audit the separate no_go row without applying its negative
-  polarity to the original meta identity's positive consumers.
+  After PR #5323 lands through the normal review process, independently audit
+  the separate no_go row without applying its negative polarity to the
+  original meta identity's positive consumers.
 stop_condition: >-
-  Stop when the scoped no-go and conditional reconstruction pass review and
-  checks and one verified unmerged review PR is open.
+  Achieved: scoped no-go and conditional reconstruction passed review and
+  audit compatibility, and verified unmerged PR #5323 is open.

@@ -34,6 +34,15 @@ remains `meta`; negative closure must not satisfy its downstream positive
 dependencies. Any publication/control-plane weaving belongs to the later
 audit/integration process, not this branch.
 
+## Review PR
+
+Open and unmerged:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5323
+
+Verified base `main`, head
+`physics-loop/single-axiom-information-no-go-block01-20260712`, state `OPEN`,
+merge state `CLEAN`, mergeability `MERGEABLE`.
+
 ## Exact next action
 
 Run independent audit on the separate no-go row after the review PR lands.

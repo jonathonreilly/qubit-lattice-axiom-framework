@@ -24,9 +24,11 @@ Run only from a dedicated, clean ``main`` checkout.
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 import uuid
@@ -45,6 +47,24 @@ PANEL_SIZE = 5
 MAJORITY = 3
 MIN_VOTE_BYTES = 120
 
+ALLOWED_SIDES = {"first", "second", "hybrid"}
+ALLOWED_VERDICTS = {
+    "audited_clean",
+    "audited_renaming",
+    "audited_conditional",
+    "audited_decoration",
+    "audited_failed",
+    "audited_numerical_match",
+}
+ALLOWED_CLAIM_TYPES = {
+    "positive_theorem",
+    "bounded_theorem",
+    "no_go",
+    "open_gate",
+    "decoration",
+    "meta",
+}
+
 VOTE_FIELDS = (
     "sided_with",
     "ratified_verdict",
@@ -55,6 +75,27 @@ VOTE_FIELDS = (
     "judgment_rationale",
     "first_auditor_error",
     "second_auditor_error",
+)
+
+SEAT_ARGUMENT_FIELDS = (
+    "verdict",
+    "claim_type",
+    "claim_scope",
+    "load_bearing_step_class",
+    "negative_assertion_classes",
+    "load_bearing_step",
+    "chain_closes",
+    "chain_closure_explanation",
+    "runner_check_breakdown",
+    "open_dependency_paths",
+    "decoration_parent_claim_id",
+    "no_go_discipline",
+    "independence",
+    "auditor",
+    "auditor_family",
+    "auditor_model",
+    "auditor_reasoning_effort",
+    "audit_invocation_id",
 )
 
 
@@ -75,7 +116,52 @@ def vote_tuple(vote: dict) -> tuple:
     )
 
 
+def vote_schema_error(vote: object) -> str | None:
+    if not isinstance(vote, dict):
+        return "vote must be a JSON object"
+    missing = [field for field in VOTE_FIELDS if field not in vote]
+    if missing:
+        return f"vote_missing_fields:{','.join(missing)}"
+    if vote.get("sided_with") not in ALLOWED_SIDES:
+        return "vote has invalid sided_with"
+    if vote.get("ratified_verdict") not in ALLOWED_VERDICTS:
+        return "vote has invalid ratified_verdict"
+    if vote.get("ratified_claim_type") not in ALLOWED_CLAIM_TYPES:
+        return "vote has invalid ratified_claim_type"
+    for field in (
+        "ratified_claim_scope",
+        "ratified_load_bearing_step_class",
+        "judgment_rationale",
+        "first_auditor_error",
+        "second_auditor_error",
+    ):
+        if not isinstance(vote.get(field), str) or not vote[field].strip():
+            return f"vote field {field} must be a non-empty string"
+    declared = vote.get("negative_assertion_classes")
+    if not isinstance(declared, list) or not all(
+        isinstance(item, str) and item.strip() for item in declared
+    ):
+        return "negative_assertion_classes must be a list of non-empty strings"
+    for field in (
+        "hybrid_resolution_note",
+        "ratified_decoration_parent_claim_id",
+        "ratified_load_bearing_step",
+        "notes_for_re_audit_if_any",
+    ):
+        if field in vote and vote[field] is not None and not isinstance(vote[field], str):
+            return f"vote field {field} must be a string or null"
+    if "no_go_discipline" in vote and vote["no_go_discipline"] is not None:
+        if not isinstance(vote["no_go_discipline"], dict):
+            return "no_go_discipline must be an object or null"
+    return None
+
+
 def archived_rationale(row: dict, invocation_id: str) -> str:
+    if not invocation_id:
+        return (
+            "[seat summary has no audit_invocation_id; no invocation-bound "
+            "archived rationale is available]"
+        )
     for archived in reversed(row.get("previous_audits") or []):
         if not isinstance(archived, dict):
             continue
@@ -83,35 +169,80 @@ def archived_rationale(row: dict, invocation_id: str) -> str:
             rationale = str(archived.get("verdict_rationale") or "")
             notes = str(archived.get("notes_for_re_audit_if_any") or "")
             return rationale + (f"\n[re-audit notes] {notes}" if notes else "")
-    return "[no archived rationale found for this seat's invocation id]"
+    return (
+        "[no archived rationale found for this seat's invocation id "
+        f"{invocation_id}]"
+    )
+
+
+def seat_rationale(summary: dict, row: dict) -> str:
+    rationale = str(summary.get("verdict_rationale") or "")
+    notes = str(summary.get("notes_for_re_audit_if_any") or "")
+    if rationale:
+        return rationale + (f"\n[re-audit notes] {notes}" if notes else "")
+    return archived_rationale(row, str(summary.get("audit_invocation_id") or ""))
+
+
+def seat_context_error(row: dict) -> str | None:
+    cross = row.get("cross_confirmation") or {}
+    for label in ("first_audit", "second_audit"):
+        summary = cross.get(label) or {}
+        if not summary:
+            return f"{label} summary is missing"
+        if str(summary.get("verdict_rationale") or "").strip():
+            continue
+        invocation_id = str(summary.get("audit_invocation_id") or "")
+        matched = next(
+            (
+                archived
+                for archived in reversed(row.get("previous_audits") or [])
+                if isinstance(archived, dict)
+                and invocation_id
+                and archived.get("audit_invocation_id") == invocation_id
+                and str(archived.get("verdict_rationale") or "").strip()
+            ),
+            None,
+        )
+        if matched is None:
+            return (
+                f"{label} has no invocation-bound full rationale; rerun the "
+                "cross-confirmation seats under the rationale-preserving apply contract"
+            )
+    return None
 
 
 def seat_block(label: str, summary: dict, row: dict) -> str:
     lines = [f"=== BEGIN {label.upper()} POSITION ==="]
-    for field in (
-        "verdict", "claim_type", "claim_scope", "load_bearing_step_class",
-        "negative_assertion_classes", "independence", "auditor",
-    ):
-        lines.append(f"{field}: {json.dumps(summary.get(field))}")
+    for field in SEAT_ARGUMENT_FIELDS:
+        if field not in {"verdict_rationale", "notes_for_re_audit_if_any"}:
+            lines.append(f"{field}: {json.dumps(summary.get(field))}")
     lines.append("full rationale:")
-    lines.append(archived_rationale(row, str(summary.get("audit_invocation_id") or "")))
+    lines.append(seat_rationale(summary, row))
     lines.append(f"=== END {label.upper()} POSITION ===")
     return "\n".join(lines)
 
 
-def panel_instructions(judge_no: int, prior_panels: list[dict]) -> str:
+def panel_instructions(
+    judge_no: int,
+    judge_identity: str,
+    panel_no: int,
+    prior_panels: list[dict],
+) -> str:
     prior_block = ""
     if prior_panels:
         prior_block = (
-            "\n### Prior panel outcomes (no majority yet)\n\n"
-            "Earlier five-judge panels on this disagreement produced the vote\n"
-            "breakdowns below. Weigh their arguments; you are not bound by\n"
-            "them.\n\n"
+            "\n### Prior panel outcomes\n\n"
+            "Earlier five-judge panels on this same disagreement produced the\n"
+            "complete vote/rationale breakdowns below but no applyable majority.\n"
+            "Weigh their arguments; you are not bound by them.\n\n"
             + json.dumps(prior_panels, indent=1, sort_keys=True)
             + "\n"
         )
     return f"""
-### JUDICIAL PANEL SEAT {judge_no} OF {PANEL_SIZE}
+### JUDICIAL PANEL ROUND {panel_no}, SEAT {judge_no} OF {PANEL_SIZE}
+
+Your distinct judicial identity is `{judge_identity}`. It is unique to this
+seat and will be recorded with your vote.
 
 The two independent audit seats above DISAGREE. You are one judge on a
 five-judge panel resolving the disagreement. Judge ONLY from the restricted
@@ -123,40 +254,63 @@ Return EXACTLY ONE JSON object and nothing else:
   "sided_with": "<first|second|hybrid>",
   "ratified_verdict": "<audited_clean|audited_renaming|audited_conditional|audited_decoration|audited_failed|audited_numerical_match>",
   "ratified_claim_type": "<positive_theorem|bounded_theorem|no_go|open_gate|decoration|meta>",
-  "ratified_claim_scope": "<the exact scope sentence you ratify; reuse a seat's scope verbatim unless a hybrid correction is required>",
-  "ratified_load_bearing_step_class": "<(A)|(B)|(C)|(D)|(E)|(F)|(G) style class exactly as the seats use>",
+  "ratified_claim_scope": "<the exact scope sentence you ratify>",
+  "ratified_load_bearing_step": null,
+  "ratified_load_bearing_step_class": "<A|B|C|D|E|F|G exactly as the seats use>",
   "negative_assertion_classes": [],
   "judgment_rationale": "<why the ratified tuple is correct, grounded in the packet>",
   "first_auditor_error": "<the specific error in the first position, or 'none' if you side with it entirely>",
-  "second_auditor_error": "<the specific error in the second position, or 'none' if you side with it entirely>"
+  "second_auditor_error": "<the specific error in the second position, or 'none' if you side with it entirely>",
+  "hybrid_resolution_note": null,
+  "ratified_decoration_parent_claim_id": null,
+  "notes_for_re_audit_if_any": null,
+  "no_go_discipline": null
 }}
 
 Rules: vote the FULL tuple; a factual check against the packet (for
 example whether the runner computes a contested quantity) outweighs either
-seat's characterization; if you side with a seat, prefer that seat's
-claim_scope verbatim; declare negative_assertion_classes honestly for the
-tuple you ratify; never leave first_auditor_error and second_auditor_error
-both 'none' unless you ratify a hybrid that faults neither.
+seat's characterization. If sided_with is `first` or `second`, you MUST copy
+that seat's verdict, claim_type, claim_scope (character-for-character),
+load_bearing_step_class, negative_assertion_classes, decoration parent, and
+No-Go Discipline declaration/packet; any substantive correction MUST use
+`hybrid`. A hybrid MUST give a novel explicit scope and a non-empty
+hybrid_resolution_note. Replace the null optional values with the exact sided
+seat values when present. For a hybrid, supply the complete load-bearing step,
+decoration parent, repair note, and N1-N8 object whenever the chosen tuple
+requires them. Declare negative_assertion_classes honestly for the tuple you
+ratify. Never leave first_auditor_error and second_auditor_error both `none`
+unless a hybrid faults neither position.
 """
 
 
-def render_judge_prompt(
+def render_panel_packet(
     row: dict,
     rows: dict[str, dict],
-    judge_no: int,
     runner_timeout: int,
-    prior_panels: list[dict],
-) -> str:
+) -> tuple[str, dict[str, dict], str]:
     template = audit_runner.PROMPT_TEMPLATE_PATH.read_text(encoding="utf-8")
+    evidence_manifest: dict[str, dict] = {}
+    invocation_id = uuid.uuid4().hex
     packet = audit_runner.render_prompt(
         row,
         rows,
         template,
         runner_timeout,
         use_cache=False,
-        evidence_manifest_out={},
-        audit_invocation_id=uuid.uuid4().hex,
+        evidence_manifest_out=evidence_manifest,
+        audit_invocation_id=invocation_id,
     )
+    return packet, evidence_manifest, invocation_id
+
+
+def render_judge_prompt(
+    packet: str,
+    row: dict,
+    judge_no: int,
+    judge_identity: str,
+    panel_no: int,
+    prior_panels: list[dict],
+) -> str:
     cross = row.get("cross_confirmation") or {}
     first = cross.get("first_audit") or {}
     second = cross.get("second_audit") or {}
@@ -165,28 +319,36 @@ def render_judge_prompt(
             packet,
             seat_block("first_audit", first, row),
             seat_block("second_audit", second, row),
-            panel_instructions(judge_no, prior_panels),
+            panel_instructions(judge_no, judge_identity, panel_no, prior_panels),
         ]
     )
 
 
 def launch_judge(
+    packet: str,
     row: dict,
-    rows: dict[str, dict],
     judge_no: int,
+    panel_no: int,
     workdir: Path,
-    runner_timeout: int,
     prior_panels: list[dict],
+    invocation_id: str,
+    evidence_manifest: dict[str, dict],
 ) -> dict:
     cid = row["claim_id"]
     key = batch.artifact_key(cid)
-    prompt = render_judge_prompt(row, rows, judge_no, runner_timeout, prior_panels)
+    judge_identity = (
+        f"codex-judicial-{judge_no}-"
+        f"{datetime.now(timezone.utc).strftime('%Y%m%d')}-{uuid.uuid4().hex[:8]}"
+    )
+    prompt = render_judge_prompt(
+        packet, row, judge_no, judge_identity, panel_no, prior_panels
+    )
     if len(prompt) > audit_runner.CODEX_INPUT_CHAR_LIMIT:
         raise ValueError(
             f"{cid}: judicial packet is {len(prompt)} characters; narrow the "
             "packet rather than converting transport size into a verdict"
         )
-    tag = f"{key}-judge{judge_no}"
+    tag = f"{key}-panel{panel_no}-judge{judge_no}"
     isolated = workdir / f"isolated-{tag}"
     isolated.mkdir(parents=True, exist_ok=False)
     (isolated / "PANEL_TASK.md").write_text(prompt, encoding="utf-8")
@@ -199,21 +361,23 @@ def launch_judge(
         "positions, and your panel-seat instructions. Do not inspect any "
         "other file. Return only the single JSON vote object it requires."
     )
-    import subprocess
-
-    proc = subprocess.Popen(
-        [
-            "codex", "exec", "--skip-git-repo-check", "--ignore-rules",
-            "--sandbox", "read-only", "--model", batch.MODEL,
-            "-c", f"model_reasoning_effort='{batch.REASONING}'",
-            "--output-last-message", str(raw_output), instruction,
-        ],
-        stdin=subprocess.DEVNULL,
-        stdout=log_handle,
-        stderr=log_handle,
-        cwd=isolated,
-        start_new_session=True,
-    )
+    try:
+        proc = subprocess.Popen(
+            [
+                "codex", "exec", "--skip-git-repo-check", "--ignore-rules",
+                "--sandbox", "read-only", "--model", batch.MODEL,
+                "-c", f"model_reasoning_effort='{batch.REASONING}'",
+                "--output-last-message", str(raw_output), instruction,
+            ],
+            stdin=subprocess.DEVNULL,
+            stdout=log_handle,
+            stderr=log_handle,
+            cwd=isolated,
+            start_new_session=True,
+        )
+    except Exception:
+        log_handle.close()
+        raise
     now = time.monotonic()
     return {
         "cid": cid,
@@ -224,13 +388,14 @@ def launch_judge(
         "log_path": log_path,
         "log_handle": log_handle,
         "isolated": isolated,
-        "auditor": (
-            f"codex-judicial-{judge_no}-"
-            f"{datetime.now(timezone.utc).strftime('%Y%m%d')}-{uuid.uuid4().hex[:8]}"
-        ),
+        "auditor": judge_identity,
+        "panel": panel_no,
+        "invocation_id": invocation_id,
+        "evidence_manifest": evidence_manifest,
         "last_size": 0,
         "last_progress": now,
         "stalled": False,
+        "returncode": None,
     }
 
 
@@ -246,18 +411,31 @@ def collect_vote(job: dict) -> tuple[dict | None, str]:
     vote = audit_runner.parse_verdict_json(reply or "")
     if vote is None:
         return None, "malformed_vote_json"
-    missing = [field for field in VOTE_FIELDS if field not in vote]
-    if missing:
-        return None, f"vote_missing_fields:{','.join(missing)}"
+    schema_error = vote_schema_error(vote)
+    if schema_error:
+        return None, schema_error
     return vote, "ok"
 
 
+def public_vote(vote: dict) -> dict:
+    return {
+        "judge": vote.get("_panel_judge"),
+        "auditor": vote.get("_panel_auditor"),
+        **{key: value for key, value in vote.items() if not key.startswith("_")},
+    }
+
+
 def judicial_blob(
-    row: dict, representative: dict, votes: list[dict], majority: int
+    row: dict,
+    representative: dict,
+    votes: list[dict],
+    majority: int,
+    invocation_id: str | None = None,
 ) -> dict:
     breakdown = [
         {
-            "judge": index + 1,
+            "judge": vote.get("_panel_judge", index + 1),
+            "auditor": vote.get("_panel_auditor"),
             "tuple": list(vote_tuple(vote)[:5]) + [list(vote_tuple(vote)[5])],
             "rationale": str(vote.get("judgment_rationale") or "")[:600],
         }
@@ -269,34 +447,141 @@ def judicial_blob(
         f"Representative rationale: {representative.get('judgment_rationale')}"
         f"\n[panel breakdown] {json.dumps(breakdown, sort_keys=True)}"
     )
-    return {
+    side = representative.get("sided_with")
+    cross = row.get("cross_confirmation") or {}
+    chosen = cross.get(f"{side}_audit") or {} if side in {"first", "second"} else {}
+
+    if chosen:
+        ratified_verdict = chosen.get("verdict")
+        ratified_claim_type = chosen.get("claim_type")
+        ratified_scope = chosen.get("claim_scope")
+        ratified_class = chosen.get("load_bearing_step_class")
+        negative_classes = chosen.get("negative_assertion_classes")
+    else:
+        ratified_verdict = representative.get("ratified_verdict")
+        ratified_claim_type = representative.get("ratified_claim_type")
+        ratified_scope = representative.get("ratified_claim_scope")
+        ratified_class = representative.get("ratified_load_bearing_step_class")
+        negative_classes = representative.get("negative_assertion_classes")
+
+    blob = {
         "claim_id": row["claim_id"],
-        "third_auditor": (
-            f"codex-judicial-panel-{datetime.now(timezone.utc).strftime('%Y%m%d')}-"
-            f"{uuid.uuid4().hex[:8]}"
+        "third_auditor": representative.get("_panel_auditor") or (
+            f"codex-judicial-panel-"
+            f"{datetime.now(timezone.utc).strftime('%Y%m%d')}-{uuid.uuid4().hex[:8]}"
         ),
         "auditor_family": batch.AUDITOR_FAMILY,
         "auditor_model": batch.MODEL,
         "auditor_reasoning_effort": batch.REASONING,
         "independence": "judicial_review",
-        "audit_invocation_id": uuid.uuid4().hex,
-        "sided_with": representative.get("sided_with"),
-        "ratified_verdict": representative.get("ratified_verdict"),
-        "ratified_claim_type": representative.get("ratified_claim_type"),
-        "ratified_claim_scope": representative.get("ratified_claim_scope"),
-        "ratified_load_bearing_step_class": representative.get(
-            "ratified_load_bearing_step_class"
-        ),
-        "negative_assertion_classes": representative.get(
-            "negative_assertion_classes"
-        ),
+        "audit_invocation_id": invocation_id or uuid.uuid4().hex,
+        "sided_with": side,
+        "ratified_verdict": ratified_verdict,
+        "ratified_claim_type": ratified_claim_type,
+        "ratified_claim_scope": ratified_scope,
+        "ratified_load_bearing_step_class": ratified_class,
+        "negative_assertion_classes": negative_classes,
         "judgment_rationale": rationale,
         "first_auditor_error": representative.get("first_auditor_error"),
         "second_auditor_error": representative.get("second_auditor_error"),
     }
+    optional_sources = (chosen, representative) if chosen else (representative,)
+    for source in optional_sources:
+        if source.get("load_bearing_step"):
+            blob["ratified_load_bearing_step"] = source["load_bearing_step"]
+            break
+    for source in optional_sources:
+        if "notes_for_re_audit_if_any" in source:
+            blob["notes_for_re_audit_if_any"] = source.get(
+                "notes_for_re_audit_if_any"
+            )
+            break
+    for source in optional_sources:
+        parent = source.get("decoration_parent_claim_id") or source.get(
+            "ratified_decoration_parent_claim_id"
+        )
+        if parent:
+            blob["ratified_decoration_parent_claim_id"] = parent
+            break
+    for source in optional_sources:
+        if isinstance(source.get("no_go_discipline"), dict):
+            blob["no_go_discipline"] = copy.deepcopy(source["no_go_discipline"])
+            break
+    if side == "hybrid":
+        blob["hybrid_resolution_note"] = (
+            representative.get("hybrid_resolution_note")
+            or representative.get("judgment_rationale")
+        )
+    return blob
 
 
-def apply_judgment(blob: dict, workdir: Path, retries: int) -> tuple[bool, dict]:
+def judicial_applyability_error(
+    blob: dict,
+    rows: dict[str, dict],
+    evidence_manifest: dict[str, dict],
+    workdir: Path,
+) -> str | None:
+    """Run the exact apply validator on a detached ledger before writing JSON."""
+    import apply_audit as audit_apply
+
+    envelope_path = workdir / (
+        f"candidate-manifest-{batch.artifact_key(blob['claim_id'])}-"
+        f"{blob['audit_invocation_id']}.json"
+    )
+    envelope_path.write_text(
+        json.dumps(
+            {
+                "schema": "codex_audit_trusted_manifest_v1",
+                "claim_id": blob["claim_id"],
+                "audit_invocation_id": blob["audit_invocation_id"],
+                "issued_at": datetime.now(timezone.utc).isoformat(),
+                "entries": evidence_manifest,
+            },
+            sort_keys=True,
+        ),
+        encoding="utf-8",
+    )
+    env_key = "CODEX_AUDIT_TRUSTED_EVIDENCE_MANIFEST"
+    old_manifest = os.environ.get(env_key)
+    os.environ[env_key] = str(envelope_path)
+    try:
+        ledger = {"schema_version": 1, "rows": copy.deepcopy(rows)}
+        ok, detail = audit_apply.apply_judicial_review(
+            ledger, copy.deepcopy(blob)
+        )
+    finally:
+        if old_manifest is None:
+            os.environ.pop(env_key, None)
+        else:
+            os.environ[env_key] = old_manifest
+    return None if ok else detail
+
+
+def restore_preapply_state() -> str | None:
+    reset = batch.sh(["git", "reset", "--hard", "HEAD"])
+    if reset.returncode != 0:
+        return f"reset failed: {(reset.stderr or reset.stdout).strip()[-240:]}"
+    clean = batch.sh(
+        ["git", "clean", "-fd", "--", *audit_runner.AUDIT_DATA_FILES]
+    )
+    if clean.returncode != 0:
+        return f"clean failed: {(clean.stderr or clean.stdout).strip()[-240:]}"
+    return None
+
+
+def failed_after_apply(cid: str, result: str, detail: str) -> tuple[bool, dict]:
+    restore_error = restore_preapply_state()
+    if restore_error:
+        detail = f"{detail}; restore failed: {restore_error}"
+    return False, {"cid": cid, "result": result, "detail": detail}
+
+
+def apply_judgment(
+    blob: dict,
+    evidence_manifest: dict[str, dict],
+    workdir: Path,
+    retries: int,
+) -> tuple[bool, dict]:
     cid = blob["claim_id"]
     judgment_path = workdir / f"judgment-{batch.artifact_key(cid)}.json"
     judgment_path.write_text(
@@ -306,60 +591,45 @@ def apply_judgment(blob: dict, workdir: Path, retries: int) -> tuple[bool, dict]
         synced, detail = batch.sync_origin_main()
         if not synced:
             return False, {"cid": cid, "result": "sync_blocked", "detail": detail}
-        apply_result = batch.sh(
-            [
-                sys.executable,
-                str(SCRIPTS / "apply_audit.py"),
-                "--file",
-                str(judgment_path),
-            ]
+        applied, apply_detail = audit_runner.apply_one(
+            blob, propagate=False, evidence_manifest=evidence_manifest
         )
-        if apply_result.returncode != 0:
-            return False, {
-                "cid": cid,
-                "result": "judicial_apply_rejected",
-                "detail": (apply_result.stderr or apply_result.stdout)[-400:],
-            }
+        if not applied:
+            return failed_after_apply(
+                cid, "judicial_apply_rejected", apply_detail[-400:]
+            )
         pipeline = batch.sh(["bash", str(SCRIPTS / "run_pipeline.sh")], timeout=1800)
         if pipeline.returncode != 0:
-            return False, {
-                "cid": cid,
-                "result": "pipeline_failed",
-                "detail": (pipeline.stderr or pipeline.stdout)[-400:],
-            }
+            return failed_after_apply(
+                cid, "pipeline_failed", (pipeline.stderr or pipeline.stdout)[-400:]
+            )
         lint = batch.sh(
             [sys.executable, str(SCRIPTS / "audit_lint.py"), "--strict"], timeout=600
         )
         if lint.returncode != 0:
-            return False, {
-                "cid": cid,
-                "result": "strict_lint_failed",
-                "detail": (lint.stderr or lint.stdout)[-400:],
-            }
+            return failed_after_apply(
+                cid, "strict_lint_failed", (lint.stderr or lint.stdout)[-400:]
+            )
         diff_check = batch.sh(["git", "diff", "--check"])
         if diff_check.returncode != 0:
-            return False, {
-                "cid": cid,
-                "result": "diff_check_failed",
-                "detail": diff_check.stdout[-400:],
-            }
+            return failed_after_apply(
+                cid, "diff_check_failed", diff_check.stdout[-400:]
+            )
         unexpected = [
             path
             for path in batch.changed_paths()
             if not batch.allowed_generated_path(path)
         ]
         if unexpected:
-            return False, {
-                "cid": cid,
-                "result": "unexpected_generated_paths",
-                "detail": str(unexpected[:8]),
-            }
+            return failed_after_apply(
+                cid, "unexpected_generated_paths", str(unexpected[:8])
+            )
         committed, detail = batch.stage_and_commit(
             f"audit: {cid} judicial panel {blob['ratified_verdict']} "
             f"(codex-cli, {batch.MODEL}, {batch.REASONING}, panel/batch)"
         )
         if not committed:
-            return False, {"cid": cid, "result": "commit_failed", "detail": detail}
+            return failed_after_apply(cid, "commit_failed", detail)
         local_commit = detail
         push = batch.sh(["git", "push", "-q", "origin", "HEAD:main"])
         if push.returncode == 0:
@@ -393,6 +663,15 @@ def apply_judgment(blob: dict, workdir: Path, retries: int) -> tuple[bool, dict]
     return False, {"cid": cid, "result": "unreachable"}
 
 
+def write_panel_record(workdir: Path, cid: str, panel_no: int, record: dict) -> None:
+    payload = json.dumps(record, indent=1, sort_keys=True)
+    key = batch.artifact_key(cid)
+    (workdir / f"panel-{key}-round{panel_no}.json").write_text(
+        payload, encoding="utf-8"
+    )
+    (workdir / f"panel-{key}.json").write_text(payload, encoding="utf-8")
+
+
 def run_panel(
     row: dict,
     rows: dict[str, dict],
@@ -403,63 +682,192 @@ def run_panel(
     prior_panels: list[dict],
 ) -> dict:
     cid = row["claim_id"]
-    jobs = []
+    context_error = seat_context_error(row)
+    if context_error:
+        return {"cid": cid, "result": "seat_context_blocked", "detail": context_error}
     try:
-        for judge_no in range(1, PANEL_SIZE + 1):
-            jobs.append(
-                launch_judge(
-                    row, rows, judge_no, workdir, runner_timeout, prior_panels
+        packet, evidence_manifest, invocation_id = render_panel_packet(
+            row, rows, runner_timeout
+        )
+    except Exception as exc:
+        return {"cid": cid, "result": "packet_render_blocked", "detail": str(exc)}
+
+    panel_history = copy.deepcopy(prior_panels)
+    panel_no = len(panel_history) + 1
+    while True:
+        jobs = []
+        try:
+            for judge_no in range(1, PANEL_SIZE + 1):
+                jobs.append(
+                    launch_judge(
+                        packet,
+                        row,
+                        judge_no,
+                        panel_no,
+                        workdir,
+                        panel_history,
+                        invocation_id,
+                        evidence_manifest,
+                    )
                 )
+        except Exception as exc:
+            batch.terminate_workers(jobs)
+            return {
+                "cid": cid,
+                "result": "panel_launch_blocked",
+                "detail": str(exc),
+            }
+        except BaseException:
+            batch.terminate_workers(jobs)
+            raise
+        identities = {job["auditor"] for job in jobs}
+        if len(identities) != PANEL_SIZE:
+            batch.terminate_workers(jobs)
+            return {
+                "cid": cid,
+                "result": "judge_identity_collision",
+                "detail": "panel judges did not receive five distinct identities",
+            }
+        print(
+            f"   {cid}: launched {len(jobs)} judges for panel {panel_no}; waiting"
+        )
+        try:
+            batch.wait_workers(jobs, stall_minutes)
+        except Exception as exc:
+            return {
+                "cid": cid,
+                "result": "panel_wait_blocked",
+                "detail": str(exc),
+            }
+        votes: list[dict] = []
+        failures: list[str] = []
+        for job in jobs:
+            vote, status = collect_vote(job)
+            if vote is None:
+                failures.append(f"judge{job['judge']}:{status}")
+            else:
+                vote["_panel_judge"] = job["judge"]
+                vote["_panel_auditor"] = job["auditor"]
+                votes.append(vote)
+
+        tally = Counter(vote_tuple(vote) for vote in votes)
+        record = {
+            "schema": "judicial_panel_record_v1",
+            "cid": cid,
+            "panel": panel_no,
+            "invocation_id": invocation_id,
+            "votes": [public_vote(vote) for vote in votes],
+            "failures": failures,
+            "tally": [
+                {"tuple": [*key[:5], list(key[5])], "count": n}
+                for key, n in tally.most_common()
+            ],
+        }
+        if len(votes) != PANEL_SIZE:
+            record["result"] = "panel_delivery_short"
+            write_panel_record(workdir, cid, panel_no, record)
+            return {
+                "cid": cid,
+                "result": "panel_delivery_short",
+                "detail": ";".join(failures),
+                "votes": record["votes"],
+            }
+
+        top_tuple, count = tally.most_common(1)[0]
+        if count < MAJORITY:
+            record["result"] = "no_majority"
+            write_panel_record(workdir, cid, panel_no, record)
+            panel_history.append(record)
+            print(
+                f"   {cid}: panel {panel_no} has no 3/5 majority; "
+                "launching a fresh five-judge panel with all prior votes"
             )
-    except BaseException:
-        batch.terminate_workers(jobs)
-        raise
-    print(f"   {cid}: launched {len(jobs)} panel judges; waiting")
-    batch.wait_workers(jobs, stall_minutes)
-    votes: list[dict] = []
-    failures: list[str] = []
-    for job in jobs:
-        vote, status = collect_vote(job)
-        if vote is None:
-            failures.append(f"judge{job['judge']}:{status}")
-        else:
-            votes.append(vote)
-    if len(votes) < MAJORITY:
-        return {
-            "cid": cid,
-            "result": "panel_delivery_short",
-            "detail": ";".join(failures),
-            "votes": votes,
-        }
-    tally = Counter(vote_tuple(vote) for vote in votes)
-    top_tuple, count = tally.most_common(1)[0]
-    record = {
-        "cid": cid,
-        "votes": [
-            {key: vote.get(key) for key in VOTE_FIELDS} for vote in votes
-        ],
-        "failures": failures,
-        "tally": [
-            {"tuple": [*key[:5], list(key[5])], "count": n}
-            for key, n in tally.most_common()
-        ],
-    }
-    (workdir / f"panel-{batch.artifact_key(cid)}.json").write_text(
-        json.dumps(record, indent=1, sort_keys=True), encoding="utf-8"
+            panel_no += 1
+            continue
+
+        apply_errors = []
+        blob = None
+        for representative in (
+            vote for vote in votes if vote_tuple(vote) == top_tuple
+        ):
+            candidate = judicial_blob(
+                row, representative, votes, count, invocation_id=invocation_id
+            )
+            error = judicial_applyability_error(
+                candidate, rows, evidence_manifest, workdir
+            )
+            if error is None:
+                blob = candidate
+                break
+            apply_errors.append(
+                {
+                    "judge": representative.get("_panel_judge"),
+                    "auditor": representative.get("_panel_auditor"),
+                    "error": error,
+                }
+            )
+        if blob is None:
+            record["result"] = "majority_unapplyable"
+            record["apply_errors"] = apply_errors
+            write_panel_record(workdir, cid, panel_no, record)
+            panel_history.append(record)
+            print(
+                f"   {cid}: panel {panel_no} majority is not applyable; "
+                "launching a fresh five-judge panel with all prior votes"
+            )
+            panel_no += 1
+            continue
+
+        record["result"] = "applyable_majority"
+        record["majority"] = count
+        write_panel_record(workdir, cid, panel_no, record)
+        _ok, result = apply_judgment(
+            blob, evidence_manifest, workdir, retries
+        )
+        return result
+
+
+def workdir_guard_error(workdir: Path) -> str | None:
+    resolved = workdir.expanduser().resolve(strict=False)
+    repo = REPO_ROOT.resolve()
+    try:
+        resolved.relative_to(repo)
+    except ValueError:
+        return None
+    return (
+        f"workdir {resolved} is inside the repository; use a fresh external "
+        "temporary directory so panel artifacts cannot dirty or hide inside main"
     )
-    if count < MAJORITY:
-        return {
-            "cid": cid,
-            "result": "no_majority",
-            "detail": f"top tuple has {count}/{len(votes)} votes",
-            "votes": votes,
-        }
-    representative = next(
-        vote for vote in votes if vote_tuple(vote) == top_tuple
-    )
-    blob = judicial_blob(row, representative, votes, count)
-    ok, result = apply_judgment(blob, workdir, retries)
-    return result
+
+
+def load_prior_panels(
+    paths: list[str], target_ids: set[str]
+) -> tuple[dict[str, list[dict]], str | None]:
+    grouped: dict[str, list[dict]] = {}
+    for path_text in paths:
+        path = Path(path_text)
+        try:
+            record = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            return {}, f"cannot read prior panel {path}: {exc}"
+        if not isinstance(record, dict) or not isinstance(record.get("cid"), str):
+            return {}, f"prior panel {path} lacks a string cid"
+        cid = record["cid"]
+        if cid not in target_ids:
+            return {}, (
+                f"prior panel {path} is bound to {cid!r}, which is not one of "
+                "this invocation's targets"
+            )
+        votes = record.get("votes")
+        if not isinstance(votes, list) or len(votes) != PANEL_SIZE:
+            return {}, f"prior panel {path} does not contain five vote records"
+        for vote in votes:
+            if not isinstance(vote, dict) or not str(
+                vote.get("judgment_rationale") or ""
+            ).strip():
+                return {}, f"prior panel {path} contains a vote without rationale"
+        grouped.setdefault(cid, []).append(record)
+    return grouped, None
 
 
 def main() -> int:
@@ -493,6 +901,10 @@ def main() -> int:
         or f"/tmp/audit_panel_{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S')}_{uuid.uuid4().hex[:8]}"
     )
     if not args.dry_run:
+        guard_error = workdir_guard_error(workdir)
+        if guard_error:
+            print(f"refusing to run: {guard_error}")
+            return 2
         try:
             workdir.mkdir(parents=True, exist_ok=False)
         except FileExistsError:
@@ -528,9 +940,12 @@ def main() -> int:
             print(f"   would panel: {row['claim_id']}")
         return 0
 
-    prior_panels = []
-    for path in args.prior_panel:
-        prior_panels.append(json.loads(Path(path).read_text(encoding="utf-8")))
+    prior_by_claim, prior_error = load_prior_panels(
+        args.prior_panel, {row["claim_id"] for row in targets}
+    )
+    if prior_error:
+        print(f"refusing to run: {prior_error}")
+        return 2
 
     report = []
     for row in targets:
@@ -541,7 +956,7 @@ def main() -> int:
             args.stall_minutes,
             args.runner_timeout_sec,
             args.push_retries,
-            prior_panels,
+            prior_by_claim.get(row["claim_id"], []),
         )
         report.append(result)
         print(f"   {result['cid']}: {result['result']}")
@@ -549,10 +964,7 @@ def main() -> int:
 
     (workdir / "report.jsonl").write_text(
         "".join(
-            json.dumps(
-                {key: value for key, value in item.items() if key != "votes"},
-                sort_keys=True,
-            )
+            json.dumps(item, sort_keys=True)
             + "\n"
             for item in report
         ),

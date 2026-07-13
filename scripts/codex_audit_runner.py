@@ -1155,14 +1155,16 @@ def fit_prompt_to_transport_limit(
     claim_id: str,
     *,
     max_chars: int = CODEX_INPUT_CHAR_LIMIT,
+    forensic_bound: bool = True,
 ) -> tuple[str, dict[str, int] | None]:
     """Fit an oversized no-go prompt by bounding only rendered N8 records.
 
     Validation and apply receive the exact rendered subset plus a digest/count
-    commitment to the complete orchestrator index. Because the auditor cannot
-    inspect every N8 candidate, the inserted binding notice requires an
-    incomplete N8 FAIL packet and forbids ``audited_clean``. If even an empty
-    rendered candidate list cannot fit, fail closed instead of clipping
+    commitment to the complete orchestrator index. In the forensic tier, the
+    inserted binding notice requires an incomplete N8 FAIL packet and forbids
+    ``audited_clean``. In the development tier it only forbids exhaustive N8
+    claims from the omitted records and does not force a verdict. If even an
+    empty rendered candidate list cannot fit, fail closed instead of clipping
     source/runner evidence.
     """
     if len(prompt) <= max_chars:
@@ -1187,6 +1189,21 @@ def fit_prompt_to_transport_limit(
         bounded = dict(payload)
         bounded["candidates"] = candidates[:candidate_count]
         bounded_text = json.dumps(bounded, indent=2, sort_keys=True)
+        forensic_notice = (
+            "Therefore set N8_cross_cycle_echo.packet_complete=false, keep "
+            "N8_cross_cycle_echo.unresolved nonempty, set the overall "
+            "no_go_discipline.status=FAIL, and do not return audited_clean. "
+            if forensic_bound
+            else
+            "This development-tier transport bound does not force a verdict "
+            "when the final classification carries no negative assertion. If "
+            "you classify claim_type=no_go or declare any nonempty "
+            "negative_assertion_classes, set "
+            "N8_cross_cycle_echo.packet_complete=false, keep its unresolved "
+            "list nonempty, set no_go_discipline.status=FAIL, and do not return "
+            "audited_clean. Otherwise, scope any N8 judgment to the rendered "
+            "records. "
+        )
         notice = (
             "\n\n---\n"
             "N8 TRANSPORT BOUND (binding; transport metadata, not evidence):\n"
@@ -1194,9 +1211,7 @@ def fit_prompt_to_transport_limit(
             f"cross-cycle candidates; this transport renders the first "
             f"{candidate_count} in the orchestrator's relevance order while "
             "retaining the complete no-go-row universe count and digest. "
-            "Therefore set N8_cross_cycle_echo.packet_complete=false, keep "
-            "N8_cross_cycle_echo.unresolved nonempty, set the overall "
-            "no_go_discipline.status=FAIL, and do not return audited_clean. "
+            f"{forensic_notice}"
             "Use only verbatim locators from rendered authenticated records.\n"
         )
         fitted = prompt.replace(full_text, bounded_text, 1)
@@ -1466,7 +1481,15 @@ def validate_verdict(
         return invocation_error
     if expected_invocation_id is not None and blob.get("audit_invocation_id") != expected_invocation_id:
         return "audit_invocation_id is absent or does not match the prompt-bound invocation"
-    if transport_bounded_n8:
+    forensic_tier = bool(
+        source_requires_no_go
+        or blob.get("claim_type") == "no_go"
+        or no_go_discipline_gate.forensic_mode()
+    )
+    transport_bound_is_dispositive = bool(
+        forensic_tier or blob.get("negative_assertion_classes")
+    )
+    if transport_bounded_n8 and transport_bound_is_dispositive:
         packet = blob.get("no_go_discipline")
         n8 = packet.get("N8_cross_cycle_echo") if isinstance(packet, dict) else None
         if blob.get("verdict") == "audited_clean":
@@ -1478,7 +1501,10 @@ def validate_verdict(
         unresolved = n8.get("unresolved") if isinstance(n8, dict) else None
         if not isinstance(unresolved, list) or not unresolved:
             return "transport-bounded N8 evidence requires a nonempty unresolved list"
-    if blob.get("verdict") == "audited_clean" and evidence_manifest is not None:
+    if (
+        blob.get("verdict") == "audited_clean"
+        and evidence_manifest is not None
+    ):
         clipped_paths = sorted(
             path
             for path, entry in evidence_manifest.items()
@@ -1497,8 +1523,10 @@ def validate_verdict(
     no_go_error = no_go_discipline_gate.validate_no_go_discipline(
         blob,
         source_required=source_requires_no_go,
-        evidence_manifest=evidence_manifest,
+        evidence_manifest=evidence_manifest if forensic_tier else None,
         prior_claim_scope=prior_claim_scope,
+        structural_only=not forensic_tier,
+        require_declaration=True,
     )
     if no_go_error:
         return no_go_error
@@ -1557,11 +1585,11 @@ def render_validation_repair_prompt(
 
 
 def fresh_schema_retry_eligible(validation_error: str | None) -> bool:
-    """Allow a new isolated audit only for structured N1-N8 schema rejects."""
+    """Allow a new isolated audit for structured N1-N8 disposition rejects."""
     if not validation_error:
         return False
     return bool(re.match(
-        r"^(?:N[1-8]\b|No-Go Discipline\b|no_go_discipline\b)",
+        r"^(?:N[1-8]\b|No-Go Discipline\b|no_go_discipline\b|transport-bounded N8\b)",
         validation_error,
     ))
 
@@ -1570,6 +1598,8 @@ def fresh_schema_retry_code(validation_error: str) -> str:
     """Reduce validator text to a conclusion-free control-plane code."""
     if validation_error.startswith("N3 retained_authority hit "):
         return "N3_RETAINED_AUTHORITY_PROVENANCE_MISMATCH"
+    if validation_error.startswith("transport-bounded N8"):
+        return "N8_TRANSPORT_BOUND_DISPOSITION_MISMATCH"
     if (
         validation_error.startswith("N1 route ")
         and ".route_class=" in validation_error
@@ -2155,9 +2185,36 @@ def main() -> int:
                                        evidence_manifest_out=exact_evidence_manifest,
                                        audit_invocation_id=audit_invocation_id)
 
+            transport_note_path = (
+                row.get("note_path") or full_led_row.get("note_path") or ""
+            )
+            transport_note_body = read_note_body(transport_note_path) or ""
+            transport_source_required = (
+                no_go_discipline_gate.source_requires_no_go_discipline(
+                    transport_note_path,
+                    transport_note_body,
+                    (
+                        ""
+                        if args.from_dispatch
+                        else row.get("claim_type") or full_led_row.get("claim_type")
+                    ),
+                )
+            )
+            transport_forensic = bool(
+                transport_source_required
+                or (
+                    not args.from_dispatch
+                    and (row.get("claim_type") or full_led_row.get("claim_type"))
+                    == "no_go"
+                )
+                or no_go_discipline_gate.forensic_mode()
+            )
             try:
                 prompt, transport_bound = fit_prompt_to_transport_limit(
-                    prompt, exact_evidence_manifest, cid
+                    prompt,
+                    exact_evidence_manifest,
+                    cid,
+                    forensic_bound=transport_forensic,
                 )
             except ValueError as exc:
                 print(f"  SKIP prompt transport: {exc}")
@@ -2170,12 +2227,18 @@ def main() -> int:
                     }) + "\n")
                 continue
             if transport_bound:
+                transport_disposition = (
+                    "clean forbidden"
+                    if transport_forensic
+                    else "development-tier structural bound; verdict not forced"
+                )
                 print(
                     "  N8 transport-bound: "
                     f"{transport_bound['rendered_candidates']}/"
                     f"{transport_bound['authenticated_candidates']} candidates, "
                     f"{transport_bound['prompt_chars_before']} -> "
-                    f"{transport_bound['prompt_chars_after']} chars; clean forbidden"
+                    f"{transport_bound['prompt_chars_after']} chars; "
+                    f"{transport_disposition}"
                 )
 
             if args.dry_run:

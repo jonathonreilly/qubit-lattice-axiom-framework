@@ -390,8 +390,9 @@ The lane runs two assurance tiers:
   positive/bounded rows apply the No-Go Discipline as auditor judgment, and
   any supplied N1-N8 packet is validated structurally (no manifest-backed
   containment, live-stdout, or full-universe disposition plumbing).
-- **Forensic tier.** Mandatory for `claim_type: no_go` rows (foreclosure is
-  permanent) and for freeze/certification runs (`AUDIT_FORENSIC_MODE=1`),
+- **Forensic tier.** Mandatory for `claim_type: no_go` rows and no-go-named
+  source files (foreclosure is permanent), and for freeze/certification runs
+  (`AUDIT_FORENSIC_MODE=1`),
   which force the full heavyweight regime lane-wide against a pinned commit:
   authenticated evidence transport, verbatim-contained route evidence, live
   runner-stdout citation, and complete index dispositions with authenticated
@@ -400,13 +401,16 @@ The lane runs two assurance tiers:
 **Rolling certification** replaces scheduled freezes: the pipeline
 continuously reports, per flagship lane
 (`docs/audit/data/lane_certification_config.json` →
-`docs/audit/data/lane_certification.json`), whether the root claim's entire
-transitive dependency closure is chain-satisfying against the current state:
-retained-grade rows, decorations of retained parents, registered accepted
-premises, and permitted metadata context all satisfy the marker; metadata
-registered as non-evidence context does not.
+`docs/audit/data/lane_certification.json`), whether every configured scientific
+root claim and their combined transitive dependency closure are chain-satisfying
+against the current state. Retained-grade rows, decorations of retained parents,
+and registered accepted premises satisfy the marker; metadata does not.
 Certification is a state the repository re-enters as audit throughput
 catches up; a marker rolling back after an axiom or source change is the
 honest coordination signal for collaborators, not an error. If a publication
 or replication request ever needs a citable artifact, snapshot the lane's
 currently-certified commit and run the forensic tier over its closure there.
+Some configured roots intentionally name unresolved scientific `open_gate`
+obligations. Those lanes remain uncertified until source-level science retires
+or replaces the open root; audit throughput alone cannot certify an open gate,
+and substituting an already-retained surrogate would hide the live obligation.

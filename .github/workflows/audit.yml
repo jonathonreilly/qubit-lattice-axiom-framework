@@ -1,19 +1,18 @@
 name: audit-lane
 
-# Run the mechanical audit pipeline on PRs that touch audit-relevant files,
-# plus a nightly cron pass on main. Public repo, free Actions minutes, but
-# we tighten triggers anyway because the repo has very high commit volume
-# (hundreds of pushes/day) and noisy workflow history is its own cost.
+# Run the mechanical audit pipeline nightly on main, with a manual trigger for
+# urgent refreshes. Pull requests are reviewed and landed through the
+# repo-native review-loop, which already runs the pipeline and strict lint in a
+# clean current-main worktree and strips generated audit outputs before landing.
 #
 # Drift-catching coverage:
-#   - PRs: advisory warning surface only (no auto-commit, no red failure)
 #   - main: caught within 24 hours by the nightly cron (auto-commits refresh)
 #   - manual: workflow_dispatch for urgent ad-hoc runs
 #
 # We deliberately do NOT trigger on every push to main, because:
 #   (a) the auto-commit-back-to-main creates a feedback loop concern, and
 #   (b) at hundreds of pushes/day the run count would be UI-noise excessive.
-# The nightly cron keeps main refreshed. Review-loop is the pre-merge gate:
+# The nightly cron keeps main refreshed. Review-loop is the landing gate:
 # it must inspect the PR, rebase/salvage against moving main, regenerate the
 # pipeline, and verify caches before landing.
 #
@@ -21,15 +20,6 @@ name: audit-lane
 # the configured independent auditor via apply_audit.py.
 
 on:
-  pull_request:
-    paths:
-      - 'docs/**/*.md'
-      - 'docs/audit/scripts/**'
-      - 'logs/runner-cache/**'
-      - 'scripts/**/*.py'
-      - 'scripts/**/*.sh'
-      - 'docs/audit/templates/audit_workflow.yml'
-      - '.github/workflows/audit.yml'
   schedule:
     - cron: "0 6 * * *"   # nightly 06:00 UTC pass on main
   workflow_dispatch:        # manual ad-hoc
@@ -38,10 +28,8 @@ permissions:
   contents: write          # required for auto-commit on cron runs
 
 concurrency:
-  # PR runs of the same branch supersede each other (only run latest);
-  # cron runs use a different group so they never get cancelled by PRs.
   group: audit-lane-${{ github.event_name }}-${{ github.ref }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+  cancel-in-progress: false
 
 jobs:
   audit_pipeline:
@@ -66,50 +54,10 @@ jobs:
             pip install -r requirements.txt
           fi
 
-      - name: Report missing dependency-edge repair candidates (PR only)
-        if: github.event_name == 'pull_request'
-        run: python3 docs/audit/scripts/repair_missing_dependency_edges.py
-
-      - name: Repair missing dependency edges (cron/manual only)
-        if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+      - name: Repair missing dependency edges
         run: python3 docs/audit/scripts/repair_missing_dependency_edges.py --apply
 
-      - name: Report runner cache freshness (PR only, advisory)
-        if: github.event_name == 'pull_request'
-        run: |
-          # Every runner under scripts/ must have a SHA-pinned cache at
-          # logs/runner-cache/<stem>.txt whose header sha matches the
-          # current runner. The audit lane consumes this cache; stale
-          # caches mean the auditor sees outdated evidence.
-          #
-          # PRs check ONLY runners changed in this branch vs the base
-          # ref, so an unrelated PR doesn't inherit pre-existing drift
-          # on main. The nightly cron step below catches main-branch
-          # drift separately. (--pr-diff escalates to the full ledger
-          # if a cache-invalidator helper changed.)
-          base="origin/${{ github.base_ref }}"
-          git fetch --no-tags origin "+${{ github.base_ref }}:refs/remotes/origin/${{ github.base_ref }}"
-          if ! python3 scripts/precompute_audit_runners.py --pr-diff "$base" --check-only; then
-            echo
-            echo "::warning::Runner cache is stale for one or more runners changed in this PR."
-            echo "::warning::This is advisory because main moves continuously; review-loop must regenerate caches before landing."
-            echo "::warning::Local repair command:"
-            echo "::warning::  python3 scripts/precompute_audit_runners.py --pr-diff $base"
-            {
-              echo "### Runner Cache Advisory"
-              echo
-              echo "One or more runner caches changed in this PR are stale."
-              echo
-              echo "This PR check is advisory only because audit/review work keeps \`main\` moving. The landing reviewer must regenerate caches from current \`main\` before pushing."
-              echo
-              echo "\`\`\`bash"
-              echo "python3 scripts/precompute_audit_runners.py --pr-diff $base"
-              echo "\`\`\`"
-            } >> "$GITHUB_STEP_SUMMARY"
-          fi
-
-      - name: Report main-branch cache drift (cron/manual, warning only)
-        if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+      - name: Report main-branch cache drift (warning only)
         run: |
           # Full-ledger freshness check on main. Emits a warning if
           # drift exists; the cron's refresh step below will fix it.
@@ -120,94 +68,14 @@ jobs:
       - name: Run audit pipeline
         run: bash docs/audit/scripts/run_pipeline.sh
 
-      - name: Report vocabulary drift (PR only, advisory)
-        if: github.event_name == 'pull_request'
-        run: |
-          # vocab_lint reads docs/repo/controlled_vocabulary.yaml and flags
-          # routine local drift plus deferred link-aware migrations
-          # (forbidden filename suffixes, F-letter codes). Advisory only: at baseline
-          # the repo carries ~208 files with violations from the pre-Cleanup-2
-          # emergent-suffix wave; those are tracked for the Cleanup-2 sweep.
-          # The gate exists so NEW drift on this PR is visible.
-          mkdir -p /tmp/vocab-lint
-          if ! python3 scripts/vocab_lint.py --report-only --report-path /tmp/vocab-lint/report.json docs/; then
-            echo
-            echo "::warning::vocab_lint reports vocabulary drift in this branch."
-            echo "::warning::See vocab-lint-${{ github.run_id }} artifact for the per-file report."
-            echo "::warning::Cleanup-2 owns the baseline sweep; a new violation introduced by THIS PR should be fixed before landing."
-            {
-              echo "### Vocabulary Drift Advisory"
-              echo
-              echo "vocab_lint flagged vocabulary drift in this branch."
-              echo
-              echo "Run locally to inspect:"
-              echo "\`\`\`bash"
-              echo "python3 scripts/vocab_lint.py --report-only docs/"
-              echo "\`\`\`"
-              echo
-              echo "Auto-correctable routine drift can be applied with:"
-              echo "\`\`\`bash"
-              echo "python3 scripts/vocab_lint.py --fix docs/"
-              echo "\`\`\`"
-              echo
-              echo "Filename renames (forbidden suffixes) require the Cleanup-2 link-aware tooling."
-            } >> "$GITHUB_STEP_SUMMARY"
-          fi
-
-      - name: Upload vocab_lint report
-        if: github.event_name == 'pull_request' && always()
-        uses: actions/upload-artifact@v7
-        with:
-          name: vocab-lint-${{ github.run_id }}
-          path: /tmp/vocab-lint/report.json
-          if-no-files-found: ignore
-          retention-days: 14
-
-      - name: Check vocabulary doc render (PR only, hard gate)
-        if: github.event_name == 'pull_request'
-        run: |
-          # Render --check fails if docs/repo/CONTROLLED_VOCABULARY.md or
-          # docs/KEY_TERMINOLOGY.md drift from the canonical YAML +
-          # templates. Change either the YAML or the templates, then run
-          # `python3 scripts/render_controlled_vocabulary.py` to regenerate.
-          python3 scripts/render_controlled_vocabulary.py --check
-
-      - name: Regenerate conditional-prompt snapshot (cron/manual only)
-        if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+      - name: Regenerate conditional-prompt snapshot
         # MISSING_DERIVATION_PROMPTS.md is the static snapshot the
         # science-fix-loop reads. Without this refresh it drifts from the
         # live ledger, causing wasted attempts on rows that have already
-        # been re-audited. PR runs deliberately skip this step so they
-        # don't produce extra generated-file advisories below.
+        # been re-audited.
         run: python3 docs/audit/scripts/generate_conditional_prompts.py
 
-      - name: Report pipeline diff (PR only, advisory)
-        if: github.event_name == 'pull_request'
-        run: |
-          git status --short docs/audit docs/publication/ci3_z3
-          if [[ -n "$(git status --porcelain docs/audit docs/publication/ci3_z3)" ]]; then
-            echo
-            echo "::warning::Audit-data files changed during pipeline run on this PR."
-            echo "::warning::This can be a real missing-regeneration issue, or normal drift"
-            echo "::warning::from main moving while the PR stays open."
-            echo "::warning::Review-loop must rerun the pipeline from current main before landing."
-            git diff --stat docs/audit docs/publication/ci3_z3 || true
-            {
-              echo "### Audit Pipeline Diff Advisory"
-              echo
-              echo "The audit pipeline produced generated-file diffs on this PR."
-              echo
-              echo "This PR check is advisory only. Open PRs may sit while \`main\` moves; review-loop is responsible for applying source-only deltas to current \`main\`, rerunning the pipeline, and landing only if the regenerated audit data is clean."
-              echo
-              echo "\`\`\`bash"
-              echo "bash docs/audit/scripts/run_pipeline.sh"
-              echo "python3 docs/audit/scripts/generate_conditional_prompts.py"
-              echo "\`\`\`"
-            } >> "$GITHUB_STEP_SUMMARY"
-          fi
-
-      - name: Commit refreshed ledger / queue (cron only)
-        if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+      - name: Commit refreshed ledger / queue
         run: |
           set -e
           git config user.name  "audit-bot"

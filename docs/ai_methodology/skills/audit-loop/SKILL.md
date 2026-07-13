@@ -564,8 +564,11 @@ five-judge panel in the same loop using the restricted source packet plus the
 full first-audit and second-audit arguments as explicit context. Each judge
 must run at the required audit model/reasoning level with a distinct auditor
 identity, vote on the full tuple `(sided_with, ratified_verdict,
-ratified_claim_type, ratified_load_bearing_step_class)`, and explain errors in
-the other position. A majority is at least three matching votes out of five.
+ratified_claim_type, ratified_claim_scope, ratified_load_bearing_step_class,
+negative_assertion_classes)`, and explain errors in the other position. Treat
+whitespace-only scope differences and assertion-class ordering as equivalent,
+but require substantive scope and declaration agreement. A majority is at
+least three matching full-tuple votes out of five.
 
 After a panel majority, go with the majority only if the majority tuple is
 applyable by the audit tooling and the normal gates pass. Apply a representative

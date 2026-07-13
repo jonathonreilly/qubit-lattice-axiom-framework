@@ -7902,6 +7902,14 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             template_flat,
         )
         self.assertIn(
+            "may legitimately share a context-derived group id or locator digest",
+            template_flat,
+        )
+        self.assertIn(
+            "Never infer an unlisted phrase from a shared id",
+            template_flat,
+        )
+        self.assertIn(
             "use a nearby marker-bearing live section header",
             template_flat,
         )
@@ -10037,6 +10045,8 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             "ORIGINAL RESTRICTED PACKET", n3_tuple_code, 1,
         )
         self.assertIn("from one same full_phrase_groups record", n3_tuple_prompt)
+        self.assertIn("may share a context-derived id or digest", n3_tuple_prompt)
+        self.assertIn("Never infer an unlisted phrase", n3_tuple_prompt)
         self.assertNotIn("hit 2", n3_tuple_prompt)
         n3_scan_code = m.fresh_schema_retry_code(
             "N3.hits must exactly disposition orchestrator phrase scan; "

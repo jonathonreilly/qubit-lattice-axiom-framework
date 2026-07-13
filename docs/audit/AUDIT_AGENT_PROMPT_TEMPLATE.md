@@ -637,9 +637,12 @@ For every N3 hit and N5 statement, copy `phrase` byte-for-byte from the
 corresponding `full_phrase_groups[].phrase` value in the evidence manifest.
 Copy the complete authenticated tuple—`phrase`, `occurrence_group_id`,
 `occurrence_count`, `occurrence_locator_sha256`, and `evidence_locator`—from
-one and the same `full_phrase_groups[]` record. Never reuse a group id or
-locator digest under a different phrase, even when both occur on the same
-path.
+one and the same `full_phrase_groups[]` record. Different authenticated records
+may legitimately share a context-derived group id or locator digest when
+several phrases occur in the same source context. Reproduce that sharing only
+when the manifest separately lists the complete record for each phrase. Never
+infer an unlisted phrase from a shared id or transplant metadata from another
+phrase's record.
 Never paraphrase a phrase, join two phrases with punctuation or a slash, or
 collapse distinct phrases into one object. For example, `boundary` and
 `primitive` require separate objects even when one source sentence contains

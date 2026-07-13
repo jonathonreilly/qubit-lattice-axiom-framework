@@ -460,8 +460,7 @@ next stacked review PR:
   one `bounded_theorem` / `unaudited` row with exactly five dependencies, the
   runner is non-decorative with a first-principles compute check, and strict
   lint has zero errors
-- delivery check: open; mergeability and checks are verified after the
-  campaign-state commit is pushed
+- delivery check: open, mergeable, independent audit workflow running
 
 No merge is authorized. Independent audit remains authoritative.
 
@@ -683,5 +682,25 @@ next stacked review PR:
   `bounded_theorem` / `unaudited` row with exactly five dependencies and strict
   lint has zero errors
 - delivery check: open, mergeable, independent audit workflow running
+
+No merge is authorized. Independent audit remains authoritative.
+
+The block-saturated product-reference split handoff and scalar next-activity
+boundary is prepared as the next stacked review PR:
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5363
+- base: `physics-loop/record-faithful-dynamics-block42-enhanced-moment-third-horizon-factor-return-20260712`
+- head: `physics-loop/record-faithful-dynamics-block43-block-saturated-split-norm-handoff-20260712`
+- source runner: `PASS=12 FAIL=0`
+- scope: actual-range anchored block-saturated linear section; the `m=10^44`
+  and `m=10^46` marked-response arithmetic is explicitly conditional on the
+  missing diameter-to-tree-span/source-incidence bridge
+- disposition: independent code/math, physics/import, and governance/no-go
+  review passed with bounded claims after projector, anchor, fixture,
+  coefficient-algebra, conditional-label, dependency, and full N1--N8 repairs;
+  the full pipeline seeds one `bounded_theorem` / `unaudited` row with exactly
+  five dependencies and strict lint has zero errors
+- delivery check: open; mergeability and checks are verified after the
+  campaign-state commit is pushed
 
 No merge is authorized. Independent audit remains authoritative.

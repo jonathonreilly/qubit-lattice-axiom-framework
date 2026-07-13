@@ -1,5 +1,23 @@
 # PR Delivery
 
+The K-retaining marked-attachment strong-to-weak theorem is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block31-nonfiber-derivative-invariant-ball-20260712`
+- head: `physics-loop/record-faithful-dynamics-block32-localized-marked-invariant-ball-20260712`
+- runner: `PASS=9 FAIL=0`
+- scope: the actual activity row sharpens the weak base defect from `c` to
+  `K`; two-layer unique marked-path rerooting gives a full anchored centered
+  derivative constant; an ultra-deep point has one-step strong-to-weak
+  `q_sw=0.606530659713`; no autonomous same-norm ball or physical criticality
+- review: independent code/math, physics/import/Nature, and governance/no-go
+  pass after one N3 phrase-classification repair
+- audit compatibility: one `bounded_theorem` / `unaudited` row with exactly
+  the joint-polymer and split-derivative dependencies; full pipeline and strict
+  lint pass; generated outputs stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5338
+
+No merge is authorized. Independent audit remains authoritative.
+
 The split constrained-fiber derivative and unlocalized-certificate boundary is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block30-projected-rescaled-contraction-20260712`

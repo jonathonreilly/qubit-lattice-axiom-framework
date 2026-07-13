@@ -1,6 +1,43 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block32-localized-marked-invariant-ball-20260712`.
+The K-retaining marked-attachment runner reports `PASS=9 FAIL=0`. Re-running
+the two-layer recursion with its actual factor row keeps `K` instead of the
+allowance `c`, sharpening the weak non-onsite base defect to
+`68 exp(Lambda/2)K`.
+
+For the product-Haar split `C_0=L E_0`, `Q_0=1-C_0`, a centered mark has no
+mark-alone polymer. Unique output-anchor rerooting through the factor layer
+and the hard-core layer gives
+`A_att=[a_0+tau/(1-tau)]/(1-tau)`, where
+`tau=K sup_(n>=1)n exp[-(c-K)n]`. This is a full anchored marked-source bound,
+not the previous local-source Cauchy estimate.
+
+At `m=10000,beta=0,c=.001,Theta=10^-6,Lambda=1,eta=10^-10`, the centered
+constant is `1.7433e-7`; the raw lifted component gives `exp(-1/2)`. In the
+declared strong split source norm the one-step projected derivative therefore
+maps to the weak coarse norm with `q_sw=0.606530659713<1`, while
+`B_weak<=2.36942e-10`.
+
+Independent code/math review reconstructs both rerootings and every constant.
+Physics/import/Nature review passes the joint gauge--Grassmann scope and the
+massive/critical boundary. Governance/no-go review passes after classifying
+the hard-core and auxiliary module-bound phrases in N3. Audit validation seeds
+one `bounded_theorem` / `unaudited` row with exactly the joint-polymer and
+split-derivative dependencies; strict lint has zero errors and generated
+outputs are stripped.
+
+This is not an autonomous invariant ball. The weak output is not yet proved
+to return to the same strong split norm; the same-norm Hessian and running
+center are also open. The scalar ball inequality is numerically feasible once
+that handoff is supplied. No axiom-update stop is triggered.
+
+K-retaining marked-attachment stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5338
+is open against the split-derivative head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block31-nonfiber-derivative-invariant-ball-20260712`.
 The split-derivative/certificate-boundary runner reports `PASS=9 FAIL=0`.
 On every finite regulator, `DR_Phi[F]=E_Phi[F]` and higher derivatives are

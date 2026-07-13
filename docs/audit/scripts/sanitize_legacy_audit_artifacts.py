@@ -37,6 +37,13 @@ TEXT_REPLACEMENTS = (
     ("proposed-promoted", "candidate promoted-grade"),
 )
 
+# Current-schema enum fields whose value sets legitimately contain strings that
+# collide with legacy status vocabulary. The no-go discipline gate requires
+# lifecycle_state in {active, retired, unknown}; rewriting its "unknown" to
+# "unaudited" corrupts authenticated evidence snapshots and makes the gate
+# reject otherwise valid packets.
+CURRENT_SCHEMA_ENUM_KEYS = frozenset({"lifecycle_state"})
+
 
 def sanitize_string(value: str) -> str:
     mapped = EXACT_STATUS_VALUE_MAP.get(value)
@@ -48,16 +55,18 @@ def sanitize_string(value: str) -> str:
     return out
 
 
-def sanitize_obj(value):
+def sanitize_obj(value, key=None):
     if isinstance(value, dict):
         return {
-            k: sanitize_obj(v)
+            k: sanitize_obj(v, k)
             for k, v in value.items()
             if k not in DEPRECATED_KEYS
         }
     if isinstance(value, list):
-        return [sanitize_obj(v) for v in value]
+        return [sanitize_obj(v, key) for v in value]
     if isinstance(value, str):
+        if key in CURRENT_SCHEMA_ENUM_KEYS:
+            return value
         return sanitize_string(value)
     return value
 

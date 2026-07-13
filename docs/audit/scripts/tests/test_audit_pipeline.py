@@ -8893,6 +8893,22 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
                 m.awaiting_repair_since_conditional(invalidated, effective)
             )
 
+        note_hash_repair = {
+            **base,
+            "note_hash": "new-note-hash",
+            "previous_audits": [{
+                **base["previous_audits"][0],
+                "archived_for_note_hash": "old-note-hash",
+            }],
+        }
+        with mock.patch.object(
+            m, "last_source_change",
+            side_effect=AssertionError("note hash movement must bypass git log"),
+        ):
+            self.assertFalse(
+                m.awaiting_repair_since_conditional(note_hash_repair, effective)
+            )
+
         # A dependency may be repaired and re-ratified to the same effective
         # status.  Scope/source movement in that authority is still a repair.
         same_status_scope_repair = {

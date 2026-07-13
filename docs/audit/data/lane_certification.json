@@ -25,7 +25,7 @@
         },
         {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "cpt_exact_note",
@@ -185,7 +185,7 @@
         },
         {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
@@ -545,7 +545,7 @@
         },
         {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "cl3_per_site_hilbert_dim_two_theorem_note_2026-05-02",
@@ -2955,6 +2955,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "1ec27e79c80922511dc137139527fa43ee4727e6",
+  "repo_head": "63491f3514ef5744b854808a4f205d2ae58d0d74",
   "schema": "lane_certification_v2"
 }

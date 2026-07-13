@@ -83,24 +83,24 @@ E4: full-complexification kernel and real-algebra faithfulness boundary
 [PASS] E4.TOTAL both 2-dim full-complexification modules are non-faithful, while both real Cl(3,0) restrictions are faithful | ker(pi_+)=e_-A and ker(pi_-)=e_+A
 
 ========================================================================================
-EL: executed lattice-wide tensor extension of both exclusions
+EL: executed finite-region lattice-wide tensor extension of both exclusions
 ========================================================================================
-The one-site exclusions are re-proved on multi-site lattice tensor algebras Cl(3,0)^{tensor N}: a one-dimensional representation of the lattice algebra restricts to multiplicative scalar characters per site factor, and the joint per-site scalar Clifford systems are solved exhaustively; the N=2 irreducible modules are constructed and exhausted by exact dimension count.
+The one-site exclusions are re-proved on real multi-site lattice tensor algebras Cl(3,0)^{tensor_R N}: a one-dimensional complex character of the lattice algebra restricts to multiplicative scalar characters per site factor, and the joint per-site scalar Clifford systems are solved exhaustively; the N=2 irreducible modules are constructed and exhausted by exact dimension count. Here lattice-wide means every nonempty finite site set: restriction to one site makes the scalar contradiction N-independent, while, for A_C := Cl(3,0) tensor_R C, tensor distributivity gives A_C^{tensor_C N} = direct-sum_{s in {+,-}^N} M_{2^N}(C), with 2^N simple modules of dimension 2^N and site-restriction multiplicity 2^(N-1). No infinite quasi-local completion or physical lattice Hilbert-space realization is asserted.
 [PASS] EL.scalar N=2: the joint per-site scalar Clifford system over the 2-site lattice algebra has no solution | unknowns=6, equations=18, solutions=0
 [PASS] EL.scalar N=3: the joint per-site scalar Clifford system over the 3-site lattice algebra has no solution | unknowns=9, equations=27, solutions=0
-[PASS] EL.module (+,+): the 4-dim two-site module is irreducible (scalar commutant) and restricts to the 2-dim site modules | commutant solved to scalars; per-site restriction dimension 2
-[PASS] EL.module (+,-): the 4-dim two-site module is irreducible (scalar commutant) and restricts to the 2-dim site modules | commutant solved to scalars; per-site restriction dimension 2
-[PASS] EL.module (-,+): the 4-dim two-site module is irreducible (scalar commutant) and restricts to the 2-dim site modules | commutant solved to scalars; per-site restriction dimension 2
-[PASS] EL.module (-,-): the 4-dim two-site module is irreducible (scalar commutant) and restricts to the 2-dim site modules | commutant solved to scalars; per-site restriction dimension 2
-[PASS] EL.exhaustion: the four 4-dim two-site modules exhaust the 64-dim two-site algebra by exact dimension count (4 x 16 = 64) | sum of squared dimensions = 64
-[PASS] EL.TOTAL lattice-wide certificates for both exclusions are executed | no lattice-wide one-dim character exists; every two-site irreducible module has dimension 4 = 2^2 with 2-dim per-site restrictions
+[PASS] EL.module (+,+): the 4-dim two-site module is irreducible (scalar commutant), has its stated central characters, and restricts to two copies of each 2-dim site module | commutant rank=15, nullity=1; explicit per-site direct-sum intertwiners; real tensor-algebra map rank=32, kernel dim=32
+[PASS] EL.module (+,-): the 4-dim two-site module is irreducible (scalar commutant), has its stated central characters, and restricts to two copies of each 2-dim site module | commutant rank=15, nullity=1; explicit per-site direct-sum intertwiners; real tensor-algebra map rank=32, kernel dim=32
+[PASS] EL.module (-,+): the 4-dim two-site module is irreducible (scalar commutant), has its stated central characters, and restricts to two copies of each 2-dim site module | commutant rank=15, nullity=1; explicit per-site direct-sum intertwiners; real tensor-algebra map rank=32, kernel dim=32
+[PASS] EL.module (-,-): the 4-dim two-site module is irreducible (scalar commutant), has its stated central characters, and restricts to two copies of each 2-dim site module | commutant rank=15, nullity=1; explicit per-site direct-sum intertwiners; real tensor-algebra map rank=32, kernel dim=32
+[PASS] EL.exhaustion: the four central-character-distinct 4-dim modules exhaust the semisimple 64-dim two-site algebra by Artin-Wedderburn dimension count (4 x 16 = 64) | central characters=[(-1, -1), (-1, 1), (1, -1), (1, 1)]; sum of squared dimensions = 64; symbolic finite-N dimension identity 2^N(2^N)^2=8^N and N>=2 real-dimension nonfaithfulness ratio 2^(N-1)
+[PASS] EL.TOTAL lattice-wide certificates for both exclusions are executed | no finite-region lattice-wide one-dim character exists; the N-site simple dimensions are 2^N, and every N>=2 simple is nonfaithful on the real tensor algebra, with the N=2 modules and kernels constructed explicitly
 
 N1 MECHANISM CLASSES (distinct attack routes, live evidence above):
-mechanism_class 1: central_idempotent_split_and_simplicity (E1 checks)
-mechanism_class 2: exhaustive_module_dimension_classification (E2 checks)
-mechanism_class 3: scalar_polynomial_system_contradiction (E3 checks)
-mechanism_class 4: faithfulness_kernel_computation (E4 checks)
-mechanism_class 5: lattice_tensor_restriction (EL checks)
+mechanism_class 1: route_id=central_split route_class=algebraic_rearrangement mechanism=solve the complete center and central-idempotent algebra, then isolate matrix units in each summand; attempt=test whether an omitted central block or proper ideal supports another simple-module dimension; outcome=E1 exhausts exactly two simple M2(C) summands; honesty_marker=ATTEMPTED disposition=CLOSED
+mechanism_class 2: route_id=module_carriers route_class=alternate_carrier_or_sector mechanism=classify every minimal left ideal in both central sectors; attempt=test alternate irreducible modules or carrier dimensions within either M2(C) block; outcome=E2 finds one 2-dimensional simple-module class per sector; honesty_marker=ATTEMPTED disposition=CLOSED
+mechanism_class 3: route_id=scalar_finite_scan route_class=numerical_or_finite_case mechanism=compute the exact scalar polynomial solve, unit-ideal Groebner basis, and finite square-law scan; attempt=search every one-dimensional scalar candidate for a Clifford character; outcome=E3 finds no solution and exhibits the exact contradiction; honesty_marker=ATTEMPTED disposition=CLOSED
+mechanism_class 4: route_id=faithfulness_boundary route_class=boundary_or_initial_condition mechanism=compute kernels on the full complexification and at the real-algebra restriction boundary; attempt=test whether the faithfulness wording hides an alternate full-complexification representation; outcome=E4 computes the opposite summand kernels and faithful real restrictions; honesty_marker=ATTEMPTED disposition=CLOSED
+mechanism_class 5: route_id=finite_lattice_tensor route_class=lattice_scale_or_limit mechanism=restrict finite-region tensor-algebra characters sitewise and construct the two-site tensor modules; attempt=test whether multiple lattice sites evade the one-site exclusions or change the tensor-power simple-module dimensions; outcome=EL closes the site-character route for every finite N and constructs and exhausts all N=2 blocks; honesty_marker=ATTEMPTED disposition=CLOSED
 
 ========================================================================================
 N5 RESOLUTION SWEEP (per authenticated negative statement)
@@ -111,14 +111,14 @@ per_element: [EXECUTED] each generator pair (x_i, x_j), i != j, already forces t
 per_site: [EXECUTED] Cl(3,0) is the one-site real algebra; the full scalar system over one site was solved exhaustively and is inconsistent
 per_mode: [EXECUTED] every irreducible module (mode) restricts to one central summand and has computed complex dimension 2, never 1
 per_block: [EXECUTED] both central-idempotent blocks e_+A and e_-A carry only the 2-dimensional simple module; no block admits a 1-dimensional faithful action
-lattice_wide: [EXECUTED] executed on the 2-site and 3-site lattice tensor algebras: the joint per-site scalar Clifford systems have no solution, so no lattice-wide one-dimensional character restricts to a faithful one-dimensional site representation
+lattice_wide: [EXECUTED] for every nonempty finite N-site tensor algebra, a unital one-dimensional representation restricts to a forbidden one-site scalar character; the N=2 and N=3 joint systems were also solved explicitly with no solutions
 [PASS] N5 sweep backed by computed certificates :: NEGATIVE STATEMENT 1: no faithful one-dimensional complex re | every executed resolution line restates a computed exclusion above
 NEGATIVE STATEMENT 2: no faithful irreducible complex representation of Cl(3,0) has dimension other than 2
 per_element: [EXECUTED] central idempotent actions on any simple module were solved element-wise to exactly one active summand
 per_site: [EXECUTED] at the single site, the minimal-left-ideal decomposition exhausts all simple quotients and each has dimension 2
 per_mode: [EXECUTED] every irreducible module (mode) is a quotient of its active regular summand and computes to dimension exactly 2
 per_block: [EXECUTED] each 4-dimensional simple block decomposes into two copies of the same 2-dimensional simple module; no other dimension occurs
-lattice_wide: [EXECUTED] executed on the 2-site lattice tensor algebra: every irreducible module has dimension 4 = 2^2 by scalar-commutant and exact dimension-count exhaustion, and each per-site restriction has dimension exactly 2
+lattice_wide: [EXECUTED] at N=1 every faithful irreducible has dimension 2, while for every finite N>=2 the real algebra dimension 8^N exceeds the real endomorphism dimension 2*4^N by ratio 2^(N-1), so no irreducible tensor-power module can be faithful; at N=2 all four real map ranks 32 and kernel dimensions 32 were computed explicitly
 [PASS] N5 sweep backed by computed certificates :: NEGATIVE STATEMENT 2: no faithful irreducible complex repres | every executed resolution line restates a computed exclusion above
 
 ========================================================================================

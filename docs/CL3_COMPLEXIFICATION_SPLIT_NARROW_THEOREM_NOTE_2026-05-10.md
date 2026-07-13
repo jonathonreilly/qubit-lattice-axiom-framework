@@ -48,9 +48,8 @@ exactly `2` and that no faithful one-dimensional representation exists are
 explicit derived negative assertions. The dedicated exclusion stress runner
 certifies those exclusions exhaustively through the central-idempotent split,
 simple-module dimension classification, scalar-system contradiction, and
-faithfulness-boundary computation. This source note does not set or predict
-audit status; any audit status remains an output of the independent audit
-lane.
+faithfulness-boundary computation. Audit status remains solely an output of
+the independent audit lane.
 
 ## Why this note exists
 
@@ -184,22 +183,20 @@ the full complexification are individually non-faithful:
 `ker ρ_-^C = e_+ · (Cl(3,0) ⊗_R C)`. Their restrictions to the real
 algebra `Cl(3,0)` are faithful real-algebra maps. ∎
 
-## What this note does NOT claim
+## Scope exclusions
 
-- Does **not** identify the abstract Cl(3) site module with a physical
-  per-site Hilbert space on any specific lattice realisation. That
-  bridge depends on the staggered-Dirac realization gate (substep 1)
-  and remains out of scope here.
-- Does **not** force the chirality choice. Both `ρ_+` (with
+- The abstract Cl(3) site module remains distinct from a physical per-site
+  Hilbert space on any specific lattice realisation. That bridge belongs to
+  the staggered-Dirac realization gate (substep 1) and remains out of scope.
+- Both chirality choices are valid: `ρ_+` (with
   `ω → +i`, `γ_i = σ_i`) and `ρ_-` (with `ω → -i`, `γ_i = -σ_i`) are
-  valid faithful 2-dim irreps; the package convention `ρ_+` is a
-  normalisation choice not derived here.
-- Does **not** derive the Pauli exclusion principle, Grassmann
-  anticommutation, or any spin-statistics claim. Those are downstream
-  consequences carried by other notes and gates.
-- Does **not** make any physical / observational claim, consume any
-  PDG value, fitted constant, or admit any lattice convention beyond
-  the abstract real Clifford algebra.
+  faithful 2-dim irreps. The package convention `ρ_+` is a bookkeeping
+  normalisation choice.
+- The Pauli exclusion principle, Grassmann anticommutation, and spin-statistics
+  claims remain downstream consequences carried by other notes and gates.
+- The scope is purely algebraic and consumes zero physical or observational
+  inputs, PDG values, fitted constants, or lattice conventions beyond the
+  abstract real Clifford algebra.
 
 ## Forbidden imports check
 
@@ -251,10 +248,10 @@ on `2 × 2` complex matrices:
    in both realisations.
 5. In each displayed chirality realisation, the Pauli natural module has
    complex dimension `2`, scalar commutant, and a scalar Casimir-like element.
-   This companion check does not classify every simple module; the exhaustive
-   uniqueness and dimension classification is computed by E2 of the dedicated
-   exclusion stress runner below.
-6. Counter-example check: the scalar (`1 × 1`) candidate fails on the
+   The exhaustive uniqueness and dimension classification beyond these
+   displayed modules is computed by E2 of the dedicated exclusion stress
+   runner below.
+6. Counter-example check: the scalar (`1 × 1`) candidate violates the
    anticommutation `{σ_1, σ_2} = 0` because a scalar anticommutes
    with itself only when it is `0`, so a faithful `1 × 1` complex
    Cl(3)-irrep does not exist. The Artin-Wedderburn classification above,
@@ -265,7 +262,7 @@ Expected output: `PASS=N FAIL=0` with `N ≥ 20`.
 
 The dedicated exclusion stress runner constructs the full `8`-dimensional
 complexified algebra and verifies the negative-assertion surface using exact
-sympy/stdlib arithmetic. Its recorded output is `TOTAL: PASS=62 FAIL=0`, including the executed lattice-wide tensor extension (the joint per-site scalar Clifford systems on the 2-site and 3-site lattice algebras have no solution, and every irreducible 2-site module has dimension `4 = 2^2` by scalar-commutant and exact dimension-count exhaustion, with 2-dimensional per-site restrictions), the five labeled distinct exclusion mechanism classes, and the N5 resolution sweep in which every canonical class (`per_element`, `per_site`, `per_mode`, `per_block`, `lattice_wide`) is executed against a computed certificate.
+sympy/stdlib arithmetic. Its recorded output is `TOTAL: PASS=62 FAIL=0`, including the finite-region lattice-wide tensor extension: a one-dimensional complex character on any nonempty finite real `N`-site tensor algebra `Cl(3,0)^{⊗_R N}` would restrict to a forbidden one-site scalar character; and, defining `A_C := Cl(3,0) ⊗_R C`, the computed `A_C ≅ M_2(C) ⊕ M_2(C)` split gives `A_C^{⊗_C N} ≅ ⨁_{s∈{±}^N} M_{2^N}(C)`, so every finite-region simple module has dimension `2^N` and restricts at one site as `2^{N-1}` copies of its 2-dimensional site module. For `N ≥ 2`, those irreducible modules are nonfaithful on the real tensor algebra: its real dimension `8^N` exceeds the real dimension `2·4^N` of the complex endomorphism algebra by the factor `2^{N-1}`. The runner solves the `N=2` and `N=3` scalar systems explicitly and, at `N=2`, constructs all four modules, solves their scalar commutants, verifies their distinct pairs of central characters, explicitly decomposes their site restrictions, computes real map rank `32` and kernel dimension `32` for each, and exhausts the `64`-dimensional algebra by the Artin-Wedderburn count `4 × 16 = 64`. This finite-region algebra statement is restricted to abstract finite tensor powers; infinite quasi-local completions and physical lattice Hilbert-space realizations remain outside its scope. The output also records five labeled distinct exclusion mechanism classes and the N5 resolution sweep in which every canonical class (`per_element`, `per_site`, `per_mode`, `per_block`, `lattice_wide`) is executed against a computed certificate.
 
 | Claim surface | Runner | Exact verification |
 |---|---|---|
@@ -279,8 +276,7 @@ sympy/stdlib arithmetic. Its recorded output is `TOTAL: PASS=62 FAIL=0`, includi
 
 Plain-text (non-load-bearing) reader pointers; following the PR #306
 cleanup pattern, these are written without markdown links so the
-citation-graph builder does not parse them as upstream dependency
-edges:
+citation-graph builder ignores them as upstream dependency edges:
 
 - `AXIOM_FIRST_CL3_PER_SITE_UNIQUENESS_THEOREM_NOTE_2026-04-29.md`
   — parent note carrying the in-scope U1-U3 representation theory
@@ -295,8 +291,8 @@ edges:
 ## Citation-graph note
 
 This note has zero load-bearing markdown-link upstream dependencies.
-The abstract-algebra content of (K1)-(K4) does not consume any other
-note's effective status. The cross-references above are plain-text
+The abstract-algebra content of (K1)-(K4) requires zero effective-status
+inputs from other notes. The cross-references above are plain-text
 reader pointers, not load-bearing deps. The MINIMAL_AXIOMS framework
 baseline memo is named in plain text in the "Cited authorities"
 section above; that connection is informational, not load-bearing for

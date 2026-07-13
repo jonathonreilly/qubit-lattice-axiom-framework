@@ -10,6 +10,7 @@ E2. the exhaustive two-dimensional classification of irreducible modules;
 E3. the one-dimensional no-go and the two-dimensional Pauli control; and
 E4. the faithfulness boundary between the full complexification and the
     original real algebra Cl(3,0).
+EL. the multi-site scalar-character and two-site simple-module extensions.
 
 All algebra is exact SymPy arithmetic.  Every reported check is computed.
 """
@@ -129,8 +130,8 @@ def coordinates_of_matrix(matrix: Matrix) -> Matrix:
 
 def real_coordinates_of_matrix(matrix: Matrix) -> Matrix:
     entries: List[sp.Expr] = []
-    for row in range(2):
-        for col in range(2):
+    for row in range(matrix.rows):
+        for col in range(matrix.cols):
             entries.extend([sp.re(matrix[row, col]), sp.im(matrix[row, col])])
     return Matrix(entries)
 
@@ -762,14 +763,21 @@ def main() -> int:
     )
 
     # ------------------------------------------------------------------ EL
-    section("EL: executed lattice-wide tensor extension of both exclusions")
+    section("EL: executed finite-region lattice-wide tensor extension of both exclusions")
     print(
-        "The one-site exclusions are re-proved on multi-site lattice tensor "
-        "algebras Cl(3,0)^{tensor N}: a one-dimensional representation of the "
-        "lattice algebra restricts to multiplicative scalar characters per "
+        "The one-site exclusions are re-proved on real multi-site lattice tensor "
+        "algebras Cl(3,0)^{tensor_R N}: a one-dimensional complex character of "
+        "the lattice algebra restricts to multiplicative scalar characters per "
         "site factor, and the joint per-site scalar Clifford systems are "
         "solved exhaustively; the N=2 irreducible modules are constructed and "
-        "exhausted by exact dimension count."
+        "exhausted by exact dimension count. Here lattice-wide means every "
+        "nonempty finite site set: restriction to one site makes the scalar "
+        "contradiction N-independent, while, for A_C := Cl(3,0) tensor_R C, "
+        "tensor distributivity gives A_C^{tensor_C N} = "
+        "direct-sum_{s in {+,-}^N} M_{2^N}(C), with 2^N "
+        "simple modules of dimension 2^N and site-restriction multiplicity "
+        "2^(N-1). No infinite quasi-local completion or physical lattice "
+        "Hilbert-space realization is asserted."
     )
     lattice_scalar_ok = True
     for n_sites in (2, 3):
@@ -796,15 +804,23 @@ def main() -> int:
 
     two_site_modules_ok = True
     site_irreps = {1: representation_images(1, pauli), -1: representation_images(-1, pauli)}
+    generator_blade_indices = (1, 2, 4)
+    shuffle = eye(4)[:, [0, 2, 1, 3]]
+    central_character_pairs = set()
     total_square = 0
     for sign_a in (1, -1):
         for sign_b in (1, -1):
             images_a = site_irreps[sign_a]
             images_b = site_irreps[sign_b]
-            joint_generators = (
-                [sp.kronecker_product(g, sp.eye(2)) for g in images_a[:3]]
-                + [sp.kronecker_product(sp.eye(2), g) for g in images_b[:3]]
-            )
+            site_a_generators = [
+                sp.kronecker_product(images_a[index], eye(2))
+                for index in generator_blade_indices
+            ]
+            site_b_generators = [
+                sp.kronecker_product(eye(2), images_b[index])
+                for index in generator_blade_indices
+            ]
+            joint_generators = site_a_generators + site_b_generators
             commutant_entries = [[symbols(f"c{sign_a}{sign_b}_{r}{c}") for c in range(4)] for r in range(4)]
             commutant = Matrix(commutant_entries)
             equations = []
@@ -812,46 +828,158 @@ def main() -> int:
                 difference = sp.expand(commutant * generator - generator * commutant)
                 equations.extend(difference)
             unknowns = [entry for row_entries in commutant_entries for entry in row_entries]
-            solution = sp.solve(equations, unknowns, dict=True)
-            scalar_commutant = False
-            if len(solution) == 1:
-                solved = commutant.subs(solution[0])
-                scalar_value = solved[0, 0]
-                scalar_commutant = bool(
-                    sp.simplify(solved - scalar_value * sp.eye(4)).is_zero_matrix
+            commutant_constraint, commutant_rhs = sp.linear_eq_to_matrix(equations, unknowns)
+            commutant_nullspace = commutant_constraint.nullspace()
+            identity_coordinates = Matrix(
+                [sp.Integer(1) if row == col else sp.Integer(0) for row in range(4) for col in range(4)]
+            )
+            scalar_commutant = (
+                commutant_rhs == zeros(commutant_rhs.rows, 1)
+                and len(commutant_nullspace) == 1
+                and same_subspace(commutant_nullspace, [identity_coordinates])
+            )
+
+            site_a_restriction_ok = all(
+                matrix_equal(
+                    shuffle.T * generator * shuffle,
+                    sp.diag(images_a[index], images_a[index]),
                 )
-            restriction_dims_ok = all(g.shape == (4, 4) for g in joint_generators)
-            two_site_modules_ok = two_site_modules_ok and scalar_commutant and restriction_dims_ok
+                for generator, index in zip(site_a_generators, generator_blade_indices)
+            )
+            site_b_restriction_ok = all(
+                matrix_equal(
+                    generator,
+                    sp.diag(images_b[index], images_b[index]),
+                )
+                for generator, index in zip(site_b_generators, generator_blade_indices)
+            )
+
+            omega_a = sp.kronecker_product(images_a[7], eye(2))
+            omega_b = sp.kronecker_product(eye(2), images_b[7])
+            central_characters_ok = (
+                matrix_equal(omega_a, sign_a * I * eye(4))
+                and matrix_equal(omega_b, sign_b * I * eye(4))
+            )
+            if central_characters_ok:
+                central_character_pairs.add((sign_a, sign_b))
+
+            two_site_real_images = [
+                sp.kronecker_product(images_a[left_mask], images_b[right_mask])
+                for left_mask, right_mask in itertools.product(range(DIM), repeat=2)
+            ]
+            two_site_real_map = Matrix.hstack(
+                *[real_coordinates_of_matrix(image) for image in two_site_real_images]
+            )
+            two_site_real_rank = two_site_real_map.rank()
+            two_site_real_kernel_dim = len(two_site_real_map.nullspace())
+            real_restriction_nonfaithful = (
+                two_site_real_rank == 32 and two_site_real_kernel_dim == 32
+            )
+
+            module_ok = (
+                scalar_commutant
+                and site_a_restriction_ok
+                and site_b_restriction_ok
+                and central_characters_ok
+                and real_restriction_nonfaithful
+            )
+            two_site_modules_ok = two_site_modules_ok and module_ok
             total_square += 16
             check(
                 f"EL.module ({'+' if sign_a == 1 else '-'},{'+' if sign_b == 1 else '-'}): the 4-dim "
-                "two-site module is irreducible (scalar commutant) and restricts "
-                "to the 2-dim site modules",
-                scalar_commutant and restriction_dims_ok,
-                "commutant solved to scalars; per-site restriction dimension 2",
+                "two-site module is irreducible (scalar commutant), has its stated "
+                "central characters, and restricts to two copies of each 2-dim site module",
+                module_ok,
+                f"commutant rank={commutant_constraint.rank()}, nullity={len(commutant_nullspace)}; "
+                "explicit per-site direct-sum intertwiners; real tensor-algebra "
+                f"map rank={two_site_real_rank}, kernel dim={two_site_real_kernel_dim}",
             )
-    dimension_exhausts = total_square == 64
+    expected_character_pairs = {(1, 1), (1, -1), (-1, 1), (-1, -1)}
+    two_site_algebra_dimension = DIM**2
+    finite_n = symbols("finite_N", integer=True, positive=True)
+    finite_region_dimension_identity = (
+        simplify((2**finite_n) * (2**finite_n) ** 2 - DIM**finite_n) == 0
+    )
+    finite_n_ge_two_offset = symbols(
+        "finite_N_minus_one", integer=True, positive=True
+    )
+    finite_region_nonfaithfulness_ratio = simplify(
+        DIM ** (finite_n_ge_two_offset + 1)
+        / (2 * (2 ** (finite_n_ge_two_offset + 1)) ** 2)
+        - 2**finite_n_ge_two_offset
+    ) == 0
+    dimension_exhausts = (
+        two_site_modules_ok
+        and central_character_pairs == expected_character_pairs
+        and total_square == two_site_algebra_dimension
+        and finite_region_dimension_identity
+        and finite_region_nonfaithfulness_ratio
+    )
     check(
-        "EL.exhaustion: the four 4-dim two-site modules exhaust the 64-dim "
-        "two-site algebra by exact dimension count (4 x 16 = 64)",
+        "EL.exhaustion: the four central-character-distinct 4-dim modules exhaust "
+        "the semisimple 64-dim two-site algebra by Artin-Wedderburn dimension count "
+        "(4 x 16 = 64)",
         dimension_exhausts,
-        f"sum of squared dimensions = {total_square}",
+        f"central characters={sorted(central_character_pairs)}; "
+        f"sum of squared dimensions = {total_square}; symbolic finite-N "
+        "dimension identity 2^N(2^N)^2=8^N and N>=2 real-dimension "
+        "nonfaithfulness ratio 2^(N-1)",
     )
     el2_certificate = two_site_modules_ok and dimension_exhausts
     check(
         "EL.TOTAL lattice-wide certificates for both exclusions are executed",
         el1_certificate and el2_certificate,
-        "no lattice-wide one-dim character exists; every two-site irreducible "
-        "module has dimension 4 = 2^2 with 2-dim per-site restrictions",
+        "no finite-region lattice-wide one-dim character exists; the N-site "
+        "simple dimensions are 2^N, and every N>=2 simple is nonfaithful on "
+        "the real tensor algebra, with the N=2 modules and kernels constructed "
+        "explicitly",
     )
 
     print()
     print("N1 MECHANISM CLASSES (distinct attack routes, live evidence above):")
-    print("mechanism_class 1: central_idempotent_split_and_simplicity (E1 checks)")
-    print("mechanism_class 2: exhaustive_module_dimension_classification (E2 checks)")
-    print("mechanism_class 3: scalar_polynomial_system_contradiction (E3 checks)")
-    print("mechanism_class 4: faithfulness_kernel_computation (E4 checks)")
-    print("mechanism_class 5: lattice_tensor_restriction (EL checks)")
+    print(
+        "mechanism_class 1: route_id=central_split "
+        "route_class=algebraic_rearrangement mechanism=solve the complete center "
+        "and central-idempotent algebra, then isolate matrix units in each summand; "
+        "attempt=test whether an omitted central block or proper ideal supports "
+        "another simple-module dimension; outcome=E1 exhausts exactly two simple "
+        "M2(C) summands; honesty_marker=ATTEMPTED disposition=CLOSED"
+    )
+    print(
+        "mechanism_class 2: route_id=module_carriers "
+        "route_class=alternate_carrier_or_sector mechanism=classify every minimal "
+        "left ideal in both central sectors; attempt=test alternate irreducible "
+        "modules or carrier dimensions within either M2(C) block; outcome=E2 finds "
+        "one 2-dimensional simple-module class per sector; "
+        "honesty_marker=ATTEMPTED disposition=CLOSED"
+    )
+    print(
+        "mechanism_class 3: route_id=scalar_finite_scan "
+        "route_class=numerical_or_finite_case mechanism=compute the exact scalar "
+        "polynomial solve, unit-ideal Groebner basis, and finite square-law scan; "
+        "attempt=search every one-dimensional scalar candidate for a Clifford "
+        "character; outcome=E3 finds no solution and exhibits the exact "
+        "contradiction; honesty_marker=ATTEMPTED disposition=CLOSED"
+    )
+    print(
+        "mechanism_class 4: route_id=faithfulness_boundary "
+        "route_class=boundary_or_initial_condition mechanism=compute kernels on "
+        "the full complexification and at the real-algebra restriction boundary; "
+        "attempt=test whether the faithfulness wording hides an alternate "
+        "full-complexification representation; outcome=E4 computes the opposite "
+        "summand kernels and faithful real restrictions; "
+        "honesty_marker=ATTEMPTED disposition=CLOSED"
+    )
+    print(
+        "mechanism_class 5: route_id=finite_lattice_tensor "
+        "route_class=lattice_scale_or_limit mechanism=restrict finite-region "
+        "tensor-algebra characters sitewise and construct the two-site tensor "
+        "modules; attempt=test whether multiple lattice sites evade the one-site "
+        "exclusions or change the tensor-power simple-module dimensions; "
+        "outcome=EL closes the site-character route for every finite N and "
+        "constructs and exhausts all N=2 blocks; "
+        "honesty_marker=ATTEMPTED disposition=CLOSED"
+    )
 
     # ------------------------------------------------------------------ N5
     section("N5 RESOLUTION SWEEP (per authenticated negative statement)")
@@ -887,10 +1015,10 @@ def main() -> int:
                     "faithful action"
                 ), e2_executed),
                 ("lattice_wide", True, (
-                    "executed on the 2-site and 3-site lattice tensor algebras: "
-                    "the joint per-site scalar Clifford systems have no solution, "
-                    "so no lattice-wide one-dimensional character restricts to a "
-                    "faithful one-dimensional site representation"
+                    "for every nonempty finite N-site tensor algebra, a unital "
+                    "one-dimensional representation restricts to a forbidden "
+                    "one-site scalar character; the N=2 and N=3 joint systems "
+                    "were also solved explicitly with no solutions"
                 ), el1_certificate),
             ],
         ),
@@ -916,10 +1044,12 @@ def main() -> int:
                     "occurs"
                 ), e2_executed),
                 ("lattice_wide", True, (
-                    "executed on the 2-site lattice tensor algebra: every "
-                    "irreducible module has dimension 4 = 2^2 by scalar-commutant "
-                    "and exact dimension-count exhaustion, and each per-site "
-                    "restriction has dimension exactly 2"
+                    "at N=1 every faithful irreducible has dimension 2, while for "
+                    "every finite N>=2 the real algebra dimension 8^N exceeds the "
+                    "real endomorphism dimension 2*4^N by ratio 2^(N-1), so no "
+                    "irreducible tensor-power module can be faithful; at N=2 all "
+                    "four real map ranks 32 and kernel dimensions 32 were computed "
+                    "explicitly"
                 ), el2_certificate),
             ],
         ),

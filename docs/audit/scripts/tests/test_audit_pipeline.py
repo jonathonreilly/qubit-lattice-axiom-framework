@@ -13129,38 +13129,80 @@ class BatchOrchestratorSeatBankingTest(unittest.TestCase):
                     else "non_terminal_failed",
                 )
 
-
-if __name__ == "__main__":
-    unittest.main()
-
-
 class N5AdministrativeNegationExclusionTest(unittest.TestCase):
-    """Administrative scope negations are excluded from the authenticated N5
-    universe; substantive negative rhetoric stays (grain wave 5, 2026-07-13:
-    five of seven authenticated groups were boilerplate)."""
+    """N5 administrative calibration fails safe on mixed evidence."""
 
-    def test_administrative_locators_excluded_scientific_kept(self):
+    def test_classifier_requires_the_supplied_phrase_inside_admin_clause(self):
         m = _import("no_go_discipline_gate")
-        cases = {
-            "This source note does not set or predict audit status.": True,
-            "architecture precedent - not a citation-graph dependency.": True,
-            "A registry action is available; this note does not execute or request it.": True,
-            "honest coverage routing is not an assertion and declares nothing.": True,
-            "lattice_wide: checked and not executed for this claim.": True,
-            "No faithful one-dimensional representation exists.": False,
-            "The scalar system cannot be satisfied.": False,
-            "The doublet weights are not equal only when a K-odd seed is admitted.": False,
-        }
-        for locator, excluded in cases.items():
-            with self.subTest(locator=locator[:40]):
+        cases = (
+            (
+                "does not",
+                "This source note does not set or predict audit status.",
+                True,
+            ),
+            (
+                "does not",
+                "This source note does not set, predict, or apply an audit outcome.",
+                True,
+            ),
+            (
+                "is not",
+                "The context handle is not a citation-graph dependency.",
+                True,
+            ),
+            (
+                "does not",
+                "This note does not execute or request the registry action.",
+                True,
+            ),
+            (
+                "is not",
+                "Honest coverage routing is not an assertion and declares nothing.",
+                True,
+            ),
+            (
+                "cannot",
+                "This source note does not set or predict audit status.",
+                False,
+            ),
+            (
+                "is not",
+                "Architecture precedent: not a citation-graph dependency.",
+                False,
+            ),
+            (
+                "is not",
+                "lattice_wide: checked and not executed for this claim.",
+                False,
+            ),
+            ("cannot", "The scalar system cannot be satisfied.", False),
+            (
+                "is not",
+                "The doublet weights are not equal only when a K-odd seed is admitted.",
+                False,
+            ),
+            (
+                "does not",
+                "The transfer operator does not predict the downstream status of the detector record.",
+                False,
+            ),
+            (
+                "does not",
+                "The transition does not predict the parent status.",
+                False,
+            ),
+            (
+                "obstruction",
+                "This obstruction is not an assertion about audit status.",
+                False,
+            ),
+        )
+        for phrase, locator, excluded in cases:
+            with self.subTest(phrase=phrase, locator=locator[:50]):
                 self.assertEqual(
-                    m.n5_administrative_negation("does not", locator)
-                    or m.n5_administrative_negation("cannot", locator)
-                    or m.n5_administrative_negation("is not", locator)
-                    or m.n5_administrative_negation("are not", locator),
+                    m.n5_administrative_negation(phrase, locator),
                     excluded,
                 )
-        # A non-N5 phrase never matches, whatever the locator says.
         self.assertFalse(
             m.n5_administrative_negation(
                 "standard QFT", "does not set or predict audit status"
@@ -13185,3 +13227,202 @@ class N5AdministrativeNegationExclusionTest(unittest.TestCase):
         self.assertTrue(any("cannot close" in loc for loc in locators))
         self.assertFalse(any("predict audit status" in loc for loc in locators))
         self.assertFalse(any("citation-graph" in loc for loc in locators))
+
+    def test_mixed_locators_retain_every_n5_occurrence(self):
+        m = _import("no_go_discipline_gate")
+        cases = (
+            (
+                "The selector cannot exist; this note does not set or predict audit status.",
+                {("cannot", 1), ("does not", 1)},
+            ),
+            (
+                "This note does not set or predict audit status. The selector cannot exist.",
+                {("cannot", 1), ("does not", 1)},
+            ),
+            (
+                "The source does not establish the selector and this note does not set or predict audit status.",
+                {("does not", 1), ("does not", 2)},
+            ),
+            (
+                "The weight does not select the coarse-graining physically | context handle, not a citation-graph dependency.",
+                {("does not", 1)},
+            ),
+        )
+        for text, expected in cases:
+            with self.subTest(text=text[:55]):
+                occurrences = m.required_phrase_occurrences(
+                    {"docs/X.md": {"roles": ["source"], "text": text}},
+                    {"source"},
+                    m.N5_SCAN_PHRASES,
+                )
+                observed = {(phrase, index) for (_path, phrase, index) in occurrences}
+                self.assertTrue(expected.issubset(observed))
+
+    def test_short_line_neighbor_context_fails_safe(self):
+        m = _import("no_go_discipline_gate")
+        manifest = {
+            "docs/X.md": {
+                "roles": ["source"],
+                "text": "Cannot.\nThis note does not set or predict audit status.",
+            }
+        }
+        occurrences = m.required_phrase_occurrences(
+            manifest, {"source"}, m.N5_SCAN_PHRASES
+        )
+        self.assertIn(("docs/X.md", "cannot", 1), occurrences)
+
+    def test_n3_obstruction_is_never_removed_by_n5_calibration(self):
+        m = _import("no_go_discipline_gate")
+        manifest = {
+            "docs/X.md": {
+                "roles": ["source"],
+                "text": (
+                    "This obstruction cannot be removed; this note does not "
+                    "set or predict audit status."
+                ),
+            }
+        }
+        groups = m.required_n3_phrase_groups(manifest)
+        self.assertTrue(
+            any(path == "docs/X.md" and phrase == "obstruction" for path, phrase, _ in groups)
+        )
+
+    def test_stored_occurrences_are_not_reinterpreted(self):
+        m = _import("no_go_discipline_gate")
+        locator = "This source note does not set or predict audit status."
+        manifest = {
+            "docs/X.md": {
+                "roles": ["source"],
+                "text": "",
+                "full_phrase_groups": [],
+                "phrase_occurrences": [
+                    {
+                        "phrase": "does not",
+                        "occurrence_index": 1,
+                        "locator": locator,
+                    }
+                ],
+            }
+        }
+        self.assertEqual(
+            m.required_phrase_occurrences(
+                manifest, {"source"}, m.N5_SCAN_PHRASES
+            ),
+            {("docs/X.md", "does not", 1): locator},
+        )
+
+    def test_policy_only_universe_shrink_targets_reaudit_without_invalidation(self):
+        m = _import("no_go_discipline_gate")
+        path = "docs/X.md"
+        text = "This source note does not set or predict audit status."
+        content_sha = hashlib.sha256(text.encode("utf-8")).hexdigest()
+        old_group = {
+            "phrase": "does not",
+            "occurrence_group_id": "a" * 16,
+            "occurrence_count": 1,
+            "occurrence_locator_sha256": "b" * 64,
+            "evidence_locator": text,
+        }
+        stored_manifest = {
+            path: {
+                "path": path,
+                "roles": ["source"],
+                "text": text,
+                "effective_status": None,
+                "accepted_premise_type": None,
+                "full_content_sha256": content_sha,
+                "full_phrase_groups": [old_group],
+            }
+        }
+        packet = {"evidence_snapshot": m.build_evidence_snapshot({}, stored_manifest)}
+        current_manifest = {
+            path: {
+                **stored_manifest[path],
+                "full_phrase_groups": [],
+            }
+        }
+        self.assertIsNone(
+            m.evidence_snapshot_current_error(packet, current_manifest)
+        )
+        self.assertEqual(
+            m.evidence_snapshot_index_growth(packet, current_manifest),
+            {
+                path: [
+                    "n5_group_removed:does not:aaaaaaaaaaaaaaaa:bbbbbbbbbbbb"
+                ]
+            },
+        )
+        archived_manifest = m.evidence_manifest_from_snapshot(packet)
+        self.assertIsNotNone(archived_manifest)
+        archived_groups = m.required_phrase_groups(
+            archived_manifest, {"source"}, m.N5_SCAN_PHRASES
+        )
+        self.assertIn((path, "does not", "a" * 16), archived_groups)
+
+        legacy_packet = copy.deepcopy(packet)
+        legacy_entry = legacy_packet["evidence_snapshot"]["entries"][path]
+        legacy_entry["full_phrase_groups"] = []
+        legacy_entry["phrase_occurrences"] = [
+            {
+                "phrase": "does not",
+                "occurrence_index": 1,
+                "locator": text,
+            }
+        ]
+        legacy_growth = m.evidence_snapshot_index_growth(
+            legacy_packet, current_manifest
+        )
+        self.assertEqual(set(legacy_growth), {path})
+        self.assertEqual(len(legacy_growth[path]), 1)
+        self.assertTrue(
+            legacy_growth[path][0].startswith("n5_group_removed:does not:")
+        )
+
+    def test_source_drift_archives_packet_and_requeues(self):
+        m = _import("no_go_discipline_gate")
+        invalidator = _import("invalidate_stale_audits")
+        path = "docs/X.md"
+        old_text = "This source note does not set or predict audit status."
+        old_sha = hashlib.sha256(old_text.encode("utf-8")).hexdigest()
+        stored_manifest = {
+            path: {
+                "path": path,
+                "roles": ["source"],
+                "text": old_text,
+                "effective_status": None,
+                "accepted_premise_type": None,
+                "full_content_sha256": old_sha,
+                "full_phrase_groups": [],
+            }
+        }
+        packet = {"evidence_snapshot": m.build_evidence_snapshot({}, stored_manifest)}
+        new_text = "The current source contains no administrative sentence."
+        new_sha = hashlib.sha256(new_text.encode("utf-8")).hexdigest()
+        current_manifest = {
+            path: {
+                **stored_manifest[path],
+                "text": new_text,
+                "full_content_sha256": new_sha,
+            }
+        }
+        error = m.evidence_snapshot_current_error(packet, current_manifest)
+        self.assertIsNotNone(error)
+        reset = invalidator.archive_and_reset(
+            {
+                "audit_status": "audited_clean",
+                "claim_type": "no_go",
+                "no_go_discipline": packet,
+            },
+            str(error),
+        )
+        self.assertEqual(reset["audit_status"], "unaudited")
+        self.assertEqual(
+            reset["previous_audits"][-1]["no_go_discipline"], packet
+        )
+        self.assertEqual(
+            reset["previous_audits"][-1]["invalidation_reason"], error
+        )
+
+
+if __name__ == "__main__":
+    unittest.main()

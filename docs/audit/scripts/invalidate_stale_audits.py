@@ -830,9 +830,10 @@ def main() -> int:
             {
                 "schema": "no_go_index_growth_targets_v1",
                 "description": (
-                    "Rows whose authenticated N6/N8 index universes grew "
-                    "after their packet was authenticated. Re-audit signal "
-                    "for the targeted dispatch stream; verdicts stay valid."
+                    "Rows whose authenticated N6/N8 index universes grew or "
+                    "whose N5 rhetoric-group universe changed after their "
+                    "packet was authenticated. Re-audit signal for the "
+                    "targeted dispatch stream; verdicts stay valid."
                 ),
                 "targets": INDEX_GROWTH_TARGETS,
             },
@@ -843,7 +844,7 @@ def main() -> int:
     )
 
     print(f"invalidate_stale_audits: scanned {len(rows)} rows")
-    print(f"  index-growth re-audit targets: {len(INDEX_GROWTH_TARGETS)}")
+    print(f"  evidence-universe re-audit targets: {len(INDEX_GROWTH_TARGETS)}")
     print(f"  invalidated (hard reset): {len(invalidated)}")
     for cid, reason in invalidated[:10]:
         print(f"    {cid}: {reason}")

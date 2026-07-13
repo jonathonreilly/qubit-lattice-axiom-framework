@@ -34,3 +34,8 @@ this block.
 Review iteration 2 passed code/runner, physics boundary, imports, Nature-bar
 negative scope, labeling, N1-N8, and repo-governance review. This is source
 review only; independent audit remains required.
+
+Disposable-worktree validation passed the full audit pipeline and strict lint.
+It seeded the separate claim as `no_go`, `unaudited`, with `minimal_axioms` as
+its only dependency and the new runner attached. The original claim remained
+`meta` / `unaudited`. Generated audit outputs are not part of this branch.

@@ -3,7 +3,7 @@
 
 For each targeted disagreement row this renders the canonical restricted
 packet, appends both recorded seat positions (tuple summaries plus their
-archived full rationales), and launches five detached GPT-5.6-sol/xhigh
+invocation-bound full rationales), and launches five detached GPT-5.6-sol/xhigh
 judges with distinct identities. Each judge votes on the full tuple
 
     (sided_with, ratified_verdict, ratified_claim_type,
@@ -15,9 +15,9 @@ at least three matching full-tuple votes out of five (whitespace-only scope
 differences and assertion-class ordering are equivalent). On majority, a
 representative judicial JSON is applied through the standard serialized
 gates (apply -> pipeline -> strict lint -> diff/scope check -> commit ->
-push). Without a majority, the panel record is written to the workdir and
-the next invocation may pass it back via --prior-panel for a fresh panel
-with the earlier votes in context, per the audit-loop skill.
+push). Without an applyable majority, the panel record is written to the
+workdir and a fresh five-judge panel is launched in the same loop with every
+earlier vote and rationale in context, per the audit-loop skill.
 
 Run only from a dedicated, clean ``main`` checkout.
 """
@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import argparse
 import copy
+import hashlib
 import json
 import os
 import re
@@ -47,7 +48,7 @@ PANEL_SIZE = 5
 MAJORITY = 3
 MIN_VOTE_BYTES = 120
 
-ALLOWED_SIDES = {"first", "second", "hybrid"}
+ALLOWED_SIDES = {"first", "second", "hybrid", "neither"}
 ALLOWED_VERDICTS = {
     "audited_clean",
     "audited_renaming",
@@ -116,6 +117,29 @@ def vote_tuple(vote: dict) -> tuple:
     )
 
 
+def disagreement_fingerprint(row: dict) -> dict:
+    """Bind panel history to the exact source and two recorded seats."""
+    cross = row.get("cross_confirmation") or {}
+    first = copy.deepcopy(cross.get("first_audit") or {})
+    second = copy.deepcopy(cross.get("second_audit") or {})
+    seat_payload = json.dumps(
+        {"first_audit": first, "second_audit": second},
+        ensure_ascii=False,
+        separators=(",", ":"),
+        sort_keys=True,
+    )
+    return {
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "claim_id": row.get("claim_id"),
+        "note_hash": row.get("note_hash"),
+        "first_audit_invocation_id": first.get("audit_invocation_id"),
+        "second_audit_invocation_id": second.get("audit_invocation_id"),
+        "seat_summaries_sha256": hashlib.sha256(
+            seat_payload.encode("utf-8")
+        ).hexdigest(),
+    }
+
+
 def vote_schema_error(vote: object) -> str | None:
     if not isinstance(vote, dict):
         return "vote must be a JSON object"
@@ -153,6 +177,53 @@ def vote_schema_error(vote: object) -> str | None:
     if "no_go_discipline" in vote and vote["no_go_discipline"] is not None:
         if not isinstance(vote["no_go_discipline"], dict):
             return "no_go_discipline must be an object or null"
+    first_error = str(vote.get("first_auditor_error") or "").strip().lower()
+    second_error = str(vote.get("second_auditor_error") or "").strip().lower()
+    if vote.get("sided_with") == "first" and second_error == "none":
+        return "a first-sided vote must explain the second auditor's error"
+    if vote.get("sided_with") == "second" and first_error == "none":
+        return "a second-sided vote must explain the first auditor's error"
+    if vote.get("sided_with") in {"hybrid", "neither"} and (
+        first_error == "none" or second_error == "none"
+    ):
+        return (
+            f"a {vote.get('sided_with')}-sided vote must explain both "
+            "auditors' errors"
+        )
+    return None
+
+
+def sided_vote_context_error(row: dict, vote: dict) -> str | None:
+    """Reject a sided vote that changes the selected seat's full tuple."""
+    side = vote.get("sided_with")
+    if side not in {"first", "second"}:
+        return None
+    chosen = ((row.get("cross_confirmation") or {}).get(f"{side}_audit") or {})
+    comparisons = (
+        ("verdict", vote.get("ratified_verdict"), chosen.get("verdict")),
+        ("claim_type", vote.get("ratified_claim_type"), chosen.get("claim_type")),
+        (
+            "claim_scope",
+            norm_scope(vote.get("ratified_claim_scope") or ""),
+            norm_scope(chosen.get("claim_scope") or ""),
+        ),
+        (
+            "load_bearing_step_class",
+            vote.get("ratified_load_bearing_step_class"),
+            chosen.get("load_bearing_step_class"),
+        ),
+        (
+            "negative_assertion_classes",
+            tuple(sorted(vote.get("negative_assertion_classes") or [])),
+            tuple(sorted(chosen.get("negative_assertion_classes") or [])),
+        ),
+    )
+    mismatches = [name for name, actual, expected in comparisons if actual != expected]
+    if mismatches:
+        return (
+            f"{side}-sided vote changes selected seat tuple fields: "
+            f"{','.join(mismatches)}; use sided_with='hybrid' for corrections"
+        )
     return None
 
 
@@ -251,7 +322,7 @@ packet plus the two recorded positions. Do not search anything else.
 Return EXACTLY ONE JSON object and nothing else:
 
 {{
-  "sided_with": "<first|second|hybrid>",
+  "sided_with": "<first|second|hybrid|neither>",
   "ratified_verdict": "<audited_clean|audited_renaming|audited_conditional|audited_decoration|audited_failed|audited_numerical_match>",
   "ratified_claim_type": "<positive_theorem|bounded_theorem|no_go|open_gate|decoration|meta>",
   "ratified_claim_scope": "<the exact scope sentence you ratify>",
@@ -274,12 +345,15 @@ that seat's verdict, claim_type, claim_scope (character-for-character),
 load_bearing_step_class, negative_assertion_classes, decoration parent, and
 No-Go Discipline declaration/packet; any substantive correction MUST use
 `hybrid`. A hybrid MUST give a novel explicit scope and a non-empty
-hybrid_resolution_note. Replace the null optional values with the exact sided
-seat values when present. For a hybrid, supply the complete load-bearing step,
-decoration parent, repair note, and N1-N8 object whenever the chosen tuple
-requires them. Declare negative_assertion_classes honestly for the tuple you
-ratify. Never leave first_auditor_error and second_auditor_error both `none`
-unless a hybrid faults neither position.
+hybrid_resolution_note. Use `neither` only when neither original position nor
+an applyable hybrid is sufficient; still vote a complete conservative tuple.
+Replace the null optional values with the exact sided seat values when present.
+For a hybrid or neither vote, supply the complete load-bearing step, decoration
+parent, repair note, and N1-N8 object whenever the chosen tuple requires them.
+Declare negative_assertion_classes honestly for the tuple you ratify. A first-
+sided vote MUST explain the second auditor's error; a second-sided vote MUST
+explain the first auditor's error; a hybrid or neither vote MUST explain errors
+in both original positions.
 """
 
 
@@ -432,6 +506,14 @@ def judicial_blob(
     majority: int,
     invocation_id: str | None = None,
 ) -> dict:
+    context_error = sided_vote_context_error(row, representative)
+    if context_error:
+        raise ValueError(context_error)
+    if representative.get("sided_with") == "neither":
+        raise ValueError(
+            "a neither majority must be recorded and sent to a fresh panel, "
+            "not converted into judicial apply JSON"
+        )
     breakdown = [
         {
             "judge": vote.get("_panel_judge", index + 1),
@@ -449,7 +531,11 @@ def judicial_blob(
     )
     side = representative.get("sided_with")
     cross = row.get("cross_confirmation") or {}
-    chosen = cross.get(f"{side}_audit") or {} if side in {"first", "second"} else {}
+    chosen = (
+        (cross.get(f"{side}_audit") or {})
+        if side in {"first", "second"}
+        else {}
+    )
 
     if chosen:
         ratified_verdict = chosen.get("verdict")
@@ -555,6 +641,31 @@ def judicial_applyability_error(
         else:
             os.environ[env_key] = old_manifest
     return None if ok else detail
+
+
+HARD_APPLY_BLOCKER_PREFIXES = (
+    "missing required judicial fields:",
+    "unknown claim_id:",
+    "audit_invocation_id ",
+    "judicial third-auditor review requires independence=",
+    "auditor_family=",
+    "auditor_model=",
+    "auditor_reasoning_effort=",
+    "sided_with ",
+    "note_hash drift;",
+    "judicial review requires cross_confirmation.status",
+    "judicial review requires first_audit and second_audit summaries",
+    "first_audit cannot be upgraded",
+    "second_audit cannot be upgraded",
+    "judicial third auditor must differ",
+    "trusted evidence manifest",
+    "No-Go Discipline apply requires trusted orchestrator evidence transport",
+)
+
+
+def hard_apply_blocker(detail: str) -> bool:
+    """Separate persistent row/tool/policy failures from tuple rejections."""
+    return str(detail).startswith(HARD_APPLY_BLOCKER_PREFIXES)
 
 
 def restore_preapply_state() -> str | None:
@@ -746,9 +857,13 @@ def run_panel(
             if vote is None:
                 failures.append(f"judge{job['judge']}:{status}")
             else:
-                vote["_panel_judge"] = job["judge"]
-                vote["_panel_auditor"] = job["auditor"]
-                votes.append(vote)
+                context_error = sided_vote_context_error(row, vote)
+                if context_error:
+                    failures.append(f"judge{job['judge']}:{context_error}")
+                else:
+                    vote["_panel_judge"] = job["judge"]
+                    vote["_panel_auditor"] = job["auditor"]
+                    votes.append(vote)
 
         tally = Counter(vote_tuple(vote) for vote in votes)
         record = {
@@ -756,6 +871,7 @@ def run_panel(
             "cid": cid,
             "panel": panel_no,
             "invocation_id": invocation_id,
+            "disagreement_fingerprint": disagreement_fingerprint(row),
             "votes": [public_vote(vote) for vote in votes],
             "failures": failures,
             "tally": [
@@ -785,6 +901,22 @@ def run_panel(
             panel_no += 1
             continue
 
+        if top_tuple[0] == "neither":
+            record["result"] = "majority_neither"
+            record["majority"] = count
+            record["detail"] = (
+                "a neither majority is recorded but never applied; the "
+                "audit-loop skill requires a fresh five-judge panel"
+            )
+            write_panel_record(workdir, cid, panel_no, record)
+            panel_history.append(record)
+            print(
+                f"   {cid}: panel {panel_no} majority sides with neither; "
+                "launching a fresh five-judge panel with all prior votes"
+            )
+            panel_no += 1
+            continue
+
         apply_errors = []
         blob = None
         for representative in (
@@ -799,13 +931,24 @@ def run_panel(
             if error is None:
                 blob = candidate
                 break
-            apply_errors.append(
-                {
-                    "judge": representative.get("_panel_judge"),
-                    "auditor": representative.get("_panel_auditor"),
-                    "error": error,
+            rejection = {
+                "judge": representative.get("_panel_judge"),
+                "auditor": representative.get("_panel_auditor"),
+                "error": error,
+            }
+            apply_errors.append(rejection)
+            if hard_apply_blocker(error):
+                record["result"] = "applyability_blocked"
+                record["apply_errors"] = apply_errors
+                record["rejected_candidate"] = candidate
+                write_panel_record(workdir, cid, panel_no, record)
+                return {
+                    "cid": cid,
+                    "result": "applyability_blocked",
+                    "detail": error,
+                    "judgment": candidate,
+                    "votes": record["votes"],
                 }
-            )
         if blob is None:
             record["result"] = "majority_unapplyable"
             record["apply_errors"] = apply_errors
@@ -840,10 +983,14 @@ def workdir_guard_error(workdir: Path) -> str | None:
     )
 
 
+PRIOR_PANEL_RESULTS = {"no_majority", "majority_neither", "majority_unapplyable"}
+
+
 def load_prior_panels(
-    paths: list[str], target_ids: set[str]
+    paths: list[str], target_rows: dict[str, dict]
 ) -> tuple[dict[str, list[dict]], str | None]:
     grouped: dict[str, list[dict]] = {}
+    seen_rounds: set[tuple[str, int]] = set()
     for path_text in paths:
         path = Path(path_text)
         try:
@@ -853,21 +1000,72 @@ def load_prior_panels(
         if not isinstance(record, dict) or not isinstance(record.get("cid"), str):
             return {}, f"prior panel {path} lacks a string cid"
         cid = record["cid"]
-        if cid not in target_ids:
+        if cid not in target_rows:
             return {}, (
                 f"prior panel {path} is bound to {cid!r}, which is not one of "
                 "this invocation's targets"
             )
+        if record.get("schema") != "judicial_panel_record_v1":
+            return {}, f"prior panel {path} has an invalid schema"
+        panel_no = record.get("panel")
+        if not isinstance(panel_no, int) or isinstance(panel_no, bool) or panel_no < 1:
+            return {}, f"prior panel {path} has an invalid panel number"
+        round_key = (cid, panel_no)
+        if round_key in seen_rounds:
+            return {}, f"prior panel {path} duplicates {cid} panel {panel_no}"
+        seen_rounds.add(round_key)
+        expected_fingerprint = disagreement_fingerprint(target_rows[cid])
+        if record.get("disagreement_fingerprint") != expected_fingerprint:
+            return {}, (
+                f"prior panel {path} does not match the current source and "
+                "first/second audit-seat fingerprint"
+            )
+        if record.get("result") not in PRIOR_PANEL_RESULTS:
+            return {}, f"prior panel {path} has invalid result {record.get('result')!r}"
         votes = record.get("votes")
         if not isinstance(votes, list) or len(votes) != PANEL_SIZE:
             return {}, f"prior panel {path} does not contain five vote records"
         for vote in votes:
-            if not isinstance(vote, dict) or not str(
-                vote.get("judgment_rationale") or ""
-            ).strip():
-                return {}, f"prior panel {path} contains a vote without rationale"
+            schema_error = vote_schema_error(vote)
+            if schema_error:
+                return {}, f"prior panel {path} contains invalid vote: {schema_error}"
+            context_error = sided_vote_context_error(target_rows[cid], vote)
+            if context_error:
+                return {}, f"prior panel {path} contains invalid vote: {context_error}"
+        if len({vote.get("judge") for vote in votes}) != PANEL_SIZE:
+            return {}, f"prior panel {path} does not preserve five distinct judges"
+        if len({vote.get("auditor") for vote in votes}) != PANEL_SIZE:
+            return {}, f"prior panel {path} does not preserve five distinct identities"
+        tally = Counter(vote_tuple(vote) for vote in votes)
+        top_tuple, count = tally.most_common(1)[0]
+        result = record["result"]
+        if result == "no_majority" and count >= MAJORITY:
+            return {}, f"prior panel {path} labels a majority as no_majority"
+        if result == "majority_neither" and not (
+            count >= MAJORITY and top_tuple[0] == "neither"
+        ):
+            return {}, f"prior panel {path} has an inconsistent neither result"
+        if result == "majority_unapplyable" and not (
+            count >= MAJORITY and top_tuple[0] != "neither"
+        ):
+            return {}, f"prior panel {path} has an inconsistent unapplyable result"
         grouped.setdefault(cid, []).append(record)
+    for records in grouped.values():
+        records.sort(key=lambda record: record["panel"])
+        rounds = [record["panel"] for record in records]
+        if rounds != list(range(1, len(records) + 1)):
+            return {}, (
+                "prior panels must be a contiguous sequence beginning at round 1; "
+                f"got {rounds}"
+            )
     return grouped, None
+
+
+def runtime_arg_error(args: argparse.Namespace) -> str | None:
+    for name in ("stall_minutes", "runner_timeout_sec", "push_retries"):
+        if getattr(args, name) <= 0:
+            return f"--{name.replace('_', '-')} must be positive"
+    return None
 
 
 def main() -> int:
@@ -889,6 +1087,11 @@ def main() -> int:
     parser.add_argument("--push-retries", type=int, default=3)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
+
+    arg_error = runtime_arg_error(args)
+    if arg_error:
+        print(f"refusing to run: {arg_error}")
+        return 2
 
     if not args.dry_run:
         error = batch.clean_main_error()
@@ -941,7 +1144,7 @@ def main() -> int:
         return 0
 
     prior_by_claim, prior_error = load_prior_panels(
-        args.prior_panel, {row["claim_id"] for row in targets}
+        args.prior_panel, {row["claim_id"]: row for row in targets}
     )
     if prior_error:
         print(f"refusing to run: {prior_error}")

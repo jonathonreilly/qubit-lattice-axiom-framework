@@ -7860,6 +7860,14 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             template_flat,
         )
         self.assertIn(
+            "belong inside each `statements[]` object",
+            template_flat,
+        )
+        self.assertIn(
+            "include that complete `indexed_basis` text verbatim inside `closure_mechanism`",
+            template_flat,
+        )
+        self.assertIn(
             "Copy the complete authenticated tuple",
             template_flat,
         )
@@ -9747,6 +9755,32 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
                 self.assertNotIn("witness 1", n4_prompt)
                 self.assertNotIn("secret/path", n4_prompt)
                 self.assertNotIn("secret_claim_id", n4_prompt)
+        n5_nesting_error = (
+            "N5 contains unknown fields ['resolution_classes_checked', "
+            "'tested_resolutions', 'secret_field_value']"
+        )
+        n5_nesting_code = m.fresh_schema_retry_code(n5_nesting_error)
+        self.assertEqual(
+            n5_nesting_code, "N5_STATEMENT_FIELD_NESTING_MISMATCH"
+        )
+        n5_nesting_prompt = m.render_fresh_schema_retry_prompt(
+            "ORIGINAL RESTRICTED PACKET", n5_nesting_code, 1,
+        )
+        self.assertIn("belong inside each statements[] object", n5_nesting_prompt)
+        self.assertNotIn("secret_field_value", n5_nesting_prompt)
+        n6_basis_error = (
+            "N6 candidate 1.closure_mechanism must use its indexed_basis"
+        )
+        n6_basis_code = m.fresh_schema_retry_code(n6_basis_error)
+        self.assertEqual(
+            n6_basis_code, "N6_INDEXED_BASIS_VERBATIM_MISMATCH"
+        )
+        n6_basis_prompt = m.render_fresh_schema_retry_prompt(
+            "ORIGINAL RESTRICTED PACKET", n6_basis_code, 1,
+        )
+        self.assertIn("copy indexed_basis exactly", n6_basis_prompt)
+        self.assertIn("complete text verbatim", n6_basis_prompt)
+        self.assertNotIn("candidate 1", n6_basis_prompt)
 
     def test_failed_locator_repair_preserves_fresh_schema_eligibility(self):
         m = _import_codex_audit_runner()

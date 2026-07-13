@@ -8598,7 +8598,7 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
             "claim_id": "spin_row",
             "claim_type": "bounded_theorem",
             "audit_status": "unaudited",
-            "effective_status": "open",
+            "effective_status": "open_gate",
             "criticality": None,
             "deps": [],
         }

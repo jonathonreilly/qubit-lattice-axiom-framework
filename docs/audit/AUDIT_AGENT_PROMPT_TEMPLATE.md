@@ -286,6 +286,9 @@ support `audited_clean`. A gate `PASS` requires at least five genuinely distinct
 N1 mechanism classes, every route closed, complete structured N2-N8 records,
 no unresolved items, a resolved steelman, a complete cross-cycle scan, and no
 failure items. Do not turn five phrasings of one route into five routes. A
+route's `attempt` must name the route-specific calculation or restricted-packet
+test. Normalized `attempt` strings must be pairwise distinct; do not reuse one
+attempt sentence across routes. A
 `RULED OUT BY PRIOR` route must cite either a retained-grade one-hop authority
 or the registered text of an axiom/approved primitive. Conventions, open
 obligations, historical records, and unretained ordinary dependencies cannot
@@ -396,7 +399,7 @@ supply it. Otherwise replace it with:
       "route_id": "<stable short id unique inside this packet>",
       "route_class": "<one of algebraic_rearrangement, symmetry_or_representation, alternate_carrier_or_sector, boundary_or_initial_condition, normalization_or_units, dynamical_or_effective_action, lattice_scale_or_limit, numerical_or_finite_case, convention_or_relabeling, alternate_observable_or_readout, topology_or_global_structure, dependency_or_registry_reclassification>",
       "mechanism": "<physical or mathematical mechanism, distinct from every other route>",
-      "attempt": "<what calculation or restricted-packet test was actually performed>",
+      "attempt": "<route-specific calculation or restricted-packet test actually performed; pairwise distinct from every other attempt>",
       "outcome": "<why the attempt closes the route or why it remains open>",
       "honesty_marker": "<ATTEMPTED | RULED OUT BY PRIOR>",
       "disposition": "<CLOSED | OPEN | UNTESTED>",

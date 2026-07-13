@@ -7834,6 +7834,14 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             template_flat,
         )
         self.assertIn(
+            "Normalized `attempt` strings must be pairwise distinct",
+            template_flat,
+        )
+        self.assertIn(
+            "route-specific calculation or restricted-packet test actually performed",
+            template_flat,
+        )
+        self.assertIn(
             "Copy every `evidence_path` byte-for-byte from this manifest",
             template_flat,
         )
@@ -9867,6 +9875,71 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             m.bind_authenticated_casefold_evidence_paths(blob, unrelated), []
         )
         self.assertEqual(candidate["evidence_path"], "DOCS/SOURCE.MD")
+
+    def test_authenticated_n8_universe_metadata_binds_count_and_digest(self):
+        m = _import_codex_audit_runner()
+        path = "audit-packet://cross-cycle-index/test_no_go"
+        digest = "a" * 64
+        manifest = {
+            path: {
+                "roles": ["cross_cycle_index"],
+                "no_go_row_universe_count": 441,
+                "no_go_row_universe_sha256": digest,
+            }
+        }
+        section = {
+            "evidence_path": path,
+            "no_go_row_universe_count": 440,
+            "no_go_row_universe_sha256": "b" * 64,
+            "packet_complete": True,
+            "echoes": [{"candidate_id": "echo:1"}],
+        }
+        blob = {
+            "verdict": "audited_clean",
+            "no_go_discipline": {"N8_cross_cycle_echo": section},
+        }
+        before_echoes = json.loads(json.dumps(section["echoes"]))
+        changes = m.bind_authenticated_n8_universe_metadata(blob, manifest)
+        self.assertEqual(len(changes), 2)
+        self.assertEqual(section["no_go_row_universe_count"], 441)
+        self.assertEqual(section["no_go_row_universe_sha256"], digest)
+        self.assertEqual(section["echoes"], before_echoes)
+        self.assertTrue(section["packet_complete"])
+        self.assertEqual(blob["verdict"], "audited_clean")
+
+    def test_authenticated_n8_universe_metadata_refuses_wrong_role_or_malformed_data(self):
+        m = _import_codex_audit_runner()
+        path = "audit-packet://cross-cycle-index/test_no_go"
+        section = {
+            "evidence_path": path,
+            "no_go_row_universe_count": 7,
+            "no_go_row_universe_sha256": "c" * 64,
+        }
+        blob = {
+            "no_go_discipline": {"N8_cross_cycle_echo": section},
+        }
+        wrong_role = {
+            path: {
+                "roles": ["source"],
+                "no_go_row_universe_count": 8,
+                "no_go_row_universe_sha256": "d" * 64,
+            }
+        }
+        self.assertEqual(
+            m.bind_authenticated_n8_universe_metadata(blob, wrong_role), []
+        )
+        malformed = {
+            path: {
+                "roles": ["cross_cycle_index"],
+                "no_go_row_universe_count": "8",
+                "no_go_row_universe_sha256": "not-a-digest",
+            }
+        }
+        self.assertEqual(
+            m.bind_authenticated_n8_universe_metadata(blob, malformed), []
+        )
+        self.assertEqual(section["no_go_row_universe_count"], 7)
+        self.assertEqual(section["no_go_row_universe_sha256"], "c" * 64)
 
     def test_authenticated_occurrence_metadata_refuses_cross_label_and_ambiguity(self):
         m = _import_codex_audit_runner()

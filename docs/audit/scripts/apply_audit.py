@@ -20,11 +20,10 @@ rules:
     record a cross-confirmation comparison before any retraction can cascade
   - non-clean re-audits of confirmed legacy clean rows record a real
     disagreement instead of treating migration-only confirmation as authority
-  - third-auditor passes over cross-confirmation disagreements record the
-    tiebreaker and hard-stop on genuine three-way disagreement
-  - judicial third-auditor reviews over disagreements may ratify the first or
-    second prior audit after reading both prior rationales, or mark the
-    disagreement as irresolvable for human review
+  - ordinary single-auditor passes cannot resolve cross-confirmation
+    disagreements; those require the governed five-judge panel path
+  - judicial panel reviews may ratify an applyable first, second, or hybrid
+    tuple; a panel majority siding with neither is never applied
 """
 from __future__ import annotations
 
@@ -606,7 +605,15 @@ def audit_summary_from_row(row: dict) -> dict:
         "audit_date": row.get("audit_date"),
         "claim_type": row.get("claim_type"),
         "claim_scope": row.get("claim_scope"),
+        "load_bearing_step": row.get("load_bearing_step"),
         "load_bearing_step_class": row.get("load_bearing_step_class"),
+        "chain_closes": row.get("chain_closes"),
+        "chain_closure_explanation": row.get("chain_closure_explanation"),
+        "verdict_rationale": row.get("verdict_rationale"),
+        "notes_for_re_audit_if_any": row.get("notes_for_re_audit_if_any"),
+        "runner_check_breakdown": row.get("runner_check_breakdown"),
+        "open_dependency_paths": row.get("open_dependency_paths"),
+        "decoration_parent_claim_id": row.get("decoration_parent_claim_id"),
         "negative_assertion_classes": list(
             normalized_negative_assertion_classes(row)
         ),
@@ -628,7 +635,15 @@ def audit_summary_from_blob(audit: dict) -> dict:
         "audit_date": audit.get("audit_date") or datetime.now(timezone.utc).isoformat(),
         "claim_type": audit.get("claim_type"),
         "claim_scope": audit.get("claim_scope"),
+        "load_bearing_step": audit.get("load_bearing_step"),
         "load_bearing_step_class": audit.get("load_bearing_step_class"),
+        "chain_closes": audit.get("chain_closes"),
+        "chain_closure_explanation": audit.get("chain_closure_explanation"),
+        "verdict_rationale": audit.get("verdict_rationale"),
+        "notes_for_re_audit_if_any": audit.get("notes_for_re_audit_if_any"),
+        "runner_check_breakdown": audit.get("runner_check_breakdown"),
+        "open_dependency_paths": audit.get("open_dependency_paths"),
+        "decoration_parent_claim_id": audit.get("decoration_parent_claim_id"),
         "negative_assertion_classes": list(
             normalized_negative_assertion_classes(audit)
         ),
@@ -977,6 +992,11 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     side = judgment.get("sided_with")
     if side not in ALLOWED_JUDICIAL_SIDES:
         return False, f"sided_with {side!r} not in {sorted(ALLOWED_JUDICIAL_SIDES)}"
+    if side == "neither":
+        return False, (
+            "judicial side='neither' is a panel-escalation outcome and cannot "
+            "be applied; run a fresh five-judge panel with the prior votes"
+        )
     ratified_verdict = judgment.get("ratified_verdict")
     if ratified_verdict not in ALLOWED_VERDICTS:
         return False, f"ratified_verdict {ratified_verdict!r} not in {sorted(ALLOWED_VERDICTS)}"
@@ -1004,11 +1024,10 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     second = cross_confirmation.get("second_audit") or {}
     if not first or not second:
         return False, "judicial review requires first_audit and second_audit summaries"
-    if side != "neither":
-        for label, summary in (("first_audit", first), ("second_audit", second)):
-            tuple_error = legacy_tuple_upgrade_error(label, summary)
-            if tuple_error:
-                return False, tuple_error
+    for label, summary in (("first_audit", first), ("second_audit", second)):
+        tuple_error = legacy_tuple_upgrade_error(label, summary)
+        if tuple_error:
+            return False, tuple_error
 
     prior_auditors = {first.get("auditor"), second.get("auditor")}
     if judgment.get("third_auditor") in prior_auditors:
@@ -1069,8 +1088,6 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
     )
     if ratified_verdict == "audited_decoration" and not ratified_decoration_parent:
         return False, "judicial audited_decoration requires decoration_parent_claim_id"
-    if side == "neither" and ratified_verdict == "audited_clean":
-        return False, "judicial side='neither' requires a conservative non-clean ratified_verdict"
     ratified_class = judgment.get("ratified_load_bearing_step_class")
     final_claim_type = ratified_claim_type or chosen_claim_type or row.get("claim_type")
     note_path = row.get("note_path") or ""
@@ -1088,7 +1105,7 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
             or chosen.get("claim_scope")
             or row.get("claim_scope")
         ),
-        "chain_closes": side != "neither" and ratified_verdict == "audited_clean",
+        "chain_closes": ratified_verdict == "audited_clean",
         "load_bearing_step": judgment.get("ratified_load_bearing_step"),
         "chain_closure_explanation": judgment.get("judgment_rationale"),
         "verdict_rationale": judgment.get("judgment_rationale"),
@@ -1185,23 +1202,13 @@ def apply_judicial_review(ledger: dict, judgment: dict) -> tuple[bool, str]:
         judgment["no_go_discipline"] = packet
 
     # All fallible checks above are transactional: only now may the judicial
-    # record mutate the live row. This also ensures a valid ``neither`` result
-    # runs the same No-Go Discipline gate before recording its blocker.
+    # record mutate the live row.
     third = judicial_summary_from_blob(judgment)
-    if side != "neither":
-        tuple_error = legacy_tuple_upgrade_error("third_audit", third)
-        if tuple_error:
-            return False, tuple_error
+    tuple_error = legacy_tuple_upgrade_error("third_audit", third)
+    if tuple_error:
+        return False, tuple_error
     row["cross_confirmation"]["third_audit"] = third
     row["cross_confirmation"]["mode"] = "judicial_third_pass"
-
-    if side == "neither":
-        row["cross_confirmation"]["status"] = "disagreement_irresolvable"
-        row["blocker"] = "judicial_review_irresolvable"
-        consume_audit_invocation(row, invocation_id)
-        rows[cid] = row
-        ledger["rows"] = rows
-        return True, "judicial review recorded that neither prior reading is sufficient"
 
     row["cross_confirmation"]["status"] = {
         "first": "third_confirmed_first",
@@ -1281,6 +1288,18 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         return False, invocation_error
     if audit_invocation_seen(row, invocation_id):
         return False, "audit_invocation_id has already been consumed for this claim"
+    prior_cross_confirmation = row.get("cross_confirmation")
+    prior_cross_confirmation_status = (
+        prior_cross_confirmation.get("status")
+        if isinstance(prior_cross_confirmation, dict)
+        else prior_cross_confirmation
+    )
+    if prior_cross_confirmation_status == "disagreement":
+        return False, (
+            "cross-confirmation disagreement cannot be resolved by an ordinary "
+            "single-auditor pass; run the governed five-judge judicial panel"
+        )
+
     def accept_row() -> None:
         """Commit the detached row and consume this invocation exactly once."""
         consume_audit_invocation(row, invocation_id)
@@ -1448,15 +1467,6 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
     terminal_second_pass_msg: str | None = None
     terminal_second_pass_error: str | None = None
     terminal_second_pass_blocker: str | None = None
-    third_pass_msg: str | None = None
-    third_pass_error: str | None = None
-    third_pass_blocker: str | None = None
-    prior_cross_confirmation = row.get("cross_confirmation")
-    prior_cross_confirmation_status = (
-        prior_cross_confirmation.get("status")
-        if isinstance(prior_cross_confirmation, dict)
-        else prior_cross_confirmation
-    )
     legacy_claim_type_reaudit = legacy_confirmed_clean_claim_type_reaudit(
         row, verdict, prior_cross_confirmation_status
     )
@@ -1488,7 +1498,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             f"{first.get('load_bearing_step_class')!r} vs "
             f"{second.get('verdict')!r}/{second.get('claim_type')!r}/"
             f"{second.get('load_bearing_step_class')!r}); "
-            "promote to third-auditor review"
+            "promote to the governed five-judge judicial panel"
         )
 
     first_terminal_verdict = row.get("audit_status")
@@ -1545,7 +1555,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
                 f"{first.get('load_bearing_step_class')!r} vs "
                 f"{second.get('verdict')!r}/{second.get('claim_type')!r}/"
                 f"{second.get('load_bearing_step_class')!r}); "
-                "promote to owner review"
+                "promote to the governed five-judge judicial panel"
             )
         accept_row()
         return True, "explicit second-seat cross-confirmation recorded"
@@ -1603,81 +1613,6 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
             accept_row()
             return True, terminal_second_pass_msg
 
-    third_pass = prior_cross_confirmation_status == "disagreement"
-    if third_pass:
-        if independence == "weak":
-            return False, "third-auditor confirmation requires independence != 'weak'"
-        err = third_confirmation_error(prior_cross_confirmation or {}, audit)
-        if err:
-            return False, err
-
-        first = (prior_cross_confirmation or {}).get("first_audit") or {}
-        second = (prior_cross_confirmation or {}).get("second_audit") or {}
-        for label, summary in (("first_audit", first), ("second_audit", second)):
-            tuple_error = legacy_tuple_upgrade_error(label, summary)
-            if tuple_error:
-                return False, tuple_error
-        for seat_name, seat in (("first", first), ("second", second)):
-            seat_gate_error = cross_summary_no_go_error(
-                seat,
-                source_required=source_requires_no_go,
-                current_evidence_manifest=evidence_manifest,
-            )
-            if seat_gate_error:
-                return False, (
-                    f"third-auditor confirmation cannot ratify an invalid {seat_name} "
-                    f"audit: {seat_gate_error}"
-                )
-        third = audit_summary_from_blob(audit)
-        tuple_error = legacy_tuple_upgrade_error("third_audit", third)
-        if tuple_error:
-            return False, tuple_error
-        first_verdict = first.get("verdict")
-        second_verdict = second.get("verdict")
-        third_verdict = third.get("verdict")
-        third_matches_first = audit_tuples_match(third, first)
-        third_matches_second = audit_tuples_match(third, second)
-        if third_matches_first:
-            row["cross_confirmation"]["third_audit"] = third
-            row["cross_confirmation"]["status"] = "third_confirmed_first"
-            row["cross_confirmation"]["mode"] = "terminal_third_pass"
-            row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
-            third_pass_msg = "third auditor confirmed first verdict"
-            audit["verdict"] = first["verdict"]
-            audit["claim_type"] = first["claim_type"]
-            audit["load_bearing_step_class"] = first["load_bearing_step_class"]
-            audit["negative_assertion_classes"] = list(
-                normalized_negative_assertion_classes(first)
-            )
-        elif third_matches_second:
-            row["cross_confirmation"]["third_audit"] = third
-            row["cross_confirmation"]["status"] = "third_confirmed_second"
-            row["cross_confirmation"]["mode"] = "terminal_third_pass"
-            row["cross_confirmation"]["agreement_schema"] = AUDIT_TUPLE_AGREEMENT_SCHEMA
-            third_pass_msg = "third auditor confirmed second verdict"
-            audit["verdict"] = second["verdict"]
-            audit["claim_type"] = second["claim_type"]
-            audit["load_bearing_step_class"] = second["load_bearing_step_class"]
-            audit["negative_assertion_classes"] = list(
-                normalized_negative_assertion_classes(second)
-            )
-        else:
-            row["cross_confirmation"]["third_audit"] = third
-            row["cross_confirmation"]["status"] = "three_way_disagreement"
-            row["cross_confirmation"]["mode"] = "terminal_third_pass"
-            third_pass_msg = (
-                "third auditor introduced a third verdict or claim_type "
-                f"({first_verdict!r}/{first.get('claim_type')!r} vs "
-                f"{second_verdict!r}/{second.get('claim_type')!r} vs "
-                f"{third_verdict!r}/{third.get('claim_type')!r}); "
-                "escalate to human review"
-            )
-            third_pass_blocker = "third_auditor_disagreement"
-            row["audit_status"] = "audit_in_progress"
-            row["blocker"] = third_pass_blocker
-            accept_row()
-            return True, third_pass_msg
-
     critical_second_pass = (
         criticality == "critical"
         and prior_cross_confirmation_status == "awaiting_second"
@@ -1723,7 +1658,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
                 f"{first.get('load_bearing_step_class')!r} vs "
                 f"{second.get('verdict')!r}/{second.get('claim_type')!r}/"
                 f"{second.get('load_bearing_step_class')!r}); "
-                "promote to third-auditor review"
+                "promote to the governed five-judge judicial panel"
             )
 
     # Cross-confirmation flow for critical claims.
@@ -1734,7 +1669,6 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         verdict == "audited_clean"
         and criticality == "critical"
         and not critical_second_pass
-        and not third_pass
         and not legacy_claim_type_reaudit
     ):
         prior = row.get("cross_confirmation") or {}
@@ -1792,7 +1726,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
                 "negative_assertion_classes "
                 f"({first.get('claim_type')!r}/{first.get('load_bearing_step_class')!r} vs "
                 f"{claim_type!r}/{audit.get('load_bearing_step_class')!r}); "
-                "promote to third-auditor review"
+                "promote to the governed five-judge judicial panel"
             )
         # Concordant second audit: promote.
         row["cross_confirmation"]["second_audit"] = audit_summary_from_blob(audit)
@@ -1829,7 +1763,7 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         row["no_go_discipline"] = audit.get("no_go_discipline")
     if "runner_check_breakdown" in audit:
         row["runner_check_breakdown"] = audit["runner_check_breakdown"]
-    row["blocker"] = third_pass_blocker if third_pass else terminal_second_pass_blocker
+    row["blocker"] = terminal_second_pass_blocker
     if legacy_claim_type_reaudit:
         row.setdefault("cross_confirmation", {})["claim_type_reaudit"] = audit_summary_from_blob(audit)
         row["cross_confirmation"]["mode"] = "legacy_confirmed_clean_claim_type_reaudit"
@@ -1853,10 +1787,6 @@ def apply_one(ledger: dict, audit: dict) -> tuple[bool, str]:
         return False, terminal_second_pass_error
     if terminal_second_pass_msg:
         return True, terminal_second_pass_msg
-    if third_pass_error:
-        return False, third_pass_error
-    if third_pass_msg:
-        return True, third_pass_msg
     return True, "applied"
 
 

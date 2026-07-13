@@ -1,5 +1,5 @@
 {
-  "description": "Rows whose authenticated N6/N8 index universes grew after their packet was authenticated. Re-audit signal for the targeted dispatch stream; verdicts stay valid.",
+  "description": "Rows whose authenticated N6/N8 index universes grew or whose N5 rhetoric-group universe changed after their packet was authenticated. Re-audit signal for the targeted dispatch stream; verdicts stay valid.",
   "schema": "no_go_index_growth_targets_v1",
   "targets": []
 }

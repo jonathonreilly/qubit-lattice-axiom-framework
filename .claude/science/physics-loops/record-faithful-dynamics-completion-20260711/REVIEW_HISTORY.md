@@ -1251,3 +1251,34 @@ base-center gap. Generic perturbations, perturbative gap persistence,
 third-horizon atoms, same-domain return, Hessian, invariant ball, taste,
 continuum, time, and probability remain open. No axiom-update stop is
 triggered.
+
+## Enhanced-moment generated-base decorated factor-return review
+
+PASS WITH BOUNDED CLAIMS after seven load-bearing repairs. The decorated atom
+inequality now includes `r_*^|S|`; the runner reconstructs a nonzero empty atom
+and tests the constant-one product algebra. The Block40 and Block41 rows are
+freshly evaluated at the enhanced exponents rather than retagged. The
+Block40-cluster, carried Block40-output/Block41-input, atom-surcharge, and next-
+factor accounts are disjoint.
+
+Code/math review found and repaired silent Block41 determinant underflow, then
+found the first floating log bound was slightly below the exact Block40 term.
+The final runner uses 120-digit Decimal arithmetic and outward float rounding.
+An independent high-precision path gives exact determinant tails below both
+committed bounds. The strict load-bearing check is the factor envelope
+`K_dec^bd=exp(B_(2,split))-1<c_d`, not merely `B_(2,split)<c_d`; the supplied
+`m=6 10^43` separator fails the former while passing the latter.
+
+Physics/import review required actual-dependency link ownership, a fixed
+onsite `G_m` product reference distinct from correlated `S_next`, explicit
+`C_2/D_2/det A_2` ownership, and separation of `P_0` local quadratic
+corrections from the center-only `S_next` output. Governance/no-go review
+passes the authoritative N1--N8 packet and rejects autonomous-RG, generic-
+source, Hessian/ball, taste, or continuum readings.
+
+Runner/cache are `PASS=13 FAIL=0` and byte-exact. Audit validation seeds one
+`bounded_theorem` / `unaudited` row with exactly five dependencies; vocab lint
+and strict audit lint have zero errors, and generated outputs are stripped.
+PR #5360 is open and mergeable. The next target is the all-horizon actual-orbit
+running-center/scale-indexed majorant, not another fixed-horizon copy. No
+axiom-update stop is triggered.

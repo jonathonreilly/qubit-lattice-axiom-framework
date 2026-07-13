@@ -1019,3 +1019,40 @@ https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5358 is
 open on Block40. The next target is enhanced actual-orbit factor decay or a
 scale-indexed norm that can return the weak output to the next strong input.
 No axiom-update stop is triggered.
+
+## Block 42: enhanced generated-base decorated factor return
+
+The old weak completion is not identity-retagged. The original Block40/41
+bare orbit is freshly rerun at the enhanced source exponent
+`theta_40^factor=38.054947480781713` and `Lambda_40=2`. After current-fiber
+evaluation, each residual coefficient is decomposed once in the fixed-`G_m`
+next product reference. Positive-start ownership gives four Haar coordinates
+plus one onsite Gaussian tensor coordinate per carrier site, hence
+`|J_X|<=5|X|` and surcharge `sigma=5log(3+2sqrt(2))`.
+
+At `m=10^44,beta=0`, the ordinary Block41 output has
+`B_(2,split)=.1143355691192827` and `q=.4225217000240134`. Weighted atomization
+then gives the safe residual factor envelope
+`K_dec^bd=.1211282777967557<c_d=.2`. Block40's own cluster reserve, the
+carried Block40-output/Block41-input reserve, the atom surcharge, and the
+unspent next factor allowance are distinct accounts. The determinant tails
+are outward-rounded at high precision, including positive
+`K_D2=4.201887244554118e-312`.
+
+`P_0` may retain residual local quadratic and higher terms. The center-only
+`S_next` output, shortest `S_next^(2)`, and normalization remain separate
+direct-sum data; no correlated-`S_next` atom grammar or interacting-center
+positivity is imported. This is factor membership before next preintegration,
+not another RG contraction.
+
+Independent code/math, physics/import, and governance/no-go reviews pass with
+bounded claims. Runner/cache: `PASS=13 FAIL=0`. Audit validation seeds one
+`bounded_theorem` / `unaudited` row with exactly five dependencies; strict
+lint has zero errors and generated outputs are stripped.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5360 is
+open and mergeable on Block41. The next exact target is an all-horizon actual-
+orbit induction coupling the shortest-center squaring recursion to a scale-
+indexed enhanced-moment majorant. Generic perturbation/Hessian/ball closure
+follows only after that induction. No axiom-update stop is triggered.

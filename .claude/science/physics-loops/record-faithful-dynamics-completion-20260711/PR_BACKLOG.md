@@ -663,3 +663,25 @@ the next stacked review PR:
   campaign-state commit is pushed
 
 No merge is authorized. Independent audit remains authoritative.
+
+The enhanced-moment generated-base decorated factor return is prepared as the
+next stacked review PR:
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5360
+- base: `physics-loop/record-faithful-dynamics-block41-future-s2-reference-ledger-20260712`
+- head: `physics-loop/record-faithful-dynamics-block42-enhanced-moment-third-horizon-factor-return-20260712`
+- source runner: `PASS=13 FAIL=0`
+- scope: one fresh enhanced Block40/41 actual-bare-orbit evaluation, weighted
+  next-product-reference atomization with `|J_X|<=5|X|`, and safe decorated
+  residual factor envelope `K_dec^bd=.1211282777967557<c_d`; `P_0`, local
+  quadratic corrections, center-only `S_next`, shortest `S_next^(2)`, and
+  normalization remain separate direct-sum data
+- disposition: independent code/math, physics/import, and governance/no-go
+  review passed with bounded claims after weighted-atom, determinant-
+  underflow, reserve-ownership, product-reference, center-scope, factor-
+  envelope, and full N1--N8 repairs; the full pipeline seeds one
+  `bounded_theorem` / `unaudited` row with exactly five dependencies and strict
+  lint has zero errors
+- delivery check: open, mergeable, independent audit workflow running
+
+No merge is authorized. Independent audit remains authoritative.

@@ -9,6 +9,10 @@ set or predict an audit verdict.
 [`scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py`](../scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py)
 **Runner cache:**
 [`logs/runner-cache/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.txt`](../logs/runner-cache/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.txt)
+**Helper runner:**
+[`scripts/acphilambda_occupancy_wpower_n7_independent_certificate_2026_07_13.py`](../scripts/acphilambda_occupancy_wpower_n7_independent_certificate_2026_07_13.py)
+**Helper cache:**
+[`logs/runner-cache/acphilambda_occupancy_wpower_n7_independent_certificate_2026_07_13.txt`](../logs/runner-cache/acphilambda_occupancy_wpower_n7_independent_certificate_2026_07_13.txt)
 
 ## Narrow no-go claim
 
@@ -212,6 +216,12 @@ accepted axiom memo withholds the physical CAR/action and readout selector.
 These computations preserve the normalization and future-action paths while
 leaving the scoped current-surface non-entailment intact.
 
+The independent helper certificate recomputes the normalization identity on a
+separate finite carrier, authenticates the accepted axiom memo's explicit
+source/action boundary, and emits one contiguous N7 resolution line naming
+`W_power`. It supplies no physical determinant-power selector and changes no
+wall or claim scope.
+
 ### N8 — cross-cycle echo
 
 | Similar mechanism | Was its wall retired? | Applicability here |
@@ -234,4 +244,4 @@ Run:
 python3 scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py
 ```
 
-Expected result: `PASS=75`, `FAIL=0`.
+Expected result: `PASS=76`, `FAIL=0`.

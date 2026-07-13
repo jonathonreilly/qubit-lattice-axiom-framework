@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/acphilambda_occupancy_wpower_n7_independent_certificate_2026_07_13.py
+runner_sha256: 3679300f6e57bfe512ee8326bcd432b7da98fe41b7ed2d3ec17fea8df955c069
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+Independent W_power normalization-steelman certificate
+============================================================
+[PASS] finite carrier is invertible
+[PASS] realification determinant equals squared complex modulus
+[PASS] normalization identity F_R/2=F_C holds exactly
+[PASS] raw determinant powers remain distinct before normalization
+[PASS] source declares W_power as the raw determinant-power wall
+[PASS] accepted axioms withhold source/action identification
+[PASS] accepted axioms require a separate log-det or action bridge
+N7_STEELMAN_RESOLUTION W_power remains underdetermined on the current axiom surface: F_R/2=F_C removes the coordinate factor two, but the accepted axioms explicitly withhold source/action and physical-observable identification, so the normalization convention does not select the physical determinant power.
+============================================================
+TOTAL: PASS=7, FAIL=0
+
+----- stderr -----
+

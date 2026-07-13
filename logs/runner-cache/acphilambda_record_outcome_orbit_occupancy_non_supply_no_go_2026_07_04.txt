@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_record_outcome_orbit_occupancy_non_supply_no_go_2026_07_04.py
-runner_sha256: 5bc092ae14b8576b5f9232c84efa7d7cb82e7b89a43cba465cb38214ad543975
+runner_sha256: 76f57a4f73fd6e3dd292b62d29846c947abce8f36e09ff7652f13643a8f2cf77
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.62
 status: ok
 ----- stdout -----
 Complex-vs-realified determinant-power countermodels
@@ -92,6 +92,7 @@ Part H: source and axiom guards
   [PASS] axioms withhold source/action identification
   [PASS] axioms withhold physical observable bridge
   [PASS] N7 accepted axiom surface withholds log-det and action/readout selection
+  [PASS] N7 independent normalization certificate is executable
   [PASS] note grants the auxiliary complex carrier
   [PASS] note contains both countermodel functionals
   [PASS] note constructs two readouts on one record model
@@ -110,6 +111,7 @@ Part H: source and axiom guards
 N7_STEELMAN_ARGUMENT route=normalization_or_units; mechanism=the exact normalization F_R/2=F_C and the supplied single-complex-sector Pfaffian determinant power are executed above; attempt=normalize every finite witness and compare a single Grassmann sector with an independently adjoined conjugate sector; outcome=normalization removes the coordinate factor two, while the four axioms still withhold the physical CAR/action and readout selector, so future action derivations remain open.
 
 ====================================================================
-TOTAL: PASS=75, FAIL=0
+TOTAL: PASS=76, FAIL=0
 
 ----- stderr -----
+

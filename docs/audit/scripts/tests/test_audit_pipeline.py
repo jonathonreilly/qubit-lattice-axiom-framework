@@ -8655,9 +8655,11 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
             first = m.launch_worker(
                 rows["spin_row"], rows, 1, workdir, 120, 1
             )
+            self.addCleanup(first["log_handle"].close)
             second = m.launch_worker(
                 rows["spin_row"], rows, 1, workdir, 120, 2
             )
+            self.addCleanup(second["log_handle"].close)
         self.assertNotEqual(first["isolated"], second["isolated"])
         self.assertIn("-r1-p1", str(first["isolated"]))
         self.assertIn("-r2-p1", str(second["isolated"]))

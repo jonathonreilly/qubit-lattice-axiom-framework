@@ -1601,6 +1601,12 @@ def fresh_schema_retry_code(validation_error: str) -> str:
     if validation_error.startswith("transport-bounded N8"):
         return "N8_TRANSPORT_BOUND_DISPOSITION_MISMATCH"
     if (
+        validation_error.startswith("N5 statement ")
+        and "tested resolution is not evidenced at resolution_evidence_path"
+        in validation_error
+    ):
+        return "N5_TESTED_RESOLUTION_VERBATIM_MISMATCH"
+    if (
         validation_error.startswith("N1 route ")
         and ".route_class=" in validation_error
         and "is not supported by its evidenced" in validation_error
@@ -1651,6 +1657,12 @@ def render_fresh_schema_retry_prompt(
         "N1_ROUTE_CLASS_MARKER_MISMATCH": (
             "Static N1 invariant: the joined mechanism, attempt, and outcome must "
             "contain a documented literal marker for the selected route_class.\n"
+        ),
+        "N5_TESTED_RESOLUTION_VERBATIM_MISMATCH": (
+            "Static N5 invariant: copy every complete tested_resolutions entry, "
+            "including its canonical class prefix and body, byte-for-byte as a "
+            "contiguous line from the cited live current-cycle runner_stdout. "
+            "Do not summarize, shorten, or paraphrase those five lines.\n"
         ),
     }.get(validation_code, "")
     return (

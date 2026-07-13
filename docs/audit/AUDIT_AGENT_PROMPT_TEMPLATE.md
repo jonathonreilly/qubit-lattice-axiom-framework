@@ -560,7 +560,7 @@ literal marker accepted for its `route_class`:
 - `symmetry_or_representation`: symmetry, invariant, representation, commutator, character, irrep, group;
 - `alternate_carrier_or_sector`: carrier, sector, module, space, irrep;
 - `boundary_or_initial_condition`: boundary, initial, background, state, pointwise;
-- `normalization_or_units`: normalization, unit, scale, dimensionful;
+- `normalization_or_units`: normalization, unit, `W_unit`, scale, dimensionful;
 - `dynamical_or_effective_action`: dynamic, effective, action, evolution, equivariant family;
 - `lattice_scale_or_limit`: lattice, continuum, limit, finite-size, asymptotic, approximate;
 - `numerical_or_finite_case`: numeric, finite, sample, scan, compute;
@@ -627,6 +627,10 @@ entry prefixed `per_element:`, `per_site:`, `per_mode:`, `per_block:`, and
 `lattice_wide:`. Put unexecuted classes in `untested_resolutions` as well; do
 not omit their prefixed `tested_resolutions` entry, which must state that the
 class was checked and not executed.
+Every complete `tested_resolutions[]` string—its class prefix and body—must be
+copied byte-for-byte as one contiguous substring from the cited live
+current-cycle `runner_stdout` at `resolution_evidence_path`. Do not summarize,
+shorten, or paraphrase a runner line.
 
 N6 must bind every indexed candidate to an exact quoted indexed basis, an N2
 wall, and a substantive closure mechanism. N7 must cite the N1 route surface

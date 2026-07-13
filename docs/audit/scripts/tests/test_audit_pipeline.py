@@ -12023,12 +12023,8 @@ class SanitizeLegacyAuditArtifactsTest(unittest.TestCase):
         self.assertEqual(out["audit_status"], "unaudited")
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class JudicialPanelOrchestratorTest(unittest.TestCase):
-    """Pure-logic pins for the five-judge panel drainer."""
+    """Contract pins for the five-judge panel drainer."""
 
     def _vote(self, **overrides):
         vote = {
@@ -12036,14 +12032,74 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
             "ratified_verdict": "audited_clean",
             "ratified_claim_type": "bounded_theorem",
             "ratified_claim_scope": "an exact identity",
-            "ratified_load_bearing_step_class": "(C)",
+            "ratified_load_bearing_step": "check the exact identity",
+            "ratified_load_bearing_step_class": "C",
             "negative_assertion_classes": [],
             "judgment_rationale": "packet-grounded",
             "first_auditor_error": "none",
             "second_auditor_error": "missed the computed check",
+            "hybrid_resolution_note": None,
+            "ratified_decoration_parent_claim_id": None,
+            "notes_for_re_audit_if_any": None,
+            "no_go_discipline": None,
         }
         vote.update(overrides)
         return vote
+
+    def _row(self, claim_id="row"):
+        common = {
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "claim_type": "bounded_theorem",
+            "load_bearing_step": "check the exact identity",
+            "load_bearing_step_class": "C",
+            "negative_assertion_classes": [],
+            "chain_closes": True,
+            "chain_closure_explanation": "the exact algebra closes",
+            "notes_for_re_audit_if_any": None,
+            "runner_check_breakdown": {},
+            "open_dependency_paths": [],
+            "decoration_parent_claim_id": None,
+        }
+        first = {
+            **common,
+            "auditor": "first-auditor",
+            "audit_invocation_id": "a" * 32,
+            "verdict": "audited_clean",
+            "claim_scope": "an exact identity",
+            "verdict_rationale": "first full rationale",
+        }
+        second = {
+            **common,
+            "auditor": "second-auditor",
+            "audit_invocation_id": "b" * 32,
+            "verdict": "audited_conditional",
+            "claim_scope": "a conditional identity",
+            "chain_closes": False,
+            "verdict_rationale": "second full rationale",
+            "notes_for_re_audit_if_any": "other: check the stated condition",
+        }
+        return {
+            "claim_id": claim_id,
+            "note_path": "docs/audit/README.md",
+            "note_hash": hashlib.sha256(
+                (PROJECT_ROOT / "docs" / "audit" / "README.md")
+                .read_text(encoding="utf-8", errors="replace")
+                .encode("utf-8")
+            ).hexdigest(),
+            "audit_status": "audit_in_progress",
+            "claim_type": "bounded_theorem",
+            "criticality": "critical",
+            "blocker": "cross_confirmation_disagreement",
+            "cross_confirmation": {
+                "status": "disagreement",
+                "first_audit": first,
+                "second_audit": second,
+            },
+            "previous_audits": [],
+        }
 
     def test_vote_tuple_equivalence_rules(self):
         m = _import("orchestrate_judicial_panel")
@@ -12064,19 +12120,61 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
             m.vote_tuple(self._vote(ratified_verdict="audited_conditional")),
         )
 
-    def test_judicial_blob_satisfies_apply_contract(self):
+    def test_sided_blob_reuses_seat_scope_and_applies(self):
         m = _import("orchestrate_judicial_panel")
         apply_mod = _import("apply_audit")
-        votes = [self._vote(), self._vote(), self._vote()]
-        blob = m.judicial_blob({"claim_id": "row"}, votes[0], votes, 3)
+        row = self._row()
+        votes = [
+            self._vote(
+                ratified_claim_scope="an   exact identity",
+                _panel_judge=index,
+                _panel_auditor=f"judge-{index}",
+            )
+            for index in range(1, 6)
+        ]
+        blob = m.judicial_blob(
+            row, votes[0], votes, 5, invocation_id="c" * 32
+        )
         self.assertEqual(
             apply_mod.JUDICIAL_REQUIRED_FIELDS - set(blob), set()
         )
+        self.assertEqual(blob["ratified_claim_scope"], "an exact identity")
         self.assertEqual(blob["independence"], "judicial_review")
         self.assertEqual(blob["auditor_reasoning_effort"], "xhigh")
         self.assertEqual(len(blob["audit_invocation_id"]), 32)
-        self.assertIn("3/5 matching", blob["judgment_rationale"])
+        self.assertIn("5/5 matching", blob["judgment_rationale"])
         self.assertIn("panel breakdown", blob["judgment_rationale"])
+        ok, detail = apply_mod.apply_judicial_review(
+            {"schema_version": 1, "rows": {"row": row}}, blob
+        )
+        self.assertTrue(ok, detail)
+
+    def test_hybrid_blob_with_novel_scope_applies(self):
+        m = _import("orchestrate_judicial_panel")
+        apply_mod = _import("apply_audit")
+        row = self._row("hybrid-row")
+        votes = [
+            self._vote(
+                sided_with="hybrid",
+                ratified_claim_scope="a novel corrected identity",
+                hybrid_resolution_note="combine the correct bounded pieces",
+                first_auditor_error="scope was incomplete",
+                second_auditor_error="verdict was too conservative",
+                _panel_judge=index,
+                _panel_auditor=f"hybrid-judge-{index}",
+            )
+            for index in range(1, 6)
+        ]
+        blob = m.judicial_blob(
+            row, votes[0], votes, 5, invocation_id="d" * 32
+        )
+        self.assertEqual(blob["sided_with"], "hybrid")
+        self.assertEqual(blob["ratified_claim_scope"], "a novel corrected identity")
+        self.assertTrue(blob["hybrid_resolution_note"])
+        ok, detail = apply_mod.apply_judicial_review(
+            {"schema_version": 1, "rows": {"hybrid-row": row}}, blob
+        )
+        self.assertTrue(ok, detail)
 
     def test_collect_vote_rejects_incomplete_votes(self):
         m = _import("orchestrate_judicial_panel")
@@ -12093,7 +12191,205 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
         self.assertEqual(status, "ok")
         self.assertEqual(vote["sided_with"], "first")
 
+        invalid = self._vote(sided_with="neither")
+        raw.write_text(json.dumps(invalid) + " " * 200, encoding="utf-8")
+        vote, status = m.collect_vote(job)
+        self.assertIsNone(vote)
+        self.assertIn("invalid sided_with", status)
+
+    def test_rationale_is_invocation_bound_and_preserved_in_new_summaries(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+        summary = dict(row["cross_confirmation"]["first_audit"])
+        summary.pop("verdict_rationale")
+        row["previous_audits"] = [
+            {
+                "audit_invocation_id": summary["audit_invocation_id"],
+                "verdict_rationale": "archived exact rationale",
+                "notes_for_re_audit_if_any": "archived note",
+            }
+        ]
+        self.assertIn("archived exact rationale", m.seat_rationale(summary, row))
+        self.assertIn("archived note", m.seat_rationale(summary, row))
+        self.assertIn(
+            "no archived rationale",
+            m.archived_rationale(row, "f" * 32),
+        )
+
+        apply_mod = _import("apply_audit")
+        audit = {
+            "auditor": "seat",
+            "auditor_family": "codex-gpt-5.6",
+            "auditor_model": "gpt-5.6-sol",
+            "auditor_reasoning_effort": "xhigh",
+            "independence": "fresh_context",
+            "audit_invocation_id": "e" * 32,
+            "verdict": "audited_clean",
+            "claim_type": "positive_theorem",
+            "claim_scope": "scope",
+            "load_bearing_step": "step",
+            "load_bearing_step_class": "A",
+            "chain_closes": True,
+            "chain_closure_explanation": "closure",
+            "verdict_rationale": "full current argument",
+            "notes_for_re_audit_if_any": "note",
+            "negative_assertion_classes": [],
+        }
+        stored = apply_mod.audit_summary_from_blob(audit)
+        self.assertEqual(stored["verdict_rationale"], "full current argument")
+        self.assertEqual(stored["load_bearing_step"], "step")
+        self.assertEqual(stored["notes_for_re_audit_if_any"], "note")
+
+    def test_no_majority_runs_fresh_full_panel_with_prior_votes(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+        launches = []
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, prior,
+            _invocation_id, _manifest,
+        ):
+            launches.append((panel_no, judge_no, len(prior)))
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"round-{panel_no}-judge-{judge_no}",
+            }
+
+        def fake_collect(job):
+            if job["panel"] == 1:
+                side = {1: "first", 2: "first", 3: "second", 4: "second", 5: "hybrid"}[
+                    job["judge"]
+                ]
+                if side == "second":
+                    return self._vote(
+                        sided_with="second",
+                        ratified_verdict="audited_conditional",
+                        ratified_claim_scope="a conditional identity",
+                        notes_for_re_audit_if_any="other: check the condition",
+                        first_auditor_error="missed the condition",
+                        second_auditor_error="none",
+                    ), "ok"
+                if side == "hybrid":
+                    return self._vote(
+                        sided_with="hybrid",
+                        ratified_claim_scope="a third scope",
+                        hybrid_resolution_note="third tuple",
+                    ), "ok"
+            return self._vote(), "ok"
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "f" * 32)
+        ) as render, mock.patch.object(
+            m, "launch_judge", side_effect=fake_launch
+        ), mock.patch.object(
+            m.batch, "wait_workers", return_value=None
+        ), mock.patch.object(
+            m, "collect_vote", side_effect=fake_collect
+        ), mock.patch.object(
+            m, "judicial_applyability_error", return_value=None
+        ), mock.patch.object(
+            m,
+            "apply_judgment",
+            return_value=(
+                True,
+                {"cid": "row", "result": "audited_clean", "commit": "abc"},
+            ),
+        ):
+            result = m.run_panel(row, {"row": row}, self.tmp, 1, 1, 1, [])
+        self.assertEqual(result["result"], "audited_clean")
+        self.assertEqual(len(launches), 10)
+        self.assertTrue(all(prior == 0 for panel, _judge, prior in launches if panel == 1))
+        self.assertTrue(all(prior == 1 for panel, _judge, prior in launches if panel == 2))
+        render.assert_called_once()
+        first_record = json.loads(
+            next(self.tmp.glob("panel-*-round1.json")).read_text(encoding="utf-8")
+        )
+        self.assertEqual(len(first_record["votes"]), 5)
+        self.assertEqual(first_record["result"], "no_majority")
+
+    def test_panel_requires_all_five_deliveries(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, _prior,
+            _invocation_id, _manifest,
+        ):
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"judge-{judge_no}",
+            }
+
+        def fake_collect(job):
+            if job["judge"] == 5:
+                return None, "capacity_error"
+            return self._vote(), "ok"
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "1" * 32)
+        ), mock.patch.object(
+            m, "launch_judge", side_effect=fake_launch
+        ), mock.patch.object(
+            m.batch, "wait_workers", return_value=None
+        ), mock.patch.object(
+            m, "collect_vote", side_effect=fake_collect
+        ), mock.patch.object(m, "apply_judgment") as apply_mock:
+            result = m.run_panel(row, {"row": row}, self.tmp, 1, 1, 1, [])
+        self.assertEqual(result["result"], "panel_delivery_short")
+        apply_mock.assert_not_called()
+        record = json.loads(
+            next(self.tmp.glob("panel-*-round1.json")).read_text(encoding="utf-8")
+        )
+        self.assertEqual(len(record["votes"]), 4)
+
+    def test_prior_panels_are_claim_bound_and_workdir_is_external(self):
+        m = _import("orchestrate_judicial_panel")
+        record = {
+            "cid": "claim-a",
+            "votes": [
+                {"judgment_rationale": f"reason {index}"}
+                for index in range(5)
+            ],
+        }
+        path = self.tmp / "prior.json"
+        path.write_text(json.dumps(record), encoding="utf-8")
+        grouped, error = m.load_prior_panels([str(path)], {"claim-a"})
+        self.assertIsNone(error)
+        self.assertEqual(grouped["claim-a"][0]["cid"], "claim-a")
+        _grouped, error = m.load_prior_panels([str(path)], {"claim-b"})
+        self.assertIn("not one of this invocation's targets", error)
+        self.assertIsNotNone(m.workdir_guard_error(m.REPO_ROOT / ".git" / "panel"))
+        self.assertIsNone(m.workdir_guard_error(self.tmp / "panel"))
+
+    def test_launch_failure_closes_new_log_handle(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+        handles = []
+        original_open = Path.open
+
+        def tracked_open(path, *args, **kwargs):
+            handle = original_open(path, *args, **kwargs)
+            if path.name.startswith("log-"):
+                handles.append(handle)
+            return handle
+
+        with mock.patch.object(Path, "open", new=tracked_open), mock.patch.object(
+            m.subprocess, "Popen", side_effect=OSError("spawn failed")
+        ):
+            with self.assertRaises(OSError):
+                m.launch_judge(
+                    "packet", row, 1, 1, self.tmp, [], "2" * 32, {}
+                )
+        self.assertEqual(len(handles), 1)
+        self.assertTrue(handles[0].closed)
+
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self._tmp.cleanup)
         self.tmp = Path(self._tmp.name)
+
+
+if __name__ == "__main__":
+    unittest.main()

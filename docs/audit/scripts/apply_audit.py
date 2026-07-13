@@ -606,7 +606,15 @@ def audit_summary_from_row(row: dict) -> dict:
         "audit_date": row.get("audit_date"),
         "claim_type": row.get("claim_type"),
         "claim_scope": row.get("claim_scope"),
+        "load_bearing_step": row.get("load_bearing_step"),
         "load_bearing_step_class": row.get("load_bearing_step_class"),
+        "chain_closes": row.get("chain_closes"),
+        "chain_closure_explanation": row.get("chain_closure_explanation"),
+        "verdict_rationale": row.get("verdict_rationale"),
+        "notes_for_re_audit_if_any": row.get("notes_for_re_audit_if_any"),
+        "runner_check_breakdown": row.get("runner_check_breakdown"),
+        "open_dependency_paths": row.get("open_dependency_paths"),
+        "decoration_parent_claim_id": row.get("decoration_parent_claim_id"),
         "negative_assertion_classes": list(
             normalized_negative_assertion_classes(row)
         ),
@@ -628,7 +636,15 @@ def audit_summary_from_blob(audit: dict) -> dict:
         "audit_date": audit.get("audit_date") or datetime.now(timezone.utc).isoformat(),
         "claim_type": audit.get("claim_type"),
         "claim_scope": audit.get("claim_scope"),
+        "load_bearing_step": audit.get("load_bearing_step"),
         "load_bearing_step_class": audit.get("load_bearing_step_class"),
+        "chain_closes": audit.get("chain_closes"),
+        "chain_closure_explanation": audit.get("chain_closure_explanation"),
+        "verdict_rationale": audit.get("verdict_rationale"),
+        "notes_for_re_audit_if_any": audit.get("notes_for_re_audit_if_any"),
+        "runner_check_breakdown": audit.get("runner_check_breakdown"),
+        "open_dependency_paths": audit.get("open_dependency_paths"),
+        "decoration_parent_claim_id": audit.get("decoration_parent_claim_id"),
         "negative_assertion_classes": list(
             normalized_negative_assertion_classes(audit)
         ),

@@ -120,17 +120,25 @@ def lane_closure(root: str, rows: dict[str, dict]) -> set[str]:
     return seen
 
 
-def last_source_change(row: dict) -> str:
-    """ISO commit time of the newest change to the row's note/runner sources."""
-    paths = [
+def last_source_change(row: dict, rows: dict[str, dict] | None = None) -> str:
+    """ISO commit time of the newest change to row or dependency sources."""
+    source_rows = [row]
+    if rows is not None:
+        source_rows.extend(
+            rows[dep]
+            for dep in row.get("deps") or []
+            if dep in rows
+        )
+    paths = sorted({
         path
+        for source_row in source_rows
         for path in (
-            row.get("note_path"),
-            row.get("runner_path"),
-            *(row.get("helper_runner_paths") or []),
+            source_row.get("note_path"),
+            source_row.get("runner_path"),
+            *(source_row.get("helper_runner_paths") or []),
         )
         if path
-    ]
+    })
     if not paths:
         return ""
     result = sh(["git", "log", "-1", "--format=%cI", "--", *paths])
@@ -138,7 +146,9 @@ def last_source_change(row: dict) -> str:
 
 
 def awaiting_repair_since_conditional(
-    row: dict, effective: dict[str, str]
+    row: dict,
+    effective: dict[str, str],
+    rows: dict[str, dict] | None = None,
 ) -> bool:
     """A re-queued conditional row is re-audited only after something moved.
 
@@ -157,24 +167,62 @@ def awaiting_repair_since_conditional(
     last = archives[-1]
     if last.get("audit_status") != "audited_conditional":
         return False
-    audited_at = str(last.get("archived_at") or last.get("audit_date") or "")
-    if audited_at:
-        changed_at = last_source_change(row)
-        if changed_at and _iso(changed_at) > _iso(audited_at):
-            return False
     snapshot = last.get("audit_state_snapshot") or {}
     snapshot_deps = snapshot.get("dep_effective_status") or {}
     for dep, then_status in snapshot_deps.items():
         if effective.get(dep, "MISSING") != then_status:
             return False
-    return True
+
+    repair_reason = str(last.get("invalidation_reason") or "")
+    if repair_reason.startswith(
+        ("runner_artifact_issue_resolved:", "classifier_promoted_to_class_A:")
+    ):
+        return False
+
+    # Audit-side dependency repairs can change scope/type without changing the
+    # final effective-status string.  Those are movement too.
+    if rows is not None:
+        for field, snapshot_field in (
+            ("claim_type", "dep_claim_type"),
+            ("claim_scope", "dep_claim_scope"),
+            ("note_hash", "dep_axiom_premise_note_hash"),
+        ):
+            then_values = snapshot.get(snapshot_field) or {}
+            for dep, then_value in then_values.items():
+                if dep in rows and rows[dep].get(field) != then_value:
+                    return False
+
+    # archived_at distinguishes modern archives, while audit_date is the
+    # verdict-time baseline.  A repair can be committed before the pipeline
+    # notices it and writes archived_at, so comparing source time to
+    # archived_at would hide exactly the repair that caused archival.  Legacy
+    # archives without archived_at still use their dependency snapshot, but
+    # an empty legacy snapshot must remain targetable rather than stranded.
+    source_unchanged = False
+    archived_at = str(last.get("archived_at") or "")
+    audited_at = str(last.get("audit_date") or "")
+    if archived_at and audited_at:
+        changed_at = last_source_change(row, rows)
+        changed_dt = _iso(changed_at)
+        audited_dt = _iso(audited_at)
+        if changed_dt is not None and audited_dt is not None:
+            # git %cI is second-granularity while audit_date can carry
+            # microseconds.  Treat the same second as movement so a repair
+            # committed just after the audit cannot be hidden by truncation.
+            if changed_dt >= audited_dt.replace(microsecond=0):
+                return False
+            source_unchanged = True
+    return source_unchanged or bool(snapshot_deps)
 
 
-def _iso(stamp: str) -> datetime:
+def _iso(stamp: str) -> datetime | None:
     try:
-        return datetime.fromisoformat(stamp.replace("Z", "+00:00"))
+        parsed = datetime.fromisoformat(stamp.strip().replace("Z", "+00:00"))
     except ValueError:
-        return datetime.min.replace(tzinfo=timezone.utc)
+        return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
 
 
 def compute_targets(
@@ -214,7 +262,9 @@ def compute_targets(
         if not dep_ready(row, effective):
             skipped.append(f"{cid}: dependencies are not retained-grade")
             continue
-        if awaiting_repair_since_conditional(row, effective):
+        if audit_status == "unaudited" and awaiting_repair_since_conditional(
+            row, effective, rows
+        ):
             skipped.append(
                 f"{cid}: awaiting repair (sources and deps unchanged since "
                 "audited_conditional)"

@@ -986,3 +986,36 @@ https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5350 is
 open on Block38. The next target is the coarse-shadow/strong-spatial theorem,
 then the same ledger at the extracted `S^(2)` center. No axiom-update stop is
 triggered.
+
+## Block 41: extracted S2 actual-range reference migration
+
+The complete Block40 bare output is now recentered exactly at the positive
+Hermitian `S^(2)` kernel. The theorem rebuilds the product-Gaussian
+normalization around onsite `mu=m+2/m`, proves the Hermitian determinant minus
+sign, and separates the old first-step determinant coefficients from the new
+`det A_2` counterterm/restore ledger. The old effects occur once in the
+recentered residual; the new determinant is generated once; `S_next` is
+output-only.
+
+The `G_m` to `G_mu` atom transition is paid explicitly. After the current-
+fiber conditional split, only genuinely empty coefficients enter the local
+jet/raw ledger; every hidden-dependent coefficient, including onsite
+quartic/sextic terms, remains in the formal provenance-lineage factor row.
+At `m=2 10^11`, the actual-range witness gives
+`B_(2,split)=.0458194628844684<c`,
+`q_(2,centered)=.1683728202332358`, and
+`q_(2,split)=exp(-1/2)<1`. The full base Schur gap remains at least `m`, and
+the shortest center recurses with
+`(mu',k')=(mu-8k^2/mu,k^2/mu)`.
+
+Independent code/math, physics/import, and governance/no-go reviews pass with
+bounded claims. Runner/cache: `PASS=13 FAIL=0`. The full audit pipeline seeds
+one `bounded_theorem` / `unaudited` row with exactly four dependencies;
+runner classification is dominant first-principles compute, strict lint has
+zero errors, and generated outputs are stripped.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5358 is
+open on Block40. The next target is enhanced actual-orbit factor decay or a
+scale-indexed norm that can return the weak output to the next strong input.
+No axiom-update stop is triggered.

@@ -645,3 +645,21 @@ It was pushed and opened as:
 - delivery check: open, mergeable, audit workflow running
 
 No merge was performed. Independent audit remains authoritative.
+
+The extracted-`S^(2)` actual-range product-reference theorem is prepared as
+the next stacked review PR:
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5358
+- base: `physics-loop/record-faithful-dynamics-block40-joint-coarse-shadow-strong-handoff-20260712`
+- head: `physics-loop/record-faithful-dynamics-block41-future-s2-reference-ledger-20260712`
+- source runner: `PASS=13 FAIL=0`
+- disposition: independent code/math, physics/import, and governance/no-go
+  review passed with bounded claims after recentering, decorated center-shift,
+  current-fiber split, lineage-root, raw-base, determinant-phase, and full
+  N1--N8 repairs; the full pipeline seeds one `bounded_theorem` / `unaudited`
+  row with exactly four dependencies, classifies the runner as dominant
+  first-principles compute, and strict lint has zero errors
+- delivery check: open; mergeability and checks are verified after the
+  campaign-state commit is pushed
+
+No merge is authorized. Independent audit remains authoritative.

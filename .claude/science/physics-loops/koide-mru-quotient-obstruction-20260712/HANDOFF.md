@@ -22,9 +22,9 @@ a future physical readout law cannot quotient the doublet.
 
 ## Exact next action
 
-Commit and push the review-clean science block and open the single unmerged
-review PR. After landing, the independent audit lane should re-audit the source
-as a `no_go`; no author-side audit status is proposed here.
+Keep [PR #5314](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5314)
+unmerged for review. After landing, the independent audit lane should re-audit
+the source as a `no_go`; no author-side audit status is proposed here.
 
 No repo-wide weaving is proposed. A later positive route would need an exact
 physical second-order grammar, full `SO(2)` readout invariance, or another law

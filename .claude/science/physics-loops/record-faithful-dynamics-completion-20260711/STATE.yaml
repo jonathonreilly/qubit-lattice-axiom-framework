@@ -8,35 +8,36 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block39-joint-haar-gaussian-colored-response-20260712
+branch: physics-loop/record-faithful-dynamics-block40-joint-coarse-shadow-strong-handoff-20260712
 base_commit_at_start: 9d1636f05f
-cycle_count: 39
-block_count: 39
-active_route: wilson_staggered_joint_product_reference_determinant_counterterm_outer_haar_colored_response
+cycle_count: 40
+block_count: 40
+active_route: wilson_staggered_joint_boundary_future_atom_superstrong_strong_coarse_shadow
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: wilson_staggered_joint_product_reference_determinant_counterterm_outer_haar_colored_response_bounded_theorem_note_2026-07-12
+produced_claim_id: wilson_staggered_joint_boundary_canonical_future_atom_superstrong_strong_coarse_shadow_bounded_theorem_note_2026-07-12
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  For original A=m1+M_II, E_H G_A now has an exact local product-coordinate
-  representation using the factorized inverse determinant-loop counterterm.
-  Coloring the actual determinant restore, Wilson plaquettes, and grouped
-  preintegration K-I/I-K boundary sources gives a globally normalized joint
-  response with an explicit O(K_R) bound. Generic ambient-source embedding,
-  canonical coarse-shadow/future atoms, migration to the extracted future
-  center, strong-spatial return, running-gap persistence, same-norm iteration,
-  and an invariant ball remain open.
+  For original A=m1+M_II, the globally normalized joint product-coordinate
+  response now has a canonical one-future-pullback re-Hoeffding map and a
+  proved coarse shadow. Separating fine spatial support from Haar-root support
+  gives |X|<=2|Y_sp| and diam(X)<=ell(Y_sp)+1, while the explicit direct-sum
+  source contracts from the declared superstrong input to the next strong
+  spatial domain with q_shadow<1. Migration to the extracted future S^(2)
+  center, running-gap persistence, same-norm iteration, the Hessian, and an
+  invariant ball remain open.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source proves an actual original-center preintegration factor map and a
-  finite-regulator globally normalized response on a declared joint marked
-  domain. The inverse determinant is a support-decaying local counterterm and
-  the determinant restore is owned once. It does not claim a generic ambient
-  embedding, future S^(2) center migration, coarse-shadow/strong return,
-  running-center update, same-norm Hessian, or an autonomous RG self-map.
+  The source proves the actual original-center preintegration grammar has a
+  canonical future-atom coarse shadow and a finite-regulator
+  superstrong-to-next-strong contraction on a declared direct-sum source
+  domain. Empty future atoms are paid spatially rather than by a false tag-
+  density claim, and determinant ownership remains exact. It does not claim a
+  generic ambient embedding, future S^(2) center migration, a same-norm
+  return, running-center update, Hessian control, or an autonomous RG self-map.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -163,6 +164,9 @@ files_touched:
   - docs/WILSON_STAGGERED_JOINT_PRODUCT_REFERENCE_DETERMINANT_COUNTERTERM_OUTER_HAAR_COLORED_RESPONSE_BOUNDED_THEOREM_NOTE_2026-07-12.md
   - scripts/wilson_staggered_joint_product_reference_counterterm_colored_response_2026_07_12.py
   - logs/runner-cache/wilson_staggered_joint_product_reference_counterterm_colored_response_2026_07_12.txt
+  - docs/WILSON_STAGGERED_JOINT_BOUNDARY_CANONICAL_FUTURE_ATOM_SUPERSTRONG_STRONG_COARSE_SHADOW_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_joint_boundary_future_atom_superstrong_coarse_shadow_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_joint_boundary_future_atom_superstrong_coarse_shadow_2026_07_12.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -219,10 +223,11 @@ no_go_routes:
   - fixed-background correlated Berezin locality does not commute pointwise normalization through Haar averaging or place U->G_A(U)O in the required Haar provenance norm; the original A=m1+M_II supplier is not yet the extracted future center
   - the exact combined split and fixed-U O(K_R) colored response do not control the outer Haar partition factor, canonically embed g(U)=G_A(U)O, instantiate the actual strong-domain red factors, or migrate to the future center
   - the joint determinant-counterterm expansion closes the original-center outer response on its declared graph domain, but its same-support weak output is not yet a canonical future-atom coarse shadow or the next strong domain
+  - canonical future atoms and the strong coarse shadow do not by themselves identify the extracted S^(2) product reference, prove persistence of its gap and determinant counterterm ledger, or return the full next action to the same strong domain
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
-review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_coarse_gauge_gibbsianness_pass_raw_action_hessian_pass_two_layer_source_polymer_pass_retained_grassmann_polymer_norm_pass_declared_rg_chart_pass_split_derivative_certificate_boundary_pass_marked_attachment_strong_weak_contraction_pass_current_chart_autonomy_handoff_pass_gaussian_berezin_quadratic_center_pass_one_horizon_lineage_cluster_lift_pass_two_horizon_reatomization_intertwining_pass_fixed_background_correlated_berezin_locality_pass_combined_reference_fixed_u_colored_response_pass_joint_outer_haar_actual_red_response_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open_constrained_fiber_raw_rg_unit_directions_open_coarse_gauge_gibbsianness_open_raw_action_hessian_open_two_layer_source_polymer_open_retained_grassmann_polymer_norm_open_declared_rg_chart_open_split_derivative_certificate_boundary_open_marked_attachment_strong_weak_contraction_open_current_chart_autonomy_handoff_open_gaussian_berezin_quadratic_center_open_one_horizon_lineage_cluster_lift_open_two_horizon_reatomization_intertwining_open_fixed_background_correlated_berezin_locality_open_combined_reference_fixed_u_colored_response_open_joint_outer_haar_actual_red_response_open
+review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_coarse_gauge_gibbsianness_pass_raw_action_hessian_pass_two_layer_source_polymer_pass_retained_grassmann_polymer_norm_pass_declared_rg_chart_pass_split_derivative_certificate_boundary_pass_marked_attachment_strong_weak_contraction_pass_current_chart_autonomy_handoff_pass_gaussian_berezin_quadratic_center_pass_one_horizon_lineage_cluster_lift_pass_two_horizon_reatomization_intertwining_pass_fixed_background_correlated_berezin_locality_pass_combined_reference_fixed_u_colored_response_pass_joint_outer_haar_actual_red_response_pass_future_atom_strong_coarse_shadow_pass_bounded
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open_constrained_fiber_raw_rg_unit_directions_open_coarse_gauge_gibbsianness_open_raw_action_hessian_open_two_layer_source_polymer_open_retained_grassmann_polymer_norm_open_declared_rg_chart_open_split_derivative_certificate_boundary_open_marked_attachment_strong_weak_contraction_open_current_chart_autonomy_handoff_open_gaussian_berezin_quadratic_center_open_one_horizon_lineage_cluster_lift_open_two_horizon_reatomization_intertwining_open_fixed_background_correlated_berezin_locality_open_combined_reference_fixed_u_colored_response_open_joint_outer_haar_actual_red_response_open_future_atom_strong_coarse_shadow_open
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
@@ -262,13 +267,14 @@ block36_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block37_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5347
 block38_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5349
 block39_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5350
+block40_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5353
 next_exact_action: >-
-  Prove the coarse-shadow theorem for the joint preintegration boundary
-  grammar: evaluate hidden Gaussian sites, canonically re-Hoeffding the Haar
-  coefficient, distinguish genuine empty future atoms from nonempty atoms,
-  and land the response in the next strong spatial domain without importing
-  the diagnostic factor 68. Then instantiate the same counterterm ledger at
-  the extracted S^(2) center with its new determinant/boundary factor grammar.
+  Instantiate the exact product-reference determinant counterterm and colored
+  response ledger at the extracted future S^(2) center. Prove its uniform gap,
+  determinant/boundary factor ownership, normalized Gaussian identity, and
+  compatibility with the Block40 future-atom strong domain; then test whether
+  this yields a genuine same-domain return or identifies the precise residual
+  needed before the same-norm Hessian campaign.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

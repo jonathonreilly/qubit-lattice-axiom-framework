@@ -1,7 +1,7 @@
 # Handoff
 
 Current branch:
-`physics-loop/record-faithful-dynamics-block37-correlated-gaussian-attachment-20260712`.
+`physics-loop/record-faithful-dynamics-block40-joint-coarse-shadow-strong-handoff-20260712`.
 The fixed-background correlated-Berezin runner reports `PASS=11 FAIL=0`.
 For the original eliminated block `A=m1+M_II`, it proves the exact normalized
 onsite-product bond ratio, a same-lattice product-centered attachment row, and
@@ -166,6 +166,36 @@ row with exactly the factor-two, joint-polymer, and marked-attachment
 dependencies; strict lint has zero errors and generated outputs are stripped.
 No model noncontraction, continuum impossibility, or axiom-update stop is
 triggered.
+
+## Block 40: future-atom strong coarse shadow
+
+The actual original-center joint boundary grammar now lands in the next strong
+spatial domain. After exact hidden-Gaussian evaluation, the full coefficient is
+canonically re-Hoeffding decomposed on the future hidden-Haar coordinates. Fine
+spatial support is kept distinct from the Haar-root carrier, so Gaussian sites
+are not falsely counted as independent coarse roots. The resulting shadow
+satisfies `|X|<=2|Y_sp|` and `diam(X)<=ell(Y_sp)+1`; genuine empty future atoms
+are paid by the spatial reserve rather than by an invented tag-density claim.
+
+The future-decorated row obeys `K_T<c_h`, the next strong base obeys
+`68 exp(Lambda) K_T<c_s`, and the direct-sum raw/centered source contracts with
+`q_shadow=max(exp(-Lambda),68 exp(Lambda) A_joint)<1`. At the displayed witness
+`K_T=2.198668003209222e-4`, `B_strong=.04064087510357815`, and
+`q_shadow=.3678794411714423`. Determinant-counterterm cancellation precedes the
+normalized Gaussian identity, and the determinant restore is owned exactly
+once.
+
+Independent code/math, physics/import, and governance/no-go reviews pass with
+bounded claims. Runner/cache: `PASS=6 FAIL=0`. The full audit pipeline seeds
+one `bounded_theorem` / `unaudited` row with exactly five dependencies; the
+runner is non-decorative and contains a first-principles compute check; strict
+lint has zero errors and generated outputs are stripped.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5353 is
+open on Block39. The next exact target is to migrate the full reference and
+counterterm ledger to the extracted `S^(2)` center and test a genuine
+same-domain return. No axiom-update stop is triggered.
 
 Current-chart autonomy/handoff stacked PR:
 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5340

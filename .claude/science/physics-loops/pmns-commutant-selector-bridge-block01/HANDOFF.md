@@ -7,7 +7,9 @@ implemented. Review-loop iteration 1 required narrowing and stronger runner
 checks. Iteration 2 passed the science, code, imports, and governance surfaces,
 and the focused recheck passed its two no-go-certificate evidence-label fixes.
 The final review-loop disposition is `pass`; independent audit is still
-required.
+required. Review PR
+[#5318](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5318)
+is open and must not be merged by this loop.
 
 ## Proposed weaving after independent review
 
@@ -25,6 +27,6 @@ narrow or rederive them without treating this PR as an audit verdict.
 
 ## Next exact action
 
-Complete final validation, strip generated audit outputs, commit, push, and
-open the review PR. Independent audit should then assess the no-go candidate;
-later integration should narrow or rederive the stale dependents listed above.
+Independent audit should assess the no-go candidate in PR #5318. If ratified,
+later integration should narrow or rederive the stale dependents listed above
+without treating this physics-loop branch as audit authority.

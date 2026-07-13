@@ -7116,6 +7116,54 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
         )
 
+    def test_n1_algebraic_route_uses_marker_bearing_live_header(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        stdout_path = "audit-packet://runner-stdout/test_no_go"
+        header = "Part A: generic determinant identity"
+        check_one = "generic realification determinant is squared modulus"
+        check_two = "realified functional is twice complex functional on A"
+        manifest[stdout_path]["text"] += "\n" + "\n".join(
+            (header, check_one, check_two)
+        )
+        packet = _no_go_packet()
+        route = packet["N1_alternative_routes"][0]
+        route.update({
+            "route_id": "det_identity",
+            "route_class": "algebraic_rearrangement",
+            "mechanism": header,
+            "attempt": check_one,
+            "outcome": check_two,
+            "evidence_path": stdout_path,
+            "evidence_locator": header,
+        })
+        packet["N7_steelman"]["route_id"] = "det_identity"
+        n7_argument = (
+            "The strongest counter-route uses Part A: generic determinant identity "
+            "and attempts generic realification determinant is squared modulus; "
+            "its outcome is realified functional is twice complex functional on A."
+        )
+        packet["N7_steelman"]["argument"] = n7_argument
+        manifest[stdout_path]["text"] += "\n" + n7_argument
+        _set_no_go_scan_coverage(packet, manifest)
+        audit = {
+            "claim_type": "no_go", "verdict": "audited_clean",
+            "chain_closes": True, "no_go_discipline": packet,
+        }
+        self.assertIsNone(
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest)
+        )
+        route.update({
+            "mechanism": check_one,
+            "attempt": check_one,
+            "outcome": check_two,
+            "evidence_locator": check_one,
+        })
+        self.assertIn(
+            "not supported by its evidenced",
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
+        )
+
     def test_n1_symmetry_route_accepts_invariance_vocabulary(self):
         m = _import("no_go_discipline_gate")
         manifest = self._manifest()
@@ -7809,6 +7857,18 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         )
         self.assertIn(
             "copied byte-for-byte as one contiguous substring",
+            template_flat,
+        )
+        self.assertIn(
+            "Copy the complete authenticated tuple",
+            template_flat,
+        )
+        self.assertIn(
+            "from one and the same `full_phrase_groups[]` record",
+            template_flat,
+        )
+        self.assertIn(
+            "use a nearby marker-bearing live section header",
             template_flat,
         )
 
@@ -9407,6 +9467,155 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
                 )
             )
 
+    def test_authenticated_occurrence_metadata_binds_unique_tuple_only(self):
+        m = _import_codex_audit_runner()
+        group = {
+            "phrase": "axiom",
+            "occurrence_group_id": "3ec574c76f47c467",
+            "occurrence_count": 1,
+            "occurrence_locator_sha256": "9" * 64,
+            "evidence_locator": "the exact axiom occurrence locator",
+        }
+        manifest = {
+            "docs/SOURCE.md": {
+                "path": "docs/SOURCE.md",
+                "roles": ["source"],
+                "text": "the exact axiom occurrence locator",
+                "full_phrase_groups": [group],
+            }
+        }
+        hit = {
+            "phrase": "axiom",
+            "occurrence_group_id": "91368724cca5145",
+            "occurrence_count": 7,
+            "occurrence_locator_sha256": "8" * 64,
+            "classification": "non_load_bearing",
+            "rationale": "This occurrence carries no premise load in the scoped proof.",
+            "evidence_path": "docs/SOURCE.md",
+            "evidence_locator": "the exact axiom occurrence locator",
+        }
+        statement = {
+            **hit,
+            "phrase": "axiom",
+            "tested_resolutions": ["judgment content remains untouched"],
+        }
+        blob = {
+            "verdict": "audited_clean",
+            "no_go_discipline": {
+                "N3_hidden_wall_scan": {"hits": [hit]},
+                "N5_rhetoric_audit": {"statements": [statement]},
+            },
+        }
+        before_judgment = {
+            "verdict": blob["verdict"],
+            "classification": hit["classification"],
+            "rationale": hit["rationale"],
+            "tested_resolutions": list(statement["tested_resolutions"]),
+        }
+        changes = m.bind_authenticated_occurrence_metadata(blob, manifest)
+        self.assertEqual(len(changes), 6)
+        for item in (hit, statement):
+            self.assertEqual(item["occurrence_group_id"], group["occurrence_group_id"])
+            self.assertEqual(item["occurrence_count"], group["occurrence_count"])
+            self.assertEqual(
+                item["occurrence_locator_sha256"],
+                group["occurrence_locator_sha256"],
+            )
+        self.assertEqual(blob["verdict"], before_judgment["verdict"])
+        self.assertEqual(hit["classification"], before_judgment["classification"])
+        self.assertEqual(hit["rationale"], before_judgment["rationale"])
+        self.assertEqual(
+            statement["tested_resolutions"], before_judgment["tested_resolutions"]
+        )
+
+    def test_authenticated_occurrence_metadata_refuses_cross_label_and_ambiguity(self):
+        m = _import_codex_audit_runner()
+        groups = [
+            {
+                "phrase": "sector",
+                "occurrence_group_id": "29cbe9be0b190830",
+                "occurrence_count": 1,
+                "occurrence_locator_sha256": "1" * 64,
+                "evidence_locator": "first real sector locator",
+            },
+            {
+                "phrase": "canonical",
+                "occurrence_group_id": "b4db14624baf74e0",
+                "occurrence_count": 1,
+                "occurrence_locator_sha256": "2" * 64,
+                "evidence_locator": "shared rhetoric locator",
+            },
+        ]
+        manifest = {
+            "docs/SOURCE.md": {
+                "path": "docs/SOURCE.md", "roles": ["source"],
+                "text": "first real sector locator\nshared rhetoric locator",
+                "full_phrase_groups": groups,
+            }
+        }
+        cross_labeled = {
+            "phrase": "sector",
+            "occurrence_group_id": "b4db14624baf74e0",
+            "occurrence_count": 1,
+            "occurrence_locator_sha256": "2" * 64,
+            "classification": "non_load_bearing",
+            "rationale": "This cross-labeled test must remain fail-closed.",
+            "evidence_path": "docs/SOURCE.md",
+            "evidence_locator": "shared rhetoric locator",
+        }
+        blob = {"no_go_discipline": {"N3_hidden_wall_scan": {"hits": [cross_labeled]}}}
+        self.assertEqual(m.bind_authenticated_occurrence_metadata(blob, manifest), [])
+        self.assertEqual(cross_labeled["occurrence_group_id"], "b4db14624baf74e0")
+
+        ambiguous_manifest = json.loads(json.dumps(manifest))
+        ambiguous_manifest["docs/SOURCE.md"]["full_phrase_groups"] = [
+            groups[0],
+            {**groups[0], "occurrence_group_id": "90a40dc4ab7e0027"},
+        ]
+        cross_labeled["evidence_locator"] = "first real sector locator"
+        self.assertEqual(
+            m.bind_authenticated_occurrence_metadata(blob, ambiguous_manifest), []
+        )
+        self.assertEqual(cross_labeled["occurrence_group_id"], "b4db14624baf74e0")
+
+    def test_locator_repair_preservation_allows_bound_metadata_only(self):
+        m = _import_codex_audit_runner()
+        rejected = {
+            "verdict": "audited_clean",
+            "no_go_discipline": {
+                "N3_hidden_wall_scan": {
+                    "hits": [{
+                        "phrase": "axiom",
+                        "occurrence_group_id": "bad-id",
+                        "occurrence_count": 7,
+                        "occurrence_locator_sha256": "8" * 64,
+                        "classification": "non_load_bearing",
+                        "rationale": (
+                            "This exact occurrence carries no premise load in the proof."
+                        ),
+                        "evidence_path": "docs/SOURCE.md",
+                        "evidence_locator": "bad locator",
+                    }]
+                }
+            },
+        }
+        repaired = json.loads(json.dumps(rejected))
+        repaired_hit = repaired["no_go_discipline"]["N3_hidden_wall_scan"]["hits"][0]
+        repaired_hit.update({
+            "occurrence_group_id": "3ec574c76f47c467",
+            "occurrence_count": 1,
+            "occurrence_locator_sha256": "9" * 64,
+            "evidence_locator": "the exact axiom occurrence locator",
+        })
+        self.assertIsNone(
+            m.validation_repair_preservation_error(rejected, repaired)
+        )
+        repaired_hit["classification"] = "hidden_admission"
+        self.assertIn(
+            "changed preserved no-go judgment content",
+            m.validation_repair_preservation_error(rejected, repaired) or "",
+        )
+
     def test_fresh_schema_retry_exposes_error_not_rejected_conclusion(self):
         m = _import_codex_audit_runner()
         self.assertTrue(m.fresh_schema_retry_eligible(
@@ -9469,6 +9678,29 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         )
         self.assertIn("byte-for-byte as a contiguous line", n5_prompt)
         self.assertNotIn("statement 1", n5_prompt)
+        n3_tuple_code = m.fresh_schema_retry_code(
+            "N3 hit 2.occurrence_group_id must be a 16-hex context digest"
+        )
+        self.assertEqual(
+            n3_tuple_code, "N3_AUTHENTICATED_GROUP_TUPLE_MISMATCH"
+        )
+        n3_tuple_prompt = m.render_fresh_schema_retry_prompt(
+            "ORIGINAL RESTRICTED PACKET", n3_tuple_code, 1,
+        )
+        self.assertIn("from one same full_phrase_groups record", n3_tuple_prompt)
+        self.assertNotIn("hit 2", n3_tuple_prompt)
+        n3_scan_code = m.fresh_schema_retry_code(
+            "N3.hits must exactly disposition orchestrator phrase scan; "
+            "missing=[], extra=[('secret_path', 'sector', 'secret_id')]"
+        )
+        self.assertEqual(
+            n3_scan_code, "N3_AUTHENTICATED_GROUP_TUPLE_MISMATCH"
+        )
+        n3_scan_prompt = m.render_fresh_schema_retry_prompt(
+            "ORIGINAL RESTRICTED PACKET", n3_scan_code, 1,
+        )
+        self.assertNotIn("secret_path", n3_scan_prompt)
+        self.assertNotIn("secret_id", n3_scan_prompt)
 
     def test_failed_locator_repair_preserves_fresh_schema_eligibility(self):
         m = _import_codex_audit_runner()

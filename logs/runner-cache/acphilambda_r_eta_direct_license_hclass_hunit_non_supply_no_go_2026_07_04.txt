@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py
-runner_sha256: 86cf54b9a9f3f6e4c4d76b9d9e232d2950e76f8b22f0daed479f5ecc705ca5e4
+runner_sha256: 7faed77f792b04a1c3e0859acdfb299c1809344cc81e4cbe6aafcc5c7d05a1a6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.27
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 Record additivity and the R-eta unit-calibration countermodel
@@ -55,7 +55,7 @@ N1 route coordinate_convention
   N7 convention mechanism: same-observable common-unit rescaling
   ATTEMPTED N7 convention attempt: multiply h and abs(delta_beta) by the same positive unit factor
   N7 convention outcome: beta=abs(delta_beta)/h remains invariant and the W_unit readout bridge is not selected
-  [PASS] N7 steelman argument: N7 convention mechanism: same-observable common-unit rescaling; N7 convention attempt: multiply h and abs(delta_beta) by the same positive unit factor; N7 convention outcome: beta=abs(delta_beta)/h remains invariant and the W_unit readout bridge is not selected
+  [PASS] N7 steelman argument: N7 convention mechanism: same-observable common-unit rescaling; ATTEMPTED N7 convention attempt: multiply h and abs(delta_beta) by the same positive unit factor; N7 convention outcome: beta=abs(delta_beta)/h remains invariant and the W_unit readout bridge is not selected
   [PASS] N7 relative-normalization guard: beta=2 reaches beta=1 by rescaling abs(delta_beta) without h, which is not a common-unit convention
   [PASS] coordinate unit scales are positive
   [PASS] coordinate_convention ATTEMPTED: common-unit rescaling preserves the beta-one ratio

@@ -23,12 +23,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | _retained_pending_chain_ | 2 |
 | open_gate | 2 |
 | unaudited | 2953 |
-| audit_in_progress | 5 |
+| audit_in_progress | 6 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
 | ~~audited_conditional~~ | 24 |
-| ~~audited_failed~~ | 3 |
+| ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
 | `decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12` | 1 |
@@ -40,11 +40,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 5 |
+| `audit_in_progress` | 6 |
 | `audited_clean` | 382 |
 | `audited_conditional` | 24 |
 | `audited_decoration` | 17 |
-| `audited_failed` | 3 |
+| `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
 | `unaudited` | 3304 |
@@ -103,7 +103,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | 20 | `yt_ew_color_projection_theorem` | no_go | critical | 960 | 32.91 | `unaudited` | unaudited |
 | 21 | `ckm_cp_phase_structural_identity_theorem_note_2026-04-24` | positive_theorem | critical | 940 | 32.38 | `unaudited` | unaudited |
 | 22 | `charged_lepton_koide_cone_algebraic_equivalence_note` | positive_theorem | critical | 716 | 31.99 | `unaudited` | unaudited |
-| 23 | `cpt_exact_note` | positive_theorem | critical | 875 | 31.77 | `audited_failed` | ~~audited_failed~~ |
+| 23 | `cpt_exact_note` | positive_theorem | critical | 875 | 31.77 | `audit_in_progress` | audit_in_progress |
 | 24 | `three_generation_structure_note` | bounded_theorem | critical | 1111 | 31.12 | `unaudited` | unaudited |
 | 25 | `s3_time_bilinear_tensor_primitive_note` | open_gate | critical | 1073 | 31.07 | `unaudited` | unaudited |
 
@@ -115,6 +115,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.6 | A | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.6 | A | - |
+| `cpt_exact_note` | positive_theorem | audit_in_progress | audit_in_progress | cross_family | codex-gpt-5.6 | A | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `s3_mass_matrix_conditional_degeneracy_note_2026-07-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
@@ -540,7 +541,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | cross_family | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
 | `newton_law_derived_note` | decoration | ~~audited_decoration~~ | `decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | cross_family | codex-gpt-5.6 | A | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` |
 | `yukawa_color_projection_theorem` | decoration | ~~audited_decoration~~ | `decoration_under_graph_first_su3_integration_note` | judicial_review | codex-gpt-5.5 | A | `graph_first_su3_integration_note` |
-| `cpt_exact_note` | positive_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | A | - |
 | `source_resolved_geometry_rule_repair_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `structured_mirror_bornsafe_scan_note` | bounded_theorem | ~~audited_failed~~ | ~~audited_failed~~ | cross_family | codex-gpt-5.6 | C | - |
 | `ckm_five_sixths_bridge_support_note` | bounded_theorem | ~~audited_numerical_match~~ | ~~audited_numerical_match~~ | cross_family | codex-gpt-5.6 | G | - |
@@ -1660,21 +1660,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **load-bearing step:** The binding evidence of this note is exactly the finite-h trend table on the cached size sweep h in {1.0, 0.5, 0.25, 0.125}, including the 2.7% weak-field deflection change between h=0.25 and h=0.125 and the F~M exponent table bracketing 1.000.  _(class `C`)_
 - **chain closes:** True — The narrowed finite-h claim follows from the completed cached runner output, and the runner source genuinely computes the reported lattice propagation quantities rather than printing constants or importing a contested premise. The strict h -> 0 continuum-limit statement is explicitly excluded from the audited scope.
 - **rationale:** The source note narrows the binding claim to a finite-resolution numerical trend, and the cached output matches the displayed h values, transfer norms, weak-field deflections, and F~M values. The runner source constructs offsets, fields, propagates amplitudes, computes centroids, Born ratios, and mass-scaling fits directly with fixed parameters; it does not hard-code the contested table. Because the h -> 0 convergence language is demoted to diagnostic-only, the missing convergence theorem does not block this bounded finite-h audit.
-- **auditor confidence:** high
-
-### `cpt_exact_note`
-
-- **Note:** [`CPT_EXACT_NOTE.md`](../../docs/CPT_EXACT_NOTE.md)
-- **claim_type:** `positive_theorem`
-- **claim_scope:** The free staggered operator on even periodic Z^3 lattices, including C/P spectral flips, T=K and CP/CPT invariance, and vanishing Theta_H-odd residuals after H=iD, with canonical SME-coefficient identification excluded.
-- **audit_status:** ~~audited_failed~~
-- **effective_status:** ~~audited_failed~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-batch-A-20260713-bd68e749`  (codex-gpt-5.6; independence=cross_family)
-- **load-bearing step:** The physical-Hamiltonian statement uses the bridge theorem's Hermitian lift H = iD and antiunitary representative Theta_H = P K.  _(class `A`)_
-- **chain closes:** False — The runner verifies T=K and CP K invariance only for the real anti-Hermitian D-level operator. For the physical H=iD, K(i)=-i, so T=K and naive CP K flip H; the bridge instead proves the distinct Theta_H=P K symmetry.
-- **rationale:** The finite-lattice D-level identities and residual computations are genuine algebraic checks, but they do not prove the theorem as written for physical H=iD. The cited bridge explicitly states that naive CP K flips H and replaces it with Theta_H=P K, contradicting the simultaneous retained assertions T=K invariance and CP/CPT invariance for physical H. A narrower theorem asserting the D-level identities separately from Theta_H invariance of H=iD would avoid this contradiction.
-- **open / conditional deps cited:**
-  - `PHYSICAL_HERMITIAN_HAMILTONIAN_AND_SME_BRIDGE_NOTE_2026-04-30.md`
 - **auditor confidence:** high
 
 ### `critical_exponents_topology_live_scout_note_2026-06-04`

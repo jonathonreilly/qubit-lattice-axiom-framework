@@ -32,7 +32,7 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3754 |
-| Applied audit verdicts | 445 |
+| Applied audit verdicts | 444 |
 | Retained-grade rows, including boxed decorations | 395 |
 | Retained positive theorems | 76 |
 | Retained no-go rows | 0 |
@@ -85,11 +85,10 @@ Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 | high | `unaudited` | 174 |
 | medium | `unaudited` | 126 |
 | ? | `unresolved` | 5 |
+| critical | `audit_in_progress` | 3 |
 | high | `audited_conditional` | 3 |
-| critical | `audit_in_progress` | 2 |
 | medium | `audited_conditional` | 2 |
 | critical | `audited_conditional` | 1 |
-| critical | `audited_failed` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | critical | `retained_pending_chain` | 1 |
 | high | `audited_numerical_match` | 1 |

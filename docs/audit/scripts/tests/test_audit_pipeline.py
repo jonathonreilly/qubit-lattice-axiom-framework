@@ -12974,18 +12974,17 @@ class BatchOrchestratorHashDriftPreflightTest(unittest.TestCase):
             )
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class BatchOrchestratorSeatBankingTest(unittest.TestCase):
-    """A lone validated critical seat banks as awaiting_second instead of
-    being discarded (grain wave 4, 2026-07-13: seat 1 validated end-to-end
-    and was thrown away because seat 2 failed packet schema)."""
+    """A lone validated critical seat reaches the apply contract instead of
+    being discarded when its peer fails validation."""
 
     def _jobs(self, m, results):
-        row = {"claim_id": "crit_row", "criticality": "critical",
-               "audit_status": "unaudited", "cross_confirmation": None}
+        row = {
+            "claim_id": "crit_row", "claim_type": "bounded_theorem",
+            "criticality": "critical", "audit_status": "unaudited",
+            "effective_status": "unaudited", "cross_confirmation": None,
+            "deps": [], "note_path": "docs/DOES_NOT_EXIST.md",
+        }
         jobs = []
         for pass_no, outcome in results.items():
             jobs.append({
@@ -12998,41 +12997,128 @@ class BatchOrchestratorSeatBankingTest(unittest.TestCase):
         applied = []
 
         def fake_finalize(job):
-            if job["_outcome"] == "ok":
-                return {"audit": {"verdict": "audited_clean"}}, {"ok": True}
+            if job["_outcome"].startswith("audited_"):
+                return {
+                    "audit": {"verdict": job["_outcome"]}
+                }, {"ok": True}
             return None, {
                 "cid": job["cid"], "pass": job["pass"],
                 "result": "validation_failed", "detail": "N7 wording",
             }
 
         def fake_apply_one(job, envelope, retries):
-            applied.append((job["cid"], job["pass"]))
+            verdict = envelope["audit"]["verdict"]
+            applied.append((job["cid"], job["pass"], verdict))
+            if verdict == "audited_clean":
+                job["row"]["audit_status"] = "audit_in_progress"
+                job["row"]["cross_confirmation"] = {
+                    "status": "awaiting_second",
+                }
+            else:
+                job["row"]["audit_status"] = verdict
             return True, {
                 "cid": job["cid"], "pass": job["pass"],
-                "result": "audited_clean",
+                "result": verdict,
             }
 
         report = []
         with mock.patch.object(m, "finalize_worker", side_effect=fake_finalize), \
                 mock.patch.object(m, "apply_one_serialized", side_effect=fake_apply_one):
             ok, _ = m.apply_serialized(jobs, report)
-        return ok, report, applied
+        return ok, report, applied, jobs[0]["row"]
 
     def test_single_validated_seat_banks(self):
         m = _import("orchestrate_audit_batch")
-        ok, report, applied = self._run(
-            m, self._jobs(m, {1: "ok", 2: "failed"})
+        for validated_pass in (1, 2):
+            with self.subTest(validated_pass=validated_pass):
+                peer_pass = 2 if validated_pass == 1 else 1
+                ok, report, applied, row = self._run(
+                    m,
+                    self._jobs(m, {
+                        validated_pass: "audited_clean",
+                        peer_pass: "failed",
+                    }),
+                )
+                self.assertTrue(ok)
+                self.assertEqual(
+                    applied,
+                    [("crit_row", validated_pass, "audited_clean")],
+                )
+                results = [item["result"] for item in report]
+                self.assertIn("validation_failed", results)
+                self.assertIn("critical_peer_pending", results)
+                self.assertNotIn("critical_peer_delivery_missing", results)
+                self.assertEqual(row["audit_status"], "audit_in_progress")
+                self.assertEqual(
+                    row["cross_confirmation"]["status"], "awaiting_second"
+                )
+                self.assertEqual(m.passes_for_row(row), [2])
+                with mock.patch.object(
+                    m, "source_requires_forensic", return_value=False
+                ), mock.patch.object(
+                    m, "awaiting_repair_since_conditional",
+                    side_effect=AssertionError(
+                        "awaiting_second must bypass the repair guard"
+                    ),
+                ):
+                    targets, skipped = m.compute_targets(
+                        {"crit_row"}, {"crit_row": row}
+                    )
+                self.assertEqual(
+                    [target["claim_id"] for target in targets], ["crit_row"]
+                )
+                self.assertEqual(skipped, [])
+
+        # A malformed attempt on the same seat cannot erase a later fully
+        # validated envelope, and its report remains visible.
+        jobs = self._jobs(m, {1: "failed", 2: "failed"})
+        jobs.insert(1, {
+            **jobs[0],
+            "_outcome": "audited_clean",
+        })
+        ok, report, applied, _ = self._run(m, jobs)
+        self.assertTrue(ok)
+        self.assertEqual(applied, [("crit_row", 1, "audited_clean")])
+        self.assertEqual(
+            sum(item["result"] == "validation_failed" for item in report), 2
         )
-        self.assertEqual(applied, [("crit_row", 1)])
-        results = {item["result"] for item in report}
-        self.assertIn("critical_peer_pending", results)
-        self.assertNotIn("critical_peer_delivery_missing", results)
+
+        # The incomplete pair result stays outside main's success set, so a
+        # banked run exits nonzero even though applied_ok remains true.
+        self.assertNotIn("critical_peer_pending", m.SUCCESS_RESULTS)
 
     def test_zero_validated_seats_still_reports_missing(self):
         m = _import("orchestrate_audit_batch")
-        ok, report, applied = self._run(
+        ok, report, applied, _ = self._run(
             m, self._jobs(m, {1: "failed", 2: "failed"})
         )
+        self.assertFalse(ok)
         self.assertEqual(applied, [])
         results = {item["result"] for item in report}
         self.assertIn("critical_peer_delivery_missing", results)
+
+        queue = _import("compute_audit_queue")
+        for verdict in ("audited_conditional", "audited_failed"):
+            with self.subTest(verdict=verdict):
+                ok, report, applied, row = self._run(
+                    m, self._jobs(m, {1: verdict, 2: "failed"})
+                )
+                self.assertTrue(ok)
+                self.assertEqual(applied, [("crit_row", 1, verdict)])
+                results = [item["result"] for item in report]
+                self.assertIn("validation_failed", results)
+                self.assertIn("critical_peer_pending", results)
+                self.assertEqual(row["audit_status"], verdict)
+                self.assertNotEqual(m.passes_for_row(row), [2])
+                pending, reason = queue.needs_audit(row)
+                self.assertTrue(pending)
+                self.assertEqual(
+                    reason,
+                    "non_terminal_conditional"
+                    if verdict == "audited_conditional"
+                    else "non_terminal_failed",
+                )
+
+
+if __name__ == "__main__":
+    unittest.main()

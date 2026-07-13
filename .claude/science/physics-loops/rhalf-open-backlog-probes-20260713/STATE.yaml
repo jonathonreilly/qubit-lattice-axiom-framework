@@ -7,7 +7,8 @@ trace_class: frontier_discovery
 reachability_to_target: unknown_frontier
 audit_status_authority: independent audit lane only
 review_disposition: pass_with_bounded_claims
-pr_status: not_opened
+pr_status: open_pr_5379
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5379
 cycle: 1
 block: 1
 active_route: formation-event resolution plus normalized hazards
@@ -26,4 +27,4 @@ files_touched:
   - logs/runner-cache/frontier_rhalf_open_backlog_probes_2026_07_13.txt
   - .claude/science/physics-loops/rhalf-open-backlog-probes-20260713/
 next_exact_action: "Stress-test the supplied-object/formation-event ordering with an explicit record-formation generator, then test whether its stationary hazards distinguish carrier members from K-orbit cells."
-stop_condition: "First exact multi-probe block is verified and handed off without an unconditional r=1/2 claim."
+stop_condition: "First exact multi-probe block is verified, pushed, and opened for normal review without an unconditional r=1/2 claim."

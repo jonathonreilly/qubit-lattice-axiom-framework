@@ -69,3 +69,9 @@ boundary/code/governance findings.  All were fixed:
   branch.
 
 Final review-loop recommendation: `PASS WITH BOUNDED CLAIMS`.
+
+## Checkpoint
+
+- Science commit: `b4da880e93` (`science: probe open r-half formation backlog`).
+- Branch pushed: `physics-loop/rhalf-open-backlog-probes-20260713`.
+- Normal review PR opened: `#5379`.

@@ -14,6 +14,9 @@ explicit formation generator and its relative hazards.
 - `scripts/frontier_rhalf_open_backlog_probes_2026_07_13.py`
 - `logs/runner-cache/frontier_rhalf_open_backlog_probes_2026_07_13.txt`
 
+Review PR: `#5379` —
+`https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5379`.
+
 ## Important live-state correction
 
 PR 5326 is closed and unmerged.  Its licensing convention is not current-main

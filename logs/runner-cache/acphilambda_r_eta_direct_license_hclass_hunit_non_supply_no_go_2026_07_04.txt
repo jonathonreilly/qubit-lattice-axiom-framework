@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/acphilambda_r_eta_direct_license_hclass_hunit_non_supply_no_go_2026_07_04.py
-runner_sha256: b9211c0318c1110acc3e2b06a5d638bd6e55100fcc8ac5fc27dfc3245b8c4b95
+runner_sha256: 05459bf60276df17189636d471996081a4afc6f59b3cd988f1963558199f8e30
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.10
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 Record additivity and the R-eta unit-calibration countermodel
@@ -46,9 +46,25 @@ Part D: rhetoric-resolution lifts
   [PASS] per_mode: disjoint finite-mode decomposition preserves additivity while leaving beta free
   [PASS] per_block: disjoint record blocks preserve additivity for both beta normalizations
   [PASS] lattice_wide: finite lattice partition preserves both laws while beta remains unselected
-  [PASS] N2 wall W_unit: beta-one and beta-two singleton laws share h but remain distinct
+  [PASS] N2 wall readout bridge: W_unit beta-one and beta-two singleton laws share h but remain distinct
 
-Part E: source and axiom guards
+Part E: coordinate-convention steelman
+--------------------------------------
+N1 route coordinate_convention
+  N7 convention mechanism: same-observable common-unit rescaling
+  ATTEMPTED N7 convention attempt: multiply h and abs(delta_beta) by the same positive unit factor
+  N7 convention outcome: beta=abs(delta_beta)/h remains invariant and the W_unit readout bridge is not selected
+  [PASS] N7 steelman argument: N7 convention mechanism: same-observable common-unit rescaling; N7 convention attempt: multiply h and abs(delta_beta) by the same positive unit factor; N7 convention outcome: beta=abs(delta_beta)/h remains invariant and the W_unit readout bridge is not selected
+  [PASS] N7 relative-normalization guard: beta=2 reaches beta=1 by rescaling abs(delta_beta) without h, which is not a common-unit convention
+  [PASS] coordinate unit scales are positive
+  [PASS] coordinate_convention ATTEMPTED: common-unit rescaling preserves the beta-one ratio
+  [PASS] coordinate_convention ATTEMPTED: common-unit rescaling preserves the beta-two ratio
+  [PASS] same-coordinate beta-one readout equals the fixed-locus density
+  [PASS] same-coordinate beta-two readout remains distinct from the fixed-locus density
+  [PASS] same-observable identity is equivalent to beta one in the tested positive family
+N7 coordinate steelman resolved by current-cycle computation: a common coordinate change leaves beta invariant; a separate same-observable theorem could set beta=1 but is not a units convention
+
+Part F: source and axiom guards
 -------------------------------
   [PASS] current Record axiom contains empty-zero
   [PASS] current Record axiom contains finite additivity
@@ -61,18 +77,18 @@ Part E: source and axiom guards
   [PASS] note limits claim to current finite-record surface
   [PASS] note preserves a future same-observable theorem
   [PASS] note does not force r
-  [PASS] N1 contains seven attempted routes
-  [PASS] N2 collapses to one wall
+  [PASS] N1 contains eight attempted routes
+  [PASS] N2 collapses to one readout-bridge wall
   [PASS] N3 records the required phrase scan
   [PASS] N4 uses no prior negative witness
   [PASS] N5 names tested resolutions
   [PASS] N6 records convention and theorem paths
-  [PASS] N7 contains the coordinate steelman
+  [PASS] N7 contains the executable coordinate steelman
   [PASS] N8 considers historical withdrawal, derivation, primitive, and coordinate mechanisms
   [PASS] discipline gate records PASS
 
 ========================================================================
-TOTAL: PASS=47, FAIL=0
+TOTAL: PASS=55, FAIL=0
 
 ----- stderr -----
 

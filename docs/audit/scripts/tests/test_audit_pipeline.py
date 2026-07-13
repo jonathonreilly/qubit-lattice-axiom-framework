@@ -7143,6 +7143,40 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             m.validate_no_go_discipline(audit, evidence_manifest=manifest)
         )
 
+    def test_n1_normalization_route_accepts_exact_w_unit_marker(self):
+        m = _import("no_go_discipline_gate")
+        marker = m.ROUTE_CLASS_MARKERS["normalization_or_units"]
+        self.assertIsNotNone(marker.search("W_unit"))
+        for non_marker in ("preW_unit", "W_unit_post", "W_unitary", "W__unit"):
+            with self.subTest(non_marker=non_marker):
+                self.assertIsNone(marker.search(non_marker))
+        manifest = self._manifest()
+        wall_line = (
+            "N2 wall W_unit: beta-one and beta-two singleton laws share h "
+            "but remain distinct"
+        )
+        stdout_path = "audit-packet://runner-stdout/test_no_go"
+        manifest[stdout_path]["text"] += "\n" + wall_line
+        packet = _no_go_packet()
+        route = packet["N1_alternative_routes"][4]
+        route.update({
+            "route_id": "unit_normalization",
+            "route_class": "normalization_or_units",
+            "mechanism": wall_line,
+            "attempt": wall_line,
+            "outcome": wall_line,
+            "evidence_path": stdout_path,
+            "evidence_locator": wall_line,
+        })
+        _set_no_go_scan_coverage(packet, manifest)
+        audit = {
+            "claim_type": "no_go", "verdict": "audited_clean",
+            "chain_closes": True, "no_go_discipline": packet,
+        }
+        self.assertIsNone(
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest)
+        )
+
     def test_occurrence_scans_and_resolution_classes_fail_closed(self):
         m = _import("no_go_discipline_gate")
         manifest = self._manifest()
@@ -7175,6 +7209,28 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "lacks a substantive",
             m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
         )
+
+    def test_n5_tested_resolution_must_be_verbatim_runner_stdout(self):
+        m = _import("no_go_discipline_gate")
+        manifest = self._manifest()
+        for replacement in (
+            "per_element: summarized the complete route inventory without copying it",
+            NO_GO_N5_TESTED_RESOLUTIONS[0].replace("tested", "TESTED", 1),
+            NO_GO_N5_TESTED_RESOLUTIONS[0].replace("rhetoric against", "rhetoric  against", 1),
+            NO_GO_N5_TESTED_RESOLUTIONS[0].replace("rhetoric against", "rhetoric\nagainst", 1),
+        ):
+            with self.subTest(replacement=replacement):
+                packet = _no_go_packet()
+                _set_no_go_scan_coverage(packet, manifest)
+                packet["N5_rhetoric_audit"]["statements"][0]["tested_resolutions"][0] = replacement
+                audit = {
+                    "claim_type": "no_go", "verdict": "audited_clean",
+                    "chain_closes": True, "no_go_discipline": packet,
+                }
+                self.assertIn(
+                    "tested resolution is not evidenced at resolution_evidence_path",
+                    m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
+                )
 
     def test_n8_mechanism_is_bound_to_exact_candidate_record(self):
         m = _import("no_go_discipline_gate")
@@ -7738,6 +7794,18 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         )
         self.assertIn(
             "symmetry_or_representation`: symmetry, invariant, representation",
+            template_flat,
+        )
+        self.assertIn(
+            "normalization_or_units`: normalization, unit, `W_unit`, scale",
+            template_flat,
+        )
+        self.assertIn(
+            "Every complete `tested_resolutions[]` string",
+            template_flat,
+        )
+        self.assertIn(
+            "copied byte-for-byte as one contiguous substring",
             template_flat,
         )
 
@@ -9258,6 +9326,16 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         )
         self.assertIn("joined mechanism, attempt, and outcome", n1_prompt)
         self.assertNotIn("route 2", n1_prompt)
+        n5_code = m.fresh_schema_retry_code(
+            "N5 statement 1 tested resolution is not evidenced at "
+            "resolution_evidence_path"
+        )
+        self.assertEqual(n5_code, "N5_TESTED_RESOLUTION_VERBATIM_MISMATCH")
+        n5_prompt = m.render_fresh_schema_retry_prompt(
+            "ORIGINAL RESTRICTED PACKET", n5_code, 1,
+        )
+        self.assertIn("byte-for-byte as a contiguous line", n5_prompt)
+        self.assertNotIn("statement 1", n5_prompt)
 
     def test_failed_locator_repair_preserves_fresh_schema_eligibility(self):
         m = _import_codex_audit_runner()

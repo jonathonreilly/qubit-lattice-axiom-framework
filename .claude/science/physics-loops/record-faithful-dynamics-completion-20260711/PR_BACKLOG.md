@@ -1,5 +1,20 @@
 # PR Delivery
 
+The deep-fiber coarse-gauge Gibbsianness theorem is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block25-generated-action-polymer-norm-20260712`
+- head: `physics-loop/record-faithful-dynamics-block26-coarse-gauge-gibbsianness-20260712`
+- runner: `PASS=12 FAIL=0`
+- scope: exact uniformly non-null exponentially quasilocal coarse gauge
+  specification and a sitewise absolutely summable interaction
+  representation; no uniform anchored joint-polymer norm or projected RG map
+- audit compatibility: one `bounded_theorem` / `unaudited` row, exactly the
+  constrained-fiber dependency; strict lint zero errors; generated outputs
+  stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5315
+
+No merge is authorized. Independent audit remains authoritative.
+
 The constrained-fiber Dobrushin and raw RG-unit-direction theorem is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block24-coupled-one-step-rg-map-20260712`

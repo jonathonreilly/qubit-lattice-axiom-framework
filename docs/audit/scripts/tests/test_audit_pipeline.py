@@ -12,9 +12,11 @@ or:
 """
 from __future__ import annotations
 
+import contextlib
 import importlib
 import importlib.util
 import hashlib
+import io
 import json
 import os
 import sys
@@ -8578,6 +8580,102 @@ class ComputeLaneCertificationTest(unittest.TestCase):
             '("compute_lane_certification.py",      "refresh rolling lane certification")',
             apply_script,
         )
+
+
+class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
+    """Round semantics regression pins (theta canary, 2026-07-12): a
+    non-terminal verdict re-queues its row as unaudited immediately, so the
+    orchestrator must not re-target the unchanged claim in the same run, and
+    per-round artifact names must never collide."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.root = Path(self._tmp.name)
+
+    def _row(self):
+        return {
+            "claim_id": "spin_row",
+            "claim_type": "bounded_theorem",
+            "audit_status": "unaudited",
+            "effective_status": "open",
+            "criticality": None,
+            "deps": [],
+        }
+
+    def test_one_audit_attempt_per_claim_per_run(self):
+        m = _import("orchestrate_audit_batch")
+        rows = {"spin_row": self._row()}
+        workdir = self.root / "wd"
+
+        def fake_apply(jobs, report, retries):
+            for job in jobs:
+                report.append(
+                    {"cid": job["cid"], "pass": 1, "result": "audited_conditional"}
+                )
+            return True, set()
+
+        launch = mock.Mock(
+            side_effect=lambda row, all_rows, pass_no, wd, timeout, round_no=1: {
+                "cid": row["claim_id"], "pass": pass_no, "round": round_no,
+            }
+        )
+        argv = [
+            "orchestrate_audit_batch.py", "--claims", "spin_row", "--rounds", "4",
+        ]
+        with mock.patch.dict(
+            os.environ, {"AUDIT_BATCH_WORKDIR": str(workdir)}
+        ), mock.patch.object(sys, "argv", argv), \
+                mock.patch.object(m, "clean_main_error", return_value=None), \
+                mock.patch.object(m, "load_rows", return_value=rows), \
+                mock.patch.object(m, "source_requires_forensic", return_value=False), \
+                mock.patch.object(m, "launch_worker", launch), \
+                mock.patch.object(m, "wait_workers", return_value=None), \
+                mock.patch.object(m, "apply_serialized", side_effect=fake_apply):
+            code = m.main()
+        # The row stays unaudited after its conditional verdict (repair
+        # queue), yet the run must audit it exactly once, not once per round.
+        self.assertEqual(code, 0)
+        self.assertEqual(launch.call_count, 1)
+
+    def test_round_tagged_artifacts_never_collide_across_rounds(self):
+        m = _import("orchestrate_audit_batch")
+        rows = {"spin_row": self._row()}
+        workdir = self.root / "wd2"
+        workdir.mkdir(parents=True)
+        proc = mock.Mock(pid=1234)
+        with mock.patch.object(
+            m.audit_runner, "render_prompt", return_value="packet"
+        ), mock.patch.object(
+            m.audit_runner, "PROMPT_TEMPLATE_PATH"
+        ) as template_path, mock.patch.object(
+            m.subprocess, "Popen", return_value=proc
+        ):
+            template_path.read_text.return_value = "template"
+            first = m.launch_worker(
+                rows["spin_row"], rows, 1, workdir, 120, 1
+            )
+            second = m.launch_worker(
+                rows["spin_row"], rows, 1, workdir, 120, 2
+            )
+        self.assertNotEqual(first["isolated"], second["isolated"])
+        self.assertIn("-r1-p1", str(first["isolated"]))
+        self.assertIn("-r2-p1", str(second["isolated"]))
+
+    def test_existing_workdir_refused_with_actionable_message(self):
+        m = _import("orchestrate_audit_batch")
+        workdir = self.root / "wd3"
+        workdir.mkdir(parents=True)
+        argv = ["orchestrate_audit_batch.py", "--claims", "spin_row"]
+        stdout = io.StringIO()
+        with mock.patch.dict(
+            os.environ, {"AUDIT_BATCH_WORKDIR": str(workdir)}
+        ), mock.patch.object(sys, "argv", argv), \
+                mock.patch.object(m, "clean_main_error", return_value=None), \
+                contextlib.redirect_stdout(stdout):
+            code = m.main()
+        self.assertEqual(code, 2)
+        self.assertIn("already exists", stdout.getvalue())
 
 
 class CodexAuditRunnerModelPolicyTest(unittest.TestCase):

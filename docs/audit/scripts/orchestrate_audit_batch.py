@@ -209,6 +209,7 @@ def launch_worker(
     pass_no: int,
     workdir: Path,
     runner_timeout: int,
+    round_no: int = 1,
 ) -> dict:
     cid = row["claim_id"]
     key = artifact_key(cid)
@@ -232,13 +233,17 @@ def launch_worker(
             "packet must be narrowed without converting transport size into a verdict"
         )
 
-    isolated = workdir / f"isolated-{key}-p{pass_no}"
+    # Artifact names carry the round so a claim legitimately re-entering a
+    # later round (e.g. a critical row resuming at awaiting_second) never
+    # collides with this round's directories.
+    tag = f"{key}-r{round_no}-p{pass_no}"
+    isolated = workdir / f"isolated-{tag}"
     isolated.mkdir(parents=True, exist_ok=False)
     prompt_path = isolated / "AUDIT_TASK.md"
     prompt_path.write_text(prompt, encoding="utf-8")
-    raw_output = workdir / f"raw-{key}-p{pass_no}.txt"
-    delivery = workdir / f"delivery-{key}-p{pass_no}.json"
-    log_path = workdir / f"log-{key}-p{pass_no}.txt"
+    raw_output = workdir / f"raw-{tag}.txt"
+    delivery = workdir / f"delivery-{tag}.json"
+    log_path = workdir / f"log-{tag}.txt"
     log_handle = log_path.open("w", encoding="utf-8")
     instruction = (
         "Open AUDIT_TASK.md in the current directory and follow it exactly. "
@@ -829,7 +834,15 @@ def main() -> int:
     report: list[dict] = []
     session_skipped: set[str] = set()
     if not args.dry_run:
-        workdir.mkdir(parents=True, exist_ok=False)
+        try:
+            workdir.mkdir(parents=True, exist_ok=False)
+        except FileExistsError:
+            print(
+                f"refusing to run: workdir {workdir} already exists. "
+                "Each run requires a fresh workdir; remove it or point "
+                "AUDIT_BATCH_WORKDIR at a new path."
+            )
+            return 2
 
     for round_no in range(1, args.rounds + 1):
         rows = load_rows()
@@ -876,7 +889,10 @@ def main() -> int:
                 for pass_no in passes_for_row(row):
                     try:
                         jobs.append(
-                            launch_worker(row, rows, pass_no, workdir, args.runner_timeout_sec)
+                            launch_worker(
+                                row, rows, pass_no, workdir,
+                                args.runner_timeout_sec, round_no,
+                            )
                         )
                     except ValueError as exc:
                         launch_blocked = True
@@ -903,6 +919,12 @@ def main() -> int:
         wait_workers(jobs, args.stall_minutes)
         applied_ok, compute_skips = apply_serialized(jobs, report, args.push_retries)
         session_skipped.update(compute_skips)
+        # One audit attempt per claim per run. A non-terminal verdict
+        # (audited_conditional) re-enters the ledger as unaudited repair-queue
+        # work immediately, so without this a conditional row is re-targeted
+        # every remaining round and burns seats re-auditing an unchanged
+        # claim toward the same outcome. Repair, not repetition, moves it.
+        session_skipped.update(row["claim_id"] for row in batch)
         if not applied_ok or launch_blocked:
             break
         (workdir / "report.jsonl").write_text(

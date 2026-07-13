@@ -19,11 +19,11 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | effective_status | count |
 |---|---:|
 | **retained** | 76 |
-| **retained_bounded** | 303 |
+| **retained_bounded** | 304 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
 | unaudited | 2958 |
-| audit_in_progress | 4 |
+| audit_in_progress | 3 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
@@ -40,8 +40,8 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 
 | audit_status | count |
 |---|---:|
-| `audit_in_progress` | 4 |
-| `audited_clean` | 381 |
+| `audit_in_progress` | 3 |
+| `audited_clean` | 382 |
 | `audited_conditional` | 22 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
@@ -112,10 +112,10 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 | claim_id | claim_type | audit_status | effective | independence | auditor_family | load-bearing class | decoration parent |
 |---|---|---|---|---|---|---|---|
-| `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `cl3_complexification_split_narrow_theorem_note_2026-05-10` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `persistent_record_as_kraus_operator_note_2026-05-20` | bounded_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
 | `s3_mass_matrix_conditional_degeneracy_note_2026-07-11` | positive_theorem | audit_in_progress | audit_in_progress | - | - | - | - |
+| `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18` | bounded_theorem | ~~audited_clean~~ | **retained_bounded** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
 | `acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04` | positive_theorem | ~~audited_clean~~ | **retained** | fresh_context | codex-gpt-5.6 | A | - |
@@ -559,6 +559,19 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 
 
 ## Audit findings (full)
+
+### `abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18`
+
+- **Note:** [`ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md`](../../docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** Finite algebraic core on the canonical free staggered 2^4 blocked hypercube: the alpha_mu generate a rank-16 Cl4 spin algebra with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.
+- **audit_status:** ~~audited_clean~~
+- **effective_status:** **retained_bounded**  (reason: `self`)
+- **auditor:** `codex-audit-batch-B-20260713-c7e34044`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** The staggered alpha_mu matrices generate a rank-16 Cl4 spin algebra with a 16-dimensional commutant, while Gamma_5^spin is taste-singlet and epsilon lies outside the spin algebra and fails to commute with the full taste commutant.  _(class `A`)_
+- **chain closes:** True — The explicitly defined finite matrices determine every claimed algebraic property, and the runner computes the Clifford relations, algebra and commutant dimensions, chirality projectors, and epsilon distinctions directly. The interacting physical-chirality identification is expressly outside the audited scope.
+- **rationale:** The load-bearing result is an exact finite-dimensional algebraic closure over matrices fully specified in the note, not a renamed physical identification or tuned numerical comparison. The runner genuinely constructs those matrices and computes all load-bearing properties rather than printing expected constants. The theorem remains correctly bounded to the free blocked algebraic surface and does not claim the separate interacting, gauged, single-taste physical bridge.
+- **auditor confidence:** high
 
 ### `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18`
 

@@ -80,7 +80,7 @@
   ],
   "cycles_detected": 63,
   "effective_status_counts": {
-    "audit_in_progress": 4,
+    "audit_in_progress": 3,
     "audited_conditional": 22,
     "audited_failed": 2,
     "audited_numerical_match": 5,
@@ -96,7 +96,7 @@
     "meta": 351,
     "open_gate": 2,
     "retained": 76,
-    "retained_bounded": 303,
+    "retained_bounded": 304,
     "retained_pending_chain": 1,
     "unaudited": 2958
   },

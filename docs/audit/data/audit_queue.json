@@ -1,6 +1,6 @@
 {
   "by_criticality": {
-    "critical": 725,
+    "critical": 724,
     "high": 330,
     "leaf": 1169,
     "medium": 762
@@ -2861,28 +2861,6 @@
       "queue_reason": "unaudited",
       "ready": true,
       "runner_path": "scripts/frontier_abj_pcomp_scale_free_singlet_completion_classification_2026_06_18.py",
-      "transitive_descendants": 1357
-    },
-    {
-      "audit_independence_required": "fresh_context_or_stronger_with_cross_confirmation",
-      "audit_status": "audit_in_progress",
-      "blocker": "awaiting_cross_confirmation",
-      "claim_id": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
-      "claim_scope": "Finite algebraic core on the canonical free staggered 2^4 blocked hypercube: the alpha_mu generate a rank-16 Cl4 spin algebra with a 16-dimensional commutant, Gamma_5^spin is taste-singlet, and epsilon is distinct and taste-dressed.",
-      "claim_type": "bounded_theorem",
-      "claim_type_provenance": "audited_pending_cross_confirmation",
-      "criticality": "critical",
-      "criticality_rank": 3,
-      "cross_confirmation_status": "awaiting_second",
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "audit_in_progress",
-      "helper_runner_paths": [],
-      "load_bearing_score": 10.907,
-      "note_path": "docs/ABJ_P_REC_SPINTASTE_CLIFFORD_CORE_BRIDGE_NOTE_2026-06-18.md",
-      "queue_reason": "audit_in_progress",
-      "ready": true,
-      "runner_path": "scripts/frontier_abj_prec_spintaste_clifford_core_bridge_2026_06_18.py",
       "transitive_descendants": 1357
     },
     {
@@ -86255,6 +86233,6 @@
       "transitive_descendants": 0
     }
   ],
-  "ready_count": 616,
-  "total_pending": 2986
+  "ready_count": 615,
+  "total_pending": 2985
 }

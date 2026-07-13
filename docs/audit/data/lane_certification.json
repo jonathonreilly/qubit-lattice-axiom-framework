@@ -312,10 +312,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "ac_phi_lambda_preserved_c3_structural_foreclosure_bounded_theorem_note_2026-05-10",
           "effective_status": "unaudited"
         },
@@ -2956,9 +2952,9 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 673
+      "uncertified_count": 672
     }
   ],
-  "repo_head": "507a636db48e8755b56e4135522ca4ee22ec1cd8",
+  "repo_head": "ba5c93d4000d239f034317646cf45f3838af80a2",
   "schema": "lane_certification_v2"
 }

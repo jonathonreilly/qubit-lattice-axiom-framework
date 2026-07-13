@@ -8791,24 +8791,26 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
 
     def test_conditional_rows_wait_for_repair_across_runs(self):
         """A re-queued audited_conditional row is not re-targeted until its
-        sources changed after the archived verdict or a recorded dependency's
-        effective status moved (theta i5, 2026-07-12: an unchanged agreed-
-        conditional row burned two fresh seats one run later)."""
+        sources changed after the verdict or a recorded dependency moved
+        (theta i5, 2026-07-12: an unchanged agreed-conditional row burned two
+        fresh seats one run later)."""
         m = _import("orchestrate_audit_batch")
         base = {
             **self._row(),
             "note_path": "docs/SPIN.md",
+            "deps": ["helper"],
             "previous_audits": [{
                 "audit_status": "audited_conditional",
-                "archived_at": "2026-07-12T10:00:00+00:00",
+                "audit_date": "2026-07-12T10:00:00.500000+00:00",
+                "archived_at": "2026-07-12T11:00:00+00:00",
                 "audit_state_snapshot": {
-                    "dep_effective_status": {"helper": "open_gate"},
+                    "dep_effective_status": {"helper": "retained"},
                 },
             }],
         }
-        effective = {"spin_row": "open_gate", "helper": "open_gate"}
+        effective = {"spin_row": "open_gate", "helper": "retained"}
         with mock.patch.object(
-            m, "last_source_change", return_value="2026-07-12T09:00:00+00:00"
+            m, "last_source_change", return_value="2026-07-12T05:59:59-04:00"
         ):
             # Unchanged sources + unchanged dep statuses: wait for repair.
             self.assertTrue(
@@ -8818,7 +8820,7 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
             # re-audit is warranted.
             self.assertFalse(
                 m.awaiting_repair_since_conditional(
-                    dict(base), {**effective, "helper": "retained"}
+                    dict(base), {**effective, "helper": "retained_bounded"}
                 )
             )
             # A clean archive never blocks.
@@ -8833,15 +8835,100 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
                 m.awaiting_repair_since_conditional(clean, effective)
             )
         with mock.patch.object(
-            m, "last_source_change", return_value="2026-07-12T11:00:00+00:00"
+            m, "last_source_change", return_value="2026-07-12T06:30:00-04:00"
         ):
-            # Sources repaired after the verdict: re-audit is warranted.
+            # A repair between audit_date and archived_at must not be hidden
+            # by the later archive timestamp.
             self.assertFalse(
                 m.awaiting_repair_since_conditional(dict(base), effective)
             )
+        with mock.patch.object(
+            m, "last_source_change", return_value="2026-07-12T06:00:00-04:00"
+        ):
+            # git %cI has only second precision.  A same-second repair stays
+            # targetable even when audit_date carries later microseconds.
+            self.assertFalse(
+                m.awaiting_repair_since_conditional(dict(base), effective)
+            )
+
+        # Legacy archives without archived_at do not use audit_date as a
+        # source baseline.  An empty snapshot therefore stays targetable,
+        # while a real unchanged dep snapshot can still hold the row.
+        legacy = {
+            **base,
+            "deps": [],
+            "previous_audits": [{
+                "audit_status": "audited_conditional",
+                "audit_date": "2026-07-12",
+                "audit_state_snapshot": {"dep_effective_status": {}},
+            }],
+        }
+        self.assertFalse(
+            m.awaiting_repair_since_conditional(legacy, effective)
+        )
+        legacy_with_dep = {
+            **legacy,
+            "previous_audits": [{
+                **legacy["previous_audits"][0],
+                "audit_state_snapshot": {
+                    "dep_effective_status": {"helper": "retained"},
+                },
+            }],
+        }
+        self.assertTrue(
+            m.awaiting_repair_since_conditional(legacy_with_dep, effective)
+        )
+
+        # A dependency may be repaired and re-ratified to the same effective
+        # status.  Scope/source movement in that authority is still a repair.
+        same_status_scope_repair = {
+            **base,
+            "previous_audits": [{
+                **base["previous_audits"][0],
+                "audit_state_snapshot": {
+                    "dep_effective_status": {"helper": "retained"},
+                    "dep_claim_scope": {"helper": "old scope"},
+                },
+            }],
+        }
+        rows = {
+            "spin_row": same_status_scope_repair,
+            "helper": {
+                "claim_id": "helper",
+                "claim_scope": "repaired scope",
+                "effective_status": "retained",
+                "note_path": "docs/HELPER.md",
+            },
+        }
+        with mock.patch.object(
+            m, "last_source_change", return_value="2026-07-12T05:59:59-04:00"
+        ):
+            self.assertFalse(m.awaiting_repair_since_conditional(
+                same_status_scope_repair, effective, rows
+            ))
+        with mock.patch.object(
+            m, "sh", return_value=mock.Mock(
+                stdout="2026-07-12T06:30:00-04:00\n"
+            )
+        ) as git_log:
+            m.last_source_change(base, rows)
+        command = git_log.call_args.args[0]
+        self.assertIn("docs/SPIN.md", command)
+        self.assertIn("docs/HELPER.md", command)
+
+        self.assertEqual(
+            m._iso("2026-07-12T06:00:00-04:00"),
+            m._iso("2026-07-12T10:00:00Z"),
+        )
+        self.assertEqual(
+            m._iso("2026-07-12"),
+            m._iso("2026-07-12T00:00:00+00:00"),
+        )
+        self.assertIsNone(m._iso("not-an-iso-timestamp"))
+
         # Integration: compute_targets reports the wait instead of targeting.
         with mock.patch.object(
-            m, "last_source_change", return_value="2026-07-12T09:00:00+00:00"
+            m, "last_source_change", return_value="2026-07-12T05:59:59-04:00"
         ), mock.patch.object(m, "source_requires_forensic", return_value=False):
             targets, skipped = m.compute_targets(
                 {"spin_row"},
@@ -8849,12 +8936,37 @@ class BatchOrchestratorRoundSemanticsTest(unittest.TestCase):
                     "spin_row": dict(base),
                     "helper": {
                         "claim_id": "helper",
-                        "effective_status": "open_gate",
+                        "effective_status": "retained",
                     },
                 },
             )
         self.assertEqual(targets, [])
         self.assertTrue(any("awaiting repair" in line for line in skipped))
+
+        # A critical row awaiting its second auditor is already in progress;
+        # archived conditionals must not suppress that second seat.
+        awaiting_second = {
+            **base,
+            "audit_status": "audit_in_progress",
+            "criticality": "critical",
+            "cross_confirmation": {"status": "awaiting_second"},
+        }
+        with mock.patch.object(
+            m, "awaiting_repair_since_conditional",
+            side_effect=AssertionError("awaiting_second must bypass predicate"),
+        ), mock.patch.object(m, "source_requires_forensic", return_value=False):
+            targets, skipped = m.compute_targets(
+                {"spin_row"},
+                {
+                    "spin_row": awaiting_second,
+                    "helper": {
+                        "claim_id": "helper",
+                        "effective_status": "retained",
+                    },
+                },
+            )
+        self.assertEqual([row["claim_id"] for row in targets], ["spin_row"])
+        self.assertFalse(any("awaiting repair" in line for line in skipped))
 
     def test_existing_workdir_refused_with_actionable_message(self):
         m = _import("orchestrate_audit_batch")

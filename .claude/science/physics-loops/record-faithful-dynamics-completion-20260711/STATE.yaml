@@ -8,32 +8,31 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block29-grassmann-polymer-norm-20260712
+branch: physics-loop/record-faithful-dynamics-block30-projected-rescaled-contraction-20260712
 base_commit_at_start: 9d1636f05f
-cycle_count: 29
-block_count: 29
-active_route: wilson_staggered_retained_grassmann_two_layer_kp_polymer_norm
+cycle_count: 30
+block_count: 30
+active_route: wilson_staggered_declared_rg_chart_raw_lift_geometric_contraction
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: wilson_staggered_retained_grassmann_two_layer_kp_polymer_norm_bounded_theorem_note_2026-07-12
+produced_claim_id: wilson_staggered_declared_rg_chart_raw_lift_geometric_contraction_bounded_theorem_note_2026-07-12
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  In an explicit deeper m>4 subwedge, the exact retained gauge--Grassmann
-  one-step logarithm has a uniform connected decomposition in one simultaneous
-  eta-weighted all-degree norm. No invariant rescaled neighborhood,
-  relevant-coordinate projection, contraction, physical taste carrier,
-  retained-fermion OS/CAR reconstruction, critical trajectory, or continuum
-  theorem is proved.
+  A declared factor-two support chart, finite diameter-zero/local-jet
+  projectors, and a field-rescaling torsor are explicit. Every extended raw
+  lifted direction gains at least exp(-lambda) suppression after projection in
+  that chart. No invariant neighborhood, full non-fiber derivative
+  contraction, physical relevance/taste selector, critical trajectory, or
+  continuum theorem is proved.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source proves a direct eliminated-determinant hopping row and a
-  simultaneous Banach-valued Schur-path KP bound with explicit nonempty
-  points. It keeps symmetry-adapted coordinates, projected/rescaled
-  contraction, physical taste identification, critical trajectory, and
-  continuum limits open.
+  The source constructs bounded mathematical RG charts and proves the exact
+  scale-weighted suppression of the entire extended raw-lift family. It keeps
+  the invariant ball, non-fiber derivative, nonlinear contraction, physical
+  relevance/taste identification, and critical trajectory open.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -130,6 +129,9 @@ files_touched:
   - docs/WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md
   - scripts/wilson_staggered_retained_grassmann_two_layer_kp_polymer_norm_2026_07_12.py
   - logs/runner-cache/wilson_staggered_retained_grassmann_two_layer_kp_polymer_norm_2026_07_12.txt
+  - docs/WILSON_STAGGERED_DECLARED_RG_CHART_RAW_LIFT_GEOMETRIC_CONTRACTION_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_declared_rg_chart_raw_lift_geometric_contraction_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_declared_rg_chart_raw_lift_geometric_contraction_2026_07_12.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -176,10 +178,11 @@ no_go_routes:
   - coarse-gauge Gibbsianness does not by itself provide a uniform translation-adapted anchored interaction norm or the all-order source cumulants needed for the retained gauge--Grassmann action; complete-analyticity, cluster, and constructive RG routes remain live
   - a scalar gauge-body source/polymer theorem does not by itself place the retained Grassmann coefficients in one simultaneous all-degree Banach norm or supply a projected/rescaled RG contraction
   - one-step simultaneous gauge--Grassmann norm membership does not by itself define an invariant factor-two rescaled neighborhood or remove the exact raw relevant directions
+  - geometric suppression of every extended raw lifted mode does not control the non-fiber derivative or prove invariance/nonlinear contraction of one joint ball
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
-review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_coarse_gauge_gibbsianness_pass_raw_action_hessian_pass_two_layer_source_polymer_pass_retained_grassmann_polymer_norm_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open_constrained_fiber_raw_rg_unit_directions_open_coarse_gauge_gibbsianness_open_raw_action_hessian_open_two_layer_source_polymer_open_retained_grassmann_polymer_norm_open
+review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_coarse_gauge_gibbsianness_pass_raw_action_hessian_pass_two_layer_source_polymer_pass_retained_grassmann_polymer_norm_pass_declared_rg_chart_pass_bounded
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open_constrained_fiber_raw_rg_unit_directions_open_coarse_gauge_gibbsianness_open_raw_action_hessian_open_two_layer_source_polymer_open_retained_grassmann_polymer_norm_open_declared_rg_chart_open
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
@@ -209,11 +212,12 @@ block26_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block27_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5317
 block28_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5322
 block29_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5327
+block30_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5330
 next_exact_action: >-
-  Define symmetry-adapted vacuum, mass, kinetic, gauge, and remaining
-  relevant/marginal coordinates on the joint action space. Extract them,
-  apply factor-two geometric and field rescaling, and test whether the
-  irrelevant derivative is strictly contractive on one invariant neighborhood.
+  Bound the non-fiber derivative in the declared factor-two chart, including
+  determinant scalar loops and every Grassmann degree, then prove or delimit
+  an invariant joint ball with nonlinear irrelevant Lipschitz constant below
+  one. Keep any contraction in this deep wedge distinct from criticality.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

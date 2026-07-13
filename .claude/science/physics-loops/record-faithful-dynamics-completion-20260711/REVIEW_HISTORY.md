@@ -887,3 +887,26 @@ repair. Audit validation seeds one `bounded_theorem` / `unaudited` row with
 source hash `ccd263928a7d0c58...` and exactly three intended dependencies;
 strict lint has zero errors and generated audit/status surfaces are stripped.
 PR #5327 is open. No negative theorem or axiom-update stop is triggered.
+
+## Declared projected/rescaled RG-chart review
+
+PASS WITH BOUNDED POSITIVE CLAIMS. The chart declares `H_2`, the full
+diameter-zero projector `P_0`, finite Berezin/Peter--Weyl jet projectors, and a
+field coordinate `rho`; none is promoted as a physical relevance or
+normalization selector. The exact raw factorization extends to even balanced
+retained polynomials. After doubled-support comparison, every extended raw
+lift left by `P_0` gains at least `exp(-lambda)` suppression.
+
+Code/math review verified the doubled-anchor comparison, finite rank and
+contractivity of `P_0`, the field norm identity, the Grassmann factorization,
+and the fixed-background Schur tangent signs/constants. It required equation
+(0.3) to be an upper bound rather than an exact ratio; the repair passed.
+Nature and governance review pass the declared-chart language, four-wall
+N1--N8 packet, and physical import firewall. Runner/cache: `PASS=10 FAIL=0`.
+
+Audit validation seeds one `bounded_theorem` / `unaudited` row with source
+hash `364153b46a3e6cbb...` and exactly the raw-unit and joint-polymer
+dependencies; strict lint has zero errors and generated status surfaces are
+stripped. PR #5330 is open. The invariant neighborhood, full non-fiber
+derivative, nonlinear contraction, taste carrier, and critical trajectory
+remain open. No axiom-update stop is triggered.

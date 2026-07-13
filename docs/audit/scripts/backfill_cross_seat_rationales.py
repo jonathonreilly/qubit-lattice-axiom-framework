@@ -14,14 +14,14 @@ disagreement row it scans the supplied delivery directories for envelopes
 whose ``audit.claim_id`` matches the row and whose
 ``audit.audit_invocation_id`` EQUALS the invocation id already recorded in
 the seat summary, then copies the envelope's ``verdict_rationale`` and
-``notes_for_re_audit_if_any`` into that summary. Every other summary field
-is cross-checked against the envelope first (verdict, claim_type,
-normalized claim_scope, load_bearing_step_class, auditor,
-negative_assertion_classes) and ANY mismatch refuses the row: an envelope
-that disagrees with the recorded seat is not evidence, whatever its
-invocation id says. Rows whose summaries already carry rationales are left
-untouched. Nothing is deleted and no verdict, status, or tuple field is
-modified.
+``notes_for_re_audit_if_any`` into that summary. Every recorded seat field
+other than those two backfill fields is cross-checked against the envelope
+first (with the same whitespace normalization for ``claim_scope`` and set
+normalization for ``negative_assertion_classes`` used by ``apply_audit.py``).
+ANY mismatch refuses that seat: an envelope that disagrees with the recorded
+seat is not evidence, whatever its invocation id says. Rows whose summaries
+already carry rationales are left untouched. Nothing is deleted and no
+verdict, status, or tuple field is modified.
 
 Run from a dedicated clean ``main`` checkout; commit the ledger change
 through the standard pipeline gates like any audit-data repair.
@@ -40,20 +40,38 @@ import orchestrate_audit_batch as batch  # noqa: E402
 
 LEDGER = batch.DATA / "audit_ledger.json"
 
-CHECKED_FIELDS = (
+REQUIRED_BINDING_FIELDS = (
     "verdict",
     "claim_type",
+    "claim_scope",
     "load_bearing_step_class",
+    "negative_assertion_classes",
     "auditor",
+    "auditor_family",
+    "auditor_model",
+    "auditor_reasoning_effort",
+    "independence",
+    "audit_date",
+    "audit_invocation_id",
 )
+BACKFILL_FIELDS = {"verdict_rationale", "notes_for_re_audit_if_any"}
 
 
 def norm(value: str) -> str:
-    return re.sub(r"\s+", " ", str(value or "").strip())
+    return re.sub(r"\s+", " ", value.strip())
+
+
+def normalized_classes(value: object) -> tuple[str, ...] | None:
+    if not isinstance(value, list) or not all(
+        isinstance(item, str) for item in value
+    ):
+        return None
+    return tuple(sorted(set(value)))
 
 
 def envelope_index(delivery_dirs: list[Path]) -> dict[tuple[str, str], dict]:
     index: dict[tuple[str, str], dict] = {}
+    sources: dict[tuple[str, str], Path] = {}
     for directory in delivery_dirs:
         for path in sorted(directory.glob("delivery-*.json")):
             try:
@@ -66,26 +84,68 @@ def envelope_index(delivery_dirs: list[Path]) -> dict[tuple[str, str], dict]:
             cid = str(audit.get("claim_id") or "")
             invocation = str(audit.get("audit_invocation_id") or "")
             if cid and invocation:
-                index[(cid, invocation)] = audit
+                key = (cid, invocation)
+                if key in index:
+                    if index[key] != audit:
+                        raise ValueError(
+                            "conflicting delivery envelopes for "
+                            f"claim {cid!r}, invocation {invocation}: "
+                            f"{sources[key]} and {path}"
+                        )
+                    continue
+                index[key] = audit
+                sources[key] = path
     return index
 
 
-def seat_mismatch(summary: dict, audit: dict) -> str | None:
-    for field in CHECKED_FIELDS:
-        if summary.get(field) != audit.get(field):
-            return (
-                f"{field} mismatch: summary={summary.get(field)!r} "
-                f"envelope={audit.get(field)!r}"
-            )
-    if norm(summary.get("claim_scope")) != norm(audit.get("claim_scope")):
+def seat_mismatch(
+    summary: dict,
+    audit: dict,
+    expected_claim_id: str,
+    expected_invocation_id: str,
+) -> str | None:
+    if audit.get("claim_id") != expected_claim_id:
+        return (
+            f"claim_id mismatch: row={expected_claim_id!r} "
+            f"envelope={audit.get('claim_id')!r}"
+        )
+    if audit.get("audit_invocation_id") != expected_invocation_id:
+        return (
+            "audit_invocation_id mismatch: "
+            f"summary={expected_invocation_id!r} "
+            f"envelope={audit.get('audit_invocation_id')!r}"
+        )
+    missing = [field for field in REQUIRED_BINDING_FIELDS if field not in summary]
+    if missing:
+        return f"summary missing recorded binding fields: {missing}"
+
+    summary_scope = summary.get("claim_scope")
+    audit_scope = audit.get("claim_scope")
+    if not isinstance(summary_scope, str) or not isinstance(audit_scope, str):
+        return "claim_scope mismatch: both values must be strings"
+    if norm(summary_scope) != norm(audit_scope):
         return "claim_scope mismatch after whitespace normalization"
-    summary_classes = sorted(summary.get("negative_assertion_classes") or [])
-    audit_classes = sorted(audit.get("negative_assertion_classes") or [])
+
+    summary_classes = normalized_classes(summary.get("negative_assertion_classes"))
+    audit_classes = normalized_classes(audit.get("negative_assertion_classes"))
+    if summary_classes is None or audit_classes is None:
+        return (
+            "negative_assertion_classes mismatch: both values must be "
+            "lists of strings"
+        )
     if summary_classes != audit_classes:
         return (
             f"negative_assertion_classes mismatch: summary={summary_classes} "
             f"envelope={audit_classes}"
         )
+
+    special_fields = {"claim_scope", "negative_assertion_classes"}
+    for field in sorted(set(summary) - BACKFILL_FIELDS - special_fields):
+        if summary.get(field) != audit.get(field):
+            return (
+                f"{field} mismatch: summary={summary.get(field)!r} "
+                f"envelope={audit.get(field)!r}"
+            )
     return None
 
 
@@ -103,19 +163,26 @@ def backfill_row(row: dict, index: dict[tuple[str, str], dict]) -> tuple[int, li
             continue
         invocation = str(summary.get("audit_invocation_id") or "")
         if not invocation:
-            problems.append(f"{label}: summary has no invocation id")
+            problems.append(
+                f"{label}: summary has no invocation id; fresh seat rerun required"
+            )
             continue
         audit = index.get((cid, invocation))
         if audit is None:
-            problems.append(f"{label}: no envelope bound to invocation {invocation[:12]}")
+            problems.append(
+                f"{label}: no envelope bound to invocation {invocation[:12]}; "
+                "fresh seat rerun required if the original envelope is unavailable"
+            )
             continue
-        mismatch = seat_mismatch(summary, audit)
+        mismatch = seat_mismatch(summary, audit, cid, invocation)
         if mismatch:
             problems.append(f"{label}: {mismatch}")
             continue
-        rationale = str(audit.get("verdict_rationale") or "").strip()
-        if not rationale:
-            problems.append(f"{label}: bound envelope has an empty rationale")
+        rationale = audit.get("verdict_rationale")
+        if not isinstance(rationale, str) or not rationale.strip():
+            problems.append(
+                f"{label}: bound envelope rationale must be a non-empty string"
+            )
             continue
         summary["verdict_rationale"] = rationale
         notes = audit.get("notes_for_re_audit_if_any")
@@ -156,7 +223,11 @@ def main() -> int:
         if not directory.is_dir():
             print(f"refusing to run: {directory} is not a directory")
             return 2
-    index = envelope_index(delivery_dirs)
+    try:
+        index = envelope_index(delivery_dirs)
+    except ValueError as exc:
+        print(f"refusing to run: {exc}")
+        return 2
     print(f"indexed {len(index)} invocation-bound envelopes")
 
     ledger = json.loads(LEDGER.read_text(encoding="utf-8"))

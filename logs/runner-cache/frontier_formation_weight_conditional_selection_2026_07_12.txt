@@ -1,0 +1,74 @@
+===== runner cache v1 =====
+runner: scripts/frontier_formation_weight_conditional_selection_2026_07_12.py
+runner_sha256: 2218489b470465e73a6955edad92a673d6c193fda25e88d97485a595a105680c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.05
+status: ok
+----- stdout -----
+EXACT CONDITIONAL SELECTION RUNNER
+==============================================================================
+
+A. LAWFUL-SET CANDIDATE ARITHMETIC (SOCMLC CONDITIONAL)
+[PASS] (01) the singlet/doublet projectors are complementary orthogonal projectors
+[PASS] (02) the supplied carrier derives ranks (rank P_s, rank P_d) = (1, 2)  [derived ranks=(1,2)]
+[PASS] (03) the supplied A_reg = C P_s + C P_d form is K-orbit-constant, while the internal doublet difference is K-odd
+[PASS] (04) normalized carrier trace derives menu weights (1/3, 2/3)  [derived weights=(1/3, 2/3)]
+[PASS] (05) uniform counting on the two minimal central cells derives menu weights (1/2, 1/2)  [rho_cell=Matrix([[1/2, 0, 0], [0, 1/4, 0], [0, 0, 1/4]]), derived weights=(1/2, 1/2)]
+[PASS] (06) SOCMLC candidate arithmetic deduplicates to W_expr = {1/3, 1/2}  [derived roots=(1/3, 1/2)]
+
+B. ENERGY DICTIONARY (DECLARED MODELING ELEMENT, ARITHMETIC RE-DERIVED)
+[PASS] (07) the two channel-energy equations have one exact solution  [solution=[{a_squared: E_total*w/3, b_squared: -E_total*w/6 + E_total/6}]]
+[PASS] (08) the solved energy ratio is r(w) = (1-w)/(2w), not an inserted endpoint  [derived r(w)=-(w - 1)/(2*w)]
+[PASS] (09) the positive-weight dictionary is invertible with w(r) = 1/(1+2r)  [derived inverse=[1/(2*r + 1)]]
+[PASS] (10) the lawful weights map bijectively to r=1 and r=1/2 with the stated pairing  [derived map={1/3: 1, 1/2: 1/2}]
+
+C. T1 POSITIVE-BRANCH REGISTRATION COMPATIBILITY
+[PASS] (11) the tied spectrum has phase-free signed trace sum(lambda_k)=3a
+[PASS] (12) the tied spectrum has phase-free quadratic trace 3a^2+6|b|^2
+[PASS] (13) the exact spectral collision locus is controlled by sin(3 theta)  [difference product=-6*sqrt(3)*beta**3*sin(3*theta)]
+[PASS] (14) on 0<=delta<=pi/3 the reduced minimum is -cos(pi/3-delta)  [both displayed gaps are nonnegative on the reduced interval]
+[PASS] (15) at the larger lawful endpoint the nonnegative window has zero width  [range=Interval(-1, 0), equality set={0}]
+[PASS] (16) the r=1 positive-branch endpoint is (3a,0,0) and violates ND_3  [registered pattern=[9*a**2, 0, 0]]
+[PASS] (17) at the smaller lawful endpoint the strict positivity half-window is 0<=delta<pi/12  [derived edge=pi/12]
+[PASS] (18) the derived open low-endpoint window contains a strictly positive ND_3 witness  [witness theta=pi/24]
+[PASS] (19) under B_map+B_plus, Q=(1+2r)/3 and the low endpoint pins Q=2/3  [Q(r)=(2*r + 1)/3, Q(r_low)=2/3]
+[PASS] (20) T1 composition selects one lawful positive-branch-compatible weight  [compatibility map={1/3: False, 1/2: True}]
+
+D. T2 B_abs OPEN PINNED-Q SECTOR
+[PASS] (21) a fixed-sign absolute sum can be theta-constant only for a uniform sign vector  [coefficient-kernel sign vectors=[(-1, -1, -1), (1, 1, 1)]]
+[PASS] (22) the algebraic all-negative exception is impossible because sum(lambda_k)=3a>0  [three negative terms would have a negative sum]
+[PASS] (23) at r=1 the sign-boundary set over one period is exactly {0,2pi/3,4pi/3}  [component zero sets=[{2*pi/3, 4*pi/3}, {0, 2*pi/3}, {0, 4*pi/3}]]
+[PASS] (24) the three actual r=1 open sign regions each have exactly one negative component  [derived region signs=[(1, -1, 1), (-1, 1, 1), (1, 1, -1)]]
+[PASS] (25) r=1 region (0,2*pi/3) has d(sum|lambda|)/dtheta not identically zero  [signs=(1, -1, 1), derivative=4*cos(theta + pi/6), isolated critical set={pi/3}]
+[PASS] (26) r=1 region (2*pi/3,4*pi/3) has d(sum|lambda|)/dtheta not identically zero  [signs=(-1, 1, 1), derivative=4*sin(theta), isolated critical set={pi}]
+[PASS] (27) r=1 region (4*pi/3,2*pi) has d(sum|lambda|)/dtheta not identically zero  [signs=(1, 1, -1), derivative=-4*sin(theta + pi/3), isolated critical set={5*pi/3}]
+[PASS] (28) r=1 zero-sign boundary patterns are isolated permutations of (3,0,0) and violate ND_3  [boundary spectra=[[3, 0, 0], [0, 0, 3], [0, 3, 0]]]
+[PASS] (29) the derivative's r=1 critical points are isolated (not open sectors) and their registered patterns are degenerate  [critical registered patterns=[[4, 1, 4], [1, 4, 4], [4, 4, 1]]]
+[PASS] (30) under B_abs, ND_3 alone does not exclude the r=1 lawful endpoint  [theta=pi/6, spectrum=[1 + sqrt(3), 1 - sqrt(3), 1], registered=[2*sqrt(3) + 4, 4 - 2*sqrt(3), 1]]
+[PASS] (31) under B_abs, ND_3 alone does not exclude the r=1/2 lawful endpoint  [theta=pi/24, all entries are positive]
+[PASS] (32) two exact non-degenerate r=1 phases already give different Q_abs values  [Q_abs(pi/6)=117/121 - 36*sqrt(3)/121, Q_abs(pi/12)=81/49 - 36*sqrt(2)/49]
+[PASS] (33) r=1 admits no open phase sector with constant Q_abs (isolated boundaries and critical points are not sectors)
+[PASS] (34) r=1/2 admits the nonempty open all-positive ND_3 sector 0<delta<pi/12 with Q_abs pinned to 2/3  [window edge=pi/12, sum|lambda|=3*a, Q_abs=2/3]
+[PASS] (35) T2 branch-robust composition uniquely selects w=1/2 among lawful weights  [B_abs open-pinned compatibility map={1/3: False, 1/2: True}]
+
+VERDICT: PASS — CONDITIONAL SELECTION THEOREM HOLDS EXACTLY AT ITS DECLARED WEAKEST GRADE; w=1/2 IS THE UNIQUE LAWFUL COMPATIBLE WEIGHT IN T1 AND T2.
+FULL CONDITIONAL STACK:
+  1. SOCMLC — note-owned licensing criterion from the formation-weight law-expressibility bounded theorem.
+  2. Tied-measure/formation-state relocation plus energy dictionary — exact bounded product compatibility, with the dictionary a declared modeling element.
+  3. B_map — declared spectral-to-registration bridge/modeling element (T1 and T2) from the endpoint-registration asymmetry bounded theorem.
+  4. B_plus — declared nonnegative-spectrum branch convention (T1) from the endpoint-registration asymmetry bounded theorem.
+  5. ND_3 — named comparator/premise, labeled and never thresholded.
+  6. K-tied section — records-only OS reconstruction bounded grade with supplied OS reflection/crossing, P-even orbit clause, history-index/transfer ingredients, and time-homogeneity as an explicit load-bearing modeling condition, not a licensed default.
+  7. Two-slice corner — bilinear one-component scope only.
+  8. C_3[111] — declared probe coupling, not a derived physical mass coupling.
+  9. B_abs — declared sign-allowed spectral-registration branch (T2) from the endpoint-registration asymmetry bounded theorem.
+ 10. Open-pinned-Q compatibility — this note's explicit T2 selection criterion.
+T2 EXACT RESULT: HOLDS — r=1 has three one-negative sign regions whose exact derivatives are nonzero trigonometric functions with only isolated critical points; r=1/2 alone has an open all-positive ND_3 sector with Q_abs=2/3.
+CHECK COUNT: 35 exact checks; PASS=35; FAIL=0.
+PROPOSED CLAIM_SCOPE: conditional on the ten named elements at their declared source grades, with every independent-audit narrowing or failure inherited, classify the two SOCMLC-lawful weights on the tied bilinear two-slice C_3[111] corner; w=1/2 alone has the required open non-degenerate pinned-Q sector, mapping to r=1/2 and Q=2/3 there.
+HOSTILE-AUDIT UNCERTAINTIES: SOCMLC exhaustiveness; formation-energy bridge; spectral-registration branches; ND_3 authority; time-homogeneity/orbit/history-index supplies; two-slice/probe physical scope; the open-pinned-Q criterion; source-grade and audit dependence. No premise or audit outcome is adopted here.
+TOTAL: PASS=35 FAIL=0
+
+----- stderr -----
+

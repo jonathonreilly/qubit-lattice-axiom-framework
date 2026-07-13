@@ -1,6 +1,37 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block34-haar-berezin-running-center-20260712`.
+The Gaussian-adapted Berezin/quadratic-center runner reports `PASS=14 FAIL=0`.
+For every finite hidden set with `sigma_min(A_II)>=m`, covariance minors give
+Gaussian operator norm at most `max_p(m eta^2)^(-p)`; at
+`eta=m^(-1/2)` the norm and every tensor power are exactly one.
+
+Independent onsite-product Haar/Gaussian coordinates also admit a finite-
+horizon multi-index atom norm with algebra constant one at
+`r_*=1+sqrt(2)`. It repairs the prior one-index modulation counterexample and
+the explicit all-nonskeleton Wilson family, but full actual-range tagged
+membership is not yet proved.
+
+Every odd retained Schur path vanishes. The full `r=2` term is hidden-fiber
+constant and equals the positive gauge-covariant shortest quadratic kernel
+`S^(2)=mI+m^(-1)M_KI M_KI^dagger`. Exact extraction leaves the current bare
+residual row `K_res=2.747447e-11`, `q=exp(-1/2)`, and
+`B_res=3.080247e-9`; the conditional scalar ball diagnostic is feasible.
+These marked-attachment constants remain on the current product-Haar bare
+derivative and are not transferred to the correlated Gaussian reference.
+
+Independent code/math, physics/import/Nature, and governance/no-go reviews
+pass. Audit validation seeds one `bounded_theorem` / `unaudited` row with
+exactly five dependencies; strict lint has zero errors and generated outputs
+are stripped. No physical center/taste, autonomous RG, continuum, or
+axiom-update claim is made.
+
+Gaussian-adapted Berezin/quadratic-center stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5342
+is open against the current-chart handoff head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block33-autonomous-shadow-norm-20260712`.
 The current-chart autonomy/Grassmann-handoff runner reports `PASS=8 FAIL=0`.
 The exact straight dyadic support hierarchy composes and obeys the declared

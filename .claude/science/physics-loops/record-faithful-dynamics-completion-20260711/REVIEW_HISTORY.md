@@ -1012,3 +1012,28 @@ generated outputs are stripped. PR #5340 is open. The next constructive target
 is a provenance-preserving multi-index Haar--Berezin norm with a running
 Gaussian/mass center, followed by a same-norm Hessian and invariant ball. No
 axiom-update stop is triggered.
+
+## Gaussian-adapted Berezin and shortest quadratic-center review
+
+PASS WITH BOUNDED CLAIMS after separating the product-Haar derivative from the
+correlated Gaussian reference. The covariance-minor proof gives norm one at
+`eta=m^(-1/2)` for every finite hidden set under a uniform singular gap. A
+finite-horizon tensor-factor Hoeffding atom norm has algebra constant one at
+`r_*=1+sqrt(2)` and repairs the explicit modulation-tag and Wilson-loop
+counterexamples, without claiming full actual-range membership.
+
+Independent path enumeration and staggered-sign checks prove that odd retained
+Schur lengths vanish and that all sixteen two-hop returns are backtracks or
+straight skeleton pairs. Their full sum is the hidden-independent positive
+kernel `S^(2)=mI+m^(-1)M_KI M_KI^dagger>=mI`. Extracting it exactly leaves
+`K_res=2.74744717327e-11`, `q=0.606530659713`, and
+`B_res=3.08024672439e-9` at the displayed point.
+
+Review rejected transferring forced attachment through the correlated
+Gaussian from contractivity alone. The repaired theorem keeps those constants
+on the current product-Haar bare derivative and names covariance locality,
+next-factor activity, running-gap persistence, spatial provenance, and the
+same-norm Hessian as open. Runner/cache are `PASS=14 FAIL=0`; audit validation
+seeds one `bounded_theorem` / `unaudited` row with exactly five dependencies;
+strict lint has zero errors and generated outputs are stripped. PR #5342 is
+open. No axiom-update stop is triggered.

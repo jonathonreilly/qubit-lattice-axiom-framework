@@ -181,7 +181,7 @@
         },
         {
           "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "effective_status": "audit_in_progress"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
@@ -533,7 +533,7 @@
         },
         {
           "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "effective_status": "audit_in_progress"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27",
@@ -2955,6 +2955,6 @@
       "uncertified_count": 672
     }
   ],
-  "repo_head": "88975351215353dbaca32f2efad1bb5634f0af70",
+  "repo_head": "fdd0c1e030d330cbc8d6a5fc787720faf2dd5ded",
   "schema": "lane_certification_v2"
 }

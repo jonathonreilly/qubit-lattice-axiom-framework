@@ -8,34 +8,34 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block33-autonomous-shadow-norm-20260712
+branch: physics-loop/record-faithful-dynamics-block34-haar-berezin-running-center-20260712
 base_commit_at_start: 9d1636f05f
-cycle_count: 33
-block_count: 33
-active_route: wilson_staggered_current_chart_autonomy_grassmann_handoff
+cycle_count: 34
+block_count: 34
+active_route: wilson_staggered_gaussian_adapted_berezin_shortest_quadratic_center
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: wilson_staggered_current_chart_autonomy_and_next_scale_grassmann_handoff_bounded_theorem_note_2026-07-12
+produced_claim_id: wilson_staggered_gaussian_adapted_berezin_handoff_and_shortest_quadratic_center_bounded_theorem_note_2026-07-12
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  The exact straight dyadic support hierarchy composes, but the full certified
-  weak completion does not embed into the same next-step strong marked norm by
-  support-only retagging: an explicit all-nonskeleton Wilson-loop family has a
-  divergent norm quotient. The next-step fifteen-site Gaussian Berezin map has
-  current-eta operator norm 10^720 at the ultra-deep witness. These are present-
-  chart boundaries only; actual RG-range provenance, a Gaussian-adapted
-  multi-index norm, running center, invariant ball, taste selection, and the
-  critical continuum remain open.
+  A uniform singular gap and eta=m^(-1/2) make normalized Gaussian Berezin
+  expectation contractive at every finite tensor depth. Independent product
+  coordinates admit a finite-horizon constant-one multi-index atom algebra.
+  The exact fiber-constant r=2 Schur kernel is extracted into a positive
+  gauge-covariant quadratic center; odd paths vanish, leaving a bare residual
+  row 2.747e-11 and q=exp(-1/2). Correlated-Gaussian attachment, actual-range
+  tagged membership, running-gap persistence, and same-norm iteration remain
+  open.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source proves an exact dyadic support hierarchy and three narrowly scoped
-  present-chart boundaries: support-only weak-to-strong nonembedding on an
-  explicit Wilson family, the current-eta Gaussian Berezin norm, and the
-  ambient one-index Haar martingale algebra obstruction. It leaves the actual
-  RG range and constructive multi-index Haar--Berezin norms open.
+  The source proves exact fixed-gap Gaussian coefficient control, a finite-
+  horizon independent-factor atom algebra, the shortest quadratic Schur
+  kernel and parity extraction, and the repaired current bare residual row.
+  It explicitly does not transfer product-Haar marked attachment to a
+  correlated Gaussian or claim an autonomous RG self-map.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -144,6 +144,9 @@ files_touched:
   - docs/WILSON_STAGGERED_CURRENT_CHART_AUTONOMY_AND_NEXT_SCALE_GRASSMANN_HANDOFF_BOUNDED_THEOREM_NOTE_2026-07-12.md
   - scripts/wilson_staggered_current_chart_autonomy_grassmann_handoff_2026_07_12.py
   - logs/runner-cache/wilson_staggered_current_chart_autonomy_grassmann_handoff_2026_07_12.txt
+  - docs/WILSON_STAGGERED_GAUSSIAN_ADAPTED_BEREZIN_HANDOFF_AND_SHORTEST_QUADRATIC_CENTER_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_gaussian_adapted_berezin_quadratic_center_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_gaussian_adapted_berezin_quadratic_center_2026_07_12.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -194,10 +197,11 @@ no_go_routes:
   - the exact base-dependent conditional-centering split kills the centered tangent only at first order; its kernel is not an ideal, and the current unlocalized Cauchy-plus-geometry certificate remains above 68 even though localized forced-attachment and spectral-smoothing routes remain live
   - a strict one-step strong-to-weak derivative contraction does not by itself return the coarse action to the same strong split norm or control a running center and nonlinear invariant ball
   - the full certified weak completion has no support-only embedding into the present next-step strong norm, and the present ultra-small eta makes the next Gaussian Berezin conditioning enormous; this does not rule out actual-range provenance, running Gaussian centers, or multi-index Haar--Berezin norms
+  - Gaussian adaptation and shortest-quadratic extraction repair the fixed-gap tensor norm and current bare residual constants, but do not by themselves supply correlated-reference forced attachment, full actual-range tag membership, or a persistent running gap
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
-review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_coarse_gauge_gibbsianness_pass_raw_action_hessian_pass_two_layer_source_polymer_pass_retained_grassmann_polymer_norm_pass_declared_rg_chart_pass_split_derivative_certificate_boundary_pass_marked_attachment_strong_weak_contraction_pass_current_chart_autonomy_handoff_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open_constrained_fiber_raw_rg_unit_directions_open_coarse_gauge_gibbsianness_open_raw_action_hessian_open_two_layer_source_polymer_open_retained_grassmann_polymer_norm_open_declared_rg_chart_open_split_derivative_certificate_boundary_open_marked_attachment_strong_weak_contraction_open_current_chart_autonomy_handoff_open
+review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_coarse_gauge_gibbsianness_pass_raw_action_hessian_pass_two_layer_source_polymer_pass_retained_grassmann_polymer_norm_pass_declared_rg_chart_pass_split_derivative_certificate_boundary_pass_marked_attachment_strong_weak_contraction_pass_current_chart_autonomy_handoff_pass_gaussian_berezin_quadratic_center_pass_bounded
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open_constrained_fiber_raw_rg_unit_directions_open_coarse_gauge_gibbsianness_open_raw_action_hessian_open_two_layer_source_polymer_open_retained_grassmann_polymer_norm_open_declared_rg_chart_open_split_derivative_certificate_boundary_open_marked_attachment_strong_weak_contraction_open_current_chart_autonomy_handoff_open_gaussian_berezin_quadratic_center_open
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
@@ -231,13 +235,15 @@ block30_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block31_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5333
 block32_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5338
 block33_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5340
+block34_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5342
 next_exact_action: >-
-  Construct a provenance-preserving multi-index Haar--Berezin atom norm with
-  Grassmann weights tied to a running onsite Gaussian/mass center. Prove the
-  actual RG range lands in it, its algebra and conditional expectations are
-  scale-uniform, and its one-step image returns to the same norm. Then derive
-  the same-norm two-mark Hessian and close the already-feasible invariant-ball
-  inequality, keeping the ultra-massive basin distinct from criticality.
+  Prove a tagged cluster expansion for the complete current residual factor
+  family, including non-pure Haar words, Grassmann endpoint contractions, and
+  skeleton-cancellation transfer into future coarse-link tags. Then extend
+  forced attachment through the correlated running covariance with an explicit
+  locality/cluster bound and prove the resulting actual RG range returns to a
+  uniform strong provenance norm. Only then derive the same-norm Hessian and
+  invariant ball.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

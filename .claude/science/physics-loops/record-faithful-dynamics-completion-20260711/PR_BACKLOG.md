@@ -1,5 +1,22 @@
 # PR Delivery
 
+The Gaussian-adapted Berezin handoff and shortest quadratic center is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block33-autonomous-shadow-norm-20260712`
+- head: `physics-loop/record-faithful-dynamics-block34-haar-berezin-running-center-20260712`
+- runner: `PASS=14 FAIL=0`
+- scope: exact fixed-gap Gaussian tensor norm one at `eta=m^(-1/2)`;
+  finite-horizon constant-one independent-factor atom algebra; exact odd-path
+  removal and fiber-constant positive `r=2` quadratic center; repaired current
+  bare residual/attachment constants; no correlated-Gaussian attachment,
+  actual-range tagged self-map, physical center, or invariant ball
+- review: independent code/math, physics/import/Nature, and governance/no-go pass
+- audit compatibility: one `bounded_theorem` / `unaudited` row with exactly
+  five dependencies; full pipeline and strict lint pass; generated outputs stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5342
+
+No merge is authorized. Independent audit remains authoritative.
+
 The current-chart autonomy and next-scale Grassmann-handoff boundary is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block32-localized-marked-invariant-ball-20260712`

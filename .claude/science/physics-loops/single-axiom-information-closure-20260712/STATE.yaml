@@ -1,0 +1,60 @@
+loop_slug: single-axiom-information-closure-20260712
+mode: run
+date_started: 2026-07-12
+target: best-honest-status
+current_goal: >-
+  Close the missing derivation in docs/SINGLE_AXIOM_INFORMATION_NOTE.md
+  at the strongest honest retained-grade-ready claim state.
+branch: physics-loop/single-axiom-information-no-go-block01-20260712
+base_commit_at_start: 61bb336fe99ccdb676ed076e926eb3327f21077b
+lock_status: >-
+  Dedicated disposable worktree is the single-writer surface. The shared
+  automation lock is unavailable because its configured path is owned by a
+  different local account; no shared checkout is being modified.
+cycle_count: 2
+block_count: 1
+active_route: exact_conserved_flow_nonforcing_countermodels
+hard_residual: >-
+  Can conserved information flow alone entail Hilbert geometry, linear
+  unitarity, a distinguished carrier basis, support-as-adjacency semantics,
+  and sparse locality?
+produced_claim_id: single_axiom_information_two_formalizations_nonforcing_no_go_note_2026-07-12
+canonical_meta_claim_id: single_axiom_information_note
+actual_current_surface_status: no-go
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: conditional-support
+hypothetical_axiom_status: null
+admitted_observation_status: null
+proposal_allowed: false
+proposal_allowed_reason: >-
+  The block proposes an exact no-go for two formal semantics under a separate
+  polarity-safe identity, not a positive retained or promoted claim.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/SINGLE_AXIOM_INFORMATION_NOTE.md
+  - docs/SINGLE_AXIOM_INFORMATION_TWO_FORMALIZATIONS_NONFORCING_NO_GO_NOTE_2026-07-12.md
+  - scripts/frontier_single_axiom_information_two_formalizations_nonforcing_2026_07_12.py
+  - logs/runner-cache/frontier_single_axiom_information_two_formalizations_nonforcing_2026_07_12.txt
+  - .claude/science/physics-loops/single-axiom-information-closure-20260712/
+open_imports_for_positive_reformulation:
+  - complex projective or Hilbert state geometry
+  - linear reversible differentiable time-group dynamics
+  - distinguished orthonormal carrier basis
+  - direct-coupling support semantics
+  - finite-range, bounded-degree, or metric locality selector
+no_go_routes:
+  - total additive conservation does not force unitarity
+  - reversible norm conservation does not force linearity
+  - linear unitarity does not force sparsity
+  - generator support is not basis invariant without a carrier basis
+trace_gate_classification: direct_blocker_closure
+review_disposition: iteration_2_pass
+pr_status: pending
+next_exact_action: >-
+  Validate audit compatibility without applying audit verdicts, then commit,
+  push, and open one unmerged review PR.
+stop_condition: >-
+  Stop when the scoped no-go and conditional reconstruction pass review and
+  checks and one verified unmerged review PR is open.

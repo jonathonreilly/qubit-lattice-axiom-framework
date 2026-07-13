@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/frontier_single_axiom_information_two_formalizations_nonforcing_2026_07_12.py
+runner_sha256: b13fe43da152b8019b874a12ff296c02340acdba70cf0fcc60405c305a49880d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.07
+status: ok
+----- stdout -----
+==============================================================================
+TWO CONSERVED-INFORMATION SEMANTICS: NON-FORCING CERTIFICATE
+Actual surface: no-go proposal; independent audit required
+==============================================================================
+
+A. Additive conserved flow does not force unitarity
+[A01] PASS — two-state transition is nonnegative (min=0.376702)
+[A02] PASS — column sums preserve I(p)=sum_i p_i
+[A03] PASS — difference mode contracts by exp(-2t)=0.246596963942
+[A04] PASS — T(t)^*T(t) differs from identity (max error=0.469595)
+[A05] PASS — subunit eigenvalue modulus rules out unitarity in every positive-definite inner product
+
+B. Reversible norm conservation does not force linearity
+[B01] PASS — nonlinear rotation preserves norm and transfers components (error=1.110e-16)
+[B02] PASS — F_t composed with F_s equals F_(t+s) (error=1.360e-16)
+[B03] PASS — F_-t is the inverse of F_t (error=5.551e-17)
+[B04] PASS — flow violates homogeneity and is not linear (defect=2.10777)
+
+C. Unitarity does not force sparse/local support
+[C04] PASS — N=4: unitary error=2.220e-16, complete edges=6
+[C08] PASS — N=8: unitary error=1.332e-15, complete edges=28
+[C16] PASS — N=16: unitary error=1.110e-15, complete edges=120
+[C20] PASS — complete-support family has Theta(N^2), not O(N), edges
+
+D. Entrywise support is not basis invariant
+[D01] PASS — site-basis support is the 7-vertex path (6 edges)
+[D02] PASS — same operator has empty off-diagonal support in eigenbasis (error=1.776e-15)
+
+E. Conditional self-adjoint-generator reconstruction
+[E01] PASS — H=iA is self-adjoint when A is anti-Hermitian
+[E02] PASS — differentiated norm-preservation identity gives A*+A=0
+[E03] PASS — exp(-itH) is unitary on the supplied Hilbert surface
+[E04] PASS — self-adjoint support is symmetric in a supplied orthonormal basis
+[E05] PASS — support-as-edges extracts a graph only after the basis and definition are supplied
+
+==============================================================================
+SUMMARY: PASS=20 FAIL=0 TOTAL=20
+Claim-state result: exact scoped non-entailment; not a positive graph-unitary derivation
+Conditional positive: Hilbert + linear differentiable norm-preserving group -> self-adjoint H
+Remaining independent inputs: carrier basis, support semantics, locality bound
+==============================================================================
+
+----- stderr -----
+

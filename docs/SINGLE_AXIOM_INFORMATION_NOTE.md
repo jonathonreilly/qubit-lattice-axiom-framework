@@ -34,6 +34,22 @@ algebra on the `Z^3` spatial substrate per
 [`MINIMAL_AXIOMS_2026-04-11.md`](MINIMAL_AXIOMS_2026-04-11.md).
 **Runner:** `scripts/frontier_single_axiom_information.py`
 
+## 2026-07-12 first-principles outcome
+
+The positive derivation requested by the prior audit remains unclosed on this
+meta identity. A separate negative claim,
+`docs/SINGLE_AXIOM_INFORMATION_TWO_FORMALIZATIONS_NONFORCING_NO_GO_NOTE_2026-07-12.md`,
+now gives exact countermodels for two explicit conserved-information-flow
+semantics and a conditional self-adjoint-generator reconstruction theorem.
+
+The separate identity is deliberate. This note has existing consumers that
+cited its historical graph/unitary framing positively; a future clean negative
+status must not satisfy those positive dependencies. The new no-go therefore
+does not promote or retype `single_axiom_information_note`, does not make the
+old sparse-Hermitian model demonstration a derivation, and does not authorize
+positive downstream reuse. Any consumer that needs the negative theorem must
+cite the new source explicitly and preserve its polarity.
+
 **Scope note:** this is an operational support note for framework
 compression and physical-lattice scoping. It is not the load-bearing
 accepted-input ledger for the current paper package, whose framework

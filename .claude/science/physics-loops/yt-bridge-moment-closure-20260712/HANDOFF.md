@@ -4,6 +4,8 @@
 
 - Loop: `yt-bridge-moment-closure-20260712`
 - Branch: `physics-loop/yt-bridge-moment-closure-block01-20260712`
+- Review PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5334
+- PR state: open; not merged
 - Honest status: exact current-axiom no-go; independent audit required
 - Trace: negative route pruning for bare-foundation first-order
   affine-kernel/two-moment entailment
@@ -34,7 +36,5 @@ generated authority/status outputs are excluded from the block.
 
 ## Exact next action
 
-Commit and push this reviewed block and open one review PR without merging.
-After delivery, the next science action is independent audit of the distinct
-no-go followed by continued work on the physical dynamics/source/readout
-packet.
+Independently audit the distinct no-go, then continue work on the physical
+dynamics/source/readout packet.  Do not merge the review PR from this lane.

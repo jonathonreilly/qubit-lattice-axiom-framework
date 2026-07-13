@@ -137,3 +137,4 @@ This graph-bookkeeping section records explicit dependency links named by a prio
 
 - [universal_gr_lorentzian_global_atlas_closure_note](UNIVERSAL_GR_LORENTZIAN_GLOBAL_ATLAS_CLOSURE_NOTE.md)
 - [universal_qg_projective_schur_closure_note](UNIVERSAL_QG_PROJECTIVE_SCHUR_CLOSURE_NOTE.md)
+- [universal_gr_positive_background_local_closure_note](UNIVERSAL_GR_POSITIVE_BACKGROUND_LOCAL_CLOSURE_NOTE.md)

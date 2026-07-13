@@ -995,6 +995,7 @@ def main() -> int:
             isinstance(xc, dict)
             and agreement_schema == AUDIT_TUPLE_AGREEMENT_SCHEMA
         )
+        summary_access_allowed = agreement_schema is None
         if isinstance(xc, dict) and xc_status == "confirmed":
             first = xc.get("first_audit") or {}
             second = xc.get("second_audit") or {}
@@ -1012,6 +1013,10 @@ def main() -> int:
                 if agreement_schema is None
                 or (exact_tuple_schema and tuple_schema_valid)
                 else None
+            )
+            summary_access_allowed = (
+                agreement_schema is None
+                or (exact_tuple_schema and tuple_schema_valid)
             )
             if exact_tuple_schema and tuple_schema_valid and tuples_match is False:
                 errors.append(
@@ -1167,14 +1172,15 @@ def main() -> int:
                     f"{cid}: criticality={criticality} requires independence != 'weak' for audited_clean"
                 )
             if criticality == "critical":
-                xc = row.get("cross_confirmation") or {}
+                xc_value = row.get("cross_confirmation")
+                xc = xc_value if isinstance(xc_value, dict) else {}
                 xc_status = xc.get("status")
                 if xc_status not in {"confirmed", "third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
                     errors.append(
                         f"{cid}: critical claim requires confirmed cross-confirmation; "
                         f"got {xc_status!r}"
                     )
-                else:
+                elif summary_access_allowed:
                     first_value = xc.get("first_audit")
                     second_value = xc.get("second_audit")
                     first = first_value if isinstance(first_value, dict) else {}

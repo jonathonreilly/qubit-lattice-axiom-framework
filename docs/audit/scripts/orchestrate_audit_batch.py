@@ -174,9 +174,10 @@ def awaiting_repair_since_conditional(
             return False
 
     repair_reason = str(last.get("invalidation_reason") or "")
-    if repair_reason.startswith(
-        ("runner_artifact_issue_resolved:", "classifier_promoted_to_class_A:")
-    ):
+    if repair_reason:
+        # The invalidation pipeline already decided that this archived audit
+        # is stale and deliberately re-queued it.  This repetition guard must
+        # not veto that stronger, explicit re-audit signal.
         return False
 
     # Audit-side dependency repairs can change scope/type without changing the

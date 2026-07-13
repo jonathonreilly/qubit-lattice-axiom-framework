@@ -984,3 +984,31 @@ dependencies; strict lint has zero errors and generated outputs are stripped.
 PR #5338 is open. The next target is an autonomous next-level strong-norm
 handoff, same-norm Hessian, running center, and genuine invariant ball. No
 axiom-update stop is triggered.
+
+## Current-chart autonomy and next-scale Grassmann-handoff review
+
+PASS WITH BOUNDED CLAIMS after two witness repairs. An explicit simple
+`L`-by-`L` Wilson rectangle at fixed odd spectator coordinate has `4L`
+distinct nonskeleton links, exact product-Haar centering, matched hidden/coarse
+support cardinality, and divergent current weak-to-next-strong norm quotient.
+Physics review required this family in place of the earlier universal centered-
+polymer wording. It also required the one-index martingale witness to remain an
+ambient product-Haar algebra statement rather than a gauge-invariant model no-
+go; the invariant restriction and multi-index atom norms remain open.
+
+The exact normalized three-color onsite Gaussian expectation sends a balanced
+`p`-pair monomial to magnitude `m^(-p)`, so its current coefficient-norm ratio
+is `(m eta^2)^(-p)`. At the ultra-deep witness the sharp one-site norm is
+`10^48` and the fifteen-site tensor norm is `10^720`. Code/math review checked
+this by direct nilpotent multiplication, independently verified the Wilson
+support/centering and `a_h=1/9` martingale factor, and confirmed the exact
+straight-support semigroup and size/diameter constants. Governance/no-go
+review passes all N1--N8 scope and dependency checks.
+
+Runner/cache: `PASS=8 FAIL=0`. Audit validation seeds one `bounded_theorem` /
+`unaudited` row with exactly the factor-two block, retained-Grassmann joint-
+polymer, and marked-attachment dependencies; strict lint has zero errors and
+generated outputs are stripped. PR #5340 is open. The next constructive target
+is a provenance-preserving multi-index Haar--Berezin norm with a running
+Gaussian/mass center, followed by a same-norm Hessian and invariant ball. No
+axiom-update stop is triggered.

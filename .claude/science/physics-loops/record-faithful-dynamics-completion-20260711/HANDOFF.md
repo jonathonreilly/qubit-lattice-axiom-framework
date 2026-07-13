@@ -1,6 +1,38 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block33-autonomous-shadow-norm-20260712`.
+The current-chart autonomy/Grassmann-handoff runner reports `PASS=8 FAIL=0`.
+The exact straight dyadic support hierarchy composes and obeys the declared
+size, diameter, blocked-translation, proper-cubic, and reflection bounds.
+
+An explicit family of simple fundamental Wilson rectangles at fixed odd
+spectator coordinate has only distinct nonskeleton links, with
+`|T_L|=|X_L|` and exact product-Haar centering. Its current weak-to-next-strong
+support-only norm quotient diverges, so the full certified weak completion
+cannot be blindly recycled as the next strong domain. This does not constrain
+the narrower actual RG range.
+
+At the next factor-two step, fifteen retained sites per hypercube must be
+Berezin-integrated. The exact current-`eta` one-site Gaussian coefficient norm
+is `max_(0<=p<=3)(m eta^2)^(-p)`; at `m=10^4,eta=10^-10` it is `10^48`, hence
+`10^720` over the fifteen-site tensor product. A naive one-index martingale
+algebra boundary is proved only on the ambient product-Haar coefficient
+algebra; gauge-invariant and multi-index variants remain open.
+
+Independent code/math, physics/import/Nature, and governance/no-go reviews
+pass after repairing the Wilson witness, the ambient-algebra scope, and the
+factor-two import. Audit validation seeds one `bounded_theorem` / `unaudited`
+row with exactly the factor-two, joint-polymer, and marked-attachment
+dependencies; strict lint has zero errors and generated outputs are stripped.
+No model noncontraction, continuum impossibility, or axiom-update stop is
+triggered.
+
+Current-chart autonomy/handoff stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5340
+is open against the marked-attachment head.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block32-localized-marked-invariant-ball-20260712`.
 The K-retaining marked-attachment runner reports `PASS=9 FAIL=0`. Re-running
 the two-layer recursion with its actual factor row keeps `K` instead of the

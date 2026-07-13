@@ -1,5 +1,24 @@
 # PR Delivery
 
+The current-chart autonomy and next-scale Grassmann-handoff boundary is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block32-localized-marked-invariant-ball-20260712`
+- head: `physics-loop/record-faithful-dynamics-block33-autonomous-shadow-norm-20260712`
+- runner: `PASS=8 FAIL=0`
+- scope: exact straight dyadic support hierarchy; explicit all-nonskeleton
+  Wilson family proving support-only nonembedding of the full weak completion;
+  sharp current-`eta` next-step Gaussian Berezin norm `10^720`; ambient-only
+  one-index martingale algebra boundary; no actual-range, model-
+  noncontraction, continuum, or axiom no-go
+- review: independent code/math, physics/import/Nature, and governance/no-go
+  pass after witness, import, and scope repairs
+- audit compatibility: one `bounded_theorem` / `unaudited` row with exactly
+  the factor-two, joint-polymer, and marked-attachment dependencies; full
+  pipeline and strict lint pass; generated outputs stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5340
+
+No merge is authorized. Independent audit remains authoritative.
+
 The K-retaining marked-attachment strong-to-weak theorem is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block31-nonfiber-derivative-invariant-ball-20260712`

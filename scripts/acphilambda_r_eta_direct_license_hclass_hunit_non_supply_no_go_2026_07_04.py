@@ -63,6 +63,15 @@ def main() -> int:
     )
     check("target singleton eta angle is 2/9", readout(beta_target, h, singleton) == Fraction(2, 9))
     check("countermodel singleton eta angle is 4/9", readout(beta_counter, h, singleton) == Fraction(4, 9))
+    check(
+        "N1 numerical_or_finite_case mechanism: finite singleton point evaluation; "
+        "N1 numerical_or_finite_case attempt: finite cardinality formula at n=1; "
+        "N1 numerical_or_finite_case outcome: finite beta-one and beta-two singleton readouts remain distinct",
+        len(singleton) == 1
+        and readout(beta_target, h, singleton) == h
+        and readout(beta_counter, h, singleton) == 2 * h
+        and readout(beta_target, h, singleton) != readout(beta_counter, h, singleton),
+    )
     check("target cycle holonomy is 2/3", readout(beta_target, h, cycle) == Fraction(2, 3))
     check("countermodel cycle holonomy is 4/3", readout(beta_counter, h, cycle) == Fraction(4, 3))
     check("target and countermodel share the same h", h == Fraction(2, 9))

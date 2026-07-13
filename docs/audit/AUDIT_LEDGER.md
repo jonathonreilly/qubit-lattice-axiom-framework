@@ -22,12 +22,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 303 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2958 |
+| unaudited | 2957 |
 | audit_in_progress | 1 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 25 |
+| ~~audited_conditional~~ | 26 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -42,12 +42,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 1 |
 | `audited_clean` | 381 |
-| `audited_conditional` | 25 |
+| `audited_conditional` | 26 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3309 |
+| `unaudited` | 3308 |
 
 | claim_type | count |
 |---|---:|
@@ -517,6 +517,7 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `record_permanence_forces_fresh_site_double_registration_and_agreement_survival_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | C | - |
+| `records_only_os_reconstruction_untied_first_order_measure_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `universal_qg_uv_finite_partition_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
@@ -4729,6 +4730,27 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** Issue: the site-history theorem and exact map/escape algebra are correct, but the agreement-conditioned parent is unaudited and the physical formation, common-readout, outcome-independence, and flow-class conditions have no retained law-domain certificates. Why this blocks: the exact local implications cannot be promoted into a physical durability/self-composition bridge. Repair target: retain the anatomy parent and derive the supplied formation/readout/filter conditions with lattice-motion-covariant, record-decidable certificates. Claim boundary until fixed: only the explicit site-tagged monotone histories and the supplied scalar map have the stated necessary and finite-horizon consequences.
 - **open / conditional deps cited:**
   - `RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md`
+- **auditor confidence:** high
+- **No-Go Discipline:** `PASS`
+
+### `records_only_os_reconstruction_untied_first_order_measure_bounded_theorem_note_2026-07-11`
+
+- **Note:** [`RECORDS_ONLY_OS_RECONSTRUCTION_UNTIED_FIRST_ORDER_MEASURE_BOUNDED_THEOREM_NOTE_2026-07-11.md`](../../docs/RECORDS_ONLY_OS_RECONSTRUCTION_UNTIED_FIRST_ORDER_MEASURE_BOUNDED_THEOREM_NOTE_2026-07-11.md)
+- **claim_type:** `bounded_theorem`
+- **claim_scope:** The exact two-branch Hermiticity classification and branchwise positivity domain of the stated time-homogeneous two-slice records-only Grassmann Gram.
+- **audit_status:** ~~audited_conditional~~
+- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
+- **auditor:** `codex-audit-loop`  (codex-gpt-5.6; independence=fresh_context)
+- **load-bearing step:** Hermiticity of the five-record normalized Gram recovers real lambda_0, u+v, and uv, giving exactly the Hermitian or all-real branches; the all-real tensor factor has determinant proportional to 1-8(Im lambda_1)^2.  _(class `A`)_
+- **chain closes:** False — The finite Gram algebra closes, but time-homogeneity, the OS crossing/reflection, P-even record span, and optional spectral readout are supplied, while six scientific parents remain unaudited.
+- **rationale:** Issue: independent covariance/minor algebra confirms the exact Hermiticity branches, tied positivity, the all-real strip, and the alternating live escape, but the theorem consumes supplied time-homogeneity, reflection/crossing, and P-even record-span conditions and six unaudited scientific parents. Why this blocks: the finite two-slice construction cannot establish that its law domain is the framework's physical history/readout domain, and the optional three-value spectral comparator is not derived. Repair target: retain the six scientific parents and supply a lattice-motion-covariant, record-decidable certificate for the homogeneous OS law and P-even record span, without importing the three-value comparator. Claim boundary until fixed: for the declared homogeneous two-slice kernel and five-vector P-even record span, the normalized Gram has exactly the two stated Hermiticity branches and the stated branchwise positivity domains.
+- **open / conditional deps cited:**
+  - `KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md`
+  - `RP_COUPLED_TWO_SLICE_GAUGE_STAGGERED_BEREZIN_GRAM_NARROW_THEOREM_NOTE_2026-07-10.md`
+  - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
+  - `ACPHILAMBDA_K_ODD_CARRIER_REGISTERED_DATUM_TEST_BOUNDED_NOTE_2026-07-03.md`
+  - `TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md`
+  - `AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

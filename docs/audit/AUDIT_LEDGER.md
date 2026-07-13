@@ -22,12 +22,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 | **retained_bounded** | 303 |
 | _retained_pending_chain_ | 1 |
 | open_gate | 2 |
-| unaudited | 2955 |
+| unaudited | 2959 |
 | audit_in_progress | 3 |
 | meta | 351 |
 | ~~audited_numerical_match~~ | 5 |
 | ~~audited_renaming~~ | 14 |
-| ~~audited_conditional~~ | 26 |
+| ~~audited_conditional~~ | 22 |
 | ~~audited_failed~~ | 2 |
 | `decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10` | 1 |
 | `decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | 1 |
@@ -42,12 +42,12 @@ Publication-facing tables MUST read `effective_status`; `claim_type` is the audi
 |---|---:|
 | `audit_in_progress` | 3 |
 | `audited_clean` | 381 |
-| `audited_conditional` | 26 |
+| `audited_conditional` | 22 |
 | `audited_decoration` | 16 |
 | `audited_failed` | 2 |
 | `audited_numerical_match` | 5 |
 | `audited_renaming` | 14 |
-| `unaudited` | 3306 |
+| `unaudited` | 3310 |
 
 | claim_type | count |
 |---|---:|
@@ -505,12 +505,9 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `bridge_gap_hk_cube_perron_note_2026-05-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | C | - |
 | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.6 | A | - |
 | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_full_packet_no_go_theorem_note_2026-04-20` | no_go | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `graded_constraint_menu_uniformity_contextuality_and_c3_zero_information_point_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `koide_dimensionless_objection_toy_conditional_algebraic_checks_narrow_theorem_note_2026-05-16` | open_gate | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
-| `koide_first_order_section_tie_vs_outcome_label_residual_localization_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `koide_generation_weight_dial_shape_forced_value_unfixed_qualification_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
-| `koide_kappa_bookkeeping_flow_class_fixed_point_inversion_and_lane_scoping_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
-| `koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
+| `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `lorentz_violation_derived_note` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-gpt-5.6 | A | - |
 | `post_record_character_path_channel_weight_prototype_2026-06-06` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
 | `post_record_directed_certificate_examples_2026-06-06` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.6 | A | - |
@@ -519,7 +516,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 | `quark_cp_small_correction_boundary_note_2026-06-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | weak | codex-current | A | - |
 | `record_permanence_forces_fresh_site_double_registration_and_agreement_survival_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | C | - |
-| `records_only_os_reconstruction_untied_first_order_measure_bounded_theorem_note_2026-07-11` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | fresh_context | codex-gpt-5.6 | A | - |
 | `universal_qg_uv_finite_partition_note` | positive_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | A | - |
 | `yt_boundary_bc_transfer_uniqueness_narrow_theorem_note_2026-05-17` | bounded_theorem | ~~audited_conditional~~ | ~~audited_conditional~~ | cross_family | codex-gpt-5.5 | D | - |
 | `abj_scale_free_native_abelian_anomaly_core_boundary_note_2026-06-18` | decoration | ~~audited_decoration~~ | `decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` | cross_family | codex-gpt-5.5 | A | `native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23` |
@@ -2939,23 +2935,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** The source note has been narrowed to historical finite evidence, and the runner cache reproduces the archived 7/9 versus 6/9 scaffolded result. The retained off-scaffold dependency supplies the reversal that prevents this from being promoted as a generator-agnostic law or live classifier program. Residual risk is ordinary finite-sample/scaffold specificity; broader metric-search closure or analytic path-sum derivation is not audited here.
 - **auditor confidence:** high
 
-### `graded_constraint_menu_uniformity_contextuality_and_c3_zero_information_point_bounded_theorem_note_2026-07-11`
-
-- **Note:** [`GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md`](../../docs/GRADED_CONSTRAINT_MENU_UNIFORMITY_CONTEXTUALITY_AND_C3_ZERO_INFORMATION_POINT_BOUNDED_THEOREM_NOTE_2026-07-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The conditional menu-refinement contradiction, full-symmetry zero-information point, and unequal-rank obstruction on the proposed C3 generation context.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.6; independence=fresh_context)
-- **load-bearing step:** Uniformity on both {P_s,P_d} and {P_s,P_1,P_2} assigns incompatible values to the shared projector, while full qutrit Weyl symmetry forces rho=I/3 and hence r=1 rather than r=1/2.  _(class `A`)_
-- **chain closes:** False — The matrix and menu algebra closes conditionally, but the graded core and canonical context are proposed/unapproved, while the Born-form and occupancy parents are unaudited.
-- **rationale:** Issue: the refinement contradiction, Weyl-commutant calculation, Born-weight traces, DFT tie, and rank obstruction are correct, but the graded core and context naming are proposed rather than approved and two scientific direct parents are unaudited. Why this blocks: the computed r=1 and r=1/2 points remain consequences of supplied menu, Born-form, symmetry, and dictionary hypotheses rather than retained framework results. Repair target: retain the Born and occupancy parents and provide approved or retained law-domain certificates for menu eligibility, lattice-motion covariance, and record-decidable weighting. Claim boundary until fixed: A-C are exact conditional boundary facts on the explicitly supplied qutrit projection menus only.
-- **open / conditional deps cited:**
-  - `BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`
-  - `KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md`
-- **auditor confidence:** high
-- **No-Go Discipline:** `PASS`
-
 ### `graph_first_selector_derivation_note`
 
 - **Note:** [`GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md`](../../docs/GRAPH_FIRST_SELECTOR_DERIVATION_NOTE.md)
@@ -3360,28 +3339,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** Within the bounded algebraic scope, the load-bearing step closes: the note states the projector, the basis-level action, the generic coefficient formula, and the response reconstruction, and the cached runner confirms all algebraic identities with PASS=11 FAIL=0. The two D-class checks are only witness/comparator checks for the observed amplitude target and are not needed to prove the compression theorem. This clean verdict must not be read as closing the microscopic source law for (r0,r1,r2), the selector principle, or the final charged-lepton readout, all of which remain explicitly outside this claim scope.
 - **auditor confidence:** high
 
-### `koide_first_order_section_tie_vs_outcome_label_residual_localization_bounded_theorem_note_2026-07-11`
-
-- **Note:** [`KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md`](../../docs/KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The finite first-order determinant calculation, tied-versus-untied section identity, and localization of the still-open physical stage/readout residual.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.6; independence=fresh_context)
-- **load-bearing step:** A finite Grassmann calculation gives det(M) to first order, while imposing c=conjugate(b) only after the holomorphic calculation introduces the mixed derivative -3a without selecting the physical weight or outcome stage.  _(class `A`)_
-- **chain closes:** False — The local determinant and section algebra close, but the stage choice, energy/readout law, and OS realization are supplied or open, and seven scientific direct parents remain unaudited.
-- **rationale:** Issue: the independent Berezin/determinant calculation confirms first-power det(M), holomorphy before restriction, the tied mixed derivative -3a, the modulus-squared block determinant, and the site/link-center parity comparison, but none of these calculations selects when K-reality is imposed or supplies the physical energy/readout law. Why this blocks: all seven scientific one-hop parents are unaudited and the declared OS/stage domain lacks a retained lattice-motion-covariant, record-decidable certificate, so the residual localization cannot become an unconditional physical selection theorem. Repair target: retain the determinant, channel-holomorphy, realization, custody, and no-go parents; then provide the explicit OS reconstruction and stage/readout certificate. Claim boundary until fixed: on the supplied finite first-order Grassmann surface, tying before or after the untied holomorphic calculation agrees pointwise after restriction but does not choose the physical stage or Koide weight.
-- **open / conditional deps cited:**
-  - `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`
-  - `KOIDE_STAGGERED_FIRST_ORDER_GENERATION_DETERMINANT_BOUNDED_THEOREM_NOTE_2026-06-11.md`
-  - `KOIDE_GENERATION_CHANNEL_SPACE_HOLOMORPHY_CHANNEL_INDEPENDENCE_BOUNDED_THEOREM_NOTE_2026-06-11.md`
-  - `KOIDE_R_HALF_DYNAMICAL_DETERMINANT_ROUTE_PRUNING_NO_GO_NOTE_2026-06-08.md`
-  - `KOIDE_KAHLER_DIRAC_REALIZATION_GIVES_R_ONE_INDEX_ROUTE_CLOSED_BOUNDED_NO_GO_NOTE_2026-06-08.md`
-  - `STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md`
-  - `CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02.md`
-- **auditor confidence:** high
-- **No-Go Discipline:** `PASS`
-
 ### `koide_gamma_axis_covariant_full_cube_orbit_law_note_2026-04-18`
 
 - **Note:** [`KOIDE_GAMMA_AXIS_COVARIANT_FULL_CUBE_ORBIT_LAW_NOTE_2026-04-18.md`](../../docs/KOIDE_GAMMA_AXIS_COVARIANT_FULL_CUBE_ORBIT_LAW_NOTE_2026-04-18.md)
@@ -3452,39 +3409,20 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 
-### `koide_kappa_bookkeeping_flow_class_fixed_point_inversion_and_lane_scoping_bounded_theorem_note_2026-07-11`
+### `koide_orbit_occupancy_independence_and_premise_candidate_note_2026-06-09`
 
-- **Note:** [`KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md`](../../docs/KOIDE_KAPPA_BOOKKEEPING_FLOW_CLASS_FIXED_POINT_INVERSION_AND_LANE_SCOPING_BOUNDED_THEOREM_NOTE_2026-07-11.md)
+- **Note:** [`KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`](../../docs/KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md)
 - **claim_type:** `bounded_theorem`
-- **claim_scope:** The positive-kappa bookkeeping flow class, its fixed set and conjugacy, the kappa=1,2 evaluations, and conditional fixed-point inversion with report-only comparators.
+- **claim_scope:** On the supplied two-orbit local bookkeeping surface, the stated Gaussian has r=1, while the supplied aggregate count n_d gives r=n_d/2 and Q=(1+n_d)/3 without selecting n_d.
 - **audit_status:** ~~audited_conditional~~
 - **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
 - **auditor:** `codex-audit-loop`  (codex-gpt-5.6; independence=fresh_context)
-- **load-bearing step:** With x=p_d/p_s=kappa r, independent agreement conditioning sends x to x^2 and therefore induces f_kappa(r)=kappa r^2, whose positive fixed point is 1/kappa.  _(class `A`)_
-- **chain closes:** False — The algebra closes, but independent agreement conditioning and physical bookkeeping are supplied, and all three direct scientific dependencies remain unaudited.
-- **rationale:** Issue: the odds-map, fixed-point, projective-chart, conjugacy, inversion, and comparator arithmetic are correct, but independent agreement conditioning and physical kappa identification have no retained certificates and all three direct parents are unaudited. Why this blocks: the exact map class cannot select a physical lane coefficient or support any comparator inference. Repair target: retain the parents and derive a lattice-motion-covariant, record-decidable agreement/readout law that fixes kappa. Claim boundary until fixed: kappa is only a supplied positive bookkeeping coefficient and the displayed decimal table is report-only arithmetic.
+- **load-bearing step:** Using E_s = 3a^2, E_d = 6|b|^2, E_s = epsilon, and E_d = n_d epsilon gives r = n_d/2 and Q = (1+n_d)/3.  _(class `A`)_
+- **chain closes:** False — The Gaussian integrals and aggregate fork close algebraically, but the direct Q-dictionary and K/CPT orbit-context dependencies are unaudited and therefore do not provide retained-grade chain closure.
+- **rationale:** Issue: The local Gaussian, trace, and aggregate-fork algebra survives independent recomputation, but the direct Q-dictionary and K/CPT orbit-context authorities are not retained-grade. Why this blocks: Their unaudited status prevents the supplied orbit indexing and adjacent Q authority from propagating, even though the narrow N1-N8 nonselection gate passes and the finite supplied-condition law-domain checks are locally decidable, invariant under the checked actions, and extensionally distinct. Repair target: Independently audit the two named direct dependencies and require a retained certificate before any per-outcome-cell condition is adopted as a law domain. Claim boundary until fixed: Conditionally on the enumerated local surface, the Gaussian gives r=1 and a supplied n_d gives the exact fork, but neither n_d=1 nor a full-lattice physical readout law is derived.
 - **open / conditional deps cited:**
-  - `RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md`
-  - `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`
-  - `FLAVOR_MAX_RECORD_ENTROPY_IS_SECTOR_BLIND_CANNOT_DERIVE_THE_KOIDE_DIAL_NARROW_NO_GO_NOTE_2026-06-15.md`
-- **auditor confidence:** high
-- **No-Go Discipline:** `PASS`
-
-### `koide_occupancy_from_locked_record_outcomes_bounded_note_2026-07-03`
-
-- **Note:** [`KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md`](../../docs/KOIDE_OCCUPANCY_FROM_LOCKED_RECORD_OUTCOMES_BOUNDED_NOTE_2026-07-03.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The four-channel K-real determinant localization and the conditional one-locked-possibility statistical-slot comparison on the explicitly enumerated local surface.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.6; independence=fresh_context)
-- **load-bearing step:** The four determinant localizations are exact, while one locked record content can determine two component readouts and only the supplied one-possibility/one-slot rule creates the one-versus-two slot mismatch.  _(class `A`)_
-- **chain closes:** False — The local formulas close, but the statistical-slot rule and K/CPT outcome context are supplied conditions and all three scientific direct dependencies remain unaudited.
-- **rationale:** Issue: the local determinant, Gaussian, Record-countermodel, and endpoint algebra is correct, but the statistical-slot equality lacks a retained certificate and the three direct scientific parents are unaudited. Why this blocks: neither physical slotting nor the current-source nonselection boundary can propagate at retained grade. Repair target: retain the three named parents and supply a record-decidable, lattice-motion-covariant law-domain theorem for the one-possibility/one-slot rule. Claim boundary until fixed: the four displayed matrices and the explicitly supplied one-slot and aggregate-energy laws have only the stated conditional local consequences.
-- **open / conditional deps cited:**
-  - `KOIDE_ORBIT_OCCUPANCY_INDEPENDENCE_AND_PREMISE_CANDIDATE_NOTE_2026-06-09.md`
+  - `KOIDE_CIRCULANT_Q_TWO_THIRDS_ALGEBRAIC_NARROW_THEOREM_NOTE_2026-05-10.md`
   - `KCPT_ORBIT_CONSTANCY_AND_DETERMINANT_CHARACTER_BOUNDARY_SUPPLIED_CONTEXT_BRIDGE_NOTE_2026-07-04.md`
-  - `KOIDE_R_HALF_POLARIZATION_SELECTOR_TESTED_STATIC_READOUT_NO_GO_NOTE_2026-06-08.md`
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 
@@ -4732,27 +4670,6 @@ Criticality and load-bearing score are computed from the citation graph alone. T
 - **rationale:** Issue: the site-history theorem and exact map/escape algebra are correct, but the agreement-conditioned parent is unaudited and the physical formation, common-readout, outcome-independence, and flow-class conditions have no retained law-domain certificates. Why this blocks: the exact local implications cannot be promoted into a physical durability/self-composition bridge. Repair target: retain the anatomy parent and derive the supplied formation/readout/filter conditions with lattice-motion-covariant, record-decidable certificates. Claim boundary until fixed: only the explicit site-tagged monotone histories and the supplied scalar map have the stated necessary and finite-horizon consequences.
 - **open / conditional deps cited:**
   - `RD_BRIDGE_ANATOMY_AGREEMENT_CONDITIONED_DOUBLE_REGISTRATION_BOUNDED_NOTE_2026-06-12.md`
-- **auditor confidence:** high
-- **No-Go Discipline:** `PASS`
-
-### `records_only_os_reconstruction_untied_first_order_measure_bounded_theorem_note_2026-07-11`
-
-- **Note:** [`RECORDS_ONLY_OS_RECONSTRUCTION_UNTIED_FIRST_ORDER_MEASURE_BOUNDED_THEOREM_NOTE_2026-07-11.md`](../../docs/RECORDS_ONLY_OS_RECONSTRUCTION_UNTIED_FIRST_ORDER_MEASURE_BOUNDED_THEOREM_NOTE_2026-07-11.md)
-- **claim_type:** `bounded_theorem`
-- **claim_scope:** The exact two-branch Hermiticity classification and branchwise positivity domain of the stated time-homogeneous two-slice records-only Grassmann Gram.
-- **audit_status:** ~~audited_conditional~~
-- **effective_status:** ~~audited_conditional~~  (reason: `terminal_audit`)
-- **auditor:** `codex-audit-loop`  (codex-gpt-5.6; independence=fresh_context)
-- **load-bearing step:** Hermiticity of the five-record normalized Gram recovers real lambda_0, u+v, and uv, giving exactly the Hermitian or all-real branches; the all-real tensor factor has determinant proportional to 1-8(Im lambda_1)^2.  _(class `A`)_
-- **chain closes:** False — The finite Gram algebra closes, but time-homogeneity, the OS crossing/reflection, P-even record span, and optional spectral readout are supplied, while six scientific parents remain unaudited.
-- **rationale:** Issue: independent covariance/minor algebra confirms the exact Hermiticity branches, tied positivity, the all-real strip, and the alternating live escape, but the theorem consumes supplied time-homogeneity, reflection/crossing, and P-even record-span conditions and six unaudited scientific parents. Why this blocks: the finite two-slice construction cannot establish that its law domain is the framework's physical history/readout domain, and the optional three-value spectral comparator is not derived. Repair target: retain the six scientific parents and supply a lattice-motion-covariant, record-decidable certificate for the homogeneous OS law and P-even record span, without importing the three-value comparator. Claim boundary until fixed: for the declared homogeneous two-slice kernel and five-vector P-even record span, the normalized Gram has exactly the two stated Hermiticity branches and the stated branchwise positivity domains.
-- **open / conditional deps cited:**
-  - `KOIDE_FIRST_ORDER_SECTION_TIE_VS_OUTCOME_LABEL_RESIDUAL_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-11.md`
-  - `RP_COUPLED_TWO_SLICE_GAUGE_STAGGERED_BEREZIN_GRAM_NARROW_THEOREM_NOTE_2026-07-10.md`
-  - `REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`
-  - `ACPHILAMBDA_K_ODD_CARRIER_REGISTERED_DATUM_TEST_BOUNDED_NOTE_2026-07-03.md`
-  - `TIME_AXIS_IS_THE_HISTORY_INDEX_RECORD_MONOTONE_DIRECTION_BOUNDED_NOTE_2026-07-03.md`
-  - `AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`
 - **auditor confidence:** high
 - **No-Go Discipline:** `PASS`
 

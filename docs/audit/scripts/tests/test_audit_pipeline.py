@@ -1554,6 +1554,12 @@ class ApplyAuditTest(unittest.TestCase):
             "first_auditor_error": "none",
             "second_auditor_error": "overstated the blocker",
         }
+        missing_type = dict(judgment)
+        missing_type.pop("ratified_claim_type")
+        ok, msg = m.apply_one(json.loads(json.dumps(led)), missing_type)
+        self.assertFalse(ok)
+        self.assertIn("ratified_claim_type", msg)
+
         ok, msg = m.apply_one(json.loads(json.dumps(led)), judgment)
         self.assertFalse(ok)
         self.assertIn("ratified_load_bearing_step_class", msg)
@@ -1586,6 +1592,7 @@ class ApplyAuditTest(unittest.TestCase):
                 "claim_type": "positive_theorem",
                 "claim_scope": "positive scope",
                 "load_bearing_step_class": "C",
+                "negative_assertion_classes": [],
             },
             "second_audit": {
                 "auditor": "second-auditor",
@@ -1594,6 +1601,7 @@ class ApplyAuditTest(unittest.TestCase):
                 "claim_type": "bounded_theorem",
                 "claim_scope": "bounded scope",
                 "load_bearing_step_class": "A",
+                "negative_assertion_classes": [],
             },
         }
         judgment = {
@@ -2095,6 +2103,7 @@ class ApplyAuditTest(unittest.TestCase):
                 "auditor_family": "codex-gpt-5",
                 "verdict": "audited_clean",
                 "claim_type": "positive_theorem",
+                "claim_scope": "first exact scope",
                 "load_bearing_step_class": "C",
             },
             "second_audit": {
@@ -2103,6 +2112,7 @@ class ApplyAuditTest(unittest.TestCase):
                 "auditor_family": "codex-gpt-5.5",
                 "verdict": "audited_clean",
                 "claim_type": "bounded_theorem",
+                "claim_scope": "second bounded scope",
                 "load_bearing_step_class": "A",
             },
         }
@@ -2125,6 +2135,14 @@ class ApplyAuditTest(unittest.TestCase):
             "second_auditor_error": "understated load-bearing class",
             "hybrid_resolution_note": "human-authorized second-stage panel",
         }
+        legacy_led = json.loads(json.dumps(led))
+        legacy_led["rows"]["test_hybrid"]["cross_confirmation"][
+            "first_audit"
+        ].pop("claim_scope")
+        ok, msg = m.apply_one(legacy_led, audit)
+        self.assertFalse(ok)
+        self.assertIn("cannot be upgraded to audit_tuple_v2", msg)
+
         ok, msg = m.apply_one(led, audit)
         self.assertTrue(ok, msg)
         row = led["rows"]["test_hybrid"]
@@ -3505,20 +3523,32 @@ class AuditLintTest(unittest.TestCase):
 
         cross["first_audit"]["claim_scope"] = " normalized   scoped\ntheorem "
         cross["second_audit"]["claim_scope"] = "normalized scoped theorem"
-        cross["first_audit"]["negative_assertion_classes"] = [
-            "conditional_wall_rationale",
-            "bounded_with_named_walls",
-        ]
-        cross["second_audit"]["negative_assertion_classes"] = [
-            "bounded_with_named_walls",
-            "conditional_wall_rationale",
-            "bounded_with_named_walls",
-        ]
+        cross["first_audit"]["negative_assertion_classes"] = []
+        cross["second_audit"]["negative_assertion_classes"] = []
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("authoritative live row full audit tuple", output.getvalue())
+
+        live = ledger["rows"]["critical_claim"]
+        live["claim_scope"] = "normalized scoped theorem"
+        live["negative_assertion_classes"] = []
         self.fx.write_ledger(ledger)
         output = io.StringIO()
         with contextlib.redirect_stdout(output):
             rc = m.main()
         self.assertEqual(rc, 0, output.getvalue())
+
+        live["negative_assertion_classes"] = ["bounded_with_named_walls"]
+        self.fx.write_ledger(ledger)
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            rc = m.main()
+        self.assertEqual(rc, 1, output.getvalue())
+        self.assertIn("authoritative live row full audit tuple", output.getvalue())
+        live["negative_assertion_classes"] = []
 
         cross["first_audit"] = {}
         cross["second_audit"] = {}
@@ -8956,10 +8986,13 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             max_chars=2500,
             forensic_bound=False,
         )
-        self.assertNotIn("do not return audited_clean", development_fitted)
+        self.assertIn("do not return audited_clean", development_fitted)
         self.assertIn(
-            "does not force a verdict or No-Go status", development_fitted
+            "does not force a verdict when the final classification carries no "
+            "negative assertion",
+            development_fitted,
         )
+        self.assertIn("classify claim_type=no_go", development_fitted)
 
         snapshot = m.no_go_discipline_gate.build_evidence_snapshot({}, manifest)
         packet = {"evidence_snapshot": snapshot}
@@ -9074,6 +9107,12 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         self.assertTrue(m.fresh_schema_retry_eligible(
             "no_go_discipline.status must be PASS or FAIL"
         ))
+        transport_error = "transport-bounded N8 evidence forbids audited_clean"
+        self.assertTrue(m.fresh_schema_retry_eligible(transport_error))
+        self.assertEqual(
+            m.fresh_schema_retry_code(transport_error),
+            "N8_TRANSPORT_BOUND_DISPOSITION_MISMATCH",
+        )
         self.assertFalse(m.fresh_schema_retry_eligible("claim_id mismatch"))
         code = m.fresh_schema_retry_code(
             "N1 route prior_secret.route_class exposes prior content"

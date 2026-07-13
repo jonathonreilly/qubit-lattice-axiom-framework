@@ -1196,7 +1196,13 @@ def fit_prompt_to_transport_limit(
             if forensic_bound
             else
             "This development-tier transport bound does not force a verdict "
-            "or No-Go status; scope any N8 judgment to the rendered records. "
+            "when the final classification carries no negative assertion. If "
+            "you classify claim_type=no_go or declare any nonempty "
+            "negative_assertion_classes, set "
+            "N8_cross_cycle_echo.packet_complete=false, keep its unresolved "
+            "list nonempty, set no_go_discipline.status=FAIL, and do not return "
+            "audited_clean. Otherwise, scope any N8 judgment to the rendered "
+            "records. "
         )
         notice = (
             "\n\n---\n"
@@ -1579,11 +1585,11 @@ def render_validation_repair_prompt(
 
 
 def fresh_schema_retry_eligible(validation_error: str | None) -> bool:
-    """Allow a new isolated audit only for structured N1-N8 schema rejects."""
+    """Allow a new isolated audit for structured N1-N8 disposition rejects."""
     if not validation_error:
         return False
     return bool(re.match(
-        r"^(?:N[1-8]\b|No-Go Discipline\b|no_go_discipline\b)",
+        r"^(?:N[1-8]\b|No-Go Discipline\b|no_go_discipline\b|transport-bounded N8\b)",
         validation_error,
     ))
 
@@ -1592,6 +1598,8 @@ def fresh_schema_retry_code(validation_error: str) -> str:
     """Reduce validator text to a conclusion-free control-plane code."""
     if validation_error.startswith("N3 retained_authority hit "):
         return "N3_RETAINED_AUTHORITY_PROVENANCE_MISMATCH"
+    if validation_error.startswith("transport-bounded N8"):
+        return "N8_TRANSPORT_BOUND_DISPOSITION_MISMATCH"
     if (
         validation_error.startswith("N1 route ")
         and ".route_class=" in validation_error

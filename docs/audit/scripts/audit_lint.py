@@ -115,6 +115,17 @@ def audit_summary_tuples_match(first: dict, second: dict) -> bool:
     )
 
 
+def live_row_audit_tuple(row: dict) -> dict:
+    """Project the authoritative live row onto the v2 agreement tuple."""
+    return {
+        "verdict": row.get("audit_status"),
+        "claim_type": row.get("claim_type"),
+        "claim_scope": row.get("claim_scope"),
+        "load_bearing_step_class": row.get("load_bearing_step_class"),
+        "negative_assertion_classes": row.get("negative_assertion_classes"),
+    }
+
+
 def audit_summary_tuple_schema_error(summary: object) -> str | None:
     """Require a complete, typed v2 agreement tuple before comparison."""
     if not isinstance(summary, dict) or not summary:
@@ -1037,6 +1048,16 @@ def main() -> int:
                     "legacy_cross_confirmation_tuple_mismatch",
                     message + "; legacy confirmation requires fresh re-audit",
                 )
+            if (
+                exact_tuple_schema
+                and tuple_schema_valid
+                and tuples_match is True
+                and not audit_summary_tuples_match(live_row_audit_tuple(row), second)
+            ):
+                errors.append(
+                    f"{cid}: authoritative live row full audit tuple does not "
+                    "match the confirmed consensus"
+                )
         if isinstance(xc, dict) and xc_status in {"third_confirmed_first", "third_confirmed_second", "third_confirmed_hybrid"}:
             expected_side = {
                 "third_confirmed_first": "first",
@@ -1105,6 +1126,17 @@ def main() -> int:
                     add_notice(
                         "legacy_cross_confirmation_tuple_mismatch",
                         message + "; legacy confirmation requires fresh re-audit",
+                    )
+                if (
+                    exact_tuple_schema
+                    and tuple_schema_valid
+                    and not audit_summary_tuples_match(
+                        live_row_audit_tuple(row), third_dict
+                    )
+                ):
+                    errors.append(
+                        f"{cid}: authoritative live row full audit tuple does not "
+                        f"match {xc_status} consensus"
                     )
                 if (
                     summary_access_allowed

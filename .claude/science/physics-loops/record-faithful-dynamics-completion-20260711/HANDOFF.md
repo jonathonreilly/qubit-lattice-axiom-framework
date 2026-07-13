@@ -1,6 +1,42 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block36-two-horizon-reatomization-20260712`.
+The two-horizon skeleton-pullback/re-Hoeffding runner reports
+`PASS=14 FAIL=0`. It retains full coefficients, substitutes the next straight
+skeleton, and proves exact commuting re-atomization and cluster evaluation to
+canonical future atoms. The complete future coordinate group includes
+skeleton and nonskeleton hidden gauge links plus fixed-`m` endpoint Gaussian
+factors.
+
+The actual safe factor counts are Wilson `(4,4)`, determinant `(r,0)`, and
+residual Schur `(r,4)`. At `m=15000,beta=0,c=.001,Theta=10^-6,Lambda=1`,
+`K_2=6.67199105118e-6<c`. The converted base defect is
+`B_2=7.48017242352e-4<c` only at weak coarse spatial weights. The marked row
+`q=0.606530659713` maps a double-decorated strong source mark to the canonical-
+future-atom weak output norm.
+
+The explicit `V` and `V_1V_2=W` witnesses show future-tag creation and
+erasure. Consequently this theorem does not restore the next strong spatial
+weights, prove a three-level cocycle, perform a second RG integration, or
+control a generated ball. Correlated-Gaussian attachment and running-gap
+control also remain open.
+
+Independent code/math, physics/import/Nature, and governance/no-go reviews
+pass. Audit validation seeds one `bounded_theorem` / `unaudited` row with
+exactly three dependencies; the full pipeline and strict lint have zero
+errors and generated outputs are stripped. No axiom-update stop is triggered.
+
+Two-horizon canonical re-atomization stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5344
+is open against the one-horizon lineage-cluster head.
+
+Next exact action: split nonempty future atoms from the genuine empty-atom/raw-
+lift sector, then combine atom downshift and raw geometric suppression to test
+the full strong spatial handoff. Correlated covariance locality/attachment is
+the parallel analytic wall.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block35-tagged-residual-cluster-20260712`.
 The one-horizon Haar--Berezin Hoeffding lineage-cluster runner reports
 `PASS=13 FAIL=0`. For the complete current bare residual factor family, every

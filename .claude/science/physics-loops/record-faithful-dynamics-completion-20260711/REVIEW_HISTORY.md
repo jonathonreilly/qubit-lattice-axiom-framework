@@ -1068,6 +1068,35 @@ tag routes and the exact residual-match check.
 Runner/cache: `PASS=13 FAIL=0`. Audit validation seeds one `bounded_theorem` /
 `unaudited` row with exactly four dependencies; the full pipeline and strict
 lint have zero errors and generated outputs are stripped. PR #5343 is open.
-The next target is a two-level evaluation-commuting re-atomization cocycle,
+The next target is a two-level evaluation-commuting re-atomization identity,
 then correlated-covariance locality and attachment. No axiom-update stop is
+triggered.
+
+## Two-horizon skeleton-pullback/re-Hoeffding review
+
+PASS WITH BOUNDED CLAIMS after two theorem-critical scope repairs. The first
+repair expands the future coordinate group to every next hidden gauge link,
+including nonskeleton links, plus the two fixed-`m` endpoint Gaussian factors.
+The resulting safe counts are Wilson `(4,4)`, determinant `(r,0)`, and Schur
+`(r,4)`. The second repair keeps the converted spatial weights weak: canonical
+future atoms do not themselves restore the missing strong reserve.
+
+The exact two-level projections commute, current integration commutes with
+future projections, and the evaluated double-lineage algebra maps
+contractively to genuine canonical future atoms. The `V` witness creates a
+future tag from an empty current tag, while `V_1V_2=W` erases two individual
+future tags. These examples validate full-coefficient re-atomization and rule
+out Boolean tag propagation without implying an all-scale no-go.
+
+At the displayed point, `K_2=6.67199105118e-6<c` and the weak output base row
+is `B_2=7.48017242352e-4<c`. The marked number `q=0.606530659713` is only a
+one-step double-decorated-strong to future-atom-weak estimate. Independent
+code/math, physics/import/Nature, and governance/no-go review pass the final
+surface. Runner/cache are `PASS=14 FAIL=0`; audit validation seeds one
+`bounded_theorem` / `unaudited` row with exactly three dependencies; strict
+lint has zero errors and generated outputs are stripped. PR #5344 is open.
+
+The next target splits nonempty future atoms from extended empty atoms and
+combines atom downshift with raw-lift geometry for the strong spatial handoff;
+correlated covariance attachment remains independent. No axiom-update stop is
 triggered.

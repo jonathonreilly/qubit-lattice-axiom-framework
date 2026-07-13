@@ -1,5 +1,22 @@
 # PR Delivery
 
+The two-horizon skeleton-pullback/re-Hoeffding intertwining is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block35-tagged-residual-cluster-20260712`
+- head: `physics-loop/record-faithful-dynamics-block36-two-horizon-reatomization-20260712`
+- runner: `PASS=14 FAIL=0`
+- scope: exact next-skeleton pullback, complete future gauge/endpoint atom
+  chart, contractive decorated evaluation, actual-factor `(4,4)/(r,0)/(r,4)`
+  counts, strict two-level activity/base rows, and explicit tag creation/
+  erasure; weak spatial output only, with no strong handoff, second RG step,
+  all-scale cocycle, correlated-Gaussian attachment, or invariant ball
+- review: independent code/math, physics/import/Nature, and governance/no-go pass
+- audit compatibility: one `bounded_theorem` / `unaudited` row with exactly
+  three dependencies; full pipeline and strict lint pass; generated outputs stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5344
+
+No merge is authorized. Independent audit remains authoritative.
+
 The one-horizon Haar--Berezin Hoeffding lineage-cluster lift is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block34-haar-berezin-running-center-20260712`

@@ -8,36 +8,34 @@ current_goal: >-
   supply the physical evolution object, bare time ordering, record-formation
   weights, and an admissibility-to-carrier selector without importing the
   staggered/Dirac answer or sector-specific Standard Model and gravity laws.
-branch: physics-loop/record-faithful-dynamics-block35-tagged-residual-cluster-20260712
+branch: physics-loop/record-faithful-dynamics-block36-two-horizon-reatomization-20260712
 base_commit_at_start: 9d1636f05f
-cycle_count: 35
-block_count: 35
-active_route: wilson_staggered_one_horizon_haar_berezin_hoeffding_lineage_cluster_lift
+cycle_count: 36
+block_count: 36
+active_route: wilson_staggered_two_horizon_skeleton_pullback_canonical_rehoeffding_intertwining
 hard_residual: >-
   Can the four-axiom record surface canonically determine a faithful local
   record-forming instrument whose coherent no-record block is sufficiently
   constrained to exclude the observationally disconnected SWAP--Laplacian
   completion and select the Clifford-vector carrier?
-produced_claim_id: wilson_staggered_one_horizon_haar_berezin_hoeffding_lineage_cluster_lift_bounded_theorem_note_2026-07-12
+produced_claim_id: wilson_staggered_two_horizon_skeleton_pullback_canonical_rehoeffding_intertwining_bounded_theorem_note_2026-07-12
 actual_current_surface_status: bounded-support
 conditional_surface_status: >-
-  The complete current bare residual factor family has an exact one-horizon
-  decorated Haar--Berezin Hoeffding lift whose evaluation recovers the
-  original residual cluster logarithm. Safe tagged activities satisfy
-  K_tag=9.967013e-7<c at the displayed witness and give a finite marked
-  attachment row. The construction retains formal lineages without asserting
-  physical tag survival: next-skeleton substitution can erase current tags.
-  A future-coordinate re-atomization cocycle, correlated-Gaussian attachment,
-  running-gap persistence, same-norm iteration, and an invariant ball remain
-  open.
+  The complete current bare residual admits an exact two-level next-skeleton
+  pullback and canonical re-Hoeffding intertwining. All next hidden gauge
+  links and fixed-m endpoint factors are included, and evaluated lineages give
+  genuine future atoms despite exact tag creation/erasure. At the displayed
+  point K_2=6.671991e-6<c and B_2=7.480172e-4<c, but only in the weak coarse
+  spatial norm. Strong-spatial empty-atom handoff, correlated-Gaussian
+  attachment, running-gap persistence, same-norm iteration, and an invariant
+  ball remain open.
 admitted_observation_status: none
 claim_type_reason: >-
-  The source proves an exact finite-horizon decorated-factor evaluation map,
-  controls the complete present residual factor grammar with conservative
-  Hoeffding activities, and verifies marked-cluster reuse on formal lineages.
-  It explicitly distinguishes syntactic carriers, nonzero atom tags, formal
-  lineages, and geometric tree span, and does not claim tag density, tag
-  survival, correlated-Gaussian attachment, or an autonomous RG self-map.
+  The source proves the exact two-level projection/evaluation identities,
+  controls the complete present residual grammar in a canonical future-atom
+  weak output norm, and gives a double-decorated-source to future-atom-weak
+  one-mark row. It explicitly does not claim a three-level cocycle, spatial
+  strong return, correlated-Gaussian attachment, or an autonomous RG self-map.
 hypothetical_axiom_status: null
 proposal_allowed: false
 proposal_allowed_reason: >-
@@ -152,6 +150,9 @@ files_touched:
   - docs/WILSON_STAGGERED_ONE_HORIZON_HAAR_BEREZIN_HOEFFDING_LINEAGE_CLUSTER_LIFT_BOUNDED_THEOREM_NOTE_2026-07-12.md
   - scripts/wilson_staggered_one_horizon_hoeffding_lineage_cluster_lift_2026_07_12.py
   - logs/runner-cache/wilson_staggered_one_horizon_hoeffding_lineage_cluster_lift_2026_07_12.txt
+  - docs/WILSON_STAGGERED_TWO_HORIZON_SKELETON_PULLBACK_CANONICAL_REHOEFFDING_INTERTWINING_BOUNDED_THEOREM_NOTE_2026-07-12.md
+  - scripts/wilson_staggered_two_horizon_skeleton_pullback_reatomization_2026_07_12.py
+  - logs/runner-cache/wilson_staggered_two_horizon_skeleton_pullback_reatomization_2026_07_12.txt
 open_imports:
   - fundamental process object: Hamiltonian, strict tick, or record instrument
   - faithful law-to-record influence principle
@@ -204,10 +205,11 @@ no_go_routes:
   - the full certified weak completion has no support-only embedding into the present next-step strong norm, and the present ultra-small eta makes the next Gaussian Berezin conditioning enormous; this does not rule out actual-range provenance, running Gaussian centers, or multi-index Haar--Berezin norms
   - Gaussian adaptation and shortest-quadratic extraction repair the fixed-gap tensor norm and current bare residual constants, but do not by themselves supply correlated-reference forced attachment, full actual-range tag membership, or a persistent running gap
   - the one-horizon decorated Hoeffding lift exactly evaluates to the current residual cluster system, but current Haar tags can disappear after integration or next-skeleton substitution; formal lineage therefore cannot be propagated as physical multiscale support without re-atomization
+  - exact two-level re-atomization produces genuine future atoms in the weak output norm, but tag fusion leaves extended empty future atoms and does not restore the missing strong spatial weights
 trace_gate_classification: direct_blocker_closure
 reachability_to_target: partially_closes
-review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_coarse_gauge_gibbsianness_pass_raw_action_hessian_pass_two_layer_source_polymer_pass_retained_grassmann_polymer_norm_pass_declared_rg_chart_pass_split_derivative_certificate_boundary_pass_marked_attachment_strong_weak_contraction_pass_current_chart_autonomy_handoff_pass_gaussian_berezin_quadratic_center_pass_one_horizon_lineage_cluster_lift_pass_bounded
-pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open_constrained_fiber_raw_rg_unit_directions_open_coarse_gauge_gibbsianness_open_raw_action_hessian_open_two_layer_source_polymer_open_retained_grassmann_polymer_norm_open_declared_rg_chart_open_split_derivative_certificate_boundary_open_marked_attachment_strong_weak_contraction_open_current_chart_autonomy_handoff_open_gaussian_berezin_quadratic_center_open_one_horizon_lineage_cluster_lift_open
+review_disposition: cubic_response_pass_outcome_operation_pass_minimal_dilation_pass_effect_selection_pass_full_instrument_pass_event_order_pass_scalar_car_qca_pass_matching_qca_pass_symmetric_clifford_pass_common_hamiltonian_pass_charge_dichotomy_pass_bdg_pass_free_scalar_spectral_continuum_pass_free_os_car_fock_representation_pass_circle_boundary_pass_two_seam_holonomy_pass_coupled_circle_gram_pass_os_interior_descent_subsequential_transfer_pass_massive_infinite_time_uniqueness_pass_spatial_dlr_accumulation_pass_dobrushin_spatial_uniqueness_gap_pass_compact_subwedge_ultralocal_continuum_no_go_pass_sharp_certificate_boundary_critical_scaling_no_go_pass_factor_two_block_schur_os_semigroup_pass_constrained_fiber_raw_rg_unit_directions_pass_coarse_gauge_gibbsianness_pass_raw_action_hessian_pass_two_layer_source_polymer_pass_retained_grassmann_polymer_norm_pass_declared_rg_chart_pass_split_derivative_certificate_boundary_pass_marked_attachment_strong_weak_contraction_pass_current_chart_autonomy_handoff_pass_gaussian_berezin_quadratic_center_pass_one_horizon_lineage_cluster_lift_pass_two_horizon_reatomization_intertwining_pass_bounded
+pr_status: cubic_response_open_outcome_operation_open_minimal_dilation_open_effect_selection_open_full_instrument_open_event_order_open_scalar_car_qca_open_matching_qca_open_symmetric_clifford_open_common_hamiltonian_open_charge_dichotomy_open_bdg_open_continuum_open_residue_open_circle_boundary_mergeable_two_seam_holonomy_open_coupled_circle_gram_open_os_interior_descent_subsequential_transfer_open_massive_infinite_time_uniqueness_open_spatial_dlr_accumulation_open_dobrushin_spatial_uniqueness_gap_open_compact_subwedge_ultralocal_continuum_no_go_open_sharp_certificate_boundary_critical_scaling_no_go_open_factor_two_block_schur_os_semigroup_open_constrained_fiber_raw_rg_unit_directions_open_coarse_gauge_gibbsianness_open_raw_action_hessian_open_two_layer_source_polymer_open_retained_grassmann_polymer_norm_open_declared_rg_chart_open_split_derivative_certificate_boundary_open_marked_attachment_strong_weak_contraction_open_current_chart_autonomy_handoff_open_gaussian_berezin_quadratic_center_open_one_horizon_lineage_cluster_lift_open_two_horizon_reatomization_intertwining_open
 block01_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5178
 block02_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5181
 block03_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5201
@@ -243,14 +245,15 @@ block32_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/
 block33_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5340
 block34_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5342
 block35_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5343
+block36_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5344
 next_exact_action: >-
-  Construct the two-level future-coordinate tag-update cocycle: retain every
-  full decorated coefficient, substitute the next skeleton exactly, and
-  re-Hoeffding-atomize in the new hidden variables. Prove an evaluation-
-  commuting bound that survives current-tag erasure. Then extend forced
-  attachment through the correlated running covariance with an explicit
-  locality/cluster bound and return the actual RG range to a uniform strong
-  provenance norm. Only then derive the same-norm Hessian and invariant ball.
+  Split the evaluated future output into its nonempty canonical-atom sector
+  and genuine empty-atom/future-fiber-constant sector. Combine atom-level
+  downshift for the former with the declared raw-lift geometric mechanism for
+  the latter, and test whether the actual bare range restores the full strong
+  spatial weights. In parallel, extend forced attachment through the
+  correlated running covariance with an explicit locality/cluster bound.
+  Only then derive the same-norm Hessian and invariant ball.
 stop_condition: >-
   Stop and discuss an axiom update only if an exact result proves that the
   required bridge cannot be derived and an additional approved axiom or

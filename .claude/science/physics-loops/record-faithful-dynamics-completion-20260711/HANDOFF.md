@@ -1,6 +1,44 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block35-tagged-residual-cluster-20260712`.
+The one-horizon Haar--Berezin Hoeffding lineage-cluster runner reports
+`PASS=13 FAIL=0`. For the complete current bare residual factor family, every
+factor has a canonical product-coordinate Hoeffding decomposition and the
+decorated hard-core logarithm evaluates exactly to the original residual
+cluster logarithm.
+
+The conservative factor activities charge Wilson factors by at most four
+hidden Haar coordinates, determinant paths of length `r` by at most `r`, and
+Schur paths by at most `r+2`, with `C_*=3+2sqrt(2)`. At the displayed witness,
+`K_tag=9.967013e-7<c`; marked-lineage attachment gives
+`A_att=7.342847e-4` and a finite `B_tag=1.117432e-4`. This is not yet an
+invariant-ball row.
+
+The actual factor audit is explicit: retained determinant loops use only
+nonskeleton interior links, Schur paths have exactly two skeleton boundary
+links, repeated-coordinate Haar projection is included, and a length-four
+Schur witness reduces to a coarse `V` while its current Haar tag is empty.
+Current atom tags can also disappear under products or integration. Formal
+lineage is therefore retained only as metadata; it is not identified with
+geometric support or assumed to survive the next blocking step.
+
+Independent code/math, physics/import/Nature, and governance/no-go reviews
+pass. Audit validation seeds one `bounded_theorem` / `unaudited` row with
+exactly four dependencies; the full pipeline and strict lint have zero errors
+and generated outputs are stripped. No tag-density, multiscale autonomy,
+correlated-Gaussian attachment, continuum, or axiom-update claim is made.
+
+One-horizon decorated lineage-cluster stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5343
+is open against the Gaussian-adapted quadratic-center head.
+
+Next exact action: retain full decorated coefficients, substitute the next
+skeleton, re-Hoeffding-atomize in the new hidden variables, and prove an
+evaluation-commuting two-level tag-update bound. Then attack correlated-
+covariance locality/attachment and same-norm return.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block34-haar-berezin-running-center-20260712`.
 The Gaussian-adapted Berezin/quadratic-center runner reports `PASS=14 FAIL=0`.
 For every finite hidden set with `sigma_min(A_II)>=m`, covariance minors give

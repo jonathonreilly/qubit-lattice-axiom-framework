@@ -1,5 +1,22 @@
 # PR Delivery
 
+The one-horizon Haar--Berezin Hoeffding lineage-cluster lift is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block34-haar-berezin-running-center-20260712`
+- head: `physics-loop/record-faithful-dynamics-block35-tagged-residual-cluster-20260712`
+- runner: `PASS=13 FAIL=0`
+- scope: exact decorated-factor evaluation to the complete current residual
+  cluster system; conservative tagged KP and marked-lineage bounds; explicit
+  actual-factor, repeated-coordinate, empty-tag, and SU(3) singlet witnesses;
+  no tag density, tag survival, multiscale autonomy, correlated-Gaussian
+  attachment, or invariant ball
+- review: independent code/math, physics/import/Nature, and governance/no-go pass
+- audit compatibility: one `bounded_theorem` / `unaudited` row with exactly
+  four dependencies; full pipeline and strict lint pass; generated outputs stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5343
+
+No merge is authorized. Independent audit remains authoritative.
+
 The Gaussian-adapted Berezin handoff and shortest quadratic center is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block33-autonomous-shadow-norm-20260712`

@@ -1094,3 +1094,47 @@ next exact target is the tree-span/source-incidence bridge, preferably
 retaining the smaller root-lineage `K_T2`, followed by the full correlated-
 `S_next` factor/reference grammar and projected quadratic/Weyl reserve. No
 axiom-update stop is triggered.
+
+## Block 44: actual-hidden site-block marked response
+
+After the next skeleton change `V_1=B,V_2=B^(-1)W`, the physical product
+reference integrates only the actual hidden `B`, nonskeleton Haar, and `I_1`
+onsite `G_m` coordinates. External `W` and retained `K_1` data stay in the
+coefficient algebra. Per factor-two cell this is an exact `60` hidden-Haar +
+`15` eliminated-Gaussian / `5` external partition. Owning each `B` at the
+intermediate site puts the owner in either half-carrier.
+
+For each connected routed carrier, the nonminimal syntactic support `S_X=X`
+has `ell(S_X)<=|X|-1`. The paid Block42 primitive-atom row dominates the
+ordinary post-skeleton coefficient without another surcharge, giving
+
+```text
+K_blk<=exp(-0.2)K_dec^bd=0.0009363501261354373<c_att=0.1
+```
+
+at `m=10^46`. The exact path resolvent and conservative `20<=68` support
+conversion then yield `q_centered=.5241257344`,
+`q_sw=exp(-.1)=.9048374180<1`, and ordinary retained-coefficient factor
+envelope `.0729031849<c_att` in the weak `Lambda=.1` chart.
+
+The physical/formal distinction is runner-guarded: `F(W)` obeys
+`E_hid F=F,Q_hid F=0`; formally centering the external `W` coordinate would
+invalidate mark-alone cancellation. The `m=10^44` row records only failure of
+the inherited aggregate upper-majorant certificate, not physical
+nonresponse. Future re-Hoeffding/atom return, correlated `S_next`, projected
+quadratic/Weyl control, strong return, generic ball, taste, and continuum
+remain open.
+
+Independent code/math, physics/import, and governance/no-go reviews pass with
+bounded claims. Runner/cache: `PASS=17 FAIL=0`. All five direct dependencies
+pass. The full audit pipeline seeds one `bounded_theorem` / `unaudited` row
+with five dependencies; strict lint has zero errors and generated outputs are
+stripped.
+
+Delivery: stacked PR
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5364 is
+open and mergeable on Block43 with the independent audit workflow running.
+The next exact target is the full correlated-`S_next` factor/reference/
+normalization grammar, including `P_0` quadratic projection and Weyl gap
+reserve, followed by a newly paid future atomization. No axiom-update stop is
+triggered.

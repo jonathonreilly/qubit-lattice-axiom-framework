@@ -704,3 +704,23 @@ boundary is prepared as the next stacked review PR:
   campaign-state commit is pushed
 
 No merge is authorized. Independent audit remains authoritative.
+
+The actual-hidden site-block syntactic-support and marked-response bridge is
+prepared as the next stacked review PR:
+
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5364
+- base: `physics-loop/record-faithful-dynamics-block43-block-saturated-split-norm-handoff-20260712`
+- head: `physics-loop/record-faithful-dynamics-block44-product-coordinate-tree-span-incidence-bridge-20260712`
+- source runner: `PASS=17 FAIL=0`
+- scope: physical hidden/external coordinate partition, intermediate-site `B`
+  ownership, `S_X=X` tree-span/incidence bridge, and one `m=10^46`
+  actual-residual marked response with ordinary retained output at
+  `Lambda=.1`; no future atom return or correlated-center RG step
+- disposition: independent code/math, physics/import, and governance/no-go
+  review passed with bounded claims after carrierwise-factor, physical-
+  centering, external-`W`, skeleton-ownership, floor/ceil geometry,
+  upper-majorant rhetoric, and full N1--N8 repairs; all five dependencies and
+  the full pipeline pass, and strict lint has zero errors
+- delivery check: open, mergeable, independent audit workflow running
+
+No merge is authorized. Independent audit remains authoritative.

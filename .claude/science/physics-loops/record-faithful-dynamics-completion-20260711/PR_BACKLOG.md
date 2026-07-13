@@ -1,5 +1,22 @@
 # PR Delivery
 
+The fixed-background correlated-Berezin locality supplier is delivered:
+
+- base: `physics-loop/record-faithful-dynamics-block36-two-horizon-reatomization-20260712`
+- head: `physics-loop/record-faithful-dynamics-block37-correlated-gaussian-attachment-20260712`
+- runner: `PASS=11 FAIL=0`
+- scope: exact normalized onsite-bond ratio for original `A=m1+M_II`,
+  product-centered marked bond attachment, principal-block all-degree cross-
+  Wick locality, determinant separation, and explicit centering/endpoint
+  boundaries; no combined Haar--Gaussian attachment, actual future-center
+  instantiation, strong return, running center, or invariant ball
+- review: independent code/math, physics/import/Nature, and governance/no-go pass
+- audit compatibility: one `bounded_theorem` / `unaudited` row with exactly
+  five dependencies; full pipeline and strict lint pass; generated outputs stripped
+- PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5347
+
+No merge is authorized. Independent audit remains authoritative.
+
 The two-horizon skeleton-pullback/re-Hoeffding intertwining is delivered:
 
 - base: `physics-loop/record-faithful-dynamics-block35-tagged-residual-cluster-20260712`

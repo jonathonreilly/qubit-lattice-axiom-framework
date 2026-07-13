@@ -1,6 +1,40 @@
 # Handoff
 
 Current branch:
+`physics-loop/record-faithful-dynamics-block37-correlated-gaussian-attachment-20260712`.
+The fixed-background correlated-Berezin runner reports `PASS=11 FAIL=0`.
+For the original eliminated block `A=m1+M_II`, it proves the exact normalized
+onsite-product bond ratio, a same-lattice product-centered attachment row, and
+a principal-block all-degree cross-Wick cumulant bound uniform in regulator
+and allowed fixed gauge background.
+
+At `m=15000,c=.05,Theta=10^-6,Lambda=1`, the same-lattice bond row is
+`K_G=.0159413750<c` with `A_G=.420821391<1`. A separate three-coordinate
+future compatibility diagnostic pays the full `C_*^3` before exponentiation;
+at `m=6e9,c=.001` its converted scalar mark number is `.540532731`, but this
+does not instantiate the evaluated two-horizon map.
+
+Product-Gaussian centering, pointwise `G_A(U)` centering, and combined
+`E_HG_A` centering are kept distinct. The full integral remains
+`det(A)G_A`; the determinant body is separate. The theorem does not migrate
+the original block to the extracted future `S^(2)` center, commute
+normalization through Haar averaging, or prove combined-reference residual
+resummation, strong spatial return, a running center, or an invariant ball.
+
+Independent code/math, physics/import/Nature, and governance/no-go reviews
+pass. Audit validation seeds one `bounded_theorem` / `unaudited` row with
+exactly five dependencies; the full pipeline and strict lint have zero errors
+and generated outputs are stripped. No axiom-update stop is triggered.
+
+Fixed-background correlated-Berezin locality stacked PR:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5347
+is open against the two-horizon re-atomization head.
+
+Next exact action: prove the combined-reference split/resummation and the Haar-
+provenance norm for `U->G_A(U)O`, then migrate the supplier to the actual
+extracted future center. The strong-spatial empty-atom wall remains parallel.
+
+Previous branch:
 `physics-loop/record-faithful-dynamics-block36-two-horizon-reatomization-20260712`.
 The two-horizon skeleton-pullback/re-Hoeffding runner reports
 `PASS=14 FAIL=0`. It retains full coefficients, substitutes the next straight

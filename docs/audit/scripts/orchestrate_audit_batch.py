@@ -167,6 +167,12 @@ def awaiting_repair_since_conditional(
     last = archives[-1]
     if last.get("audit_status") != "audited_conditional":
         return False
+    archived_note_hash = last.get("archived_for_note_hash")
+    if archived_note_hash and archived_note_hash != row.get("note_hash"):
+        # Seeder archival records the exact pre-repair note hash.  Prefer this
+        # content signal over commit time so an old-dated commit merged after
+        # the audit cannot be mistaken for unchanged source.
+        return False
     snapshot = last.get("audit_state_snapshot") or {}
     snapshot_deps = snapshot.get("dep_effective_status") or {}
     for dep, then_status in snapshot_deps.items():

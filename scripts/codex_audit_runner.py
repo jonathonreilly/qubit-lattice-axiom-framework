@@ -1314,6 +1314,7 @@ def run_codex(prompt: str, isolated_dir: Path, timeout_sec: int,
 # alongside any verdict-write to keep main internally consistent.
 AUDIT_DATA_FILES = [
     "docs/audit/AUDIT_LEDGER.md",
+    "docs/audit/AUDIT_DISPATCH_QUEUE.md",
     "docs/audit/AUDIT_QUEUE.md",
     "docs/audit/data",
     "docs/publication/ci3_z3/CLAIMS_TABLE_EFFECTIVE_STATUS.md",

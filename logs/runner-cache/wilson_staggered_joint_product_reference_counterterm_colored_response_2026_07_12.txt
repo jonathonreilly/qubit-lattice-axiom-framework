@@ -1,3 +1,4 @@
+PASS two_site_three_color_determinant_counterterm_identity: det(mI+M)/m^6=1.015384347720763, product Gaussian bond ratio=1.015384347720762, max|Re eig(M)|=1.388e-17
 PASS exact_joint_counterterm_represents_combined_reference: E_0[B_G Z_A^-1]=1.000000000000000, E_H G_A[O]=2.776e-17, E_0[O B_G Z_A^-1]=6.939e-17
 PASS color_one_cancels_counterterm_and_recovers_physical_integrand: Phi(0)=6.939e-17, Phi(1)=7.627578631206e-02, physical direct=7.627578631206e-02, max|Z_A^-1 Z_A-1|=0.000e+00
 PASS outer_partition_weight_is_load_bearing: global physical=7.627578631206e-02, naive Haar average of fixed-U ratios=3.415805748922e-02, mismatch=4.212e-02
@@ -9,4 +10,4 @@ PASS strict_original_center_joint_activity_witness: K_G=1.269376642763024e-03, K
 PASS joint_colored_bound_vanishes_without_physical_red_row: A_joint(K_R=0 at fixed envelope)=0.0; K_R=1.831108249998938e-03<K_T=3.100484892761970e-03
 PASS source_contract: missing=[], forbidden_hits=[]
 PASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_COMBINED_HAAR_GAUSSIAN_REFERENCE_SPLIT_RESIDUAL_COLORED_INTERPOLATION_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_FIXED_BACKGROUND_CORRELATED_BEREZIN_CROSS_WICK_CLUSTER_LOCALITY_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_ONE_HORIZON_HAAR_BEREZIN_HOEFFDING_LINEAGE_CLUSTER_LIFT_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md']
-SCORECARD PASS=11 FAIL=0
+SCORECARD PASS=12 FAIL=0
